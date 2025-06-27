@@ -147,41 +147,41 @@
             playerToUser: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/PlayerToUserMap_884691.txt`
         };
 
-function getLogoFileName(clubName) {
-    if (!clubName) return "unbestimmt.png";
-    const mapping = {
-        "Borussia Mönchengladbach": "gladbach",
-		"Gladbach": "gladbach",
-        "Sport-Club Freiburg": "freiburg",
-		"SC Freiburg": "freiburg",
-		"Freiburg": "freiburg",
-        "1. FSV Mainz 05": "mainz",
-		"1.FSV Mainz 05": "mainz",
-        "RB Leipzig": "leipzig",
-        "FC Bayern München": "bayern",
-        "SV Werder Bremen": "werderBremen",
-        "VfL Wolfsburg": "wolfsburg",
-        "Borussia Dortmund": "dortmund",
-		"Dortmund": "dortmund",
-        "Bayer 04 Leverkusen": "leverkusen",
-		"Leverkusen": "leverkusen",
-        "1. FC Köln": "koeln",
-		"1.FC Köln": "koeln",
-		"Köln": "koeln",
-        "VfB Stuttgart": "stuttgart",
-        "TSG Hoffenheim": "hoffenheim",
-        "FC Augsburg": "augsburg",
-        "Eintracht Frankfurt": "frankfurt",
-        "1.FC Union Berlin": "unionBerlin",
-		"Union Berlin": "unionBerlin",
-		"1. FC Union Berlin": "unionBerlin",
-        "1.FC Heidenheim": "heidenheim",
-		"1. FC Heidenheim": "heidenheim",
-		"Heidenheim": "heidenheim",
-        "FC St. Pauli": "stpauli",
-		"St. Pauli": "stpauli",
-		"Hamburger SV": "hamburg",
-		"Hamburg": "hamburg"
+        function getLogoFileName(clubName) {
+            if (!clubName) return "unbestimmt.png";
+            const mapping = {
+                "Borussia Mönchengladbach": "gladbach",
+                "Gladbach": "gladbach",
+                "Sport-Club Freiburg": "freiburg",
+                "SC Freiburg": "freiburg",
+                "Freiburg": "freiburg",
+                "1. FSV Mainz 05": "mainz",
+                "1.FSV Mainz 05": "mainz",
+                "RB Leipzig": "leipzig",
+                "FC Bayern München": "bayern",
+                "SV Werder Bremen": "werderBremen",
+                "VfL Wolfsburg": "wolfsburg",
+                "Borussia Dortmund": "dortmund",
+                "Dortmund": "dortmund",
+                "Bayer 04 Leverkusen": "leverkusen",
+                "Leverkusen": "leverkusen",
+                "1. FC Köln": "koeln",
+                "1.FC Köln": "koeln",
+                "Köln": "koeln",
+                "VfB Stuttgart": "stuttgart",
+                "TSG Hoffenheim": "hoffenheim",
+                "FC Augsburg": "augsburg",
+                "Eintracht Frankfurt": "frankfurt",
+                "1.FC Union Berlin": "unionBerlin",
+                "Union Berlin": "unionBerlin",
+                "1. FC Union Berlin": "unionBerlin",
+                "1.FC Heidenheim": "heidenheim",
+                "1. FC Heidenheim": "heidenheim",
+                "Heidenheim": "heidenheim",
+                "FC St. Pauli": "stpauli",
+                "St. Pauli": "stpauli",
+                "Hamburger SV": "hamburg",
+                "Hamburg": "hamburg"
             };
             return (mapping[clubName] || "unbestimmt") + ".png";
         }
@@ -370,69 +370,68 @@ function getLogoFileName(clubName) {
         }
 
         function renderTable(players) {
-    const tableBody = document.querySelector('#playerTable tbody');
-    tableBody.innerHTML = '';
-    players.forEach(player => {
-        const row = document.createElement('tr');
-        row.setAttribute('data-player-id', player.id);
+            const tableBody = document.querySelector('#playerTable tbody');
+            tableBody.innerHTML = '';
+            players.forEach(player => {
+                const row = document.createElement('tr');
+                row.setAttribute('data-player-id', player.id);
 
-        // Verein
-        const clubId = player.data?.verein || "0";
-        const clubName = clubsMap.get(clubId) || 'UNBEKANNT';
-        const logoFile = getLogoFileName(clubName);
-        const logoHtml = `<img src="logos/${logoFile}" class="club-logo" alt="${clubName}" title="${clubName}">`;
+                // Verein
+                const clubId = player.data?.verein || "0";
+                const clubName = clubsMap.get(clubId) || 'UNBEKANNT';
+                const logoFile = getLogoFileName(clubName);
+                const logoHtml = `<img src="logos/${logoFile}" class="club-logo" alt="${clubName}" title="${clubName}">`;
 
-        // Spielername mit Tooltip für ID
-        const playerName = player.name || "Unbekannt";
-        const playerId = player.id || "";
-        const playerNameHtml = `<span title="${playerName} (ID: ${playerId})">${playerName}</span>`;
+                // Spielername mit Tooltip für ID
+                const playerName = player.name || "Unbekannt";
+                const playerId = player.id || "";
+                const playerNameHtml = `<span title="${playerName} (ID: ${playerId})">${playerName}</span>`;
 
-        // Position und Nebenpositionen
-        const position = player.position || "Unbekannt";
-		 // Hauptposition können in verschiedenen Feldern liegen, prüfe beide Varianten:
-        const hauptposition = player.data?.spielerDaten?.hauptposition || "N/A";
-        // Nebenpositionen können in verschiedenen Feldern liegen, prüfe beide Varianten:
-        const nebenpositionen = player.data?.spielerDaten?.nebenpositionen || [];
-		const nebenpositionenTooltip = nebenpositionen.length > 0 ? "Hauptposition: " + hauptposition + " | Nebenposition: " + nebenpositionen.join(", ") : "";
-		
-		const positionHtml = `<span title="${nebenpositionenTooltip}">${player.position || "Unbekannt"}</span>`;
+                // Position und Nebenpositionen
+                const position = player.position || "Unbekannt";
+                // Hauptposition können in verschiedenen Feldern liegen, prüfe beide Varianten:
+                const hauptposition = player.data?.spielerDaten?.hauptposition || "N/A";
+                // Nebenpositionen können in verschiedenen Feldern liegen, prüfe beide Varianten:
+                const nebenpositionen = player.data?.spielerDaten?.nebenpositionen || [];
+                const nebenpositionenTooltip = nebenpositionen.length > 0 ? "Hauptposition: " + hauptposition + " | Nebenposition: " + nebenpositionen.join(", ") : "";
+                
+                const positionHtml = `<span title="${nebenpositionenTooltip}">${player.position || "Unbekannt"}</span>`;
 
-        // Status
-        const status = player.data?.status?.status || 'AKTIV';
-        let statusClass = "";
-        if (status.includes("AKTIV")) statusClass = "status-aktiv";
-        else if (status.includes("VERLETZT")) statusClass = "status-verletzt";
-        else if (status.includes("AUFBAU")) statusClass = "status-reha";
-        else if (status.includes("NICHT_IN_LIGA")) statusClass = "status-nichtliga";
+                // Status
+                const status = player.data?.status?.status || 'AKTIV';
+                let statusClass = "";
+                if (status.includes("AKTIV")) statusClass = "status-aktiv";
+                else if (status.includes("VERLETZT")) statusClass = "status-verletzt";
+                else if (status.includes("AUFBAU")) statusClass = "status-reha";
+                else if (status.includes("NICHT_IN_LIGA")) statusClass = "status-nichtliga";
 
-        // Marktwert
-        let marketValue = 'Unbekannt';
-        let marketValueSort = 0;
-        if (player.data?.wert) {
-            marketValueSort = player.data.wert;
-            marketValue = marketValueSort < 1000000
-                ? `${(marketValueSort / 1000).toFixed(0)} Tsd. €`
-                : `${(marketValueSort / 1000000).toFixed(2)} Mio. €`;
+                // Marktwert
+                let marketValue = 'Unbekannt';
+                let marketValueSort = 0;
+                if (player.data?.wert) {
+                    marketValueSort = player.data.wert;
+                    marketValue = marketValueSort < 1000000
+                        ? `${(marketValueSort / 1000).toFixed(0)} Tsd. €`
+                        : `${(marketValueSort / 1000000).toFixed(2)} Mio. €`;
+                }
+
+                const owner = ownersMap.get(player.id) || 'Kein Besitzer';
+                const points = player.data?.punkte || 0;
+                const lastUpdate = player.data?.lastUpdate || 'Unbekannt';
+
+                row.innerHTML = `
+                    <td data-sort="${playerName}">${playerNameHtml}</td>
+                    <td data-sort="${clubName}">${logoHtml}</td>
+                    <td data-sort="${position}">${positionHtml}</td>
+                    <td data-sort="${status}" class="${statusClass}">${status}</td>
+                    <td data-sort="${marketValueSort}">${marketValue}</td>
+                    <td data-sort="${points}">${points}</td>
+                    <td data-sort="${lastUpdate}">${lastUpdate}</td>
+                    <td data-sort="${owner}">${owner}</td>
+                `;
+                tableBody.appendChild(row);
+            });
         }
-
-        const owner = ownersMap.get(player.id) || 'Kein Besitzer';
-        const points = player.data?.punkte || 0;
-        const lastUpdate = player.data?.lastUpdate || 'Unbekannt';
-
-        row.innerHTML = `
-            <td data-sort="${playerName}">${playerNameHtml}</td>
-            <td data-sort="${clubName}">${logoHtml}</td>
-            <td data-sort="${position}">${positionHtml}</td>
-            <td data-sort="${status}" class="${statusClass}">${status}</td>
-            <td data-sort="${marketValueSort}">${marketValue}</td>
-            <td data-sort="${points}">${points}</td>
-            <td data-sort="${lastUpdate}">${lastUpdate}</td>
-            <td data-sort="${owner}">${owner}</td>
-        `;
-        tableBody.appendChild(row);
-    });
-}
-
 
         function applyFilters() {
             const searchTerm = document.getElementById('search').value.toLowerCase();
