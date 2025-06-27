@@ -590,41 +590,27 @@
             window.location.href = "https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/index.html";
         }
         
-        function getLogoFileName(clubName) {
+        function getLogoFileName(clubId) {
             if (!clubName) return "unbestimmt.png";
             const mapping = {
-                "Borussia Mönchengladbach": "gladbach",
-                "Gladbach": "gladbach",
-                "Sport-Club Freiburg": "freiburg",
-                "SC Freiburg": "freiburg",
-                "Freiburg": "freiburg",
-                "1. FSV Mainz 05": "mainz",
-                "1.FSV Mainz 05": "mainz",
-                "RB Leipzig": "leipzig",
-                "FC Bayern München": "bayern",
-                "SV Werder Bremen": "werderBremen",
-                "VfL Wolfsburg": "wolfsburg",
-                "Borussia Dortmund": "dortmund",
-                "Dortmund": "dortmund",
-                "Bayer 04 Leverkusen": "leverkusen",
-                "Leverkusen": "leverkusen",
-                "1. FC Köln": "koeln",
-                "1.FC Köln": "koeln",
-                "Köln": "koeln",
-                "VfB Stuttgart": "stuttgart",
-                "TSG Hoffenheim": "hoffenheim",
-                "FC Augsburg": "augsburg",
-                "Eintracht Frankfurt": "frankfurt",
-                "1.FC Union Berlin": "unionBerlin",
-                "Union Berlin": "unionBerlin",
-                "1. FC Union Berlin": "unionBerlin",
-                "1.FC Heidenheim": "heidenheim",
-                "1. FC Heidenheim": "heidenheim",
-                "Heidenheim": "heidenheim",
-                "FC St. Pauli": "stpauli",
-                "St. Pauli": "stpauli",
-                "Hamburger SV": "hamburg",
-                "Hamburg": "hamburg"
+                "3": "gladbach",
+                "21": "freiburg",
+                "18": "mainz",
+                "92": "leipzig",
+                "1": "bayern",
+                "6": "werderBremen",
+                "12": "wolfsburg",
+                "5": "dortmund",
+                "8": "leverkusen",
+                "13": "koeln",
+                "14": "stuttgart",
+                "533": "hoffenheim",
+                "68": "augsburg",
+                "9": "frankfurt",
+                "109": "unionBerlin",
+                "110": "heidenheim",
+                "25": "stpauli",
+                "4": "hamburg",
             };
             return (mapping[clubName] || "unbestimmt") + ".png";
         }
@@ -962,7 +948,7 @@
                 
                 const clubId = player.data.verein || "0";
                 const clubName = await loadClubData(clubId);
-                const logoFile = getLogoFileName(clubName);
+                const logoFile = getLogoFileName(clubId);
                 const clubLogo = document.getElementById('clubLogo');
                 clubLogo.innerHTML = `<img src="logos/${logoFile}" alt="${clubName}" style="width:100%;height:100%;object-fit:contain">`;
                 logDebug('Vereinslogo gesetzt für: ' + clubName);
