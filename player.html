@@ -5,22 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spieler Details</title>
     <style>
-        /* Kompaktes Design */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-size: 14px;
-        }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             color: #333;
-            padding: 0;
+            padding-bottom: 140px;
         }
-
+        .debug-panel {
+            background: #222;
+            color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            position: fixed;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            max-height: 120px;
+            overflow-y: auto;
+            z-index: 9999;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .debug-panel .debug-header {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 10px;
+        }
+        .debug-panel .debug-clear-btn {
+            background: #e74c3c; color: #fff; border: none; border-radius: 4px;
+            padding: 3px 10px; font-size: 12px; cursor: pointer;
+        }
+        .debug-toggle-btn {
+            position: fixed; bottom: 150px; left: 20px;
+            background: #3498db;
+            color: #fff; border: none;
+            border-radius: 5px; padding: 5px 12px;
+            font-size: 13px; cursor: pointer; z-index: 10000;
+        }
         .navbar {
             background: linear-gradient(135deg, #34495e, #2c3e50);
             color: white;
@@ -30,7 +52,6 @@
             gap: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
-
         .back-btn {
             background: rgba(255,255,255,0.2);
             border: none;
@@ -41,18 +62,12 @@
             border-radius: 5px;
             transition: all 0.3s ease;
         }
-
-        .back-btn:hover {
-            background: rgba(255,255,255,0.3);
-        }
-
         .player-header {
             display: flex;
             align-items: center;
             gap: 10px;
             flex: 1;
         }
-
         .club-logo {
             width: 35px;
             height: 35px;
@@ -65,12 +80,7 @@
             font-weight: bold;
             font-size: 14px;
         }
-
-        .player-name {
-            font-size: 18px;
-            font-weight: bold;
-        }
-
+        .player-name { font-size: 18px; font-weight: bold; }
         .status-icon {
             padding: 4px 8px;
             border-radius: 15px;
@@ -78,221 +88,35 @@
             font-weight: bold;
             text-transform: uppercase;
         }
-
         .status-aktiv { background: linear-gradient(135deg, #27ae60, #229954); }
         .status-verletzt { background: linear-gradient(135deg, #e74c3c, #c0392b); }
         .status-reha { background: linear-gradient(135deg, #f39c12, #e67e22); }
         .status-nicht_in_liga { background: linear-gradient(135deg, #95a5a6, #7f8c8d); }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 15px;
         }
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-
-        .info-card {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 10px;
-            padding: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .info-card h3 {
-            margin-bottom: 12px;
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
-            font-size: 16px;
-        }
-
-        .info-row {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 8px;
-            padding: 5px 0;
-            border-bottom: 1px solid #eee;
-        }
-
-        .info-row:last-child {
-            border-bottom: none;
-        }
-
-        .info-label {
-            font-weight: 600;
-            color: #7f8c8d;
-            font-size: 13px;
-        }
-
-        .info-value {
-            font-weight: 600;
-            color: #2c3e50;
-            font-size: 13px;
-        }
-
-        .tabs {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-
-        .tab-buttons {
-            display: flex;
-            background: linear-gradient(135deg, #34495e, #2c3e50);
-        }
-
-        .tab-button {
-            flex: 1;
-            padding: 12px;
-            border: none;
-            background: none;
-            color: white;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 13px;
-            transition: all 0.3s;
-            border-bottom: 2px solid transparent;
-        }
-
-        .tab-button.active {
-            background: linear-gradient(135deg, #3498db, #2980b9);
-            border-bottom-color: #f1c40f;
-        }
-
-        .tab-content {
-            display: none;
-            padding: 15px;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            font-size: 13px;
-        }
-
-        .data-table th,
-        .data-table td {
-            padding: 10px;
-            text-align: left;
-            border-bottom: 1px solid #ecf0f1;
-        }
-
-        .data-table th {
-            background: linear-gradient(135deg, #3498db, #2980b9);
-            color: white;
-            font-weight: bold;
-        }
-
-        .data-table tr:hover {
-            background-color: #f8f9fa;
-        }
-
-        .own-player {
-            background-color: #e3f2fd !important;
-        }
-
-        .current-player {
-            background-color: #fff3cd !important;
-            font-weight: bold;
-        }
-
-        .trend-up {
-            color: #27ae60;
-            font-weight: bold;
-        }
-
-        .trend-down {
-            color: #e74c3c;
-            font-weight: bold;
-        }
-
-        .attributes {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            margin-top: 10px;
-        }
-
-        .attribute-tag {
-            background: linear-gradient(135deg, #9b59b6, #8e44ad);
-            color: white;
-            padding: 4px 8px;
-            border-radius: 15px;
-            font-size: 12px;
-            font-weight: 600;
-        }
-
-        .loading-spinner {
-            display: inline-block;
-            width: 25px;
-            height: 25px;
-            border: 3px solid #f3f3f3;
-            border-top: 3px solid #3498db;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 20px auto;
-        }
-
-        .error-message {
-            text-align: center;
-            color: #e74c3c;
-            font-size: 16px;
-            margin: 20px;
-            padding: 20px;
-            background: rgba(255,255,255,0.9);
-            border-radius: 10px;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-            
-            .tab-buttons {
-                flex-direction: column;
-            }
-            
-            .info-grid {
-                grid-template-columns: 1fr;
-                gap: 10px;
-            }
-            
-            .player-header {
-                flex-wrap: wrap;
-            }
-
-            .navbar {
-                padding: 8px;
-            }
-
-            .player-name {
-                font-size: 16px;
-            }
-        }
+        .info-card { background: rgba(255,255,255,0.95); border-radius: 10px; padding: 15px; margin-bottom: 15px;}
+        .info-card h3 { margin-bottom: 12px; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; font-size: 16px;}
+        .info-row { display: flex; justify-content: space-between; margin-bottom: 8px; padding: 5px 0; border-bottom: 1px solid #eee;}
+        .info-row:last-child { border-bottom: none;}
+        .info-label { font-weight: 600; color: #7f8c8d; font-size: 13px;}
+        .info-value { font-weight: 600; color: #2c3e50; font-size: 13px;}
+        .loading-spinner { display: inline-block; width: 25px; height: 25px; border: 3px solid #f3f3f3; border-top: 3px solid #3498db; border-radius: 50%; animation: spin 1s linear infinite; margin: 20px auto;}
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .error-message { text-align: center; color: #e74c3c; font-size: 16px; margin: 20px; padding: 20px; background: rgba(255,255,255,0.9); border-radius: 10px;}
     </style>
 </head>
 <body>
+    <button class="debug-toggle-btn" onclick="toggleDebugPanel()">🐞 Debug</button>
+    <div class="debug-panel" id="debugPanel">
+        <div class="debug-header">
+            <span><b>Debug-Informationen</b></span>
+            <button class="debug-clear-btn" onclick="clearDebug()">Löschen</button>
+        </div>
+        <div id="debugContent"></div>
+    </div>
     <nav class="navbar">
         <button class="back-btn" onclick="goBack()">← Zurück</button>
         <div class="player-header">
@@ -301,346 +125,101 @@
             <span class="status-icon" id="statusIcon">Status</span>
         </div>
     </nav>
-
     <div class="container">
         <div id="loadingIndicator" class="loading-spinner"></div>
         <div id="errorMessage" class="error-message" style="display: none;"></div>
         <div id="playerContent" style="display: none;">
-            <div class="info-grid">
-                <!-- Spieler-Informationen -->
-                <div class="info-card">
-                    <h3>📋 Spieler-Informationen</h3>
-                    <div class="info-row">
-                        <span class="info-label">Geburtstag:</span>
-                        <span class="info-value" id="birthday">-</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Alter:</span>
-                        <span class="info-value" id="age">-</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Größe:</span>
-                        <span class="info-value" id="height">-</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Nationalität:</span>
-                        <span class="info-value" id="nationality">-</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Position:</span>
-                        <span class="info-value" id="position">-</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Hauptfuß:</span>
-                        <span class="info-value" id="foot">-</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Trikotnummer:</span>
-                        <span class="info-value" id="jerseyNumber">-</span>
-                    </div>
-                </div>
-
-                <!-- Comunio-Bereich -->
-                <div class="info-card">
-                    <h3>⚽ Comunio</h3>
-                    <div class="info-row">
-                        <span class="info-label">Position:</span>
-                        <span class="info-value" id="comunioPosition">-</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Marktwert:</span>
-                        <span class="info-value" id="marketValue">-</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Punkte (letztes Jahr):</span>
-                        <span class="info-value" id="lastYearPoints">-</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Besitzer:</span>
-                        <span class="info-value" id="owner">-</span>
-                    </div>
-                </div>
-
-                <!-- Status & Statistik -->
-                <div class="info-card">
-                    <h3>📊 Status & Statistik</h3>
-                    <div class="info-row">
-                        <span class="info-label">Status:</span>
-                        <span class="info-value" id="detailStatus">-</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Spiele:</span>
-                        <span class="info-value" id="gamesPlayed">-</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Tore:</span>
-                        <span class="info-value" id="goals">-</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Notenschnitt:</span>
-                        <span class="info-value" id="averageRating">-</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Gelbe Karten:</span>
-                        <span class="info-value" id="yellowCards">-</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Rote Karten:</span>
-                        <span class="info-value" id="redCards">-</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Attribute -->
-            <div class="info-card" id="attributesCard" style="display: none;">
-                <h3>⭐ Besondere Eigenschaften</h3>
-                <div class="attributes" id="attributesList"></div>
-            </div>
-
-            <!-- Tabs -->
-            <div class="tabs">
-                <div class="tab-buttons">
-                    <button class="tab-button active" onclick="showTab('rivals')">👥 Team Rivalen</button>
-                    <button class="tab-button" onclick="showTab('points')">📈 Punktehistorie</button>
-                    <button class="tab-button" onclick="showTab('market')">💰 Marktwert</button>
-                </div>
-
-                <!-- Team Rivalen Tab -->
-                <div class="tab-content active" id="rivals">
-                    <h4>Spieler der gleichen Position im Verein</h4>
-                    <table class="data-table" id="rivalsTable">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Marktwert</th>
-                                <th>Punkte</th>
-                                <th>Besitzer</th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-                </div>
-
-                <!-- Punktehistorie Tab -->
-                <div class="tab-content" id="points">
-                    <h4>Aktuelle Saison (Spieltage 1-34)</h4>
-                    <table class="data-table" id="currentSeasonTable">
-                        <thead>
-                            <tr>
-                                <th>Spieltag</th>
-                                <th>Punkte</th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-                    
-                    <h4 style="margin-top: 1.5rem;">Jahresübersicht</h4>
-                    <table class="data-table" id="yearlyTable">
-                        <thead>
-                            <tr>
-                                <th>Jahr</th>
-                                <th>Punkte</th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-                </div>
-
-                <!-- Marktwert Tab -->
-                <div class="tab-content" id="market">
-                    <h4>Marktwertentwicklung</h4>
-                    <table class="data-table" id="marketTable">
-                        <thead>
-                            <tr>
-                                <th>Datum</th>
-                                <th>Wert</th>
-                                <th>Trend</th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-                </div>
+            <div class="info-card">
+                <h3>📋 Spieler-Informationen</h3>
+                <div class="info-row"><span class="info-label">Geburtstag:</span><span class="info-value" id="birthday">-</span></div>
+                <div class="info-row"><span class="info-label">Alter:</span><span class="info-value" id="age">-</span></div>
+                <div class="info-row"><span class="info-label">Größe:</span><span class="info-value" id="height">-</span></div>
+                <div class="info-row"><span class="info-label">Nationalität:</span><span class="info-value" id="nationality">-</span></div>
+                <div class="info-row"><span class="info-label">Position:</span><span class="info-value" id="position">-</span></div>
+                <div class="info-row"><span class="info-label">Hauptfuß:</span><span class="info-value" id="foot">-</span></div>
+                <div class="info-row"><span class="info-label">Trikotnummer:</span><span class="info-value" id="jerseyNumber">-</span></div>
             </div>
         </div>
     </div>
-
     <script>
-        // Spieler-ID aus URL holen
+        let debugMode = true;
+        function toggleDebugPanel() {
+            debugMode = !debugMode;
+            document.getElementById('debugPanel').style.display = debugMode ? 'block' : 'none';
+        }
+        function logDebug(msg) {
+            if (!debugMode) return;
+            const debugContent = document.getElementById('debugContent');
+            const timestamp = new Date().toLocaleTimeString('de-DE');
+            debugContent.innerHTML += `<div>[${timestamp}] ${msg}</div>`;
+            debugContent.scrollTop = debugContent.scrollHeight;
+        }
+        function clearDebug() {
+            document.getElementById('debugContent').innerHTML = '';
+        }
+
         function getPlayerId() {
             const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get('id');
+            const playerId = urlParams.get('id');
+            logDebug('URL: ' + window.location.href);
+            logDebug('playerId aus URL: ' + playerId);
+            return playerId;
         }
-
-        // Zurück zur Übersicht
         function goBack() {
-            window.location.href = "https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/index.html";
+            window.location.href = "index.html";
         }
 
-        // Tab-Funktionalität
-        function showTab(tabName) {
-            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
-            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-            document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
-        }
-
-        // Daten für einen Spieler laden
-        async function loadPlayerData(playerId) {
+        document.addEventListener('DOMContentLoaded', async () => {
+            logDebug('player.html geladen');
+            const playerId = getPlayerId();
+            if (!playerId) {
+                logDebug('Keine Spieler-ID in der URL gefunden!');
+                document.getElementById('errorMessage').textContent = "Keine Spieler-ID in der URL gefunden!";
+                document.getElementById('errorMessage').style.display = 'block';
+                document.getElementById('loadingIndicator').style.display = 'none';
+                return;
+            }
             try {
-                // Alle Spieler laden
-                const response = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/SpielerdatenbankNeutralJson.txt');
-                const allPlayers = await response.json();
-                
-                // Spieler mit der ID finden
-                const player = allPlayers.find(p => p.id == playerId);
-                
+                logDebug('Lade Spielerdaten...');
+                const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/SpielerdatenbankNeutralJson.txt');
+                const allPlayers = await resp.json();
+                const player = allPlayers.find(p => String(p.id) === String(playerId));
                 if (!player) {
-                    showError("Spieler nicht gefunden!");
+                    logDebug('Spieler nicht gefunden!');
+                    document.getElementById('errorMessage').textContent = "Spieler nicht gefunden!";
+                    document.getElementById('errorMessage').style.display = 'block';
+                    document.getElementById('loadingIndicator').style.display = 'none';
                     return;
                 }
-                
-                // Spieler anzeigen
-                displayPlayer(player);
-                
-                // Zusätzliche Daten laden
-                await loadAdditionalData(player);
-                
-            } catch (error) {
-                showError("Fehler beim Laden der Daten: " + error.message);
+                logDebug('Spieler gefunden: ' + player.name);
+                document.getElementById('playerName').textContent = player.name;
+                document.getElementById('clubLogo').textContent = (player.data.verein || '?').substring(0,3).toUpperCase();
+                document.getElementById('statusIcon').textContent = player.data.comunioStatus.status || '-';
+                document.getElementById('statusIcon').className = 'status-icon status-' + ((player.data.comunioStatus.status || '').toLowerCase());
+                document.getElementById('birthday').textContent = player.data.spielerDaten.geburtstag || '-';
+                document.getElementById('age').textContent = calcAge(player.data.spielerDaten.geburtstag);
+                document.getElementById('height').textContent = player.data.spielerDaten.groesse || '-';
+                document.getElementById('nationality').textContent = player.data.spielerDaten.nationalitaet || '-';
+                document.getElementById('position').textContent = player.data.spielerDaten.hauptposition || player.data.position || '-';
+                document.getElementById('foot').textContent = player.data.spielerDaten.fuss || '-';
+                document.getElementById('jerseyNumber').textContent = player.data.spielerDaten.trikotNummer || '-';
+                document.getElementById('loadingIndicator').style.display = 'none';
+                document.getElementById('playerContent').style.display = 'block';
+            } catch (err) {
+                logDebug('Fehler beim Laden: ' + err.message);
+                document.getElementById('errorMessage').textContent = "Fehler beim Laden der Daten: " + err.message;
+                document.getElementById('errorMessage').style.display = 'block';
+                document.getElementById('loadingIndicator').style.display = 'none';
             }
-        }
+        });
 
-        // Spieler anzeigen
-        function displayPlayer(player) {
-            // Header aktualisieren
-            document.getElementById('playerName').textContent = player.name;
-            
-            // Vereinslogo (Initialen)
-            const clubName = player.data.verein;
-            const clubInitials = clubName.split(' ').map(word => word[0]).join('').substring(0, 3);
-            document.getElementById('clubLogo').textContent = clubInitials;
-            
-            // Status
-            const status = player.data.comunioStatus.status || 'Unbekannt';
-            document.getElementById('statusIcon').textContent = status;
-            document.getElementById('statusIcon').className = `status-icon status-${status.toLowerCase()}`;
-            
-            // Spielerinfos
-            document.getElementById('birthday').textContent = player.data.spielerDaten.geburtstag || '-';
-            document.getElementById('age').textContent = calculateAge(player.data.spielerDaten.geburtstag) || '-';
-            document.getElementById('height').textContent = player.data.spielerDaten.groesse || '-';
-            document.getElementById('nationality').textContent = player.data.spielerDaten.nationalitaet || '-';
-            document.getElementById('position').textContent = player.data.spielerDaten.hauptposition || player.data.position || '-';
-            document.getElementById('foot').textContent = player.data.spielerDaten.fuss || '-';
-            document.getElementById('jerseyNumber').textContent = player.data.spielerDaten.trikotNummer || '-';
-            
-            // Comunio-Daten
-            document.getElementById('comunioPosition').textContent = player.data.position || '-';
-            document.getElementById('marketValue').textContent = formatCurrency(player.data.wert);
-            document.getElementById('lastYearPoints').textContent = player.data.lastSeasonPoints || '-';
-            document.getElementById('owner').textContent = getOwner(player.id) || '-';
-            
-            // Statistiken
-            document.getElementById('detailStatus').textContent = player.data.comunioStatus.details || status;
-            document.getElementById('gamesPlayed').textContent = player.data.stats.playedGames || '-';
-            document.getElementById('goals').textContent = player.data.stats.totalGoals || '-';
-            document.getElementById('averageRating').textContent = player.data.stats.notenDurchschnitt || '-';
-            document.getElementById('yellowCards').textContent = player.data.stats.gelbekarten || '-';
-            document.getElementById('redCards').textContent = player.data.stats.rotekarten || '-';
-            
-            // Attribute
-            displayAttributes(player);
-            
-            // Inhalt anzeigen
-            document.getElementById('loadingIndicator').style.display = 'none';
-            document.getElementById('playerContent').style.display = 'block';
-        }
-
-        // Hilfsfunktionen
-        function calculateAge(birthday) {
+        function calcAge(birthday) {
             if (!birthday || birthday === 'N/A') return '-';
             const birthDate = new Date(birthday.split('.').reverse().join('-'));
             const diff = Date.now() - birthDate.getTime();
             const ageDate = new Date(diff);
             return Math.abs(ageDate.getUTCFullYear() - 1970) + ' Jahre';
         }
-
-        function formatCurrency(value) {
-            if (!value) return '-';
-            if (value >= 1000000) return (value / 1000000).toFixed(1) + ' Mio €';
-            if (value >= 1000) return (value / 1000).toFixed(0) + ' Tsd €';
-            return value + ' €';
-        }
-
-        function getOwner(playerId) {
-            // Hier müsste die Logik zur Besitzerermittlung implementiert werden
-            return "Computer"; // Platzhalter
-        }
-
-        function displayAttributes(player) {
-            const container = document.getElementById('attributesList');
-            container.innerHTML = '';
-            
-            if (player.data.attribute && player.data.attribute.length > 0) {
-                document.getElementById('attributesCard').style.display = 'block';
-                player.data.attribute.forEach(attr => {
-                    const span = document.createElement('span');
-                    span.className = 'attribute-tag';
-                    span.textContent = attr;
-                    container.appendChild(span);
-                });
-            } else {
-                document.getElementById('attributesCard').style.display = 'none';
-            }
-        }
-
-        async function loadAdditionalData(player) {
-            try {
-                // Beispiel: Team-Rivalen laden
-                const response = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/SpielerdatenbankNeutralJson.txt');
-                const allPlayers = await response.json();
-                
-                // Spieler mit gleichem Verein und Position
-                const rivals = allPlayers.filter(p => 
-                    p.data.verein === player.data.verein && 
-                    p.data.position === player.data.position
-                );
-                
-                // Tabelle füllen
-                const rivalsTable = document.querySelector('#rivalsTable tbody');
-                rivalsTable.innerHTML = '';
-                rivals.forEach(rival => {
-                    const row = rivalsTable.insertRow();
-                    row.innerHTML = `
-                        <td>${rival.name}</td>
-                        <td>${formatCurrency(rival.data.wert)}</td>
-                        <td>${rival.data.punkte || 0}</td>
-                        <td>${getOwner(rival.id)}</td>
-                    `;
-                });
-                
-                // Weitere Daten (Punktehistorie, Marktwerte) hier laden...
-                
-            } catch (error) {
-                console.error("Fehler beim Laden zusätzlicher Daten", error);
-            }
-        }
-
-        function showError(message) {
-            document.getElementById('loadingIndicator').style.display = 'none';
-            document.getElementById('errorMessage').textContent = message;
-            document.getElementById('errorMessage').style.display = 'block';
-        }
-
-        // Seite initialisieren
-        document.addEventListener('DOMContentLoaded', () => {
-            const playerId = getPlayerId();
-            if (playerId) {
-                loadPlayerData(playerId);
-            } else {
-                showError("Keine Spieler-ID in der URL gefunden!");
-            }
-        });
     </script>
 </body>
 </html>
