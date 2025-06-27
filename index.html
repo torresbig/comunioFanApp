@@ -145,7 +145,7 @@
             players: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/SpielerdatenbankNeutralJson.txt`,
             users: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/UserdatenbankJson_884691.txt`,
             playerToUser: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/PlayerToUserMap_884691.txt`,
-									marktwerte: 'https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/MarktwerteJson.txt'
+	marktwerte: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/MarktwerteJson.txt`
         };
 
         function getLogoFileName(clubName) {
@@ -231,11 +231,13 @@
                     Clubs: ${DATA_URLS.clubs}
                     Players: ${DATA_URLS.players}
                     Users: ${DATA_URLS.users}
-                    PlayerToUser: ${DATA_URLS.playerToUser}`);
+                    PlayerToUser: ${DATA_URLS.playerToUser}
+		    Marktwerte: ${DATA_URLS.marktwerte}`);
                 const [clubsData, playersData, usersData, playerToUserMap] = await Promise.all([
                     fetchJSON(DATA_URLS.clubs),
                     fetchJSON(DATA_URLS.players),
                     fetchJSON(DATA_URLS.users),
+			fetchJSON(DATA_URLS.marktwerte),
                     fetchJSON(DATA_URLS.playerToUser)
                 ]);
                 showUpdate("⚙️ Verarbeite Daten...");
@@ -244,8 +246,9 @@
                     Clubs: ${clubsData.length}
                     Players: ${playersData.length}
                     Users: ${usersData.length}
-                    PlayerToUser: ${playerToUserMap.length}`);
-                processData(clubsData, playersData, usersData, playerToUserMap);
+                    PlayerToUser: ${playerToUserMap.length}
+		     Marktwerte: ${DATA_URLS.marktwerte}`);
+                processData(clubsData, playersData, usersData, playerToUserMap, marktwerte);
                 lastUpdateTime = new Date();
                 hideLoading();
                 showStats();
@@ -285,7 +288,7 @@
             }
         }
 
-        function processData(clubsData, playersData, usersData, playerToUserMap) {
+        function processData(clubsData, playersData, usersData, playerToUserMap, marktwerte) {
             addDebug("Starte Datenverarbeitung...");
             clubsMap = new Map();
             clubsData.forEach(club => {
