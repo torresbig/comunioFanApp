@@ -309,7 +309,7 @@
             });
             allPlayers.forEach(player => {
                 if (!ownersMap.has(player.id)) {
-                    ownersMap.set(player.id, "Kein Besitzer");
+                    ownersMap.set(player.id, "Computer");
                 }
             });
             addDebug(`Besitzerzuordnungen: ${ownersMap.size}`);
@@ -332,7 +332,7 @@
 
         function initOwnerFilter() {
             const ownerFilter = document.getElementById('owner');
-            ownerFilter.innerHTML = '<option value="">Alle Besitzer</option><option value="Kein Besitzer">Kein Besitzer</option>';
+            ownerFilter.innerHTML = '<option value="">Alle Besitzer</option>';
             const ownerSet = new Set(ownersMap.values());
             ownerSet.forEach(owner => {
                 if (owner !== "Kein Besitzer") {
@@ -449,7 +449,7 @@ function getPlayerUrl(playerId) {
                         ? `${(marketValueSort / 1000).toFixed(0)} Tsd. €`
                         : `${(marketValueSort / 1000000).toFixed(2)} Mio. €`;
                 }
-                const owner = ownersMap.get(player.id) || 'Kein Besitzer';
+                const owner = ownersMap.get(player.id) || 'Computer';
                 const points = player.data?.punkte || 0;
                 const lastUpdate = player.data?.lastUpdate || 'Unbekannt';
                 row.innerHTML = `
