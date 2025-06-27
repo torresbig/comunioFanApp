@@ -667,7 +667,10 @@
                 'VERLETZT': 'Verletzt',
                 'REHA': 'Reha',
                 'AUFBAUTRAINING': 'Aufbautraining',
-													'NICHT_IM_KADER': 'Nicht im Kader',
+		'NICHT_IM_KADER': 'Nicht im Kader',
+		'ROTE_KARTE': 'Rote Karte',
+		'GELBROTE_KARTE': 'Gelbrote Karte',
+		'FUENFTE_GELBE_KARTE': '5. gelbe Karte',
                 'NICHT_IN_LIGA': 'Nicht in Liga'
             };
             return statusMap[status] || status || 'Unbekannt';
@@ -750,24 +753,33 @@
         function getStatusIndicator(status) {
             switch(status) {
                 case 'AKTIV': return '👍';
-                case 'VERLETZT': return '👎';
+                case 'VERLETZT': return '🚨';
                 case 'REHA': return '🔄';
-                case 'AUFBAUTRAINING': return '🔄';
+                case 'AUFBAUTRAINING': return '🏋️💪';
                 case 'NICHT_IN_LIGA': return '❌';
+		case 'FUENFTE_GELBE_KARTE': return '🟨';
+		case 'GELBROTE_KARTE': return '🟨🟥';
+		case 'ROTE_KARTE': return '🟥';
+		case 'NICHT_IM_KADER': return '🚫';
                 default: return '❓';
             }
         }
 
         function getStatusIcon(status) {
-            switch(status) {
-                case 'AKTIV': return '<span class="status-icon-active">✓</span>';
-                case 'VERLETZT': return '<span class="status-icon-injured">⚠️</span>';
-                case 'REHA': return '<span class="status-icon-rehab">🔄</span>';
-                case 'AUFBAUTRAINING': return '<span class="status-icon-rehab">🔄</span>';
-                case 'NICHT_IN_LIGA': return '<span class="status-icon-not-in-squad">✗</span>';
-                default: return '<span>❓</span>';
-            }
-        }
+    switch(status) {
+        case 'AKTIV': return '<span class="status-icon-active">✓</span>';
+        case 'VERLETZT': return '<span class="status-icon-injured">⚠️</span>';
+        case 'REHA': return '<span class="status-icon-rehab">🔄</span>';
+        case 'AUFBAUTRAINING': return '<span class="status-icon-rehab">🏋️</span>'; // oder: 🏋️💪
+        case 'NICHT_IN_LIGA': return '<span class="status-icon-not-in-squad">✗</span>';
+        case 'FUENFTE_GELBE_KARTE': return '<span class="status-icon-card-yellow">🟨</span>';
+        case 'GELBROTE_KARTE': return '<span class="status-icon-card-yellow-red">🟨🟥</span>';
+        case 'ROTE_KARTE': return '<span class="status-icon-card-red">🟥</span>';
+        case 'NICHT_IM_KADER': return '<span class="status-icon-not-in-squad">🚫</span>';
+        default: return '<span class="status-icon-default">❓</span>';
+    }
+}
+
         
         function displayRivals(player, allPlayers) {
             const container = document.getElementById('rivalsList');
@@ -969,15 +981,15 @@
                 
                 document.getElementById('comunioPosition').textContent = player.data.position || '-';
                 document.getElementById('marketValue').textContent = formatCurrencyShort(player.data.wert);
-                document.getElementById('lastYearPoints').textContent = player.data.lastSeasonPoints || '-';
+                document.getElementById('lastYearPoints').textContent = player.data.lastSeasonPoints || '0';
                 document.getElementById('owner').textContent = getOwnerName(player.id) || '-';
                 
                 document.getElementById('detailStatus').textContent = player.data.comunioStatus.details || getStatusDisplayName(status);
-                document.getElementById('gamesPlayed').textContent = player.data.stats.playedGames || '-';
-                document.getElementById('goals').textContent = player.data.stats.totalGoals || '-';
-                document.getElementById('averageRating').textContent = player.data.stats.notenDurchschnitt || '-';
-                document.getElementById('yellowCards').textContent = player.data.stats.gelbekarten || '-';
-                document.getElementById('redCards').textContent = player.data.stats.rotekarten || '-';
+                document.getElementById('gamesPlayed').textContent = player.data.stats.playedGames || '0';
+                document.getElementById('goals').textContent = player.data.stats.totalGoals || '0';
+                document.getElementById('averageRating').textContent = player.data.stats.notenDurchschnitt || '0';
+                document.getElementById('yellowCards').textContent = player.data.stats.gelbekarten || '0';
+                document.getElementById('redCards').textContent = player.data.stats.rotekarten || '0';
                 
                 displayAttributes(player);
                 
