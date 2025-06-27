@@ -121,14 +121,14 @@
                 <table id="playerTable">
                     <thead>
                         <tr>
-                            <th data-sort="string">Spieler (ID)</th>
+                            <th data-sort="string">Spieler</th>
                             <th data-sort="string">Verein</th>
                             <th data-sort="string">Position</th>
                             <th data-sort="string">Status</th>
                             <th data-sort="value">Marktwert</th>
                             <th data-sort="number">Punkte</th>
-                            <th data-sort="string">Letztes Update</th>
                             <th data-sort="string">Besitzer</th>
+			    <th data-sort="string">Letztes Update</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
@@ -237,7 +237,7 @@
                     fetchJSON(DATA_URLS.clubs),
                     fetchJSON(DATA_URLS.players),
                     fetchJSON(DATA_URLS.users),
-			fetchJSON(DATA_URLS.marktwerte),
+		    fetchJSON(DATA_URLS.marktwerte),
                     fetchJSON(DATA_URLS.playerToUser)
                 ]);
                 showUpdate("⚙️ Verarbeite Daten...");
@@ -247,7 +247,7 @@
                     Players: ${playersData.length}
                     Users: ${usersData.length}
                     PlayerToUser: ${playerToUserMap.length}
-		     Marktwerte: ${DATA_URLS.marktwerte}`);
+		    Marktwerte: ${marktwerte.length}`);
                 processData(clubsData, playersData, usersData, playerToUserMap, marktwerte);
                 lastUpdateTime = new Date();
                 hideLoading();
@@ -463,8 +463,9 @@ function getPlayerUrl(playerId) {
                     <td data-sort="${status}" class="${statusClass}">${status}</td>
                     <td data-sort="${marketValueSort}">${marketValue}</td>
                     <td data-sort="${points}">${points}</td>
+		    <td data-sort="${owner}">${owner}</td>
                     <td data-sort="${lastUpdate}">${lastUpdate}</td>
-                    <td data-sort="${owner}">${owner}</td>
+                    
                 `;
                 tableBody.appendChild(row);
             });
