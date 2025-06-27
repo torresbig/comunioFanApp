@@ -5,12 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spieler Details</title>
     <style>
-        /* Ursprüngliches CSS bleibt erhalten */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; color: #333; padding-bottom: 140px; }
-        /* ... (vorhandene Stile beibehalten) ... */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        /* Neue Stile für Zentrierung und Tabs */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            padding-bottom: 140px;
+        }
+
+        .debug-panel {
+            background: #222;
+            color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            position: fixed;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            max-height: 120px;
+            overflow-y: auto;
+            z-index: 9999;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .debug-panel .debug-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .debug-panel .debug-clear-btn {
+            background: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 3px 10px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .debug-toggle-btn {
+            position: fixed;
+            bottom: 150px;
+            left: 20px;
+            background: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 12px;
+            font-size: 13px;
+            cursor: pointer;
+            z-index: 10000;
+        }
+
+        .navbar {
+            background: linear-gradient(135deg, #34495e, #2c3e50);
+            color: white;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .back-btn {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
         .player-header-center {
             display: flex;
             flex-direction: column;
@@ -20,6 +97,145 @@
             text-align: center;
         }
 
+        .club-logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: contain;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #3498db;
+            color: white;
+            font-weight: bold;
+            overflow: hidden;
+        }
+
+        .club-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .player-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .player-name:hover {
+            text-decoration: underline;
+        }
+
+        .status-icon {
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .status-aktiv { background: linear-gradient(135deg, #27ae60, #229954); }
+        .status-verletzt { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+        .status-reha { background: linear-gradient(135deg, #f39c12, #e67e22); }
+        .status-aufbautraining { background: linear-gradient(135deg, #FFA500, #FF8C00); }
+        .status-nicht_in_liga { background: linear-gradient(135deg, #95a5a6, #7f8c8d); }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        .info-card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .info-card h3 {
+            margin-bottom: 12px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #7f8c8d;
+            font-size: 13px;
+            flex: 1;
+        }
+
+        .info-value {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 13px;
+            flex: 1;
+            text-align: right;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error-message {
+            text-align: center;
+            color: #e74c3c;
+            font-size: 16px;
+            margin: 20px;
+            padding: 20px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 10px;
+        }
+
+        .attributes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        .attribute-tag {
+            background: linear-gradient(135deg, #9b59b6, #8e44ad);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
         .tabs {
             display: flex;
             justify-content: center;
@@ -71,7 +287,6 @@
             transition: max-height 0.3s ease;
         }
 
-        /* Weitere Anpassungen für die Darstellung */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -99,12 +314,10 @@
     
     <nav class="navbar">
         <button class="back-btn" onclick="goBack()">← Zurück</button>
-        <div class="player-header">
-            <div class="player-header-center">
-                <div class="club-logo" id="clubLogo">?</div>
-                <a href="#" id="playerNameLink" class="player-name" target="_blank">Lade Spieler...</a>
-                <span class="status-icon" id="statusIcon">Status</span>
-            </div>
+        <div class="player-header-center">
+            <div class="club-logo" id="clubLogo">?</div>
+            <a href="#" id="playerNameLink" class="player-name" target="_blank">Lade Spieler...</a>
+            <span class="status-icon" id="statusIcon">Status</span>
         </div>
     </nav>
     
@@ -113,7 +326,6 @@
         <div id="errorMessage" class="error-message" style="display: none;"></div>
         
         <div id="playerContent" style="display: none;">
-            <!-- Einklappbare Abschnitte -->
             <details class="info-card" open>
                 <summary class="collapse-header">
                     <h3>📋 Spieler-Informationen</h3>
@@ -124,7 +336,30 @@
                         <span class="info-label">Geburtstag:</span>
                         <span class="info-value" id="birthday">-</span>
                     </div>
-                    <!-- ... (weitere Spielerinfos) ... -->
+                    <div class="info-row">
+                        <span class="info-label">Alter:</span>
+                        <span class="info-value" id="age">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Größe:</span>
+                        <span class="info-value" id="height">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Nationalität:</span>
+                        <span class="info-value" id="nationality">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Position:</span>
+                        <span class="info-value" id="position">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Hauptfuß:</span>
+                        <span class="info-value" id="foot">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Trikotnummer:</span>
+                        <span class="info-value" id="jerseyNumber">-</span>
+                    </div>
                 </div>
             </details>
 
@@ -134,7 +369,22 @@
                     <span class="collapse-icon">▼</span>
                 </summary>
                 <div class="info-card-content">
-                    <!-- ... (Comunio-Inhalt) ... -->
+                    <div class="info-row">
+                        <span class="info-label">Position:</span>
+                        <span class="info-value" id="comunioPosition">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Marktwert:</span>
+                        <span class="info-value" id="marketValue">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Punkte (letztes Jahr):</span>
+                        <span class="info-value" id="lastYearPoints">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Besitzer:</span>
+                        <span class="info-value" id="owner">-</span>
+                    </div>
                 </div>
             </details>
 
@@ -144,11 +394,43 @@
                     <span class="collapse-icon">▼</span>
                 </summary>
                 <div class="info-card-content">
-                    <!-- ... (Status-Inhalt) ... -->
+                    <div class="info-row">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value" id="detailStatus">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Spiele:</span>
+                        <span class="info-value" id="gamesPlayed">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Tore:</span>
+                        <span class="info-value" id="goals">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Notenschnitt:</span>
+                        <span class="info-value" id="averageRating">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Gelbe Karten:</span>
+                        <span class="info-value" id="yellowCards">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Rote Karten:</span>
+                        <span class="info-value" id="redCards">-</span>
+                    </div>
                 </div>
             </details>
 
-            <!-- Tabs für zusätzliche Daten -->
+            <details class="info-card">
+                <summary class="collapse-header">
+                    <h3>⭐ Besondere Eigenschaften</h3>
+                    <span class="collapse-icon">▼</span>
+                </summary>
+                <div class="info-card-content">
+                    <div class="attributes" id="attributesList"></div>
+                </div>
+            </details>
+
             <div class="tabs">
                 <button class="tab-button active" data-tab="rivals">Rivalen</button>
                 <button class="tab-button" data-tab="market">Marktwerte</button>
@@ -171,34 +453,196 @@
             </div>
         </div>
     </div>
-    
     <script>
-        // Globale Variablen
-        let currentPlayer = null;
-        let allPlayersData = [];
+        let debugMode = true;
         
-        // Debug-Funktionen (bestehend) beibehalten
-        // ... (logDebug, clearDebug, toggleDebugPanel) ...
+        function toggleDebugPanel() {
+            debugMode = !debugMode;
+            document.getElementById('debugPanel').style.display = debugMode ? 'block' : 'none';
+        }
+        
+        function logDebug(msg) {
+            if (!debugMode) return;
+            
+            const debugContent = document.getElementById('debugContent');
+            const timestamp = new Date().toLocaleTimeString('de-DE');
+            debugContent.innerHTML += `<div>[${timestamp}] ${msg}</div>`;
+            debugContent.scrollTop = debugContent.scrollHeight;
+        }
+        
+        function clearDebug() {
+            document.getElementById('debugContent').innerHTML = '';
+        }
 
-        // Neue Funktionen für Tabs und Datenverarbeitung
+        function getPlayerId() {
+            logDebug('=== URL DEBUGGING START ===');
+            logDebug('window.location.href: ' + window.location.href);
+            
+            const url = window.location.href;
+            const idMatch = url.match(/[?&]id=([^&]*)/);
+            const playerId = idMatch ? idMatch[1] : null;
+            
+            logDebug('Manuell extrahierte ID: ' + playerId);
+            logDebug('=== URL DEBUGGING END ===');
+            
+            if (!playerId) {
+                logDebug('Keine Spieler-ID in der URL gefunden!');
+                document.getElementById('errorMessage').textContent = "Keine Spieler-ID in der URL gefunden!";
+                document.getElementById('errorMessage').style.display = 'block';
+                document.getElementById('loadingIndicator').style.display = 'none';
+            }
+            
+            return playerId;
+        }
+        
+        function goBack() {
+            window.location.href = "https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/index.html";
+        }
+        
+        function getLogoFileName(clubName) {
+            if (!clubName) return "unbestimmt.png";
+            const mapping = {
+                "Borussia Mönchengladbach": "gladbach",
+                "Gladbach": "gladbach",
+                "Sport-Club Freiburg": "freiburg",
+                "SC Freiburg": "freiburg",
+                "Freiburg": "freiburg",
+                "1. FSV Mainz 05": "mainz",
+                "1.FSV Mainz 05": "mainz",
+                "RB Leipzig": "leipzig",
+                "FC Bayern München": "bayern",
+                "SV Werder Bremen": "werderBremen",
+                "VfL Wolfsburg": "wolfsburg",
+                "Borussia Dortmund": "dortmund",
+                "Dortmund": "dortmund",
+                "Bayer 04 Leverkusen": "leverkusen",
+                "Leverkusen": "leverkusen",
+                "1. FC Köln": "koeln",
+                "1.FC Köln": "koeln",
+                "Köln": "koeln",
+                "VfB Stuttgart": "stuttgart",
+                "TSG Hoffenheim": "hoffenheim",
+                "FC Augsburg": "augsburg",
+                "Eintracht Frankfurt": "frankfurt",
+                "1.FC Union Berlin": "unionBerlin",
+                "Union Berlin": "unionBerlin",
+                "1. FC Union Berlin": "unionBerlin",
+                "1.FC Heidenheim": "heidenheim",
+                "1. FC Heidenheim": "heidenheim",
+                "Heidenheim": "heidenheim",
+                "FC St. Pauli": "stpauli",
+                "St. Pauli": "stpauli",
+                "Hamburger SV": "hamburg",
+                "Hamburg": "hamburg"
+            };
+            return (mapping[clubName] || "unbestimmt") + ".png";
+        }
+        
+        async function loadClubData(clubId) {
+            try {
+                logDebug('Lade Vereinsdaten für Club ID: ' + clubId);
+                const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/VereinsdatenbankJson.txt');
+                const clubs = await resp.json();
+                const club = clubs.find(c => c.id === clubId);
+                return club ? club.name : 'Unbekannt';
+            } catch (error) {
+                logDebug('Fehler beim Laden der Vereinsdaten: ' + error.message);
+                return 'Unbekannt';
+            }
+        }
+        
+        function calcAge(birthday) {
+            if (!birthday || birthday === 'N/A') return '-';
+            try {
+                const birthDate = new Date(birthday.split('.').reverse().join('-'));
+                const diff = Date.now() - birthDate.getTime();
+                const ageDate = new Date(diff);
+                return Math.abs(ageDate.getUTCFullYear() - 1970) + ' Jahre';
+            } catch {
+                return '-';
+            }
+        }
+        
+        function formatCurrencyShort(value) {
+            if (!value || value === 0) return '-';
+            if (value >= 1000000) return (value / 1000000).toFixed(1).replace('.0', '') + ' Mio €';
+            if (value >= 1000) return (value / 1000).toFixed(0) + ' Tsd €';
+            return value + ' €';
+        }
+        
+        function getStatusDisplayName(status) {
+            const statusMap = {
+                'AKTIV': 'Aktiv',
+                'VERLETZT': 'Verletzt',
+                'REHA': 'Reha',
+                'AUFBAUTRAINING': 'Aufbautraining',
+                'NICHT_IN_LIGA': 'Nicht in Liga'
+            };
+            return statusMap[status] || status || 'Unbekannt';
+        }
+        
+        function displayAttributes(player) {
+            const container = document.getElementById('attributesList');
+            if (!container) return;
+            
+            logDebug('Verarbeite Attribute für Spieler: ' + player.name);
+            container.innerHTML = '';
+            
+            if (player.data.attribute && player.data.attribute.length > 0) {
+                logDebug('Attribute gefunden: ' + JSON.stringify(player.data.attribute));
+                
+                player.data.attribute.forEach((attr, index) => {
+                    logDebug(`Verarbeite Attribut ${index}: ${JSON.stringify(attr)}`);
+                    
+                    if (typeof attr === 'object' && attr !== null) {
+                        Object.keys(attr).forEach(key => {
+                            const value = attr[key];
+                            logDebug(`Attribut-Key: ${key}, Value: ${JSON.stringify(value)}`);
+                            
+                            if (Array.isArray(value)) {
+                                value.forEach(item => {
+                                    const span = document.createElement('span');
+                                    span.className = 'attribute-tag';
+                                    span.textContent = item;
+                                    container.appendChild(span);
+                                });
+                            } else if (typeof value === 'string') {
+                                const span = document.createElement('span');
+                                span.className = 'attribute-tag';
+                                span.textContent = value;
+                                container.appendChild(span);
+                            }
+                        });
+                    } else if (typeof attr === 'string') {
+                        const span = document.createElement('span');
+                        span.className = 'attribute-tag';
+                        span.textContent = attr;
+                        container.appendChild(span);
+                    }
+                });
+                
+                logDebug('Attribute erfolgreich angezeigt');
+            } else {
+                logDebug('Keine Attribute vorhanden');
+            }
+        }
+        
+        function getOwnerName(playerId) {
+            return "Computer";
+        }
+        
         function initTabs() {
             const tabButtons = document.querySelectorAll('.tab-button');
             tabButtons.forEach(button => {
                 button.addEventListener('click', () => {
-                    // Aktiven Tab zurücksetzen
                     tabButtons.forEach(btn => btn.classList.remove('active'));
                     document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
                     
-                    // Neuen Tab aktivieren
                     button.classList.add('active');
                     const tabId = button.getAttribute('data-tab');
                     document.getElementById(tabId).classList.add('active');
                 });
             });
-        }
-        
-        function getPlayerId() {
-            // ... (bestehende Implementierung) ...
         }
         
         async function loadAllPlayers() {
@@ -211,12 +655,11 @@
             }
         }
         
-        function displayRivals(player) {
+        function displayRivals(player, allPlayers) {
             const container = document.getElementById('rivalsList');
             if (!container) return;
             
-            // Logik zur Identifizierung von Konkurrenten
-            const rivals = allPlayersData.filter(p => 
+            const rivals = allPlayers.filter(p => 
                 p.data?.position === player.data?.position && 
                 p.id !== player.id
             ).slice(0, 5);
@@ -237,7 +680,6 @@
             const container = document.getElementById('marketValueChart');
             if (!container) return;
             
-            // Marktwertanalyse
             const currentValue = player.data?.wert || 0;
             const valueHistory = player.data?.wertHistorie || [];
             
@@ -261,7 +703,6 @@
             const container = document.getElementById('pointsHistory');
             if (!container) return;
             
-            // Punktehistorie anzeigen
             const pointsHistory = player.data?.punkteHistorie || [];
             const currentPoints = player.data?.punkte || 0;
             
@@ -283,8 +724,7 @@
             
             container.innerHTML = html;
         }
-        
-        // Hauptfunktion mit erweitertem Datenhandling
+
         document.addEventListener('DOMContentLoaded', async () => {
             logDebug('player.html geladen');
             initTabs();
@@ -293,33 +733,88 @@
             if (!playerId) return;
             
             try {
-                // Alle Spielerdaten laden
-                allPlayersData = await loadAllPlayers();
-                logDebug(`Gesamtspieler geladen: ${allPlayersData.length}`);
+                logDebug('Lade Spielerdaten für ID: ' + playerId);
+                const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/SpielerdatenbankNeutralJson.txt');
+                const allPlayers = await resp.json();
+                logDebug('Daten geladen, ' + allPlayers.length + ' Spieler verfügbar');
                 
-                // Aktuellen Spieler finden
-                currentPlayer = allPlayersData.find(p => String(p.id) === String(playerId));
-                if (!currentPlayer) {
-                    // ... (Fehlerbehandlung) ...
+                let player = allPlayers.find(p => String(p.id) === String(playerId));
+                if (!player) {
+                    logDebug('Exakter Match fehlgeschlagen, versuche numerischen Vergleich...');
+                    const playerIdNum = parseInt(playerId);
+                    player = allPlayers.find(p => parseInt(p.id) === playerIdNum);
+                }
+                
+                if (!player) {
+                    logDebug('Spieler mit ID ' + playerId + ' nicht gefunden!');
+                    document.getElementById('errorMessage').textContent = "Spieler nicht gefunden!";
+                    document.getElementById('errorMessage').style.display = 'block';
+                    document.getElementById('loadingIndicator').style.display = 'none';
                     return;
                 }
                 
-                // ... (bestehende Anzeigelogik) ...
+                logDebug('Spieler gefunden: ' + player.name);
                 
-                // Neue Tab-Daten anzeigen
-                displayRivals(currentPlayer);
-                displayMarketValue(currentPlayer);
-                displayPointsHistory(currentPlayer);
+                const playerNameLink = document.getElementById('playerNameLink');
+                playerNameLink.textContent = player.name;
                 
-                // ... (restliche Initialisierung) ...
+                if (player.data && player.data.transfermarktDoDe && player.data.transfermarktDoDe.link) {
+                    playerNameLink.href = player.data.transfermarktDoDe.link;
+                    logDebug('Transfermarkt-Link gesetzt: ' + player.data.transfermarktDoDe.link);
+                } else {
+                    logDebug('Kein Transfermarkt-Link verfügbar');
+                    playerNameLink.href = "#";
+                    playerNameLink.style.cursor = "default";
+                    playerNameLink.style.textDecoration = "none";
+                }
                 
+                const clubId = player.data.verein || "0";
+                const clubName = await loadClubData(clubId);
+                const logoFile = getLogoFileName(clubName);
+                const clubLogo = document.getElementById('clubLogo');
+                clubLogo.innerHTML = `<img src="logos/${logoFile}" alt="${clubName}" style="width:100%;height:100%;object-fit:contain">`;
+                logDebug('Vereinslogo gesetzt für: ' + clubName);
+                
+                const status = player.data.comunioStatus.status || 'Unbekannt';
+                document.getElementById('statusIcon').textContent = getStatusDisplayName(status);
+                document.getElementById('statusIcon').className = 'status-icon status-' + status.toLowerCase();
+                
+                document.getElementById('birthday').textContent = player.data.spielerDaten.geburtstag || '-';
+                document.getElementById('age').textContent = calcAge(player.data.spielerDaten.geburtstag) || '-';
+                document.getElementById('height').textContent = player.data.spielerDaten.groesse || '-';
+                document.getElementById('nationality').textContent = player.data.spielerDaten.nationalitaet || '-';
+                document.getElementById('position').textContent = player.data.spielerDaten.hauptposition || player.data.position || '-';
+                document.getElementById('foot').textContent = player.data.spielerDaten.fuss || '-';
+                document.getElementById('jerseyNumber').textContent = player.data.spielerDaten.trikotNummer || '-';
+                
+                document.getElementById('comunioPosition').textContent = player.data.position || '-';
+                document.getElementById('marketValue').textContent = formatCurrencyShort(player.data.wert);
+                document.getElementById('lastYearPoints').textContent = player.data.lastSeasonPoints || '-';
+                document.getElementById('owner').textContent = getOwnerName(player.id) || '-';
+                
+                document.getElementById('detailStatus').textContent = player.data.comunioStatus.details || getStatusDisplayName(status);
+                document.getElementById('gamesPlayed').textContent = player.data.stats.playedGames || '-';
+                document.getElementById('goals').textContent = player.data.stats.totalGoals || '-';
+                document.getElementById('averageRating').textContent = player.data.stats.notenDurchschnitt || '-';
+                document.getElementById('yellowCards').textContent = player.data.stats.gelbekarten || '-';
+                document.getElementById('redCards').textContent = player.data.stats.rotekarten || '-';
+                
+                displayAttributes(player);
+                
+                displayRivals(player, allPlayers);
+                displayMarketValue(player);
+                displayPointsHistory(player);
+                
+                document.getElementById('loadingIndicator').style.display = 'none';
+                document.getElementById('playerContent').style.display = 'block';
+                logDebug('Spielerdaten erfolgreich angezeigt');
             } catch (err) {
-                // ... (Fehlerbehandlung) ...
+                logDebug('Fehler beim Laden: ' + err.message);
+                document.getElementById('errorMessage').textContent = "Fehler beim Laden der Daten: " + err.message;
+                document.getElementById('errorMessage').style.display = 'block';
+                document.getElementById('loadingIndicator').style.display = 'none';
             }
         });
-        
-        // Vorhandene Hilfsfunktionen beibehalten
-        // ... (getLogoFileName, loadClubData, calcAge, etc.) ...
     </script>
 </body>
 </html>
