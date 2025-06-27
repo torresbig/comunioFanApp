@@ -385,6 +385,22 @@
             statsDiv.style.display = 'block';
         }
 
+        // Hilfsfunktion für korrekte URL-Generierung
+function getPlayerUrl(playerId) {
+    const currentUrl = window.location.href;
+    
+    if (currentUrl.includes('htmlpreview.github.io')) {
+        // Für htmlpreview.github.io
+        return `https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${playerId}`;
+    } else if (currentUrl.includes('github.com') || currentUrl.includes('githubusercontent.com')) {
+        // Für direkten GitHub-Zugriff
+        return `https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${playerId}`;
+    } else {
+        // Für lokales Hosting oder andere Server
+        return `player.html?id=${playerId}`;
+    }
+}
+
         function renderTable(players) {
             const tableBody = document.querySelector('#playerTable tbody');
             tableBody.innerHTML = '';
@@ -394,11 +410,14 @@
                 row.setAttribute('data-player-id', player.id);
                 // Klick-Event für Spielerdetails
                 row.addEventListener('click', (e) => {
-                    if (e.target.tagName !== 'TH' && !e.target.closest('th')) {
-                        addDebug(`Spieler angeklickt: ${player.name} (ID: ${player.id})`);
-                        window.location.href = `player.html?id=${player.id}`;
-                    }
-                });
+    if (e.target.tagName !== 'TH' && !e.target.closest('th')) {
+        addDebug(`Spieler angeklickt: ${player.name} (ID: ${player.id})`);
+        
+        const playerUrl = getPlayerUrl(player.id);
+        addDebug(`Navigation zu: ${playerUrl}`);
+        window.location.href = playerUrl;
+    }
+});
                 // Verein
                 const clubId = player.data?.verein || "0";
                 const clubName = clubsMap.get(clubId) || 'UNBEKANNT';
