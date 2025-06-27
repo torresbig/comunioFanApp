@@ -774,14 +774,14 @@ width: 32px;
 
         // Daten laden
         async function loadData() {
-            try {
-                const responses = await Promise.all([
-                    fetch('SpielerdatenbankNeutralJson.txt'),
-                    fetch('MarktwerteJson.txt'),
-                    fetch('UserdatenbankJson_884691.txt'),
-                    fetch('PlayerToUserMap_884691.txt'),
-                    fetch('VereinsdatenbankJson.txt')
-                ]);
+  try {
+    const responses = await Promise.all([
+      fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/SpielerdatenbankNeutralJson.txt'),
+      fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/MarktwerteJson.txt'),
+      fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/UserdatenbankJson_884691.txt'),
+      fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/PlayerToUserMap_884691.txt'),
+      fetch('https://raw.githubusercontent.com/torresbig/comunivFanApp/main/VereinsdatenbankJson.txt')
+    ]);
 
                 const [playerResp, marketResp, userResp, mapResp, clubResp] = responses;
                 
