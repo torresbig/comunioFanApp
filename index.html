@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spielerinfos</title>
+    <title>Comunio Manager</title>
     <style>
         * {
             margin: 0;
@@ -72,7 +72,7 @@
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 25px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 极.1);
             backdrop-filter: blur(10px);
         }
 
@@ -287,12 +287,17 @@
         }
 
         .status-verletzt {
-            background: linear-gradient(135deg, #e74c极c, #c0392b);
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
             color: white;
         }
 
         .status-reha {
             background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white;
+        }
+
+        .status-aufbautraining {
+            background: linear-gradient(135deg, #FFA500, #FF8C00);
             color: white;
         }
 
@@ -321,7 +326,7 @@
 
         .points-cell {
             font-weight: 600;
-           极: #3498db;
+            color: #3498db;
         }
 
         .club-cell {
@@ -357,6 +362,11 @@
             color: white;
         }
 
+        .position-aufbautraining {
+            background: linear-gradient(135deg, #FFA500, #FF8C00);
+            color: white;
+        }
+
         .loading-spinner {
             display: inline-block;
             width: 20px;
@@ -382,7 +392,7 @@
         .stat-card {
             background: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
-            padding: 20极;
+            padding: 20px;
             text-align: center;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(10px);
@@ -413,20 +423,12 @@
             display: block;
         }
 
-        .debug-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .debug-toggle {
-            background: #3498db;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 4px;
-            cursor: pointer;
+        .club-logo {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: contain;
+            margin-right: 10px;
         }
 
         @media (max-width: 768px) {
@@ -464,8 +466,8 @@
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <h1>📊 Spielerinfos</h1>
-            <p>Übersicht aller Bundesliga-Spieler</p>
+            <h1>🏆 Comunio Manager</h1>
+            <p>Ihre ultimative Fußball-Management-Plattform</p>
         </div>
 
         <!-- Status Bar -->
@@ -489,7 +491,7 @@
                 <p>Spieler im Besitz</p>
             </div>
             <div class="stat-card">
-                <h3 id="totalValue">0€</h3>
+                <h3 id="totalValue">0€</极>
                 <p>Gesamtmarktwert</p>
             </div>
         </div>
@@ -516,6 +518,7 @@
                             <option value="ABWEHR">Abwehr</option>
                             <option value="MITTELFELD">Mittelfeld</option>
                             <option value="STURM">Sturm</option>
+                            <option value="AUFBAUTRAINING">Aufbautraining</option>
                         </select>
                     </div>
 
@@ -526,6 +529,7 @@
                             <option value="AKTIV">Aktiv</option>
                             <option value="VERLETZT">Verletzt</option>
                             <option value="REHA">Reha</option>
+                            <option value="AUFBAUTRAINING">Aufbautraining</option>
                             <option value="NICHT_IN_LIGA">Nicht in Liga</option>
                         </select>
                     </div>
@@ -541,7 +545,6 @@
                         <label for="ownerFilter">👤 Besitzer:</label>
                         <select id="ownerFilter">
                             <option value="">Alle Besitzer</option>
-                            <option value="Computer">Kein Besitzer</option>
                         </select>
                     </div>
                 </div>
@@ -555,7 +558,7 @@
             <div class="action-buttons">
                 <button class="btn btn-secondary" onclick="resetFilters()">🔄 Filter zurücksetzen</button>
                 <button class="btn btn-primary" onclick="reloadData()">🔄 Daten neu laden</button>
-                <button class="btn btn-secondary" onclick="toggleDebugPanel()">🐛 Debug-Informationen</button>
+                <button class="btn btn-secondary" onclick="toggleDebug()">🐛 Debug-Informationen</button>
             </div>
         </div>
 
@@ -568,7 +571,7 @@
                 <table id="playersTable">
                     <thead>
                         <tr>
-                            <th class="sortable" data-sort="name">Spieler (ID)</th>
+                            <th class="sortable" data-sort="name">Spieler</th>
                             <th class="sortable" data-sort="club">Verein</th>
                             <th class="sortable" data-sort="position">Position</th>
                             <th class="sortable" data-sort="status">Status</th>
@@ -587,10 +590,7 @@
 
         <!-- Debug Panel -->
         <div class="debug-panel" id="debugPanel">
-            <div class="debug-header">
-                <h3>Debug-Informationen</h3>
-                <button class="debug-toggle" onclick="clearDebug()">❌ Löschen</button>
-            </div>
+            <h3>Debug-Informationen</h3>
             <div id="debugContent"></div>
         </div>
     </div>
@@ -624,7 +624,7 @@
             document.getElementById('debugContent').innerHTML = '';
         }
 
-        function toggleDebugPanel() {
+        function toggleDebug() {
             debugMode = !debugMode;
             const debugPanel = document.getElementById('debugPanel');
             debugPanel.classList.toggle('show', debugMode);
@@ -677,11 +677,26 @@
             
             try {
                 const promises = [
-                    fetch('SpielerdatenbankNeutralJson.txt').then(r => r.json()),
-                    fetch('UserdatenbankJson_884691.txt').then(r => r.json()),
-                    fetch('PlayerToUserMap_884691.txt').then(r => r.json()),
-                    fetch('MarktwerteJson.txt').then(r => r.json()),
-                    fetch('VereinsdatenbankJson.txt').then(r => r.json())
+                    fetch('SpielerdatenbankNeutralJson.txt').then(r => {
+                        if (!r.ok) throw new Error(`Fehler beim Laden: HTTP ${r.status}`);
+                        return r.json();
+                    }),
+                    fetch('UserdatenbankJson_884691.txt').then(r => {
+                        if (!r.ok) throw new Error(`Fehler beim Laden: HTTP ${r.status}`);
+                        return r.json();
+                    }),
+                    fetch('PlayerToUserMap_884691.txt').then(r => {
+                        if (!r.ok) throw new Error(`Fehler beim Laden: HTTP ${r.status}`);
+                        return r.json();
+                    }),
+                    fetch('MarktwerteJson.txt').then(r => {
+                        if (!r.ok) throw new Error(`Fehler beim Laden: HTTP ${r.status}`);
+                        return r.json();
+                    }),
+                    fetch('VereinsdatenbankJson.txt').then(r => {
+                        if (!r.ok) throw new Error(`Fehler beim Laden: HTTP ${r.status}`);
+                        return r.json();
+                    })
                 ];
 
                 const [players, users, playerUserMap, market, clubs] = await Promise.all(promises);
@@ -720,7 +735,7 @@
 
             } catch (error) {
                 addDebug(`❌ Fehler beim Laden der Daten: ${error.message}`);
-                updateStatus('❌ Fehler beim Laden der Daten', 'error');
+                updateStatus(`❌ Fehler beim Laden: ${error.message}`, 'error');
             }
         }
 
@@ -757,6 +772,12 @@
             const ownerFilter = document.getElementById('ownerFilter');
             const owners = [...new Set(playerData.map(player => getOwnerName(player.id)))].sort();
             
+            // "Kein Besitzer" (Computer) hinzufügen
+            const computerOption = document.createElement('option');
+            computerOption.value = "Computer";
+            computerOption.textContent = "Kein Besitzer";
+            ownerFilter.appendChild(computerOption);
+            
             owners.forEach(owner => {
                 if (owner && owner !== 'Computer') {
                     const option = document.createElement('option');
@@ -777,7 +798,7 @@
             const statusFilter = document.getElementById('statusFilter').value;
             const clubFilter = document.getElementById('clubFilter').value;
             const ownerFilter = document.getElementById('ownerFilter').value;
-            const hideInactive = document.getElementById('hide极activeFilter').checked;
+            const hideInactive = document.getElementById('hideInactiveFilter').checked;
 
             filteredData = playerData.filter(player => {
                 // Suchbegriff-Filter
@@ -920,27 +941,39 @@
                     window.location.href = `player.html?id=${player.id}`;
                 });
 
-                // Zusätzliche Spielerdaten für Tooltip
-                const playerInfo = `ID: ${player.id} | Position: ${player.data.spielerDaten?.hauptposition || 'N/A'} | Größe: ${player.data.spielerDaten?.groesse || 'N/A'}`;
-                const clubName = getClubName(player.data.verein);
+                // Vereinslogo (falls vorhanden) oder Initialen
+                const clubLogo = document.createElement('img');
+                clubLogo.className = 'club-logo';
+                clubLogo.alt = getClubName(player.data.verein);
+                
+                // Vereinsdaten suchen
+                const club = clubData.find(c => c.id === player.data.verein);
+                if (club && club.logoUrl) {
+                    clubLogo.src = club.logoUrl;
+                } else {
+                    // Fallback: Vereinsinitialen anzeigen
+                    const clubName = getClubName(player.data.verein);
+                    clubLogo.src = `https://via.placeholder.com/30/3498db/ffffff?text=${clubName.substring(0, 2)}`;
+                }
 
                 row.innerHTML = `
                     <td>
-                        <div class="player-name" data-player-info="${escapeHtml(playerInfo)}" style="font-weight: 600;">${escapeHtml(player.name)}</div>
+                        <div style="font-weight: 600;">${escapeHtml(player.name)}</div>
                         <div style="font-size: 11px; color: #7f8c8d;">ID: ${player.id}</div>
                     </td>
                     <td class="club-cell">
-                        <span class="club-name" data-club-name="${escapeHtml(clubName)}">${escapeHtml(clubName)}</span>
+                        <div style="display: flex; align-items: center;">
+                            <img class="club-logo" src="${clubLogo.src}" alt="${clubLogo.alt}">
+                            <span>${escapeHtml(getClubName(player.data.verein))}</span>
+                        </div>
                     </td>
                     <td>
-                        <span class="position-badge position-${player.data.position?.toLowerCase() || 'unknown'} tooltip" 
-                              data-tooltip="${player.data.spielerDaten?.hauptposition || 'Hauptposition unbekannt'}">
+                        <span class="position-badge position-${player.data.position?.toLowerCase() || 'unknown'}">
                             ${player.data.position || 'N/A'}
                         </span>
                     </td>
                     <td>
-                        <span class="status-badge status-${player.data.comunioStatus.status?.toLowerCase() || 'unknown'} tooltip" 
-                              data-tooltip="${player.data.comunioStatus.details || getStatusDisplayName(player.data.comunioStatus.status)}">
+                        <span class="status-badge status-${player.data.comunioStatus.status?.toLowerCase() || 'unknown'}">
                             ${getStatusDisplayName(player.data.comunioStatus.status)}
                         </span>
                     </td>
@@ -994,6 +1027,7 @@
                 'AKTIV': 'Aktiv',
                 'VERLETZT': 'Verletzt',
                 'REHA': 'Reha',
+                'AUFBAUTRAINING': 'Aufbautraining',
                 'NICHT_IN_LIGA': 'Nicht in Liga'
             };
             return statusMap[status] || status || 'Unbekannt';
