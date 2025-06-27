@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spieler Details</title>
     <style>
-        /* Grundlegende Stile (bestehend) */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; color: #333; padding-bottom: 140px; }
 
@@ -78,13 +77,38 @@
             transition: all 0.3s ease;
         }
 
-        .player-header-center {
+        .player-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex: 1;
+        }
+
+        .player-name-id {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            flex: 1;
-            text-align: center;
+        }
+
+        .player-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .player-name:hover {
+            text-decoration: underline;
+        }
+
+        .player-id {
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 2px;
+        }
+
+        .status-indicator {
+            margin-left: auto;
+            font-size: 20px;
         }
 
         .club-logo {
@@ -107,17 +131,6 @@
             object-fit: contain;
         }
 
-        .player-name {
-            font-size: 18px;
-            font-weight: bold;
-            color: white;
-            text-decoration: none;
-        }
-
-        .player-name:hover {
-            text-decoration: underline;
-        }
-
         .status-icon {
             padding: 4px 8px;
             border-radius: 15px;
@@ -131,6 +144,11 @@
         .status-reha { background: linear-gradient(135deg, #f39c12, #e67e22); }
         .status-aufbautraining { background: linear-gradient(135deg, #FFA500, #FF8C00); }
         .status-nicht_in_liga { background: linear-gradient(135deg, #95a5a6, #7f8c8d); }
+
+        .status-icon-active { color: #27ae60; }
+        .status-icon-injured { color: #e74c3c; }
+        .status-icon-rehab { color: #f39c12; }
+        .status-icon-not-in-squad { color: #7f8c8d; }
 
         .container {
             max-width: 1200px;
@@ -237,7 +255,7 @@
             padding: 10px 20px;
             background: #2c3e50;
             color: white;
-            border: none;
+            border: nil;
             cursor: pointer;
             font-size: 14px;
             margin: 0 5px;
@@ -289,29 +307,6 @@
             border-radius: 8px;
             padding: 10px;
             text-align: center;
-        }
-    /* Neue Stile für Header */
-        .player-header {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            flex: 1;
-        }
-
-        .player-name-id {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .player-id {
-            font-size: 12px;
-            color: #aaa;
-            margin-top: 2px;
-        }
-
-        .status-indicator {
-            margin-left: auto;
-            font-size: 20px;
         }
 
         /* Rivalen-Tabelle */
@@ -394,16 +389,18 @@
             background-color: #2c3e50;
             color: white;
         }
-
-        /* Status-Icons */
-        .status-icon-active { color: #27ae60; }
-        .status-icon-injured { color: #e74c3c; }
-        .status-icon-rehab { color: #f39c12; }
-        .status-icon-not-in-squad { color: #7f8c8d; }
     </style>
 </head>
 <body>
-    <!-- Debug-Panel und Navbar (bestehend) -->
+    <button class="debug-toggle-btn" onclick="toggleDebugPanel()">🐞 Debug</button>
+    <div class="debug-panel" id="debugPanel">
+        <div class="debug-header">
+            <span><b>Debug-Informationen</b></span>
+            <button class="debug-clear-btn" onclick="clearDebug()">Löschen</button>
+        </div>
+        <div id="debugContent"></div>
+    </div>
+    
     <nav class="navbar">
         <button class="back-btn" onclick="goBack()">← Zurück</button>
         <div class="player-header">
@@ -416,9 +413,9 @@
         </div>
     </nav>
     
-   <div class="container">
-    <div id="errorMessage" class="error-message" style="display: none;"></div>
-        
+    <div class="container">
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+        <div id="loadingIndicator" class="loading-spinner"></div>
         <div id="playerContent" style="display: none;">
             <details class="info-card" open>
                 <summary class="collapse-header">
@@ -748,8 +745,29 @@
                 return [];
             }
         }
+
+        function getStatusIndicator(status) {
+            switch(status) {
+                case 'AKTIV': return '👍';
+                case 'VERLETZT': return '👎';
+                case 'REHA': return '🔄';
+                case 'AUFBAUTRAINING': return '🔄';
+                case 'NICHT_IN_LIGA': return '❌';
+                default: return '❓';
+            }
+        }
+
+        function getStatusIcon(status) {
+            switch(status) {
+                case 'AKTIV': return '<span class="status-icon-active">✓</span>';
+                case 'VERLETZT': return '<span class="status-icon-injured">⚠️</span>';
+                case 'REHA': return '<span class="status-icon-rehab">🔄</span>';
+                case 'AUFBAUTRAINING': return '<span class="status-icon-rehab">🔄</span>';
+                case 'NICHT_IN_LIGA': return '<span class="status-icon-not-in-squad">✗</span>';
+                default: return '<span>❓</span>';
+            }
+        }
         
-       // Rivalen-Tabelle anzeigen
         function displayRivals(player, allPlayers) {
             const container = document.getElementById('rivalsList');
             if (!container) return;
@@ -795,7 +813,6 @@
                 html += '</tbody></table>';
                 container.innerHTML = html;
                 
-                // Klick-Event für Zeilen
                 document.querySelectorAll('.rivals-table tbody tr').forEach(row => {
                     row.addEventListener('click', (e) => {
                         const playerId = row.getAttribute('data-player-id');
@@ -807,30 +824,6 @@
             }
         }
 
-        // Status-Icons für Header
-        function getStatusIndicator(status) {
-            switch(status) {
-                case 'AKTIV': return '👍';
-                case 'VERLETZT': return '👎';
-                case 'REHA': return '🔄';
-                case 'AUFBAUTRAINING': return '🔄';
-                case 'NICHT_IN_LIGA': return '❌';
-                default: return '❓';
-            }
-        }
-
-        // Status-Icons für Tabellen
-        function getStatusIcon(status) {
-            switch(status) {
-                case 'AKTIV': return '<span class="status-icon-active">✓</span>';
-                case 'VERLETZT': return '<span class="status-icon-injured">⚠️</span>';
-                case 'REHA': return '<span class="status-icon-rehab">🔄</span>';
-                case 'AUFBAUTRAINING': return '<span class="status-icon-rehab">🔄</span>';
-                case 'NICHT_IN_LIGA': return '<span class="status-icon-not-in-squad">✗</span>';
-                default: return '<span>❓</span>';
-            }
-        }
-        // Marktwerte mit Trend anzeigen
         function displayMarketValue(player) {
             const container = document.getElementById('marketValueChart');
             if (!container) return;
@@ -838,7 +831,6 @@
             const currentValue = player.data?.wert || 0;
             const valueHistory = player.data?.wertHistorie || [];
             
-            // Sortiere nach Datum (absteigend)
             valueHistory.sort((a, b) => new Date(b.date) - new Date(a.date));
             
             let html = `<div class="stat-box">
@@ -870,7 +862,6 @@
             container.innerHTML = html;
         }
         
-        // Punkteverlauf anzeigen
         function displayPointsHistory(player) {
             const container = document.getElementById('pointsHistory');
             if (!container) return;
@@ -886,8 +877,6 @@
                 </div>
             `;
             
-            // Hier würdest du die Spieltagspunkte einfügen
-            // (Annahme: Spieltagspunkte sind in player.data.spieltagspunkte)
             if (player.data.spieltagspunkte && player.data.spieltagspunkte.length > 0) {
                 html += '<h4>Punkte pro Spieltag:</h4>';
                 html += '<table class="points-table">';
@@ -900,7 +889,6 @@
                 html += '</tbody></table>';
             }
             
-            // Historische Punkte
             if (pointsHistory.length > 0) {
                 html += '<h4>Historische Punkte:</h4>';
                 html += '<table class="points-table">';
@@ -915,7 +903,7 @@
             
             container.innerHTML = html;
         }
-
+        
         document.addEventListener('DOMContentLoaded', async () => {
             logDebug('player.html geladen');
             initTabs();
@@ -941,8 +929,6 @@
                     document.getElementById('errorMessage').textContent = "Spieler nicht gefunden!";
                     document.getElementById('errorMessage').style.display = 'block';
                     document.getElementById('loadingIndicator').style.display = 'none';
-                    document.getElementById('playerId').textContent = `ID: ${currentPlayer.id}`;
-                document.getElementById('statusIndicator').textContent = getStatusIndicator(status);
                     return;
                 }
                 
@@ -969,8 +955,8 @@
                 logDebug('Vereinslogo gesetzt für: ' + clubName);
                 
                 const status = player.data.comunioStatus.status || 'Unbekannt';
-                document.getElementById('statusIcon').textContent = getStatusDisplayName(status);
-                document.getElementById('statusIcon').className = 'status-icon status-' + status.toLowerCase();
+                document.getElementById('statusIndicator').textContent = getStatusIndicator(status);
+                document.getElementById('playerId').textContent = `ID: ${player.id}`;
                 
                 document.getElementById('birthday').textContent = player.data.spielerDaten.geburtstag || '-';
                 document.getElementById('age').textContent = calcAge(player.data.spielerDaten.geburtstag) || '-';
