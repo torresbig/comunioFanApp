@@ -233,13 +233,14 @@
                     Users: ${DATA_URLS.users}
                     PlayerToUser: ${DATA_URLS.playerToUser}
 		    Marktwerte: ${DATA_URLS.marktwerte}`);
-                const [clubsData, playersData, usersData, playerToUserMap] = await Promise.all([
-                    fetchJSON(DATA_URLS.clubs),
-                    fetchJSON(DATA_URLS.players),
-                    fetchJSON(DATA_URLS.users),
-		    fetchJSON(DATA_URLS.marktwerte),
-                    fetchJSON(DATA_URLS.playerToUser)
-                ]);
+                const [clubsData, playersData, usersData, marktwerte, playerToUserMap] = await Promise.all([
+    fetchJSON(DATA_URLS.clubs),
+    fetchJSON(DATA_URLS.players),
+    fetchJSON(DATA_URLS.users),
+    fetchJSON(DATA_URLS.marktwerte),
+    fetchJSON(DATA_URLS.playerToUser)
+]);
+
                 showUpdate("⚙️ Verarbeite Daten...");
                 addDebug("Daten erfolgreich geladen, verarbeite...");
                 addDebug(`Daten empfangen:
