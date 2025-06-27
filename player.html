@@ -5,107 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spieler Details</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            color: #333;
-            padding-bottom: 140px;
-        }
-        .debug-panel {
-            background: #222;
-            color: #fff;
-            border-radius: 10px;
-            padding: 15px;
-            font-family: 'Courier New', monospace;
-            font-size: 13px;
-            position: fixed;
-            left: 20px;
-            right: 20px;
-            bottom: 20px;
-            max-height: 120px;
-            overflow-y: auto;
-            z-index: 9999;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        }
-        .debug-panel .debug-header {
-            display: flex; justify-content: space-between; align-items: center;
-            margin-bottom: 10px;
-        }
-        .debug-panel .debug-clear-btn {
-            background: #e74c3c; color: #fff; border: none; border-radius: 4px;
-            padding: 3px 10px; font-size: 12px; cursor: pointer;
-        }
-        .debug-toggle-btn {
-            position: fixed; bottom: 150px; left: 20px;
-            background: #3498db;
-            color: #fff; border: none;
-            border-radius: 5px; padding: 5px 12px;
-            font-size: 13px; cursor: pointer; z-index: 10000;
-        }
-        .navbar {
-            background: linear-gradient(135deg, #34495e, #2c3e50);
-            color: white;
-            padding: 10px 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-        .back-btn {
-            background: rgba(255,255,255,0.2);
-            border: none;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-        .player-header {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            flex: 1;
-        }
-        .club-logo {
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #3498db, #2980b9);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 14px;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; color: #333; padding-bottom: 140px; }
+        .debug-panel { background: #222; color: #fff; border-radius: 10px; padding: 15px; font-family: 'Courier New', monospace; font-size: 13px; position: fixed; left: 20px; right: 20px; bottom: 20px; max-height: 120px; overflow-y: auto; z-index: 9999; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+        .debug-panel .debug-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .debug-panel .debug-clear-btn { background: #e74c3c; color: #fff; border: none; border-radius: 4px; padding: 3px 10px; font-size: 12px; cursor: pointer; }
+        .debug-toggle-btn { position: fixed; bottom: 150px; left: 20px; background: #3498db; color: #fff; border: none; border-radius: 5px; padding: 5px 12px; font-size: 13px; cursor: pointer; z-index: 10000; }
+        .navbar { background: linear-gradient(135deg, #34495e, #2c3e50); color: white; padding: 10px 15px; display: flex; align-items: center; gap: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        .back-btn { background: rgba(255,255,255,0.2); border: none; color: white; font-size: 16px; cursor: pointer; padding: 5px 10px; border-radius: 5px; transition: all 0.3s ease; }
+        .player-header { display: flex; align-items: center; gap: 10px; flex: 1; }
+        .club-logo { width: 35px; height: 35px; border-radius: 50%; background: linear-gradient(135deg, #3498db, #2980b9); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 14px; }
         .player-name { font-size: 18px; font-weight: bold; }
-        .status-icon {
-            padding: 4px 8px;
-            border-radius: 15px;
-            font-size: 12px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
+        .status-icon { padding: 4px 8px; border-radius: 15px; font-size: 12px; font-weight: bold; text-transform: uppercase; }
         .status-aktiv { background: linear-gradient(135deg, #27ae60, #229954); }
         .status-verletzt { background: linear-gradient(135deg, #e74c3c, #c0392b); }
         .status-reha { background: linear-gradient(135deg, #f39c12, #e67e22); }
         .status-nicht_in_liga { background: linear-gradient(135deg, #95a5a6, #7f8c8d); }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 15px;
-        }
-        .info-card { background: rgba(255,255,255,0.95); border-radius: 10px; padding: 15px; margin-bottom: 15px;}
-        .info-card h3 { margin-bottom: 12px; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; font-size: 16px;}
-        .info-row { display: flex; justify-content: space-between; margin-bottom: 8px; padding: 5px 0; border-bottom: 1px solid #eee;}
-        .info-row:last-child { border-bottom: none;}
-        .info-label { font-weight: 600; color: #7f8c8d; font-size: 13px;}
-        .info-value { font-weight: 600; color: #2c3e50; font-size: 13px;}
-        .loading-spinner { display: inline-block; width: 25px; height: 25px; border: 3px solid #f3f3f3; border-top: 3px solid #3498db; border-radius: 50%; animation: spin 1s linear infinite; margin: 20px auto;}
+        .container { max-width: 1200px; margin: 0 auto; padding: 15px; }
+        .info-card { background: rgba(255,255,255,0.95); border-radius: 10px; padding: 15px; margin-bottom: 15px; }
+        .info-card h3 { margin-bottom: 12px; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; font-size: 16px; }
+        .info-row { display: flex; justify-content: space-between; margin-bottom: 8px; padding: 5px 0; border-bottom: 1px solid #eee; }
+        .info-row:last-child { border-bottom: none; }
+        .info-label { font-weight: 600; color: #7f8c8d; font-size: 13px; }
+        .info-value { font-weight: 600; color: #2c3e50; font-size: 13px; }
+        .loading-spinner { display: inline-block; width: 25px; height: 25px; border: 3px solid #f3f3f3; border-top: 3px solid #3498db; border-radius: 50%; animation: spin 1s linear infinite; margin: 20px auto; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-        .error-message { text-align: center; color: #e74c3c; font-size: 16px; margin: 20px; padding: 20px; background: rgba(255,255,255,0.9); border-radius: 10px;}
+        .error-message { text-align: center; color: #e74c3c; font-size: 16px; margin: 20px; padding: 20px; background: rgba(255,255,255,0.9); border-radius: 10px; }
     </style>
 </head>
 <body>
@@ -143,10 +68,7 @@
     </div>
     <script>
         let debugMode = true;
-        function toggleDebugPanel() {
-            debugMode = !debugMode;
-            document.getElementById('debugPanel').style.display = debugMode ? 'block' : 'none';
-        }
+        function toggleDebugPanel() { debugMode = !debugMode; document.getElementById('debugPanel').style.display = debugMode ? 'block' : 'none'; }
         function logDebug(msg) {
             if (!debugMode) return;
             const debugContent = document.getElementById('debugContent');
@@ -154,31 +76,34 @@
             debugContent.innerHTML += `<div>[${timestamp}] ${msg}</div>`;
             debugContent.scrollTop = debugContent.scrollHeight;
         }
-        function clearDebug() {
-            document.getElementById('debugContent').innerHTML = '';
-        }
+        function clearDebug() { document.getElementById('debugContent').innerHTML = ''; }
 
         function getPlayerId() {
             const urlParams = new URLSearchParams(window.location.search);
             const playerId = urlParams.get('id');
             logDebug('URL: ' + window.location.href);
             logDebug('playerId aus URL: ' + playerId);
-            return playerId;
-        }
-        function goBack() {
-            window.location.href = "index.html";
-        }
-
-        document.addEventListener('DOMContentLoaded', async () => {
-            logDebug('player.html geladen');
-            const playerId = getPlayerId();
             if (!playerId) {
                 logDebug('Keine Spieler-ID in der URL gefunden!');
                 document.getElementById('errorMessage').textContent = "Keine Spieler-ID in der URL gefunden!";
                 document.getElementById('errorMessage').style.display = 'block';
                 document.getElementById('loadingIndicator').style.display = 'none';
-                return;
             }
+            return playerId;
+        }
+        function goBack() { window.location.href = "index.html"; }
+        function calcAge(birthday) {
+            if (!birthday || birthday === 'N/A') return '-';
+            const birthDate = new Date(birthday.split('.').reverse().join('-'));
+            const diff = Date.now() - birthDate.getTime();
+            const ageDate = new Date(diff);
+            return Math.abs(ageDate.getUTCFullYear() - 1970) + ' Jahre';
+        }
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            logDebug('player.html geladen');
+            const playerId = getPlayerId();
+            if (!playerId) return;
             try {
                 logDebug('Lade Spielerdaten...');
                 const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/SpielerdatenbankNeutralJson.txt');
@@ -212,14 +137,6 @@
                 document.getElementById('loadingIndicator').style.display = 'none';
             }
         });
-
-        function calcAge(birthday) {
-            if (!birthday || birthday === 'N/A') return '-';
-            const birthDate = new Date(birthday.split('.').reverse().join('-'));
-            const diff = Date.now() - birthDate.getTime();
-            const ageDate = new Date(diff);
-            return Math.abs(ageDate.getUTCFullYear() - 1970) + ' Jahre';
-        }
     </script>
 </body>
 </html>
