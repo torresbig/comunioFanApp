@@ -471,23 +471,60 @@
             return statusMap[status] || status || 'Unbekannt';
         }
         
-        function displayAttributes(player) {
-            const container = document.getElementById('attributesList');
-            if (!container) return;
+       function displayAttributes(player) {
+    const container = document.getElementById('attributesList');
+    if (!container) return;
+    
+    logDebug('Verarbeite Attribute für Spieler: ' + player.name);
+    
+    container.innerHTML = '';
+    
+    if (player.data.attribute && player.data.attribute.length > 0) {
+        logDebug('Attribute gefunden: ' + JSON.stringify(player.data.attribute));
+        document.getElementById('attributesCard').style.display = 'block';
+        
+        player.data.attribute.forEach((attr, index) => {
+            logDebug(`Verarbeite Attribut ${index}: ${JSON.stringify(attr)}`);
             
-            container.innerHTML = '';
-            if (player.data.attribute && player.data.attribute.length > 0) {
-                document.getElementById('attributesCard').style.display = 'block';
-                player.data.attribute.forEach(attr => {
-                    const span = document.createElement('span');
-                    span.className = 'attribute-tag';
-                    span.textContent = attr;
-                    container.appendChild(span);
+            // Prüfe ob attr ein Objekt ist
+            if (typeof attr === 'object' && attr !== null) {
+                // Durchlaufe alle Eigenschaften des Objekts
+                Object.keys(attr).forEach(key => {
+                    const value = attr[key];
+                    logDebug(`Attribut-Key: ${key}, Value: ${JSON.stringify(value)}`);
+                    
+                    if (Array.isArray(value)) {
+                        // Wenn der Wert ein Array ist, jedes Element hinzufügen
+                        value.forEach(item => {
+                            const span = document.createElement('span');
+                            span.className = 'attribute-tag';
+                            span.textContent = item;
+                            container.appendChild(span);
+                        });
+                    } else if (typeof value === 'string') {
+                        // Wenn der Wert ein String ist, direkt hinzufügen
+                        const span = document.createElement('span');
+                        span.className = 'attribute-tag';
+                        span.textContent = value;
+                        container.appendChild(span);
+                    }
                 });
-            } else {
-                document.getElementById('attributesCard').style.display = 'none';
+            } else if (typeof attr === 'string') {
+                // Wenn attr direkt ein String ist
+                const span = document.createElement('span');
+                span.className = 'attribute-tag';
+                span.textContent = attr;
+                container.appendChild(span);
             }
-        }
+        });
+        
+        logDebug('Attribute erfolgreich angezeigt');
+    } else {
+        logDebug('Keine Attribute vorhanden');
+        document.getElementById('attributesCard').style.display = 'none';
+    }
+}
+
         
         function getOwnerName(playerId) {
             // Platzhalter - muss mit deiner Datenstruktur implementiert werden
@@ -513,25 +550,36 @@
                     player = allPlayers.find(p => parseInt(p.id) === playerIdNum);
                 }
                 
-                if (!player) {
-                    logDebug('Spieler mit ID ' + playerId + ' nicht gefunden!');
-                    document.getElementById('errorMessage').textContent = "Spieler nicht gefunden!";
-                    document.getElementById('errorMessage').style.display = 'block';
-                    document.getElementById('loadingIndicator').style.display = 'none';
-                    return;
-                }
-                
-                logDebug('Spieler gefunden: ' + player.name);
-                
-                // Transfermarkt-Link setzen
-                const playerNameLink = document.getElementById('playerNameLink');
-                playerNameLink.textContent = player.name;
-                if (player.data && player.data.transfermarktLink) {
-                    playerNameLink.href = player.data.transfermarktLink;
-                    logDebug('Transfermarkt-Link gesetzt: ' + player.data.transfermarktLink);
-                } else {
-                    logDebug('Kein Transfermarkt-Link verfügbar');
-                }
+               if (!player) {
+    logDebug('Spieler mit ID ' + playerId + ' nicht gefunden!');
+    document.getElementById('errorMessage').textContent = "Spieler nicht gefunden!";
+    document.getElementById('errorMessage').style.display = 'block';
+    document.getElementById('loadingIndicator').style.display = 'none';
+    return;
+}
+
+logDebug('Spieler gefunden: ' + player.name);
+
+// Debug: Vollständige Datenstruktur analysieren
+logDebug('Vollständige Spielerdaten-Struktur:');
+logDebug('- Grunddaten: ' + JSON.stringify(Object.keys(player)));
+logDebug('- player.data Keys: ' + JSON.stringify(Object.keys(player.data || {})));
+logDebug('- Attribute: ' + JSON.stringify(player.data.attribute));
+logDebug('- TransfermarktDoDe: ' + JSON.stringify(player.data.transfermarktDoDe));
+
+// Transfermarkt-Link KORREKT setzen
+const playerNameLink = document.getElementById('playerNameLink');
+playerNameLink.textContent = player.name;
+
+if (player.data && player.data.transfermarktDoDe && player.data.transfermarktDoDe.link) {
+    playerNameLink.href = player.data.transfermarktDoDe.link;
+    logDebug('✅ Transfermarkt-Link gesetzt: ' + player.data.transfermarktDoDe.link);
+} else {
+    logDebug('❌ Kein Transfermarkt-Link verfügbar');
+    playerNameLink.href = "#";
+    playerNameLink.style.cursor = "default";
+    playerNameLink.style.textDecoration = "none";
+}
                 
                 // Vereinslogo laden
                 const clubId = player.data.verein || "0";
