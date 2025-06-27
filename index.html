@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comunio Manager</title>
+    <title>Spielerinfos</title>
     <style>
         * {
             margin: 0;
@@ -256,18 +256,16 @@
         td {
             padding: 12px;
             border-bottom: 1px solid #ecf0f1;
-            transition: all 0.3s ease;
+            transition: background-color 0.3s ease;
         }
 
         tr {
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: background-color 0.3s ease;
         }
 
         tr:hover {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            transform: scale(1.01);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef) !important;
         }
 
         tr:nth-child(even) {
@@ -415,6 +413,90 @@
             display: block;
         }
 
+        /* Tooltip Styles */
+        .tooltip {
+            position: relative;
+            cursor: help;
+        }
+
+        .tooltip::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+            z-index: 1000;
+        }
+
+        .tooltip:hover::after {
+            opacity: 1;
+        }
+
+        /* Club Name Tooltip */
+        .club-name {
+            position: relative;
+            cursor: help;
+        }
+
+        .club-name::after {
+            content: attr(data-club-name);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+            z-index: 1000;
+        }
+
+        .club-name:hover::after {
+            opacity: 1;
+        }
+
+        /* Player Name Tooltip */
+        .player-name {
+            position: relative;
+            cursor: help;
+        }
+
+        .player-name::after {
+            content: attr(data-player-info);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+            z-index: 1000;
+        }
+
+        .player-name:hover::after {
+            opacity: 1;
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 10px;
@@ -443,34 +525,13 @@
             .stats-cards {
                 grid-template-columns: repeat(2, 1fr);
             }
-        }
 
-        /* Tooltip Styles */
-        .tooltip {
-            position: relative;
-            cursor: help;
-        }
-
-        .tooltip::after {
-            content: attr(data-tooltip);
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(0, 0, 0, 0.8);
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 12px;
-            white-space: nowrap;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s;
-            z-index: 1000;
-        }
-
-        .tooltip:hover::after {
-            opacity: 1;
+            /* Mobile: Tooltips ausblenden */
+            .tooltip::after,
+            .club-name::after,
+            .player-name::after {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -478,8 +539,8 @@
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <h1>🏆 Comunio Manager</h1>
-            <p>Ihre ultimative Fußball-Management-Plattform</p>
+            <h1>📊 Spielerinfos</h1>
+            <p>Übersicht aller Bundesliga-Spieler</p>
         </div>
 
         <!-- Status Bar -->
@@ -607,71 +668,38 @@
     </div>
 
     <script>
-        /**
-         * Comunio Manager - Hauptanwendung
-         * 
-         * Diese Anwendung lädt und verwaltet Spielerdaten aus verschiedenen JSON-Dateien
-         * und stellt eine benutzerfreundliche Oberfläche zur Verfügung.
-         * 
-         * Datenquellen:
-         * - SpielerdatenbankNeutralJson.txt: Hauptspieler-Datenbank
-         * - UserdatenbankJson_884691.txt: Benutzer-Datenbank
-         * - PlayerToUserMap_884691.txt: Zuordnung Spieler zu Benutzer
-         * - MarktwerteJson.txt: Marktwertentwicklung
-         * - VereinsdatenbankJson.txt: Vereins-Datenbank
-         */
-
         // Globale Variablen für Datenmanagement
-        let playerData = [];           // Hauptspieler-Daten
-        let userData = [];             // Benutzer-Daten
-        let playerToUserMap = {};      // Spieler-zu-Benutzer-Zuordnung
-        let marketData = [];           // Marktwert-Daten
-        let clubData = [];             // Vereins-Daten
-        let filteredData = [];         // Gefilterte Spieler-Daten
-        let sortConfig = { column: '', direction: 'asc' }; // Sortier-Konfiguration
-        let debugMode = false;         // Debug-Modus
+        let playerData = [];
+        let userData = [];
+        let playerToUserMap = {};
+        let marketData = [];
+        let clubData = [];
+        let filteredData = [];
+        let sortConfig = { column: '', direction: 'asc' };
+        let debugMode = false;
 
-        /**
-         * Initialisierung der Anwendung
-         * Lädt alle notwendigen Daten und initialisiert die UI
-         */
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('🚀 Comunio Manager wird initialisiert...');
+            console.log('🚀 Spielerinfos wird initialisiert...');
             loadAllData();
             setupEventListeners();
         });
 
-        /**
-         * Event-Listener für UI-Interaktionen einrichten
-         */
         function setupEventListeners() {
-            // Suchfeld
             document.getElementById('searchInput').addEventListener('input', debounce(applyFilters, 300));
-            
-            // Filter-Dropdowns
             document.getElementById('positionFilter').addEventListener('change', applyFilters);
             document.getElementById('statusFilter').addEventListener('change', applyFilters);
             document.getElementById('clubFilter').addEventListener('change', applyFilters);
             document.getElementById('ownerFilter').addEventListener('change', applyFilters);
             document.getElementById('hideInactiveFilter').addEventListener('change', applyFilters);
 
-            // Tabellen-Header für Sortierung
             document.querySelectorAll('th.sortable').forEach(header => {
                 header.addEventListener('click', () => {
                     const column = header.dataset.sort;
                     toggleSort(column);
                 });
             });
-
-            console.log('✅ Event-Listener erfolgreich eingerichtet');
         }
 
-        /**
-         * Debounce-Funktion zur Verzögerung von Event-Handlern
-         * @param {Function} func - Auszuführende Funktion
-         * @param {number} wait - Wartezeit in Millisekunden
-         * @returns {Function} Debounced Funktion
-         */
         function debounce(func, wait) {
             let timeout;
             return function executedFunction(...args) {
@@ -684,9 +712,6 @@
             };
         }
 
-        /**
-         * Lädt alle erforderlichen JSON-Dateien parallel
-         */
         async function loadAllData() {
             updateStatus('📡 Lade Spielerdaten...', 'loading');
             
@@ -701,13 +726,11 @@
 
                 const [players, users, playerUserMap, market, clubs] = await Promise.all(promises);
 
-                // Daten zuweisen
                 playerData = players || [];
                 userData = users || [];
                 marketData = market || [];
                 clubData = clubs || [];
 
-                // Player-to-User-Map verarbeiten
                 playerToUserMap = {};
                 if (Array.isArray(playerUserMap)) {
                     playerUserMap.forEach(item => {
@@ -715,20 +738,11 @@
                     });
                 }
 
-                console.log('📊 Geladene Daten:', {
-                    players: playerData.length,
-                    users: userData.length,
-                    clubs: clubData.length,
-                    marketEntries: marketData.length
-                });
-
-                // UI initialisieren
                 populateFilters();
                 applyFilters();
                 updateStatistics();
                 updateStatus('✅ Daten erfolgreich geladen!', 'success');
                 
-                // Status nach 3 Sekunden ausblenden
                 setTimeout(() => {
                     document.getElementById('statusBar').style.display = 'none';
                     document.getElementById('statsCards').style.display = 'grid';
@@ -737,15 +751,9 @@
             } catch (error) {
                 console.error('❌ Fehler beim Laden der Daten:', error);
                 updateStatus('❌ Fehler beim Laden der Daten.', 'error');
-                logDebug('Fehler beim Laden der Daten: ' + error.message);
             }
         }
 
-        /**
-         * Status-Anzeige aktualisieren
-         * @param {string} message - Anzuzeigende Nachricht
-         * @param {string} type - Typ des Status (loading, success, error)
-         */
         function updateStatus(message, type) {
             const statusBar = document.getElementById('statusBar');
             const spinner = statusBar.querySelector('.loading-spinner');
@@ -761,11 +769,7 @@
             statusBar.innerHTML = (type === 'loading' ? '<span class="loading-spinner"></span> ' : '') + message;
         }
 
-        /**
-         * Filter-Dropdowns mit verfügbaren Werten befüllen
-         */
         function populateFilters() {
-            // Vereins-Filter befüllen
             const clubFilter = document.getElementById('clubFilter');
             const clubs = [...new Set(playerData.map(player => getClubName(player.data.verein)))].sort();
             
@@ -778,7 +782,6 @@
                 }
             });
 
-            // Besitzer-Filter befüllen
             const ownerFilter = document.getElementById('ownerFilter');
             const owners = [...new Set(playerData.map(player => getOwnerName(player.id)))].sort();
             
@@ -790,13 +793,8 @@
                     ownerFilter.appendChild(option);
                 }
             });
-
-            console.log('✅ Filter erfolgreich befüllt');
         }
 
-        /**
-         * Filter anwenden und Tabelle aktualisieren
-         */
         function applyFilters() {
             if (!playerData.length) return;
 
@@ -808,33 +806,27 @@
             const hideInactive = document.getElementById('hideInactiveFilter').checked;
 
             filteredData = playerData.filter(player => {
-                // Suchbegriff-Filter
                 if (searchTerm && !player.name.toLowerCase().includes(searchTerm)) {
                     return false;
                 }
 
-                // Positions-Filter
                 if (positionFilter && player.data.position !== positionFilter) {
                     return false;
                 }
 
-                // Status-Filter
                 if (statusFilter && player.data.comunioStatus.status !== statusFilter) {
                     return false;
                 }
 
-                // Vereins-Filter
                 if (clubFilter && getClubName(player.data.verein) !== clubFilter) {
                     return false;
                 }
 
-                // Besitzer-Filter
                 const ownerName = getOwnerName(player.id);
                 if (ownerFilter && ownerName !== ownerFilter) {
                     return false;
                 }
 
-                // Inaktive Spieler ausblenden
                 if (hideInactive && player.data.comunioStatus.status === 'NICHT_IN_LIGA') {
                     return false;
                 }
@@ -842,21 +834,14 @@
                 return true;
             });
 
-            // Sortierung anwenden
             if (sortConfig.column) {
                 sortData(sortConfig.column);
             }
 
             renderTable();
             updateStatistics();
-
-            logDebug(`Filter angewendet: ${filteredData.length} von ${playerData.length} Spielern angezeigt`);
         }
 
-        /**
-         * Sortierung umschalten
-         * @param {string} column - Spalte nach der sortiert werden soll
-         */
         function toggleSort(column) {
             if (sortConfig.column === column) {
                 sortConfig.direction = sortConfig.direction === 'asc' ? 'desc' : 'asc';
@@ -865,7 +850,6 @@
                 sortConfig.direction = 'asc';
             }
 
-            // Header-Styling aktualisieren
             document.querySelectorAll('th.sortable').forEach(th => {
                 th.classList.remove('sort-asc', 'sort-desc');
             });
@@ -875,14 +859,8 @@
 
             sortData(column);
             renderTable();
-
-            logDebug(`Sortiert nach ${column} (${sortConfig.direction})`);
         }
 
-        /**
-         * Daten sortieren
-         * @param {string} column - Spalte nach der sortiert werden soll
-         */
         function sortData(column) {
             filteredData.sort((a, b) => {
                 let valueA, valueB;
@@ -936,9 +914,6 @@
             });
         }
 
-        /**
-         * Tabelle mit gefilterten Daten rendern
-         */
         function renderTable() {
             const tbody = document.getElementById('playersTableBody');
             tbody.innerHTML = '';
@@ -954,29 +929,34 @@
                 row.dataset.playerId = player.id;
                 row.className = 'player-row';
                 
-                // Klick-Event für Navigation zur Detailseite
                 row.addEventListener('click', () => {
-                    window.location.href = `player.html?id=${player.id}`;
+                    window.open(`https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${player.id}`, '_blank');
                 });
+
+                const playerInfo = `ID: ${player.id} | Position: ${player.data.spielerDaten?.hauptposition || 'N/A'} | Größe: ${player.data.spielerDaten?.groesse || 'N/A'}`;
+                const clubName = getClubName(player.data.verein);
 
                 row.innerHTML = `
                     <td>
-                        <div style="font-weight: 600;">${escapeHtml(player.name)}</div>
+                        <div class="player-name" data-player-info="${escapeHtml(playerInfo)}" style="font-weight: 600;">${escapeHtml(player.name)}</div>
                         <div style="font-size: 11px; color: #7f8c8d;">ID: ${player.id}</div>
                     </td>
-                    <td class="club-cell">${escapeHtml(getClubName(player.data.verein))}</td>
+                    <td class="club-cell">
+                        <span class="club-name" data-club-name="${escapeHtml(clubName)}">${escapeHtml(clubName)}</span>
+                    </td>
                     <td>
-                        <span class="position-badge position-${player.data.position?.toLowerCase() || 'unknown'}">
+                        <span class="position-badge position-${player.data.position?.toLowerCase() || 'unknown'} tooltip" 
+                              data-tooltip="${player.data.spielerDaten?.hauptposition || 'Hauptposition unbekannt'}">
                             ${player.data.position || 'N/A'}
                         </span>
                     </td>
                     <td>
-                        <span class="status-badge status-${player.data.comunioStatus.status?.toLowerCase() || 'unknown'}" 
-                              data-tooltip="${player.data.comunioStatus.details || ''}">
+                        <span class="status-badge status-${player.data.comunioStatus.status?.toLowerCase() || 'unknown'} tooltip" 
+                              data-tooltip="${player.data.comunioStatus.details || getStatusDisplayName(player.data.comunioStatus.status)}">
                             ${getStatusDisplayName(player.data.comunioStatus.status)}
                         </span>
                     </td>
-                    <td class="value-cell">${formatCurrency(player.data.wert)}</td>
+                    <td class="value-cell">${formatCurrencyShort(player.data.wert)}</td>
                     <td class="points-cell">${player.data.punkte || 0}</td>
                     <td>${formatDate(player.data.lastUpdate)}</td>
                     <td>
@@ -986,13 +966,8 @@
                     </td>
                 `;
             });
-
-            console.log(`✅ Tabelle gerendert: ${filteredData.length} Zeilen`);
         }
 
-        /**
-         * Statistiken aktualisieren
-         */
         function updateStatistics() {
             if (!playerData.length) return;
 
@@ -1004,16 +979,9 @@
             document.getElementById('totalPlayers').textContent = totalPlayers.toLocaleString('de-DE');
             document.getElementById('activePlayers').textContent = activePlayers.toLocaleString('de-DE');
             document.getElementById('ownedPlayers').textContent = ownedPlayers.toLocaleString('de-DE');
-            document.getElementById('totalValue').textContent = formatCurrency(totalValue);
-
-            console.log('📊 Statistiken aktualisiert');
+            document.getElementById('totalValue').textContent = formatCurrencyShort(totalValue);
         }
 
-        /**
-         * Besitzer-Namen für einen Spieler ermitteln
-         * @param {string} playerId - Spieler-ID
-         * @returns {string} Name des Besitzers
-         */
         function getOwnerName(playerId) {
             const userId = playerToUserMap[playerId];
             if (!userId || userId === "1") return "Computer";
@@ -1024,21 +992,11 @@
             return user.user.firstName + (user.user.lastName ? ' ' + user.user.lastName : '');
         }
 
-        /**
-         * Vereins-Namen für eine Vereins-ID ermitteln
-         * @param {string} clubId - Vereins-ID
-         * @returns {string} Name des Vereins
-         */
         function getClubName(clubId) {
             const club = clubData.find(c => c.id === clubId);
             return club ? club.name : 'Unbekannt';
         }
 
-        /**
-         * Status-Namen für Anzeige formatieren
-         * @param {string} status - Roher Status
-         * @returns {string} Formatierter Status
-         */
         function getStatusDisplayName(status) {
             const statusMap = {
                 'AKTIV': 'Aktiv',
@@ -1049,25 +1007,17 @@
             return statusMap[status] || status || 'Unbekannt';
         }
 
-        /**
-         * Währung formatieren
-         * @param {number} value - Zu formatierender Wert
-         * @returns {string} Formatierte Währung
-         */
-        function formatCurrency(value) {
+        function formatCurrencyShort(value) {
             if (!value || value === 0) return '-';
-            return new Intl.NumberFormat('de-DE', {
-                style: 'currency',
-                currency: 'EUR',
-                maximumFractionDigits: 0
-            }).format(value);
+            
+            if (value >= 1000000) {
+                return (value / 1000000).toFixed(1).replace('.0', '') + ' Mio €';
+            } else if (value >= 1000) {
+                return (value / 1000).toFixed(0) + ' Tsd €';
+            }
+            return value.toLocaleString('de-DE') + ' €';
         }
 
-        /**
-         * Datum formatieren
-         * @param {string} dateString - Datum als String
-         * @returns {string} Formatiertes Datum
-         */
         function formatDate(dateString) {
             if (!dateString) return '-';
             try {
@@ -1077,11 +1027,6 @@
             }
         }
 
-        /**
-         * HTML-String escapen für Sicherheit
-         * @param {string} text - Zu escapender Text
-         * @returns {string} Escapeter Text
-         */
         function escapeHtml(text) {
             if (!text) return '';
             const div = document.createElement('div');
@@ -1089,9 +1034,6 @@
             return div.innerHTML;
         }
 
-        /**
-         * Alle Filter zurücksetzen
-         */
         function resetFilters() {
             document.getElementById('searchInput').value = '';
             document.getElementById('positionFilter').value = '';
@@ -1100,27 +1042,18 @@
             document.getElementById('ownerFilter').value = '';
             document.getElementById('hideInactiveFilter').checked = false;
             
-            // Sortierung zurücksetzen
             sortConfig = { column: '', direction: 'asc' };
             document.querySelectorAll('th.sortable').forEach(th => {
                 th.classList.remove('sort-asc', 'sort-desc');
             });
 
             applyFilters();
-            console.log('🔄 Filter zurückgesetzt');
         }
 
-        /**
-         * Daten neu laden
-         */
         function reloadData() {
-            console.log('🔄 Daten werden neu geladen...');
             loadAllData();
         }
 
-        /**
-         * Debug-Modus umschalten
-         */
         function toggleDebug() {
             debugMode = !debugMode;
             const debugPanel = document.getElementById('debugPanel');
@@ -1128,16 +1061,11 @@
             if (debugMode) {
                 debugPanel.classList.add('show');
                 updateDebugPanel();
-                console.log('🐛 Debug-Modus aktiviert');
             } else {
                 debugPanel.classList.remove('show');
-                console.log('🐛 Debug-Modus deaktiviert');
             }
         }
 
-        /**
-         * Debug-Panel aktualisieren
-         */
         function updateDebugPanel() {
             const debugContent = document.getElementById('debugContent');
             debugContent.innerHTML = `
@@ -1147,63 +1075,8 @@
                 Geladene Benutzer: ${userData.length}<br>
                 Geladene Vereine: ${clubData.length}<br>
                 Aktuelle Sortierung: ${sortConfig.column} (${sortConfig.direction})<br>
-                <br>
-                <strong>Browser-Informationen:</strong><br>
-                User Agent: ${navigator.userAgent}<br>
-                Bildschirmauflösung: ${screen.width}x${screen.height}<br>
-                Viewport: ${window.innerWidth}x${window.innerHeight}<br>
-                <br>
-                <strong>Speicher:</strong><br>
-                Player-to-User Mappings: ${Object.keys(playerToUserMap).length}<br>
-                <br>
-                <div id="debugLog"></div>
             `;
         }
-
-        /**
-         * Debug-Nachricht protokollieren
-         * @param {string} message - Debug-Nachricht
-         */
-        function logDebug(message) {
-            if (debugMode) {
-                const timestamp = new Date().toLocaleTimeString('de-DE');
-                const debugLog = document.getElementById('debugLog');
-                if (debugLog) {
-                    debugLog.innerHTML += `[${timestamp}] ${message}<br>`;
-                    debugLog.scrollTop = debugLog.scrollHeight;
-                }
-            }
-            console.log(`[DEBUG] ${message}`);
-        }
-
-        // Performance-Monitoring
-        window.addEventListener('load', function() {
-            const loadTime = performance.now();
-            console.log(`⚡ Seite vollständig geladen in ${Math.round(loadTime)}ms`);
-            logDebug(`Ladezeit: ${Math.round(loadTime)}ms`);
-        });
-
-        // Error-Handling für unbehandelte Fehler
-        window.addEventListener('error', function(event) {
-            console.error('❌ Unbehandelter Fehler:', event.error);
-            logDebug(`Fehler: ${event.error?.message || 'Unbekannter Fehler'}`);
-            updateStatus('❌ Ein unerwarteter Fehler ist aufgetreten.', 'error');
-        });
-
-        // Service Worker Registration (optional, für Offline-Funktionalität)
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(function(registration) {
-                        console.log('✅ ServiceWorker registriert:', registration.scope);
-                    })
-                    .catch(function(error) {
-                        console.log('❌ ServiceWorker Registrierung fehlgeschlagen:', error);
-                    });
-            });
-        }
-
-        console.log('🎯 Comunio Manager JavaScript erfolgreich geladen');
     </script>
 </body>
 </html>
