@@ -2,249 +2,642 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Spielerübersicht</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bundesliga Spielerübersicht</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             background: #f5f5f5;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            line-height: 1.4;
         }
+
         header {
             background: #2c3e50;
             color: #fff;
-            padding: 16px 0;
+            padding: 20px 0;
             text-align: center;
-            font-size: 1.5rem;
-            letter-spacing: 2px;
+            font-size: 1.8rem;
             font-weight: bold;
+            letter-spacing: 2px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+
         .container {
-            max-width: 1200px;
-            margin: 24px auto;
+            max-width: 1400px;
+            margin: 30px auto;
             background: #fff;
             border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-            padding: 24px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 30px;
         }
+
+        .stats-bar {
+            display: flex;
+            justify-content: space-around;
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .stat-item {
+            text-align: center;
+            min-width: 120px;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+
+        .filter-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
         .filter-row {
             display: flex;
             flex-wrap: wrap;
-            gap: 12px;
-            margin-bottom: 18px;
+            gap: 15px;
+            align-items: center;
         }
-        .filter-row label {
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            min-width: 150px;
+        }
+
+        .filter-group label {
             font-weight: bold;
-            margin-right: 6px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
         }
+
         .filter-row select, .filter-row input {
-            padding: 4px 8px;
-            border-radius: 5px;
-            border: 1px solid #bbb;
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 2px solid #bdc3c7;
+            font-size: 14px;
+            transition: border-color 0.3s;
         }
+
+        .filter-row select:focus, .filter-row input:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 8px;
+            background: white;
         }
+
         th, td {
-            padding: 8px 6px;
-            border-bottom: 1px solid #eee;
+            padding: 12px 8px;
             text-align: left;
-            font-size: 15px;
+            border-bottom: 1px solid #ecf0f1;
+            font-size: 14px;
         }
+
         th {
-            background: #e3eaf1;
-            color: #2c3e50;
+            background: #34495e;
+            color: white;
             font-weight: bold;
             position: sticky;
             top: 0;
-            z-index: 2;
+            z-index: 10;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.5px;
         }
-        tr {
+
+        tbody tr {
             cursor: pointer;
-            transition: background 0.15s;
+            transition: all 0.2s ease;
         }
-        tr:hover {
-            background: #e3f2fd;
+
+        tbody tr:hover {
+            background: #e8f4fd;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        .status-aktiv { color: #27ae60; font-weight: bold; }
-        .status-verletzt { color: #e67e22; font-weight: bold; }
-        .status-nicht { color: #b71c1c; font-weight: bold; }
-        .own-player { background: #e3f2fd !important; }
-        @media (max-width: 900px) {
-            .container { padding: 8px; }
-            th, td { font-size: 13px; padding: 6px 2px; }
+
+        tbody tr:nth-child(even) {
+            background: #f8f9fa;
         }
-        @media (max-width: 600px) {
-            .filter-row { flex-direction: column; }
-            th, td { font-size: 12px; }
+
+        tbody tr:nth-child(even):hover {
+            background: #e8f4fd;
+        }
+
+        .status-aktiv { 
+            color: #27ae60; 
+            font-weight: bold;
+            text-shadow: 0 1px 2px rgba(39,174,96,0.3);
+        }
+
+        .status-verletzt { 
+            color: #e74c3c; 
+            font-weight: bold;
+            text-shadow: 0 1px 2px rgba(231,76,60,0.3);
+        }
+
+        .status-nicht { 
+            color: #95a5a6; 
+            font-weight: bold;
+        }
+
+        .own-player {
+            background: #e3f2fd !important;
+            border-left: 4px solid #2196f3;
+        }
+
+        .own-player:hover {
+            background: #bbdefb !important;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 1.2rem;
+            color: #7f8c8d;
+        }
+
+        .loading:after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #3498db;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 1s ease-in-out infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .team-logo {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #3498db;
+            color: white;
+            text-align: center;
+            line-height: 25px;
+            font-size: 10px;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .currency {
+            font-weight: 600;
+            color: #27ae60;
+        }
+
+        .points {
+            font-weight: 600;
+            color: #8e44ad;
+        }
+
+        @media (max-width: 1200px) {
+            .container { 
+                margin: 15px;
+                padding: 20px; 
+            }
+            
+            .stats-bar {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container { 
+                padding: 15px; 
+            }
+            
+            .filter-row { 
+                flex-direction: column; 
+                align-items: stretch;
+            }
+            
+            .filter-group {
+                min-width: auto;
+            }
+            
+            th, td { 
+                font-size: 12px; 
+                padding: 8px 4px; 
+            }
+            
+            header {
+                font-size: 1.4rem;
+                padding: 15px 0;
+            }
+            
+            .stat-number {
+                font-size: 1.2rem;
+            }
+            
+            .team-logo {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            th, td { 
+                font-size: 11px; 
+                padding: 6px 2px; 
+            }
+            
+            .stats-bar {
+                padding: 10px;
+            }
+            
+            .stat-item {
+                min-width: 80px;
+            }
         }
     </style>
 </head>
 <body>
-<header>
-    Bundesliga Spielerübersicht
-</header>
-<div class="container">
-    <!-- Filterleiste -->
-    <div class="filter-row">
-        <label for="vereinFilter">Verein:</label>
-        <select id="vereinFilter"><option value="">Alle</option></select>
-        <label for="posFilter">Position:</label>
-        <select id="posFilter"><option value="">Alle</option></select>
-        <label for="searchInput">Suche:</label>
-        <input id="searchInput" type="text" placeholder="Name, Nationalität...">
+    <header>
+        🏆 Bundesliga Spielerübersicht 2024/25
+    </header>
+
+    <div class="container">
+        <!-- Statistiken -->
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-number" id="totalPlayers">-</div>
+                <div class="stat-label">Spieler</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="totalTeams">-</div>
+                <div class="stat-label">Vereine</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="ownPlayers">-</div>
+                <div class="stat-label">Eigene Spieler</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="totalValue">-</div>
+                <div class="stat-label">Gesamtwert</div>
+            </div>
+        </div>
+
+        <!-- Filter -->
+        <div class="filter-section">
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label for="vereinFilter">Verein:</label>
+                    <select id="vereinFilter">
+                        <option value="">Alle Vereine</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="posFilter">Position:</label>
+                    <select id="posFilter">
+                        <option value="">Alle Positionen</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="statusFilter">Status:</label>
+                    <select id="statusFilter">
+                        <option value="">Alle Status</option>
+                        <option value="AKTIV">Aktiv</option>
+                        <option value="VERLETZT">Verletzt</option>
+                        <option value="NICHT_IN_LIGA">Nicht in Liga</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="ownerFilter">Besitzer:</label>
+                    <select id="ownerFilter">
+                        <option value="">Alle</option>
+                        <option value="own">Nur eigene</option>
+                        <option value="computer">Nur Computer</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="searchInput">Suche:</label>
+                    <input id="searchInput" type="text" placeholder="Name, Nationalität...">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabelle -->
+        <div class="table-container">
+            <table id="spielerTable">
+                <thead>
+                    <tr>
+                        <th>Spieler</th>
+                        <th>Verein</th>
+                        <th>Position</th>
+                        <th>Marktwert</th>
+                        <th>Punkte (2024)</th>
+                        <th>Durchschnitt</th>
+                        <th>Status</th>
+                        <th>Besitzer</th>
+                    </tr>
+                </thead>
+                <tbody id="spielerTableBody">
+                    <tr>
+                        <td colspan="8" class="loading">Lade Spielerdaten...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <!-- Tabelle -->
-    <table id="spielerTable">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Verein</th>
-                <th>Position</th>
-                <th>Marktwert</th>
-                <th>Punkte (letzte Saison)</th>
-                <th>Status</th>
-                <th>Besitzer</th>
-            </tr>
-        </thead>
-        <tbody id="spielerTableBody">
-            <!-- Dynamisch generiert -->
-        </tbody>
-    </table>
-</div>
-<script>
-/**
- * Läd alle Daten und initialisiert die Seite.
- * Die Daten werden aus den bereitgestellten Dateien geladen.
- * Es werden KEINE Platzhalter verwendet!
- */
 
-// Globale Variablen für Daten
-let spielerDaten = [];
-let vereineDaten = [];
-let playerUserMap = {};
-let marktwerteDaten = [];
+    <script>
+        // Globale Variablen für Daten
+        let spielerDaten = [];
+        let vereineDaten = [];
+        let playerUserMap = {};
+        let filteredPlayers = [];
 
-// Hilfsfunktionen für Statusanzeige
-function getStatusText(status) {
-    if (!status) return "";
-    if (status === "AKTIV") return '<span class="status-aktiv">AKTIV</span>';
-    if (status === "VERLETZT") return '<span class="status-verletzt">VERLETZT</span>';
-    if (status === "NICHT_IN_LIGA") return '<span class="status-nicht">NICHT IN LIGA</span>';
-    return status;
-}
+        // Status-Anzeige Funktionen
+        function getStatusText(status) {
+            if (!status) return '<span class="status-nicht">UNBEKANNT</span>';
+            if (status === "AKTIV") return '<span class="status-aktiv">● AKTIV</span>';
+            if (status === "VERLETZT") return '<span class="status-verletzt">● VERLETZT</span>';
+            if (status === "NICHT_IN_LIGA") return '<span class="status-nicht">● NICHT IN LIGA</span>';
+            return `<span class="status-nicht">${status}</span>`;
+        }
 
-// Hilfsfunktion für Besitzer
-function getBesitzerText(id) {
-    if (!id || id === "1") return "Computer";
-    return "User " + id;
-}
+        // Besitzer-Anzeige
+        function getBesitzerText(userId) {
+            if (!userId || userId === "1") return "Computer";
+            return `User ${userId}`;
+        }
 
-// Hilfsfunktion für Formatierung Marktwert
-function formatCurrency(eur) {
-    eur = Number(eur) || 0;
-    return eur.toLocaleString("de-DE") + " €";
-}
+        function isOwnPlayer(userId) {
+            return userId && userId !== "1";
+        }
 
-// Daten laden und Seite initialisieren
-async function loadData() {
-    // Spielerdaten
-    const spielerText = await fetch('SpielerdatenbankNeutralJson.txt').then(r=>r.text());
-    spielerDaten = spielerText.split('\n').filter(Boolean).map(l=>JSON.parse(l));
-    // Vereinsdaten
-    vereineDaten = await fetch('VereinsdatenbankJson.txt').then(r=>r.json());
-    // PlayerToUserMap
-    const userMapText = await fetch('PlayerToUserMap_884691.txt').then(r=>r.text());
-    userMapText.split('\n').filter(Boolean).forEach(line => {
-        Object.assign(playerUserMap, JSON.parse(line));
-    });
-    // Marktwerte (für z.B. Filter oder spätere Erweiterung)
-    marktwerteDaten = await fetch('MarktwerteJson.txt').then(r=>r.text()).then(txt => txt.split('\n').filter(Boolean).map(l=>JSON.parse(l)));
-}
+        // Währungsformatierung
+        function formatCurrency(value) {
+            if (!value || value === 0) return '<span class="currency">0 €</span>';
+            return `<span class="currency">${Number(value).toLocaleString("de-DE")} €</span>`;
+        }
 
-// Tabelle befüllen
-function fillTable() {
-    const tbody = document.getElementById('spielerTableBody');
-    tbody.innerHTML = '';
-    // Filter holen
-    const vereinId = document.getElementById('vereinFilter').value;
-    const pos = document.getElementById('posFilter').value;
-    const search = document.getElementById('searchInput').value.toLowerCase();
+        // Punkte formatierung
+        function formatPoints(points) {
+            if (!points || points === 0) return '<span class="points">0</span>';
+            return `<span class="points">${points}</span>`;
+        }
 
-    spielerDaten.forEach(spieler => {
-        const d = spieler.data;
-        const verein = vereineDaten.find(v => v.id == d.verein) || {name: "?"};
-        const besitzer = playerUserMap[spieler.id] || "1";
-        const status = d.comunioStatus?.status || d.status?.status || "";
+        // Team-Logo erstellen
+        function createTeamLogo(teamName) {
+            if (!teamName || teamName === "?") return "";
+            const shortName = teamName.substring(0, 3).toUpperCase();
+            return `<span class="team-logo">${shortName}</span>`;
+        }
+
+        // Daten laden
+        async function loadData() {
+            try {
+                console.log("Lade Daten...");
+                
+                // Spielerdaten laden (JSON Lines Format)
+                const spielerResponse = await fetch('SpielerdatenbankNeutralJson.txt');
+                const spielerText = await spielerResponse.text();
+                spielerDaten = spielerText.split('\n')
+                    .filter(line => line.trim())
+                    .map(line => JSON.parse(line));
+                
+                console.log(`${spielerDaten.length} Spieler geladen`);
+
+                // Vereinsdaten laden
+                const vereineResponse = await fetch('VereinsdatenbankJson.txt');
+                vereineDaten = await vereineResponse.json();
+                
+                console.log(`${vereineDaten.length} Vereine geladen`);
+
+                // PlayerToUserMap laden (JSON Lines Format)
+                const userMapResponse = await fetch('PlayerToUserMap_884691.txt');
+                const userMapText = await userMapResponse.text();
+                const userMapArray = userMapText.split('\n')
+                    .filter(line => line.trim())
+                    .map(line => JSON.parse(line));
+                
+                // Array zu Objekt konvertieren
+                userMapArray.forEach(item => {
+                    Object.assign(playerUserMap, item);
+                });
+                
+                console.log(`${Object.keys(playerUserMap).length} Spieler-User-Zuordnungen geladen`);
+                
+                return true;
+            } catch (error) {
+                console.error('Fehler beim Laden der Daten:', error);
+                document.getElementById('spielerTableBody').innerHTML = 
+                    '<tr><td colspan="8" style="color: red; text-align: center; padding: 50px;">Fehler beim Laden der Daten! Bitte überprüfen Sie, ob alle Dateien vorhanden sind.</td></tr>';
+                return false;
+            }
+        }
+
+        // Statistiken aktualisieren
+        function updateStats() {
+            const totalPlayers = filteredPlayers.length;
+            const totalTeams = new Set(filteredPlayers.map(p => p.data.verein)).size;
+            const ownPlayers = filteredPlayers.filter(p => isOwnPlayer(playerUserMap[p.id])).length;
+            const totalValue = filteredPlayers.reduce((sum, p) => sum + (p.data.wert || 0), 0);
+
+            document.getElementById('totalPlayers').textContent = totalPlayers.toLocaleString('de-DE');
+            document.getElementById('totalTeams').textContent = totalTeams;
+            document.getElementById('ownPlayers').textContent = ownPlayers;
+            document.getElementById('totalValue').textContent = formatCurrency(totalValue).replace(/<[^>]*>/g, '');
+        }
+
+        // Tabelle befüllen
+        function fillTable() {
+            const tbody = document.getElementById('spielerTableBody');
+            tbody.innerHTML = '';
+
+            // Filter anwenden
+            applyFilters();
+
+            if (filteredPlayers.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="8" style="text-align: center; padding: 30px; color: #7f8c8d;">Keine Spieler gefunden</td></tr>';
+                updateStats();
+                return;
+            }
+
+            // Sortierung nach Marktwert (absteigend)
+            filteredPlayers.sort((a, b) => (b.data.wert || 0) - (a.data.wert || 0));
+
+            filteredPlayers.forEach(spieler => {
+                const data = spieler.data;
+                const verein = vereineDaten.find(v => v.id === data.verein) || { name: "Unbekannt" };
+                const userId = playerUserMap[spieler.id] || "1";
+                const status = data.comunioStatus?.status || data.status?.status || "";
+                const lastSeasonPoints = data.lastSeasonPoints || data.punkte || 0;
+                const avgPoints = data.stats?.punkteDurchschnitt || 0;
+
+                const tr = document.createElement('tr');
+                if (isOwnPlayer(userId)) {
+                    tr.classList.add("own-player");
+                }
+                
+                tr.setAttribute('data-player-id', spieler.id);
+                tr.onclick = () => window.location.href = `player.html?id=${spieler.id}`;
+
+                tr.innerHTML = `
+                    <td>${createTeamLogo(verein.name)}${spieler.name}</td>
+                    <td>${verein.name}</td>
+                    <td><strong>${data.position || data.spielerDaten?.hauptposition || "-"}</strong></td>
+                    <td>${formatCurrency(data.wert)}</td>
+                    <td>${formatPoints(lastSeasonPoints)}</td>
+                    <td>${avgPoints ? `${avgPoints}` : '-'}</td>
+                    <td>${getStatusText(status)}</td>
+                    <td>${getBesitzerText(userId)}</td>
+                `;
+                
+                tbody.appendChild(tr);
+            });
+
+            updateStats();
+        }
+
         // Filter anwenden
-        if (vereinId && d.verein !== vereinId) return;
-        if (pos && d.position !== pos) return;
-        if (search && !(
-            spieler.name.toLowerCase().includes(search) ||
-            (d.spielerDaten?.nationalitaet||"").toLowerCase().includes(search) ||
-            (verein.name||"").toLowerCase().includes(search)
-        )) return;
-        // Zeile erzeugen
-        const tr = document.createElement('tr');
-        if (besitzer !== "1") tr.classList.add("own-player");
-        tr.setAttribute('data-player-id', spieler.id);
-        tr.onclick = () => window.location.href = `player.html?id=${spieler.id}`;
-        tr.innerHTML = `
-            <td>${spieler.name}</td>
-            <td>${verein.name}</td>
-            <td>${d.position||d.spielerDaten?.hauptposition||""}</td>
-            <td>${formatCurrency(d.wert)}</td>
-            <td>${d.lastSeasonPoints || d.punkte || 0}</td>
-            <td>${getStatusText(status)}</td>
-            <td>${getBesitzerText(besitzer)}</td>
-        `;
-        tbody.appendChild(tr);
-    });
-}
+        function applyFilters() {
+            const vereinFilter = document.getElementById('vereinFilter').value;
+            const posFilter = document.getElementById('posFilter').value;
+            const statusFilter = document.getElementById('statusFilter').value;
+            const ownerFilter = document.getElementById('ownerFilter').value;
+            const searchFilter = document.getElementById('searchInput').value.toLowerCase();
 
-// Filteroptionen befüllen
-function fillFilters() {
-    // Vereine
-    const vereine = vereineDaten.filter(v=>v.inLiga).sort((a,b)=>a.name.localeCompare(b.name));
-    const vereinSel = document.getElementById('vereinFilter');
-    vereine.forEach(v => {
-        const opt = document.createElement('option');
-        opt.value = v.id;
-        opt.textContent = v.name;
-        vereinSel.appendChild(opt);
-    });
-    // Positionen
-    const posSet = new Set();
-    spielerDaten.forEach(s => {
-        if (s.data.position) posSet.add(s.data.position);
-    });
-    const posSel = document.getElementById('posFilter');
-    Array.from(posSet).sort().forEach(p => {
-        const opt = document.createElement('option');
-        opt.value = p;
-        opt.textContent = p;
-        posSel.appendChild(opt);
-    });
-}
+            filteredPlayers = spielerDaten.filter(spieler => {
+                const data = spieler.data;
+                const verein = vereineDaten.find(v => v.id === data.verein);
+                const userId = playerUserMap[spieler.id];
+                const status = data.comunioStatus?.status || data.status?.status || "";
 
-// Event-Listener für Filter
-function setupFilterEvents() {
-    document.getElementById('vereinFilter').onchange = fillTable;
-    document.getElementById('posFilter').onchange = fillTable;
-    document.getElementById('searchInput').oninput = fillTable;
-}
+                // Vereinsfilter
+                if (vereinFilter && data.verein !== vereinFilter) return false;
 
-// Initialisierung
-(async function(){
-    await loadData();
-    fillFilters();
-    fillTable();
-    setupFilterEvents();
-})();
+                // Positionsfilter
+                const position = data.position || data.spielerDaten?.hauptposition || "";
+                if (posFilter && position !== posFilter) return false;
 
-</script>
+                // Statusfilter
+                if (statusFilter && status !== statusFilter) return false;
+
+                // Besitzerfilter
+                if (ownerFilter === 'own' && !isOwnPlayer(userId)) return false;
+                if (ownerFilter === 'computer' && isOwnPlayer(userId)) return false;
+
+                // Suchfilter
+                if (searchFilter) {
+                    const searchable = [
+                        spieler.name,
+                        verein?.name || "",
+                        data.spielerDaten?.nationalitaet || "",
+                        position
+                    ].join(' ').toLowerCase();
+                    
+                    if (!searchable.includes(searchFilter)) return false;
+                }
+
+                return true;
+            });
+        }
+
+        // Filter-Optionen befüllen
+        function fillFilters() {
+            // Vereine
+            const vereine = vereineDaten
+                .filter(v => v.inLiga)
+                .sort((a, b) => a.name.localeCompare(b.name));
+            
+            const vereinSelect = document.getElementById('vereinFilter');
+            vereine.forEach(verein => {
+                const option = document.createElement('option');
+                option.value = verein.id;
+                option.textContent = verein.name;
+                vereinSelect.appendChild(option);
+            });
+
+            // Positionen
+            const positionen = new Set();
+            spielerDaten.forEach(spieler => {
+                const pos = spieler.data.position || spieler.data.spielerDaten?.hauptposition;
+                if (pos) positionen.add(pos);
+            });
+
+            const posSelect = document.getElementById('posFilter');
+            Array.from(positionen).sort().forEach(position => {
+                const option = document.createElement('option');
+                option.value = position;
+                option.textContent = position;
+                posSelect.appendChild(option);
+            });
+        }
+
+        // Event-Listener für Filter
+        function setupEventListeners() {
+            document.getElementById('vereinFilter').addEventListener('change', fillTable);
+            document.getElementById('posFilter').addEventListener('change', fillTable);
+            document.getElementById('statusFilter').addEventListener('change', fillTable);
+            document.getElementById('ownerFilter').addEventListener('change', fillTable);
+            
+            // Suchfeld mit Debouncing
+            let searchTimeout;
+            document.getElementById('searchInput').addEventListener('input', () => {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(fillTable, 300);
+            });
+        }
+
+        // Initialisierung
+        async function init() {
+            console.log("Initialisiere Anwendung...");
+            
+            const success = await loadData();
+            if (!success) return;
+
+            fillFilters();
+            fillTable();
+            setupEventListeners();
+            
+            console.log("Anwendung erfolgreich initialisiert!");
+        }
+
+        // App starten wenn DOM geladen ist
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
 </body>
 </html>
