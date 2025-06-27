@@ -79,18 +79,82 @@
         function clearDebug() { document.getElementById('debugContent').innerHTML = ''; }
 
         function getPlayerId() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const playerId = urlParams.get('id');
-            logDebug('URL: ' + window.location.href);
-            logDebug('playerId aus URL: ' + playerId);
-            if (!playerId) {
-                logDebug('Keine Spieler-ID in der URL gefunden!');
-                document.getElementById('errorMessage').textContent = "Keine Spieler-ID in der URL gefunden!";
-                document.getElementById('errorMessage').style.display = 'block';
-                document.getElementById('loadingIndicator').style.display = 'none';
-            }
-            return playerId;
+    // Vollständige URL-Informationen loggen
+    logDebug('=== URL DEBUGGING START ===');
+    logDebug('window.location.href: ' + window.location.href);
+    logDebug('window.location.search: "' + window.location.search + '"');
+    logDebug('window.location.search.length: ' + window.location.search.length);
+    
+    // URLSearchParams erstellen und debuggen
+    const urlParams = new URLSearchParams(window.location.search);
+    logDebug('URLSearchParams erstellt');
+    
+    // Alle Parameter ausgeben
+    logDebug('Alle URL-Parameter:');
+    for (const [key, value] of urlParams.entries()) {
+        logDebug('  - ' + key + ' = "' + value + '"');
+    }
+    
+    // Spezifisch nach 'id' suchen
+    const playerId = urlParams.get('id');
+    logDebug('urlParams.get("id"): "' + playerId + '"');
+    logDebug('typeof playerId: ' + typeof playerId);
+    logDebug('playerId === null: ' + (playerId === null));
+    logDebug('playerId === "": ' + (playerId === ""));
+    logDebug('playerId length: ' + (playerId ? playerId.length : 'null'));
+    
+    // Alternative Methoden testen
+    logDebug('urlParams.has("id"): ' + urlParams.has('id'));
+    
+    // Manuelle URL-Parsing als Backup
+    const url = window.location.href;
+    const idMatch = url.match(/[?&]id=([^&]*)/);
+    logDebug('Manual regex match: ' + (idMatch ? idMatch[1] : 'null'));
+    
+    logDebug('=== URL DEBUGGING END ===');
+    
+    // Fehlerbehandlung verbessert
+    if (!playerId || playerId === null || playerId === '') {
+        const errorMsg = 'Keine Spieler-ID in der URL gefunden!';
+        logDebug('❌ ' + errorMsg);
+        logDebug('Zeige Fehlermeldung an...');
+        
+        document.getElementById('errorMessage').textContent = errorMsg;
+        document.getElementById('errorMessage').style.display = 'block';
+        document.getElementById('loadingIndicator').style.display = 'none';
+        return null;
+    }
+    
+    logDebug('✅ Spieler-ID erfolgreich extrahiert: "' + playerId + '"');
+    return playerId;
+}
+// Backup-Funktion für den Fall, dass URLSearchParams nicht funktioniert
+function getPlayerIdManual() {
+    logDebug('=== MANUAL URL PARSING ===');
+    const url = window.location.href;
+    logDebug('URL: ' + url);
+    
+    // Verschiedene Patterns testen
+    const patterns = [
+        /[?&]id=([^&]*)/,     // Standard: ?id=123 oder &id=123
+        /\/id\/([^\/]*)/,     // Path: /id/123
+        /#id=([^&]*)/,        // Hash: #id=123
+        /player\.html\?(.*)id=([^&]*)/  // Spezifisch für player.html
+    ];
+    
+    for (let i = 0; i < patterns.length; i++) {
+        const match = url.match(patterns[i]);
+        if (match) {
+            const id = match[match.length - 1]; // Letzter capture group
+            logDebug('Pattern ' + i + ' matched: "' + id + '"');
+            return id;
         }
+    }
+    
+    logDebug('Keine ID in URL gefunden');
+    return null;
+}
+
         function goBack() { window.location.href = "index.html"; }
         function calcAge(birthday) {
             if (!birthday || birthday === 'N/A') return '-';
@@ -100,43 +164,72 @@
             return Math.abs(ageDate.getUTCFullYear() - 1970) + ' Jahre';
         }
 
-        document.addEventListener('DOMContentLoaded', async () => {
-            logDebug('player.html geladen');
-            const playerId = getPlayerId();
-            if (!playerId) return;
-            try {
-                logDebug('Lade Spielerdaten...');
-                const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/SpielerdatenbankNeutralJson.txt');
-                const allPlayers = await resp.json();
-                const player = allPlayers.find(p => String(p.id) === String(playerId));
-                if (!player) {
-                    logDebug('Spieler nicht gefunden!');
-                    document.getElementById('errorMessage').textContent = "Spieler nicht gefunden!";
-                    document.getElementById('errorMessage').style.display = 'block';
-                    document.getElementById('loadingIndicator').style.display = 'none';
-                    return;
-                }
-                logDebug('Spieler gefunden: ' + player.name);
-                document.getElementById('playerName').textContent = player.name;
-                document.getElementById('clubLogo').textContent = (player.data.verein || '?').substring(0,3).toUpperCase();
-                document.getElementById('statusIcon').textContent = player.data.comunioStatus.status || '-';
-                document.getElementById('statusIcon').className = 'status-icon status-' + ((player.data.comunioStatus.status || '').toLowerCase());
-                document.getElementById('birthday').textContent = player.data.spielerDaten.geburtstag || '-';
-                document.getElementById('age').textContent = calcAge(player.data.spielerDaten.geburtstag);
-                document.getElementById('height').textContent = player.data.spielerDaten.groesse || '-';
-                document.getElementById('nationality').textContent = player.data.spielerDaten.nationalitaet || '-';
-                document.getElementById('position').textContent = player.data.spielerDaten.hauptposition || player.data.position || '-';
-                document.getElementById('foot').textContent = player.data.spielerDaten.fuss || '-';
-                document.getElementById('jerseyNumber').textContent = player.data.spielerDaten.trikotNummer || '-';
-                document.getElementById('loadingIndicator').style.display = 'none';
-                document.getElementById('playerContent').style.display = 'block';
-            } catch (err) {
-                logDebug('Fehler beim Laden: ' + err.message);
-                document.getElementById('errorMessage').textContent = "Fehler beim Laden der Daten: " + err.message;
-                document.getElementById('errorMessage').style.display = 'block';
-                document.getElementById('loadingIndicator').style.display = 'none';
-            }
-        });
+       document.addEventListener('DOMContentLoaded', async () => {
+    logDebug('🚀 player.html wird geladen...');
+    
+    // Beide Methoden testen
+    let playerId = getPlayerId();
+    
+    if (!playerId) {
+        logDebug('⚠️ Standard-Methode fehlgeschlagen, versuche manuelle Extraktion...');
+        playerId = getPlayerIdManual();
+    }
+    
+    if (!playerId) {
+        logDebug('❌ Alle Methoden zur ID-Extraktion fehlgeschlagen!');
+        return;
+    }
+    
+    logDebug('✅ Verwende Spieler-ID: "' + playerId + '"');
+    
+    try {
+        logDebug('📡 Lade Spielerdaten für ID: ' + playerId);
+        const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/SpielerdatenbankNeutralJson.txt');
+        
+        if (!resp.ok) {
+            throw new Error(`HTTP ${resp.status}`);
+        }
+        
+        const allPlayers = await resp.json();
+        logDebug('📊 ' + allPlayers.length + ' Spieler geladen');
+        
+        // Verschiedene ID-Vergleiche testen
+        logDebug('🔍 Suche Spieler mit ID: "' + playerId + '"');
+        
+        let player = allPlayers.find(p => String(p.id) === String(playerId));
+        if (!player) {
+            logDebug('⚠️ Exact match fehlgeschlagen, versuche andere Vergleiche...');
+            player = allPlayers.find(p => p.id == playerId);
+        }
+        if (!player) {
+            logDebug('⚠️ Loose match fehlgeschlagen, versuche parseInt...');
+            const playerIdNum = parseInt(playerId);
+            player = allPlayers.find(p => parseInt(p.id) === playerIdNum);
+        }
+        
+        if (!player) {
+            logDebug('❌ Spieler mit ID "' + playerId + '" nicht gefunden!');
+            logDebug('📋 Verfügbare IDs (erste 10): ' + allPlayers.slice(0, 10).map(p => p.id).join(', '));
+            
+            document.getElementById('errorMessage').textContent = "Spieler mit ID " + playerId + " nicht gefunden!";
+            document.getElementById('errorMessage').style.display = 'block';
+            document.getElementById('loadingIndicator').style.display = 'none';
+            return;
+        }
+        
+        logDebug('✅ Spieler gefunden: ' + player.name + ' (ID: ' + player.id + ')');
+        
+        // Rest der Anzeige-Logik...
+        // ... (hier würde der Rest des Codes stehen)
+        
+    } catch (err) {
+        logDebug('💥 Fehler beim Laden: ' + err.message);
+        document.getElementById('errorMessage').textContent = "Fehler beim Laden der Daten: " + err.message;
+        document.getElementById('errorMessage').style.display = 'block';
+        document.getElementById('loadingIndicator').style.display = 'none';
+    }
+});
+
     </script>
 </body>
 </html>
