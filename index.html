@@ -32,6 +32,7 @@
         tr:hover { background-color: #f1f7ff; cursor: pointer;}
         .status-aktiv { color: #27ae60; font-weight: bold;}
         .status-verletzt { color: #e74c3c; font-weight: bold;}
+	.status-gesperrt { color: #e74c3c; font-weight: bold;}
         .status-reha { color: #f39c12; font-weight: bold;}
         .status-nichtliga { color: #7f8c8d; font-style: italic;}
         .club-logo { width: 25px; height: 25px; object-fit: contain; margin-right: 10px; vertical-align: middle;}
@@ -92,7 +93,11 @@
                         <option value="">Alle Status</option>
                         <option value="AKTIV">Aktiv</option>
                         <option value="VERLETZT">Verletzt</option>
-                        <option value="AUFBAUTRAINING">Reha</option>
+                        <option value="AUFBAUTRAINING">Aufbautraining</option>
+			<option value="NICHT_IM_KADER">Nicht im Kader</option>
+			<option value="FUENFTE_GELBE_KARTE">5. gelbe Karte</option>
+			<option value="GELBROTE_KARTE">Gelbrote Karte</option>
+			<option value="ROTE_KARTE">Rote Karte</option>
                         <option value="NICHT_IN_LIGA">Nicht in Liga</option>
                     </select>
                 </div>
@@ -144,7 +149,6 @@
             clubs: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/VereinsdatenbankJson.txt`,
             players: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/SpielerdatenbankNeutralJson.txt`,
             users: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/UserdatenbankJson_884691.txt`,
-            marktwerte: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/MarktwerteJson.txt`,
 	    playerToUser: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/PlayerToUserMap_884691.txt`
         };
 
@@ -231,15 +235,13 @@
                     Clubs: ${DATA_URLS.clubs}
                     Players: ${DATA_URLS.players}
                     Users: ${DATA_URLS.users}
-                    PlayerToUser: ${DATA_URLS.playerToUser}
-		    Marktwerte: ${DATA_URLS.marktwerte}`);
-                const [clubsData, playersData, usersData, marktwerte, playerToUserMap] = await Promise.all([
-    fetchJSON(DATA_URLS.clubs),
-    fetchJSON(DATA_URLS.players),
-    fetchJSON(DATA_URLS.users),
-    fetchJSON(DATA_URLS.marktwerte),
-    fetchJSON(DATA_URLS.playerToUser)
-]);
+                    PlayerToUser: ${DATA_URLS.playerToUser}`);
+                const [clubsData, playersData, usersData, playerToUserMap] = await Promise.all([
+   		 fetchJSON(DATA_URLS.clubs),
+  		 fetchJSON(DATA_URLS.players),
+   		 fetchJSON(DATA_URLS.users),
+  		 fetchJSON(DATA_URLS.playerToUser)
+		]);
 
                 showUpdate("⚙️ Verarbeite Daten...");
                 addDebug("Daten erfolgreich geladen, verarbeite...");
@@ -247,8 +249,7 @@
                     Clubs: ${clubsData.length}
                     Players: ${playersData.length}
                     Users: ${usersData.length}
-                    PlayerToUser: ${playerToUserMap.length}
-		    Marktwerte: ${marktwerte.length}`);
+                    PlayerToUser: ${playerToUserMap.length}`);
                 processData(clubsData, playersData, usersData, playerToUserMap, marktwerte);
                 lastUpdateTime = new Date();
                 hideLoading();
@@ -289,7 +290,7 @@
             }
         }
 
-        function processData(clubsData, playersData, usersData, playerToUserMap, marktwerte) {
+        function processData(clubsData, playersData, usersData, playerToUserMap) {
             addDebug("Starte Datenverarbeitung...");
             clubsMap = new Map();
             clubsData.forEach(club => {
@@ -444,7 +445,11 @@ function getPlayerUrl(playerId) {
                 if (status.includes("AKTIV")) statusClass = "status-aktiv";
                 else if (status.includes("VERLETZT")) statusClass = "status-verletzt";
                 else if (status.includes("AUFBAU")) statusClass = "status-reha";
+		else if (status.includes("ROTE_KARTE")) statusClass = "status-gesperrt";
+		else if (status.includes("GELBROTE_KARTE")) statusClass = "status-gesperrt";
+		else if (status.includes("FUENFTE_GELBE_KARTE")) statusClass = "status-gesperrt";
                 else if (status.includes("NICHT_IN_LIGA")) statusClass = "status-nichtliga";
+		else if (status.includes("NICHT_IM_KADER")) statusClass = "status-nichtliga";
                 // Marktwert
                 let marketValue = 'Unbekannt';
                 let marketValueSort = 0;
