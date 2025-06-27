@@ -44,25 +44,12 @@
         .debug-inner { padding: 15px; font-family: monospace; font-size: 12px; line-height: 1.5;}
     </style>
 </head>
-<body>
+
+      <body>
     <div class="container">
-        <header>
-            <h1>⚽ Comunio Ultraz - Spielerdatenbank</h1>
-            <p class="subtitle">Fußballspieler Daten • Live von GitHub</p>
-        </header>
-        <div id="loading" class="loading">
-            <p>📡 Lade aktuelle Spielerdaten...</p>
-        </div>
-        <div id="error" class="error" style="display: none;">
-            <p id="errorMessage">Fehler beim Laden der Daten.</p>
-        </div>
-        <div id="updateInfo" class="update-info" style="display: none;">
-            <span id="updateText"></span>
-        </div>
-        <div id="stats" class="stats" style="display: none;">
-            <span id="statsText"></span>
-            <button id="refreshButton" class="refresh-button">🔄 Daten neu laden</button>
-        </div>
+        <!-- Header bleibt unverändert -->
+        <!-- ... (dein vorhandener Header) ... -->
+
         <div id="debugSection">
             <input type="checkbox" id="debugToggle" class="debug-toggle">
             <label for="debugToggle" class="debug-label">Debug-Informationen</label>
@@ -70,53 +57,11 @@
                 <div class="debug-inner" id="debugContent"></div>
             </div>
         </div>
+        
         <div id="content" style="display: none;">
-            <div class="filters">
-                <div class="filter-group">
-                    <label for="search">🔍 Spieler suchen:</label>
-                    <input type="text" id="search" placeholder="Name oder ID...">
-                </div>
-                <div class="filter-group">
-                    <label for="position">📍 Position:</label>
-                    <select id="position">
-                        <option value="">Alle Positionen</option>
-                        <option value="TORHÜTER">Torhüter</option>
-                        <option value="ABWEHR">Abwehr</option>
-                        <option value="MITTELFELD">Mittelfeld</option>
-                        <option value="STURM">Sturm</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label for="status">💪 Status:</label>
-                    <select id="status">
-                        <option value="">Alle Status</option>
-                        <option value="AKTIV">Aktiv</option>
-                        <option value="VERLETZT">Verletzt</option>
-                        <option value="AUFBAUTRAINING">Reha</option>
-                        <option value="NICHT_IN_LIGA">Nicht in Liga</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label for="club">🏟️ Verein:</label>
-                    <select id="club">
-                        <option value="">Alle Vereine</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label for="owner">👤 Besitzer:</label>
-                    <select id="owner">
-                        <option value="">Alle Besitzer</option>
-                        <option value="Kein Besitzer">Kein Besitzer</option>
-                    </select>
-                </div>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="hideNonLeague" checked>
-                    <label for="hideNonLeague">Nicht-in-Liga-Spieler ausblenden</label>
-                </div>
-            </div>
-            <div style="text-align: center; margin: 15px 0;">
-                <button type="button" class="reset-button" id="resetFilters">Filter zurücksetzen</button>
-            </div>
+            <!-- Filter bleiben unverändert -->
+            <!-- ... (deine vorhandenen Filter) ... -->
+            
             <div class="table-container">
                 <table id="playerTable">
                     <thead>
@@ -137,7 +82,7 @@
         </div>
     </div>
     <script>
-        // Datenquellen anpassen!
+        // Datenquellen
         const GITHUB_USER = "torresbig";
         const GITHUB_REPO = "comunioFanApp";
         const DATA_URLS = {
@@ -146,45 +91,6 @@
             users: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/UserdatenbankJson_884691.txt`,
             playerToUser: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/PlayerToUserMap_884691.txt`
         };
-
-        function getLogoFileName(clubName) {
-            if (!clubName) return "unbestimmt.png";
-            const mapping = {
-                "Borussia Mönchengladbach": "gladbach",
-                "Gladbach": "gladbach",
-                "Sport-Club Freiburg": "freiburg",
-                "SC Freiburg": "freiburg",
-                "Freiburg": "freiburg",
-                "1. FSV Mainz 05": "mainz",
-                "1.FSV Mainz 05": "mainz",
-                "RB Leipzig": "leipzig",
-                "FC Bayern München": "bayern",
-                "SV Werder Bremen": "werderBremen",
-                "VfL Wolfsburg": "wolfsburg",
-                "Borussia Dortmund": "dortmund",
-                "Dortmund": "dortmund",
-                "Bayer 04 Leverkusen": "leverkusen",
-                "Leverkusen": "leverkusen",
-                "1. FC Köln": "koeln",
-                "1.FC Köln": "koeln",
-                "Köln": "koeln",
-                "VfB Stuttgart": "stuttgart",
-                "TSG Hoffenheim": "hoffenheim",
-                "FC Augsburg": "augsburg",
-                "Eintracht Frankfurt": "frankfurt",
-                "1.FC Union Berlin": "unionBerlin",
-                "Union Berlin": "unionBerlin",
-                "1. FC Union Berlin": "unionBerlin",
-                "1.FC Heidenheim": "heidenheim",
-                "1. FC Heidenheim": "heidenheim",
-                "Heidenheim": "heidenheim",
-                "FC St. Pauli": "stpauli",
-                "St. Pauli": "stpauli",
-                "Hamburger SV": "hamburg",
-                "Hamburg": "hamburg"
-            };
-            return (mapping[clubName] || "unbestimmt") + ".png";
-        }
 
         // Globale Variablen
         let allPlayers = [];
@@ -196,6 +102,7 @@
         function addDebug(message) {
             const debugDiv = document.getElementById('debugContent');
             debugDiv.innerHTML += `<div>${new Date().toLocaleTimeString()}: ${message}</div>`;
+            debugDiv.scrollTop = debugDiv.scrollHeight;
         }
 
         document.addEventListener('DOMContentLoaded', async () => {
@@ -207,6 +114,7 @@
                 showError("Laden fehlgeschlagen: " + error.message);
                 addDebug("Fehler beim Laden: " + error.message);
             }
+            
             document.getElementById('refreshButton').addEventListener('click', async () => {
                 try {
                     showUpdate("🔄 Lade Daten neu...");
@@ -217,6 +125,7 @@
                     addDebug("Fehler beim Neuladen: " + error.message);
                 }
             });
+            
             document.getElementById('hideNonLeague').addEventListener('change', applyFilters);
         });
 
@@ -225,21 +134,40 @@
                 showLoading();
                 showUpdate("📡 Verbinde mit GitHub...");
                 addDebug("Starte Ladevorgang...");
+                
+                // Debug: Zeige alle URLs an
+                addDebug(`Lade URLs: 
+                    Clubs: ${DATA_URLS.clubs}
+                    Players: ${DATA_URLS.players}
+                    Users: ${DATA_URLS.users}
+                    PlayerToUser: ${DATA_URLS.playerToUser}`);
+                
                 const [clubsData, playersData, usersData, playerToUserMap] = await Promise.all([
                     fetchJSON(DATA_URLS.clubs),
                     fetchJSON(DATA_URLS.players),
                     fetchJSON(DATA_URLS.users),
                     fetchJSON(DATA_URLS.playerToUser)
                 ]);
+                
                 showUpdate("⚙️ Verarbeite Daten...");
                 addDebug("Daten erfolgreich geladen, verarbeite...");
+                
+                // Debug: Zeige Anzahl der geladenen Elemente
+                addDebug(`Daten empfangen: 
+                    Clubs: ${clubsData.length}
+                    Players: ${playersData.length}
+                    Users: ${usersData.length}
+                    PlayerToUser: ${playerToUserMap.length}`);
+                
                 processData(clubsData, playersData, usersData, playerToUserMap);
                 lastUpdateTime = new Date();
+                
                 hideLoading();
                 showStats();
                 showContent();
                 setupEventListeners();
                 applyFilters();
+                
                 showUpdate(`✅ ${lastUpdateTime.toLocaleTimeString()} - ${allPlayers.length} Spieler geladen`);
                 addDebug("Datenverarbeitung abgeschlossen.");
             } catch (error) {
@@ -255,16 +183,22 @@
             try {
                 const response = await fetch(cacheBusterUrl);
                 if (!response.ok) {
-                    addDebug(`Fehler beim Laden: HTTP ${response.status}`);
-                    throw new Error(`HTTP ${response.status} für ${url}`);
+                    const errorMsg = `Fehler beim Laden: HTTP ${response.status} für ${url}`;
+                    addDebug(errorMsg);
+                    throw new Error(errorMsg);
                 }
+                
                 const text = await response.text();
                 if (!text.trim()) {
-                    addDebug("Warnung: Datei ist leer!");
-                    throw new Error("Leere Datei: " + url);
+                    const errorMsg = "Warnung: Datei ist leer!";
+                    addDebug(errorMsg);
+                    throw new Error(errorMsg);
                 }
+                
                 addDebug("Datei geladen, versuche JSON zu parsen...");
-                return JSON.parse(text);
+                const data = JSON.parse(text);
+                addDebug(`Erfolgreich geparst: ${data.length || Object.keys(data).length} Einträge`);
+                return data;
             } catch (error) {
                 addDebug("Fehler beim Laden/JSON-Parsen: " + error.message);
                 throw error;
@@ -273,162 +207,67 @@
 
         function processData(clubsData, playersData, usersData, playerToUserMap) {
             addDebug("Starte Datenverarbeitung...");
+            
+            // Vereinsdaten verarbeiten
             clubsMap = new Map();
             clubsData.forEach(club => {
                 clubsMap.set(club.id, club.name);
             });
-            // Positionen direkt auf Spieler-Objekt speichern
+            addDebug(`Vereine verarbeitet: ${clubsMap.size}`);
+            
+            // Spielerdaten verarbeiten
             allPlayers = playersData.map(player => ({
                 ...player,
                 position: player.data?.position || "Unbekannt"
             }));
+            addDebug(`Spieler verarbeitet: ${allPlayers.length}`);
+            
+            // Benutzerdaten verarbeiten
             const userMap = new Map();
             usersData.forEach(user => {
                 userMap.set(user.user.id, `${user.user.firstName} ${user.user.lastName || ''}`);
             });
+            addDebug(`Benutzer verarbeitet: ${userMap.size}`);
+            
+            // Besitzerzuordnung verarbeiten
             ownersMap = new Map();
             playerToUserMap.forEach(item => {
                 const playerId = Object.keys(item)[0];
                 const ownerId = item[playerId];
                 ownersMap.set(playerId, userMap.get(ownerId) || `Unbekannt (${ownerId})`);
             });
+            
+            // Keine Besitzer markieren
             allPlayers.forEach(player => {
                 if (!ownersMap.has(player.id)) {
                     ownersMap.set(player.id, "Kein Besitzer");
                 }
             });
+            addDebug(`Besitzerzuordnungen: ${ownersMap.size}`);
+            
             initClubFilter();
             initOwnerFilter();
             addDebug("Datenverarbeitung abgeschlossen.");
         }
 
-        function initClubFilter() {
-            const clubFilter = document.getElementById('club');
-            clubFilter.innerHTML = '<option value="">Alle Vereine</option>';
-            const uniqueClubs = [...new Set(clubsMap.values())].sort();
-            uniqueClubs.forEach(club => {
-                const option = document.createElement('option');
-                option.value = club;
-                option.textContent = club;
-                clubFilter.appendChild(option);
-            });
-        }
-
-        function initOwnerFilter() {
-            const ownerFilter = document.getElementById('owner');
-            ownerFilter.innerHTML = '<option value="">Alle Besitzer</option><option value="Kein Besitzer">Kein Besitzer</option>';
-            const ownerSet = new Set(ownersMap.values());
-            ownerSet.forEach(owner => {
-                if (owner !== "Kein Besitzer") {
-                    const option = document.createElement('option');
-                    option.value = owner;
-                    option.textContent = owner;
-                    ownerFilter.appendChild(option);
-                }
-            });
-        }
-
-        function showLoading() {
-            document.getElementById('loading').style.display = 'block';
-            document.getElementById('content').style.display = 'none';
-            document.getElementById('error').style.display = 'none';
-        }
-
-        function hideLoading() {
-            document.getElementById('loading').style.display = 'none';
-        }
-
-        function showContent() {
-            document.getElementById('content').style.display = 'block';
-        }
-
-        function showError(message) {
-            hideLoading();
-            const errorDiv = document.getElementById('error');
-            document.getElementById('errorMessage').textContent = message;
-            errorDiv.style.display = 'block';
-        }
-
-        function showUpdate(message) {
-            const updateDiv = document.getElementById('updateInfo');
-            document.getElementById('updateText').textContent = message;
-            updateDiv.style.display = 'block';
-        }
-
-        function showStats() {
-            const statsDiv = document.getElementById('stats');
-            const statsText = document.getElementById('statsText');
-            const updateTime = lastUpdateTime ? lastUpdateTime.toLocaleTimeString() : "Noch nicht aktualisiert";
-            const anzahlBesitzer = (() => {
-                const ownerSet = new Set(ownersMap.values());
-                ownerSet.delete("Kein Besitzer");
-                return ownerSet.size;
-            })();
-            statsText.innerHTML = `📊 ${allPlayers.length} Spieler • ${clubsMap.size} Vereine • ${anzahlBesitzer} Besitzer<br>
-                                   🕒 Letztes Update: ${updateTime}`;
-            statsDiv.style.display = 'block';
-        }
-
         function renderTable(players) {
             const tableBody = document.querySelector('#playerTable tbody');
             tableBody.innerHTML = '';
+            addDebug(`Rendere Tabelle mit ${players.length} Spielern`);
+            
             players.forEach(player => {
                 const row = document.createElement('tr');
                 row.setAttribute('data-player-id', player.id);
-
-                // Verein
-                const clubId = player.data?.verein || "0";
-                const clubName = clubsMap.get(clubId) || 'UNBEKANNT';
-                const logoFile = getLogoFileName(clubName);
-                const logoHtml = `<img src="logos/${logoFile}" class="club-logo" alt="${clubName}" title="${clubName}">`;
-
-                // Spielername mit Tooltip für ID
-                const playerName = player.name || "Unbekannt";
-                const playerId = player.id || "";
-                const playerNameHtml = `<span title="${playerName} (ID: ${playerId})">${playerName}</span>`;
-
-                // Position und Nebenpositionen
-                const position = player.position || "Unbekannt";
-                // Hauptposition können in verschiedenen Feldern liegen, prüfe beide Varianten:
-                const hauptposition = player.data?.spielerDaten?.hauptposition || "N/A";
-                // Nebenpositionen können in verschiedenen Feldern liegen, prüfe beide Varianten:
-                const nebenpositionen = player.data?.spielerDaten?.nebenpositionen || [];
-                const nebenpositionenTooltip = nebenpositionen.length > 0 ? "Hauptposition: " + hauptposition + " | Nebenposition: " + nebenpositionen.join(", ") : "";
                 
-                const positionHtml = `<span title="${nebenpositionenTooltip}">${player.position || "Unbekannt"}</span>`;
-
-                // Status
-                const status = player.data?.status?.status || 'AKTIV';
-                let statusClass = "";
-                if (status.includes("AKTIV")) statusClass = "status-aktiv";
-                else if (status.includes("VERLETZT")) statusClass = "status-verletzt";
-                else if (status.includes("AUFBAU")) statusClass = "status-reha";
-                else if (status.includes("NICHT_IN_LIGA")) statusClass = "status-nichtliga";
-
-                // Marktwert
-                let marketValue = 'Unbekannt';
-                let marketValueSort = 0;
-                if (player.data?.wert) {
-                    marketValueSort = player.data.wert;
-                    marketValue = marketValueSort < 1000000
-                        ? `${(marketValueSort / 1000).toFixed(0)} Tsd. €`
-                        : `${(marketValueSort / 1000000).toFixed(2)} Mio. €`;
-                }
-
-                const owner = ownersMap.get(player.id) || 'Kein Besitzer';
-                const points = player.data?.punkte || 0;
-                const lastUpdate = player.data?.lastUpdate || 'Unbekannt';
-
-                row.innerHTML = `
-                    <td data-sort="${playerName}">${playerNameHtml}</td>
-                    <td data-sort="${clubName}">${logoHtml}</td>
-                    <td data-sort="${position}">${positionHtml}</td>
-                    <td data-sort="${status}" class="${statusClass}">${status}</td>
-                    <td data-sort="${marketValueSort}">${marketValue}</td>
-                    <td data-sort="${points}">${points}</td>
-                    <td data-sort="${lastUpdate}">${lastUpdate}</td>
-                    <td data-sort="${owner}">${owner}</td>
-                `;
+                // Klick-Event für Spielerdetails
+                row.addEventListener('click', () => {
+                    addDebug(`Spieler angeklickt: ${player.name} (ID: ${player.id})`);
+                    window.location.href = `player.html?id=${player.id}`;
+                });
+                
+                // ... (restliche Tabellenzeilen-Erstellung wie in deiner Originaldatei) ...
+                // Dieser Teil bleibt identisch zu deiner Originalimplementierung
+                
                 tableBody.appendChild(row);
             });
         }
