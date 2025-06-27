@@ -164,7 +164,7 @@ function getPlayerIdManual() {
             return Math.abs(ageDate.getUTCFullYear() - 1970) + ' Jahre';
         }
 
-       document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', async () => {
     logDebug('🚀 player.html wird geladen...');
     
     // Beide Methoden testen
@@ -219,8 +219,8 @@ function getPlayerIdManual() {
         
         logDebug('✅ Spieler gefunden: ' + player.name + ' (ID: ' + player.id + ')');
         
-        // Rest der Anzeige-Logik...
-        // ... (hier würde der Rest des Codes stehen)
+        // *** HIER IST DER WICHTIGE TEIL: DATEN ANZEIGEN ***
+        displayPlayerData(player);
         
     } catch (err) {
         logDebug('💥 Fehler beim Laden: ' + err.message);
@@ -229,6 +229,63 @@ function getPlayerIdManual() {
         document.getElementById('loadingIndicator').style.display = 'none';
     }
 });
+
+// *** DIESE FUNKTION FEHLTE: SPIELERDATEN ANZEIGEN ***
+function displayPlayerData(player) {
+    logDebug('🎨 Zeige Spielerdaten an...');
+    
+    try {
+        // Header aktualisieren
+        document.getElementById('playerName').textContent = player.name;
+        logDebug('✅ Spielername gesetzt: ' + player.name);
+        
+        // Vereinslogo (Initialen)
+        const clubName = player.data.verein || '?';
+        const clubInitials = clubName.substring(0, 3).toUpperCase();
+        document.getElementById('clubLogo').textContent = clubInitials;
+        logDebug('✅ Club Logo gesetzt: ' + clubInitials);
+        
+        // Status
+        const status = player.data.comunioStatus?.status || 'Unbekannt';
+        document.getElementById('statusIcon').textContent = status;
+        document.getElementById('statusIcon').className = 'status-icon status-' + status.toLowerCase();
+        logDebug('✅ Status gesetzt: ' + status);
+        
+        // Spielerinfos
+        document.getElementById('birthday').textContent = player.data.spielerDaten?.geburtstag || '-';
+        document.getElementById('age').textContent = calcAge(player.data.spielerDaten?.geburtstag) || '-';
+        document.getElementById('height').textContent = player.data.spielerDaten?.groesse || '-';
+        document.getElementById('nationality').textContent = player.data.spielerDaten?.nationalitaet || '-';
+        document.getElementById('position').textContent = player.data.spielerDaten?.hauptposition || player.data.position || '-';
+        document.getElementById('foot').textContent = player.data.spielerDaten?.fuss || '-';
+        document.getElementById('jerseyNumber').textContent = player.data.spielerDaten?.trikotNummer || '-';
+        logDebug('✅ Spielerinfos gesetzt');
+        
+        // Loading verstecken, Content anzeigen
+        document.getElementById('loadingIndicator').style.display = 'none';
+        document.getElementById('playerContent').style.display = 'block';
+        logDebug('✅ Spieleranzeige abgeschlossen');
+        
+    } catch (error) {
+        logDebug('❌ Fehler beim Anzeigen der Spielerdaten: ' + error.message);
+        document.getElementById('errorMessage').textContent = "Fehler beim Anzeigen: " + error.message;
+        document.getElementById('errorMessage').style.display = 'block';
+        document.getElementById('loadingIndicator').style.display = 'none';
+    }
+}
+
+function calcAge(birthday) {
+    if (!birthday || birthday === 'N/A') return '-';
+    try {
+        const birthDate = new Date(birthday.split('.').reverse().join('-'));
+        const diff = Date.now() - birthDate.getTime();
+        const ageDate = new Date(diff);
+        return Math.abs(ageDate.getUTCFullYear() - 1970) + ' Jahre';
+    } catch {
+        return '-';
+    }
+}
+
 
     </script>
 </body>
