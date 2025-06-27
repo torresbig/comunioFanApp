@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spieler Details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .back-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .player-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex: 1;
+        }
+
+        .club-logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ddd;
+        }
+
+        .player-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .status-icon {
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .status-aktiv {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .status-verletzt {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .info-card h3 {
+            margin-bottom: 1rem;
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            padding: 0.25rem 0;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #666;
+        }
+
+        .tabs {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .tab-buttons {
+            display: flex;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .tab-button {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .tab-button.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 1.5rem;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .data-table th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        .data-table tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .own-player {
+            background-color: #e3f2fd !important;
+        }
+
+        .current-player {
+            background-color: #ffeb3b !important;
+            font-weight: bold;
+        }
+
+        .trend-up {
+            color: #4CAF50;
+        }
+
+        .trend-down {
+            color: #f44336;
+        }
+
+        .attributes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .attribute-tag {
+            background-color: #e9ecef;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .tab-buttons {
+                flex-direction: column;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .player-header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <button class="back-btn" onclick="goBack()">←</button>
+        <div class="player-header">
+            <img class="club-logo" id="clubLogo" src="" alt="Vereinslogo">
+            <span class="player-name" id="playerName">Spieler Name</span>
+            <span class="status-icon" id="statusIcon">Status</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="info-grid">
+            <!-- Spieler-Informationen -->
+            <div class="info-card">
+                <h3>Spieler-Informationen</h3>
+                <div class="info-row">
+                    <span class="info-label">Geburtstag:</span>
+                    <span id="birthday">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Alter:</span>
+                    <span id="age">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Größe:</span>
+                    <span id="height">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Nationalität:</span>
+                    <span id="nationality">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Position:</span>
+                    <span id="position">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Hauptfuß:</span>
+                    <span id="foot">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Trikotnummer:</span>
+                    <span id="jerseyNumber">-</span>
+                </div>
+            </div>
+
+            <!-- Comunio-Bereich -->
+            <div class="info-card">
+                <h3>Comunio</h3>
+                <div class="info-row">
+                    <span class="info-label">Position:</span>
+                    <span id="comunioPosition">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Marktwert:</span>
+                    <span id="marketValue">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Punkte (letztes Jahr):</span>
+                    <span id="lastYearPoints">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Besitzer:</span>
+                    <span id="owner">-</span>
+                </div>
+            </div>
+
+            <!-- Status & Statistik -->
+            <div class="info-card">
+                <h3>Status & Statistik</h3>
+                <div class="info-row">
+                    <span class="info-label">Status:</span>
+                    <span id="detailStatus">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Spiele:</span>
+                    <span id="gamesPlayed">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Tore:</span>
+                    <span id="goals">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Notenschnitt:</span>
+                    <span id="averageRating">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Gelbe Karten:</span>
+                    <span id="yellowCards">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Rote Karten:</span>
+                    <span id="redCards">-</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Attribute -->
+        <div class="info-card" id="attributesCard" style="display: none;">
+            <h3>Besondere Eigenschaften</h3>
+            <div class="attributes" id="attributesList"></div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <div class="tab-buttons">
+                <button class="tab-button active" onclick="showTab('rivals')">Team Rivalen</button>
+                <button class="tab-button" onclick="showTab('points')">Punktehistorie</button>
+                <button class="tab-button" onclick="showTab('market')">Marktwert</button>
+            </div>
+
+            <!-- Team Rivalen Tab -->
+            <div class="tab-content active" id="rivals">
+                <h4>Spieler der gleichen Position im Verein</h4>
+                <table class="data-table" id="rivalsTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Marktwert</th>
+                            <th>Punkte</th>
+                            <th>Besitzer</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <!-- Punktehistorie Tab -->
+            <div class="tab-content" id="points">
+                <h4>Aktuelle Saison</h4>
+                <table class="data-table" id="currentSeasonTable">
+                    <thead>
+                        <tr>
+                            <th>Spieltag</th>
+                            <th>Punkte</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                
+                <h4 style="margin-top: 2rem;">Jahresübersicht</h4>
+                <table class="data-table" id="yearlyTable">
+                    <thead>
+                        <tr>
+                            <th>Jahr</th>
+                            <th>Punkte</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <!-- Marktwert Tab -->
+            <div class="tab-content" id="market">
+                <h4>Marktwertentwicklung</h4>
+                <table class="data-table" id="marketTable">
+                    <thead>
+                        <tr>
+                            <th>Datum</th>
+                            <th>Wert</th>
+                            <th>Trend</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Globale Variablen für die Daten
+        let playerData = {};
+        let marketData = {};
+        let userData = {};
+        let playerToUserMap = {};
+        let clubData = {};
+        let currentPlayerId = null;
+
+        // URL Parameter auslesen
+        function getPlayerId() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('id');
+        }
+
+        // Zurück-Navigation
+        function goBack() {
+            window.history.back();
+        }
+
+        // Tab-Funktionalität
+        function showTab(tabName) {
+            // Alle Tabs ausblenden
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Gewählten Tab anzeigen
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Alter berechnen
+        function calculateAge(birthday) {
+            if (!birthday || birthday === 'N/A') return '-';
+            const birth = new Date(birthday.split('.').reverse().join('-'));
+            const today = new Date();
+            let age = today.getFullYear() - birth.getFullYear();
+            const monthDiff = today.getMonth() - birth.getMonth();
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+                age--;
+            }
+            return age;
+        }
+
+        // Marktwert formatieren
+        function formatCurrency(value) {
+            if (!value) return '-';
+            return new Intl.NumberFormat('de-DE', {
+                style: 'currency',
+                currency: 'EUR',
+                maximumFractionDigits: 0
+            }).format(value);
+        }
+
+        // Besitzer-Namen finden
+        function getOwnerName(playerId) {
+            const userId = playerToUserMap[playerId];
+            if (!userId || userId === "1") return "Computer";
+            const user = userData.find(u => u.user.id === userId);
+            return user ? user.user.firstName + (user.user.lastName ? ' ' + user.user.lastName : '') : 'Unbekannt';
+        }
+
+        // Vereinsnamen finden
+        function getClubName(clubId) {
+            const club = clubData.find(c => c.id === clubId);
+            return club ? club.name : 'Unbekannt';
+        }
+
+        // Team-Rivalen laden
+        function loadTeamRivals(player) {
+            const sameClubPlayers = playerData.filter(p => 
+                p.data.verein === player.data.verein && 
+                p.data.position === player.data.position
+            );
+
+            const tbody = document.querySelector('#rivalsTable tbody');
+            tbody.innerHTML = '';
+
+            sameClubPlayers.forEach(p => {
+                const row = tbody.insertRow();
+                const isOwnPlayer = getOwnerName(p.id) !== 'Computer';
+                const isCurrentPlayer = p.id === currentPlayerId;
+
+                if (isCurrentPlayer) {
+                    row.classList.add('current-player');
+                } else if (isOwnPlayer) {
+                    row.classList.add('own-player');
+                }
+
+                row.innerHTML = `
+                    <td>${p.name}</td>
+                    <td>${formatCurrency(p.data.wert)}</td>
+                    <td>${p.data.punkte || 0}</td>
+                    <td>${getOwnerName(p.id)}</td>
+                `;
+            });
+        }
+
+        // Punktehistorie laden
+        function loadPointsHistory(player) {
+            const history = player.data.punkteHistorie || [];
+            
+            // Aktuelle Saison (Spieltage 1-34)
+            const currentSeasonTbody = document.querySelector('#currentSeasonTable tbody');
+            currentSeasonTbody.innerHTML = '';
+            
+            for (let i = 1; i <= 34; i++) {
+                const row = currentSeasonTbody.insertRow();
+                const points = history.find(h => h.key === i);
+                row.innerHTML = `
+                    <td>${i}</td>
+                    <td>${points ? points.value : 0}</td>
+                `;
+            }
+
+            // Jahresübersicht (key > 50)
+            const yearlyTbody = document.querySelector('#yearlyTable tbody');
+            yearlyTbody.innerHTML = '';
+            
+            const yearlyPoints = history.filter(h => h.key > 50).sort((a, b) => b.key - a.key);
+            yearlyPoints.forEach(point => {
+                const row = yearlyTbody.insertRow();
+                row.innerHTML = `
+                    <td>${point.key}</td>
+                    <td>${point.value}</td>
+                `;
+            });
+        }
+
+        // Marktwertentwicklung laden
+        function loadMarketHistory(playerId) {
+            const playerMarketData = marketData.find(m => m.id === playerId);
+            const tbody = document.querySelector('#marketTable tbody');
+            tbody.innerHTML = '';
+
+            if (!playerMarketData || !playerMarketData.data.normal) {
+                const row = tbody.insertRow();
+                row.innerHTML = '<td colspan="3">Keine Marktwertdaten verfügbar</td>';
+                return;
+            }
+
+            const values = playerMarketData.data.normal;
+            values.forEach((entry, index) => {
+                const row = tbody.insertRow();
+                let trendIcon = '';
+                let trendClass = '';
+
+                if (index < values.length - 1) {
+                    const nextValue = values[index + 1].wert;
+                    if (entry.wert > nextValue) {
+                        trendIcon = '↗';
+                        trendClass = 'trend-up';
+                    } else if (entry.wert < nextValue) {
+                        trendIcon = '↘';
+                        trendClass = 'trend-down';
+                    } else {
+                        trendIcon = '→';
+                    }
+                }
+
+                row.innerHTML = `
+                    <td>${entry.date}</td>
+                    <td>${formatCurrency(entry.wert)}</td>
+                    <td class="${trendClass}">${trendIcon}</td>
+                `;
+            });
+        }
+
+        // Attribute anzeigen
+        function displayAttributes(player) {
+            const attributesCard = document.getElementById('attributesCard');
+            const attributesList = document.getElementById('attributesList');
+            
+            if (player.data.attribute && player.data.attribute.length > 0) {
+                attributesCard.style.display = 'block';
+                attributesList.innerHTML = '';
+                
+                player.data.attribute.forEach(attr => {
+                    Object.values(attr).forEach(values => {
+                        if (Array.isArray(values)) {
+                            values.forEach(value => {
+                                const tag = document.createElement('span');
+                                tag.className = 'attribute-tag';
+                                tag.textContent = value;
+                                attributesList.appendChild(tag);
+                            });
+                        }
+                    });
+                });
+            } else {
+                attributesCard.style.display = 'none';
+            }
+        }
+
+        // Spieler-Details laden
+        function loadPlayerDetails(playerId) {
+            currentPlayerId = playerId;
+            const player = playerData.find(p => p.id === playerId);
+            
+            if (!player) {
+                alert('Spieler nicht gefunden!');
+                return;
+            }
+
+            // Header aktualisieren
+            document.getElementById('playerName').textContent = player.name;
+            
+            // Status-Icon
+            const statusIcon = document.getElementById('statusIcon');
+            const status = player.data.comunioStatus.status;
+            statusIcon.textContent = status;
+            statusIcon.className = `status-icon status-${status.toLowerCase()}`;
+
+            // Spieler-Informationen
+            const birthday = player.data.spielerDaten.geburtstag;
+            document.getElementById('birthday').textContent = birthday !== 'N/A' ? birthday : '-';
+            document.getElementById('age').textContent = calculateAge(birthday);
+            document.getElementById('height').textContent = player.data.spielerDaten.groesse || '-';
+            document.getElementById('nationality').textContent = player.data.spielerDaten.nationalitaet || '-';
+            document.getElementById('position').textContent = player.data.spielerDaten.hauptposition || player.data.position || '-';
+            document.getElementById('foot').textContent = player.data.spielerDaten.fuss || '-';
+            document.getElementById('jerseyNumber').textContent = player.data.spielerDaten.trikotNummer || '-';
+
+            // Comunio-Daten
+            document.getElementById('comunioPosition').textContent = player.data.position || '-';
+            document.getElementById('marketValue').textContent = formatCurrency(player.data.wert);
+            document.getElementById('lastYearPoints').textContent = player.data.lastSeasonPoints || 0;
+            document.getElementById('owner').textContent = getOwnerName(playerId);
+
+            // Status & Statistik
+            document.getElementById('detailStatus').textContent = player.data.comunioStatus.details || status;
+            document.getElementById('gamesPlayed').textContent = player.data.stats.playedGames || 0;
+            document.getElementById('goals').textContent = player.data.stats.totalGoals || 0;
+            document.getElementById('averageRating').textContent = player.data.stats.notenDurchschnitt || '-';
+            document.getElementById('yellowCards').textContent = player.data.stats.gelbekarten || 0;
+            document.getElementById('redCards').textContent = player.data.stats.rotekarten || 0;
+
+            // Attribute anzeigen
+            displayAttributes(player);
+
+            // Tabs laden
+            loadTeamRivals(player);
+            loadPointsHistory(player);
+            loadMarketHistory(playerId);
+        }
+
+        // Daten laden
+        async function loadData() {
+            try {
+                // Hier müssen Sie die Pfade zu Ihren JSON-Dateien anpassen
+                const responses = await Promise.all([
+                    fetch('SpielerdatenbankNeutralJson.txt'),
+                    fetch('MarktwerteJson.txt'),
+                    fetch('UserdatenbankJson_884691.txt'),
+                    fetch('PlayerToUserMap_884691.txt'),
+                    fetch('VereinsdatenbankJson.txt')
+                ]);
+
+                const [playerResp, marketResp, userResp, mapResp, clubResp] = responses;
+                
+                playerData = await playerResp.json();
+                marketData = await marketResp.json();
+                userData = await userResp.json();
+                const mapData = await mapResp.json();
+                clubData = await clubResp.json();
+
+                // Player-to-User Map verarbeiten
+                mapData.forEach(item => {
+                    Object.assign(playerToUserMap, item);
+                });
+
+                // Spieler-Details laden
+                const playerId = getPlayerId();
+                if (playerId) {
+                    loadPlayerDetails(playerId);
+                } else {
+                    alert('Keine Spieler-ID angegeben!');
+                }
+
+            } catch (error) {
+                console.error('Fehler beim Laden der Daten:', error);
+                alert('Fehler beim Laden der Daten');
+            }
+        }
+
+        // Seite laden
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>
