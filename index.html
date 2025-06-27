@@ -152,43 +152,29 @@
 	    playerToUser: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/PlayerToUserMap_884691.txt`
         };
 
-        function getLogoFileName(clubName) {
-            if (!clubName) return "unbestimmt.png";
+        function getLogoFileName(clubId) {
+            if (!clubId) return "unbestimmt.png";
             const mapping = {
-                "Borussia Mönchengladbach": "gladbach",
-                "Gladbach": "gladbach",
-                "Sport-Club Freiburg": "freiburg",
-                "SC Freiburg": "freiburg",
-                "Freiburg": "freiburg",
-                "1. FSV Mainz 05": "mainz",
-                "1.FSV Mainz 05": "mainz",
-                "RB Leipzig": "leipzig",
-                "FC Bayern München": "bayern",
-                "SV Werder Bremen": "werderBremen",
-                "VfL Wolfsburg": "wolfsburg",
-                "Borussia Dortmund": "dortmund",
-                "Dortmund": "dortmund",
-                "Bayer 04 Leverkusen": "leverkusen",
-                "Leverkusen": "leverkusen",
-                "1. FC Köln": "koeln",
-                "1.FC Köln": "koeln",
-                "Köln": "koeln",
-                "VfB Stuttgart": "stuttgart",
-                "TSG Hoffenheim": "hoffenheim",
-                "FC Augsburg": "augsburg",
-                "Eintracht Frankfurt": "frankfurt",
-                "1.FC Union Berlin": "unionBerlin",
-                "Union Berlin": "unionBerlin",
-                "1. FC Union Berlin": "unionBerlin",
-                "1.FC Heidenheim": "heidenheim",
-                "1. FC Heidenheim": "heidenheim",
-                "Heidenheim": "heidenheim",
-                "FC St. Pauli": "stpauli",
-                "St. Pauli": "stpauli",
-                "Hamburger SV": "hamburg",
-                "Hamburg": "hamburg"
+                "3": "gladbach",
+                "21": "freiburg",
+                "18": "mainz",
+                "92": "leipzig",
+                "1": "bayern",
+                "6": "werderBremen",
+                "12": "wolfsburg",
+                "5": "dortmund",
+                "8": "leverkusen",
+                "13": "koeln",
+                "14": "stuttgart",
+                "533": "hoffenheim",
+                "68": "augsburg",
+                "9": "frankfurt",
+                "109": "unionBerlin",
+                "110": "heidenheim",
+                "25": "stpauli",
+                "4": "hamburg",
             };
-            return (mapping[clubName] || "unbestimmt") + ".png";
+            return (mapping[clubId] || "unbestimmt") + ".png";
         }
 
         // Globale Variablen
@@ -427,7 +413,7 @@ function getPlayerUrl(playerId) {
                 // Verein
                 const clubId = player.data?.verein || "0";
                 const clubName = clubsMap.get(clubId) || 'UNBEKANNT';
-                const logoFile = getLogoFileName(clubName);
+                const logoFile = getLogoFileName(clubId);
                 const logoHtml = `<img src="logos/${logoFile}" class="club-logo" alt="${clubName}" title="${clubName}">`;
                 // Spielername mit Tooltip für ID
                 const playerName = player.name || "Unbekannt";
