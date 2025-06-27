@@ -929,9 +929,9 @@
                 row.dataset.playerId = player.id;
                 row.className = 'player-row';
                 
-                row.addEventListener('click', () => {
-                    window.open(`https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${player.id}`, '_blank');
-                });
+               row.addEventListener('click', () => {
+    window.location.href = `https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${player.id}`;
+});
 
                 const playerInfo = `ID: ${player.id} | Position: ${player.data.spielerDaten?.hauptposition || 'N/A'} | Größe: ${player.data.spielerDaten?.groesse || 'N/A'}`;
                 const clubName = getClubName(player.data.verein);
