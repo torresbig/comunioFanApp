@@ -394,7 +394,6 @@
         }
 
         async function loadPlayerMarketValues(playerId) {
-            // Passe ggf. den Pfad zu deiner Datei an!
             const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/MarktwerteJson.txt');
             const data = await resp.json();
             const entry = data.find(e => String(e.id) === String(playerId));
