@@ -29,9 +29,10 @@
     .info-value { font-weight: 600; color: #2c3e50; font-size: 13px; flex: 1; text-align: right;}
     .attributes { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px;}
     .attribute-tag { background: linear-gradient(135deg, #9b59b6, #8e44ad); color: white; padding: 4px 8px; border-radius: 15px; font-size: 12px; font-weight: 600;}
-    .tabs { display: flex; justify-content: center; margin: 20px 0; border-bottom: 1px solid #ddd;}
-    .tab-button { padding: 10px 20px; background: #2c3e50; color: white; border: none; cursor: pointer; font-size: 14px; margin: 0 5px; border-radius: 5px 5px 0 0; transition: background 0.3s;}
+    .tabs { display: flex; justify-content: center; margin: 20px 0 0 0; border-bottom: 1px solid #ddd;}
+    .tab-button { position:relative; padding: 10px 20px; background: #2c3e50; color: white; border: none; cursor: pointer; font-size: 14px; margin: 0 5px; border-radius: 5px 5px 0 0; transition: background 0.3s;}
     .tab-button.active { background: #3498db;}
+    .tab-button .trend-arrow { position: absolute; right: 8px; top: 7px; font-size: 18px; }
     .tab-content { display: none; padding: 15px; background: rgba(255,255,255,0.95); border-radius: 0 0 10px 10px;}
     .tab-content.active { display: block;}
     .collapse-header { display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 10px 0;}
@@ -78,23 +79,6 @@
     <div id="playerContent" style="display:none;">
         <details class="info-card" open>
             <summary class="collapse-header">
-                <h3>
-                    <svg class="stat-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="13" width="3" height="8" rx="1" fill="#764ba2"/><rect x="8" y="9" width="3" height="12" rx="1" fill="#764ba2"/><rect x="13" y="5" width="3" height="16" rx="1" fill="#764ba2"/><rect x="18" y="2" width="3" height="19" rx="1" fill="#764ba2"/></svg>
-                    Status & Statistik
-                </h3>
-                <span class="collapse-icon">▼</span>
-            </summary>
-            <div class="info-card-content">
-                <div class="info-row"><span class="info-label">Status:</span><span class="info-value" id="detailStatus">-</span></div>
-                <div class="info-row"><span class="info-label">Spiele:</span><span class="info-value" id="gamesPlayed">-</span></div>
-                <div class="info-row"><span class="info-label">Tore:</span><span class="info-value" id="goals">-</span></div>
-                <div class="info-row"><span class="info-label">Notenschnitt:</span><span class="info-value" id="averageRating">-</span></div>
-                <div class="info-row"><span class="info-label">Gelbe Karten:</span><span class="info-value" id="yellowCards">-</span></div>
-                <div class="info-row"><span class="info-label">Rote Karten:</span><span class="info-value" id="redCards">-</span></div>
-            </div>
-        </details>
-        <details class="info-card" open>
-            <summary class="collapse-header">
                 <h3>📋 Spieler-Informationen</h3>
                 <span class="collapse-icon">▼</span>
             </summary>
@@ -120,6 +104,23 @@
                 <div class="info-row"><span class="info-label">Besitzer:</span><span class="info-value" id="owner">-</span></div>
             </div>
         </details>
+        <details class="info-card">
+            <summary class="collapse-header">
+                <h3>
+                    <svg class="stat-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="13" width="3" height="8" rx="1" fill="#764ba2"/><rect x="8" y="9" width="3" height="12" rx="1" fill="#764ba2"/><rect x="13" y="5" width="3" height="16" rx="1" fill="#764ba2"/><rect x="18" y="2" width="3" height="19" rx="1" fill="#764ba2"/></svg>
+                    Status & Statistik
+                </h3>
+                <span class="collapse-icon">▼</span>
+            </summary>
+            <div class="info-card-content">
+                <div class="info-row"><span class="info-label">Status:</span><span class="info-value" id="detailStatus">-</span></div>
+                <div class="info-row"><span class="info-label">Spiele:</span><span class="info-value" id="gamesPlayed">-</span></div>
+                <div class="info-row"><span class="info-label">Tore:</span><span class="info-value" id="goals">-</span></div>
+                <div class="info-row"><span class="info-label">Notenschnitt:</span><span class="info-value" id="averageRating">-</span></div>
+                <div class="info-row"><span class="info-label">Gelbe Karten:</span><span class="info-value" id="yellowCards">-</span></div>
+                <div class="info-row"><span class="info-label">Rote Karten:</span><span class="info-value" id="redCards">-</span></div>
+            </div>
+        </details>
         <details class="info-card" id="attributesCard" style="display:none;">
             <summary class="collapse-header">
                 <h3>⭐ Besondere Eigenschaften</h3>
@@ -129,12 +130,12 @@
                 <div class="attributes" id="attributesList"></div>
             </div>
         </details>
-        <div class="tabs">
-            <button class="tab-button active" data-tab="rivals">Rivalen</button>
-            <button class="tab-button" data-tab="market">Marktwerte</button>
+        <div class="tabs" id="tabBar">
+            <button class="tab-button" data-tab="rivals">Rivalen</button>
+            <button class="tab-button" data-tab="market">Marktwerte <span id="marketTabTrend" class="trend-arrow"></span></button>
             <button class="tab-button" data-tab="points">Punkte</button>
         </div>
-        <div id="rivals" class="tab-content active">
+        <div id="rivals" class="tab-content">
             <h3>📊 Direkte Konkurrenten</h3>
             <div id="rivalsList"></div>
         </div>
@@ -211,6 +212,20 @@ async function displayMarketValue(player) {
     // Für alle Monatskeys: Index im Array
     const monthKeyToIdx = {};
     sortedMonths.forEach((k, i) => monthKeyToIdx[k] = i);
+
+    // Trend für Marktwerte-Tab berechnen: aktueller Tageswert vs. Vortag
+    let trendForTab = '';
+    if (sortedMonths.length > 0 && monthlyData[sortedMonths[0]].length > 1) {
+        const firstMonth = sortedMonths[0];
+        const entries = monthlyData[firstMonth];
+        if (entries.length > 1) {
+            if (entries[0].wert > entries[1].wert) trendForTab = '<span style="color:#27ae60;">▲</span>';
+            else if (entries[0].wert < entries[1].wert) trendForTab = '<span style="color:#e74c3c;">▼</span>';
+            else trendForTab = '<span style="color:#888;">→</span>';
+        }
+    }
+    document.getElementById('marketTabTrend').innerHTML = trendForTab;
+
     let html = '';
     sortedMonths.forEach((monthKey, idx) => {
         const [year, month] = monthKey.split('-');
@@ -343,15 +358,21 @@ function getStatusDisplayName(status) {
 function getOwnerName(playerId) { return "Computer"; }
 function initTabs() {
     const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
     tabButtons.forEach(button => {
         button.addEventListener('click', () => {
             tabButtons.forEach(btn => btn.classList.remove('active'));
-            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            tabContents.forEach(tab => tab.classList.remove('active'));
             button.classList.add('active');
             const tabId = button.getAttribute('data-tab');
             document.getElementById(tabId).classList.add('active');
         });
     });
+    // Standardmäßig: Marktwerte-Tab aktiv
+    tabButtons.forEach(btn => btn.classList.remove('active'));
+    tabContents.forEach(tab => tab.classList.remove('active'));
+    document.querySelector('.tab-button[data-tab="market"]').classList.add('active');
+    document.getElementById('market').classList.add('active');
 }
 function displayRivals(player, allPlayers) {
     const container = document.getElementById('rivalsList');
