@@ -33,12 +33,12 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             justify-content: center;
         }
         .club-logo {
-            width: 38px;
-            height: 38px;
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
             object-fit: contain;
             display: flex;
@@ -48,6 +48,7 @@
             color: white;
             font-weight: bold;
             overflow: hidden;
+            flex-shrink: 0;
         }
         .club-logo img {
             width: 100%;
@@ -55,19 +56,20 @@
             object-fit: contain;
         }
         .player-name {
-            font-size: 18px;
+            font-size: 22px;
             font-weight: bold;
             color: white;
             text-decoration: none;
+            line-height: 1.1;
         }
         .player-name:hover {
             text-decoration: underline;
         }
         .player-id {
-            font-size: 12px;
+            font-size: 13px;
             color: #aaa;
             margin-top: 2px;
-            text-align: center;
+            text-align: left;
         }
         .status-wrapper {
             display: flex;
@@ -243,6 +245,7 @@
             .market-month-header { font-size: 14px; }
             .market-list-row { font-size: 13px; padding: 6px 8px; }
             .player-name { font-size: 16px; }
+            .club-logo { width: 34px; height: 34px; }
         }
     </style>
 </head>
@@ -253,9 +256,11 @@
             <div class="player-center">
                 <div class="player-row">
                     <div class="club-logo" id="clubLogo"></div>
-                    <a href="#" id="playerNameLink" class="player-name" target="_blank">Lade Spieler...</a>
+                    <div>
+                        <a href="#" id="playerNameLink" class="player-name" target="_blank">Lade Spieler...</a>
+                        <div id="playerId" class="player-id"></div>
+                    </div>
                 </div>
-                <span id="playerId" class="player-id"></span>
             </div>
             <div class="status-wrapper">
                 <div class="status-label">Status</div>
@@ -394,11 +399,15 @@
             "Juli", "August", "September", "Oktober", "November", "Dezember"
         ];
 
-        // Zahl formatieren: 123456 -> 123.456 €, 1200 -> 1.200 €, 1200000 -> 1,2 Mio €
+        // Zahlen: Immer komplett mit Punkt, außer Monatsdurchschnitt
+        function formatCurrencyFull(value) {
+            if (!value || value === 0) return '-';
+            return value.toLocaleString('de-DE') + ' €';
+        }
         function formatCurrencyShort(value) {
             if (!value || value === 0) return '-';
             if (value >= 1_000_000) return (value / 1_000_000).toFixed(1).replace('.', ',').replace(',0','') + ' Mio €';
-            if (value >= 1_000) return value.toLocaleString('de-DE') + ' €';
+            if (value >= 1_000) return (value / 1_000).toFixed(1).replace('.', ',').replace(',0','') + ' Tsd €';
             return value + ' €';
         }
 
@@ -410,7 +419,7 @@
             return entry.data.normal;
         }
 
-        // Marktwerte: Monatsweise aufklappbar, aktuellster Monat offen
+        // Marktwerte: Monatsweise aufklappbar, aktuellster Monat offen, Pfeile für jeden Tag und Monat
         async function displayMarketValue(player) {
             const container = document.getElementById('marketValueChart');
             if (!container) return;
@@ -447,6 +456,7 @@
             // Darstellung bauen
             let html = '';
             let prevMonthAvg = null;
+            let prevMonthKey = null;
             const sortedMonths = Object.keys(monthlyData).sort((a, b) => b.localeCompare(a));
             sortedMonths.forEach((monthKey, idx) => {
                 const [year, month] = monthKey.split('-');
@@ -455,9 +465,9 @@
                 // Durchschnitt und Tendenz zum Vormonat
                 const monthAvg = monthlyAverages[monthKey];
                 let trendIcon = '';
-                if (prevMonthAvg !== null) {
-                    if (monthAvg > prevMonthAvg) trendIcon = '<span style="color:#27ae60;">▲</span>';
-                    else if (monthAvg < prevMonthAvg) trendIcon = '<span style="color:#e74c3c;">▼</span>';
+                if (prevMonthKey !== null) {
+                    if (monthAvg > monthlyAverages[prevMonthKey]) trendIcon = '<span style="color:#27ae60;">▲</span>';
+                    else if (monthAvg < monthlyAverages[prevMonthKey]) trendIcon = '<span style="color:#e74c3c;">▼</span>';
                     else trendIcon = '<span style="color:#888;">→</span>';
                 }
                 const isOpen = idx === 0 ? 'open' : '';
@@ -469,10 +479,20 @@
                         </summary>
                         <div class="market-list">
                 `;
+                // Tageswerte: Immer Pfeil zum vorherigen Tag (auch für den neuesten oben)
                 let prevValue = null;
-                entries.forEach(entry => {
+                entries.forEach((entry, i) => {
                     let dayTrend = '';
-                    if (prevValue !== null) {
+                    if (i === 0 && prevMonthKey !== null) {
+                        // Erster Tag im Monat: Vergleiche mit letztem Tag des Vormonats
+                        const prevMonthEntries = monthlyData[prevMonthKey];
+                        if (prevMonthEntries && prevMonthEntries.length > 0) {
+                            const lastPrev = prevMonthEntries[0].wert;
+                            if (entry.wert > lastPrev) dayTrend = '<span style="color:#27ae60;">▲</span>';
+                            else if (entry.wert < lastPrev) dayTrend = '<span style="color:#e74c3c;">▼</span>';
+                            else dayTrend = '<span style="color:#888;">→</span>';
+                        }
+                    } else if (prevValue !== null) {
                         if (entry.wert > prevValue) dayTrend = '<span style="color:#27ae60;">▲</span>';
                         else if (entry.wert < prevValue) dayTrend = '<span style="color:#e74c3c;">▼</span>';
                         else dayTrend = '<span style="color:#888;">→</span>';
@@ -480,13 +500,13 @@
                     html += `
                         <div class="market-list-row">
                             <span class="market-list-date">${entry.date}</span>
-                            <span class="market-list-value">${formatCurrencyShort(entry.wert)} ${dayTrend}</span>
+                            <span class="market-list-value">${formatCurrencyFull(entry.wert)} ${dayTrend}</span>
                         </div>
                     `;
                     prevValue = entry.wert;
                 });
                 html += '</div></details>';
-                prevMonthAvg = monthAvg;
+                prevMonthKey = monthKey;
             });
             container.innerHTML = html;
         }
@@ -615,8 +635,8 @@
                             <div class="player-id-cell">ID: ${rival.id}</div>
                         </td>
                         <td>${getStatusIndicator(status)}</td>
-                        <td>${formatCurrencyShort(rival.data?.wert || 0)}</td>
-                        <td>${formatCurrencyShort(rival.data?.realWert || 0)}</td>
+                        <td>${formatCurrencyFull(rival.data?.wert || 0)}</td>
+                        <td>${formatCurrencyFull(rival.data?.realWert || 0)}</td>
                         <td>${rival.data?.punkte || 0}</td>
                         <td>${getOwnerName(rival.id)}</td>
                     </tr>
@@ -716,7 +736,7 @@
                 document.getElementById('foot').textContent = player.data.spielerDaten.fuss || '-';
                 document.getElementById('jerseyNumber').textContent = player.data.spielerDaten.trikotNummer || '-';
                 document.getElementById('comunioPosition').textContent = player.data.position || '-';
-                document.getElementById('marketValue').textContent = formatCurrencyShort(player.data.wert);
+                document.getElementById('marketValue').textContent = formatCurrencyFull(player.data.wert);
                 document.getElementById('lastYearPoints').textContent = player.data.lastSeasonPoints || '0';
                 document.getElementById('owner').textContent = getOwnerName(player.id) || '-';
                 document.getElementById('detailStatus').textContent = player.data.comunioStatus.details || getStatusDisplayName(status);
