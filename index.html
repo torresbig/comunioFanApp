@@ -43,6 +43,28 @@
         .debug-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out; background: #f0f8ff; border: 1px solid #cce; border-radius: 0 0 6px 6px; margin-top: -5px;}
         .debug-toggle:checked + .debug-label + .debug-content { max-height: 300px; overflow-y: auto;}
         .debug-inner { padding: 15px; font-family: monospace; font-size: 12px; line-height: 1.5;}
+	    /* Für "Computer" als Besitzer */
+.owner-comp {
+    background: #e0e0e0;
+    color: #666;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Für alle anderen Besitzer */
+.owner-users {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
     </style>
 </head>
 <body>
@@ -446,6 +468,9 @@ function getPlayerUrl(playerId) {
                         : `${(marketValueSort / 1000000).toFixed(2)} Mio. €`;
                 }
                 const owner = ownersMap.get(player.id) || 'Computer';
+		if (owner.includes("Computer")) statusClass = "owner-comp";
+               	else statusClass = "owner-users";
+		    
                 const points = player.data?.punkte || 0;
                 const lastUpdate = player.data?.lastUpdate || 'Unbekannt';
                 row.innerHTML = `
