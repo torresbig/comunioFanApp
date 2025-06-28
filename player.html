@@ -412,6 +412,29 @@
             background-color: #2c3e50;
             color: white;
         }
+
+        /* Für "Computer" als Besitzer */
+.rivals-table td.owner-comp {
+    background: #e0e0e0;
+    color: #666;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Für alle anderen Besitzer */
+.rivals-table td.owner-users {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
     </style>
 </head>
 <body>
@@ -784,61 +807,64 @@
             return tooltip;
         }
 
-        function displayRivals(player, allPlayers) {
-            const container = document.getElementById('rivalsList');
-            if (!container) return;
-            
-            const rivals = allPlayers.filter(p => 
-                p.data?.position === player.data?.position && 
-                p.id !== player.id
-            ).slice(0, 5);
-            
-            if (rivals.length > 0) {
-                let html = `
-                <table class="rivals-table">
-                    <thead>
-                        <tr>
-                            <th>Spieler</th>
-                            <th>Status</th>
-                            <th>Marktwert</th>
-                            <th>Realwert</th>
-                            <th>Punkte</th>
-                            <th>Besitzer</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                `;
-                
-                rivals.forEach(rival => {
-                    const status = rival.data.comunioStatus?.status || 'Unbekannt';
-                    html += `
-                    <tr data-player-id="${rival.id}">
-                        <td class="player-cell">
-                            <div class="player-name-cell">${rival.name}</div>
-                            <div class="player-id-cell">ID: ${rival.id}</div>
-                        </td>
-                        <td>${getStatusIndicator(status)}</td>
-                        <td>${formatCurrencyShort(rival.data?.wert || 0)}</td>
-                        <td>${formatCurrencyShort(rival.data?.realWert || 0)}</td>
-                        <td>${rival.data?.punkte || 0}</td>
-                        <td>${getOwnerName(rival.id)}</td>
-                    </tr>
-                    `;
-                });
-                
-                html += '</tbody></table>';
-                container.innerHTML = html;
-                
-                document.querySelectorAll('.rivals-table tbody tr').forEach(row => {
-                    row.addEventListener('click', (e) => {
-                        const playerId = row.getAttribute('data-player-id');
-                        window.location.href = `player.html?id=${playerId}`;
-                    });
-                });
-            } else {
-                container.innerHTML = '<p>Keine direkten Konkurrenten gefunden</p>';
-            }
-        }
+       function displayRivals(player, allPlayers) {
+    const container = document.getElementById('rivalsList');
+    if (!container) return;
+    
+    const rivals = allPlayers.filter(p => 
+        p.data?.position === player.data?.position && 
+        p.id !== player.id
+    ).slice(0, 5);
+    
+    if (rivals.length > 0) {
+        let html = `
+        <table class="rivals-table">
+            <thead>
+                <tr>
+                    <th>Spieler</th>
+                    <th>Status</th>
+                    <th>Marktwert</th>
+                    <th>Realwert</th>
+                    <th>Punkte</th>
+                    <th>Besitzer</th>
+                </tr>
+            </thead>
+            <tbody>
+        `;
+        
+        rivals.forEach(rival => {
+            const status = rival.data.comunioStatus?.status || 'Unbekannt';
+            const owner = ownersMap.get(rival.id) || 'Computer';
+            const ownerClass = owner.includes("Computer") ? "owner-comp" : "owner-users";
+            html += `
+            <tr data-player-id="${rival.id}">
+                <td class="player-cell">
+                    <div class="player-name-cell">${rival.name}</div>
+                    <div class="player-id-cell">ID: ${rival.id}</div>
+                </td>
+                <td>${getStatusIcon(status)}</td>
+                <td>${formatCurrencyShort(rival.data?.wert || 0)}</td>
+                <td>${formatCurrencyShort(rival.data?.realWert || 0)}</td>
+                <td>${rival.data?.punkte || 0}</td>
+                <td class="${ownerClass}">${owner}</td>
+            </tr>
+            `;
+        });
+        
+        html += '</tbody></table>';
+        container.innerHTML = html;
+        
+        document.querySelectorAll('.rivals-table tbody tr').forEach(row => {
+            row.addEventListener('click', (e) => {
+                const playerId = row.getAttribute('data-player-id');
+                window.location.href = `player.html?id=${playerId}`;
+            });
+        });
+    } else {
+        container.innerHTML = '<p>Keine direkten Konkurrenten gefunden</p>';
+    }
+}
+
         
         function displayMarketValue(player) {
             const container = document.getElementById('marketValueChart');
