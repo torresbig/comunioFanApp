@@ -44,10 +44,10 @@
     .market-list-row { display: flex; justify-content: space-between; align-items: center; background: #f6f8fa; border-radius: 6px; padding: 7px 12px;}
     .market-list-date { font-size: 13px; color: #777;}
     .market-list-value { font-size: 14px; font-weight: 500;}
-    .trend-mini { display: inline-block; vertical-align: middle; width: 1.1em; height: 1.1em; font-size: 1em; margin-left: 4px;}
-    .trend-up { color: #27ae60; font-size: 1em;}
-    .trend-down { color: #e74c3c; font-size: 1em;}
-    .trend-eq { color: #888; font-size: 1em;}
+    .trend-mini { vertical-align: middle; font-size: 1em; margin-left: 4px; }
+    .trend-up { color: #27ae60;}
+    .trend-down { color: #e74c3c;}
+    .trend-eq { color: #888;}
     @media (max-width: 600px) {
         .container { padding: 5px; }
         .market-month-header { font-size: 14px; }
@@ -266,7 +266,7 @@ async function displayMarketValue(player) {
             html += `
                 <div class="market-list-row">
                     <span class="market-list-date">${entries[i].date}</span>
-                    <span class="market-list-value">${formatCurrencyFull(entries[i].wert)} ${dayTrend}</span>
+                    <span class="market-list-value">${formatCurrencyFull(entries[i].wert)}${dayTrend}</span>
                 </div>
             `;
         }
@@ -366,7 +366,6 @@ function initTabs() {
             document.getElementById(tabId).classList.add('active');
         });
     });
-    // Standardmäßig: Marktwerte-Tab aktiv
     tabButtons.forEach(btn => btn.classList.remove('active'));
     tabContents.forEach(tab => tab.classList.remove('active'));
     document.querySelector('.tab-button[data-tab="market"]').classList.add('active');
