@@ -198,6 +198,11 @@ async function displayMarketValue(player) {
         const avg = Math.round(values.reduce((a, b) => a + b, 0) / values.length);
         monthlyAverages[key] = avg;
     });
+    // Für Monatsvergleich: Map von Monat zu erstem Tageswert
+    const firstDayOfMonth = {};
+    Object.keys(monthlyData).forEach(key => {
+        firstDayOfMonth[key] = monthlyData[key][monthlyData[key].length - 1];
+    });
     let html = '';
     let prevMonthKey = null;
     const sortedMonths = Object.keys(monthlyData).sort((a, b) => b.localeCompare(a));
@@ -227,8 +232,8 @@ async function displayMarketValue(player) {
             let compareValue = null;
             if (i < entries.length - 1) {
                 compareValue = entries[i + 1].wert;
-            } else if (prevMonthKey && monthlyData[prevMonthKey] && monthlyData[prevMonthKey].length > 0) {
-                compareValue = monthlyData[prevMonthKey][0].wert;
+            } else if (prevMonthKey && firstDayOfMonth[prevMonthKey]) {
+                compareValue = firstDayOfMonth[prevMonthKey].wert;
             }
             if (compareValue !== null) {
                 if (entries[i].wert > compareValue) dayTrend = '<span style="color:#27ae60;">▲</span>';
