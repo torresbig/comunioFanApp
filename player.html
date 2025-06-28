@@ -80,13 +80,20 @@
         .player-header {
             display: flex;
             align-items: center;
+            justify-content: space-between;
+            width: 100%;
             gap: 15px;
-            flex: 1;
+            position: relative;
         }
 
         .player-name-id {
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            min-width: 0;
+            text-align: center;
         }
 
         .player-name {
@@ -104,11 +111,6 @@
             font-size: 12px;
             color: #aaa;
             margin-top: 2px;
-        }
-
-        .status-indicator {
-            margin-left: auto;
-            font-size: 20px;
         }
 
         .club-logo {
@@ -131,6 +133,31 @@
             object-fit: contain;
         }
 
+        .status-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            gap: 2px;
+            margin-left: auto;
+        }
+
+        .status-label {
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        .status-indicator {
+            font-size: 26px;
+            cursor: help;
+            transition: opacity 0.2s;
+        }
+
+        .status-indicator:hover {
+            opacity: 0.8;
+        }
+
         .status-icon {
             padding: 4px 8px;
             border-radius: 15px;
@@ -142,9 +169,8 @@
         .status-aktiv { background: linear-gradient(135deg, #27ae60, #229954); }
         .status-verletzt { background: linear-gradient(135deg, #e74c3c, #c0392b); }
         .status-reha { background: linear-gradient(135deg, #f39c12, #e67e22); }
-        .status-aufbautraining { background: linear-gradient(135deg, #FFA500, #FF8C00); }
+        .status-aufbautraining { background: linear-gradient(135deg, #FF8C00, #FFA500); }
         .status-nicht_in_liga { background: linear-gradient(135deg, #95a5a6, #7f8c8d); }
-
         .status-icon-active { color: #27ae60; }
         .status-icon-injured { color: #e74c3c; }
         .status-icon-rehab { color: #f39c12; }
@@ -309,7 +335,6 @@
             text-align: center;
         }
 
-        /* Rivalen-Tabelle */
         .rivals-table {
             width: 100%;
             border-collapse: collapse;
@@ -346,7 +371,6 @@
             color: #888;
         }
 
-        /* Marktwerte-Tabelle */
         .market-table {
             width: 100%;
             border-collapse: collapse;
@@ -372,7 +396,6 @@
             color: #e74c3c;
         }
 
-        /* Punkte-Tabelle */
         .points-table {
             width: 100%;
             border-collapse: collapse;
@@ -409,7 +432,10 @@
                 <a href="#" id="playerNameLink" class="player-name" target="_blank">Lade Spieler...</a>
                 <span id="playerId" class="player-id"></span>
             </div>
-            <div id="statusIndicator" class="status-indicator"></div>
+            <div class="status-wrapper">
+                <div class="status-label">Status</div>
+                <div id="statusIndicator" class="status-indicator"></div>
+            </div>
         </div>
     </nav>
     
@@ -453,7 +479,6 @@
                     </div>
                 </div>
             </details>
-
             <details class="info-card">
                 <summary class="collapse-header">
                     <h3>⚽ Comunio</h3>
@@ -481,7 +506,7 @@
 
             <details class="info-card">
                 <summary class="collapse-header">
-                    <h3>📊 Status & Statistik</h3>
+                    <h3>857 Status & Statistik</h3>
                     <span class="collapse-icon">▼</span>
                 </summary>
                 <div class="info-card-content">
@@ -529,7 +554,7 @@
             </div>
 
             <div id="rivals" class="tab-content active">
-                <h3>⚔️ Direkte Konkurrenten</h3>
+                <h3>8224 Direkte Konkurrenten</h3>
                 <div id="rivalsList"></div>
             </div>
 
@@ -537,7 +562,6 @@
                 <h3>💶 Marktwertentwicklung</h3>
                 <div id="marketValueChart"></div>
             </div>
-
             <div id="points" class="tab-content">
                 <h3>📈 Punkteverlauf</h3>
                 <div id="pointsHistory"></div>
@@ -653,10 +677,10 @@
                 'VERLETZT': 'Verletzt',
                 'REHA': 'Reha',
                 'AUFBAUTRAINING': 'Aufbautraining',
-		'NICHT_IM_KADER': 'Nicht im Kader',
-		'ROTE_KARTE': 'Rote Karte',
-		'GELBROTE_KARTE': 'Gelbrote Karte',
-		'FUENFTE_GELBE_KARTE': '5. gelbe Karte',
+                'NICHT_IM_KADER': 'Nicht im Kader',
+                'ROTE_KARTE': 'Rote Karte',
+                'GELBROTE_KARTE': 'Gelbrote Karte',
+                'FUENFTE_GELBE_KARTE': '5. gelbe Karte',
                 'NICHT_IN_LIGA': 'Nicht in Liga'
             };
             return statusMap[status] || status || 'Unbekannt';
@@ -743,30 +767,23 @@
                 case 'REHA': return '🔄';
                 case 'AUFBAUTRAINING': return '🏋️💪';
                 case 'NICHT_IN_LIGA': return '❌';
-		case 'FUENFTE_GELBE_KARTE': return '🟨';
-		case 'GELBROTE_KARTE': return '🟨🟥';
-		case 'ROTE_KARTE': return '🟥';
-		case 'NICHT_IM_KADER': return '🚫';
+                case 'FUENFTE_GELBE_KARTE': return '🟨';
+                case 'GELBROTE_KARTE': return '🟨🟥';
+                case 'ROTE_KARTE': return '🟥';
+                case 'NICHT_IM_KADER': return '🚫';
                 default: return '❓';
             }
         }
 
-        function getStatusIcon(status) {
-    switch(status) {
-        case 'AKTIV': return '<span class="status-icon-active">✓</span>';
-        case 'VERLETZT': return '<span class="status-icon-injured">⚠️</span>';
-        case 'REHA': return '<span class="status-icon-rehab">🔄</span>';
-        case 'AUFBAUTRAINING': return '<span class="status-icon-rehab">🏋️</span>'; // oder: 🏋️💪
-        case 'NICHT_IN_LIGA': return '<span class="status-icon-not-in-squad">✗</span>';
-        case 'FUENFTE_GELBE_KARTE': return '<span class="status-icon-card-yellow">🟨</span>';
-        case 'GELBROTE_KARTE': return '<span class="status-icon-card-yellow-red">🟨🟥</span>';
-        case 'ROTE_KARTE': return '<span class="status-icon-card-red">🟥</span>';
-        case 'NICHT_IM_KADER': return '<span class="status-icon-not-in-squad">🚫</span>';
-        default: return '<span class="status-icon-default">❓</span>';
-    }
-}
+        function getStatusTooltip(status, detail, grund, seit) {
+            if (status === 'AKTIV') return '';
+            let tooltip = getStatusDisplayName(status);
+            if (detail) tooltip = detail;
+            if (grund) tooltip += ' - ' + grund;
+            if (seit) tooltip += ' | seit: ' + seit;
+            return tooltip;
+        }
 
-        
         function displayRivals(player, allPlayers) {
             const container = document.getElementById('rivalsList');
             if (!container) return;
@@ -800,7 +817,7 @@
                             <div class="player-name-cell">${rival.name}</div>
                             <div class="player-id-cell">ID: ${rival.id}</div>
                         </td>
-                        <td>${getStatusIcon(status)}</td>
+                        <td>${getStatusIndicator(status)}</td>
                         <td>${formatCurrencyShort(rival.data?.wert || 0)}</td>
                         <td>${formatCurrencyShort(rival.data?.realWert || 0)}</td>
                         <td>${rival.data?.punkte || 0}</td>
@@ -822,7 +839,7 @@
                 container.innerHTML = '<p>Keine direkten Konkurrenten gefunden</p>';
             }
         }
-
+        
         function displayMarketValue(player) {
             const container = document.getElementById('marketValueChart');
             if (!container) return;
@@ -871,7 +888,7 @@
             
             let html = `
                 <div class="stat-box">
-                    <strong>Aktuelle Saison (${currentSeason}):</strong>
+                    <strong>Aktuelle Saison (${current2016}):</strong>
                     <div>${currentPoints} Punkte</div>
                 </div>
             `;
@@ -953,8 +970,17 @@
                 clubLogo.innerHTML = `<img src="logos/${logoFile}" alt="${clubName}" style="width:100%;height:100%;object-fit:contain">`;
                 logDebug('Vereinslogo gesetzt für: ' + clubName);
                 
-                const status = player.data.comunioStatus.status || 'Unbekannt';
-                document.getElementById('statusIndicator').textContent = getStatusIndicator(status);
+                const status = player.data.comunioStatus?.status || 'Unbekannt';
+                const statusIndicator = document.getElementById('statusIndicator');
+                statusIndicator.textContent = getStatusIndicator(status);
+                // Tooltip für Status setzen (nur wenn nicht "Aktiv")
+                const detail = player.data.comunioStatus?.details || '';
+                const grund = player.data.comunioStatus?.grund || '';
+                const seit = player.data.comunioStatus?.seit || '';
+                const tooltip = getStatusTooltip(status, detail, grund, seit);
+                if (tooltip) {
+                    statusIndicator.setAttribute('title', tooltip);
+                }
                 document.getElementById('playerId').textContent = `ID: ${player.id}`;
                 
                 document.getElementById('birthday').textContent = player.data.spielerDaten.geburtstag || '-';
