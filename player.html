@@ -198,21 +198,25 @@ async function displayMarketValue(player) {
         const avg = Math.round(values.reduce((a, b) => a + b, 0) / values.length);
         monthlyAverages[key] = avg;
     });
-    // Für Monatsvergleich: Map von Monat zu erstem Tageswert
+    // Map: Monat -> erster Tageswert (ältester Tag)
     const firstDayOfMonth = {};
     Object.keys(monthlyData).forEach(key => {
         firstDayOfMonth[key] = monthlyData[key][monthlyData[key].length - 1];
     });
-    let html = '';
-    let prevMonthKey = null;
+    // Liste aller Monate absteigend
     const sortedMonths = Object.keys(monthlyData).sort((a, b) => b.localeCompare(a));
+    // Für alle Monatskeys: Index im Array
+    const monthKeyToIdx = {};
+    sortedMonths.forEach((k, i) => monthKeyToIdx[k] = i);
+    let html = '';
     sortedMonths.forEach((monthKey, idx) => {
         const [year, month] = monthKey.split('-');
         const monthName = `${MONATSNAMEN[parseInt(month, 10) - 1]} ${year}`;
         const entries = monthlyData[monthKey];
         // Monatsdurchschnitt und Tendenz zum Vormonat
         let trendIcon = '';
-        if (prevMonthKey !== null) {
+        if (idx < sortedMonths.length - 1) {
+            const prevMonthKey = sortedMonths[idx + 1];
             if (monthlyAverages[monthKey] > monthlyAverages[prevMonthKey]) trendIcon = '<span style="color:#27ae60;">▲</span>';
             else if (monthlyAverages[monthKey] < monthlyAverages[prevMonthKey]) trendIcon = '<span style="color:#e74c3c;">▼</span>';
             else trendIcon = '<span style="color:#888;">→</span>';
@@ -226,16 +230,21 @@ async function displayMarketValue(player) {
                 </summary>
                 <div class="market-list">
         `;
-        // Für Trendberechnung: Immer mit dem nächsten Eintrag (also mit dem Wert darunter = Vortag)
         for (let i = 0; i < entries.length; i++) {
             let dayTrend = '';
             let compareValue = null;
+            // Vergleich mit dem nächsten Eintrag (nächster Tag = Vortag)
             if (i < entries.length - 1) {
                 compareValue = entries[i + 1].wert;
-            } else if (prevMonthKey && firstDayOfMonth[prevMonthKey]) {
-                compareValue = firstDayOfMonth[prevMonthKey].wert;
+            } else if (idx < sortedMonths.length - 1) {
+                // Vergleich mit dem ersten Tag des Vormonats
+                const prevMonthKey = sortedMonths[idx + 1];
+                if (firstDayOfMonth[prevMonthKey]) {
+                    compareValue = firstDayOfMonth[prevMonthKey].wert;
+                }
             }
-            if (compareValue !== null) {
+            // Kein Pfeil beim allerersten Tag überhaupt (letzter Tag im ältesten Monat)
+            if (!(idx === sortedMonths.length - 1 && i === entries.length - 1) && compareValue !== null) {
                 if (entries[i].wert > compareValue) dayTrend = '<span style="color:#27ae60;">▲</span>';
                 else if (entries[i].wert < compareValue) dayTrend = '<span style="color:#e74c3c;">▼</span>';
                 else dayTrend = '<span style="color:#888;">→</span>';
@@ -248,7 +257,6 @@ async function displayMarketValue(player) {
             `;
         }
         html += '</div></details>';
-        prevMonthKey = monthKey;
     });
     container.innerHTML = html;
 }
