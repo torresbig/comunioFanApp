@@ -739,4 +739,13 @@
                 displayMarketValue(player);
                 displayPointsHistory(player);
                 document.getElementById('loadingIndicator').style.display = 'none';
-                document.getElementById('player
+                document.getElementById('playerContent').style.display = 'block';
+            } catch (err) {
+                document.getElementById('errorMessage').textContent = "Fehler beim Laden der Daten: " + err.message;
+                document.getElementById('errorMessage').style.display = 'block';
+                document.getElementById('loadingIndicator').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
