@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spieler Details</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; color: #333; padding-bottom: 140px; }
         .navbar {
             background: linear-gradient(135deg, #34495e, #2c3e50);
@@ -30,9 +29,16 @@
             align-items: center;
             flex: 1;
         }
+        .player-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
         .club-logo {
-            width: 40px;
-            height: 40px;
+            width: 38px;
+            height: 38px;
             border-radius: 50%;
             object-fit: contain;
             display: flex;
@@ -42,18 +48,11 @@
             color: white;
             font-weight: bold;
             overflow: hidden;
-            margin-bottom: 2px;
         }
         .club-logo img {
             width: 100%;
             height: 100%;
             object-fit: contain;
-        }
-        .player-name-id {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
         }
         .player-name {
             font-size: 18px;
@@ -68,6 +67,7 @@
             font-size: 12px;
             color: #aaa;
             margin-top: 2px;
+            text-align: center;
         }
         .status-wrapper {
             display: flex;
@@ -195,6 +195,8 @@
         .market-month-block {
             margin: 18px 0 8px 0;
             padding: 0;
+            border-radius: 8px;
+            background: #f9f9ff;
         }
         .market-month-header {
             font-weight: 600;
@@ -202,6 +204,11 @@
             display: flex;
             align-items: center;
             gap: 8px;
+            cursor: pointer;
+            padding: 10px 12px;
+            border-radius: 8px 8px 0 0;
+            background: #e3e7fa;
+            user-select: none;
         }
         .market-month-avg {
             font-weight: 400;
@@ -213,6 +220,7 @@
             flex-direction: column;
             gap: 6px;
             margin-bottom: 8px;
+            padding: 0 12px 8px 12px;
         }
         .market-list-row {
             display: flex;
@@ -243,11 +251,11 @@
         <button class="back-btn" onclick="window.history.back()">← Zurück</button>
         <div class="player-header">
             <div class="player-center">
-                <div class="club-logo" id="clubLogo"></div>
-                <div class="player-name-id">
+                <div class="player-row">
+                    <div class="club-logo" id="clubLogo"></div>
                     <a href="#" id="playerNameLink" class="player-name" target="_blank">Lade Spieler...</a>
-                    <span id="playerId" class="player-id"></span>
                 </div>
+                <span id="playerId" class="player-id"></span>
             </div>
             <div class="status-wrapper">
                 <div class="status-label">Status</div>
@@ -351,7 +359,7 @@
                     </div>
                 </div>
             </details>
-            <details class="info-card">
+            <details class="info-card" id="attributesCard" style="display:none;">
                 <summary class="collapse-header">
                     <h3>⭐ Besondere Eigenschaften</h3>
                     <span class="collapse-icon">▼</span>
@@ -386,10 +394,11 @@
             "Juli", "August", "September", "Oktober", "November", "Dezember"
         ];
 
+        // Zahl formatieren: 123456 -> 123.456 €, 1200 -> 1.200 €, 1200000 -> 1,2 Mio €
         function formatCurrencyShort(value) {
             if (!value || value === 0) return '-';
-            if (value >= 1_000_000) return (value / 1_000_000).toFixed(1).replace('.0', '') + ' Mio €';
-            if (value >= 1_000) return (value / 1_000).toFixed(0) + ' Tsd €';
+            if (value >= 1_000_000) return (value / 1_000_000).toFixed(1).replace('.', ',').replace(',0','') + ' Mio €';
+            if (value >= 1_000) return value.toLocaleString('de-DE') + ' €';
             return value + ' €';
         }
 
@@ -401,25 +410,22 @@
             return entry.data.normal;
         }
 
+        // Marktwerte: Monatsweise aufklappbar, aktuellster Monat offen
         async function displayMarketValue(player) {
             const container = document.getElementById('marketValueChart');
             if (!container) return;
-
             const playerId = player.id;
             const marketValues = await loadPlayerMarketValues(playerId);
-
             if (!marketValues || marketValues.length === 0) {
                 container.innerHTML = "<p>Keine Marktwertdaten verfügbar.</p>";
                 return;
             }
-
             // Sortieren (neueste zuerst)
             marketValues.sort((a, b) => {
                 const [d1, m1, y1] = a.date.split('.');
                 const [d2, m2, y2] = b.date.split('.');
                 return new Date(`${y2}-${m2}-${d2}`) - new Date(`${y1}-${m1}-${d1}`);
             });
-
             // Gruppieren nach Monat/Jahr
             const monthlyData = {};
             marketValues.forEach(entry => {
@@ -431,7 +437,6 @@
                     dateObj: new Date(`${year}-${month}-${day}`)
                 });
             });
-
             // Monatsdurchschnitte berechnen
             const monthlyAverages = {};
             Object.keys(monthlyData).forEach(key => {
@@ -439,18 +444,14 @@
                 const avg = Math.round(values.reduce((a, b) => a + b, 0) / values.length);
                 monthlyAverages[key] = avg;
             });
-
             // Darstellung bauen
             let html = '';
             let prevMonthAvg = null;
-
-            // Monate absteigend (neueste zuerst)
             const sortedMonths = Object.keys(monthlyData).sort((a, b) => b.localeCompare(a));
-            sortedMonths.forEach((monthKey) => {
+            sortedMonths.forEach((monthKey, idx) => {
                 const [year, month] = monthKey.split('-');
                 const monthName = `${MONATSNAMEN[parseInt(month, 10) - 1]} ${year}`;
                 const entries = monthlyData[monthKey];
-
                 // Durchschnitt und Tendenz zum Vormonat
                 const monthAvg = monthlyAverages[monthKey];
                 let trendIcon = '';
@@ -459,16 +460,15 @@
                     else if (monthAvg < prevMonthAvg) trendIcon = '<span style="color:#e74c3c;">▼</span>';
                     else trendIcon = '<span style="color:#888;">→</span>';
                 }
+                const isOpen = idx === 0 ? 'open' : '';
                 html += `
-                    <div class="market-month-block">
-                        <div class="market-month-header">
+                    <details class="market-month-block" ${isOpen}>
+                        <summary class="market-month-header">
                             ${monthName}
                             <span class="market-month-avg">(Ø ${formatCurrencyShort(monthAvg)}) ${trendIcon}</span>
-                        </div>
+                        </summary>
                         <div class="market-list">
                 `;
-
-                // Einträge im Monat (absteigend)
                 let prevValue = null;
                 entries.forEach(entry => {
                     let dayTrend = '';
@@ -485,15 +485,53 @@
                     `;
                     prevValue = entry.wert;
                 });
-
-                html += '</div></div>';
+                html += '</div></details>';
                 prevMonthAvg = monthAvg;
             });
-
             container.innerHTML = html;
         }
 
-        // Hilfsfunktionen für die restlichen Felder
+        // Eigenschaften-Menü nur anzeigen, wenn vorhanden
+        function displayAttributes(player) {
+            const container = document.getElementById('attributesList');
+            const card = document.getElementById('attributesCard');
+            if (!container) return;
+            container.innerHTML = '';
+            let found = false;
+            if (player.data.attribute && player.data.attribute.length > 0) {
+                player.data.attribute.forEach(attr => {
+                    if (typeof attr === 'object' && attr !== null) {
+                        Object.keys(attr).forEach(key => {
+                            const value = attr[key];
+                            if (Array.isArray(value)) {
+                                value.forEach(item => {
+                                    const span = document.createElement('span');
+                                    span.className = 'attribute-tag';
+                                    span.textContent = item;
+                                    container.appendChild(span);
+                                    found = true;
+                                });
+                            } else if (typeof value === 'string') {
+                                const span = document.createElement('span');
+                                span.className = 'attribute-tag';
+                                span.textContent = value;
+                                container.appendChild(span);
+                                found = true;
+                            }
+                        });
+                    } else if (typeof attr === 'string') {
+                        const span = document.createElement('span');
+                        span.className = 'attribute-tag';
+                        span.textContent = attr;
+                        container.appendChild(span);
+                        found = true;
+                    }
+                });
+            }
+            card.style.display = found ? '' : 'none';
+        }
+
+        // Restliche Hilfsfunktionen wie gehabt
         function calcAge(birthday) {
             if (!birthday || birthday === 'N/A') return '-';
             try {
@@ -533,41 +571,7 @@
             };
             return statusMap[status] || status || 'Unbekannt';
         }
-        function displayAttributes(player) {
-            const container = document.getElementById('attributesList');
-            if (!container) return;
-            container.innerHTML = '';
-            if (player.data.attribute && player.data.attribute.length > 0) {
-                player.data.attribute.forEach(attr => {
-                    if (typeof attr === 'object' && attr !== null) {
-                        Object.keys(attr).forEach(key => {
-                            const value = attr[key];
-                            if (Array.isArray(value)) {
-                                value.forEach(item => {
-                                    const span = document.createElement('span');
-                                    span.className = 'attribute-tag';
-                                    span.textContent = item;
-                                    container.appendChild(span);
-                                });
-                            } else if (typeof value === 'string') {
-                                const span = document.createElement('span');
-                                span.className = 'attribute-tag';
-                                span.textContent = value;
-                                container.appendChild(span);
-                            }
-                        });
-                    } else if (typeof attr === 'string') {
-                        const span = document.createElement('span');
-                        span.className = 'attribute-tag';
-                        span.textContent = attr;
-                        container.appendChild(span);
-                    }
-                });
-            }
-        }
-        function getOwnerName(playerId) {
-            return "Computer";
-        }
+        function getOwnerName(playerId) { return "Computer"; }
         function initTabs() {
             const tabButtons = document.querySelectorAll('.tab-button');
             tabButtons.forEach(button => {
