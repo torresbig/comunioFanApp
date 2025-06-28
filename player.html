@@ -20,8 +20,17 @@
     .status-indicator { font-size: 26px; cursor: help; transition: opacity 0.2s;}
     .status-indicator:hover { opacity: 0.8;}
     .container { max-width: 1200px; margin: 0 auto; padding: 15px;}
-    .info-card { background: rgba(255,255,255,0.95); border-radius: 10px; padding: 15px; margin-bottom: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);}
-    .info-card h3 { margin-bottom: 12px; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; font-size: 16px; display: flex; align-items: center; gap: 8px;}
+    .info-card { background: rgba(255,255,255,0.95); border-radius: 10px; padding: 0; margin-bottom: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);}
+    .accordion-header {
+        display: flex; align-items: center; justify-content: space-between;
+        cursor: pointer; padding: 16px 20px; border: none; background: none; width: 100%;
+        font-size: 16px; font-weight: bold; color: #2c3e50; border-radius: 10px 10px 0 0;
+        border-bottom: 2px solid #3498db;
+        transition: background 0.1s;
+    }
+    .accordion-header.active, .accordion-header:focus { background: #e3e7fa; outline: none; }
+    .accordion-content { display: none; padding: 15px 20px 15px 20px; }
+    .accordion-content.active { display: block; }
     .info-card .stat-icon { width: 22px; height: 22px; vertical-align: middle; margin-right: 6px; }
     .info-row { display: flex; justify-content: space-between; margin-bottom: 8px; padding: 5px 0; border-bottom: 1px solid #eee;}
     .info-row:last-child { border-bottom: none;}
@@ -35,9 +44,6 @@
     .tab-button .trend-arrow { display: flex; align-items: center; margin-left: 7px;}
     .tab-content { display: none; padding: 15px; background: rgba(255,255,255,0.95); border-radius: 0 0 10px 10px;}
     .tab-content.active { display: block;}
-    .collapse-header { display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 10px 0;}
-    .collapse-icon { font-size: 20px;}
-    .info-card-content { overflow: hidden; transition: max-height 0.3s ease;}
     .market-month-block { margin: 18px 0 8px 0; padding: 0; border-radius: 8px; background: #f9f9ff;}
     .market-month-header { font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 8px; cursor: pointer; padding: 10px 12px; border-radius: 8px 8px 0 0; background: #e3e7fa; user-select: none;}
     .market-month-avg { font-weight: 400; font-size: 13px; color: #444;}
@@ -45,6 +51,7 @@
     .market-list-row { display: flex; justify-content: space-between; align-items: center; background: #f6f8fa; border-radius: 6px; padding: 7px 12px;}
     .market-list-date { font-size: 13px; color: #777;}
     .market-list-value { font-size: 14px; font-weight: 500;}
+    .trend-mini { display: inline-block; vertical-align: middle; width: 16px; height: 16px;}
     @media (max-width: 600px) {
         .container { padding: 5px; }
         .market-month-header { font-size: 14px; }
@@ -78,12 +85,11 @@
     <div id="errorMessage" class="error-message" style="display:none;"></div>
     <div id="loadingIndicator" class="loading-spinner"></div>
     <div id="playerContent" style="display:none;">
-        <details class="info-card" open>
-            <summary class="collapse-header">
-                <h3>📋 Spieler-Informationen</h3>
-                <span class="collapse-icon">▼</span>
-            </summary>
-            <div class="info-card-content">
+        <div class="info-card">
+            <button class="accordion-header active" data-accordion="playerinfo">
+                📋 Spieler-Informationen
+            </button>
+            <div class="accordion-content active" id="playerinfo">
                 <div class="info-row"><span class="info-label">Geburtstag:</span><span class="info-value" id="birthday">-</span></div>
                 <div class="info-row"><span class="info-label">Alter:</span><span class="info-value" id="age">-</span></div>
                 <div class="info-row"><span class="info-label">Größe:</span><span class="info-value" id="height">-</span></div>
@@ -92,28 +98,20 @@
                 <div class="info-row"><span class="info-label">Hauptfuß:</span><span class="info-value" id="foot">-</span></div>
                 <div class="info-row"><span class="info-label">Trikotnummer:</span><span class="info-value" id="jerseyNumber">-</span></div>
             </div>
-        </details>
-        <details class="info-card">
-            <summary class="collapse-header">
-                <h3>⚽ Comunio</h3>
-                <span class="collapse-icon">▼</span>
-            </summary>
-            <div class="info-card-content">
+            <button class="accordion-header" data-accordion="comunio">
+                ⚽ Comunio
+            </button>
+            <div class="accordion-content" id="comunio">
                 <div class="info-row"><span class="info-label">Position:</span><span class="info-value" id="comunioPosition">-</span></div>
                 <div class="info-row"><span class="info-label">Marktwert:</span><span class="info-value" id="marketValue">-</span></div>
                 <div class="info-row"><span class="info-label">Punkte (letztes Jahr):</span><span class="info-value" id="lastYearPoints">-</span></div>
                 <div class="info-row"><span class="info-label">Besitzer:</span><span class="info-value" id="owner">-</span></div>
             </div>
-        </details>
-        <details class="info-card">
-            <summary class="collapse-header">
-                <h3>
-                    <svg class="stat-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="13" width="3" height="8" rx="1" fill="#764ba2"/><rect x="8" y="9" width="3" height="12" rx="1" fill="#764ba2"/><rect x="13" y="5" width="3" height="16" rx="1" fill="#764ba2"/><rect x="18" y="2" width="3" height="19" rx="1" fill="#764ba2"/></svg>
-                    Status & Statistik
-                </h3>
-                <span class="collapse-icon">▼</span>
-            </summary>
-            <div class="info-card-content">
+            <button class="accordion-header" data-accordion="statistic">
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="13" width="3" height="8" rx="1" fill="#764ba2"/><rect x="8" y="9" width="3" height="12" rx="1" fill="#764ba2"/><rect x="13" y="5" width="3" height="16" rx="1" fill="#764ba2"/><rect x="18" y="2" width="3" height="19" rx="1" fill="#764ba2"/></svg>
+                Status & Statistik
+            </button>
+            <div class="accordion-content" id="statistic">
                 <div class="info-row"><span class="info-label">Status:</span><span class="info-value" id="detailStatus">-</span></div>
                 <div class="info-row"><span class="info-label">Spiele:</span><span class="info-value" id="gamesPlayed">-</span></div>
                 <div class="info-row"><span class="info-label">Tore:</span><span class="info-value" id="goals">-</span></div>
@@ -121,19 +119,16 @@
                 <div class="info-row"><span class="info-label">Gelbe Karten:</span><span class="info-value" id="yellowCards">-</span></div>
                 <div class="info-row"><span class="info-label">Rote Karten:</span><span class="info-value" id="redCards">-</span></div>
             </div>
-        </details>
-        <details class="info-card" id="attributesCard" style="display:none;">
-            <summary class="collapse-header">
-                <h3>⭐ Besondere Eigenschaften</h3>
-                <span class="collapse-icon">▼</span>
-            </summary>
-            <div class="info-card-content">
+            <button class="accordion-header" data-accordion="attributes" id="attributesHeader" style="display:none;">
+                ⭐ Besondere Eigenschaften
+            </button>
+            <div class="accordion-content" id="attributesCard" style="display:none;">
                 <div class="attributes" id="attributesList"></div>
             </div>
-        </details>
+        </div>
         <div class="tabs" id="tabBar">
             <button class="tab-button" data-tab="rivals">Rivalen</button>
-            <button class="tab-button" data-tab="market">Marktwerte <span id="marketTabTrend" class="trend-arrow"></span></button>
+            <button class="tab-button" data-tab="market">Marktwerte <span id="marketTabTrend" class="trend-arrow" style="display:inline-block;vertical-align:middle;"></span></button>
             <button class="tab-button" data-tab="points">Punkte</button>
         </div>
         <div id="rivals" class="tab-content">
@@ -164,16 +159,19 @@ function formatCurrencyShort(value) {
     if (value >= 1_000) return (value / 1_000).toFixed(1).replace('.', ',').replace(',0','') + ' Tsd €';
     return value + ' €';
 }
-function svgTrend(trend) {
+function svgTrend(trend, mini=false) {
     if (trend === "up") {
-        // Grünes Dreieck nach oben
-        return `<svg width="22" height="22" viewBox="0 0 22 22"><polygon points="11,5 18,17 4,17" fill="#27ae60"/></svg>`;
+        return mini
+            ? `<svg class="trend-mini" viewBox="0 0 16 16"><polygon points="8,3 14,13 2,13" fill="#27ae60"/></svg>`
+            : `<svg width="22" height="22" viewBox="0 0 22 22"><polygon points="11,5 18,17 4,17" fill="#27ae60"/></svg>`;
     } else if (trend === "down") {
-        // Rotes Dreieck nach unten
-        return `<svg width="22" height="22" viewBox="0 0 22 22"><polygon points="11,17 18,5 4,5" fill="#e74c3c"/></svg>`;
+        return mini
+            ? `<svg class="trend-mini" viewBox="0 0 16 16"><polygon points="8,13 14,3 2,3" fill="#e74c3c"/></svg>`
+            : `<svg width="22" height="22" viewBox="0 0 22 22"><polygon points="11,17 18,5 4,5" fill="#e74c3c"/></svg>`;
     } else if (trend === "eq") {
-        // Grauer Balken
-        return `<svg width="22" height="22" viewBox="0 0 22 22"><rect x="5" y="10" width="12" height="3" rx="1.5" fill="#888"/></svg>`;
+        return mini
+            ? `<svg class="trend-mini" viewBox="0 0 16 16"><rect x="3" y="7" width="10" height="2" rx="1" fill="#888"/></svg>`
+            : `<svg width="22" height="22" viewBox="0 0 22 22"><rect x="5" y="10" width="12" height="3" rx="1.5" fill="#888"/></svg>`;
     }
     return "";
 }
@@ -194,13 +192,11 @@ async function displayMarketValue(player) {
         document.getElementById('marketTabTrend').innerHTML = "";
         return;
     }
-    // Sortieren (neueste zuerst)
     marketValues.sort((a, b) => {
         const [d1, m1, y1] = a.date.split('.');
         const [d2, m2, y2] = b.date.split('.');
         return new Date(`${y2}-${m2}-${d2}`) - new Date(`${y1}-${m1}-${d1}`);
     });
-    // Gruppieren nach Monat/Jahr
     const monthlyData = {};
     marketValues.forEach(entry => {
         const [day, month, year] = entry.date.split('.');
@@ -217,25 +213,22 @@ async function displayMarketValue(player) {
         const avg = Math.round(values.reduce((a, b) => a + b, 0) / values.length);
         monthlyAverages[key] = avg;
     });
-    // Map: Monat -> erster Tageswert (ältester Tag)
     const firstDayOfMonth = {};
     Object.keys(monthlyData).forEach(key => {
         firstDayOfMonth[key] = monthlyData[key][monthlyData[key].length - 1];
     });
-    // Liste aller Monate absteigend
     const sortedMonths = Object.keys(monthlyData).sort((a, b) => b.localeCompare(a));
-    // Für alle Monatskeys: Index im Array
     const monthKeyToIdx = {};
     sortedMonths.forEach((k, i) => monthKeyToIdx[k] = i);
 
-    // Trend für Marktwerte-Tab berechnen: aktueller Tageswert vs. Vortag
+    // Tab-Trend: SVG klein, wie auf deinem Screenshot
     let trendForTab = '';
     if (sortedMonths.length > 0 && monthlyData[sortedMonths[0]].length > 1) {
         const firstMonth = sortedMonths[0];
         const entries = monthlyData[firstMonth];
-        if (entries[0].wert > entries[1].wert) trendForTab = svgTrend("up");
-        else if (entries[0].wert < entries[1].wert) trendForTab = svgTrend("down");
-        else trendForTab = svgTrend("eq");
+        if (entries[0].wert > entries[1].wert) trendForTab = svgTrend("up", true);
+        else if (entries[0].wert < entries[1].wert) trendForTab = svgTrend("down", true);
+        else trendForTab = svgTrend("eq", true);
     }
     document.getElementById('marketTabTrend').innerHTML = trendForTab;
 
@@ -244,13 +237,12 @@ async function displayMarketValue(player) {
         const [year, month] = monthKey.split('-');
         const monthName = `${MONATSNAMEN[parseInt(month, 10) - 1]} ${year}`;
         const entries = monthlyData[monthKey];
-        // Monatsdurchschnitt und Tendenz zum Vormonat
         let trendIcon = '';
         if (idx < sortedMonths.length - 1) {
             const prevMonthKey = sortedMonths[idx + 1];
-            if (monthlyAverages[monthKey] > monthlyAverages[prevMonthKey]) trendIcon = svgTrend("up");
-            else if (monthlyAverages[monthKey] < monthlyAverages[prevMonthKey]) trendIcon = svgTrend("down");
-            else trendIcon = svgTrend("eq");
+            if (monthlyAverages[monthKey] > monthlyAverages[prevMonthKey]) trendIcon = svgTrend("up", true);
+            else if (monthlyAverages[monthKey] < monthlyAverages[prevMonthKey]) trendIcon = svgTrend("down", true);
+            else trendIcon = svgTrend("eq", true);
         }
         const isOpen = idx === 0 ? 'open' : '';
         html += `
@@ -264,21 +256,18 @@ async function displayMarketValue(player) {
         for (let i = 0; i < entries.length; i++) {
             let dayTrend = '';
             let compareValue = null;
-            // Vergleich mit dem nächsten Eintrag (nächster Tag = Vortag)
             if (i < entries.length - 1) {
                 compareValue = entries[i + 1].wert;
             } else if (idx < sortedMonths.length - 1) {
-                // Vergleich mit dem ersten Tag des Vormonats
                 const prevMonthKey = sortedMonths[idx + 1];
                 if (firstDayOfMonth[prevMonthKey]) {
                     compareValue = firstDayOfMonth[prevMonthKey].wert;
                 }
             }
-            // Kein Pfeil beim allerersten Tag überhaupt (letzter Tag im ältesten Monat)
             if (!(idx === sortedMonths.length - 1 && i === entries.length - 1) && compareValue !== null) {
-                if (entries[i].wert > compareValue) dayTrend = svgTrend("up");
-                else if (entries[i].wert < compareValue) dayTrend = svgTrend("down");
-                else dayTrend = svgTrend("eq");
+                if (entries[i].wert > compareValue) dayTrend = svgTrend("up", true);
+                else if (entries[i].wert < compareValue) dayTrend = svgTrend("down", true);
+                else dayTrend = svgTrend("eq", true);
             }
             html += `
                 <div class="market-list-row">
@@ -294,6 +283,7 @@ async function displayMarketValue(player) {
 function displayAttributes(player) {
     const container = document.getElementById('attributesList');
     const card = document.getElementById('attributesCard');
+    const header = document.getElementById('attributesHeader');
     if (!container) return;
     container.innerHTML = '';
     let found = false;
@@ -328,6 +318,7 @@ function displayAttributes(player) {
         });
     }
     card.style.display = found ? '' : 'none';
+    header.style.display = found ? '' : 'none';
 }
 function calcAge(birthday) {
     if (!birthday || birthday === 'N/A') return '-';
@@ -386,6 +377,19 @@ function initTabs() {
     tabContents.forEach(tab => tab.classList.remove('active'));
     document.querySelector('.tab-button[data-tab="market"]').classList.add('active');
     document.getElementById('market').classList.add('active');
+}
+function initAccordion() {
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(header => {
+        header.addEventListener('click', () => {
+            headers.forEach(h => h.classList.remove('active'));
+            document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('active'));
+            header.classList.add('active');
+            const id = header.getAttribute('data-accordion');
+            const content = document.getElementById(id);
+            if (content) content.classList.add('active');
+        });
+    });
 }
 function displayRivals(player, allPlayers) {
     const container = document.getElementById('rivalsList');
@@ -471,6 +475,7 @@ function displayPointsHistory(player) {
 }
 document.addEventListener('DOMContentLoaded', async () => {
     initTabs();
+    initAccordion();
     const url = window.location.href;
     const idMatch = url.match(/[?&]id=([^&]*)/);
     const playerId = idMatch ? idMatch[1] : null;
