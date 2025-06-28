@@ -468,7 +468,7 @@ function getPlayerUrl(playerId) {
                         : `${(marketValueSort / 1000000).toFixed(2)} Mio. €`;
                 }
                 const owner = ownersMap.get(player.id) || 'Computer';
-		    let ownerClass = "";
+		let ownerClass = "";
 		if (owner.includes("Computer")) ownerClass = "owner-comp";
                	else ownerClass = "owner-users";
 		    
