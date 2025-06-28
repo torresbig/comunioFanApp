@@ -30,9 +30,9 @@
     .attributes { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px;}
     .attribute-tag { background: linear-gradient(135deg, #9b59b6, #8e44ad); color: white; padding: 4px 8px; border-radius: 15px; font-size: 12px; font-weight: 600;}
     .tabs { display: flex; justify-content: center; margin: 20px 0 0 0; border-bottom: 1px solid #ddd;}
-    .tab-button { position:relative; padding: 10px 20px; background: #2c3e50; color: white; border: none; cursor: pointer; font-size: 14px; margin: 0 5px; border-radius: 5px 5px 0 0; transition: background 0.3s;}
+    .tab-button { position:relative; padding: 10px 20px; background: #2c3e50; color: white; border: none; cursor: pointer; font-size: 22px; margin: 0 5px; border-radius: 16px 16px 0 0; transition: background 0.3s; display: flex; align-items: center;}
     .tab-button.active { background: #3498db;}
-    .tab-button .trend-arrow { position: absolute; right: 8px; top: 7px; font-size: 18px; }
+    .tab-button .trend-arrow { display: flex; align-items: center; margin-left: 7px;}
     .tab-content { display: none; padding: 15px; background: rgba(255,255,255,0.95); border-radius: 0 0 10px 10px;}
     .tab-content.active { display: block;}
     .collapse-header { display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 10px 0;}
@@ -51,6 +51,7 @@
         .market-list-row { font-size: 13px; padding: 6px 8px; }
         .player-name { font-size: 16px; }
         .club-logo { width: 34px; height: 34px; }
+        .tab-button { font-size: 16px; }
     }
 </style>
 </head>
@@ -163,6 +164,19 @@ function formatCurrencyShort(value) {
     if (value >= 1_000) return (value / 1_000).toFixed(1).replace('.', ',').replace(',0','') + ' Tsd €';
     return value + ' €';
 }
+function svgTrend(trend) {
+    if (trend === "up") {
+        // Grünes Dreieck nach oben
+        return `<svg width="22" height="22" viewBox="0 0 22 22"><polygon points="11,5 18,17 4,17" fill="#27ae60"/></svg>`;
+    } else if (trend === "down") {
+        // Rotes Dreieck nach unten
+        return `<svg width="22" height="22" viewBox="0 0 22 22"><polygon points="11,17 18,5 4,5" fill="#e74c3c"/></svg>`;
+    } else if (trend === "eq") {
+        // Grauer Balken
+        return `<svg width="22" height="22" viewBox="0 0 22 22"><rect x="5" y="10" width="12" height="3" rx="1.5" fill="#888"/></svg>`;
+    }
+    return "";
+}
 async function loadPlayerMarketValues(playerId) {
     const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/MarktwerteJson.txt');
     const data = await resp.json();
@@ -177,6 +191,7 @@ async function displayMarketValue(player) {
     const marketValues = await loadPlayerMarketValues(playerId);
     if (!marketValues || marketValues.length === 0) {
         container.innerHTML = "<p>Keine Marktwertdaten verfügbar.</p>";
+        document.getElementById('marketTabTrend').innerHTML = "";
         return;
     }
     // Sortieren (neueste zuerst)
@@ -218,11 +233,9 @@ async function displayMarketValue(player) {
     if (sortedMonths.length > 0 && monthlyData[sortedMonths[0]].length > 1) {
         const firstMonth = sortedMonths[0];
         const entries = monthlyData[firstMonth];
-        if (entries.length > 1) {
-            if (entries[0].wert > entries[1].wert) trendForTab = '<span style="color:#27ae60;">▲</span>';
-            else if (entries[0].wert < entries[1].wert) trendForTab = '<span style="color:#e74c3c;">▼</span>';
-            else trendForTab = '<span style="color:#888;">→</span>';
-        }
+        if (entries[0].wert > entries[1].wert) trendForTab = svgTrend("up");
+        else if (entries[0].wert < entries[1].wert) trendForTab = svgTrend("down");
+        else trendForTab = svgTrend("eq");
     }
     document.getElementById('marketTabTrend').innerHTML = trendForTab;
 
@@ -235,9 +248,9 @@ async function displayMarketValue(player) {
         let trendIcon = '';
         if (idx < sortedMonths.length - 1) {
             const prevMonthKey = sortedMonths[idx + 1];
-            if (monthlyAverages[monthKey] > monthlyAverages[prevMonthKey]) trendIcon = '<span style="color:#27ae60;">▲</span>';
-            else if (monthlyAverages[monthKey] < monthlyAverages[prevMonthKey]) trendIcon = '<span style="color:#e74c3c;">▼</span>';
-            else trendIcon = '<span style="color:#888;">→</span>';
+            if (monthlyAverages[monthKey] > monthlyAverages[prevMonthKey]) trendIcon = svgTrend("up");
+            else if (monthlyAverages[monthKey] < monthlyAverages[prevMonthKey]) trendIcon = svgTrend("down");
+            else trendIcon = svgTrend("eq");
         }
         const isOpen = idx === 0 ? 'open' : '';
         html += `
@@ -263,9 +276,9 @@ async function displayMarketValue(player) {
             }
             // Kein Pfeil beim allerersten Tag überhaupt (letzter Tag im ältesten Monat)
             if (!(idx === sortedMonths.length - 1 && i === entries.length - 1) && compareValue !== null) {
-                if (entries[i].wert > compareValue) dayTrend = '<span style="color:#27ae60;">▲</span>';
-                else if (entries[i].wert < compareValue) dayTrend = '<span style="color:#e74c3c;">▼</span>';
-                else dayTrend = '<span style="color:#888;">→</span>';
+                if (entries[i].wert > compareValue) dayTrend = svgTrend("up");
+                else if (entries[i].wert < compareValue) dayTrend = svgTrend("down");
+                else dayTrend = svgTrend("eq");
             }
             html += `
                 <div class="market-list-row">
