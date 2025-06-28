@@ -879,19 +879,19 @@
         }
         
         function displayPointsHistory(player) {
-            const container = document.getElementById('pointsHistory');
-            if (!container) return;
-            
-            const pointsHistory = player.data?.punkteHistorie || [];
-            const currentPoints = player.data?.punkte || 0;
-            const currentSeason = new Date().getFullYear();
-            
-            let html = `
-                <div class="stat-box">
-                    <strong>Aktuelle Saison (${current2016}):</strong>
-                    <div>${currentPoints} Punkte</div>
-                </div>
-            `;
+    const container = document.getElementById('pointsHistory');
+    if (!container) return;
+    
+    const pointsHistory = player.data?.punkteHistorie || [];
+    const currentPoints = player.data?.punkte || 0;
+    const currentSeason = new Date().getFullYear();
+    
+    let html = `
+        <div class="stat-box">
+            <strong>Aktuelle Saison (${currentSeason}):</strong>
+            <div>${currentPoints} Punkte</div>
+        </div>
+    `;
             
             if (player.data.spieltagspunkte && player.data.spieltagspunkte.length > 0) {
                 html += '<h4>Punkte pro Spieltag:</h4>';
