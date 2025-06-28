@@ -411,105 +411,94 @@
             return value + ' €';
         }
 
-        async function loadPlayerMarketValues(playerId) {
-            const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/MarktwerteJson.txt');
-            const data = await resp.json();
-            const entry = data.find(e => String(e.id) === String(playerId));
-            if (!entry || !entry.data || !entry.data.normal) return [];
-            return entry.data.normal;
-        }
-
-        // Marktwerte: Monatsweise aufklappbar, aktuellster Monat offen, Pfeile für jeden Tag und Monat
         async function displayMarketValue(player) {
-            const container = document.getElementById('marketValueChart');
-            if (!container) return;
-            const playerId = player.id;
-            const marketValues = await loadPlayerMarketValues(playerId);
-            if (!marketValues || marketValues.length === 0) {
-                container.innerHTML = "<p>Keine Marktwertdaten verfügbar.</p>";
-                return;
-            }
-            // Sortieren (neueste zuerst)
-            marketValues.sort((a, b) => {
-                const [d1, m1, y1] = a.date.split('.');
-                const [d2, m2, y2] = b.date.split('.');
-                return new Date(`${y2}-${m2}-${d2}`) - new Date(`${y1}-${m1}-${d1}`);
-            });
-            // Gruppieren nach Monat/Jahr
-            const monthlyData = {};
-            marketValues.forEach(entry => {
-                const [day, month, year] = entry.date.split('.');
-                const key = `${year}-${month}`;
-                if (!monthlyData[key]) monthlyData[key] = [];
-                monthlyData[key].push({
-                    ...entry,
-                    dateObj: new Date(`${year}-${month}-${day}`)
-                });
-            });
-            // Monatsdurchschnitte berechnen
-            const monthlyAverages = {};
-            Object.keys(monthlyData).forEach(key => {
-                const values = monthlyData[key].map(e => e.wert);
-                const avg = Math.round(values.reduce((a, b) => a + b, 0) / values.length);
-                monthlyAverages[key] = avg;
-            });
-            // Darstellung bauen
-            let html = '';
-            let prevMonthAvg = null;
-            let prevMonthKey = null;
-            const sortedMonths = Object.keys(monthlyData).sort((a, b) => b.localeCompare(a));
-            sortedMonths.forEach((monthKey, idx) => {
-                const [year, month] = monthKey.split('-');
-                const monthName = `${MONATSNAMEN[parseInt(month, 10) - 1]} ${year}`;
-                const entries = monthlyData[monthKey];
-                // Durchschnitt und Tendenz zum Vormonat
-                const monthAvg = monthlyAverages[monthKey];
-                let trendIcon = '';
-                if (prevMonthKey !== null) {
-                    if (monthAvg > monthlyAverages[prevMonthKey]) trendIcon = '<span style="color:#27ae60;">▲</span>';
-                    else if (monthAvg < monthlyAverages[prevMonthKey]) trendIcon = '<span style="color:#e74c3c;">▼</span>';
-                    else trendIcon = '<span style="color:#888;">→</span>';
-                }
-                const isOpen = idx === 0 ? 'open' : '';
-                html += `
-                    <details class="market-month-block" ${isOpen}>
-                        <summary class="market-month-header">
-                            ${monthName}
-                            <span class="market-month-avg">(Ø ${formatCurrencyShort(monthAvg)}) ${trendIcon}</span>
-                        </summary>
-                        <div class="market-list">
-                `;
-                // Tageswerte: Immer Pfeil zum vorherigen Tag (auch für den neuesten oben)
-                let prevValue = null;
-                entries.forEach((entry, i) => {
-                    let dayTrend = '';
-                    if (i === 0 && prevMonthKey !== null) {
-                        // Erster Tag im Monat: Vergleiche mit letztem Tag des Vormonats
-                        const prevMonthEntries = monthlyData[prevMonthKey];
-                        if (prevMonthEntries && prevMonthEntries.length > 0) {
-                            const lastPrev = prevMonthEntries[0].wert;
-                            if (entry.wert > lastPrev) dayTrend = '<span style="color:#27ae60;">▲</span>';
-                            else if (entry.wert < lastPrev) dayTrend = '<span style="color:#e74c3c;">▼</span>';
-                            else dayTrend = '<span style="color:#888;">→</span>';
-                        }
-                    } else if (prevValue !== null) {
-                        if (entry.wert > prevValue) dayTrend = '<span style="color:#27ae60;">▲</span>';
-                        else if (entry.wert < prevValue) dayTrend = '<span style="color:#e74c3c;">▼</span>';
-                        else dayTrend = '<span style="color:#888;">→</span>';
-                    }
-                    html += `
-                        <div class="market-list-row">
-                            <span class="market-list-date">${entry.date}</span>
-                            <span class="market-list-value">${formatCurrencyFull(entry.wert)} ${dayTrend}</span>
-                        </div>
-                    `;
-                    prevValue = entry.wert;
-                });
-                html += '</div></details>';
-                prevMonthKey = monthKey;
-            });
-            container.innerHTML = html;
+    const container = document.getElementById('marketValueChart');
+    if (!container) return;
+    const playerId = player.id;
+    const marketValues = await loadPlayerMarketValues(playerId);
+    if (!marketValues || marketValues.length === 0) {
+        container.innerHTML = "<p>Keine Marktwertdaten verfügbar.</p>";
+        return;
+    }
+    // Sortieren (neueste zuerst)
+    marketValues.sort((a, b) => {
+        const [d1, m1, y1] = a.date.split('.');
+        const [d2, m2, y2] = b.date.split('.');
+        return new Date(`${y2}-${m2}-${d2}`) - new Date(`${y1}-${m1}-${d1}`);
+    });
+    // Gruppieren nach Monat/Jahr
+    const monthlyData = {};
+    marketValues.forEach(entry => {
+        const [day, month, year] = entry.date.split('.');
+        const key = `${year}-${month}`;
+        if (!monthlyData[key]) monthlyData[key] = [];
+        monthlyData[key].push({
+            ...entry,
+            dateObj: new Date(`${year}-${month}-${day}`)
+        });
+    });
+    // Monatsdurchschnitte berechnen
+    const monthlyAverages = {};
+    Object.keys(monthlyData).forEach(key => {
+        const values = monthlyData[key].map(e => e.wert);
+        const avg = Math.round(values.reduce((a, b) => a + b, 0) / values.length);
+        monthlyAverages[key] = avg;
+    });
+    // Darstellung bauen
+    let html = '';
+    let prevMonthKey = null;
+    const sortedMonths = Object.keys(monthlyData).sort((a, b) => b.localeCompare(a));
+    sortedMonths.forEach((monthKey, idx) => {
+        const [year, month] = monthKey.split('-');
+        const monthName = `${MONATSNAMEN[parseInt(month, 10) - 1]} ${year}`;
+        const entries = monthlyData[monthKey];
+        // Monatsdurchschnitt und Tendenz zum Vormonat
+        let trendIcon = '';
+        if (prevMonthKey !== null) {
+            if (monthlyAverages[monthKey] > monthlyAverages[prevMonthKey]) trendIcon = '<span style="color:#27ae60;">▲</span>';
+            else if (monthlyAverages[monthKey] < monthlyAverages[prevMonthKey]) trendIcon = '<span style="color:#e74c3c;">▼</span>';
+            else trendIcon = '<span style="color:#888;">→</span>';
         }
+        const isOpen = idx === 0 ? 'open' : '';
+        html += `
+            <details class="market-month-block" ${isOpen}>
+                <summary class="market-month-header">
+                    ${monthName}
+                    <span class="market-month-avg">(Ø ${formatCurrencyShort(monthlyAverages[monthKey])}) ${trendIcon}</span>
+                </summary>
+                <div class="market-list">
+        `;
+        // Tageswerte: Immer Pfeil zum vorherigen Tag (auch für den neuesten oben)
+        let prevValue = null;
+        entries.forEach((entry, i) => {
+            let dayTrend = '';
+            if (i === 0) {
+                // Vergleiche mit letztem Tag des Vormonats, falls vorhanden
+                if (prevMonthKey && monthlyData[prevMonthKey] && monthlyData[prevMonthKey].length > 0) {
+                    const lastPrev = monthlyData[prevMonthKey][0].wert;
+                    if (entry.wert > lastPrev) dayTrend = '<span style="color:#27ae60;">▲</span>';
+                    else if (entry.wert < lastPrev) dayTrend = '<span style="color:#e74c3c;">▼</span>';
+                    else dayTrend = '<span style="color:#888;">→</span>';
+                }
+            } else if (prevValue !== null) {
+                if (entry.wert > prevValue) dayTrend = '<span style="color:#27ae60;">▲</span>';
+                else if (entry.wert < prevValue) dayTrend = '<span style="color:#e74c3c;">▼</span>';
+                else dayTrend = '<span style="color:#888;">→</span>';
+            }
+            html += `
+                <div class="market-list-row">
+                    <span class="market-list-date">${entry.date}</span>
+                    <span class="market-list-value">${formatCurrencyFull(entry.wert)} ${dayTrend}</span>
+                </div>
+            `;
+            prevValue = entry.wert;
+        });
+        html += '</div></details>';
+        prevMonthKey = monthKey;
+    });
+    container.innerHTML = html;
+}
+
 
         // Eigenschaften-Menü nur anzeigen, wenn vorhanden
         function displayAttributes(player) {
