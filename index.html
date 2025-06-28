@@ -468,8 +468,9 @@ function getPlayerUrl(playerId) {
                         : `${(marketValueSort / 1000000).toFixed(2)} Mio. €`;
                 }
                 const owner = ownersMap.get(player.id) || 'Computer';
-		if (owner.includes("Computer")) statusClass = "owner-comp";
-               	else statusClass = "owner-users";
+		    let ownerClass = "";
+		if (owner.includes("Computer")) ownerClass = "owner-comp";
+               	else ownerClass = "owner-users";
 		    
                 const points = player.data?.punkte || 0;
                 const lastUpdate = player.data?.lastUpdate || 'Unbekannt';
@@ -480,7 +481,7 @@ function getPlayerUrl(playerId) {
                     <td data-sort="${status}" class="${statusClass}">${status}</td>
                     <td data-sort="${marketValueSort}">${marketValue}</td>
                     <td data-sort="${points}">${points}</td>
-		    <td data-sort="${owner}">${owner}</td>
+		    <td data-sort="${owner}"class="${ownerClass}">${owner}</td>
                     <td data-sort="${lastUpdate}">${lastUpdate}</td>
                     
                 `;
