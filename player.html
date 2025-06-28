@@ -21,16 +21,9 @@
     .status-indicator:hover { opacity: 0.8;}
     .container { max-width: 1200px; margin: 0 auto; padding: 15px;}
     .info-card { background: rgba(255,255,255,0.95); border-radius: 10px; padding: 0; margin-bottom: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);}
-    .accordion-header {
-        display: flex; align-items: center; justify-content: space-between;
-        cursor: pointer; padding: 16px 20px; border: none; background: none; width: 100%;
-        font-size: 16px; font-weight: bold; color: #2c3e50; border-radius: 10px 10px 0 0;
-        border-bottom: 2px solid #3498db;
-        transition: background 0.1s;
-    }
-    .accordion-header.active, .accordion-header:focus { background: #e3e7fa; outline: none; }
-    .accordion-content { display: none; padding: 15px 20px 15px 20px; }
-    .accordion-content.active { display: block; }
+    .info-card details { border-radius: 10px; margin-bottom: 0; }
+    .info-card summary { display: flex; align-items: center; justify-content: space-between; cursor: pointer; padding: 16px 20px; font-size: 16px; font-weight: bold; color: #2c3e50; border-bottom: 2px solid #3498db; background: none;}
+    .info-card summary:focus { outline: none; background: #e3e7fa; }
     .info-card .stat-icon { width: 22px; height: 22px; vertical-align: middle; margin-right: 6px; }
     .info-row { display: flex; justify-content: space-between; margin-bottom: 8px; padding: 5px 0; border-bottom: 1px solid #eee;}
     .info-row:last-child { border-bottom: none;}
@@ -86,45 +79,47 @@
     <div id="loadingIndicator" class="loading-spinner"></div>
     <div id="playerContent" style="display:none;">
         <div class="info-card">
-            <button class="accordion-header active" data-accordion="playerinfo">
-                📋 Spieler-Informationen
-            </button>
-            <div class="accordion-content active" id="playerinfo">
-                <div class="info-row"><span class="info-label">Geburtstag:</span><span class="info-value" id="birthday">-</span></div>
-                <div class="info-row"><span class="info-label">Alter:</span><span class="info-value" id="age">-</span></div>
-                <div class="info-row"><span class="info-label">Größe:</span><span class="info-value" id="height">-</span></div>
-                <div class="info-row"><span class="info-label">Nationalität:</span><span class="info-value" id="nationality">-</span></div>
-                <div class="info-row"><span class="info-label">Position:</span><span class="info-value" id="position">-</span></div>
-                <div class="info-row"><span class="info-label">Hauptfuß:</span><span class="info-value" id="foot">-</span></div>
-                <div class="info-row"><span class="info-label">Trikotnummer:</span><span class="info-value" id="jerseyNumber">-</span></div>
-            </div>
-            <button class="accordion-header" data-accordion="comunio">
-                ⚽ Comunio
-            </button>
-            <div class="accordion-content" id="comunio">
-                <div class="info-row"><span class="info-label">Position:</span><span class="info-value" id="comunioPosition">-</span></div>
-                <div class="info-row"><span class="info-label">Marktwert:</span><span class="info-value" id="marketValue">-</span></div>
-                <div class="info-row"><span class="info-label">Punkte (letztes Jahr):</span><span class="info-value" id="lastYearPoints">-</span></div>
-                <div class="info-row"><span class="info-label">Besitzer:</span><span class="info-value" id="owner">-</span></div>
-            </div>
-            <button class="accordion-header" data-accordion="statistic">
-                <svg class="stat-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="13" width="3" height="8" rx="1" fill="#764ba2"/><rect x="8" y="9" width="3" height="12" rx="1" fill="#764ba2"/><rect x="13" y="5" width="3" height="16" rx="1" fill="#764ba2"/><rect x="18" y="2" width="3" height="19" rx="1" fill="#764ba2"/></svg>
-                Status & Statistik
-            </button>
-            <div class="accordion-content" id="statistic">
-                <div class="info-row"><span class="info-label">Status:</span><span class="info-value" id="detailStatus">-</span></div>
-                <div class="info-row"><span class="info-label">Spiele:</span><span class="info-value" id="gamesPlayed">-</span></div>
-                <div class="info-row"><span class="info-label">Tore:</span><span class="info-value" id="goals">-</span></div>
-                <div class="info-row"><span class="info-label">Notenschnitt:</span><span class="info-value" id="averageRating">-</span></div>
-                <div class="info-row"><span class="info-label">Gelbe Karten:</span><span class="info-value" id="yellowCards">-</span></div>
-                <div class="info-row"><span class="info-label">Rote Karten:</span><span class="info-value" id="redCards">-</span></div>
-            </div>
-            <button class="accordion-header" data-accordion="attributes" id="attributesHeader" style="display:none;">
-                ⭐ Besondere Eigenschaften
-            </button>
-            <div class="accordion-content" id="attributesCard" style="display:none;">
-                <div class="attributes" id="attributesList"></div>
-            </div>
+            <details open>
+                <summary>📋 Spieler-Informationen</summary>
+                <div class="info-card-content">
+                    <div class="info-row"><span class="info-label">Geburtstag:</span><span class="info-value" id="birthday">-</span></div>
+                    <div class="info-row"><span class="info-label">Alter:</span><span class="info-value" id="age">-</span></div>
+                    <div class="info-row"><span class="info-label">Größe:</span><span class="info-value" id="height">-</span></div>
+                    <div class="info-row"><span class="info-label">Nationalität:</span><span class="info-value" id="nationality">-</span></div>
+                    <div class="info-row"><span class="info-label">Position:</span><span class="info-value" id="position">-</span></div>
+                    <div class="info-row"><span class="info-label">Hauptfuß:</span><span class="info-value" id="foot">-</span></div>
+                    <div class="info-row"><span class="info-label">Trikotnummer:</span><span class="info-value" id="jerseyNumber">-</span></div>
+                </div>
+            </details>
+            <details>
+                <summary>⚽ Comunio</summary>
+                <div class="info-card-content">
+                    <div class="info-row"><span class="info-label">Position:</span><span class="info-value" id="comunioPosition">-</span></div>
+                    <div class="info-row"><span class="info-label">Marktwert:</span><span class="info-value" id="marketValue">-</span></div>
+                    <div class="info-row"><span class="info-label">Punkte (letztes Jahr):</span><span class="info-value" id="lastYearPoints">-</span></div>
+                    <div class="info-row"><span class="info-label">Besitzer:</span><span class="info-value" id="owner">-</span></div>
+                </div>
+            </details>
+            <details>
+                <summary>
+                    <svg class="stat-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="13" width="3" height="8" rx="1" fill="#764ba2"/><rect x="8" y="9" width="3" height="12" rx="1" fill="#764ba2"/><rect x="13" y="5" width="3" height="16" rx="1" fill="#764ba2"/><rect x="18" y="2" width="3" height="19" rx="1" fill="#764ba2"/></svg>
+                    Status & Statistik
+                </summary>
+                <div class="info-card-content">
+                    <div class="info-row"><span class="info-label">Status:</span><span class="info-value" id="detailStatus">-</span></div>
+                    <div class="info-row"><span class="info-label">Spiele:</span><span class="info-value" id="gamesPlayed">-</span></div>
+                    <div class="info-row"><span class="info-label">Tore:</span><span class="info-value" id="goals">-</span></div>
+                    <div class="info-row"><span class="info-label">Notenschnitt:</span><span class="info-value" id="averageRating">-</span></div>
+                    <div class="info-row"><span class="info-label">Gelbe Karten:</span><span class="info-value" id="yellowCards">-</span></div>
+                    <div class="info-row"><span class="info-label">Rote Karten:</span><span class="info-value" id="redCards">-</span></div>
+                </div>
+            </details>
+            <details id="attributesCard" style="display:none;">
+                <summary id="attributesHeader">⭐ Besondere Eigenschaften</summary>
+                <div class="info-card-content">
+                    <div class="attributes" id="attributesList"></div>
+                </div>
+            </details>
         </div>
         <div class="tabs" id="tabBar">
             <button class="tab-button" data-tab="rivals">Rivalen</button>
@@ -163,15 +158,15 @@ function svgTrend(trend, mini=false) {
     if (trend === "up") {
         return mini
             ? `<svg class="trend-mini" viewBox="0 0 16 16"><polygon points="8,3 14,13 2,13" fill="#27ae60"/></svg>`
-            : `<svg width="22" height="22" viewBox="0 0 22 22"><polygon points="11,5 18,17 4,17" fill="#27ae60"/></svg>`;
+            : `<svg width="24" height="24" viewBox="0 0 24 24" style="margin-left:6px;"><polygon points="12,5 21,21 3,21" fill="#27ae60"/></svg>`;
     } else if (trend === "down") {
         return mini
             ? `<svg class="trend-mini" viewBox="0 0 16 16"><polygon points="8,13 14,3 2,3" fill="#e74c3c"/></svg>`
-            : `<svg width="22" height="22" viewBox="0 0 22 22"><polygon points="11,17 18,5 4,5" fill="#e74c3c"/></svg>`;
+            : `<svg width="24" height="24" viewBox="0 0 24 24" style="margin-left:6px;"><polygon points="12,21 21,3 3,3" fill="#e74c3c"/></svg>`;
     } else if (trend === "eq") {
         return mini
             ? `<svg class="trend-mini" viewBox="0 0 16 16"><rect x="3" y="7" width="10" height="2" rx="1" fill="#888"/></svg>`
-            : `<svg width="22" height="22" viewBox="0 0 22 22"><rect x="5" y="10" width="12" height="3" rx="1.5" fill="#888"/></svg>`;
+            : `<svg width="24" height="24" viewBox="0 0 24 24" style="margin-left:6px;"><rect x="5" y="11" width="14" height="2" rx="1" fill="#888"/></svg>`;
     }
     return "";
 }
@@ -218,20 +213,15 @@ async function displayMarketValue(player) {
         firstDayOfMonth[key] = monthlyData[key][monthlyData[key].length - 1];
     });
     const sortedMonths = Object.keys(monthlyData).sort((a, b) => b.localeCompare(a));
-    const monthKeyToIdx = {};
-    sortedMonths.forEach((k, i) => monthKeyToIdx[k] = i);
-
-    // Tab-Trend: SVG klein, wie auf deinem Screenshot
     let trendForTab = '';
     if (sortedMonths.length > 0 && monthlyData[sortedMonths[0]].length > 1) {
         const firstMonth = sortedMonths[0];
         const entries = monthlyData[firstMonth];
-        if (entries[0].wert > entries[1].wert) trendForTab = svgTrend("up", true);
-        else if (entries[0].wert < entries[1].wert) trendForTab = svgTrend("down", true);
-        else trendForTab = svgTrend("eq", true);
+        if (entries[0].wert > entries[1].wert) trendForTab = svgTrend("up", false);
+        else if (entries[0].wert < entries[1].wert) trendForTab = svgTrend("down", false);
+        else trendForTab = svgTrend("eq", false);
     }
     document.getElementById('marketTabTrend').innerHTML = trendForTab;
-
     let html = '';
     sortedMonths.forEach((monthKey, idx) => {
         const [year, month] = monthKey.split('-');
@@ -378,19 +368,6 @@ function initTabs() {
     document.querySelector('.tab-button[data-tab="market"]').classList.add('active');
     document.getElementById('market').classList.add('active');
 }
-function initAccordion() {
-    const headers = document.querySelectorAll('.accordion-header');
-    headers.forEach(header => {
-        header.addEventListener('click', () => {
-            headers.forEach(h => h.classList.remove('active'));
-            document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('active'));
-            header.classList.add('active');
-            const id = header.getAttribute('data-accordion');
-            const content = document.getElementById(id);
-            if (content) content.classList.add('active');
-        });
-    });
-}
 function displayRivals(player, allPlayers) {
     const container = document.getElementById('rivalsList');
     if (!container) return;
@@ -475,7 +452,6 @@ function displayPointsHistory(player) {
 }
 document.addEventListener('DOMContentLoaded', async () => {
     initTabs();
-    initAccordion();
     const url = window.location.href;
     const idMatch = url.match(/[?&]id=([^&]*)/);
     const playerId = idMatch ? idMatch[1] : null;
