@@ -7,7 +7,6 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; color: #333; padding-bottom: 140px; }
-
         .navbar {
             background: linear-gradient(135deg, #34495e, #2c3e50);
             color: white;
@@ -21,10 +20,15 @@
         .player-header {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             width: 100%;
-            gap: 15px;
             position: relative;
+        }
+        .player-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
         }
         .club-logo {
             width: 40px;
@@ -38,6 +42,7 @@
             color: white;
             font-weight: bold;
             overflow: hidden;
+            margin-bottom: 2px;
         }
         .club-logo img {
             width: 100%;
@@ -46,10 +51,9 @@
         }
         .player-name-id {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 8px;
         }
         .player-name {
             font-size: 18px;
@@ -60,15 +64,10 @@
         .player-name:hover {
             text-decoration: underline;
         }
-        .player-club {
-            font-size: 16px;
-            color: #fff;
-            font-weight: 500;
-        }
         .player-id {
             font-size: 12px;
             color: #aaa;
-            margin-left: 6px;
+            margin-top: 2px;
         }
         .status-wrapper {
             display: flex;
@@ -95,6 +94,60 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 15px;
+        }
+        .info-card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .info-card h3 {
+            margin-bottom: 12px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #7f8c8d;
+            font-size: 13px;
+            flex: 1;
+        }
+        .info-value {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 13px;
+            flex: 1;
+            text-align: right;
+        }
+        .attributes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        .attribute-tag {
+            background: linear-gradient(135deg, #9b59b6, #8e44ad);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 600;
         }
         .tabs {
             display: flex;
@@ -124,6 +177,20 @@
         }
         .tab-content.active {
             display: block;
+        }
+        .collapse-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 10px 0;
+        }
+        .collapse-icon {
+            font-size: 20px;
+        }
+        .info-card-content {
+            overflow: hidden;
+            transition: max-height 0.3s ease;
         }
         .market-month-block {
             margin: 18px 0 8px 0;
@@ -168,7 +235,6 @@
             .market-month-header { font-size: 14px; }
             .market-list-row { font-size: 13px; padding: 6px 8px; }
             .player-name { font-size: 16px; }
-            .player-club { font-size: 14px; }
         }
     </style>
 </head>
@@ -176,11 +242,12 @@
     <nav class="navbar">
         <button class="back-btn" onclick="window.history.back()">← Zurück</button>
         <div class="player-header">
-            <div class="club-logo" id="clubLogo">?</div>
-            <div class="player-name-id">
-                <a href="#" id="playerNameLink" class="player-name" target="_blank">Lade Spieler...</a>
-                <span id="playerClub" class="player-club"></span>
-                <span id="playerId" class="player-id"></span>
+            <div class="player-center">
+                <div class="club-logo" id="clubLogo"></div>
+                <div class="player-name-id">
+                    <a href="#" id="playerNameLink" class="player-name" target="_blank">Lade Spieler...</a>
+                    <span id="playerId" class="player-id"></span>
+                </div>
             </div>
             <div class="status-wrapper">
                 <div class="status-label">Status</div>
@@ -189,27 +256,131 @@
         </div>
     </nav>
     <div class="container">
-        <!-- ... weitere Info-Karten, wie gehabt ... -->
-        <div class="tabs">
-            <button class="tab-button active" data-tab="rivals">Rivalen</button>
-            <button class="tab-button" data-tab="market">Marktwerte</button>
-            <button class="tab-button" data-tab="points">Punkte</button>
-        </div>
-        <div id="rivals" class="tab-content active">
-            <h3>📊 Direkte Konkurrenten</h3>
-            <div id="rivalsList"></div>
-        </div>
-        <div id="market" class="tab-content">
-            <h3>💶 Marktwertentwicklung</h3>
-            <div id="marketValueChart"></div>
-        </div>
-        <div id="points" class="tab-content">
-            <h3>📈 Punkteverlauf</h3>
-            <div id="pointsHistory"></div>
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+        <div id="loadingIndicator" class="loading-spinner"></div>
+        <div id="playerContent" style="display: none;">
+            <details class="info-card" open>
+                <summary class="collapse-header">
+                    <h3>📋 Spieler-Informationen</h3>
+                    <span class="collapse-icon">▼</span>
+                </summary>
+                <div class="info-card-content">
+                    <div class="info-row">
+                        <span class="info-label">Geburtstag:</span>
+                        <span class="info-value" id="birthday">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Alter:</span>
+                        <span class="info-value" id="age">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Größe:</span>
+                        <span class="info-value" id="height">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Nationalität:</span>
+                        <span class="info-value" id="nationality">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Position:</span>
+                        <span class="info-value" id="position">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Hauptfuß:</span>
+                        <span class="info-value" id="foot">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Trikotnummer:</span>
+                        <span class="info-value" id="jerseyNumber">-</span>
+                    </div>
+                </div>
+            </details>
+            <details class="info-card">
+                <summary class="collapse-header">
+                    <h3>⚽ Comunio</h3>
+                    <span class="collapse-icon">▼</span>
+                </summary>
+                <div class="info-card-content">
+                    <div class="info-row">
+                        <span class="info-label">Position:</span>
+                        <span class="info-value" id="comunioPosition">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Marktwert:</span>
+                        <span class="info-value" id="marketValue">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Punkte (letztes Jahr):</span>
+                        <span class="info-value" id="lastYearPoints">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Besitzer:</span>
+                        <span class="info-value" id="owner">-</span>
+                    </div>
+                </div>
+            </details>
+            <details class="info-card">
+                <summary class="collapse-header">
+                    <h3>857 Status & Statistik</h3>
+                    <span class="collapse-icon">▼</span>
+                </summary>
+                <div class="info-card-content">
+                    <div class="info-row">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value" id="detailStatus">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Spiele:</span>
+                        <span class="info-value" id="gamesPlayed">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Tore:</span>
+                        <span class="info-value" id="goals">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Notenschnitt:</span>
+                        <span class="info-value" id="averageRating">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Gelbe Karten:</span>
+                        <span class="info-value" id="yellowCards">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Rote Karten:</span>
+                        <span class="info-value" id="redCards">-</span>
+                    </div>
+                </div>
+            </details>
+            <details class="info-card">
+                <summary class="collapse-header">
+                    <h3>⭐ Besondere Eigenschaften</h3>
+                    <span class="collapse-icon">▼</span>
+                </summary>
+                <div class="info-card-content">
+                    <div class="attributes" id="attributesList"></div>
+                </div>
+            </details>
+            <div class="tabs">
+                <button class="tab-button active" data-tab="rivals">Rivalen</button>
+                <button class="tab-button" data-tab="market">Marktwerte</button>
+                <button class="tab-button" data-tab="points">Punkte</button>
+            </div>
+            <div id="rivals" class="tab-content active">
+                <h3>📊 Direkte Konkurrenten</h3>
+                <div id="rivalsList"></div>
+            </div>
+            <div id="market" class="tab-content">
+                <h3>💶 Marktwertentwicklung</h3>
+                <div id="marketValueChart"></div>
+            </div>
+            <div id="points" class="tab-content">
+                <h3>📈 Punkteverlauf</h3>
+                <div id="pointsHistory"></div>
+            </div>
         </div>
     </div>
     <script>
-        // Monatsnamen
+        // Monatsnamen für Marktwert-Tab
         const MONATSNAMEN = [
             "Januar", "Februar", "März", "April", "Mai", "Juni",
             "Juli", "August", "September", "Oktober", "November", "Dezember"
@@ -223,8 +394,8 @@
         }
 
         async function loadPlayerMarketValues(playerId) {
-            // ACHTUNG: Passe ggf. den Pfad zu deiner Datei an!
-            const resp = await fetch('https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/41161217/59f85f3f-76fa-4c0c-a871-76ad6b6ddaea/MarktwerteJson.txt');
+            // Passe ggf. den Pfad zu deiner Datei an!
+            const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/MarktwerteJson.txt');
             const data = await resp.json();
             const entry = data.find(e => String(e.id) === String(playerId));
             if (!entry || !entry.data || !entry.data.normal) return [];
@@ -323,12 +494,82 @@
             container.innerHTML = html;
         }
 
-        // Beispiel: Dummy-Spieler-Objekt für Test (entferne das in deiner App!)
-        // const player = { id: "32769", name: "Haller", data: { verein: "5" } };
-
-        // Tabs initialisieren
-        document.addEventListener('DOMContentLoaded', async () => {
-            // Tabs
+        // Hilfsfunktionen für die restlichen Felder
+        function calcAge(birthday) {
+            if (!birthday || birthday === 'N/A') return '-';
+            try {
+                const birthDate = new Date(birthday.split('.').reverse().join('-'));
+                const diff = Date.now() - birthDate.getTime();
+                const ageDate = new Date(diff);
+                return Math.abs(ageDate.getUTCFullYear() - 1970) + ' Jahre';
+            } catch {
+                return '-';
+            }
+        }
+        function getStatusIndicator(status) {
+            switch(status) {
+                case 'AKTIV': return '👍';
+                case 'VERLETZT': return '🚨';
+                case 'REHA': return '🔄';
+                case 'AUFBAUTRAINING': return '🏋️💪';
+                case 'NICHT_IN_LIGA': return '❌';
+                case 'FUENFTE_GELBE_KARTE': return '🟨';
+                case 'GELBROTE_KARTE': return '🟨🟥';
+                case 'ROTE_KARTE': return '🟥';
+                case 'NICHT_IM_KADER': return '🚫';
+                default: return '❓';
+            }
+        }
+        function getStatusDisplayName(status) {
+            const statusMap = {
+                'AKTIV': 'Aktiv',
+                'VERLETZT': 'Verletzt',
+                'REHA': 'Reha',
+                'AUFBAUTRAINING': 'Aufbautraining',
+                'NICHT_IM_KADER': 'Nicht im Kader',
+                'ROTE_KARTE': 'Rote Karte',
+                'GELBROTE_KARTE': 'Gelbrote Karte',
+                'FUENFTE_GELBE_KARTE': '5. gelbe Karte',
+                'NICHT_IN_LIGA': 'Nicht in Liga'
+            };
+            return statusMap[status] || status || 'Unbekannt';
+        }
+        function displayAttributes(player) {
+            const container = document.getElementById('attributesList');
+            if (!container) return;
+            container.innerHTML = '';
+            if (player.data.attribute && player.data.attribute.length > 0) {
+                player.data.attribute.forEach(attr => {
+                    if (typeof attr === 'object' && attr !== null) {
+                        Object.keys(attr).forEach(key => {
+                            const value = attr[key];
+                            if (Array.isArray(value)) {
+                                value.forEach(item => {
+                                    const span = document.createElement('span');
+                                    span.className = 'attribute-tag';
+                                    span.textContent = item;
+                                    container.appendChild(span);
+                                });
+                            } else if (typeof value === 'string') {
+                                const span = document.createElement('span');
+                                span.className = 'attribute-tag';
+                                span.textContent = value;
+                                container.appendChild(span);
+                            }
+                        });
+                    } else if (typeof attr === 'string') {
+                        const span = document.createElement('span');
+                        span.className = 'attribute-tag';
+                        span.textContent = attr;
+                        container.appendChild(span);
+                    }
+                });
+            }
+        }
+        function getOwnerName(playerId) {
+            return "Computer";
+        }
+        function initTabs() {
             const tabButtons = document.querySelectorAll('.tab-button');
             tabButtons.forEach(button => {
                 button.addEventListener('click', () => {
@@ -339,72 +580,159 @@
                     document.getElementById(tabId).classList.add('active');
                 });
             });
-
-            // Spieler-ID aus URL holen
+        }
+        function displayRivals(player, allPlayers) {
+            const container = document.getElementById('rivalsList');
+            if (!container) return;
+            const rivals = allPlayers.filter(p =>
+                p.data?.position === player.data?.position &&
+                p.id !== player.id
+            ).slice(0, 5);
+            if (rivals.length > 0) {
+                let html = `
+                <table class="rivals-table">
+                    <thead>
+                        <tr>
+                            <th>Spieler</th>
+                            <th>Status</th>
+                            <th>Marktwert</th>
+                            <th>Realwert</th>
+                            <th>Punkte</th>
+                            <th>Besitzer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                `;
+                rivals.forEach(rival => {
+                    const status = rival.data.comunioStatus?.status || 'Unbekannt';
+                    html += `
+                    <tr data-player-id="${rival.id}">
+                        <td class="player-cell">
+                            <div class="player-name-cell">${rival.name}</div>
+                            <div class="player-id-cell">ID: ${rival.id}</div>
+                        </td>
+                        <td>${getStatusIndicator(status)}</td>
+                        <td>${formatCurrencyShort(rival.data?.wert || 0)}</td>
+                        <td>${formatCurrencyShort(rival.data?.realWert || 0)}</td>
+                        <td>${rival.data?.punkte || 0}</td>
+                        <td>${getOwnerName(rival.id)}</td>
+                    </tr>
+                    `;
+                });
+                html += '</tbody></table>';
+                container.innerHTML = html;
+                document.querySelectorAll('.rivals-table tbody tr').forEach(row => {
+                    row.addEventListener('click', (e) => {
+                        const playerId = row.getAttribute('data-player-id');
+                        window.location.href = `player.html?id=${playerId}`;
+                    });
+                });
+            } else {
+                container.innerHTML = '<p>Keine direkten Konkurrenten gefunden</p>';
+            }
+        }
+        function displayPointsHistory(player) {
+            const container = document.getElementById('pointsHistory');
+            if (!container) return;
+            const pointsHistory = player.data?.punkteHistorie || [];
+            const currentPoints = player.data?.punkte || 0;
+            const currentSeason = new Date().getFullYear();
+            let html = `
+                <div class="stat-box">
+                    <strong>Aktuelle Saison (${currentSeason}):</strong>
+                    <div>${currentPoints} Punkte</div>
+                </div>
+            `;
+            if (player.data.spieltagspunkte && player.data.spieltagspunkte.length > 0) {
+                html += '<h4>Punkte pro Spieltag:</h4>';
+                html += '<table class="points-table">';
+                html += '<thead><tr><th>Spieltag</th><th>Punkte</th></tr></thead><tbody>';
+                player.data.spieltagspunkte.forEach(point => {
+                    html += `<tr><td>${point.spieltag}</td><td>${point.punkte}</td></tr>`;
+                });
+                html += '</tbody></table>';
+            }
+            if (pointsHistory.length > 0) {
+                html += '<h4>Historische Punkte:</h4>';
+                html += '<table class="points-table">';
+                html += '<thead><tr><th>Saison</th><th>Punkte</th></tr></thead><tbody>';
+                pointsHistory.forEach(season => {
+                    html += `<tr><td>${season.key}</td><td>${season.value}</td></tr>`;
+                });
+                html += '</tbody></table>';
+            }
+            container.innerHTML = html;
+        }
+        document.addEventListener('DOMContentLoaded', async () => {
+            initTabs();
             const url = window.location.href;
             const idMatch = url.match(/[?&]id=([^&]*)/);
             const playerId = idMatch ? idMatch[1] : null;
             if (!playerId) return;
-
-            // Spieler laden
-            const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/SpielerdatenbankNeutralJson.txt');
-            const allPlayers = await resp.json();
-            let player = allPlayers.find(p => String(p.id) === String(playerId));
-            if (!player) player = allPlayers.find(p => parseInt(p.id) === parseInt(playerId));
-            if (!player) return;
-
-            // Header befüllen
-            document.getElementById('playerNameLink').textContent = player.name;
-            document.getElementById('playerId').textContent = `ID: ${player.id}`;
-            // Vereinsdaten
-            const clubId = player.data.verein || "0";
-            async function loadClubData(clubId) {
-                try {
-                    const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/VereinsdatenbankJson.txt');
-                    const clubs = await resp.json();
-                    const club = clubs.find(c => c.id === clubId);
-                    return club ? club.name : 'Unbekannt';
-                } catch {
-                    return 'Unbekannt';
+            try {
+                const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/SpielerdatenbankNeutralJson.txt');
+                const allPlayers = await resp.json();
+                let player = allPlayers.find(p => String(p.id) === String(playerId));
+                if (!player) player = allPlayers.find(p => parseInt(p.id) === parseInt(playerId));
+                if (!player) {
+                    document.getElementById('errorMessage').textContent = "Spieler nicht gefunden!";
+                    document.getElementById('errorMessage').style.display = 'block';
+                    document.getElementById('loadingIndicator').style.display = 'none';
+                    return;
                 }
-            }
-            const clubName = await loadClubData(clubId);
-            document.getElementById('playerClub').textContent = `(${clubName})`;
-            // Logo
-            function getLogoFileName(clubId) {
-                if (!clubId) return "unbestimmt.png";
-                const mapping = {
-                    "3": "gladbach", "21": "freiburg", "18": "mainz", "92": "leipzig",
-                    "1": "bayern", "6": "werderBremen", "12": "wolfsburg", "5": "dortmund",
-                    "8": "leverkusen", "13": "koeln", "14": "stuttgart", "533": "hoffenheim",
-                    "68": "augsburg", "9": "frankfurt", "109": "unionBerlin", "110": "heidenheim",
-                    "25": "stpauli", "4": "hamburg",
-                };
-                return (mapping[clubId] || "unbestimmt") + ".png";
-            }
-            document.getElementById('clubLogo').innerHTML =
-                `<img src="logos/${getLogoFileName(clubId)}" alt="${clubName}" style="width:100%;height:100%;object-fit:contain">`;
-
-            // Status
-            function getStatusIndicator(status) {
-                switch(status) {
-                    case 'AKTIV': return '👍';
-                    case 'VERLETZT': return '🚨';
-                    case 'REHA': return '🔄';
-                    case 'AUFBAUTRAINING': return '🏋️💪';
-                    case 'NICHT_IN_LIGA': return '❌';
-                    case 'FUENFTE_GELBE_KARTE': return '🟨';
-                    case 'GELBROTE_KARTE': return '🟨🟥';
-                    case 'ROTE_KARTE': return '🟥';
-                    case 'NICHT_IM_KADER': return '🚫';
-                    default: return '❓';
+                document.getElementById('playerNameLink').textContent = player.name;
+                document.getElementById('playerId').textContent = `ID: ${player.id}`;
+                if (player.data && player.data.transfermarktDoDe && player.data.transfermarktDoDe.link) {
+                    document.getElementById('playerNameLink').href = player.data.transfermarktDoDe.link;
+                } else {
+                    document.getElementById('playerNameLink').href = "#";
+                    document.getElementById('playerNameLink').style.cursor = "default";
+                    document.getElementById('playerNameLink').style.textDecoration = "none";
                 }
+                const clubId = player.data.verein || "0";
+                function getLogoFileName(clubId) {
+                    if (!clubId) return "unbestimmt.png";
+                    const mapping = {
+                        "3": "gladbach", "21": "freiburg", "18": "mainz", "92": "leipzig",
+                        "1": "bayern", "6": "werderBremen", "12": "wolfsburg", "5": "dortmund",
+                        "8": "leverkusen", "13": "koeln", "14": "stuttgart", "533": "hoffenheim",
+                        "68": "augsburg", "9": "frankfurt", "109": "unionBerlin", "110": "heidenheim",
+                        "25": "stpauli", "4": "hamburg",
+                    };
+                    return (mapping[clubId] || "unbestimmt") + ".png";
+                }
+                document.getElementById('clubLogo').innerHTML =
+                    `<img src="logos/${getLogoFileName(clubId)}" alt="" style="width:100%;height:100%;object-fit:contain">`;
+                const status = player.data.comunioStatus?.status || 'Unbekannt';
+                document.getElementById('statusIndicator').textContent = getStatusIndicator(status);
+                document.getElementById('birthday').textContent = player.data.spielerDaten.geburtstag || '-';
+                document.getElementById('age').textContent = calcAge(player.data.spielerDaten.geburtstag) || '-';
+                document.getElementById('height').textContent = player.data.spielerDaten.groesse || '-';
+                document.getElementById('nationality').textContent = player.data.spielerDaten.nationalitaet || '-';
+                document.getElementById('position').textContent = player.data.spielerDaten.hauptposition || player.data.position || '-';
+                document.getElementById('foot').textContent = player.data.spielerDaten.fuss || '-';
+                document.getElementById('jerseyNumber').textContent = player.data.spielerDaten.trikotNummer || '-';
+                document.getElementById('comunioPosition').textContent = player.data.position || '-';
+                document.getElementById('marketValue').textContent = formatCurrencyShort(player.data.wert);
+                document.getElementById('lastYearPoints').textContent = player.data.lastSeasonPoints || '0';
+                document.getElementById('owner').textContent = getOwnerName(player.id) || '-';
+                document.getElementById('detailStatus').textContent = player.data.comunioStatus.details || getStatusDisplayName(status);
+                document.getElementById('gamesPlayed').textContent = player.data.stats.playedGames || '0';
+                document.getElementById('goals').textContent = player.data.stats.totalGoals || '0';
+                document.getElementById('averageRating').textContent = player.data.stats.notenDurchschnitt || '0';
+                document.getElementById('yellowCards').textContent = player.data.stats.gelbekarten || '0';
+                document.getElementById('redCards').textContent = player.data.stats.rotekarten || '0';
+                displayAttributes(player);
+                displayRivals(player, allPlayers);
+                displayMarketValue(player);
+                displayPointsHistory(player);
+                document.getElementById('loadingIndicator').style.display = 'none';
+                document.getElementById('playerContent').style.display = 'block';
+            } catch (err) {
+                document.getElementById('errorMessage').textContent = "Fehler beim Laden der Daten: " + err.message;
+                document.getElementById('errorMessage').style.display = 'block';
+                document.getElementById('loadingIndicator').style.display = 'none';
             }
-            const status = player.data.comunioStatus?.status || 'Unbekannt';
-            document.getElementById('statusIndicator').textContent = getStatusIndicator(status);
-
-            // Marktwert-Tab anzeigen
-            displayMarketValue(player);
         });
     </script>
 </body>
