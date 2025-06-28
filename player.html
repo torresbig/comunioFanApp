@@ -878,20 +878,20 @@
             container.innerHTML = html;
         }
         
-        function displayPointsHistory(player) {
-            const container = document.getElementById('pointsHistory');
-            if (!container) return;
-            
-            const pointsHistory = player.data?.punkteHistorie || [];
-            const currentPoints = player.data?.punkte || 0;
-            const currentSeason = new Date().getFullYear();
-            
-           let html = `
-            <div class="stat-box">
+       function displayPointsHistory(player) {
+    const container = document.getElementById('pointsHistory');
+    if (!container) return;
+    
+    const pointsHistory = player.data?.punkteHistorie || [];
+    const currentPoints = player.data?.punkte || 0;
+    const currentSeason = new Date().getFullYear();
+    
+    let html = `
+        <div class="stat-box">
             <strong>Aktuelle Saison (${currentSeason}):</strong>
             <div>${currentPoints} Punkte</div>
-            </div>
-            `;
+        </div>
+    `;
 
             
             if (player.data.spieltagspunkte && player.data.spieltagspunkte.length > 0) {
