@@ -80,20 +80,13 @@
         .player-header {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            width: 100%;
             gap: 15px;
-            position: relative;
+            flex: 1;
         }
 
         .player-name-id {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            flex: 1;
-            min-width: 0;
-            text-align: center;
         }
 
         .player-name {
@@ -111,6 +104,11 @@
             font-size: 12px;
             color: #aaa;
             margin-top: 2px;
+        }
+
+        .status-indicator {
+            margin-left: auto;
+            font-size: 20px;
         }
 
         .club-logo {
@@ -133,31 +131,6 @@
             object-fit: contain;
         }
 
-        .status-wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            gap: 2px;
-            margin-left: auto;
-        }
-
-        .status-label {
-            font-size: 12px;
-            color: #aaa;
-        }
-
-        .status-indicator {
-            font-size: 26px;
-            cursor: help;
-            transition: opacity 0.2s;
-        }
-
-        .status-indicator:hover {
-            opacity: 0.8;
-        }
-
         .status-icon {
             padding: 4px 8px;
             border-radius: 15px;
@@ -169,8 +142,9 @@
         .status-aktiv { background: linear-gradient(135deg, #27ae60, #229954); }
         .status-verletzt { background: linear-gradient(135deg, #e74c3c, #c0392b); }
         .status-reha { background: linear-gradient(135deg, #f39c12, #e67e22); }
-        .status-aufbautraining { background: linear-gradient(135deg, #FF8C00, #FFA500); }
+        .status-aufbautraining { background: linear-gradient(135deg, #FFA500, #FF8C00); }
         .status-nicht_in_liga { background: linear-gradient(135deg, #95a5a6, #7f8c8d); }
+
         .status-icon-active { color: #27ae60; }
         .status-icon-injured { color: #e74c3c; }
         .status-icon-rehab { color: #f39c12; }
@@ -282,7 +256,7 @@
             background: #2c3e50;
             color: white;
             border: none;
-            cursor: pointer;
+            cursor: button;
             font-size: 14px;
             margin: 0 5px;
             border-radius: 5px 5px 0 0;
@@ -335,6 +309,7 @@
             text-align: center;
         }
 
+        /* Rivalen-Tabelle */
         .rivals-table {
             width: 100%;
             border-collapse: collapse;
@@ -371,6 +346,28 @@
             color: #888;
         }
 
+        /* Besitzer-Styling */
+        .rivals-table td.owner-comp {
+            background: #e0e0e0;
+            color: #666;
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .rivals-table td.owner-users {
+            background: linear-gradient(135deg, #9b59b6, #8e44ad);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        /* Marktwerte-Tabelle */
         .market-table {
             width: 100%;
             border-collapse: collapse;
@@ -396,6 +393,7 @@
             color: #e74c3c;
         }
 
+        /* Punkte-Tabelle */
         .points-table {
             width: 100%;
             border-collapse: collapse;
@@ -412,29 +410,6 @@
             background-color: #2c3e50;
             color: white;
         }
-
-        /* Für "Computer" als Besitzer */
-.rivals-table td.owner-comp {
-    background: #e0e0e0;
-    color: #666;
-    padding: 4px 8px;
-    border-radius: 15px;
-    font-size: 12px;
-    font-weight: 600;
-    display: inline-block;
-}
-
-/* Für alle anderen Besitzer */
-.rivals-table td.owner-users {
-    background: linear-gradient(135deg, #9b59b6, #8e44ad);
-    color: white;
-    padding: 4px 8px;
-    border-radius: 15px;
-    font-size: 12px;
-    font-weight: 600;
-    display: inline-block;
-}
-
     </style>
 </head>
 <body>
@@ -455,10 +430,7 @@
                 <a href="#" id="playerNameLink" class="player-name" target="_blank">Lade Spieler...</a>
                 <span id="playerId" class="player-id"></span>
             </div>
-            <div class="status-wrapper">
-                <div class="status-label">Status</div>
-                <div id="statusIndicator" class="status-indicator"></div>
-            </div>
+            <div id="statusIndicator" class="status-indicator"></div>
         </div>
     </nav>
     
@@ -502,6 +474,7 @@
                     </div>
                 </div>
             </details>
+
             <details class="info-card">
                 <summary class="collapse-header">
                     <h3>⚽ Comunio</h3>
@@ -577,7 +550,7 @@
             </div>
 
             <div id="rivals" class="tab-content active">
-                <h3>8224 Direkte Konkurrenten</h3>
+                <h3>⚔️ Direkte Konkurrenten</h3>
                 <div id="rivalsList"></div>
             </div>
 
@@ -585,6 +558,7 @@
                 <h3>💶 Marktwertentwicklung</h3>
                 <div id="marketValueChart"></div>
             </div>
+
             <div id="points" class="tab-content">
                 <h3>📈 Punkteverlauf</h3>
                 <div id="pointsHistory"></div>
@@ -755,7 +729,19 @@
             }
         }
         
+        // Beispiel-Map für Besitzer (ersetze das in der Praxis durch deine Daten)
+        // In diesem Beispiel ist nur der Spieler mit ID 12345 ein echter Nutzer, alle anderen sind Computer
+        const ownersMap = new Map([
+            // [id, name]
+            // Beispiel: [12345, "Max Mustermann"],
+            // Für den Anfang: alle außer 12345 sind Computer
+        ]);
+        
+        // Funktion, um den Besitzer-Namen zu bekommen
         function getOwnerName(playerId) {
+            // Wenn du die ownersMap nutzt:
+            // return ownersMap.get(playerId) || 'Computer';
+            // Für den Anfang: immer Computer
             return "Computer";
         }
         
@@ -782,7 +768,7 @@
                 return [];
             }
         }
-
+        
         function getStatusIndicator(status) {
             switch(status) {
                 case 'AKTIV': return '👍';
@@ -797,74 +783,80 @@
                 default: return '❓';
             }
         }
-
-        function getStatusTooltip(status, detail, grund, seit) {
-            if (status === 'AKTIV') return '';
-            let tooltip = getStatusDisplayName(status);
-            if (detail) tooltip = detail;
-            if (grund) tooltip += ' - ' + grund;
-            if (seit) tooltip += ' | seit: ' + seit;
-            return tooltip;
+        
+        function getStatusIcon(status) {
+            switch(status) {
+                case 'AKTIV': return '<span class="status-icon-active">✓</span>';
+                case 'VERLETZT': return '<span class="status-icon-injured">⚠️</span>';
+                case 'REHA': return '<span class="status-icon-rehab">🔄</span>';
+                case 'AUFBAUTRAINING': return '<span class="status-icon-rehab">🏋️</span>';
+                case 'NICHT_IN_LIGA': return '<span class="status-icon-not-in-squad">✗</span>';
+                case 'FUENFTE_GELBE_KARTE': return '<span class="status-icon-card-yellow">🟨</span>';
+                case 'GELBROTE_KARTE': return '<span class="status-icon-card-yellow-red">🟨🟥</span>';
+                case 'ROTE_KARTE': return '<span class="status-icon-card-red">🟥</span>';
+                case 'NICHT_IM_KADER': return '<span class="status-icon-not-in-squad">🚫</span>';
+                default: return '<span class="status-icon-default">❓</span>';
+            }
         }
-
-       function displayRivals(player, allPlayers) {
-    const container = document.getElementById('rivalsList');
-    if (!container) return;
-    
-    const rivals = allPlayers.filter(p => 
-        p.data?.position === player.data?.position && 
-        p.id !== player.id
-    ).slice(0, 5);
-    
-    if (rivals.length > 0) {
-        let html = `
-        <table class="rivals-table">
-            <thead>
-                <tr>
-                    <th>Spieler</th>
-                    <th>Status</th>
-                    <th>Marktwert</th>
-                    <th>Realwert</th>
-                    <th>Punkte</th>
-                    <th>Besitzer</th>
-                </tr>
-            </thead>
-            <tbody>
-        `;
         
-        rivals.forEach(rival => {
-            const status = rival.data.comunioStatus?.status || 'Unbekannt';
-            const owner = ownersMap.get(rival.id) || 'Computer';
-            const ownerClass = owner.includes("Computer") ? "owner-comp" : "owner-users";
-            html += `
-            <tr data-player-id="${rival.id}">
-                <td class="player-cell">
-                    <div class="player-name-cell">${rival.name}</div>
-                    <div class="player-id-cell">ID: ${rival.id}</div>
-                </td>
-                <td>${getStatusIcon(status)}</td>
-                <td>${formatCurrencyShort(rival.data?.wert || 0)}</td>
-                <td>${formatCurrencyShort(rival.data?.realWert || 0)}</td>
-                <td>${rival.data?.punkte || 0}</td>
-                <td class="${ownerClass}">${owner}</td>
-            </tr>
-            `;
-        });
-        
-        html += '</tbody></table>';
-        container.innerHTML = html;
-        
-        document.querySelectorAll('.rivals-table tbody tr').forEach(row => {
-            row.addEventListener('click', (e) => {
-                const playerId = row.getAttribute('data-player-id');
-                window.location.href = `player.html?id=${playerId}`;
-            });
-        });
-    } else {
-        container.innerHTML = '<p>Keine direkten Konkurrenten gefunden</p>';
-    }
-}
-
+        function displayRivals(player, allPlayers) {
+            const container = document.getElementById('rivalsList');
+            if (!container) return;
+            
+            const rivals = allPlayers.filter(p => 
+                p.data?.position === player.data?.position && 
+                p.id !== player.id
+            ).slice(0, 5);
+            
+            if (rivals.length > 0) {
+                let html = `
+                <table class="rivals-table">
+                    <thead>
+                        <tr>
+                            <th>Spieler</th>
+                            <th>Status</th>
+                            <th>Marktwert</th>
+                            <th>Realwert</th>
+                            <th>Punkte</th>
+                            <th>Besitzer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                `;
+                
+                rivals.forEach(rival => {
+                    const status = rival.data.comunioStatus?.status || 'Unbekannt';
+                    // Hier wird der Besitzer ermittelt und die CSS-Klasse gesetzt
+                    const owner = getOwnerName(rival.id);
+                    const ownerClass = owner.includes("Computer") ? "owner-comp" : "owner-users";
+                    html += `
+                    <tr data-player-id="${rival.id}">
+                        <td class="player-cell">
+                            <div class="player-name-cell">${rival.name}</div>
+                            <div class="player-id-cell">ID: ${rival.id}</div>
+                        </td>
+                        <td>${getStatusIcon(status)}</td>
+                        <td>${formatCurrencyShort(rival.data?.wert || 0)}</td>
+                        <td>${formatCurrencyShort(rival.data?.realWert || 0)}</td>
+                        <td>${rival.data?.punkte || 0}</td>
+                        <td class="${ownerClass}">${owner}</td>
+                    </tr>
+                    `;
+                });
+                
+                html += '</tbody></table>';
+                container.innerHTML = html;
+                
+                document.querySelectorAll('.rivals-table tbody tr').forEach(row => {
+                    row.addEventListener('click', (e) => {
+                        const playerId = row.getAttribute('data-player-id');
+                        window.location.href = `player.html?id=${playerId}`;
+                    });
+                });
+            } else {
+                container.innerHTML = '<p>Keine direkten Konkurrenten gefunden</p>';
+            }
+        }
         
         function displayMarketValue(player) {
             const container = document.getElementById('marketValueChart');
@@ -904,21 +896,20 @@
             container.innerHTML = html;
         }
         
-       function displayPointsHistory(player) {
-    const container = document.getElementById('pointsHistory');
-    if (!container) return;
-    
-    const pointsHistory = player.data?.punkteHistorie || [];
-    const currentPoints = player.data?.punkte || 0;
-    const currentSeason = new Date().getFullYear();
-    
-    let html = `
-        <div class="stat-box">
-            <strong>Aktuelle Saison (${currentSeason}):</strong>
-            <div>${currentPoints} Punkte</div>
-        </div>
-    `;
-
+        function displayPointsHistory(player) {
+            const container = document.getElementById('pointsHistory');
+            if (!container) return;
+            
+            const pointsHistory = player.data?.punkteHistorie || [];
+            const currentPoints = player.data?.punkte || 0;
+            const currentSeason = new Date().getFullYear();
+            
+            let html = `
+                <div class="stat-box">
+                    <strong>Aktuelle Saison (${currentSeason}):</strong>
+                    <div>${currentPoints} Punkte</div>
+                </div>
+            `;
             
             if (player.data.spieltagspunkte && player.data.spieltagspunkte.length > 0) {
                 html += '<h4>Punkte pro Spieltag:</h4>';
@@ -997,17 +988,8 @@
                 clubLogo.innerHTML = `<img src="logos/${logoFile}" alt="${clubName}" style="width:100%;height:100%;object-fit:contain">`;
                 logDebug('Vereinslogo gesetzt für: ' + clubName);
                 
-                const status = player.data.comunioStatus?.status || 'Unbekannt';
-                const statusIndicator = document.getElementById('statusIndicator');
-                statusIndicator.textContent = getStatusIndicator(status);
-                // Tooltip für Status setzen (nur wenn nicht "Aktiv")
-                const detail = player.data.comunioStatus?.details || '';
-                const grund = player.data.comunioStatus?.grund || '';
-                const seit = player.data.comunioStatus?.seit || '';
-                const tooltip = getStatusTooltip(status, detail, grund, seit);
-                if (tooltip) {
-                    statusIndicator.setAttribute('title', tooltip);
-                }
+                const status = player.data.comunioStatus.status || 'Unbekannt';
+                document.getElementById('statusIndicator').textContent = getStatusIndicator(status);
                 document.getElementById('playerId').textContent = `ID: ${player.id}`;
                 
                 document.getElementById('birthday').textContent = player.data.spielerDaten.geburtstag || '-';
