@@ -37,7 +37,8 @@
     .tab-content.active { display: block;}
     .market-month-block { margin: 18px 0 8px 0; padding: 0; border-radius: 8px; background: #f9f9ff;}
     .market-month-header { font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 8px; cursor: pointer; padding: 10px 12px; border-radius: 8px 8px 0 0; background: #e3e7fa; user-select: none;}
-    .market-month-avg { font-weight: 400; font-size: 13px; color: #444;}
+    .market-month-avg { font-weight: 400; font-size: 13px; color: #444; display: flex; align-items: center; gap: 4px;}
+    .market-avg-icon { width: 18px; height: 18px; display: inline-block; vertical-align: middle; }
     .market-list { display: flex; flex-direction: column; gap: 6px; margin-bottom: 8px; padding: 0 12px 8px 12px;}
     .market-list-row { display: flex; justify-content: space-between; align-items: center; background: #f6f8fa; border-radius: 6px; padding: 7px 12px;}
     .market-list-date { font-size: 13px; color: #777;}
@@ -101,7 +102,10 @@
             </div>
         </div>
         <div class="info-card">
-            <h3><svg class="stat-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="13" width="3" height="8" rx="1" fill="#764ba2"/><rect x="8" y="9" width="3" height="12" rx="1" fill="#764ba2"/><rect x="13" y="5" width="3" height="16" rx="1" fill="#764ba2"/><rect x="18" y="2" width="3" height="19" rx="1" fill="#764ba2"/></svg> Status & Statistik</h3>
+            <h3>
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="13" width="3" height="8" rx="1" fill="#764ba2"/><rect x="8" y="9" width="3" height="12" rx="1" fill="#764ba2"/><rect x="13" y="5" width="3" height="16" rx="1" fill="#764ba2"/><rect x="18" y="2" width="3" height="19" rx="1" fill="#764ba2"/></svg>
+                Status & Statistik
+            </h3>
             <div class="info-card-content">
                 <div class="info-row"><span class="info-label">Status:</span><span class="info-value" id="detailStatus">-</span></div>
                 <div class="info-row"><span class="info-label">Spiele:</span><span class="info-value" id="gamesPlayed">-</span></div>
@@ -165,6 +169,10 @@ function svgTrend(trend) {
         return `<svg width="24" height="24" viewBox="0 0 24 24" style="margin-left:6px;vertical-align:middle;"><rect x="5" y="11" width="14" height="2" rx="1" fill="#888"/></svg>`;
     }
     return "";
+}
+function avgIcon() {
+    // Münz-Icon für den Monatsdurchschnitt (blauer Kreis im Screenshot)
+    return `<svg class="market-avg-icon" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="#b3c6e7" stroke="#3498db" stroke-width="2"/><text x="10" y="14" text-anchor="middle" font-size="10" fill="#3498db" font-family="Arial" font-weight="bold">Ø</text></svg>`;
 }
 async function loadPlayerMarketValues(playerId) {
     const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/MarktwerteJson.txt');
@@ -231,13 +239,12 @@ async function displayMarketValue(player) {
             else if (monthlyAverages[monthKey] < monthlyAverages[prevMonthKey]) trendIcon = unicodeTrend("down");
             else trendIcon = unicodeTrend("eq");
         }
-        const isOpen = idx === 0 ? 'open' : '';
         html += `
-            <details class="market-month-block" ${isOpen}>
-                <summary class="market-month-header">
+            <div class="market-month-block">
+                <div class="market-month-header">
                     ${monthName}
-                    <span class="market-month-avg">(Ø ${formatCurrencyShort(monthlyAverages[monthKey])}) ${trendIcon}</span>
-                </summary>
+                    <span class="market-month-avg">${avgIcon()} ${formatCurrencyShort(monthlyAverages[monthKey])} ${trendIcon}</span>
+                </div>
                 <div class="market-list">
         `;
         for (let i = 0; i < entries.length; i++) {
@@ -251,6 +258,7 @@ async function displayMarketValue(player) {
                     compareValue = firstDayOfMonth[prevMonthKey].wert;
                 }
             }
+            // Kein Pfeil beim allerersten Eintrag (ganz unten, roter Kreis)
             if (!(idx === sortedMonths.length - 1 && i === entries.length - 1) && compareValue !== null) {
                 if (entries[i].wert > compareValue) dayTrend = unicodeTrend("up");
                 else if (entries[i].wert < compareValue) dayTrend = unicodeTrend("down");
@@ -263,7 +271,7 @@ async function displayMarketValue(player) {
                 </div>
             `;
         }
-        html += '</div></details>';
+        html += '</div></div>';
     });
     container.innerHTML = html;
 }
@@ -305,7 +313,7 @@ function displayAttributes(player) {
         });
     }
     card.style.display = found ? '' : 'none';
-    header.style.display = found ? '' : 'none';
+    if (header) header.style.display = found ? '' : 'none';
 }
 function calcAge(birthday) {
     if (!birthday || birthday === 'N/A') return '-';
