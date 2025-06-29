@@ -20,9 +20,13 @@
     .status-indicator { font-size: 26px; cursor: help; transition: opacity 0.2s;}
     .status-indicator:hover { opacity: 0.8;}
     .container { max-width: 1200px; margin: 0 auto; padding: 15px;}
-    .info-card { background: rgba(255,255,255,0.95); border-radius: 10px; padding: 15px 20px 15px 20px; margin-bottom: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);}
-    .info-card h3 { margin-bottom: 12px; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; font-size: 16px; display: flex; align-items: center; gap: 8px;}
+    .info-card { background: rgba(255,255,255,0.95); border-radius: 10px; padding: 15px 20px 10px 20px; margin-bottom: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);}
+    .info-card h3 { margin-bottom: 12px; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; font-size: 16px; display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none;}
+    .info-card h3:after { content: "▼"; font-size: 0.8em; margin-left: 10px; display: inline-block; transition: transform 0.2s;}
+    .info-card h3.collapsed:after { transform: rotate(-90deg);}
     .info-card .stat-icon { width: 22px; height: 22px; vertical-align: middle; margin-right: 6px; }
+    .info-card-content { overflow: hidden; max-height: 1000px; transition: max-height 0.3s ease-out;}
+    .info-card-content.collapsed { max-height: 0;}
     .info-row { display: flex; justify-content: space-between; margin-bottom: 8px; padding: 5px 0; border-bottom: 1px solid #eee;}
     .info-row:last-child { border-bottom: none;}
     .info-label { font-weight: 600; color: #7f8c8d; font-size: 13px; flex: 1;}
@@ -37,9 +41,12 @@
     .tab-content.active { display: block;}
     .market-month-block { margin: 18px 0 8px 0; padding: 0; border-radius: 8px; background: #f9f9ff;}
     .market-month-header { font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 8px; cursor: pointer; padding: 10px 12px; border-radius: 8px 8px 0 0; background: #e3e7fa; user-select: none;}
+    .market-month-header:after { content: "▼"; font-size: 0.8em; margin-left: auto; transition: transform 0.2s;}
+    .market-month-header.collapsed:after { transform: rotate(-90deg);}
     .market-month-avg { font-weight: 400; font-size: 13px; color: #444; display: flex; align-items: center; gap: 4px;}
     .market-avg-icon { width: 18px; height: 18px; display: inline-block; vertical-align: middle; }
-    .market-list { display: flex; flex-direction: column; gap: 6px; margin-bottom: 8px; padding: 0 12px 8px 12px;}
+    .market-list { display: flex; flex-direction: column; gap: 6px; margin-bottom: 8px; padding: 0 12px; overflow: hidden; max-height: 1000px; transition: max-height 0.3s ease-out;}
+    .market-list.collapsed { max-height: 0; padding: 0 12px; margin-bottom: 0;}
     .market-list-row { display: flex; justify-content: space-between; align-items: center; background: #f6f8fa; border-radius: 6px; padding: 7px 12px;}
     .market-list-date { font-size: 13px; color: #777;}
     .market-list-value { font-size: 14px; font-weight: 500;}
@@ -54,30 +61,6 @@
         .player-name { font-size: 16px; }
         .club-logo { width: 34px; height: 34px; }
         .tab-button { font-size: 16px; }
-    }
-
-    /* Zuklappbare Info-Panels */
-    .info-card-content {
-      overflow: hidden;
-      max-height: 1000px;
-      transition: max-height 0.3s ease-out;
-    }
-    .info-card-content.collapsed {
-      max-height: 0;
-    }
-    .info-card h3 {
-      cursor: pointer;
-      user-select: none;
-    }
-    .info-card h3:after {
-      content: "▼";
-      font-size: 0.8em;
-      margin-left: 10px;
-      display: inline-block;
-      transition: transform 0.2s;
-    }
-    .info-card h3.collapsed:after {
-      transform: rotate(-90deg);
     }
 </style>
 </head>
@@ -127,7 +110,7 @@
         </div>
         <div class="info-card">
             <h3>
-                <svg class="stat-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="13" width="3" height="8" rx="1" fill="#764ba2"/><rect x="8" y="9" width="3" height="12" rx="1" fill="#764ba2"/><rect x="13" y="5" width="3" height="16" rx="1" fill="#764ba2"/><rect x="18" y="2" width="3" height="19" rx="1" fill="#764ba2"/></svg>
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="13" width="3" height="8" rx="1" fill="#764ba2"/><rect x="8" y="9" width="3" height="12" rx="1" fill="#764ba2"/><rect x="13" y="5" width="3, height=16, rx=1, fill=#764ba2"/><rect x="18, y=2, width=3, height=19, rx=1, fill=#764ba2"/></svg>
                 Status & Statistik
             </h3>
             <div class="info-card-content">
@@ -151,7 +134,7 @@
             <button class="tab-button" data-tab="points">Punkte</button>
         </div>
         <div id="rivals" class="tab-content">
-            <h3>📊 Direkte Konkurrenten</h3>
+            <h3>857 Direkte Konkurrenten</h3>
             <div id="rivalsList"></div>
         </div>
         <div id="market" class="tab-content">
@@ -195,7 +178,6 @@ function svgTrend(trend) {
     return "";
 }
 function avgIcon() {
-    // Münz-Icon für den Monatsdurchschnitt (blauer Kreis im Screenshot)
     return `<svg class="market-avg-icon" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="#b3c6e7" stroke="#3498db" stroke-width="2"/><text x="10" y="14" text-anchor="middle" font-size="10" fill="#3498db" font-family="Arial" font-weight="bold">Ø</text></svg>`;
 }
 async function loadPlayerMarketValues(playerId) {
@@ -263,13 +245,15 @@ async function displayMarketValue(player) {
             else if (monthlyAverages[monthKey] < monthlyAverages[prevMonthKey]) trendIcon = unicodeTrend("down");
             else trendIcon = unicodeTrend("eq");
         }
+        // Aktueller Monat: immer offen, andere zugeklappt
+        const isCurrentMonth = idx === 0;
         html += `
             <div class="market-month-block">
-                <div class="market-month-header">
+                <div class="market-month-header ${isCurrentMonth ? '' : 'collapsed'}" data-month="${monthKey}">
                     ${monthName}
                     <span class="market-month-avg">${avgIcon()} ${formatCurrencyShort(monthlyAverages[monthKey])} ${trendIcon}</span>
                 </div>
-                <div class="market-list">
+                <div class="market-list ${isCurrentMonth ? '' : 'collapsed'}">
         `;
         for (let i = 0; i < entries.length; i++) {
             let dayTrend = '';
@@ -282,7 +266,6 @@ async function displayMarketValue(player) {
                     compareValue = firstDayOfMonth[prevMonthKey].wert;
                 }
             }
-            // Kein Pfeil beim allerersten Eintrag (ganz unten, roter Kreis)
             if (!(idx === sortedMonths.length - 1 && i === entries.length - 1) && compareValue !== null) {
                 if (entries[i].wert > compareValue) dayTrend = unicodeTrend("up");
                 else if (entries[i].wert < compareValue) dayTrend = unicodeTrend("down");
@@ -298,6 +281,17 @@ async function displayMarketValue(player) {
         html += '</div></div>';
     });
     container.innerHTML = html;
+    // Klickhandler für die Monate
+    document.querySelectorAll('.market-month-header').forEach(header => {
+        const monthKey = header.getAttribute('data-month');
+        const isCurrentMonth = monthKey === sortedMonths[0];
+        if (isCurrentMonth) return; // Aktueller Monat bleibt offen
+        const content = header.nextElementSibling;
+        header.addEventListener('click', () => {
+            header.classList.toggle('collapsed');
+            content.classList.toggle('collapsed');
+        });
+    });
 }
 function displayAttributes(player) {
     const container = document.getElementById('attributesList');
@@ -481,99 +475,90 @@ function displayPointsHistory(player) {
 
 // Zuklappbare Info-Panels
 function setupAccordion() {
-  const infoCards = document.querySelectorAll('.info-card');
-  infoCards.forEach((card, index) => {
-    const header = card.querySelector('h3');
-    const content = card.querySelector('.info-card-content');
-    if (index === 0) {
-      // Erstes Panel: offen, nicht schließbar
-      content.classList.remove('collapsed');
-      header.removeAttribute('onclick');
-      header.style.cursor = 'default';
-    } else {
-      // Andere Panels: schließbar
-      content.classList.add('collapsed');
-      header.onclick = () => {
-        content.classList.toggle('collapsed');
-        header.classList.toggle('collapsed');
-      };
-    }
-  });
+    const infoCards = document.querySelectorAll('.info-card');
+    infoCards.forEach((card, index) => {
+        const header = card.querySelector('h3');
+        const content = card.querySelector('.info-card-content');
+        header.onclick = () => {
+            content.classList.toggle('collapsed');
+            header.classList.toggle('collapsed');
+        };
+    });
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-  initTabs();
-  const url = window.location.href;
-  const idMatch = url.match(/[?&]id=([^&]*)/);
-  const playerId = idMatch ? idMatch[1] : null;
-  if (!playerId) return;
-  try {
-    const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/SpielerdatenbankNeutralJson.txt');
-    const allPlayers = await resp.json();
-    let player = allPlayers.find(p => String(p.id) === String(playerId));
-    if (!player) player = allPlayers.find(p => parseInt(p.id) === parseInt(playerId));
-    if (!player) {
-      document.getElementById('errorMessage').textContent = "Spieler nicht gefunden!";
-      document.getElementById('errorMessage').style.display = 'block';
-      document.getElementById('loadingIndicator').style.display = 'none';
-      return;
-    }
-    document.getElementById('playerNameLink').textContent = player.name;
-    document.getElementById('playerId').textContent = `ID: ${player.id}`;
-    if (player.data && player.data.transfermarktDoDe && player.data.transfermarktDoDe.link) {
-      document.getElementById('playerNameLink').href = player.data.transfermarktDoDe.link;
-    } else {
-      document.getElementById('playerNameLink').href = "#";
-      document.getElementById('playerNameLink').style.cursor = "default";
-      document.getElementById('playerNameLink').style.textDecoration = "none";
-    }
-    const clubId = player.data.verein || "0";
-    function getLogoFileName(clubId) {
-      if (!clubId) return "unbestimmt.png";
-      const mapping = {
-        "3": "gladbach", "21": "freiburg", "18": "mainz", "92": "leipzig",
-        "1": "bayern", "6": "werderBremen", "12": "wolfsburg", "5": "dortmund",
-        "8": "leverkusen", "13": "koeln", "14": "stuttgart", "533": "hoffenheim",
-        "68": "augsburg", "9": "frankfurt", "109": "unionBerlin", "110": "heidenheim",
-        "25": "stpauli", "4": "hamburg",
-      };
-      return (mapping[clubId] || "unbestimmt") + ".png";
-    }
-    document.getElementById('clubLogo').innerHTML =
-      `<img src="logos/${getLogoFileName(clubId)}" alt="" style="width:100%;height:100%;object-fit:contain">`;
-    const status = player.data.comunioStatus?.status || 'Unbekannt';
-    document.getElementById('statusIndicator').textContent = getStatusIndicator(status);
-    document.getElementById('birthday').textContent = player.data.spielerDaten.geburtstag || '-';
-    document.getElementById('age').textContent = calcAge(player.data.spielerDaten.geburtstag) || '-';
-    document.getElementById('height').textContent = player.data.spielerDaten.groesse || '-';
-    document.getElementById('nationality').textContent = player.data.spielerDaten.nationalitaet || '-';
-    document.getElementById('position').textContent = player.data.spielerDaten.hauptposition || player.data.position || '-';
-    document.getElementById('foot').textContent = player.data.spielerDaten.fuss || '-';
-    document.getElementById('jerseyNumber').textContent = player.data.spielerDaten.trikotNummer || '-';
-    document.getElementById('comunioPosition').textContent = player.data.position || '-';
-    document.getElementById('marketValue').textContent = formatCurrencyFull(player.data.wert);
-    document.getElementById('lastYearPoints').textContent = player.data.lastSeasonPoints || '0';
-    document.getElementById('owner').textContent = getOwnerName(player.id) || '-';
-    document.getElementById('detailStatus').textContent = player.data.comunioStatus.details || getStatusDisplayName(status);
-    document.getElementById('gamesPlayed').textContent = player.data.stats.playedGames || '0';
-    document.getElementById('goals').textContent = player.data.stats.totalGoals || '0';
-    document.getElementById('averageRating').textContent = player.data.stats.notenDurchschnitt || '0';
-    document.getElementById('yellowCards').textContent = player.data.stats.gelbekarten || '0';
-    document.getElementById('redCards').textContent = player.data.stats.rotekarten || '0';
-    displayAttributes(player);
-    displayRivals(player, allPlayers);
-    displayMarketValue(player);
-    displayPointsHistory(player);
-    document.getElementById('loadingIndicator').style.display = 'none';
-    document.getElementById('playerContent').style.display = 'block';
+    initTabs();
+    const url = window.location.href;
+    const idMatch = url.match(/[?&]id=([^&]*)/);
+    const playerId = idMatch ? idMatch[1] : null;
+    if (!playerId) return;
+    try {
+        const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/SpielerdatenbankNeutralJson.txt');
+        const allPlayers = await resp.json();
+        let player = allPlayers.find(p => String(p.id) === String(playerId));
+        if (!player) player = allPlayers.find(p => parseInt(p.id) === parseInt(playerId));
+        if (!player) {
+            document.getElementById('errorMessage').textContent = "Spieler nicht gefunden!";
+            document.getElementById('errorMessage').style.display = 'block';
+            document.getElementById('loadingIndicator').style.display = 'none';
+            return;
+        }
+        document.getElementById('playerNameLink').textContent = player.name;
+        document.getElementById('playerId').textContent = `ID: ${player.id}`;
+        if (player.data && player.data.transfermarktDoDe && player.data.transfermarktDoDe.link) {
+            document.getElementById('playerNameLink').href = player.data.transfermarktDoDe.link;
+        } else {
+            document.getElementById('playerNameLink').href = "#";
+            document.getElementById('playerNameLink').style.cursor = "default";
+            document.getElementById('playerNameLink').style.textDecoration = "none";
+        }
+        const clubId = player.data.verein || "0";
+        function getLogoFileName(clubId) {
+            if (!clubId) return "unbestimmt.png";
+            const mapping = {
+                "3": "gladbach", "21": "freiburg", "18": "mainz", "92": "leipzig",
+                "1": "bayern", "6": "werderBremen", "12": "wolfsburg", "5": "dortmund",
+                "8": "leverkusen", "13": "koeln", "14": "stuttgart", "533": "hoffenheim",
+                "68": "augsburg", "9": "frankfurt", "109": "unionBerlin", "110": "heidenheim",
+                "25": "stpauli", "4": "hamburg",
+            };
+            return (mapping[clubId] || "unbestimmt") + ".png";
+        }
+        document.getElementById('clubLogo').innerHTML =
+            `<img src="logos/${getLogoFileName(clubId)}" alt="" style="width:100%;height:100%;object-fit:contain">`;
+        const status = player.data.comunioStatus?.status || 'Unbekannt';
+        document.getElementById('statusIndicator').textContent = getStatusIndicator(status);
+        document.getElementById('birthday').textContent = player.data.spielerDaten.geburtstag || '-';
+        document.getElementById('age').textContent = calcAge(player.data.spielerDaten.geburtstag) || '-';
+        document.getElementById('height').textContent = player.data.spielerDaten.groesse || '-';
+        document.getElementById('nationality').textContent = player.data.spielerDaten.nationalitaet || '-';
+        document.getElementById('position').textContent = player.data.spielerDaten.hauptposition || player.data.position || '-';
+        document.getElementById('foot').textContent = player.data.spielerDaten.fuss || '-';
+        document.getElementById('jerseyNumber').textContent = player.data.spielerDaten.trikotNummer || '-';
+        document.getElementById('comunioPosition').textContent = player.data.position || '-';
+        document.getElementById('marketValue').textContent = formatCurrencyFull(player.data.wert);
+        document.getElementById('lastYearPoints').textContent = player.data.lastSeasonPoints || '0';
+        document.getElementById('owner').textContent = getOwnerName(player.id) || '-';
+        document.getElementById('detailStatus').textContent = player.data.comunioStatus.details || getStatusDisplayName(status);
+        document.getElementById('gamesPlayed').textContent = player.data.stats.playedGames || '0';
+        document.getElementById('goals').textContent = player.data.stats.totalGoals || '0';
+        document.getElementById('averageRating').textContent = player.data.stats.notenDurchschnitt || '0';
+        document.getElementById('yellowCards').textContent = player.data.stats.gelbekarten || '0';
+        document.getElementById('redCards').textContent = player.data.stats.rotekarten || '0';
+        displayAttributes(player);
+        displayRivals(player, allPlayers);
+        displayMarketValue(player);
+        displayPointsHistory(player);
+        document.getElementById('loadingIndicator').style.display = 'none';
+        document.getElementById('playerContent').style.display = 'block';
 
-    // Zuklappbare Info-Panels aktivieren
-    setupAccordion();
-  } catch (err) {
-    document.getElementById('errorMessage').textContent = "Fehler beim Laden der Daten: " + err.message;
-    document.getElementById('errorMessage').style.display = 'block';
-    document.getElementById('loadingIndicator').style.display = 'none';
-  }
+        // Zuklappbare Info-Panels aktivieren
+        setupAccordion();
+    } catch (err) {
+        document.getElementById('errorMessage').textContent = "Fehler beim Laden der Daten: " + err.message;
+        document.getElementById('errorMessage').style.display = 'block';
+        document.getElementById('loadingIndicator').style.display = 'none';
+    }
 });
 </script>
 </body>
