@@ -20,10 +20,8 @@
     .status-indicator { font-size: 26px; cursor: help; transition: opacity 0.2s;}
     .status-indicator:hover { opacity: 0.8;}
     .container { max-width: 1200px; margin: 0 auto; padding: 15px;}
-    .info-card { background: rgba(255,255,255,0.95); border-radius: 10px; padding: 0; margin-bottom: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);}
-    .info-card details { border-radius: 10px; margin-bottom: 0; }
-    .info-card summary { display: flex; align-items: center; justify-content: space-between; cursor: pointer; padding: 16px 20px; font-size: 16px; font-weight: bold; color: #2c3e50; border-bottom: 2px solid #3498db; background: none;}
-    .info-card summary:focus { outline: none; background: #e3e7fa; }
+    .info-card { background: rgba(255,255,255,0.95); border-radius: 10px; padding: 15px 20px 15px 20px; margin-bottom: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);}
+    .info-card h3 { margin-bottom: 12px; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; font-size: 16px; display: flex; align-items: center; gap: 8px;}
     .info-card .stat-icon { width: 22px; height: 22px; vertical-align: middle; margin-right: 6px; }
     .info-row { display: flex; justify-content: space-between; margin-bottom: 8px; padding: 5px 0; border-bottom: 1px solid #eee;}
     .info-row:last-child { border-bottom: none;}
@@ -82,47 +80,42 @@
     <div id="loadingIndicator" class="loading-spinner"></div>
     <div id="playerContent" style="display:none;">
         <div class="info-card">
-            <details open>
-                <summary>📋 Spieler-Informationen</summary>
-                <div class="info-card-content">
-                    <div class="info-row"><span class="info-label">Geburtstag:</span><span class="info-value" id="birthday">-</span></div>
-                    <div class="info-row"><span class="info-label">Alter:</span><span class="info-value" id="age">-</span></div>
-                    <div class="info-row"><span class="info-label">Größe:</span><span class="info-value" id="height">-</span></div>
-                    <div class="info-row"><span class="info-label">Nationalität:</span><span class="info-value" id="nationality">-</span></div>
-                    <div class="info-row"><span class="info-label">Position:</span><span class="info-value" id="position">-</span></div>
-                    <div class="info-row"><span class="info-label">Hauptfuß:</span><span class="info-value" id="foot">-</span></div>
-                    <div class="info-row"><span class="info-label">Trikotnummer:</span><span class="info-value" id="jerseyNumber">-</span></div>
-                </div>
-            </details>
-            <details>
-                <summary>⚽ Comunio</summary>
-                <div class="info-card-content">
-                    <div class="info-row"><span class="info-label">Position:</span><span class="info-value" id="comunioPosition">-</span></div>
-                    <div class="info-row"><span class="info-label">Marktwert:</span><span class="info-value" id="marketValue">-</span></div>
-                    <div class="info-row"><span class="info-label">Punkte (letztes Jahr):</span><span class="info-value" id="lastYearPoints">-</span></div>
-                    <div class="info-row"><span class="info-label">Besitzer:</span><span class="info-value" id="owner">-</span></div>
-                </div>
-            </details>
-            <details>
-                <summary>
-                    <svg class="stat-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="13" width="3" height="8" rx="1" fill="#764ba2"/><rect x="8" y="9" width="3" height="12" rx="1" fill="#764ba2"/><rect x="13" y="5" width="3" height="16" rx="1" fill="#764ba2"/><rect x="18" y="2" width="3" height="19" rx="1" fill="#764ba2"/></svg>
-                    Status & Statistik
-                </summary>
-                <div class="info-card-content">
-                    <div class="info-row"><span class="info-label">Status:</span><span class="info-value" id="detailStatus">-</span></div>
-                    <div class="info-row"><span class="info-label">Spiele:</span><span class="info-value" id="gamesPlayed">-</span></div>
-                    <div class="info-row"><span class="info-label">Tore:</span><span class="info-value" id="goals">-</span></div>
-                    <div class="info-row"><span class="info-label">Notenschnitt:</span><span class="info-value" id="averageRating">-</span></div>
-                    <div class="info-row"><span class="info-label">Gelbe Karten:</span><span class="info-value" id="yellowCards">-</span></div>
-                    <div class="info-row"><span class="info-label">Rote Karten:</span><span class="info-value" id="redCards">-</span></div>
-                </div>
-            </details>
-            <details id="attributesCard" style="display:none;">
-                <summary id="attributesHeader">⭐ Besondere Eigenschaften</summary>
-                <div class="info-card-content">
-                    <div class="attributes" id="attributesList"></div>
-                </div>
-            </details>
+            <h3>📋 Spieler-Informationen</h3>
+            <div class="info-card-content">
+                <div class="info-row"><span class="info-label">Geburtstag:</span><span class="info-value" id="birthday">-</span></div>
+                <div class="info-row"><span class="info-label">Alter:</span><span class="info-value" id="age">-</span></div>
+                <div class="info-row"><span class="info-label">Größe:</span><span class="info-value" id="height">-</span></div>
+                <div class="info-row"><span class="info-label">Nationalität:</span><span class="info-value" id="nationality">-</span></div>
+                <div class="info-row"><span class="info-label">Position:</span><span class="info-value" id="position">-</span></div>
+                <div class="info-row"><span class="info-label">Hauptfuß:</span><span class="info-value" id="foot">-</span></div>
+                <div class="info-row"><span class="info-label">Trikotnummer:</span><span class="info-value" id="jerseyNumber">-</span></div>
+            </div>
+        </div>
+        <div class="info-card">
+            <h3>⚽ Comunio</h3>
+            <div class="info-card-content">
+                <div class="info-row"><span class="info-label">Position:</span><span class="info-value" id="comunioPosition">-</span></div>
+                <div class="info-row"><span class="info-label">Marktwert:</span><span class="info-value" id="marketValue">-</span></div>
+                <div class="info-row"><span class="info-label">Punkte (letztes Jahr):</span><span class="info-value" id="lastYearPoints">-</span></div>
+                <div class="info-row"><span class="info-label">Besitzer:</span><span class="info-value" id="owner">-</span></div>
+            </div>
+        </div>
+        <div class="info-card">
+            <h3><svg class="stat-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="13" width="3" height="8" rx="1" fill="#764ba2"/><rect x="8" y="9" width="3" height="12" rx="1" fill="#764ba2"/><rect x="13" y="5" width="3" height="16" rx="1" fill="#764ba2"/><rect x="18" y="2" width="3" height="19" rx="1" fill="#764ba2"/></svg> Status & Statistik</h3>
+            <div class="info-card-content">
+                <div class="info-row"><span class="info-label">Status:</span><span class="info-value" id="detailStatus">-</span></div>
+                <div class="info-row"><span class="info-label">Spiele:</span><span class="info-value" id="gamesPlayed">-</span></div>
+                <div class="info-row"><span class="info-label">Tore:</span><span class="info-value" id="goals">-</span></div>
+                <div class="info-row"><span class="info-label">Notenschnitt:</span><span class="info-value" id="averageRating">-</span></div>
+                <div class="info-row"><span class="info-label">Gelbe Karten:</span><span class="info-value" id="yellowCards">-</span></div>
+                <div class="info-row"><span class="info-label">Rote Karten:</span><span class="info-value" id="redCards">-</span></div>
+            </div>
+        </div>
+        <div class="info-card" id="attributesCard" style="display:none;">
+            <h3>⭐ Besondere Eigenschaften</h3>
+            <div class="info-card-content">
+                <div class="attributes" id="attributesList"></div>
+            </div>
         </div>
         <div class="tabs" id="tabBar">
             <button class="tab-button" data-tab="rivals">Rivalen</button>
