@@ -55,6 +55,30 @@
         .club-logo { width: 34px; height: 34px; }
         .tab-button { font-size: 16px; }
     }
+
+    /* Zuklappbare Info-Panels */
+    .info-card-content {
+      overflow: hidden;
+      max-height: 1000px;
+      transition: max-height 0.3s ease-out;
+    }
+    .info-card-content.collapsed {
+      max-height: 0;
+    }
+    .info-card h3 {
+      cursor: pointer;
+      user-select: none;
+    }
+    .info-card h3:after {
+      content: "▼";
+      font-size: 0.8em;
+      margin-left: 10px;
+      display: inline-block;
+      transition: transform 0.2s;
+    }
+    .info-card h3.collapsed:after {
+      transform: rotate(-90deg);
+    }
 </style>
 </head>
 <body>
@@ -454,76 +478,102 @@ function displayPointsHistory(player) {
     }
     container.innerHTML = html;
 }
-document.addEventListener('DOMContentLoaded', async () => {
-    initTabs();
-    const url = window.location.href;
-    const idMatch = url.match(/[?&]id=([^&]*)/);
-    const playerId = idMatch ? idMatch[1] : null;
-    if (!playerId) return;
-    try {
-        const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/SpielerdatenbankNeutralJson.txt');
-        const allPlayers = await resp.json();
-        let player = allPlayers.find(p => String(p.id) === String(playerId));
-        if (!player) player = allPlayers.find(p => parseInt(p.id) === parseInt(playerId));
-        if (!player) {
-            document.getElementById('errorMessage').textContent = "Spieler nicht gefunden!";
-            document.getElementById('errorMessage').style.display = 'block';
-            document.getElementById('loadingIndicator').style.display = 'none';
-            return;
-        }
-        document.getElementById('playerNameLink').textContent = player.name;
-        document.getElementById('playerId').textContent = `ID: ${player.id}`;
-        if (player.data && player.data.transfermarktDoDe && player.data.transfermarktDoDe.link) {
-            document.getElementById('playerNameLink').href = player.data.transfermarktDoDe.link;
-        } else {
-            document.getElementById('playerNameLink').href = "#";
-            document.getElementById('playerNameLink').style.cursor = "default";
-            document.getElementById('playerNameLink').style.textDecoration = "none";
-        }
-        const clubId = player.data.verein || "0";
-        function getLogoFileName(clubId) {
-            if (!clubId) return "unbestimmt.png";
-            const mapping = {
-                "3": "gladbach", "21": "freiburg", "18": "mainz", "92": "leipzig",
-                "1": "bayern", "6": "werderBremen", "12": "wolfsburg", "5": "dortmund",
-                "8": "leverkusen", "13": "koeln", "14": "stuttgart", "533": "hoffenheim",
-                "68": "augsburg", "9": "frankfurt", "109": "unionBerlin", "110": "heidenheim",
-                "25": "stpauli", "4": "hamburg",
-            };
-            return (mapping[clubId] || "unbestimmt") + ".png";
-        }
-        document.getElementById('clubLogo').innerHTML =
-            `<img src="logos/${getLogoFileName(clubId)}" alt="" style="width:100%;height:100%;object-fit:contain">`;
-        const status = player.data.comunioStatus?.status || 'Unbekannt';
-        document.getElementById('statusIndicator').textContent = getStatusIndicator(status);
-        document.getElementById('birthday').textContent = player.data.spielerDaten.geburtstag || '-';
-        document.getElementById('age').textContent = calcAge(player.data.spielerDaten.geburtstag) || '-';
-        document.getElementById('height').textContent = player.data.spielerDaten.groesse || '-';
-        document.getElementById('nationality').textContent = player.data.spielerDaten.nationalitaet || '-';
-        document.getElementById('position').textContent = player.data.spielerDaten.hauptposition || player.data.position || '-';
-        document.getElementById('foot').textContent = player.data.spielerDaten.fuss || '-';
-        document.getElementById('jerseyNumber').textContent = player.data.spielerDaten.trikotNummer || '-';
-        document.getElementById('comunioPosition').textContent = player.data.position || '-';
-        document.getElementById('marketValue').textContent = formatCurrencyFull(player.data.wert);
-        document.getElementById('lastYearPoints').textContent = player.data.lastSeasonPoints || '0';
-        document.getElementById('owner').textContent = getOwnerName(player.id) || '-';
-        document.getElementById('detailStatus').textContent = player.data.comunioStatus.details || getStatusDisplayName(status);
-        document.getElementById('gamesPlayed').textContent = player.data.stats.playedGames || '0';
-        document.getElementById('goals').textContent = player.data.stats.totalGoals || '0';
-        document.getElementById('averageRating').textContent = player.data.stats.notenDurchschnitt || '0';
-        document.getElementById('yellowCards').textContent = player.data.stats.gelbekarten || '0';
-        document.getElementById('redCards').textContent = player.data.stats.rotekarten || '0';
-        displayAttributes(player);
-        displayRivals(player, allPlayers);
-        displayMarketValue(player);
-        displayPointsHistory(player);
-        document.getElementById('loadingIndicator').style.display = 'none';
-        document.getElementById('playerContent').style.display = 'block';
-    } catch (err) {
-        document.getElementById('errorMessage').textContent = "Fehler beim Laden der Daten: " + err.message;
-        document.getElementById('errorMessage').style.display = 'block';
-        document.getElementById('loadingIndicator').style.display = 'none';
+
+// Zuklappbare Info-Panels
+function setupAccordion() {
+  const infoCards = document.querySelectorAll('.info-card');
+  infoCards.forEach((card, index) => {
+    const header = card.querySelector('h3');
+    const content = card.querySelector('.info-card-content');
+    if (index === 0) {
+      // Erstes Panel: offen, nicht schließbar
+      content.classList.remove('collapsed');
+      header.removeAttribute('onclick');
+      header.style.cursor = 'default';
+    } else {
+      // Andere Panels: schließbar
+      content.classList.add('collapsed');
+      header.onclick = () => {
+        content.classList.toggle('collapsed');
+        header.classList.toggle('collapsed');
+      };
     }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+  initTabs();
+  const url = window.location.href;
+  const idMatch = url.match(/[?&]id=([^&]*)/);
+  const playerId = idMatch ? idMatch[1] : null;
+  if (!playerId) return;
+  try {
+    const resp = await fetch('https://raw.githubusercontent.com/torresbig/comunioFanApp/main/SpielerdatenbankNeutralJson.txt');
+    const allPlayers = await resp.json();
+    let player = allPlayers.find(p => String(p.id) === String(playerId));
+    if (!player) player = allPlayers.find(p => parseInt(p.id) === parseInt(playerId));
+    if (!player) {
+      document.getElementById('errorMessage').textContent = "Spieler nicht gefunden!";
+      document.getElementById('errorMessage').style.display = 'block';
+      document.getElementById('loadingIndicator').style.display = 'none';
+      return;
+    }
+    document.getElementById('playerNameLink').textContent = player.name;
+    document.getElementById('playerId').textContent = `ID: ${player.id}`;
+    if (player.data && player.data.transfermarktDoDe && player.data.transfermarktDoDe.link) {
+      document.getElementById('playerNameLink').href = player.data.transfermarktDoDe.link;
+    } else {
+      document.getElementById('playerNameLink').href = "#";
+      document.getElementById('playerNameLink').style.cursor = "default";
+      document.getElementById('playerNameLink').style.textDecoration = "none";
+    }
+    const clubId = player.data.verein || "0";
+    function getLogoFileName(clubId) {
+      if (!clubId) return "unbestimmt.png";
+      const mapping = {
+        "3": "gladbach", "21": "freiburg", "18": "mainz", "92": "leipzig",
+        "1": "bayern", "6": "werderBremen", "12": "wolfsburg", "5": "dortmund",
+        "8": "leverkusen", "13": "koeln", "14": "stuttgart", "533": "hoffenheim",
+        "68": "augsburg", "9": "frankfurt", "109": "unionBerlin", "110": "heidenheim",
+        "25": "stpauli", "4": "hamburg",
+      };
+      return (mapping[clubId] || "unbestimmt") + ".png";
+    }
+    document.getElementById('clubLogo').innerHTML =
+      `<img src="logos/${getLogoFileName(clubId)}" alt="" style="width:100%;height:100%;object-fit:contain">`;
+    const status = player.data.comunioStatus?.status || 'Unbekannt';
+    document.getElementById('statusIndicator').textContent = getStatusIndicator(status);
+    document.getElementById('birthday').textContent = player.data.spielerDaten.geburtstag || '-';
+    document.getElementById('age').textContent = calcAge(player.data.spielerDaten.geburtstag) || '-';
+    document.getElementById('height').textContent = player.data.spielerDaten.groesse || '-';
+    document.getElementById('nationality').textContent = player.data.spielerDaten.nationalitaet || '-';
+    document.getElementById('position').textContent = player.data.spielerDaten.hauptposition || player.data.position || '-';
+    document.getElementById('foot').textContent = player.data.spielerDaten.fuss || '-';
+    document.getElementById('jerseyNumber').textContent = player.data.spielerDaten.trikotNummer || '-';
+    document.getElementById('comunioPosition').textContent = player.data.position || '-';
+    document.getElementById('marketValue').textContent = formatCurrencyFull(player.data.wert);
+    document.getElementById('lastYearPoints').textContent = player.data.lastSeasonPoints || '0';
+    document.getElementById('owner').textContent = getOwnerName(player.id) || '-';
+    document.getElementById('detailStatus').textContent = player.data.comunioStatus.details || getStatusDisplayName(status);
+    document.getElementById('gamesPlayed').textContent = player.data.stats.playedGames || '0';
+    document.getElementById('goals').textContent = player.data.stats.totalGoals || '0';
+    document.getElementById('averageRating').textContent = player.data.stats.notenDurchschnitt || '0';
+    document.getElementById('yellowCards').textContent = player.data.stats.gelbekarten || '0';
+    document.getElementById('redCards').textContent = player.data.stats.rotekarten || '0';
+    displayAttributes(player);
+    displayRivals(player, allPlayers);
+    displayMarketValue(player);
+    displayPointsHistory(player);
+    document.getElementById('loadingIndicator').style.display = 'none';
+    document.getElementById('playerContent').style.display = 'block';
+
+    // Zuklappbare Info-Panels aktivieren
+    setupAccordion();
+  } catch (err) {
+    document.getElementById('errorMessage').textContent = "Fehler beim Laden der Daten: " + err.message;
+    document.getElementById('errorMessage').style.display = 'block';
+    document.getElementById('loadingIndicator').style.display = 'none';
+  }
 });
 </script>
 </body>
