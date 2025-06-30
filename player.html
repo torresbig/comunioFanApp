@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Spieler Details</title>
 <style>
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; color: #333; margin: 0; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; color: #333; padding-bottom: 140px; margin: 0;}
     .navbar { background: linear-gradient(135deg, #34495e, #2c3e50); color: white; padding: 10px 15px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.2);}
     .player-header { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1200px; margin: 0 auto; padding: 10px 0;}
     .player-center { display: flex; flex-direction: column; align-items: center; flex: 1;}
@@ -30,6 +30,8 @@
     .info-row:last-child { border-bottom: none;}
     .info-label { font-weight: 600; color: #7f8c8d; font-size: 13px; flex: 1;}
     .info-value { font-weight: 600; color: #2c3e50; font-size: 13px; flex: 1; text-align: right;}
+    .attributes { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px;}
+    .attribute-tag { background: linear-gradient(135deg, #9b59b6, #8e44ad); color: white; padding: 4px 8px; border-radius: 15px; font-size: 12px; font-weight: 600;}
     .tabs { display: flex; justify-content: center; margin: 20px 0 0 0; border-bottom: 1px solid #ddd;}
     .tab-button { position:relative; padding: 10px 20px; background: #2c3e50; color: white; border: none; cursor: pointer; font-size: 22px; margin: 0 5px; border-radius: 16px 16px 0 0; transition: background 0.3s; display: flex; align-items: center;}
     .tab-button.active { background: #3498db;}
@@ -126,8 +128,8 @@
     </div>
 </nav>
 <div class="container">
-    <div id="errorMessage" class="error-message" style="display:none;"></div>
-    <div id="loadingIndicator" class="loading-spinner"></div>
+    <div id="errorMessage" class="error-message" style="display:none; color: red; font-weight: bold; margin-bottom: 10px;"></div>
+    <div id="loadingIndicator" class="loading-spinner" style="text-align:center; padding: 20px;">Lade Daten...</div>
     <div id="playerContent" style="display:none;">
         <div class="info-card">
             <h3>📋 Spieler-Informationen</h3>
@@ -150,6 +152,26 @@
                 <div class="info-row"><span class="info-label">Besitzer:</span><span class="info-value" id="owner">-</span></div>
             </div>
         </div>
+        <div class="info-card">
+            <h3>
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="13" width="3" height="8" rx="1" fill="#764ba2"/><rect x="8" y="9" width="3" height="12" rx="1" fill="#764ba2"/><rect x="13" y="5" width="3" height="16" rx="1" fill="#764ba2"/><rect x="18" y="2" width="3" height="19" rx="1" fill="#764ba2"/></svg>
+                Status & Statistik
+            </h3>
+            <div class="info-card-content">
+                <div class="info-row"><span class="info-label">Status:</span><span class="info-value" id="detailStatus">-</span></div>
+                <div class="info-row"><span class="info-label">Spiele:</span><span class="info-value" id="gamesPlayed">-</span></div>
+                <div class="info-row"><span class="info-label">Tore:</span><span class="info-value" id="goals">-</span></div>
+                <div class="info-row"><span class="info-label">Notenschnitt:</span><span class="info-value" id="averageRating">-</span></div>
+                <div class="info-row"><span class="info-label">Gelbe Karten:</span><span class="info-value" id="yellowCards">-</span></div>
+                <div class="info-row"><span class="info-label">Rote Karten:</span><span class="info-value" id="redCards">-</span></div>
+            </div>
+        </div>
+        <div class="info-card" id="attributesCard" style="display:none;">
+            <h3>⭐ Besondere Eigenschaften</h3>
+            <div class="info-card-content">
+                <div class="attributes" id="attributesList"></div>
+            </div>
+        </div>
         <div class="tabs" id="tabBar">
             <button class="tab-button" data-tab="rivals">Rivalen</button>
             <button class="tab-button" data-tab="market">Marktwerte <span id="marketTabTrend" class="trend-arrow"></span></button>
@@ -168,18 +190,39 @@
     </div>
 </div>
 <script>
+const MONATSNAMEN = [
+    "Januar", "Februar", "März", "April", "Mai", "Juni",
+    "Juli", "August", "September", "Oktober", "November", "Dezember"
+];
 const GITHUB_USER = "torresbig";
 const GITHUB_REPO = "comunioFanApp";
 let globalOwnersMap = new Map();
 
-function getPlayerUrl(playerId) {
-    const currentUrl = window.location.href;
-    if (currentUrl.includes('htmlpreview.github.io')) {
-        return `https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${playerId}`;
-    } else if (currentUrl.includes('github.com') || currentUrl.includes('githubusercontent.com')) {
-        return `https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${playerId}`;
-    } else {
-        return `player.html?id=${playerId}`;
+function fetchJSON(url) {
+    const cacheBusterUrl = url + '?t=' + new Date().getTime();
+    return fetch(cacheBusterUrl).then(res => {
+        if (!res.ok) throw new Error(`HTTP Fehler ${res.status} beim Laden von ${url}`);
+        return res.json();
+    });
+}
+
+async function loadOwnersData() {
+    try {
+        const [usersData, playerToUserMap] = await Promise.all([
+            fetchJSON(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/UserdatenbankJson_884691.txt`),
+            fetchJSON(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/PlayerToUserMap_884691.txt`)
+        ]);
+        const userMap = new Map();
+        usersData.forEach(user => {
+            userMap.set(user.user.id, `${user.user.firstName} ${user.user.lastName || ''}`);
+        });
+        playerToUserMap.forEach(item => {
+            const playerId = Object.keys(item)[0];
+            const ownerId = item[playerId];
+            globalOwnersMap.set(playerId, userMap.get(ownerId) || `Unbekannt (${ownerId})`);
+        });
+    } catch (e) {
+        console.error("Fehler beim Laden der Besitzerdaten:", e);
     }
 }
 
@@ -216,6 +259,17 @@ function getStatusDisplayName(status) {
         'NICHT_IN_LIGA': 'Nicht in Liga'
     };
     return statusMap[status] || status || 'Unbekannt';
+}
+
+function getPlayerUrl(playerId) {
+    const currentUrl = window.location.href;
+    if (currentUrl.includes('htmlpreview.github.io')) {
+        return `https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${playerId}`;
+    } else if (currentUrl.includes('github.com') || currentUrl.includes('githubusercontent.com')) {
+        return `https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${playerId}`;
+    } else {
+        return `player.html?id=${playerId}`;
+    }
 }
 
 function makeTableSortable(tableSelector, defaultSortCol = 0, defaultSortDir = 'desc') {
@@ -342,7 +396,7 @@ function displayPointsHistory(player) {
     const pointsHistory = player.data?.punkteHistorie || [];
     const currentSeason = new Date().getFullYear();
 
-    // Aktuelle Saison als Matrix
+    // Aktuelle Saison als Matrix (4 Spalten: Spieltag + Punkte)
     let html = `<h3>Aktuelle Saison (${currentSeason})</h3>
     <table class="points-table">
         <thead>
@@ -383,44 +437,67 @@ function displayPointsHistory(player) {
     container.innerHTML = html;
 }
 
-// Besitzer laden wie in paste-2.txt
-async function fetchJSON(url) {
-    const response = await fetch(url);
-    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-    return await response.json();
-}
-async function loadOwnersData() {
-    const [usersData, playerToUserMap] = await Promise.all([
-        fetchJSON(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/UserdatenbankJson_884691.txt`),
-        fetchJSON(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/PlayerToUserMap_884691.txt`)
-    ]);
-    const userMap = new Map();
-    usersData.forEach(user => {
-        userMap.set(user.user.id, `${user.user.firstName} ${user.user.lastName || ''}`);
-    });
-    playerToUserMap.forEach(item => {
-        const playerId = Object.keys(item)[0];
-        const ownerId = item[playerId];
-        globalOwnersMap.set(playerId, userMap.get(ownerId) || `Unbekannt (${ownerId})`);
-    });
+function calcAge(birthday) {
+    if (!birthday || birthday === 'N/A') return '-';
+    try {
+        const birthDate = new Date(birthday.split('.').reverse().join('-'));
+        const diff = Date.now() - birthDate.getTime();
+        const ageDate = new Date(diff);
+        return Math.abs(ageDate.getUTCFullYear() - 1970) + ' Jahre';
+    } catch {
+        return '-';
+    }
 }
 
-function initTabs() {
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const tabContents = document.querySelectorAll('.tab-content');
-    tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            tabContents.forEach(tab => tab.classList.remove('active'));
-            button.classList.add('active');
-            const tabId = button.getAttribute('data-tab');
-            document.getElementById(tabId).classList.add('active');
+function displayAttributes(player) {
+    const container = document.getElementById('attributesList');
+    const card = document.getElementById('attributesCard');
+    if (!container) return;
+    container.innerHTML = '';
+    let found = false;
+    if (player.data.attribute && player.data.attribute.length > 0) {
+        player.data.attribute.forEach(attr => {
+            if (typeof attr === 'object' && attr !== null) {
+                Object.keys(attr).forEach(key => {
+                    const value = attr[key];
+                    if (Array.isArray(value)) {
+                        value.forEach(item => {
+                            const span = document.createElement('span');
+                            span.className = 'attribute-tag';
+                            span.textContent = item;
+                            container.appendChild(span);
+                            found = true;
+                        });
+                    } else if (typeof value === 'string') {
+                        const span = document.createElement('span');
+                        span.className = 'attribute-tag';
+                        span.textContent = value;
+                        container.appendChild(span);
+                        found = true;
+                    }
+                });
+            } else if (typeof attr === 'string') {
+                const span = document.createElement('span');
+                span.className = 'attribute-tag';
+                span.textContent = attr;
+                container.appendChild(span);
+                found = true;
+            }
         });
+    }
+    card.style.display = found ? '' : 'none';
+}
+
+function setupAccordion() {
+    const infoCards = document.querySelectorAll('.info-card');
+    infoCards.forEach(card => {
+        const header = card.querySelector('h3');
+        const content = card.querySelector('.info-card-content');
+        header.onclick = () => {
+            content.classList.toggle('collapsed');
+            header.classList.toggle('collapsed');
+        };
     });
-    tabButtons.forEach(btn => btn.classList.remove('active'));
-    tabContents.forEach(tab => tab.classList.remove('active'));
-    document.querySelector('.tab-button[data-tab="market"]').classList.add('active');
-    document.getElementById('market').classList.add('active');
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -429,7 +506,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     const url = window.location.href;
     const idMatch = url.match(/[?&]id=([^&]*)/);
     const playerId = idMatch ? idMatch[1] : null;
-    if (!playerId) return;
+    if (!playerId) {
+        document.getElementById('errorMessage').textContent = "Keine Spieler-ID angegeben!";
+        document.getElementById('errorMessage').style.display = 'block';
+        document.getElementById('loadingIndicator').style.display = 'none';
+        return;
+    }
     try {
         const resp = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/SpielerdatenbankNeutralJson.txt`);
         const allPlayers = await resp.json();
@@ -467,7 +549,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const status = player.data.comunioStatus?.status || 'Unbekannt';
         document.getElementById('statusIndicator').textContent = getStatusIndicator(status);
         document.getElementById('birthday').textContent = player.data.spielerDaten.geburtstag || '-';
-        document.getElementById('age').textContent = '-'; // Alter-Berechnung ggf. ergänzen
+        document.getElementById('age').textContent = calcAge(player.data.spielerDaten.geburtstag) || '-';
         document.getElementById('height').textContent = player.data.spielerDaten.groesse || '-';
         document.getElementById('nationality').textContent = player.data.spielerDaten.nationalitaet || '-';
         document.getElementById('position').textContent = player.data.spielerDaten.hauptposition || player.data.position || '-';
@@ -478,21 +560,42 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.getElementById('lastYearPoints').textContent = player.data.lastSeasonPoints || '0';
         document.getElementById('owner').textContent = globalOwnersMap.get(player.id) || '-';
         document.getElementById('detailStatus').textContent = player.data.comunioStatus?.details || getStatusDisplayName(status);
-        document.getElementById('gamesPlayed').textContent = player.data.stats.playedGames || '0';
-        document.getElementById('goals').textContent = player.data.stats.totalGoals || '0';
-        document.getElementById('averageRating').textContent = player.data.stats.notenDurchschnitt || '0';
-        document.getElementById('yellowCards').textContent = player.data.stats.gelbekarten || '0';
-        document.getElementById('redCards').textContent = player.data.stats.rotekarten || '0';
+        document.getElementById('gamesPlayed').textContent = player.data.stats?.playedGames || '0';
+        document.getElementById('goals').textContent = player.data.stats?.totalGoals || '0';
+        document.getElementById('averageRating').textContent = player.data.stats?.notenDurchschnitt || '0';
+        document.getElementById('yellowCards').textContent = player.data.stats?.gelbekarten || '0';
+        document.getElementById('redCards').textContent = player.data.stats?.rotekarten || '0';
+        displayAttributes(player);
         displayRivals(player, allPlayers);
         displayPointsHistory(player);
         document.getElementById('loadingIndicator').style.display = 'none';
         document.getElementById('playerContent').style.display = 'block';
+
+        setupAccordion();
     } catch (err) {
         document.getElementById('errorMessage').textContent = "Fehler beim Laden der Daten: " + err.message;
         document.getElementById('errorMessage').style.display = 'block';
         document.getElementById('loadingIndicator').style.display = 'none';
     }
 });
+
+function initTabs() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabContents.forEach(tab => tab.classList.remove('active'));
+            button.classList.add('active');
+            const tabId = button.getAttribute('data-tab');
+            document.getElementById(tabId).classList.add('active');
+        });
+    });
+    tabButtons.forEach(btn => btn.classList.remove('active'));
+    tabContents.forEach(tab => tab.classList.remove('active'));
+    document.querySelector('.tab-button[data-tab="market"]').classList.add('active');
+    document.getElementById('market').classList.add('active');
+}
 </script>
 </body>
 </html>
