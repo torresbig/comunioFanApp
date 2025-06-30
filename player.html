@@ -62,6 +62,40 @@
         .club-logo { width: 34px; height: 34px; }
         .tab-button { font-size: 16px; }
     }
+    .rivals-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #f9f9ff;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 15px;
+}
+.rivals-table th, .rivals-table td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid #e3e7fa;
+}
+.rivals-table th {
+    background: #e3e7fa;
+    color: #2c3e50;
+    font-weight: 600;
+    user-select: none;
+}
+.rivals-table tr:hover {
+    background: #eef2fa;
+    cursor: pointer;
+}
+.player-id-cell {
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 2px;
+}
+.status-indicator {
+    font-size: 22px;
+    cursor: help;
+}
+
 </style>
 </head>
 <body>
@@ -424,10 +458,14 @@ function displayRivals(player, allPlayers) {
             html += `
             <tr data-player-id="${rival.id}">
                 <td class="player-cell">
-                    <div class="player-name-cell">${rival.name}</div>
-                    <div class="player-id-cell">ID: ${rival.id}</div>
-                </td>
-                <td>${getStatusIndicator(status)}</td>
+  <div class="player-name-cell">${rival.name}</div>
+  <div class="player-id-cell" style="font-size:11px;color:#aaa;">(${rival.id})</div>
+</td>
+
+                <td>  <span class="status-indicator" 
+        title="${rival.data.comunioStatus?.status || ''}${rival.data.comunioStatus?.grund ? ' - ' + rival.data.comunioStatus.grund : ''}${rival.data.comunioStatus?.seit ? ' seit ' + rival.data.comunioStatus.seit : ''}">
+    ${getStatusIndicator(rival.data.comunioStatus?.status)}
+  </span></td>
                 <td>${formatCurrencyFull(rival.data?.wert || 0)}</td>
                 <td>${formatCurrencyFull(rival.data?.realWert || 0)}</td>
                 <td>${rival.data?.punkte || 0}</td>
@@ -446,7 +484,51 @@ function displayRivals(player, allPlayers) {
     } else {
         container.innerHTML = '<p>Keine direkten Konkurrenten gefunden</p>';
     }
+    makeTableSortable('.rivals-table', 2, 'desc'); // z.B. nach Marktwert absteigend
+
 }
+
+function makeTableSortable(tableSelector, defaultSortCol = 0, defaultSortDir = 'desc') {
+    const table = document.querySelector(tableSelector);
+    if (!table) return;
+    const ths = table.querySelectorAll('th');
+    let sortCol = defaultSortCol;
+    let sortDir = defaultSortDir;
+
+    function sortTable(colIndex, dir) {
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        rows.sort((a, b) => {
+            let av = a.children[colIndex].innerText.trim();
+            let bv = b.children[colIndex].innerText.trim();
+            // Zahlen vergleichen, sonst String
+            const avNum = av.replace(/[^\d.-]/g, '');
+            const bvNum = bv.replace(/[^\d.-]/g, '');
+            if (!isNaN(avNum) && !isNaN(bvNum) && avNum !== '' && bvNum !== '') {
+                av = parseFloat(avNum);
+                bv = parseFloat(bvNum);
+            }
+            if (av < bv) return dir === 'asc' ? -1 : 1;
+            if (av > bv) return dir === 'asc' ? 1 : -1;
+            return 0;
+        });
+        rows.forEach(row => tbody.appendChild(row));
+    }
+
+    ths.forEach((th, i) => {
+        th.style.cursor = 'pointer';
+        th.addEventListener('click', () => {
+            if (sortCol === i) sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+            else { sortCol = i; sortDir = 'asc'; }
+            sortTable(sortCol, sortDir);
+        });
+    });
+
+    // Initialsortierung
+    sortTable(sortCol, sortDir);
+}
+
+    
 function displayPointsHistory(player) {
     const container = document.getElementById('pointsHistory');
     if (!container) return;
