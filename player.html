@@ -115,6 +115,58 @@
     .points-table tr:hover { background: #eef2fa; }
     .matchday-cell { font-weight: 600; color: #2c3e50; }
     .points-cell { font-weight: 600; color: #27ae60; }
+
+    /* Debug Panel */
+    .debug-panel {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 300px;
+        max-height: 500px;
+        background: rgba(0,0,0,0.9);
+        border-radius: 8px;
+        color: #fff;
+        font-family: monospace;
+        font-size: 12px;
+        z-index: 9999;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .debug-header {
+        background: #444;
+        padding: 8px 12px;
+        border-radius: 8px 8px 0 0;
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+    }
+    .debug-content {
+        padding: 10px;
+        max-height: 400px;
+        overflow-y: auto;
+        transition: max-height 0.3s ease;
+    }
+    .debug-content.collapsed {
+        max-height: 0;
+        padding: 0 10px;
+        overflow: hidden;
+    }
+    .debug-entry {
+        margin-bottom: 5px;
+        padding: 3px 0;
+        border-bottom: 1px solid #333;
+    }
+    .debug-timestamp {
+        color: #888;
+        font-size: 10px;
+    }
+    .debug-level-info { color: #4CAF50; }
+    .debug-level-warn { color: #FF9800; }
+    .debug-level-error { color: #F44336; }
+    .debug-level-success { color: #8BC34A; }
+
     @media (max-width: 600px) {
         .container { padding: 5px; }
         .market-month-header { font-size: 14px; }
@@ -122,10 +174,19 @@
         .player-name { font-size: 16px; }
         .club-logo { width: 34px; height: 34px; }
         .tab-button { font-size: 16px; }
+        .debug-panel { width: 250px; right: 5px; top: 5px; }
     }
 </style>
 </head>
 <body>
+<!-- Debug Panel -->
+<div class="debug-panel">
+    <div class="debug-header" onclick="toggleDebug()">
+        🐛 Debug Log <span id="debugToggle">▼</span>
+    </div>
+    <div class="debug-content" id="debugContent"></div>
+</div>
+
 <nav class="navbar">
     <button class="back-btn" onclick="window.history.back()">← Zurück</button>
     <div class="player-header">
@@ -195,4 +256,673 @@
             <button class="tab-button" data-tab="points">Punkte</button>
         </div>
         <div id="rivals" class="tab-content">
-            <h3 id="rivalsHeader">Direkte Konk
+            <h3 id="rivalsHeader">Direkte Konkurrenten</h3>
+            <div id="rivalsList"></div>
+        </div>
+        <div id="market" class="tab-content">
+            <div id="marketValueChart"></div>
+        </div>
+        <div id="points" class="tab-content">
+            <div id="pointsHistory"></div>
+        </div>
+    </div>
+</div>
+<script>
+// Debug System
+let debugLog = [];
+function debug(message, level = 'info') {
+    const timestamp = new Date().toLocaleTimeString();
+    const entry = { timestamp, message, level };
+    debugLog.push(entry);
+    updateDebugDisplay();
+    console.log(`[${timestamp}] ${level.toUpperCase()}: ${message}`);
+}
+
+function updateDebugDisplay() {
+    const container = document.getElementById('debugContent');
+    if (!container) return;
+    const html = debugLog.slice(-20).map(entry => `
+        <div class="debug-entry">
+            <span class="debug-timestamp">${entry.timestamp}</span>
+            <span class="debug-level-${entry.level}"> ${entry.message}</span>
+        </div>
+    `).join('');
+    container.innerHTML = html;
+    container.scrollTop = container.scrollHeight;
+}
+
+function toggleDebug() {
+    const content = document.getElementById('debugContent');
+    const toggle = document.getElementById('debugToggle');
+    if (content.classList.contains('collapsed')) {
+        content.classList.remove('collapsed');
+        toggle.textContent = '▼';
+    } else {
+        content.classList.add('collapsed');
+        toggle.textContent = '▶';
+    }
+}
+
+const MONATSNAMEN = [
+    "Januar", "Februar", "März", "April", "Mai", "Juni",
+    "Juli", "August", "September", "Oktober", "November", "Dezember"
+];
+const GITHUB_USER = "torresbig";
+const GITHUB_REPO = "comunioFanApp";
+let globalOwnersMap = new Map();
+
+debug('Script gestartet', 'info');
+
+async function fetchJSON(url) {
+    debug(`Lade JSON von: ${url}`, 'info');
+    try {
+        const response = await fetch(url);
+        debug(`Response Status: ${response.status}`, response.ok ? 'success' : 'error');
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        const data = await response.json();
+        debug(`JSON erfolgreich geladen (${Array.isArray(data) ? data.length + ' Einträge' : 'Object'})`, 'success');
+        return data;
+    } catch (error) {
+        debug(`Fehler beim JSON-Laden: ${error.message}`, 'error');
+        throw error;
+    }
+}
+
+async function loadOwnersData() {
+    debug('Lade Besitzerdaten...', 'info');
+    try {
+        const [usersData, playerToUserMap] = await Promise.all([
+            fetchJSON(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/UserdatenbankJson_884691.txt`),
+            fetchJSON(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/PlayerToUserMap_884691.txt`)
+        ]);
+
+        const userMap = new Map();
+        usersData.forEach(user => {
+            userMap.set(user.user.id, `${user.user.firstName} ${user.user.lastName || ''}`);
+        });
+
+        playerToUserMap.forEach(item => {
+            const playerId = Object.keys(item)[0];
+            const ownerId = item[playerId];
+            globalOwnersMap.set(playerId, userMap.get(ownerId) || `Unbekannt (${ownerId})`);
+        });
+        debug(`Besitzerdaten geladen: ${globalOwnersMap.size} Zuordnungen`, 'success');
+    } catch (error) {
+        debug(`Fehler beim Laden der Besitzerdaten: ${error.message}`, 'error');
+    }
+}
+
+function formatCurrencyFull(value) {
+    if (!value || value === 0) return '-';
+    return value.toLocaleString('de-DE') + ' €';
+}
+
+function formatCurrencyShort(value) {
+    if (!value || value === 0) return '-';
+    if (value >= 1_000_000) return (value / 1_000_000).toFixed(1).replace('.', ',').replace(',0','') + ' Mio €';
+    if (value >= 1_000) return (value / 1_000).toFixed(1).replace('.', ',').replace(',0','') + ' Tsd €';
+    return value + ' €';
+}
+
+function unicodeTrend(trend) {
+    if (trend === "up")   return '<span class="trend-mini trend-up">&#9650;</span>';
+    if (trend === "down") return '<span class="trend-mini trend-down">&#9660;</span>';
+    if (trend === "eq")   return '<span class="trend-mini trend-eq">&#8213;</span>';
+    return "";
+}
+
+function avgIcon() {
+    return `<svg class="market-avg-icon" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="#b3c6e7" stroke="#3498db" stroke-width="2"/><text x="10" y="14" text-anchor="middle" font-size="10" fill="#3498db" font-family="Arial" font-weight="bold">Ø</text></svg>`;
+}
+
+async function loadPlayerMarketValues(playerId) {
+    debug(`Lade Marktwerte für Spieler ${playerId}`, 'info');
+    try {
+        const resp = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/MarktwerteJson.txt`);
+        const data = await resp.json();
+        const entry = data.find(e => String(e.id) === String(playerId));
+        if (!entry || !entry.data || !entry.data.normal) {
+            debug(`Keine Marktwerte für Spieler ${playerId} gefunden`, 'warn');
+            return [];
+        }
+        debug(`Marktwerte geladen: ${entry.data.normal.length} Einträge`, 'success');
+        return entry.data.normal;
+    } catch (error) {
+        debug(`Fehler beim Laden der Marktwerte: ${error.message}`, 'error');
+        return [];
+    }
+}
+
+async function displayMarketValue(player) {
+    const container = document.getElementById('marketValueChart');
+    if (!container) return;
+    const playerId = player.id;
+    const marketValues = await loadPlayerMarketValues(playerId);
+    if (!marketValues || marketValues.length === 0) {
+        container.innerHTML = "<p>Keine Marktwertdaten verfügbar.</p>";
+        document.getElementById('marketTabTrend').innerHTML = "";
+        return;
+    }
+    marketValues.sort((a, b) => {
+        const [d1, m1, y1] = a.date.split('.');
+        const [d2, m2, y2] = b.date.split('.');
+        return new Date(`${y2}-${m2}-${d2}`) - new Date(`${y1}-${m1}-${d1}`);
+    });
+    const monthlyData = {};
+    marketValues.forEach(entry => {
+        const [day, month, year] = entry.date.split('.');
+        const key = `${year}-${month}`;
+        if (!monthlyData[key]) monthlyData[key] = [];
+        monthlyData[key].push({
+            ...entry,
+            dateObj: new Date(`${year}-${month}-${day}`)
+        });
+    });
+    const monthlyAverages = {};
+    Object.keys(monthlyData).forEach(key => {
+        const values = monthlyData[key].map(e => e.wert);
+        const avg = Math.round(values.reduce((a, b) => a + b, 0) / values.length);
+        monthlyAverages[key] = avg;
+    });
+    const firstDayOfMonth = {};
+    Object.keys(monthlyData).forEach(key => {
+        firstDayOfMonth[key] = monthlyData[key][monthlyData[key].length - 1];
+    });
+    const sortedMonths = Object.keys(monthlyData).sort((a, b) => b.localeCompare(a));
+    let trendForTab = '';
+    if (sortedMonths.length > 0 && monthlyData[sortedMonths[0]].length > 1) {
+        const firstMonth = sortedMonths[0];
+        const entries = monthlyData[firstMonth];
+        if (entries[0].wert > entries[1].wert) trendForTab = "▲";
+        else if (entries[0].wert < entries[1].wert) trendForTab = "▼";
+        else trendForTab = "—";
+    }
+    document.getElementById('marketTabTrend').textContent = trendForTab;
+    let html = '';
+    sortedMonths.forEach((monthKey, idx) => {
+        const [year, month] = monthKey.split('-');
+        const monthName = `${MONATSNAMEN[parseInt(month, 10) - 1]} ${year}`;
+        const entries = monthlyData[monthKey];
+        let trendIcon = '';
+        if (idx < sortedMonths.length - 1) {
+            const prevMonthKey = sortedMonths[idx + 1];
+            if (monthlyAverages[monthKey] > monthlyAverages[prevMonthKey]) trendIcon = unicodeTrend("up");
+            else if (monthlyAverages[monthKey] < monthlyAverages[prevMonthKey]) trendIcon = unicodeTrend("down");
+            else trendIcon = unicodeTrend("eq");
+        }
+        const isCurrentMonth = idx === 0;
+        html += `
+            <div class="market-month-block">
+                <div class="market-month-header ${isCurrentMonth ? '' : 'collapsed'}" data-month="${monthKey}">
+                    ${monthName}
+                    <span class="market-month-avg">${avgIcon()} ${formatCurrencyShort(monthlyAverages[monthKey])} ${trendIcon}</span>
+                </div>
+                <div class="market-list ${isCurrentMonth ? '' : 'collapsed'}">
+        `;
+        for (let i = 0; i < entries.length; i++) {
+            let dayTrend = '';
+            let compareValue = null;
+            if (i < entries.length - 1) {
+                compareValue = entries[i + 1].wert;
+            } else if (idx < sortedMonths.length - 1) {
+                const prevMonthKey = sortedMonths[idx + 1];
+                if (firstDayOfMonth[prevMonthKey]) {
+                    compareValue = firstDayOfMonth[prevMonthKey].wert;
+                }
+            }
+            if (!(idx === sortedMonths.length - 1 && i === entries.length - 1) && compareValue !== null) {
+                if (entries[i].wert > compareValue) dayTrend = unicodeTrend("up");
+                else if (entries[i].wert < compareValue) dayTrend = unicodeTrend("down");
+                else dayTrend = unicodeTrend("eq");
+            }
+            html += `
+                <div class="market-list-row">
+                    <span class="market-list-date">${entries[i].date}</span>
+                    <span class="market-list-value">${formatCurrencyFull(entries[i].wert)}${dayTrend}</span>
+                </div>
+            `;
+        }
+        html += '</div></div>';
+    });
+    container.innerHTML = html;
+    document.querySelectorAll('.market-month-header').forEach(header => {
+        const monthKey = header.getAttribute('data-month');
+        const isCurrentMonth = monthKey === sortedMonths[0];
+        if (isCurrentMonth) return;
+        const content = header.nextElementSibling;
+        header.addEventListener('click', () => {
+            header.classList.toggle('collapsed');
+            content.classList.toggle('collapsed');
+        });
+    });
+    debug('Marktwerte-Display aktualisiert', 'success');
+}
+
+function displayAttributes(player) {
+    const container = document.getElementById('attributesList');
+    const card = document.getElementById('attributesCard');
+    if (!container) return;
+    container.innerHTML = '';
+    let found = false;
+    if (player.data.attribute && player.data.attribute.length > 0) {
+        player.data.attribute.forEach(attr => {
+            if (typeof attr === 'object' && attr !== null) {
+                Object.keys(attr).forEach(key => {
+                    const value = attr[key];
+                    if (Array.isArray(value)) {
+                        value.forEach(item => {
+                            const span = document.createElement('span');
+                            span.className = 'attribute-tag';
+                            span.textContent = item;
+                            container.appendChild(span);
+                            found = true;
+                        });
+                    } else if (typeof value === 'string') {
+                        const span = document.createElement('span');
+                        span.className = 'attribute-tag';
+                        span.textContent = value;
+                        container.appendChild(span);
+                        found = true;
+                    }
+                });
+            } else if (typeof attr === 'string') {
+                const span = document.createElement('span');
+                span.className = 'attribute-tag';
+                span.textContent = attr;
+                container.appendChild(span);
+                found = true;
+            }
+        });
+    }
+    card.style.display = found ? '' : 'none';
+    debug(`Attribute angezeigt: ${found ? 'Ja' : 'Keine'}`, found ? 'success' : 'info');
+}
+
+function calcAge(birthday) {
+    if (!birthday || birthday === 'N/A') return '-';
+    try {
+        const birthDate = new Date(birthday.split('.').reverse().join('-'));
+        const diff = Date.now() - birthDate.getTime();
+        const ageDate = new Date(diff);
+        return Math.abs(ageDate.getUTCFullYear() - 1970) + ' Jahre';
+    } catch {
+        return '-';
+    }
+}
+
+function getStatusIndicator(status) {
+    switch(status) {
+        case 'AKTIV': return '👍';
+        case 'VERLETZT': return '🚨';
+        case 'REHA': return '🔄';
+        case 'AUFBAUTRAINING': return '🏋️💪';
+        case 'NICHT_IN_LIGA': return '❌';
+        case 'FUENFTE_GELBE_KARTE': return '🟨';
+        case 'GELBROTE_KARTE': return '🟨🟥';
+        case 'ROTE_KARTE': return '🟥';
+        case 'NICHT_IM_KADER': return '🚫';
+        default: return '❓';
+    }
+}
+
+function getStatusDisplayName(status) {
+    const statusMap = {
+        'AKTIV': 'Aktiv',
+        'VERLETZT': 'Verletzt',
+        'REHA': 'Reha',
+        'AUFBAUTRAINING': 'Aufbautraining',
+        'NICHT_IM_KADER': 'Nicht im Kader',
+        'ROTE_KARTE': 'Rote Karte',
+        'GELBROTE_KARTE': 'Gelbrote Karte',
+        'FUENFTE_GELBE_KARTE': '5. gelbe Karte',
+        'NICHT_IN_LIGA': 'Nicht in Liga'
+    };
+    return statusMap[status] || status || 'Unbekannt';
+}
+
+function getPlayerUrl(playerId) {
+    const currentUrl = window.location.href;
+    if (currentUrl.includes('htmlpreview.github.io')) {
+        return `https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${playerId}`;
+    } else if (currentUrl.includes('github.com') || currentUrl.includes('githubusercontent.com')) {
+        return `https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${playerId}`;
+    } else {
+        return `player.html?id=${playerId}`;
+    }
+}
+
+function makeTableSortable(tableSelector, defaultSortCol = 0, defaultSortDir = 'desc') {
+    const table = document.querySelector(tableSelector);
+    if (!table) return;
+    const ths = table.querySelectorAll('th');
+    let sortCol = defaultSortCol;
+    let sortDir = defaultSortDir;
+
+    function sortTable(colIndex, dir) {
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        rows.sort((a, b) => {
+            const aCell = a.children[colIndex];
+            const bCell = b.children[colIndex];
+            let aValue = aCell.getAttribute('data-sort') || aCell.textContent;
+            let bValue = bCell.getAttribute('data-sort') || bCell.textContent;
+            if ([2, 3, 4].includes(colIndex)) {
+                aValue = parseFloat(aValue.replace(/[^\d.-]/g, '')) || 0;
+                bValue = parseFloat(bValue.replace(/[^\d.-]/g, '')) || 0;
+                return dir === 'asc' ? aValue - bValue : bValue - aValue;
+            } else {
+                aValue = aValue.toString().toLowerCase();
+                bValue = bValue.toString().toLowerCase();
+                if (aValue < bValue) return dir === 'asc' ? -1 : 1;
+                if (aValue > bValue) return dir === 'asc' ? 1 : -1;
+                return 0;
+            }
+        });
+        rows.forEach(row => tbody.appendChild(row));
+    }
+
+    ths.forEach((th, i) => {
+        th.style.cursor = 'pointer';
+        let arrowSpan = th.querySelector('.sort-arrow');
+        if (!arrowSpan) {
+            arrowSpan = document.createElement('span');
+            arrowSpan.className = 'sort-arrow';
+            th.appendChild(arrowSpan);
+        }
+        th.addEventListener('click', () => {
+            ths.forEach(h => h.querySelector('.sort-arrow').textContent = '');
+            if (sortCol === i) {
+                sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+            } else {
+                sortCol = i;
+                sortDir = 'asc';
+            }
+            arrowSpan.textContent = sortDir === 'asc' ? '▲' : '▼';
+            sortTable(sortCol, sortDir);
+        });
+    });
+
+    sortTable(sortCol, sortDir);
+    if (ths[sortCol]) {
+        ths[sortCol].querySelector('.sort-arrow').textContent = sortDir === 'asc' ? '▲' : '▼';
+    }
+}
+
+function displayRivals(player, allPlayers) {
+    debug('Erstelle Rivalen-Tabelle', 'info');
+    const container = document.getElementById('rivalsList');
+    const header = document.getElementById('rivalsHeader');
+    if (!container) return;
+    const rivals = allPlayers.filter(p => 
+        p.data?.position === player.data?.position &&
+        p.data?.verein === player.data?.verein 
+    ).sort((a,b) => b.data?.wert - a.data?.wert);
+
+    debug(`${rivals.length} Rivalen gefunden`, 'success');
+    header.textContent = `${rivals.length} Direkte Konkurrenten`;
+
+    if (rivals.length > 0) {
+        let html = `
+        <table class="rivals-table">
+            <thead>
+                <tr>
+                    <th>Spieler</th>
+                    <th>Status</th>
+                    <th>Marktwert</th>
+                    <th>Realwert</th>
+                    <th>Punkte</th>
+                    <th>Besitzer</th>
+                </tr>
+            </thead>
+            <tbody>
+        `;
+        rivals.forEach(rival => {
+            const statusData = rival.data.comunioStatus || {};
+            const statusTooltip = `${getStatusDisplayName(statusData.status)}${statusData.grund ? ' - ' + statusData.grund : ''}${statusData.seit ? ' seit ' + statusData.seit : ''}`;
+            const ownerName = globalOwnersMap.get(rival.id) || "Computer";
+            const playerUrl = getPlayerUrl(rival.id);
+
+            html += `
+            <tr data-player-id="${rival.id}">
+                <td class="player-cell" data-sort="${rival.name}">
+                    <div class="player-name-cell">
+                        <a href="${playerUrl}" class="player-link" title="Zum Spieler">${rival.name}</a>
+                    </div>
+                    <div class="player-id-cell">(${rival.id})</div>
+                </td>
+                <td data-sort="${statusData.status || ''}">
+                    <span class="status-indicator" title="${statusTooltip}" style="font-size: 22px;">
+                        ${getStatusIndicator(statusData.status)}
+                    </span>
+                </td>
+                <td data-sort="${rival.data?.wert || 0}">${formatCurrencyFull(rival.data?.wert || 0)}</td>
+                <td data-sort="${rival.data?.realWert || 0}">${formatCurrencyFull(rival.data?.realWert || 0)}</td>
+                <td data-sort="${rival.data?.punkte || 0}">${rival.data?.punkte || 0}</td>
+                <td data-sort="${ownerName}">${ownerName}</td>
+            </tr>
+            `;
+        });
+        html += '</tbody></table>';
+        container.innerHTML = html;
+        makeTableSortable('.rivals-table', 2, 'desc');
+    } else {
+        container.innerHTML = '<p>Keine direkten Konkurrenten gefunden</p>';
+    }
+}
+
+function displayPointsHistory(player) {
+    debug('Erstelle Punkte-Anzeige', 'info');
+    const container = document.getElementById('pointsHistory');
+    if (!container) return;
+    const pointsHistory = player.data?.punkteHistorie || [];
+    const spieltagspunkte = player.data?.spieltagspunkte || [];
+    const currentPoints = player.data?.punkte || 0;
+    const currentSeason = new Date().getFullYear();
+    
+    // Aktuelle Saison in schönem Tabellenformat (4 Spalten)
+    let html = `
+        <h3>📈 Punkteverlauf - Aktuelle Saison (${currentSeason})</h3>
+        <table class="points-table">
+            <thead>
+                <tr>
+                    <th>Spieltag</th><th>Punkte</th>
+                    <th>Spieltag</th><th>Punkte</th>
+                    <th>Spieltag</th><th>Punkte</th>
+                    <th>Spieltag</th><th>Punkte</th>
+                </tr>
+            </thead>
+            <tbody>
+    `;
+    
+    // Erzeuge 34 Zeilen für die Spieltage (4er-Gruppen)
+    for (let i = 1; i <= 34; i += 4) {
+        html += '<tr>';
+        for (let j = 0; j < 4; j++) {
+            const spieltag = i + j;
+            if (spieltag > 34) {
+                html += '<td></td><td></td>';
+            } else {
+                const punktEntry = spieltagspunkte.find(p => p.spieltag === spieltag);
+                const punkte = punktEntry ? punktEntry.punkte : '-';
+                html += `<td class="matchday-cell">${spieltag}</td><td class="points-cell">${punkte}</td>`;
+            }
+        }
+        html += '</tr>';
+    }
+    
+    html += `
+            </tbody>
+        </table>
+    `;
+    
+    // Historische Punkte
+    if (pointsHistory.length > 0) {
+        html += '<h3>📅 Historische Saisons</h3>';
+        html += '<table class="points-table">';
+        html += '<thead><tr><th>Saison</th><th>Punkte</th></tr></thead><tbody>';
+        pointsHistory.forEach(season => {
+            html += `<tr><td>${season.key}</td><td>${season.value}</td></tr>`;
+        });
+        html += '</tbody></table>';
+    }
+    
+    container.innerHTML = html;
+    debug('Punkte-Anzeige erstellt', 'success');
+}
+
+function setupAccordion() {
+    const infoCards = document.querySelectorAll('.info-card');
+    infoCards.forEach((card, index) => {
+        const header = card.querySelector('h3');
+        const content = card.querySelector('.info-card-content');
+        header.onclick = () => {
+            content.classList.toggle('collapsed');
+            header.classList.toggle('collapsed');
+        };
+    });
+    debug('Accordion eingerichtet', 'success');
+}
+
+function initTabs() {
+    debug('Initialisiere Tabs', 'info');
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabContents.forEach(tab => tab.classList.remove('active'));
+            button.classList.add('active');
+            const tabId = button.getAttribute('data-tab');
+            document.getElementById(tabId).classList.add('active');
+            debug(`Tab gewechselt zu: ${tabId}`, 'info');
+        });
+    });
+    tabButtons.forEach(btn => btn.classList.remove('active'));
+    tabContents.forEach(tab => tab.classList.remove('active'));
+    document.querySelector('.tab-button[data-tab="market"]').classList.add('active');
+    document.getElementById('market').classList.add('active');
+    debug('Tabs initialisiert', 'success');
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+    debug('DOM geladen - starte Initialisierung', 'info');
+    
+    await loadOwnersData();
+    initTabs();
+    
+    const url = window.location.href;
+    debug(`Aktuelle URL: ${url}`, 'info');
+    
+    const idMatch = url.match(/[?&]id=([^&]*)/);
+    const playerId = idMatch ? idMatch[1] : null;
+    
+    debug(`Extrahierte Spieler-ID: ${playerId}`, playerId ? 'success' : 'error');
+    
+    if (!playerId) {
+        const errorMsg = "Keine Spieler-ID in der URL gefunden!";
+        document.getElementById('errorMessage').textContent = errorMsg;
+        document.getElementById('errorMessage').style.display = 'block';
+        document.getElementById('loadingIndicator').style.display = 'none';
+        debug(errorMsg, 'error');
+        return;
+    }
+    
+    try {
+        debug('Lade Spielerdatenbank...', 'info');
+        const resp = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/SpielerdatenbankNeutralJson.txt`);
+        const allPlayers = await resp.json();
+        debug(`Spielerdatenbank geladen: ${allPlayers.length} Spieler`, 'success');
+        
+        let player = allPlayers.find(p => String(p.id) === String(playerId));
+        if (!player) player = allPlayers.find(p => parseInt(p.id) === parseInt(playerId));
+        
+        if (!player) {
+            const errorMsg = `Spieler mit ID ${playerId} nicht gefunden!`;
+            document.getElementById('errorMessage').textContent = errorMsg;
+            document.getElementById('errorMessage').style.display = 'block';
+            document.getElementById('loadingIndicator').style.display = 'none';
+            debug(errorMsg, 'error');
+            return;
+        }
+        
+        debug(`Spieler gefunden: ${player.name} (ID: ${player.id})`, 'success');
+        
+        // Spieler-Daten setzen
+        document.getElementById('playerNameLink').textContent = player.name;
+        document.getElementById('playerId').textContent = `ID: ${player.id}`;
+        
+        if (player.data && player.data.transfermarktDoDe && player.data.transfermarktDoDe.link) {
+            document.getElementById('playerNameLink').href = player.data.transfermarktDoDe.link;
+        } else {
+            document.getElementById('playerNameLink').href = "#";
+            document.getElementById('playerNameLink').style.cursor = "default";
+            document.getElementById('playerNameLink').style.textDecoration = "none";
+        }
+        
+        const clubId = player.data?.verein || "0";
+        function getLogoFileName(clubId) {
+            if (!clubId) return "unbestimmt.png";
+            const mapping = {
+                "3": "gladbach", "21": "freiburg", "18": "mainz", "92": "leipzig",
+                "1": "bayern", "6": "werderBremen", "12": "wolfsburg", "5": "dortmund",
+                "8": "leverkusen", "13": "koeln", "14": "stuttgart", "533": "hoffenheim",
+                "68": "augsburg", "9": "frankfurt", "109": "unionBerlin", "110": "heidenheim",
+                "25": "stpauli", "4": "hamburg",
+            };
+            return (mapping[clubId] || "unbestimmt") + ".png";
+        }
+        
+        document.getElementById('clubLogo').innerHTML =
+            `<img src="logos/${getLogoFileName(clubId)}" alt="" style="width:100%;height:100%;object-fit:contain">`;
+        
+        const status = player.data?.comunioStatus?.status || 'Unbekannt';
+        document.getElementById('statusIndicator').textContent = getStatusIndicator(status);
+        
+        // Spielerdaten füllen
+        document.getElementById('birthday').textContent = player.data?.spielerDaten?.geburtstag || '-';
+        document.getElementById('age').textContent = calcAge(player.data?.spielerDaten?.geburtstag) || '-';
+        document.getElementById('height').textContent = player.data?.spielerDaten?.groesse || '-';
+        document.getElementById('nationality').textContent = player.data?.spielerDaten?.nationalitaet || '-';
+        document.getElementById('position').textContent = player.data?.spielerDaten?.hauptposition || player.data?.position || '-';
+        document.getElementById('foot').textContent = player.data?.spielerDaten?.fuss || '-';
+        document.getElementById('jerseyNumber').textContent = player.data?.spielerDaten?.trikotNummer || '-';
+        
+        document.getElementById('comunioPosition').textContent = player.data?.position || '-';
+        document.getElementById('marketValue').textContent = formatCurrencyFull(player.data?.wert);
+        document.getElementById('lastYearPoints').textContent = player.data?.lastSeasonPoints || '0';
+        document.getElementById('owner').textContent = globalOwnersMap.get(player.id) || "Computer";
+        
+        document.getElementById('detailStatus').textContent = player.data?.comunioStatus?.details || getStatusDisplayName(status);
+        document.getElementById('gamesPlayed').textContent = player.data?.stats?.playedGames || '0';
+        document.getElementById('goals').textContent = player.data?.stats?.totalGoals || '0';
+        document.getElementById('averageRating').textContent = player.data?.stats?.notenDurchschnitt || '0';
+        document.getElementById('yellowCards').textContent = player.data?.stats?.gelbekarten || '0';
+        document.getElementById('redCards').textContent = player.data?.stats?.rotekarten || '0';
+        
+        debug('Basis-Spielerdaten gesetzt', 'success');
+        
+        // Komplexere Anzeigen
+        displayAttributes(player);
+        displayRivals(player, allPlayers);
+        await displayMarketValue(player);
+        displayPointsHistory(player);
+        
+        // UI fertigstellen
+        document.getElementById('loadingIndicator').style.display = 'none';
+        document.getElementById('playerContent').style.display = 'block';
+        setupAccordion();
+        
+        debug('Spielerseite vollständig geladen', 'success');
+        
+    } catch (err) {
+        const errorMsg = "Fehler beim Laden der Daten: " + err.message;
+        document.getElementById('errorMessage').textContent = errorMsg;
+        document.getElementById('errorMessage').style.display = 'block';
+        document.getElementById('loadingIndicator').style.display = 'none';
+        debug(errorMsg, 'error');
+        console.error('Detaillierter Fehler:', err);
+    }
+});
+</script>
+</body>
+</html>
