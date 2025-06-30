@@ -185,7 +185,8 @@ function avgIcon() {
     return `<svg class="market-avg-icon" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="#b3c6e7" stroke="#3498db" stroke-width="2"/><text x="10" y="14" text-anchor="middle" font-size="10" fill="#3498db" font-family="Arial" font-weight="bold">Ø</text></svg>`;
 }
 async function loadPlayerMarketValues(playerId) {
-    const resp = await fetch('https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/MarktwerteJson.txt');
+    const resp = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/MarktwerteJson.txt`);
+
     const data = await resp.json();
     const entry = data.find(e => String(e.id) === String(playerId));
     if (!entry || !entry.data || !entry.data.normal) return [];
@@ -499,7 +500,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const playerId = idMatch ? idMatch[1] : null;
     if (!playerId) return;
     try {
-        const resp = await fetch('https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/SpielerdatenbankNeutralJson.txt');
+        const resp = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/SpielerdatenbankNeutralJson.txt`);
         const allPlayers = await resp.json();
         let player = allPlayers.find(p => String(p.id) === String(playerId));
         if (!player) player = allPlayers.find(p => parseInt(p.id) === parseInt(playerId));
