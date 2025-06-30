@@ -203,6 +203,20 @@ async function fetchJSON(url) {
     return await response.json();
 }
 
+    function getPlayerUrl(playerId) {
+    const currentUrl = window.location.href;
+    if (currentUrl.includes('htmlpreview.github.io')) {
+        // Für htmlpreview.github.io
+        return `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/blob/main/player.html?id=${playerId}`;
+    } else if (currentUrl.includes('github.com') || currentUrl.includes('githubusercontent.com')) {
+        // Für direkten GitHub-Zugriff
+        return `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/blob/main/player.html?id=${playerId}`;
+    } else {
+        // Für lokale oder andere Server
+        return `player.html?id=${playerId}`;
+    }
+}
+
 async function loadOwnersData() {
     try {
         const [usersData, playerToUserMap] = await Promise.all([
@@ -555,28 +569,31 @@ function displayRivals(player, allPlayers) {
             <tbody>
         `;
         rivals.forEach(rival => {
-            const statusData = rival.data.comunioStatus || {};
-            const statusTooltip = `${getStatusDisplayName(statusData.status)}${statusData.grund ? ' - ' + statusData.grund : ''}${statusData.seit ? ' seit ' + statusData.seit : ''}`;
-            const ownerName = getOwnerName(rival.id);
-            
-            html += `
-            <tr data-player-id="${rival.id}">
-                <td class="player-cell" data-sort="${rival.name}">
-                    <div class="player-name-cell">${rival.name}</div>
-                    <div class="player-id-cell">(${rival.id})</div>
-                </td>
-                <td data-sort="${statusData.status || ''}">
-                    <span class="status-indicator" title="${statusTooltip}">
-                        ${getStatusIndicator(statusData.status)}
-                    </span>
-                </td>
-                <td data-sort="${rival.data?.wert || 0}">${formatCurrencyFull(rival.data?.wert || 0)}</td>
-                <td data-sort="${rival.data?.realWert || 0}">${formatCurrencyFull(rival.data?.realWert || 0)}</td>
-                <td data-sort="${rival.data?.punkte || 0}">${rival.data?.punkte || 0}</td>
-                <td data-sort="${ownerName}">${ownerName}</td>
-            </tr>
-            `;
-        });
+    const statusData = rival.data.comunioStatus || {};
+    const statusTooltip = `${getStatusDisplayName(statusData.status)}${statusData.grund ? ' - ' + statusData.grund : ''}${statusData.seit ? ' seit ' + statusData.seit : ''}`;
+    const ownerName = getOwnerName(rival.id);
+    const playerUrl = getPlayerUrl(rival.id);
+
+    html += `
+    <tr data-player-id="${rival.id}">
+        <td class="player-cell" data-sort="${rival.name}">
+            <div class="player-name-cell">
+                <a href="${playerUrl}" class="player-link" title="Zum Spieler">${rival.name}</a>
+            </div>
+            <div class="player-id-cell">(${rival.id})</div>
+        </td>
+        <td data-sort="${statusData.status || ''}">
+            <span class="status-indicator" title="${statusTooltip}">
+                ${getStatusIndicator(statusData.status)}
+            </span>
+        </td>
+        <td data-sort="${rival.data?.wert || 0}">${formatCurrencyFull(rival.data?.wert || 0)}</td>
+        <td data-sort="${rival.data?.realWert || 0}">${formatCurrencyFull(rival.data?.realWert || 0)}</td>
+        <td data-sort="${rival.data?.punkte || 0}">${rival.data?.punkte || 0}</td>
+        <td data-sort="${ownerName}">${ownerName}</td>
+    </tr>
+    `;
+});
         html += '</tbody></table>';
         container.innerHTML = html;
         document.querySelectorAll('.rivals-table tbody tr').forEach(row => {
