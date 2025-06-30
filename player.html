@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Spieler Details</title>
 <style>
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; color: #333; padding-bottom: 140px; margin: 0;}
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; color: #333; margin: 0; }
     .navbar { background: linear-gradient(135deg, #34495e, #2c3e50); color: white; padding: 10px 15px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.2);}
     .player-header { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1200px; margin: 0 auto; padding: 10px 0;}
     .player-center { display: flex; flex-direction: column; align-items: center; flex: 1;}
@@ -24,37 +24,58 @@
     .info-card h3 { margin-bottom: 12px; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; font-size: 16px; display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none;}
     .info-card h3:after { content: "▼"; font-size: 0.8em; margin-left: 10px; display: inline-block; transition: transform 0.2s;}
     .info-card h3.collapsed:after { transform: rotate(-90deg);}
-    .info-card .stat-icon { width: 22px; height: 22px; vertical-align: middle; margin-right: 6px; }
     .info-card-content { overflow: hidden; max-height: 1000px; transition: max-height 0.3s ease-out;}
     .info-card-content.collapsed { max-height: 0;}
     .info-row { display: flex; justify-content: space-between; margin-bottom: 8px; padding: 5px 0; border-bottom: 1px solid #eee;}
     .info-row:last-child { border-bottom: none;}
     .info-label { font-weight: 600; color: #7f8c8d; font-size: 13px; flex: 1;}
     .info-value { font-weight: 600; color: #2c3e50; font-size: 13px; flex: 1; text-align: right;}
-    .attributes { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px;}
-    .attribute-tag { background: linear-gradient(135deg, #9b59b6, #8e44ad); color: white; padding: 4px 8px; border-radius: 15px; font-size: 12px; font-weight: 600;}
     .tabs { display: flex; justify-content: center; margin: 20px 0 0 0; border-bottom: 1px solid #ddd;}
     .tab-button { position:relative; padding: 10px 20px; background: #2c3e50; color: white; border: none; cursor: pointer; font-size: 22px; margin: 0 5px; border-radius: 16px 16px 0 0; transition: background 0.3s; display: flex; align-items: center;}
     .tab-button.active { background: #3498db;}
     .tab-button .trend-arrow { display: flex; align-items: center; margin-left: 7px;}
     .tab-content { display: none; padding: 15px; background: rgba(255,255,255,0.95); border-radius: 0 0 10px 10px;}
     .tab-content.active { display: block;}
-    .market-month-block { margin: 18px 0 8px 0; padding: 0; border-radius: 8px; background: #f9f9ff;}
-    .market-month-header { font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 8px; cursor: pointer; padding: 10px 12px; border-radius: 8px 8px 0 0; background: #e3e7fa; user-select: none;}
-    .market-month-header:after { content: "▼"; font-size: 0.8em; margin-left: auto; transition: transform 0.2s;}
-    .market-month-header.collapsed:after { transform: rotate(-90deg);}
-    .market-month-avg { font-weight: 400; font-size: 13px; color: #444; display: flex; align-items: center; gap: 4px;}
-    .market-avg-icon { width: 18px; height: 18px; display: inline-block; vertical-align: middle; }
-    .market-list { display: flex; flex-direction: column; gap: 6px; margin-bottom: 8px; padding: 0 12px; overflow: hidden; max-height: 1000px; transition: max-height 0.3s ease-out;}
-    .market-list.collapsed { max-height: 0; padding: 0 12px; margin-bottom: 0;}
-    .market-list-row { display: flex; justify-content: space-between; align-items: center; background: #f6f8fa; border-radius: 6px; padding: 7px 12px;}
-    .market-list-date { font-size: 13px; color: #777;}
-    .market-list-value { font-size: 14px; font-weight: 500;}
-    .trend-mini { font-size: 1em; vertical-align: middle; margin-left: 4px; }
-    .trend-up { color: #27ae60;}
-    .trend-down { color: #e74c3c;}
-    .trend-eq { color: #888;}
+    /* Rivalen-Tabelle */
     .rivals-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        font-size: 15px;
+    }
+    .rivals-table th, .rivals-table td {
+        padding: 12px 10px;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+        font-size: 13px;
+    }
+    .rivals-table th {
+        background-color: #2c3e50;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+        padding-right: 25px;
+    }
+    .rivals-table th:hover {
+        background-color: #34495e;
+    }
+    .rivals-table tr:nth-child(even) { background-color: #f9f9f9; }
+    .rivals-table tr:hover { background-color: #f1f7ff; }
+    .player-name-cell { font-weight: 600; color: #2c3e50; }
+    .player-id-cell { font-size: 11px; color: #aaa; margin-top: 2px; }
+    .sort-arrow {
+        position: absolute; right: 8px; top: 50%; transform: translateY(-50%); font-size: 12px;
+    }
+    .player-link { color: #3498db; text-decoration: underline; }
+    .player-link:hover { color: #217dbb; }
+    /* Punkte-Tabelle */
+    .points-table {
         width: 100%;
         border-collapse: collapse;
         margin-top: 10px;
@@ -63,43 +84,22 @@
         overflow: hidden;
         font-size: 15px;
     }
-    .rivals-table th, .rivals-table td {
-        padding: 8px 10px;
-        text-align: left;
+    .points-table th, .points-table td {
+        padding: 10px;
+        text-align: center;
         border-bottom: 1px solid #e3e7fa;
     }
-    .rivals-table th {
+    .points-table th {
         background: #e3e7fa;
         color: #2c3e50;
         font-weight: 600;
-        user-select: none;
-        position: relative;
-        padding-right: 25px;
     }
-    .rivals-table tr:hover {
-        background: #eef2fa;
-        cursor: pointer;
-    }
-    .player-id-cell {
-        font-size: 11px;
-        color: #aaa;
-        margin-top: 2px;
-    }
-    .status-indicator {
-        font-size: 22px;
-        cursor: help;
-    }
-    .sort-arrow {
-        position: absolute;
-        right: 8px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 12px;
-    }
+    .points-table tr:nth-child(even) { background: #f6f8fa; }
+    .points-table tr:hover { background: #eef2fa; }
+    .matchday-cell { font-weight: 600; color: #2c3e50; }
+    .points-cell { font-weight: 600; color: #27ae60; }
     @media (max-width: 600px) {
         .container { padding: 5px; }
-        .market-month-header { font-size: 14px; }
-        .market-list-row { font-size: 13px; padding: 6px 8px; }
         .player-name { font-size: 16px; }
         .club-logo { width: 34px; height: 34px; }
         .tab-button { font-size: 16px; }
@@ -150,26 +150,6 @@
                 <div class="info-row"><span class="info-label">Besitzer:</span><span class="info-value" id="owner">-</span></div>
             </div>
         </div>
-        <div class="info-card">
-            <h3>
-                <svg class="stat-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="13" width="3" height="8" rx="1" fill="#764ba2"/><rect x="8" y="9" width="3" height="12" rx="1" fill="#764ba2"/><rect x="13" y="5" width="3, height=16, rx=1, fill=#764ba2"/><rect x="18, y=2, width=3, height=19, rx=1, fill=#764ba2"/></svg>
-                Status & Statistik
-            </h3>
-            <div class="info-card-content">
-                <div class="info-row"><span class="info-label">Status:</span><span class="info-value" id="detailStatus">-</span></div>
-                <div class="info-row"><span class="info-label">Spiele:</span><span class="info-value" id="gamesPlayed">-</span></div>
-                <div class="info-row"><span class="info-label">Tore:</span><span class="info-value" id="goals">-</span></div>
-                <div class="info-row"><span class="info-label">Notenschnitt:</span><span class="info-value" id="averageRating">-</span></div>
-                <div class="info-row"><span class="info-label">Gelbe Karten:</span><span class="info-value" id="yellowCards">-</span></div>
-                <div class="info-row"><span class="info-label">Rote Karten:</span><span class="info-value" id="redCards">-</span></div>
-            </div>
-        </div>
-        <div class="info-card" id="attributesCard" style="display:none;">
-            <h3>⭐ Besondere Eigenschaften</h3>
-            <div class="info-card-content">
-                <div class="attributes" id="attributesList"></div>
-            </div>
-        </div>
         <div class="tabs" id="tabBar">
             <button class="tab-button" data-tab="rivals">Rivalen</button>
             <button class="tab-button" data-tab="market">Marktwerte <span id="marketTabTrend" class="trend-arrow"></span></button>
@@ -183,246 +163,29 @@
             <div id="marketValueChart"></div>
         </div>
         <div id="points" class="tab-content">
-            <h3>📈 Punkteverlauf</h3>
             <div id="pointsHistory"></div>
         </div>
     </div>
 </div>
 <script>
-const MONATSNAMEN = [
-    "Januar", "Februar", "März", "April", "Mai", "Juni",
-    "Juli", "August", "September", "Oktober", "November", "Dezember"
-];
 const GITHUB_USER = "torresbig";
 const GITHUB_REPO = "comunioFanApp";
 let globalOwnersMap = new Map();
 
-async function fetchJSON(url) {
-    const response = await fetch(url);
-    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-    return await response.json();
-}
-
-    function getPlayerUrl(playerId) {
+function getPlayerUrl(playerId) {
     const currentUrl = window.location.href;
     if (currentUrl.includes('htmlpreview.github.io')) {
-        // Für htmlpreview.github.io
-        return `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/blob/main/player.html?id=${playerId}`;
+        return `https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${playerId}`;
     } else if (currentUrl.includes('github.com') || currentUrl.includes('githubusercontent.com')) {
-        // Für direkten GitHub-Zugriff
-        return `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/blob/main/player.html?id=${playerId}`;
+        return `https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${playerId}`;
     } else {
-        // Für lokale oder andere Server
         return `player.html?id=${playerId}`;
-    }
-}
-
-async function loadOwnersData() {
-    try {
-        const [usersData, playerToUserMap] = await Promise.all([
-            fetchJSON(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/UserdatenbankJson_884691.txt`),
-            fetchJSON(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/PlayerToUserMap_884691.txt`)
-        ]);
-
-        const userMap = new Map();
-        usersData.forEach(user => {
-            userMap.set(user.user.id, `${user.user.firstName} ${user.user.lastName || ''}`);
-        });
-
-        playerToUserMap.forEach(item => {
-            const playerId = Object.keys(item)[0];
-            const ownerId = item[playerId];
-            globalOwnersMap.set(playerId, userMap.get(ownerId) || `Unbekannt (${ownerId})`);
-        });
-    } catch (error) {
-        console.error("Fehler beim Laden der Besitzerdaten:", error);
     }
 }
 
 function formatCurrencyFull(value) {
     if (!value || value === 0) return '-';
     return value.toLocaleString('de-DE') + ' €';
-}
-
-function formatCurrencyShort(value) {
-    if (!value || value === 0) return '-';
-    if (value >= 1_000_000) return (value / 1_000_000).toFixed(1).replace('.', ',').replace(',0','') + ' Mio €';
-    if (value >= 1_000) return (value / 1_000).toFixed(1).replace('.', ',').replace(',0','') + ' Tsd €';
-    return value + ' €';
-}
-
-function unicodeTrend(trend) {
-    if (trend === "up")   return '<span class="trend-mini trend-up">&#9650;</span>';
-    if (trend === "down") return '<span class="trend-mini trend-down">&#9660;</span>';
-    if (trend === "eq")   return '<span class="trend-mini trend-eq">&#8213;</span>';
-    return "";
-}
-
-function avgIcon() {
-    return `<svg class="market-avg-icon" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="#b3c6e7" stroke="#3498db" stroke-width="2"/><text x="10" y="14" text-anchor="middle" font-size="10" fill="#3498db" font-family="Arial" font-weight="bold">Ø</text></svg>`;
-}
-
-async function loadPlayerMarketValues(playerId) {
-    const resp = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/MarktwerteJson.txt`);
-    const data = await resp.json();
-    const entry = data.find(e => String(e.id) === String(playerId));
-    if (!entry || !entry.data || !entry.data.normal) return [];
-    return entry.data.normal;
-}
-
-async function displayMarketValue(player) {
-    const container = document.getElementById('marketValueChart');
-    if (!container) return;
-    const playerId = player.id;
-    const marketValues = await loadPlayerMarketValues(playerId);
-    if (!marketValues || marketValues.length === 0) {
-        container.innerHTML = "<p>Keine Marktwertdaten verfügbar.</p>";
-        document.getElementById('marketTabTrend').innerHTML = "";
-        return;
-    }
-    marketValues.sort((a, b) => {
-        const [d1, m1, y1] = a.date.split('.');
-        const [d2, m2, y2] = b.date.split('.');
-        return new Date(`${y2}-${m2}-${d2}`) - new Date(`${y1}-${m1}-${d1}`);
-    });
-    const monthlyData = {};
-    marketValues.forEach(entry => {
-        const [day, month, year] = entry.date.split('.');
-        const key = `${year}-${month}`;
-        if (!monthlyData[key]) monthlyData[key] = [];
-        monthlyData[key].push({
-            ...entry,
-            dateObj: new Date(`${year}-${month}-${day}`)
-        });
-    });
-    const monthlyAverages = {};
-    Object.keys(monthlyData).forEach(key => {
-        const values = monthlyData[key].map(e => e.wert);
-        const avg = Math.round(values.reduce((a, b) => a + b, 0) / values.length);
-        monthlyAverages[key] = avg;
-    });
-    const firstDayOfMonth = {};
-    Object.keys(monthlyData).forEach(key => {
-        firstDayOfMonth[key] = monthlyData[key][monthlyData[key].length - 1];
-    });
-    const sortedMonths = Object.keys(monthlyData).sort((a, b) => b.localeCompare(a));
-    let trendForTab = '';
-    if (sortedMonths.length > 0 && monthlyData[sortedMonths[0]].length > 1) {
-        const firstMonth = sortedMonths[0];
-        const entries = monthlyData[firstMonth];
-        if (entries[0].wert > entries[1].wert) trendForTab = "▲";
-        else if (entries[0].wert < entries[1].wert) trendForTab = "▼";
-        else trendForTab = "—";
-    }
-    document.getElementById('marketTabTrend').textContent = trendForTab;
-    let html = '';
-    sortedMonths.forEach((monthKey, idx) => {
-        const [year, month] = monthKey.split('-');
-        const monthName = `${MONATSNAMEN[parseInt(month, 10) - 1]} ${year}`;
-        const entries = monthlyData[monthKey];
-        let trendIcon = '';
-        if (idx < sortedMonths.length - 1) {
-            const prevMonthKey = sortedMonths[idx + 1];
-            if (monthlyAverages[monthKey] > monthlyAverages[prevMonthKey]) trendIcon = unicodeTrend("up");
-            else if (monthlyAverages[monthKey] < monthlyAverages[prevMonthKey]) trendIcon = unicodeTrend("down");
-            else trendIcon = unicodeTrend("eq");
-        }
-        const isCurrentMonth = idx === 0;
-        html += `
-            <div class="market-month-block">
-                <div class="market-month-header ${isCurrentMonth ? '' : 'collapsed'}" data-month="${monthKey}">
-                    ${monthName}
-                    <span class="market-month-avg">${avgIcon()} ${formatCurrencyShort(monthlyAverages[monthKey])} ${trendIcon}</span>
-                </div>
-                <div class="market-list ${isCurrentMonth ? '' : 'collapsed'}">
-        `;
-        for (let i = 0; i < entries.length; i++) {
-            let dayTrend = '';
-            let compareValue = null;
-            if (i < entries.length - 1) {
-                compareValue = entries[i + 1].wert;
-            } else if (idx < sortedMonths.length - 1) {
-                const prevMonthKey = sortedMonths[idx + 1];
-                if (firstDayOfMonth[prevMonthKey]) {
-                    compareValue = firstDayOfMonth[prevMonthKey].wert;
-                }
-            }
-            if (!(idx === sortedMonths.length - 1 && i === entries.length - 1) && compareValue !== null) {
-                if (entries[i].wert > compareValue) dayTrend = unicodeTrend("up");
-                else if (entries[i].wert < compareValue) dayTrend = unicodeTrend("down");
-                else dayTrend = unicodeTrend("eq");
-            }
-            html += `
-                <div class="market-list-row">
-                    <span class="market-list-date">${entries[i].date}</span>
-                    <span class="market-list-value">${formatCurrencyFull(entries[i].wert)}${dayTrend}</span>
-                </div>
-            `;
-        }
-        html += '</div></div>';
-    });
-    container.innerHTML = html;
-    document.querySelectorAll('.market-month-header').forEach(header => {
-        const monthKey = header.getAttribute('data-month');
-        const isCurrentMonth = monthKey === sortedMonths[0];
-        if (isCurrentMonth) return;
-        const content = header.nextElementSibling;
-        header.addEventListener('click', () => {
-            header.classList.toggle('collapsed');
-            content.classList.toggle('collapsed');
-        });
-    });
-}
-
-function displayAttributes(player) {
-    const container = document.getElementById('attributesList');
-    const card = document.getElementById('attributesCard');
-    if (!container) return;
-    container.innerHTML = '';
-    let found = false;
-    if (player.data.attribute && player.data.attribute.length > 0) {
-        player.data.attribute.forEach(attr => {
-            if (typeof attr === 'object' && attr !== null) {
-                Object.keys(attr).forEach(key => {
-                    const value = attr[key];
-                    if (Array.isArray(value)) {
-                        value.forEach(item => {
-                            const span = document.createElement('span');
-                            span.className = 'attribute-tag';
-                            span.textContent = item;
-                            container.appendChild(span);
-                            found = true;
-                        });
-                    } else if (typeof value === 'string') {
-                        const span = document.createElement('span');
-                        span.className = 'attribute-tag';
-                        span.textContent = value;
-                        container.appendChild(span);
-                        found = true;
-                    }
-                });
-            } else if (typeof attr === 'string') {
-                const span = document.createElement('span');
-                span.className = 'attribute-tag';
-                span.textContent = attr;
-                container.appendChild(span);
-                found = true;
-            }
-        });
-    }
-    card.style.display = found ? '' : 'none';
-}
-
-function calcAge(birthday) {
-    if (!birthday || birthday === 'N/A') return '-';
-    try {
-        const birthDate = new Date(birthday.split('.').reverse().join('-'));
-        const diff = Date.now() - birthDate.getTime();
-        const ageDate = new Date(diff);
-        return Math.abs(ageDate.getUTCFullYear() - 1970) + ' Jahre';
-    } catch {
-        return '-';
-    }
 }
 
 function getStatusIndicator(status) {
@@ -455,10 +218,6 @@ function getStatusDisplayName(status) {
     return statusMap[status] || status || 'Unbekannt';
 }
 
-function getOwnerName(playerId) {
-    return globalOwnersMap.get(playerId) || "Computer";
-}
-
 function makeTableSortable(tableSelector, defaultSortCol = 0, defaultSortDir = 'desc') {
     const table = document.querySelector(tableSelector);
     if (!table) return;
@@ -469,23 +228,16 @@ function makeTableSortable(tableSelector, defaultSortCol = 0, defaultSortDir = '
     function sortTable(colIndex, dir) {
         const tbody = table.querySelector('tbody');
         const rows = Array.from(tbody.querySelectorAll('tr'));
-        
         rows.sort((a, b) => {
             const aCell = a.children[colIndex];
             const bCell = b.children[colIndex];
-            
-            // Werte aus data-sort Attribut oder Textinhalt holen
             let aValue = aCell.getAttribute('data-sort') || aCell.textContent;
             let bValue = bCell.getAttribute('data-sort') || bCell.textContent;
-            
-            // Für numerische Spalten (Marktwert, Realwert, Punkte)
             if ([2, 3, 4].includes(colIndex)) {
-                aValue = parseFloat(aValue) || 0;
-                bValue = parseFloat(bValue) || 0;
+                aValue = parseFloat(aValue.replace(/[^\d.-]/g, '')) || 0;
+                bValue = parseFloat(bValue.replace(/[^\d.-]/g, '')) || 0;
                 return dir === 'asc' ? aValue - bValue : bValue - aValue;
-            } 
-            // Für Textspalten (Spieler, Status, Besitzer)
-            else {
+            } else {
                 aValue = aValue.toString().toLowerCase();
                 bValue = bValue.toString().toLowerCase();
                 if (aValue < bValue) return dir === 'asc' ? -1 : 1;
@@ -493,26 +245,25 @@ function makeTableSortable(tableSelector, defaultSortCol = 0, defaultSortDir = '
                 return 0;
             }
         });
-        
         rows.forEach(row => tbody.appendChild(row));
     }
 
     ths.forEach((th, i) => {
         th.style.cursor = 'pointer';
-        const arrowSpan = document.createElement('span');
-        arrowSpan.className = 'sort-arrow';
-        th.appendChild(arrowSpan);
-        
+        let arrowSpan = th.querySelector('.sort-arrow');
+        if (!arrowSpan) {
+            arrowSpan = document.createElement('span');
+            arrowSpan.className = 'sort-arrow';
+            th.appendChild(arrowSpan);
+        }
         th.addEventListener('click', () => {
             ths.forEach(h => h.querySelector('.sort-arrow').textContent = '');
-            
             if (sortCol === i) {
                 sortDir = sortDir === 'asc' ? 'desc' : 'asc';
             } else {
                 sortCol = i;
                 sortDir = 'asc';
             }
-            
             arrowSpan.textContent = sortDir === 'asc' ? '▲' : '▼';
             sortTable(sortCol, sortDir);
         });
@@ -522,6 +273,136 @@ function makeTableSortable(tableSelector, defaultSortCol = 0, defaultSortDir = '
     if (ths[sortCol]) {
         ths[sortCol].querySelector('.sort-arrow').textContent = sortDir === 'asc' ? '▲' : '▼';
     }
+}
+
+function displayRivals(player, allPlayers) {
+    const container = document.getElementById('rivalsList');
+    const header = document.getElementById('rivalsHeader');
+    if (!container) return;
+    const rivals = allPlayers.filter(p => 
+        p.data?.position === player.data?.position &&
+        p.data?.verein === player.data?.verein 
+    ).sort((a,b) => b.data?.wert - a.data?.wert);
+
+    header.textContent = `${rivals.length} Direkte Konkurrenten`;
+
+    if (rivals.length > 0) {
+        let html = `
+        <table class="rivals-table">
+            <thead>
+                <tr>
+                    <th>Spieler</th>
+                    <th>Status</th>
+                    <th>Marktwert</th>
+                    <th>Realwert</th>
+                    <th>Punkte</th>
+                    <th>Besitzer</th>
+                </tr>
+            </thead>
+            <tbody>
+        `;
+        rivals.forEach(rival => {
+            const statusData = rival.data.comunioStatus || {};
+            const statusTooltip = `${getStatusDisplayName(statusData.status)}${statusData.grund ? ' - ' + statusData.grund : ''}${statusData.seit ? ' seit ' + statusData.seit : ''}`;
+            const ownerName = globalOwnersMap.get(rival.id) || "Computer";
+            const playerUrl = getPlayerUrl(rival.id);
+
+            html += `
+            <tr data-player-id="${rival.id}">
+                <td class="player-cell" data-sort="${rival.name}">
+                    <div class="player-name-cell">
+                        <a href="${playerUrl}" class="player-link" title="Zum Spieler">${rival.name}</a>
+                    </div>
+                    <div class="player-id-cell">(${rival.id})</div>
+                </td>
+                <td data-sort="${statusData.status || ''}">
+                    <span class="status-indicator" title="${statusTooltip}">
+                        ${getStatusIndicator(statusData.status)}
+                    </span>
+                </td>
+                <td data-sort="${rival.data?.wert || 0}">${formatCurrencyFull(rival.data?.wert || 0)}</td>
+                <td data-sort="${rival.data?.realWert || 0}">${formatCurrencyFull(rival.data?.realWert || 0)}</td>
+                <td data-sort="${rival.data?.punkte || 0}">${rival.data?.punkte || 0}</td>
+                <td data-sort="${ownerName}">${ownerName}</td>
+            </tr>
+            `;
+        });
+        html += '</tbody></table>';
+        container.innerHTML = html;
+        makeTableSortable('.rivals-table', 2, 'desc');
+    } else {
+        container.innerHTML = '<p>Keine direkten Konkurrenten gefunden</p>';
+    }
+}
+
+function displayPointsHistory(player) {
+    const container = document.getElementById('pointsHistory');
+    if (!container) return;
+    const spieltagspunkte = player.data?.spieltagspunkte || [];
+    const pointsHistory = player.data?.punkteHistorie || [];
+    const currentSeason = new Date().getFullYear();
+
+    // Aktuelle Saison als Matrix
+    let html = `<h3>Aktuelle Saison (${currentSeason})</h3>
+    <table class="points-table">
+        <thead>
+            <tr>
+                <th>Spieltag</th><th>Punkte</th>
+                <th>Spieltag</th><th>Punkte</th>
+                <th>Spieltag</th><th>Punkte</th>
+                <th>Spieltag</th><th>Punkte</th>
+            </tr>
+        </thead>
+        <tbody>
+    `;
+    for (let i = 1; i <= 34; i += 4) {
+        html += '<tr>';
+        for (let j = 0; j < 4; j++) {
+            const spieltag = i + j;
+            if (spieltag > 34) {
+                html += '<td></td><td></td>';
+            } else {
+                const punktEntry = spieltagspunkte.find(p => p.spieltag === spieltag);
+                const punkte = punktEntry ? punktEntry.punkte : '-';
+                html += `<td class="matchday-cell">${spieltag}</td><td class="points-cell">${punkte}</td>`;
+            }
+        }
+        html += '</tr>';
+    }
+    html += '</tbody></table>';
+
+    // Historische Saisons
+    if (pointsHistory.length > 0) {
+        html += '<h3>Historische Saisons</h3>';
+        html += '<table class="points-table"><thead><tr><th>Saison</th><th>Punkte</th></tr></thead><tbody>';
+        pointsHistory.forEach(season => {
+            html += `<tr><td>${season.key}</td><td>${season.value}</td></tr>`;
+        });
+        html += '</tbody></table>';
+    }
+    container.innerHTML = html;
+}
+
+// Besitzer laden wie in paste-2.txt
+async function fetchJSON(url) {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    return await response.json();
+}
+async function loadOwnersData() {
+    const [usersData, playerToUserMap] = await Promise.all([
+        fetchJSON(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/UserdatenbankJson_884691.txt`),
+        fetchJSON(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/PlayerToUserMap_884691.txt`)
+    ]);
+    const userMap = new Map();
+    usersData.forEach(user => {
+        userMap.set(user.user.id, `${user.user.firstName} ${user.user.lastName || ''}`);
+    });
+    playerToUserMap.forEach(item => {
+        const playerId = Object.keys(item)[0];
+        const ownerId = item[playerId];
+        globalOwnersMap.set(playerId, userMap.get(ownerId) || `Unbekannt (${ownerId})`);
+    });
 }
 
 function initTabs() {
@@ -540,117 +421,6 @@ function initTabs() {
     tabContents.forEach(tab => tab.classList.remove('active'));
     document.querySelector('.tab-button[data-tab="market"]').classList.add('active');
     document.getElementById('market').classList.add('active');
-}
-
-function displayRivals(player, allPlayers) {
-    const container = document.getElementById('rivalsList');
-    const header = document.getElementById('rivalsHeader');
-    if (!container) return;
-    const rivals = allPlayers.filter(p => 
-        p.data?.position === player.data?.position &&
-        p.data?.verein === player.data?.verein 
-    ).sort((a,b) => b.data?.wert - a.data?.wert);
-    
-    header.textContent = `${rivals.length} Direkte Konkurrenten`;
-    
-    if (rivals.length > 0) {
-        let html = `
-        <table class="rivals-table">
-            <thead>
-                <tr>
-                    <th>Spieler</th>
-                    <th>Status</th>
-                    <th>Marktwert</th>
-                    <th>realer Marktwert</th>
-                    <th>Punkte</th>
-                    <th>Besitzer</th>
-                </tr>
-            </thead>
-            <tbody>
-        `;
-        rivals.forEach(rival => {
-    const statusData = rival.data.comunioStatus || {};
-    const statusTooltip = `${getStatusDisplayName(statusData.status)}${statusData.grund ? ' - ' + statusData.grund : ''}${statusData.seit ? ' seit ' + statusData.seit : ''}`;
-    const ownerName = getOwnerName(rival.id);
-    const playerUrl = getPlayerUrl(rival.id);
-
-    html += `
-    <tr data-player-id="${rival.id}">
-        <td class="player-cell" data-sort="${rival.name}">
-            <div class="player-name-cell">
-                <a href="${playerUrl}" class="player-link" title="Zum Spieler">${rival.name}</a>
-            </div>
-            <div class="player-id-cell">(${rival.id})</div>
-        </td>
-        <td data-sort="${statusData.status || ''}">
-            <span class="status-indicator" title="${statusTooltip}">
-                ${getStatusIndicator(statusData.status)}
-            </span>
-        </td>
-        <td data-sort="${rival.data?.wert || 0}">${formatCurrencyFull(rival.data?.wert || 0)}</td>
-        <td data-sort="${rival.data?.realWert || 0}">${formatCurrencyFull(rival.data?.realWert || 0)}</td>
-        <td data-sort="${rival.data?.punkte || 0}">${rival.data?.punkte || 0}</td>
-        <td data-sort="${ownerName}">${ownerName}</td>
-    </tr>
-    `;
-});
-        html += '</tbody></table>';
-        container.innerHTML = html;
-        document.querySelectorAll('.rivals-table tbody tr').forEach(row => {
-            row.addEventListener('click', (e) => {
-                const playerId = row.getAttribute('data-player-id');
-                window.location.href = `player.html?id=${playerId}`;
-            });
-        });
-        makeTableSortable('.rivals-table', 2, 'desc');
-    } else {
-        container.innerHTML = '<p>Keine direkten Konkurrenten gefunden</p>';
-    }
-}
-
-function displayPointsHistory(player) {
-    const container = document.getElementById('pointsHistory');
-    if (!container) return;
-    const pointsHistory = player.data?.punkteHistorie || [];
-    const currentPoints = player.data?.punkte || 0;
-    const currentSeason = new Date().getFullYear();
-    let html = `
-        <div class="stat-box">
-            <strong>Aktuelle Saison (${currentSeason}):</strong>
-            <div>${currentPoints} Punkte</div>
-        </div>
-    `;
-    if (player.data.spieltagspunkte && player.data.spieltagspunkte.length > 0) {
-        html += '<h4>Punkte pro Spieltag:</h4>';
-        html += '<table class="points-table">';
-        html += '<thead><tr><th>Spieltag</th><th>Punkte</th></tr></thead><tbody>';
-        player.data.spieltagspunkte.forEach(point => {
-            html += `<tr><td>${point.spieltag}</td><td>${point.punkte}</td></tr>`;
-        });
-        html += '</tbody></table>';
-    }
-    if (pointsHistory.length > 0) {
-        html += '<h4>Historische Punkte:</h4>';
-        html += '<table class="points-table">';
-        html += '<thead><tr><th>Saison</th><th>Punkte</th></tr></thead><tbody>';
-        pointsHistory.forEach(season => {
-            html += `<tr><td>${season.key}</td><td>${season.value}</td></tr>`;
-        });
-        html += '</tbody></table>';
-    }
-    container.innerHTML = html;
-}
-
-function setupAccordion() {
-    const infoCards = document.querySelectorAll('.info-card');
-    infoCards.forEach((card, index) => {
-        const header = card.querySelector('h3');
-        const content = card.querySelector('.info-card-content');
-        header.onclick = () => {
-            content.classList.toggle('collapsed');
-            header.classList.toggle('collapsed');
-        };
-    });
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -697,7 +467,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const status = player.data.comunioStatus?.status || 'Unbekannt';
         document.getElementById('statusIndicator').textContent = getStatusIndicator(status);
         document.getElementById('birthday').textContent = player.data.spielerDaten.geburtstag || '-';
-        document.getElementById('age').textContent = calcAge(player.data.spielerDaten.geburtstag) || '-';
+        document.getElementById('age').textContent = '-'; // Alter-Berechnung ggf. ergänzen
         document.getElementById('height').textContent = player.data.spielerDaten.groesse || '-';
         document.getElementById('nationality').textContent = player.data.spielerDaten.nationalitaet || '-';
         document.getElementById('position').textContent = player.data.spielerDaten.hauptposition || player.data.position || '-';
@@ -706,20 +476,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.getElementById('comunioPosition').textContent = player.data.position || '-';
         document.getElementById('marketValue').textContent = formatCurrencyFull(player.data.wert);
         document.getElementById('lastYearPoints').textContent = player.data.lastSeasonPoints || '0';
-        document.getElementById('owner').textContent = getOwnerName(player.id) || '-';
+        document.getElementById('owner').textContent = globalOwnersMap.get(player.id) || '-';
         document.getElementById('detailStatus').textContent = player.data.comunioStatus?.details || getStatusDisplayName(status);
         document.getElementById('gamesPlayed').textContent = player.data.stats.playedGames || '0';
         document.getElementById('goals').textContent = player.data.stats.totalGoals || '0';
         document.getElementById('averageRating').textContent = player.data.stats.notenDurchschnitt || '0';
         document.getElementById('yellowCards').textContent = player.data.stats.gelbekarten || '0';
         document.getElementById('redCards').textContent = player.data.stats.rotekarten || '0';
-        displayAttributes(player);
         displayRivals(player, allPlayers);
-        displayMarketValue(player);
         displayPointsHistory(player);
         document.getElementById('loadingIndicator').style.display = 'none';
         document.getElementById('playerContent').style.display = 'block';
-        setupAccordion();
     } catch (err) {
         document.getElementById('errorMessage').textContent = "Fehler beim Laden der Daten: " + err.message;
         document.getElementById('errorMessage').style.display = 'block';
