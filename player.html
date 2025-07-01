@@ -256,7 +256,7 @@
             <button class="tab-button" data-tab="points">Punkte</button>
         </div>
         <div id="rivals" class="tab-content">
-            <h3 id="rivalsHeader">Direkte Konkurrenten</h3>
+            <h3 id="rivalsHeader">Direkte Konkurrenten im Team</h3>
             <div id="rivalsList"></div>
         </div>
         <div id="market" class="tab-content">
@@ -659,7 +659,7 @@ function displayRivals(player, allPlayers) {
     ).sort((a,b) => b.data?.wert - a.data?.wert);
 
     debug(`${rivals.length} Rivalen gefunden`, 'success');
-    header.textContent = `${rivals.length} Direkte Konkurrenten`;
+    header.textContent = `${rivals.length} Direkte Konkurrenten im Team`;
 
     if (rivals.length > 0) {
         let html = `
