@@ -217,7 +217,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Dänemark",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -227,13 +227,13 @@
       "wert": 200000,
       "verein": "13",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Jacob Christensen",
+        "link": "https://www.transfermarkt.de/jacob-christensen/profil/spieler/515017",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 800000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -270,12 +270,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "Trainingsrückstand",
+        "lastUpdate": "03.07.2025",
+        "seit": "24.03.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Christensen",
@@ -666,12 +667,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "P. Pfeiffer",
@@ -1092,7 +1094,7 @@
         "nebenpositionen": ["RM"],
         "nationalspieler": "",
         "trikotNummer": 21,
-        "nationalitaet": "13.07.1993",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "RV",
         "fuss": "rechts"
@@ -1108,7 +1110,7 @@
       },
       "lastSeasonPoints": 67,
       "punkte": 67,
-      "realWert": 1500000,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -1160,9 +1162,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -1172,7 +1174,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "da Costa",
@@ -1388,7 +1391,7 @@
         "nebenpositionen": ["RV"],
         "nationalspieler": "",
         "trikotNummer": 37,
-        "nationalitaet": "10.02.2003",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "IV",
         "fuss": "rechts"
@@ -1405,7 +1408,7 @@
       },
       "lastSeasonPoints": 54,
       "punkte": 54,
-      "realWert": 500000,
+      "realWert": 8000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -1446,9 +1449,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Oberschenkelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "25.06.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -1458,7 +1461,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Rosenfelder ",
@@ -2217,7 +2221,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 10,
-        "nationalitaet": "21.04.2003",
+        "nationalitaet": "DR Kongo",
         "laenderspielTore": 0,
         "hauptposition": "OM",
         "fuss": "rechts"
@@ -2234,7 +2238,7 @@
       },
       "lastSeasonPoints": 189,
       "punkte": 189,
-      "realWert": 80000000,
+      "realWert": 7000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -2280,9 +2284,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Knöchelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "30.03.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -2292,7 +2296,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Simons",
@@ -3181,7 +3186,7 @@
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 5000000,
+      "realWert": 2500000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -3218,9 +3223,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Trainingsrückstand",
+        "lastUpdate": "03.07.2025",
+        "seit": "13.03.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -3230,7 +3235,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Rogério",
@@ -4305,12 +4311,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "F. Krätzig",
@@ -4344,7 +4351,7 @@
       "isNotName": [],
       "punktekorrektur": [],
       "wert": 2620000,
-      "verein": "13",
+      "verein": "92",
       "transfermarktDoDe": {
         "name": "",
         "link": "",
@@ -4424,7 +4431,7 @@
         "nebenpositionen": ["IV"],
         "nationalspieler": "",
         "trikotNummer": 20,
-        "nationalitaet": "03.03.2002",
+        "nationalitaet": "Schweiz",
         "laenderspielTore": 0,
         "hauptposition": "RV",
         "fuss": "rechts"
@@ -4478,9 +4485,9 @@
         "status": "VERLETZT"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "25.05.2025",
-        "seit": "",
+        "grund": "Fußverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "30.04.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -4490,7 +4497,8 @@
           "historie": [],
           "status": "VERLETZT"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Stergiou",
@@ -4611,7 +4619,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 19,
-        "nationalitaet": "05.07.1999",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "RM",
         "fuss": "rechts"
@@ -4628,7 +4636,7 @@
       },
       "lastSeasonPoints": 74,
       "punkte": 74,
-      "realWert": 23000000,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -4665,9 +4673,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -4677,7 +4685,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Tella",
@@ -4885,7 +4894,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 40,
-        "nationalitaet": "11.04.2003",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "TW",
         "fuss": "rechts"
@@ -4901,7 +4910,7 @@
       },
       "lastSeasonPoints": 36,
       "punkte": 36,
-      "realWert": 1500000,
+      "realWert": 2500000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -4940,18 +4949,37 @@
       },
       "status": {
         "grund": "Kreuzbandriss",
-        "lastUpdate": "30.06.2025",
-        "seit": "2 Monaten und 1 Woche",
-        "details": "Nach Kreuzbandriss: Santos macht erste Übungen mit dem Ball",
-        "historie": [{
-          "grund": "Kreuzbandriss",
-          "lastUpdate": "30.06.2025",
-          "seit": "2 Monaten und 1 Woche",
-          "details": "Nach Kreuzbandriss: Santos macht erste Übungen mit dem Ball",
-          "historie": [],
-          "status": "AUFBAUTRAINING"
-        }],
-        "status": "AUFBAUTRAINING"
+        "lastUpdate": "03.07.2025",
+        "seit": "18.04.2025",
+        "details": "",
+        "historie": [
+          {
+            "grund": "Kreuzbandriss",
+            "lastUpdate": "30.06.2025",
+            "seit": "2 Monaten und 1 Woche",
+            "details": "Nach Kreuzbandriss: Santos macht erste Übungen mit dem Ball",
+            "historie": [],
+            "status": "AUFBAUTRAINING"
+          },
+          {
+            "grund": "Kreuzbandriss",
+            "lastUpdate": "30.06.2025",
+            "seit": "2 Monaten und 1 Woche",
+            "details": "Nach Kreuzbandriss: Santos macht erste Übungen mit dem Ball",
+            "historie": [{
+              "grund": "Kreuzbandriss",
+              "lastUpdate": "30.06.2025",
+              "seit": "2 Monaten und 1 Woche",
+              "details": "Nach Kreuzbandriss: Santos macht erste Übungen mit dem Ball",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            }],
+            "bis": "03.07.2025",
+            "status": "AUFBAUTRAINING"
+          }
+        ],
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Kauã Santos",
@@ -5141,12 +5169,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Conté",
@@ -5865,7 +5894,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Tunesien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -5875,13 +5904,13 @@
       "wert": 1430000,
       "verein": "9",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Elias Saad",
+        "link": "https://www.transfermarkt.de/elias-saad/profil/spieler/526466",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 4000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -5918,12 +5947,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "Muskelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "04.05.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Baum",
@@ -6006,12 +6036,13 @@
         "status": "AUFBAUTRAINING"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Raimund",
@@ -6291,7 +6322,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "DR Kongo",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -6301,13 +6332,13 @@
       "wert": 740000,
       "verein": "92",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Silas",
+        "link": "https://www.transfermarkt.de/silas/profil/spieler/612826",
         "id": 0
       },
       "lastSeasonPoints": 4,
       "punkte": 4,
-      "realWert": 0,
+      "realWert": 7000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -6344,12 +6375,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "Knöchelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "30.03.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Elmas",
@@ -8216,12 +8248,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Wätjen",
@@ -8996,12 +9029,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Norbye",
@@ -9088,12 +9122,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Bröger ",
@@ -9213,7 +9248,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Ungarn",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -9223,13 +9258,13 @@
       "wert": 190000,
       "verein": "9",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Krisztián Lisztes",
+        "link": "https://www.transfermarkt.de/krisztian-lisztes/profil/spieler/933217",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 2000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -9267,9 +9302,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "30.01.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -9279,7 +9314,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Lisztes",
@@ -9412,7 +9448,7 @@
         "nebenpositionen": ["IV"],
         "nationalspieler": "",
         "trikotNummer": 4,
-        "nationalitaet": "Deutschland",
+        "nationalitaet": "DR Kongo",
         "laenderspielTore": 0,
         "hauptposition": "DM",
         "fuss": "rechts"
@@ -9429,7 +9465,7 @@
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 1000000,
+      "realWert": 7000000,
       "stats": {
         "notenDurchschnitt": "7,03",
         "gelbekarten": 2,
@@ -9470,12 +9506,21 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
-        "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
-        "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "grund": "Knöchelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "30.03.2025",
+        "details": "",
+        "historie": [{
+          "grund": "Vereinswechsel / Karriereende",
+          "lastUpdate": "30.06.2025",
+          "seit": "",
+          "details": "Spieler ist nicht mehr in der Bundesliga",
+          "historie": [],
+          "bis": "03.07.2025",
+          "status": "NICHT_IN_LIGA"
+        }],
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Erras",
@@ -10186,12 +10231,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Komenda",
@@ -10521,12 +10567,13 @@
         "status": "GELBROTE_KARTE"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Kelati",
@@ -10772,7 +10819,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 1,
-        "nationalitaet": "04.08.1992",
+        "nationalitaet": "Dänemark",
         "laenderspielTore": 0,
         "hauptposition": "TW",
         "fuss": "rechts"
@@ -10789,7 +10836,7 @@
       },
       "lastSeasonPoints": 93,
       "punkte": 93,
-      "realWert": 4500000,
+      "realWert": 3000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -10848,9 +10895,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Blessur",
+        "lastUpdate": "03.07.2025",
+        "seit": "16.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -10860,7 +10907,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Rönnow",
@@ -10886,7 +10934,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Estland",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -10896,8 +10944,8 @@
       "wert": 460000,
       "verein": "25",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Karol Mets",
+        "link": "https://www.transfermarkt.de/karol-mets/profil/spieler/139304",
         "id": 0
       },
       "lastSeasonPoints": 33,
@@ -10943,19 +10991,38 @@
         "status": "AUFBAUTRAINING"
       },
       "status": {
-        "grund": "Patellasehnenentzündung",
-        "lastUpdate": "30.06.2025",
-        "seit": "7 Monaten und 1 Woche",
-        "details": "Rückkehr ins Teamtraining für Mets noch nicht in Sicht",
-        "historie": [{
-          "grund": "Patellasehnenentzündung",
-          "lastUpdate": "30.06.2025",
-          "seit": "7 Monaten und 1 Woche",
-          "details": "Rückkehr ins Teamtraining für Mets noch nicht in Sicht",
-          "historie": [],
-          "status": "AUFBAUTRAINING"
-        }],
-        "status": "AUFBAUTRAINING"
+        "grund": "Patellasehnenprobleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "22.11.2024",
+        "details": "",
+        "historie": [
+          {
+            "grund": "Patellasehnenentzündung",
+            "lastUpdate": "30.06.2025",
+            "seit": "7 Monaten und 1 Woche",
+            "details": "Rückkehr ins Teamtraining für Mets noch nicht in Sicht",
+            "historie": [],
+            "status": "AUFBAUTRAINING"
+          },
+          {
+            "grund": "Patellasehnenentzündung",
+            "lastUpdate": "30.06.2025",
+            "seit": "7 Monaten und 1 Woche",
+            "details": "Rückkehr ins Teamtraining für Mets noch nicht in Sicht",
+            "historie": [{
+              "grund": "Patellasehnenentzündung",
+              "lastUpdate": "30.06.2025",
+              "seit": "7 Monaten und 1 Woche",
+              "details": "Rückkehr ins Teamtraining für Mets noch nicht in Sicht",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            }],
+            "bis": "03.07.2025",
+            "status": "AUFBAUTRAINING"
+          }
+        ],
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Mets",
@@ -11074,7 +11141,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -11084,13 +11151,13 @@
       "wert": 2610000,
       "verein": "21",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Tuta",
+        "link": "https://www.transfermarkt.de/tuta/profil/spieler/546213",
         "id": 0
       },
       "lastSeasonPoints": 99,
       "punkte": 99,
-      "realWert": 2500000,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -11131,9 +11198,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -11143,7 +11210,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Treu",
@@ -11366,7 +11434,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Australien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -11376,8 +11444,8 @@
       "wert": 3160000,
       "verein": "25",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Jackson Irvine",
+        "link": "https://www.transfermarkt.de/jackson-irvine/profil/spieler/192557",
         "id": 0
       },
       "lastSeasonPoints": 112,
@@ -11422,19 +11490,38 @@
         "status": "AUFBAUTRAINING"
       },
       "status": {
-        "grund": "Haarriss Fuß",
-        "lastUpdate": "30.06.2025",
-        "seit": "2 Monaten und 2 Wochen",
-        "details": "Irvine verpasst vermutlich große Teile der Vorbereitung",
-        "historie": [{
-          "grund": "Haarriss Fuß",
-          "lastUpdate": "30.06.2025",
-          "seit": "2 Monaten und 2 Wochen",
-          "details": "Irvine verpasst vermutlich große Teile der Vorbereitung",
-          "historie": [],
-          "status": "AUFBAUTRAINING"
-        }],
-        "status": "AUFBAUTRAINING"
+        "grund": "Fußoperation",
+        "lastUpdate": "03.07.2025",
+        "seit": "29.04.2025",
+        "details": "",
+        "historie": [
+          {
+            "grund": "Haarriss Fuß",
+            "lastUpdate": "30.06.2025",
+            "seit": "2 Monaten und 2 Wochen",
+            "details": "Irvine verpasst vermutlich große Teile der Vorbereitung",
+            "historie": [],
+            "status": "AUFBAUTRAINING"
+          },
+          {
+            "grund": "Haarriss Fuß",
+            "lastUpdate": "30.06.2025",
+            "seit": "2 Monaten und 2 Wochen",
+            "details": "Irvine verpasst vermutlich große Teile der Vorbereitung",
+            "historie": [{
+              "grund": "Haarriss Fuß",
+              "lastUpdate": "30.06.2025",
+              "seit": "2 Monaten und 2 Wochen",
+              "details": "Irvine verpasst vermutlich große Teile der Vorbereitung",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            }],
+            "bis": "03.07.2025",
+            "status": "AUFBAUTRAINING"
+          }
+        ],
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Irvine",
@@ -11901,12 +11988,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Albers",
@@ -11932,7 +12020,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Tunesien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -11942,8 +12030,8 @@
       "wert": 2140000,
       "verein": "68",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Elias Saad",
+        "link": "https://www.transfermarkt.de/elias-saad/profil/spieler/526466",
         "id": 0
       },
       "lastSeasonPoints": 66,
@@ -11989,9 +12077,9 @@
         "status": "VERLETZT"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "25.05.2025",
-        "seit": "",
+        "grund": "Muskelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "04.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -12001,7 +12089,8 @@
           "historie": [],
           "status": "VERLETZT"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Saad",
@@ -12272,7 +12361,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "DR Kongo",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -12282,13 +12371,13 @@
       "wert": 2620000,
       "verein": "25",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Silas",
+        "link": "https://www.transfermarkt.de/silas/profil/spieler/612826",
         "id": 0
       },
       "lastSeasonPoints": 94,
       "punkte": 94,
-      "realWert": 0,
+      "realWert": 7000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -12330,9 +12419,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Knöchelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "30.03.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -12342,7 +12431,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Sinani",
@@ -13476,7 +13566,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 7,
-        "nationalitaet": "02.02.2004",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "LA",
         "fuss": "rechts"
@@ -13493,7 +13583,7 @@
       },
       "lastSeasonPoints": 16,
       "punkte": 16,
-      "realWert": 1000000,
+      "realWert": 1500000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -13530,9 +13620,9 @@
         "status": "AUFBAUTRAINING"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "25.05.2025",
-        "seit": "",
+        "grund": "Knie-OP",
+        "lastUpdate": "03.07.2025",
+        "seit": "12.12.2024",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -13542,7 +13632,8 @@
           "historie": [],
           "status": "AUFBAUTRAINING"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Kabadayi ",
@@ -13595,7 +13686,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 23,
-        "nationalitaet": "12.01.1994",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "DM",
         "fuss": "rechts"
@@ -13612,7 +13703,7 @@
       },
       "lastSeasonPoints": 110,
       "punkte": 110,
-      "realWert": 10000000,
+      "realWert": 7000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -13649,9 +13740,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Adduktorenbeschwerden",
+        "lastUpdate": "03.07.2025",
+        "seit": "10.06.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -13661,7 +13752,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Can",
@@ -13798,7 +13890,7 @@
       },
       "lastSeasonPoints": 22,
       "punkte": 22,
-      "realWert": 15000000,
+      "realWert": 7000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -13850,9 +13942,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "09.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -13862,7 +13954,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Beste",
@@ -14035,10 +14128,10 @@
         "status": "AUFBAUTRAINING"
       },
       "status": {
-        "grund": "Kreuzbandriss",
-        "lastUpdate": "30.06.2025",
-        "seit": "5 Monaten und 3 Wochen",
-        "details": "Belocian macht weitere Fortschritte im Aufbautraining",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
+        "seit": "",
+        "details": "",
         "historie": [{
           "grund": "Kreuzbandriss",
           "lastUpdate": "30.06.2025",
@@ -14047,7 +14140,8 @@
           "historie": [],
           "status": "AUFBAUTRAINING"
         }],
-        "status": "AUFBAUTRAINING"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Belocian",
@@ -14291,7 +14385,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 14,
-        "nationalitaet": "10.03.1993",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "MS",
         "fuss": "rechts"
@@ -14308,7 +14402,7 @@
       },
       "lastSeasonPoints": 139,
       "punkte": 139,
-      "realWert": 7000000,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -14349,9 +14443,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -14361,7 +14455,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Pléa",
@@ -14539,12 +14634,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Prtajin",
@@ -14986,12 +15082,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Sissoko",
@@ -15371,9 +15468,9 @@
       },
       "status": {
         "grund": "",
-        "lastUpdate": "30.06.2025",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Nach Platzverweis: Saftige Sperre für Essende",
+        "details": "",
         "historie": [{
           "grund": "",
           "lastUpdate": "30.06.2025",
@@ -15382,7 +15479,8 @@
           "historie": [],
           "status": "ROTE_KARTE"
         }],
-        "status": "ROTE_KARTE"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Essende",
@@ -15411,7 +15509,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 11,
-        "nationalitaet": "Deutschland",
+        "nationalitaet": "DR Kongo",
         "laenderspielTore": 0,
         "hauptposition": "HS",
         "fuss": "beidfüßig"
@@ -15428,7 +15526,7 @@
       },
       "lastSeasonPoints": 48,
       "punkte": 48,
-      "realWert": 3000000,
+      "realWert": 7000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -15469,9 +15567,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Knöchelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "30.03.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -15481,7 +15579,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Sieb",
@@ -15682,7 +15781,7 @@
         "nebenpositionen": ["ZM"],
         "nationalspieler": "",
         "trikotNummer": 31,
-        "nationalitaet": "31.01.1994",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "DM",
         "fuss": "rechts"
@@ -15745,9 +15844,9 @@
         "status": "VERLETZT"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "25.05.2025",
-        "seit": "",
+        "grund": "Innenbandverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "04.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -15757,7 +15856,8 @@
           "historie": [],
           "status": "VERLETZT"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "D. Kohr",
@@ -16214,12 +16314,13 @@
         "status": "VERLETZT"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Johansson",
@@ -16950,10 +17051,10 @@
         "status": "AUFBAUTRAINING"
       },
       "status": {
-        "grund": "Achillessehnenriss",
-        "lastUpdate": "30.06.2025",
-        "seit": "6 Monaten und 1 Woche",
-        "details": "Ogbus erleidet Achillessehnenriss im Training",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
+        "seit": "",
+        "details": "",
         "historie": [{
           "grund": "Achillessehnenriss",
           "lastUpdate": "30.06.2025",
@@ -16962,7 +17063,8 @@
           "historie": [],
           "status": "VERLETZT"
         }],
-        "status": "VERLETZT"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Ogbus",
@@ -17178,7 +17280,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 11,
-        "nationalitaet": "04.03.1997",
+        "nationalitaet": "Frankreich",
         "laenderspielTore": 0,
         "hauptposition": "LA",
         "fuss": "rechts"
@@ -17195,7 +17297,7 @@
       },
       "lastSeasonPoints": 49,
       "punkte": 49,
-      "realWert": 20000000,
+      "realWert": 17000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -17233,9 +17335,9 @@
       },
       "status": {
         "grund": "Achillessehnenriss",
-        "lastUpdate": "30.06.2025",
-        "seit": "5 Monaten und 1 Woche",
-        "details": "Saison beendet: Leverkusen bestätigt Achillessehnenriss bei Terrier",
+        "lastUpdate": "03.07.2025",
+        "seit": "18.01.2025",
+        "details": "",
         "historie": [{
           "grund": "Achillessehnenriss",
           "lastUpdate": "30.06.2025",
@@ -17244,6 +17346,7 @@
           "historie": [],
           "status": "VERLETZT"
         }],
+        "bis": "",
         "status": "VERLETZT"
       }
     },
@@ -17650,7 +17753,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 25,
-        "nationalitaet": "16.01.1994",
+        "nationalitaet": "DR Kongo",
         "laenderspielTore": 0,
         "hauptposition": "TW",
         "fuss": "rechts"
@@ -17667,7 +17770,7 @@
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 350000,
+      "realWert": 7000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -17704,9 +17807,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Knöchelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "30.03.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -17716,7 +17819,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Klaus",
@@ -17873,7 +17977,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 2,
-        "nationalitaet": "03.06.2002",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "RV",
         "fuss": "rechts"
@@ -17890,7 +17994,7 @@
       },
       "lastSeasonPoints": 39,
       "punkte": 39,
-      "realWert": 25000000,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -17927,9 +18031,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -17939,7 +18043,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Couto",
@@ -18056,7 +18161,7 @@
         "nebenpositionen": ["RV"],
         "nationalspieler": "",
         "trikotNummer": 45,
-        "nationalitaet": "24.03.2004",
+        "nationalitaet": "Japan",
         "laenderspielTore": 0,
         "hauptposition": "IV",
         "fuss": "rechts"
@@ -18073,7 +18178,7 @@
       },
       "lastSeasonPoints": 29,
       "punkte": 29,
-      "realWert": 350000,
+      "realWert": 3000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -18110,9 +18215,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Muskelfaserriss im Adduktorenbereich",
+        "lastUpdate": "03.07.2025",
+        "seit": "03.03.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -18122,7 +18227,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Chase",
@@ -18324,7 +18430,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -18334,8 +18440,8 @@
       "wert": 5530000,
       "verein": "92",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Tuta",
+        "link": "https://www.transfermarkt.de/tuta/profil/spieler/546213",
         "id": 0
       },
       "lastSeasonPoints": 85,
@@ -18377,9 +18483,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -18389,7 +18495,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Nusa",
@@ -18805,7 +18912,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 19,
-        "nationalitaet": "02.11.2000",
+        "nationalitaet": "Kanada",
         "laenderspielTore": 0,
         "hauptposition": "LV",
         "fuss": "links"
@@ -18867,10 +18974,10 @@
         "status": "AUFBAUTRAINING"
       },
       "status": {
-        "grund": "Kreuzbandriss",
-        "lastUpdate": "30.06.2025",
-        "seit": "3 Monaten und 6 Tagen",
-        "details": "Davies-Rückkehr frühestens im November",
+        "grund": "Kreuzbandanriss",
+        "lastUpdate": "03.07.2025",
+        "seit": "24.03.2025",
+        "details": "",
         "historie": [{
           "grund": "Kreuzbandriss",
           "lastUpdate": "30.06.2025",
@@ -18879,6 +18986,7 @@
           "historie": [],
           "status": "VERLETZT"
         }],
+        "bis": "30.09.2025",
         "status": "VERLETZT"
       }
     },
@@ -19299,7 +19407,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 5,
-        "nationalitaet": "25.03.2000",
+        "nationalitaet": "Türkei",
         "laenderspielTore": 0,
         "hauptposition": "IV",
         "fuss": "rechts"
@@ -19315,7 +19423,7 @@
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 13000000,
+      "realWert": 5000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -19353,9 +19461,9 @@
       },
       "status": {
         "grund": "Kreuzbandriss",
-        "lastUpdate": "30.06.2025",
-        "seit": "1 Jahr und 3 Wochen",
-        "details": "\u201eRichtung August\u201c: Kabak braucht nach Kreuzbandriss noch Zeit",
+        "lastUpdate": "03.07.2025",
+        "seit": "05.06.2024",
+        "details": "",
         "historie": [{
           "grund": "Kreuzbandriss",
           "lastUpdate": "30.06.2025",
@@ -19364,6 +19472,7 @@
           "historie": [],
           "status": "VERLETZT"
         }],
+        "bis": "",
         "status": "VERLETZT"
       }
     },
@@ -19564,7 +19673,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -19574,13 +19683,13 @@
       "wert": 170000,
       "verein": "18",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Maxim Dal",
+        "link": "https://www.transfermarkt.de/maxim-dal/profil/spieler/934317",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 150000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -19618,9 +19727,9 @@
       },
       "status": {
         "grund": "Kreuzbandriss",
-        "lastUpdate": "30.06.2025",
-        "seit": "1 Monat und 3 Wochen",
-        "details": "Mainz-Talent Dal erleidet Kreuzbandriss",
+        "lastUpdate": "03.07.2025",
+        "seit": "08.05.2025",
+        "details": "",
         "historie": [{
           "grund": "Kreuzbandriss",
           "lastUpdate": "30.06.2025",
@@ -19629,6 +19738,7 @@
           "historie": [],
           "status": "VERLETZT"
         }],
+        "bis": "",
         "status": "VERLETZT"
       }
     },
@@ -19667,7 +19777,7 @@
         "nebenpositionen": ["RV"],
         "nationalspieler": "",
         "trikotNummer": 35,
-        "nationalitaet": "04.07.1999",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "IV",
         "fuss": "rechts"
@@ -19717,9 +19827,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -19729,7 +19839,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Tuta",
@@ -20418,7 +20529,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "DR Kongo",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -20428,13 +20539,13 @@
       "wert": 4310000,
       "verein": "109",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Silas",
+        "link": "https://www.transfermarkt.de/silas/profil/spieler/612826",
         "id": 0
       },
       "lastSeasonPoints": 79,
       "punkte": 79,
-      "realWert": 0,
+      "realWert": 7000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -20473,12 +20584,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "Knöchelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "30.03.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Ilić",
@@ -20524,7 +20636,7 @@
         "nebenpositionen": ["LV"],
         "nationalspieler": "",
         "trikotNummer": 4,
-        "nationalitaet": "01.12.1999",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "IV",
         "fuss": "links"
@@ -20579,9 +20691,9 @@
       },
       "status": {
         "grund": "Meniskusriss",
-        "lastUpdate": "30.06.2025",
-        "seit": "2 Monaten und 3 Wochen",
-        "details": "Bis in den Herbst: Kehl umreißt Ausfallzeit von Schlotterbeck",
+        "lastUpdate": "03.07.2025",
+        "seit": "07.04.2025",
+        "details": "",
         "historie": [{
           "grund": "Meniskusriss",
           "lastUpdate": "30.06.2025",
@@ -20590,6 +20702,7 @@
           "historie": [],
           "status": "VERLETZT"
         }],
+        "bis": "03.10.2025",
         "status": "VERLETZT"
       }
     },
@@ -21373,7 +21486,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "N/A",
+        "nationalitaet": "DR Kongo",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -21383,13 +21496,13 @@
       "wert": 170000,
       "verein": "92",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Silas",
+        "link": "https://www.transfermarkt.de/silas/profil/spieler/612826",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 7000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -21428,9 +21541,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Knöchelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "30.03.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -21440,7 +21553,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Sakar",
@@ -21890,7 +22004,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "N/A",
+        "nationalitaet": "Vereinigte Staaten",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -21900,13 +22014,13 @@
       "wert": 490000,
       "verein": "25",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "James Sands",
+        "link": "https://www.transfermarkt.de/james-sands/profil/spieler/393321",
         "id": 0
       },
       "lastSeasonPoints": 19,
       "punkte": 19,
-      "realWert": 0,
+      "realWert": 3000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -21943,9 +22057,9 @@
         "status": "VERLETZT"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "25.05.2025",
-        "seit": "",
+        "grund": "Innenbandabriss",
+        "lastUpdate": "03.07.2025",
+        "seit": "15.02.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -21955,7 +22069,8 @@
           "historie": [],
           "status": "VERLETZT"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Sands ",
@@ -22248,7 +22363,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "N/A",
+        "nationalitaet": "Argentinien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -22258,13 +22373,13 @@
       "wert": 210000,
       "verein": "8",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Alejo Sarco",
+        "link": "https://www.transfermarkt.de/alejo-sarco/profil/spieler/1000675",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 800000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -22301,9 +22416,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Muskelfaserriss",
+        "lastUpdate": "03.07.2025",
+        "seit": "24.04.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -22313,7 +22428,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Sarco",
@@ -23215,7 +23331,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 21,
-        "nationalitaet": "09.07.1997",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "MS",
         "fuss": "rechts"
@@ -23232,7 +23348,7 @@
       },
       "lastSeasonPoints": 123,
       "punkte": 123,
-      "realWert": 5000000,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -23273,9 +23389,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -23285,7 +23401,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Tietz",
@@ -23735,7 +23852,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "N/A",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -23745,8 +23862,8 @@
       "wert": 160000,
       "verein": "1",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Leon Klanac",
+        "link": "https://www.transfermarkt.de/leon-klanac/profil/spieler/1009439",
         "id": 0
       },
       "lastSeasonPoints": 0,
@@ -23789,9 +23906,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "unbekannte Verletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "10.04.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -23801,7 +23918,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Klanac",
@@ -24459,7 +24577,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "N/A",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -24469,13 +24587,13 @@
       "wert": 1970000,
       "verein": "62",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Tuta",
+        "link": "https://www.transfermarkt.de/tuta/profil/spieler/546213",
         "id": 0
       },
       "lastSeasonPoints": 40,
       "punkte": 40,
-      "realWert": 0,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -24515,9 +24633,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -24527,7 +24645,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "B. Touré",
@@ -24808,7 +24927,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "N/A",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -24818,13 +24937,13 @@
       "wert": 2540000,
       "verein": "14",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Finn Jeltsch",
+        "link": "https://www.transfermarkt.de/finn-jeltsch/profil/spieler/924117",
         "id": 0
       },
       "lastSeasonPoints": 38,
       "punkte": 38,
-      "realWert": 0,
+      "realWert": 20000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -24861,9 +24980,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Entzündung",
+        "lastUpdate": "03.07.2025",
+        "seit": "28.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -24873,7 +24992,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Jeltsch",
@@ -26318,7 +26438,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "N/A",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -26328,13 +26448,13 @@
       "wert": 470000,
       "verein": "1",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Tuta",
+        "link": "https://www.transfermarkt.de/tuta/profil/spieler/546213",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -26379,9 +26499,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -26391,7 +26511,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Kusi-Asare",
@@ -26450,7 +26571,7 @@
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 700000,
+      "realWert": 400000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -26492,12 +26613,13 @@
         "status": "VERLETZT"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "Kreuzbandverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "07.12.2024",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Kilian",
@@ -26771,7 +26893,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -26781,13 +26903,13 @@
       "wert": 190000,
       "verein": "92",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Frederik Jäkel",
+        "link": "https://www.transfermarkt.de/frederik-jakel/profil/spieler/405679",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 600000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -26828,12 +26950,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "Knieprobleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "10.12.2024",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Jäkel",
@@ -27357,7 +27480,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -27367,13 +27490,13 @@
       "wert": 2380000,
       "verein": "13",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Tuta",
+        "link": "https://www.transfermarkt.de/tuta/profil/spieler/546213",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -27417,12 +27540,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "S. El Mala",
@@ -27522,7 +27646,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -27532,13 +27656,13 @@
       "wert": 780000,
       "verein": "13",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Tuta",
+        "link": "https://www.transfermarkt.de/tuta/profil/spieler/546213",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -27582,12 +27706,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "M. El Mala",
@@ -28329,9 +28454,9 @@
       },
       "status": {
         "grund": "",
-        "lastUpdate": "30.06.2025",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Oliveira vor Abschied: HSV stellt Außenverteidiger frei",
+        "details": "",
         "historie": [{
           "grund": "",
           "lastUpdate": "30.06.2025",
@@ -28340,7 +28465,8 @@
           "historie": [],
           "status": "NICHT_IM_KADER"
         }],
-        "status": "NICHT_IM_KADER"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Oliviera",
@@ -28597,12 +28723,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Lainer",
@@ -28677,12 +28804,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "L. Reis",
@@ -28799,7 +28927,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 14,
-        "nationalitaet": "22.06.2001",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "ZM",
         "fuss": "rechts"
@@ -28815,7 +28943,7 @@
       },
       "lastSeasonPoints": 52,
       "punkte": 52,
-      "realWert": 5500000,
+      "realWert": 4000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -28852,9 +28980,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Rückenprobleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "15.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -28864,7 +28992,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Krauß",
@@ -29763,12 +29892,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "A. Németh",
@@ -30037,12 +30167,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Sanne",
@@ -30440,7 +30571,7 @@
         "nebenpositionen": ["RV"],
         "nationalspieler": "",
         "trikotNummer": 25,
-        "nationalitaet": "03.09.1995",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "IV",
         "fuss": "rechts"
@@ -30508,9 +30639,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -30520,7 +30651,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Süle",
@@ -30965,7 +31097,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 24,
-        "nationalitaet": "20.05.1996",
+        "nationalitaet": "Dänemark",
         "laenderspielTore": 0,
         "hauptposition": "LM",
         "fuss": "links"
@@ -30981,7 +31113,7 @@
       },
       "lastSeasonPoints": 61,
       "punkte": 61,
-      "realWert": 6500000,
+      "realWert": 4000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -31018,9 +31150,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Fußverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "16.02.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -31030,7 +31162,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Skov",
@@ -31370,7 +31503,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "DR Kongo",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -31380,13 +31513,13 @@
       "wert": 2790000,
       "verein": "3",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Silas",
+        "link": "https://www.transfermarkt.de/silas/profil/spieler/612826",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 7000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -31424,12 +31557,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "Knöchelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "30.03.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Diks",
@@ -31767,12 +31901,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "I. Traoré",
@@ -32694,7 +32829,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -32704,13 +32839,13 @@
       "wert": 2890000,
       "verein": "8",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Tuta",
+        "link": "https://www.transfermarkt.de/tuta/profil/spieler/546213",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -32748,12 +32883,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "16.06.2025",
-        "seit": "",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Tape",
@@ -33067,7 +33203,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 19,
-        "nationalitaet": "06.11.1995",
+        "nationalitaet": "DR Kongo",
         "laenderspielTore": 0,
         "hauptposition": "MS",
         "fuss": "rechts"
@@ -33084,7 +33220,7 @@
       },
       "lastSeasonPoints": 43,
       "punkte": 43,
-      "realWert": 6000000,
+      "realWert": 7000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -33126,9 +33262,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Knöchelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "30.03.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -33138,7 +33274,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "André Silva",
@@ -33284,7 +33421,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -33294,13 +33431,13 @@
       "wert": 8150000,
       "verein": "1",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Tuta",
+        "link": "https://www.transfermarkt.de/tuta/profil/spieler/546213",
         "id": 0
       },
       "lastSeasonPoints": 153,
       "punkte": 153,
-      "realWert": 0,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -33345,12 +33482,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Tah",
@@ -33370,7 +33508,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "DR Kongo",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -33380,13 +33518,13 @@
       "wert": 310000,
       "verein": "1",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Silas",
+        "link": "https://www.transfermarkt.de/silas/profil/spieler/612826",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 7000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -33424,12 +33562,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "16.06.2025",
-        "seit": "",
+        "grund": "Knöchelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "30.03.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Kiala",
@@ -34077,7 +34216,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -34087,13 +34226,13 @@
       "wert": 3160000,
       "verein": "25",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Tuta",
+        "link": "https://www.transfermarkt.de/tuta/profil/spieler/546213",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -34139,12 +34278,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "30.06.2025",
-        "seit": "",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Fujita",
@@ -35522,7 +35662,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -35532,13 +35672,13 @@
       "wert": 230000,
       "verein": "9",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Jessic Ngankam",
+        "link": "https://www.transfermarkt.de/jessic-ngankam/profil/spieler/448177",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 1000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -35575,12 +35715,13 @@
         "status": "AUFBAUTRAINING"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "Schien- und Wadenbeinbruch",
+        "lastUpdate": "03.07.2025",
+        "seit": "12.04.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Ngankam",
@@ -35625,7 +35766,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 10,
-        "nationalitaet": "03.05.2003",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "OM",
         "fuss": "rechts"
@@ -35642,7 +35783,7 @@
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 130000000,
+      "realWert": 300000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -35693,12 +35834,21 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
-        "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
-        "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "grund": "Schlüsselbeinbruch",
+        "lastUpdate": "03.07.2025",
+        "seit": "22.04.2025",
+        "details": "",
+        "historie": [{
+          "grund": "Vereinswechsel / Karriereende",
+          "lastUpdate": "30.06.2025",
+          "seit": "",
+          "details": "Spieler ist nicht mehr in der Bundesliga",
+          "historie": [],
+          "bis": "03.07.2025",
+          "status": "NICHT_IN_LIGA"
+        }],
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Wirtz",
@@ -36438,7 +36588,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "DR Kongo",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -36448,13 +36598,13 @@
       "wert": 1520000,
       "verein": "14",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Silas",
+        "link": "https://www.transfermarkt.de/silas/profil/spieler/612826",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 7000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -36488,12 +36638,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "Knöchelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "30.03.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Silas",
@@ -36626,7 +36777,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Suriname",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -36636,13 +36787,13 @@
       "wert": 890000,
       "verein": "4",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Immanuel Pherai",
+        "link": "https://www.transfermarkt.de/immanuel-pherai/profil/spieler/412935",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 2000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -36680,12 +36831,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "Sprunggelenksverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "16.05.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Pherai",
@@ -37125,12 +37277,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Moukoko",
@@ -38059,7 +38212,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 26,
-        "nationalitaet": "01.03.1994",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "HS",
         "fuss": "rechts"
@@ -38076,7 +38229,7 @@
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 2000000,
+      "realWert": 800000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -38116,9 +38269,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Knieprobleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "09.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -38128,7 +38281,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "M. Philipp",
@@ -38346,12 +38500,13 @@
         "status": "VERLETZT"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "L. Sané",
@@ -39014,7 +39169,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 20,
-        "nationalitaet": "15.05.2003",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "LV",
         "fuss": "links"
@@ -39031,7 +39186,7 @@
       },
       "lastSeasonPoints": 46,
       "punkte": 46,
-      "realWert": 10000000,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -39068,9 +39223,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -39080,7 +39235,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Netz",
@@ -39199,7 +39355,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -39209,13 +39365,13 @@
       "wert": 180000,
       "verein": "18",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Tuta",
+        "link": "https://www.transfermarkt.de/tuta/profil/spieler/546213",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -39256,12 +39412,13 @@
         "status": "AUFBAUTRAINING"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Tauer",
@@ -40010,10 +40167,10 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Muskuläre Probleme",
-        "lastUpdate": "30.06.2025",
-        "seit": "11 Monaten und 1 Woche",
-        "details": "Zoller muss mit Rückschlägen klarkommen",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
+        "seit": "",
+        "details": "",
         "historie": [{
           "grund": "Muskuläre Probleme",
           "lastUpdate": "30.06.2025",
@@ -40022,7 +40179,8 @@
           "historie": [],
           "status": "VERLETZT"
         }],
-        "status": "VERLETZT"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Zoller",
@@ -40191,12 +40349,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Ahlers",
@@ -40494,12 +40653,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Frimpong",
@@ -41118,12 +41278,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "S. Burchert",
@@ -41653,12 +41814,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "T. Müller",
@@ -44389,7 +44551,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 5,
-        "nationalitaet": "19.02.1997",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "IV",
         "fuss": "links"
@@ -44406,7 +44568,7 @@
       },
       "lastSeasonPoints": 84,
       "punkte": 84,
-      "realWert": 2800000,
+      "realWert": 3000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -44446,9 +44608,9 @@
         "status": "VERLETZT"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Leistenbruch",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.06.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -44458,7 +44620,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Gimber",
@@ -44658,12 +44821,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "P. Schulze",
@@ -44867,7 +45031,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 21,
-        "nationalitaet": "12.05.1999",
+        "nationalitaet": "Japan",
         "laenderspielTore": 0,
         "hauptposition": "IV",
         "fuss": "links"
@@ -44884,7 +45048,7 @@
       },
       "lastSeasonPoints": 24,
       "punkte": 24,
-      "realWert": 30000000,
+      "realWert": 25000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -44922,9 +45086,9 @@
       },
       "status": {
         "grund": "Mittelfußbruch",
-        "lastUpdate": "30.06.2025",
-        "seit": "3 Monaten und 1 Tag",
-        "details": "Ito droht Vorbereitung des FC Bayern zu verpassen",
+        "lastUpdate": "03.07.2025",
+        "seit": "30.03.2025",
+        "details": "",
         "historie": [{
           "grund": "Mittelfußbruch",
           "lastUpdate": "30.06.2025",
@@ -44933,6 +45097,7 @@
           "historie": [],
           "status": "VERLETZT"
         }],
+        "bis": "",
         "status": "VERLETZT"
       }
     },
@@ -45256,12 +45421,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Kossounou ",
@@ -45927,7 +46093,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 6,
-        "nationalitaet": "09.01.1995",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "ZM",
         "fuss": "rechts"
@@ -45943,7 +46109,7 @@
       },
       "lastSeasonPoints": 3,
       "punkte": 3,
-      "realWert": 7000000,
+      "realWert": 3000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -45995,9 +46161,9 @@
         "status": "VERLETZT"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "25.05.2025",
-        "seit": "",
+        "grund": "Kreuzbandriss",
+        "lastUpdate": "03.07.2025",
+        "seit": "03.09.2024",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -46007,7 +46173,8 @@
           "historie": [],
           "status": "AUFBAUTRAINING"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Prömel",
@@ -46282,12 +46449,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Ilaix Moriba",
@@ -46321,7 +46489,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 24,
-        "nationalitaet": "15.04.1994",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "TW",
         "fuss": "rechts"
@@ -46338,7 +46506,7 @@
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 400000,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -46379,9 +46547,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -46391,7 +46559,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Huth",
@@ -47686,7 +47855,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 11,
-        "nationalitaet": "Portugal",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "MS",
         "fuss": "rechts"
@@ -47703,7 +47872,7 @@
       },
       "lastSeasonPoints": 107,
       "punkte": 107,
-      "realWert": 6000000,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -47744,9 +47913,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -47756,7 +47925,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Tiago Tomás",
@@ -48175,12 +48345,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Vidović",
@@ -48714,12 +48885,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "R. Wagner",
@@ -49044,12 +49216,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Oelschlägel",
@@ -49693,7 +49866,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 18,
-        "nationalitaet": "04.10.1999",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "MS",
         "fuss": "rechts"
@@ -49710,7 +49883,7 @@
       },
       "lastSeasonPoints": 140,
       "punkte": 140,
-      "realWert": 3000000,
+      "realWert": 5500000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -49754,9 +49927,9 @@
         "status": "VERLETZT"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Sprunggelenksverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "04.06.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -49766,7 +49939,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Pieringer",
@@ -49905,7 +50079,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 3,
-        "nationalitaet": "03.11.1991",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "IV",
         "fuss": "links"
@@ -49922,7 +50096,7 @@
       },
       "lastSeasonPoints": 69,
       "punkte": 69,
-      "realWert": 1000000,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -49963,9 +50137,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -49975,7 +50149,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "A. Jung",
@@ -50754,7 +50929,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -50764,13 +50939,13 @@
       "wert": 180000,
       "verein": "13",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Florian Dietz",
+        "link": "https://www.transfermarkt.de/florian-dietz/profil/spieler/283871",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 300000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -50807,12 +50982,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "Schlüsselbeinbruch",
+        "lastUpdate": "03.07.2025",
+        "seit": "22.04.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Dietz",
@@ -50944,7 +51120,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 38,
-        "nationalitaet": "24.05.2004",
+        "nationalitaet": "Luxemburg",
         "laenderspielTore": 0,
         "hauptposition": "LA",
         "fuss": "rechts"
@@ -50961,7 +51137,7 @@
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 1000000,
+      "realWert": 500000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -51004,9 +51180,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Muskelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "14.04.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -51016,7 +51192,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Borges Sanches",
@@ -51411,7 +51588,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -51421,13 +51598,13 @@
       "wert": 320000,
       "verein": "9",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Tuta",
+        "link": "https://www.transfermarkt.de/tuta/profil/spieler/546213",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -51465,12 +51642,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Buta",
@@ -51726,7 +51904,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 11,
-        "nationalitaet": "31.08.1995",
+        "nationalitaet": "Deutschland",
         "laenderspielTore": 0,
         "hauptposition": "MS",
         "fuss": "beidfüßig"
@@ -51743,7 +51921,7 @@
       },
       "lastSeasonPoints": 206,
       "punkte": 206,
-      "realWert": 6000000,
+      "realWert": 17000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -51790,10 +51968,10 @@
         "status": "AUFBAUTRAINING"
       },
       "status": {
-        "grund": "Meniskusriss",
-        "lastUpdate": "30.06.2025",
-        "seit": "1 Monat und 2 Wochen",
-        "details": "Rückkehr erst im Herbst? Kleindienst verpasst vermutlich Saisonstart",
+        "grund": "Meniskusverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
+        "details": "",
         "historie": [{
           "grund": "Meniskusriss",
           "lastUpdate": "30.06.2025",
@@ -51802,6 +51980,7 @@
           "historie": [],
           "status": "VERLETZT"
         }],
+        "bis": "15.09.2025",
         "status": "VERLETZT"
       }
     },
@@ -51852,7 +52031,7 @@
       },
       "lastSeasonPoints": 68,
       "punkte": 68,
-      "realWert": 1500000,
+      "realWert": 6000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -51889,9 +52068,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Knieverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -51901,7 +52080,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Fischer",
@@ -52306,7 +52486,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 11,
-        "nationalitaet": "08.03.1996",
+        "nationalitaet": "Ghana",
         "laenderspielTore": 0,
         "hauptposition": "OM",
         "fuss": "rechts"
@@ -52323,7 +52503,7 @@
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 3500000,
+      "realWert": 800000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -52366,19 +52546,38 @@
         "status": "AUFBAUTRAINING"
       },
       "status": {
-        "grund": "Kreuzbandriss",
-        "lastUpdate": "30.06.2025",
-        "seit": "2 Jahren und 4 Monaten",
-        "details": "Schuster äußert sich zur Situation von Kyereh",
-        "historie": [{
-          "grund": "Kreuzbandriss",
-          "lastUpdate": "30.06.2025",
-          "seit": "2 Jahren und 4 Monaten",
-          "details": "Schuster äußert sich zur Situation von Kyereh",
-          "historie": [],
-          "status": "AUFBAUTRAINING"
-        }],
-        "status": "AUFBAUTRAINING"
+        "grund": "Knie-OP",
+        "lastUpdate": "03.07.2025",
+        "seit": "24.07.2024",
+        "details": "",
+        "historie": [
+          {
+            "grund": "Kreuzbandriss",
+            "lastUpdate": "30.06.2025",
+            "seit": "2 Jahren und 4 Monaten",
+            "details": "Schuster äußert sich zur Situation von Kyereh",
+            "historie": [],
+            "status": "AUFBAUTRAINING"
+          },
+          {
+            "grund": "Kreuzbandriss",
+            "lastUpdate": "30.06.2025",
+            "seit": "2 Jahren und 4 Monaten",
+            "details": "Schuster äußert sich zur Situation von Kyereh",
+            "historie": [{
+              "grund": "Kreuzbandriss",
+              "lastUpdate": "30.06.2025",
+              "seit": "2 Jahren und 4 Monaten",
+              "details": "Schuster äußert sich zur Situation von Kyereh",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            }],
+            "bis": "03.07.2025",
+            "status": "AUFBAUTRAINING"
+          }
+        ],
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Kyereh",
@@ -52685,7 +52884,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Kolumbien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -52695,13 +52894,13 @@
       "wert": 170000,
       "verein": "14",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Juan José Perea",
+        "link": "https://www.transfermarkt.de/juan-jose-perea/profil/spieler/496767",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 2000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -52748,12 +52947,13 @@
         "status": "AUFBAUTRAINING"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "Achillessehnenriss",
+        "lastUpdate": "03.07.2025",
+        "seit": "03.03.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Perea",
@@ -52883,7 +53083,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -52893,13 +53093,13 @@
       "wert": 1450000,
       "verein": "4",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Tuta",
+        "link": "https://www.transfermarkt.de/tuta/profil/spieler/546213",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -52938,12 +53138,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "B. Jatta",
@@ -53447,9 +53648,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Muskelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "20.04.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -53459,7 +53660,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Svanberg",
@@ -53945,7 +54147,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -53955,13 +54157,13 @@
       "wert": 2560000,
       "verein": "0",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Tuta",
+        "link": "https://www.transfermarkt.de/tuta/profil/spieler/546213",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -53998,12 +54200,21 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
-        "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
-        "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
+        "details": "",
+        "historie": [{
+          "grund": "Vereinswechsel / Karriereende",
+          "lastUpdate": "30.06.2025",
+          "seit": "",
+          "details": "Spieler ist nicht mehr in der Bundesliga",
+          "historie": [],
+          "bis": "03.07.2025",
+          "status": "NICHT_IN_LIGA"
+        }],
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Tel",
@@ -54790,7 +55001,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 33,
-        "nationalitaet": "21.10.1997",
+        "nationalitaet": "DR Kongo",
         "laenderspielTore": 0,
         "hauptposition": "TW",
         "fuss": "rechts"
@@ -54807,7 +55018,7 @@
       },
       "lastSeasonPoints": 97,
       "punkte": 97,
-      "realWert": 2500000,
+      "realWert": 7000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -54851,9 +55062,9 @@
         "status": "VERLETZT"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "25.05.2025",
-        "seit": "",
+        "grund": "Knöchelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "30.03.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -54863,7 +55074,8 @@
           "historie": [],
           "status": "VERLETZT"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Nicolas",
@@ -55023,7 +55235,7 @@
         ],
         "nationalspieler": "",
         "trikotNummer": 19,
-        "nationalitaet": "14.03.2000",
+        "nationalitaet": "Kamerun",
         "laenderspielTore": 0,
         "hauptposition": "RA",
         "fuss": "rechts"
@@ -55040,7 +55252,7 @@
       },
       "lastSeasonPoints": 59,
       "punkte": 59,
-      "realWert": 5000000,
+      "realWert": 4000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -55078,9 +55290,9 @@
       },
       "status": {
         "grund": "Achillessehnenriss",
-        "lastUpdate": "30.06.2025",
-        "seit": "2 Monaten und 3 Wochen",
-        "details": "Saisonaus für Ngoumou \u2013 Achillessehnenriss stoppt Flügelspieler",
+        "lastUpdate": "03.07.2025",
+        "seit": "07.04.2025",
+        "details": "",
         "historie": [{
           "grund": "Achillessehnenriss",
           "lastUpdate": "30.06.2025",
@@ -55089,6 +55301,7 @@
           "historie": [],
           "status": "VERLETZT"
         }],
+        "bis": "",
         "status": "VERLETZT"
       }
     },
@@ -55549,7 +55762,7 @@
       },
       "lastSeasonPoints": 51,
       "punkte": 51,
-      "realWert": 10000000,
+      "realWert": 4000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -55594,9 +55807,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "Knieverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "04.06.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -55606,7 +55819,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Özcan",
@@ -57417,12 +57631,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Bakatukanda",
@@ -57526,7 +57741,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 42,
-        "nationalitaet": "25.03.2004",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "MS",
         "fuss": "rechts"
@@ -57543,7 +57758,7 @@
       },
       "lastSeasonPoints": 47,
       "punkte": 47,
-      "realWert": 3000000,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -57580,9 +57795,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -57592,7 +57807,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Topp",
@@ -57618,7 +57834,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 33,
-        "nationalitaet": "12.01.1991",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "TW",
         "fuss": "beidfüßig"
@@ -57634,7 +57850,7 @@
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 350000,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -57671,9 +57887,9 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "unbekannt",
-        "lastUpdate": "24.05.2025",
-        "seit": "unbekannt",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [{
           "grund": "unbekannt",
@@ -57683,7 +57899,8 @@
           "historie": [],
           "status": "AKTIV"
         }],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Batz",
@@ -57829,7 +58046,7 @@
         "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
-        "nationalitaet": "",
+        "nationalitaet": "Brasilien",
         "laenderspielTore": 0,
         "hauptposition": "",
         "fuss": ""
@@ -57839,13 +58056,13 @@
       "wert": 7960000,
       "verein": "8",
       "transfermarktDoDe": {
-        "name": "",
-        "link": "",
+        "name": "Tuta",
+        "link": "https://www.transfermarkt.de/tuta/profil/spieler/546213",
         "id": 0
       },
       "lastSeasonPoints": 0,
       "punkte": 0,
-      "realWert": 0,
+      "realWert": 15000000,
       "stats": {
         "notenDurchschnitt": "0",
         "gelbekarten": 0,
@@ -57883,12 +58100,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "",
-        "lastUpdate": "04.06.2025",
-        "seit": "",
+        "grund": "muskuläre Probleme",
+        "lastUpdate": "03.07.2025",
+        "seit": "11.05.2025",
         "details": "",
         "historie": [],
-        "status": "AKTIV"
+        "bis": "",
+        "status": "VERLETZT"
       }
     },
     "name": "Maza",
@@ -58052,12 +58270,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Seimen",
@@ -58610,12 +58829,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Łubik",
@@ -59270,12 +59490,13 @@
         "status": "AKTIV"
       },
       "status": {
-        "grund": "Vereinswechsel / Karriereende",
-        "lastUpdate": "30.06.2025",
+        "grund": "",
+        "lastUpdate": "03.07.2025",
         "seit": "",
-        "details": "Spieler ist nicht mehr in der Bundesliga",
+        "details": "",
         "historie": [],
-        "status": "NICHT_IN_LIGA"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Braun",
@@ -60418,6 +60639,7 @@
   {
     "data": {
       "lastProcessedMatchday": 0,
+      "transfermarktDoDe": {},
       "hauptposition": "",
       "groesse": "",
       "stats": {
@@ -60439,6 +60661,7 @@
       "possibleNames": [],
       "fuss": "",
       "geburtstag": "",
+      "spielerDaten": {},
       "isNotName": [],
       "punktekorrektur": [],
       "verein": "18",
@@ -60476,6 +60699,7 @@
   {
     "data": {
       "lastProcessedMatchday": 0,
+      "transfermarktDoDe": {},
       "hauptposition": "",
       "groesse": "",
       "stats": {
@@ -60497,6 +60721,7 @@
       "possibleNames": [],
       "fuss": "",
       "geburtstag": "",
+      "spielerDaten": {},
       "isNotName": [],
       "punktekorrektur": [],
       "verein": "14",
@@ -60534,6 +60759,7 @@
   {
     "data": {
       "lastProcessedMatchday": 0,
+      "transfermarktDoDe": {},
       "hauptposition": "",
       "groesse": "",
       "stats": {
@@ -60555,6 +60781,7 @@
       "possibleNames": [],
       "fuss": "",
       "geburtstag": "",
+      "spielerDaten": {},
       "isNotName": [],
       "punktekorrektur": [],
       "verein": "12",
@@ -60592,6 +60819,7 @@
   {
     "data": {
       "lastProcessedMatchday": 0,
+      "transfermarktDoDe": {},
       "hauptposition": "",
       "groesse": "",
       "stats": {
@@ -60613,6 +60841,7 @@
       "possibleNames": [],
       "fuss": "",
       "geburtstag": "",
+      "spielerDaten": {},
       "isNotName": [],
       "punktekorrektur": [],
       "verein": "4",
@@ -60650,6 +60879,7 @@
   {
     "data": {
       "lastProcessedMatchday": 0,
+      "transfermarktDoDe": {},
       "hauptposition": "",
       "groesse": "",
       "stats": {
@@ -60671,6 +60901,7 @@
       "possibleNames": [],
       "fuss": "",
       "geburtstag": "",
+      "spielerDaten": {},
       "isNotName": [],
       "punktekorrektur": [],
       "verein": "8",
@@ -60704,5 +60935,549 @@
     },
     "name": "Quansah",
     "id": "34217"
+  },
+  {
+    "data": {
+      "lastProcessedMatchday": 0,
+      "transfermarktDoDe": {},
+      "hauptposition": "",
+      "groesse": "",
+      "stats": {
+        "notenDurchschnitt": "0",
+        "gelbekarten": 0,
+        "totalPenalties": 0,
+        "ratedGames": 0,
+        "lastUpdate": "03.07.2025",
+        "playedGames": 0,
+        "totalGoals": 0,
+        "punkteDurchschnitt": "0",
+        "gelbrotekarten": 0,
+        "rotekarten": 0,
+        "manOfTheMatchAmount": 0
+      },
+      "nebenpositionen": [],
+      "attribute": [],
+      "nationalitaet": "",
+      "possibleNames": [],
+      "fuss": "",
+      "geburtstag": "",
+      "spielerDaten": {},
+      "isNotName": [],
+      "punktekorrektur": [],
+      "verein": "68",
+      "wert": 0,
+      "lastPoints": 0,
+      "punkte": 0,
+      "realWert": 0,
+      "laenderspiele": 0,
+      "lastUpdate": "03.07.2025",
+      "spieltagspunkte": [],
+      "nationalspieler": "",
+      "trikotNummer": 0,
+      "position": "MITTELFELD",
+      "laenderspielTore": 0,
+      "comunioStatus": {
+        "grund": "unbekannt",
+        "lastUpdate": "03.07.2025",
+        "seit": "unbekannt",
+        "details": "",
+        "historie": [],
+        "status": "AKTIV"
+      },
+      "status": {
+        "grund": "unbekannt",
+        "lastUpdate": "03.07.2025",
+        "seit": "unbekannt",
+        "details": "",
+        "historie": [],
+        "status": "AKTIV"
+      }
+    },
+    "name": "Reinheimer",
+    "id": "34224"
+  },
+  {
+    "data": {
+      "lastProcessedMatchday": 0,
+      "transfermarktDoDe": {},
+      "hauptposition": "",
+      "groesse": "",
+      "stats": {
+        "notenDurchschnitt": "0",
+        "gelbekarten": 0,
+        "totalPenalties": 0,
+        "ratedGames": 0,
+        "lastUpdate": "03.07.2025",
+        "playedGames": 0,
+        "totalGoals": 0,
+        "punkteDurchschnitt": "0",
+        "gelbrotekarten": 0,
+        "rotekarten": 0,
+        "manOfTheMatchAmount": 0
+      },
+      "nebenpositionen": [],
+      "attribute": [],
+      "nationalitaet": "",
+      "possibleNames": [],
+      "fuss": "",
+      "geburtstag": "",
+      "spielerDaten": {},
+      "isNotName": [],
+      "punktekorrektur": [],
+      "verein": "9",
+      "wert": 0,
+      "lastPoints": 0,
+      "punkte": 0,
+      "realWert": 0,
+      "laenderspiele": 0,
+      "lastUpdate": "03.07.2025",
+      "spieltagspunkte": [],
+      "nationalspieler": "",
+      "trikotNummer": 0,
+      "position": "ABWEHR",
+      "laenderspielTore": 0,
+      "comunioStatus": {
+        "grund": "unbekannt",
+        "lastUpdate": "03.07.2025",
+        "seit": "unbekannt",
+        "details": "",
+        "historie": [],
+        "status": "AKTIV"
+      },
+      "status": {
+        "grund": "unbekannt",
+        "lastUpdate": "03.07.2025",
+        "seit": "unbekannt",
+        "details": "",
+        "historie": [],
+        "status": "AKTIV"
+      }
+    },
+    "name": "Boakye Osei",
+    "id": "34220"
+  },
+  {
+    "data": {
+      "lastProcessedMatchday": 0,
+      "transfermarktDoDe": {},
+      "hauptposition": "",
+      "groesse": "",
+      "stats": {
+        "notenDurchschnitt": "0",
+        "gelbekarten": 0,
+        "totalPenalties": 0,
+        "ratedGames": 0,
+        "lastUpdate": "03.07.2025",
+        "playedGames": 0,
+        "totalGoals": 0,
+        "punkteDurchschnitt": "0",
+        "gelbrotekarten": 0,
+        "rotekarten": 0,
+        "manOfTheMatchAmount": 0
+      },
+      "nebenpositionen": [],
+      "attribute": [],
+      "nationalitaet": "",
+      "possibleNames": [],
+      "fuss": "",
+      "geburtstag": "",
+      "spielerDaten": {},
+      "isNotName": [],
+      "punktekorrektur": [],
+      "verein": "9",
+      "wert": 0,
+      "lastPoints": 0,
+      "punkte": 0,
+      "realWert": 0,
+      "laenderspiele": 0,
+      "lastUpdate": "03.07.2025",
+      "spieltagspunkte": [],
+      "nationalspieler": "",
+      "trikotNummer": 0,
+      "position": "ABWEHR",
+      "laenderspielTore": 0,
+      "comunioStatus": {
+        "grund": "unbekannt",
+        "lastUpdate": "03.07.2025",
+        "seit": "unbekannt",
+        "details": "",
+        "historie": [],
+        "status": "AKTIV"
+      },
+      "status": {
+        "grund": "unbekannt",
+        "lastUpdate": "03.07.2025",
+        "seit": "unbekannt",
+        "details": "",
+        "historie": [],
+        "status": "AKTIV"
+      }
+    },
+    "name": "Doumbia",
+    "id": "34218"
+  },
+  {
+    "data": {
+      "lastProcessedMatchday": 0,
+      "transfermarktDoDe": {
+        "link": "https://www.transfermarkt.de/silas/profil/spieler/612826",
+        "name": "Silas"
+      },
+      "hauptposition": "",
+      "groesse": "",
+      "stats": {
+        "notenDurchschnitt": "0",
+        "gelbekarten": 0,
+        "totalPenalties": 0,
+        "ratedGames": 0,
+        "lastUpdate": "03.07.2025",
+        "playedGames": 0,
+        "totalGoals": 0,
+        "punkteDurchschnitt": "0",
+        "gelbrotekarten": 0,
+        "rotekarten": 0,
+        "manOfTheMatchAmount": 0
+      },
+      "nebenpositionen": [],
+      "attribute": [],
+      "nationalitaet": "",
+      "possibleNames": [],
+      "fuss": "",
+      "geburtstag": "",
+      "spielerDaten": {"nationalitaet": "DR Kongo"},
+      "isNotName": [],
+      "punktekorrektur": [],
+      "verein": "9",
+      "wert": 0,
+      "lastPoints": 0,
+      "punkte": 0,
+      "realWert": 7000000,
+      "laenderspiele": 0,
+      "lastUpdate": "03.07.2025",
+      "spieltagspunkte": [],
+      "nationalspieler": "",
+      "trikotNummer": 0,
+      "position": "MITTELFELD",
+      "laenderspielTore": 0,
+      "comunioStatus": {
+        "grund": "unbekannt",
+        "lastUpdate": "03.07.2025",
+        "seit": "unbekannt",
+        "details": "",
+        "historie": [],
+        "status": "AKTIV"
+      },
+      "status": {
+        "grund": "Knöchelverletzung",
+        "lastUpdate": "03.07.2025",
+        "seit": "30.03.2025",
+        "details": "",
+        "historie": [],
+        "bis": "",
+        "status": "VERLETZT"
+      }
+    },
+    "name": "Dills",
+    "id": "34222"
+  },
+  {
+    "data": {
+      "lastProcessedMatchday": 0,
+      "transfermarktDoDe": {},
+      "hauptposition": "",
+      "groesse": "",
+      "stats": {
+        "notenDurchschnitt": "0",
+        "gelbekarten": 0,
+        "totalPenalties": 0,
+        "ratedGames": 0,
+        "lastUpdate": "03.07.2025",
+        "playedGames": 0,
+        "totalGoals": 0,
+        "punkteDurchschnitt": "0",
+        "gelbrotekarten": 0,
+        "rotekarten": 0,
+        "manOfTheMatchAmount": 0
+      },
+      "nebenpositionen": [],
+      "attribute": [],
+      "nationalitaet": "",
+      "possibleNames": [],
+      "fuss": "",
+      "geburtstag": "",
+      "spielerDaten": {},
+      "isNotName": [],
+      "punktekorrektur": [],
+      "verein": "9",
+      "wert": 0,
+      "lastPoints": 0,
+      "punkte": 0,
+      "realWert": 0,
+      "laenderspiele": 0,
+      "lastUpdate": "03.07.2025",
+      "spieltagspunkte": [],
+      "nationalspieler": "",
+      "trikotNummer": 0,
+      "position": "MITTELFELD",
+      "laenderspielTore": 0,
+      "comunioStatus": {
+        "grund": "unbekannt",
+        "lastUpdate": "03.07.2025",
+        "seit": "unbekannt",
+        "details": "",
+        "historie": [],
+        "status": "AKTIV"
+      },
+      "status": {
+        "grund": "unbekannt",
+        "lastUpdate": "03.07.2025",
+        "seit": "unbekannt",
+        "details": "",
+        "historie": [],
+        "status": "AKTIV"
+      }
+    },
+    "name": "Fenyő ",
+    "id": "33985"
+  },
+  {
+    "data": {
+      "lastProcessedMatchday": 0,
+      "transfermarktDoDe": {},
+      "hauptposition": "",
+      "groesse": "",
+      "stats": {
+        "notenDurchschnitt": "0",
+        "gelbekarten": 0,
+        "totalPenalties": 0,
+        "ratedGames": 0,
+        "lastUpdate": "03.07.2025",
+        "playedGames": 0,
+        "totalGoals": 0,
+        "punkteDurchschnitt": "0",
+        "gelbrotekarten": 0,
+        "rotekarten": 0,
+        "manOfTheMatchAmount": 0
+      },
+      "nebenpositionen": [],
+      "attribute": [],
+      "nationalitaet": "",
+      "possibleNames": [],
+      "fuss": "",
+      "geburtstag": "",
+      "spielerDaten": {},
+      "isNotName": [],
+      "punktekorrektur": [],
+      "verein": "9",
+      "wert": 0,
+      "lastPoints": 0,
+      "punkte": 0,
+      "realWert": 0,
+      "laenderspiele": 0,
+      "lastUpdate": "03.07.2025",
+      "spieltagspunkte": [],
+      "nationalspieler": "",
+      "trikotNummer": 0,
+      "position": "MITTELFELD",
+      "laenderspielTore": 0,
+      "comunioStatus": {
+        "grund": "unbekannt",
+        "lastUpdate": "03.07.2025",
+        "seit": "unbekannt",
+        "details": "",
+        "historie": [],
+        "status": "AKTIV"
+      },
+      "status": {
+        "grund": "unbekannt",
+        "lastUpdate": "03.07.2025",
+        "seit": "unbekannt",
+        "details": "",
+        "historie": [],
+        "status": "AKTIV"
+      }
+    },
+    "name": "Maluze",
+    "id": "34221"
+  },
+  {
+    "data": {
+      "lastProcessedMatchday": 0,
+      "transfermarktDoDe": {},
+      "hauptposition": "",
+      "groesse": "",
+      "stats": {
+        "notenDurchschnitt": "0",
+        "gelbekarten": 0,
+        "totalPenalties": 0,
+        "ratedGames": 0,
+        "lastUpdate": "03.07.2025",
+        "playedGames": 0,
+        "totalGoals": 0,
+        "punkteDurchschnitt": "0",
+        "gelbrotekarten": 0,
+        "rotekarten": 0,
+        "manOfTheMatchAmount": 0
+      },
+      "nebenpositionen": [],
+      "attribute": [],
+      "nationalitaet": "",
+      "possibleNames": [],
+      "fuss": "",
+      "geburtstag": "",
+      "spielerDaten": {},
+      "isNotName": [],
+      "punktekorrektur": [],
+      "verein": "9",
+      "wert": 0,
+      "lastPoints": 0,
+      "punkte": 0,
+      "realWert": 0,
+      "laenderspiele": 0,
+      "lastUpdate": "03.07.2025",
+      "spieltagspunkte": [],
+      "nationalspieler": "",
+      "trikotNummer": 0,
+      "position": "STURM",
+      "laenderspielTore": 0,
+      "comunioStatus": {
+        "grund": "unbekannt",
+        "lastUpdate": "03.07.2025",
+        "seit": "unbekannt",
+        "details": "",
+        "historie": [],
+        "status": "AKTIV"
+      },
+      "status": {
+        "grund": "unbekannt",
+        "lastUpdate": "03.07.2025",
+        "seit": "unbekannt",
+        "details": "",
+        "historie": [],
+        "status": "AKTIV"
+      }
+    },
+    "name": "Awusi",
+    "id": "33982"
+  },
+  {
+    "data": {
+      "lastProcessedMatchday": 0,
+      "transfermarktDoDe": {},
+      "hauptposition": "",
+      "groesse": "",
+      "stats": {
+        "notenDurchschnitt": "0",
+        "gelbekarten": 0,
+        "totalPenalties": 0,
+        "ratedGames": 0,
+        "lastUpdate": "03.07.2025",
+        "playedGames": 0,
+        "totalGoals": 0,
+        "punkteDurchschnitt": "0",
+        "gelbrotekarten": 0,
+        "rotekarten": 0,
+        "manOfTheMatchAmount": 0
+      },
+      "nebenpositionen": [],
+      "attribute": [],
+      "nationalitaet": "",
+      "possibleNames": [],
+      "fuss": "",
+      "geburtstag": "",
+      "spielerDaten": {},
+      "isNotName": [],
+      "punktekorrektur": [],
+      "verein": "9",
+      "wert": 0,
+      "lastPoints": 0,
+      "punkte": 0,
+      "realWert": 0,
+      "laenderspiele": 0,
+      "lastUpdate": "03.07.2025",
+      "spieltagspunkte": [],
+      "nationalspieler": "",
+      "trikotNummer": 0,
+      "position": "STURM",
+      "laenderspielTore": 0,
+      "comunioStatus": {
+        "grund": "unbekannt",
+        "lastUpdate": "03.07.2025",
+        "seit": "unbekannt",
+        "details": "",
+        "historie": [],
+        "status": "AKTIV"
+      },
+      "status": {
+        "grund": "unbekannt",
+        "lastUpdate": "03.07.2025",
+        "seit": "unbekannt",
+        "details": "",
+        "historie": [],
+        "status": "AKTIV"
+      }
+    },
+    "name": "Gaul Souza",
+    "id": "34219"
+  },
+  {
+    "data": {
+      "lastProcessedMatchday": 0,
+      "transfermarktDoDe": {},
+      "hauptposition": "",
+      "groesse": "",
+      "stats": {
+        "notenDurchschnitt": "0",
+        "gelbekarten": 0,
+        "totalPenalties": 0,
+        "ratedGames": 0,
+        "lastUpdate": "03.07.2025",
+        "playedGames": 0,
+        "totalGoals": 0,
+        "punkteDurchschnitt": "0",
+        "gelbrotekarten": 0,
+        "rotekarten": 0,
+        "manOfTheMatchAmount": 0
+      },
+      "nebenpositionen": [],
+      "attribute": [],
+      "nationalitaet": "",
+      "possibleNames": [],
+      "fuss": "",
+      "geburtstag": "",
+      "spielerDaten": {},
+      "isNotName": [],
+      "punktekorrektur": [],
+      "verein": "9",
+      "wert": 0,
+      "lastPoints": 0,
+      "punkte": 0,
+      "realWert": 0,
+      "laenderspiele": 0,
+      "lastUpdate": "03.07.2025",
+      "spieltagspunkte": [],
+      "nationalspieler": "",
+      "trikotNummer": 0,
+      "position": "STURM",
+      "laenderspielTore": 0,
+      "comunioStatus": {
+        "grund": "unbekannt",
+        "lastUpdate": "03.07.2025",
+        "seit": "unbekannt",
+        "details": "",
+        "historie": [],
+        "status": "AKTIV"
+      },
+      "status": {
+        "grund": "unbekannt",
+        "lastUpdate": "03.07.2025",
+        "seit": "unbekannt",
+        "details": "",
+        "historie": [],
+        "status": "AKTIV"
+      }
+    },
+    "name": "İnanoğlu",
+    "id": "34223"
   }
 ]
