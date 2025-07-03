@@ -14338,10 +14338,10 @@
         "status": "AUFBAUTRAINING"
       },
       "status": {
-        "grund": "Kreuzbandriss",
+        "grund": "",
         "lastUpdate": "03.07.2025",
-        "seit": "5 Monaten und 4 Wochen",
-        "details": "Belocian macht weitere Fortschritte im Aufbautraining",
+        "seit": "",
+        "details": "",
         "historie": [{
           "grund": "Kreuzbandriss",
           "lastUpdate": "03.07.2025",
@@ -14350,7 +14350,8 @@
           "historie": [],
           "status": "AUFBAUTRAINING"
         }],
-        "status": "AUFBAUTRAINING"
+        "bis": null,
+        "status": "AKTIV"
       }
     },
     "name": "Belocian",
