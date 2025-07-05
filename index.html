@@ -185,6 +185,7 @@
     fetch('News.json')
       .then(response => response.json())
       .then(data => {
+        // Nach Datum absteigend sortieren (neueste zuerst!)
         data.sort((a, b) => b.date.localeCompare(a.date, 'de-DE'));
         let html = '';
         for (const day of data) {
