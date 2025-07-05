@@ -170,6 +170,10 @@
         </div>
     </div>
     <script>
+    function parseGermanDate(str) {
+        const [d, m, y] = str.split(".");
+        return new Date(Number(y), Number(m) - 1, Number(d));
+    }
     function toggleNewsList() {
         const list = document.getElementById('news-list');
         const icon = document.getElementById('news-toggle-icon');
@@ -181,12 +185,10 @@
             icon.style.transform = 'rotate(-90deg)';
         }
     }
-
     fetch('News.json')
       .then(response => response.json())
       .then(data => {
-        // Nach Datum absteigend sortieren (neueste zuerst!)
-        data.sort((a, b) => b.date.localeCompare(a.date, 'de-DE'));
+        data.sort((a, b) => parseGermanDate(b.date) - parseGermanDate(a.date));
         let html = '';
         for (const day of data) {
           const grouped = {};
