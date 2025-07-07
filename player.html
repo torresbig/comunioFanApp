@@ -883,7 +883,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.getElementById('age').textContent = calcAge(player.data?.spielerDaten?.geburtstag) || '-';
         document.getElementById('height').textContent = player.data?.spielerDaten?.groesse || '-';
         document.getElementById('nationality').textContent = player.data?.spielerDaten?.nationalitaet || '-';
-        document.getElementById('position').textContent = player.data?.spielerDaten?.hauptposition || player.data?.position || '-';
+        document.getElementById('position').textContent = player.data?.spielerDaten?.hauptposition + "(" + player.data?.spielerDaten?.nebenposition +")" || player.data?.position || '-';
         document.getElementById('foot').textContent = player.data?.spielerDaten?.fuss || '-';
         document.getElementById('jerseyNumber').textContent = player.data?.spielerDaten?.trikotNummer || '-';
         
