@@ -703,6 +703,53 @@
     ]
   },
   {
+    "date": "08.07.2025",
+    "news": [
+      {
+        "date": "08.07.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Zieler (ID: 31634)",
+        "playerId": "31634"
+      },
+      {
+        "date": "08.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Skhiri\",\"price\":3333009,\"playerValue\":3200000,\"playerId\":\"33157\",\"buyer\":\"Alexander\"}",
+        "playerId": "33157"
+      },
+      {
+        "date": "08.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Christensen (33795) ist wieder AKTIV",
+        "playerId": "33795"
+      },
+      {
+        "date": "08.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: R. Hack (32787) ist jetzt VERLETZT (muskuläre Probleme)",
+        "playerId": "32787"
+      },
+      {
+        "date": "08.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Carstensen (33833) ist wieder AKTIV",
+        "playerId": "33833"
+      },
+      {
+        "date": "08.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Krauß (33130) ist wieder AKTIV",
+        "playerId": "33130"
+      }
+    ]
+  },
+  {
     "date": "08.06.2025",
     "news": [
       {
@@ -793,6 +840,13 @@
         "gelesen": false,
         "text": "Statuswechsel: Borges Sanches (33618) ist wieder AKTIV",
         "playerId": "33618"
+      },
+      {
+        "date": "07.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Stefan 8\",\"playerName\":\"Kabadayi\",\"price\":320000,\"playerValue\":330000,\"playerId\":\"33983\",\"buyer\":\"Computer\"}",
+        "playerId": "33983"
       }
     ]
   },
