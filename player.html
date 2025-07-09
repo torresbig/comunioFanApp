@@ -805,6 +805,9 @@ function initTabs() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+    // Debug-Panel standardmäßig einklappen
+    document.getElementById('debugContent').classList.add('collapsed');
+    document.getElementById('debugToggle').textContent = '▶';
     debug('DOM geladen - starte Initialisierung', 'info');
     
     await loadOwnersData();
@@ -904,7 +907,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         document.getElementById('comunioPosition').textContent = player.data?.position || '-';
         document.getElementById('marketValue').textContent = formatCurrencyFull(player.data?.wert);
-        document.getElementById('pointsWithLastYear').textContent = player.data?.punkte + " (" + player.data?.lastSeasonPoints?:"N/A" +")"|| '0';
+        document.getElementById('pointsWithLastYear').textContent = (player.data?.punkte ?? '-') + " (" + (player.data?.lastSeasonPoints ?? "N/A") + ")";
         document.getElementById('owner').textContent = globalOwnersMap.get(player.id) || "Computer";
         
         document.getElementById('detailStatus').textContent = player.data?.comunioStatus?.details || getStatusDisplayName(status);
