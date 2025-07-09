@@ -681,6 +681,20 @@
     "news": [
       {
         "date": "09.07.2025",
+        "art": "VEREINSWECHSEL",
+        "gelesen": false,
+        "text": "Vereinswechsel: Matanović (Verein 9 → 21)",
+        "playerId": "33783"
+      },
+      {
+        "date": "09.07.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Kawasaki (ID: 34231)",
+        "playerId": "34231"
+      },
+      {
+        "date": "09.07.2025",
         "art": "NEW_PLAYER",
         "gelesen": false,
         "text": "Neuer Spieler: Hountondji (ID: 34229)",
@@ -706,6 +720,13 @@
         "gelesen": false,
         "text": "Statuswechsel: Duranville (33728) ist jetzt VERLETZT (Schultereckgelenkssprengung)",
         "playerId": "33728"
+      },
+      {
+        "date": "09.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Alexander\",\"playerName\":\"Finkgräfe\",\"price\":3141500,\"playerValue\":2930000,\"playerId\":\"33848\",\"buyer\":\"Computer\"}",
+        "playerId": "33848"
       }
     ]
   },
@@ -785,6 +806,20 @@
         "art": "TRANSFER",
         "gelesen": false,
         "text": "{\"seller\":\"Stefan 8\",\"playerName\":\"Baldé\",\"price\":525200,\"playerValue\":580000,\"playerId\":\"34194\",\"buyer\":\"Computer\"}",
+        "playerId": "34194"
+      },
+      {
+        "date": "08.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Skhiri\",\"price\":3333009,\"playerValue\":2840000,\"playerId\":\"33157\",\"buyer\":\"Alexander\"}",
+        "playerId": "33157"
+      },
+      {
+        "date": "08.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Stefan 8\",\"playerName\":\"Baldé\",\"price\":525200,\"playerValue\":490000,\"playerId\":\"34194\",\"buyer\":\"Computer\"}",
         "playerId": "34194"
       }
     ]
@@ -886,6 +921,27 @@
         "art": "TRANSFER",
         "gelesen": false,
         "text": "{\"seller\":\"Stefan 8\",\"playerName\":\"Kabadayi\",\"price\":320000,\"playerValue\":330000,\"playerId\":\"33983\",\"buyer\":\"Computer\"}",
+        "playerId": "33983"
+      },
+      {
+        "date": "07.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Bellingham\",\"price\":16090009,\"playerValue\":15860000,\"playerId\":\"34200\",\"buyer\":\"Alexander\"}",
+        "playerId": "34200"
+      },
+      {
+        "date": "07.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Weiper\",\"price\":3838000,\"playerValue\":3710000,\"playerId\":\"33578\",\"buyer\":\"Christopher\"}",
+        "playerId": "33578"
+      },
+      {
+        "date": "07.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Stefan 8\",\"playerName\":\"Kabadayi\",\"price\":320000,\"playerValue\":300000,\"playerId\":\"33983\",\"buyer\":\"Computer\"}",
         "playerId": "33983"
       }
     ]
