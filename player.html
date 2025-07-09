@@ -877,9 +877,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         const status = player.data?.comunioStatus?.status || 'Unbekannt';
         document.getElementById('statusIndicator').textContent = getStatusIndicator(status);
-
-        
-
         
         // Spielerdaten füllen
         document.getElementById('birthday').textContent = player.data?.spielerDaten?.geburtstag || '-';
@@ -907,7 +904,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         document.getElementById('comunioPosition').textContent = player.data?.position || '-';
         document.getElementById('marketValue').textContent = formatCurrencyFull(player.data?.wert);
-        document.getElementById('pointsWithLastYear').textContent = player.data?.punkte + " (" + (player.data?.lastSeasonPoints?:"N/A") +")"|| '0';
+        document.getElementById('pointsWithLastYear').textContent = player.data?.punkte + " (" + player.data?.lastSeasonPoints?:"N/A" +")"|| '0';
         document.getElementById('owner').textContent = globalOwnersMap.get(player.id) || "Computer";
         
         document.getElementById('detailStatus').textContent = player.data?.comunioStatus?.details || getStatusDisplayName(status);
