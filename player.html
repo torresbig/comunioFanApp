@@ -226,7 +226,7 @@
             <div class="info-card-content">
                 <div class="info-row"><span class="info-label">Position:</span><span class="info-value" id="comunioPosition">-</span></div>
                 <div class="info-row"><span class="info-label">Marktwert:</span><span class="info-value" id="marketValue">-</span></div>
-                <div class="info-row"><span class="info-label">Punkte (letztes Jahr):</span><span class="info-value" id="lastYearPoints">-</span></div>
+                <div class="info-row"><span class="info-label">Punkte (letztes Jahr):</span><span class="info-value" id="pointsWithLastYear">-</span></div>
                 <div class="info-row"><span class="info-label">Besitzer:</span><span class="info-value" id="owner">-</span></div>
             </div>
         </div>
@@ -897,14 +897,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         } else {
           anzeigeText = position;
         }
-
+    
         document.getElementById('position').textContent = anzeigeText;
         document.getElementById('foot').textContent = player.data?.spielerDaten?.fuss || '-';
         document.getElementById('jerseyNumber').textContent = player.data?.spielerDaten?.trikotNummer || '-';
         
         document.getElementById('comunioPosition').textContent = player.data?.position || '-';
         document.getElementById('marketValue').textContent = formatCurrencyFull(player.data?.wert);
-        document.getElementById('lastYearPoints').textContent = player.data?.lastSeasonPoints || '0';
+        document.getElementById('pointsWithLastYear').textContent = player.data?.punkte + " (" + player.data?.lastSeasonPoints?:"N/A" +")"|| '0';
         document.getElementById('owner').textContent = globalOwnersMap.get(player.id) || "Computer";
         
         document.getElementById('detailStatus').textContent = player.data?.comunioStatus?.details || getStatusDisplayName(status);
