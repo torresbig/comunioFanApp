@@ -287,7 +287,6 @@ function updateDebugDisplay() {
             <span class="debug-level-${entry.level}"> ${entry.message}</span>
         </div>
     `).join('');
-    toggleDebug();
     container.innerHTML = html;
     container.scrollTop = container.scrollHeight;
 }
@@ -878,6 +877,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         const status = player.data?.comunioStatus?.status || 'Unbekannt';
         document.getElementById('statusIndicator').textContent = getStatusIndicator(status);
+
+        // DEBUGPANEL eingeklappt
+        document.getElementById('debugContent').classList.add('collapsed');
+        document.getElementById('debugToggle').textContent = '▶';
+
         
         // Spielerdaten füllen
         document.getElementById('birthday').textContent = player.data?.spielerDaten?.geburtstag || '-';
