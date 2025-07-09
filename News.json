@@ -677,6 +677,39 @@
     ]
   },
   {
+    "date": "09.07.2025",
+    "news": [
+      {
+        "date": "09.07.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Hountondji (ID: 34229)",
+        "playerId": "34229"
+      },
+      {
+        "date": "09.07.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Jovanović (ID: 34230)",
+        "playerId": "34230"
+      },
+      {
+        "date": "09.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Ducksch (32202) ist jetzt VERLETZT (Wadenverletzung)",
+        "playerId": "32202"
+      },
+      {
+        "date": "09.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Duranville (33728) ist jetzt VERLETZT (Schultereckgelenkssprengung)",
+        "playerId": "33728"
+      }
+    ]
+  },
+  {
     "date": "09.06.2025",
     "news": [
       {
@@ -746,6 +779,13 @@
         "gelesen": false,
         "text": "Statuswechsel: Krauß (33130) ist wieder AKTIV",
         "playerId": "33130"
+      },
+      {
+        "date": "08.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Stefan 8\",\"playerName\":\"Baldé\",\"price\":525200,\"playerValue\":580000,\"playerId\":\"34194\",\"buyer\":\"Computer\"}",
+        "playerId": "34194"
       }
     ]
   },
