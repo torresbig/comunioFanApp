@@ -662,6 +662,27 @@
     "news": [
       {
         "date": "10.07.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Capaldo (ID: 34233)",
+        "playerId": "34233"
+      },
+      {
+        "date": "10.07.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Ostrzinski (ID: 33539)",
+        "playerId": "33539"
+      },
+      {
+        "date": "10.07.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Zeitler (ID: 34232)",
+        "playerId": "34232"
+      },
+      {
+        "date": "10.07.2025",
         "art": "TRANSFER",
         "gelesen": false,
         "text": "{\"seller\":\"Computer\",\"playerName\":\"Zieliński\",\"price\":331000,\"playerValue\":310000,\"playerId\":\"34210\",\"buyer\":\"Timo\"}",
@@ -680,6 +701,20 @@
         "gelesen": false,
         "text": "{\"seller\":\"Computer\",\"playerName\":\"Querfeld\",\"price\":3200000,\"playerValue\":3270000,\"playerId\":\"33995\",\"buyer\":\"Sascha\"}",
         "playerId": "33995"
+      },
+      {
+        "date": "10.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Stefan 8\",\"playerName\":\"Kemlein\",\"price\":540800,\"playerValue\":520000,\"playerId\":\"33821\",\"buyer\":\"Computer\"}",
+        "playerId": "33821"
+      },
+      {
+        "date": "10.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Capaldo (34233) ist jetzt VERLETZT (Zehenbruch)",
+        "playerId": "34233"
       }
     ]
   },
