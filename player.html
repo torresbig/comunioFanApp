@@ -214,10 +214,7 @@
                 <div class="info-row"><span class="info-label">Position:</span><span class="info-value" id="position">-</span></div>
                 <div class="info-row"><span class="info-label">Hauptfuß:</span><span class="info-value" id="foot">-</span></div>
                 <div class="info-row"><span class="info-label">Trikotnummer:</span><span class="info-value" id="jerseyNumber">-</span></div>
-                <div class="info-row" id="ligainsiderRankingRow" style="display:none;">
-                    <span class="info-label">Ligainsider Ranking:</span>
-                    <span class="info-value" id="ligainsiderRankingValue">-</span>
-                </div>
+
             </div>
         </div>
         <div class="info-card" id="ligainsiderPanel" style="display:none;">
@@ -707,10 +704,7 @@ function displayLigainsiderPanel(player) {
             <span class="info-label">Durchschnittspunkte:</span>
             <span class="info-value">${rankingObj.durchschnittspunkte ?? '-'}</span>
         </div>
-        <div class="info-row">
-            <span class="info-label">Verein:</span>
-            <span class="info-value">${rankingObj.verein ?? '-'}</span>
-        </div>
+
     `;
     panel.style.display = '';
 }
