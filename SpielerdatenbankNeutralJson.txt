@@ -557,7 +557,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 756,
+        "einsaetzeBewertet": 18,
+        "durchschnittsnote": 3.88,
+        "verein": "1. FC Heidenheim",
+        "durchschnittsminuten": 68,
+        "durchschnittspunkte": 37.22,
+        "rang": 189
+      }}],
       "possibleNames": [
         "Mathias Honsak",
         "M. Honsak",
@@ -921,7 +929,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1050,
+        "einsaetzeBewertet": 30,
+        "durchschnittsnote": 3.97,
+        "verein": "1. FC Heidenheim",
+        "durchschnittsminuten": 92,
+        "durchschnittspunkte": 35,
+        "rang": 222
+      }}],
       "possibleNames": [
         "Omar Traore",
         "Omar Traoré",
@@ -1133,7 +1149,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 940,
+        "einsaetzeBewertet": 24,
+        "durchschnittsnote": 3.73,
+        "verein": "1. FSV Mainz 05",
+        "durchschnittsminuten": 88,
+        "durchschnittspunkte": 38.58,
+        "rang": 171
+      }}],
       "possibleNames": [
         "Danny Da Costa",
         "danny da costa",
@@ -1252,7 +1276,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [{"Ligainsiderstats": ["Schüsse aufs Tor: 1,48 (Platz 6)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Schüsse aufs Tor: 1,48 (Platz 6)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1379,
+          "einsaetzeBewertet": 33,
+          "durchschnittsnote": 3.64,
+          "verein": "Mönchengladbach",
+          "durchschnittsminuten": 68,
+          "durchschnittspunkte": 41.79,
+          "rang": 127
+        }}
+      ],
       "possibleNames": [
         "Robin Hack",
         "R. Hack",
@@ -1541,7 +1576,16 @@
         {"Standards": [
           "Ecken- und Freistoßflanken",
           "Direkter Freistoß"
-        ]}
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 960,
+          "einsaetzeBewertet": 19,
+          "durchschnittsnote": 3.21,
+          "verein": "Mönchengladbach",
+          "durchschnittsminuten": 78,
+          "durchschnittspunkte": 50.53,
+          "rang": 31
+        }}
       ],
       "possibleNames": [
         "Franck Honorat",
@@ -1637,7 +1681,16 @@
       "position": "STURM",
       "attribute": [
         {"PerformanceTopFlop": ["2. Platz - Top-Speed (km/h): 36.86"]},
-        {"Standards": ["Elfmeter"]}
+        {"Standards": ["Elfmeter"]},
+        {"ligainsiderRanking": {
+          "punkte": 1373,
+          "einsaetzeBewertet": 33,
+          "durchschnittsnote": 3.64,
+          "verein": "RB Leipzig",
+          "durchschnittsminuten": 77,
+          "durchschnittspunkte": 41.61,
+          "rang": 131
+        }}
       ],
       "possibleNames": [
         "Loïs Openda",
@@ -1930,7 +1983,16 @@
           "Passquote: 92,6% (Platz 6)",
           "Schuss- genauigkeit: 85,7% (Platz 2)"
         ]},
-        {"PerformanceTopFlop": ["Passquote (%): 94.1 (Platz: 1)"]}
+        {"PerformanceTopFlop": ["Passquote (%): 94.1 (Platz: 1)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1326,
+          "einsaetzeBewertet": 27,
+          "durchschnittsnote": 3.28,
+          "verein": "FC Bayern München",
+          "durchschnittsminuten": 89,
+          "durchschnittspunkte": 49.11,
+          "rang": 47
+        }}
       ],
       "possibleNames": [
         "Min Jae Kim",
@@ -2071,7 +2133,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1137,
+        "einsaetzeBewertet": 26,
+        "durchschnittsnote": 3.65,
+        "verein": "FC Bayern München",
+        "durchschnittsminuten": 69,
+        "durchschnittspunkte": 41.77,
+        "rang": 128
+      }}],
       "possibleNames": [
         "Konrad Laimer",
         "K. Laimer",
@@ -2167,10 +2237,21 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": [
-        "Geblockte Bälle: 1,25 (Platz 4)",
-        "Geklärte Bälle: 6,92 (Platz 2)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Geblockte Bälle: 1,25 (Platz 4)",
+          "Geklärte Bälle: 6,92 (Platz 2)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 688,
+          "einsaetzeBewertet": 16,
+          "durchschnittsnote": 3.88,
+          "verein": "RB Leipzig",
+          "durchschnittsminuten": 73,
+          "durchschnittspunkte": 37.31,
+          "rang": 187
+        }}
+      ],
       "possibleNames": [
         "E. Chadaille Bitshiabu",
         "El Chadaille Bitshiabu",
@@ -2279,7 +2360,16 @@
         {"Standards": [
           "Ecken- und Freistoßflanken",
           "Direkter Freistoß"
-        ]}
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1363,
+          "einsaetzeBewertet": 25,
+          "durchschnittsnote": 2.98,
+          "verein": "RB Leipzig",
+          "durchschnittsminuten": 90,
+          "durchschnittspunkte": 54.52,
+          "rang": 16
+        }}
       ],
       "possibleNames": [
         "Xavi Simons",
@@ -2441,11 +2531,22 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "TORHÜTER",
-      "attribute": [{"Ligainsiderstats": [
-        "Weiße Weste: 13 (Platz 2)",
-        "Abgewehrte Schüsse: 68,1% (Platz 10)",
-        "Grosschancen vereitelt: 42,9% (Platz 9)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Weiße Weste: 13 (Platz 2)",
+          "Abgewehrte Schüsse: 68,1% (Platz 10)",
+          "Grosschancen vereitelt: 42,9% (Platz 9)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1078,
+          "einsaetzeBewertet": 22,
+          "durchschnittsnote": 3.3,
+          "verein": "FC Bayern München",
+          "durchschnittsminuten": 95,
+          "durchschnittspunkte": 49,
+          "rang": 50
+        }}
+      ],
       "possibleNames": [
         "Manuel Neuer",
         "manuel neuer",
@@ -2549,7 +2650,16 @@
       "position": "STURM",
       "attribute": [
         {"Ligainsiderstats": ["Schüsse aufs Tor: 2,57 (Platz 3)"]},
-        {"Standards": ["Elfmeter"]}
+        {"Standards": ["Elfmeter"]},
+        {"ligainsiderRanking": {
+          "punkte": 767,
+          "einsaetzeBewertet": 15,
+          "durchschnittsnote": 3.4,
+          "verein": "Bayer 04 Leverkusen",
+          "durchschnittsminuten": 67,
+          "durchschnittspunkte": 46.47,
+          "rang": 74
+        }}
       ],
       "possibleNames": [
         "Victor Boniface",
@@ -3047,7 +3157,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [{"Ligainsiderstats": ["Schüsse aufs Tor: 2,51 (Platz 4)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Schüsse aufs Tor: 2,51 (Platz 4)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1166,
+          "einsaetzeBewertet": 25,
+          "durchschnittsnote": 3.5,
+          "verein": "VfB Stuttgart",
+          "durchschnittsminuten": 72,
+          "durchschnittspunkte": 44.96,
+          "rang": 91
+        }}
+      ],
       "possibleNames": [
         "Deniz Undav",
         "D. Undav",
@@ -3322,7 +3443,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Ligainsiderstats": ["Abgefangene- Bälle: 2,05 (Platz 3)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Abgefangene- Bälle: 2,05 (Platz 3)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1291,
+          "einsaetzeBewertet": 32,
+          "durchschnittsnote": 3.69,
+          "verein": "SV Werder Bremen",
+          "durchschnittsminuten": 89,
+          "durchschnittspunkte": 40.34,
+          "rang": 152
+        }}
+      ],
       "possibleNames": [
         "Senne Lynen",
         "S. Lynen",
@@ -3414,7 +3546,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": ["Tacklingquote: 63,2% (Platz 6)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Tacklingquote: 63,2% (Platz 6)"]},
+        {"ligainsiderRanking": {
+          "punkte": 904,
+          "einsaetzeBewertet": 20,
+          "durchschnittsnote": 3.6,
+          "verein": "Eintracht Frankfurt",
+          "durchschnittsminuten": 77,
+          "durchschnittspunkte": 42.75,
+          "rang": 111
+        }}
+      ],
       "possibleNames": [
         "Nnamdi Collins",
         "N. Collins",
@@ -3507,7 +3650,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 935,
+        "einsaetzeBewertet": 20,
+        "durchschnittsnote": 3.5,
+        "verein": "RB Leipzig",
+        "durchschnittsminuten": 82,
+        "durchschnittspunkte": 44.4,
+        "rang": 100
+      }}],
       "possibleNames": [
         "Castello Lukeba",
         "C. Lukeba",
@@ -3615,7 +3766,16 @@
         {"Standards": [
           "Direkter Freistoß",
           "Elfmeter"
-        ]}
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1858,
+          "einsaetzeBewertet": 31,
+          "durchschnittsnote": 2.76,
+          "verein": "FC Bayern München",
+          "durchschnittsminuten": 80,
+          "durchschnittspunkte": 59.94,
+          "rang": 5
+        }}
       ],
       "possibleNames": [
         "Harry Kane",
@@ -3804,7 +3964,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1105,
+        "einsaetzeBewertet": 27,
+        "durchschnittsnote": 3.69,
+        "verein": "VfL Wolfsburg",
+        "durchschnittsminuten": 86,
+        "durchschnittspunkte": 40.37,
+        "rang": 151
+      }}],
       "possibleNames": [
         "Joakim Maehle",
         "Joakim Mähle",
@@ -3930,7 +4098,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 902,
+        "einsaetzeBewertet": 24,
+        "durchschnittsnote": 3.96,
+        "verein": "FC Augsburg",
+        "durchschnittsminuten": 77,
+        "durchschnittspunkte": 35.04,
+        "rang": 219
+      }}],
       "possibleNames": [
         "Elvis Rexhbecaj",
         "Elvis Rexhbeçaj",
@@ -4683,7 +4859,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 887,
+        "einsaetzeBewertet": 23,
+        "durchschnittsnote": 3.93,
+        "verein": "Bayer 04 Leverkusen",
+        "durchschnittsminuten": 59,
+        "durchschnittspunkte": 35.3,
+        "rang": 215
+      }}],
       "possibleNames": [
         "Nathan Tella",
         "N. Tella",
@@ -4776,7 +4960,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Ligainsiderstats": ["Passquote: 93,3% (Platz 3)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Passquote: 93,3% (Platz 3)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1036,
+          "einsaetzeBewertet": 20,
+          "durchschnittsnote": 3.23,
+          "verein": "FC Bayern München",
+          "durchschnittsminuten": 75,
+          "durchschnittspunkte": 51.05,
+          "rang": 28
+        }}
+      ],
       "possibleNames": [
         "Aleksandar Pavlovic",
         "Aleksandar Pavlović",
@@ -5074,10 +5269,21 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Standards": [
-        "Ecken- und Freistoßflanken",
-        "Direkter Freistoß"
-      ]}],
+      "attribute": [
+        {"Standards": [
+          "Ecken- und Freistoßflanken",
+          "Direkter Freistoß"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 831,
+          "einsaetzeBewertet": 20,
+          "durchschnittsnote": 3.92,
+          "verein": "Eintracht Frankfurt",
+          "durchschnittsminuten": 52,
+          "durchschnittspunkte": 36.65,
+          "rang": 200
+        }}
+      ],
       "possibleNames": [
         "Fares Chaibi",
         "Farès Chaïbi",
@@ -5363,11 +5569,22 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": [
-        "Passquote: 90,8% (Platz 8)",
-        "Geklärte Bälle: 6,34 (Platz 9)",
-        "Luftkampf- quote: 68,0% (Platz 7)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Passquote: 90,8% (Platz 8)",
+          "Geklärte Bälle: 6,34 (Platz 9)",
+          "Luftkampf- quote: 68,0% (Platz 7)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1461,
+          "einsaetzeBewertet": 29,
+          "durchschnittsnote": 3.26,
+          "verein": "Eintracht Frankfurt",
+          "durchschnittsminuten": 94,
+          "durchschnittspunkte": 49.76,
+          "rang": 41
+        }}
+      ],
       "possibleNames": [
         "Robin Koch",
         "R. Koch",
@@ -6486,7 +6703,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Standards": ["Ecken- und Freistoßflanken"]}],
+      "attribute": [
+        {"Standards": ["Ecken- und Freistoßflanken"]},
+        {"ligainsiderRanking": {
+          "punkte": 1286,
+          "einsaetzeBewertet": 31,
+          "durchschnittsnote": 3.69,
+          "verein": "VfB Stuttgart",
+          "durchschnittsminuten": 66,
+          "durchschnittspunkte": 40.55,
+          "rang": 147
+        }}
+      ],
       "possibleNames": [
         "Chris Fuehrich",
         "Chris Fuhrich",
@@ -7077,7 +7305,16 @@
           "Ball- eroberungen: 1,62 (Platz 9)",
           "Schuss- genauigkeit: 90,0% (Platz 1)"
         ]},
-        {"PerformanceTopFlop": ["Top-Speed (km/h): 37.16 (Platz: 1)"]}
+        {"PerformanceTopFlop": ["Top-Speed (km/h): 37.16 (Platz: 1)"]},
+        {"ligainsiderRanking": {
+          "punkte": 783,
+          "einsaetzeBewertet": 21,
+          "durchschnittsnote": 4.05,
+          "verein": "Eintracht Frankfurt",
+          "durchschnittsminuten": 47,
+          "durchschnittspunkte": 34.86,
+          "rang": 227
+        }}
       ],
       "possibleNames": [
         "Jean Mattéo Bahoya",
@@ -7392,12 +7629,23 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": [
-        "Zweikampf- quote: 65,8% (Platz 4)",
-        "Geblockte Bälle: 1,27 (Platz 3)",
-        "Geklärte Bälle: 6,42 (Platz 5)",
-        "Luftkampf- quote: 69,3% (Platz 4)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Zweikampf- quote: 65,8% (Platz 4)",
+          "Geblockte Bälle: 1,27 (Platz 3)",
+          "Geklärte Bälle: 6,42 (Platz 5)",
+          "Luftkampf- quote: 69,3% (Platz 4)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1222,
+          "einsaetzeBewertet": 25,
+          "durchschnittsnote": 3.3,
+          "verein": "RB Leipzig",
+          "durchschnittsminuten": 94,
+          "durchschnittspunkte": 48.88,
+          "rang": 52
+        }}
+      ],
       "possibleNames": [
         "Willi Orban",
         "Willi Orbán",
@@ -7870,12 +8118,23 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "TORHÜTER",
-      "attribute": [{"Ligainsiderstats": [
-        "Strafraum- beherrschung: 100,0% (Platz 3)",
-        "Weiße Weste: 10 (Platz 3)",
-        "Abgewehrte Schüsse: 79,3% (Platz 1)",
-        "Grosschancen vereitelt: 59,3% (Platz 1)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Strafraum- beherrschung: 100,0% (Platz 3)",
+          "Weiße Weste: 10 (Platz 3)",
+          "Abgewehrte Schüsse: 79,3% (Platz 1)",
+          "Grosschancen vereitelt: 59,3% (Platz 1)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1134,
+          "einsaetzeBewertet": 19,
+          "durchschnittsnote": 2.76,
+          "verein": "FC Augsburg",
+          "durchschnittsminuten": 95,
+          "durchschnittspunkte": 59.68,
+          "rang": 6
+        }}
+      ],
       "possibleNames": [
         "Finn Dahmen",
         "F. Dahmen",
@@ -7975,7 +8234,16 @@
         {"PerformanceTopFlop": [
           "Torschüsse: 115 (Platz: 1)",
           ". Platz - Pfosten- oder Lattentreffer: 4"
-        ]}
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1744,
+          "einsaetzeBewertet": 33,
+          "durchschnittsnote": 3.08,
+          "verein": "Eintracht Frankfurt",
+          "durchschnittsminuten": 80,
+          "durchschnittspunkte": 52.85,
+          "rang": 20
+        }}
       ],
       "possibleNames": [
         "Hugo Ekitike",
@@ -8168,7 +8436,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 901,
+        "einsaetzeBewertet": 25,
+        "durchschnittsnote": 3.96,
+        "verein": "VfB Stuttgart",
+        "durchschnittsminuten": 77,
+        "durchschnittspunkte": 35.16,
+        "rang": 217
+      }}],
       "possibleNames": [
         "Josha Vagnoman",
         "J. Vagnoman",
@@ -8659,7 +8935,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"PerformanceTopFlop": ["Sprints: 1031 (Platz: 1)"]}],
+      "attribute": [
+        {"PerformanceTopFlop": ["Sprints: 1031 (Platz: 1)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1363,
+          "einsaetzeBewertet": 32,
+          "durchschnittsnote": 3.66,
+          "verein": "RB Leipzig",
+          "durchschnittsminuten": 80,
+          "durchschnittspunkte": 40.88,
+          "rang": 140
+        }}
+      ],
       "possibleNames": [
         "Ridle Baku",
         "R. Baku",
@@ -9422,11 +9709,22 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "TORHÜTER",
-      "attribute": [{"Ligainsiderstats": [
-        "Paraden: 2,48 (Platz 4)",
-        "Abgewehrte Elfmeter: 33,3% (Platz 9)",
-        "Grosschancen vereitelt: 45,6% (Platz 6)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Paraden: 2,48 (Platz 4)",
+          "Abgewehrte Elfmeter: 33,3% (Platz 9)",
+          "Grosschancen vereitelt: 45,6% (Platz 6)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1591,
+          "einsaetzeBewertet": 29,
+          "durchschnittsnote": 3,
+          "verein": "VfL Wolfsburg",
+          "durchschnittsminuten": 95,
+          "durchschnittspunkte": 54.86,
+          "rang": 15
+        }}
+      ],
       "possibleNames": [
         "Kamil Grabara",
         "kamil grabara",
@@ -9619,7 +9917,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 652,
+        "einsaetzeBewertet": 21,
+        "durchschnittsnote": 4.14,
+        "verein": "VfL Wolfsburg",
+        "durchschnittsminuten": 65,
+        "durchschnittspunkte": 31.05,
+        "rang": 257
+      }}],
       "possibleNames": [
         "Bence Dardai",
         "Bence Dárdai",
@@ -9721,7 +10027,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [{"Ligainsiderstats": ["Schuss- genauigkeit: 80,0% (Platz 10)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Schuss- genauigkeit: 80,0% (Platz 10)"]},
+        {"ligainsiderRanking": {
+          "punkte": 924,
+          "einsaetzeBewertet": 22,
+          "durchschnittsnote": 4,
+          "verein": "SV Werder Bremen",
+          "durchschnittsminuten": 55,
+          "durchschnittspunkte": 34.91,
+          "rang": 224
+        }}
+      ],
       "possibleNames": [
         "Marco Gruell",
         "marco gruell",
@@ -10032,7 +10349,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [{"PerformanceTopFlop": ["3. Platz - Top-Speed (km/h): 36.82"]}],
+      "attribute": [
+        {"PerformanceTopFlop": ["3. Platz - Top-Speed (km/h): 36.82"]},
+        {"ligainsiderRanking": {
+          "punkte": 684,
+          "einsaetzeBewertet": 25,
+          "durchschnittsnote": 4.56,
+          "verein": "1. FC Heidenheim",
+          "durchschnittsminuten": 38,
+          "durchschnittspunkte": 24.56,
+          "rang": 272
+        }}
+      ],
       "possibleNames": [
         "Sirlord Conteh",
         "sirlord conteh",
@@ -10387,10 +10715,21 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Standards": [
-        "Ecken- und Freistoßflanken",
-        "Direkter Freistoß"
-      ]}],
+      "attribute": [
+        {"Standards": [
+          "Ecken- und Freistoßflanken",
+          "Direkter Freistoß"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1273,
+          "einsaetzeBewertet": 28,
+          "durchschnittsnote": 3.45,
+          "verein": "VfL Wolfsburg",
+          "durchschnittsminuten": 90,
+          "durchschnittspunkte": 45.46,
+          "rang": 85
+        }}
+      ],
       "possibleNames": [
         "Maximilian Arnold",
         "maximilian arnold",
@@ -10671,13 +11010,24 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "TORHÜTER",
-      "attribute": [{"Ligainsiderstats": [
-        "Strafraum- beherrschung: 100,0% (Platz 1)",
-        "Weiße Weste: 10 (Platz 4)",
-        "Abgewehrte Schüsse: 71,9% (Platz 4)",
-        "Abgewehrte Elfmeter: 80,0% (Platz 4)",
-        "Grosschancen vereitelt: 50,0% (Platz 4)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Strafraum- beherrschung: 100,0% (Platz 1)",
+          "Weiße Weste: 10 (Platz 4)",
+          "Abgewehrte Schüsse: 71,9% (Platz 4)",
+          "Abgewehrte Elfmeter: 80,0% (Platz 4)",
+          "Grosschancen vereitelt: 50,0% (Platz 4)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1835,
+          "einsaetzeBewertet": 33,
+          "durchschnittsnote": 2.98,
+          "verein": "FC St. Pauli",
+          "durchschnittsminuten": 95,
+          "durchschnittspunkte": 55.61,
+          "rang": 12
+        }}
+      ],
       "possibleNames": [
         "Nikola Vasilj",
         "nikola vasilj",
@@ -10772,11 +11122,22 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Standards": [
-        "Ecken- und Freistoßflanken",
-        "Direkter Freistoß",
-        "Elfmeter"
-      ]}],
+      "attribute": [
+        {"Standards": [
+          "Ecken- und Freistoßflanken",
+          "Direkter Freistoß",
+          "Elfmeter"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1397,
+          "einsaetzeBewertet": 32,
+          "durchschnittsnote": 3.56,
+          "verein": "FC St. Pauli",
+          "durchschnittsminuten": 94,
+          "durchschnittspunkte": 43.66,
+          "rang": 104
+        }}
+      ],
       "possibleNames": [
         "Eric Smith",
         "eric smith",
@@ -10892,11 +11253,22 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "TORHÜTER",
-      "attribute": [{"Ligainsiderstats": [
-        "Weiße Weste: 8 (Platz 8)",
-        "Abgewehrte Schüsse: 68,1% (Platz 9)",
-        "Abgewehrte Elfmeter: 80,0% (Platz 3)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Weiße Weste: 8 (Platz 8)",
+          "Abgewehrte Schüsse: 68,1% (Platz 9)",
+          "Abgewehrte Elfmeter: 80,0% (Platz 3)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1466,
+          "einsaetzeBewertet": 28,
+          "durchschnittsnote": 3.12,
+          "verein": "1. FC Union Berlin",
+          "durchschnittsminuten": 96,
+          "durchschnittspunkte": 52.36,
+          "rang": 22
+        }}
+      ],
       "possibleNames": [
         "Frederik Roennow",
         "frederik roennow",
@@ -11309,7 +11681,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1129,
+        "einsaetzeBewertet": 28,
+        "durchschnittsnote": 3.75,
+        "verein": "FC St. Pauli",
+        "durchschnittsminuten": 86,
+        "durchschnittspunkte": 38.93,
+        "rang": 167
+      }}],
       "possibleNames": [
         "Manolis Saliakas",
         "manolis saliakas",
@@ -11506,7 +11886,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1229,
+        "einsaetzeBewertet": 29,
+        "durchschnittsnote": 3.59,
+        "verein": "FC St. Pauli",
+        "durchschnittsminuten": 96,
+        "durchschnittspunkte": 42.38,
+        "rang": 121
+      }}],
       "possibleNames": [
         "Jackson Irvine",
         "jackson irvine",
@@ -12191,10 +12579,21 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [{"Ligainsiderstats": [
-        "Ballverluste: 5,55 (Platz 4)",
-        "Erfolgreiche Dribblings: 43,6% (Platz 7)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Ballverluste: 5,55 (Platz 4)",
+          "Erfolgreiche Dribblings: 43,6% (Platz 7)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1038,
+          "einsaetzeBewertet": 29,
+          "durchschnittsnote": 4.07,
+          "verein": "FC St. Pauli",
+          "durchschnittsminuten": 59,
+          "durchschnittspunkte": 34.07,
+          "rang": 236
+        }}
+      ],
       "possibleNames": [
         "Oladapo Afolayan",
         "oladapo afolayan",
@@ -12436,7 +12835,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 825,
+        "einsaetzeBewertet": 18,
+        "durchschnittsnote": 3.85,
+        "verein": "FC St. Pauli",
+        "durchschnittsminuten": 69,
+        "durchschnittspunkte": 37.28,
+        "rang": 188
+      }}],
       "possibleNames": [
         "Daniel Sinani",
         "daniel sinani",
@@ -12759,7 +13166,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": ["Ball- eroberungen: 1,85 (Platz 2)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Ball- eroberungen: 1,85 (Platz 2)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1229,
+          "einsaetzeBewertet": 24,
+          "durchschnittsnote": 3.23,
+          "verein": "Eintracht Frankfurt",
+          "durchschnittsminuten": 84,
+          "durchschnittspunkte": 49.79,
+          "rang": 40
+        }}
+      ],
       "possibleNames": [
         "Nathaniel Brown",
         "N. Brown",
@@ -12975,7 +13393,16 @@
           "Hist. Punkteausbeute: Gering bis mittel",
           "Empfehlung: Halten",
           "verletzungsanfällig: Hoch"
-        ]}
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 716,
+          "einsaetzeBewertet": 17,
+          "durchschnittsnote": 3.68,
+          "verein": "FC Augsburg",
+          "durchschnittsminuten": 81,
+          "durchschnittspunkte": 41.12,
+          "rang": 136
+        }}
       ],
       "possibleNames": [
         "Keven Schlotterbeck",
@@ -13077,7 +13504,16 @@
         {"Standards": [
           "Ecken- und Freistoßflanken",
           "Direkter Freistoß"
-        ]}
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 913,
+          "einsaetzeBewertet": 23,
+          "durchschnittsnote": 3.87,
+          "verein": "1. FC Heidenheim",
+          "durchschnittsminuten": 51,
+          "durchschnittspunkte": 37.17,
+          "rang": 190
+        }}
       ],
       "possibleNames": [
         "Léo Scienza",
@@ -13211,7 +13647,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"PerformanceTopFlop": ["2. Platz - Intensive Läufe: 2789"]}],
+      "attribute": [
+        {"PerformanceTopFlop": ["2. Platz - Intensive Läufe: 2789"]},
+        {"ligainsiderRanking": {
+          "punkte": 1519,
+          "einsaetzeBewertet": 32,
+          "durchschnittsnote": 3.36,
+          "verein": "SV Werder Bremen",
+          "durchschnittsminuten": 95,
+          "durchschnittspunkte": 47.47,
+          "rang": 64
+        }}
+      ],
       "possibleNames": [
         "Mitchell Weiser",
         "mitchell weiser",
@@ -13306,7 +13753,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Ligainsiderstats": ["Fehler vor Schuss/Gegentor: 0,18 (Platz 10)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Fehler vor Schuss/Gegentor: 0,18 (Platz 10)"]},
+        {"ligainsiderRanking": {
+          "punkte": 879,
+          "einsaetzeBewertet": 21,
+          "durchschnittsnote": 3.88,
+          "verein": "Mönchengladbach",
+          "durchschnittsminuten": 68,
+          "durchschnittspunkte": 36.9,
+          "rang": 198
+        }}
+      ],
       "possibleNames": [
         "Philipp Sander",
         "P. Sander",
@@ -13549,7 +14007,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 851,
+        "einsaetzeBewertet": 21,
+        "durchschnittsnote": 3.95,
+        "verein": "SV Werder Bremen",
+        "durchschnittsminuten": 49,
+        "durchschnittspunkte": 36.52,
+        "rang": 202
+      }}],
       "possibleNames": [
         "Leonardo Bittencourt",
         "leonardo bittencourt",
@@ -13841,7 +14307,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Standards": ["Elfmeter"]}],
+      "attribute": [
+        {"Standards": ["Elfmeter"]},
+        {"ligainsiderRanking": {
+          "punkte": 1154,
+          "einsaetzeBewertet": 27,
+          "durchschnittsnote": 3.8,
+          "verein": "Borussia Dortmund",
+          "durchschnittsminuten": 82,
+          "durchschnittspunkte": 38.7,
+          "rang": 168
+        }}
+      ],
       "possibleNames": [
         "Emre Can",
         "E. Can",
@@ -14623,7 +15100,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1204,
+        "einsaetzeBewertet": 27,
+        "durchschnittsnote": 3.63,
+        "verein": "Mönchengladbach",
+        "durchschnittsminuten": 72,
+        "durchschnittspunkte": 42.7,
+        "rang": 113
+      }}],
       "possibleNames": [
         "Alassane Plea",
         "Alassane Pléa",
@@ -14722,7 +15207,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1100,
+        "einsaetzeBewertet": 20,
+        "durchschnittsnote": 3.4,
+        "verein": "Bayer 04 Leverkusen",
+        "durchschnittsminuten": 74,
+        "durchschnittspunkte": 47.1,
+        "rang": 67
+      }}],
       "possibleNames": [
         "Aleix Garcia",
         "Aleix García",
@@ -14903,7 +15396,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": ["Geklärte Bälle: 6,77 (Platz 3)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Geklärte Bälle: 6,77 (Platz 3)"]},
+        {"ligainsiderRanking": {
+          "punkte": 924,
+          "einsaetzeBewertet": 22,
+          "durchschnittsnote": 3.82,
+          "verein": "1. FC Union Berlin",
+          "durchschnittsminuten": 83,
+          "durchschnittspunkte": 38.14,
+          "rang": 177
+        }}
+      ],
       "possibleNames": [
         "Leopold Querfeld",
         "Leopold Qürfeld",
@@ -15375,7 +15879,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Ligainsiderstats": ["Begangene Fouls: 2,29 (Platz 4)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Begangene Fouls: 2,29 (Platz 4)"]},
+        {"ligainsiderRanking": {
+          "punkte": 940,
+          "einsaetzeBewertet": 28,
+          "durchschnittsnote": 4.12,
+          "verein": "RB Leipzig",
+          "durchschnittsminuten": 60,
+          "durchschnittspunkte": 31.86,
+          "rang": 251
+        }}
+      ],
       "possibleNames": [
         "Christoph Baumgartner",
         "C. Baumgartner",
@@ -15468,7 +15983,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 811,
+        "einsaetzeBewertet": 21,
+        "durchschnittsnote": 3.98,
+        "verein": "VfB Stuttgart",
+        "durchschnittsminuten": 60,
+        "durchschnittspunkte": 35.1,
+        "rang": 218
+      }}],
       "possibleNames": [
         "Ramon Hendriks",
         "R. Hendriks",
@@ -15653,7 +16176,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [{"Ligainsiderstats": ["Begangene Fouls: 2,36 (Platz 2)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Begangene Fouls: 2,36 (Platz 2)"]},
+        {"ligainsiderRanking": {
+          "punkte": 897,
+          "einsaetzeBewertet": 28,
+          "durchschnittsnote": 4.12,
+          "verein": "FC Augsburg",
+          "durchschnittsminuten": 61,
+          "durchschnittspunkte": 31.46,
+          "rang": 254
+        }}
+      ],
       "possibleNames": [
         "Samuel Essende",
         "Samül Essende",
@@ -16026,7 +16560,16 @@
         {"PerformanceTopFlop": [
           ". Platz - Gelbe Karten: 11",
           "Karten: 12 (Platz: 1)"
-        ]}
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1217,
+          "einsaetzeBewertet": 27,
+          "durchschnittsnote": 3.48,
+          "verein": "1. FSV Mainz 05",
+          "durchschnittsminuten": 89,
+          "durchschnittspunkte": 44.56,
+          "rang": 98
+        }}
       ],
       "possibleNames": [
         "Dominik Kohr",
@@ -16217,7 +16760,16 @@
       "position": "MITTELFELD",
       "attribute": [
         {"Ligainsiderstats": ["Abgefangene- Bälle: 1,81 (Platz 8)"]},
-        {"PerformanceTopFlop": ["Laufdistanz (km): 393.7 (Platz: 1)"]}
+        {"PerformanceTopFlop": ["Laufdistanz (km): 393.7 (Platz: 1)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1602,
+          "einsaetzeBewertet": 34,
+          "durchschnittsnote": 3.34,
+          "verein": "1. FSV Mainz 05",
+          "durchschnittsminuten": 95,
+          "durchschnittspunkte": 47.12,
+          "rang": 66
+        }}
       ],
       "possibleNames": [
         "Kaishu Sano",
@@ -16599,7 +17151,16 @@
           "Erfolgreiche Dribblings: 44,7% (Platz 4)",
           "Schüsse aufs Tor: 2,37 (Platz 6)"
         ]},
-        {"PerformanceTopFlop": ["Torvorlagen: 15 (Platz: 1)"]}
+        {"PerformanceTopFlop": ["Torvorlagen: 15 (Platz: 1)"]},
+        {"ligainsiderRanking": {
+          "punkte": 2171,
+          "einsaetzeBewertet": 33,
+          "durchschnittsnote": 2.47,
+          "verein": "FC Bayern München",
+          "durchschnittsminuten": 73,
+          "durchschnittspunkte": 65.06,
+          "rang": 4
+        }}
       ],
       "possibleNames": [
         "Michael Olise",
@@ -16706,7 +17267,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1859,
+        "einsaetzeBewertet": 33,
+        "durchschnittsnote": 2.94,
+        "verein": "Bayer 04 Leverkusen",
+        "durchschnittsminuten": 93,
+        "durchschnittspunkte": 56.33,
+        "rang": 9
+      }}],
       "possibleNames": [
         "Granit Xhaka",
         "G. Xhaka",
@@ -16792,7 +17361,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1477,
+        "einsaetzeBewertet": 31,
+        "durchschnittsnote": 3.34,
+        "verein": "VfL Wolfsburg",
+        "durchschnittsminuten": 83,
+        "durchschnittspunkte": 47.65,
+        "rang": 63
+      }}],
       "possibleNames": [
         "Mohamed Amoura",
         "M. Amoura",
@@ -17626,7 +18203,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1444,
+        "einsaetzeBewertet": 30,
+        "durchschnittsnote": 3.28,
+        "verein": "Eintracht Frankfurt",
+        "durchschnittsminuten": 89,
+        "durchschnittspunkte": 48.13,
+        "rang": 58
+      }}],
       "possibleNames": [
         "Rasmus Kristensen",
         "R. Kristensen",
@@ -17719,10 +18304,21 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"PerformanceTopFlop": [
-        "3. Platz - Flanken aus dem Spiel: 95",
-        "3. Platz - Sprints: 949"
-      ]}],
+      "attribute": [
+        {"PerformanceTopFlop": [
+          "3. Platz - Flanken aus dem Spiel: 95",
+          "3. Platz - Sprints: 949"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1392,
+          "einsaetzeBewertet": 31,
+          "durchschnittsnote": 3.44,
+          "verein": "FC Augsburg",
+          "durchschnittsminuten": 90,
+          "durchschnittspunkte": 44.9,
+          "rang": 94
+        }}
+      ],
       "possibleNames": [
         "Dimitrios Giannoulis",
         "D. Giannoulis",
@@ -18131,7 +18727,16 @@
         {"Standards": [
           "Ecken- und Freistoßflanken",
           "Direkter Freistoß"
-        ]}
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1234,
+          "einsaetzeBewertet": 24,
+          "durchschnittsnote": 3.52,
+          "verein": "Mönchengladbach",
+          "durchschnittsminuten": 65,
+          "durchschnittspunkte": 44.71,
+          "rang": 95
+        }}
       ],
       "possibleNames": [
         "Kevin Stoeger",
@@ -18326,7 +18931,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": ["Fehler vor Schuss/Gegentor: 0,22 (Platz 2)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Fehler vor Schuss/Gegentor: 0,22 (Platz 2)"]},
+        {"ligainsiderRanking": {
+          "punkte": 762,
+          "einsaetzeBewertet": 20,
+          "durchschnittsnote": 3.98,
+          "verein": "TSG Hoffenheim",
+          "durchschnittsminuten": 80,
+          "durchschnittspunkte": 34.9,
+          "rang": 225
+        }}
+      ],
       "possibleNames": [
         "Alexander Prass",
         "A. Prass",
@@ -18689,7 +19305,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Ligainsiderstats": ["Ballverluste: 4,94 (Platz 8)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Ballverluste: 4,94 (Platz 8)"]},
+        {"ligainsiderRanking": {
+          "punkte": 975,
+          "einsaetzeBewertet": 23,
+          "durchschnittsnote": 3.67,
+          "verein": "RB Leipzig",
+          "durchschnittsminuten": 71,
+          "durchschnittspunkte": 41.04,
+          "rang": 139
+        }}
+      ],
       "possibleNames": [
         "Antonio Nusa",
         "A. Nusa",
@@ -18968,7 +19595,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1496,
+        "einsaetzeBewertet": 31,
+        "durchschnittsnote": 3.32,
+        "verein": "Eintracht Frankfurt",
+        "durchschnittsminuten": 92,
+        "durchschnittspunkte": 48.26,
+        "rang": 56
+      }}],
       "possibleNames": [
         "Arthur Theate",
         "A. Theate",
@@ -19060,7 +19695,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1243,
+        "einsaetzeBewertet": 29,
+        "durchschnittsnote": 3.59,
+        "verein": "VfL Wolfsburg",
+        "durchschnittsminuten": 91,
+        "durchschnittspunkte": 42.38,
+        "rang": 122
+      }}],
       "possibleNames": [
         "Konstantinos Koulierakis",
         "K. Koulierakis",
@@ -19176,11 +19819,22 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"ComAnalytics": [
-        "Hist. Punkteausbeute: Deutlich über dem Mittel",
-        "Empfehlung: Kaufen",
-        "verletzungsanfällig: Hoch"
-      ]}],
+      "attribute": [
+        {"ComAnalytics": [
+          "Hist. Punkteausbeute: Deutlich über dem Mittel",
+          "Empfehlung: Kaufen",
+          "verletzungsanfällig: Hoch"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1024,
+          "einsaetzeBewertet": 19,
+          "durchschnittsnote": 3.03,
+          "verein": "FC Bayern München",
+          "durchschnittsminuten": 86,
+          "durchschnittspunkte": 53.89,
+          "rang": 18
+        }}
+      ],
       "possibleNames": [
         "Alphonso Davies",
         "alphonso davies",
@@ -19300,7 +19954,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 937,
+        "einsaetzeBewertet": 24,
+        "durchschnittsnote": 3.96,
+        "verein": "RB Leipzig",
+        "durchschnittsminuten": 56,
+        "durchschnittspunkte": 35.92,
+        "rang": 210
+      }}],
       "possibleNames": [
         "Amadou Haidara",
         "amadou haidara",
@@ -19563,7 +20225,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 849,
+        "einsaetzeBewertet": 26,
+        "durchschnittsnote": 4.15,
+        "verein": "RB Leipzig",
+        "durchschnittsminuten": 63,
+        "durchschnittspunkte": 31.23,
+        "rang": 256
+      }}],
       "possibleNames": [
         "Arthur Vermeeren",
         "A. Vermeeren",
@@ -19853,7 +20523,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"SontigeInfos": ["häufigesten Transfers (2)"]}],
+      "attribute": [
+        {"SontigeInfos": ["häufigesten Transfers (2)"]},
+        {"ligainsiderRanking": {
+          "punkte": 804,
+          "einsaetzeBewertet": 21,
+          "durchschnittsnote": 3.88,
+          "verein": "TSG Hoffenheim",
+          "durchschnittsminuten": 71,
+          "durchschnittspunkte": 36.62,
+          "rang": 201
+        }}
+      ],
       "possibleNames": [
         "Valentin Gendrey",
         "V. Gendrey",
@@ -20044,7 +20725,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1235,
+        "einsaetzeBewertet": 28,
+        "durchschnittsnote": 3.59,
+        "verein": "Eintracht Frankfurt",
+        "durchschnittsminuten": 85,
+        "durchschnittspunkte": 43,
+        "rang": 110
+      }}],
       "possibleNames": ["Tuta"],
       "comunioStatus": {
         "grund": "unbekannt",
@@ -20411,7 +21100,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": ["Fehler vor Schuss/Gegentor: 0,22 (Platz 3)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Fehler vor Schuss/Gegentor: 0,22 (Platz 3)"]},
+        {"ligainsiderRanking": {
+          "punkte": 842,
+          "einsaetzeBewertet": 21,
+          "durchschnittsnote": 3.9,
+          "verein": "RB Leipzig",
+          "durchschnittsminuten": 77,
+          "durchschnittspunkte": 36.52,
+          "rang": 203
+        }}
+      ],
       "possibleNames": [
         "Lutsharel Geertruida",
         "L. Geertruida",
@@ -20497,12 +21197,23 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": [
-        "Zweikampf- quote: 65,7% (Platz 5)",
-        "Geblockte Bälle: 1,13 (Platz 10)",
-        "Geklärte Bälle: 8,00 (Platz 1)",
-        "Luftkampf- quote: 70,2% (Platz 3)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Zweikampf- quote: 65,7% (Platz 5)",
+          "Geblockte Bälle: 1,13 (Platz 10)",
+          "Geklärte Bälle: 8,00 (Platz 1)",
+          "Luftkampf- quote: 70,2% (Platz 3)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1405,
+          "einsaetzeBewertet": 28,
+          "durchschnittsnote": 3.25,
+          "verein": "VfL Wolfsburg",
+          "durchschnittsminuten": 94,
+          "durchschnittspunkte": 49.68,
+          "rang": 42
+        }}
+      ],
       "possibleNames": [
         "Denis Vavro",
         "D. Vavro",
@@ -20588,12 +21299,23 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": [
-        "Zweikampf- quote: 65,5% (Platz 6)",
-        "Abgefangene- Bälle: 1,73 (Platz 9)",
-        "Geblockte Bälle: 1,20 (Platz 8)",
-        "Luftkampf- quote: 70,8% (Platz 2)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Zweikampf- quote: 65,5% (Platz 6)",
+          "Abgefangene- Bälle: 1,73 (Platz 9)",
+          "Geblockte Bälle: 1,20 (Platz 8)",
+          "Luftkampf- quote: 70,8% (Platz 2)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1455,
+          "einsaetzeBewertet": 30,
+          "durchschnittsnote": 3.28,
+          "verein": "FC Augsburg",
+          "durchschnittsminuten": 90,
+          "durchschnittspunkte": 48.5,
+          "rang": 54
+        }}
+      ],
       "possibleNames": [
         "Chrislain Matsima",
         "C. Matsima",
@@ -20908,7 +21630,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1073,
+        "einsaetzeBewertet": 23,
+        "durchschnittsnote": 3.35,
+        "verein": "Borussia Dortmund",
+        "durchschnittsminuten": 92,
+        "durchschnittspunkte": 46.65,
+        "rang": 72
+      }}],
       "possibleNames": [
         "Nico Schlotterbeck",
         "N. Schlotterbeck",
@@ -20995,7 +21725,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 957,
+        "einsaetzeBewertet": 25,
+        "durchschnittsnote": 3.82,
+        "verein": "TSG Hoffenheim",
+        "durchschnittsminuten": 92,
+        "durchschnittspunkte": 37.64,
+        "rang": 183
+      }}],
       "possibleNames": [
         "Arthur Chaves",
         "A. Chaves",
@@ -21081,7 +21819,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Ligainsiderstats": ["Erfolgreiche Dribblings: 45,7% (Platz 9)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Erfolgreiche Dribblings: 45,7% (Platz 9)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1216,
+          "einsaetzeBewertet": 28,
+          "durchschnittsnote": 3.55,
+          "verein": "FC Augsburg",
+          "durchschnittsminuten": 78,
+          "durchschnittspunkte": 43.43,
+          "rang": 106
+        }}
+      ],
       "possibleNames": [
         "Alexis Claude Maurice",
         "Alexis Claude-Maurice",
@@ -22723,11 +23472,22 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [{"ComAnalytics": [
-        "Hist. Punkteausbeute: Gering bis mittel",
-        "Empfehlung: Halten",
-        "verletzungsanfällig: Hoch"
-      ]}],
+      "attribute": [
+        {"ComAnalytics": [
+          "Hist. Punkteausbeute: Gering bis mittel",
+          "Empfehlung: Halten",
+          "verletzungsanfällig: Hoch"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 523,
+          "einsaetzeBewertet": 13,
+          "durchschnittsnote": 3.77,
+          "verein": "1. FC Heidenheim",
+          "durchschnittsminuten": 77,
+          "durchschnittspunkte": 38,
+          "rang": 180
+        }}
+      ],
       "possibleNames": [
         "Budu Zivzivadze",
         "B. Zivzivadze",
@@ -23611,7 +24371,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [{"Standards": ["Elfmeter"]}],
+      "attribute": [
+        {"Standards": ["Elfmeter"]},
+        {"ligainsiderRanking": {
+          "punkte": 1137,
+          "einsaetzeBewertet": 30,
+          "durchschnittsnote": 3.95,
+          "verein": "FC Augsburg",
+          "durchschnittsminuten": 58,
+          "durchschnittspunkte": 35.03,
+          "rang": 220
+        }}
+      ],
       "possibleNames": [
         "Phillip Tietz",
         "Phillip tietz",
@@ -24775,7 +25546,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1443,
+        "einsaetzeBewertet": 32,
+        "durchschnittsnote": 3.47,
+        "verein": "VfB Stuttgart",
+        "durchschnittsminuten": 86,
+        "durchschnittspunkte": 45.09,
+        "rang": 88
+      }}],
       "possibleNames": [
         "Atakan Karazor",
         "A. Karazor",
@@ -25749,7 +26528,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 969,
+        "einsaetzeBewertet": 25,
+        "durchschnittsnote": 3.86,
+        "verein": "1. FC Union Berlin",
+        "durchschnittsminuten": 73,
+        "durchschnittspunkte": 37.88,
+        "rang": 181
+      }}],
       "possibleNames": [
         "Christopher Trimmel",
         "christopher trimmel",
@@ -25967,7 +26754,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1112,
+        "einsaetzeBewertet": 32,
+        "durchschnittsnote": 3.97,
+        "verein": "1. FC Union Berlin",
+        "durchschnittsminuten": 90,
+        "durchschnittspunkte": 34.75,
+        "rang": 229
+      }}],
       "possibleNames": [
         "Rani Khedira",
         "rani khedira",
@@ -27282,7 +28077,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Ligainsiderstats": ["Erfolgreiche Dribblings: 45,0% (Platz 8)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Erfolgreiche Dribblings: 45,0% (Platz 8)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1558,
+          "einsaetzeBewertet": 32,
+          "durchschnittsnote": 3.28,
+          "verein": "SV Werder Bremen",
+          "durchschnittsminuten": 93,
+          "durchschnittspunkte": 48.69,
+          "rang": 53
+        }}
+      ],
       "possibleNames": [
         "Romano Schmid",
         "R. Schmid",
@@ -30313,7 +31119,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1019,
+        "einsaetzeBewertet": 25,
+        "durchschnittsnote": 3.64,
+        "verein": "TSG Hoffenheim",
+        "durchschnittsminuten": 72,
+        "durchschnittspunkte": 40.76,
+        "rang": 142
+      }}],
       "possibleNames": [
         "Marius Buelter",
         "marius buelter",
@@ -30593,7 +31407,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1293,
+        "einsaetzeBewertet": 29,
+        "durchschnittsnote": 3.52,
+        "verein": "Borussia Dortmund",
+        "durchschnittsminuten": 81,
+        "durchschnittspunkte": 44.59,
+        "rang": 97
+      }}],
       "possibleNames": [
         "Julian Ryerson",
         "J. Ryerson",
@@ -30726,7 +31548,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": ["Geblockte Bälle: 1,39 (Platz 2)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Geblockte Bälle: 1,39 (Platz 2)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1163,
+          "einsaetzeBewertet": 25,
+          "durchschnittsnote": 3.44,
+          "verein": "SV Werder Bremen",
+          "durchschnittsminuten": 88,
+          "durchschnittspunkte": 45.68,
+          "rang": 84
+        }}
+      ],
       "possibleNames": [
         "Niklas Stark",
         "niklas stark",
@@ -30866,10 +31699,21 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": [
-        "Passquote: 92,9% (Platz 5)",
-        "Tacklingquote: 66,7% (Platz 4)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Passquote: 92,9% (Platz 5)",
+          "Tacklingquote: 66,7% (Platz 4)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 560,
+          "einsaetzeBewertet": 13,
+          "durchschnittsnote": 3.77,
+          "verein": "Borussia Dortmund",
+          "durchschnittsminuten": 82,
+          "durchschnittspunkte": 39.92,
+          "rang": 156
+        }}
+      ],
       "possibleNames": [
         "Niklas Suele",
         "niklas suele",
@@ -31073,7 +31917,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 937,
+        "einsaetzeBewertet": 20,
+        "durchschnittsnote": 3.55,
+        "verein": "Bayer 04 Leverkusen",
+        "durchschnittsminuten": 82,
+        "durchschnittspunkte": 44.15,
+        "rang": 101
+      }}],
       "possibleNames": [
         "Robert Andrich",
         "R. Andrich",
@@ -31282,7 +32134,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1203,
+        "einsaetzeBewertet": 27,
+        "durchschnittsnote": 3.61,
+        "verein": "Eintracht Frankfurt",
+        "durchschnittsminuten": 86,
+        "durchschnittspunkte": 42.52,
+        "rang": 119
+      }}],
       "possibleNames": [
         "Ellyes Skhiri",
         "E. Skhiri",
@@ -32240,7 +33100,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1340,
+        "einsaetzeBewertet": 27,
+        "durchschnittsnote": 3.39,
+        "verein": "Borussia Dortmund",
+        "durchschnittsminuten": 79,
+        "durchschnittspunkte": 46.7,
+        "rang": 71
+      }}],
       "possibleNames": [
         "Ramy Bensebaini",
         "R. Bensebaini",
@@ -33311,7 +34179,16 @@
       "position": "STURM",
       "attribute": [
         {"Ligainsiderstats": ["Schüsse aufs Tor: 2,25 (Platz 9)"]},
-        {"PerformanceTopFlop": ["2. Platz - Tore: 21"]}
+        {"PerformanceTopFlop": ["2. Platz - Tore: 21"]},
+        {"ligainsiderRanking": {
+          "punkte": 1227,
+          "einsaetzeBewertet": 27,
+          "durchschnittsnote": 3.54,
+          "verein": "Bayer 04 Leverkusen",
+          "durchschnittsminuten": 65,
+          "durchschnittspunkte": 43.63,
+          "rang": 105
+        }}
       ],
       "possibleNames": [
         "Patrik Schick",
@@ -34344,7 +35221,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": ["Geblockte Bälle: 1,66 (Platz 1)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Geblockte Bälle: 1,66 (Platz 1)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1095,
+          "einsaetzeBewertet": 27,
+          "durchschnittsnote": 3.81,
+          "verein": "TSG Hoffenheim",
+          "durchschnittsminuten": 87,
+          "durchschnittspunkte": 38.33,
+          "rang": 172
+        }}
+      ],
       "possibleNames": [
         "Kevin Akpoguma",
         "kevin akpoguma",
@@ -34705,7 +35593,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Ligainsiderstats": ["Schuss- genauigkeit: 84,6% (Platz 3)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Schuss- genauigkeit: 84,6% (Platz 3)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1006,
+          "einsaetzeBewertet": 17,
+          "durchschnittsnote": 3.09,
+          "verein": "Bayer 04 Leverkusen",
+          "durchschnittsminuten": 70,
+          "durchschnittspunkte": 52.82,
+          "rang": 21
+        }}
+      ],
       "possibleNames": [
         "Exequiel Palacios",
         "exequiel palacios",
@@ -35128,7 +36027,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [{"Ligainsiderstats": ["Ballverluste: 4,88 (Platz 10)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Ballverluste: 4,88 (Platz 10)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1305,
+          "einsaetzeBewertet": 25,
+          "durchschnittsnote": 3.22,
+          "verein": "VfB Stuttgart",
+          "durchschnittsminuten": 68,
+          "durchschnittspunkte": 50.08,
+          "rang": 36
+        }}
+      ],
       "possibleNames": [
         "Nick Woltemade",
         "N. Woltemade",
@@ -35968,7 +36878,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1261,
+        "einsaetzeBewertet": 32,
+        "durchschnittsnote": 3.7,
+        "verein": "1. FSV Mainz 05",
+        "durchschnittsminuten": 85,
+        "durchschnittspunkte": 39.41,
+        "rang": 160
+      }}],
       "possibleNames": [
         "Phillipp Mwene",
         "Philipp Mwene",
@@ -36078,7 +36996,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1139,
+        "einsaetzeBewertet": 29,
+        "durchschnittsnote": 3.74,
+        "verein": "Bayer 04 Leverkusen",
+        "durchschnittsminuten": 91,
+        "durchschnittspunkte": 39.28,
+        "rang": 163
+      }}],
       "possibleNames": [
         "Edmond Tapsoba",
         "E. Tapsoba",
@@ -36268,7 +37194,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1053,
+        "einsaetzeBewertet": 29,
+        "durchschnittsnote": 3.9,
+        "verein": "Borussia Dortmund",
+        "durchschnittsminuten": 59,
+        "durchschnittspunkte": 36.31,
+        "rang": 206
+      }}],
       "possibleNames": [
         "Maximilian Beier",
         "M. Beier",
@@ -36634,7 +37568,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Ligainsiderstats": ["Schüsse aufs Tor: 1,32 (Platz 9)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Schüsse aufs Tor: 1,32 (Platz 9)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1158,
+          "einsaetzeBewertet": 22,
+          "durchschnittsnote": 3.3,
+          "verein": "FC Bayern München",
+          "durchschnittsminuten": 63,
+          "durchschnittspunkte": 49.27,
+          "rang": 46
+        }}
+      ],
       "possibleNames": [
         "Leon Goretzka",
         "leon goretzka",
@@ -36969,7 +37914,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": ["Geblockte Bälle: 1,24 (Platz 5)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Geblockte Bälle: 1,24 (Platz 5)"]},
+        {"ligainsiderRanking": {
+          "punkte": 857,
+          "einsaetzeBewertet": 19,
+          "durchschnittsnote": 3.63,
+          "verein": "SV Werder Bremen",
+          "durchschnittsminuten": 82,
+          "durchschnittspunkte": 41.05,
+          "rang": 138
+        }}
+      ],
       "possibleNames": [
         "Amos Pieper",
         "amos pieper",
@@ -37090,7 +38046,16 @@
           "Ecken- und Freistoßflanken",
           "Direkter Freistoß",
           "Elfmeter"
-        ]}
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1434,
+          "einsaetzeBewertet": 31,
+          "durchschnittsnote": 3.44,
+          "verein": "SV Werder Bremen",
+          "durchschnittsminuten": 80,
+          "durchschnittspunkte": 46.03,
+          "rang": 78
+        }}
       ],
       "possibleNames": [
         "Marvin Ducksch",
@@ -37570,11 +38535,22 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Ligainsiderstats": [
-        "Ballverluste: 5,09 (Platz 6)",
-        "Erfolgreiche Dribblings: 49,7% (Platz 3)",
-        "Schüsse aufs Tor: 2,36 (Platz 7)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Ballverluste: 5,09 (Platz 6)",
+          "Erfolgreiche Dribblings: 49,7% (Platz 3)",
+          "Schüsse aufs Tor: 2,36 (Platz 7)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1422,
+          "einsaetzeBewertet": 25,
+          "durchschnittsnote": 2.83,
+          "verein": "FC Bayern München",
+          "durchschnittsminuten": 75,
+          "durchschnittspunkte": 56.88,
+          "rang": 8
+        }}
+      ],
       "possibleNames": [
         "Jamal Musiala",
         "J. Musiala",
@@ -37772,7 +38748,16 @@
           "Weiße Weste: 7 (Platz 10)",
           "Grosschancen vereitelt: 42,2% (Platz 10)"
         ]},
-        {"PerformanceTopFlop": ["2. Platz - Gehaltene Torschüsse: 108"]}
+        {"PerformanceTopFlop": ["2. Platz - Gehaltene Torschüsse: 108"]},
+        {"ligainsiderRanking": {
+          "punkte": 1548,
+          "einsaetzeBewertet": 33,
+          "durchschnittsnote": 3.42,
+          "verein": "1. FC Heidenheim",
+          "durchschnittsminuten": 94,
+          "durchschnittspunkte": 46.91,
+          "rang": 69
+        }}
       ],
       "possibleNames": [
         "Kevin Mueller",
@@ -38065,7 +39050,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1099,
+        "einsaetzeBewertet": 32,
+        "durchschnittsnote": 4.02,
+        "verein": "Mönchengladbach",
+        "durchschnittsminuten": 85,
+        "durchschnittspunkte": 34.34,
+        "rang": 232
+      }}],
       "possibleNames": [
         "Joe Scally",
         "joe scally",
@@ -38212,7 +39205,16 @@
         {"Standards": [
           "Ecken- und Freistoßflanken",
           "Direkter Freistoß"
-        ]}
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1329,
+          "einsaetzeBewertet": 29,
+          "durchschnittsnote": 3.47,
+          "verein": "Borussia Dortmund",
+          "durchschnittsminuten": 83,
+          "durchschnittspunkte": 45.17,
+          "rang": 87
+        }}
       ],
       "possibleNames": [
         "Julian Brandt",
@@ -38881,7 +39883,16 @@
       "position": "ABWEHR",
       "attribute": [
         {"Ligainsiderstats": ["Abgefangene- Bälle: 1,89 (Platz 6)"]},
-        {"PerformanceTopFlop": ["3. Platz - Gewonnene Kopfballduelle: 124"]}
+        {"PerformanceTopFlop": ["3. Platz - Gewonnene Kopfballduelle: 124"]},
+        {"ligainsiderRanking": {
+          "punkte": 1562,
+          "einsaetzeBewertet": 34,
+          "durchschnittsnote": 3.44,
+          "verein": "1. FC Heidenheim",
+          "durchschnittsminuten": 95,
+          "durchschnittspunkte": 45.94,
+          "rang": 80
+        }}
       ],
       "possibleNames": [
         "Patrick Mainka",
@@ -39088,7 +40099,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 939,
+        "einsaetzeBewertet": 22,
+        "durchschnittsnote": 3.57,
+        "verein": "SV Werder Bremen",
+        "durchschnittsminuten": 83,
+        "durchschnittspunkte": 42.68,
+        "rang": 117
+      }}],
       "possibleNames": [
         "Felix Agu",
         "felix agu",
@@ -39422,7 +40441,16 @@
       "position": "MITTELFELD",
       "attribute": [
         {"Ligainsiderstats": ["Schuss- genauigkeit: 81,8% (Platz 4)"]},
-        {"PerformanceTopFlop": ["Intensive Läufe: 2916 (Platz: 1)"]}
+        {"PerformanceTopFlop": ["Intensive Läufe: 2916 (Platz: 1)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1408,
+          "einsaetzeBewertet": 29,
+          "durchschnittsnote": 3.36,
+          "verein": "1. FSV Mainz 05",
+          "durchschnittsminuten": 84,
+          "durchschnittspunkte": 47.07,
+          "rang": 68
+        }}
       ],
       "possibleNames": [
         "Paul Nebel",
@@ -39769,7 +40797,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 899,
+        "einsaetzeBewertet": 24,
+        "durchschnittsnote": 4.04,
+        "verein": "VfL Wolfsburg",
+        "durchschnittsminuten": 66,
+        "durchschnittspunkte": 34.08,
+        "rang": 234
+      }}],
       "possibleNames": [
         "Yannick Gerhardt",
         "Yannik Gerhardt",
@@ -39968,7 +41004,16 @@
       "position": "STURM",
       "attribute": [
         {"Ligainsiderstats": ["Schüsse aufs Tor: 2,00 (Platz 1)"]},
-        {"Standards": ["Elfmeter"]}
+        {"Standards": ["Elfmeter"]},
+        {"ligainsiderRanking": {
+          "punkte": 1310,
+          "einsaetzeBewertet": 30,
+          "durchschnittsnote": 3.69,
+          "verein": "VfB Stuttgart",
+          "durchschnittsminuten": 64,
+          "durchschnittspunkte": 41.87,
+          "rang": 125
+        }}
       ],
       "possibleNames": [
         "Ermedin Demirovic",
@@ -40156,7 +41201,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "TORHÜTER",
-      "attribute": [{"Ligainsiderstats": ["Strafraum- beherrschung: 100,0% (Platz 6)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Strafraum- beherrschung: 100,0% (Platz 6)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1639,
+          "einsaetzeBewertet": 34,
+          "durchschnittsnote": 3.29,
+          "verein": "VfB Stuttgart",
+          "durchschnittsminuten": 96,
+          "durchschnittspunkte": 48.21,
+          "rang": 57
+        }}
+      ],
       "possibleNames": [
         "Alexander Nuebel",
         "alexander nuebel",
@@ -40276,7 +41332,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 683,
+        "einsaetzeBewertet": 18,
+        "durchschnittsnote": 4.15,
+        "verein": "Mönchengladbach",
+        "durchschnittsminuten": 55,
+        "durchschnittspunkte": 31.61,
+        "rang": 252
+      }}],
       "possibleNames": [
         "Luca Netz",
         "L. Netz",
@@ -40582,7 +41646,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 807,
+        "einsaetzeBewertet": 25,
+        "durchschnittsnote": 4.18,
+        "verein": "1. FC Union Berlin",
+        "durchschnittsminuten": 69,
+        "durchschnittspunkte": 30.52,
+        "rang": 260
+      }}],
       "possibleNames": [
         "Janik Haberer",
         "janik haberer",
@@ -40805,7 +41877,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 669,
+        "einsaetzeBewertet": 13,
+        "durchschnittsnote": 3.65,
+        "verein": "Mönchengladbach",
+        "durchschnittsminuten": 76,
+        "durchschnittspunkte": 40.31,
+        "rang": 153
+      }}],
       "possibleNames": [
         "Marvin Friedrich",
         "marvin friedrich",
@@ -40999,7 +42079,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 558,
+        "einsaetzeBewertet": 15,
+        "durchschnittsnote": 3.93,
+        "verein": "1. FC Heidenheim",
+        "durchschnittsminuten": 83,
+        "durchschnittspunkte": 36,
+        "rang": 208
+      }}],
       "possibleNames": [
         "Tim Siersleben",
         "T. Siersleben",
@@ -41099,7 +42187,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Ligainsiderstats": ["Abgefangene- Bälle: 2,49 (Platz 1)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Abgefangene- Bälle: 2,49 (Platz 1)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1174,
+          "einsaetzeBewertet": 26,
+          "durchschnittsnote": 3.54,
+          "verein": "Mönchengladbach",
+          "durchschnittsminuten": 73,
+          "durchschnittspunkte": 44.42,
+          "rang": 99
+        }}
+      ],
       "possibleNames": [
         "Rocco Reitz",
         "R. Reitz",
@@ -41982,7 +43081,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1168,
+        "einsaetzeBewertet": 25,
+        "durchschnittsnote": 3.6,
+        "verein": "Eintracht Frankfurt",
+        "durchschnittsminuten": 64,
+        "durchschnittspunkte": 42.72,
+        "rang": 112
+      }}],
       "possibleNames": [
         "Ansgar Knauff",
         "A. Knauff",
@@ -42216,7 +43323,16 @@
           "Abgewehrte Schüsse: 71,5% (Platz 6)",
           "Grosschancen vereitelt: 43,5% (Platz 7)"
         ]},
-        {"PerformanceTopFlop": ["3. Platz - Gehaltene Torschüsse: 106"]}
+        {"PerformanceTopFlop": ["3. Platz - Gehaltene Torschüsse: 106"]},
+        {"ligainsiderRanking": {
+          "punkte": 1787,
+          "einsaetzeBewertet": 32,
+          "durchschnittsnote": 2.94,
+          "verein": "1. FSV Mainz 05",
+          "durchschnittsminuten": 96,
+          "durchschnittspunkte": 55.84,
+          "rang": 10
+        }}
       ],
       "possibleNames": [
         "Robin Zentner",
@@ -42593,7 +43709,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": ["Fehler vor Schuss/Gegentor: 0,30 (Platz 1)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Fehler vor Schuss/Gegentor: 0,30 (Platz 1)"]},
+        {"ligainsiderRanking": {
+          "punkte": 686,
+          "einsaetzeBewertet": 19,
+          "durchschnittsnote": 4.11,
+          "verein": "1. FC Heidenheim",
+          "durchschnittsminuten": 76,
+          "durchschnittspunkte": 32.68,
+          "rang": 246
+        }}
+      ],
       "possibleNames": [
         "Marnon Busch",
         "marnon busch",
@@ -42700,7 +43827,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Standards": ["Ecken- und Freistoßflanken"]}],
+      "attribute": [
+        {"Standards": ["Ecken- und Freistoßflanken"]},
+        {"ligainsiderRanking": {
+          "punkte": 1430,
+          "einsaetzeBewertet": 30,
+          "durchschnittsnote": 3.35,
+          "verein": "TSG Hoffenheim",
+          "durchschnittsminuten": 91,
+          "durchschnittspunkte": 47.67,
+          "rang": 62
+        }}
+      ],
       "possibleNames": [
         "Anton Stach",
         "A. Stach",
@@ -42961,7 +44099,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Ligainsiderstats": ["Kreierte Großchancen: 0,63 (Platz 10)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Kreierte Großchancen: 0,63 (Platz 10)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1100,
+          "einsaetzeBewertet": 25,
+          "durchschnittsnote": 3.62,
+          "verein": "VfB Stuttgart",
+          "durchschnittsminuten": 68,
+          "durchschnittspunkte": 42.52,
+          "rang": 118
+        }}
+      ],
       "possibleNames": [
         "Jamie Leweling",
         "J. Leweling",
@@ -43200,7 +44349,16 @@
         {"Standards": [
           "Ecken- und Freistoßflanken",
           "Direkter Freistoß"
-        ]}
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1652,
+          "einsaetzeBewertet": 30,
+          "durchschnittsnote": 2.98,
+          "verein": "1. FSV Mainz 05",
+          "durchschnittsminuten": 86,
+          "durchschnittspunkte": 55.07,
+          "rang": 14
+        }}
       ],
       "possibleNames": [
         "Nadiem Amiri",
@@ -43428,11 +44586,22 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "TORHÜTER",
-      "attribute": [{"Ligainsiderstats": [
-        "Paraden: 2,16 (Platz 10)",
-        "Weiße Weste: 10 (Platz 5)",
-        "Fehler vor Schuss/Gegentor: 0,19 (Platz 6)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Paraden: 2,16 (Platz 10)",
+          "Weiße Weste: 10 (Platz 5)",
+          "Fehler vor Schuss/Gegentor: 0,19 (Platz 6)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1578,
+          "einsaetzeBewertet": 34,
+          "durchschnittsnote": 3.44,
+          "verein": "SV Werder Bremen",
+          "durchschnittsminuten": 96,
+          "durchschnittspunkte": 46.41,
+          "rang": 75
+        }}
+      ],
       "possibleNames": [
         "Michael Zetterer",
         "michael zetterer",
@@ -43633,7 +44802,16 @@
         {"Standards": [
           "Ecken- und Freistoßflanken",
           "Direkter Freistoß"
-        ]}
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1089,
+          "einsaetzeBewertet": 21,
+          "durchschnittsnote": 3.24,
+          "verein": "RB Leipzig",
+          "durchschnittsminuten": 89,
+          "durchschnittspunkte": 50.24,
+          "rang": 34
+        }}
       ],
       "possibleNames": [
         "David Raum",
@@ -43740,7 +44918,16 @@
         {"Standards": [
           "Ecken- und Freistoßflanken",
           "Direkter Freistoß"
-        ]}
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1752,
+          "einsaetzeBewertet": 31,
+          "durchschnittsnote": 2.97,
+          "verein": "VfB Stuttgart",
+          "durchschnittsminuten": 94,
+          "durchschnittspunkte": 55.74,
+          "rang": 11
+        }}
       ],
       "possibleNames": [
         "Angelo Stiller",
@@ -44129,7 +45316,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 853,
+        "einsaetzeBewertet": 24,
+        "durchschnittsnote": 3.94,
+        "verein": "FC St. Pauli",
+        "durchschnittsminuten": 94,
+        "durchschnittspunkte": 35.54,
+        "rang": 213
+      }}],
       "possibleNames": [
         "David Nemeth",
         "D. Nemeth",
@@ -44652,7 +45847,15 @@
       },
       "lastUpdate": "07.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 685,
+        "einsaetzeBewertet": 18,
+        "durchschnittsnote": 3.83,
+        "verein": "1. FC Union Berlin",
+        "durchschnittsminuten": 80,
+        "durchschnittspunkte": 38.06,
+        "rang": 179
+      }}],
       "possibleNames": [
         "Kevin Vogt",
         "kevin vogt",
@@ -44847,7 +46050,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1339,
+        "einsaetzeBewertet": 30,
+        "durchschnittsnote": 3.5,
+        "verein": "Borussia Dortmund",
+        "durchschnittsminuten": 81,
+        "durchschnittspunkte": 44.63,
+        "rang": 96
+      }}],
       "possibleNames": [
         "pascal gross",
         "Pascal Groß",
@@ -44984,7 +46195,16 @@
           "Torschuss- vorlagen: 2,49 (Platz 5)"
         ]},
         {"PerformanceTopFlop": ["2. Platz - Laufdistanz (km): 390.4"]},
-        {"Standards": ["Ecken- und Freistoßflanken"]}
+        {"Standards": ["Ecken- und Freistoßflanken"]},
+        {"ligainsiderRanking": {
+          "punkte": 2179,
+          "einsaetzeBewertet": 33,
+          "durchschnittsnote": 2.45,
+          "verein": "FC Bayern München",
+          "durchschnittsminuten": 91,
+          "durchschnittspunkte": 66.03,
+          "rang": 2
+        }}
       ],
       "possibleNames": [
         "Joshua Kimmich",
@@ -45111,7 +46331,16 @@
       "attribute": [
         {"Ligainsiderstats": ["Luftkampf- quote: 67,2% (Platz 10)"]},
         {"PerformanceTopFlop": ["3. Platz - Laufdistanz (km): 382.3"]},
-        {"Standards": ["Elfmeter"]}
+        {"Standards": ["Elfmeter"]},
+        {"ligainsiderRanking": {
+          "punkte": 1409,
+          "einsaetzeBewertet": 33,
+          "durchschnittsnote": 3.59,
+          "verein": "Mönchengladbach",
+          "durchschnittsminuten": 92,
+          "durchschnittspunkte": 42.7,
+          "rang": 115
+        }}
       ],
       "possibleNames": [
         "Julian Weigl",
@@ -45349,10 +46578,21 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": [
-        "Zweikampf- quote: 65,2% (Platz 7)",
-        "Passquote: 90,4% (Platz 9)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Zweikampf- quote: 65,2% (Platz 7)",
+          "Passquote: 90,4% (Platz 9)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1179,
+          "einsaetzeBewertet": 23,
+          "durchschnittsnote": 3.3,
+          "verein": "Borussia Dortmund",
+          "durchschnittsminuten": 89,
+          "durchschnittspunkte": 48.13,
+          "rang": 60
+        }}
+      ],
       "possibleNames": [
         "Waldemar Anton",
         "waldemar anton",
@@ -45676,7 +46916,16 @@
       "position": "ABWEHR",
       "attribute": [
         {"Ligainsiderstats": ["Begangene Fouls: 1,96 (Platz 8)"]},
-        {"PerformanceTopFlop": ["3. Platz - Fouls am Gegner: 60"]}
+        {"PerformanceTopFlop": ["3. Platz - Fouls am Gegner: 60"]},
+        {"ligainsiderRanking": {
+          "punkte": 1116,
+          "einsaetzeBewertet": 32,
+          "durchschnittsnote": 3.95,
+          "verein": "1. FC Heidenheim",
+          "durchschnittsminuten": 88,
+          "durchschnittspunkte": 34.88,
+          "rang": 226
+        }}
       ],
       "possibleNames": [
         "Benedikt Gimber",
@@ -45802,7 +47051,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Standards": ["Direkter Freistoß"]}],
+      "attribute": [
+        {"Standards": ["Direkter Freistoß"]},
+        {"ligainsiderRanking": {
+          "punkte": 536,
+          "einsaetzeBewertet": 13,
+          "durchschnittsnote": 3.96,
+          "verein": "RB Leipzig",
+          "durchschnittsminuten": 74,
+          "durchschnittspunkte": 37,
+          "rang": 195
+        }}
+      ],
       "possibleNames": [
         "Benjamin Henrichs",
         "benjamin henrichs",
@@ -46287,7 +47547,16 @@
           "Geblockte Bälle: 1,24 (Platz 6)",
           "Geklärte Bälle: 6,33 (Platz 10)"
         ]},
-        {"PerformanceTopFlop": ["3. Platz - Passquote (%): 93.66"]}
+        {"PerformanceTopFlop": ["3. Platz - Passquote (%): 93.66"]},
+        {"ligainsiderRanking": {
+          "punkte": 1095,
+          "einsaetzeBewertet": 25,
+          "durchschnittsnote": 3.54,
+          "verein": "Mönchengladbach",
+          "durchschnittsminuten": 90,
+          "durchschnittspunkte": 43.8,
+          "rang": 103
+        }}
       ],
       "possibleNames": [
         "Nico Elvedi",
@@ -46392,7 +47661,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1053,
+        "einsaetzeBewertet": 23,
+        "durchschnittsnote": 3.52,
+        "verein": "Borussia Dortmund",
+        "durchschnittsminuten": 68,
+        "durchschnittspunkte": 43.39,
+        "rang": 107
+      }}],
       "possibleNames": [
         "Felix Nmecha",
         "F. Nmecha",
@@ -46796,7 +48073,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [{"Ligainsiderstats": ["Ball- eroberungen: 1,70 (Platz 6)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Ball- eroberungen: 1,70 (Platz 6)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1158,
+          "einsaetzeBewertet": 27,
+          "durchschnittsnote": 3.56,
+          "verein": "VfL Wolfsburg",
+          "durchschnittsminuten": 68,
+          "durchschnittspunkte": 42.22,
+          "rang": 123
+        }}
+      ],
       "possibleNames": [
         "Patrick Wimmer",
         "P. Wimmer",
@@ -46900,7 +48188,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1209,
+        "einsaetzeBewertet": 27,
+        "durchschnittsnote": 3.56,
+        "verein": "VfB Stuttgart",
+        "durchschnittsminuten": 71,
+        "durchschnittspunkte": 43.22,
+        "rang": 108
+      }}],
       "possibleNames": [
         "Enzo Millot",
         "E. Millot",
@@ -47004,7 +48300,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": ["Tacklingquote: 58,8% (Platz 8)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Tacklingquote: 58,8% (Platz 8)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1594,
+          "einsaetzeBewertet": 32,
+          "durchschnittsnote": 3.22,
+          "verein": "Bayer 04 Leverkusen",
+          "durchschnittsminuten": 89,
+          "durchschnittspunkte": 49.81,
+          "rang": 38
+        }}
+      ],
       "possibleNames": [
         "Piero Hincapie",
         "Piero Hincapié",
@@ -47341,7 +48648,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1116,
+        "einsaetzeBewertet": 31,
+        "durchschnittsnote": 3.89,
+        "verein": "FC Augsburg",
+        "durchschnittsminuten": 79,
+        "durchschnittspunkte": 36,
+        "rang": 207
+      }}],
       "possibleNames": [
         "Kristijan Jakic",
         "Kristijan Jakić",
@@ -47748,7 +49063,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "TORHÜTER",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1311,
+        "einsaetzeBewertet": 29,
+        "durchschnittsnote": 3.48,
+        "verein": "Bayer 04 Leverkusen",
+        "durchschnittsminuten": 96,
+        "durchschnittspunkte": 45.21,
+        "rang": 86
+      }}],
       "possibleNames": [
         "Lukas Hradecky",
         "lukas hradecky",
@@ -47881,7 +49204,16 @@
           "Zweikampf- quote: 64,0% (Platz 9)",
           "Ball- eroberungen: 1,87 (Platz 1)"
         ]},
-        {"PerformanceTopFlop": ["Flanken aus dem Spiel: 109 (Platz: 1)"]}
+        {"PerformanceTopFlop": ["Flanken aus dem Spiel: 109 (Platz: 1)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1670,
+          "einsaetzeBewertet": 31,
+          "durchschnittsnote": 3.05,
+          "verein": "VfB Stuttgart",
+          "durchschnittsminuten": 84,
+          "durchschnittspunkte": 53.87,
+          "rang": 19
+        }}
       ],
       "possibleNames": [
         "Maximilian Mittelstaedt",
@@ -48127,11 +49459,22 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "TORHÜTER",
-      "attribute": [{"Ligainsiderstats": [
-        "Strafraum- beherrschung: 100,0% (Platz 2)",
-        "Paraden: 2,61 (Platz 3)",
-        "Abgewehrte Elfmeter: 60,0% (Platz 5)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Strafraum- beherrschung: 100,0% (Platz 2)",
+          "Paraden: 2,61 (Platz 3)",
+          "Abgewehrte Elfmeter: 60,0% (Platz 5)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1462,
+          "einsaetzeBewertet": 28,
+          "durchschnittsnote": 3.09,
+          "verein": "TSG Hoffenheim",
+          "durchschnittsminuten": 96,
+          "durchschnittspunkte": 52.21,
+          "rang": 23
+        }}
+      ],
       "possibleNames": [
         "Oliver Baumann",
         "oliver baumann",
@@ -48338,7 +49681,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [{"Ligainsiderstats": ["Tacklingquote: 57,1% (Platz 10)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Tacklingquote: 57,1% (Platz 10)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1230,
+          "einsaetzeBewertet": 27,
+          "durchschnittsnote": 3.46,
+          "verein": "FC Bayern München",
+          "durchschnittsminuten": 50,
+          "durchschnittspunkte": 44.93,
+          "rang": 93
+        }}
+      ],
       "possibleNames": [
         "Kingsley Coman",
         "kingsley coman",
@@ -48552,7 +49906,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 870,
+        "einsaetzeBewertet": 25,
+        "durchschnittsnote": 4.02,
+        "verein": "1. FC Union Berlin",
+        "durchschnittsminuten": 64,
+        "durchschnittspunkte": 34.08,
+        "rang": 235
+      }}],
       "possibleNames": [
         "András Schaefer",
         "András Schäfer",
@@ -48781,7 +50143,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1417,
+        "einsaetzeBewertet": 28,
+        "durchschnittsnote": 3.27,
+        "verein": "VfB Stuttgart",
+        "durchschnittsminuten": 84,
+        "durchschnittspunkte": 49.07,
+        "rang": 48
+      }}],
       "possibleNames": [
         "Julian Chabot",
         "J. Chabot",
@@ -48989,7 +50359,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [{"Ligainsiderstats": ["Schuss- genauigkeit: 81,0% (Platz 5)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Schuss- genauigkeit: 81,0% (Platz 5)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1126,
+          "einsaetzeBewertet": 29,
+          "durchschnittsnote": 3.86,
+          "verein": "VfL Wolfsburg",
+          "durchschnittsminuten": 67,
+          "durchschnittspunkte": 37,
+          "rang": 197
+        }}
+      ],
       "possibleNames": [
         "Tiago Tomás",
         "Tiago Tomas",
@@ -49093,7 +50474,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [{"SontigeInfos": ["häufigesten Transfers (2)"]}],
+      "attribute": [
+        {"SontigeInfos": ["häufigesten Transfers (2)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1261,
+          "einsaetzeBewertet": 30,
+          "durchschnittsnote": 3.65,
+          "verein": "VfL Wolfsburg",
+          "durchschnittsminuten": 70,
+          "durchschnittspunkte": 41.57,
+          "rang": 132
+        }}
+      ],
       "possibleNames": [
         "Jonas Wind",
         "J. Wind",
@@ -49194,7 +50586,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 925,
+        "einsaetzeBewertet": 24,
+        "durchschnittsnote": 3.83,
+        "verein": "1. FC Union Berlin",
+        "durchschnittsminuten": 73,
+        "durchschnittspunkte": 37.08,
+        "rang": 193
+      }}],
       "possibleNames": [
         "Tom Rothe",
         "T. Rothe",
@@ -49305,7 +50705,16 @@
           "Hist. Punkteausbeute: Gering bis mittel",
           "Empfehlung: Halten",
           "verletzungsanfällig: Niedrig"
-        ]}
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1292,
+          "einsaetzeBewertet": 26,
+          "durchschnittsnote": 3.46,
+          "verein": "Borussia Dortmund",
+          "durchschnittsminuten": 70,
+          "durchschnittspunkte": 46,
+          "rang": 79
+        }}
       ],
       "possibleNames": [
         "Jamie Bynoe Gittens",
@@ -49539,7 +50948,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1144,
+        "einsaetzeBewertet": 30,
+        "durchschnittsnote": 3.88,
+        "verein": "FC Augsburg",
+        "durchschnittsminuten": 73,
+        "durchschnittspunkte": 37.03,
+        "rang": 194
+      }}],
       "possibleNames": [
         "Marius Wolf",
         "marius wolf",
@@ -49667,7 +51084,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1524,
+        "einsaetzeBewertet": 33,
+        "durchschnittsnote": 3.45,
+        "verein": "FC Augsburg",
+        "durchschnittsminuten": 95,
+        "durchschnittspunkte": 46.18,
+        "rang": 77
+      }}],
       "possibleNames": [
         "Jeffrey Gouweleeuw",
         "jeffrey gouweleeuw",
@@ -49869,7 +51294,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [{"Ligainsiderstats": ["Ballverluste: 5,85 (Platz 3)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Ballverluste: 5,85 (Platz 3)"]},
+        {"ligainsiderRanking": {
+          "punkte": 989,
+          "einsaetzeBewertet": 23,
+          "durchschnittsnote": 3.65,
+          "verein": "Borussia Dortmund",
+          "durchschnittsminuten": 64,
+          "durchschnittspunkte": 41.65,
+          "rang": 129
+        }}
+      ],
       "possibleNames": [
         "Karim Adeyemi",
         "karim adeyemi",
@@ -50058,7 +51494,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1543,
+        "einsaetzeBewertet": 33,
+        "durchschnittsnote": 3.39,
+        "verein": "1. FSV Mainz 05",
+        "durchschnittsminuten": 84,
+        "durchschnittspunkte": 46.76,
+        "rang": 70
+      }}],
       "possibleNames": [
         "Anthony Caci",
         "anthony caci",
@@ -50193,7 +51637,16 @@
         {"Standards": [
           "Direkter Freistoß",
           "Elfmeter"
-        ]}
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1440,
+          "einsaetzeBewertet": 32,
+          "durchschnittsnote": 3.45,
+          "verein": "TSG Hoffenheim",
+          "durchschnittsminuten": 91,
+          "durchschnittspunkte": 45,
+          "rang": 89
+        }}
       ],
       "possibleNames": [
         "Andrej Kramaric",
@@ -50938,7 +52391,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1366,
+        "einsaetzeBewertet": 31,
+        "durchschnittsnote": 3.5,
+        "verein": "Mönchengladbach",
+        "durchschnittsminuten": 96,
+        "durchschnittspunkte": 44.06,
+        "rang": 102
+      }}],
       "possibleNames": [
         "K. Itakura",
         "Ko Itakura",
@@ -51071,7 +52532,16 @@
           "Abgewehrte Elfmeter: 33,3% (Platz 10)",
           "Grosschancen vereitelt: 52,5% (Platz 2)"
         ]},
-        {"PerformanceTopFlop": ["Gehaltene Torschüsse: 109 (Platz: 1)"]}
+        {"PerformanceTopFlop": ["Gehaltene Torschüsse: 109 (Platz: 1)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1767,
+          "einsaetzeBewertet": 30,
+          "durchschnittsnote": 2.78,
+          "verein": "RB Leipzig",
+          "durchschnittsminuten": 93,
+          "durchschnittspunkte": 58.9,
+          "rang": 7
+        }}
       ],
       "possibleNames": [
         "Peter Gulacsi",
@@ -51181,7 +52651,16 @@
           "Empfehlung: Halten",
           "verletzungsanfällig: Mittel"
         ]},
-        {"PerformanceTopFlop": [". Platz - Verwandelte Elfmeter: 3"]}
+        {"PerformanceTopFlop": [". Platz - Verwandelte Elfmeter: 3"]},
+        {"ligainsiderRanking": {
+          "punkte": 1283,
+          "einsaetzeBewertet": 31,
+          "durchschnittsnote": 3.66,
+          "verein": "1. FC Heidenheim",
+          "durchschnittsminuten": 74,
+          "durchschnittspunkte": 41.39,
+          "rang": 135
+        }}
       ],
       "possibleNames": [
         "Marvin Pieringer",
@@ -51595,7 +53074,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": ["Geklärte Bälle: 6,40 (Platz 6)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Geklärte Bälle: 6,40 (Platz 6)"]},
+        {"ligainsiderRanking": {
+          "punkte": 992,
+          "einsaetzeBewertet": 25,
+          "durchschnittsnote": 3.84,
+          "verein": "RB Leipzig",
+          "durchschnittsminuten": 77,
+          "durchschnittspunkte": 37.68,
+          "rang": 182
+        }}
+      ],
       "possibleNames": [
         "Lukas Klostermann",
         "lukas klostermann",
@@ -51801,7 +53291,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1374,
+        "einsaetzeBewertet": 34,
+        "durchschnittsnote": 3.68,
+        "verein": "1. FC Union Berlin",
+        "durchschnittsminuten": 96,
+        "durchschnittspunkte": 40.41,
+        "rang": 149
+      }}],
       "possibleNames": [
         "Danilho Doekhi",
         "Danilho Dökhi",
@@ -52018,7 +53516,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 881,
+        "einsaetzeBewertet": 24,
+        "durchschnittsnote": 3.94,
+        "verein": "Borussia Dortmund",
+        "durchschnittsminuten": 70,
+        "durchschnittspunkte": 35.17,
+        "rang": 216
+      }}],
       "possibleNames": [
         "Marcel Sabitzer",
         "marcel sabitzer",
@@ -52335,7 +53841,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 815,
+        "einsaetzeBewertet": 27,
+        "durchschnittsnote": 4.43,
+        "verein": "1. FC Union Berlin",
+        "durchschnittsminuten": 44,
+        "durchschnittspunkte": 26.11,
+        "rang": 270
+      }}],
       "possibleNames": [
         "Tim Skarke",
         "T. Skarke",
@@ -52541,7 +54055,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1090,
+        "einsaetzeBewertet": 25,
+        "durchschnittsnote": 3.62,
+        "verein": "TSG Hoffenheim",
+        "durchschnittsminuten": 78,
+        "durchschnittspunkte": 42.4,
+        "rang": 120
+      }}],
       "possibleNames": [
         "Adam Hlozek",
         "Adam Hložek",
@@ -52683,7 +54205,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Ligainsiderstats": ["Ball- eroberungen: 1,57 (Platz 10)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Ball- eroberungen: 1,57 (Platz 10)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1011,
+          "einsaetzeBewertet": 24,
+          "durchschnittsnote": 3.6,
+          "verein": "Eintracht Frankfurt",
+          "durchschnittsminuten": 67,
+          "durchschnittspunkte": 42.12,
+          "rang": 124
+        }}
+      ],
       "possibleNames": [
         "Mario Goetze",
         "mario goetze",
@@ -52795,7 +54328,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 827,
+        "einsaetzeBewertet": 24,
+        "durchschnittsnote": 4.1,
+        "verein": "1. FC Heidenheim",
+        "durchschnittsminuten": 80,
+        "durchschnittspunkte": 32.21,
+        "rang": 249
+      }}],
       "possibleNames": [
         "Jonas Foehrenbach",
         "jonas foehrenbach",
@@ -53226,7 +54767,16 @@
           "3. Platz - Gewonnene Zweikämpfe: 382",
           "2. Platz - Gewonnene Kopfballduelle: 160",
           "2. Platz - Fouls am Gegner: 74"
-        ]}
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1605,
+          "einsaetzeBewertet": 31,
+          "durchschnittsnote": 3.11,
+          "verein": "Mönchengladbach",
+          "durchschnittsminuten": 93,
+          "durchschnittspunkte": 51.77,
+          "rang": 24
+        }}
       ],
       "possibleNames": [
         "Tim Kleindienst",
@@ -53331,7 +54881,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": ["Ball- eroberungen: 1,64 (Platz 8)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Ball- eroberungen: 1,64 (Platz 8)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1061,
+          "einsaetzeBewertet": 31,
+          "durchschnittsnote": 4.03,
+          "verein": "VfL Wolfsburg",
+          "durchschnittsminuten": 78,
+          "durchschnittspunkte": 33.71,
+          "rang": 239
+        }}
+      ],
       "possibleNames": [
         "Kilian Fischer",
         "K. Fischer",
@@ -53437,7 +54998,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 853,
+        "einsaetzeBewertet": 22,
+        "durchschnittsnote": 3.8,
+        "verein": "1. FC Heidenheim",
+        "durchschnittsminuten": 64,
+        "durchschnittspunkte": 38.09,
+        "rang": 178
+      }}],
       "possibleNames": [
         "Niklas Dorsch",
         "niklas dorsch",
@@ -54021,7 +55590,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1413,
+        "einsaetzeBewertet": 28,
+        "durchschnittsnote": 3.18,
+        "verein": "SV Werder Bremen",
+        "durchschnittsminuten": 83,
+        "durchschnittspunkte": 50.46,
+        "rang": 32
+      }}],
       "possibleNames": [
         "Jens Stage",
         "J. Stage",
@@ -54532,7 +56109,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1084,
+        "einsaetzeBewertet": 21,
+        "durchschnittsnote": 3.17,
+        "verein": "FC Bayern München",
+        "durchschnittsminuten": 77,
+        "durchschnittspunkte": 50.86,
+        "rang": 30
+      }}],
       "possibleNames": [
         "Raphaël Guerreiro",
         "Raphael Guerreiro",
@@ -54730,7 +56315,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1380,
+        "einsaetzeBewertet": 33,
+        "durchschnittsnote": 3.61,
+        "verein": "FC St. Pauli",
+        "durchschnittsminuten": 96,
+        "durchschnittspunkte": 41.82,
+        "rang": 126
+      }}],
       "possibleNames": [
         "Hauke Wahl",
         "hauke wahl",
@@ -54923,7 +56516,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 683,
+        "einsaetzeBewertet": 19,
+        "durchschnittsnote": 3.97,
+        "verein": "VfL Wolfsburg",
+        "durchschnittsminuten": 66,
+        "durchschnittspunkte": 34.95,
+        "rang": 223
+      }}],
       "possibleNames": [
         "Mattias Svanberg",
         "M. Svanberg",
@@ -55021,7 +56622,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": ["Abgefangene- Bälle: 1,90 (Platz 5)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Abgefangene- Bälle: 1,90 (Platz 5)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1366,
+          "einsaetzeBewertet": 29,
+          "durchschnittsnote": 3.43,
+          "verein": "1. FC Union Berlin",
+          "durchschnittsminuten": 93,
+          "durchschnittspunkte": 46.62,
+          "rang": 73
+        }}
+      ],
       "possibleNames": [
         "Diogo Leite",
         "D. Leite",
@@ -55153,7 +56765,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 999,
+        "einsaetzeBewertet": 24,
+        "durchschnittsnote": 3.69,
+        "verein": "RB Leipzig",
+        "durchschnittsminuten": 69,
+        "durchschnittspunkte": 40.58,
+        "rang": 146
+      }}],
       "possibleNames": [
         "Kevin Kampl",
         "kevin kampl",
@@ -55379,7 +56999,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "TORHÜTER",
-      "attribute": [{"Ligainsiderstats": ["Grosschancen vereitelt: 43,4% (Platz 8)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Grosschancen vereitelt: 43,4% (Platz 8)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1594,
+          "einsaetzeBewertet": 32,
+          "durchschnittsnote": 3.23,
+          "verein": "Borussia Dortmund",
+          "durchschnittsminuten": 96,
+          "durchschnittspunkte": 49.81,
+          "rang": 37
+        }}
+      ],
       "possibleNames": [
         "Gregor Kobel",
         "gregor kobel",
@@ -55778,7 +57409,16 @@
       "position": "ABWEHR",
       "attribute": [
         {"Ligainsiderstats": ["Fehler vor Schuss/Gegentor: 0,19 (Platz 7)"]},
-        {"PerformanceTopFlop": [". Platz - Eigentore: 2"]}
+        {"PerformanceTopFlop": [". Platz - Eigentore: 2"]},
+        {"ligainsiderRanking": {
+          "punkte": 577,
+          "einsaetzeBewertet": 17,
+          "durchschnittsnote": 4.21,
+          "verein": "TSG Hoffenheim",
+          "durchschnittsminuten": 79,
+          "durchschnittspunkte": 29.76,
+          "rang": 262
+        }}
       ],
       "possibleNames": [
         "Stanley Nsoki",
@@ -55911,11 +57551,22 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "TORHÜTER",
-      "attribute": [{"Ligainsiderstats": [
-        "Weiße Weste: 7 (Platz 9)",
-        "Abgewehrte Schüsse: 71,8% (Platz 5)",
-        "Abgewehrte Elfmeter: 100,0% (Platz 2)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Weiße Weste: 7 (Platz 9)",
+          "Abgewehrte Schüsse: 71,8% (Platz 5)",
+          "Abgewehrte Elfmeter: 100,0% (Platz 2)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1284,
+          "einsaetzeBewertet": 26,
+          "durchschnittsnote": 3.21,
+          "verein": "Eintracht Frankfurt",
+          "durchschnittsminuten": 94,
+          "durchschnittspunkte": 49.38,
+          "rang": 45
+        }}
+      ],
       "possibleNames": [
         "Kevin Trapp",
         "K. Trapp",
@@ -56321,12 +57972,23 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "TORHÜTER",
-      "attribute": [{"Ligainsiderstats": [
-        "Strafraum- beherrschung: 100,0% (Platz 7)",
-        "Paraden: 2,85 (Platz 1)",
-        "Abgewehrte Schüsse: 75,8% (Platz 2)",
-        "Grosschancen vereitelt: 48,4% (Platz 5)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Strafraum- beherrschung: 100,0% (Platz 7)",
+          "Paraden: 2,85 (Platz 1)",
+          "Abgewehrte Schüsse: 75,8% (Platz 2)",
+          "Grosschancen vereitelt: 48,4% (Platz 5)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1048,
+          "einsaetzeBewertet": 19,
+          "durchschnittsnote": 2.97,
+          "verein": "Mönchengladbach",
+          "durchschnittsminuten": 91,
+          "durchschnittspunkte": 55.16,
+          "rang": 13
+        }}
+      ],
       "possibleNames": [
         "Moritz Nicolas",
         "moritz nicolas",
@@ -56752,7 +58414,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 710,
+        "einsaetzeBewertet": 21,
+        "durchschnittsnote": 4.26,
+        "verein": "SV Werder Bremen",
+        "durchschnittsminuten": 48,
+        "durchschnittspunkte": 29.71,
+        "rang": 263
+      }}],
       "possibleNames": [
         "Justin Njinmah",
         "J. Njinmah",
@@ -56863,7 +58533,16 @@
           "3. Platz - Torschüsse: 90",
           ". Platz - Elfmeter: 4"
         ]},
-        {"Standards": ["Elfmeter"]}
+        {"Standards": ["Elfmeter"]},
+        {"ligainsiderRanking": {
+          "punkte": 1548,
+          "einsaetzeBewertet": 30,
+          "durchschnittsnote": 3.17,
+          "verein": "Borussia Dortmund",
+          "durchschnittsminuten": 92,
+          "durchschnittspunkte": 51.6,
+          "rang": 25
+        }}
       ],
       "possibleNames": [
         "Serhou Guirassy",
@@ -57298,7 +58977,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": ["Geblockte Bälle: 1,17 (Platz 9)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Geblockte Bälle: 1,17 (Platz 9)"]},
+        {"ligainsiderRanking": {
+          "punkte": 769,
+          "einsaetzeBewertet": 19,
+          "durchschnittsnote": 3.82,
+          "verein": "1. FSV Mainz 05",
+          "durchschnittsminuten": 72,
+          "durchschnittspunkte": 38.21,
+          "rang": 175
+        }}
+      ],
       "possibleNames": [
         "Andreas Hanche Olsen",
         "Andreas Hanche-Olsen",
@@ -57711,7 +59401,16 @@
           "Geklärte Bälle: 6,39 (Platz 7)",
           "Luftkampf- quote: 69,2% (Platz 5)"
         ]},
-        {"SontigeInfos": ["häufigesten Transfers (2)"]}
+        {"SontigeInfos": ["häufigesten Transfers (2)"]},
+        {"ligainsiderRanking": {
+          "punkte": 824,
+          "einsaetzeBewertet": 18,
+          "durchschnittsnote": 3.44,
+          "verein": "1. FSV Mainz 05",
+          "durchschnittsminuten": 84,
+          "durchschnittspunkte": 45.78,
+          "rang": 82
+        }}
       ],
       "possibleNames": [
         "Stefan Bell",
@@ -57812,11 +59511,22 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "TORHÜTER",
-      "attribute": [{"Ligainsiderstats": [
-        "Strafraum- beherrschung: 100,0% (Platz 9)",
-        "Paraden: 2,76 (Platz 2)",
-        "Abgewehrte Elfmeter: 33,3% (Platz 8)"
-      ]}],
+      "attribute": [
+        {"Ligainsiderstats": [
+          "Strafraum- beherrschung: 100,0% (Platz 9)",
+          "Paraden: 2,76 (Platz 2)",
+          "Abgewehrte Elfmeter: 33,3% (Platz 8)"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 498,
+          "einsaetzeBewertet": 12,
+          "durchschnittsnote": 3.62,
+          "verein": "Mönchengladbach",
+          "durchschnittsminuten": 87,
+          "durchschnittspunkte": 41.5,
+          "rang": 133
+        }}
+      ],
       "possibleNames": [
         "Jonas Omlin",
         "J. Omlin",
@@ -58201,10 +59911,21 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Standards": [
-        "Ecken- und Freistoßflanken",
-        "Direkter Freistoß"
-      ]}],
+      "attribute": [
+        {"Standards": [
+          "Ecken- und Freistoßflanken",
+          "Direkter Freistoß"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 573,
+          "einsaetzeBewertet": 15,
+          "durchschnittsnote": 3.97,
+          "verein": "1. FC Union Berlin",
+          "durchschnittsminuten": 80,
+          "durchschnittspunkte": 35.6,
+          "rang": 212
+        }}
+      ],
       "possibleNames": [
         "Josip Juranovic",
         "Josip Juranović",
@@ -58331,7 +60052,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [{"PerformanceTopFlop": [". Platz - Pfosten- oder Lattentreffer: 4"]}],
+      "attribute": [
+        {"PerformanceTopFlop": [". Platz - Pfosten- oder Lattentreffer: 4"]},
+        {"ligainsiderRanking": {
+          "punkte": 1222,
+          "einsaetzeBewertet": 24,
+          "durchschnittsnote": 3.3,
+          "verein": "FC Bayern München",
+          "durchschnittsminuten": 54,
+          "durchschnittspunkte": 49.04,
+          "rang": 49
+        }}
+      ],
       "possibleNames": [
         "Serge Gnabry",
         "serge gnabry",
@@ -59292,7 +61024,18 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [{"Ligainsiderstats": ["Passquote: 93,9% (Platz 1)"]}],
+      "attribute": [
+        {"Ligainsiderstats": ["Passquote: 93,9% (Platz 1)"]},
+        {"ligainsiderRanking": {
+          "punkte": 1086,
+          "einsaetzeBewertet": 20,
+          "durchschnittsnote": 3.02,
+          "verein": "FC Bayern München",
+          "durchschnittsminuten": 92,
+          "durchschnittspunkte": 54.3,
+          "rang": 17
+        }}
+      ],
       "possibleNames": [
         "Dayot Upamecano",
         "D. Upamecano",
@@ -59648,7 +61391,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1276,
+        "einsaetzeBewertet": 33,
+        "durchschnittsnote": 3.74,
+        "verein": "1. FC Heidenheim",
+        "durchschnittsminuten": 85,
+        "durchschnittspunkte": 38.67,
+        "rang": 169
+      }}],
       "possibleNames": [
         "Jan Schoeppner",
         "Jan Schöppner",
@@ -60027,10 +61778,21 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [{"Standards": [
-        "Ecken- und Freistoßflanken",
-        "Direkter Freistoß"
-      ]}],
+      "attribute": [
+        {"Standards": [
+          "Ecken- und Freistoßflanken",
+          "Direkter Freistoß"
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 773,
+          "einsaetzeBewertet": 22,
+          "durchschnittsnote": 4.25,
+          "verein": "FC Augsburg",
+          "durchschnittsminuten": 43,
+          "durchschnittspunkte": 29,
+          "rang": 266
+        }}
+      ],
       "possibleNames": [
         "Arne Maier",
         "A. Maier",
@@ -60201,7 +61963,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "STURM",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1316,
+        "einsaetzeBewertet": 32,
+        "durchschnittsnote": 3.7,
+        "verein": "RB Leipzig",
+        "durchschnittsminuten": 77,
+        "durchschnittspunkte": 40.59,
+        "rang": 145
+      }}],
       "possibleNames": [
         "Benjamin Sesko",
         "Benjamin Šeško",
@@ -60402,7 +62172,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1100,
+        "einsaetzeBewertet": 29,
+        "durchschnittsnote": 3.84,
+        "verein": "RB Leipzig",
+        "durchschnittsminuten": 76,
+        "durchschnittspunkte": 37.45,
+        "rang": 185
+      }}],
       "possibleNames": [
         "Nicolas Seiwald",
         "N. Seiwald",
@@ -60501,7 +62279,16 @@
         {"Standards": [
           "Ecken- und Freistoßflanken",
           "Direkter Freistoß"
-        ]}
+        ]},
+        {"ligainsiderRanking": {
+          "punkte": 1532,
+          "einsaetzeBewertet": 32,
+          "durchschnittsnote": 3.31,
+          "verein": "Bayer 04 Leverkusen",
+          "durchschnittsminuten": 87,
+          "durchschnittspunkte": 47.88,
+          "rang": 61
+        }}
       ],
       "possibleNames": [
         "Alejandro Grimaldo",
@@ -60689,7 +62476,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 872,
+        "einsaetzeBewertet": 21,
+        "durchschnittsnote": 3.69,
+        "verein": "FC Augsburg",
+        "durchschnittsminuten": 88,
+        "durchschnittspunkte": 40.71,
+        "rang": 144
+      }}],
       "possibleNames": [
         "Cédric Zesiger",
         "Cedric Zesiger",
@@ -60957,7 +62752,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "ABWEHR",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 880,
+        "einsaetzeBewertet": 26,
+        "durchschnittsnote": 4,
+        "verein": "Mönchengladbach",
+        "durchschnittsminuten": 75,
+        "durchschnittspunkte": 33.85,
+        "rang": 238
+      }}],
       "possibleNames": [
         "Lukas Ullrich",
         "L. Ullrich",
@@ -61075,7 +62878,16 @@
           "Passquote: 90,4% (Platz 10)",
           "Ball- eroberungen: 1,65 (Platz 7)"
         ]},
-        {"PerformanceTopFlop": [". Platz - Eigentore: 2"]}
+        {"PerformanceTopFlop": [". Platz - Eigentore: 2"]},
+        {"ligainsiderRanking": {
+          "punkte": 1260,
+          "einsaetzeBewertet": 25,
+          "durchschnittsnote": 3.22,
+          "verein": "SV Werder Bremen",
+          "durchschnittsminuten": 91,
+          "durchschnittspunkte": 49.8,
+          "rang": 39
+        }}
       ],
       "possibleNames": [
         "Marco Friedl",
@@ -61393,7 +63205,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1350,
+        "einsaetzeBewertet": 32,
+        "durchschnittsnote": 3.64,
+        "verein": "Eintracht Frankfurt",
+        "durchschnittsminuten": 78,
+        "durchschnittspunkte": 41.5,
+        "rang": 134
+      }}],
       "possibleNames": [
         "Hugo Larsson",
         "H. Larsson",
@@ -61675,7 +63495,15 @@
       },
       "lastUpdate": "11.07.2025",
       "position": "MITTELFELD",
-      "attribute": [],
+      "attribute": [{"ligainsiderRanking": {
+        "punkte": 1052,
+        "einsaetzeBewertet": 25,
+        "durchschnittsnote": 3.84,
+        "verein": "1. FC Heidenheim",
+        "durchschnittsminuten": 65,
+        "durchschnittspunkte": 37.52,
+        "rang": 184
+      }}],
       "possibleNames": [
         "Adrian Beck",
         "adrian beck",
