@@ -76,7 +76,6 @@
     }
     .player-link { color: #3498db; text-decoration: underline; }
     .player-link:hover { color: #217dbb; }
-    /* Punkte-Tabelle */
     .points-table {
         width: 100%;
         border-collapse: collapse;
@@ -100,8 +99,6 @@
     .points-table tr:hover { background: #eef2fa; }
     .matchday-cell { font-weight: 600; color: #2c3e50; }
     .points-cell { font-weight: 600; color: #27ae60; }
-
-    /* Debug Panel */
     .debug-panel {
         position: fixed;
         top: 10px;
@@ -151,7 +148,6 @@
     .debug-level-warn { color: #FF9800; }
     .debug-level-error { color: #F44336; }
     .debug-level-success { color: #8BC34A; }
-
     @media (max-width: 600px) {
         .container { padding: 5px; }
         .market-month-header { font-size: 14px; }
@@ -164,7 +160,6 @@
 </style>
 </head>
 <body>
-<!-- Debug Panel -->
 <div class="debug-panel">
     <div class="debug-header" onclick="toggleDebug()">
         🐛 Debug Log <span id="debugToggle">▼</span>
@@ -204,7 +199,6 @@
                 <div class="info-row"><span class="info-label">Position:</span><span class="info-value" id="position">-</span></div>
                 <div class="info-row"><span class="info-label">Hauptfuß:</span><span class="info-value" id="foot">-</span></div>
                 <div class="info-row"><span class="info-label">Trikotnummer:</span><span class="info-value" id="jerseyNumber">-</span></div>
-                <!-- Ligainsider Ranking, nur wenn vorhanden -->
                 <div class="info-row" id="ligainsiderRankingRow" style="display:none;">
                     <span class="info-label">Ligainsider Ranking:</span>
                     <span class="info-value" id="ligainsiderRankingValue">-</span>
@@ -255,7 +249,9 @@
     </div>
 </div>
 <script>
-// Accordion: Nur eine Rubrik offen, erste standardmäßig offen
+// Debug Panel Logik bleibt wie gehabt
+
+// Accordion: Immer nur eine Rubrik offen, erste standardmäßig offen
 function setupAccordion() {
     const cards = document.querySelectorAll('.info-card');
     cards.forEach((card, idx) => {
@@ -269,7 +265,7 @@ function setupAccordion() {
             header.classList.add('collapsed');
         }
         header.onclick = () => {
-            cards.forEach((c, i) => {
+            cards.forEach((c) => {
                 const h = c.querySelector('h3');
                 const cont = c.querySelector('.info-card-content');
                 if (c !== card) {
@@ -303,16 +299,27 @@ function initTabs() {
     document.getElementById('rivals').classList.add('active');
 }
 
-// Ligainsider Ranking anzeigen, Header anpassen
+// Ligainsider Ranking korrekt auslesen (aus verschachteltem Attribut-Array)
+function getLigainsiderRankingObj(player) {
+    if (!player || !player.data || !Array.isArray(player.data.attribute)) return null;
+    for (const attr of player.data.attribute) {
+        if (attr.ligainsiderRanking && typeof attr.ligainsiderRanking === 'object') {
+            return attr.ligainsiderRanking;
+        }
+    }
+    return null;
+}
+
+// Anzeige im Info-Panel und Header
 function updateLigainsiderRanking(player) {
-    const rankingValue = player.data?.ligainsiderRanking;
+    const rankingObj = getLigainsiderRankingObj(player);
     const rankingRow = document.getElementById('ligainsiderRankingRow');
     const rankingValueSpan = document.getElementById('ligainsiderRankingValue');
     const playerInfoHeader = document.getElementById('header-info');
-    if (rankingValue !== undefined && rankingValue !== null && rankingValue !== '' && rankingValue !== 0) {
+    if (rankingObj && rankingObj.rang !== undefined && rankingObj.rang !== null && rankingObj.rang !== 0 && rankingObj.rang !== '') {
         rankingRow.style.display = '';
-        rankingValueSpan.textContent = rankingValue;
-        playerInfoHeader.innerHTML = `📋 Spieler-Informationen <span style="font-size:14px;font-weight:400;padding-left:8px;">(Ligainsider Ranking: <b>${rankingValue}</b>)</span>`;
+        rankingValueSpan.textContent = rankingObj.rang;
+        playerInfoHeader.innerHTML = `📋 Spieler-Informationen <span style="font-size:14px;font-weight:400;padding-left:8px;">(Ligainsider Ranking: <b>${rankingObj.rang}</b>)</span>`;
     } else {
         rankingRow.style.display = 'none';
         rankingValueSpan.textContent = '-';
@@ -320,19 +327,21 @@ function updateLigainsiderRanking(player) {
     }
 }
 
-// Rivalen-Tabelle mit Ligainsider Ranking (2. Spalte, aufsteigend, null/0/"" unten)
+// Hilfsfunktion für Rivalen-Sortierung
+function getRivalRanking(player) {
+    const obj = getLigainsiderRankingObj(player);
+    return (obj && obj.rang !== undefined && obj.rang !== null && obj.rang !== 0 && obj.rang !== '') ? obj.rang : Number.MAX_SAFE_INTEGER;
+}
+
+// Rivalen-Tabelle mit Ligainsider Ranking als 2. Spalte, korrekt sortiert
 function displayRivals(player, allPlayers) {
     const container = document.getElementById('rivalsList');
     const header = document.getElementById('rivalsHeader');
-    const rivals = allPlayers.filter(p => 
+    const rivals = allPlayers.filter(p =>
         p.data?.position === player.data?.position &&
         p.data?.verein === player.data?.verein
     );
-    rivals.sort((a, b) => {
-        const aRank = (a.data?.ligainsiderRanking === null || a.data?.ligainsiderRanking === undefined || a.data?.ligainsiderRanking === 0 || a.data?.ligainsiderRanking === '') ? Number.MAX_SAFE_INTEGER : a.data?.ligainsiderRanking;
-        const bRank = (b.data?.ligainsiderRanking === null || b.data?.ligainsiderRanking === undefined || b.data?.ligainsiderRanking === 0 || b.data?.ligainsiderRanking === '') ? Number.MAX_SAFE_INTEGER : b.data?.ligainsiderRanking;
-        return aRank - bRank;
-    });
+    rivals.sort((a, b) => getRivalRanking(a) - getRivalRanking(b));
     header.textContent = `${rivals.length} Direkte Konkurrenten im Team`;
     let html = `
     <table class="rivals-table">
@@ -350,7 +359,8 @@ function displayRivals(player, allPlayers) {
         <tbody>
     `;
     rivals.forEach(rival => {
-        const ligRank = (rival.data?.ligainsiderRanking && rival.data?.ligainsiderRanking !== 0) ? rival.data?.ligainsiderRanking : '-';
+        const rankingObj = getLigainsiderRankingObj(rival);
+        const ligRank = (rankingObj && rankingObj.rang !== 0 && rankingObj.rang !== undefined && rankingObj.rang !== null && rankingObj.rang !== '') ? rankingObj.rang : '-';
         html += `
         <tr>
             <td>${rival.name}</td>
@@ -381,6 +391,7 @@ document.addEventListener('DOMContentLoaded', function() {
   Dokumentation:
   - setupAccordion(): Immer nur eine Rubrik offen, erste standardmäßig offen.
   - initTabs(): Tabs für Rivalen, Marktwerte, Punkte.
+  - getLigainsiderRankingObj(): Holt das Ligainsider Ranking-Objekt aus player.data.attribute.
   - updateLigainsiderRanking(): Zeigt das Ranking unter Spielerinfos und im Header, wenn vorhanden.
   - displayRivals(): Rivalen-Tabelle, sortiert nach Ligainsider Ranking (null/0/"" ganz unten).
   - KEINE Beispieldaten enthalten. Nutze deine Datenbank wie gehabt.
