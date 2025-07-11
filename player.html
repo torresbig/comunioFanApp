@@ -151,8 +151,6 @@
     .debug-level-success { color: #8BC34A; }
     @media (max-width: 600px) {
         .container { padding: 5px; }
-        .market-month-header { font-size: 14px; }
-        .market-list-row { font-size: 13px; padding: 6px 8px; }
         .player-name { font-size: 16px; }
         .club-logo { width: 34px; height: 34px; }
         .tab-button { font-size: 16px; }
@@ -162,6 +160,7 @@
 </style>
 </head>
 <body>
+<!-- Debug Panel -->
 <div class="debug-panel">
     <div class="debug-header" onclick="toggleDebug()">
         🐛 Debug Log <span id="debugToggle">▼</span>
@@ -263,6 +262,9 @@
     </div>
 </div>
 <script>
+
+
+
 
 
 let debugLog = [];
