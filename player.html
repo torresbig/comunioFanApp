@@ -15,7 +15,6 @@
     .player-name { font-size: 22px; font-weight: bold; color: white; text-decoration: none; line-height: 1.1;}
     .player-name:hover { text-decoration: underline;}
     .player-id { font-size: 13px; color: #aaa; margin-top: 2px; text-align: left; width: 100%;}
-    .ranking-badge { background: linear-gradient(45deg, #f39c12, #e67e22); color: white; padding: 4px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; white-space: nowrap;}
     .status-wrapper { display: flex; flex-direction: column; align-items: center; justify-content: center; flex-shrink: 0; gap: 2px;}
     .status-label { font-size: 12px; color: #aaa;}
     .status-indicator { font-size: 26px; cursor: help; transition: opacity 0.2s;}
@@ -172,7 +171,6 @@
         .club-logo { width: 34px; height: 34px; }
         .tab-button { font-size: 16px; }
         .debug-panel { width: 250px; right: 5px; top: 5px; }
-        .ranking-badge { font-size: 10px; margin-left: 4px; }
     }
 </style>
 </head>
@@ -192,7 +190,6 @@
                 <div class="club-logo" id="clubLogo"></div>
                 <div>
                     <a href="#" id="playerNameLink" class="player-name" target="_blank">Lade Spieler...</a>
-                    <span id="rankingBadge" class="ranking-badge" style="display:none;"></span>
                     <div id="playerId" class="player-id"></div>
                 </div>
             </div>
@@ -208,7 +205,7 @@
     <div id="loadingIndicator" class="loading-spinner" style="text-align:center; padding: 20px;">Lade Daten...</div>
     <div id="playerContent" style="display:none;">
         <div class="info-card">
-            <h3>📋 Spieler-Informationen</h3>
+            <h3 id="playerInfoHeader">📋 Spieler-Informationen</h3>
             <div class="info-card-content">
                 <div class="info-row"><span class="info-label">Geburtstag:</span><span class="info-value" id="birthday">-</span></div>
                 <div class="info-row"><span class="info-label">Alter:</span><span class="info-value" id="age">-</span></div>
@@ -217,18 +214,10 @@
                 <div class="info-row"><span class="info-label">Position:</span><span class="info-value" id="position">-</span></div>
                 <div class="info-row"><span class="info-label">Hauptfuß:</span><span class="info-value" id="foot">-</span></div>
                 <div class="info-row"><span class="info-label">Trikotnummer:</span><span class="info-value" id="jerseyNumber">-</span></div>
-            </div>
-        </div>
-        <div class="info-card" id="ligainsiderCard" style="display:none;">
-            <h3>🏆 Ligainsider Ranking</h3>
-            <div class="info-card-content">
-                <div class="info-row"><span class="info-label">Rang:</span><span class="info-value" id="ligainsiderRang">-</span></div>
-                <div class="info-row"><span class="info-label">Punkte:</span><span class="info-value" id="ligainsiderPunkte">-</span></div>
-                <div class="info-row"><span class="info-label">Einsätze (bewertet):</span><span class="info-value" id="ligainsiderEinsaetze">-</span></div>
-                <div class="info-row"><span class="info-label">Durchschnittsnote:</span><span class="info-value" id="ligainsiderNote">-</span></div>
-                <div class="info-row"><span class="info-label">Durchschnittsminuten:</span><span class="info-value" id="ligainsiderMinuten">-</span></div>
-                <div class="info-row"><span class="info-label">Durchschnittspunkte:</span><span class="info-value" id="ligainsiderDurchschnittspunkte">-</span></div>
-                <div class="info-row"><span class="info-label">Verein:</span><span class="info-value" id="ligainsiderVerein">-</span></div>
+                <div class="info-row" id="ligainsiderRankingRow" style="display:none;">
+                    <span class="info-label">Ligainsider Ranking:</span>
+                    <span class="info-value" id="ligainsiderRankingValue">-</span>
+                </div>
             </div>
         </div>
         <div class="info-card">
@@ -517,7 +506,6 @@ function displayAttributes(player) {
         player.data.attribute.forEach(attr => {
             if (typeof attr === 'object' && attr !== null) {
                 Object.keys(attr).forEach(key => {
-                    if (key === 'ligainsiderRanking') return;
                     const value = attr[key];
                     if (Array.isArray(value)) {
                         value.forEach(item => {
@@ -601,7 +589,7 @@ function getPlayerUrl(playerId) {
     }
 }
 
-function makeTableSortable(tableSelector, defaultSortCol = 1, defaultSortDir = 'asc') {
+function makeTableSortable(tableSelector, defaultSortCol = 0, defaultSortDir = 'desc') {
     const table = document.querySelector(tableSelector);
     if (!table) return;
     const ths = table.querySelectorAll('th');
@@ -616,18 +604,11 @@ function makeTableSortable(tableSelector, defaultSortCol = 1, defaultSortDir = '
             const bCell = b.children[colIndex];
             let aValue = aCell.getAttribute('data-sort') || aCell.textContent;
             let bValue = bCell.getAttribute('data-sort') || bCell.textContent;
-            
-            if (colIndex === 1) {
-                aValue = aValue === '-' ? Number.MAX_SAFE_INTEGER : parseFloat(aValue);
-                bValue = bValue === '-' ? Number.MAX_SAFE_INTEGER : parseFloat(bValue);
-                return dir === 'asc' ? aValue - bValue : bValue - aValue;
-            }
-            else if ([3, 4, 5].includes(colIndex)) {
+            if ([2, 3, 4, 5].includes(colIndex)) {
                 aValue = parseFloat(aValue.replace(/[^\d.-]/g, '')) || 0;
                 bValue = parseFloat(bValue.replace(/[^\d.-]/g, '')) || 0;
                 return dir === 'asc' ? aValue - bValue : bValue - aValue;
-            } 
-            else {
+            } else {
                 aValue = aValue.toString().toLowerCase();
                 bValue = bValue.toString().toLowerCase();
                 if (aValue < bValue) return dir === 'asc' ? -1 : 1;
@@ -677,24 +658,18 @@ function getLigainsiderRankingObj(player) {
 
 function updateLigainsiderRanking(player) {
     const rankingObj = getLigainsiderRankingObj(player);
-    const ligainsiderCard = document.getElementById('ligainsiderCard');
-    const rankingBadge = document.getElementById('rankingBadge');
+    const rankingRow = document.getElementById('ligainsiderRankingRow');
+    const rankingValueSpan = document.getElementById('ligainsiderRankingValue');
+    const playerInfoHeader = document.getElementById('playerInfoHeader');
     
     if (rankingObj && rankingObj.rang !== undefined && rankingObj.rang !== null && rankingObj.rang !== 0 && rankingObj.rang !== '') {
-        ligainsiderCard.style.display = '';
-        document.getElementById('ligainsiderRang').textContent = rankingObj.rang || '-';
-        document.getElementById('ligainsiderPunkte').textContent = rankingObj.punkte || '-';
-        document.getElementById('ligainsiderEinsaetze').textContent = rankingObj.einsaetzeBewertet || '-';
-        document.getElementById('ligainsiderNote').textContent = rankingObj.durchschnittsnote || '-';
-        document.getElementById('ligainsiderMinuten').textContent = rankingObj.durchschnittsminuten || '-';
-        document.getElementById('ligainsiderDurchschnittspunkte').textContent = rankingObj.durchschnittspunkte || '-';
-        document.getElementById('ligainsiderVerein').textContent = rankingObj.verein || '-';
-        
-        rankingBadge.style.display = '';
-        rankingBadge.textContent = `Rang ${rankingObj.rang}`;
+        rankingRow.style.display = '';
+        rankingValueSpan.textContent = rankingObj.rang;
+        playerInfoHeader.innerHTML = `📋 Spieler-Informationen <span style="font-size:14px;font-weight:400;margin-left:8px;">(Ligainsider Ranking: <b>${rankingObj.rang}</b>)</span>`;
     } else {
-        ligainsiderCard.style.display = 'none';
-        rankingBadge.style.display = 'none';
+        rankingRow.style.display = 'none';
+        rankingValueSpan.textContent = '-';
+        playerInfoHeader.innerHTML = '📋 Spieler-Informationen';
     }
 }
 
@@ -711,8 +686,8 @@ function displayRivals(player, allPlayers) {
     rivals.sort((a, b) => {
         const aRankingObj = getLigainsiderRankingObj(a);
         const bRankingObj = getLigainsiderRankingObj(b);
-        const aRank = (aRankingObj && aRankingObj.rang !== undefined && aRankingObj.rang !== null && aRankingObj.rang !== 0 && aRankingObj.rang !== '') ? parseInt(aRankingObj.rang, 10) : Number.MAX_SAFE_INTEGER;
-        const bRank = (bRankingObj && bRankingObj.rang !== undefined && bRankingObj.rang !== null && bRankingObj.rang !== 0 && bRankingObj.rang !== '') ? parseInt(bRankingObj.rang, 10) : Number.MAX_SAFE_INTEGER;
+        const aRank = (aRankingObj && aRankingObj.rang !== undefined && aRankingObj.rang !== null && aRankingObj.rang !== 0 && aRankingObj.rang !== '') ? aRankingObj.rang : Number.MAX_SAFE_INTEGER;
+        const bRank = (bRankingObj && bRankingObj.rang !== undefined && bRankingObj.rang !== null && bRankingObj.rang !== 0 && bRankingObj.rang !== '') ? bRankingObj.rang : Number.MAX_SAFE_INTEGER;
         return aRank - bRank;
     });
 
@@ -742,7 +717,6 @@ function displayRivals(player, allPlayers) {
             const playerUrl = getPlayerUrl(rival.id);
             const rankingObj = getLigainsiderRankingObj(rival);
             const ligRank = (rankingObj && rankingObj.rang !== undefined && rankingObj.rang !== null && rankingObj.rang !== 0 && rankingObj.rang !== '') ? rankingObj.rang : '-';
-            const ligRankSort = ligRank === '-' ? Number.MAX_SAFE_INTEGER : parseInt(ligRank, 10);
 
             html += `
             <tr data-player-id="${rival.id}">
@@ -752,7 +726,7 @@ function displayRivals(player, allPlayers) {
                     </div>
                     <div class="player-id-cell">(${rival.id})</div>
                 </td>
-                <td data-sort="${ligRankSort}">${ligRank}</td>
+                <td data-sort="${ligRank === '-' ? Number.MAX_SAFE_INTEGER : ligRank}">${ligRank}</td>
                 <td data-sort="${statusData.status || ''}">
                     <span class="status-indicator" title="${statusTooltip}" style="font-size: 22px;">
                         ${getStatusIndicator(statusData.status)}
@@ -1018,4 +992,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     } catch (error) {
         const errorMsg = `Fehler beim Laden der Spielerdaten: ${error.message}`;
         document.getElementById('errorMessage').textContent = errorMsg;
-        document.getElementById('errorMessage').style.display =
+        document.getElementById('errorMessage').style.display = 'block';
+        document.getElementById('loadingIndicator').style.display = 'none';
+        debug(errorMsg, 'error');
+    }
+});
+</script>
+</body>
+</html>
