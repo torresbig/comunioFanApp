@@ -15,7 +15,6 @@
     .player-name { font-size: 22px; font-weight: bold; color: white; text-decoration: none; line-height: 1.1;}
     .player-name:hover { text-decoration: underline;}
     .player-id { font-size: 13px; color: #aaa; margin-top: 2px; text-align: left; width: 100%;}
-    .ranking-badge { background: linear-gradient(45deg, #f39c12, #e67e22); color: white; padding: 4px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; white-space: nowrap;}
     .status-wrapper { display: flex; flex-direction: column; align-items: center; justify-content: center; flex-shrink: 0; gap: 2px;}
     .status-label { font-size: 12px; color: #aaa;}
     .status-indicator { font-size: 26px; cursor: help; transition: opacity 0.2s;}
@@ -40,6 +39,21 @@
     .tab-button .trend-arrow { display: flex; align-items: center; margin-left: 7px;}
     .tab-content { display: none; padding: 15px; background: rgba(255,255,255,0.95); border-radius: 0 0 10px 10px;}
     .tab-content.active { display: block;}
+    .market-month-block { margin: 18px 0 8px 0; padding: 0; border-radius: 8px; background: #f9f9ff;}
+    .market-month-header { font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 8px; cursor: pointer; padding: 10px 12px; border-radius: 8px 8px 0 0; background: #e3e7fa; user-select: none;}
+    .market-month-header:after { content: "▼"; font-size: 0.8em; margin-left: auto; transition: transform 0.2s;}
+    .market-month-header.collapsed:after { transform: rotate(-90deg);}
+    .market-month-avg { font-weight: 400; font-size: 13px; color: #444; display: flex; align-items: center; gap: 4px;}
+    .market-avg-icon { width: 18px; height: 18px; display: inline-block; vertical-align: middle; }
+    .market-list { display: flex; flex-direction: column; gap: 6px; margin-bottom: 8px; padding: 0 12px; overflow: hidden; max-height: 1000px; transition: max-height 0.3s ease-out;}
+    .market-list.collapsed { max-height: 0; padding: 0 12px; margin-bottom: 0;}
+    .market-list-row { display: flex; justify-content: space-between; align-items: center; background: #f6f8fa; border-radius: 6px; padding: 7px 12px;}
+    .market-list-date { font-size: 13px; color: #777;}
+    .market-list-value { font-size: 14px; font-weight: 500;}
+    .trend-mini { font-size: 1em; vertical-align: middle; margin-left: 4px; }
+    .trend-up { color: #27ae60;}
+    .trend-down { color: #e74c3c;}
+    .trend-eq { color: #888;}
     .rivals-table {
         width: 100%;
         border-collapse: collapse;
@@ -151,16 +165,16 @@
     .debug-level-success { color: #8BC34A; }
     @media (max-width: 600px) {
         .container { padding: 5px; }
+        .market-month-header { font-size: 14px; }
+        .market-list-row { font-size: 13px; padding: 6px 8px; }
         .player-name { font-size: 16px; }
         .club-logo { width: 34px; height: 34px; }
         .tab-button { font-size: 16px; }
         .debug-panel { width: 250px; right: 5px; top: 5px; }
-        .ranking-badge { font-size: 10px; margin-left: 4px; }
     }
 </style>
 </head>
 <body>
-<!-- Debug Panel -->
 <div class="debug-panel">
     <div class="debug-header" onclick="toggleDebug()">
         🐛 Debug Log <span id="debugToggle">▼</span>
@@ -176,7 +190,6 @@
                 <div class="club-logo" id="clubLogo"></div>
                 <div>
                     <a href="#" id="playerNameLink" class="player-name" target="_blank">Lade Spieler...</a>
-                    <span id="rankingBadge" class="ranking-badge" style="display:none;"></span>
                     <div id="playerId" class="player-id"></div>
                 </div>
             </div>
@@ -192,7 +205,7 @@
     <div id="loadingIndicator" class="loading-spinner" style="text-align:center; padding: 20px;">Lade Daten...</div>
     <div id="playerContent" style="display:none;">
         <div class="info-card">
-            <h3>📋 Spieler-Informationen</h3>
+            <h3 id="playerInfoHeader">📋 Spieler-Informationen</h3>
             <div class="info-card-content">
                 <div class="info-row"><span class="info-label">Geburtstag:</span><span class="info-value" id="birthday">-</span></div>
                 <div class="info-row"><span class="info-label">Alter:</span><span class="info-value" id="age">-</span></div>
@@ -201,18 +214,10 @@
                 <div class="info-row"><span class="info-label">Position:</span><span class="info-value" id="position">-</span></div>
                 <div class="info-row"><span class="info-label">Hauptfuß:</span><span class="info-value" id="foot">-</span></div>
                 <div class="info-row"><span class="info-label">Trikotnummer:</span><span class="info-value" id="jerseyNumber">-</span></div>
-            </div>
-        </div>
-        <div class="info-card" id="ligainsiderCard" style="display:none;">
-            <h3>🏆 Ligainsider Ranking</h3>
-            <div class="info-card-content">
-                <div class="info-row"><span class="info-label">Rang:</span><span class="info-value" id="ligainsiderRang">-</span></div>
-                <div class="info-row"><span class="info-label">Punkte:</span><span class="info-value" id="ligainsiderPunkte">-</span></div>
-                <div class="info-row"><span class="info-label">Einsätze (bewertet):</span><span class="info-value" id="ligainsiderEinsaetze">-</span></div>
-                <div class="info-row"><span class="info-label">Durchschnittsnote:</span><span class="info-value" id="ligainsiderNote">-</span></div>
-                <div class="info-row"><span class="info-label">Durchschnittsminuten:</span><span class="info-value" id="ligainsiderMinuten">-</span></div>
-                <div class="info-row"><span class="info-label">Durchschnittspunkte:</span><span class="info-value" id="ligainsiderDurchschnittspunkte">-</span></div>
-                <div class="info-row"><span class="info-label">Verein:</span><span class="info-value" id="ligainsiderVerein">-</span></div>
+                <div class="info-row" id="ligainsiderRankingRow" style="display:none;">
+                    <span class="info-label">Ligainsider Ranking:</span>
+                    <span class="info-value" id="ligainsiderRankingValue">-</span>
+                </div>
             </div>
         </div>
         <div class="info-card">
@@ -262,11 +267,6 @@
     </div>
 </div>
 <script>
-
-
-
-
-
 let debugLog = [];
 function debug(message, level = 'info') {
     const timestamp = new Date().toLocaleTimeString();
