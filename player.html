@@ -214,14 +214,12 @@
                 <div class="info-row"><span class="info-label">Position:</span><span class="info-value" id="position">-</span></div>
                 <div class="info-row"><span class="info-label">Hauptfuß:</span><span class="info-value" id="foot">-</span></div>
                 <div class="info-row"><span class="info-label">Trikotnummer:</span><span class="info-value" id="jerseyNumber">-</span></div>
-
+                <div class="info-row" id="ligainsiderRankingRow" style="display:none;">
+                    <span class="info-label">Ligainsider Ranking:</span>
+                    <span class="info-value" id="ligainsiderRankingValue">-</span>
+                </div>
             </div>
         </div>
-        <div class="info-card" id="ligainsiderPanel" style="display:none;">
-    <h3>🏆 Ligainsider-Ranking</h3>
-    <div class="info-card-content" id="ligainsiderPanelContent"></div>
-</div>
-
         <div class="info-card">
             <h3>⚽ Comunio</h3>
             <div class="info-card-content">
@@ -658,72 +656,16 @@ function getLigainsiderRankingObj(player) {
     return null;
 }
 
-function displayLigainsiderPanel(player) {
-    const panel = document.getElementById('ligainsiderPanel');
-    const content = document.getElementById('ligainsiderPanelContent');
-    if (!panel || !content) return;
-
-    // LigainsiderRanking aus den Attributen extrahieren
-    let rankingObj = null;
-    if (player && player.data && Array.isArray(player.data.attribute)) {
-        for (const attr of player.data.attribute) {
-            if (attr.ligainsiderRanking && typeof attr.ligainsiderRanking === 'object') {
-                rankingObj = attr.ligainsiderRanking;
-                break;
-            }
-        }
-    }
-
-    if (!rankingObj) {
-        panel.style.display = 'none';
-        return;
-    }
-
-    content.innerHTML = `
-        <div class="info-row">
-            <span class="info-label">Rang:</span>
-            <span class="info-value">${rankingObj.rang ?? '-'}</span>
-        </div>
-        <div class="info-row">
-            <span class="info-label">Punkte:</span>
-            <span class="info-value">${rankingObj.punkte ?? '-'}</span>
-        </div>
-        <div class="info-row">
-            <span class="info-label">Einsätze bewertet:</span>
-            <span class="info-value">${rankingObj.einsaetzeBewertet ?? '-'}</span>
-        </div>
-        <div class="info-row">
-            <span class="info-label">Durchschnittsnote:</span>
-            <span class="info-value">${rankingObj.durchschnittsnote ?? '-'}</span>
-        </div>
-        <div class="info-row">
-            <span class="info-label">Durchschnittsminuten:</span>
-            <span class="info-value">${rankingObj.durchschnittsminuten ?? '-'}</span>
-        </div>
-        <div class="info-row">
-            <span class="info-label">Durchschnittspunkte:</span>
-            <span class="info-value">${rankingObj.durchschnittspunkte ?? '-'}</span>
-        </div>
-        <div class="info-row">
-            <span class="info-label">Verein:</span>
-            <span class="info-value">${rankingObj.verein ?? '-'}</span>
-        </div>
-    `;
-    panel.style.display = '';
-}
-
-
-
 function updateLigainsiderRanking(player) {
     const rankingObj = getLigainsiderRankingObj(player);
-    //const rankingRow = document.getElementById('ligainsiderRankingRow');
+    const rankingRow = document.getElementById('ligainsiderRankingRow');
     const rankingValueSpan = document.getElementById('ligainsiderRankingValue');
     const playerInfoHeader = document.getElementById('playerInfoHeader');
 
     if (rankingObj && rankingObj.rang !== undefined && rankingObj.rang !== null && rankingObj.rang !== 0 && rankingObj.rang !== '') {
         rankingRow.style.display = '';
         rankingValueSpan.textContent = rankingObj.rang;
-    
+        playerInfoHeader.innerHTML = `📋 Spieler-Informationen <span style="font-size:14px;font-weight:400;margin-left:8px;">(Ligainsider Ranking: <b>${rankingObj.rang}</b>)</span>`;
     } else {
         rankingRow.style.display = 'none';
         rankingValueSpan.textContent = '-';
@@ -889,8 +831,8 @@ function setupAccordion() {
             header.classList.toggle('collapsed');
         };
     });
+    debug('Accordion eingerichtet', 'success');
 }
-
 
 function initTabs() {
     debug('Initialisiere Tabs', 'info');
@@ -1035,8 +977,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.getElementById('redCards').textContent = stats.rotekarten || '-';
 
         displayAttributes(player);
-        displayLigainsiderPanel(player);
-
 
         document.getElementById('loadingIndicator').style.display = 'none';
         document.getElementById('playerContent').style.display = 'block';
