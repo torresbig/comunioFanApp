@@ -5,169 +5,63 @@
     <title>⚽ Comunio Ultraz - Spielerdatenbank</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { background: #f5f5f5; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 10px;}
+        body { background: #f5f5f5; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 10px; }
         .container { max-width: 1400px; margin: 0 auto; }
-        header { text-align: center; background: linear-gradient(135deg, #1a2a6c, #2c3e50); color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px;}
-        h1 { font-size: 1.8rem; margin: 0;}
-        .subtitle { margin: 8px 0 0 0; font-size: 1rem; opacity: 0.9;}
-        .loading, .error, .stats { margin: 15px 0; padding: 18px; border-radius: 10px;}
-        .loading { background: white; text-align: center;}
-        .error { background: #fee; border: 1px solid #fcc; color: #c00;}
-        .stats { background: #e8f5e8; border: 1px solid #c5e6c5; color: #2e7d2e; text-align: center;}
-        .table-container { overflow-x: auto; background: white; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); margin-bottom: 20px;}
-        table { width: 100%; border-collapse: collapse; min-width: 1000px;}
-        th, td { padding: 12px 10px; text-align: left; border-bottom: 1px solid #eee; font-size: 13px;}
-        th { background-color: #2c3e50; color: white; position: sticky; top: 0; font-weight: 600; cursor: pointer; user-select: none;}
-        th:hover { background-color: #34495e;}
-        tr:nth-child(even) { background-color: #f9f9f9;}
-        tr:hover { background-color: #f1f7ff; cursor: pointer;}
-        .status-aktiv { color: #27ae60; font-weight: bold;}
-        .status-verletzt { color: #e74c3c; font-weight: bold;}
-        .status-gesperrt { color: #e74c3c; font-weight: bold;}
-        .status-reha { color: #f39c12; font-weight: bold;}
-        .status-nichtliga { color: #7f8c8d; font-style: italic;}
-        .club-logo { width: 25px; height: 25px; object-fit: contain; margin-right: 10px; vertical-align: middle;}
+        header { text-align: center; background: linear-gradient(135deg, #1a2a6c, #2c3e50); color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+        h1 { font-size: 1.8rem; margin: 0; }
+        .subtitle { margin: 8px 0 0; font-size: 1rem; opacity: 0.9; }
 
-        /* Debug-Bereich */
-        .debug-toggle { display: none;}
-        .debug-label { background: #3498db; color: white; padding: 8px; border-radius: 6px; cursor: pointer; user-select: none; font-weight: bold; margin: 10px 0 8px 0; display: block; font-size: 1em;}
-        .debug-label::before { content: '▶ '; transition: transform 0.3s ease; display: inline-block; width: 20px;}
-        .debug-toggle:checked + .debug-label::before { transform: rotate(90deg);}
-        .debug-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out; background: #f0f8ff; border: 1px solid #cce; border-radius: 0 0 6px 6px; margin-top: -5px;}
-        .debug-toggle:checked + .debug-label + .debug-content { max-height: 300px; overflow-y: auto;}
-        .debug-inner { padding: 10px; font-family: monospace; font-size: 11px; line-height: 1.5;}
+        .loading, .error, .stats { margin: 15px 0; padding: 18px; border-radius: 10px; }
+        .loading { background: white; text-align: center; }
+        .error { background: #fee; border: 1px solid #fcc; color: #c00; }
+        .stats { background: #e8f5e8; border: 1px solid #c5e6c5; color: #2e7d2e; text-align: center; }
 
-        /* News-Panel - Debug-Style, größer */
-        .news-collapsible {
-            margin-bottom: 24px;
-            border-radius: 8px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-            background: #fff;
-            overflow: hidden;
-        }
-        .news-header {
-            background: #3498db;
-            color: white;
-            padding: 14px 18px;
-            border-radius: 8px 8px 0 0;
-            cursor: pointer;
-            user-select: none;
-            font-weight: bold;
-            font-size: 1.15em;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            transition: background 0.3s ease;
-        }
-        .news-header:hover { background: #2980b9; }
-        .news-header span:first-child { flex: 1; }
-        .news-header::before {
-            content: '▶ ';
-            transition: transform 0.3s ease;
-            display: inline-block;
-            width: 20px;
-            margin-right: 8px;
-        }
-        .news-header.expanded::before { transform: rotate(90deg);}
-        .news-list {
-            background: #f0f8ff;
-            border: 1px solid #cce;
-            border-top: none;
-            border-radius: 0 0 8px 8px;
-            margin-top: -1px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-in-out;
-        }
-        .news-list.expanded { max-height: 500px; overflow-y: auto; }
-        .news-day { margin-bottom: 12px; border-bottom: 1px solid #e0e0e0; padding-bottom: 8px; }
-        .news-date-header {
-            background: #1976d2;
-            color: white;
-            padding: 10px 15px;
-            font-weight: bold;
-            font-size: 1.1em;
-            margin-bottom: 8px;
-            border-radius: 4px;
-        }
-        .news-category {
-            background: #e3f2fd;
-            color: #1565c0;
-            padding: 8px 15px;
-            font-weight: 600;
-            font-size: 0.95em;
-            margin: 8px 0 4px 0;
-            border-left: 4px solid #2196f3;
-        }
-        .news-item {
-            padding: 8px 15px;
-            margin-bottom: 4px;
-            background: #fff;
-            border-left: 2px solid #e0e0e0;
-        }
-        .news-text {
-            color: #333;
-            line-height: 1.4;
-            font-size: 0.9em;
-        }
-        .news-empty {
-            padding: 20px;
-            color: #888;
-            text-align: center;
-            font-family: monospace;
-            font-size: 12px;
-        }
-        @media (max-width: 700px) {
-            .news-date-header { font-size: 1em; padding: 8px 12px; }
-            .news-category { font-size: 0.9em; padding: 6px 12px; }
-            .news-item { padding: 6px 12px; }
-            .news-text { font-size: 0.85em; }
-        }
+        .table-container { overflow-x: auto; background: white; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); margin-top: 10px; }
+        table { width: 100%; border-collapse: collapse; min-width: 800px; }
+        th, td { padding: 10px; text-align: left; border-bottom: 1px solid #eee; font-size: 13px; }
+        th { background: #2c3e50; color: white; position: sticky; top: 0; cursor: pointer; }
+        th:hover { background: #34495e; }
+        tr:nth-child(even) { background: #f9f9f9; }
+        tr:hover { background: #f1f7ff; }
 
-        /* Filter-Einklappbar, aber Aussehen bleibt wie vorher */
-        .filters-collapsible { margin-bottom: 20px; border-radius: 8px; background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.08);}
-        .filters-header {
-            background: #3498db;
-            color: white;
-            padding: 14px 18px;
-            border-radius: 8px 8px 0 0;
-            cursor: pointer;
-            user-select: none;
-            font-weight: bold;
-            font-size: 1.15em;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            transition: background 0.3s ease;
-        }
-        .filters-header:hover { background: #2980b9; }
-        .filters-header span:first-child { flex: 1; }
-        .filters-header::before {
-            content: '▶ ';
-            transition: transform 0.3s ease;
-            display: inline-block;
-            width: 20px;
-            margin-right: 8px;
-        }
-        .filters-header.expanded::before { transform: rotate(90deg);}
-        .filters-content {
-            background: #fff;
-            border-radius: 0 0 8px 8px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-in-out;
-        }
-        .filters-content.expanded { max-height: 800px; }
-        .filters {
-            background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); margin-bottom: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px;
-        }
-        .filter-group { margin-bottom: 12px; }
-        label { display: block; margin-bottom: 6px; font-weight: bold; color: #2c3e50; font-size: 13px;}
-        input, select, button { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; background: white;}
-        .reset-button { background-color: #5c6bc0; color: white; border: none; cursor: pointer; font-weight: bold; padding: 12px; transition: background 0.3s;}
-        .reset-button:hover { background-color: #3f51b5;}
-        .checkbox-group { display: flex; align-items: center; margin-top: 15px;}
-        .checkbox-group input { width: auto; margin-right: 10px;}
+        .club-logo { width: 25px; height: 25px; object-fit: contain; margin-right: 10px; vertical-align: middle; }
+
+        /* Debug */
+        .debug-toggle { display: none; }
+        .debug-label { background: #3498db; color: white; padding: 8px; border-radius: 6px; cursor: pointer; user-select: none; font-weight: bold; margin: 10px 0; display: block; }
+        .debug-label::before { content: '▶ '; transition: transform 0.3s; display: inline-block; width: 20px; }
+        .debug-toggle:checked + .debug-label::before { transform: rotate(90deg); }
+        .debug-content { max-height: 0; overflow: hidden; transition: max-height 0.3s; background: #f0f8ff; border: 1px solid #cce; border-radius: 0 0 6px; margin-top: -5px; }
+        .debug-toggle:checked + .debug-label + .debug-content { max-height: 200px; }
+        .debug-inner { padding: 10px; font-family: monospace; font-size: 11px; }
+
+        /* News */
+        .panel { margin-bottom: 20px; border-radius: 8px; background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden; }
+        .panel-header { background: #3498db; color: white; padding: 12px 16px; cursor: pointer; user-select: none; font-weight: bold; display: flex; align-items: center; font-size: 1.1em; }
+        .panel-header::before { content: '▶ '; transition: transform 0.3s; display: inline-block; width: 20px; }
+        .panel-header.expanded::before { transform: rotate(90deg); }
+        .panel-content { max-height: 0; overflow: hidden; transition: max-height 0.3s; background: #f0f8ff; border-top: 1px solid #cce; }
+        .panel-content.expanded { max-height: 500px; }
+        .news-day { padding: 10px; border-bottom: 1px solid #e0e0e0; }
+        .news-date { background: #1976d2; color: white; padding: 6px 10px; border-radius: 4px; display: inline-block; margin-bottom: 8px; }
+        .news-category { font-weight: 600; margin-top: 8px; color: #1565c0; }
+        .news-item { padding: 6px 10px; border-left: 3px solid #2196f3; margin: 4px 0; }
+
+        /* Filter */
+        .filters-collapsible { margin-bottom: 20px; border-radius: 8px; background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+        .filters-header { background: #3498db; color: white; padding: 12px 16px; cursor: pointer; user-select: none; font-weight: bold; display: flex; align-items: center; font-size: 1.1em; }
+        .filters-header::before { content: '▶ '; transition: transform 0.3s; display: inline-block; width: 20px; }
+        .filters-header.expanded::before { transform: rotate(90deg); }
+        .filters-content { max-height: 0; overflow: hidden; transition: max-height 0.3s; }
+        .filters-content.expanded { max-height: 400px; }
+        .filters { padding: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+
+        .filter-group label { font-size: 13px; font-weight: bold; color: #2c3e50; margin-bottom: 4px; display: block; }
+        .filter-group input, .filter-group select { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 6px; }
+        .checkbox-group { display: flex; align-items: center; }
+        .checkbox-group input { margin-right: 6px; }
+        .reset-button { background: #5c6bc0; color: white; border: none; padding: 10px; border-radius: 6px; cursor: pointer; margin-top: 12px; }
+        .reset-button:hover { background: #3f51b5; }
     </style>
 </head>
 <body>
@@ -176,6 +70,7 @@
         <h1>⚽ Comunio Ultraz - Spielerdatenbank</h1>
         <p class="subtitle">Fußballspieler Daten • Live von GitHub</p>
     </header>
+
     <div id="debugSection">
         <input type="checkbox" id="debugToggle" class="debug-toggle">
         <label for="debugToggle" class="debug-label">Debug-Informationen</label>
@@ -183,184 +78,159 @@
             <div class="debug-inner" id="debugContent"></div>
         </div>
     </div>
-    <div id="news-section" class="news-collapsible">
-        <div class="news-header" onclick="toggleNewsList()" id="news-header">
-            <span>News</span>
-        </div>
-        <div id="news-list" class="news-list">
-            <div class="news-empty">Lade News...</div>
-        </div>
+
+    <div id="newsSection" class="panel">
+        <div class="panel-header" onclick="togglePanel('news')">News</div>
+        <div id="newsPanel" class="panel-content"></div>
     </div>
-    <div id="loading" class="loading">
-        <p>📡 Lade aktuelle Spielerdaten...</p>
-    </div>
-    <div id="error" class="error" style="display: none;">
-        <p id="errorMessage">Fehler beim Laden der Daten.</p>
-    </div>
-    <div id="stats" class="stats" style="display: none;">
-        <span id="statsText"></span>
-        <button id="refreshButton" class="refresh-button">🔄 Daten neu laden</button>
-    </div>
-    <!-- Einklappbarer Filter direkt über der Tabelle -->
-    <div class="filters-collapsible">
-        <div class="filters-header" onclick="toggleFilters()" id="filters-header">
-            <span>Filter</span>
-        </div>
-        <div class="filters-content" id="filters-content">
+
+    <div class="loading" id="loading"><p>📡 Lade aktuelle Spielerdaten...</p></div>
+    <div class="error" id="error" style="display:none;"><p id="errorMessage"></p></div>
+    <div class="stats" id="stats" style="display:none;"><span id="statsText"></span> <button id="refreshButton">🔄</button></div>
+
+    <div id="filterSection" class="filters-collapsible">
+        <div class="filters-header" onclick="togglePanel('filters')">Filter</div>
+        <div id="filtersPanel" class="filters-content">
             <div class="filters">
                 <div class="filter-group">
-                    <label for="search">🔍 Spieler suchen:</label>
-                    <input type="text" id="search" placeholder="Name oder ID...">
+                    <label for="search">Spieler suchen</label>
+                    <input type="text" id="search">
                 </div>
                 <div class="filter-group">
-                    <label for="position">📍 Position:</label>
-                    <select id="position">
-                        <option value="">Alle Positionen</option>
-                        <option value="TORHÜTER">Torhüter</option>
-                        <option value="ABWEHR">Abwehr</option>
-                        <option value="MITTELFELD">Mittelfeld</option>
-                        <option value="STURM">Sturm</option>
-                    </select>
+                    <label for="position">Position</label>
+                    <select id="position"><option value="">Alle</option><option>TORHÜTER</option><option>ABWEHR</option><option>MITTELFELD</option><option>STURM</option></select>
                 </div>
                 <div class="filter-group">
-                    <label for="status">💪 Status:</label>
-                    <select id="status">
-                        <option value="">Alle Status</option>
-                        <option value="AKTIV">Aktiv</option>
-                        <option value="VERLETZT">Verletzt</option>
-                        <option value="AUFBAUTRAINING">Aufbautraining</option>
-                        <option value="NICHT_IM_KADER">Nicht im Kader</option>
-                        <option value="FUENFTE_GELBE_KARTE">5. gelbe Karte</option>
-                        <option value="GELBROTE_KARTE">Gelbrote Karte</option>
-                        <option value="ROTE_KARTE">Rote Karte</option>
-                        <option value="NICHT_IN_LIGA">Nicht in Liga</option>
-                    </select>
+                    <label for="status">Status</label>
+                    <select id="status"><option value="">Alle</option><option>AKTIV</option><option>VERLETZT</option><option>AUFBAUTRAINING</option><option>NICHT_IN_LIGA</option></select>
                 </div>
                 <div class="filter-group">
-                    <label for="club">🏟️ Verein:</label>
-                    <select id="club">
-                        <option value="">Alle Vereine</option>
-                    </select>
+                    <label for="club">Verein</label>
+                    <select id="club"><option value="">Alle</option></select>
                 </div>
                 <div class="filter-group">
-                    <label for="owner">👤 Besitzer:</label>
-                    <select id="owner">
-                        <option value="">Alle Besitzer</option>
-                        <option value="Kein Besitzer">Kein Besitzer</option>
-                    </select>
+                    <label for="owner">Besitzer</label>
+                    <select id="owner"><option value="">Alle</option><option>Kein Besitzer</option></select>
                 </div>
                 <div class="checkbox-group">
-                    <input type="checkbox" id="hideNonLeague" checked>
-                    <label for="hideNonLeague">Nicht-in-Liga-Spieler ausblenden</label>
+                    <input type="checkbox" id="hideNonLeague" checked><label for="hideNonLeague">Nicht-in-Liga ausblenden</label>
                 </div>
-            </div>
-            <div style="text-align: center; margin: 15px 0;">
-                <button type="button" class="reset-button" id="resetFilters">Filter zurücksetzen</button>
+                <button class="reset-button" id="resetFilters">Reset</button>
             </div>
         </div>
     </div>
-    <div id="content" style="display: none;">
+
+    <div id="content" style="display:none;">
         <div class="table-container">
             <table id="playerTable">
-                <thead>
-                    <tr>
-                        <th data-sort="string">Spieler</th>
-                        <th data-sort="string">Verein</th>
-                        <th data-sort="string">Position</th>
-                        <th data-sort="string">Status</th>
-                        <th data-sort="value">Marktwert</th>
-                        <th data-sort="number">Punkte</th>
-                        <th data-sort="string">Besitzer</th>
-                        <th data-sort="string">Letztes Update</th>
-                    </tr>
-                </thead>
+                <thead><tr>
+                    <th data-sort="string">Spieler</th>
+                    <th data-sort="string">Verein</th>
+                    <th data-sort="string">Position</th>
+                    <th data-sort="string">Status</th>
+                    <th data-sort="value">Marktwert</th>
+                    <th data-sort="number">Punkte</th>
+                    <th data-sort="string">Besitzer</th>
+                    <th data-sort="string">Update</th>
+                </tr></thead>
                 <tbody></tbody>
             </table>
         </div>
     </div>
 </div>
+
 <script>
-function parseGermanDate(str) {
-    const [d, m, y] = str.split(".");
-    return new Date(Number(y), Number(m) - 1, Number(d));
+function togglePanel(name) {
+    const hdr = document.getElementById(name+'Section')?.querySelector('.panel-header') || document.getElementById(name+'Section')?.querySelector('.filters-header');
+    const pnl = document.getElementById(name+'Panel');
+    hdr.classList.toggle('expanded');
+    pnl.classList.toggle('expanded');
 }
-function toggleNewsList() {
-    const list = document.getElementById('news-list');
-    const header = document.getElementById('news-header');
-    if (list.classList.contains('expanded')) {
-        list.classList.remove('expanded');
-        header.classList.remove('expanded');
-    } else {
-        list.classList.add('expanded');
-        header.classList.add('expanded');
-    }
+function parseGermanDate(s){const [d,m,y]=s.split('.');return new Date(y,m-1,d);}
+
+fetch('News.json').then(r=>r.json()).then(data=>{
+  const panel=document.getElementById('newsPanel'), arr=data.sort((a,b)=>parseGermanDate(b.date)-parseGermanDate(a.date));
+  panel.innerHTML=arr.length?arr.map(day=>{
+    const grp=Object.entries(day.news.reduce((o,n)=>(o[n.art]=o[n.art]||[],o[n.art].push(n),o),{}));
+    return `<div class="news-day"><div class="news-date">${day.date}</div>${grp.map(([art,list])=>`<div class="news-category">${art}</div>${list.map(n=>`<div class="news-item">${(()=>{try{const o=JSON.parse(n.text);return art==='TRANSFER'?`${o.playerName} von ${o.seller} zu ${o.buyer} für ${o.price.toLocaleString('de-DE')} €`:`${n.text}`;}catch{return n.text;}})()}</div>`).join('')}`).join('')}</div>`;
+  }).join(''):'<div class="news-item">Keine News.</div>';
+}).catch(_=>document.getElementById('newsPanel').innerHTML='<div class="news-item">Fehler.</div>');
+
+const G=`https://raw.githubusercontent.com/torresbig/comunioFanApp/main/`, U={clubs:`${G}VereinsdatenbankJson.txt`,players:`${G}SpielerdatenbankNeutralJson.txt`,users:`${G}UserdatenbankJson_884691.txt`,map:`${G}PlayerToUserMap_884691.txt`};
+let allPlayers=[], clubsMap=new Map(), ownersMap=new Map(), filtered=[];
+function dbg(m){const d=document.getElementById('debugContent');d.innerHTML+=`<div>${new Date().toLocaleTimeString()}: ${m}</div>`;d.scrollTop=d.scrollHeight;}
+async function fJSON(u){dbg('Lade '+u);let r=await fetch(u+'?t='+Date.now());if(!r.ok)throw new Error(r.status);let t=await r.text();if(!t.trim())throw new Error('leer');return JSON.parse(t);}
+async function loadData(){
+  try{
+    document.getElementById('loading').style.display='block';
+    const [cd,pd,ud,md]=await Promise.all([fJSON(U.clubs),fJSON(U.players),fJSON(U.users),fJSON(U.map)]);
+    clubsMap=new Map(cd.map(c=>[c.id,c.name]));
+    allPlayers=pd.map(p=>({...p,position:p.data?.position||'Unbekannt'}));
+    const um=new Map(ud.map(u=>[u.user.id,`${u.user.firstName} ${u.user.lastName||''}`]));
+    ownersMap=new Map();
+    md.forEach(i=>{const id=Object.keys(i)[0];ownersMap.set(id,um.get(i[id])||'Unbekannt');});
+    allPlayers.forEach(p=>{if(!ownersMap.has(p.id))ownersMap.set(p.id,'Computer');});
+    showStats();document.getElementById('loading').style.display='none';document.getElementById('content').style.display='block';
+    applyFilters();setupSorting();setupFilters();
+  }catch(e){dbg(e.message);document.getElementById('errorMessage').textContent=e.message;document.getElementById('error').style.display='block';}
 }
-function toggleFilters() {
-    const content = document.getElementById('filters-content');
-    const header = document.getElementById('filters-header');
-    if (content.classList.contains('expanded')) {
-        content.classList.remove('expanded');
-        header.classList.remove('expanded');
-    } else {
-        content.classList.add('expanded');
-        header.classList.add('expanded');
-    }
+function showStats(){
+  const o=new Set(ownersMap.values());o.delete('Kein Besitzer');
+  document.getElementById('statsText').innerHTML=`📊 ${allPlayers.length} Spieler • ${clubsMap.size} Vereine • ${o.size} Besitzer<br>🕒 ${new Date().toLocaleTimeString()}`;
+  document.getElementById('stats').style.display='block';
 }
-window.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('news-list').classList.remove('expanded');
-    document.getElementById('news-header').classList.remove('expanded');
-    document.getElementById('filters-content').classList.remove('expanded');
-    document.getElementById('filters-header').classList.remove('expanded');
-});
-fetch('News.json')
-    .then(response => response.json())
-    .then(data => {
-        data.sort((a, b) => parseGermanDate(b.date) - parseGermanDate(a.date));
-        let html = '';
-        if (!data.length) {
-            html = '<div class="news-empty">Keine News vorhanden.</div>';
-        } else {
-            for (const day of data) {
-                html += `<div class="news-day">
-                    <div class="news-date-header">${day.date}</div>`;
-                const grouped = {};
-                for (const news of day.news) {
-                    if (!grouped[news.art]) grouped[news.art] = [];
-                    grouped[news.art].push(news);
-                }
-                for (const art of Object.keys(grouped).sort()) {
-                    html += `<div class="news-category">${art}</div>`;
-                    for (const news of grouped[art]) {
-                        let text = '';
-                        try {
-                            const obj = JSON.parse(news.text);
-                            if (art === 'TRANSFER') {
-                                text = `<span style="color:#333;">${obj.playerName}</span> von <b>${obj.seller}</b> zu <b>${obj.buyer}</b> für <b>${obj.price.toLocaleString('de-DE')} €</b> (Marktwert: ${obj.playerValue.toLocaleString('de-DE')} €)`;
-                            } else {
-                                text = news.text;
-                            }
-                        } catch {
-                            text = news.text;
-                        }
-                        html += `<div class="news-item">
-                            <div class="news-text">${text}</div>
-                        </div>`;
-                    }
-                }
-                html += '</div>';
-            }
-        }
-        document.getElementById('news-list').innerHTML = html;
-    })
-    .catch(() => {
-        document.getElementById('news-list').innerHTML = '<div class="news-empty">Fehler beim Laden der News.</div>';
-    });
-</script>
-<script>
-    // Der komplette JS-Code für die Spielerdatenbank (wie in deiner letzten funktionierenden Version)
-    // Füge ihn hier ein, damit alles läuft! (siehe vorherige Antworten)
-    // Achte darauf, dass KEIN showUpdate mehr verwendet wird.
-    // Wenn du möchtest, kann ich diesen Block auch noch einmal vollständig liefern.
+function renderTable(arr){
+  const tb=document.querySelector('#playerTable tbody');tb.innerHTML='';
+  arr.forEach(p=>{
+    const mv=p.data?.wert||0, mvT=mv<1e6?`${(mv/1e3).toFixed(0)} Tsd.`:`${(mv/1e6).toFixed(2)} Mio.`;
+    tb.innerHTML+=`<tr onclick="location='player.html?id=${p.id}'">
+      <td>${p.name}</td>
+      <td><img src="logos/${(clubsMap.get(p.data?.verein)||'unbestimmt')}.png" class="club-logo"></td>
+      <td>${p.position}</td>
+      <td>${p.data?.status?.status||'AKTIV'}</td>
+      <td>${mvT} €</td>
+      <td>${p.data?.punkte||0}</td>
+      <td>${ownersMap.get(p.id)}</td>
+      <td>${p.data?.lastUpdate||''}</td>
+    </tr>`;
+  });
+}
+function applyFilters(){
+  const s=document.getElementById('search').value.toLowerCase(), pos=document.getElementById('position').value,
+        st=document.getElementById('status').value, cb=document.getElementById('club').value,
+        hide=document.getElementById('hideNonLeague').checked;
+  filtered=allPlayers.filter(p=>{
+    if(s&&!p.name.toLowerCase().includes(s))return false;
+    if(pos&&p.position!==pos)return false;
+    const ps=p.data?.status?.status||'';
+    if(st&&!ps.includes(st))return false;
+    if(cb&&clubsMap.get(p.data?.verein)!==cb)return false;
+    if(hide&&ps.includes('NICHT_IN_LIGA'))return false;
+    return true;
+  });
+  renderTable(filtered);
+}
+function setupSorting(){
+  document.querySelectorAll('th[data-sort]').forEach(th=>{
+    th.onclick=()=>{
+      const idx=[...th.parentNode.children].indexOf(th), type=th.dataset.sort;
+      const rows=[...document.querySelectorAll('#playerTable tbody tr')];
+      const asc=!th.classList.toggle('sorted-asc');
+      rows.sort((a,b)=>{
+        let A=a.cells[idx].textContent.trim(), B=b.cells[idx].textContent.trim();
+        if(type==='number'||type==='value'){A=parseFloat(A)||0;B=parseFloat(B)||0;}
+        return (A>B?1:-1)*(asc?1:-1);
+      });
+      rows.forEach(r=>r.parentNode.appendChild(r));
+    };
+  });
+}
+function setupFilters(){
+  ['search','position','status','club'].forEach(id=>document.getElementById(id).oninput=applyFilters);
+  document.getElementById('hideNonLeague').onchange=applyFilters;
+  document.getElementById('resetFilters').onclick=()=>{['search','position','status','club'].forEach(id=>document.getElementById(id).value='');document.getElementById('hideNonLeague').checked=true;applyFilters();};
+}
+document.addEventListener('DOMContentLoaded',loadData);
 </script>
 </body>
 </html>
