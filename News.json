@@ -559,6 +559,39 @@
     ]
   },
   {
+    "date": "13.07.2025",
+    "news": [
+      {
+        "date": "13.07.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Tillman (ID: 33530)",
+        "playerId": "33530"
+      },
+      {
+        "date": "13.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Bittencourt\",\"price\":1310000,\"playerValue\":1150000,\"playerId\":\"31932\",\"buyer\":\"Tom\"}",
+        "playerId": "31932"
+      },
+      {
+        "date": "13.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Glatzel\",\"price\":5310000,\"playerValue\":4810000,\"playerId\":\"33375\",\"buyer\":\"Florian\"}",
+        "playerId": "33375"
+      },
+      {
+        "date": "13.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Rapsch\",\"price\":160000,\"playerValue\":170000,\"playerId\":\"34132\",\"buyer\":\"Thomas\"}",
+        "playerId": "34132"
+      }
+    ]
+  },
+  {
     "date": "13.06.2025",
     "news": [
       {
@@ -627,6 +660,20 @@
         "art": "TRANSFER",
         "gelesen": false,
         "text": "{\"seller\":\"Computer\",\"playerName\":\"Hack\",\"price\":5496093,\"playerValue\":5000000,\"playerId\":\"32787\",\"buyer\":\"Florian\"}",
+        "playerId": "32787"
+      },
+      {
+        "date": "12.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Weißhaupt\",\"price\":2150000,\"playerValue\":2090000,\"playerId\":\"33458\",\"buyer\":\"Sascha\"}",
+        "playerId": "33458"
+      },
+      {
+        "date": "12.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Hack\",\"price\":5496093,\"playerValue\":5020000,\"playerId\":\"32787\",\"buyer\":\"Florian\"}",
         "playerId": "32787"
       }
     ]
@@ -736,6 +783,27 @@
         "gelesen": false,
         "text": "{\"seller\":\"Computer\",\"playerName\":\"Gaul Souza\",\"price\":190002,\"playerValue\":170000,\"playerId\":\"34219\",\"buyer\":\"Christian\"}",
         "playerId": "34219"
+      },
+      {
+        "date": "11.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Honorat\",\"price\":7530000,\"playerValue\":7030000,\"playerId\":\"33817\",\"buyer\":\"Thomas\"}",
+        "playerId": "33817"
+      },
+      {
+        "date": "11.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Vranckx\",\"price\":466000,\"playerValue\":360000,\"playerId\":\"33438\",\"buyer\":\"Thomas\"}",
+        "playerId": "33438"
+      },
+      {
+        "date": "11.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Brandt\",\"price\":7209000,\"playerValue\":6410000,\"playerId\":\"32236\",\"buyer\":\"damian\"}",
+        "playerId": "32236"
       }
     ]
   },
