@@ -243,11 +243,16 @@ function toggleNewsList() {
     }
 }
 
-// Lade News - mobilfreundlich ohne Tabelle
+// Lade News - mobil// News-Panel: Gruppiert nach Datum und Kategorie
 fetch('News.json')
     .then(response => response.json())
     .then(data => {
-        data.sort((a, b) => parseGermanDate(b.date) - parseGermanDate(a.date));
+        // Sortiere nach Datum absteigend
+        data.sort((a, b) => {
+            const [d1, m1, y1] = a.date.split(".");
+            const [d2, m2, y2] = b.date.split(".");
+            return new Date(y2, m2 - 1, d2) - new Date(y1, m1 - 1, d1);
+        });
         let html = '';
         if (!data.length) {
             html = '<div class="news-empty">Keine News vorhanden.</div>';
@@ -255,12 +260,15 @@ fetch('News.json')
             for (const day of data) {
                 html += `<div class="news-day">
                     <div class="news-date-header">${day.date}</div>`;
+                // Kategorisiere News nach Art
                 const grouped = {};
                 for (const news of day.news) {
                     if (!grouped[news.art]) grouped[news.art] = [];
                     grouped[news.art].push(news);
                 }
+                // Für jede Kategorie eine Überschrift, darunter alle Nachrichten dieser Art
                 for (const art of Object.keys(grouped).sort()) {
+                    html += `<div class="news-art" style="margin-top:10px;">${art}</div>`;
                     for (const news of grouped[art]) {
                         let text = '';
                         try {
@@ -274,7 +282,6 @@ fetch('News.json')
                             text = news.text;
                         }
                         html += `<div class="news-item">
-                            <div class="news-art">${art}</div>
                             <div class="news-text">${text}</div>
                         </div>`;
                     }
@@ -287,7 +294,7 @@ fetch('News.json')
     .catch(() => {
         document.getElementById('news-list').innerHTML = '<div class="news-empty" style="color:#e53935;">Fehler beim Laden der News.</div>';
     });
-</script>
+
 
 <!-- Hauptscript für Spielerdaten -->
 <script>
