@@ -35,6 +35,8 @@
         .status-reha { color: #f39c12; font-weight: bold;}
         .status-nichtliga { color: #7f8c8d; font-style: italic;}
         .club-logo { width: 25px; height: 25px; object-fit: contain; margin-right: 10px; vertical-align: middle;}
+        
+        /* Debug-Bereich */
         .debug-toggle { display: none;}
         .debug-label { background: #3498db; color: white; padding: 12px; border-radius: 6px; cursor: pointer; user-select: none; font-weight: bold; margin: 15px 0; display: block;}
         .debug-label::before { content: '▶ '; transition: transform 0.3s ease; display: inline-block; width: 20px;}
@@ -42,7 +44,8 @@
         .debug-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out; background: #f0f8ff; border: 1px solid #cce; border-radius: 0 0 6px 6px; margin-top: -5px;}
         .debug-toggle:checked + .debug-label + .debug-content { max-height: 300px; overflow-y: auto;}
         .debug-inner { padding: 15px; font-family: monospace; font-size: 12px; line-height: 1.5;}
-        /* Stylisches News-Panel - mobilfreundlich */
+        
+        /* News-Panel - Debug-Style, aber größer */
         .news-collapsible {
             margin-bottom: 24px;
             border-radius: 8px;
@@ -51,34 +54,52 @@
             overflow: hidden;
         }
         .news-header {
+            background: #3498db;
+            color: white;
+            padding: 14px 18px;
+            border-radius: 8px 8px 0 0;
+            cursor: pointer;
+            user-select: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 0;
             display: flex;
             align-items: center;
-            cursor: pointer;
-            background: linear-gradient(90deg, #2c3e50 70%, #1a2a6c 100%);
-            color: #fff;
-            padding: 16px 20px;
-            font-size: 1.15em;
-            font-weight: 600;
-            letter-spacing: 1px;
-            user-select: none;
-            border-bottom: 1px solid #e0e0e0;
+            transition: background 0.3s ease;
+        }
+        .news-header:hover {
+            background: #2980b9;
         }
         .news-header span:first-child {
             flex: 1;
         }
+        .news-header::before {
+            content: '▶ ';
+            transition: transform 0.3s ease;
+            display: inline-block;
+            width: 20px;
+            margin-right: 8px;
+        }
+        .news-header.expanded::before {
+            transform: rotate(90deg);
+        }
         #news-toggle-icon {
-            font-size: 1.3em;
-            margin-left: 8px;
-            transition: transform 0.2s;
+            display: none;
         }
         .news-list {
             padding: 0;
-            background: #f9fafd;
-            border-radius: 0 0 8px 8px;
+            background: #f0f8ff;
+            border: 1px solid #cce;
             border-top: none;
+            border-radius: 0 0 8px 8px;
+            margin-top: -1px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+        .news-list.expanded {
             max-height: 420px;
             overflow-y: auto;
-            transition: max-height 0.3s;
         }
         .news-day {
             margin-bottom: 12px;
@@ -88,36 +109,44 @@
         .news-date-header {
             background: #1976d2;
             color: white;
-            padding: 8px 12px;
+            padding: 10px 15px;
             font-weight: bold;
             font-size: 1.1em;
             margin-bottom: 8px;
             border-radius: 4px;
         }
+        .news-category {
+            background: #e3f2fd;
+            color: #1565c0;
+            padding: 8px 15px;
+            font-weight: 600;
+            font-size: 0.95em;
+            margin: 8px 0 4px 0;
+            border-left: 4px solid #2196f3;
+        }
         .news-item {
-            padding: 6px 12px;
-            border-left: 3px solid #e0e0e0;
+            padding: 8px 15px;
             margin-bottom: 4px;
             background: #fff;
-        }
-        .news-art {
-            font-weight: 600;
-            color: #555;
-            font-size: 0.9em;
-            margin-bottom: 4px;
+            border-left: 2px solid #e0e0e0;
         }
         .news-text {
             color: #333;
             line-height: 1.4;
+            font-size: 0.9em;
         }
         .news-empty {
-            padding: 16px;
+            padding: 20px;
             color: #888;
             text-align: center;
+            font-family: monospace;
+            font-size: 12px;
         }
         @media (max-width: 700px) {
-            .news-date-header { font-size: 1em; }
-            .news-item { padding: 4px 8px; }
+            .news-date-header { font-size: 1em; padding: 8px 12px; }
+            .news-category { font-size: 0.9em; padding: 6px 12px; }
+            .news-item { padding: 6px 12px; }
+            .news-text { font-size: 0.85em; }
         }
     </style>
 </head>
@@ -137,16 +166,18 @@
         <span id="statsText"></span>
         <button id="refreshButton" class="refresh-button">🔄 Daten neu laden</button>
     </div>
-    <!-- News Panel (mobilfreundlich, standardmäßig zugeklappt) -->
+    
+    <!-- News Panel (Debug-Style, größer) -->
     <div id="news-section" class="news-collapsible">
-        <div class="news-header" onclick="toggleNewsList()">
+        <div class="news-header" onclick="toggleNewsList()" id="news-header">
             <span>News</span>
-            <span id="news-toggle-icon">▶</span>
         </div>
-        <div id="news-list" class="news-list" style="display: none;">
-            <div style="padding: 16px; color: #888;">Lade News...</div>
+        <div id="news-list" class="news-list">
+            <div class="news-empty">Lade News...</div>
         </div>
     </div>
+    
+    <!-- Debug-Bereich -->
     <div id="debugSection">
         <input type="checkbox" id="debugToggle" class="debug-toggle">
         <label for="debugToggle" class="debug-label">Debug-Informationen</label>
@@ -154,6 +185,7 @@
             <div class="debug-inner" id="debugContent"></div>
         </div>
     </div>
+    
     <div id="content" style="display: none;">
         <div class="filters">
             <div class="filter-group">
@@ -231,28 +263,25 @@ function parseGermanDate(str) {
     const [d, m, y] = str.split(".");
     return new Date(Number(y), Number(m) - 1, Number(d));
 }
+
 function toggleNewsList() {
     const list = document.getElementById('news-list');
-    const icon = document.getElementById('news-toggle-icon');
-    if (list.style.display === 'none' || list.style.display === '') {
-        list.style.display = 'block';
-        icon.style.transform = 'rotate(90deg)';
+    const header = document.getElementById('news-header');
+    
+    if (list.classList.contains('expanded')) {
+        list.classList.remove('expanded');
+        header.classList.remove('expanded');
     } else {
-        list.style.display = 'none';
-        icon.style.transform = 'rotate(0deg)';
+        list.classList.add('expanded');
+        header.classList.add('expanded');
     }
 }
 
-// Lade News - mobil// News-Panel: Gruppiert nach Datum und Kategorie
+// Lade News - gruppiert nach Kategorien
 fetch('News.json')
     .then(response => response.json())
     .then(data => {
-        // Sortiere nach Datum absteigend
-        data.sort((a, b) => {
-            const [d1, m1, y1] = a.date.split(".");
-            const [d2, m2, y2] = b.date.split(".");
-            return new Date(y2, m2 - 1, d2) - new Date(y1, m1 - 1, d1);
-        });
+        data.sort((a, b) => parseGermanDate(b.date) - parseGermanDate(a.date));
         let html = '';
         if (!data.length) {
             html = '<div class="news-empty">Keine News vorhanden.</div>';
@@ -260,15 +289,17 @@ fetch('News.json')
             for (const day of data) {
                 html += `<div class="news-day">
                     <div class="news-date-header">${day.date}</div>`;
-                // Kategorisiere News nach Art
+                
+                // Gruppiere nach Kategorie
                 const grouped = {};
                 for (const news of day.news) {
                     if (!grouped[news.art]) grouped[news.art] = [];
                     grouped[news.art].push(news);
                 }
-                // Für jede Kategorie eine Überschrift, darunter alle Nachrichten dieser Art
+                
+                // Für jede Kategorie: Überschrift, dann alle Nachrichten
                 for (const art of Object.keys(grouped).sort()) {
-                    html += `<div class="news-art" style="margin-top:10px;">${art}</div>`;
+                    html += `<div class="news-category">${art}</div>`;
                     for (const news of grouped[art]) {
                         let text = '';
                         try {
@@ -292,9 +323,9 @@ fetch('News.json')
         document.getElementById('news-list').innerHTML = html;
     })
     .catch(() => {
-        document.getElementById('news-list').innerHTML = '<div class="news-empty" style="color:#e53935;">Fehler beim Laden der News.</div>';
+        document.getElementById('news-list').innerHTML = '<div class="news-empty">Fehler beim Laden der News.</div>';
     });
-
+</script>
 
 <!-- Hauptscript für Spielerdaten -->
 <script>
@@ -363,10 +394,6 @@ fetch('News.json')
             }
         });
         document.getElementById('hideNonLeague').addEventListener('change', applyFilters);
-        
-        // News-Panel standardmäßig zugeklappt
-        document.getElementById('news-list').style.display = 'none';
-        document.getElementById('news-toggle-icon').style.transform = 'rotate(0deg)';
     });
 
     async function loadData() {
