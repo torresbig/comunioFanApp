@@ -10,9 +10,7 @@
     header { text-align:center; background:linear-gradient(135deg,#1a2a6c,#2c3e50); color:#fff; padding:20px; border-radius:10px; }
     header h1 { margin:0; font-size:1.8rem; }
     header .subtitle { margin-top:8px; font-size:1rem; opacity:0.9; }
-    /* Stats */
     .stats { display:none; background:#e8f5e8; border:1px solid #c5e6c5; color:#2e7d2e; padding:12px; border-radius:6px; margin:12px 0; text-align:center; font-size:0.95em; }
-    /* Debug */
     .debug-toggle { display:none; }
     .debug-label { background:#3498db; color:#fff; padding:8px; border-radius:6px; cursor:pointer; user-select:none; font-weight:bold; margin-bottom:12px; display:block; }
     .debug-label::before { content:'▶ '; transition:transform .3s; display:inline-block; width:20px; }
@@ -20,19 +18,17 @@
     .debug-content { max-height:0; overflow:hidden; transition:max-height .3s; background:#f0f8ff; border:1px solid #cce; border-radius:0 0 6px; margin-bottom:12px; }
     .debug-toggle:checked + .debug-label + .debug-content { max-height:200px; }
     .debug-inner { padding:10px; font-family:monospace; font-size:11px; }
-    /* Panel-Grundstruktur */
     .panel { margin-bottom:12px; background:#fff; border-radius:8px; box-shadow:0 2px 12px rgba(0,0,0,0.08); overflow:hidden; }
     .panel-header { background:#3498db; color:#fff; padding:12px 16px; cursor:pointer; user-select:none; font-weight:bold; display:flex; align-items:center; font-size:1.05em; }
     .panel-header::before { content:'▶ '; transition:transform .3s; display:inline-block; width:20px; }
     .panel-header.expanded::before { transform:rotate(90deg); }
     .panel-content { max-height:0; overflow:hidden; transition:max-height .3s; border-top:1px solid #cce; background:#f9fafd; }
-    .panel-content.expanded { max-height:500px; }
-    /* News */
+    .panel-content.expanded { max-height:400px; }
     .news-day { padding:8px 16px; border-bottom:1px solid #e0e0e0; }
     .news-date { background:#1976d2; color:#fff; padding:4px 8px; border-radius:4px; display:inline-block; margin-bottom:6px; }
     .news-category { margin-top:8px; font-weight:600; color:#1565c0; }
     .news-item { padding:6px 0 6px 12px; border-left:3px solid #2196f3; }
-    /* Filter */
+    .panel-content.news { overflow-y:auto; }
     .filters { padding:12px 16px; display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:12px; }
     .filter-group label { display:block; font-weight:bold; color:#2c3e50; margin-bottom:4px; font-size:0.9em; }
     .filter-group input, .filter-group select { width:100%; padding:8px; border:1px solid #ddd; border-radius:6px; font-size:0.9em; }
@@ -40,7 +36,6 @@
     .checkbox-group input { margin-right:6px; }
     .reset-button { grid-column:span 2; padding:8px; background:#5c6bc0; color:#fff; border:none; border-radius:6px; cursor:pointer; }
     .reset-button:hover { background:#3f51b5; }
-    /* Tabelle */
     .table-container { overflow-x:auto; background:#fff; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,0.08); margin-top:8px; }
     table { width:100%; border-collapse:collapse; min-width:800px; }
     th, td { padding:10px; border-bottom:1px solid #eee; font-size:13px; text-align:left; }
@@ -53,23 +48,18 @@
 </head>
 <body>
   <div class="container">
-    <!-- Header -->
     <header>
       <h1>⚽ Comunio Ultraz - Spielerdatenbank</h1>
       <p class="subtitle">Fußballspieler Daten • Live von GitHub</p>
     </header>
-    <!-- Stats -->
     <div id="stats" class="stats"><span id="statsText"></span></div>
-    <!-- Debug -->
     <input type="checkbox" id="debugToggle" class="debug-toggle">
     <label for="debugToggle" class="debug-label">Debug-Informationen</label>
     <div class="debug-content"><div class="debug-inner" id="debugContent"></div></div>
-    <!-- News -->
     <div class="panel">
       <div id="newsHeader" class="panel-header">News</div>
-      <div id="newsContent" class="panel-content"></div>
+      <div id="newsContent" class="panel-content news"></div>
     </div>
-    <!-- Filter -->
     <div class="panel">
       <div id="filterHeader" class="panel-header">Filter</div>
       <div id="filterContent" class="panel-content">
@@ -107,7 +97,6 @@
         </div>
       </div>
     </div>
-    <!-- Tabelle -->
     <div class="table-container">
       <table id="playerTable">
         <thead>
@@ -126,104 +115,104 @@
       </table>
     </div>
   </div>
-
   <script>
-    // Panel-Toggle-Funktion
-    document.getElementById('newsHeader').onclick = () => {
-      document.getElementById('newsHeader').classList.toggle('expanded');
-      document.getElementById('newsContent').classList.toggle('expanded');
-    };
-    document.getElementById('filterHeader').onclick = () => {
-      document.getElementById('filterHeader').classList.toggle('expanded');
-      document.getElementById('filterContent').classList.toggle('expanded');
-    };
+    // Panel-Toggle
+    function toggle(idH,idC){
+      document.getElementById(idH).classList.toggle('expanded');
+      document.getElementById(idC).classList.toggle('expanded');
+    }
+    document.getElementById('newsHeader').onclick = () => toggle('newsHeader','newsContent');
+    document.getElementById('filterHeader').onclick = () => toggle('filterHeader','filterContent');
     document.getElementById('debugToggle').onchange = () => {
-      document.getElementById('debugContent').classList.toggle('expanded');
-      document.getElementById('debugToggle').nextElementSibling.classList.toggle('expanded');
+      document.querySelector('label[for="debugToggle"]').classList.toggle('expanded');
+      document.querySelector('.debug-content').classList.toggle('expanded');
     };
+
+    // Hilfsfunktionen
+    function parseGermanDate(s){
+      const [d,m,y]=s.split('.'); return new Date(y,m-1,d);
+    }
+    function debug(msg){
+      const div=document.getElementById('debugContent');
+      div.innerHTML+=`<div>${new Date().toLocaleTimeString()}: ${msg}</div>`;
+      div.scrollTop=div.scrollHeight;
+    }
 
     // News laden
-    function parseGermanDate(s) {
-      const [d,m,y] = s.split('.');
-      return new Date(y, m-1, d);
-    }
-    fetch('News.json')
-      .then(r => r.json())
-      .then(data => {
-        data.sort((a,b)=>parseGermanDate(b.date)-parseGermanDate(a.date));
-        let html = '';
-        data.forEach(day => {
-          html += `<div class="news-day"><div class="news-date">${day.date}</div>`;
-          const grouped = day.news.reduce((o,n)=>{(o[n.art]=o[n.art]||[]).push(n);return o;},{});
-          Object.keys(grouped).sort().forEach(cat=>{
-            html += `<div class="news-category">${cat}</div>`;
-            grouped[cat].forEach(n=>{
-              let txt;
-              try {
-                const o = JSON.parse(n.text);
-                txt = cat==='TRANSFER'
-                  ?`${o.playerName} von ${o.seller} zu ${o.buyer} für ${o.price.toLocaleString('de-DE')} €`
-                  :n.text;
-              } catch { txt = n.text; }
-              html += `<div class="news-item">${txt}</div>`;
-            });
+    fetch('News.json').then(r=>r.json()).then(data=>{
+      debug('News geladen: '+data.length);
+      data.sort((a,b)=>parseGermanDate(b.date)-parseGermanDate(a.date));
+      let html='';
+      data.forEach(day=>{
+        html+=`<div class="news-day"><div class="news-date">${day.date}</div>`;
+        const grp = day.news.reduce((o,n)=>(o[n.art]=o[n.art]||[],o[n.art].push(n),o),{});
+        Object.keys(grp).sort().forEach(cat=>{
+          html+=`<div class="news-category">${cat}</div>`;
+          grp[cat].forEach(n=>{
+            let txt;
+            try{ const o=JSON.parse(n.text); txt=cat==='TRANSFER'?`${o.playerName} von ${o.seller} zu ${o.buyer} für ${o.price.toLocaleString('de-DE')} €`:n.text; }
+            catch{ txt=n.text; }
+            html+=`<div class="news-item">${txt}</div>`;
           });
-          html += `</div>`;
         });
-        document.getElementById('newsContent').innerHTML = html;
-      })
-      .catch(_ => {
-        document.getElementById('newsContent').innerHTML = '<div class="news-item">Fehler beim Laden der News.</div>';
+        html+='</div>';
       });
+      document.getElementById('newsContent').innerHTML = html || '<div class="news-item">Keine News.</div>';
+    }).catch(()=>{
+      debug('Fehler beim Laden der News');
+      document.getElementById('newsContent').innerHTML = '<div class="news-item">Fehler beim Laden der News.</div>';
+    });
 
-    // Logos
-    const clubMap = {"1":"bayern","3":"gladbach","5":"dortmund","6":"werderBremen","8":"leverkusen","12":"wolfsburg","13":"koeln","14":"stuttgart","18":"mainz","21":"freiburg","25":"stpauli","62":"hoffenheim","68":"augsburg","92":"leipzig","109":"unionBerlin","110":"heidenheim","4":"hamburg","9":"frankfurt"};
-    function logoFile(id){ return (clubMap[id]||'unbestimmt')+'.png'; }
+    // Logos mapping
+    const clubMap={"1":"bayern","3":"gladbach","5":"dortmund","6":"werderBremen","8":"leverkusen","12":"wolfsburg","13":"koeln","14":"stuttgart","18":"mainz","21":"freiburg","25":"stpauli","62":"hoffenheim","68":"augsburg","92":"leipzig","109":"unionBerlin","110":"heidenheim","4":"hamburg","9":"frankfurt"};
+    function logoFile(id){return (clubMap[id]||'unbestimmt')+'.png';}
 
-    // Spielerdaten laden
-    const base = 'https://raw.githubusercontent.com/torresbig/comunioFanApp/main/';
-    async function loadJSON(url) {
-      const res = await fetch(url+'?t='+Date.now());
-      if(!res.ok) throw new Error('HTTP '+res.status);
-      const txt = await res.text();
+    // Datenbank laden
+    const base='https://raw.githubusercontent.com/torresbig/comunioFanApp/main/';
+    async function loadJSON(url){
+      debug('Lade Datei: '+url);
+      const res=await fetch(url+'?t='+Date.now());
+      debug('Status: '+res.status);
+      const txt=await res.text();
+      debug('Länge: '+txt.length);
       if(!txt.trim()) throw new Error('Leere Datei');
       return JSON.parse(txt);
     }
-    let allPlayers = [], clubs = new Map(), owners = new Map();
-    async function loadData() {
-      document.getElementById('stats').style.display = 'none';
-      try {
-        const [cd,pd,ud,md] = await Promise.all([
+    let allPlayers=[], clubs=new Map(), owners=new Map();
+    async function loadData(){
+      try{
+        debug('Starte Datenladevorgang...');
+        const [cd,pd,ud,md]=await Promise.all([
           loadJSON(base+'VereinsdatenbankJson.txt'),
           loadJSON(base+'SpielerdatenbankNeutralJson.txt'),
           loadJSON(base+'UserdatenbankJson_884691.txt'),
           loadJSON(base+'PlayerToUserMap_884691.txt')
         ]);
-        cd.forEach(c=>clubs.set(c.id,c.name));
-        allPlayers = pd.map(p=>({...p,position:p.data?.position||'Unbekannt'}));
-        const um = new Map(ud.map(u=>[u.user.id,`${u.user.firstName} ${u.user.lastName||''}`]));
-        md.forEach(m=>{ const id=Object.keys(m)[0]; owners.set(id,um.get(m[id])||'Unbekannt'); });
+        debug('Clubs: '+cd.length+', Players: '+pd.length+', Users: '+ud.length+', Map: '+md.length);
+        clubs.clear(); cd.forEach(c=>clubs.set(c.id,c.name));
+        allPlayers=pd.map(p=>({...p,position:p.data?.position||'Unbekannt'}));
+        const userMap=new Map(ud.map(u=>[u.user.id,`${u.user.firstName} ${u.user.lastName||''}`]));
+        owners.clear(); md.forEach(m=>{ const id=Object.keys(m)[0]; owners.set(id,userMap.get(m[id])||'Unbekannt'); });
         allPlayers.forEach(p=>{ if(!owners.has(p.id)) owners.set(p.id,'Computer'); });
+        debug('Spieler geladen: '+allPlayers.length);
         showStats();
-        document.getElementById('content').style.display = 'block';
         setupFiltersAndTable();
-      } catch(e) {
-        console.error(e);
+      }catch(e){
+        debug('Fehler: '+e.message);
       }
     }
-    function showStats() {
-      const o = new Set(owners.values()); o.delete('Kein Besitzer');
+    function showStats(){
+      const o=new Set(owners.values()); o.delete('Kein Besitzer');
       document.getElementById('statsText').innerHTML = `📊 ${allPlayers.length} Spieler • ${clubs.size} Vereine • ${o.size} Besitzer<br>🕒 ${new Date().toLocaleTimeString()}`;
-      document.getElementById('stats').style.display = 'block';
+      document.getElementById('stats').style.display='block';
     }
-    function renderTable(arr) {
-      const tb = document.querySelector('#playerTable tbody');
-      tb.innerHTML = '';
+    function renderTable(arr){
+      const tb=document.querySelector('#playerTable tbody');tb.innerHTML='';
+      debug('Rendere Tabelle mit '+arr.length+' Spielern');
       arr.forEach(p=>{
-        const mv = p.data?.wert||0;
-        const mvTxt = mv<1e6 ? `${(mv/1e3).toFixed(0)} Tsd. €` : `${(mv/1e6).toFixed(2)} Mio. €`;
-        const st = p.data?.status?.status||'AKTIV';
-        tb.innerHTML += `<tr onclick="location='player.html?id=${p.id}'">
+        const mv=p.data?.wert||0, mvTxt=mv<1e6?`${(mv/1e3).toFixed(0)} Tsd. €`:`${(mv/1e6).toFixed(2)} Mio. €`;
+        const st=p.data?.status?.status||'AKTIV';
+        tb.innerHTML+=`<tr onclick="location='player.html?id=${p.id}'">
           <td>${p.name}</td>
           <td><img src="logos/${logoFile(p.data?.verein)}" class="club-logo">${clubs.get(p.data?.verein)||'-'}</td>
           <td>${p.position}</td>
@@ -235,52 +224,54 @@
         </tr>`;
       });
     }
-    function applyFilters() {
-      const s = document.getElementById('search').value.toLowerCase(),
-            pos = document.getElementById('position').value,
-            stat = document.getElementById('status').value,
-            cb = document.getElementById('club').value,
-            hideNL = document.getElementById('hideNonLeague').checked;
-      const filt = allPlayers.filter(p=>{
-        if(s && !p.name.toLowerCase().includes(s)) return false;
-        if(pos && p.position!==pos) return false;
-        const st = p.data?.status?.status||'';
-        if(stat && !st.includes(stat)) return false;
-        if(cb && clubs.get(p.data?.verein)!==cb) return false;
-        if(hideNL && st.includes('NICHT_IN_LIGA')) return false;
+    function applyFilters(){
+      debug('Filter werden angewendet...');
+      const s=document.getElementById('search').value.toLowerCase(),
+            pos=document.getElementById('position').value,
+            stat=document.getElementById('status').value,
+            cb=document.getElementById('club').value,
+            hideNL=document.getElementById('hideNonLeague').checked;
+      const filt=allPlayers.filter(p=>{
+        if(s&&!p.name.toLowerCase().includes(s))return false;
+        if(pos&&p.position!==pos)return false;
+        const st=p.data?.status?.status||'';
+        if(stat&&!st.includes(stat))return false;
+        if(cb&&clubs.get(p.data?.verein)!==cb)return false;
+        if(hideNL&&st.includes('NICHT_IN_LIGA'))return false;
         return true;
       });
       renderTable(filt);
+      debug('Filter angewendet.');
     }
-    function setupFiltersAndTable() {
-      ['search','position','status','club','hideNonLeague'].forEach(id=>{
-        document.getElementById(id).oninput = applyFilters;
-        document.getElementById(id).onchange = applyFilters;
+    function setupFiltersAndTable(){
+      debug('Initialisiere Filter...');
+      ['search','position','status','club'].forEach(id=>{
+        const el=document.getElementById(id);
+        el.oninput=applyFilters; el.onchange=applyFilters;
       });
-      document.getElementById('resetFilters').onclick = () => {
+      document.getElementById('hideNonLeague').onchange=applyFilters;
+      document.getElementById('resetFilters').onclick=()=>{
         ['search','position','status','club'].forEach(id=>document.getElementById(id).value='');
-        document.getElementById('hideNonLeague').checked = true;
+        document.getElementById('hideNonLeague').checked=true;
         applyFilters();
+        debug('Filter zurückgesetzt.');
       };
       setupSorting();
       applyFilters();
     }
-    function setupSorting() {
+    function setupSorting(){
       document.querySelectorAll('th[data-sort]').forEach(th=>{
-        th.onclick = () => {
-          const idx = [...th.parentNode.children].indexOf(th);
-          const typ = th.dataset.sort;
-          const rows = [...document.querySelectorAll('#playerTable tbody tr')];
-          const asc = !th.classList.toggle('sorted-asc');
+        th.onclick=()=>{
+          const idx=[...th.parentNode.children].indexOf(th), typ=th.dataset.sort;
+          const rows=[...document.querySelectorAll('#playerTable tbody tr')];
+          const asc=!th.classList.toggle('sorted-asc');
           rows.sort((a,b)=>{
-            let A = a.cells[idx].textContent.trim(),
-                B = b.cells[idx].textContent.trim();
-            if(typ==='number'||typ==='value'){
-              A = parseFloat(A)||0; B = parseFloat(B)||0;
-            }
+            let A=a.cells[idx].textContent.trim(), B=b.cells[idx].textContent.trim();
+            if(typ==='number'||typ==='value'){A=parseFloat(A)||0;B=parseFloat(B)||0;}
             return (A>B?1:-1)*(asc?1:-1);
           });
           rows.forEach(r=>r.parentNode.appendChild(r));
+          debug(`Tabelle sortiert nach Spalte ${idx+1} (${asc?'auf':'ab'}steigend)`);
         };
       });
     }
