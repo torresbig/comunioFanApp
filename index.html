@@ -3,246 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelle mit einklappbarem Filter</title>
+    <title>Spielerdaten Tabelle</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            padding: 20px;
+            margin: 20px;
+            background-color: #f9f9f9;
         }
 
-        /* Debug Section */
+        /* Debug Section - ganz oben */
         .debug-section {
-            background-color: #ffe6e6;
-            border: 1px solid #ffcccc;
-            padding: 15px;
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 10px;
             margin-bottom: 20px;
-            border-radius: 5px;
-        }
-
-        .debug-section h2 {
-            color: #cc0000;
-            margin-bottom: 10px;
-        }
-
-        .debug-info {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .debug-item {
-            background-color: #ffffff;
-            padding: 8px 12px;
-            border-radius: 3px;
-            border: 1px solid #ddd;
-            font-size: 14px;
+            border-radius: 4px;
+            font-size: 12px;
         }
 
         /* News Section */
         .news-section {
-            background-color: #e6f3ff;
-            border: 1px solid #b3d9ff;
-            padding: 20px;
-            margin-bottom: 30px;
-            border-radius: 5px;
-        }
-
-        .news-section h2 {
-            color: #0066cc;
-            margin-bottom: 15px;
-        }
-
-        .news-item {
-            background-color: #ffffff;
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
             padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 3px;
-            border-left: 4px solid #0066cc;
+            margin-bottom: 20px;
+            border-radius: 4px;
         }
 
-        .news-item h3 {
-            color: #333;
-            margin-bottom: 5px;
+        .news-section h3 {
+            margin-top: 0;
+            color: #0c5460;
         }
 
-        .news-item p {
-            color: #666;
-            line-height: 1.4;
-        }
-
-        .news-meta {
-            font-size: 12px;
-            color: #999;
-            margin-top: 8px;
-        }
-
-        /* Filter Container */
+        /* Filter Container - EINKLAPPBAR */
         .filter-container {
             background-color: #ffffff;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 4px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .filter-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 20px;
+            padding: 10px 15px;
             background-color: #f8f9fa;
             border-bottom: 1px solid #ddd;
             cursor: pointer;
-            user-select: none;
         }
 
-        .filter-header:hover {
-            background-color: #e9ecef;
-        }
-
-        .filter-header h3 {
+        .filter-header h4 {
             margin: 0;
             color: #333;
-            font-size: 16px;
         }
 
-        .toggle-filter {
+        .toggle-btn {
             background: none;
             border: none;
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
             color: #666;
-            transition: transform 0.3s ease;
         }
 
-        .toggle-filter.collapsed {
-            transform: rotate(-90deg);
-        }
-
-        .filter-panel {
-            padding: 20px;
-            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-            max-height: 500px;
+        .filter-content {
+            padding: 15px;
+            transition: max-height 0.3s ease;
             overflow: hidden;
         }
 
-        .filter-panel.collapsed {
+        .filter-content.collapsed {
             max-height: 0;
-            padding: 0 20px;
+            padding: 0 15px;
         }
 
         .filter-row {
-            display: flex;
-            gap: 15px;
             margin-bottom: 15px;
-            flex-wrap: wrap;
-            align-items: center;
         }
 
-        .filter-group {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .filter-group label {
+        .filter-row label {
+            display: inline-block;
+            width: 80px;
             font-weight: bold;
-            color: #333;
-            font-size: 14px;
         }
 
-        .filter-input,
-        .filter-select {
-            padding: 8px 12px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 14px;
-            transition: border-color 0.3s ease;
-        }
-
-        .filter-input:focus,
-        .filter-select:focus {
-            outline: none;
-            border-color: #0066cc;
-            box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.1);
+        .filter-row input,
+        .filter-row select {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-left: 10px;
         }
 
         /* Debug Filter kleiner */
-        .debug-filter .filter-input {
+        #debugFilter {
             width: 100px;
         }
 
-        /* Andere Filter größer */
-        .status-filter .filter-select,
-        .name-filter .filter-input,
-        .level-filter .filter-select {
+        /* Andere Filter normal */
+        #nameFilter,
+        #statusFilter,
+        #levelFilter {
             width: 150px;
         }
 
         .filter-actions {
-            display: flex;
-            gap: 10px;
-            margin-top: 10px;
+            margin-top: 15px;
         }
 
-        .btn {
+        .filter-actions button {
+            margin-right: 10px;
             padding: 8px 15px;
             border: none;
-            border-radius: 4px;
+            border-radius: 3px;
             cursor: pointer;
-            font-size: 14px;
-            transition: background-color 0.3s ease;
         }
 
-        .btn-primary {
-            background-color: #0066cc;
+        .btn-apply {
+            background-color: #007bff;
             color: white;
         }
 
-        .btn-primary:hover {
-            background-color: #0052a3;
-        }
-
-        .btn-secondary {
+        .btn-clear {
             background-color: #6c757d;
             color: white;
         }
 
-        .btn-secondary:hover {
-            background-color: #545b62;
-        }
-
-        /* Table Container */
+        /* Table Styles */
         .table-container {
             background-color: #ffffff;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 4px;
             overflow: hidden;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .table-header {
             background-color: #f8f9fa;
-            padding: 15px 20px;
+            padding: 15px;
             border-bottom: 1px solid #ddd;
         }
 
         .table-header h3 {
             margin: 0;
             color: #333;
-        }
-
-        .table-stats {
-            font-size: 14px;
-            color: #666;
-            margin-top: 5px;
         }
 
         #dataTable {
@@ -252,7 +155,7 @@
 
         #dataTable th,
         #dataTable td {
-            padding: 12px 15px;
+            padding: 10px;
             text-align: left;
             border-bottom: 1px solid #eee;
         }
@@ -260,147 +163,90 @@
         #dataTable th {
             background-color: #f8f9fa;
             font-weight: bold;
-            color: #333;
-            position: sticky;
-            top: 0;
-            z-index: 10;
         }
 
         #dataTable tr:hover {
-            background-color: #f8f9fa;
+            background-color: #f5f5f5;
         }
 
-        #dataTable tr.hidden {
-            display: none;
-        }
-
-        .no-results {
-            text-align: center;
-            padding: 40px 20px;
-            color: #666;
-            font-style: italic;
-        }
-
-        /* Status Indicators */
         .status-active {
-            color: #28a745;
+            color: green;
             font-weight: bold;
         }
 
         .status-inactive {
-            color: #dc3545;
+            color: red;
             font-weight: bold;
         }
 
-        .status-pending {
-            color: #ffc107;
-            font-weight: bold;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .filter-row {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            .filter-group {
-                width: 100%;
-            }
-
-            .filter-input,
-            .filter-select {
-                width: 100% !important;
-            }
-
-            .debug-info {
-                flex-direction: column;
-            }
+        .stats {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
-    <!-- Debug Section -->
+    <!-- 1. Debug Section (ganz oben) -->
     <div class="debug-section">
-        <h2>Debug Informationen</h2>
-        <div class="debug-info">
-            <div class="debug-item">Version: 1.2.3</div>
-            <div class="debug-item">Status: <span id="debugStatus">Aktiv</span></div>
-            <div class="debug-item">Datensätze: <span id="debugCount">0</span></div>
-            <div class="debug-item">Letztes Update: <span id="debugUpdate">-</span></div>
-        </div>
+        <strong>Debug:</strong> Version 1.2.3 | Status: Aktiv | Datensätze: <span id="debugCount">0</span> | Update: <span id="debugTime">-</span>
     </div>
 
-    <!-- News Section -->
+    <!-- 2. News Section -->
     <div class="news-section">
-        <h2>Aktuelle Nachrichten</h2>
-        <div class="news-item">
-            <h3>System Update verfügbar</h3>
-            <p>Ein neues Update für das Tabellensystem ist verfügbar. Neue Features und Verbesserungen wurden hinzugefügt.</p>
-            <div class="news-meta">Heute, 14:30 Uhr</div>
-        </div>
-        <div class="news-item">
-            <h3>Wartungsarbeiten geplant</h3>
-            <p>Am kommenden Wochenende sind Wartungsarbeiten geplant. Das System wird kurzzeitig nicht verfügbar sein.</p>
-            <div class="news-meta">Gestern, 16:45 Uhr</div>
-        </div>
-        <div class="news-item">
-            <h3>Neue Filterfunktionen</h3>
-            <p>Das Filtersystem wurde erweitert und bietet nun noch mehr Möglichkeiten zur Datenanalyse.</p>
-            <div class="news-meta">02.07.2025, 10:15 Uhr</div>
-        </div>
+        <h3>Aktuelle Nachrichten</h3>
+        <p><strong>System Update:</strong> Neue Filterfunktionen wurden hinzugefügt.</p>
+        <p><strong>Wartung:</strong> Geplante Wartungsarbeiten am Wochenende.</p>
     </div>
 
-    <!-- Filter Container -->
+    <!-- 3. Einklappbares Filter Panel -->
     <div class="filter-container">
         <div class="filter-header" onclick="toggleFilter()">
-            <h3>Filter & Suchoptionen</h3>
-            <button class="toggle-filter" id="toggleIcon">▼</button>
+            <h4>Filter & Suchoptionen</h4>
+            <button class="toggle-btn" id="toggleIcon">▼</button>
         </div>
-        <div class="filter-panel" id="filterPanel">
+        <div class="filter-content" id="filterContent">
             <div class="filter-row">
-                <div class="filter-group debug-filter">
-                    <label for="debugFilter">Debug:</label>
-                    <input type="text" id="debugFilter" class="filter-input" placeholder="Debug...">
-                </div>
-                <div class="filter-group name-filter">
-                    <label for="nameFilter">Name:</label>
-                    <input type="text" id="nameFilter" class="filter-input" placeholder="Name suchen...">
-                </div>
-                <div class="filter-group status-filter">
-                    <label for="statusFilter">Status:</label>
-                    <select id="statusFilter" class="filter-select">
-                        <option value="">Alle Status</option>
-                        <option value="Aktiv">Aktiv</option>
-                        <option value="Inaktiv">Inaktiv</option>
-                        <option value="Ausstehend">Ausstehend</option>
-                    </select>
-                </div>
-                <div class="filter-group level-filter">
-                    <label for="levelFilter">Level:</label>
-                    <select id="levelFilter" class="filter-select">
-                        <option value="">Alle Level</option>
-                        <option value="1">Level 1</option>
-                        <option value="2">Level 2</option>
-                        <option value="3">Level 3</option>
-                        <option value="4">Level 4</option>
-                        <option value="5">Level 5</option>
-                    </select>
-                </div>
+                <label for="debugFilter">Debug:</label>
+                <input type="text" id="debugFilter" placeholder="Debug...">
+            </div>
+            <div class="filter-row">
+                <label for="nameFilter">Name:</label>
+                <input type="text" id="nameFilter" placeholder="Name suchen...">
+            </div>
+            <div class="filter-row">
+                <label for="statusFilter">Status:</label>
+                <select id="statusFilter">
+                    <option value="">Alle</option>
+                    <option value="Aktiv">Aktiv</option>
+                    <option value="Inaktiv">Inaktiv</option>
+                    <option value="Ausstehend">Ausstehend</option>
+                </select>
+            </div>
+            <div class="filter-row">
+                <label for="levelFilter">Level:</label>
+                <select id="levelFilter">
+                    <option value="">Alle</option>
+                    <option value="1">Level 1</option>
+                    <option value="2">Level 2</option>
+                    <option value="3">Level 3</option>
+                    <option value="4">Level 4</option>
+                    <option value="5">Level 5</option>
+                </select>
             </div>
             <div class="filter-actions">
-                <button class="btn btn-primary" onclick="applyFilters()">Filter anwenden</button>
-                <button class="btn btn-secondary" onclick="clearFilters()">Filter zurücksetzen</button>
+                <button class="btn-apply" onclick="applyFilters()">Filter anwenden</button>
+                <button class="btn-clear" onclick="clearFilters()">Zurücksetzen</button>
             </div>
         </div>
     </div>
 
-    <!-- Table Container -->
+    <!-- 4. Tabelle -->
     <div class="table-container">
         <div class="table-header">
             <h3>Spielerdaten</h3>
-            <div class="table-stats">
-                <span id="visibleCount">0</span> von <span id="totalCount">0</span> Einträgen angezeigt
+            <div class="stats">
+                <span id="visibleCount">0</span> von <span id="totalCount">0</span> Einträgen
             </div>
         </div>
         <table id="dataTable">
@@ -416,16 +262,13 @@
                 </tr>
             </thead>
             <tbody id="tableBody">
-                <!-- Daten werden hier dynamisch geladen -->
+                <!-- Spielerdaten werden hier geladen -->
             </tbody>
         </table>
-        <div id="noResults" class="no-results" style="display: none;">
-            Keine Ergebnisse gefunden. Bitte passen Sie Ihre Filter an.
-        </div>
     </div>
 
     <script>
-        // Sample player data
+        // Original Spielerdaten
         const playerData = [
             { id: 1, name: "Max Mustermann", status: "Aktiv", level: 5, points: 1250, registered: "2025-01-15", debug: "usr001" },
             { id: 2, name: "Anna Schmidt", status: "Inaktiv", level: 3, points: 890, registered: "2025-02-20", debug: "usr002" },
@@ -434,36 +277,33 @@
             { id: 5, name: "Tom Brown", status: "Aktiv", level: 5, points: 1450, registered: "2025-01-05", debug: "usr005" },
             { id: 6, name: "Sarah Johnson", status: "Inaktiv", level: 1, points: 200, registered: "2025-04-12", debug: "usr006" },
             { id: 7, name: "Michael Davis", status: "Aktiv", level: 3, points: 980, registered: "2025-02-28", debug: "usr007" },
-            { id: 8, name: "Emma Wilson", status: "Aktiv", level: 4, points: 1350, registered: "2025-01-18", debug: "usr008" },
-            { id: 9, name: "David Taylor", status: "Ausstehend", level: 2, points: 720, registered: "2025-03-25", debug: "usr009" },
-            { id: 10, name: "Sophie Martinez", status: "Aktiv", level: 5, points: 1600, registered: "2025-01-08", debug: "usr010" }
+            { id: 8, name: "Emma Wilson", status: "Aktiv", level: 4, points: 1350, registered: "2025-01-18", debug: "usr008" }
         ];
 
         let filteredData = [...playerData];
 
-        // Initialize page
+        // Initialisierung
         document.addEventListener('DOMContentLoaded', function() {
             loadPlayerData();
             setupFilterListeners();
             updateDebugInfo();
         });
 
-        // Toggle filter panel
+        // NEUE FUNKTION: Filter ein-/ausklappen
         function toggleFilter() {
-            const filterPanel = document.getElementById('filterPanel');
+            const filterContent = document.getElementById('filterContent');
             const toggleIcon = document.getElementById('toggleIcon');
             
-            filterPanel.classList.toggle('collapsed');
-            toggleIcon.classList.toggle('collapsed');
+            filterContent.classList.toggle('collapsed');
             
-            if (filterPanel.classList.contains('collapsed')) {
+            if (filterContent.classList.contains('collapsed')) {
                 toggleIcon.textContent = '▶';
             } else {
                 toggleIcon.textContent = '▼';
             }
         }
 
-        // Load player data into table
+        // Spielerdaten laden
         function loadPlayerData() {
             const tableBody = document.getElementById('tableBody');
             tableBody.innerHTML = '';
@@ -485,9 +325,9 @@
             updateStats();
         }
 
-        // Setup filter event listeners
+        // Filter Event Listeners
         function setupFilterListeners() {
-            const filterInputs = document.querySelectorAll('.filter-input, .filter-select');
+            const filterInputs = document.querySelectorAll('#debugFilter, #nameFilter, #statusFilter, #levelFilter');
             
             filterInputs.forEach(input => {
                 input.addEventListener('input', applyFilters);
@@ -495,7 +335,7 @@
             });
         }
 
-        // Apply filters
+        // Filter anwenden
         function applyFilters() {
             const debugFilter = document.getElementById('debugFilter').value.toLowerCase();
             const nameFilter = document.getElementById('nameFilter').value.toLowerCase();
@@ -515,7 +355,7 @@
             updateDebugInfo();
         }
 
-        // Clear all filters
+        // Filter zurücksetzen
         function clearFilters() {
             document.getElementById('debugFilter').value = '';
             document.getElementById('nameFilter').value = '';
@@ -527,37 +367,19 @@
             updateDebugInfo();
         }
 
-        // Update statistics
+        // Statistiken aktualisieren
         function updateStats() {
-            const visibleCount = filteredData.length;
-            const totalCount = playerData.length;
-            
-            document.getElementById('visibleCount').textContent = visibleCount;
-            document.getElementById('totalCount').textContent = totalCount;
-            
-            const noResults = document.getElementById('noResults');
-            const tableBody = document.getElementById('tableBody');
-            
-            if (visibleCount === 0) {
-                noResults.style.display = 'block';
-                tableBody.style.display = 'none';
-            } else {
-                noResults.style.display = 'none';
-                tableBody.style.display = '';
-            }
+            document.getElementById('visibleCount').textContent = filteredData.length;
+            document.getElementById('totalCount').textContent = playerData.length;
         }
 
-        // Update debug information
+        // Debug Info aktualisieren
         function updateDebugInfo() {
-            const now = new Date();
-            const timeString = now.toLocaleTimeString('de-DE');
-            
-            document.getElementById('debugStatus').textContent = 'Aktiv';
             document.getElementById('debugCount').textContent = filteredData.length;
-            document.getElementById('debugUpdate').textContent = timeString;
+            document.getElementById('debugTime').textContent = new Date().toLocaleTimeString('de-DE');
         }
 
-        // Simulate real-time data updates
+        // Debug Info alle 5 Sekunden aktualisieren
         setInterval(updateDebugInfo, 5000);
     </script>
 </body>
