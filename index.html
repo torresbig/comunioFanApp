@@ -2,727 +2,563 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>⚽ Comunio Ultraz - Spielerdatenbank</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelle mit einklappbarem Filter</title>
     <style>
-        body { background: #f5f5f5; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 10px;}
-        .container { max-width: 1400px; margin: 0 auto; }
-        header { text-align: center; background: linear-gradient(135deg, #1a2a6c, #2c3e50); color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px;}
-        h1 { font-size: 1.8rem; margin: 0;}
-        .subtitle { margin: 8px 0 0 0; font-size: 1rem; opacity: 0.9;}
-        .loading, .error, .stats { margin: 15px 0; padding: 18px; border-radius: 10px;}
-        .loading { background: white; text-align: center;}
-        .error { background: #fee; border: 1px solid #fcc; color: #c00;}
-        .stats { background: #e8f5e8; border: 1px solid #c5e6c5; color: #2e7d2e; text-align: center;}
-        .filters { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); margin-bottom: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px;}
-        .filter-group { margin-bottom: 12px; }
-        label { display: block; margin-bottom: 6px; font-weight: bold; color: #2c3e50; font-size: 13px;}
-        input, select, button { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; background: white;}
-        .reset-button { background-color: #5c6bc0; color: white; border: none; cursor: pointer; font-weight: bold; padding: 12px; transition: background 0.3s;}
-        .reset-button:hover { background-color: #3f51b5;}
-        .checkbox-group { display: flex; align-items: center; margin-top: 15px;}
-        .checkbox-group input { width: auto; margin-right: 10px;}
-        .table-container { overflow-x: auto; background: white; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); margin-bottom: 20px;}
-        table { width: 100%; border-collapse: collapse; min-width: 1000px;}
-        th, td { padding: 12px 10px; text-align: left; border-bottom: 1px solid #eee; font-size: 13px;}
-        th { background-color: #2c3e50; color: white; position: sticky; top: 0; font-weight: 600; cursor: pointer; user-select: none;}
-        th:hover { background-color: #34495e;}
-        tr:nth-child(even) { background-color: #f9f9f9;}
-        tr:hover { background-color: #f1f7ff; cursor: pointer;}
-        .status-aktiv { color: #27ae60; font-weight: bold;}
-        .status-verletzt { color: #e74c3c; font-weight: bold;}
-        .status-gesperrt { color: #e74c3c; font-weight: bold;}
-        .status-reha { color: #f39c12; font-weight: bold;}
-        .status-nichtliga { color: #7f8c8d; font-style: italic;}
-        .club-logo { width: 25px; height: 25px; object-fit: contain; margin-right: 10px; vertical-align: middle;}
-        
-        /* Debug-Bereich */
-        .debug-toggle { display: none;}
-        .debug-label { background: #3498db; color: white; padding: 12px; border-radius: 6px; cursor: pointer; user-select: none; font-weight: bold; margin: 15px 0; display: block;}
-        .debug-label::before { content: '▶ '; transition: transform 0.3s ease; display: inline-block; width: 20px;}
-        .debug-toggle:checked + .debug-label::before { transform: rotate(90deg);}
-        .debug-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out; background: #f0f8ff; border: 1px solid #cce; border-radius: 0 0 6px 6px; margin-top: -5px;}
-        .debug-toggle:checked + .debug-label + .debug-content { max-height: 300px; overflow-y: auto;}
-        .debug-inner { padding: 15px; font-family: monospace; font-size: 12px; line-height: 1.5;}
-        
-        /* News-Panel - Debug-Style, aber größer */
-        .news-collapsible {
-            margin-bottom: 24px;
-            border-radius: 8px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-            background: #fff;
-            overflow: hidden;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .news-header {
-            background: #3498db;
-            color: white;
-            padding: 14px 18px;
-            border-radius: 8px 8px 0 0;
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        /* Debug Section */
+        .debug-section {
+            background-color: #ffe6e6;
+            border: 1px solid #ffcccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .debug-section h2 {
+            color: #cc0000;
+            margin-bottom: 10px;
+        }
+
+        .debug-info {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .debug-item {
+            background-color: #ffffff;
+            padding: 8px 12px;
+            border-radius: 3px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+
+        /* News Section */
+        .news-section {
+            background-color: #e6f3ff;
+            border: 1px solid #b3d9ff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        .news-section h2 {
+            color: #0066cc;
+            margin-bottom: 15px;
+        }
+
+        .news-item {
+            background-color: #ffffff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            border-left: 4px solid #0066cc;
+        }
+
+        .news-item h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .news-item p {
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .news-meta {
+            font-size: 12px;
+            color: #999;
+            margin-top: 8px;
+        }
+
+        /* Filter Container */
+        .filter-container {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .filter-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
             cursor: pointer;
             user-select: none;
-            font-weight: bold;
-            font-size: 1.1em;
+        }
+
+        .filter-header:hover {
+            background-color: #e9ecef;
+        }
+
+        .filter-header h3 {
             margin: 0;
-            display: flex;
-            align-items: center;
-            transition: background 0.3s ease;
+            color: #333;
+            font-size: 16px;
         }
-        .news-header:hover {
-            background: #2980b9;
-        }
-        .news-header span:first-child {
-            flex: 1;
-        }
-        .news-header::before {
-            content: '▶ ';
+
+        .toggle-filter {
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            color: #666;
             transition: transform 0.3s ease;
-            display: inline-block;
-            width: 20px;
-            margin-right: 8px;
         }
-        .news-header.expanded::before {
-            transform: rotate(90deg);
+
+        .toggle-filter.collapsed {
+            transform: rotate(-90deg);
         }
-        #news-toggle-icon {
+
+        .filter-panel {
+            padding: 20px;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+            max-height: 500px;
+            overflow: hidden;
+        }
+
+        .filter-panel.collapsed {
+            max-height: 0;
+            padding: 0 20px;
+        }
+
+        .filter-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .filter-group label {
+            font-weight: bold;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .filter-input,
+        .filter-select {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        .filter-input:focus,
+        .filter-select:focus {
+            outline: none;
+            border-color: #0066cc;
+            box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.1);
+        }
+
+        /* Debug Filter kleiner */
+        .debug-filter .filter-input {
+            width: 100px;
+        }
+
+        /* Andere Filter größer */
+        .status-filter .filter-select,
+        .name-filter .filter-input,
+        .level-filter .filter-select {
+            width: 150px;
+        }
+
+        .filter-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #0066cc;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #0052a3;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #545b62;
+        }
+
+        /* Table Container */
+        .table-container {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .table-header {
+            background-color: #f8f9fa;
+            padding: 15px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .table-header h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .table-stats {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        #dataTable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #dataTable th,
+        #dataTable td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        #dataTable th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        #dataTable tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        #dataTable tr.hidden {
             display: none;
         }
-        .news-list {
-            padding: 0;
-            background: #f0f8ff;
-            border: 1px solid #cce;
-            border-top: none;
-            border-radius: 0 0 8px 8px;
-            margin-top: -1px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-in-out;
-        }
-        .news-list.expanded {
-            max-height: 420px;
-            overflow-y: auto;
-        }
-        .news-day {
-            margin-bottom: 12px;
-            border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 8px;
-        }
-        .news-date-header {
-            background: #1976d2;
-            color: white;
-            padding: 10px 15px;
-            font-weight: bold;
-            font-size: 1.1em;
-            margin-bottom: 8px;
-            border-radius: 4px;
-        }
-        .news-category {
-            background: #e3f2fd;
-            color: #1565c0;
-            padding: 8px 15px;
-            font-weight: 600;
-            font-size: 0.95em;
-            margin: 8px 0 4px 0;
-            border-left: 4px solid #2196f3;
-        }
-        .news-item {
-            padding: 8px 15px;
-            margin-bottom: 4px;
-            background: #fff;
-            border-left: 2px solid #e0e0e0;
-        }
-        .news-text {
-            color: #333;
-            line-height: 1.4;
-            font-size: 0.9em;
-        }
-        .news-empty {
-            padding: 20px;
-            color: #888;
+
+        .no-results {
             text-align: center;
-            font-family: monospace;
-            font-size: 12px;
+            padding: 40px 20px;
+            color: #666;
+            font-style: italic;
         }
-        @media (max-width: 700px) {
-            .news-date-header { font-size: 1em; padding: 8px 12px; }
-            .news-category { font-size: 0.9em; padding: 6px 12px; }
-            .news-item { padding: 6px 12px; }
-            .news-text { font-size: 0.85em; }
+
+        /* Status Indicators */
+        .status-active {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .status-inactive {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        .status-pending {
+            color: #ffc107;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .filter-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .filter-group {
+                width: 100%;
+            }
+
+            .filter-input,
+            .filter-select {
+                width: 100% !important;
+            }
+
+            .debug-info {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <header>
-        <h1>⚽ Comunio Ultraz - Spielerdatenbank</h1>
-        <p class="subtitle">Fußballspieler Daten • Live von GitHub</p>
-    </header>
-    <div id="loading" class="loading">
-        <p>📡 Lade aktuelle Spielerdaten...</p>
-    </div>
-    <div id="error" class="error" style="display: none;">
-        <p id="errorMessage">Fehler beim Laden der Daten.</p>
-    </div>
-    <div id="stats" class="stats" style="display: none;">
-        <span id="statsText"></span>
-        <button id="refreshButton" class="refresh-button">🔄 Daten neu laden</button>
-    </div>
-    
-    <!-- News Panel (Debug-Style, größer) -->
-    <div id="news-section" class="news-collapsible">
-        <div class="news-header" onclick="toggleNewsList()" id="news-header">
-            <span>News</span>
-        </div>
-        <div id="news-list" class="news-list">
-            <div class="news-empty">Lade News...</div>
+    <!-- Debug Section -->
+    <div class="debug-section">
+        <h2>Debug Informationen</h2>
+        <div class="debug-info">
+            <div class="debug-item">Version: 1.2.3</div>
+            <div class="debug-item">Status: <span id="debugStatus">Aktiv</span></div>
+            <div class="debug-item">Datensätze: <span id="debugCount">0</span></div>
+            <div class="debug-item">Letztes Update: <span id="debugUpdate">-</span></div>
         </div>
     </div>
-    
-    <!-- Debug-Bereich -->
-    <div id="debugSection">
-        <input type="checkbox" id="debugToggle" class="debug-toggle">
-        <label for="debugToggle" class="debug-label">Debug-Informationen</label>
-        <div class="debug-content">
-            <div class="debug-inner" id="debugContent"></div>
-        </div>
-    </div>
-    
-    <div id="content" style="display: none;">
-        <div class="filters">
-            <div class="filter-group">
-                <label for="search">🔍 Spieler suchen:</label>
-                <input type="text" id="search" placeholder="Name oder ID...">
-            </div>
-            <div class="filter-group">
-                <label for="position">📍 Position:</label>
-                <select id="position">
-                    <option value="">Alle Positionen</option>
-                    <option value="TORHÜTER">Torhüter</option>
-                    <option value="ABWEHR">Abwehr</option>
-                    <option value="MITTELFELD">Mittelfeld</option>
-                    <option value="STURM">Sturm</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <label for="status">💪 Status:</label>
-                <select id="status">
-                    <option value="">Alle Status</option>
-                    <option value="AKTIV">Aktiv</option>
-                    <option value="VERLETZT">Verletzt</option>
-                    <option value="AUFBAUTRAINING">Aufbautraining</option>
-                    <option value="NICHT_IM_KADER">Nicht im Kader</option>
-                    <option value="FUENFTE_GELBE_KARTE">5. gelbe Karte</option>
-                    <option value="GELBROTE_KARTE">Gelbrote Karte</option>
-                    <option value="ROTE_KARTE">Rote Karte</option>
-                    <option value="NICHT_IN_LIGA">Nicht in Liga</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <label for="club">🏟️ Verein:</label>
-                <select id="club">
-                    <option value="">Alle Vereine</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <label for="owner">👤 Besitzer:</label>
-                <select id="owner">
-                    <option value="">Alle Besitzer</option>
-                    <option value="Kein Besitzer">Kein Besitzer</option>
-                </select>
-            </div>
-            <div class="checkbox-group">
-                <input type="checkbox" id="hideNonLeague" checked>
-                <label for="hideNonLeague">Nicht-in-Liga-Spieler ausblenden</label>
-            </div>
-        </div>
-        <div style="text-align: center; margin: 15px 0;">
-            <button type="button" class="reset-button" id="resetFilters">Filter zurücksetzen</button>
-        </div>
-        <div class="table-container">
-            <table id="playerTable">
-                <thead>
-                    <tr>
-                        <th data-sort="string">Spieler</th>
-                        <th data-sort="string">Verein</th>
-                        <th data-sort="string">Position</th>
-                        <th data-sort="string">Status</th>
-                        <th data-sort="value">Marktwert</th>
-                        <th data-sort="number">Punkte</th>
-                        <th data-sort="string">Besitzer</th>
-                        <th data-sort="string">Letztes Update</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
-    </div>
-</div>
 
-<!-- News Script -->
-<script>
-function parseGermanDate(str) {
-    const [d, m, y] = str.split(".");
-    return new Date(Number(y), Number(m) - 1, Number(d));
-}
+    <!-- News Section -->
+    <div class="news-section">
+        <h2>Aktuelle Nachrichten</h2>
+        <div class="news-item">
+            <h3>System Update verfügbar</h3>
+            <p>Ein neues Update für das Tabellensystem ist verfügbar. Neue Features und Verbesserungen wurden hinzugefügt.</p>
+            <div class="news-meta">Heute, 14:30 Uhr</div>
+        </div>
+        <div class="news-item">
+            <h3>Wartungsarbeiten geplant</h3>
+            <p>Am kommenden Wochenende sind Wartungsarbeiten geplant. Das System wird kurzzeitig nicht verfügbar sein.</p>
+            <div class="news-meta">Gestern, 16:45 Uhr</div>
+        </div>
+        <div class="news-item">
+            <h3>Neue Filterfunktionen</h3>
+            <p>Das Filtersystem wurde erweitert und bietet nun noch mehr Möglichkeiten zur Datenanalyse.</p>
+            <div class="news-meta">02.07.2025, 10:15 Uhr</div>
+        </div>
+    </div>
 
-function toggleNewsList() {
-    const list = document.getElementById('news-list');
-    const header = document.getElementById('news-header');
-    
-    if (list.classList.contains('expanded')) {
-        list.classList.remove('expanded');
-        header.classList.remove('expanded');
-    } else {
-        list.classList.add('expanded');
-        header.classList.add('expanded');
-    }
-}
+    <!-- Filter Container -->
+    <div class="filter-container">
+        <div class="filter-header" onclick="toggleFilter()">
+            <h3>Filter & Suchoptionen</h3>
+            <button class="toggle-filter" id="toggleIcon">▼</button>
+        </div>
+        <div class="filter-panel" id="filterPanel">
+            <div class="filter-row">
+                <div class="filter-group debug-filter">
+                    <label for="debugFilter">Debug:</label>
+                    <input type="text" id="debugFilter" class="filter-input" placeholder="Debug...">
+                </div>
+                <div class="filter-group name-filter">
+                    <label for="nameFilter">Name:</label>
+                    <input type="text" id="nameFilter" class="filter-input" placeholder="Name suchen...">
+                </div>
+                <div class="filter-group status-filter">
+                    <label for="statusFilter">Status:</label>
+                    <select id="statusFilter" class="filter-select">
+                        <option value="">Alle Status</option>
+                        <option value="Aktiv">Aktiv</option>
+                        <option value="Inaktiv">Inaktiv</option>
+                        <option value="Ausstehend">Ausstehend</option>
+                    </select>
+                </div>
+                <div class="filter-group level-filter">
+                    <label for="levelFilter">Level:</label>
+                    <select id="levelFilter" class="filter-select">
+                        <option value="">Alle Level</option>
+                        <option value="1">Level 1</option>
+                        <option value="2">Level 2</option>
+                        <option value="3">Level 3</option>
+                        <option value="4">Level 4</option>
+                        <option value="5">Level 5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-actions">
+                <button class="btn btn-primary" onclick="applyFilters()">Filter anwenden</button>
+                <button class="btn btn-secondary" onclick="clearFilters()">Filter zurücksetzen</button>
+            </div>
+        </div>
+    </div>
 
-// Lade News - gruppiert nach Kategorien
-fetch('News.json')
-    .then(response => response.json())
-    .then(data => {
-        data.sort((a, b) => parseGermanDate(b.date) - parseGermanDate(a.date));
-        let html = '';
-        if (!data.length) {
-            html = '<div class="news-empty">Keine News vorhanden.</div>';
-        } else {
-            for (const day of data) {
-                html += `<div class="news-day">
-                    <div class="news-date-header">${day.date}</div>`;
-                
-                // Gruppiere nach Kategorie
-                const grouped = {};
-                for (const news of day.news) {
-                    if (!grouped[news.art]) grouped[news.art] = [];
-                    grouped[news.art].push(news);
-                }
-                
-                // Für jede Kategorie: Überschrift, dann alle Nachrichten
-                for (const art of Object.keys(grouped).sort()) {
-                    html += `<div class="news-category">${art}</div>`;
-                    for (const news of grouped[art]) {
-                        let text = '';
-                        try {
-                            const obj = JSON.parse(news.text);
-                            if (art === 'TRANSFER') {
-                                text = `<span style="color:#333;">${obj.playerName}</span> von <b>${obj.seller}</b> zu <b>${obj.buyer}</b> für <b>${obj.price.toLocaleString('de-DE')} €</b> (Marktwert: ${obj.playerValue.toLocaleString('de-DE')} €)`;
-                            } else {
-                                text = news.text;
-                            }
-                        } catch {
-                            text = news.text;
-                        }
-                        html += `<div class="news-item">
-                            <div class="news-text">${text}</div>
-                        </div>`;
-                    }
-                }
-                html += '</div>';
+    <!-- Table Container -->
+    <div class="table-container">
+        <div class="table-header">
+            <h3>Spielerdaten</h3>
+            <div class="table-stats">
+                <span id="visibleCount">0</span> von <span id="totalCount">0</span> Einträgen angezeigt
+            </div>
+        </div>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Level</th>
+                    <th>Punkte</th>
+                    <th>Registriert</th>
+                    <th>Debug</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Daten werden hier dynamisch geladen -->
+            </tbody>
+        </table>
+        <div id="noResults" class="no-results" style="display: none;">
+            Keine Ergebnisse gefunden. Bitte passen Sie Ihre Filter an.
+        </div>
+    </div>
+
+    <script>
+        // Sample player data
+        const playerData = [
+            { id: 1, name: "Max Mustermann", status: "Aktiv", level: 5, points: 1250, registered: "2025-01-15", debug: "usr001" },
+            { id: 2, name: "Anna Schmidt", status: "Inaktiv", level: 3, points: 890, registered: "2025-02-20", debug: "usr002" },
+            { id: 3, name: "Peter Wilson", status: "Aktiv", level: 4, points: 1100, registered: "2025-01-30", debug: "usr003" },
+            { id: 4, name: "Lisa Müller", status: "Ausstehend", level: 2, points: 650, registered: "2025-03-10", debug: "usr004" },
+            { id: 5, name: "Tom Brown", status: "Aktiv", level: 5, points: 1450, registered: "2025-01-05", debug: "usr005" },
+            { id: 6, name: "Sarah Johnson", status: "Inaktiv", level: 1, points: 200, registered: "2025-04-12", debug: "usr006" },
+            { id: 7, name: "Michael Davis", status: "Aktiv", level: 3, points: 980, registered: "2025-02-28", debug: "usr007" },
+            { id: 8, name: "Emma Wilson", status: "Aktiv", level: 4, points: 1350, registered: "2025-01-18", debug: "usr008" },
+            { id: 9, name: "David Taylor", status: "Ausstehend", level: 2, points: 720, registered: "2025-03-25", debug: "usr009" },
+            { id: 10, name: "Sophie Martinez", status: "Aktiv", level: 5, points: 1600, registered: "2025-01-08", debug: "usr010" }
+        ];
+
+        let filteredData = [...playerData];
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            loadPlayerData();
+            setupFilterListeners();
+            updateDebugInfo();
+        });
+
+        // Toggle filter panel
+        function toggleFilter() {
+            const filterPanel = document.getElementById('filterPanel');
+            const toggleIcon = document.getElementById('toggleIcon');
+            
+            filterPanel.classList.toggle('collapsed');
+            toggleIcon.classList.toggle('collapsed');
+            
+            if (filterPanel.classList.contains('collapsed')) {
+                toggleIcon.textContent = '▶';
+            } else {
+                toggleIcon.textContent = '▼';
             }
         }
-        document.getElementById('news-list').innerHTML = html;
-    })
-    .catch(() => {
-        document.getElementById('news-list').innerHTML = '<div class="news-empty">Fehler beim Laden der News.</div>';
-    });
-</script>
 
-<!-- Hauptscript für Spielerdaten -->
-<script>
-    const GITHUB_USER = "torresbig";
-    const GITHUB_REPO = "comunioFanApp";
-    const DATA_URLS = {
-        clubs: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/VereinsdatenbankJson.txt`,
-        players: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/SpielerdatenbankNeutralJson.txt`,
-        users: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/UserdatenbankJson_884691.txt`,
-        playerToUser: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/PlayerToUserMap_884691.txt`
-    };
-
-    function getLogoFileName(clubId) {
-        if (!clubId) return "unbestimmt.png";
-        const mapping = {
-            "3": "gladbach",
-            "21": "freiburg",
-            "18": "mainz",
-            "92": "leipzig",
-            "1": "bayern",
-            "6": "werderBremen",
-            "12": "wolfsburg",
-            "5": "dortmund",
-            "8": "leverkusen",
-            "13": "koeln",
-            "14": "stuttgart",
-            "62": "hoffenheim",
-            "68": "augsburg",
-            "9": "frankfurt",
-            "109": "unionBerlin",
-            "110": "heidenheim",
-            "25": "stpauli",
-            "4": "hamburg",
-        };
-        return (mapping[clubId] || "unbestimmt") + ".png";
-    }
-
-    let allPlayers = [];
-    let clubsMap = new Map();
-    let ownersMap = new Map();
-    let filteredPlayers = [];
-    let lastUpdateTime = null;
-
-    function addDebug(message) {
-        const debugDiv = document.getElementById('debugContent');
-        debugDiv.innerHTML += `<div>${new Date().toLocaleTimeString()}: ${message}</div>`;
-        debugDiv.scrollTop = debugDiv.scrollHeight;
-    }
-
-    document.addEventListener('DOMContentLoaded', async () => {
-        try {
-            addDebug("Seite geladen, starte Datenladevorgang...");
-            await loadData();
-            setupSorting();
-        } catch (error) {
-            showError("Laden fehlgeschlagen: " + error.message);
-            addDebug("Fehler beim Laden: " + error.message);
-        }
-        document.getElementById('refreshButton').addEventListener('click', async () => {
-            try {
-                addDebug("Manuelles Neuladen gestartet...");
-                await loadData();
-            } catch (error) {
-                showError("Neuladen fehlgeschlagen: " + error.message);
-                addDebug("Fehler beim Neuladen: " + error.message);
-            }
-        });
-        document.getElementById('hideNonLeague').addEventListener('change', applyFilters);
-    });
-
-    async function loadData() {
-        try {
-            showLoading();
-            addDebug("Starte Ladevorgang...");
-            addDebug(`Lade URLs:
-                Clubs: ${DATA_URLS.clubs}
-                Players: ${DATA_URLS.players}
-                Users: ${DATA_URLS.users}
-                PlayerToUser: ${DATA_URLS.playerToUser}`);
-            const [clubsData, playersData, usersData, playerToUserMap] = await Promise.all([
-                fetchJSON(DATA_URLS.clubs),
-                fetchJSON(DATA_URLS.players),
-                fetchJSON(DATA_URLS.users),
-                fetchJSON(DATA_URLS.playerToUser)
-            ]);
-
-            addDebug("Daten erfolgreich geladen, verarbeite...");
-            addDebug(`Daten empfangen:
-                Clubs: ${clubsData.length}
-                Players: ${playersData.length}
-                Users: ${usersData.length}
-                PlayerToUser: ${playerToUserMap.length}`);
-            processData(clubsData, playersData, usersData, playerToUserMap);
-            lastUpdateTime = new Date();
-            hideLoading();
-            showStats();
-            showContent();
-            setupEventListeners();
-            applyFilters();
-            addDebug("Datenverarbeitung abgeschlossen.");
-        } catch (error) {
-            hideLoading();
-            addDebug("Fehler beim Laden: " + error.message);
-            throw error;
-        }
-    }
-
-    async function fetchJSON(url) {
-        addDebug(`Lade Datei: ${url}`);
-        const cacheBusterUrl = url + '?t=' + new Date().getTime();
-        try {
-            const response = await fetch(cacheBusterUrl);
-            if (!response.ok) {
-                addDebug(`Fehler beim Laden: HTTP ${response.status}`);
-                throw new Error(`HTTP ${response.status} für ${url}`);
-            }
-            const text = await response.text();
-            if (!text.trim()) {
-                addDebug("Warnung: Datei ist leer!");
-                throw new Error("Leere Datei: " + url);
-            }
-            addDebug("Datei geladen, versuche JSON zu parsen...");
-            const data = JSON.parse(text);
-            addDebug(`Erfolgreich geparst: ${data.length || Object.keys(data).length} Einträge`);
-            return data;
-        } catch (error) {
-            addDebug("Fehler beim Laden/JSON-Parsen: " + error.message);
-            throw error;
-        }
-    }
-
-    function processData(clubsData, playersData, usersData, playerToUserMap) {
-        addDebug("Starte Datenverarbeitung...");
-        clubsMap = new Map();
-        clubsData.forEach(club => {
-            clubsMap.set(club.id, club.name);
-        });
-        addDebug(`Vereine verarbeitet: ${clubsMap.size}`);
-        allPlayers = playersData.map(player => ({
-            ...player,
-            position: player.data?.position || "Unbekannt"
-        }));
-        addDebug(`Spieler verarbeitet: ${allPlayers.length}`);
-        const userMap = new Map();
-        usersData.forEach(user => {
-            userMap.set(user.user.id, `${user.user.firstName} ${user.user.lastName || ''}`);
-        });
-        addDebug(`Benutzer verarbeitet: ${userMap.size}`);
-        ownersMap = new Map();
-        playerToUserMap.forEach(item => {
-            const playerId = Object.keys(item)[0];
-            const ownerId = item[playerId];
-            ownersMap.set(playerId, userMap.get(ownerId) || `Unbekannt (${ownerId})`);
-        });
-        allPlayers.forEach(player => {
-            if (!ownersMap.has(player.id)) {
-                ownersMap.set(player.id, "Computer");
-            }
-        });
-        addDebug(`Besitzerzuordnungen: ${ownersMap.size}`);
-        initClubFilter();
-        initOwnerFilter();
-        addDebug("Datenverarbeitung abgeschlossen.");
-    }
-
-    function initClubFilter() {
-        const clubFilter = document.getElementById('club');
-        clubFilter.innerHTML = '<option value="">Alle Vereine</option>';
-        const uniqueClubs = [...new Set(clubsMap.values())].sort();
-        uniqueClubs.forEach(club => {
-            const option = document.createElement('option');
-            option.value = club;
-            option.textContent = club;
-            clubFilter.appendChild(option);
-        });
-    }
-
-    function initOwnerFilter() {
-        const ownerFilter = document.getElementById('owner');
-        ownerFilter.innerHTML = '<option value="">Alle Besitzer</option>';
-        const ownerSet = new Set(ownersMap.values());
-        ownerSet.forEach(owner => {
-            if (owner !== "Kein Besitzer") {
-                const option = document.createElement('option');
-                option.value = owner;
-                option.textContent = owner;
-                ownerFilter.appendChild(option);
-            }
-        });
-    }
-
-    function showLoading() {
-        document.getElementById('loading').style.display = 'block';
-        document.getElementById('content').style.display = 'none';
-        document.getElementById('error').style.display = 'none';
-    }
-
-    function hideLoading() {
-        document.getElementById('loading').style.display = 'none';
-    }
-
-    function showContent() {
-        document.getElementById('content').style.display = 'block';
-    }
-
-    function showError(message) {
-        hideLoading();
-        const errorDiv = document.getElementById('error');
-        document.getElementById('errorMessage').textContent = message;
-        errorDiv.style.display = 'block';
-    }
-
-    function showStats() {
-        const statsDiv = document.getElementById('stats');
-        const statsText = document.getElementById('statsText');
-        const updateTime = lastUpdateTime ? lastUpdateTime.toLocaleTimeString() : "Noch nicht aktualisiert";
-        const anzahlBesitzer = (() => {
-            const ownerSet = new Set(ownersMap.values());
-            ownerSet.delete("Kein Besitzer");
-            return ownerSet.size;
-        })();
-        statsText.innerHTML = `📊 ${allPlayers.length} Spieler • ${clubsMap.size} Vereine • ${anzahlBesitzer} Besitzer<br>
-                               🕒 Letztes Update: ${updateTime}`;
-        statsDiv.style.display = 'block';
-    }
-
-    function getPlayerUrl(playerId) {
-        const currentUrl = window.location.href;
-        if (currentUrl.includes('htmlpreview.github.io')) {
-            return `https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${playerId}`;
-        } else if (currentUrl.includes('github.com') || currentUrl.includes('githubusercontent.com')) {
-            return `https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${playerId}`;
-        } else {
-            return `player.html?id=${playerId}`;
-        }
-    }
-
-    function renderTable(players) {
-        const tableBody = document.querySelector('#playerTable tbody');
-        tableBody.innerHTML = '';
-        addDebug(`Rendere Tabelle mit ${players.length} Spielern`);
-        players.forEach(player => {
-            const row = document.createElement('tr');
-            row.setAttribute('data-player-id', player.id);
-            row.addEventListener('click', (e) => {
-                if (e.target.tagName !== 'TH' && !e.target.closest('th')) {
-                    addDebug(`Spieler angeklickt: ${player.name} (ID: ${player.id})`);
-                    const playerUrl = getPlayerUrl(player.id);
-                    addDebug(`Navigation zu: ${playerUrl}`);
-                    window.location.href = playerUrl;
-                }
+        // Load player data into table
+        function loadPlayerData() {
+            const tableBody = document.getElementById('tableBody');
+            tableBody.innerHTML = '';
+            
+            filteredData.forEach(player => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${player.id}</td>
+                    <td>${player.name}</td>
+                    <td><span class="status-${player.status.toLowerCase()}">${player.status}</span></td>
+                    <td>${player.level}</td>
+                    <td>${player.points}</td>
+                    <td>${player.registered}</td>
+                    <td>${player.debug}</td>
+                `;
+                tableBody.appendChild(row);
             });
-            const clubId = player.data?.verein || "0";
-            const clubName = clubsMap.get(clubId) || 'UNBEKANNT';
-            const logoFile = getLogoFileName(clubId);
-            const logoHtml = `<img src="logos/${logoFile}" class="club-logo" alt="${clubName}" title="${clubName}">`;
-            const playerName = player.name || "Unbekannt";
-            const playerId = player.id || "";
-            const playerNameHtml = `<span title="${playerName} (ID: ${playerId})">${playerName}</span>`;
-            const position = player.position || "Unbekannt";
-            const hauptposition = player.data?.spielerDaten?.hauptposition || "N/A";
-            const nebenpositionen = player.data?.spielerDaten?.nebenpositionen || [];
-            const nebenpositionenTooltip = nebenpositionen.length > 0 ? "Hauptposition: " + hauptposition + " | Nebenposition: " + nebenpositionen.join(", ") : "";
-            const positionHtml = `<span title="${nebenpositionenTooltip}">${player.position || "Unbekannt"}</span>`;
-            const status = player.data?.status?.status || 'AKTIV';
-            let statusClass = "";
-            if (status.includes("AKTIV")) statusClass = "status-aktiv";
-            else if (status.includes("VERLETZT")) statusClass = "status-verletzt";
-            else if (status.includes("AUFBAU")) statusClass = "status-reha";
-            else if (status.includes("ROTE_KARTE")) statusClass = "status-gesperrt";
-            else if (status.includes("GELBROTE_KARTE")) statusClass = "status-gesperrt";
-            else if (status.includes("FUENFTE_GELBE_KARTE")) statusClass = "status-gesperrt";
-            else if (status.includes("NICHT_IN_LIGA")) statusClass = "status-nichtliga";
-            else if (status.includes("NICHT_IM_KADER")) statusClass = "status-nichtliga";
-            let marketValue = 'Unbekannt';
-            let marketValueSort = 0;
-            if (player.data?.wert) {
-                marketValueSort = player.data.wert;
-                marketValue = marketValueSort < 1000000
-                    ? `${(marketValueSort / 1000).toFixed(0)} Tsd. €`
-                    : `${(marketValueSort / 1000000).toFixed(2)} Mio. €`;
-            }
-            const owner = ownersMap.get(player.id) || 'Computer';
-            const points = player.data?.punkte || 0;
-            const lastUpdate = player.data?.lastUpdate || 'Unbekannt';
-            row.innerHTML = `
-                <td data-sort="${playerName}">${playerNameHtml}</td>
-                <td data-sort="${clubName}">${logoHtml}</td>
-                <td data-sort="${position}">${positionHtml}</td>
-                <td data-sort="${status}" class="${statusClass}">${status}</td>
-                <td data-sort="${marketValueSort}">${marketValue}</td>
-                <td data-sort="${points}">${points}</td>
-                <td data-sort="${owner}">${owner}</td>
-                <td data-sort="${lastUpdate}">${lastUpdate}</td>
-            `;
-            tableBody.appendChild(row);
-        });
-    }
+            
+            updateStats();
+        }
 
-    function applyFilters() {
-        addDebug("Filter werden angewendet...");
-        const searchTerm = document.getElementById('search').value.toLowerCase();
-        const clubFilter = document.getElementById('club').value;
-        const positionFilter = document.getElementById('position').value;
-        const statusFilter = document.getElementById('status').value;
-        const ownerFilter = document.getElementById('owner').value;
-        const hideNonLeague = document.getElementById('hideNonLeague').checked;
-        filteredPlayers = allPlayers.filter(player => {
-            if (searchTerm && 
-                !player.name.toLowerCase().includes(searchTerm) &&
-                !player.id.toLowerCase().includes(searchTerm)) {
-                return false;
-            }
-            if (clubFilter) {
-                const clubName = clubsMap.get(player.data?.verein) || '';
-                if (clubName !== clubFilter) return false;
-            }
-            if (positionFilter && player.position !== positionFilter) return false;
-            const statusValue = player.data?.status?.status || '';
-            if (statusFilter && !statusValue.includes(statusFilter)) return false;
-            const owner = ownersMap.get(player.id) || 'Kein Besitzer';
-            if (ownerFilter === "Kein Besitzer" && owner !== 'Kein Besitzer') return false;
-            if (ownerFilter && ownerFilter !== "Kein Besitzer" && owner !== ownerFilter) return false;
-            if (hideNonLeague && statusValue.includes("NICHT_IN_LIGA")) {
-                return false;
-            }
-            return true;
-        });
-        renderTable(filteredPlayers);
-        addDebug("Filter angewendet.");
-    }
-
-    function resetFilters() {
-        document.getElementById('search').value = '';
-        document.getElementById('position').value = '';
-        document.getElementById('status').value = '';
-        document.getElementById('club').value = '';
-        document.getElementById('owner').value = '';
-        document.getElementById('hideNonLeague').checked = true;
-        applyFilters();
-        addDebug("Filter zurückgesetzt.");
-    }
-
-    function setupEventListeners() {
-        document.getElementById('search').addEventListener('input', applyFilters);
-        document.getElementById('position').addEventListener('change', applyFilters);
-        document.getElementById('status').addEventListener('change', applyFilters);
-        document.getElementById('club').addEventListener('change', applyFilters);
-        document.getElementById('owner').addEventListener('change', applyFilters);
-        document.getElementById('resetFilters').addEventListener('click', resetFilters);
-    }
-
-    function setupSorting() {
-        const table = document.getElementById('playerTable');
-        const headers = table.querySelectorAll('th[data-sort]');
-        headers.forEach(header => {
-            header.addEventListener('click', () => {
-                const sortType = header.getAttribute('data-sort');
-                const columnIndex = [...header.parentNode.children].indexOf(header);
-                const rows = [...table.querySelectorAll('tbody tr')];
-                let sortOrder = 1;
-                if (header.classList.contains('sorted-asc')) {
-                    header.classList.remove('sorted-asc');
-                    header.classList.add('sorted-desc');
-                    sortOrder = -1;
-                } else if (header.classList.contains('sorted-desc')) {
-                    header.classList.remove('sorted-desc');
-                    sortOrder = 0;
-                } else {
-                    header.classList.add('sorted-asc');
-                }
-                headers.forEach(h => {
-                    if (h !== header) {
-                        h.classList.remove('sorted-asc', 'sorted-desc');
-                    }
-                });
-                if (sortOrder === 0) {
-                    applyFilters();
-                    return;
-                }
-                rows.sort((a, b) => {
-                    const aCell = a.children[columnIndex];
-                    const bCell = b.children[columnIndex];
-                    let aValue = aCell.getAttribute('data-sort') || aCell.textContent;
-                    let bValue = bCell.getAttribute('data-sort') || bCell.textContent;
-                    if (sortType === 'number' || sortType === 'value') {
-                        aValue = parseFloat(aValue) || 0;
-                        bValue = parseFloat(bValue) || 0;
-                    }
-                    return (aValue < bValue ? -1 : 1) * sortOrder;
-                });
-                const tbody = table.querySelector('tbody');
-                rows.forEach(row => tbody.appendChild(row));
-                addDebug(`Tabelle sortiert nach Spalte ${columnIndex + 1} (${sortOrder === 1 ? 'aufsteigend' : 'absteigend'})`);
+        // Setup filter event listeners
+        function setupFilterListeners() {
+            const filterInputs = document.querySelectorAll('.filter-input, .filter-select');
+            
+            filterInputs.forEach(input => {
+                input.addEventListener('input', applyFilters);
+                input.addEventListener('change', applyFilters);
             });
-        });
-    }
-</script>
+        }
+
+        // Apply filters
+        function applyFilters() {
+            const debugFilter = document.getElementById('debugFilter').value.toLowerCase();
+            const nameFilter = document.getElementById('nameFilter').value.toLowerCase();
+            const statusFilter = document.getElementById('statusFilter').value;
+            const levelFilter = document.getElementById('levelFilter').value;
+            
+            filteredData = playerData.filter(player => {
+                const matchesDebug = !debugFilter || player.debug.toLowerCase().includes(debugFilter);
+                const matchesName = !nameFilter || player.name.toLowerCase().includes(nameFilter);
+                const matchesStatus = !statusFilter || player.status === statusFilter;
+                const matchesLevel = !levelFilter || player.level.toString() === levelFilter;
+                
+                return matchesDebug && matchesName && matchesStatus && matchesLevel;
+            });
+            
+            loadPlayerData();
+            updateDebugInfo();
+        }
+
+        // Clear all filters
+        function clearFilters() {
+            document.getElementById('debugFilter').value = '';
+            document.getElementById('nameFilter').value = '';
+            document.getElementById('statusFilter').value = '';
+            document.getElementById('levelFilter').value = '';
+            
+            filteredData = [...playerData];
+            loadPlayerData();
+            updateDebugInfo();
+        }
+
+        // Update statistics
+        function updateStats() {
+            const visibleCount = filteredData.length;
+            const totalCount = playerData.length;
+            
+            document.getElementById('visibleCount').textContent = visibleCount;
+            document.getElementById('totalCount').textContent = totalCount;
+            
+            const noResults = document.getElementById('noResults');
+            const tableBody = document.getElementById('tableBody');
+            
+            if (visibleCount === 0) {
+                noResults.style.display = 'block';
+                tableBody.style.display = 'none';
+            } else {
+                noResults.style.display = 'none';
+                tableBody.style.display = '';
+            }
+        }
+
+        // Update debug information
+        function updateDebugInfo() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('de-DE');
+            
+            document.getElementById('debugStatus').textContent = 'Aktiv';
+            document.getElementById('debugCount').textContent = filteredData.length;
+            document.getElementById('debugUpdate').textContent = timeString;
+        }
+
+        // Simulate real-time data updates
+        setInterval(updateDebugInfo, 5000);
+    </script>
 </body>
 </html>
