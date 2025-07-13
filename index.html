@@ -76,9 +76,7 @@
         <div id="error" class="error" style="display: none;">
             <p id="errorMessage">Fehler beim Laden der Daten.</p>
         </div>
-        <div id="updateInfo" class="update-info" style="display: none;">
-            <span id="updateText"></span>
-        </div>
+        
         <div id="stats" class="stats" style="display: none;">
             <span id="statsText"></span>
             <button id="refreshButton" class="refresh-button">🔄 Daten neu laden</button>
@@ -325,7 +323,7 @@
                 showContent();
                 setupEventListeners();
                 applyFilters();
-                showUpdate(`✅ ${lastUpdateTime.toLocaleTimeString()} - ${allPlayers.length} Spieler geladen`);
+            
                 addDebug("Datenverarbeitung abgeschlossen.");
             } catch (error) {
                 hideLoading();
@@ -439,11 +437,7 @@
             errorDiv.style.display = 'block';
         }
 
-        function showUpdate(message) {
-            const updateDiv = document.getElementById('updateInfo');
-            document.getElementById('updateText').textContent = message;
-            updateDiv.style.display = 'block';
-        }
+    
 
         function showStats() {
             const statsDiv = document.getElementById('stats');
