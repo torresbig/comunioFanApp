@@ -500,6 +500,39 @@
     ]
   },
   {
+    "date": "15.07.2025",
+    "news": [
+      {
+        "date": "15.07.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Nedeljković (ID: 34113)",
+        "playerId": "34113"
+      },
+      {
+        "date": "15.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Rexhbecaj\",\"price\":1870000,\"playerValue\":1620000,\"playerId\":\"32817\",\"buyer\":\"Christopher\"}",
+        "playerId": "32817"
+      },
+      {
+        "date": "15.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Stage (33640) ist jetzt VERLETZT (Fußverletzung)",
+        "playerId": "33640"
+      },
+      {
+        "date": "15.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Svanberg (33658) ist wieder AKTIV",
+        "playerId": "33658"
+      }
+    ]
+  },
+  {
     "date": "15.06.2025",
     "news": [
       {
@@ -562,6 +595,20 @@
         "gelesen": false,
         "text": "Statuswechsel: Capaldo (34233) ist wieder AKTIV",
         "playerId": "34233"
+      },
+      {
+        "date": "14.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Omlin\",\"price\":601000,\"playerValue\":490000,\"playerId\":\"33716\",\"buyer\":\"Tom\"}",
+        "playerId": "33716"
+      },
+      {
+        "date": "14.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Tom\",\"playerName\":\"Pereira Cardoso\",\"price\":264600,\"playerValue\":280000,\"playerId\":\"34122\",\"buyer\":\"Computer\"}",
+        "playerId": "34122"
       }
     ]
   },
@@ -642,6 +689,20 @@
         "gelesen": false,
         "text": "{\"seller\":\"Computer\",\"playerName\":\"Rapsch\",\"price\":160000,\"playerValue\":160000,\"playerId\":\"34132\",\"buyer\":\"Thomas\"}",
         "playerId": "34132"
+      },
+      {
+        "date": "13.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Bittencourt\",\"price\":1310000,\"playerValue\":1180000,\"playerId\":\"31932\",\"buyer\":\"Tom\"}",
+        "playerId": "31932"
+      },
+      {
+        "date": "13.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Glatzel\",\"price\":5310000,\"playerValue\":4420000,\"playerId\":\"33375\",\"buyer\":\"Florian\"}",
+        "playerId": "33375"
       }
     ]
   },
