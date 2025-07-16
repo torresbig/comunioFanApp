@@ -453,6 +453,39 @@
     ]
   },
   {
+    "date": "16.07.2025",
+    "news": [
+      {
+        "date": "16.07.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Massengo (ID: 34236)",
+        "playerId": "34236"
+      },
+      {
+        "date": "16.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"İnanoğlu\",\"price\":199000,\"playerValue\":170000,\"playerId\":\"34223\",\"buyer\":\"damian\"}",
+        "playerId": "34223"
+      },
+      {
+        "date": "16.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Berisha\",\"price\":1219000,\"playerValue\":1100000,\"playerId\":\"33683\",\"buyer\":\"damian\"}",
+        "playerId": "33683"
+      },
+      {
+        "date": "16.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Klanac (34101) ist wieder AKTIV",
+        "playerId": "34101"
+      }
+    ]
+  },
+  {
     "date": "16.06.2025",
     "news": [
       {
@@ -529,6 +562,41 @@
         "gelesen": false,
         "text": "Statuswechsel: Svanberg (33658) ist wieder AKTIV",
         "playerId": "33658"
+      },
+      {
+        "date": "15.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Rexhbecaj\",\"price\":1870000,\"playerValue\":1520000,\"playerId\":\"32817\",\"buyer\":\"Christopher\"}",
+        "playerId": "32817"
+      },
+      {
+        "date": "15.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Sascha\",\"playerName\":\"Diehl\",\"price\":1096100,\"playerValue\":1010000,\"playerId\":\"33718\",\"buyer\":\"Computer\"}",
+        "playerId": "33718"
+      },
+      {
+        "date": "15.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Stefan 8\",\"playerName\":\"Beljo\",\"price\":488800,\"playerValue\":470000,\"playerId\":\"33708\",\"buyer\":\"Computer\"}",
+        "playerId": "33708"
+      },
+      {
+        "date": "15.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Thomas\",\"playerName\":\"Olschowsky\",\"price\":166400,\"playerValue\":160000,\"playerId\":\"33306\",\"buyer\":\"Computer\"}",
+        "playerId": "33306"
+      },
+      {
+        "date": "15.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Thomas\",\"playerName\":\"Markgraf\",\"price\":173400,\"playerValue\":160000,\"playerId\":\"34214\",\"buyer\":\"Computer\"}",
+        "playerId": "34214"
       }
     ]
   },
@@ -609,6 +677,13 @@
         "gelesen": false,
         "text": "{\"seller\":\"Tom\",\"playerName\":\"Pereira Cardoso\",\"price\":264600,\"playerValue\":280000,\"playerId\":\"34122\",\"buyer\":\"Computer\"}",
         "playerId": "34122"
+      },
+      {
+        "date": "14.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Omlin\",\"price\":601000,\"playerValue\":510000,\"playerId\":\"33716\",\"buyer\":\"Tom\"}",
+        "playerId": "33716"
       }
     ]
   },
