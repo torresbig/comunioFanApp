@@ -366,6 +366,46 @@
     ]
   },
   {
+    "date": "18.07.2025",
+    "news": [
+      {
+        "date": "18.07.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Bakayoko (ID: 34240)",
+        "playerId": "34240"
+      },
+      {
+        "date": "18.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Zingerle\",\"price\":160000,\"playerValue\":160000,\"playerId\":\"32267\",\"buyer\":\"Thomas\"}",
+        "playerId": "32267"
+      },
+      {
+        "date": "18.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Gazibegović\",\"price\":900000,\"playerValue\":840000,\"playerId\":\"34137\",\"buyer\":\"Christoph\"}",
+        "playerId": "34137"
+      },
+      {
+        "date": "18.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Sano\",\"price\":3800000,\"playerValue\":3820000,\"playerId\":\"34009\",\"buyer\":\"Christoph\"}",
+        "playerId": "34009"
+      },
+      {
+        "date": "18.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Njinmah (33687) ist jetzt VERLETZT (Fußprellung)",
+        "playerId": "33687"
+      }
+    ]
+  },
+  {
     "date": "18.06.2025",
     "news": [
       {
@@ -519,6 +559,34 @@
         "gelesen": false,
         "text": "Statuswechsel: Prömel (32492) ist wieder AKTIV",
         "playerId": "32492"
+      },
+      {
+        "date": "17.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Burke\",\"price\":3330000,\"playerValue\":3410000,\"playerId\":\"32694\",\"buyer\":\"Thomas\"}",
+        "playerId": "32694"
+      },
+      {
+        "date": "17.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Arnold\",\"price\":5555009,\"playerValue\":5850000,\"playerId\":\"31884\",\"buyer\":\"Alexander\"}",
+        "playerId": "31884"
+      },
+      {
+        "date": "17.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Jeong\",\"price\":2040000,\"playerValue\":1960000,\"playerId\":\"33035\",\"buyer\":\"Sascha\"}",
+        "playerId": "33035"
+      },
+      {
+        "date": "17.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Thomas\",\"playerName\":\"Siljević\",\"price\":171700,\"playerValue\":160000,\"playerId\":\"34073\",\"buyer\":\"Computer\"}",
+        "playerId": "34073"
       }
     ]
   },
@@ -584,6 +652,27 @@
         "art": "TRANSFER",
         "gelesen": false,
         "text": "{\"seller\":\"Sascha\",\"playerName\":\"Boniface\",\"price\":5100000,\"playerValue\":4270000,\"playerId\":\"33827\",\"buyer\":\"damian\"}",
+        "playerId": "33827"
+      },
+      {
+        "date": "16.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"İnanoğlu\",\"price\":199000,\"playerValue\":160000,\"playerId\":\"34223\",\"buyer\":\"damian\"}",
+        "playerId": "34223"
+      },
+      {
+        "date": "16.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Berisha\",\"price\":1219000,\"playerValue\":1160000,\"playerId\":\"33683\",\"buyer\":\"damian\"}",
+        "playerId": "33683"
+      },
+      {
+        "date": "16.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Sascha\",\"playerName\":\"Boniface\",\"price\":5100000,\"playerValue\":4440000,\"playerId\":\"33827\",\"buyer\":\"damian\"}",
         "playerId": "33827"
       }
     ]
