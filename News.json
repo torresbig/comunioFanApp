@@ -312,6 +312,46 @@
     ]
   },
   {
+    "date": "19.07.2025",
+    "news": [
+      {
+        "date": "19.07.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Sebulonsen  (ID: 34241)",
+        "playerId": "34241"
+      },
+      {
+        "date": "19.07.2025",
+        "art": "VEREINSWECHSEL",
+        "gelesen": false,
+        "text": "Vereinswechsel: Tabaković (Verein 62 → 3)",
+        "playerId": "34047"
+      },
+      {
+        "date": "19.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Koudossou\",\"price\":670000,\"playerValue\":750000,\"playerId\":\"33634\",\"buyer\":\"Sascha\"}",
+        "playerId": "33634"
+      },
+      {
+        "date": "19.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Čvančara (33819) ist wieder AKTIV",
+        "playerId": "33819"
+      },
+      {
+        "date": "19.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Gomis (34116) ist jetzt VERLETZT (Innenbandverletzung)",
+        "playerId": "34116"
+      }
+    ]
+  },
+  {
     "date": "19.06.2025",
     "news": [
       {
@@ -402,6 +442,34 @@
         "gelesen": false,
         "text": "Statuswechsel: Njinmah (33687) ist jetzt VERLETZT (Fußprellung)",
         "playerId": "33687"
+      },
+      {
+        "date": "18.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Sano\",\"price\":3800000,\"playerValue\":3850000,\"playerId\":\"34009\",\"buyer\":\"Christoph\"}",
+        "playerId": "34009"
+      },
+      {
+        "date": "18.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Sascha\",\"playerName\":\"Opitz\",\"price\":570000,\"playerValue\":540000,\"playerId\":\"33845\",\"buyer\":\"Computer\"}",
+        "playerId": "33845"
+      },
+      {
+        "date": "18.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Simon\",\"playerName\":\"Weiser\",\"price\":4452000,\"playerValue\":4120000,\"playerId\":\"31929\",\"buyer\":\"Computer\"}",
+        "playerId": "31929"
+      },
+      {
+        "date": "18.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"damian\",\"playerName\":\"Schonlau\",\"price\":826200,\"playerValue\":790000,\"playerId\":\"32298\",\"buyer\":\"Computer\"}",
+        "playerId": "32298"
       }
     ]
   },
@@ -587,6 +655,27 @@
         "gelesen": false,
         "text": "{\"seller\":\"Thomas\",\"playerName\":\"Siljević\",\"price\":171700,\"playerValue\":160000,\"playerId\":\"34073\",\"buyer\":\"Computer\"}",
         "playerId": "34073"
+      },
+      {
+        "date": "17.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Burke\",\"price\":3330000,\"playerValue\":3300000,\"playerId\":\"32694\",\"buyer\":\"Thomas\"}",
+        "playerId": "32694"
+      },
+      {
+        "date": "17.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Arnold\",\"price\":5555009,\"playerValue\":5900000,\"playerId\":\"31884\",\"buyer\":\"Alexander\"}",
+        "playerId": "31884"
+      },
+      {
+        "date": "17.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Jeong\",\"price\":2040000,\"playerValue\":1890000,\"playerId\":\"33035\",\"buyer\":\"Sascha\"}",
+        "playerId": "33035"
       }
     ]
   },
