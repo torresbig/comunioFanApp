@@ -1,69 +1,455 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <title>⚽ Comunio Ultraz - Spielerdatenbank</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { background: #f5f5f5; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 10px;}
-        .container { max-width: 1400px; margin: 0 auto; }
-        header { text-align: center; background: linear-gradient(135deg, #1a2a6c, #2c3e50); color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px;}
-        h1 { font-size: 1.8rem; margin: 0;}
-        .subtitle { margin: 8px 0 0 0; font-size: 1rem; opacity: 0.9;}
-        .loading, .error, .stats, .update-info { margin: 15px 0; padding: 18px; border-radius: 10px;}
-        .loading { background: white; text-align: center;}
-        .error { background: #fee; border: 1px solid #fcc; color: #c00;}
-        .stats { background: #e8f5e8; border: 1px solid #c5e6c5; color: #2e7d2e; text-align: center;}
-        .update-info { background: #e3f2fd; border: 1px solid #90caf9; color: #1565c0; font-size: 12px; text-align: center;}
-        .filters { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); margin-bottom: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px;}
-        .filter-group { margin-bottom: 12px; }
-        label { display: block; margin-bottom: 6px; font-weight: bold; color: #2c3e50; font-size: 13px;}
-        input, select, button { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; background: white;}
-        .reset-button { background-color: #5c6bc0; color: white; border: none; cursor: pointer; font-weight: bold; padding: 12px; transition: background 0.3s;}
-        .reset-button:hover { background-color: #3f51b5;}
-        .checkbox-group { display: flex; align-items: center; margin-top: 15px;}
-        .checkbox-group input { width: auto; margin-right: 10px;}
-        .table-container { overflow-x: auto; background: white; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); margin-bottom: 20px;}
-        table { width: 100%; border-collapse: collapse; min-width: 1000px;}
-        th, td { padding: 12px 10px; text-align: left; border-bottom: 1px solid #eee; font-size: 13px;}
-        th { background-color: #2c3e50; color: white; position: sticky; top: 0; font-weight: 600; cursor: pointer; user-select: none;}
-        th:hover { background-color: #34495e;}
-        tr:nth-child(even) { background-color: #f9f9f9;}
-        tr:hover { background-color: #f1f7ff; cursor: pointer;}
-        .status-aktiv { color: #27ae60; font-weight: bold;}
-        .status-verletzt { color: #e74c3c; font-weight: bold;}
-        .status-gesperrt { color: #e74c3c; font-weight: bold;}
-        .status-reha { color: #f39c12; font-weight: bold;}
-        .status-nichtliga { color: #7f8c8d; font-style: italic;}
-        .club-logo { width: 25px; height: 25px; object-fit: contain; margin-right: 10px; vertical-align: middle;}
-        .debug-toggle { display: none;}
-        .debug-label { background: #3498db; color: white; padding: 12px; border-radius: 6px; cursor: pointer; user-select: none; font-weight: bold; margin: 15px 0; display: block;}
-        .debug-label::before { content: '▶ '; transition: transform 0.3s ease; display: inline-block; width: 20px;}
-        .debug-toggle:checked + .debug-label::before { transform: rotate(90deg);}
-        .debug-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out; background: #f0f8ff; border: 1px solid #cce; border-radius: 0 0 6px 6px; margin-top: -5px;}
-        .debug-toggle:checked + .debug-label + .debug-content { max-height: 300px; overflow-y: auto;}
-        .debug-inner { padding: 15px; font-family: monospace; font-size: 12px; line-height: 1.5;}
-        #news-section { margin-bottom: 24px; }
+        body {
+            background: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 10px;
+        }
+        /* Floating debug panel styles */
+        #floatingDebugBtn {
+            position: fixed;
+            top: 12px;
+            right: 12px;
+            z-index: 1001;
+            background: #3498dbcc;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            opacity: 0.5;
+            transition: opacity 0.2s, background 0.2s;
+        }
+        #floatingDebugBtn:hover {
+            opacity: 1;
+            background: #217dbbcc;
+        }
+        #floatingDebugPanel {
+            position: fixed;
+            top: 58px;
+            right: 12px;
+            width: 260px;
+            max-height: 260px;
+            background: #f0f8ff;
+            border: 1px solid #cce;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+            z-index: 1000;
+            display: none;
+            flex-direction: column;
+        }
+        #floatingDebugPanel.open {
+            display: flex;
+        }
+        #floatingDebugPanelHeader {
+            background: #3498db;
+            color: white;
+            padding: 7px 12px;
+            border-radius: 8px 8px 0 0;
+            font-weight: bold;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #floatingDebugPanelClose {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin-left: 8px;
+        }
+        #floatingDebugContent {
+            padding: 8px;
+            font-family: monospace;
+            font-size: 11px;
+            line-height: 1.4;
+            overflow-y: auto;
+            background: #f0f8ff;
+            border-radius: 0 0 8px 8px;
+            flex: 1;
+        }
+        #floatingDebugPanel {
+            position: fixed;
+            top: 54px;
+            right: 18px;
+            width: 340px;
+            max-height: 400px;
+            background: #f0f8ff;
+            border: 1px solid #cce;
+            border-radius: 8px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+            z-index: 1000;
+            display: none;
+            flex-direction: column;
+        }
+        #floatingDebugPanel.open {
+            display: flex;
+        }
+        #floatingDebugPanelHeader {
+            background: #3498db;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 8px 8px 0 0;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #floatingDebugPanelClose {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        #floatingDebugContent {
+            padding: 12px;
+            font-family: monospace;
+            font-size: 12px;
+            line-height: 1.5;
+            overflow-y: auto;
+            background: #f0f8ff;
+            border-radius: 0 0 8px 8px;
+            flex: 1;
+        }
+        .toggle-label {
+            background: #3498db;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 6px 6px 0 0;
+            cursor: pointer;
+            user-select: none;
+            font-weight: bold;
+            margin: 24px 0 0 0;
+            display: block;
+            font-size: 13px;
+            position: relative;
+        }
+        .toggle-label::before {
+            content: '▶ ';
+            transition: transform 0.3s ease;
+            display: inline-block;
+            width: 20px;
+        }
+        .toggle-toggle:checked + .toggle-label::before {
+            transform: rotate(90deg);
+        }
+        .toggle-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+            background: #f0f8ff;
+            border: 1px solid #cce;
+            border-top: none;
+            border-radius: 0 0 6px 6px;
+            margin-top: 0;
+        }
+        .toggle-toggle:checked + .toggle-label + .toggle-content {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .toggle-inner {
+            padding: 15px;
+            font-family: monospace;
+            font-size: 11px; 
+            line-height: 1.5; 
+        }
+
+        .error {
+            background: #fee;
+            border: 1px solid #fcc;
+            color: #c00;
+        }
+
+        .stats {
+            background: #e8f5e8;
+            border: 1px solid #c5e6c5;
+            color: #2e7d2e;
+            text-align: center;
+        }
+
+        .update-info {
+            background: #e3f2fd;
+            border: 1px solid #90caf9;
+            color: #1565c0;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .filters {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .filter-table-gap {
+            height: 20px;
+        }
+
+        .filter-group {
+            margin-bottom: 12px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 13px;
+        }
+
+        input,
+        select,
+        button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            background: white;
+        }
+
+        .reset-button {
+            background-color: #5c6bc0;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 12px;
+            transition: background 0.3s;
+        }
+
+        .reset-button:hover {
+            background-color: #3f51b5;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .checkbox-group input {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 1000px;
+        }
+
+        th,
+        td {
+            padding: 12px 10px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+            font-size: 13px;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: white;
+            position: sticky;
+            top: 0;
+            font-weight: 600;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        th:hover {
+            background-color: #34495e;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f7ff;
+            cursor: pointer;
+        }
+
+        .status-aktiv {
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .status-verletzt {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .status-gesperrt {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .status-reha {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        .status-nichtliga {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .club-logo {
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .debug-toggle {
+            display: none;
+        }
+
+        .debug-label {
+            background: #3498db;
+            color: white;
+            padding: 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            user-select: none;
+            font-weight: bold;
+            margin: 15px 0;
+            display: block;
+        }
+
+        .debug-label::before {
+            content: '▶ ';
+            transition: transform 0.3s ease;
+            display: inline-block;
+            width: 20px;
+        }
+
+        .debug-toggle:checked+.debug-label::before {
+            transform: rotate(90deg);
+        }
+
+        .debug-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+            background: #f0f8ff;
+            border: 1px solid #cce;
+            border-radius: 0 0 6px 6px;
+            margin-top: -5px;
+        }
+
+        .debug-toggle:checked+.debug-label+.debug-content {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .debug-inner {
+            padding: 15px;
+            font-family: monospace;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        #news-section {
+            margin-bottom: 24px;
+        }
+
         #news-section .header {
-            display: flex; align-items: center; cursor: pointer;
-            background: #f5f5f5; border-radius: 6px 6px 0 0;
-            padding: 12px 16px; user-select: none; border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            background: #f5f5f5;
+            border-radius: 6px 6px 0 0;
+            padding: 12px 16px;
+            user-select: none;
+            border-bottom: 1px solid #e0e0e0;
         }
+
         #news-section .header span:first-child {
-            font-size: 1.18em; font-weight: bold; letter-spacing: 1px; flex: 1; color: #222;
+            font-size: 1.18em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            flex: 1;
+            color: #222;
         }
-        #news-toggle-icon { font-size: 1.2em; transition: transform 0.2s; }
+
+        #news-toggle-icon {
+            font-size: 1.2em;
+            transition: transform 0.2s;
+        }
+
         #news-list {
-            border: 1px solid #e0e0e0; border-top: none; border-radius: 0 0 6px 6px;
-            background: #fff; max-height: 420px; overflow-y: auto; transition: max-height 0.3s;
+            border: 1px solid #e0e0e0;
+            border-top: none;
+            border-radius: 0 0 6px 6px;
+            background: #fff;
+            max-height: 420px;
+            overflow-y: auto;
+            transition: max-height 0.3s;
         }
-        .news-day { margin-bottom: 18px; }
-        .news-date { font-weight: bold; font-size: 1.08em; color: #1976d2; margin-bottom: 4px; }
-        .news-art { font-weight: 500; color: #555; margin: 6px 0 2px 0; }
-        .news-list-ul { list-style: none; margin: 0 0 8px 0; padding: 0; }
-        .news-list-li { padding: 4px 0 4px 12px; border-left: 2px solid #e0e0e0; }
+
+        .news-day {
+            margin-bottom: 18px;
+        }
+
+        .news-date {
+            font-weight: bold;
+            font-size: 1.08em;
+            color: #1976d2;
+            margin-bottom: 4px;
+        }
+
+        .news-art {
+            font-weight: 500;
+            color: #555;
+            margin: 6px 0 2px 0;
+        }
+
+        .news-list-ul {
+            list-style: none;
+            margin: 0 0 8px 0;
+            padding: 0;
+        }
+
+        .news-list-li {
+            padding: 4px 0 4px 12px;
+            border-left: 2px solid #e0e0e0;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -83,73 +469,80 @@
             <span id="statsText"></span>
             <button id="refreshButton" class="refresh-button">🔄 Daten neu laden</button>
         </div>
-        <div id="debugSection">
-            <input type="checkbox" id="debugToggle" class="debug-toggle">
-            <label for="debugToggle" class="debug-label">Debug-Informationen</label>
-            <div class="debug-content">
-                <div class="debug-inner" id="debugContent"></div>
+        <!-- Floating Debug Button and Panel -->
+        <button id="floatingDebugBtn" title="Debug"><span style="pointer-events:none;">🐞</span></button>
+        <div id="floatingDebugPanel">
+            <div id="floatingDebugPanelHeader">
+                Debug-Informationen
+                <button id="floatingDebugPanelClose" title="Schließen">×</button>
             </div>
+            <div id="floatingDebugContent"></div>
         </div>
         <div id="news-section">
-            <div class="header" onclick="toggleNewsList()">
-                <span>News</span>
-                <span id="news-toggle-icon">▼</span>
-            </div>
-            <div id="news-list">
-                <div style="padding: 16px; color: #888;">Lade News...</div>
+            <label class="toggle-label" id="newsLabel">Comunio-News</label>
+            <div class="toggle-content" id="newsContentWrapper">
+                <div class="toggle-inner" id="news-list">
+                    <div style="padding: 16px; color: #888;">Lade Comunio-News...</div>
+                </div>
             </div>
         </div>
         <div id="content" style="display: none;">
-            <div class="filters">
-                <div class="filter-group">
-                    <label for="search">🔍 Spieler suchen:</label>
-                    <input type="text" id="search" placeholder="Name oder ID...">
-                </div>
-                <div class="filter-group">
-                    <label for="position">📍 Position:</label>
-                    <select id="position">
-                        <option value="">Alle Positionen</option>
-                        <option value="TORHÜTER">Torhüter</option>
-                        <option value="ABWEHR">Abwehr</option>
-                        <option value="MITTELFELD">Mittelfeld</option>
-                        <option value="STURM">Sturm</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label for="status">💪 Status:</label>
-                    <select id="status">
-                        <option value="">Alle Status</option>
-                        <option value="AKTIV">Aktiv</option>
-                        <option value="VERLETZT">Verletzt</option>
-                        <option value="AUFBAUTRAINING">Aufbautraining</option>
-                        <option value="NICHT_IM_KADER">Nicht im Kader</option>
-                        <option value="FUENFTE_GELBE_KARTE">5. gelbe Karte</option>
-                        <option value="GELBROTE_KARTE">Gelbrote Karte</option>
-                        <option value="ROTE_KARTE">Rote Karte</option>
-                        <option value="NICHT_IN_LIGA">Nicht in Liga</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label for="club">🏟️ Verein:</label>
-                    <select id="club">
-                        <option value="">Alle Vereine</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label for="owner">👤 Besitzer:</label>
-                    <select id="owner">
-                        <option value="">Alle Besitzer</option>
-                        <option value="Kein Besitzer">Kein Besitzer</option>
-                    </select>
-                </div>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="hideNonLeague" checked>
-                    <label for="hideNonLeague">Nicht-in-Liga-Spieler ausblenden</label>
+            <label class="toggle-label" id="filterLabel">Filter</label>
+            <div class="toggle-content" id="filterContentWrapper">
+                <div class="toggle-inner">
+                    <div class="filters">
+                        <div class="filter-group">
+                            <label for="search">🔍 Spieler suchen:</label>
+                            <input type="text" id="search" placeholder="Name oder ID...">
+                        </div>
+                        <div class="filter-group">
+                            <label for="position">📍 Position:</label>
+                            <select id="position">
+                                <option value="">Alle Positionen</option>
+                                <option value="TORHÜTER">Torhüter</option>
+                                <option value="ABWEHR">Abwehr</option>
+                                <option value="MITTELFELD">Mittelfeld</option>
+                                <option value="STURM">Sturm</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="status">💪 Status:</label>
+                            <select id="status">
+                                <option value="">Alle Status</option>
+                                <option value="AKTIV">Aktiv</option>
+                                <option value="VERLETZT">Verletzt</option>
+                                <option value="AUFBAUTRAINING">Aufbautraining</option>
+                                <option value="NICHT_IM_KADER">Nicht im Kader</option>
+                                <option value="FUENFTE_GELBE_KARTE">5. gelbe Karte</option>
+                                <option value="GELBROTE_KARTE">Gelbrote Karte</option>
+                                <option value="ROTE_KARTE">Rote Karte</option>
+                                <option value="NICHT_IN_LIGA">Nicht in Liga</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="club">🏟️ Verein:</label>
+                            <select id="club">
+                                <option value="">Alle Vereine</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="owner">👤 Besitzer:</label>
+                            <select id="owner">
+                                <option value="">Alle Besitzer</option>
+                                <option value="Kein Besitzer">Kein Besitzer</option>
+                            </select>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="hideNonLeague" checked>
+                            <label for="hideNonLeague">Nicht-in-Liga-Spieler ausblenden</label>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin: 15px 0;">
+                        <button type="button" class="reset-button" id="resetFilters">Filter zurücksetzen</button>
+                    </div>
                 </div>
             </div>
-            <div style="text-align: center; margin: 15px 0;">
-                <button type="button" class="reset-button" id="resetFilters">Filter zurücksetzen</button>
-            </div>
+            <div class="filter-table-gap"></div>
             <div class="table-container">
                 <table id="playerTable">
                     <thead>
@@ -170,68 +563,75 @@
         </div>
     </div>
     <script>
-    function toggleNewsList() {
-        const list = document.getElementById('news-list');
-        const icon = document.getElementById('news-toggle-icon');
-        if (list.style.display === 'none') {
-            list.style.display = '';
-            icon.style.transform = 'rotate(0deg)';
-        } else {
-            list.style.display = 'none';
-            icon.style.transform = 'rotate(-90deg)';
-        }
-    }
 
-    fetch('News.json')
-      .then(response => response.json())
-      .then(data => {
-        // Nach Datum absteigend sortieren (neueste zuerst!)
-        data.sort((a, b) => b.date.localeCompare(a.date, 'de-DE'));
-        let html = '';
-        for (const day of data) {
-          const grouped = {};
-          for (const news of day.news) {
-            if (!grouped[news.art]) grouped[news.art] = [];
-            grouped[news.art].push(news);
-          }
-          html += `<div class="news-day"><div class="news-date">${day.date}</div>`;
-          for (const art of Object.keys(grouped).sort()) {
-            html += `<div class="news-art">${art}</div>
-              <ul class="news-list-ul">`;
-            for (const news of grouped[art]) {
-              let text = '';
-              try {
-                const obj = JSON.parse(news.text);
-                if (art === 'TRANSFER') {
-                  text = `<span style="color:#333;">${obj.playerName}</span> von <b>${obj.seller}</b> zu <b>${obj.buyer}</b> für <b>${obj.price.toLocaleString('de-DE')} €</b> (Marktwert: ${obj.playerValue.toLocaleString('de-DE')} €)`;
-                } else {
-                  text = news.text;
-                }
-              } catch {
-                text = news.text;
-              }
-              html += `<li class="news-list-li">${text}</li>`;
-            }
-            html += `</ul>`;
-          }
-          html += `</div>`;
-        }
-        document.getElementById('news-list').innerHTML = html || '<div style="padding:16px; color:#888;">Keine News vorhanden.</div>';
-      })
-      .catch(() => {
-        document.getElementById('news-list').innerHTML = '<div style="padding:16px; color:#e53935;">Fehler beim Laden der News.</div>';
-      });
-    document.getElementById('news-list').style.display = '';
-    </script>
-    <script>
+
         const GITHUB_USER = "torresbig";
         const GITHUB_REPO = "comunioFanApp";
         const DATA_URLS = {
             clubs: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/VereinsdatenbankJson.txt`,
             players: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/SpielerdatenbankNeutralJson.txt`,
             users: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/UserdatenbankJson_884691.txt`,
-            playerToUser: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/PlayerToUserMap_884691.txt`
+            playerToUser: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/PlayerToUserMap_884691.txt`,
+            news: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/News.json`
         };
+
+        function toggleNewsList() {
+            const list = document.getElementById('news-list');
+            const icon = document.getElementById('news-toggle-icon');
+            if (list.style.display === 'none') {
+                list.style.display = '';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                list.style.display = 'none';
+                icon.style.transform = 'rotate(-90deg)';
+            }
+        }
+
+        function renderNews(newsList) {
+            try {
+                // Nach Datum absteigend sortieren (neueste zuerst!)
+                newsList.sort((a, b) => {
+                    const da = a.date.split('.').reverse().join('-');
+                    const db = b.date.split('.').reverse().join('-');
+                    return new Date(db) - new Date(da);
+                });
+                let html = '';
+                for (const day of newsList) {
+                    const grouped = {};
+                    for (const news of day.news) {
+                        if (!grouped[news.art]) grouped[news.art] = [];
+                        grouped[news.art].push(news);
+                    }
+                    html += `<div class=\"news-day\"><div class=\"news-date\">${day.date}</div>`;
+                    for (const art of Object.keys(grouped).sort()) {
+                        html += `<div class=\"news-art\">${art}</div>
+              <ul class=\"news-list-ul\">`;
+                        for (const news of grouped[art]) {
+                            let text = '';
+                            try {
+                                const obj = JSON.parse(news.text);
+                                if (art === 'TRANSFER') {
+                                    text = `<span style=\"color:#333;\">${obj.playerName}</span> von <b>${obj.seller}</b> zu <b>${obj.buyer}</b> für <b>${obj.price.toLocaleString('de-DE')} €</b> (Marktwert: ${obj.playerValue.toLocaleString('de-DE')} €)`;
+                                } else {
+                                    text = news.text;
+                                }
+                            } catch {
+                                text = news.text;
+                            }
+                            html += `<li class=\"news-list-li\">${text}</li>`;
+                        }
+                        html += `</ul>`;
+                    }
+                    html += `</div>`;
+                }
+                document.getElementById('news-list').innerHTML = html || '<div style=\"padding:16px; color:#888;\">Keine News vorhanden.</div>';
+            } catch {
+                document.getElementById('news-list').innerHTML = '<div style=\"padding:16px; color:#e53935;\">Fehler beim Laden der News.</div>';
+            }
+            document.getElementById('news-list').style.display = '';
+        }
+
+       
 
         function getLogoFileName(clubId) {
             if (!clubId) return "unbestimmt.png";
@@ -265,7 +665,7 @@
         let lastUpdateTime = null;
 
         function addDebug(message) {
-            const debugDiv = document.getElementById('debugContent');
+            const debugDiv = document.getElementById('floatingDebugContent');
             debugDiv.innerHTML += `<div>${new Date().toLocaleTimeString()}: ${message}</div>`;
             debugDiv.scrollTop = debugDiv.scrollHeight;
         }
@@ -281,7 +681,6 @@
             }
             document.getElementById('refreshButton').addEventListener('click', async () => {
                 try {
-                    showUpdate("🔄 Lade Daten neu...");
                     addDebug("Manuelles Neuladen gestartet...");
                     await loadData();
                 } catch (error) {
@@ -290,40 +689,77 @@
                 }
             });
             document.getElementById('hideNonLeague').addEventListener('change', applyFilters);
+
+            // Floating debug panel logic
+            const debugBtn = document.getElementById('floatingDebugBtn');
+            const debugPanel = document.getElementById('floatingDebugPanel');
+            const debugClose = document.getElementById('floatingDebugPanelClose');
+            debugBtn.addEventListener('click', () => {
+                debugPanel.classList.toggle('open');
+            });
+            debugClose.addEventListener('click', () => {
+                debugPanel.classList.remove('open');
+            });
+
+            // Toggle-Menü-Logik
+            function setupToggle(labelId, contentId) {
+                const label = document.getElementById(labelId);
+                const content = document.getElementById(contentId);
+                let open = false;
+                function update() {
+                    let maxHeight = '300px';
+                    if (labelId === 'newsLabel') maxHeight = '600px';
+                    if (open) {
+                        content.style.maxHeight = maxHeight;
+                        label.classList.add('open');
+                    } else {
+                        content.style.maxHeight = '0';
+                        label.classList.remove('open');
+                    }
+                }
+                label.addEventListener('click', () => {
+                    open = !open;
+                    update();
+                });
+                update();
+            }
+            setupToggle('newsLabel', 'newsContentWrapper');
+            setupToggle('filterLabel', 'filterContentWrapper');
         });
 
         async function loadData() {
             try {
                 showLoading();
-                showUpdate("📡 Verbinde mit GitHub...");
                 addDebug("Starte Ladevorgang...");
                 addDebug(`Lade URLs:
                     Clubs: ${DATA_URLS.clubs}
                     Players: ${DATA_URLS.players}
                     Users: ${DATA_URLS.users}
-                    PlayerToUser: ${DATA_URLS.playerToUser}`);
-                const [clubsData, playersData, usersData, playerToUserMap] = await Promise.all([
+                    PlayerToUser: ${DATA_URLS.playerToUser}
+                    News: ${DATA_URLS.news}`);
+                const [clubsData, playersData, usersData, playerToUserMap, newsList] = await Promise.all([
                     fetchJSON(DATA_URLS.clubs),
                     fetchJSON(DATA_URLS.players),
                     fetchJSON(DATA_URLS.users),
-                    fetchJSON(DATA_URLS.playerToUser)
+                    fetchJSON(DATA_URLS.playerToUser),
+                    fetchJSON(DATA_URLS.news)
                 ]);
 
-                showUpdate("⚙️ Verarbeite Daten...");
                 addDebug("Daten erfolgreich geladen, verarbeite...");
                 addDebug(`Daten empfangen:
                     Clubs: ${clubsData.length}
                     Players: ${playersData.length}
                     Users: ${usersData.length}
-                    PlayerToUser: ${playerToUserMap.length}`);
+                    PlayerToUser: ${playerToUserMap.length}
+                    News: ${newsList.length}`);
                 processData(clubsData, playersData, usersData, playerToUserMap);
+                renderNews(newsList);
                 lastUpdateTime = new Date();
                 hideLoading();
                 showStats();
                 showContent();
                 setupEventListeners();
                 applyFilters();
-                showUpdate(`✅ ${lastUpdateTime.toLocaleTimeString()} - ${allPlayers.length} Spieler geladen`);
                 addDebug("Datenverarbeitung abgeschlossen.");
             } catch (error) {
                 hideLoading();
@@ -384,6 +820,8 @@
                     ownersMap.set(player.id, "Computer");
                 }
             });
+
+
             addDebug(`Besitzerzuordnungen: ${ownersMap.size}`);
             initClubFilter();
             initOwnerFilter();
@@ -435,12 +873,6 @@
             const errorDiv = document.getElementById('error');
             document.getElementById('errorMessage').textContent = message;
             errorDiv.style.display = 'block';
-        }
-
-        function showUpdate(message) {
-            const updateDiv = document.getElementById('updateInfo');
-            document.getElementById('updateText').textContent = message;
-            updateDiv.style.display = 'block';
         }
 
         function showStats() {
@@ -539,7 +971,7 @@
             const ownerFilter = document.getElementById('owner').value;
             const hideNonLeague = document.getElementById('hideNonLeague').checked;
             filteredPlayers = allPlayers.filter(player => {
-                if (searchTerm && 
+                if (searchTerm &&
                     !player.name.toLowerCase().includes(searchTerm) &&
                     !player.id.toLowerCase().includes(searchTerm)) {
                     return false;
@@ -630,4 +1062,5 @@
         }
     </script>
 </body>
+
 </html>
