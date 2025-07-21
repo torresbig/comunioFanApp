@@ -976,22 +976,24 @@ document.addEventListener('DOMContentLoaded', async () => {
         function getLogoFileName(clubId) {
             if (!clubId) return "unbestimmt.png";
             const mapping = {
-                "3": "gladbach", "21": "freiburg", "18": "mainz", "92": "leipzig",
-                "1": "bayern", "6": "werder", "7": "leverkusen", "9": "dortmund",
-                "10": "hoffenheim", "11": "eintracht", "12": "wolfsburg", "13": "koeln",
-                "14": "augsburg", "15": "union", "16": "vfb", "17": "heidenheim",
-                "19": "schalke", "20": "bochum", "22": "kiel", "23": "pauli",
-                "24": "duesseldorf", "25": "kaiserslautern", "26": "hamburg",
-                "27": "nuernberg", "28": "hannover", "29": "magdeburg",
-                "30": "paderborn", "31": "elversberg", "32": "karlsruhe",
-                "33": "greuther", "34": "hertha", "35": "darmstadt",
-                "36": "braunschweig", "37": "regensburg", "38": "aue",
-                "39": "rostock", "40": "sandhausen", "41": "ingolstadt",
-                "42": "dynamo", "43": "viktoria", "44": "wehen", "45": "verl",
-                "46": "ulm", "47": "cottbus", "48": "erzgebirge", "49": "mannheim",
-                "50": "bielefeld", "51": "muenster", "52": "unterhaching",
-                "53": "waldhof", "54": "saarbruecken", "55": "osnabrueck",
-                "56": "tsv1860", "57": "rot-weiss", "58": "energie"
+                "3": "gladbach",
+                "21": "freiburg",
+                "18": "mainz",
+                "92": "leipzig",
+                "1": "bayern",
+                "6": "werderBremen",
+                "12": "wolfsburg",
+                "5": "dortmund",
+                "8": "leverkusen",
+                "13": "koeln",
+                "14": "stuttgart",
+                "62": "hoffenheim",
+                "68": "augsburg",
+                "9": "frankfurt",
+                "109": "unionBerlin",
+                "110": "heidenheim",
+                "25": "stpauli",
+                "4": "hamburg",
             };
             return mapping[clubId] || "unbestimmt";
         }
