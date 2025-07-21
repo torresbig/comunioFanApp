@@ -70,6 +70,13 @@
         border-bottom: 1px solid #eee;
         font-size: 13px;
     }
+    /* Make Ligainsider Ranking column narrower in rivals table */
+    .rivals-table th.ligainsider-ranking, .rivals-table td.ligainsider-ranking {
+        min-width: 60px;
+        width: 60px;
+        max-width: 80px;
+        text-align: center;
+    }
     .rivals-table th {
         background-color: #2c3e50;
         color: white;
@@ -172,6 +179,86 @@
         .tab-button { font-size: 16px; }
         .debug-panel { width: 250px; right: 5px; top: 5px; }
     }
+    /* Transfermarkt-Link Button & Modal */
+    #tm-link-btn {
+        position: fixed;
+        left: 18px;
+        bottom: 18px;
+        z-index: 1002;
+        background: #3498db;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 18px;
+        font-size: 15px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        cursor: pointer;
+        opacity: 0.85;
+        transition: opacity 0.2s, background 0.2s;
+    }
+    #tm-link-btn:hover {
+        opacity: 1;
+        background: #217dbb;
+    }
+    #tm-link-modal {
+        position: fixed;
+        left: 0; bottom: 0; right: 0; top: 0;
+        background: rgba(0,0,0,0.35);
+        z-index: 2000;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    #tm-link-modal.open {
+        display: flex;
+    }
+    #tm-link-modal-content {
+        background: #fff;
+        border-radius: 10px;
+        padding: 28px 24px 18px 24px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+        min-width: 320px;
+        max-width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    #tm-link-modal-content h2 {
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-size: 18px;
+        color: #3498db;
+    }
+    #tm-link-input {
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        margin-bottom: 16px;
+    }
+    #tm-link-modal-content button {
+        background: #3498db;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        margin-top: 6px;
+    }
+    #tm-link-modal-content button:hover {
+        background: #217dbb;
+    }
+    #tm-link-modal-close {
+        position: absolute;
+        top: 18px;
+        right: 24px;
+        background: none;
+        border: none;
+        font-size: 22px;
+        color: #888;
+        cursor: pointer;
+    }
 </style>
 </head>
 <body>
@@ -201,9 +288,10 @@
     </div>
 </nav>
 <div class="container">
-    <div id="errorMessage" class="error-message" style="display:none; color: red; font-weight: bold; margin-bottom: 10px;"></div>
-    <div id="loadingIndicator" class="loading-spinner" style="text-align:center; padding: 20px;">Lade Daten...</div>
+    <div id="errorMessage" style="display:none; color: red; font-weight: bold; margin-bottom: 10px;"></div>
+    <div id="loadingIndicator" style="text-align:center; padding: 20px;">Lade Daten...</div>
     <div id="playerContent" style="display:none;">
+        <!-- Info-Karten und Tabs jetzt innerhalb von playerContent -->
         <div class="info-card">
             <h3 id="playerInfoHeader">📋 Spieler-Informationen</h3>
             <div class="info-card-content">
@@ -214,17 +302,12 @@
                 <div class="info-row"><span class="info-label">Position:</span><span class="info-value" id="position">-</span></div>
                 <div class="info-row"><span class="info-label">Hauptfuß:</span><span class="info-value" id="foot">-</span></div>
                 <div class="info-row"><span class="info-label">Trikotnummer:</span><span class="info-value" id="jerseyNumber">-</span></div>
-                <div class="info-row" id="ligainsiderRankingRow" style="display:none;">
-                    <span class="info-label">Ligainsider Ranking:</span>
-                    <span class="info-value" id="ligainsiderRankingValue">-</span>
-                </div>
             </div>
         </div>
         <div class="info-card" id="ligainsiderPanel" style="display:none;">
-    <h3>🏆 Ligainsider-Ranking</h3>
-    <div class="info-card-content" id="ligainsiderPanelContent"></div>
-</div>
-
+            <h3>🏆 Ligainsider-Ranking</h3>
+            <div class="info-card-content" id="ligainsiderPanelContent"></div>
+        </div>
         <div class="info-card">
             <h3>⚽ Comunio</h3>
             <div class="info-card-content">
@@ -269,6 +352,16 @@
         <div id="points" class="tab-content">
             <div id="pointsHistory"></div>
         </div>
+    </div>
+</div>
+<div id="tm-link-btn">Transfermarkt-Link eintragen</div>
+<div id="tm-link-modal">
+    <div id="tm-link-modal-content">
+        <button id="tm-link-modal-close" title="Schließen">×</button>
+        <h2>Transfermarkt-Link eintragen</h2>
+        <input type="text" id="tm-link-input" placeholder="Transfermarkt-Link hier einfügen..." />
+        <button id="tm-link-save">Speichern</button>
+        <div id="tm-link-modal-msg" style="margin-top:10px; color:#c00; font-size:13px;"></div>
     </div>
 </div>
 <script>
@@ -409,7 +502,7 @@ async function displayMarketValue(player) {
     marketValues.sort((a, b) => {
         const [d1, m1, y1] = a.date.split('.');
         const [d2, m2, y2] = b.date.split('.');
-        return new Date(`${y2}-${m2}-${d2}`) - new Date(`${y1}-${m1}-${d1}`);
+        return new Date(`${y2}-${m2}-${d1}`) - new Date(`${y1}-${m1}-${d1}`);
     });
     const monthlyData = {};
     marketValues.forEach(entry => {
@@ -501,7 +594,7 @@ async function displayMarketValue(player) {
     debug('Marktwerte-Display aktualisiert', 'success');
 }
 
-function displayAttributes(player) {
+async function displayAttributes(player) {
     const container = document.getElementById('attributesList');
     const card = document.getElementById('attributesCard');
     if (!container) return;
@@ -537,7 +630,11 @@ function displayAttributes(player) {
             }
         });
     }
-    card.style.display = found ? '' : 'none';
+    if (card) {
+        card.style.display = found ? '' : 'none';
+    } else {
+        debug('Element fehlt: attributesCard', 'error');
+    }
     debug(`Attribute angezeigt: ${found ? 'Ja' : 'Keine'}`, found ? 'success' : 'info');
 }
 
@@ -609,7 +706,12 @@ function makeTableSortable(tableSelector, defaultSortCol = 0, defaultSortDir = '
             const bCell = b.children[colIndex];
             let aValue = aCell.getAttribute('data-sort') || aCell.textContent;
             let bValue = bCell.getAttribute('data-sort') || bCell.textContent;
-            if ([2, 3, 4, 5].includes(colIndex)) {
+            // Ligainsider Ranking (colIndex 2) als Integer sortieren
+            if (colIndex === 2) {
+                aValue = parseInt(aValue.replace(/[^\d-]/g, '')) || Number.MAX_SAFE_INTEGER;
+                bValue = parseInt(bValue.replace(/[^\d-]/g, '')) || Number.MAX_SAFE_INTEGER;
+                return dir === 'asc' ? aValue - bValue : bValue - aValue;
+            } else if ([3, 4, 5].includes(colIndex)) {
                 aValue = parseFloat(aValue.replace(/[^\d.-]/g, '')) || 0;
                 bValue = parseFloat(bValue.replace(/[^\d.-]/g, '')) || 0;
                 return dir === 'asc' ? aValue - bValue : bValue - aValue;
@@ -664,7 +766,10 @@ function getLigainsiderRankingObj(player) {
 function displayLigainsiderPanel(player) {
     const panel = document.getElementById('ligainsiderPanel');
     const content = document.getElementById('ligainsiderPanelContent');
-    if (!panel || !content) return;
+    if (!panel || !content) {
+        debug(`Element fehlt: ligainsiderPanel oder ligainsiderPanelContent`, 'error');
+        return;
+    }
 
     // LigainsiderRanking aus den Attributen extrahieren
     let rankingObj = null;
@@ -679,6 +784,7 @@ function displayLigainsiderPanel(player) {
 
     if (!rankingObj) {
         panel.style.display = 'none';
+        debug('LigainsiderRanking nicht vorhanden, Panel ausgeblendet.', 'info');
         return;
     }
 
@@ -707,29 +813,16 @@ function displayLigainsiderPanel(player) {
             <span class="info-label">Durchschnittspunkte:</span>
             <span class="info-value">${rankingObj.durchschnittspunkte ?? '-'}</span>
         </div>
-        <div class="info-row">
-            <span class="info-label">Verein:</span>
-            <span class="info-value">${rankingObj.verein ?? '-'}</span>
-        </div>
     `;
     panel.style.display = '';
+    debug('LigainsiderPanel angezeigt.', 'info');
 }
 
 
 
 function updateLigainsiderRanking(player) {
-    const rankingObj = getLigainsiderRankingObj(player);
-    const rankingRow = document.getElementById('ligainsiderRankingRow');
-    const rankingValueSpan = document.getElementById('ligainsiderRankingValue');
     const playerInfoHeader = document.getElementById('playerInfoHeader');
-
-    if (rankingObj && rankingObj.rang !== undefined && rankingObj.rang !== null && rankingObj.rang !== 0 && rankingObj.rang !== '') {
-        rankingRow.style.display = '';
-        rankingValueSpan.textContent = rankingObj.rang;
-        playerInfoHeader.innerHTML = `📋 Spieler-Informationen <span style="font-size:14px;font-weight:400;margin-left:8px;">(Ligainsider Ranking: <b>${rankingObj.rang}</b>)</span>`;
-    } else {
-        rankingRow.style.display = 'none';
-        rankingValueSpan.textContent = '-';
+    if (playerInfoHeader) {
         playerInfoHeader.innerHTML = '📋 Spieler-Informationen';
     }
 }
@@ -761,8 +854,8 @@ function displayRivals(player, allPlayers) {
             <thead>
                 <tr>
                     <th>Spieler</th>
-                    <th>Ligainsider Ranking</th>
                     <th>Status</th>
+                    <th class="ligainsider-ranking">Ligainsider Ranking</th>
                     <th>Marktwert</th>
                     <th>Realwert</th>
                     <th>Punkte</th>
@@ -779,6 +872,9 @@ function displayRivals(player, allPlayers) {
             const rankingObj = getLigainsiderRankingObj(rival);
             const ligRank = (rankingObj && rankingObj.rang !== undefined && rankingObj.rang !== null && rankingObj.rang !== 0 && rankingObj.rang !== '') ? rankingObj.rang : '-';
 
+            // Marktwert als reine Zahl für Sortierung
+            const marktwertNum = typeof rival.data?.wert === 'number' ? rival.data.wert : 0;
+
             html += `
             <tr data-player-id="${rival.id}">
                 <td class="player-cell" data-sort="${rival.name}">
@@ -787,13 +883,13 @@ function displayRivals(player, allPlayers) {
                     </div>
                     <div class="player-id-cell">(${rival.id})</div>
                 </td>
-                <td data-sort="${ligRank === '-' ? Number.MAX_SAFE_INTEGER : ligRank}">${ligRank}</td>
                 <td data-sort="${statusData.status || ''}">
                     <span class="status-indicator" title="${statusTooltip}" style="font-size: 22px;">
                         ${getStatusIndicator(statusData.status)}
                     </span>
                 </td>
-                <td data-sort="${rival.data?.wert || 0}">${formatCurrencyFull(rival.data?.wert || 0)}</td>
+                <td class="ligainsider-ranking" data-sort="${ligRank === '-' ? Number.MAX_SAFE_INTEGER : ligRank}">${ligRank}</td>
+                <td data-sort="${marktwertNum}">${formatCurrencyFull(rival.data?.wert || 0)}</td>
                 <td data-sort="${rival.data?.realWert || 0}">${formatCurrencyFull(rival.data?.realWert || 0)}</td>
                 <td data-sort="${rival.data?.punkte || 0}">${rival.data?.punkte || 0}</td>
                 <td data-sort="${ownerName}">${ownerName}</td>
@@ -802,7 +898,8 @@ function displayRivals(player, allPlayers) {
         });
         html += '</tbody></table>';
         container.innerHTML = html;
-        makeTableSortable('.rivals-table', 1, 'asc');
+        // Sortiere standardmäßig nach Marktwert (Spalte 3, Index 3), absteigend
+        makeTableSortable('.rivals-table', 3, 'desc');
     } else {
         container.innerHTML = '<p>Keine direkten Konkurrenten gefunden</p>';
     }
@@ -870,7 +967,10 @@ function setupAccordion() {
     infoCards.forEach((card, index) => {
         const header = card.querySelector('h3');
         const content = card.querySelector('.info-card-content');
-
+        if (!header || !content) {
+            debug('setupAccordion: header oder content fehlt in info-card', 'error');
+            return;
+        }
         if (index === 0) {
             content.classList.remove('collapsed');
             header.classList.remove('collapsed');
@@ -878,11 +978,14 @@ function setupAccordion() {
             content.classList.add('collapsed');
             header.classList.add('collapsed');
         }
-
         header.onclick = () => {
             infoCards.forEach(c => {
                 const h = c.querySelector('h3');
                 const cont = c.querySelector('.info-card-content');
+                if (!h || !cont) {
+                    debug('setupAccordion: header oder content fehlt in info-card (onclick)', 'error');
+                    return;
+                }
                 if (c !== card) {
                     cont.classList.add('collapsed');
                     h.classList.add('collapsed');
@@ -932,11 +1035,25 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     debug(`Extrahierte Spieler-ID: ${playerId}`, playerId ? 'success' : 'error');
 
+    // Element-Checks für Debug
+    const errorMessageEl = document.getElementById('errorMessage');
+    const loadingIndicatorEl = document.getElementById('loadingIndicator');
+    const playerContentEl = document.getElementById('playerContent');
+    debug(`Element-Check: errorMessageEl=${!!errorMessageEl}, loadingIndicatorEl=${!!loadingIndicatorEl}, playerContentEl=${!!playerContentEl}`, 'info');
+
     if (!playerId) {
         const errorMsg = "Keine Spieler-ID in der URL gefunden!";
-        document.getElementById('errorMessage').textContent = errorMsg;
-        document.getElementById('errorMessage').style.display = 'block';
-        document.getElementById('loadingIndicator').style.display = 'none';
+        if (errorMessageEl) {
+            errorMessageEl.textContent = errorMsg;
+            errorMessageEl.style.display = 'block';
+        } else {
+            debug('errorMessageEl fehlt!', 'error');
+        }
+        if (loadingIndicatorEl) {
+            loadingIndicatorEl.style.display = 'none';
+        } else {
+            debug('loadingIndicatorEl fehlt!', 'error');
+        }
         debug(errorMsg, 'error');
         return;
     }
@@ -952,24 +1069,54 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (!player) {
             const errorMsg = `Spieler mit ID ${playerId} nicht gefunden!`;
-            document.getElementById('errorMessage').textContent = errorMsg;
-            document.getElementById('errorMessage').style.display = 'block';
-            document.getElementById('loadingIndicator').style.display = 'none';
+            if (errorMessageEl) {
+                errorMessageEl.textContent = errorMsg;
+                errorMessageEl.style.display = 'block';
+            } else {
+                debug('errorMessageEl fehlt!', 'error');
+            }
+            if (loadingIndicatorEl) {
+                loadingIndicatorEl.style.display = 'none';
+            } else {
+                debug('loadingIndicatorEl fehlt!', 'error');
+            }
             debug(errorMsg, 'error');
             return;
         }
 
         debug(`Spieler gefunden: ${player.name} (ID: ${player.id})`, 'success');
+        // Show Transfermarkt-Link button only if link is missing
+        showTmLinkButtonIfNeeded(player);
 
-        document.getElementById('playerNameLink').textContent = player.name;
-        document.getElementById('playerId').textContent = `ID: ${player.id}`;
+        // Element-Checks für alle IDs, die per .style oder .textContent angesprochen werden
+        function safeSet(id, prop, value) {
+            const el = document.getElementById(id);
+            debug(`safeSet: id=${id}, exists=${!!el}, prop=${prop}, value=${value}`);
+            if (el) {
+                if (prop === 'style' && typeof value === 'object' && value !== null) {
+                    for (const key in value) {
+                        el.style[key] = value[key];
+                    }
+                } else {
+                    el[prop] = value;
+                }
+            } else {
+                debug(`Element fehlt: ${id}`, 'error');
+            }
+        }
 
+        safeSet('playerNameLink', 'textContent', player.name);
+        safeSet('playerId', 'textContent', `ID: ${player.id}`);
+
+        const playerNameLinkEl = document.getElementById('playerNameLink');
         if (player.data && player.data.transfermarktDoDe && player.data.transfermarktDoDe.link) {
-            document.getElementById('playerNameLink').href = player.data.transfermarktDoDe.link;
+            safeSet('playerNameLink', 'href', player.data.transfermarktDoDe.link);
         } else {
-            document.getElementById('playerNameLink').href = "#";
-            document.getElementById('playerNameLink').style.cursor = "default";
-            document.getElementById('playerNameLink').style.textDecoration = "none";
+            safeSet('playerNameLink', 'href', "#");
+            if (playerNameLinkEl) {
+                playerNameLinkEl.style.cursor = "default";
+                playerNameLinkEl.style.textDecoration = "none";
+            }
         }
 
         const clubId = player.data?.verein || "0";
@@ -1001,50 +1148,65 @@ document.addEventListener('DOMContentLoaded', async () => {
         const logoFileName = getLogoFileName(clubId);
         const logoUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/logos/${logoFileName}.png`;
 
-        const logoImg = document.createElement('img');
-        logoImg.src = logoUrl;
-        logoImg.alt = `Logo ${clubId}`;
-        logoImg.onerror = () => {
-            logoImg.src = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/logos/unbestimmt.png`;
-        };
-        document.getElementById('clubLogo').appendChild(logoImg);
+        const clubLogoEl = document.getElementById('clubLogo');
+        if (clubLogoEl) {
+            const logoImg = document.createElement('img');
+            logoImg.src = logoUrl;
+            logoImg.alt = `Logo ${clubId}`;
+            logoImg.onerror = () => {
+                logoImg.src = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/logos/unbestimmt.png`;
+            };
+            clubLogoEl.appendChild(logoImg);
+        } else {
+            debug('Element fehlt: clubLogo', 'error');
+        }
 
         const statusData = player.data?.comunioStatus || {};
         const statusIndicator = document.getElementById('statusIndicator');
-        statusIndicator.textContent = getStatusIndicator(statusData.status);
-        const statusTooltip = `${getStatusDisplayName(statusData.status)}${statusData.grund ? ' - ' + statusData.grund : ''}${statusData.seit ? ' seit ' + statusData.seit : ''}`;
-        statusIndicator.title = statusTooltip;
+        if (statusIndicator) {
+            statusIndicator.textContent = getStatusIndicator(statusData.status);
+            const statusTooltip = `${getStatusDisplayName(statusData.status)}${statusData.grund ? ' - ' + statusData.grund : ''}${statusData.seit ? ' seit ' + statusData.seit : ''}`;
+            statusIndicator.title = statusTooltip;
+        } else {
+            debug('Element fehlt: statusIndicator', 'error');
+        }
 
         const spielerDaten = player.data?.spielerDaten || {};
-        document.getElementById('birthday').textContent = spielerDaten.geburtstag || '-';
-        document.getElementById('age').textContent = calcAge(spielerDaten.geburtstag);
-        document.getElementById('height').textContent = spielerDaten.groesse || '-';
-        document.getElementById('nationality').textContent = spielerDaten.nationalitaet || '-';
-        document.getElementById('position').textContent = spielerDaten.hauptposition || '-';
-        document.getElementById('foot').textContent = spielerDaten.fuss || '-';
-        document.getElementById('jerseyNumber').textContent = spielerDaten.trikotNummer || '-';
+        safeSet('birthday', 'textContent', spielerDaten.geburtstag || '-');
+        safeSet('age', 'textContent', calcAge(spielerDaten.geburtstag));
+        safeSet('height', 'textContent', spielerDaten.groesse || '-');
+        safeSet('nationality', 'textContent', spielerDaten.nationalitaet || '-');
+        safeSet('position', 'textContent', spielerDaten.hauptposition || '-');
+        safeSet('foot', 'textContent', spielerDaten.fuss || '-');
+        safeSet('jerseyNumber', 'textContent', spielerDaten.trikotNummer || '-');
 
         updateLigainsiderRanking(player);
 
-        document.getElementById('comunioPosition').textContent = player.data?.position || '-';
-        document.getElementById('marketValue').textContent = formatCurrencyFull(player.data?.wert || 0);
-        document.getElementById('pointsWithLastYear').textContent = player.data?.lastSeasonPoints || '-';
-        document.getElementById('owner').textContent = globalOwnersMap.get(player.id) || 'Computer';
+        safeSet('comunioPosition', 'textContent', player.data?.position || '-');
+        safeSet('marketValue', 'textContent', formatCurrencyFull(player.data?.wert || 0));
+        safeSet('pointsWithLastYear', 'textContent', player.data?.lastSeasonPoints || '-');
+        safeSet('owner', 'textContent', globalOwnersMap.get(player.id) || 'Computer');
 
-        document.getElementById('detailStatus').textContent = getStatusDisplayName(statusData.status);
+        safeSet('detailStatus', 'textContent', getStatusDisplayName(statusData.status));
         const stats = player.data?.stats || {};
-        document.getElementById('gamesPlayed').textContent = stats.playedGames || '-';
-        document.getElementById('goals').textContent = stats.totalGoals || '-';
-        document.getElementById('averageRating').textContent = stats.notenDurchschnitt || '-';
-        document.getElementById('yellowCards').textContent = stats.gelbekarten || '-';
-        document.getElementById('redCards').textContent = stats.rotekarten || '-';
+        safeSet('gamesPlayed', 'textContent', stats.playedGames || '-');
+        safeSet('goals', 'textContent', stats.totalGoals || '-');
+        safeSet('averageRating', 'textContent', stats.notenDurchschnitt || '-');
+        safeSet('yellowCards', 'textContent', stats.gelbekarten || '-');
+        safeSet('redCards', 'textContent', stats.rotekarten || '-');
 
         displayAttributes(player);
         displayLigainsiderPanel(player);
 
-
-        document.getElementById('loadingIndicator').style.display = 'none';
-        document.getElementById('playerContent').style.display = 'block';
+        safeSet('loadingIndicator', 'style', {display: 'none'});
+        safeSet('playerContent', 'style', {display: 'block'});
+        // Da .style ein Objekt ist, setze ich display direkt, falls das Element existiert
+        const loadingIndicatorEl2 = document.getElementById('loadingIndicator');
+        if (loadingIndicatorEl2) loadingIndicatorEl2.style.display = 'none';
+        else debug('Element fehlt: loadingIndicator', 'error');
+        const playerContentEl2 = document.getElementById('playerContent');
+        if (playerContentEl2) playerContentEl2.style.display = 'block';
+        else debug('Element fehlt: playerContent', 'error');
 
         setupAccordion();
 
@@ -1056,11 +1218,78 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     } catch (error) {
         const errorMsg = `Fehler beim Laden der Spielerdaten: ${error.message}`;
-        document.getElementById('errorMessage').textContent = errorMsg;
-        document.getElementById('errorMessage').style.display = 'block';
-        document.getElementById('loadingIndicator').style.display = 'none';
+        debug(`Fehler-Element-Check: errorMessageEl=${!!errorMessageEl}, loadingIndicatorEl=${!!loadingIndicatorEl}, playerContentEl=${!!playerContentEl}`, 'error');
+        if (errorMessageEl) {
+            errorMessageEl.textContent = errorMsg;
+            errorMessageEl.style.display = 'block';
+        } else {
+            debug('errorMessageEl fehlt!', 'error');
+        }
+        if (loadingIndicatorEl) {
+            loadingIndicatorEl.style.display = 'none';
+        } else {
+            debug('loadingIndicatorEl fehlt!', 'error');
+        }
+        if (playerContentEl) {
+            playerContentEl.style.display = 'none';
+        } else {
+            debug('playerContentEl fehlt!', 'error');
+        }
         debug(errorMsg, 'error');
     }
+
+    // Transfermarkt-Link Button & Modal logic
+    const tmBtn = document.getElementById('tm-link-btn');
+    const tmModal = document.getElementById('tm-link-modal');
+    const tmModalClose = document.getElementById('tm-link-modal-close');
+    const tmInput = document.getElementById('tm-link-input');
+    const tmSave = document.getElementById('tm-link-save');
+    const tmMsg = document.getElementById('tm-link-modal-msg');
+    let currentPlayerId = null;
+
+    // Show Transfermarkt-Link button only if link is missing
+    function showTmLinkButtonIfNeeded(player) {
+        const tmBtn = document.getElementById('tm-link-btn');
+        if (!tmBtn) return;
+        const hasLink = player.data && player.data.transfermarktDoDe && player.data.transfermarktDoDe.link;
+        tmBtn.style.display = hasLink ? 'none' : 'block';
+    }
+
+    tmBtn.addEventListener('click', () => {
+        tmModal.classList.add('open');
+        tmInput.value = '';
+        tmMsg.textContent = '';
+    });
+    tmModalClose.addEventListener('click', () => {
+        tmModal.classList.remove('open');
+    });
+    tmModal.addEventListener('click', (e) => {
+        if (e.target === tmModal) tmModal.classList.remove('open');
+    });
+    tmSave.addEventListener('click', async () => {
+        const link = tmInput.value.trim();
+        if (!link.match(/^https?:\/\/www\.transfermarkt\.de\//)) {
+            tmMsg.textContent = 'Bitte einen gültigen Transfermarkt-Link einfügen.';
+            return;
+        }
+        // Extract Transfermarkt ID from link
+        const idMatch = link.match(/spieler\/(\d+)/);
+        let idText = '';
+        if (idMatch && idMatch[1]) {
+            idText = `\n  "id": ${idMatch[1]}`;
+        }
+        tmMsg.textContent = 'Speichern...';
+        try {
+            tmMsg.innerHTML = 'Automatisches Speichern ist nicht möglich.<br>Bitte kopiere folgenden JSON-Snippet und füge ihn manuell in die <b>SpielerdatenbankNeutralJson.txt</b> ein:<br><br>' +
+                `<pre style='background:#f9f9f9;padding:8px;border-radius:6px;'>"transfermarktDoDe": {\n  "link": "${link}"${idText}\n}</pre>`;
+        } catch (err) {
+            tmMsg.textContent = 'Fehler beim Speichern: ' + err.message;
+        }
+    });
+
+    // Set currentPlayerId for modal
+    // Use already extracted playerId
+    currentPlayerId = playerId;
 });
 </script>
 </body>
