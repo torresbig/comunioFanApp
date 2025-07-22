@@ -243,6 +243,13 @@
     "news": [
       {
         "date": "22.07.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Burger (ID: 34242)",
+        "playerId": "34242"
+      },
+      {
+        "date": "22.07.2025",
         "art": "VEREINSWECHSEL",
         "gelesen": false,
         "text": "Vereinswechsel: Peretz (Verein 1 → 4)",
@@ -275,6 +282,13 @@
         "gelesen": false,
         "text": "Statuswechsel: Weigl (32447) ist wieder AKTIV",
         "playerId": "32447"
+      },
+      {
+        "date": "22.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Rönnow (32921) ist wieder AKTIV",
+        "playerId": "32921"
       }
     ]
   },
