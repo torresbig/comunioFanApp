@@ -466,18 +466,24 @@
             border-left: 2px solid #e0e0e0;
         }
 
-        @media (max-width: 600px) {
-            .filters {
-                grid-template-columns: 1fr !important;
-                gap: 10px;
-                padding: 12px;
-            }
+       @media (max-width: 600px) {
+    .filters {
+        grid-template-columns: 1fr !important;
+        gap: 10px;
+        padding: 12px;
+    }
+    .filter-group,
+    .checkbox-group {
+        margin-bottom: 0;
+    }
+    #filterContentWrapper {
+        max-height: 80vh !important;    /* 80% der Bildschirmhöhe für mehr Platz */
+        overflow-y: auto !important;    /* Scrollbar ermöglichen */
+        /* Optional zur Verbesserung des Scrollverhaltens auf iOS-Geräten: */
+        -webkit-overflow-scrolling: touch;
+    }
+}
 
-            .filter-group,
-            .checkbox-group {
-                margin-bottom: 0;
-            }
-        }
     </style>
 </head>
 
