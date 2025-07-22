@@ -12,6 +12,7 @@
             margin: 0;
             padding: 10px;
         }
+
         /* Floating debug panel styles */
         #floatingDebugBtn {
             position: fixed;
@@ -29,14 +30,16 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
             opacity: 0.5;
             transition: opacity 0.2s, background 0.2s;
         }
+
         #floatingDebugBtn:hover {
             opacity: 1;
             background: #217dbbcc;
         }
+
         #floatingDebugPanel {
             position: fixed;
             top: 58px;
@@ -46,14 +49,16 @@
             background: #f0f8ff;
             border: 1px solid #cce;
             border-radius: 8px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.10);
             z-index: 1000;
             display: none;
             flex-direction: column;
         }
+
         #floatingDebugPanel.open {
             display: flex;
         }
+
         #floatingDebugPanelHeader {
             background: #3498db;
             color: white;
@@ -65,6 +70,7 @@
             align-items: center;
             justify-content: space-between;
         }
+
         #floatingDebugPanelClose {
             background: none;
             border: none;
@@ -73,6 +79,7 @@
             cursor: pointer;
             margin-left: 8px;
         }
+
         #floatingDebugContent {
             padding: 8px;
             font-family: monospace;
@@ -83,6 +90,7 @@
             border-radius: 0 0 8px 8px;
             flex: 1;
         }
+
         #floatingDebugPanel {
             position: fixed;
             top: 54px;
@@ -92,14 +100,16 @@
             background: #f0f8ff;
             border: 1px solid #cce;
             border-radius: 8px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
             z-index: 1000;
             display: none;
             flex-direction: column;
         }
+
         #floatingDebugPanel.open {
             display: flex;
         }
+
         #floatingDebugPanelHeader {
             background: #3498db;
             color: white;
@@ -110,6 +120,7 @@
             align-items: center;
             justify-content: space-between;
         }
+
         #floatingDebugPanelClose {
             background: none;
             border: none;
@@ -117,6 +128,7 @@
             font-size: 1.2em;
             cursor: pointer;
         }
+
         #floatingDebugContent {
             padding: 12px;
             font-family: monospace;
@@ -127,6 +139,7 @@
             border-radius: 0 0 8px 8px;
             flex: 1;
         }
+
         .toggle-label {
             background: #3498db;
             color: white;
@@ -140,15 +153,18 @@
             font-size: 13px;
             position: relative;
         }
+
         .toggle-label::before {
             content: '▶ ';
             transition: transform 0.3s ease;
             display: inline-block;
             width: 20px;
         }
-        .toggle-toggle:checked + .toggle-label::before {
+
+        .toggle-toggle:checked+.toggle-label::before {
             transform: rotate(90deg);
         }
+
         .toggle-content {
             max-height: 0;
             overflow: hidden;
@@ -159,15 +175,17 @@
             border-radius: 0 0 6px 6px;
             margin-top: 0;
         }
-        .toggle-toggle:checked + .toggle-label + .toggle-content {
+
+        .toggle-toggle:checked+.toggle-label+.toggle-content {
             max-height: 300px;
             overflow-y: auto;
         }
+
         .toggle-inner {
             padding: 15px;
             font-family: monospace;
-            font-size: 11px; 
-            line-height: 1.5; 
+            font-size: 11px;
+            line-height: 1.5;
         }
 
         .error {
@@ -447,6 +465,19 @@
             padding: 4px 0 4px 12px;
             border-left: 2px solid #e0e0e0;
         }
+
+        @media (max-width: 600px) {
+            .filters {
+                grid-template-columns: 1fr !important;
+                gap: 10px;
+                padding: 12px;
+            }
+
+            .filter-group,
+            .checkbox-group {
+                margin-bottom: 0;
+            }
+        }
     </style>
 </head>
 
@@ -631,7 +662,7 @@
             document.getElementById('news-list').style.display = '';
         }
 
-       
+
 
         function getLogoFileName(clubId) {
             if (!clubId) return "unbestimmt.png";
