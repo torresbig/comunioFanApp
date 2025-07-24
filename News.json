@@ -145,6 +145,16 @@
     ]
   },
   {
+    "date": "24.07.2025",
+    "news": [{
+      "date": "24.07.2025",
+      "art": "SPIELERSTATUS",
+      "gelesen": false,
+      "text": "Statuswechsel: Ekitiké (33901) ist jetzt NICHT_IN_LIGA",
+      "playerId": "33901"
+    }]
+  },
+  {
     "date": "24.06.2025",
     "news": [
       {
@@ -213,6 +223,13 @@
         "art": "TRANSFER",
         "gelesen": false,
         "text": "{\"seller\":\"Computer\",\"playerName\":\"Treu\",\"price\":2850000,\"playerValue\":2650000,\"playerId\":\"33947\",\"buyer\":\"Sascha\"}",
+        "playerId": "33947"
+      },
+      {
+        "date": "23.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Treu\",\"price\":2850000,\"playerValue\":2620000,\"playerId\":\"33947\",\"buyer\":\"Sascha\"}",
         "playerId": "33947"
       }
     ]
