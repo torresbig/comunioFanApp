@@ -995,238 +995,167 @@ function getDayStringsOfMonth(year, month) {
 }
 
 /**
- * Lädt und zeigt die Marktwertdaten eines Spielers an.
- * Die Daten werden gruppiert nach Monat und im Bereich vom frühesten bis zum heutigen Tag dargestellt.
- * Nur der aktuellste Monat ist beim Laden aufgeklappt, ältere Monate sind eingeklappt.
- * Fehlende Tageswerte werden mittels Mittelwert der Nachbarwerte interpoliert und farblich markiert,
- * mit Ausnahme des aktuellen Tags und Folge-Tage, falls deren Wert gleich dem letzten Originalwert ist.
+ * Kombinierte Marktwert-Historie eines Spielers
+ * – lückenlose Anzeige vom ersten gespeicherten Tag bis HEUTE
+ * – lineare Interpolation übergrenzen hinweg
+ * – interpolierte Werte rot, HEUTE/Folgetage schwarz falls Wert = letzter Originalwert
+ * – nur der aktuellste Monat ist anfänglich aufgeklappt
  *
- * @param {Object} player Spieler-Objekt mit mindestens player.id
+ * @param {Object} player  Objekt mit mindestens player.id
  */
 async function displayMarketValue(player) {
-    const container = document.getElementById('marketValueChart');
-    if (!container) return;
 
-    const playerId = player.id;
-    const marketValues = await loadPlayerMarketValues(playerId);
-    if (!marketValues || marketValues.length === 0) {
-        container.innerHTML = "<p>Keine Marktwertdaten verfügbar.</p>";
-        document.getElementById('marketTabTrend').innerHTML = "";
-        return;
+  /* ─── 1. DOM-Zielbox prüfen ─────────────────────────── */
+  const box = document.getElementById('marketValueChart');
+  if (!box) return;
+
+  /* ─── 2. Daten laden ────────────────────────────────── */
+  const raw = await loadPlayerMarketValues(player.id);
+  if (!raw?.length) {
+    box.innerHTML = '<p>Keine Marktwertdaten verfügbar.</p>';
+    return;
+  }
+
+  /* ─── 3. Hilfsfunktionen ────────────────────────────── */
+  const MON = ['Januar','Februar','März','April','Mai','Juni',
+               'Juli','August','September','Oktober','November','Dezember'];
+
+  // ➜ Datum in DD.MM.YYYY
+  const fmt = d => {
+    const dd = String(d.getDate()).padStart(2,'0');
+    const mm = String(d.getMonth()+1).padStart(2,'0');
+    return `${dd}.${mm}.${d.getFullYear()}`;
+  };
+
+  // ➜ String → lokales Date-Objekt (0:00 Uhr)
+  const parse = s => {
+    const [d,m,y] = s.split('.');
+    return new Date(y, m - 1, d);          // !!! KEIN ISO-String
+  };
+
+  // ➜ Alle Tage zwischen a … z (inkl.)
+  const span = (a,z) => {
+    const r = [], c = new Date(a);
+    c.setHours(0,0,0,0);
+    z = new Date(z); z.setHours(0,0,0,0);
+    while (c <= z) {
+      r.push(fmt(c));
+      c.setDate(c.getDate() + 1);
+    }
+    return r;
+  };
+
+  /* ─── 4. Originalwerte als Map ──────────────────────── */
+  const orig = {}; raw.forEach(e => orig[e.date] = e.wert);
+
+  const dates  = raw.map(e => parse(e.date));
+  const first  = new Date(Math.min(...dates)); first.setHours(0,0,0,0);
+
+  const today  = new Date(); today.setHours(0,0,0,0);          // immer anzeigen
+
+  const endDay = today;                                        // IMMER bis heute
+
+  const allDays = span(first, endDay);                         // lückenlos
+
+  /* ─── 5. Stützpunkte für lineare Interpolation ───────── */
+  const points = allDays
+    .map((d,i) => orig[d] != null ? {i,val: orig[d]} : null)
+    .filter(Boolean);                                          // [{i,val},…]
+
+  /* ─── 6. Tagesreihe erstellen ───────────────────────── */
+  const rows = [];
+  for (let i = 0; i < allDays.length; i++) {
+    const d = allDays[i];
+
+    // — Originalwert vorhanden
+    if (orig[d] != null) {
+      rows.push({date: d, val: orig[d], red: false});
+      continue;
     }
 
-    const MONATSNAMEN = ["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"];
+    // — Interpolation / Extrapolation
+    const prev = [...points].reverse().find(p => p.i < i);
+    const next = points.find(p => p.i > i);
 
-    function formatDateString(date) {
-        const day = String(date.getDate()).padStart(2, '0');
-        const month = String(date.getMonth() + 1).padStart(2, '0');
-        return `${day}.${month}.${date.getFullYear()}`;
+    let v, red = true;
+    if (prev && next) {                        // linear
+      const t = (i - prev.i) / (next.i - prev.i);
+      v = Math.round(prev.val + t * (next.val - prev.val));
+    } else if (prev) {                         // nach letztem Original
+      v   = prev.val;
+      red = false;
+    } else if (next) {                         // vor erstem Original
+      v   = next.val;
+      red = false;
     }
 
-    function parseDateStr(str) {
-        const [d, m, y] = str.split('.');
-        return new Date(`${y}-${m}-${d}`);
-    }
+    // HEUTE schwarz, falls identisch mit letztem Originalwert
+    if (d === fmt(today) && prev && v === prev.val) red = false;
 
-    function getDaysBetween(fromDate, toDate) {
-        const days = [];
-        const cursor = new Date(fromDate);
-        while (cursor <= toDate) {
-            days.push(formatDateString(cursor));
-            cursor.setDate(cursor.getDate() + 1);
-        }
-        return days;
-    }
+    rows.push({date: d, val: v, red});
+  }
 
-    function avg(a, b) {
-        return Math.round((a + b) / 2);
-    }
+  /* ─── 7. Monate gruppieren + Durchschnitt ───────────── */
+  const months = {};
+  rows.forEach(r => {
+    const [,m,y] = r.date.split('.');
+    const key = `${y}-${m}`;
+    (months[key] ??= []).push(r);
+  });
 
-    // Alle Originalwerte (Datum als Key)
-    const dateToWertOriginal = {};
-    marketValues.forEach(e => dateToWertOriginal[e.date] = e.wert);
+  const mAvg = {};
+  Object.entries(months).forEach(([k,arr]) => {
+    mAvg[k] = Math.round(arr.reduce((s,r)=>s+r.val,0) / arr.length);
+  });
 
-    // Frühestes Datum
-    const allDates = marketValues.map(e => parseDateStr(e.date));
-    const earliestDate = new Date(Math.min(...allDates));
+  const keys = Object.keys(months).sort((a,b) => b.localeCompare(a)); // Neu → Alt
 
-    // Aktuelles Tagesdatum (sicher auf Tagesbeginn)
-    const jsToday = new Date();
-    jsToday.setHours(0,0,0,0);
+  /* ─── 8. HTML-Aufbau ────────────────────────────────── */
+  const foot = `<div class="market-footnote" style="color:#b13737;font-size:.99em;margin-bottom:.7em">
+* Rot markierte Werte wurden interpoliert (linear zwischen Originalwerten).</div>`;
 
-    // Neuster bekannter Wert
-    const latestDataDate = new Date(Math.max(...allDates));
-    // Anzeigebereiches-Ende heute ODER letzter gespeicherter Wert, je nachdem welches weiter in der Zukunft liegt
-    const latestDate = jsToday > latestDataDate ? jsToday : latestDataDate;
-    const latestDateStr = formatDateString(latestDataDate);
+  const hasRed = rows.some(r => r.red);
+  let html = '';
 
-    // Gruppiere nach Monat (yyyy-mm)
-    const monthlyData = {};
-    marketValues.forEach(entry => {
-        const [day, month, year] = entry.date.split('.');
-        const key = `${year}-${month}`;
-        if (!monthlyData[key]) monthlyData[key] = [];
-        monthlyData[key].push({
-            ...entry,
-            dateObj: parseDateStr(entry.date)
-        });
+  keys.forEach((k, idx) => {
+    const [y,m] = k.split('-').map(Number);
+    const title = `${MON[m-1]} ${y}`;
+    const open  = idx === 0 ? '' : 'collapsed';
+
+    const rowHtml = months[k]
+      .slice().sort((a,b) => parse(b.date) - parse(a.date))    // Neu → Alt
+      .map(r => `<div class="market-list-row">
+                   <span class="market-list-date">${r.date}</span>
+                   <span class="market-list-value" style="${r.red ? 'color:#d47171;font-weight:600;' : ''}">
+                     ${formatCurrencyFull(r.val)}
+                   </span>
+                 </div>`).join('');
+
+    html += `<div class="market-month-block">
+               <div class="market-month-header ${open}" data-month="${k}">
+                 ${title}
+                 <span class="market-month-avg">${avgIcon()} ${formatCurrencyShort(mAvg[k])}</span>
+               </div>
+               <div class="market-list ${open}">${rowHtml}</div>
+             </div>`;
+  });
+
+  box.innerHTML = (hasRed ? foot : '') + html;
+
+  /* ─── 9. Auf-/Zuklappen der Monatsblöcke ────────────── */
+  box.querySelectorAll('.market-month-header').forEach(h => {
+    const list = h.nextElementSibling;
+    h.addEventListener('click', () => {
+      h.classList.toggle('collapsed');
+      list.classList.toggle('collapsed');
     });
+  });
 
-    // Monatsdurchschnitt berechnen
-    const monthlyAverages = {};
-    Object.entries(monthlyData).forEach(([key, entries]) => {
-        const werte = entries.map(e => e.wert);
-        monthlyAverages[key] = Math.round(werte.reduce((a, b) => a + b, 0) / werte.length);
-    });
-
-    const sortedMonths = Object.keys(monthlyData).sort((a, b) => b.localeCompare(a));
-
-    let fehlendeTage = false;
-    let html = '';
-
-    const note = `<div class="market-footnote" style="color:#b13737;font-size:0.99em;margin-bottom:0.7em;">
-* Rot markierte Werte wurden interpoliert (Mittelwert aus Nachbarwerten).
-</div>`;
-
-    for (let idx = 0; idx < sortedMonths.length; idx++) {
-        const monthKey = sortedMonths[idx];
-        const entries = monthlyData[monthKey];
-        entries.sort((a, b) => b.dateObj - a.dateObj);
-        const [year, month] = monthKey.split('-').map(Number);
-        const monthName = `${MONATSNAMEN[month - 1]} ${year}`;
-
-        const monthStart = new Date(year, month - 1, 1);
-        const monthEnd = new Date(year, month, 0);
-
-        const start = monthStart < earliestDate ? earliestDate : monthStart;
-        const end = monthEnd > latestDate ? latestDate : monthEnd;
-
-        const tageImMonat = getDaysBetween(start, end);
-
-        let monthRowData = [];
-        let lastOriginalValue = null;
-        let futureModeActive = false;
-
-        for (let i = 0; i < tageImMonat.length; i++) {
-            const tag = tageImMonat[i];
-            if (dateToWertOriginal[tag] !== undefined) {
-                // Originalwert vorhanden
-                const wert = dateToWertOriginal[tag];
-                lastOriginalValue = wert;
-                // Future Mode: Für Tage nach dem letzten gespeicherten Datum aktivieren
-                if (tag === latestDateStr && tag !== formatDateString(jsToday)) {
-                    // letzter gespeicherter Tag ist NICHT heute, futureMode ab morgen aktiv
-                    futureModeActive = true;
-                }
-                if (tag === formatDateString(jsToday)) {
-                    // Tag ist heute, auch futureMode aktivieren, falls heute "neu" ist
-                    futureModeActive = true;
-                }
-                monthRowData.push({ date: tag, wert, interpoliert: false });
-            } else {
-                // Interpolieren
-                let prevWert = null, nextWert = null;
-                for (let j = i - 1; j >= 0; j--) {
-                    if (dateToWertOriginal[tageImMonat[j]] !== undefined) {
-                        prevWert = dateToWertOriginal[tageImMonat[j]];
-                        break;
-                    }
-                }
-                if (!prevWert) {
-                    const alleTage = Object.keys(dateToWertOriginal).sort();
-                    for (let d = alleTage.length - 1; d >= 0; d--) {
-                        if (parseDateStr(alleTage[d]) < parseDateStr(tag)) {
-                            prevWert = dateToWertOriginal[alleTage[d]];
-                            break;
-                        }
-                    }
-                }
-                for (let j = i + 1; j < tageImMonat.length; j++) {
-                    if (dateToWertOriginal[tageImMonat[j]] !== undefined) {
-                        nextWert = dateToWertOriginal[tageImMonat[j]];
-                        break;
-                    }
-                }
-                if (!nextWert) {
-                    const alleTage = Object.keys(dateToWertOriginal).sort();
-                    for (let d = 0; d < alleTage.length; d++) {
-                        if (parseDateStr(alleTage[d]) > parseDateStr(tag)) {
-                            nextWert = dateToWertOriginal[alleTage[d]];
-                            break;
-                        }
-                    }
-                }
-
-                let interpolatedValue = null;
-                if (prevWert !== null && nextWert !== null) {
-                    interpolatedValue = avg(prevWert, nextWert);
-                } else if (prevWert !== null) {
-                    interpolatedValue = prevWert;
-                } else if (nextWert !== null) {
-                    interpolatedValue = nextWert;
-                }
-
-                if (interpolatedValue !== null) {
-                    fehlendeTage = true;
-                    // Für alle zukunftsorientierten interpolierten Tage die gleich dem letzten Originalwert sind: nicht rot
-                    const isTodayOrFuture = parseDateStr(tag) >= jsToday;
-                    const isNormalColor = (futureModeActive || isTodayOrFuture) && interpolatedValue === lastOriginalValue;
-                    monthRowData.push({
-                        date: tag,
-                        wert: interpolatedValue,
-                        interpoliert: !isNormalColor
-                    });
-                } else {
-                    // Kein Wert gefunden => leerer Eintrag
-                    monthRowData.push({ date: tag, wert: null, interpoliert: false });
-                }
-            }
-        }
-
-        // Sortierung Neu -> Alt
-        monthRowData.sort((a, b) => parseDateStr(b.date) - parseDateStr(a.date));
-
-        let htmlRows = '';
-        for (const r of monthRowData) {
-            htmlRows += `
-            <div class="market-list-row">
-                <span class="market-list-date">${r.date}</span>
-                <span class="market-list-value" style="${
-                    r.interpoliert
-                        ? 'color:#d47171; font-weight:600;'
-                        : ''
-                }">
-                    ${r.wert !== null ? formatCurrencyFull(r.wert) : '–'}
-                </span>
-            </div>`;
-        }
-
-        const isCurrentMonth = idx === 0;
-
-        html += `
-            <div class="market-month-block">
-                <div class="market-month-header ${isCurrentMonth ? '' : 'collapsed'}" data-month="${monthKey}">
-                    ${monthName}
-                    <span class="market-month-avg">${avgIcon()} ${formatCurrencyShort(monthlyAverages[monthKey])}</span>
-                </div>
-                <div class="market-list ${isCurrentMonth ? '' : 'collapsed'}">
-                    ${htmlRows}
-                </div>
-            </div>`;
-    }
-
-    container.innerHTML = fehlendeTage ? note + html : html;
-
-    container.querySelectorAll('.market-month-header').forEach(header => {
-        const content = header.nextElementSibling;
-        header.addEventListener('click', () => {
-            header.classList.toggle('collapsed');
-            content.classList.toggle('collapsed');
-        });
-    });
-
-    debug('Marktwerte-Display aktualisiert', 'success');
+  debug('Marktwerte-Anzeige aktualisiert', 'success');
 }
+
+
+
 
 
 
