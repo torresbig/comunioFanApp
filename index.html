@@ -648,7 +648,7 @@
                             try {
                                 const obj = JSON.parse(news.text);
                                 if (art === 'TRANSFER') {
-                                    text = `<span style=\"color:#333;\">${obj.playerName}</span> von <b>${obj.seller}</b> zu <b>${obj.buyer}</b> für <b>${obj.price.toLocaleString('de-DE')} €</b> (Marktwert: ${obj.playerValue.toLocaleString('de-DE')} €)`;
+                                    text = `<span style=\"color:#240;\">${obj.playerName}</span> von <b>${obj.seller}</b> zu <b>${obj.buyer}</b> für <b>${obj.price.toLocaleString('de-DE')} €</b> (Marktwert: ${obj.playerValue.toLocaleString('de-DE')} €)`;
                                 } else {
                                     text = news.text;
                                 }
