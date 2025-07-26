@@ -919,9 +919,9 @@
             const anzahlBesitzer = (() => {
                 const ownerSet = new Set(ownersMap.values());
                 ownerSet.delete("Kein Besitzer");
-                return ownerSet.size;
+                return ownerSet.size - 1;
             })();
-            statsText.innerHTML = `📊 ${allPlayers.length} Spieler • ${clubsMap.size} Vereine • ${anzahlBesitzer} Besitzer<br>
+            statsText.innerHTML = `📊 ${allPlayers.length} Spieler • ${clubsMap.size - 1} Vereine • ${anzahlBesitzer} Besitzer<br>
                                    🕒 Letztes Update: ${updateTime}`;
             statsDiv.style.display = 'block';
         }
