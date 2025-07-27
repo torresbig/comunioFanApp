@@ -92,6 +92,46 @@
     ]
   },
   {
+    "date": "27.07.2025",
+    "news": [
+      {
+        "date": "27.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Jakić\",\"price\":2666999,\"playerValue\":2530000,\"playerId\":\"33517\",\"buyer\":\"Alexander\"}",
+        "playerId": "33517"
+      },
+      {
+        "date": "27.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Lukeba\",\"price\":2940000,\"playerValue\":2960000,\"playerId\":\"33837\",\"buyer\":\"Thomas\"}",
+        "playerId": "33837"
+      },
+      {
+        "date": "27.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Čvančara (33819) ist jetzt NICHT_IN_LIGA",
+        "playerId": "33819"
+      },
+      {
+        "date": "27.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Perea (33652) ist jetzt NICHT_IN_LIGA",
+        "playerId": "33652"
+      },
+      {
+        "date": "27.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Čolina (33710) ist jetzt NICHT_IN_LIGA",
+        "playerId": "33710"
+      }
+    ]
+  },
+  {
     "date": "27.06.2025",
     "news": [{
       "date": "27.06.2025",
@@ -103,13 +143,29 @@
   },
   {
     "date": "26.07.2025",
-    "news": [{
-      "date": "26.07.2025",
-      "art": "TRANSFER",
-      "gelesen": false,
-      "text": "{\"seller\":\"Computer\",\"playerName\":\"Baumann\",\"price\":2999999,\"playerValue\":2340000,\"playerId\":\"31489\",\"buyer\":\"damian\"}",
-      "playerId": "31489"
-    }]
+    "news": [
+      {
+        "date": "26.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Baumann\",\"price\":2999999,\"playerValue\":2340000,\"playerId\":\"31489\",\"buyer\":\"damian\"}",
+        "playerId": "31489"
+      },
+      {
+        "date": "26.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Baumann\",\"price\":2999999,\"playerValue\":2440000,\"playerId\":\"31489\",\"buyer\":\"damian\"}",
+        "playerId": "31489"
+      },
+      {
+        "date": "26.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Thomas\",\"playerName\":\"Batz\",\"price\":171700,\"playerValue\":160000,\"playerId\":\"31693\",\"buyer\":\"Computer\"}",
+        "playerId": "31693"
+      }
+    ]
   },
   {
     "date": "26.06.2025",
@@ -136,6 +192,13 @@
         "art": "TRANSFER",
         "gelesen": false,
         "text": "{\"seller\":\"Computer\",\"playerName\":\"Woltemade\",\"price\":13299000,\"playerValue\":13250000,\"playerId\":\"33193\",\"buyer\":\"damian\"}",
+        "playerId": "33193"
+      },
+      {
+        "date": "25.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Woltemade\",\"price\":13299000,\"playerValue\":13390000,\"playerId\":\"33193\",\"buyer\":\"damian\"}",
         "playerId": "33193"
       }
     ]
