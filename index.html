@@ -466,24 +466,27 @@
             border-left: 2px solid #e0e0e0;
         }
 
-       @media (max-width: 600px) {
-    .filters {
-        grid-template-columns: 1fr !important;
-        gap: 10px;
-        padding: 12px;
-    }
-    .filter-group,
-    .checkbox-group {
-        margin-bottom: 0;
-    }
-    #filterContentWrapper {
-        max-height: 80vh ;    /* 80% der Bildschirmhöhe für mehr Platz */
-        overflow-y: auto !important;    /* Scrollbar ermöglichen */
-        /* Optional zur Verbesserung des Scrollverhaltens auf iOS-Geräten: */
-        -webkit-overflow-scrolling: touch;
-    }
-}
+        @media (max-width: 600px) {
+            .filters {
+                grid-template-columns: 1fr !important;
+                gap: 10px;
+                padding: 12px;
+            }
 
+            .filter-group,
+            .checkbox-group {
+                margin-bottom: 0;
+            }
+
+            #filterContentWrapper {
+                max-height: 80vh;
+                /* 80% der Bildschirmhöhe für mehr Platz */
+                overflow-y: auto !important;
+                /* Scrollbar ermöglichen */
+                /* Optional zur Verbesserung des Scrollverhaltens auf iOS-Geräten: */
+                -webkit-overflow-scrolling: touch;
+            }
+        }
     </style>
 </head>
 
@@ -646,13 +649,48 @@
                         for (const news of grouped[art]) {
                             let text = '';
                             try {
-                                const obj = JSON.parse(news.text);
                                 if (art === 'TRANSFER') {
-                                    text = `<span style=\"color:#80f;\"><b>${obj.playerName}</b></span> von <b>${obj.seller}</b> zu <b>${obj.buyer}</b> für <b>${obj.price.toLocaleString('de-DE')} €</b> (Marktwert: ${obj.playerValue.toLocaleString('de-DE')} €)`;
+                                    const obj = JSON.parse(news.text);
+                                    text = `<span style="color:#80f;"><b>${obj.playerName}</b></span> von <b style="color:#00f;">${obj.seller}</b> zu <b style="color:#00f;">${obj.buyer}</b> für <b>${obj.price.toLocaleString('de-DE')} €</b> (Marktwert: ${obj.playerValue.toLocaleString('de-DE')} €)`;
                                 } else if (art === 'SPIELERSTATUS') {
+                                    const regex = /Statuswechsel:\s(.+?)\s\(\d+\)\sist\s(wieder|jetzt)\s([A-Z_]+)(?:\s\((.+)\))?/i;
+                                    const match = regex.exec(news.text);
+
+                                    if (match) {
+                                        const playerName = match[1];
+                                        const status = match[3];
+                                        const statusDetail = match[4] || '';
+
+                                        let statusDisplay = `<b>${status.replace(/_/g, ' ')}</b>`;
+
+                                        if (statusDetail) {
+                                            statusDisplay += ` (${statusDetail})`;
+                                        }
+
+                                        text = `Statusänderung: <span style="color:#80f;"><b>${playerName}</b></span> ist ${match[2]} ${statusDisplay}`;
+                                    } else {
+                                        text = news.text;
+                                    }
+                                } else if (art === 'VEREINSWECHSEL') {
+                                    if (art === 'VEREINSWECHSEL') {
+                                        try {
+                                            // Versuch, text als JSON zu parsen (neues Format)
+                                            const obj = JSON.parse(news.text);
+
+                                            // Falls erfolgreich, strukturierte Ausgabe
+                                            text = `<span style="color:#80f;"><b>${obj.playerName}</b></span> wechselt von <b>${obj.oldClub}</b> zu <b>${obj.newClub}</b>`;
+                                        } catch (e) {
+                                            // Fallback, falls text kein JSON ist (altes Format)
+                                            text = news.text;
+                                        }
+                                    }
+
+                                } else {
+                                    // Für andere Arten einfach den Text übernehmen
                                     text = news.text;
-                                } else {text = news.text;} 
-                            } catch {
+                                }
+                            } catch (e) {
+                                console.error("Fehler beim Verarbeiten des News-Textes:", news.text, e);
                                 text = news.text;
                             }
                             html += `<li class=\"news-list-li\">${text}</li>`;
@@ -1097,9 +1135,9 @@
                 });
             });
         }
-</script>
-<script src="https://www.yogizaehler.de/Besucherzaehler/pz_018_2.php?id=7710741674&design=886000003"></script> 
-    
+    </script>
+    <script src="https://www.yogizaehler.de/Besucherzaehler/pz_018_2.php?id=7710741674&design=886000003"></script>
+
 </body>
 
 </html>
