@@ -649,9 +649,9 @@
                                 const obj = JSON.parse(news.text);
                                 if (art === 'TRANSFER') {
                                     text = `<span style=\"color:#80f;\"><b>${obj.playerName}</b></span> von <b>${obj.seller}</b> zu <b>${obj.buyer}</b> für <b>${obj.price.toLocaleString('de-DE')} €</b> (Marktwert: ${obj.playerValue.toLocaleString('de-DE')} €)`;
-                                } else {
+                                } else if (art === 'SPIELERSTATUS') {
                                     text = news.text;
-                                }
+                                } else {text = news.text;} 
                             } catch {
                                 text = news.text;
                             }
