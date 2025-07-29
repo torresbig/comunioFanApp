@@ -19,6 +19,25 @@
     ]
   },
   {
+    "date": "29.07.2025",
+    "news": [
+      {
+        "date": "29.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Sarco (34079) ist wieder AKTIV",
+        "playerId": "34079"
+      },
+      {
+        "date": "29.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Özcan (32677) ist wieder AKTIV",
+        "playerId": "32677"
+      }
+    ]
+  },
+  {
     "date": "29.06.2025",
     "news": [
       {
@@ -81,6 +100,20 @@
         "gelesen": false,
         "text": "Statuswechsel: Alfa-Ruprecht (34246) ist jetzt VERLETZT (unbekannte Verletzung)",
         "playerId": "34246"
+      },
+      {
+        "date": "28.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Christopher\",\"playerName\":\"Majer\",\"price\":3515200,\"playerValue\":3440000,\"playerId\":\"33844\",\"buyer\":\"Computer\"}",
+        "playerId": "33844"
+      },
+      {
+        "date": "28.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Alexander\",\"playerName\":\"Skhiri\",\"price\":4400100,\"playerValue\":2910000,\"playerId\":\"33157\",\"buyer\":\"Christian\"}",
+        "playerId": "33157"
       }
     ]
   },
