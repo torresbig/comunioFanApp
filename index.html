@@ -685,19 +685,8 @@
                                         }
                                     
 
-                                } else if (art === 'OWNERCHANGE') {
-                                    
-                                        try {
-                                            // Versuch, text als JSON zu parsen (neues Format)
-                                            const obj = JSON.parse(news.text);
-
-                                            // Falls erfolgreich, strukturierte Ausgabe
-                                           //text =`<span style="color:#80f;"><b>${obj.playerName}</b></span> war noch keine User zugeordnet! jetzt --> <b>${obj.buyer}</b> `;
-                                        } catch (e) {
-                                            // Fallback, falls text kein JSON ist (altes Format)
-                                            text = news.text;
-                                        }
-                                    
+                                } else if (art === 'OWNERCHANGE' || art === 'UNBESTIMMT') {
+                                    addDebug(`Ownerchange-Text: ${news.text} wird nicht hinzugefügt! nur für debug!`);
 
                                 } else {
                                     // Für andere Arten einfach den Text übernehmen
