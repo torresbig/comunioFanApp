@@ -1690,7 +1690,7 @@
 
             try {
                 debug('Lade Spielerdatenbank...', 'info');
-                const resp = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/githubusercontentSpielerdatenbankNeutralJson.txt`);
+                const resp = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/SpielerdatenbankNeutralJson.txt`);
                 const allPlayersResponse = await resp.json();
 
                 // Array aus playerDB extrahieren oder leeres Array, falls playerDB fehlt
