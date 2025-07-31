@@ -1,5 +1,66 @@
 [
   {
+    "date": "31.07.2025",
+    "news": [
+      {
+        "date": "31.07.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Luis Díaz (ID: 34254)",
+        "playerId": "34254"
+      },
+      {
+        "date": "31.07.2025",
+        "art": "OWNERCHANGE",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Luis Díaz\",\"playerValue\":15000000,\"playerId\":\"34254\",\"buyer\":\"1\",\"info\":\"neuer Spieler. war noch nicht in der Liste drin!\"}",
+        "playerId": "34254"
+      },
+      {
+        "date": "31.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Zaragoza (33898) ist jetzt NICHT_IN_LIGA",
+        "playerId": "33898"
+      },
+      {
+        "date": "31.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Xhaka (31967) ist jetzt NICHT_IN_LIGA",
+        "playerId": "31967"
+      },
+      {
+        "date": "31.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Hong (34053) ist jetzt NICHT_IN_LIGA",
+        "playerId": "34053"
+      },
+      {
+        "date": "31.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Lisewski (34125) ist jetzt NICHT_IN_LIGA",
+        "playerId": "34125"
+      },
+      {
+        "date": "31.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Poreba (34153) ist jetzt NICHT_IN_LIGA",
+        "playerId": "34153"
+      },
+      {
+        "date": "31.07.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Hložek (33619) ist jetzt VERLETZT (Fußverletzung)",
+        "playerId": "33619"
+      }
+    ]
+  },
+  {
     "date": "30.07.2025",
     "news": [
       {
@@ -36,6 +97,13 @@
         "gelesen": false,
         "text": "Statuswechsel: Faye (34212) ist jetzt NICHT_IN_LIGA",
         "playerId": "34212"
+      },
+      {
+        "date": "30.07.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"damian\",\"playerName\":\"Kauã Santos\",\"price\":1000010,\"playerValue\":570000,\"playerId\":\"33855\",\"buyer\":\"Christian\"}",
+        "playerId": "33855"
       }
     ]
   },
