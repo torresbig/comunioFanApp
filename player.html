@@ -921,8 +921,8 @@
             debug('Lade Besitzerdaten...', 'info');
             try {
                 const [usersData, playerToUserMap] = await Promise.all([
-                    fetchJSON(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/UserdatenbankJson_884691.txt`),
-                    fetchJSON(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/PlayerToUserMap_884691.txt`)
+                    fetchJSON(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/UserdatenbankJson_884691.txt`),
+                    fetchJSON(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/PlayerToUserMap_884691.txt`)
                 ]);
 
                 const userMap = new Map();
@@ -967,7 +967,7 @@
         async function loadPlayerMarketValues(playerId) {
             debug(`Lade Marktwerte für Spieler ${playerId}`, 'info');
             try {
-                const resp = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/MarktwerteJson.txt`);
+                const resp = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/MarktwerteJson.txt`);
                 const data = await resp.json();
                 const entry = data.find(e => String(e.id) === String(playerId));
                 if (!entry || !entry.data || !entry.data.normal) {
@@ -1690,7 +1690,7 @@
 
             try {
                 debug('Lade Spielerdatenbank...', 'info');
-                const resp = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/SpielerdatenbankNeutralJson.txt`);
+                const resp = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/githubusercontentSpielerdatenbankNeutralJson.txt`);
                 const allPlayersResponse = await resp.json();
 
                 // Array aus playerDB extrahieren oder leeres Array, falls playerDB fehlt
