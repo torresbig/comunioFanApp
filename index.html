@@ -672,18 +672,18 @@
                                         text = news.text;
                                     }
                                 } else if (art === 'VEREINSWECHSEL') {
-                                    
-                                        try {
-                                            // Versuch, text als JSON zu parsen (neues Format)
-                                            const obj = JSON.parse(news.text);
 
-                                            // Falls erfolgreich, strukturierte Ausgabe
-                                            text = `<span style="color:#80f;"><b>${obj.playerName}</b></span> wechselt von <b>${obj.oldClub}</b> zu <b>${obj.newClub}</b>`;
-                                        } catch (e) {
-                                            // Fallback, falls text kein JSON ist (altes Format)
-                                            text = news.text;
-                                        }
-                                    
+                                    try {
+                                        // Versuch, text als JSON zu parsen (neues Format)
+                                        const obj = JSON.parse(news.text);
+
+                                        // Falls erfolgreich, strukturierte Ausgabe
+                                        text = `<span style="color:#80f;"><b>${obj.playerName}</b></span> wechselt von <b>${obj.oldClub}</b> zu <b>${obj.newClub}</b>`;
+                                    } catch (e) {
+                                        // Fallback, falls text kein JSON ist (altes Format)
+                                        text = news.text;
+                                    }
+
 
                                 } else if (art === 'OWNERCHANGE' || art === 'UNBESTIMMT') {
                                     addDebug(`Ownerchange-Text: ${news.text} wird nicht hinzugefügt! nur für debug!`);
@@ -877,7 +877,7 @@
                 clubsMap.set(club.id, club.name);
             });
             addDebug(`Vereine verarbeitet: ${clubsMap.size}`);
-            allPlayers = playersData.map(player => ({
+            allPlayers = playersData.playerDB.map(player => ({
                 ...player,
                 position: player.data?.position || "Unbekannt"
             }));
