@@ -2603,6 +2603,39 @@
     ]
   },
   {
+    "date": "01.08.2025",
+    "news": [
+      {
+        "date": "01.08.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Wagner (ID: 34255)",
+        "playerId": "34255"
+      },
+      {
+        "date": "01.08.2025",
+        "art": "VEREINSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Bülter\",\"newClub\":\"13\",\"oldClub\":\"62\"}",
+        "playerId": "33139"
+      },
+      {
+        "date": "01.08.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Richter (32733) ist jetzt NICHT_IN_LIGA",
+        "playerId": "32733"
+      },
+      {
+        "date": "01.08.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"playerName\":\"Seibt\",\"price\":160000,\"playerValue\":160000,\"playerId\":\"34067\",\"buyer\":\"Thomas\"}",
+        "playerId": "34067"
+      }
+    ]
+  },
+  {
     "date": "01.07.2025",
     "news": [
       {
