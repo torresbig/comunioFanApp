@@ -4601,9 +4601,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "unbekannt",
-          "lastUpdate": "24.05.2025",
-          "seit": "unbekannt",
+          "grund": "Bruch der Augenhöhle",
+          "lastUpdate": "02.08.2025",
+          "seit": "01.08.2025",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -4613,7 +4613,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Pavlović",
@@ -19165,9 +19166,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "muskuläre Probleme",
+          "grund": "",
           "lastUpdate": "02.08.2025",
-          "seit": "11.05.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -19177,8 +19178,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Tuta",
@@ -20818,7 +20819,7 @@
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 0,
-          "nationalitaet": "N/A",
+          "nationalitaet": "Deutschland",
           "laenderspielTore": 0,
           "hauptposition": "",
           "fuss": ""
@@ -20828,13 +20829,13 @@
         "wert": 160000,
         "verein": "1",
         "transfermarktDoDe": {
-          "name": "",
-          "link": "",
+          "name": "Aleksandar Pavlovic",
+          "link": "https://www.transfermarkt.de/aleksandar-pavlovic/profil/spieler/792380",
           "id": 0
         },
         "lastSeasonPoints": 0,
         "punkte": 0,
-        "realWert": 0,
+        "realWert": 55000000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
         "lastUpdate": "02.08.2025",
@@ -20855,9 +20856,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "unbekannt",
-          "lastUpdate": "24.05.2025",
-          "seit": "unbekannt",
+          "grund": "Bruch der Augenhöhle",
+          "lastUpdate": "02.08.2025",
+          "seit": "01.08.2025",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -20867,7 +20868,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Pavlešić",
@@ -27552,12 +27554,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "04.06.2025",
-          "seit": "",
+          "grund": "Sprunggelenksverletzung",
+          "lastUpdate": "02.08.2025",
+          "seit": "31.07.2025",
           "details": "",
           "historie": [],
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Dompé",
@@ -60703,7 +60706,10 @@
     {
       "data": {
         "lastProcessedMatchday": 0,
-        "transfermarktDoDe": {},
+        "transfermarktDoDe": {
+          "link": "https://www.transfermarkt.de/shuto-machino/profil/spieler/550580",
+          "name": "Shuto Machino"
+        },
         "hauptposition": "",
         "groesse": "",
         "lastBigUpdate": "30.07.2025",
@@ -60714,7 +60720,7 @@
         "possibleNames": [],
         "fuss": "",
         "geburtstag": "",
-        "spielerDaten": {},
+        "spielerDaten": {"nationalitaet": "Japan"},
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "3",
@@ -60722,7 +60728,7 @@
         "lastPoints": 0,
         "lastSeasonPoints": 152,
         "punkte": 0,
-        "realWert": 0,
+        "realWert": 5000000,
         "laenderspiele": 0,
         "lastUpdate": "02.08.2025",
         "historicalPoints": [{"2024": 152}],
@@ -60740,12 +60746,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "unbekannt",
-          "lastUpdate": "27.07.2025",
-          "seit": "unbekannt",
+          "grund": "Wadenprobleme",
+          "lastUpdate": "02.08.2025",
+          "seit": "26.07.2025",
           "details": "",
           "historie": [],
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Machino",
