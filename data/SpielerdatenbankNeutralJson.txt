@@ -49631,9 +49631,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "07.07.2025",
-          "seit": "",
+          "grund": "Krank",
+          "lastUpdate": "02.08.2025",
+          "seit": "28.07.2025",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -49643,8 +49643,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Borges Sanches",
@@ -60707,8 +60707,10 @@
       "data": {
         "lastProcessedMatchday": 0,
         "transfermarktDoDe": {
+          "date": "02.08.2025",
           "link": "https://www.transfermarkt.de/shuto-machino/profil/spieler/550580",
-          "name": "Shuto Machino"
+          "name": "Shuto Machino",
+          "leistungsDaten": {}
         },
         "hauptposition": "",
         "groesse": "",
@@ -60720,7 +60722,18 @@
         "possibleNames": [],
         "fuss": "",
         "geburtstag": "",
-        "spielerDaten": {"nationalitaet": "Japan"},
+        "spielerDaten": {
+          "groesse": "1,85",
+          "geburtstag": "30.09.1999",
+          "laenderspiele": 8,
+          "lastUpdate": "02.08.2025",
+          "nebenpositionen": [],
+          "trikotNummer": 18,
+          "nationalitaet": "Japan",
+          "laenderspielTore": 4,
+          "hauptposition": "Mittelstürmer",
+          "fuss": "rechts"
+        },
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "3",
