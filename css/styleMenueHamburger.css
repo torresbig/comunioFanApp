@@ -1,0 +1,88 @@
+
+
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1500;
+}
+.hamburger-button {
+    background: #2c3e50;
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: all 0.3s;
+}
+.hamburger-button:hover { background: #34495e; }
+.hamburger-line {
+    width: 27px;
+    height: 3px;
+    background: #fff;
+    margin: 3px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.hamburger-button.active .hamburger-line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 7px);
+}
+.hamburger-button.active .hamburger-line:nth-child(2) { opacity: 0; }
+.hamburger-button.active .hamburger-line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+.hamburger-dropdown {
+    position: absolute;
+    top: 56px;
+    right: 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    min-width: 210px;
+    display: none;
+    overflow: hidden;
+    padding-bottom:6px;
+}
+.hamburger-dropdown.show { display: block; animation: slideIn 0.25s;}
+@keyframes slideIn { from {opacity:0; transform:translateY(-12px);} to {opacity:1; transform:translateY(0);} }
+.menu-item {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #34495e;
+    border-bottom: 1px solid #efefef;
+    transition: background 0.27s;
+    font-weight: 500;
+}
+.menu-item:hover { background: #f4f7f9; color:#111 !important;}
+.menu-item:last-child { border-bottom: none; }
+.menu-tarn {
+    font-size: 12px;          
+    color: #bcbcbc !important;
+    font-style: italic;
+    text-align: right;
+    padding: 4px 12px 2px 0;
+    border: none; background: transparent;
+    user-select: none;
+    pointer-events: auto;
+    transition: none;
+    cursor: default !important; /* ganz wichtig: KEIN Finger-Mauszeiger */
+}
+.menu-tarn.activated {
+    color:#e74c3c !important; font-style:normal;font-weight:bold;
+}
+.menu-tarn:hover,
+.menu-tarn:active,
+.menu-tarn:focus {
+    background: transparent !important;
+    color: #bcbcbc !important;
+    outline: none;
+    cursor: default !important; /* kein Zeiger bei Hover/Klick */
+}
+
+
