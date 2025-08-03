@@ -1,0 +1,82 @@
+        /* Floating debug panel styles */
+        /* Debug-Button unten rechts */
+        #floatingDebugBtn {
+            position: fixed;
+            bottom: 20px;
+            /* statt top */
+            right: 20px;
+            z-index: 2001;
+            /* höher als Menü */
+            background: #3498dbcc;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+            opacity: 0.5;
+            transition: opacity 0.2s, background 0.2s;
+        }
+
+        #floatingDebugBtn:hover {
+            opacity: 1;
+            background: #217dbbcc;
+        }
+
+        /* Debug-Panel passend zum Button nach unten rechts */
+        #floatingDebugPanel {
+            position: fixed;
+            bottom: 68px;
+            /* etwas über dem Button */
+            right: 12px;
+            width: 340px;
+            max-height: 400px;
+            background: #f0f8ff;
+            border: 1px solid #cce;
+            border-radius: 8px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+            z-index: 2000;
+            /* etwas unter dem Button */
+            display: none;
+            flex-direction: column;
+        }
+
+        #floatingDebugPanel.open {
+            display: flex;
+        }
+
+        #floatingDebugPanelHeader {
+            background: #3498db;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 8px 8px 0 0;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #floatingDebugPanelClose {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        #floatingDebugContent {
+            padding: 12px;
+            font-family: monospace;
+            font-size: 12px;
+            line-height: 1.5;
+            overflow-y: auto;
+            background: #f0f8ff;
+            border-radius: 0 0 8px 8px;
+            flex: 1;
+        }
+
