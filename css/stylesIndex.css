@@ -138,52 +138,7 @@
             margin-right: 10px;
         }
 
-        .table-container {
-            overflow-x: auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-            margin-bottom: 20px;
-            margin-top: 0;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            min-width: 1000px;
-        }
-
-        th,
-        td {
-            padding: 12px 10px;
-            text-align: left;
-            border-bottom: 1px solid #eee;
-            font-size: 13px;
-        }
-
-        th {
-            background-color: #2c3e50;
-            color: white;
-            position: sticky;
-            top: 0;
-            font-weight: 600;
-            cursor: pointer;
-            user-select: none;
-        }
-
-        th:hover {
-            background-color: #34495e;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        tr:hover {
-            background-color: #f1f7ff;
-            cursor: pointer;
-        }
-
+        
         .status-aktiv {
             color: #27ae60;
             font-weight: bold;
@@ -217,54 +172,6 @@
             vertical-align: middle;
         }
 
-        .debug-toggle {
-            display: none;
-        }
-
-        .debug-label {
-            background: #3498db;
-            color: white;
-            padding: 12px;
-            border-radius: 6px;
-            cursor: pointer;
-            user-select: none;
-            font-weight: bold;
-            margin: 15px 0;
-            display: block;
-        }
-
-        .debug-label::before {
-            content: '▶ ';
-            transition: transform 0.3s ease;
-            display: inline-block;
-            width: 20px;
-        }
-
-        .debug-toggle:checked+.debug-label::before {
-            transform: rotate(90deg);
-        }
-
-        .debug-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-in-out;
-            background: #f0f8ff;
-            border: 1px solid #cce;
-            border-radius: 0 0 6px 6px;
-            margin-top: -5px;
-        }
-
-        .debug-toggle:checked+.debug-label+.debug-content {
-            max-height: 300px;
-            overflow-y: auto;
-        }
-
-        .debug-inner {
-            padding: 15px;
-            font-family: monospace;
-            font-size: 12px;
-            line-height: 1.5;
-        }
 
         #news-section {
             margin-bottom: 24px;
