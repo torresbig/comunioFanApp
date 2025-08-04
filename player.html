@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Spieler Details</title>
+    <link rel="stylesheet" href="css/debugPanel.css">
+    <link rel="stylesheet" href="css/buttonBack.css">
+    <link rel="stylesheet" href="css/styleMenueHamburger.css">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -491,72 +494,7 @@
             color: #27ae60;
         }
 
-        .debug-panel {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            width: 300px;
-            max-height: 500px;
-            background: rgba(0, 0, 0, 0.9);
-            border-radius: 8px;
-            color: #fff;
-            font-family: monospace;
-            font-size: 12px;
-            z-index: 9999;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
 
-        .debug-header {
-            background: #444;
-            padding: 8px 12px;
-            border-radius: 8px 8px 0 0;
-            cursor: pointer;
-            user-select: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: bold;
-        }
-
-        .debug-content {
-            padding: 10px;
-            max-height: 400px;
-            overflow-y: auto;
-            transition: max-height 0.3s ease;
-        }
-
-        .debug-content.collapsed {
-            max-height: 0;
-            padding: 0 10px;
-            overflow: hidden;
-        }
-
-        .debug-entry {
-            margin-bottom: 5px;
-            padding: 3px 0;
-            border-bottom: 1px solid #333;
-        }
-
-        .debug-timestamp {
-            color: #888;
-            font-size: 10px;
-        }
-
-        .debug-level-info {
-            color: #4CAF50;
-        }
-
-        .debug-level-warn {
-            color: #FF9800;
-        }
-
-        .debug-level-error {
-            color: #F44336;
-        }
-
-        .debug-level-success {
-            color: #8BC34A;
-        }
 
         @media (max-width: 600px) {
             .container {
@@ -730,15 +668,33 @@
 </head>
 
 <body>
-    <div class="debug-panel">
-        <div class="debug-header" onclick="toggleDebug()">
-            🐛 Debug Log <span id="debugToggle">▼</span>
-        </div>
-        <div class="debug-content" id="debugContent"></div>
-    </div>
 
+      <!-- Debug Button -->
+  <button id="floatingDebugBtn" title="Debug">🐞</button>
+  <div id="floatingDebugPanel">
+    <div id="floatingDebugPanelHeader">
+      Debug-Informationen
+      <button id="floatingDebugPanelClose" title="Schließen">×</button>
+    </div>
+    <div id="floatingDebugContent"></div>
+  </div>
+
+<div class="hamburger-menu">
+  <button class="hamburger-button" id="hamburgerButton">
+    <div class="hamburger-line"></div>
+    <div class="hamburger-line"></div>
+    <div class="hamburger-line"></div>
+  </button>
+  <div class="hamburger-dropdown" id="hamburgerDropdown">
+    <a href="#" class="menu-item" id="linkIndex">Startseite</a>
+    <a href="#" class="menu-item" id="linkTransfermarkt">🏪 Transfermarkt</a>
+    <a href="#" class="menu-item" id="linkUseruebersicht">👤 Userübersicht</a>
+    <a href="https://www.instagram.com/comuniofanapp/." class="menu-item" target="_blank">📸 Instagram: ComunioFanApp</a>
+    <div class="menu-item menu-tarn" id="menuTarnItem" style="font-size:0.95em; color:#888; cursor:pointer;">erstellt von comunioFanApp</div>
+  </div>
+</div>
     <nav class="navbar">
-        <button class="back-btn" onclick="window.history.back()">← Zurück</button>
+        <button class="btnBack" onclick="window.history.back()">← Zurück</button>
         <div class="player-header">
             <div class="player-center">
                 <div class="player-row">
@@ -857,68 +813,38 @@
             <div id="tm-link-modal-msg" style="margin-top:10px; color:#c00; font-size:13px;"></div>
         </div>
     </div>
+     <script src="js/config.js"></script>
+  <script src="js/hamburgerMenu.js"></script>
+  <script src="js/debugPanel.js"></script>
     <script>
-        let debugLog = [];
-        function debug(message, level = 'info') {
-            const timestamp = new Date().toLocaleTimeString();
-            const entry = { timestamp, message, level };
-            debugLog.push(entry);
-            updateDebugDisplay();
-            console.log(`[${timestamp}] ${level.toUpperCase()}: ${message}`);
-        }
 
-        function updateDebugDisplay() {
-            const container = document.getElementById('debugContent');
-            if (!container) return;
-            const html = debugLog.slice(-20).map(entry => `
-        <div class="debug-entry">
-            <span class="debug-timestamp">${entry.timestamp}</span>
-            <span class="debug-level-${entry.level}"> ${entry.message}</span>
-        </div>
-    `).join('');
-            container.innerHTML = html;
-            container.scrollTop = container.scrollHeight;
-        }
-
-        function toggleDebug() {
-            const content = document.getElementById('debugContent');
-            const toggle = document.getElementById('debugToggle');
-            if (content.classList.contains('collapsed')) {
-                content.classList.remove('collapsed');
-                toggle.textContent = '▼';
-            } else {
-                content.classList.add('collapsed');
-                toggle.textContent = '▶';
-            }
-        }
 
         const MONATSNAMEN = [
             "Januar", "Februar", "März", "April", "Mai", "Juni",
             "Juli", "August", "September", "Oktober", "November", "Dezember"
         ];
-        const GITHUB_USER = "torresbig";
-        const GITHUB_REPO = "comunioFanApp";
+       
         let globalOwnersMap = new Map();
 
-        debug('Script gestartet', 'info');
+        addDebug('Script gestartet', 'info');
 
         async function fetchJSON(url) {
-            debug(`Lade JSON von: ${url}`, 'info');
+            addDebug(`Lade JSON von: ${url}`, 'info');
             try {
                 const response = await fetch(url);
-                debug(`Response Status: ${response.status}`, response.ok ? 'success' : 'error');
+                addDebug(`Response Status: ${response.status}`, response.ok ? 'success' : 'error');
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 const data = await response.json();
-                debug(`JSON erfolgreich geladen (${Array.isArray(data) ? data.length + ' Einträge' : 'Object'})`, 'success');
+                addDebug(`JSON erfolgreich geladen (${Array.isArray(data) ? data.length + ' Einträge' : 'Object'})`, 'success');
                 return data;
             } catch (error) {
-                debug(`Fehler beim JSON-Laden: ${error.message}`, 'error');
+                addDebug(`Fehler beim JSON-Laden: ${error.message}`, 'error');
                 throw error;
             }
         }
 
         async function loadOwnersData() {
-            debug('Lade Besitzerdaten...', 'info');
+            addDebug('Lade Besitzerdaten...', 'info');
             try {
                 const [usersData, playerToUserMap] = await Promise.all([
                     fetchJSON(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/UserdatenbankJson_884691.txt`),
@@ -935,9 +861,9 @@
                     const ownerId = item[playerId];
                     globalOwnersMap.set(playerId, userMap.get(ownerId) || `Unbekannt (${ownerId})`);
                 });
-                debug(`Besitzerdaten geladen: ${globalOwnersMap.size} Zuordnungen`, 'success');
+                addDebug(`Besitzerdaten geladen: ${globalOwnersMap.size} Zuordnungen`, 'success');
             } catch (error) {
-                debug(`Fehler beim Laden der Besitzerdaten: ${error.message}`, 'error');
+                addDebug(`Fehler beim Laden der Besitzerdaten: ${error.message}`, 'error');
             }
         }
 
@@ -965,19 +891,19 @@
         }
 
         async function loadPlayerMarketValues(playerId) {
-            debug(`Lade Marktwerte für Spieler ${playerId}`, 'info');
+            addDebug(`Lade Marktwerte für Spieler ${playerId}`, 'info');
             try {
                 const resp = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/MarktwerteJson.txt`);
                 const data = await resp.json();
                 const entry = data.find(e => String(e.id) === String(playerId));
                 if (!entry || !entry.data || !entry.data.normal) {
-                    debug(`Keine Marktwerte für Spieler ${playerId} gefunden`, 'warn');
+                    addDebug(`Keine Marktwerte für Spieler ${playerId} gefunden`, 'warn');
                     return [];
                 }
-                debug(`Marktwerte geladen: ${entry.data.normal.length} Einträge`, 'success');
+                addDebug(`Marktwerte geladen: ${entry.data.normal.length} Einträge`, 'success');
                 return entry.data.normal;
             } catch (error) {
-                debug(`Fehler beim Laden der Marktwerte: ${error.message}`, 'error');
+                addDebug(`Fehler beim Laden der Marktwerte: ${error.message}`, 'error');
                 return [];
             }
         }
@@ -1155,7 +1081,7 @@
                 });
             });
 
-            debug('Marktwerte-Anzeige aktualisiert', 'success');
+            addDebug('Marktwerte-Anzeige aktualisiert', 'success');
         }
 
 
@@ -1235,9 +1161,9 @@
             if (card) {
                 card.style.display = found ? '' : 'none';
             } else {
-                debug('Element fehlt: attributesCard', 'error');
+                addDebug('Element fehlt: attributesCard', 'error');
             }
-            debug(`Attribute angezeigt: ${found ? 'Ja' : 'Keine'}`, found ? 'success' : 'info');
+            addDebug(`Attribute angezeigt: ${found ? 'Ja' : 'Keine'}`, found ? 'success' : 'info');
         }
 
 
@@ -1403,14 +1329,14 @@
             const panel = document.getElementById('ligainsiderPanel');
             const content = document.getElementById('ligainsiderPanelContent');
             if (!panel || !content) {
-                debug('Element fehlt: ligainsiderPanel oder ligainsiderPanelContent', 'error');
+                addDebug('Element fehlt: ligainsiderPanel oder ligainsiderPanelContent', 'error');
                 return;
             }
             // Direkter Zugriff auf das Objekt!
             const rankingObj = player.data?.attribute?.ligainsiderRanking;
             if (!rankingObj) {
                 panel.style.display = 'none';
-                debug('LigainsiderRanking nicht vorhanden, Panel ausgeblendet.', 'info');
+                addDebug('LigainsiderRanking nicht vorhanden, Panel ausgeblendet.', 'info');
                 return;
             }
             content.innerHTML = `
@@ -1444,7 +1370,7 @@
         </div>
     `;
             panel.style.display = '';
-            debug('LigainsiderPanel angezeigt.', 'info');
+            addDebug('LigainsiderPanel angezeigt.', 'info');
         }
 
 
@@ -1458,7 +1384,7 @@
         }
 
         function displayRivals(player, allPlayers) {
-            debug('Erstelle Rivalen-Tabelle', 'info');
+            addDebug('Erstelle Rivalen-Tabelle', 'info');
             const container = document.getElementById('rivalsList');
             const header = document.getElementById('rivalsHeader');
             if (!container) return;
@@ -1475,7 +1401,7 @@
                 return aRank - bRank;
             });
 
-            debug(`${rivals.length} Rivalen gefunden`, 'success');
+            addDebug(`${rivals.length} Rivalen gefunden`, 'success');
             header.textContent = `${rivals.length} Direkte Konkurrenten im Team`;
 
             if (rivals.length > 0) {
@@ -1536,7 +1462,7 @@
         }
 
         function displayPointsHistory(player) {
-            debug('Erstelle Punkte-Anzeige', 'info');
+            addDebug('Erstelle Punkte-Anzeige', 'info');
             const container = document.getElementById('pointsHistory');
             if (!container) return;
             const pointsHistory = player.data?.punkteHistorie || [];
@@ -1589,7 +1515,7 @@
             }
 
             container.innerHTML = html;
-            debug('Punkte-Anzeige erstellt', 'success');
+            addDebug('Punkte-Anzeige erstellt', 'success');
         }
 
         function setupAccordion() {
@@ -1598,7 +1524,7 @@
                 const header = card.querySelector('h3');
                 const content = card.querySelector('.info-card-content');
                 if (!header || !content) {
-                    debug('setupAccordion: header oder content fehlt in info-card', 'error');
+                    addDebug('setupAccordion: header oder content fehlt in info-card', 'error');
                     return;
                 }
                 if (index === 0) {
@@ -1613,7 +1539,7 @@
                         const h = c.querySelector('h3');
                         const cont = c.querySelector('.info-card-content');
                         if (!h || !cont) {
-                            debug('setupAccordion: header oder content fehlt in info-card (onclick)', 'error');
+                            addDebug('setupAccordion: header oder content fehlt in info-card (onclick)', 'error');
                             return;
                         }
                         if (c !== card) {
@@ -1629,7 +1555,7 @@
 
 
         function initTabs() {
-            debug('Initialisiere Tabs', 'info');
+            addDebug('Initialisiere Tabs', 'info');
             const tabButtons = document.querySelectorAll('.tab-button');
             const tabContents = document.querySelectorAll('.tab-content');
             tabButtons.forEach(button => {
@@ -1639,37 +1565,36 @@
                     button.classList.add('active');
                     const tabId = button.getAttribute('data-tab');
                     document.getElementById(tabId).classList.add('active');
-                    debug(`Tab gewechselt zu: ${tabId}`, 'info');
+                    addDebug(`Tab gewechselt zu: ${tabId}`, 'info');
                 });
             });
             tabButtons.forEach(btn => btn.classList.remove('active'));
             tabContents.forEach(tab => tab.classList.remove('active'));
             document.querySelector('.tab-button[data-tab="market"]').classList.add('active');
             document.getElementById('market').classList.add('active');
-            debug('Tabs initialisiert', 'success');
+            addDebug('Tabs initialisiert', 'success');
         }
 
         document.addEventListener('DOMContentLoaded', async () => {
-            document.getElementById('debugContent').classList.add('collapsed');
-            document.getElementById('debugToggle').textContent = '▶';
-            debug('DOM geladen - starte Initialisierung', 'info');
+           
+            addDebug('DOM geladen - starte Initialisierung', 'info');
 
             await loadOwnersData();
             initTabs();
 
             const url = window.location.href;
-            debug(`Aktuelle URL: ${url}`, 'info');
+            addDebug(`Aktuelle URL: ${url}`, 'info');
 
             const idMatch = url.match(/[?&]id=([^&]*)/);
             const playerId = idMatch ? idMatch[1] : null;
 
-            debug(`Extrahierte Spieler-ID: ${playerId}`, playerId ? 'success' : 'error');
+            addDebug(`Extrahierte Spieler-ID: ${playerId}`, playerId ? 'success' : 'error');
 
             // Element-Checks für Debug
             const errorMessageEl = document.getElementById('errorMessage');
             const loadingIndicatorEl = document.getElementById('loadingIndicator');
             const playerContentEl = document.getElementById('playerContent');
-            debug(`Element-Check: errorMessageEl=${!!errorMessageEl}, loadingIndicatorEl=${!!loadingIndicatorEl}, playerContentEl=${!!playerContentEl}`, 'info');
+            addDebug(`Element-Check: errorMessageEl=${!!errorMessageEl}, loadingIndicatorEl=${!!loadingIndicatorEl}, playerContentEl=${!!playerContentEl}`, 'info');
 
             if (!playerId) {
                 const errorMsg = "Keine Spieler-ID in der URL gefunden!";
@@ -1677,26 +1602,26 @@
                     errorMessageEl.textContent = errorMsg;
                     errorMessageEl.style.display = 'block';
                 } else {
-                    debug('errorMessageEl fehlt!', 'error');
+                    addDebug('errorMessageEl fehlt!', 'error');
                 }
                 if (loadingIndicatorEl) {
                     loadingIndicatorEl.style.display = 'none';
                 } else {
-                    debug('loadingIndicatorEl fehlt!', 'error');
+                    addDebug('loadingIndicatorEl fehlt!', 'error');
                 }
-                debug(errorMsg, 'error');
+                addDebug(errorMsg, 'error');
                 return;
             }
 
             try {
-                debug('Lade Spielerdatenbank...', 'info');
+                addDebug('Lade Spielerdatenbank...', 'info');
                 const resp = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/SpielerdatenbankNeutralJson.txt`);
                 const allPlayersResponse = await resp.json();
 
                 // Array aus playerDB extrahieren oder leeres Array, falls playerDB fehlt
                 const allPlayers = allPlayersResponse.playerDB || [];
 
-                debug(`Spielerdatenbank geladen: ${allPlayers.length} Spieler`, 'success');
+                addDebug(`Spielerdatenbank geladen: ${allPlayers.length} Spieler`, 'success');
 
                 let player = allPlayers.find(p => String(p.id) === String(playerId));
                 if (!player) player = allPlayers.find(p => parseInt(p.id) === parseInt(playerId));
@@ -1707,25 +1632,25 @@
                         errorMessageEl.textContent = errorMsg;
                         errorMessageEl.style.display = 'block';
                     } else {
-                        debug('errorMessageEl fehlt!', 'error');
+                        addDebug('errorMessageEl fehlt!', 'error');
                     }
                     if (loadingIndicatorEl) {
                         loadingIndicatorEl.style.display = 'none';
                     } else {
-                        debug('loadingIndicatorEl fehlt!', 'error');
+                        addDebug('loadingIndicatorEl fehlt!', 'error');
                     }
-                    debug(errorMsg, 'error');
+                    addDebug(errorMsg, 'error');
                     return;
                 }
 
-                debug(`Spieler gefunden: ${player.name} (ID: ${player.id})`, 'success');
+                addDebug(`Spieler gefunden: ${player.name} (ID: ${player.id})`, 'success');
                 // Show Transfermarkt-Link button only if link is missing
                 showTmLinkButtonIfNeeded(player);
 
                 // Element-Checks für alle IDs, die per .style oder .textContent angesprochen werden
                 function safeSet(id, prop, value) {
                     const el = document.getElementById(id);
-                    debug(`safeSet: id=${id}, exists=${!!el}, prop=${prop}, value=${value}`);
+                    addDebug(`safeSet: id=${id}, exists=${!!el}, prop=${prop}, value=${value}`);
                     if (el) {
                         if (prop === 'style' && typeof value === 'object' && value !== null) {
                             for (const key in value) {
@@ -1735,7 +1660,7 @@
                             el[prop] = value;
                         }
                     } else {
-                        debug(`Element fehlt: ${id}`, 'error');
+                        addDebug(`Element fehlt: ${id}`, 'error');
                     }
                 }
 
@@ -1792,7 +1717,7 @@
                     };
                     clubLogoEl.appendChild(logoImg);
                 } else {
-                    debug('Element fehlt: clubLogo', 'error');
+                    addDebug('Element fehlt: clubLogo', 'error');
                 }
 
                 const statusData = player.data?.status || {};
@@ -1802,7 +1727,7 @@
                     const statusTooltip = `${getStatusDisplayName(statusData.status)}${statusData.grund ? ' - ' + statusData.grund : ''}${statusData.seit ? ' seit ' + statusData.seit : ''}`;
                     statusIndicator.title = statusTooltip;
                 } else {
-                    debug('Element fehlt: statusIndicator', 'error');
+                    addDebug('Element fehlt: statusIndicator', 'error');
                 }
 
                 const spielerDaten = player.data?.spielerDaten || {};
@@ -1842,10 +1767,10 @@
                 // Da .style ein Objekt ist, setze ich display direkt, falls das Element existiert
                 const loadingIndicatorEl2 = document.getElementById('loadingIndicator');
                 if (loadingIndicatorEl2) loadingIndicatorEl2.style.display = 'none';
-                else debug('Element fehlt: loadingIndicator', 'error');
+                else addDebug('Element fehlt: loadingIndicator', 'error');
                 const playerContentEl2 = document.getElementById('playerContent');
                 if (playerContentEl2) playerContentEl2.style.display = 'block';
-                else debug('Element fehlt: playerContent', 'error');
+                else addDebug('Element fehlt: playerContent', 'error');
 
                 setupAccordion();
 
@@ -1853,28 +1778,28 @@
                 displayMarketValue(player);
                 displayPointsHistory(player);
 
-                debug('Spielerdaten vollständig geladen und angezeigt', 'success');
+                addDebug('Spielerdaten vollständig geladen und angezeigt', 'success');
 
             } catch (error) {
                 const errorMsg = `Fehler beim Laden der Spielerdaten: ${error.message}`;
-                debug(`Fehler-Element-Check: errorMessageEl=${!!errorMessageEl}, loadingIndicatorEl=${!!loadingIndicatorEl}, playerContentEl=${!!playerContentEl}`, 'error');
+                addDebug(`Fehler-Element-Check: errorMessageEl=${!!errorMessageEl}, loadingIndicatorEl=${!!loadingIndicatorEl}, playerContentEl=${!!playerContentEl}`, 'error');
                 if (errorMessageEl) {
                     errorMessageEl.textContent = errorMsg;
                     errorMessageEl.style.display = 'block';
                 } else {
-                    debug('errorMessageEl fehlt!', 'error');
+                    addDebug('errorMessageEl fehlt!', 'error');
                 }
                 if (loadingIndicatorEl) {
                     loadingIndicatorEl.style.display = 'none';
                 } else {
-                    debug('loadingIndicatorEl fehlt!', 'error');
+                    addDebug('loadingIndicatorEl fehlt!', 'error');
                 }
                 if (playerContentEl) {
                     playerContentEl.style.display = 'none';
                 } else {
-                    debug('playerContentEl fehlt!', 'error');
+                    addDebug('playerContentEl fehlt!', 'error');
                 }
-                debug(errorMsg, 'error');
+                addDebug(errorMsg, 'error');
             }
 
             // Transfermarkt-Link Button & Modal logic

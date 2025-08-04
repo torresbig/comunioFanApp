@@ -1,166 +1,98 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Kontostände der Nutzer</title>
-<style>
-  body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f9f9f9; }
-  h1 { margin-bottom: 20px; text-align:center; }
-  #btnBack {
-    position: fixed; top: 20px; left: 20px;
-    padding: 8px 14px; font-size: 1em;
-    background: #3498dbcc; color: white;
-    border: none; border-radius: 6px;
-    cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    transition: background-color 0.3s; z-index: 3000;
-  }
-  #btnBack:hover { background: #2177bbcc; }
-  table {
-  border-collapse: collapse;
-  width: 100%;
-  max-width: 900px;
-  margin: 30px auto;
-  background: white;
-  font-family: Arial, sans-serif;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontostände der Nutzer</title>
+  <link rel="stylesheet" href="css/playerTable.css">
+  <link rel="stylesheet" href="css/styleMenueHamburger.css">
+  <link rel="stylesheet" href="css/debugPanel.css">
+   <link rel="stylesheet" href="css/buttonBack.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
 
-table thead tr {
-  background-color: #2b3a66;
-  color: white;
-  font-weight: 600;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    h1 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
 
-th, td {
-  padding: 10px 15px;
-  border: 1px solid #ddd;
-  text-align: right;
-}
 
-th:nth-child(2), td:nth-child(2) {
-  text-align: left;
-}
 
-tbody tr:hover {
-  background-color: #e9efff;
-}
 
-  #loading { margin: 15px; text-align:center; font-style: italic; }
-  .asc::after { content: " ▲"; }
-  .desc::after { content: " ▼"; }
 
-  /* Hamburger-Menü Styles */
-  .hamburger-menu {
-    position: fixed; top: 20px; right: 20px; z-index: 3000;
-  }
-  .hamburger-button {
-    background: #2c3e50; border: none;
-    width: 48px; height: 48px; border-radius: 10px;
-    cursor: pointer; display: flex; flex-direction: column;
-    justify-content: center; align-items: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    transition: all 0.3s;
-  }
-  .hamburger-button:hover { background: #34495e; }
-  .hamburger-line {
-    width: 27px; height: 3px; background: #fff;
-    margin: 3px 0; border-radius: 2px; transition: 0.3s;
-  }
-  .hamburger-button.active .hamburger-line:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 7px);
-  }
-  .hamburger-button.active .hamburger-line:nth-child(2) { opacity: 0; }
-  .hamburger-button.active .hamburger-line:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
-  .hamburger-dropdown {
-    position: absolute; top: 56px; right: 0;
-    background: #fff; border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
-    min-width: 210px; display: none; overflow: hidden; padding-bottom:6px;
-  }
-  .hamburger-dropdown.show { display: block; animation: slideIn 0.25s;}
-  @keyframes slideIn { from {opacity:0; transform:translateY(-12px);} to {opacity:1; transform:translateY(0);} }
-  .menu-item {
-    display: block; padding: 15px 20px;
-    text-decoration: none; color: #34495e;
-    border-bottom: 1px solid #efefef;
-    transition: background 0.27s; font-weight: 500;
-  }
-  .menu-item:hover { background: #f4f7f9; color:#111 !important;}
-  .menu-item:last-child { border-bottom: none; }
-  .menu-tarn {
-    font-size: 12px; color: #bcbcbc !important; font-style: italic;
-    text-align: right; padding: 4px 12px 2px 0;
-    border: none; background: transparent;
-    user-select: none; pointer-events: auto; transition: none;
-    cursor: default !important;
-  }
-  .menu-tarn.activated {
-    color:#e74c3c !important; font-style:normal; font-weight:bold;
-  }
-  .menu-tarn:hover, .menu-tarn:active, .menu-tarn:focus {
-    background: transparent !important; color: #bcbcbc !important;
-    outline: none; cursor: default !important;
-  }
-  /* Debug Button */
-  #floatingDebugBtn {
-    position: fixed; bottom: 20px; right: 20px; z-index: 3000;
-    background: #3498dbcc; color: white; border: none; border-radius: 50%;
-    width: 38px; height: 38px; font-size: 1.3em;
-    display: flex; align-items: center; justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10); opacity: 0.5;
-    transition: opacity 0.2s, background 0.2s;
-  }
-  #floatingDebugBtn:hover {
-    opacity: 1; background: #217dbbcc;
-  }
-  #floatingDebugPanel {
-    position: fixed; bottom: 68px; right: 12px;
-    width: 340px; max-height: 400px;
-    background: #f0f8ff; border: 1px solid #cce;
-    border-radius: 8px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
-    z-index: 2999; display: none; flex-direction: column;
-  }
-  #floatingDebugPanel.open { display: flex; }
-  #floatingDebugPanelHeader {
-    background: #3498db; color: white; padding: 10px 16px;
-    border-radius: 8px 8px 0 0; font-weight: bold;
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  #floatingDebugPanelClose {
-    background: none; border: none; color: white;
-    font-size: 1.2em; cursor: pointer;
-  }
-  #floatingDebugContent {
-    padding: 12px; font-family: monospace; font-size: 12px;
-    line-height: 1.5; overflow-y: auto; background: #f0f8ff;
-    border-radius: 0 0 8px 8px; flex: 1;
-  }
-</style>
+    #loading {
+      margin: 15px;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .asc::after {
+      content: " ▲";
+    }
+
+    .desc::after {
+      content: " ▼";
+    }
+
+
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-12px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+  
+  </style>
 </head>
+
 <body>
 
-<button id="btnBack" title="Zurück">← Zurück</button>
 
-<h1>Kontostände der Nutzer</h1>
-<div id="loading">Daten werden geladen, bitte warten...</div>
-<table id="kontostandTable" style="display:none;">
-  <thead>
-    <tr>
-      <th data-sort="number">#</th>
-      <th data-sort="string">Nutzer</th>
-      <th data-sort="number">Kontostand (€)</th>
-      <th data-sort="number">Mannschaftswert (€)</th>
-      <th data-sort="number">Gesamtwert (€)</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+  <button class="btnBack" onclick="window.history.back()">← Zurück</button>
 
-<!-- Hamburger-Menü -->
+  <h1>Kontostände der Nutzer</h1>
+  <div id="loading">Daten werden geladen, bitte warten...</div>
+
+  <div class="table-container">
+    <table id="kontostandTable" style="display:none;">
+      <thead>
+        <tr>
+          <th data-sort="number">#</th>
+          <th data-sort="string">Nutzer</th>
+          <th data-sort="number">Kontostand (€)</th>
+          <th data-sort="number">Mannschaftswert (€)</th>
+          <th data-sort="number">Gesamtwert (€)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  
+  <!-- Debug Button -->
+  <button id="floatingDebugBtn" title="Debug">🐞</button>
+  <div id="floatingDebugPanel">
+    <div id="floatingDebugPanelHeader">
+      Debug-Informationen
+      <button id="floatingDebugPanelClose" title="Schließen">×</button>
+    </div>
+    <div id="floatingDebugContent"></div>
+  </div>
+
+
 <div class="hamburger-menu">
   <button class="hamburger-button" id="hamburgerButton">
     <div class="hamburger-line"></div>
@@ -168,256 +100,192 @@ tbody tr:hover {
     <div class="hamburger-line"></div>
   </button>
   <div class="hamburger-dropdown" id="hamburgerDropdown">
-    <a href="https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/index.html" class="menu-item">🏠 Startseite</a>
-    <a href="https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/transfermarkt.html" class="menu-item">🏪 Transfermarkt</a>
-    <a href="https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/useruebersicht.html" class="menu-item">👤 Userübersicht</a>
+    <a href="#" class="menu-item" id="linkIndex">Startseite</a>
+    <a href="#" class="menu-item" id="linkTransfermarkt">🏪 Transfermarkt</a>
+    <a href="#" class="menu-item" id="linkUseruebersicht">👤 Userübersicht</a>
     <a href="https://www.instagram.com/comuniofanapp/." class="menu-item" target="_blank">📸 Instagram: ComunioFanApp</a>
-    <div class="menu-tarn" id="menuTarnItem">erstellt von comunioFanApp</div>
   </div>
 </div>
 
-<!-- Debug Button -->
-<button id="floatingDebugBtn" title="Debug">🐞</button>
-<div id="floatingDebugPanel">
-  <div id="floatingDebugPanelHeader">
-    Debug-Informationen
-    <button id="floatingDebugPanelClose" title="Schließen">×</button>
-  </div>
-  <div id="floatingDebugContent"></div>
-</div>
 
-<script>
-// Debug Ausgabe Funktion
-function addDebug(msg){
-  const debugContent = document.getElementById('floatingDebugContent');
-  if(!debugContent) return;
-  const d = document.createElement('div');
-  d.textContent = `${new Date().toLocaleTimeString()}: ${msg}`;
-  debugContent.appendChild(d);
-  debugContent.scrollTop = debugContent.scrollHeight;
-}
 
-addDebug("Seite geladen.");
 
-// Zurück-Button
-document.getElementById('btnBack').addEventListener('click', () => {
-  addDebug("Zurück Button geklickt");
-  window.location.href = 'https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/index.html';
-});
+  <script src="js/config.js"></script>
+   <script src="js/debugPanel.js"></script>
+  <script src="js/hamburgerMenu.js"></script>
 
-// Hamburger-Menü
-const hamburgerButton = document.getElementById('hamburgerButton');
-const hamburgerDropdown = document.getElementById('hamburgerDropdown');
-const menuTarnItem = document.getElementById('menuTarnItem');
-hamburgerButton.addEventListener('click', e => {
-  e.stopPropagation();
-  hamburgerButton.classList.toggle('active');
-  hamburgerDropdown.classList.toggle('show');
-  addDebug("Hamburger Menü geklickt");
-});
-menuTarnItem.addEventListener('click', () => {
-  let clicks = menuTarnItem.dataset.clicks ? parseInt(menuTarnItem.dataset.clicks) : 0;
-  clicks++;
-  menuTarnItem.dataset.clicks = clicks;
-  setTimeout(() => menuTarnItem.dataset.clicks = 0, 3000);
-  if(clicks === 5){
-    addDebug("Geheimer Menüpunkt aktiviert");
-    window.location.href = 'kontostaende.html';
-  }
-});
-document.addEventListener('click', e => {
-  if (!e.target.closest('.hamburger-menu')) {
-    hamburgerButton.classList.remove('active');
-    hamburgerDropdown.classList.remove('show');
-  }
-});
-document.addEventListener('keydown', e => {
-  if(e.key === 'Escape'){
-    hamburgerButton.classList.remove('active');
-    hamburgerDropdown.classList.remove('show');
-  }
-});
 
-// Debug Button & Panel
-const debugBtn = document.getElementById('floatingDebugBtn');
-const debugPanel = document.getElementById('floatingDebugPanel');
-const debugClose = document.getElementById('floatingDebugPanelClose');
-debugBtn.addEventListener('click', () => {
-  debugPanel.classList.toggle('open');
-  addDebug("Debug Panel geöffnet/geschlossen");
-});
-debugClose.addEventListener('click', () => {
-  debugPanel.classList.remove('open');
-  addDebug("Debug Panel geschlossen");
-});
+  <script>
+   
+    addDebug("Seite geladen.");
 
-// Daten URLs
-const urlUsers = 'https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_884691.txt';
-const urlPlayers = 'https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/SpielerdatenbankNeutralJson.txt';
-const urlPlayerToUserMap = 'https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_884691.txt';
 
-// Lade und erzeuge Tabelle
-async function loadData() {
-  addDebug("Lade Daten...");
-  document.getElementById('loading').style.display = 'block';
 
-  try {
-    const [usersRes, playersRes, mapRes] = await Promise.all([
-      fetch(urlUsers), fetch(urlPlayers), fetch(urlPlayerToUserMap)
-    ]);
-    if(!usersRes.ok || !playersRes.ok || !mapRes.ok) {
-      addDebug("Fehler beim Laden der Daten.");
-      alert('Fehler beim Laden der Spieldaten.');
-      return;
+    // Lade und erzeuge Tabelle
+    async function loadData() {
+      addDebug("Lade Daten...");
+      document.getElementById('loading').style.display = 'block';
+
+      try {
+        const [usersRes, playersRes, mapRes] = await Promise.all([
+          fetch(DATA_URLS.users), fetch(DATA_URLS.players), fetch(DATA_URLS.playerToUser)
+        ]);
+        if (!usersRes.ok || !playersRes.ok || !mapRes.ok) {
+          addDebug("Fehler beim Laden der Daten.");
+          alert('Fehler beim Laden der Spieldaten.');
+          return;
+        }
+        const usersData = await usersRes.json();
+        const playersData = await playersRes.json();
+        const playerToUserMap = await mapRes.json();
+
+        addDebug(`Daten geladen: Nutzer (${usersData.length}), Spieler (${playersData.length})`);
+        buildTable(usersData, playersData, playerToUserMap);
+      } catch (err) {
+        addDebug(`Fehler: ${err.message}`);
+        alert('Fehler: ' + err.message);
+      } finally {
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('kontostandTable').style.display = 'table';
+
+      }
     }
-    const usersData = await usersRes.json();
-    const playersData = await playersRes.json();
-    const playerToUserMap = await mapRes.json();
 
-    addDebug(`Daten geladen: Nutzer (${usersData.length}), Spieler (${playersData.length})`);
-    buildTable(usersData, playersData, playerToUserMap);
-  } catch(err) {
-    addDebug(`Fehler: ${err.message}`);
-    alert('Fehler: ' + err.message);
-  } finally {
-    document.getElementById('loading').style.display = 'none';
-    document.getElementById('kontostandTable').style.display = '';
-  }
-}
+    // Tabelle bauen
+    function buildTable(users, playersData, playerToUserMap) {
+      addDebug("Baue Tabelle...");
 
-// Tabelle bauen
-function buildTable(users, playersData, playerToUserMap) {
-  addDebug("Baue Tabelle...");
+      const spielerArray = playersData.playerDB || [];
 
-  const spielerArray = playersData.playerDB || [];
+      // Unbedingt zuerst Map erstellen
+      const playerToUserMapObj = {};
+      for (const entry of playerToUserMap) {
+        const playerId = Object.keys(entry)[0];
+        const userId = entry[playerId];
+        playerToUserMapObj[playerId] = userId;
+      }
 
-  // Unbedingt zuerst Map erstellen
-  const playerToUserMapObj = {};
-  for (const entry of playerToUserMap) {
-    const playerId = Object.keys(entry)[0];
-    const userId = entry[playerId];
-    playerToUserMapObj[playerId] = userId;
-  }
+      const userTeamValues = {};
+      for (const user of users) {
+        userTeamValues[user.user.id] = 0;
+      }
 
-  const userTeamValues = {};
-  for (const user of users) {
-    userTeamValues[user.user.id] = 0;
-  }
+      // Mannschaftswerte summieren
+      for (const player of spielerArray) {
+        const playerIdStr = player.id.toString(); // Sicher String
+        const userId = playerToUserMapObj[playerIdStr];
 
-  // Mannschaftswerte summieren
-  for (const player of spielerArray) {
-    const playerIdStr = player.id.toString(); // Sicher String
-    const userId = playerToUserMapObj[playerIdStr];
+        addDebug(`Player-ID ${playerIdStr} mapped to User-ID ${userId || "undefined"}`);
 
-    addDebug(`Player-ID ${playerIdStr} mapped to User-ID ${userId || "undefined"}`);
+        if (userId && userTeamValues[userId] !== undefined) {
+          const wert = player.data?.wert || 0;
+          userTeamValues[userId] += wert;
+        }
+      }
 
-    if (userId && userTeamValues[userId] !== undefined) {
-      const wert = player.data?.wert || 0;
-      userTeamValues[userId] += wert;
-    }
-  }
+      let data = users.filter(u => u.user.id !== '1').map(u => {
+        const kontostand = u.user.guthaben || 0;
+        const mannschaftswert = userTeamValues[u.user.id] || 0;
 
-  let data = users.filter(u => u.user.id !== '1').map(u => {
-    const kontostand = u.user.guthaben || 0;
-    const mannschaftswert = userTeamValues[u.user.id] || 0;
+        addDebug(`User ${u.user.loginName}: Kontostand=${kontostand}, Mannschaftswert=${mannschaftswert}`);
 
-    addDebug(`User ${u.user.loginName}: Kontostand=${kontostand}, Mannschaftswert=${mannschaftswert}`);
+        return {
+          nutzer: u.user.firstName + (u.user.lastName ? ' ' + u.user.lastName : ''),
+          kontostand: kontostand,
+          mannschaftswert: mannschaftswert,
+          gesamtwert: kontostand + mannschaftswert
+        };
+      });
 
-    return {
-      nutzer: u.user.firstName + (u.user.lastName ? ' ' + u.user.lastName : ''),
-      kontostand: kontostand,
-      mannschaftswert: mannschaftswert,
-      gesamtwert: kontostand + mannschaftswert
-    };
-  });
+      // Nach Gesamtwert absteigend sortieren
+      data.sort((a, b) => b.gesamtwert - a.gesamtwert);
 
-  // Nach Gesamtwert absteigend sortieren
-  data.sort((a, b) => b.gesamtwert - a.gesamtwert);
+      data.forEach((d, i) => d.rank = i + 1);
 
-  data.forEach((d, i) => d.rank = i + 1);
+      const tbody = document.querySelector('#kontostandTable tbody');
+      tbody.innerHTML = '';
 
-  const tbody = document.querySelector('#kontostandTable tbody');
-  tbody.innerHTML = '';
-
-  for (const row of data) {
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
+      for (const row of data) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
       <td>${row.rank}</td>
       <td style="text-align:left;">${row.nutzer}</td>
       <td>${row.kontostand.toLocaleString('de-DE')}</td>
       <td>${row.mannschaftswert.toLocaleString('de-DE')}</td>
       <td>${row.gesamtwert.toLocaleString('de-DE')}</td>
     `;
-    tbody.appendChild(tr);
-  }
-
-  setupSorting(data);
-  addDebug("Tabelle gebaut und angezeigt.");
-}
-
-
-
-// Sortierung ermöglichen
-function setupSorting(data) {
-  const headers = document.querySelectorAll('#kontostandTable th');
-  let currentSort = { index: 4, dir: 'desc' };
-
-  headers.forEach((header, i) => {
-    header.addEventListener('click', () => {
-      const type = header.getAttribute('data-sort');
-      let dir = 'asc';
-      if(currentSort.index === i){
-        dir = currentSort.dir === 'asc' ? 'desc' : 'asc';
+        tbody.appendChild(tr);
       }
-      currentSort = { index: i, dir: dir };
 
-      data.sort((a,b) => {
-        let va, vb;
-        switch(i){
-          case 0: va = a.rank; vb = b.rank; break;
-          case 1: va = a.nutzer.toLowerCase(); vb = b.nutzer.toLowerCase(); break;
-          case 2: va = a.kontostand; vb = b.kontostand; break;
-          case 3: va = a.mannschaftswert; vb = b.mannschaftswert; break;
-          case 4: va = a.gesamtwert; vb = b.gesamtwert; break;
-        }
-        if(type === 'number') return dir === 'asc' ? va - vb : vb - va;
-        if(va < vb) return dir === 'asc' ? -1 : 1;
-        if(va > vb) return dir === 'asc' ? 1 : -1;
-        return 0;
-      });
+      setupSorting(data);
+      addDebug("Tabelle gebaut und angezeigt.");
+    }
 
-      if(i !== 0) data.forEach((d, idx) => d.rank = idx+1);
 
-      const tbody = document.querySelector('#kontostandTable tbody');
-      tbody.innerHTML = '';
-      for(const row of data) {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
+
+    // Sortierung ermöglichen
+    function setupSorting(data) {
+      const headers = document.querySelectorAll('#kontostandTable th');
+      let currentSort = { index: 4, dir: 'desc' };
+
+      headers.forEach((header, i) => {
+        header.addEventListener('click', () => {
+          const type = header.getAttribute('data-sort');
+          let dir = 'asc';
+          if (currentSort.index === i) {
+            dir = currentSort.dir === 'asc' ? 'desc' : 'asc';
+          }
+          currentSort = { index: i, dir: dir };
+
+          data.sort((a, b) => {
+            let va, vb;
+            switch (i) {
+              case 0: va = a.rank; vb = b.rank; break;
+              case 1: va = a.nutzer.toLowerCase(); vb = b.nutzer.toLowerCase(); break;
+              case 2: va = a.kontostand; vb = b.kontostand; break;
+              case 3: va = a.mannschaftswert; vb = b.mannschaftswert; break;
+              case 4: va = a.gesamtwert; vb = b.gesamtwert; break;
+            }
+            if (type === 'number') return dir === 'asc' ? va - vb : vb - va;
+            if (va < vb) return dir === 'asc' ? -1 : 1;
+            if (va > vb) return dir === 'asc' ? 1 : -1;
+            return 0;
+          });
+
+          if (i !== 0) data.forEach((d, idx) => d.rank = idx + 1);
+
+          const tbody = document.querySelector('#kontostandTable tbody');
+          tbody.innerHTML = '';
+          for (const row of data) {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
           <td>${row.rank}</td>
           <td style="text-align:left;">${row.nutzer}</td>
           <td>${row.kontostand.toLocaleString('de-DE')}</td>
           <td>${row.mannschaftswert.toLocaleString('de-DE')}</td>
           <td>${row.gesamtwert.toLocaleString('de-DE')}</td>
         `;
-        tbody.appendChild(tr);
-      }
-      updateSortIndicators(i, dir);
+            tbody.appendChild(tr);
+          }
+          updateSortIndicators(i, dir);
+        });
+      });
+
+      updateSortIndicators(currentSort.index, currentSort.dir);
+    }
+
+    function updateSortIndicators(activeIndex, dir) {
+      document.querySelectorAll('#kontostandTable th').forEach((th, i) => {
+        th.classList.toggle('asc', i === activeIndex && dir === 'asc');
+        th.classList.toggle('desc', i === activeIndex && dir === 'desc');
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadData();
     });
-  });
+  </script>
 
-  updateSortIndicators(currentSort.index, currentSort.dir);
-}
-
-function updateSortIndicators(activeIndex, dir) {
-  document.querySelectorAll('#kontostandTable th').forEach((th,i) => {
-    th.classList.toggle('asc', i === activeIndex && dir === 'asc');
-    th.classList.toggle('desc', i === activeIndex && dir === 'desc');
-  });
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  loadData();
-});
-</script>
 </body>
+
 </html>
