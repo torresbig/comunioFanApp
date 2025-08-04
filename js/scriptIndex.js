@@ -381,13 +381,15 @@
         function getPlayerUrl(playerId) {
             const currentUrl = window.location.href;
             if (currentUrl.includes('htmlpreview.github.io')) {
-                return `https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${playerId}`;
+                return WEBSITE_URLS.playerUrl+`${playerId}`;
             } else if (currentUrl.includes('github.com') || currentUrl.includes('githubusercontent.com')) {
-                return `https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${playerId}`;
+                return WEBSITE_URLS.playerUrl+`${playerId}`;
             } else {
                 return `player.html?id=${playerId}`;
             }
         }
+
+       
 
         function renderTable(players) {
             const tableBody = document.querySelector('#playerTable tbody');
