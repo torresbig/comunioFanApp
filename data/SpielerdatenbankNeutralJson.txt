@@ -20812,33 +20812,21 @@
           "value": 0,
           "key": 2024
         }],
-        "spielerDaten": {
-          "groesse": "1,88",
-          "geburtstag": "03.05.2004",
-          "laenderspiele": 5,
-          "lastUpdate": "02.08.2025",
-          "nebenpositionen": [],
-          "nationalspieler": "",
-          "trikotNummer": 45,
-          "nationalitaet": "Deutschland",
-          "laenderspielTore": 1,
-          "hauptposition": "Defensives Mittelfeld",
-          "fuss": "beidfüßig"
-        },
-        "isNotName": [],
+        "spielerDaten": { },
+        "isNotName": ["Alexander Pavlovic", Alexander Pavlović", "Pavlović", "Pavlovic],
         "punktekorrektur": [],
         "wert": 160000,
         "verein": "1",
         "transfermarktDoDe": {
           "date": "02.08.2025",
-          "name": "Aleksandar Pavlovic",
-          "link": "https://www.transfermarkt.de/aleksandar-pavlovic/profil/spieler/792380",
-          "id": 0,
+          "name": "Anthony Pavlesic",
+          "link": "https://www.transfermarkt.de/anthony-pavlesic/profil/spieler/1104725",
+          "id": 1104725,
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 0,
         "punkte": 0,
-        "realWert": 55000000,
+        "realWert": 150000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
         "lastUpdate": "04.08.2025",
@@ -20856,23 +20844,16 @@
           "seit": "unbekannt",
           "details": "",
           "historie": [],
-          "status": "AKTIV"
+          "status": "NICHT_IN_LIGA"
         },
         "status": {
-          "grund": "Bruch der Augenhöhle",
+          "grund": "Nicht in Liga",
           "lastUpdate": "04.08.2025",
           "seit": "01.08.2025",
           "details": "",
-          "historie": [{
-            "grund": "unbekannt",
-            "lastUpdate": "24.05.2025",
-            "seit": "unbekannt",
-            "details": "",
-            "historie": [],
-            "status": "AKTIV"
-          }],
+          "historie": [],
           "bis": "",
-          "status": "VERLETZT"
+          "status": "NICHT_IN_LIGA"
         }
       },
       "name": "Pavlešić",
