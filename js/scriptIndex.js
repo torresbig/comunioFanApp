@@ -105,6 +105,16 @@
                                             text = news.text;
                                         }
                                     }
+                                }else if (art === 'POSITIONSWECHSEL') {
+                                    try {
+                                        const obj = JSON.parse(news.text); // falls JSON
+                                        const pid = obj.playerId || news.playerId || null;
+                                        text = `${linkPlayer(pid, obj.playerName)} wechselt von <b>${obj.oldPos}</b> zu <b>${obj.newPos}</b>`;
+                                    } catch (e) {
+                                        
+                                            text = news.text;
+                                        
+                                    }
                                 }
                                 else if (art === 'NEW_PLAYER') {
                                     const regex = /^Neuer Spieler:\s(.+?)\s\(ID: \d+\)$/;
