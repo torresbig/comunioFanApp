@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/playerTable.css">
   <link rel="stylesheet" href="css/styleMenueHamburger.css">
   <link rel="stylesheet" href="css/debugPanel.css">
-   <link rel="stylesheet" href="css/buttonBack.css">
+  <link rel="stylesheet" href="css/buttonBack.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -53,8 +53,6 @@
         transform: translateY(0);
       }
     }
-
-  
   </style>
 </head>
 
@@ -81,7 +79,7 @@
     </table>
   </div>
 
-  
+
   <!-- Debug Button -->
   <button id="floatingDebugBtn" title="Debug">🐞</button>
   <div id="floatingDebugPanel">
@@ -93,30 +91,31 @@
   </div>
 
 
-<div class="hamburger-menu">
-  <button class="hamburger-button" id="hamburgerButton">
-    <div class="hamburger-line"></div>
-    <div class="hamburger-line"></div>
-    <div class="hamburger-line"></div>
-  </button>
-  <div class="hamburger-dropdown" id="hamburgerDropdown">
-    <a href="#" class="menu-item" id="linkIndex">Startseite</a>
-    <a href="#" class="menu-item" id="linkTransfermarkt">🏪 Transfermarkt</a>
-    <a href="#" class="menu-item" id="linkUseruebersicht">👤 Userübersicht</a>
-    <a href="https://www.instagram.com/comuniofanapp/." class="menu-item" target="_blank">📸 Instagram: ComunioFanApp</a>
+  <div class="hamburger-menu">
+    <button class="hamburger-button" id="hamburgerButton">
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+    </button>
+    <div class="hamburger-dropdown" id="hamburgerDropdown">
+      <a href="#" class="menu-item" id="linkIndex">Startseite</a>
+      <a href="#" class="menu-item" id="linkTransfermarkt">🏪 Transfermarkt</a>
+      <a href="#" class="menu-item" id="linkUseruebersicht">👤 Userübersicht</a>
+      <a href="https://www.instagram.com/comuniofanapp/." class="menu-item" target="_blank">📸 Instagram:
+        ComunioFanApp</a>
+    </div>
   </div>
-</div>
 
 
 
 
   <script src="js/config.js"></script>
-   <script src="js/debugPanel.js"></script>
+  <script src="js/debugPanel.js"></script>
   <script src="js/hamburgerMenu.js"></script>
 
 
   <script>
-   
+
     addDebug("Seite geladen.");
 
 
@@ -184,8 +183,42 @@
       }
 
       let data = users.filter(u => u.user.id !== '1').map(u => {
-        const kontostand = u.user.guthaben || 0;
+        const kontostand = u.guthaben || 0;
         const mannschaftswert = userTeamValues[u.user.id] || 0;
+        if (u.teamValue || u.teamValue !== undefined || u.teamValue !== null) {
+          const mannschaftswertComunio = u.teamValue;
+
+          function parseDateDMY(dateStr) {
+            // Datum im Format "TT.MM.JJJJ"
+            const [day, month, year] = dateStr.split('.').map(Number);
+            return new Date(year, month - 1, day); // Monat ist 0-basiert
+          }
+
+          if (mannschaftswert !== mannschaftswertComunio) {
+            if (u.lastUpdate) {
+              const lastUpdate = parseDateDMY(u.lastUpdate);
+
+              if (!isNaN(lastUpdate)) {
+                const heute = new Date();
+                heute.setHours(0, 0, 0, 0);         // Mitternacht heute
+                lastUpdate.setHours(0, 0, 0, 0);   // Mitternacht lastUpdate
+
+                if (lastUpdate < heute) {
+                  addDebug(`Warnung: Mannschaftswert für ${u.user.loginName} ist veraltet! Letzte Aktualisierung: ${lastUpdate.toLocaleDateString()}`);
+                  mannschaftswert = mannschaftswertComunio;
+                } else {
+                  addDebug(`Mannschaftswert für ${u.user.loginName} ist aktuell: ${mannschaftswert}! Evtl sind updates, die über den Tag kamen nicht mit drin! `);
+                }
+              } else {
+                addDebug(`Ungültiges Datum bei lastUpdate für ${u.user.loginName}: ${u.lastUpdate}`);
+              }
+            }
+          } else {
+            addDebug(`Mannschaftswert für ${u.user.loginName} stimmt überein: ${mannschaftswert}`);
+          }
+
+        }
+
 
         addDebug(`User ${u.user.loginName}: Kontostand=${kontostand}, Mannschaftswert=${mannschaftswert}`);
 
