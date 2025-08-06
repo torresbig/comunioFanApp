@@ -2232,6 +2232,39 @@
     ]
   },
   {
+    "date": "06.08.2025",
+    "news": [
+      {
+        "date": "06.08.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Coufal (ID: 34257)",
+        "playerId": "34257"
+      },
+      {
+        "date": "06.08.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Lund (ID: 34256)",
+        "playerId": "34256"
+      },
+      {
+        "date": "06.08.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Buchmann (33796) ist jetzt NICHT_IN_LIGA",
+        "playerId": "33796"
+      },
+      {
+        "date": "06.08.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Borges Sanches (33618) ist wieder AKTIV",
+        "playerId": "33618"
+      }
+    ]
+  },
+  {
     "date": "06.07.2025",
     "news": [
       {
@@ -2341,6 +2374,13 @@
         "gelesen": false,
         "text": "Statuswechsel: Pavlešić (34070) ist jetzt VERLETZT (Bruch der Augenhöhle)",
         "playerId": "34070"
+      },
+      {
+        "date": "05.08.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Thomas\",\"playerName\":\"Rapsch\",\"price\":168000,\"playerValue\":160000,\"playerId\":\"34132\",\"buyer\":\"Computer\"}",
+        "playerId": "34132"
       }
     ]
   },
