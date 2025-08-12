@@ -692,7 +692,7 @@
           {"2024": 52}
         ],
         "withinSquad": true,
-        "onMarket": true,
+        "onMarket": false,
         "position": "STURM",
         "attribute": {"Ligainsiderstats": ["Begangene Fouls: 2,13 (Platz 6)"]},
         "possibleNames": [
@@ -3956,7 +3956,7 @@
           {"2024": 13}
         ],
         "withinSquad": true,
-        "onMarket": false,
+        "onMarket": true,
         "position": "TORHÜTER",
         "attribute": {"SontigeInfos": ["häufigesten Transfers (2)"]},
         "possibleNames": [
@@ -4040,6 +4040,7 @@
         "punktekorrektur": [],
         "wert": 4590000,
         "verein": "12",
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "13.08.2024",
           "name": "Lovro Majer",
@@ -4048,7 +4049,9 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 42,
+        "points": 42,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 17000000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
@@ -4057,6 +4060,8 @@
           {"2023": 112},
           {"2024": 42}
         ],
+        "withinSquad": true,
+        "onMarket": false,
         "position": "MITTELFELD",
         "attribute": {"Standards": ["Elfmeter"]},
         "possibleNames": [
@@ -4504,7 +4509,7 @@
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
         "lastUpdate": "11.08.2025",
         "withinSquad": true,
-        "onMarket": true,
+        "onMarket": false,
         "position": "TORHÜTER",
         "attribute": {"SontigeInfos": ["häufigesten Transfers (2)"]},
         "possibleNames": [
@@ -4592,7 +4597,7 @@
           {"2024": 74}
         ],
         "withinSquad": true,
-        "onMarket": true,
+        "onMarket": false,
         "position": "MITTELFELD",
         "attribute": {"ligainsiderRanking": {
           "punkte": 887,
@@ -5204,13 +5209,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "Sprunggelenksprobleme",
+          "grund": "",
           "lastUpdate": "11.08.2025",
-          "seit": "15.07.2025",
+          "seit": "",
           "details": "",
           "historie": [],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Deman",
@@ -10117,7 +10122,7 @@
           {"2024": 137}
         ],
         "withinSquad": true,
-        "onMarket": true,
+        "onMarket": false,
         "position": "MITTELFELD",
         "attribute": {
           "ligainsiderRanking": {
@@ -10194,6 +10199,7 @@
         "punktekorrektur": [],
         "wert": 2430000,
         "verein": "4",
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "22.07.2025",
           "name": "Nicolai Remberg",
@@ -10206,12 +10212,16 @@
           "alter": 25
         },
         "lastSeasonPoints": 86,
+        "points": 86,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 3000000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
         "lastUpdate": "11.08.2025",
         "historicalPoints": [{"2024": 86}],
+        "withinSquad": true,
+        "onMarket": false,
         "position": "MITTELFELD",
         "attribute": {"PerformanceTopFlop": [
           "Eigentore: 2 (Platz: 1)",
@@ -11135,6 +11145,7 @@
         "punktekorrektur": [],
         "wert": 2770000,
         "verein": "8",
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "22.07.2025",
           "name": "Mark Flekken",
@@ -11147,7 +11158,9 @@
           "alter": 32
         },
         "lastSeasonPoints": 0,
+        "points": 0,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 10000000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
@@ -11159,6 +11172,8 @@
           {"2021": 92},
           {"2022": 113}
         ],
+        "withinSquad": true,
+        "onMarket": false,
         "position": "TORHÜTER",
         "attribute": {},
         "possibleNames": [
@@ -12388,6 +12403,7 @@
         "punktekorrektur": [],
         "wert": 160000,
         "verein": "12",
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "13.08.2024",
           "name": "Pavao Pervan",
@@ -12396,7 +12412,9 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 0,
+        "points": 0,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 300000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
@@ -12408,6 +12426,8 @@
           {"2021": 12},
           {"2023": 14}
         ],
+        "withinSquad": true,
+        "onMarket": false,
         "position": "TORHÜTER",
         "attribute": {},
         "possibleNames": [
@@ -15551,6 +15571,7 @@
         "punktekorrektur": [],
         "wert": 1800000,
         "verein": "21",
+        "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "18.08.2024",
           "name": "Michael Gregoritsch",
@@ -15559,7 +15580,9 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 43,
+        "points": 43,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 3000000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
@@ -15576,6 +15599,8 @@
           {"2023": 116},
           {"2024": 43}
         ],
+        "withinSquad": true,
+        "onMarket": false,
         "position": "STURM",
         "attribute": {},
         "possibleNames": [
@@ -17331,6 +17356,7 @@
         "punktekorrektur": [],
         "wert": 3420000,
         "verein": "68",
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "27.08.2024",
           "name": "Dimitrios Giannoulis",
@@ -17339,12 +17365,16 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 118,
+        "points": 118,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 3000000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
         "lastUpdate": "11.08.2025",
         "historicalPoints": [{"2024": 118}],
+        "withinSquad": true,
+        "onMarket": false,
         "position": "ABWEHR",
         "attribute": {
           "ligainsiderRanking": {
@@ -18972,7 +19002,7 @@
         "lastUpdate": "11.08.2025",
         "historicalPoints": [{"2024": 68}],
         "withinSquad": true,
-        "onMarket": true,
+        "onMarket": false,
         "position": "STURM",
         "attribute": {},
         "possibleNames": [
@@ -19323,6 +19353,7 @@
         "punktekorrektur": [],
         "wert": 920000,
         "verein": "14",
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "22.07.2025",
           "name": "Ameen Al-Dakhil",
@@ -19335,12 +19366,16 @@
           "alter": 23
         },
         "lastSeasonPoints": 19,
+        "points": 19,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 7500000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
         "lastUpdate": "11.08.2025",
         "historicalPoints": [{"2024": 19}],
+        "withinSquad": true,
+        "onMarket": false,
         "position": "ABWEHR",
         "attribute": {},
         "possibleNames": [
@@ -20203,7 +20238,7 @@
         "lastUpdate": "11.08.2025",
         "historicalPoints": [{"2024": 134}],
         "withinSquad": true,
-        "onMarket": false,
+        "onMarket": true,
         "position": "ABWEHR",
         "attribute": {
           "ligainsiderRanking": {
@@ -21183,7 +21218,7 @@
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
         "lastUpdate": "11.08.2025",
         "withinSquad": true,
-        "onMarket": false,
+        "onMarket": true,
         "position": "TORHÜTER",
         "attribute": {},
         "possibleNames": [
@@ -21966,7 +22001,7 @@
           {"2021": 1}
         ],
         "withinSquad": true,
-        "onMarket": true,
+        "onMarket": false,
         "position": "ABWEHR",
         "attribute": {},
         "possibleNames": [
@@ -26833,7 +26868,7 @@
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
         "lastUpdate": "11.08.2025",
         "withinSquad": true,
-        "onMarket": false,
+        "onMarket": true,
         "position": "STURM",
         "attribute": {},
         "possibleNames": [
@@ -28447,6 +28482,7 @@
         "punktekorrektur": [],
         "wert": 4460000,
         "verein": "92",
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "13.08.2024",
           "name": "Xaver Schlager",
@@ -28455,7 +28491,9 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 6,
+        "points": 6,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 10000000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
@@ -28468,6 +28506,8 @@
           {"2023": 113},
           {"2024": 6}
         ],
+        "withinSquad": true,
+        "onMarket": false,
         "position": "MITTELFELD",
         "attribute": {},
         "possibleNames": [
@@ -29715,7 +29755,7 @@
           {"2024": 43}
         ],
         "withinSquad": true,
-        "onMarket": false,
+        "onMarket": true,
         "position": "ABWEHR",
         "attribute": {
           "ligainsiderRanking": {
@@ -29757,9 +29797,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "unbekannt",
-          "lastUpdate": "24.05.2025",
-          "seit": "unbekannt",
+          "grund": "Muskelverletzung",
+          "lastUpdate": "11.08.2025",
+          "seit": "11.08.2025",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -29769,7 +29809,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "status": "AKTIV"
+          "bis": "06.10.2025",
+          "status": "VERLETZT"
         }
       },
       "name": "Süle",
@@ -30460,7 +30501,7 @@
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
         "lastUpdate": "11.08.2025",
         "withinSquad": true,
-        "onMarket": true,
+        "onMarket": false,
         "position": "MITTELFELD",
         "attribute": {},
         "possibleNames": [
@@ -30581,6 +30622,7 @@
         "punktekorrektur": [],
         "wert": 2930000,
         "verein": "3",
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "Kevin Diks",
           "link": "https://www.transfermarkt.de/kevin-diks/profil/spieler/335209",
@@ -30588,11 +30630,15 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 0,
+        "points": 0,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 5000000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
         "lastUpdate": "11.08.2025",
+        "withinSquad": true,
+        "onMarket": false,
         "position": "ABWEHR",
         "attribute": {},
         "possibleNames": [
@@ -31292,6 +31338,7 @@
         "punktekorrektur": [],
         "wert": 310000,
         "verein": "4",
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "22.07.2025",
           "name": "Fabio Baldé",
@@ -31304,11 +31351,15 @@
           "alter": 20
         },
         "lastSeasonPoints": 0,
+        "points": 0,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 2000000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
         "lastUpdate": "11.08.2025",
+        "withinSquad": true,
+        "onMarket": false,
         "position": "STURM",
         "attribute": {},
         "possibleNames": [
@@ -33467,6 +33518,7 @@
         "punktekorrektur": [],
         "wert": 2860000,
         "verein": "14",
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "22.07.2025",
           "name": "Noah Darvich",
@@ -33479,11 +33531,15 @@
           "alter": 18
         },
         "lastSeasonPoints": 0,
+        "points": 0,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 2000000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
         "lastUpdate": "11.08.2025",
+        "withinSquad": true,
+        "onMarket": false,
         "position": "MITTELFELD",
         "attribute": {},
         "possibleNames": [
@@ -36489,6 +36545,7 @@
         "punktekorrektur": [],
         "wert": 1600000,
         "verein": "3",
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "24.07.2025",
           "name": "Joe Scally",
@@ -36497,7 +36554,9 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 73,
+        "points": 73,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 10000000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
@@ -36508,6 +36567,8 @@
           {"2023": 52},
           {"2024": 73}
         ],
+        "withinSquad": true,
+        "onMarket": false,
         "position": "ABWEHR",
         "attribute": {"ligainsiderRanking": {
           "punkte": 1099,
@@ -37487,6 +37548,7 @@
         "punktekorrektur": [],
         "wert": 3190000,
         "verein": "6",
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "25.07.2025",
           "name": "Felix Agu",
@@ -37495,7 +37557,9 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 94,
+        "points": 94,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 8000000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
@@ -37506,6 +37570,8 @@
           {"2023": 59},
           {"2024": 94}
         ],
+        "withinSquad": true,
+        "onMarket": false,
         "position": "ABWEHR",
         "attribute": {"ligainsiderRanking": {
           "punkte": 939,
@@ -38460,7 +38526,7 @@
         "lastUpdate": "11.08.2025",
         "historicalPoints": [{"2024": 7}],
         "withinSquad": true,
-        "onMarket": false,
+        "onMarket": true,
         "position": "TORHÜTER",
         "attribute": {},
         "possibleNames": [
@@ -39472,6 +39538,7 @@
         "punktekorrektur": [],
         "wert": 5770000,
         "verein": "3",
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "25.07.2025",
           "name": "Rocco Reitz",
@@ -39480,7 +39547,9 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 109,
+        "points": 109,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 15000000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
@@ -39490,6 +39559,8 @@
           {"2023": 133},
           {"2024": 109}
         ],
+        "withinSquad": true,
+        "onMarket": false,
         "position": "MITTELFELD",
         "attribute": {
           "ligainsiderRanking": {
@@ -42547,13 +42618,16 @@
         "punktekorrektur": [],
         "wert": 1660000,
         "verein": "25",
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "",
           "link": "",
           "id": 0
         },
         "lastSeasonPoints": 77,
+        "points": 77,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 800000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
@@ -42562,6 +42636,8 @@
           {"2021": 1},
           {"2024": 77}
         ],
+        "withinSquad": true,
+        "onMarket": false,
         "position": "ABWEHR",
         "attribute": {"ligainsiderRanking": {
           "punkte": 853,
@@ -46855,7 +46931,7 @@
           {"2024": 130}
         ],
         "withinSquad": true,
-        "onMarket": false,
+        "onMarket": true,
         "position": "STURM",
         "attribute": {
           "ligainsiderRanking": {
@@ -47372,6 +47448,7 @@
         "punktekorrektur": [],
         "wert": 1100000,
         "verein": "12",
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "25.07.2025",
           "name": "Kevin Paredes",
@@ -47380,7 +47457,9 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 7,
+        "points": 7,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 7500000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
@@ -47391,6 +47470,8 @@
           {"2023": 88},
           {"2024": 7}
         ],
+        "withinSquad": true,
+        "onMarket": false,
         "position": "MITTELFELD",
         "attribute": {},
         "possibleNames": [
@@ -52802,7 +52883,7 @@
         "lastUpdate": "11.08.2025",
         "historicalPoints": [{"2016": 30}],
         "withinSquad": true,
-        "onMarket": true,
+        "onMarket": false,
         "position": "TORHÜTER",
         "attribute": {"ComAnalytics": [
           "Hist. Punkteausbeute: Gering bis mittel",
@@ -57247,6 +57328,7 @@
         "punktekorrektur": [],
         "wert": 2280000,
         "verein": "4",
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "22.07.2025",
           "name": "Jordan Torunarigha",
@@ -57259,7 +57341,9 @@
           "alter": 27
         },
         "lastSeasonPoints": 0,
+        "points": 0,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 4000000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
@@ -57272,6 +57356,8 @@
           {"2020": 25},
           {"2021": 17}
         ],
+        "withinSquad": true,
+        "onMarket": false,
         "position": "ABWEHR",
         "attribute": {},
         "possibleNames": [
@@ -58960,6 +59046,7 @@
         "punktekorrektur": [],
         "wert": 8580000,
         "verein": "8",
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "27.07.2025",
           "name": "Alejandro Grimaldo",
@@ -58968,7 +59055,9 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 170,
+        "points": 170,
         "punkte": 0,
+        "matchdayPoints": 0,
         "realWert": 30000000,
         "lastBigUpdate": "30.07.2025",
         "stats": "Stats: Played games: 0, Gelbekarte/Gelb-Rotekarte/Rotekarte: 0/0/0, Einsätze (gewertet): 0",
@@ -58977,6 +59066,8 @@
           {"2023": 274},
           {"2024": 170}
         ],
+        "withinSquad": true,
+        "onMarket": false,
         "position": "ABWEHR",
         "attribute": {
           "ligainsiderRanking": {
@@ -59097,9 +59188,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "unbekannt",
-          "lastUpdate": "24.05.2025",
-          "seit": "unbekannt",
+          "grund": "Sprunggelenksverletzung",
+          "lastUpdate": "11.08.2025",
+          "seit": "01.08.2025",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -59109,7 +59200,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Arthur",
@@ -59958,7 +60050,7 @@
         "lastUpdate": "11.08.2025",
         "historicalPoints": [{"2024": 30}],
         "withinSquad": true,
-        "onMarket": true,
+        "onMarket": false,
         "position": "STURM",
         "attribute": {},
         "possibleNames": [
@@ -61458,12 +61550,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "unbekannt",
-          "lastUpdate": "13.07.2025",
-          "seit": "unbekannt",
+          "grund": "Wadenverletzung",
+          "lastUpdate": "11.08.2025",
+          "seit": "01.08.2025",
           "details": "",
           "historie": [],
-          "status": "AKTIV"
+          "bis": "16.08.2025",
+          "status": "VERLETZT"
         }
       },
       "name": "Tillman",
