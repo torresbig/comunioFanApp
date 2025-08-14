@@ -45,16 +45,6 @@ if (menuTarnItem) {
   });
 }
 
-
-  function getLokalOderGitURL(websiteUrl, lokalUrl) {
-    const currentUrl = window.location.href;
-    if (currentUrl.includes('htmlpreview.github.io')) {
-      return websiteUrl;
-    } else {
-      return lokalUrl;
-    }
-  } 
-
   document.addEventListener('click', function (e) {
     if (!e.target.closest('.hamburger-menu')) {
       hamburgerButton.classList.remove('active');

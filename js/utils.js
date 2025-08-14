@@ -32,3 +32,12 @@ function toggleNewsList() {
     icon.style.transform = 'rotate(-90deg)';
   }
 }
+
+  function getLokalOderGitURL(websiteUrl, lokalUrl) {
+    const currentUrl = window.location.href;
+    if (currentUrl.includes('https://${GITHUB_USER}.github.io/')) {
+      return websiteUrl;
+    } else {
+      return lokalUrl;
+    }
+  } 

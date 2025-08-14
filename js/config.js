@@ -15,11 +15,29 @@ const DATA_URLS = {
   
 };
 
+// Für den Produktivbetrieb auf GitHub Pages die URLs so definieren:
 const WEBSITE_URLS = {
-  playerUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/player.html?id=`,
-  indexUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/index.html`,
-  kontostaendeUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/kontostaende.html`,
-  transfermarktUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/transfermarkt.html`,
-  useruebersichtUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/useruebersicht.html`,
-  transfersUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/transfers.html`
+  playerUrl: `https://${GITHUB_USER}.github.io/${GITHUB_REPO}/player.html?id=`,
+  indexUrl: `https://${GITHUB_USER}.github.io/${GITHUB_REPO}/index.html`,
+  kontostaendeUrl: `https://${GITHUB_USER}.github.io/${GITHUB_REPO}/kontostaende.html`,
+  transfermarktUrl: `https://${GITHUB_USER}.github.io/${GITHUB_REPO}/transfermarkt.html`,
+  useruebersichtUrl: `https://${GITHUB_USER}.github.io/${GITHUB_REPO}/useruebersicht.html`,
+  transfersUrl: `https://${GITHUB_USER}.github.io/${GITHUB_REPO}/transfers.html`
 };
+
+// Optional: Du kannst eine Umgebungs-Variable oder eine einfache Prüfung ergänzen,
+// um je nach Umgebung (lokal/htmlpreview vs. GitHub-Pages) die URLs automatisch zu wechseln.
+
+// Beispiel:
+const isHtmlPreview = window.location.href.includes('htmlpreview.github.io');
+
+const ACTIVE_WEBSITE_URLS = isHtmlPreview
+  ? {
+      playerUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/player.html?id=`,
+      indexUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/index.html`,
+      kontostaendeUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/kontostaende.html`,
+      transfermarktUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/transfermarkt.html`,
+      useruebersichtUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/useruebersicht.html`,
+      transfersUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/transfers.html`
+    }
+  : WEBSITE_URLS;
