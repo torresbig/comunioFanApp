@@ -19,5 +19,6 @@ const WEBSITE_URLS = {
   indexUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/index.html`,
   kontostaendeUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/kontostaende.html`,
   transfermarktUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/transfermarkt.html`,
-  useruebersichtUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/useruebersicht.html`
+  useruebersichtUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/useruebersicht.html`,
+  transfersUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/transfers.html`
 };

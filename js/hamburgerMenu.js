@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const linkIndex = document.getElementById('linkIndex');
   const linkTransfermarkt = document.getElementById('linkTransfermarkt');
   const linkUseruebersicht = document.getElementById('linkUseruebersicht');
-
+const linkTransferuebersicht = document.getElementById('linkTransferuebersicht')
   if (linkIndex) {
     linkIndex.href = getLokalOderGitURL(WEBSITE_URLS.indexUrl, "index.html");
   }  
@@ -24,6 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (linkUseruebersicht) {
     linkUseruebersicht.href = getLokalOderGitURL(WEBSITE_URLS.useruebersichtUrl, "useruebersicht.html");
+  }  
+
+   if (linkTransferuebersicht) {
+    linkTransferuebersicht.href = getLokalOderGitURL(WEBSITE_URLS.transfersUrl, "transfers.html");
   }  
 
   // Geheimer Link-Mechanismus für 5 Klicks
