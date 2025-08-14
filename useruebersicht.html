@@ -1,38 +1,136 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>User & Transfers</title>
   <link rel="stylesheet" href="css/styleMenueHamburger.css">
   <link rel="stylesheet" href="css/debugPanel.css">
   <link rel="stylesheet" href="css/buttonBack.css">
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f6f8; }
-    header { background:#2c3e50; color:#fff; padding:10px 20px; display:flex; align-items:center; }
-    header h1 { flex:1; margin:0; font-size:1.4em; }
-    main { display:flex; gap:20px; padding:20px; }
-    .sidebar { width:250px; }
-    .sidebar .dropdown { position:relative; }
-    .dropdown button { width:100%; padding:8px; font-size:1em; }
-    .dropdown ul { display:none; position:absolute; top:100%; left:0; right:0;
-                  list-style:none; margin:0; padding:0; max-height:200px; overflow:auto;
-                  background:#fff; border:1px solid #ccc; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
-    .dropdown ul.show { display:block; }
-    .dropdown ul li { padding:8px; cursor:pointer; }
-    .dropdown ul li:hover { background:#eef3f7; }
-    table { width:100%; border-collapse:collapse; margin-top:12px; }
-    table th, table td { padding:8px; border:1px solid #ddd; text-align:left; }
-    table tr.selected { background:#d0e7ff; }
-    .details { background:#fff; padding:16px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
-    .details h2 { margin-top:0; }
-    #transferSection { flex:1; }
-    .filter-group { margin:12px 0; }
-    .filter-group button { margin-right:8px; padding:6px 12px; border:none; background:#3498db; color:#fff;
-                           border-radius:4px; cursor:pointer; }
-    .filter-group button:hover { background:#217dbb; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+    }
+
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    header h1 {
+      flex: 1;
+      margin: 0;
+      font-size: 1.4em;
+    }
+
+    main {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .sidebar {
+      width: 250px;
+    }
+
+    .sidebar .dropdown {
+      position: relative;
+    }
+
+    .dropdown button {
+      width: 100%;
+      padding: 8px;
+      font-size: 1em;
+    }
+
+    .dropdown ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      max-height: 200px;
+      overflow: auto;
+      background: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown ul.show {
+      display: block;
+    }
+
+    .dropdown ul li {
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .dropdown ul li:hover {
+      background: #eef3f7;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+
+    table th,
+    table td {
+      padding: 8px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    table tr.selected {
+      background: #d0e7ff;
+    }
+
+    .details {
+      background: #fff;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .details h2 {
+      margin-top: 0;
+    }
+
+    #transferSection {
+      flex: 1;
+    }
+
+    .filter-group {
+      margin: 12px 0;
+    }
+
+    .filter-group button {
+      margin-right: 8px;
+      padding: 6px 12px;
+      border: none;
+      background: #3498db;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .filter-group button:hover {
+      background: #217dbb;
+    }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -41,19 +139,22 @@
     <div class="hamburger-menu">…</div>
     <h1>User & Transfers</h1>
 
-<div class="hamburger-menu">
-  <button class="hamburger-button" id="hamburgerButton">
-    <div class="hamburger-line"></div>
-    <div class="hamburger-line"></div>
-    <div class="hamburger-line"></div>
-  </button>
-  <div class="hamburger-dropdown" id="hamburgerDropdown">
-    <a href="#" class="menu-item" id="linkIndex">Startseite</a>
-    <a href="#" class="menu-item" id="linkTransfermarkt">🏪 Transfermarkt</a>
-    <a href="#" class="menu-item" id="linkUseruebersicht">👤 Userübersicht</a>
-    <a href="https://www.instagram.com/comuniofanapp/." class="menu-item" target="_blank">📸 Instagram: ComunioFanApp</a>
-  </div>
-</div>
+    <div class="hamburger-menu">
+      <button class="hamburger-button" id="hamburgerButton">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </button>
+      <div class="hamburger-dropdown" id="hamburgerDropdown">
+        <a href="#" class="menu-item" id="linkIndex">Startseite</a>
+        <a href="#" class="menu-item" id="linkTransferuebersicht">🔄 Transferübersicht</a>
+        <a href="#" class="menu-item" id="linkUseruebersicht">👤 Userübersicht</a>
+        <a href="https://www.instagram.com/comuniofanapp/." class="menu-item" target="_blank">📸 Instagram:
+          ComunioFanApp</a>
+        <div class="menu-item menu-tarn" id="menuTarnItem" style="font-size:0.95em; color:#888; cursor:pointer;">
+          erstellt von comunioFanApp</div>
+      </div>
+    </div>
 
 
 
@@ -68,7 +169,10 @@
 
       <table id="playerTable">
         <thead>
-          <tr><th>Spieler</th><th>Verein</th></tr>
+          <tr>
+            <th>Spieler</th>
+            <th>Verein</th>
+          </tr>
         </thead>
         <tbody></tbody>
       </table>
@@ -88,7 +192,11 @@
       <table id="transferTable">
         <thead>
           <tr>
-            <th>Spieler</th><th>Datum</th><th>Art</th><th>Preis</th><th>Gegenüber</th>
+            <th>Spieler</th>
+            <th>Datum</th>
+            <th>Art</th>
+            <th>Preis</th>
+            <th>Gegenüber</th>
           </tr>
         </thead>
         <tbody></tbody>
@@ -104,56 +212,56 @@
   <script>
     let newsData, playersData, p2uData, usersData;
     Promise.all([
-      fetch(DATA_URLS.news).then(r=>r.json()),
-      fetch(DATA_URLS.players).then(r=>r.json()),
-      fetch(DATA_URLS.playerToUser).then(r=>r.json()),
-      fetch(DATA_URLS.users).then(r=>r.json())
-    ]).then(vals=>{
+      fetch(DATA_URLS.news).then(r => r.json()),
+      fetch(DATA_URLS.players).then(r => r.json()),
+      fetch(DATA_URLS.playerToUser).then(r => r.json()),
+      fetch(DATA_URLS.users).then(r => r.json())
+    ]).then(vals => {
       [newsData, playersData, p2uData, usersData] = vals;
       initUserDropdown();
     });
 
-     function getLokalOderGitURL(websiteUrl, lokalUrl) {
-    const currentUrl = window.location.href;
-    if (currentUrl.includes('htmlpreview.github.io')) {
-      return websiteUrl;
-    } else {
-      return lokalUrl;
+    function getLokalOderGitURL(websiteUrl, lokalUrl) {
+      const currentUrl = window.location.href;
+      if (currentUrl.includes('htmlpreview.github.io')) {
+        return websiteUrl;
+      } else {
+        return lokalUrl;
+      }
     }
-  } 
 
-    function initUserDropdown(){
+    function initUserDropdown() {
       const btn = document.getElementById('userSelectBtn');
-      const ul  = document.getElementById('userDropdown');
-      usersData.forEach(u=>{
+      const ul = document.getElementById('userDropdown');
+      usersData.forEach(u => {
         const li = document.createElement('li');
-        li.textContent = u.user.firstName + (u.user.lastName?' '+u.user.lastName:'');
-        li.onclick = ()=>{
-          btn.textContent = li.textContent+' ▼';
+        li.textContent = u.user.firstName + (u.user.lastName ? ' ' + u.user.lastName : '');
+        li.onclick = () => {
+          btn.textContent = li.textContent + ' ▼';
           ul.classList.remove('show');
           loadPlayersForUser(u.user.id);
         };
         ul.appendChild(li);
       });
-      btn.onclick = ()=> ul.classList.toggle('show');
-      document.addEventListener('click', e=>{
-        if(!e.target.closest('.dropdown')) ul.classList.remove('show');
+      btn.onclick = () => ul.classList.toggle('show');
+      document.addEventListener('click', e => {
+        if (!e.target.closest('.dropdown')) ul.classList.remove('show');
       });
     }
 
-    let currentUserId=null;
-    function loadPlayersForUser(userId){
+    let currentUserId = null;
+    function loadPlayersForUser(userId) {
       currentUserId = userId;
-      const map = Object.assign({},...p2uData);
-      const list = (playersData.playerDB||[]).filter(p=>map[p.id]==userId);
+      const map = Object.assign({}, ...p2uData);
+      const list = (playersData.playerDB || []).filter(p => map[p.id] == userId);
       const tbody = document.querySelector('#playerTable tbody');
       tbody.innerHTML = '';
-      list.forEach(p=>{
+      list.forEach(p => {
         const tr = document.createElement('tr');
         tr.innerHTML = `<td>${p.name}</td><td>${p.data.verein}</td>`;
-        tr.onclick = ()=> selectPlayer(p);
-        tr.ondblclick = ()=> window.open(
-          getLokalOderGitURL(WEBSITE_URLS.playerUrl+p.id,'player.html?id='+p.id)
+        tr.onclick = () => selectPlayer(p);
+        tr.ondblclick = () => window.open(
+          getLokalOderGitURL(WEBSITE_URLS.playerUrl + p.id, 'player.html?id=' + p.id)
         );
         tbody.appendChild(tr);
       });
@@ -161,14 +269,14 @@
       renderTransfers(); // show all transfers for this user's players
     }
 
-    let selectedRow=null;
-    function selectPlayer(p){
-      if(selectedRow) selectedRow.classList.remove('selected');
+    let selectedRow = null;
+    function selectPlayer(p) {
+      if (selectedRow) selectedRow.classList.remove('selected');
       const rows = document.querySelectorAll('#playerTable tbody tr');
-      rows.forEach(r=>{
-        if(r.cells[0].textContent===p.name) selectedRow=r;
+      rows.forEach(r => {
+        if (r.cells[0].textContent === p.name) selectedRow = r;
       });
-      if(selectedRow) selectedRow.classList.add('selected');
+      if (selectedRow) selectedRow.classList.add('selected');
       const details = document.getElementById('detailText');
       details.innerHTML = `
         <strong>${p.name}</strong><br>
@@ -179,43 +287,44 @@
       `;
     }
 
-    function clearDetails(){
+    function clearDetails() {
       document.getElementById('detailText').textContent = 'Bitte Spieler auswählen';
     }
 
-    function renderTransfers(filterType='Alle'){
+    function renderTransfers(filterType = 'Alle') {
       const tbody = document.querySelector('#transferTable tbody');
       const buttons = document.querySelectorAll('.filter-btn');
-      buttons.forEach(b=>b.onclick=()=>renderTransfers(b.dataset.filter));
-      const map = Object.assign({},...p2uData);
-      const myPlayers = (playersData.playerDB||[]).filter(p=>map[p.id]==currentUserId);
+      buttons.forEach(b => b.onclick = () => renderTransfers(b.dataset.filter));
+      const map = Object.assign({}, ...p2uData);
+      const myPlayers = (playersData.playerDB || []).filter(p => map[p.id] == currentUserId);
       let entries = [];
-      newsData.forEach(day=>{
-        day.news.forEach(item=>{
-          if(item.art==='TRANSFER'){
+      newsData.forEach(day => {
+        day.news.forEach(item => {
+          if (item.art === 'TRANSFER') {
             const t = JSON.parse(item.text);
-            if(myPlayers.some(p=>p.id===item.playerId)){
-              entries.push({ playerName: myPlayers.find(p=>p.id===item.playerId).name, date:day.date, ...t });
+            if (myPlayers.some(p => p.id === item.playerId)) {
+              entries.push({ playerName: myPlayers.find(p => p.id === item.playerId).name, date: day.date, ...t });
             }
           }
         });
       });
-      if(filterType==='Einkauf')
-        entries = entries.filter(e=>e.buyerId && map[e.playerId]==currentUserId);
-      if(filterType==='Verkauf')
-        entries = entries.filter(e=>e.sellerId && map[e.playerId]==currentUserId);
-      tbody.innerHTML='';
-      entries.forEach(e=>{
+      if (filterType === 'Einkauf')
+        entries = entries.filter(e => e.buyerId && map[e.playerId] == currentUserId);
+      if (filterType === 'Verkauf')
+        entries = entries.filter(e => e.sellerId && map[e.playerId] == currentUserId);
+      tbody.innerHTML = '';
+      entries.forEach(e => {
         const tr = document.createElement('tr');
         tr.innerHTML = `
           <td>${e.playerName}</td>
           <td>${e.date}</td>
-          <td>${e.buyerId && map[e.playerId]==currentUserId ? 'Einkauf':'Verkauf'}</td>
+          <td>${e.buyerId && map[e.playerId] == currentUserId ? 'Einkauf' : 'Verkauf'}</td>
           <td>€${e.price.toLocaleString('de-DE')}</td>
-          <td>${e.buyerId && map[e.playerId]==currentUserId ? e.seller : e.buyer}</td>`;
+          <td>${e.buyerId && map[e.playerId] == currentUserId ? e.seller : e.buyer}</td>`;
         tbody.appendChild(tr);
       });
     }
   </script>
 </body>
+
 </html>
