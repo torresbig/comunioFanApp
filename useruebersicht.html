@@ -207,6 +207,7 @@
   <button class="btnBack" onclick="history.back()">← Zurück</button>
 
   <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
   <script src="js/debugPanel.js"></script>
   <script src="js/hamburgerMenu.js"></script>
   <script>
@@ -221,14 +222,6 @@
       initUserDropdown();
     });
 
-    function getLokalOderGitURL(websiteUrl, lokalUrl) {
-      const currentUrl = window.location.href;
-      if (currentUrl.includes('htmlpreview.github.io')) {
-        return websiteUrl;
-      } else {
-        return lokalUrl;
-      }
-    }
 
     function initUserDropdown() {
       const btn = document.getElementById('userSelectBtn');
