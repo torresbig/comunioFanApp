@@ -1,7 +1,7 @@
 async function loadPlayerMarketValues(playerId) {
     addDebug(`Lade Marktwerte für Spieler ${playerId}`, 'info');
     try {
-        const resp = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/MarktwerteJson.txt`);
+        const resp = await fetch(DATA_URLS.marktwerte);
         const data = await resp.json();
         const entry = data.find(e => String(e.id) === String(playerId));
         if (!entry || !entry.data || !entry.data.normal) {
