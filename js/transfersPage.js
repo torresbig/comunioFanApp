@@ -2,12 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", async () => {
     // --- Datenquellen wie config.js
-    const GITHUB_USER = "torresbig";
-    const GITHUB_REPO = "comunioFanApp";
-    const DATA_URLS = {
-        news: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/News.json`,
-        players: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/SpielerdatenbankNeutralJson.txt`
-    };
+
 
     // Elemente in HTML
     const userFilter = document.getElementById("userFilter"); // <select> für Nutzer
@@ -67,42 +62,55 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     // --- Tabelle rendern
-    function renderTable(filterUser) {
-        tableBody.innerHTML = "";
-        const filtered = transfers.filter(t => t.buyer === filterUser || t.seller === filterUser);
-        filtered.forEach(t => {
-            const currentValue = playerDb[t.playerId] || t.value || 0;
-            let dealHtml = "";
-            let diff = 0;
-            let tooltip = "";
+   function renderTable(filterUser) {
+    tableBody.innerHTML = "";
+    const filtered = transfers.filter(t => t.buyer === filterUser || t.seller === filterUser);
 
-            if (t.buyer === filterUser) { // Kauf
-                diff = currentValue - t.price;
-                tooltip = `Aktueller Wert minus Kaufpreis: ${formatCurrency(diff)}`;
-                if (diff > 0) dealHtml = `<span style="color:#27ae60;font-weight:bold;" title="${tooltip}">&#9650;</span>`;
-                else if (diff < 0) dealHtml = `<span style="color:#e74c3c;font-weight:bold;" title="${tooltip}">&#9660;</span>`;
-                else dealHtml = `<span style="color:#888;font-weight:bold;" title="Keine Änderung">&#9654;</span>`;
-            } else if (t.seller === filterUser) { // Verkauf
-                diff = t.price - currentValue;
-                tooltip = `Verkaufspreis minus aktueller Wert: ${formatCurrency(diff)}`;
-                if (diff > 0) dealHtml = `<span style="color:#27ae60;font-weight:bold;" title="${tooltip}">&#9650;</span>`;
-                else if (diff < 0) dealHtml = `<span style="color:#e74c3c;font-weight:bold;" title="${tooltip}">&#9660;</span>`;
-                else dealHtml = `<span style="color:#888;font-weight:bold;" title="Keine Änderung">&#9654;</span>`;
-            }
+    let totalPurchases = 0, totalSales = 0, profitLoss = 0; // Summen init
 
-            const tr = document.createElement("tr");
-            tr.innerHTML = `
-                <td>${t.date}</td>
-                <td><a class="player-link" href="player.html?id=${t.playerId}" target="_blank">${t.playerName}</a></td>
-                <td>${t.seller}</td>
-                <td>${t.buyer}</td>
-                <td>${formatCurrency(t.price)}</td>
-                <td>${formatCurrency(currentValue)}</td>
-                <td style="text-align:center">${dealHtml}</td>
-            `;
-            tableBody.appendChild(tr);
-        });
-    }
+    filtered.forEach(t => {
+        const currentValue = playerDb[t.playerId] || t.value || 0;
+        let dealHtml = "";
+        let diff = 0;
+        let tooltip = "";
+
+        if (t.buyer === filterUser) { // Kauf
+            diff = currentValue - t.price;
+            totalPurchases += t.price; // Einkäufe aufsummieren
+            tooltip = `Aktueller Wert minus Kaufpreis: ${formatCurrency(diff)}`;
+            if (diff > 0) dealHtml = `<span style="color:#27ae60;font-weight:bold;" title="${tooltip}">&#9650;</span>`;
+            else if (diff < 0) dealHtml = `<span style="color:#e74c3c;font-weight:bold;" title="${tooltip}">&#9660;</span>`;
+            else dealHtml = `<span style="color:#888;font-weight:bold;" title="Keine Änderung">&#9654;</span>`;
+        } else if (t.seller === filterUser) { // Verkauf
+            diff = t.price - currentValue;
+            totalSales += t.price; // Verkäufe aufsummieren
+            profitLoss += diff;   // Gewinn/Verlust aufsummieren
+            tooltip = `Verkaufspreis minus aktueller Wert: ${formatCurrency(diff)}`;
+            if (diff > 0) dealHtml = `<span style="color:#27ae60;font-weight:bold;" title="${tooltip}">&#9650;</span>`;
+            else if (diff < 0) dealHtml = `<span style="color:#e74c3c;font-weight:bold;" title="${tooltip}">&#9660;</span>`;
+            else dealHtml = `<span style="color:#888;font-weight:bold;" title="Keine Änderung">&#9654;</span>`;
+        }
+
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+            <td>${t.date}</td>
+            <td><a class="player-link" href="player.html?id=${t.playerId}" target="_blank">${t.playerName}</a></td>
+            <td>${t.seller}</td>
+            <td>${t.buyer}</td>
+            <td>${formatCurrency(t.price)}</td>
+            <td>${formatCurrency(currentValue)}</td>
+            <td style="text-align:center">${dealHtml}</td>
+        `;
+        tableBody.appendChild(tr);
+    });
+
+    // Summen im HTML anzeigen (IDs müssen im HTML existieren)
+    document.getElementById("totalPurchases").textContent = formatCurrency(totalPurchases);
+    document.getElementById("totalSales").textContent = formatCurrency(totalSales);
+    document.getElementById("balance").textContent = formatCurrency(totalSales - totalPurchases);
+    document.getElementById("profitLoss").textContent = formatCurrency(profitLoss) + " " + (profitLoss >= 0 ? "📈" : "📉");
+}
+
 
     // Währungsformat (mit Komma und €)
     function formatCurrency(v) {
