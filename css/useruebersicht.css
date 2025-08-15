@@ -1,0 +1,235 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+    }
+
+   
+
+    main {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .sidebar {
+      width: 250px;
+    }
+
+    .sidebar .dropdown {
+      position: relative;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown ul {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      z-index: 9999;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+      border: 1px solid #ccc;
+      border-radius: 0 0 8px 8px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .dropdown ul.show {
+      display: block;
+    }
+
+    .dropdown ul li {
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+
+    .dropdown ul li:hover {
+      background: #eef3f7;
+    }
+
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+
+    table th,
+    table td {
+      padding: 8px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    table tr.selected {
+      background: #d0e7ff;
+    }
+
+    .table-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      padding: 15px;
+      margin-bottom: 20px;
+      overflow-x: auto;
+    }
+
+    .table-card table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .table-card th {
+      background: #f4f6f8;
+      text-align: left;
+      padding: 10px;
+      font-weight: 600;
+      font-size: 14px;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .table-card td {
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+    }
+
+    .table-card tr:hover {
+      background: #f9fcff;
+    }
+
+    .table-card tr.selected {
+      background: #d0e7ff;
+    }
+
+
+    .details {
+      background: #fff;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .details h2 {
+      margin-top: 0;
+    }
+
+    #transferSection {
+      flex: 1;
+    }
+
+    .filter-group {
+      margin: 12px 0;
+    }
+
+    .filter-group button {
+      margin-right: 8px;
+      padding: 6px 12px;
+      border: none;
+      background: #3498db;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .filter-group button:hover {
+      background: #217dbb;
+    }
+
+    .user-overview {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 15px;
+    }
+
+    .player-section {
+      display: flex;
+      gap: 20px;
+    }
+
+    .player-section .rivals-table-container {
+      flex: 0 0 70%;
+    }
+
+    .player-section .details-card {
+      flex: 0 0 30%;
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Auf Handy nur Tabelle anzeigen, Details ausblenden */
+    @media (max-width: 768px) {
+      .player-section {
+        flex-direction: column;
+      }
+
+      .player-section .details-card {
+        display: none;
+      }
+    }
+
+
+    .rivals-table-container {
+      flex: 1;
+    }
+
+    .details-card {
+      flex: 1;
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .transfer-section {
+      background: white;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .club-logo {
+      width: 25px;
+      height: 25px;
+      object-fit: contain;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .navbar {
+      background: linear-gradient(135deg, #34495e, #2c3e50);
+      color: white;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          max-width: 1200px;
+          max-height: 25px;
+          margin: 0 auto;
+          padding: 10px 0;
+      }
+
+      .navbar-center {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex: 1;
+      }
