@@ -14,8 +14,17 @@ function initTabs() {
     });
     tabButtons.forEach(btn => btn.classList.remove('active'));
     tabContents.forEach(tab => tab.classList.remove('active'));
-    document.querySelector('.tab-button[data-tab="market"]').classList.add('active');
-    document.getElementById('market').classList.add('active');
+    const defaultTabBtn = document.querySelector('.tab-button[data-tab="market"]') 
+                   || document.querySelector('.tab-button.active') 
+                   || document.querySelector('.tab-button');
+
+if (defaultTabBtn) {
+    defaultTabBtn.classList.add('active');
+    const defaultTabId = defaultTabBtn.getAttribute('data-tab');
+    const defaultContent = document.getElementById(defaultTabId);
+    if (defaultContent) defaultContent.classList.add('active');
+}
+
     addDebug('Tabs initialisiert', 'success');
 }
 
@@ -42,7 +51,7 @@ function displayRivals(player, allPlayers) {
 
     if (rivals.length > 0) {
         let html = `
-        <table class="rivals-table">
+        <table class="table-container">
             <thead>
                 <tr>
                     <th>Spieler</th>
@@ -214,4 +223,15 @@ function displayPointsHistory(player) {
 
     container.innerHTML = html;
     addDebug('Punkte-Anzeige erstellt', 'success');
+}
+
+// NEU (ohne Fehler, für jede Seite nutzbar):
+const defaultTabBtn = document.querySelector('.tab-button[data-tab="market"]') 
+                   || document.querySelector('.tab-button.active') 
+                   || document.querySelector('.tab-button');
+const defaultTabId = defaultTabBtn && defaultTabBtn.getAttribute('data-tab');
+if (defaultTabBtn && defaultTabId) {
+  defaultTabBtn.classList.add('active');
+  const defaultContent = document.getElementById(defaultTabId);
+  if (defaultContent) defaultContent.classList.add('active');
 }

@@ -137,33 +137,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         const clubId = player.data?.verein || "0";
-        function getLogoFileName(clubId) {
-            if (!clubId) return "unbestimmt.png";
-            const mapping = {
-                "3": "gladbach",
-                "21": "freiburg",
-                "18": "mainz",
-                "92": "leipzig",
-                "1": "bayern",
-                "6": "werderBremen",
-                "12": "wolfsburg",
-                "5": "dortmund",
-                "8": "leverkusen",
-                "13": "koeln",
-                "14": "stuttgart",
-                "62": "hoffenheim",
-                "68": "augsburg",
-                "9": "frankfurt",
-                "109": "unionBerlin",
-                "110": "heidenheim",
-                "25": "stpauli",
-                "4": "hamburg",
-            };
-            return mapping[clubId] || "unbestimmt";
-        }
 
         const logoFileName = getLogoFileName(clubId);
-        const logoUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/logos/${logoFileName}.png`;
+        const logoUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/logos/${logoFileName}`;
 
         const clubLogoEl = document.getElementById('clubLogo');
         if (clubLogoEl) {

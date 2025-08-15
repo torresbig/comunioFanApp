@@ -15,7 +15,6 @@ function initDebugPanel() {
   const debugBtn = document.getElementById('floatingDebugBtn');
   const debugPanel = document.getElementById('floatingDebugPanel');
   const debugClose = document.getElementById('floatingDebugPanelClose');
-
   if (!debugBtn || !debugPanel || !debugClose) return;
 
   debugBtn.addEventListener('click', () => {
@@ -31,8 +30,10 @@ function initDebugPanel() {
   addDebug("Debug-Panel initialisiert.");
 }
 
-// Dokument-Ready: Debug initialisieren
 document.addEventListener('DOMContentLoaded', () => {
   initDebugPanel();
   addDebug("Seite geladen.");
 });
+
+
+
