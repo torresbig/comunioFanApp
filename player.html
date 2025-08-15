@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Spieler Details</title>
     <link rel="stylesheet" href="css/debugPanel.css">
+    <link rel="stylesheet" href="css/tabelStyle.css">
     <link rel="stylesheet" href="css/playerTable.css">
     <link rel="stylesheet" href="css/buttonBack.css">
     <link rel="stylesheet" href="css/styleMenueHamburger.css">
@@ -45,7 +46,7 @@
         </div>
     </div>
     <nav class="navbar">
-        <button class="btnBack" onclick="window.history.back()">← Zurück</button>
+        
         <div class="player-header">
             <div class="player-center">
                 <div class="player-row">
@@ -254,8 +255,8 @@
             addDebug('Lade Besitzerdaten...', 'info');
             try {
                 const [usersData, playerToUserMap] = await Promise.all([
-                    fetchJSON(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/UserdatenbankJson_884691.txt`),
-                    fetchJSON(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/PlayerToUserMap_884691.txt`)
+                    fetchJSON(DATA_URLS.USERS),
+                    fetchJSON(DATA_URLS.PLAYER_TO_USER_MAP )
                 ]);
 
                 const userMap = new Map();
@@ -274,46 +275,7 @@
             }
         }
 
-        function getStatusIndicator(status) {
-            switch (status) {
-                case 'AKTIV': return '👍';
-                case 'VERLETZT': return '🚨';
-                case 'REHA': return '🔄';
-                case 'AUFBAUTRAINING': return '🏋️💪';
-                case 'NICHT_IN_LIGA': return '❌';
-                case 'FUENFTE_GELBE_KARTE': return '🟨';
-                case 'GELBROTE_KARTE': return '🟨🟥';
-                case 'ROTE_KARTE': return '🟥';
-                case 'NICHT_IM_KADER': return '🚫';
-                default: return '❓';
-            }
-        }
-
-        function getStatusDisplayName(status) {
-            const statusMap = {
-                'AKTIV': 'Aktiv',
-                'VERLETZT': 'Verletzt',
-                'REHA': 'Reha',
-                'AUFBAUTRAINING': 'Aufbautraining',
-                'NICHT_IM_KADER': 'Nicht im Kader',
-                'ROTE_KARTE': 'Rote Karte',
-                'GELBROTE_KARTE': 'Gelbrote Karte',
-                'FUENFTE_GELBE_KARTE': '5. gelbe Karte',
-                'NICHT_IN_LIGA': 'Nicht in Liga'
-            };
-            return statusMap[status] || status || 'Unbekannt';
-        }
-
-        function getPlayerUrl(playerId) {
-            const currentUrl = window.location.href;
-            if (currentUrl.includes('htmlpreview.github.io')) {
-                return `https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${playerId}`;
-            } else if (currentUrl.includes('github.com') || currentUrl.includes('githubusercontent.com')) {
-                return `https://htmlpreview.github.io/?https://github.com/torresbig/comunioFanApp/blob/main/player.html?id=${playerId}`;
-            } else {
-                return `player.html?id=${playerId}`;
-            }
-        }
+       
 
 
     </script>

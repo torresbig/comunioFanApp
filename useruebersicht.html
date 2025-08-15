@@ -5,228 +5,217 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>User & Transfers</title>
+  <link rel="stylesheet" href="css/useruebersicht.css">
+  <link rel="stylesheet" href="css/stylePlayer.css">
+  <link rel="stylesheet" href="css/tabelStyle.css">
   <link rel="stylesheet" href="css/styleMenueHamburger.css">
   <link rel="stylesheet" href="css/debugPanel.css">
   <link rel="stylesheet" href="css/buttonBack.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f6f8;
-    }
 
-    header {
-      background: #2c3e50;
-      color: #fff;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-    }
-
-    header h1 {
-      flex: 1;
-      margin: 0;
-      font-size: 1.4em;
-    }
-
-    main {
-      display: flex;
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .sidebar {
-      width: 250px;
-    }
-
-    .sidebar .dropdown {
-      position: relative;
-    }
-
-    .dropdown button {
-      width: 100%;
-      padding: 8px;
-      font-size: 1em;
-    }
-
-    .dropdown ul {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      max-height: 200px;
-      overflow: auto;
-      background: #fff;
-      border: 1px solid #ccc;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .dropdown ul.show {
-      display: block;
-    }
-
-    .dropdown ul li {
-      padding: 8px;
-      cursor: pointer;
-    }
-
-    .dropdown ul li:hover {
-      background: #eef3f7;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 12px;
-    }
-
-    table th,
-    table td {
-      padding: 8px;
-      border: 1px solid #ddd;
-      text-align: left;
-    }
-
-    table tr.selected {
-      background: #d0e7ff;
-    }
-
-    .details {
-      background: #fff;
-      padding: 16px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .details h2 {
-      margin-top: 0;
-    }
-
-    #transferSection {
-      flex: 1;
-    }
-
-    .filter-group {
-      margin: 12px 0;
-    }
-
-    .filter-group button {
-      margin-right: 8px;
-      padding: 6px 12px;
-      border: none;
-      background: #3498db;
-      color: #fff;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .filter-group button:hover {
-      background: #217dbb;
-    }
   </style>
 </head>
 
 <body>
+  <!-- Floating Debug Button and Panel -->
+  <button id="floatingDebugBtn" title="Debug"><span style="pointer-events:none;">🐞</span></button>
+  <div id="floatingDebugPanel">
+    <div id="floatingDebugPanelHeader">
+      Debug-Informationen
+      <button id="floatingDebugPanelClose" title="Schließen">×</button>
+    </div>
+    <div id="floatingDebugContent"></div>
+  </div>
 
+  <!-- Hamburger-Menü -->
+  <div class="hamburger-menu">
+    <button class="hamburger-button" id="hamburgerButton">
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+    </button>
+    <div class="hamburger-dropdown" id="hamburgerDropdown">
+      <a href="#" class="menu-item" id="linkIndex">Startseite</a>
+      <a href="#" class="menu-item" id="linkTransferuebersicht">🔄 Transferübersicht</a>
+      <a href="#" class="menu-item" id="linkUseruebersicht">👤 Userübersicht</a>
+      <a href="https://www.instagram.com/comuniofanapp/." class="menu-item" target="_blank">📸 Instagram:
+        ComunioFanApp</a>
+      <div class="menu-item menu-tarn" id="menuTarnItem" style="font-size:0.95em; color:#888; cursor:pointer;">
+        erstellt von comunioFanApp</div>
+    </div>
+  </div>
   <header>
-    <button id="floatingDebugBtn" title="Debug">🐞</button>
-    <div id="floatingDebugPanel">…</div>
-    <div class="hamburger-menu">…</div>
-    <h1>User & Transfers</h1>
-
-    <div class="hamburger-menu">
-      <button class="hamburger-button" id="hamburgerButton">
-        <div class="hamburger-line"></div>
-        <div class="hamburger-line"></div>
-        <div class="hamburger-line"></div>
-      </button>
-      <div class="hamburger-dropdown" id="hamburgerDropdown">
-        <a href="#" class="menu-item" id="linkIndex">Startseite</a>
-        <a href="#" class="menu-item" id="linkTransferuebersicht">🔄 Transferübersicht</a>
-        <a href="#" class="menu-item" id="linkUseruebersicht">👤 Userübersicht</a>
-        <a href="https://www.instagram.com/comuniofanapp/." class="menu-item" target="_blank">📸 Instagram:
-          ComunioFanApp</a>
-        <div class="menu-item menu-tarn" id="menuTarnItem" style="font-size:0.95em; color:#888; cursor:pointer;">
-          erstellt von comunioFanApp</div>
+    <nav class="navbar">
+      <div class="navbar-header">
+        <div class="player-center">
+          <h1>User & Transfers</h1>
+        </div>
       </div>
-    </div>
-
-
-
+    </nav>
   </header>
+  <main class="user-overview">
 
-  <main>
-    <div class="sidebar">
-      <div class="dropdown">
-        <button id="userSelectBtn">User wählen ▼</button>
-        <ul id="userDropdown"></ul>
+    <!-- User Dropdown -->
+    <div class="dropdown">
+      <button id="userSelectBtn">User wählen ▼</button>
+      <ul id="userDropdown"></ul>
+    </div>
+
+    <!-- Spieler-Tabelle + Details nebeneinander -->
+    <div class="player-section">
+      <div class="rivals-table-container">
+        <table id="playerTable" class="rivals-table">
+          <thead>
+            <tr>
+              <th>Spieler</th>
+              <th>Verein</th>
+              <th>Position</th>
+              <th>Status</th>
+              <th>Marktwert</th>
+              <th>Punkte</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
       </div>
 
-      <table id="playerTable">
-        <thead>
-          <tr>
-            <th>Spieler</th>
-            <th>Verein</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <div class="details" id="playerDetails">
-      <h2>Spieler-Details</h2>
-      <p id="detailText">Bitte Spieler auswählen</p>
-    </div>
-
-    <div id="transferSection">
-      <div class="filter-group">
-        <button data-filter="Alle" class="filter-btn">Alle</button>
-        <button data-filter="Einkauf" class="filter-btn">Einkäufe</button>
-        <button data-filter="Verkauf" class="filter-btn">Verkäufe</button>
+      <div class="details-card" id="playerDetails">
+        <h2>Spieler-Details</h2>
+        <p id="detailText">Bitte Spieler auswählen</p>
+        <!-- Du kannst hier weitere Details dynamisch hinzufügen -->
       </div>
-      <table id="transferTable">
-        <thead>
-          <tr>
-            <th>Spieler</th>
-            <th>Datum</th>
-            <th>Art</th>
-            <th>Preis</th>
-            <th>Gegenüber</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
     </div>
+
+    <!-- Transfers mit Tabs -->
+    <div class="transfer-section">
+      <div class="tabs">
+        <button class="tab-button active" data-tab="tab-all">Alle</button>
+        <button class="tab-button" data-tab="tab-buy">Käufe</button>
+        <button class="tab-button" data-tab="tab-sell">Verkäufe</button>
+      </div>
+      <div id="tab-all" class="tab-content active">
+        <table id="transferTableAll" class="rivals-table">
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Spieler</th>
+              <th>Art</th>
+              <th>Preis</th>
+              <th>Gegenüber</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="tab-buy" class="tab-content">
+        <table id="transferTableBuy" class="rivals-table">
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Spieler</th>
+              <th>Preis</th>
+              <th>Verkäufer</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="tab-sell" class="tab-content">
+        <table id="transferTableSell" class="rivals-table">
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Spieler</th>
+              <th>Preis</th>
+              <th>Käufer</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
   </main>
 
-  <button class="btnBack" onclick="history.back()">← Zurück</button>
-
   <script src="js/config.js"></script>
-  <script src="js/utils.js"></script>
   <script src="js/debugPanel.js"></script>
-  <script src="js/hamburgerMenu.js"></script>
-  <script>
-    let newsData, playersData, p2uData, usersData;
-    Promise.all([
-      fetch(DATA_URLS.news).then(r => r.json()),
-      fetch(DATA_URLS.players).then(r => r.json()),
-      fetch(DATA_URLS.playerToUser).then(r => r.json()),
-      fetch(DATA_URLS.users).then(r => r.json())
-    ]).then(vals => {
-      [newsData, playersData, p2uData, usersData] = vals;
-      initUserDropdown();
-    });
+  <script src="js/utils.js"></script>
 
+  <script src="js/hamburgerMenu.js"></script>
+  <script src="js/playerDisplayTabs.js"></script>
+  <script src="js/generatePlayerTable.js"></script>
+
+
+  <script>
+    let newsData, playersData, p2uData, usersData, clubsData;
+    const clubsMap = new Map();
+    const ownersMap = new Map();
+
+    // Lade alle benötigten Daten
+    async function loadData() {
+      try {
+        [clubsData, playersData, usersData, p2uData, newsData] = await Promise.all([
+          fetchJSON(DATA_URLS.clubs),
+          fetchJSON(DATA_URLS.players),
+          fetchJSON(DATA_URLS.users),
+          fetchJSON(DATA_URLS.playerToUser),
+          fetchJSON(DATA_URLS.news)
+        ]);
+
+        // ClubsMap aufbauen
+        clubsData.forEach(club => {
+          if (club?.id && club?.name) {
+            clubsMap.set(club.id, club.name);
+          }
+        });
+
+        // OwnersMap - Beispiel: alle User als Besitzer "Computer" default-Map
+        usersData.forEach(user => {
+          ownersMap.set(user.user.id, user.user.firstName || 'Computer');
+        });
+
+        initUserDropdown();
+        initTabs();
+      } catch (error) {
+        console.error("Fehler beim Laden:", error); // <-- alles ausgeben, nicht nur message!
+        addDebug("Fehler beim Laden: " + (error && error.message ? error.message : JSON.stringify(error)));
+      }
+    }
+
+    async function fetchJSON(url) {
+      addDebug(`Lade Datei: ${url}`);
+      const cacheBusterUrl = url + '?t=' + new Date().getTime();
+      try {
+        const response = await fetch(cacheBusterUrl);
+        if (!response.ok) {
+          addDebug(`Fehler beim Laden: HTTP ${response.status}`);
+          throw new Error(`HTTP ${response.status} für ${url}`);
+        }
+        const text = await response.text();
+        if (!text.trim()) {
+          addDebug("Warnung: Datei ist leer!");
+          throw new Error("Leere Datei: " + url);
+        }
+        addDebug("Datei geladen, versuche JSON zu parsen...");
+        const data = JSON.parse(text);
+        addDebug(`Erfolgreich geparst: ${data.length || Object.keys(data).length} Einträge`);
+        return data;
+      } catch (error) {
+        addDebug("Fehler beim Laden/JSON-Parsen: " + error.message);
+        throw error;
+      }
+    }
 
     function initUserDropdown() {
       const btn = document.getElementById('userSelectBtn');
       const ul = document.getElementById('userDropdown');
-      usersData.forEach(u => {
+
+      // Nur echte User nehmen!
+      const realUsers = usersData.filter(u => u.user.firstName !== "Computer");
+
+      ul.innerHTML = '';
+
+      realUsers.forEach(u => {
         const li = document.createElement('li');
         li.textContent = u.user.firstName + (u.user.lastName ? ' ' + u.user.lastName : '');
         li.onclick = () => {
@@ -236,88 +225,198 @@
         };
         ul.appendChild(li);
       });
-      btn.onclick = () => ul.classList.toggle('show');
-      document.addEventListener('click', e => {
+
+      btn.onclick = function (e) {
+        ul.classList.toggle('show');
+        e.stopPropagation(); // Verhindert sofortiges Schließen!
+      };
+
+      // Schließt das Dropdown beim Klick überall sonst
+      document.addEventListener('click', function (e) {
         if (!e.target.closest('.dropdown')) ul.classList.remove('show');
       });
+
+      // Beim Start: Ersten echten User vorauswählen
+      const firstUser = realUsers[0];
+      if (firstUser) {
+        btn.textContent = firstUser.user.firstName + (firstUser.user.lastName ? ' ' + firstUser.user.lastName : '') + ' ▼';
+        loadPlayersForUser(firstUser.user.id);
+      }
     }
 
-    let currentUserId = null;
+    const ul = document.getElementById('userDropdown');
+
+    document.addEventListener('click', function (e) {
+      // Schließe Dropdown nur, wenn es existiert und offen ist
+      if (ul && ul.classList.contains('show') && !e.target.closest('.dropdown')) {
+        ul.classList.remove('show');
+      }
+    });
+
+
+
+    // Spieler für ausgewählten User laden und Tabelle rendern
     function loadPlayersForUser(userId) {
-      currentUserId = userId;
       const map = Object.assign({}, ...p2uData);
       const list = (playersData.playerDB || []).filter(p => map[p.id] == userId);
-      const tbody = document.querySelector('#playerTable tbody');
-      tbody.innerHTML = '';
-      list.forEach(p => {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `<td>${p.name}</td><td>${p.data.verein}</td>`;
-        tr.onclick = () => selectPlayer(p);
-        tr.ondblclick = () => window.open(
-          getLokalOderGitURL(WEBSITE_URLS.playerUrl + p.id, 'player.html?id=' + p.id)
-        );
-        tbody.appendChild(tr);
-      });
+      renderTable(list);
       clearDetails();
-      renderTransfers(); // show all transfers for this user's players
+      renderTransfers(userId);
     }
 
-    let selectedRow = null;
-    function selectPlayer(p) {
-      if (selectedRow) selectedRow.classList.remove('selected');
-      const rows = document.querySelectorAll('#playerTable tbody tr');
-      rows.forEach(r => {
-        if (r.cells[0].textContent === p.name) selectedRow = r;
-      });
-      if (selectedRow) selectedRow.classList.add('selected');
+    // Spielerdetails füllen
+    function fillPlayerDetails(player) {
       const details = document.getElementById('detailText');
       details.innerHTML = `
-        <strong>${p.name}</strong><br>
-        ID: ${p.id}<br>
-        Verein: ${p.data.verein}<br>
-        Wert: €${p.data.wert.toLocaleString('de-DE')}<br>
-        Status: ${p.data.comunioStatus.status}
-      `;
+      <strong>${player.name}</strong><br>
+      ID: ${player.id}<br>
+      Verein: ${player.data?.verein || "-"}<br>
+      Marktwert: €${player.data?.wert?.toLocaleString('de-DE') || "-"}<br>
+      Punkte: ${player.data?.punkte || "0"}<br>
+      Status: ${player.data?.comunioStatus?.status || "-"}
+    `;
     }
 
     function clearDetails() {
-      document.getElementById('detailText').textContent = 'Bitte Spieler auswählen';
+      const details = document.getElementById('detailText');
+      details.innerHTML = 'Bitte Spieler auswählen';
     }
 
-    function renderTransfers(filterType = 'Alle') {
-      const tbody = document.querySelector('#transferTable tbody');
-      const buttons = document.querySelectorAll('.filter-btn');
-      buttons.forEach(b => b.onclick = () => renderTransfers(b.dataset.filter));
+    // Spieler-Tabelle rendern (aus generatePlayerTable.js)
+    function renderTable(players) {
+      const tableBody = document.querySelector('#playerTable tbody');
+      tableBody.innerHTML = '';
+      addDebug(`Rendere Tabelle mit ${players.length} Spielern`);
+      players.forEach(player => {
+        const row = document.createElement('tr');
+        row.setAttribute('data-player-id', player.id);
+        row.addEventListener('click', () => {
+          document.querySelectorAll('#playerTable tr').forEach(r => r.classList.remove('selected'));
+          row.classList.add('selected');
+          fillPlayerDetails(player);
+        });
+
+        const clubId = player.data?.verein || "0";
+        const clubName = clubsMap.get(clubId) || 'UNBEKANNT';
+        const logoFile = getLogoFileName(clubId);
+        const logoHtml = `<img src="logos/${logoFile}" class="club-logo" alt="${clubName}" title="${clubName}">`;
+        const playerNameHtml = `<a href="${getPlayerUrl(player.id)}" title="${player.name} (ID: ${player.id})" target="_self">${player.name}</a>`;
+
+        const position = player.position || "Unbekannt";
+        const hauptposition = player.data?.spielerDaten?.hauptposition || "N/A";
+        const nebenpositionen = player.data?.spielerDaten?.nebenpositionen || [];
+        const nebenpositionenTooltip = nebenpositionen.length > 0 ? "Hauptposition: " + hauptposition + " | Nebenposition: " + nebenpositionen.join(", ") : "";
+        const positionHtml = `<span title="${nebenpositionenTooltip}">${position}</span>`;
+        const status = player.data?.status?.status || 'AKTIV';
+
+        let statusClass = "";
+        if (status.includes("AKTIV")) statusClass = "status-aktiv";
+        else if (status.includes("VERLETZT")) statusClass = "status-verletzt";
+        else if (status.includes("AUFBAU")) statusClass = "status-reha";
+        else if (status.includes("ROTE_KARTE") || status.includes("GELBROTE_KARTE") || status.includes("FUENFTE_GELBE_KARTE")) statusClass = "status-gesperrt";
+        else if (status.includes("NICHT_IN_LIGA") || status.includes("NICHT_IM_KADER")) statusClass = "status-nichtliga";
+
+        let marketValue = 'Unbekannt';
+        let marketValueSort = 0;
+        if (player.data?.wert) {
+          marketValueSort = player.data.wert;
+          marketValue = marketValueSort < 1000000
+            ? `${(marketValueSort / 1000).toFixed(0)} Tsd. €`
+            : `${(marketValueSort / 1000000).toFixed(2)} Mio. €`;
+        }
+        const points = player.data?.punkte || 0;
+        const lastUpdate = player.data?.lastUpdate || 'Unbekannt';
+
+        row.innerHTML = `
+        <td data-sort="${player.name}">${playerNameHtml}</td>
+        <td data-sort="${clubName}">${logoHtml}</td>
+        <td data-sort="${position}">${positionHtml}</td>
+        <td data-sort="${status}" class="${statusClass}">
+  <span title="${getStatusDisplayName(status)}">${getStatusIndicator(status)}</span>
+</td>
+        <td data-sort="${marketValueSort}">${marketValue}</td>
+        <td data-sort="${points}">${points}</td>
+      `;
+        tableBody.appendChild(row);
+      });
+    }
+
+    // Transfers anzeigen (mit Filtern für Käufe/Verkäufe)
+    function renderTransfers(userId) {
       const map = Object.assign({}, ...p2uData);
-      const myPlayers = (playersData.playerDB || []).filter(p => map[p.id] == currentUserId);
+      const myPlayers = (playersData.playerDB || []).filter(p => map[p.id] == userId);
+
       let entries = [];
       newsData.forEach(day => {
         day.news.forEach(item => {
           if (item.art === 'TRANSFER') {
             const t = JSON.parse(item.text);
-            if (myPlayers.some(p => p.id === item.playerId)) {
-              entries.push({ playerName: myPlayers.find(p => p.id === item.playerId).name, date: day.date, ...t });
+            const isMyPurchase = t.buyerId && t.buyerId == userId;
+            const isMySale = t.sellerId && t.sellerId == userId;
+
+            if (isMyPurchase || isMySale) {
+              const playerObj = (playersData.playerDB || []).find(p => p.id === item.playerId);
+              entries.push({
+                playerId: playerObj?.id,
+                playerName: playerObj?.name || "Unbekannt",
+                date: day.date,
+                type: isMyPurchase ? "Einkauf" : "Verkauf",
+                price: t.price,
+                partner: isMyPurchase ? t.seller : t.buyer
+              });
             }
           }
         });
       });
-      if (filterType === 'Einkauf')
-        entries = entries.filter(e => e.buyerId && map[e.playerId] == currentUserId);
-      if (filterType === 'Verkauf')
-        entries = entries.filter(e => e.sellerId && map[e.playerId] == currentUserId);
-      tbody.innerHTML = '';
-      entries.forEach(e => {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <td>${e.playerName}</td>
-          <td>${e.date}</td>
-          <td>${e.buyerId && map[e.playerId] == currentUserId ? 'Einkauf' : 'Verkauf'}</td>
-          <td>€${e.price.toLocaleString('de-DE')}</td>
-          <td>${e.buyerId && map[e.playerId] == currentUserId ? e.seller : e.buyer}</td>`;
+      entries.sort((a, b) => new Date(b.date) - new Date(a.date));
+      fillTransferTable("#transferTableAll tbody", entries);
+      fillTransferTable("#transferTableBuy tbody", entries.filter(e => e.type === "Einkauf"));
+      fillTransferTable("#transferTableSell tbody", entries.filter(e => e.type === "Verkauf"));
+    }
+
+    // Hilfsfunktion zum Füllen der Transfers-Tabellen
+    function fillTransferTable(selector, list) {
+      const tbody = document.querySelector(selector);
+      tbody.innerHTML = "";
+      list.forEach(e => {
+        const tr = document.createElement("tr");
+        const playerLink = e.playerId
+          ? `<a href="${getPlayerUrl(e.playerId)}" target="_self" title="${e.playerName}">${e.playerName}</a>`
+          : e.playerName;
+
+        if (selector.includes("All")) {
+          tr.innerHTML = `
+           <td>${e.date}</td>
+        <td>${playerLink}</td>
+       
+        <td>${e.type}</td>
+        <td>€${e.price.toLocaleString('de-DE')}</td>
+        <td>${e.partner}</td>
+      `;
+        } else {
+          tr.innerHTML = `
+           <td>${e.date}</td>
+        <td>${playerLink}</td>
+        <td>€${e.price.toLocaleString('de-DE')}</td>
+        <td>${e.partner}</td>
+      `;
+        }
+
         tbody.appendChild(tr);
       });
     }
+
+    // Hilfsfunktionen (fetchJSON, addDebug, showLoading, hideLoading, showContent) sollten in deinen utils.js o.ä. liegen
+
+    // Nach Laden der Seite starten
+    document.addEventListener('DOMContentLoaded', () => {
+      loadData();
+      initTabs();
+    });
   </script>
+
+
+
 </body>
 
 </html>

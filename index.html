@@ -5,30 +5,31 @@
     <meta charset="UTF-8">
     <title>⚽ Comunio Ultraz - Spielerdatenbank</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="css/debugPanel.css">
+    <link rel="stylesheet" href="css/debugPanel.css">
     <link rel="stylesheet" href="css/stylesIndex.css">
-     <link rel="stylesheet" href="css/styleFloatingDebug.css">
     <link rel="stylesheet" href="css/styleMenueHamburger.css">
-     <link rel="stylesheet" href="css/playerTable.css">
-   
+    <link rel="stylesheet" href="css/playerTable.css">
+
 </head>
 
 <body>
 
-<!-- Hamburger-Menü -->
-<div class="hamburger-menu">
-  <button class="hamburger-button" id="hamburgerButton">
-    <div class="hamburger-line"></div>
-    <div class="hamburger-line"></div>
-    <div class="hamburger-line"></div>
-  </button>
-  <div class="hamburger-dropdown" id="hamburgerDropdown">
-    <a href="#" class="menu-item" id="linkTransferuebersicht">🔄 Transferübersicht</a>
-    <a href="#" class="menu-item" id="linkUseruebersicht">👤 Userübersicht</a>
-    <a href="https://www.instagram.com/comuniofanapp/." class="menu-item" target="_blank">📸 Instagram: ComunioFanApp</a>
-    <div class="menu-item menu-tarn" id="menuTarnItem" style="font-size:0.95em; color:#888; cursor:pointer;">erstellt von comunioFanApp</div>
-  </div>
-</div>
+    <!-- Hamburger-Menü -->
+    <div class="hamburger-menu">
+        <button class="hamburger-button" id="hamburgerButton">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </button>
+        <div class="hamburger-dropdown" id="hamburgerDropdown">
+            <a href="#" class="menu-item" id="linkTransferuebersicht">🔄 Transferübersicht</a>
+            <a href="#" class="menu-item" id="linkUseruebersicht">👤 Userübersicht</a>
+            <a href="https://www.instagram.com/comuniofanapp/." class="menu-item" target="_blank">📸 Instagram:
+                ComunioFanApp</a>
+            <div class="menu-item menu-tarn" id="menuTarnItem" style="font-size:0.95em; color:#888; cursor:pointer;">
+                erstellt von comunioFanApp</div>
+        </div>
+    </div>
 
 
     <div class="container">
@@ -49,6 +50,7 @@
             <span id="statsText"></span>
             <button id="refreshButton" class="refresh-button">🔄 Daten neu laden</button>
         </div>
+
         <!-- Floating Debug Button and Panel -->
         <button id="floatingDebugBtn" title="Debug"><span style="pointer-events:none;">🐞</span></button>
         <div id="floatingDebugPanel">
@@ -58,6 +60,7 @@
             </div>
             <div id="floatingDebugContent"></div>
         </div>
+
         <div id="news-section">
             <label class="toggle-label" id="newsLabel">Comunio-News</label>
             <div class="toggle-content" id="newsContentWrapper">
@@ -109,7 +112,6 @@
                             <label for="owner">👤 Besitzer:</label>
                             <select id="owner">
                                 <option value="">Alle Besitzer</option>
-                                <option value="Kein Besitzer">Kein Besitzer</option>
                             </select>
                         </div>
                         <div class="checkbox-group">
@@ -142,13 +144,16 @@
             </div>
         </div>
     </div>
-    
-    
-<script src="js/config.js"></script>
-  <script src="js/utils.js"></script>
-  <script src="js/scriptIndex.js"></script>
-   <script src="js/hamburgerMenu.js"></script>
-<script src="https://www.yogizaehler.de/Besucherzaehler/pz_018_2.php?id=7710741674&design=886000003"></script>
+
+
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/debugPanel.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/generatePlayerTable.js"></script>
+    <script src="js/scriptIndex.js"></script>
+    <script src="js/hamburgerMenu.js"></script>
+    <script src="https://www.yogizaehler.de/Besucherzaehler/pz_018_2.php?id=7710741674&design=886000003"></script>
 </body>
 
 </html>
