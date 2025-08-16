@@ -302,7 +302,7 @@
         const logoHtml = `<img src="logos/${logoFile}" class="club-logo" alt="${clubName}" title="${clubName}">`;
         const playerNameHtml = `<a href="${getPlayerUrl(player.id)}" title="${player.name} (ID: ${player.id})" target="_self">${player.name}</a>`;
 
-        const position = player.position || "Unbekannt";
+        const position = player.data?.position || "Unbekannt";
         const hauptposition = player.data?.spielerDaten?.hauptposition || "N/A";
         const nebenpositionen = player.data?.spielerDaten?.nebenpositionen || [];
         const nebenpositionenTooltip = nebenpositionen.length > 0 ? "Hauptposition: " + hauptposition + " | Nebenposition: " + nebenpositionen.join(", ") : "";
@@ -418,5 +418,6 @@
 
 
 </body>
+
 
 </html>
