@@ -255,8 +255,8 @@
             addDebug('Lade Besitzerdaten...', 'info');
             try {
                 const [usersData, playerToUserMap] = await Promise.all([
-                    fetchJSON(DATA_URLS.USERS),
-                    fetchJSON(DATA_URLS.PLAYER_TO_USER_MAP )
+                    fetchJSON(DATA_URLS.users),
+                    fetchJSON(DATA_URLS.playerToUser )
                 ]);
 
                 const userMap = new Map();
