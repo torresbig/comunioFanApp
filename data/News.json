@@ -1376,6 +1376,74 @@
     ]
   },
   {
+    "date": "16.08.2025",
+    "news": [
+      {
+        "date": "16.08.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Rômulo (ID: 34271)",
+        "playerId": "34271"
+      },
+      {
+        "date": "16.08.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Mohya (ID: 34270)",
+        "playerId": "34270"
+      },
+      {
+        "date": "16.08.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Adamyan (33077) ist jetzt NICHT_IN_LIGA",
+        "playerId": "33077"
+      },
+      {
+        "date": "16.08.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Coman (32518) ist jetzt NICHT_IN_LIGA",
+        "playerId": "32518"
+      },
+      {
+        "date": "16.08.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Dietz (33615) ist jetzt NICHT_IN_LIGA",
+        "playerId": "33615"
+      },
+      {
+        "date": "16.08.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"Computer\",\"playerName\":\"Beste\",\"price\":3280009,\"buyerId\":\"10966300\",\"playerValue\":3170000,\"playerId\":\"32961\",\"buyer\":\"Alexander\"}",
+        "playerId": "32961"
+      },
+      {
+        "date": "16.08.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"Computer\",\"playerName\":\"Backhaus\",\"price\":1350000,\"buyerId\":\"5949921\",\"playerValue\":1310000,\"playerId\":\"33647\",\"buyer\":\"Sascha\"}",
+        "playerId": "33647"
+      },
+      {
+        "date": "16.08.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Tillman (33530) ist wieder AKTIV",
+        "playerId": "33530"
+      },
+      {
+        "date": "16.08.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Mohya (34270) ist jetzt VERLETZT (Innenbandanriss Knie)",
+        "playerId": "34270"
+      }
+    ]
+  },
+  {
     "date": "16.07.2025",
     "news": [
       {
@@ -1499,6 +1567,20 @@
         "gelesen": false,
         "text": "Statuswechsel: Dietz (33615) ist wieder AKTIV",
         "playerId": "33615"
+      },
+      {
+        "date": "15.08.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Tom\",\"sellerId\":\"Tom\",\"playerName\":\"Trapp\",\"price\":2134000,\"buyerId\":\"1\",\"playerValue\":1920000,\"playerId\":\"31621\",\"buyer\":\"Computer\"}",
+        "playerId": "31621"
+      },
+      {
+        "date": "15.08.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Thomas\",\"sellerId\":\"Thomas\",\"playerName\":\"L. Philipp\",\"price\":176800,\"buyerId\":\"1\",\"playerValue\":170000,\"playerId\":\"33313\",\"buyer\":\"Computer\"}",
+        "playerId": "33313"
       }
     ]
   },
