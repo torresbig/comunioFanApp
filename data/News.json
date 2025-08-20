@@ -937,6 +937,46 @@
     ]
   },
   {
+    "date": "20.08.2025",
+    "news": [
+      {
+        "date": "20.08.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Köhn (ID: 34061)",
+        "playerId": "34061"
+      },
+      {
+        "date": "20.08.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Trapp (31621) ist jetzt NICHT_IN_LIGA",
+        "playerId": "31621"
+      },
+      {
+        "date": "20.08.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Hyryläinen (34227) ist jetzt NICHT_IN_LIGA",
+        "playerId": "34227"
+      },
+      {
+        "date": "20.08.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Duranville\",\"price\":750000,\"buyerId\":\"13641446\",\"playerValue\":700000,\"playerId\":\"33728\",\"buyer\":\"Christian\"}",
+        "playerId": "33728"
+      },
+      {
+        "date": "20.08.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Rômulo\",\"price\":8200000,\"buyerId\":\"5949921\",\"playerValue\":8690000,\"playerId\":\"34271\",\"buyer\":\"Sascha\"}",
+        "playerId": "34271"
+      }
+    ]
+  },
+  {
     "date": "20.07.2025",
     "news": [
       {
@@ -1109,6 +1149,20 @@
         "gelesen": false,
         "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Tape\",\"price\":1874600,\"buyerId\":\"1\",\"playerValue\":1770000,\"playerId\":\"34201\",\"buyer\":\"Computer\"}",
         "playerId": "34201"
+      },
+      {
+        "date": "19.08.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Malatini\",\"price\":462000,\"buyerId\":\"1\",\"playerValue\":450000,\"playerId\":\"33882\",\"buyer\":\"Computer\"}",
+        "playerId": "33882"
+      },
+      {
+        "date": "19.08.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Adamu\",\"price\":1950200,\"buyerId\":\"1\",\"playerValue\":1910000,\"playerId\":\"33802\",\"buyer\":\"Computer\"}",
+        "playerId": "33802"
       }
     ]
   },
