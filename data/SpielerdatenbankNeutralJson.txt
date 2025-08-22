@@ -47268,9 +47268,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "Bänderverletzung",
+          "grund": "",
           "lastUpdate": "22.08.2025",
-          "seit": "08.08.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -47280,8 +47280,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Wanner",
@@ -64497,17 +64497,17 @@
     {
       "data": {
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "",
+          "groesse": "1,91",
+          "geburtstag": "11.04.2000",
           "laenderspiele": 0,
-          "lastUpdate": null,
+          "lastUpdate": "22.08.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
+          "trikotNummer": 5,
           "nationalitaet": "Frankreich",
           "laenderspielTore": 0,
-          "hauptposition": "",
-          "fuss": ""
+          "hauptposition": "Innenverteidiger",
+          "fuss": "rechts"
         },
         "isNotName": [],
         "punktekorrektur": [],
@@ -64515,9 +64515,10 @@
         "wert": 6000000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "01.01.1900",
+          "date": "22.08.2025",
           "link": "https://www.transfermarkt.de/loic-bade/profil/spieler/730581",
-          "name": "Loïc Badé"
+          "name": "Loïc Badé",
+          "leistungsDaten": {}
         },
         "punkte": 0,
         "realWert": 25000000,
