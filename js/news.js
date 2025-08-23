@@ -57,7 +57,7 @@ function renderNews(newsList) {
                                 const statusDetail = match[4] || '';
                                 let statusDisplay = `<b>${status.replace(/_/g, ' ')}</b>`;
                                 if (statusDetail) statusDisplay += ` (${statusDetail})`;
-                 if (statusDetail.includes(`AKTIV`)) {
+                 if (news.text.includes(`AKTIV`)) {
 
                                 text = `🟢 ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`; 
                  } else{
@@ -137,6 +137,7 @@ function linkPlayer(playerId, playerName) {
     return `<a href="${url}" style="color:#80f; font-weight:bold;">${playerName}</a>`;
 
 }
+
 
 
 
