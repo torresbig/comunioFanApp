@@ -62,7 +62,7 @@ function renderNews(newsList) {
                                 text = `🟢 ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`; 
                  } else{
 
-                                text = `❌ ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
+                                text = `${status}❌ ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
                  } 
                             } else {
                                 text = news.text;
@@ -137,6 +137,7 @@ function linkPlayer(playerId, playerName) {
     return `<a href="${url}" style="color:#80f; font-weight:bold;">${playerName}</a>`;
 
 }
+
 
 
 
