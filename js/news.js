@@ -57,8 +57,13 @@ function renderNews(newsList) {
                                 const statusDetail = match[4] || '';
                                 let statusDisplay = `<b>${status.replace(/_/g, ' ')}</b>`;
                                 if (statusDetail) statusDisplay += ` (${statusDetail})`;
+                 if(Status ==="ACTIV") {
 
-                                text = `Statusänderung: ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
+                                text = `🟢 ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`; 
+                 } else{
+
+                                text = `❌ ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
+                 } 
                             } else {
                                 text = news.text;
                             }
@@ -130,4 +135,5 @@ function linkPlayer(playerId, playerName) {
     }
     const url = getPlayerUrl(playerId);
     return `<a href="${url}" style="color:#80f; font-weight:bold;">${playerName}</a>`;
+
 }
