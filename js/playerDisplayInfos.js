@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
         addDebug('Lade Spielerdatenbank...', 'info');
-        const resp = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/SpielerdatenbankNeutralJson.txt`);
+        const resp = await fetch(DATA_URLS.players );
         const allPlayersResponse = await resp.json();
 
         // Array aus playerDB extrahieren oder leeres Array, falls playerDB fehlt
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const clubId = player.data?.verein || "0";
 
         const logoFileName = getLogoFileName(clubId);
-        const logoUrl = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/logos/${logoFileName}`;
+        const logoUrl = DATA_URLS.logos + logoFileName;
 
         const clubLogoEl = document.getElementById('clubLogo');
         if (clubLogoEl) {
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             logoImg.src = logoUrl;
             logoImg.alt = `Logo ${clubId}`;
             logoImg.onerror = () => {
-                logoImg.src = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/logos/unbestimmt.png`;
+                logoImg.src =  DATA_URLS.logos + unbestimmt.png;
             };
             clubLogoEl.appendChild(logoImg);
         } else {
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         safeSet('comunioPosition', 'textContent', player.data?.position || '-');
         safeSet('marketValue', 'textContent', formatCurrencyFull(player.data?.wert || 0));
         safeSet('realmarketValue', 'textContent', formatCurrencyFull(player.data?.realWert || 0));
-        safeSet('pointsWithLastYear', 'textContent', player.data?.lastSeasonPoints || '-');
+        safeSet('pointsWithLastYear', 'textContent', player.data?.punkte + " (" + player.data?.lastSeasonPoints + ")" || '-');
         safeSet('owner', 'textContent', globalOwnersMap.get(player.id) || 'Computer');
 
         // für den Besitzer oben im Header

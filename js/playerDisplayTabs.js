@@ -14,16 +14,16 @@ function initTabs() {
     });
     tabButtons.forEach(btn => btn.classList.remove('active'));
     tabContents.forEach(tab => tab.classList.remove('active'));
-    const defaultTabBtn = document.querySelector('.tab-button[data-tab="market"]') 
-                   || document.querySelector('.tab-button.active') 
-                   || document.querySelector('.tab-button');
+    const defaultTabBtn = document.querySelector('.tab-button[data-tab="market"]')
+        || document.querySelector('.tab-button.active')
+        || document.querySelector('.tab-button');
 
-if (defaultTabBtn) {
-    defaultTabBtn.classList.add('active');
-    const defaultTabId = defaultTabBtn.getAttribute('data-tab');
-    const defaultContent = document.getElementById(defaultTabId);
-    if (defaultContent) defaultContent.classList.add('active');
-}
+    if (defaultTabBtn) {
+        defaultTabBtn.classList.add('active');
+        const defaultTabId = defaultTabBtn.getAttribute('data-tab');
+        const defaultContent = document.getElementById(defaultTabId);
+        if (defaultContent) defaultContent.classList.add('active');
+    }
 
     addDebug('Tabs initialisiert', 'success');
 }
@@ -51,7 +51,7 @@ function displayRivals(player, allPlayers) {
 
     if (rivals.length > 0) {
         let html = `
-        <table class="table-container">
+        <table class="table-container rivals-table">
             <thead>
                 <tr>
                     <th>Spieler</th>
@@ -108,7 +108,10 @@ function displayRivals(player, allPlayers) {
 
 function makeTableSortable(tableSelector, defaultSortCol = 0, defaultSortDir = 'desc') {
     const table = document.querySelector(tableSelector);
-    if (!table) return;
+    if (!table) {
+        addDebug(`Tabelle mit Selektor '${tableSelector}' nicht gefunden`, 'error');
+        return;
+    }
     const ths = table.querySelectorAll('th');
     let sortCol = defaultSortCol;
     let sortDir = defaultSortDir;
@@ -121,6 +124,7 @@ function makeTableSortable(tableSelector, defaultSortCol = 0, defaultSortDir = '
             const bCell = b.children[colIndex];
             let aValue = aCell.getAttribute('data-sort') || aCell.textContent;
             let bValue = bCell.getAttribute('data-sort') || bCell.textContent;
+            addDebug(`Vergleiche Werte: aValue='${aValue}', bValue='${bValue}'`, 'info');
             // Ligainsider Ranking (colIndex 2) als Integer sortieren
             if (colIndex === 2) {
                 aValue = parseInt(aValue.replace(/[^\d-]/g, '')) || Number.MAX_SAFE_INTEGER;
@@ -139,6 +143,7 @@ function makeTableSortable(tableSelector, defaultSortCol = 0, defaultSortDir = '
             }
         });
         rows.forEach(row => tbody.appendChild(row));
+        addDebug(`Tabelle sortiert: Spalte=${colIndex}, Richtung=${dir}`, 'success');
     }
 
     ths.forEach((th, i) => {
@@ -172,7 +177,7 @@ function displayPointsHistory(player) {
     addDebug('Erstelle Punkte-Anzeige', 'info');
     const container = document.getElementById('pointsHistory');
     if (!container) return;
-    const pointsHistory = player.data?.punkteHistorie || [];
+    const pointsHistory = player.data?.historicalPoints || [];
     const spieltagspunkte = player.data?.spieltagspunkte || [];
     const currentPoints = player.data?.punkte || 0;
     const currentSeason = new Date().getFullYear();
@@ -198,8 +203,8 @@ function displayPointsHistory(player) {
             if (spieltag > 34) {
                 html += '<td></td><td></td>';
             } else {
-                const punktEntry = spieltagspunkte.find(p => p.spieltag === spieltag);
-                const punkte = punktEntry ? punktEntry.punkte : '-';
+                const punktEntry = spieltagspunkte.find(p => p.key === spieltag);
+                const punkte = punktEntry ? punktEntry.value : '-';
                 html += `<td class="matchday-cell">${spieltag}</td><td class="points-cell">${punkte}</td>`;
             }
         }
@@ -215,23 +220,28 @@ function displayPointsHistory(player) {
         html += '<h3>📅 Historische Saisons</h3>';
         html += '<table class="points-table">';
         html += '<thead><tr><th>Saison</th><th>Punkte</th></tr></thead><tbody>';
+
         pointsHistory.forEach(season => {
-            html += `<tr><td>${season.key}</td><td>${season.value}</td></tr>`;
+            // season ist z. B. { "2011": 2 }
+            const [year, points] = Object.entries(season)[0];
+            html += `<tr><td>${year}</td><td>${points}</td></tr>`;
         });
+
         html += '</tbody></table>';
     }
+
 
     container.innerHTML = html;
     addDebug('Punkte-Anzeige erstellt', 'success');
 }
 
 // NEU (ohne Fehler, für jede Seite nutzbar):
-const defaultTabBtn = document.querySelector('.tab-button[data-tab="market"]') 
-                   || document.querySelector('.tab-button.active') 
-                   || document.querySelector('.tab-button');
+const defaultTabBtn = document.querySelector('.tab-button[data-tab="market"]')
+    || document.querySelector('.tab-button.active')
+    || document.querySelector('.tab-button');
 const defaultTabId = defaultTabBtn && defaultTabBtn.getAttribute('data-tab');
 if (defaultTabBtn && defaultTabId) {
-  defaultTabBtn.classList.add('active');
-  const defaultContent = document.getElementById(defaultTabId);
-  if (defaultContent) defaultContent.classList.add('active');
+    defaultTabBtn.classList.add('active');
+    const defaultContent = document.getElementById(defaultTabId);
+    if (defaultContent) defaultContent.classList.add('active');
 }

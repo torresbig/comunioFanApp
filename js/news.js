@@ -48,6 +48,10 @@ function renderNews(newsList) {
                             const pid = obj.playerId || news.playerId || null; // fallback falls obj.playerId fehlt
                             text = `${linkPlayer(pid, obj.playerName)} von <b style="color:#00f;">${obj.seller}</b> zu <b style="color:#00f;">${obj.buyer}</b> für <b>${obj.price.toLocaleString('de-DE')} €</b> (Marktwert: ${obj.playerValue.toLocaleString('de-DE')} €)`;
                         }
+                        else if (art === 'USERPOINTS') {
+                            const obj = JSON.parse(news.text);
+                            text = `<b>${obj.gamedayPoints} Punkte geholt!</b> --> <b style="color:#00f;">${obj.userName}</b> (gesamt:${obj.totalPoints})`;
+                        }
                         else if (art === 'SPIELERSTATUS') {
                             const regex = /Statuswechsel:\s(.+?)\s\(\d+\)\sist\s(wieder|jetzt)\s([A-Z_]+)(?:\s\((.+)\))?/i;
                             const match = regex.exec(news.text);
@@ -57,13 +61,14 @@ function renderNews(newsList) {
                                 const statusDetail = match[4] || '';
                                 let statusDisplay = `<b>${status.replace(/_/g, ' ')}</b>`;
                                 if (statusDetail) statusDisplay += ` (${statusDetail})`;
-                                  if (news.text.includes(`AKTIV`)) {
-                                                text = `🟢 ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
-                                            } else if (news.text.includes(`NICHT_IN_LIGA`)) {
-                                                text = `❌ ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
-                                            } else   {
-                                                text = `🔴 ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
-                                            }
+
+                                if (news.text.includes(`AKTIV`)) {
+                                    text = `🟢 ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
+                                } else if (news.text.includes(`NICHT_IN_LIGA`)) {
+                                    text = `❌ ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
+                                } else {
+                                    text = `🔴 ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
+                                }
                             } else {
                                 text = news.text;
                             }
@@ -74,7 +79,6 @@ function renderNews(newsList) {
                                 const obj = JSON.parse(news.text); // falls JSON
                                 const pid = obj.playerId || news.playerId || null;
                                 text = `${linkPlayer(pid, obj.playerName)} wechselt von <b>${clubsMap.get(obj.oldClub)}</b> zu <b>${clubsMap.get(obj.newClub)}</b>`;
-
                             } catch (e) {
                                 // kein JSON, Versuch Name aus Text per Regex
                                 const regex = /^Vereinswechsel:\s(.+?)\s\(Verein \d+ → \d+\)$/;
@@ -136,17 +140,4 @@ function linkPlayer(playerId, playerName) {
     }
     const url = getPlayerUrl(playerId);
     return `<a href="${url}" style="color:#80f; font-weight:bold;">${playerName}</a>`;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-

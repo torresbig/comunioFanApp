@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const linkIndex = document.getElementById('linkIndex');
   const linkTransfermarkt = document.getElementById('linkTransfermarkt');
   const linkUseruebersicht = document.getElementById('linkUseruebersicht');
+  const linkNews = document.getElementById('linkNews');
 const linkTransferuebersicht = document.getElementById('linkTransferuebersicht')
   if (linkIndex) {
     linkIndex.href = getLokalOderGitURL(WEBSITE_URLS.indexUrl, "index.html");
@@ -30,6 +31,11 @@ const linkTransferuebersicht = document.getElementById('linkTransferuebersicht')
     linkTransferuebersicht.href = getLokalOderGitURL(WEBSITE_URLS.transfersUrl, "transfers.html");
   }  
 
+  if (linkNews) {
+    linkNews.href = getLokalOderGitURL(WEBSITE_URLS.newsUrl, "news.html");
+  }
+
+  
   // Geheimer Link-Mechanismus für 5 Klicks
 let tarnClick = 0, tarnTimeout = null;    
   // Geheimer Link-Mechanismus für 5 Klicks

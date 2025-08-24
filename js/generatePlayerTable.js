@@ -1,5 +1,3 @@
-
-
 function renderTable(players) {
     const tableBody = document.querySelector('#playerTable tbody');
     tableBody.innerHTML = '';
@@ -106,4 +104,18 @@ function setupSorting() {
             addDebug(`Tabelle sortiert nach Spalte ${columnIndex + 1} (${sortOrder === 1 ? 'aufsteigend' : 'absteigend'})`);
         });
     });
+
+    // Standard-Sortierung nach Marktwert (absteigend)
+    const marketValueHeader = headers[4]; // Index 4 für Marktwert
+    if (marketValueHeader) {
+        marketValueHeader.classList.add('sorted-desc');
+        const rows = [...table.querySelectorAll('tbody tr')];
+        rows.sort((a, b) => {
+            const aValue = parseFloat(a.children[4].getAttribute('data-sort')) || 0;
+            const bValue = parseFloat(b.children[4].getAttribute('data-sort')) || 0;
+            return bValue - aValue; // Absteigend sortieren
+        });
+        const tbody = table.querySelector('tbody');
+        rows.forEach(row => tbody.appendChild(row));
+    }
 }

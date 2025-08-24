@@ -144,6 +144,7 @@ function processData(clubsData, playersData, usersData, playerToUserMap) {
         userMap.set(user.user.id, `${user.user.firstName} ${user.user.lastName || ''}`);
     });
     addDebug(`Benutzer verarbeitet: ${userMap.size}`);
+    
     ownersMap = new Map();
     playerToUserMap.forEach(item => {
         const playerId = Object.keys(item)[0];
