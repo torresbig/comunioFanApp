@@ -57,13 +57,11 @@ function renderNews(newsList) {
                                 const statusDetail = match[4] || '';
                                 let statusDisplay = `<b>${status.replace(/_/g, ' ')}</b>`;
                                 if (statusDetail) statusDisplay += ` (${statusDetail})`;
-                 if (news.text.includes(`AKTIV`)) {
-
-                                text = `🟢 ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`; 
-                 } else{
-
-                                text = `❌ ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
-                 } 
+                                 if (news.text.includes(`AKTIV`)) { 
+                                     text = `🟢 ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;                  
+                                 } else{                                
+                                     text = `❌ ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
+                                 } 
                             } else {
                                 text = news.text;
                             }
@@ -73,7 +71,8 @@ function renderNews(newsList) {
                             try {
                                 const obj = JSON.parse(news.text); // falls JSON
                                 const pid = obj.playerId || news.playerId || null;
-                                text = `${linkPlayer(pid, obj.playerName)} wechselt von <b>${obj.oldClub}</b> zu <b>${obj.newClub}</b>`;
+                                text = `${linkPlayer(pid, obj.playerName)} wechselt von <b>${clubsMap.get(obj.oldClub)}</b> zu <b>${clubsMap.get(obj.newClub)}</b>`;
+
                             } catch (e) {
                                 // kein JSON, Versuch Name aus Text per Regex
                                 const regex = /^Vereinswechsel:\s(.+?)\s\(Verein \d+ → \d+\)$/;
@@ -137,6 +136,7 @@ function linkPlayer(playerId, playerName) {
     return `<a href="${url}" style="color:#80f; font-weight:bold;">${playerName}</a>`;
 
 }
+
 
 
 
