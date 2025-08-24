@@ -191,7 +191,7 @@
                                 <th>Verkäufer</th>
                                 <th>Käufer</th>
                                 <th>Preis (€)</th>
-                                <th>Wert (€)</th>
+                                <th>Wert bei Kauf (€)</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -221,6 +221,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/config.js"></script>
     <script src="js/utils.js"></script>
+     <script src="js/ownerMap.js"></script>
     <script src="js/playerDisplayInfos.js"></script>
 
 
@@ -232,7 +233,6 @@
     <script src="js/playerTransfers.js"></script>
     <script>
 
-        let globalOwnersMap = new Map();
 
         addDebug('Script gestartet', 'info');
 
@@ -251,29 +251,7 @@
             }
         }
 
-        async function loadOwnersData() {
-            addDebug('Lade Besitzerdaten...', 'info');
-            try {
-                const [usersData, playerToUserMap] = await Promise.all([
-                    fetchJSON(DATA_URLS.users),
-                    fetchJSON(DATA_URLS.playerToUser )
-                ]);
 
-                const userMap = new Map();
-                usersData.forEach(user => {
-                    userMap.set(user.user.id, `${user.user.firstName} ${user.user.lastName || ''}`);
-                });
-
-                playerToUserMap.forEach(item => {
-                    const playerId = Object.keys(item)[0];
-                    const ownerId = item[playerId];
-                    globalOwnersMap.set(playerId, userMap.get(ownerId) || `Unbekannt (${ownerId})`);
-                });
-                addDebug(`Besitzerdaten geladen: ${globalOwnersMap.size} Zuordnungen`, 'success');
-            } catch (error) {
-                addDebug(`Fehler beim Laden der Besitzerdaten: ${error.message}`, 'error');
-            }
-        }
 
        
 

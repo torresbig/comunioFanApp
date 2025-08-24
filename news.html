@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="css/debugPanel.css">
+    <link rel="stylesheet" href="css/styleMenueHamburger.css">
+    <link rel="stylesheet" href="css/playerTable.css">
+    <link rel="stylesheet" href="css/stylesIndex.css">
+    <style>
+        .news-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .news-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        .news-filters select {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            min-width: 200px;
+        }
+
+        #newsTypeFilters {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .filter-chip {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            cursor: pointer;
+            border: 1px solid #e0e0e0;
+            background: #f5f5f5;
+            color: #666;
+            transition: all 0.2s ease;
+        }
+
+        .filter-chip:hover {
+            background: #eeeeee;
+            border-color: #cccccc;
+        }
+
+        .filter-chip.active {
+            background: #3498db;
+            color: white;
+            border-color: #3498db;
+        }
+
+        .news-item {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-date {
+            font-weight: bold;
+            color: #3498db;
+        }
+
+        .news-art {
+            font-style: italic;
+            color: #888;
+        }
+
+        .news-text {
+            margin-top: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .news-filters {
+                flex-direction: column;
+            }
+        }
+
+        .filter-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .filter-button.active {
+            background-color: #2c3e50;
+        }
+
+        .filter-button:hover {
+            background-color: #1abc9c;
+        }
+
+        select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .filter-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .dropdown {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .news-list-ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .news-list-li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Debug Button -->
+    <button id="floatingDebugBtn" title="Debug">🐞</button>
+    <div id="floatingDebugPanel">
+        <div id="floatingDebugPanelHeader">
+            Debug-Informationen
+            <button id="floatingDebugPanelClose" title="Schließen">×</button>
+        </div>
+        <div id="floatingDebugContent"></div>
+    </div>
+
+    <!-- Hamburger-Menü -->
+    <div class="hamburger-menu">
+        <button class="hamburger-button" id="hamburgerButton">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </button>
+        <div class="hamburger-dropdown" id="hamburgerDropdown">
+            <a href="index.html" class="menu-item">Startseite</a>
+            <a href="transfers.html" class="menu-item">🔄 Transferübersicht</a>
+            <a href="useruebersicht.html" class="menu-item">👤 Userübersicht</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>News</h1>
+
+        <div class="news-filters">
+            <select id="userFilter">
+                <option value="">Alle User</option>
+                <!-- Dynamisch mit Usern befüllen -->
+            </select>
+
+            <div id="newsTypeFilters">
+                <!-- Dynamisch mit News-Arten befüllen -->
+            </div>
+
+            <button id="resetFilters">Filter zurücksetzen</button>
+        </div>
+
+        <div id="newsList" class="news-container">
+            <!-- Dynamisch mit News befüllen -->
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/debugPanel.js"></script>
+    <script src="js/hamburgerMenu.js"></script>
+    <script>
+        async function fetchJSON(url) {
+            addDebug(`Lade Datei: ${url}`);
+            const cacheBusterUrl = url + '?t=' + new Date().getTime();
+            try {
+                const response = await fetch(cacheBusterUrl);
+                if (!response.ok) {
+                    addDebug(`Fehler beim Laden: HTTP ${response.status}`);
+                    throw new Error(`HTTP ${response.status} für ${url}`);
+                }
+                const text = await response.text();
+                if (!text.trim()) {
+                    addDebug("Warnung: Datei ist leer!");
+                    throw new Error("Leere Datei: " + url);
+                }
+                addDebug("Datei geladen, versuche JSON zu parsen...");
+                const data = JSON.parse(text);
+                addDebug(`Erfolgreich geparst: ${data.length || Object.keys(data).length} Einträge`);
+                return data;
+            } catch (error) {
+                addDebug("Fehler beim Laden/JSON-Parsen: " + error.message);
+                throw error;
+            }
+        }
+
+        function linkPlayer(playerId, playerName) {
+            if (!playerId) {
+                // Keine playerId vorhanden, kein Link, nur farbig hervorgehoben
+                return `<span style="color:#80f; font-weight:bold;">${playerName}</span>`;
+            }
+            const url = getPlayerUrl(playerId);
+            return `<a href="${url}" style="color:#80f; font-weight:bold;">${playerName}</a>`;
+        }
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const newsList = document.getElementById('newsList');
+            const userFilter = document.getElementById('userFilter');
+            const newsTypeFilters = document.getElementById('newsTypeFilters');
+            const resetFilters = document.getElementById('resetFilters');
+
+            try {
+                const newsData = await fetchJSON(DATA_URLS.news);
+                const users = [...new Set(newsData.flatMap(day => day.news.map(n => n.user)))];
+                const newsTypes = [...new Set(newsData.flatMap(day => day.news.map(n => n.art)))];
+
+                // Populate user filter dropdown
+                userFilter.innerHTML = '<option value="">Alle Benutzer</option>';
+                users.forEach(user => {
+
+                    const option = document.createElement('option');
+                    option.value = user;
+                    option.textContent = user;
+                    userFilter.appendChild(option);
+
+                });
+
+                // Populate news type filters with styled chips
+                newsTypeFilters.innerHTML = '';
+
+                // Add "Alle" chip first
+                const allChip = document.createElement('div');
+                allChip.className = 'filter-chip active';
+                allChip.textContent = 'Alle';
+                allChip.dataset.type = 'all';
+                allChip.addEventListener('click', () => {
+                    newsTypeFilters.querySelectorAll('.filter-chip').forEach(chip => {
+                        if (chip === allChip) {
+                            chip.classList.add('active');
+                        } else {
+                            chip.classList.remove('active');
+                        }
+                    });
+                    renderNews();
+                });
+                newsTypeFilters.appendChild(allChip);
+
+                // Add type-specific chips
+                newsTypes.forEach(type => {
+                    if (type !== 'OWNERCHANGE') {
+                        const chip = document.createElement('div');
+                        chip.className = 'filter-chip';
+                        chip.textContent = type;
+                        chip.dataset.type = type;
+                        chip.addEventListener('click', () => {
+                            newsTypeFilters.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+                            chip.classList.add('active');
+                            renderNews();
+                        });
+                        newsTypeFilters.appendChild(chip);
+                    }
+                });
+
+                // Render news
+                function renderNews() {
+                    const selectedUser = userFilter.value;
+                    const activeChip = newsTypeFilters.querySelector('.filter-chip.active');
+                    const selectedType = activeChip ? activeChip.dataset.type : 'all';
+
+                    const filteredNews = newsData.flatMap(day => {
+                        const filteredDayNews = day.news.filter(news => {
+                            if (news.art === 'OWNERCHANGE') return false;
+                            const userMatch = !selectedUser || news.user === selectedUser;
+                            const typeMatch = selectedType === 'all' || news.art === selectedType;
+                            return userMatch && typeMatch;
+                        });
+                        return filteredDayNews.length > 0 ? [{ date: day.date, news: filteredDayNews }] : [];
+                    });
+
+                    newsList.innerHTML = '';
+                    filteredNews.forEach(day => {
+                        const dayDiv = document.createElement('div');
+                        dayDiv.className = 'news-day';
+                        dayDiv.innerHTML = `<div class="news-date">${day.date}</div>`;
+
+                        day.news.forEach(news => {
+                            const newsItem = document.createElement('div');
+                            newsItem.className = 'news-item';
+
+                            let newsContent = '';
+                            if (news.art === 'TRANSFER') {
+                                const transferDetails = JSON.parse(news.text);
+                                newsContent = `
+                                    <div class="news-art">${news.art}</div>
+                                    <div class="news-text">
+                                        Spieler: ${linkPlayer(transferDetails.playerId, transferDetails.playerName)}<br>
+                                        Von: ${transferDetails.fromClub} → Nach: ${transferDetails.toClub}<br>
+                                        Ablöse: ${transferDetails.transferFee || 'Unbekannt'}
+                                    </div>
+                                `;
+                            } else {
+                                newsContent = `
+                                    <div class="news-art">${news.art}</div>
+                                    <div class="news-text">${news.text.replace(news.playerName, linkPlayer(news.playerId, news.playerName))}</div>
+                                `;
+                            }
+
+                            newsItem.innerHTML = newsContent;
+                            dayDiv.appendChild(newsItem);
+                        });
+
+                        newsList.appendChild(dayDiv);
+                    });
+                }
+
+                // Reset filters
+                resetFilters.addEventListener('click', () => {
+                    userFilter.value = '';
+                    newsTypeFilters.querySelectorAll('.filter-chip').forEach(chip => chip.classList.remove('active'));
+                    newsTypeFilters.querySelector('[data-type="all"]').classList.add('active');
+                    renderNews();
+                });
+
+                renderNews();
+            } catch (error) {
+                newsList.innerHTML = '<div style="padding:16px; color:#e53935;">Fehler beim Laden der News.</div>';
+                console.error('Error loading news:', error);
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const newsList = document.getElementById('newsList');
+            const userFilter = document.getElementById('userFilter');
+            const filterContainer = document.getElementById('filterContainer');
+
+            try {
+                const newsData = await fetchJSON(DATA_URLS.news);
+                const userData = await fetchJSON(DATA_URLS.users);
+                const playerToUserMap = await fetchJSON(DATA_URLS.playerToUser);
+
+                // Create owners map
+                const userMap = new Map();
+                userData.forEach(userEntry => {
+                    const user = userEntry.user;
+                    userMap.set(user.id, user.name);
+                });
+
+                const ownersMap = new Map();
+                playerToUserMap.forEach(item => {
+                    const playerId = Object.keys(item)[0];
+                    const ownerId = item[playerId];
+                    ownersMap.set(playerId, userMap.get(ownerId) || `Unbekannt (${ownerId})`);
+                });
+
+                // Populate user filter dropdown
+                userFilter.innerHTML = '<option value="">Alle Benutzer</option>';
+                userData.forEach(userEntry => {
+                    const user = userEntry.user;
+                    const option = document.createElement('option');
+                    option.value = user.id;
+                    option.textContent = user.name;
+                    userFilter.appendChild(option);
+                });
+
+                // Render news
+                function renderNews() {
+                    const selectedUserId = userFilter.value;
+                    const selectedUserName = userMap.get(selectedUserId);
+
+                    const filteredNews = newsData.flatMap(day => {
+                        const filteredDayNews = day.news.filter(news => {
+                            if (news.art === 'OWNERCHANGE') return false; // Exclude OWNERCHANGE news
+
+                            if (!selectedUserId) return true;
+
+                            // Check if the user's name or ID is in the news text
+                            const userMatch = news.text.includes(selectedUserName) || news.text.includes(selectedUserId);
+
+                            // Check if the news involves a player owned by the user
+                            const playerOwned = news.playerId && ownersMap.get(news.playerId) === selectedUserName;
+
+                            return userMatch || playerOwned;
+                        });
+
+                        return filteredDayNews.length > 0 ? [{ date: day.date, news: filteredDayNews }] : [];
+                    });
+
+                    let html = '';
+                    filteredNews.forEach(day => {
+                        html += `<div class="news-day"><div class="news-date">${day.date}</div>`;
+
+                        const grouped = {};
+                        day.news.forEach(news => {
+                            if (!grouped[news.art]) grouped[news.art] = [];
+                            grouped[news.art].push(news);
+                        });
+
+                        for (const art of Object.keys(grouped).sort()) {
+                            if (art === 'OWNERCHANGE') continue; // Exclude OWNERCHANGE news
+
+                            html += `<div class="news-art">${art}</div><ul class="news-list-ul">`;
+                            grouped[art].forEach(news => {
+                                let text = '';
+                                try {
+                                    if (art === 'TRANSFER') {
+                                        const obj = JSON.parse(news.text);
+                                        const pid = obj.playerId || news.playerId || null;
+                                        text = `${linkPlayer(pid, obj.playerName)} von <b style="color:#00f;">${obj.seller}</b> zu <b style="color:#00f;">${obj.buyer}</b> für <b>${obj.price.toLocaleString('de-DE')} €</b> (Marktwert: ${obj.playerValue.toLocaleString('de-DE')} €)`;
+                                    } else if (art === 'SPIELERSTATUS') {
+                                        const regex = /Statuswechsel:\s(.+?)\s\(\d+\)\sist\s(wieder|jetzt)\s([A-Z_]+)(?:\s\((.+)\))?/i;
+                                        const match = regex.exec(news.text);
+                                        if (match) {
+                                            const playerName = match[1];
+                                            const status = match[3];
+                                            const statusDetail = match[4] || '';
+                                            let statusColor = status === 'AKTIV' ? 'green' : 'red';
+                                            let statusDisplay = `<b style="color:${statusColor};">${status.replace(/_/g, ' ')}</b>`;
+                                            if (statusDetail) statusDisplay += ` (${statusDetail})`;
+
+                                            if (news.text.includes(`AKTIV`)) {
+                                                text = `🟢 ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
+                                            } else if (news.text.includes(`NICHT_IN_LIGA`)) {
+                                                text = `❌ ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
+                                            } else {
+                                                text = `🔴 ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
+                                            }
+                                        } else {
+                                            text = news.text;
+                                        }
+                                    } else {
+                                        text = news.text;
+                                    }
+                                } catch (e) {
+                                    console.error("Fehler beim Verarbeiten des News-Textes:", news.text, e);
+                                    text = news.text;
+                                }
+                                html += `<li class="news-list-li">${text}</li>`;
+                            });
+                            html += `</ul>`;
+                        }
+                        html += `</div>`;
+                    });
+
+                    newsList.innerHTML = html || '<div style="padding:16px; color:#888;">Keine News vorhanden.</div>';
+                }
+
+                userFilter.addEventListener('change', renderNews);
+                renderNews();
+            } catch (error) {
+                newsList.innerHTML = '<div style="padding:16px; color:#e53935;">Fehler beim Laden der News.</div>';
+                console.error('Error loading news:', error);
+            }
+        });
+    </script>
+</body>
+
+</html>
