@@ -643,6 +643,53 @@
     ]
   },
   {
+    "date": "24.08.2025",
+    "news": [
+      {
+        "date": "24.08.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Hein (ID: 34274)",
+        "playerId": "34274"
+      },
+      {
+        "date": "24.08.2025",
+        "art": "VEREINSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Reyna\",\"newClub\":\"3\",\"oldClub\":\"5\",\"playerID\":\"33198\"}",
+        "playerId": "33198"
+      },
+      {
+        "date": "24.08.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Seibt  (34067) ist jetzt NICHT_IN_LIGA",
+        "playerId": "34067"
+      },
+      {
+        "date": "24.08.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Vranckx (33438) ist jetzt NICHT_IN_LIGA",
+        "playerId": "33438"
+      },
+      {
+        "date": "24.08.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Poku\",\"price\":6980000,\"buyerId\":\"5949921\",\"playerValue\":7190000,\"playerId\":\"34264\",\"buyer\":\"Sascha\"}",
+        "playerId": "34264"
+      },
+      {
+        "date": "24.08.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Zagadou (32773) ist wieder AKTIV",
+        "playerId": "32773"
+      }
+    ]
+  },
+  {
     "date": "24.07.2025",
     "news": [
       {
@@ -822,6 +869,13 @@
         "gelesen": false,
         "text": "Statuswechsel: Echeverri (34273) ist wieder AKTIV",
         "playerId": "34273"
+      },
+      {
+        "date": "23.08.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Andi\",\"sellerId\":\"9317431\",\"playerName\":\"Hämmerle\",\"price\":206000,\"buyerId\":\"1\",\"playerValue\":200000,\"playerId\":\"34126\",\"buyer\":\"Computer\"}",
+        "playerId": "34126"
       }
     ]
   },
