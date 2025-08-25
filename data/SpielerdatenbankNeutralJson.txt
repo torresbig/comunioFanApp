@@ -3405,9 +3405,9 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "unbekannt",
-          "lastUpdate": "24.05.2025",
-          "seit": "unbekannt",
+          "grund": "muskuläre Probleme",
+          "lastUpdate": "25.08.2025",
+          "seit": "23.08.2025",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -3417,7 +3417,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Mæhle",
@@ -20260,7 +20261,7 @@
           "groesse": "1,79",
           "geburtstag": "06.01.2006",
           "laenderspiele": 0,
-          "lastUpdate": "23.07.2025",
+          "lastUpdate": "25.08.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 18,
@@ -20275,6 +20276,7 @@
         "verein": "8",
         "lastPoints": 0,
         "transfermarktDoDe": {
+          "date": "25.08.2025",
           "name": "Alejo Sarco",
           "link": "https://www.transfermarkt.de/alejo-sarco/profil/spieler/1000675",
           "id": 0,
@@ -20331,7 +20333,7 @@
           "groesse": "1,89",
           "geburtstag": "10.03.1994",
           "laenderspiele": 36,
-          "lastUpdate": "24.07.2025",
+          "lastUpdate": "25.08.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 11,
@@ -20346,7 +20348,7 @@
         "verein": "110",
         "lastPoints": 1,
         "transfermarktDoDe": {
-          "date": "24.07.2025",
+          "date": "25.08.2025",
           "name": "Budu Zivzivadze",
           "link": "https://www.transfermarkt.de/Budu Zivzivadze/profil/spieler/187097",
           "id": 187097,
@@ -54333,9 +54335,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "Prellung",
+          "grund": "",
           "lastUpdate": "25.08.2025",
-          "seit": "09.08.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -54345,8 +54347,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Beck",
