@@ -21,9 +21,9 @@ const WEBSITE_URLS = {
   playerUrl: `https://${GITHUB_USER}.github.io/${GITHUB_REPO}/player.html?id=`,
   indexUrl: `https://${GITHUB_USER}.github.io/${GITHUB_REPO}/index.html`,
   kontostaendeUrl: `https://${GITHUB_USER}.github.io/${GITHUB_REPO}/kontostaende.html`,
-  transfermarktUrl: `https://${GITHUB_USER}.github.io/${GITHUB_REPO}/transfermarkt.html`,
   useruebersichtUrl: `https://${GITHUB_USER}.github.io/${GITHUB_REPO}/useruebersicht.html`,
   transfersUrl: `https://${GITHUB_USER}.github.io/${GITHUB_REPO}/transfers.html`,
+  transferMarktUrl: `https://${GITHUB_USER}.github.io/${GITHUB_REPO}/tranfermarktComunio.html`,
   newsUrl: `https://${GITHUB_USER}.github.io/${GITHUB_REPO}/news.html`
 };
 
@@ -38,7 +38,7 @@ const ACTIVE_WEBSITE_URLS = isHtmlPreview
       playerUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/player.html?id=`,
       indexUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/index.html`,
       kontostaendeUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/kontostaende.html`,
-      transfermarktUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/transfermarkt.html`,
+      transfermarktUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/tranfermarktComunio.html`,
       useruebersichtUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/useruebersicht.html`,
       transfersUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/transfers.html`,
       newsUrl: `https://htmlpreview.github.io/?https://github.com/${GITHUB_USER}/${GITHUB_REPO}/main/news.html`

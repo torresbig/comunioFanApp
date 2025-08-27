@@ -11,52 +11,52 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Menü-Links dynamisch zuweisen
   const linkIndex = document.getElementById('linkIndex');
-  const linkTransfermarkt = document.getElementById('linkTransfermarkt');
+  const linkTransfermarktComunio = document.getElementById('linkTransfermarktComunio');
   const linkUseruebersicht = document.getElementById('linkUseruebersicht');
   const linkNews = document.getElementById('linkNews');
-const linkTransferuebersicht = document.getElementById('linkTransferuebersicht')
+  const linkTransferuebersicht = document.getElementById('linkTransferuebersicht')
   if (linkIndex) {
     linkIndex.href = getLokalOderGitURL(WEBSITE_URLS.indexUrl, "index.html");
-  }  
+  }
 
-  if (linkTransfermarkt) {
-    linkTransfermarkt.href = getLokalOderGitURL(WEBSITE_URLS.transfermarktUrl, "transfermarkt.html");
-  } 
+  if (linkTransfermarktComunio) {
+    linkTransfermarktComunio.href = getLokalOderGitURL(WEBSITE_URLS.transferMarktUrl, "transfermarktComunio.html");
+  }
 
   if (linkUseruebersicht) {
     linkUseruebersicht.href = getLokalOderGitURL(WEBSITE_URLS.useruebersichtUrl, "useruebersicht.html");
-  }  
+  }
 
-   if (linkTransferuebersicht) {
+  if (linkTransferuebersicht) {
     linkTransferuebersicht.href = getLokalOderGitURL(WEBSITE_URLS.transfersUrl, "transfers.html");
-  }  
+  }
 
   if (linkNews) {
     linkNews.href = getLokalOderGitURL(WEBSITE_URLS.newsUrl, "news.html");
   }
 
-  
+
   // Geheimer Link-Mechanismus für 5 Klicks
-let tarnClick = 0, tarnTimeout = null;    
-  // Geheimer Link-Mechanismus für 5 Klicks
-if (menuTarnItem) {
   let tarnClick = 0, tarnTimeout = null;
-  menuTarnItem.addEventListener('click', function (e) {
-    tarnClick++;
-    if (tarnTimeout) clearTimeout(tarnTimeout);
-    tarnTimeout = setTimeout(() => { tarnClick = 0; }, 3000);
-    if (tarnClick === 5) {
-      window.location.href = getLokalOderGitURL(WEBSITE_URLS.kontostaendeUrl, "kontostaende.html");
-    }
-  });
-}
+  // Geheimer Link-Mechanismus für 5 Klicks
+  if (menuTarnItem) {
+    let tarnClick = 0, tarnTimeout = null;
+    menuTarnItem.addEventListener('click', function (e) {
+      tarnClick++;
+      if (tarnTimeout) clearTimeout(tarnTimeout);
+      tarnTimeout = setTimeout(() => { tarnClick = 0; }, 3000);
+      if (tarnClick === 5) {
+        window.location.href = getLokalOderGitURL(WEBSITE_URLS.kontostaendeUrl, "kontostaende.html");
+      }
+    });
+  }
 
   document.addEventListener('click', function (e) {
     if (!e.target.closest('.hamburger-menu')) {
       hamburgerButton.classList.remove('active');
       hamburgerDropdown.classList.remove('show');
     }
-  }); 
+  });
 
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {

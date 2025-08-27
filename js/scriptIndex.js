@@ -16,8 +16,12 @@ let lastUpdateTime = null;
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        addDebug("Seite geladen, starte Datenladevorgang...");
-        await loadData();
+          addDebug("Seite geladen, starte Besitzerdaten-Ladevorgang...");
+        await loadOwnersData();           // zuerst Besitzer laden
+        
+        addDebug("Besitzerdaten geladen, starte restliche Daten...");
+        await loadData();                 // dann weitere Daten laden und verarbeiten
+        
         setupSorting();
     } catch (error) {
         showError("Laden fehlgeschlagen: " + error.message);
@@ -34,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
     document.getElementById('hideNonLeague').addEventListener('change', applyFilters);
 
-   
+
 
     // Toggle-Menü-Logik
     function setupToggle(labelId, contentId) {
@@ -103,62 +107,26 @@ async function loadData() {
     }
 }
 
-async function fetchJSON(url) {
-    addDebug(`Lade Datei: ${url}`);
-    const cacheBusterUrl = url + '?t=' + new Date().getTime();
-    try {
-        const response = await fetch(cacheBusterUrl);
-        if (!response.ok) {
-            addDebug(`Fehler beim Laden: HTTP ${response.status}`);
-            throw new Error(`HTTP ${response.status} für ${url}`);
-        }
-        const text = await response.text();
-        if (!text.trim()) {
-            addDebug("Warnung: Datei ist leer!");
-            throw new Error("Leere Datei: " + url);
-        }
-        addDebug("Datei geladen, versuche JSON zu parsen...");
-        const data = JSON.parse(text);
-        addDebug(`Erfolgreich geparst: ${data.length || Object.keys(data).length} Einträge`);
-        return data;
-    } catch (error) {
-        addDebug("Fehler beim Laden/JSON-Parsen: " + error.message);
-        throw error;
-    }
-}
 
-function processData(clubsData, playersData, usersData, playerToUserMap) {
+
+function processData(clubsData, playersData) {
     addDebug("Starte Datenverarbeitung...");
     clubsMap = new Map();
     clubsData.forEach(club => {
         clubsMap.set(club.id, club.name);
     });
     addDebug(`Vereine verarbeitet: ${clubsMap.size}`);
+
     allPlayers = playersData.playerDB.map(player => ({
         ...player,
         position: player.data?.position || "Unbekannt"
     }));
     addDebug(`Spieler verarbeitet: ${allPlayers.length}`);
-    const userMap = new Map();
-    usersData.forEach(user => {
-        userMap.set(user.user.id, `${user.user.firstName} ${user.user.lastName || ''}`);
-    });
-    addDebug(`Benutzer verarbeitet: ${userMap.size}`);
-    
-    ownersMap = new Map();
-    playerToUserMap.forEach(item => {
-        const playerId = Object.keys(item)[0];
-        const ownerId = item[playerId];
-        ownersMap.set(playerId, userMap.get(ownerId) || `Unbekannt (${ownerId})`);
-    });
-    allPlayers.forEach(player => {
-        if (!ownersMap.has(player.id)) {
-            ownersMap.set(player.id, "Computer");
-        }
-    });
 
+    ownersMap = window.globalOwnersMap || new Map();
 
     addDebug(`Besitzerzuordnungen: ${ownersMap.size}`);
+
     initClubFilter();
     initOwnerFilter();
     addDebug("Datenverarbeitung abgeschlossen.");

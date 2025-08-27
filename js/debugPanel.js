@@ -8,6 +8,7 @@ function addDebug(msg) {
   entry.textContent = `${new Date().toLocaleTimeString()}: ${msg}`;
   debugContent.appendChild(entry);
   debugContent.scrollTop = debugContent.scrollHeight;
+  console.log(msg);
 }
 
 // Debug-Button & Panel initialisieren
