@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.table-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th {
+    background: #f8f9fa;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px solid #dee2e6;
+    position: sticky;
+    top: 0;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.player-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-name {
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.player-id {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.club-logo img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.status-logo div {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.status-logo small {
+  font-size: 0.55em;
+  color: #666;
+}
+
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.error {
+    background: #ffebee;
+    color: #c62828;
+    padding: 12px;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.expired {
+    color: #c62828;
+}
+
+.time-high {
+  background-color: #d0f0c0; /* Hellgrün */
+}
+
+.time-medium {
+  background-color: #fff3b0; /* Hellgelb */
+}
+
+.time-low {
+  background-color: #f8b0b0; /* Hellrot */
+}
+tr.expired {
+  text-decoration: line-through;
+  color: #c62828; /* optional rote Farbe für bessere Sichtbarkeit */
+}
+/* Zahlen rechtsbündig */
+td.price, td.value, td.time {
+    text-align: right;
+}
+
+/* Besitzer zentrieren */
+td.owner , td.position, td.status , td.club , td.player{
+    text-align: center;
+}
