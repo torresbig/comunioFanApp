@@ -30,6 +30,7 @@ th {
     text-align: center;
     border-bottom: 2px solid #dee2e6;
     position: sticky;
+    white-space: nowrap;
     top: 0;
 }
 
@@ -37,6 +38,23 @@ td {
     padding: 12px;
     border-bottom: 1px solid #dee2e6;
 }
+
+td.value,
+td.price,
+td.time {
+    text-align: right;
+}
+
+td.owner {
+    text-align: center;
+}
+
+td,
+th {
+    padding: 6px 8px;
+    white-space: nowrap;
+}
+
 
 .player-info {
     display: flex;
@@ -62,13 +80,13 @@ td {
 }
 
 .status-logo div {
-  text-align: center;
-  font-size: 1.2em;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 .status-logo small {
-  font-size: 0.55em;
-  color: #666;
+    font-size: 0.55em;
+    color: #666;
 }
 
 
@@ -91,26 +109,38 @@ td {
 }
 
 .time-high {
-  background-color: #d0f0c0; /* Hellgrün */
+    background-color: #d0f0c0;
+    /* Hellgrün */
 }
 
 .time-medium {
-  background-color: #fff3b0; /* Hellgelb */
+    background-color: #fff3b0;
+    /* Hellgelb */
 }
 
 .time-low {
-  background-color: #f8b0b0; /* Hellrot */
+    background-color: #f8b0b0;
+    /* Hellrot */
 }
+
 tr.expired {
-  text-decoration: line-through;
-  color: #c62828; /* optional rote Farbe für bessere Sichtbarkeit */
+    text-decoration: line-through;
+    color: #c62828;
+    /* optional rote Farbe für bessere Sichtbarkeit */
 }
+
 /* Zahlen rechtsbündig */
-td.price, td.value, td.time {
+td.price,
+td.value,
+td.time {
     text-align: right;
 }
 
 /* Besitzer zentrieren */
-td.owner , td.position, td.status , td.club , td.player{
+td.owner,
+td.position,
+td.status,
+td.club,
+td.player {
     text-align: center;
 }
