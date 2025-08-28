@@ -136,7 +136,3 @@ async function fetchJSON(url) {
     }
 }
 
-function showError(message) {
-    document.getElementById('error').style.display = 'block';
-    document.getElementById('errorMessage').textContent = message;
-}
