@@ -2203,7 +2203,7 @@
             "RA"
           ],
           "nationalspieler": "",
-          "trikotNummer": 10,
+          "trikotNummer": 7,
           "nationalitaet": "Niederlande",
           "laenderspielTore": 5,
           "hauptposition": "Offensives Mittelfeld",
@@ -26864,9 +26864,9 @@
           "status": "AUFBAUTRAINING"
         },
         "status": {
-          "grund": "Muskelverletzung",
+          "grund": "",
           "lastUpdate": "29.08.2025",
-          "seit": "01.08.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -26876,8 +26876,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Hofmann",
@@ -35263,9 +35263,9 @@
           "status": "AUFBAUTRAINING"
         },
         "status": {
-          "grund": "Muskelverletzung",
+          "grund": "",
           "lastUpdate": "29.08.2025",
-          "seit": "06.08.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -35275,8 +35275,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Palacios",
@@ -38415,13 +38415,13 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "",
+          "grund": "Trainingsrückstand",
           "lastUpdate": "29.08.2025",
-          "seit": "",
+          "seit": "21.08.2025",
           "details": "",
           "historie": [],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "01.09.2025",
+          "status": "VERLETZT"
         }
       },
       "name": "Pherai",
@@ -42217,13 +42217,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
+          "grund": "Fußverletzung",
           "lastUpdate": "29.08.2025",
-          "seit": "",
+          "seit": "20.08.2025",
           "details": "",
           "historie": [],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "01.09.2025",
+          "status": "VERLETZT"
         }
       },
       "name": "Glatzel",
@@ -63218,13 +63218,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "Wadenverletzung",
+          "grund": "",
           "lastUpdate": "29.08.2025",
-          "seit": "01.08.2025",
+          "seit": "",
           "details": "",
           "historie": [],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Tillman",
