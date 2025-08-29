@@ -1883,7 +1883,7 @@
           "groesse": "1,90",
           "geburtstag": "15.11.1996",
           "laenderspiele": 69,
-          "lastUpdate": "28.08.2025",
+          "lastUpdate": "29.08.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 3,
@@ -1898,7 +1898,7 @@
         "verein": "1",
         "lastPoints": 4,
         "transfermarktDoDe": {
-          "date": "28.08.2025",
+          "date": "29.08.2025",
           "name": "Min-jae Kim",
           "link": "https://www.transfermarkt.de/min-jae-kim/profil/spieler/503482",
           "id": 503482,
@@ -8325,13 +8325,13 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Knieprobleme",
+          "grund": "",
           "lastUpdate": "29.08.2025",
-          "seit": "23.08.2025",
+          "seit": "",
           "details": "",
           "historie": [],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Maina",
@@ -19179,9 +19179,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "25.05.2025",
-          "seit": "",
+          "grund": "muskuläre Probleme",
+          "lastUpdate": "29.08.2025",
+          "seit": "26.08.2025",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -19191,7 +19191,8 @@
             "historie": [],
             "status": "VERLETZT"
           }],
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Haidara",
@@ -23559,9 +23560,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "24.08.2025",
-          "seit": "",
+          "grund": "Hüftprobleme",
+          "lastUpdate": "29.08.2025",
+          "seit": "26.08.2025",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -23571,8 +23572,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Skov Olsen",
@@ -27628,13 +27629,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "Trainingsrückstand",
+          "grund": "",
           "lastUpdate": "29.08.2025",
-          "seit": "07.08.2025",
+          "seit": "",
           "details": "",
           "historie": [],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Pauli",
@@ -31326,6 +31327,7 @@
         "withinSquad": true,
         "onMarket": true,
         "position": "ABWEHR",
+        "attribute": {"SonstigeInfos": ["häufigsten Transfers (3)"]},
         "possibleNames": [
           "Niklas Suele",
           "niklas suele",
@@ -31782,9 +31784,9 @@
           "status": "AUFBAUTRAINING"
         },
         "status": {
-          "grund": "Knieprobleme",
+          "grund": "Trainingsrückstand",
           "lastUpdate": "29.08.2025",
-          "seit": "22.07.2025",
+          "seit": "26.08.2025",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -32944,12 +32946,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "04.06.2025",
-          "seit": "",
+          "grund": "Muskelfaserriss",
+          "lastUpdate": "29.08.2025",
+          "seit": "28.08.2025",
           "details": "",
           "historie": [],
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Rothweiler",
@@ -38412,13 +38415,13 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Innenbandanriss Knie",
+          "grund": "",
           "lastUpdate": "29.08.2025",
-          "seit": "10.07.2025",
+          "seit": "",
           "details": "",
           "historie": [],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Pherai",
@@ -38945,13 +38948,13 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Knieverletzung",
+          "grund": "",
           "lastUpdate": "29.08.2025",
-          "seit": "25.08.2025",
+          "seit": "",
           "details": "",
           "historie": [],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Ache",
@@ -42214,13 +42217,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "Fußverletzung",
+          "grund": "",
           "lastUpdate": "29.08.2025",
-          "seit": "20.08.2025",
+          "seit": "",
           "details": "",
           "historie": [],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Glatzel",
@@ -51633,9 +51636,9 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Wadenprobleme",
+          "grund": "",
           "lastUpdate": "29.08.2025",
-          "seit": "08.08.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -51645,8 +51648,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Klostermann",
@@ -55302,12 +55305,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "04.06.2025",
-          "seit": "",
+          "grund": "Sprunggelenksprobleme",
+          "lastUpdate": "29.08.2025",
+          "seit": "27.08.2025",
           "details": "",
           "historie": [],
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Kainz",
@@ -63532,13 +63536,13 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Oberschenkelprobleme",
+          "grund": "",
           "lastUpdate": "29.08.2025",
-          "seit": "08.08.2025",
+          "seit": "",
           "details": "",
           "historie": [],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Maksimović",
@@ -63903,12 +63907,13 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "unbekannt",
-          "lastUpdate": "22.07.2025",
-          "seit": "unbekannt",
+          "grund": "Sprunggelenksverletzung",
+          "lastUpdate": "29.08.2025",
+          "seit": "24.08.2025",
           "details": "",
           "historie": [],
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Burger",
@@ -66503,13 +66508,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "Muskelverletzung",
+          "grund": "",
           "lastUpdate": "29.08.2025",
-          "seit": "27.07.2025",
+          "seit": "",
           "details": "",
           "historie": [],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Badé",
