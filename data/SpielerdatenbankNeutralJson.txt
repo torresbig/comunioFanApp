@@ -189,7 +189,7 @@
           "lastUpdate": "01.09.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 22,
+          "trikotNummer": 14,
           "nationalitaet": "Dänemark",
           "laenderspielTore": 0,
           "hauptposition": "Defensives Mittelfeld",
@@ -972,7 +972,7 @@
           "lastUpdate": "01.09.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 18,
+          "trikotNummer": 6,
           "nationalitaet": "Deutschland",
           "laenderspielTore": 0,
           "hauptposition": "Defensives Mittelfeld",
@@ -1595,7 +1595,7 @@
           "lastUpdate": "01.09.2025",
           "nebenpositionen": ["LA"],
           "nationalspieler": "",
-          "trikotNummer": 11,
+          "trikotNummer": 20,
           "nationalitaet": "Belgien",
           "laenderspielTore": 3,
           "hauptposition": "Mittelstürmer",
@@ -39219,9 +39219,9 @@
           "status": "AUFBAUTRAINING"
         },
         "status": {
-          "grund": "Magen-Darm-Grippe",
+          "grund": "",
           "lastUpdate": "01.09.2025",
-          "seit": "05.08.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -39231,8 +39231,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Tousart",
@@ -42369,6 +42369,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
+        "attribute": {"SonstigeInfos": ["häufigsten Transfers (3)"]},
         "possibleNames": [
           "Robert Glatzel",
           "R. Glatzel",
