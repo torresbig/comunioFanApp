@@ -1389,6 +1389,7 @@
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
+          "haveToCheck": true,
           "name": "",
           "link": "",
           "id": 0
@@ -3499,7 +3500,7 @@
           "groesse": "1,85",
           "geburtstag": "19.02.1999",
           "laenderspiele": 5,
-          "lastUpdate": "03.09.2025",
+          "lastUpdate": "04.09.2025",
           "nebenpositionen": [
             "ZM",
             "OM"
@@ -3517,7 +3518,7 @@
         "verein": "6",
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "03.09.2025",
+          "date": "04.09.2025",
           "name": "Senne Lynen",
           "link": "https://www.transfermarkt.de/senne-lynen/profil/spieler/338668",
           "id": 338668,
@@ -4146,7 +4147,7 @@
           "groesse": "1,82",
           "geburtstag": "01.11.1997",
           "laenderspiele": 9,
-          "lastUpdate": "03.09.2025",
+          "lastUpdate": "04.09.2025",
           "nebenpositionen": [
             "DM",
             "OM"
@@ -4164,7 +4165,7 @@
         "verein": "68",
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "03.09.2025",
+          "date": "04.09.2025",
           "name": "Elvis Rexhbecaj",
           "link": "https://www.transfermarkt.de/elvis-rexhbecaj/profil/spieler/280575",
           "id": 280575,
@@ -14839,17 +14840,17 @@
     {
       "data": {
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "N/A",
+          "groesse": "1,95",
+          "geburtstag": "09.12.2000",
           "laenderspiele": 0,
-          "lastUpdate": "",
+          "lastUpdate": "04.09.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
-          "nationalitaet": "",
+          "trikotNummer": 1,
+          "nationalitaet": "Deutschland",
           "laenderspielTore": 0,
-          "hauptposition": "",
-          "fuss": ""
+          "hauptposition": "Torwart",
+          "fuss": "beidfüßig"
         },
         "isNotName": [],
         "punktekorrektur": [],
@@ -14857,10 +14858,16 @@
         "verein": "25",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "01.01.1900",
-          "name": "",
-          "link": "",
-          "id": 0
+          "date": "04.09.2025",
+          "haveToCheck": true,
+          "name": "Ben Voll",
+          "link": "https://www.transfermarkt.de/ben-voll/profil/spieler/453742",
+          "id": "453742",
+          "position": "TW",
+          "marktwert": 500000,
+          "nationalitaet": "Deutschland",
+          "leistungsDaten": {},
+          "alter": 24
         },
         "lastSeasonPoints": 2,
         "punkte": 0,
@@ -16125,17 +16132,17 @@
     {
       "data": {
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "N/A",
+          "groesse": "1,94",
+          "geburtstag": "07.03.2005",
           "laenderspiele": 0,
-          "lastUpdate": "",
+          "lastUpdate": "04.09.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
-          "nationalitaet": "",
+          "trikotNummer": 3,
+          "nationalitaet": "Deutschland",
           "laenderspielTore": 0,
-          "hauptposition": "",
-          "fuss": ""
+          "hauptposition": "Innenverteidiger",
+          "fuss": "rechts"
         },
         "isNotName": [],
         "punktekorrektur": [],
@@ -16143,10 +16150,16 @@
         "verein": "25",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "01.01.1900",
-          "name": "",
-          "link": "",
-          "id": 0
+          "date": "04.09.2025",
+          "haveToCheck": true,
+          "name": "Muhammad Dahaba",
+          "link": "https://www.transfermarkt.de/muhammad-dahaba/profil/spieler/914890",
+          "id": "914890",
+          "position": "IV",
+          "marktwert": 125000,
+          "nationalitaet": "Deutschland",
+          "leistungsDaten": {},
+          "alter": 20
         },
         "lastSeasonPoints": 0,
         "punkte": 0,
@@ -19072,17 +19085,17 @@
     {
       "data": {
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "N/A",
+          "groesse": "1,79",
+          "geburtstag": "10.04.2003",
           "laenderspiele": 0,
-          "lastUpdate": "",
+          "lastUpdate": "04.09.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
-          "nationalitaet": "",
+          "trikotNummer": 14,
+          "nationalitaet": "Wales",
           "laenderspielTore": 0,
-          "hauptposition": "",
-          "fuss": ""
+          "hauptposition": "Rechter Verteidiger",
+          "fuss": "rechts"
         },
         "isNotName": [],
         "punktekorrektur": [],
@@ -19090,14 +19103,20 @@
         "verein": "25",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "01.01.1900",
-          "name": "",
-          "link": "",
-          "id": 0
+          "date": "04.09.2025",
+          "haveToCheck": true,
+          "name": "Fin Stevens",
+          "link": "https://www.transfermarkt.de/fin-stevens/profil/spieler/587019",
+          "id": "587019",
+          "position": "RV",
+          "marktwert": 500000,
+          "nationalitaet": "Wales",
+          "leistungsDaten": {},
+          "alter": 22
         },
         "lastSeasonPoints": 0,
         "punkte": 0,
-        "realWert": 600000,
+        "realWert": 500000,
         "lastBigUpdate": "03.09.2025",
         "stats": {
           "notenDurchschnitt": "0",
@@ -22457,17 +22476,17 @@
     {
       "data": {
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "N/A",
-          "laenderspiele": 0,
-          "lastUpdate": "",
+          "groesse": "1,89",
+          "geburtstag": "03.04.2000",
+          "laenderspiele": 6,
+          "lastUpdate": "04.09.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
-          "nationalitaet": "",
+          "trikotNummer": 23,
+          "nationalitaet": "Serbien",
           "laenderspielTore": 0,
-          "hauptposition": "",
-          "fuss": ""
+          "hauptposition": "Mittelstürmer",
+          "fuss": "rechts"
         },
         "isNotName": [],
         "punktekorrektur": [],
@@ -22475,14 +22494,20 @@
         "verein": "109",
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "01.01.1900",
-          "name": "",
-          "link": "",
-          "id": 0
+          "date": "04.09.2025",
+          "haveToCheck": false,
+          "name": "Andrej Ilic",
+          "link": "https://www.transfermarkt.de/andrej-ilic/profil/spieler/583699",
+          "id": "583699",
+          "position": "MS",
+          "marktwert": 4000000,
+          "nationalitaet": "Serbien",
+          "leistungsDaten": {},
+          "alter": 25
         },
         "lastSeasonPoints": 79,
         "punkte": 7,
-        "realWert": 0,
+        "realWert": 4000000,
         "lastBigUpdate": "03.09.2025",
         "stats": {
           "notenDurchschnitt": "6,9",
@@ -41163,7 +41188,7 @@
           }
         ],
         "position": "MITTELFELD",
-        "attribute": {"SontigeInfos": ["teuerster Spieler (Realwert) (140,000,000 \u20ac)"]},
+        "attribute": {"SontigeInfos": ["teuerster Spieler (Realwert) (140.000.000 \u20ac)"]},
         "possibleNames": [
           "Jamal Musiala",
           "J. Musiala",
@@ -70317,7 +70342,7 @@
         ],
         "position": "STURM",
         "attribute": {
-          "SontigeInfos": ["teuerster Spieler (21,820,000 \u20ac)"],
+          "SontigeInfos": ["teuerster Spieler (21.820.000 \u20ac)"],
           "ligainsiderRanking": {
             "punkte": 161,
             "einsaetzeBewertet": 2,
