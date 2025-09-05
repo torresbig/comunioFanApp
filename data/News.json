@@ -5952,14 +5952,56 @@
   },
   {
     "date": "05.09.2025",
-    "news": [{
-      "date": "05.09.2025",
-      "art": "TRANSFER",
-      "gelesen": false,
-      "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Mainka\",\"price\":3500000,\"buyerId\":\"13654613\",\"playerValue\":3190000,\"playerId\":\"33273\",\"buyer\":\"Christoph\"}",
-      "id": "951972432",
-      "playerId": "33273"
-    }]
+    "news": [
+      {
+        "date": "05.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Mainka\",\"price\":3500000,\"buyerId\":\"13654613\",\"playerValue\":3190000,\"playerId\":\"33273\",\"buyer\":\"Christoph\"}",
+        "id": "951972432",
+        "playerId": "33273"
+      },
+      {
+        "date": "05.09.2025",
+        "art": "NEW_PLAYER",
+        "gelesen": false,
+        "text": "Neuer Spieler: Puertas (ID: 34298)",
+        "id": "0",
+        "playerId": "34298"
+      },
+      {
+        "date": "05.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Andi\",\"sellerId\":\"9317431\",\"playerName\":\"Dahoud\",\"price\":252500,\"buyerId\":\"1\",\"playerValue\":250000,\"playerId\":\"32208\",\"buyer\":\"Computer\"}",
+        "id": "951972432",
+        "playerId": "32208"
+      },
+      {
+        "date": "05.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Andi\",\"sellerId\":\"9317431\",\"playerName\":\"Burcu\",\"price\":211200,\"buyerId\":\"1\",\"playerValue\":220000,\"playerId\":\"34191\",\"buyer\":\"Computer\"}",
+        "id": "951972432",
+        "playerId": "34191"
+      },
+      {
+        "date": "05.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Florian\",\"sellerId\":\"13806423\",\"playerName\":\"Baldé\",\"price\":357000,\"buyerId\":\"1\",\"playerValue\":340000,\"playerId\":\"34194\",\"buyer\":\"Computer\"}",
+        "id": "951972432",
+        "playerId": "34194"
+      },
+      {
+        "date": "05.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Widmer\",\"price\":1159000,\"buyerId\":\"1\",\"playerValue\":1220000,\"playerId\":\"33478\",\"buyer\":\"Computer\"}",
+        "id": "951972432",
+        "playerId": "33478"
+      }
+    ]
   },
   {
     "date": "05.08.2025",
