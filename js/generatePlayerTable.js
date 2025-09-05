@@ -25,6 +25,8 @@ function renderTable(players) {
         const nebenpositionen = player.data?.spielerDaten?.nebenpositionen || [];
         const nebenpositionenTooltip = nebenpositionen.length > 0 ? "Hauptposition: " + hauptposition + " | Nebenposition: " + nebenpositionen.join(", ") : "";
         const positionHtml = `<span title="${nebenpositionenTooltip}">${player.position || "Unbekannt"}</span>`;
+        
+
         const status = player.data?.status?.status || 'AKTIV';
         let statusClass = "";
         if (status.includes("AKTIV")) statusClass = "status-aktiv";
@@ -49,7 +51,7 @@ function renderTable(players) {
                     <td data-sort="${playerName}">${playerNameHtml}</td>
                     <td data-sort="${clubName}">${logoHtml}</td>
                     <td data-sort="${position}">${positionHtml}</td>
-                    <td data-sort="${status}" class="${statusClass}">${status}</td>
+                    <td data-sort="${status}" class="${statusClass}"><div style="display:flex;flex-direction:column;align-items:center"><div>${getStatusIndicator(status)}</div><small style="font-size:0.8em;color:#666">${status}</small></div></td>
                     <td data-sort="${marketValueSort}">${marketValue}</td>
                     <td data-sort="${points}">${points}</td>
                     <td data-sort="${owner}">${owner}</td>

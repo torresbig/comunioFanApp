@@ -85,7 +85,7 @@ function getStatusIndicator(status) {
     case 'AKTIV': return '👍';
     case 'VERLETZT': return '🚨';
     case 'REHA': return '🔄';
-    case 'AUFBAUTRAINING': return '🏋️💪';
+    case 'AUFBAUTRAINING': return '🏋️';
     case 'NICHT_IN_LIGA': return '❌';
     case 'FUENFTE_GELBE_KARTE': return '🟨';
     case 'GELBROTE_KARTE': return '🟨🟥';
