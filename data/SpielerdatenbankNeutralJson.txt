@@ -2167,7 +2167,7 @@
           "groesse": "1,80",
           "geburtstag": "27.05.1997",
           "laenderspiele": 49,
-          "lastUpdate": "04.09.2025",
+          "lastUpdate": "05.09.2025",
           "nebenpositionen": [
             "RV",
             "DM"
@@ -2185,7 +2185,7 @@
         "verein": "1",
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "04.09.2025",
+          "date": "05.09.2025",
           "name": "Konrad Laimer",
           "link": "https://www.transfermarkt.de/Konrad Laimer/profil/spieler/223967",
           "id": 223967,
@@ -35954,6 +35954,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
+        "attribute": {"SonstigeInfos": ["häufigsten Transfers (3)"]},
         "possibleNames": [
           "Fabio Balde",
           "Fabio Baldé",
@@ -41368,7 +41369,7 @@
           }
         ],
         "position": "MITTELFELD",
-        "attribute": {"SontigeInfos": ["teuerster Spieler (Realwert) (140,000,000 \u20ac)"]},
+        "attribute": {"SontigeInfos": ["teuerster Spieler (Realwert) (140.000.000 \u20ac)"]},
         "possibleNames": [
           "Jamal Musiala",
           "J. Musiala",
@@ -49702,16 +49703,19 @@
           }
         ],
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 26,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 4.5,
-          "verein": "1. FSV Mainz 05",
-          "lastUpdate": "30.08.2025",
-          "durchschnittsminuten": 38,
-          "durchschnittspunkte": 26,
-          "rang": 171
-        }},
+        "attribute": {
+          "ligainsiderRanking": {
+            "punkte": 26,
+            "einsaetzeBewertet": 1,
+            "durchschnittsnote": 4.5,
+            "verein": "1. FSV Mainz 05",
+            "lastUpdate": "30.08.2025",
+            "durchschnittsminuten": 38,
+            "durchschnittspunkte": 26,
+            "rang": 171
+          },
+          "SonstigeInfos": ["häufigsten Transfers (3)"]
+        },
         "possibleNames": [
           "Silvan Widmer",
           "S. Widmer",
@@ -70607,7 +70611,7 @@
         ],
         "position": "STURM",
         "attribute": {
-          "SontigeInfos": ["teuerster Spieler (24,220,000 \u20ac)"],
+          "SontigeInfos": ["teuerster Spieler (24.220.000 \u20ac)"],
           "ligainsiderRanking": {
             "punkte": 161,
             "einsaetzeBewertet": 2,
@@ -72134,26 +72138,37 @@
     {
       "data": {
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "",
+          "groesse": "1,80",
+          "geburtstag": "04.02.1999",
           "laenderspiele": 0,
-          "lastUpdate": null,
+          "lastUpdate": "05.09.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
-          "nationalitaet": "",
+          "trikotNummer": 39,
+          "nationalitaet": "Ghana",
           "laenderspielTore": 0,
-          "hauptposition": "",
-          "fuss": ""
+          "hauptposition": "Linker Verteidiger",
+          "fuss": "links"
         },
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "109",
         "wert": 1880000,
         "lastPoints": 0,
-        "transfermarktDoDe": {"date": "01.01.1900"},
+        "transfermarktDoDe": {
+          "date": "05.09.2025",
+          "haveToCheck": true,
+          "name": "Derrick Köhn",
+          "link": "https://www.transfermarkt.de/derrick-kohn/profil/spieler/391780",
+          "id": "391780",
+          "position": "LV",
+          "marktwert": 5000000,
+          "nationalitaet": "Ghana",
+          "leistungsDaten": {},
+          "alter": 26
+        },
         "punkte": 0,
-        "realWert": 0,
+        "realWert": 5000000,
         "lastBigUpdate": "03.09.2025",
         "stats": {
           "notenDurchschnitt": "6,15",
@@ -72195,7 +72210,11 @@
           "durchschnittspunkte": 24,
           "rang": 182
         }},
-        "possibleNames": [],
+        "possibleNames": [
+          "Derrick Köhn",
+          "Köhn",
+          "D. Köhn"
+        ],
         "comunioStatus": {
           "grund": "unbekannt",
           "lastUpdate": "03.09.2025",
@@ -72486,26 +72505,37 @@
     {
       "data": {
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "",
+          "groesse": "1,93",
+          "geburtstag": "13.04.2002",
           "laenderspiele": 0,
-          "lastUpdate": null,
+          "lastUpdate": "05.09.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
-          "nationalitaet": "",
+          "trikotNummer": 13,
+          "nationalitaet": "Estland",
           "laenderspielTore": 0,
-          "hauptposition": "",
-          "fuss": ""
+          "hauptposition": "Torwart",
+          "fuss": "rechts"
         },
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "6",
         "wert": 780000,
         "lastPoints": 0,
-        "transfermarktDoDe": {"date": "01.01.1900"},
+        "transfermarktDoDe": {
+          "date": "05.09.2025",
+          "haveToCheck": true,
+          "name": "Karl Hein",
+          "link": "https://www.transfermarkt.de/karl-hein/profil/spieler/493513",
+          "id": "493513",
+          "position": "TW",
+          "marktwert": 3000000,
+          "nationalitaet": "Estland",
+          "leistungsDaten": {},
+          "alter": 23
+        },
         "punkte": 0,
-        "realWert": 0,
+        "realWert": 3000000,
         "lastBigUpdate": "03.09.2025",
         "stats": {
           "notenDurchschnitt": "0",
@@ -72534,7 +72564,11 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "possibleNames": [],
+        "possibleNames": [
+          "Karl Hein",
+          "Hein",
+          "K. Hein"
+        ],
         "comunioStatus": {
           "grund": "unbekannt",
           "lastUpdate": "03.09.2025",
@@ -72723,26 +72757,37 @@
     {
       "data": {
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "",
-          "laenderspiele": 0,
-          "lastUpdate": null,
+          "groesse": "1,79",
+          "geburtstag": "28.06.2000",
+          "laenderspiele": 15,
+          "lastUpdate": "05.09.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
-          "nationalitaet": "",
-          "laenderspielTore": 0,
-          "hauptposition": "",
-          "fuss": ""
+          "trikotNummer": 3,
+          "nationalitaet": "Japan",
+          "laenderspielTore": 2,
+          "hauptposition": "Rechter Verteidiger",
+          "fuss": "rechts"
         },
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "6",
         "wert": 3240000,
         "lastPoints": 2,
-        "transfermarktDoDe": {"date": "01.01.1900"},
+        "transfermarktDoDe": {
+          "date": "05.09.2025",
+          "haveToCheck": true,
+          "name": "Yukinari Sugawara",
+          "link": "https://www.transfermarkt.de/yukinari-sugawara/profil/spieler/405385",
+          "id": "405385",
+          "position": "RV",
+          "marktwert": 11000000,
+          "nationalitaet": "Japan",
+          "leistungsDaten": {},
+          "alter": 25
+        },
         "punkte": 2,
-        "realWert": 0,
+        "realWert": 11000000,
         "lastBigUpdate": "03.09.2025",
         "stats": {
           "notenDurchschnitt": "6,5",
@@ -72776,7 +72821,11 @@
           "durchschnittspunkte": 41,
           "rang": 106
         }},
-        "possibleNames": [],
+        "possibleNames": [
+          "Yukinari Sugawara",
+          "Sugawara",
+          "Y. Sugawara"
+        ],
         "comunioStatus": {
           "grund": "unbekannt",
           "lastUpdate": "03.09.2025",
