@@ -11,6 +11,7 @@ const DATA_URLS = {
   users: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/UserdatenbankJson_884691.txt`,
   playerToUser: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/PlayerToUserMap_884691.txt`,
   marktwerte: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/MarktwerteJson.txt`,
+  transfermarkt: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/TransfermarktListe.json`,
   news: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/News.json`,
   logos: `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/logos/`
   

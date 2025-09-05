@@ -45,7 +45,6 @@ function renderTable(players) {
         }
         const owner = ownersMap.get(player.id) || 'Computer';
         const points = player.data?.punkte || 0;
-        const lastUpdate = player.data?.lastUpdate || 'Unbekannt';
         row.innerHTML = `
                     <td data-sort="${playerName}">${playerNameHtml}</td>
                     <td data-sort="${clubName}">${logoHtml}</td>
@@ -54,7 +53,6 @@ function renderTable(players) {
                     <td data-sort="${marketValueSort}">${marketValue}</td>
                     <td data-sort="${points}">${points}</td>
                     <td data-sort="${owner}">${owner}</td>
-                    <td data-sort="${lastUpdate}">${lastUpdate}</td>
                 `;
         tableBody.appendChild(row);
     });

@@ -110,6 +110,54 @@ function renderNews(newsList) {
                             } else {
                                 text = news.text;
                             }
+                        }else if (art === 'ELFDESTAGES') {
+                            try {
+                                const players = JSON.parse(news.text);
+                                
+                                // Sortiere nach Position
+                                const positionOrder = {
+                                    'keeper': 1,
+                                    'defender': 2,
+                                    'midfielder': 3,
+                                    'striker': 4
+                                };
+                                
+                                players.sort((a, b) => positionOrder[a.position] - positionOrder[b.position]);
+                                
+                                text = '<div class="top11-container">';
+                                text += '<h3>🏆 Elf des Tages</h3>';
+                                
+                                let currentPosition = '';
+                                players.forEach(player => {
+                                    if (currentPosition !== player.position) {
+                                        if (currentPosition !== '') text += '</div>';
+                                        currentPosition = player.position;
+                                        const positionIcons = {
+                                            'keeper': '🧤',
+                                            'defender': '🛡️',
+                                            'midfielder': '⚡',
+                                            'striker': '⚽'
+                                        };
+                                        const positionNames = {
+                                            'keeper': 'Torwart',
+                                            'defender': 'Abwehr',
+                                            'midfielder': 'Mittelfeld',
+                                            'striker': 'Sturm'
+                                        };
+                                        text += `<div class="position-group">
+                                            <h4>${positionIcons[player.position]} ${positionNames[player.position]}</h4>`;
+                                    }
+                                    
+                                    text += `<div class="player-entry">
+                                        ${linkPlayer(player.playerId, player.playerName)}
+                                        <span class="points">${player.punkte} Pkt.</span>
+                                    </div>`;
+                                });
+                                text += '</div></div>';
+                            } catch (e) {
+                                console.error("Fehler beim Verarbeiten der Elf des Tages:", e);
+                                text = news.text;
+                            }
                         }
                         else {
                             text = news.text;

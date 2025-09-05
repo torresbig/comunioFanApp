@@ -20,7 +20,7 @@ async function loadTransferMarktData() {
     try {
         showLoading();
         addDebug("Lade Transfermarkt-Liste...");
-        const response = await fetch(`https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/TransfermarktListe.json`);
+        const response = await fetch(DATA_URLS.transfermarkt);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
         const data = await response.json();
@@ -145,7 +145,7 @@ function renderTable(data) {
         const timeCell = document.createElement('td');
         timeCell.className = 'time';
         timeCell.style.textAlign = 'right';
-        const remainingTime = calculateRemainingTime(item.remainingDate);
+        const remainingTime = calculateRemainingTime(item.setOnMarket);
         timeCell.textContent = remainingTime;
         if (remainingTime === 'Abgelaufen') {
             row.classList.add('expired');
@@ -187,7 +187,8 @@ function sortedData() {
             case 4: return cmpNum(a.wert, b.wert);
             case 5: return cmpNum(a.preis, b.preis);
             case 6: return cmpStr(ownersMap.get(a.playerID), ownersMap.get(b.playerID));
-            case 7: return cmpNum(getRemainingMs(a.remainingDate), getRemainingMs(b.remainingDate));
+            case 7: // Restzeit-Sortierung:
+                return sortDirection * (getTimeLeftForSort(a.setOnMarket) - getTimeLeftForSort(b.setOnMarket));
             default: return 0;
         }
     });
@@ -197,24 +198,6 @@ function cmpStr(a, b) {
 }
 function cmpNum(a, b) {
     return sortDirection * (Number(a) - Number(b));
-}
-function getRemainingMs(dateString) {
-    const normalized = dateString.replace(/([+-]\d{2})(\d{2})$/, '$1:$2');
-    return new Date(normalized) - new Date();
-}
-
-
-// Hilfsfunktionen
-function cmpStr(a, b) {
-    return sortDirection * String(a).localeCompare(String(b));
-}
-function cmpNum(a, b) {
-    return sortDirection * (Number(a) - Number(b));
-}
-function getRemainingMs(dateString) {
-    // siehe vorherige Antworten für korrektes Parsing!
-    const normalized = dateString.replace(/([+-]\d{2})(\d{2})$/, '$1:$2');
-    return new Date(normalized) - new Date();
 }
 
 
@@ -230,29 +213,55 @@ function formatCurrency(value) {
         maximumFractionDigits: 0
     }).format(value);
 }
+function calculateDeadline(dateString) {
+    // Korrigiere Zeitzonen-Format wie bisher
+    const normalized = dateString.replace(/([+-]\d{2})(\d{2})$/, '$1:$2');
+    const startDate = new Date(normalized);
 
-/**
- * Berechnet verbleibende Zeit bis zum angegebenen Datum.
- * Gibt "Abgelaufen" zurück, wenn das Datum in der Vergangenheit liegt,
- * ansonsten verbleibende Stunden und Minuten als String im Format "Xh Ym".
- * @param {string} dateString ISO-Datumsstring
- * @returns {string} Verbleibende Zeit oder "Abgelaufen"
- */
+    // Deadline auf die nächste mögliche "3 Uhr"-Marke setzen
+    let deadline = new Date(startDate);
+
+    // 1. Stelle auf 03:00 Uhr am Start-Tag
+    deadline.setHours(3, 0, 0, 0);
+
+    // 2. Wenn startDate >= diesem 03:00 Uhr, dann beginnt die Zählung am nächsten Tag
+    if (startDate >= deadline) {
+        deadline.setDate(deadline.getDate() + 1);
+    }
+
+    // 3. Addiere 2 weitere Tage, um auf die dritte "3 Uhr" nach dem Startdatum zu kommen
+    deadline.setDate(deadline.getDate() + 2);
+
+    return deadline;
+}
+
 function calculateRemainingTime(dateString) {
-    // Korrigiere Zeitzonen-Format von +0200 zu +02:00 für Date Parsing
-    const normalizedDateString = dateString.replace(/([+-]\d{2})(\d{2})$/, '$1:$2');
-    const endDate = new Date(normalizedDateString);
+    const deadline = calculateDeadline(dateString);
     const now = new Date();
 
-    if (endDate <= now) return 'Abgelaufen';
+    if (deadline <= now) return 'Abgelaufen';
 
-    const diff = endDate - now;
-    const hours = Math.floor(diff / (1000 * 60 * 60));
-    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-
+    const diffMS = deadline - now;
+    const hours = Math.floor(diffMS / (1000 * 60 * 60));
+    const minutes = Math.floor((diffMS % (1000 * 60 * 60)) / (1000 * 60));
     return `${hours}h ${minutes}m`;
 }
 
+
+
+// Hilfsfunktion für die Sortierung, gibt Unterschied in Minuten zurück
+function getTimeLeftForSort(remainingDate) {
+    const now = new Date();
+    const endDate = new Date(remainingDate);
+    if (endDate <= now) return -1;
+    return endDate - now; // Differenz in Millisekunden
+}
+
+function getTimeLeftForSort(dateString) {
+    const deadline = calculateDeadline(dateString);
+    const now = new Date();
+    return deadline - now;
+}
 
 /**
  * Zeigt einen Lade-Spinner und versteckt den Inhaltsbereich.
