@@ -72,7 +72,7 @@ function displayRivals(player, allPlayers) {
             const playerUrl = getPlayerUrl(rival.id);
             const rankingObj = getLigainsiderRankingObj(rival);
             const ligRank = (rankingObj && rankingObj.rang !== undefined && rankingObj.rang !== null && rankingObj.rang !== 0 && rankingObj.rang !== '') ? rankingObj.rang : '-';
-
+            const status = statusData.status || 'unbekannt';
             // Marktwert als reine Zahl für Sortierung
             const marktwertNum = typeof rival.data?.wert === 'number' ? rival.data.wert : 0;
 
@@ -84,11 +84,14 @@ function displayRivals(player, allPlayers) {
                     </div>
                     <div class="player-id-cell">(${rival.id})</div>
                 </td>
-                <td data-sort="${statusData.status || ''}">
-                    <span class="status-indicator" title="${statusTooltip}" style="font-size: 22px;">
-                        ${getStatusIndicator(statusData.status)}
-                    </span>
-                </td>
+                <td data-sort="${status || ''}"> 
+<div 
+  style="display:flex;flex-direction:column;align-items:center" 
+  title="${statusTooltip || status}"
+>
+  <div>${getStatusIndicator(status)}</div>
+  <small style="font-size:0.8em;color:#666">${status}</small>
+</div>                </td>
                 <td class="ligainsider-ranking" data-sort="${ligRank === '-' ? Number.MAX_SAFE_INTEGER : ligRank}">${ligRank}</td>
                 <td data-sort="${marktwertNum}">${formatCurrencyFull(rival.data?.wert || 0)}</td>
                 <td data-sort="${rival.data?.realWert || 0}">${formatCurrencyFull(rival.data?.realWert || 0)}</td>

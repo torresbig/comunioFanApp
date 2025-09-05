@@ -156,9 +156,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const statusData = player.data?.status || {};
         const statusIndicator = document.getElementById('statusIndicator');
+        let statusTooltip = "";
         if (statusIndicator) {
             statusIndicator.textContent = getStatusIndicator(statusData.status);
-            const statusTooltip = `${getStatusDisplayName(statusData.status)}${statusData.grund ? ' - ' + statusData.grund : ''}${statusData.seit ? ' seit ' + statusData.seit : ''}`;
+            statusTooltip = `${getStatusDisplayName(statusData.status)}${statusData.grund ? ' - ' + statusData.grund : ''}${statusData.seit ? ' seit ' + statusData.seit : ''}`;
             statusIndicator.title = statusTooltip;
         } else {
             addDebug('Element fehlt: statusIndicator', 'error');
@@ -190,6 +191,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
         safeSet('detailStatus', 'textContent', getStatusDisplayName(statusData.status));
+         safeSet('detailStatusInfo', 'textContent', getStatusDisplayName(statusTooltip));
         const stats = player.data?.stats || {};
         safeSet('gamesPlayed', 'textContent', stats.playedGames || '-');
         safeSet('goals', 'textContent', stats.totalGoals || '-');
