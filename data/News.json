@@ -5690,14 +5690,32 @@
   },
   {
     "date": "07.09.2025",
-    "news": [{
-      "date": "07.09.2025",
-      "art": "TRANSFER",
-      "gelesen": false,
-      "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Rômulo\",\"price\":15613500,\"buyerId\":\"1\",\"playerValue\":14550000,\"playerId\":\"34271\",\"buyer\":\"Computer\"}",
-      "id": "952035019",
-      "playerId": "34271"
-    }]
+    "news": [
+      {
+        "date": "07.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Rômulo\",\"price\":15613500,\"buyerId\":\"1\",\"playerValue\":14550000,\"playerId\":\"34271\",\"buyer\":\"Computer\"}",
+        "id": "952035019",
+        "playerId": "34271"
+      },
+      {
+        "date": "07.09.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Salifou (33604) ist jetzt NICHT_IN_LIGA",
+        "id": "0",
+        "playerId": "33604"
+      },
+      {
+        "date": "07.09.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Smolčić (33613) ist jetzt NICHT_IN_LIGA",
+        "id": "0",
+        "playerId": "33613"
+      }
+    ]
   },
   {
     "date": "07.08.2025",
