@@ -73647,26 +73647,37 @@
     {
       "data": {
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "",
-          "laenderspiele": 0,
-          "lastUpdate": null,
+          "groesse": "1,77",
+          "geburtstag": "08.12.2004",
+          "laenderspiele": 5,
+          "lastUpdate": "06.09.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
-          "nationalitaet": "",
+          "trikotNummer": 27,
+          "nationalitaet": "Algerien",
           "laenderspielTore": 0,
-          "hauptposition": "",
-          "fuss": ""
+          "hauptposition": "Rechtsaußen",
+          "fuss": "links"
         },
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "14",
         "wert": 7510000,
         "lastPoints": 0,
-        "transfermarktDoDe": {"date": "01.01.1900"},
+        "transfermarktDoDe": {
+          "date": "06.09.2025",
+          "haveToCheck": true,
+          "name": "Badredine Bouanani",
+          "link": "https://www.transfermarkt.de/badredine-bouanani/profil/spieler/707242",
+          "id": "707242",
+          "position": "RA",
+          "marktwert": 7000000,
+          "nationalitaet": "Algerien",
+          "leistungsDaten": {},
+          "alter": 20
+        },
         "punkte": 0,
-        "realWert": 0,
+        "realWert": 7000000,
         "lastBigUpdate": "03.09.2025",
         "stats": {
           "notenDurchschnitt": "0",
@@ -73690,7 +73701,11 @@
         "onMarket": false,
         "position": "STURM",
         "attribute": [],
-        "possibleNames": [],
+        "possibleNames": [
+          "Badredine Bouanani",
+          "Bouanani",
+          "B. Bouanani"
+        ],
         "comunioStatus": {
           "grund": "unbekannt",
           "lastUpdate": "03.09.2025",
