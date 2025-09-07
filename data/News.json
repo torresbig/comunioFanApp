@@ -5689,6 +5689,17 @@
     ]
   },
   {
+    "date": "07.09.2025",
+    "news": [{
+      "date": "07.09.2025",
+      "art": "TRANSFER",
+      "gelesen": false,
+      "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Rômulo\",\"price\":15613500,\"buyerId\":\"1\",\"playerValue\":14550000,\"playerId\":\"34271\",\"buyer\":\"Computer\"}",
+      "id": "952035019",
+      "playerId": "34271"
+    }]
+  },
+  {
     "date": "07.08.2025",
     "news": [
       {
@@ -5825,14 +5836,32 @@
   },
   {
     "date": "06.09.2025",
-    "news": [{
-      "date": "06.09.2025",
-      "art": "TRANSFER",
-      "gelesen": false,
-      "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Sinani\",\"price\":5313600,\"buyerId\":\"11683432\",\"playerValue\":5080000,\"playerId\":\"33959\",\"buyer\":\"Simon\"}",
-      "id": "952009900",
-      "playerId": "33959"
-    }]
+    "news": [
+      {
+        "date": "06.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Sinani\",\"price\":5313600,\"buyerId\":\"11683432\",\"playerValue\":5080000,\"playerId\":\"33959\",\"buyer\":\"Simon\"}",
+        "id": "952009900",
+        "playerId": "33959"
+      },
+      {
+        "date": "06.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Andi\",\"sellerId\":\"9317431\",\"playerName\":\"Geiger\",\"price\":273000,\"buyerId\":\"1\",\"playerValue\":260000,\"playerId\":\"32680\",\"buyer\":\"Computer\"}",
+        "id": "952009900",
+        "playerId": "32680"
+      },
+      {
+        "date": "06.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Simon\",\"sellerId\":\"11683432\",\"playerName\":\"Wind\",\"price\":3990000,\"buyerId\":\"1\",\"playerValue\":3490000,\"playerId\":\"33559\",\"buyer\":\"Computer\"}",
+        "id": "952009900",
+        "playerId": "33559"
+      }
+    ]
   },
   {
     "date": "06.08.2025",
