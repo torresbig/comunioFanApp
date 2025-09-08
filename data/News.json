@@ -5523,6 +5523,22 @@
         "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Burke\",\"price\":1950009,\"buyerId\":\"10966300\",\"playerValue\":1820000,\"playerId\":\"32694\",\"buyer\":\"Alexander\"}",
         "id": "952073500",
         "playerId": "32694"
+      },
+      {
+        "date": "08.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Tabaković\",\"price\":3463200,\"buyerId\":\"1\",\"playerValue\":3330000,\"playerId\":\"34047\",\"buyer\":\"Computer\"}",
+        "id": "952073500",
+        "playerId": "34047"
+      },
+      {
+        "date": "08.09.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Rosenfelder  (33815) ist wieder AKTIV",
+        "id": "0",
+        "playerId": "33815"
       }
     ]
   },
