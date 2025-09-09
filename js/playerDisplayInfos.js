@@ -183,9 +183,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         safeSet('comunioPosition', 'textContent', player.data?.position || '-');
         safeSet('marketValue', 'textContent', formatCurrencyFull(player.data?.wert || 0));
         safeSet('realmarketValue', 'textContent', formatCurrencyFull(player.data?.realWert || 0));
-        safeSet('pointsWithLastYear', 'textContent', player.data?.punkte + " (" + player.data?.lastSeasonPoints + ")" || '-');
+        safeSet('pointsWithLastYear', 'textContent', player.data?.punkte + " (" + (player.data?.lastSeasonPoints || 0) + ")" || '-');
         safeSet('owner', 'textContent', globalOwnersMap.get(player.id) || 'Computer');
-        safeSet('11desTages', 'textContent', player.data?.elfDesSpieltages || 0);
+        safeSet('11desTages', 'textContent', player.data?.elfDesSpieltages + "x" || 0+ "x" );
 
 
         // für den Besitzer oben im Header

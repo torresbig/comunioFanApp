@@ -113,26 +113,61 @@ function getStatusDisplayName(status) {
 
 
 async function fetchJSON(url) {
-    addDebug(`Lade Datei: ${url}`);
-    const cacheBusterUrl = url + '?t=' + new Date().getTime();
-    try {
-        const response = await fetch(cacheBusterUrl);
-        if (!response.ok) {
-            addDebug(`Fehler beim Laden: HTTP ${response.status}`);
-            throw new Error(`HTTP ${response.status} für ${url}`);
-        }
-        const text = await response.text();
-        if (!text.trim()) {
-            addDebug("Warnung: Datei ist leer!");
-            throw new Error("Leere Datei: " + url);
-        }
-        addDebug("Datei geladen, versuche JSON zu parsen...");
-        const data = JSON.parse(text);
-        addDebug(`Erfolgreich geparst: ${data.length || Object.keys(data).length} Einträge`);
-        return data;
-    } catch (error) {
-        addDebug("Fehler beim Laden/JSON-Parsen: " + error.message);
-        throw error;
+  addDebug(`Lade Datei: ${url}`);
+  const cacheBusterUrl = url + '?t=' + new Date().getTime();
+  try {
+    const response = await fetch(cacheBusterUrl);
+    if (!response.ok) {
+      addDebug(`Fehler beim Laden: HTTP ${response.status}`);
+      throw new Error(`HTTP ${response.status} für ${url}`);
     }
+    const text = await response.text();
+    if (!text.trim()) {
+      addDebug("Warnung: Datei ist leer!");
+      throw new Error("Leere Datei: " + url);
+    }
+    addDebug("Datei geladen, versuche JSON zu parsen...");
+    const data = JSON.parse(text);
+    addDebug(`Erfolgreich geparst: ${data.length || Object.keys(data).length} Einträge`);
+    return data;
+  } catch (error) {
+    addDebug("Fehler beim Laden/JSON-Parsen: " + error.message);
+    throw error;
+  }
 }
 
+
+// Cache für Benutzerdaten
+let userMapCache = null;
+let userDataPromise = null;
+
+async function getUserString(userId) {
+  try {
+    // Wenn wir bereits Daten laden, warten wir auf diese
+    if (userDataPromise) {
+      await userDataPromise;
+    }
+    
+    // Wenn wir einen Cache haben, nutzen wir diesen
+    if (userMapCache) {
+      return userMapCache.get(userId) || `Unbekannt (${userId})`;
+    }
+    
+    // Ersten Ladevorgang starten
+    userDataPromise = fetchJSON(DATA_URLS.users);
+    const usersData = await userDataPromise;
+    
+    // Cache erstellen
+    userMapCache = new Map();
+    usersData.forEach(user => {
+      userMapCache.set(user.user.id, `${user.user.firstName} ${user.user.lastName || ''}`);
+    });
+    
+    return userMapCache.get(userId) || `Unbekannt (${userId})`;
+  } catch (error) {
+    console.error('Fehler beim Laden der Benutzerdaten:', error);
+    return `Unbekannt (${userId})`;
+  } finally {
+    userDataPromise = null;
+  }
+}

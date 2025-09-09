@@ -50,7 +50,11 @@ function renderNews(newsList) {
                         }
                         else if (art === 'USERPOINTS') {
                             const obj = JSON.parse(news.text);
-                            text = `<b>${obj.gamedayPoints} Punkte geholt!</b> --> <b style="color:#00f;">${obj.userName}</b> (gesamt:${obj.totalPoints})`;
+                            text = `<div class="player-entry">
+                                <b style="color:#00f;">${obj.userName}</b> - 
+                                <span class="points">${obj.gamedayPoints} Pkt.</span>
+                                (Gesamt: ${obj.totalPoints} Pkt.)
+                            </div>`;
                         }
                         else if (art === 'SPIELERSTATUS') {
                             const regex = /Statuswechsel:\s(.+?)\s\(\d+\)\sist\s(wieder|jetzt)\s([A-Z_]+)(?:\s\((.+)\))?/i;
@@ -123,12 +127,12 @@ function renderNews(newsList) {
                                 };
                                 
                                 players.sort((a, b) => positionOrder[a.position] - positionOrder[b.position]);
-                                
-                                text = '<div class="top11-container">';
-                                text += '<h3>🏆 Elf des Tages</h3>';
+
+                                text = '<div class="top11-container" data-news-date="' + day.date + '" style="text-align: left; padding: 10px;">';
+                                text += '<h3 style="margin-bottom: 10px;">🏆 Elf des Tages</h3>';
                                 
                                 let currentPosition = '';
-                                players.forEach(player => {
+                                players.forEach((player, index) => {
                                     if (currentPosition !== player.position) {
                                         if (currentPosition !== '') text += '</div>';
                                         currentPosition = player.position;
@@ -144,16 +148,31 @@ function renderNews(newsList) {
                                             'midfielder': 'Mittelfeld',
                                             'striker': 'Sturm'
                                         };
-                                        text += `<div class="position-group">
-                                            <h4>${positionIcons[player.position]} ${positionNames[player.position]}</h4>`;
+                                        text += `<div class="position-group" style="margin-bottom: 5px;">
+                                            <h4 style="margin: 5px 0;">${positionIcons[player.position]} ${positionNames[player.position]}</h4>`;
                                     }
                                     
                                     text += `<div class="player-entry">
-                                        ${linkPlayer(player.playerId, player.playerName)}
-                                        <span class="points">${player.punkte} Pkt.</span>
+                                        ${linkPlayer(player.playerId, player.playerName)} - 
+                                        <span class="points">${player.punkte} Pkt.</span> 
+                                        (<span data-owner-id="${player.owner}">${player.owner || 'Computer'}</span>)
                                     </div>`;
                                 });
                                 text += '</div></div>';
+
+                                // Lade die Besitzernamen im Hintergrund
+                                const ownerPromises = players.map(player => getUserString(player.owner));
+                                Promise.all(ownerPromises).then(ownerNames => {
+                                    // Finde den Container mit dem richtigen Datum
+                                    const container = document.querySelector(`.top11-container[data-news-date="${day.date}"]`);
+                                    if (container) {
+                                        // Aktualisiere alle Besitzernamen
+                                        const ownerSpans = container.querySelectorAll('[data-owner-id]');
+                                        ownerSpans.forEach((span, index) => {
+                                            span.textContent = ownerNames[index] || 'Computer';
+                                        });
+                                    }
+                                });
                             } catch (e) {
                                 console.error("Fehler beim Verarbeiten der Elf des Tages:", e);
                                 text = news.text;
