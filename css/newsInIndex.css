@@ -1,39 +1,37 @@
 .top11-container {
     background: #f8f9fa;
     border-radius: 8px;
-    padding: 15px;
+    padding: 10px;
     margin: 10px 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: left;
 }
 
 .top11-container h3 {
     color: #2196F3;
-    margin: 0 0 15px 0;
-    text-align: center;
+    margin: 0 0 10px 0;
+    text-align: left;
     font-size: 1.2em;
 }
 
 .position-group {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 .position-group h4 {
     color: #666;
-    margin: 10px 0;
+    margin: 5px 0;
     font-size: 0.9em;
     border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
 }
 
 .player-entry {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 12px;
-    margin: 5px 0;
-    background: white;
-    border-radius: 4px;
-    transition: background-color 0.2s;
+    padding: 4px 0;
+    margin: 2px 0;
+    white-space: nowrap;
+    display: block;
 }
 
 .player-entry:hover {
@@ -44,9 +42,6 @@
     color: #2196F3;
     font-weight: bold;
     font-size: 0.9em;
-    background: #e3f2fd;
-    padding: 2px 8px;
-    border-radius: 12px;
 }
 
 .news-list-toggle {
