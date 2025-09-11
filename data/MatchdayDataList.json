@@ -1,50 +1,50 @@
 {
-	"3": {
-		"earliestKickoff": "2025-09-12T20:30:00+02:00",
-		"pointsMatchday": 2,
-		"eventInfo": {
-			"date": "12.09.2025",
-			"next": 392944,
-			"previous": 392924,
-			"id": 392934,
-			"event": "Aufstellung 3. Spieltag"
-		},
-		"currentMatchday": 3,
-		"isStarted": false,
-		"isFinished": false,
-		"latestKickoff": "2025-09-14T17:30:00+02:00",
-		"fetchNow": false
-	},
-	"2": {
-		"earliestKickoff": "2025-08-29T20:32:01+0200",
-		"pointsMatchday": 1,
-		"eventInfo": {
-			"date": "29.08.2025",
-			"next": 392934,
-			"previous": 392453,
-			"id": 392924,
-			"event": "Aufstellung 2. Spieltag"
-		},
-		"currentMatchday": 2,
-		"isStarted": false,
-		"isFinished": true,
-		"latestKickoff": "2025-08-31T19:30:00+0200",
-		"fetchNow": false
-	},
-	"1": {
-		"earliestKickoff": "2025-08-22T20:30:00+02:00",
-		"pointsMatchday": 0,
-		"eventInfo": {
-			"date": "22.08.2025",
-			"next": 392924,
-			"previous": 0,
-			"id": 392453,
-			"event": "Aufstellung 1. Spieltag"
-		},
-		"currentMatchday": 1,
-		"isStarted": false,
-		"isFinished": true,
-		"latestKickoff": "2025-08-24T17:30:00+0200",
-		"fetchNow": false
-	}
+  "1": {
+    "earliestKickoff": "2025-08-22T20:30:00+02:00",
+    "pointsMatchday": 0,
+    "eventInfo": {
+      "date": "22.08.2025",
+      "next": 392924,
+      "previous": 0,
+      "id": 392453,
+      "event": "Aufstellung 1. Spieltag"
+    },
+    "currentMatchday": 1,
+    "isStarted": false,
+    "isFinished": true,
+    "latestKickoff": "2025-08-24T17:30:00+0200",
+    "fetchNow": false
+  },
+  "2": {
+    "earliestKickoff": "2025-08-29T20:32:01+0200",
+    "pointsMatchday": 1,
+    "eventInfo": {
+      "date": "29.08.2025",
+      "next": 392934,
+      "previous": 392453,
+      "id": 392924,
+      "event": "Aufstellung 2. Spieltag"
+    },
+    "currentMatchday": 2,
+    "isStarted": false,
+    "isFinished": true,
+    "latestKickoff": "2025-08-31T19:30:00+0200",
+    "fetchNow": false
+  },
+  "3": {
+    "earliestKickoff": "2025-09-12T20:30:00+02:00",
+    "pointsMatchday": 2,
+    "eventInfo": {
+      "date": "12.09.2025",
+      "next": 392944,
+      "previous": 392924,
+      "id": 392934,
+      "event": "Aufstellung 3. Spieltag"
+    },
+    "currentMatchday": 3,
+    "isStarted": false,
+    "isFinished": false,
+    "latestKickoff": "2025-09-14T17:30:00+02:00",
+    "fetchNow": false
+  }
 }
