@@ -4455,14 +4455,56 @@
   },
   {
     "date": "12.09.2025",
-    "news": [{
-      "date": "12.09.2025",
-      "art": "TRANSFER",
-      "gelesen": false,
-      "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Ullrich\",\"price\":2798000,\"buyerId\":\"6013585\",\"playerValue\":2720000,\"playerId\":\"33778\",\"buyer\":\"Stefan 8\"}",
-      "id": "952262516",
-      "playerId": "33778"
-    }]
+    "news": [
+      {
+        "date": "12.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Ullrich\",\"price\":2798000,\"buyerId\":\"6013585\",\"playerValue\":2720000,\"playerId\":\"33778\",\"buyer\":\"Stefan 8\"}",
+        "id": "952262516",
+        "playerId": "33778"
+      },
+      {
+        "date": "12.09.2025",
+        "art": "VEREINSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Eriksen\",\"newClub\":\"12\",\"oldClub\":\"6\",\"playerID\":\"34299\"}",
+        "id": "0",
+        "playerId": "34299"
+      },
+      {
+        "date": "12.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Stefan 8\",\"sellerId\":\"6013585\",\"playerName\":\"Glatzel\",\"price\":2461700,\"buyerId\":\"1\",\"playerValue\":2310000,\"playerId\":\"33375\",\"buyer\":\"Computer\"}",
+        "id": "952262516",
+        "playerId": "33375"
+      },
+      {
+        "date": "12.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Sano\",\"price\":5241600,\"buyerId\":\"1\",\"playerValue\":4570000,\"playerId\":\"34009\",\"buyer\":\"Computer\"}",
+        "id": "952262516",
+        "playerId": "34009"
+      },
+      {
+        "date": "12.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Sands\",\"price\":2610000,\"buyerId\":\"1\",\"playerValue\":2670000,\"playerId\":\"34076\",\"buyer\":\"Computer\"}",
+        "id": "952262516",
+        "playerId": "34076"
+      },
+      {
+        "date": "12.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Topp\",\"price\":2430000,\"buyerId\":\"1\",\"playerValue\":2430000,\"playerId\":\"33741\",\"buyer\":\"Computer\"}",
+        "id": "952262516",
+        "playerId": "33741"
+      }
+    ]
   },
   {
     "date": "12.08.2025",
