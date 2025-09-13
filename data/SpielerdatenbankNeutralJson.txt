@@ -8609,9 +8609,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "Fußoperation",
+          "grund": "",
           "lastUpdate": "12.09.2025",
-          "seit": "29.04.2025",
+          "seit": "",
           "details": "",
           "historie": [
             {
@@ -8639,8 +8639,8 @@
               "status": "AUFBAUTRAINING"
             }
           ],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Irvine",
@@ -9921,7 +9921,7 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
+          "bis": "15.09.2025",
           "status": "VERLETZT"
         }
       },
@@ -11001,9 +11001,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "muskuläre Probleme",
+          "grund": "",
           "lastUpdate": "12.09.2025",
-          "seit": "22.08.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -11013,8 +11013,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Beste",
@@ -25762,9 +25762,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "muskuläre Probleme",
+          "grund": "",
           "lastUpdate": "12.09.2025",
-          "seit": "23.08.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -25774,8 +25774,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Osterhage",
@@ -35406,7 +35406,10 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"SonstigeInfos": ["häufigsten Transfers (3)"]},
+        "attribute": {"SonstigeInfos": [
+          "häufigsten Transfers (3)",
+          "häufigsten Transfers (4)"
+        ]},
         "possibleNames": [
           "Robert Glatzel",
           "R. Glatzel",
@@ -44467,9 +44470,9 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Trainingsrückstand",
+          "grund": "",
           "lastUpdate": "12.09.2025",
-          "seit": "02.09.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -44479,8 +44482,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Stage",
@@ -48422,9 +48425,9 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Zehenbruch",
+          "grund": "",
           "lastUpdate": "12.09.2025",
-          "seit": "02.09.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -48434,8 +48437,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Kömür",
@@ -48500,7 +48503,10 @@
           }
         ],
         "position": "STURM",
-        "attribute": {"SonstigeInfos": ["häufigsten Transfers (3)"]},
+        "attribute": {"SonstigeInfos": [
+          "häufigsten Transfers (3)",
+          "häufigsten Transfers (4)"
+        ]},
         "possibleNames": [
           "Keke Topp",
           "K. Topp",
@@ -50019,9 +50025,9 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Trainingsrückstand",
+          "grund": "",
           "lastUpdate": "12.09.2025",
-          "seit": "02.09.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -50031,8 +50037,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Friedl",
@@ -50360,9 +50366,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "Muskelfaserriss",
+          "grund": "",
           "lastUpdate": "12.09.2025",
-          "seit": "16.08.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -50372,8 +50378,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Matanović",
@@ -55103,12 +55109,13 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "unbekannt",
-          "lastUpdate": "15.08.2025",
-          "seit": "unbekannt",
+          "grund": "Knöchelbruch",
+          "lastUpdate": "12.09.2025",
+          "seit": "31.08.2025",
           "details": "",
           "historie": [],
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Frees ",
