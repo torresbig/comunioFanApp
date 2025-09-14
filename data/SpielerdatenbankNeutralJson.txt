@@ -38627,9 +38627,9 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Blinddarmoperation",
+          "grund": "",
           "lastUpdate": "13.09.2025",
-          "seit": "21.08.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -38639,8 +38639,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Bischof",
@@ -40182,9 +40182,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "Krank",
+          "grund": "",
           "lastUpdate": "13.09.2025",
-          "seit": "09.09.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -40194,8 +40194,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Tiago Tomás",
@@ -56005,12 +56005,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "unbekannt",
-          "lastUpdate": "28.08.2025",
-          "seit": "unbekannt",
+          "grund": "muskuläre Probleme",
+          "lastUpdate": "13.09.2025",
+          "seit": "12.09.2025",
           "details": "",
           "historie": [],
-          "status": "AKTIV"
+          "bis": "15.09.2025",
+          "status": "VERLETZT"
         }
       },
       "name": "Anselmino",
