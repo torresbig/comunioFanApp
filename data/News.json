@@ -3970,6 +3970,182 @@
         "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Fellhauer\",\"price\":2340000,\"buyerId\":\"5949921\",\"playerValue\":2370000,\"playerId\":\"34171\",\"buyer\":\"Sascha\"}",
         "id": "952416333",
         "playerId": "34171"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "VEREINSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"N. Schmidt\",\"newClub\":\"25\",\"oldClub\":\"12\",\"playerID\":\"34300\"}",
+        "id": "0",
+        "playerId": "34300"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "VEREINSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Puertas\",\"newClub\":\"6\",\"oldClub\":\"25\",\"playerID\":\"34298\"}",
+        "id": "0",
+        "playerId": "34298"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "POSITIONSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Benjamin\",\"oldPos\":\"MITTELFELD\",\"playerID\":\"34301\",\"newPos\":\"STURM\"}",
+        "id": "0",
+        "playerId": "34301"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "VEREINSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Benjamin\",\"newClub\":\"62\",\"oldClub\":\"6\",\"playerID\":\"34301\"}",
+        "id": "0",
+        "playerId": "34301"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "VEREINSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Herrmann\",\"newClub\":\"3\",\"oldClub\":\"62\",\"playerID\":\"33989\"}",
+        "id": "0",
+        "playerId": "33989"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "POSITIONSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Eriksen\",\"oldPos\":\"STURM\",\"playerID\":\"34299\",\"newPos\":\"MITTELFELD\"}",
+        "id": "0",
+        "playerId": "34299"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "VEREINSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Eriksen\",\"newClub\":\"12\",\"oldClub\":\"3\",\"playerID\":\"34299\"}",
+        "id": "0",
+        "playerId": "34299"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "ELFDESTAGES",
+        "gelesen": false,
+        "text": "[{\"punkte\":9,\"owner\":\"1\",\"playerName\":\"Ramaj\",\"position\":\"keeper\",\"playerId\":\"33440\"},{\"punkte\":22,\"owner\":\"13721745\",\"playerName\":\"Grimaldo\",\"position\":\"defender\",\"playerId\":\"33771\"},{\"punkte\":9,\"owner\":\"1\",\"playerName\":\"Orbán\",\"position\":\"defender\",\"playerId\":\"31846\"},{\"punkte\":9,\"owner\":\"1\",\"playerName\":\"Agu\",\"position\":\"defender\",\"playerId\":\"33288\"},{\"punkte\":14,\"owner\":\"10966300\",\"playerName\":\"Arnold\",\"position\":\"midfielder\",\"playerId\":\"31884\"},{\"punkte\":11,\"owner\":\"5981249\",\"playerName\":\"Pavlović\",\"position\":\"midfielder\",\"playerId\":\"33854\"},{\"punkte\":10,\"owner\":\"1\",\"playerName\":\"Stage\",\"position\":\"midfielder\",\"playerId\":\"33640\"},{\"punkte\":10,\"owner\":\"1\",\"playerName\":\"Majer\",\"position\":\"midfielder\",\"playerId\":\"33844\"},{\"punkte\":18,\"owner\":\"9317431\",\"playerName\":\"Kane\",\"position\":\"striker\",\"playerId\":\"33838\"},{\"punkte\":15,\"owner\":\"10967926\",\"playerName\":\"Asllani\",\"position\":\"striker\",\"playerId\":\"33536\"},{\"punkte\":15,\"owner\":\"13721745\",\"playerName\":\"Matanović\",\"position\":\"striker\",\"playerId\":\"33783\"}]",
+        "id": "952446090",
+        "playerId": "0"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "ELFDESTAGES",
+        "gelesen": false,
+        "text": "[{\"punkte\":9,\"owner\":\"1\",\"playerName\":\"Ramaj\",\"position\":\"keeper\",\"playerId\":\"33440\"},{\"punkte\":22,\"owner\":\"13721745\",\"playerName\":\"Grimaldo\",\"position\":\"defender\",\"playerId\":\"33771\"},{\"punkte\":9,\"owner\":\"1\",\"playerName\":\"Orbán\",\"position\":\"defender\",\"playerId\":\"31846\"},{\"punkte\":9,\"owner\":\"1\",\"playerName\":\"Agu\",\"position\":\"defender\",\"playerId\":\"33288\"},{\"punkte\":14,\"owner\":\"10966300\",\"playerName\":\"Arnold\",\"position\":\"midfielder\",\"playerId\":\"31884\"},{\"punkte\":11,\"owner\":\"5981249\",\"playerName\":\"Pavlović\",\"position\":\"midfielder\",\"playerId\":\"33854\"},{\"punkte\":10,\"owner\":\"1\",\"playerName\":\"Stage\",\"position\":\"midfielder\",\"playerId\":\"33640\"},{\"punkte\":10,\"owner\":\"1\",\"playerName\":\"Majer\",\"position\":\"midfielder\",\"playerId\":\"33844\"},{\"punkte\":18,\"owner\":\"9317431\",\"playerName\":\"Kane\",\"position\":\"striker\",\"playerId\":\"33838\"},{\"punkte\":15,\"owner\":\"10967926\",\"playerName\":\"Asllani\",\"position\":\"striker\",\"playerId\":\"33536\"},{\"punkte\":15,\"owner\":\"13721745\",\"playerName\":\"Matanović\",\"position\":\"striker\",\"playerId\":\"33783\"}]",
+        "id": "952445196",
+        "playerId": "0"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Timo\",\"sellerId\":\"13641978\",\"playerName\":\"Friedl\",\"price\":2445300,\"buyerId\":\"1\",\"playerValue\":2470000,\"playerId\":\"32754\",\"buyer\":\"Computer\"}",
+        "id": "952416333",
+        "playerId": "32754"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Tohumcu\",\"price\":1884900,\"buyerId\":\"1\",\"playerValue\":1830000,\"playerId\":\"33574\",\"buyer\":\"Computer\"}",
+        "id": "952416333",
+        "playerId": "33574"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Christopher\",\"sellerId\":\"13548242\",\"playerName\":\"Siersleben\",\"price\":947600,\"buyerId\":\"1\",\"playerValue\":920000,\"playerId\":\"33345\",\"buyer\":\"Computer\"}",
+        "id": "952416333",
+        "playerId": "33345"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Gomis (34116) ist jetzt VERLETZT (Trainingsrückstand)",
+        "id": "0",
+        "playerId": "34116"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Fellhauer (34171) ist wieder AKTIV",
+        "id": "0",
+        "playerId": "34171"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Markgraf (34214) ist jetzt VERLETZT (Ermüdungsbruch)",
+        "id": "0",
+        "playerId": "34214"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Zentner (32364) ist wieder AKTIV",
+        "id": "0",
+        "playerId": "32364"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Torunarigha (32710) ist jetzt VERLETZT (Achillessehnenprobleme)",
+        "id": "0",
+        "playerId": "32710"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Arthur (33772) ist jetzt VERLETZT (Krank)",
+        "id": "0",
+        "playerId": "33772"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Larsson (33782) ist jetzt VERLETZT (Magen-Darm-Grippe)",
+        "id": "0",
+        "playerId": "33782"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Lindstrøm (33480) ist wieder AKTIV",
+        "id": "0",
+        "playerId": "33480"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Smarkalev (34251) ist jetzt VERLETZT (unbekannte Verletzung)",
+        "id": "0",
+        "playerId": "34251"
+      },
+      {
+        "date": "15.09.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Musah (34244) ist jetzt VERLETZT (unbekannte Verletzung)",
+        "id": "0",
+        "playerId": "34244"
       }
     ]
   },
