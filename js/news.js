@@ -32,8 +32,18 @@ function renderNews(newsList) {
 
             const grouped = {};
             for (const news of newsForDisplay) {
-                if (!grouped[news.art]) grouped[news.art] = [];
-                grouped[news.art].push(news);
+                // Prüfe ob es bereits einen Eintrag für dieses Datum und diese Art gibt
+                if (!grouped[news.art]) {
+                    grouped[news.art] = [];
+                }
+                // Füge nur hinzu wenn nicht bereits vorhanden
+                const isDuplicate = grouped[news.art].some(existingNews => 
+                    existingNews.text === news.text && 
+                    existingNews.date === news.date
+                );
+                if (!isDuplicate) {
+                    grouped[news.art].push(news);
+                }
             }
 
             html += `<div class="news-day"><div class="news-date">${day.date}</div>`;
@@ -128,8 +138,11 @@ function renderNews(newsList) {
                                 
                                 players.sort((a, b) => positionOrder[a.position] - positionOrder[b.position]);
 
-                                text = '<div class="top11-container" data-news-date="' + day.date + '" style="text-align: left; padding: 10px;">';
-                                text += '<h3 style="margin-bottom: 10px;">🏆 Elf des Tages</h3>';
+                                // Eindeutige ID für diesen Container
+                                const containerId = `elf-${day.date}-${Math.random().toString(36).substr(2, 9)}`;
+                                
+                                text = `<div class="top11-container" id="${containerId}" style="text-align: left; padding: 10px;">
+                                    <h3 style="margin-bottom: 10px;">🏆 Elf des Tages</h3>`;
                                 
                                 let currentPosition = '';
                                 players.forEach((player, index) => {
@@ -155,23 +168,23 @@ function renderNews(newsList) {
                                     text += `<div class="player-entry">
                                         ${linkPlayer(player.playerId, player.playerName)} - 
                                         <span class="points">${player.punkte} Pkt.</span> 
-                                        (<span data-owner-id="${player.owner}">${player.owner || 'Computer'}</span>)
+                                        (<span class="owner-name" data-owner-id="${player.owner}">${player.owner || 'Computer'}</span>)
                                     </div>`;
                                 });
                                 text += '</div></div>';
 
-                                // Lade die Besitzernamen im Hintergrund
-                                const ownerPromises = players.map(player => getUserString(player.owner));
-                                Promise.all(ownerPromises).then(ownerNames => {
-                                    // Finde den Container mit dem richtigen Datum
-                                    const container = document.querySelector(`.top11-container[data-news-date="${day.date}"]`);
-                                    if (container) {
-                                        // Aktualisiere alle Besitzernamen
-                                        const ownerSpans = container.querySelectorAll('[data-owner-id]');
-                                        ownerSpans.forEach((span, index) => {
-                                            span.textContent = ownerNames[index] || 'Computer';
-                                        });
-                                    }
+                                // Verzögere die Namen-Aktualisierung bis nach dem Rendern
+                                requestAnimationFrame(() => {
+                                    const ownerPromises = players.map(player => getUserString(player.owner));
+                                    Promise.all(ownerPromises).then(ownerNames => {
+                                        const container = document.getElementById(containerId);
+                                        if (container) {
+                                            const ownerSpans = container.querySelectorAll('.owner-name');
+                                            ownerSpans.forEach((span, index) => {
+                                                span.textContent = ownerNames[index] || 'Computer';
+                                            });
+                                        }
+                                    });
                                 });
                             } catch (e) {
                                 console.error("Fehler beim Verarbeiten der Elf des Tages:", e);
