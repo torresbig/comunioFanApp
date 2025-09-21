@@ -2493,14 +2493,104 @@
   },
   {
     "date": "21.09.2025",
-    "news": [{
-      "date": "21.09.2025",
-      "art": "TRANSFER",
-      "gelesen": false,
-      "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kölle\",\"price\":219999,\"buyerId\":\"13721745\",\"playerValue\":190000,\"playerId\":\"34193\",\"buyer\":\"damian\"}",
-      "id": "952747328",
-      "playerId": "34193"
-    }]
+    "news": [
+      {
+        "date": "21.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kölle\",\"price\":219999,\"buyerId\":\"13721745\",\"playerValue\":190000,\"playerId\":\"34193\",\"buyer\":\"damian\"}",
+        "id": "952747328",
+        "playerId": "34193"
+      },
+      {
+        "date": "21.09.2025",
+        "art": "VEREINSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"N. Schmidt\",\"newClub\":\"25\",\"oldClub\":\"12\",\"playerID\":\"34300\"}",
+        "id": "0",
+        "playerId": "34300"
+      },
+      {
+        "date": "21.09.2025",
+        "art": "VEREINSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Puertas\",\"newClub\":\"6\",\"oldClub\":\"25\",\"playerID\":\"34298\"}",
+        "id": "0",
+        "playerId": "34298"
+      },
+      {
+        "date": "21.09.2025",
+        "art": "POSITIONSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Benjamin\",\"oldPos\":\"MITTELFELD\",\"playerID\":\"34301\",\"newPos\":\"STURM\"}",
+        "id": "0",
+        "playerId": "34301"
+      },
+      {
+        "date": "21.09.2025",
+        "art": "VEREINSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Benjamin\",\"newClub\":\"62\",\"oldClub\":\"6\",\"playerID\":\"34301\"}",
+        "id": "0",
+        "playerId": "34301"
+      },
+      {
+        "date": "21.09.2025",
+        "art": "VEREINSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Herrmann\",\"newClub\":\"3\",\"oldClub\":\"62\",\"playerID\":\"33989\"}",
+        "id": "0",
+        "playerId": "33989"
+      },
+      {
+        "date": "21.09.2025",
+        "art": "POSITIONSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Kiala\",\"oldPos\":\"STURM\",\"playerID\":\"34205\",\"newPos\":\"ABWEHR\"}",
+        "id": "0",
+        "playerId": "34205"
+      },
+      {
+        "date": "21.09.2025",
+        "art": "VEREINSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Kiala\",\"newClub\":\"1\",\"oldClub\":\"3\",\"playerID\":\"34205\"}",
+        "id": "0",
+        "playerId": "34205"
+      },
+      {
+        "date": "21.09.2025",
+        "art": "POSITIONSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Eriksen\",\"oldPos\":\"ABWEHR\",\"playerID\":\"34299\",\"newPos\":\"MITTELFELD\"}",
+        "id": "0",
+        "playerId": "34299"
+      },
+      {
+        "date": "21.09.2025",
+        "art": "VEREINSWECHSEL",
+        "gelesen": false,
+        "text": "{\"playerName\":\"Eriksen\",\"newClub\":\"12\",\"oldClub\":\"1\",\"playerID\":\"34299\"}",
+        "id": "0",
+        "playerId": "34299"
+      },
+      {
+        "date": "21.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Gleiber\",\"price\":187200,\"buyerId\":\"1\",\"playerValue\":180000,\"playerId\":\"34082\",\"buyer\":\"Computer\"}",
+        "id": "952747328",
+        "playerId": "34082"
+      },
+      {
+        "date": "21.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Florian\",\"sellerId\":\"13806423\",\"playerName\":\"Torunarigha\",\"price\":3380000,\"buyerId\":\"1\",\"playerValue\":3250000,\"playerId\":\"32710\",\"buyer\":\"Computer\"}",
+        "id": "952747328",
+        "playerId": "32710"
+      }
+    ]
   },
   {
     "date": "21.08.2025",
