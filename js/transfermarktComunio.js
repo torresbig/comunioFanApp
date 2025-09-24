@@ -145,7 +145,8 @@ function renderTable(data) {
         const timeCell = document.createElement('td');
         timeCell.className = 'time';
         timeCell.style.textAlign = 'right';
-        const remainingTime = calculateRemainingTime(item.setOnMarket);
+        const remainingTime = calculateRemainingTime(item.remainingDate);
+        //const remainingTime = calculateRemainingTime(item.setOnMarket);
         timeCell.textContent = remainingTime;
         if (remainingTime === 'Abgelaufen') {
             row.classList.add('expired');
@@ -213,30 +214,16 @@ function formatCurrency(value) {
         maximumFractionDigits: 0
     }).format(value);
 }
-function calculateDeadline(dateString) {
+
+function getDeadlineDate(dateString) {
     // Korrigiere Zeitzonen-Format wie bisher
     const normalized = dateString.replace(/([+-]\d{2})(\d{2})$/, '$1:$2');
-    const startDate = new Date(normalized);
-
-    // Deadline auf die nächste mögliche "3 Uhr"-Marke setzen
-    let deadline = new Date(startDate);
-
-    // 1. Stelle auf 03:00 Uhr am Start-Tag
-    deadline.setHours(3, 0, 0, 0);
-
-    // 2. Wenn startDate >= diesem 03:00 Uhr, dann beginnt die Zählung am nächsten Tag
-    if (startDate >= deadline) {
-        deadline.setDate(deadline.getDate() + 1);
-    }
-
-    // 3. Addiere 2 weitere Tage, um auf die dritte "3 Uhr" nach dem Startdatum zu kommen
-    deadline.setDate(deadline.getDate() + 2);
-
-    return deadline;
+    const deadline = new Date(normalized);
+return deadline;
 }
 
 function calculateRemainingTime(dateString) {
-    const deadline = calculateDeadline(dateString);
+    const deadline = getDeadlineDate(dateString);
     const now = new Date();
 
     if (deadline <= now) return 'Abgelaufen';
@@ -258,7 +245,7 @@ function getTimeLeftForSort(remainingDate) {
 }
 
 function getTimeLeftForSort(dateString) {
-    const deadline = calculateDeadline(dateString);
+    const deadline = getDeadlineDate(dateString);
     const now = new Date();
     return deadline - now;
 }
