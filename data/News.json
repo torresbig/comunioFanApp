@@ -1188,14 +1188,24 @@
   },
   {
     "date": "26.09.2025",
-    "news": [{
-      "date": "26.09.2025",
-      "art": "TRANSFER",
-      "gelesen": false,
-      "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Doumbia\",\"price\":190500,\"buyerId\":\"13806423\",\"playerValue\":200000,\"playerId\":\"34218\",\"buyer\":\"Florian\"}",
-      "id": "953022735",
-      "playerId": "34218"
-    }]
+    "news": [
+      {
+        "date": "26.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Doumbia\",\"price\":190500,\"buyerId\":\"13806423\",\"playerValue\":200000,\"playerId\":\"34218\",\"buyer\":\"Florian\"}",
+        "id": "953022735",
+        "playerId": "34218"
+      },
+      {
+        "date": "26.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Kemlein\",\"price\":1090000,\"buyerId\":\"1\",\"playerValue\":1090000,\"playerId\":\"33821\",\"buyer\":\"Computer\"}",
+        "id": "953022735",
+        "playerId": "33821"
+      }
+    ]
   },
   {
     "date": "26.08.2025",
