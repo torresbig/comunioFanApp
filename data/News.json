@@ -816,14 +816,24 @@
   },
   {
     "date": "28.09.2025",
-    "news": [{
-      "date": "28.09.2025",
-      "art": "TRANSFER",
-      "gelesen": false,
-      "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Lynen\",\"price\":2580000,\"buyerId\":\"5949921\",\"playerValue\":2540000,\"playerId\":\"33835\",\"buyer\":\"Sascha\"}",
-      "id": "953139919",
-      "playerId": "33835"
-    }]
+    "news": [
+      {
+        "date": "28.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Lynen\",\"price\":2580000,\"buyerId\":\"5949921\",\"playerValue\":2540000,\"playerId\":\"33835\",\"buyer\":\"Sascha\"}",
+        "id": "953139919",
+        "playerId": "33835"
+      },
+      {
+        "date": "28.09.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Schick (33179) ist jetzt VERLETZT (Oberschenkelverletzung)",
+        "id": "0",
+        "playerId": "33179"
+      }
+    ]
   },
   {
     "date": "28.08.2025",
