@@ -183,6 +183,17 @@
     ]
   },
   {
+    "date": "30.09.2025",
+    "news": [{
+      "date": "30.09.2025",
+      "art": "TRANSFER",
+      "gelesen": false,
+      "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"L. Vušković\",\"price\":5800000,\"buyerId\":\"13806423\",\"playerValue\":5720000,\"playerId\":\"34282\",\"buyer\":\"Florian\"}",
+      "id": "953240365",
+      "playerId": "34282"
+    }]
+  },
+  {
     "date": "30.08.2025",
     "news": [
       {
@@ -420,6 +431,46 @@
         "text": "Statuswechsel: Soumahoro (34147) ist jetzt VERLETZT (Krank)",
         "id": "0",
         "playerId": "34147"
+      },
+      {
+        "date": "29.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Jakić\",\"price\":4722300,\"buyerId\":\"1\",\"playerValue\":4330000,\"playerId\":\"33517\",\"buyer\":\"Computer\"}",
+        "id": "953180650",
+        "playerId": "33517"
+      },
+      {
+        "date": "29.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"M. Wolf\",\"price\":3570000,\"buyerId\":\"1\",\"playerValue\":3080000,\"playerId\":\"32546\",\"buyer\":\"Computer\"}",
+        "id": "953180650",
+        "playerId": "32546"
+      },
+      {
+        "date": "29.09.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Skov Olsen\",\"price\":4501100,\"buyerId\":\"1\",\"playerValue\":4040000,\"playerId\":\"34089\",\"buyer\":\"Computer\"}",
+        "id": "953180650",
+        "playerId": "34089"
+      },
+      {
+        "date": "29.09.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Davies (33021) ist wieder AKTIV",
+        "id": "0",
+        "playerId": "33021"
+      },
+      {
+        "date": "29.09.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Smarkalev (34251) ist wieder AKTIV",
+        "id": "0",
+        "playerId": "34251"
       }
     ]
   },
