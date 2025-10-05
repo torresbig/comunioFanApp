@@ -8739,14 +8739,24 @@
   },
   {
     "date": "05.10.2025",
-    "news": [{
-      "date": "05.10.2025",
-      "art": "TRANSFER",
-      "gelesen": false,
-      "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Philippe\",\"price\":4269500,\"buyerId\":\"13806423\",\"playerValue\":4030000,\"playerId\":\"34216\",\"buyer\":\"Florian\"}",
-      "id": "953499228",
-      "playerId": "34216"
-    }]
+    "news": [
+      {
+        "date": "05.10.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Philippe\",\"price\":4269500,\"buyerId\":\"13806423\",\"playerValue\":4030000,\"playerId\":\"34216\",\"buyer\":\"Florian\"}",
+        "id": "953499228",
+        "playerId": "34216"
+      },
+      {
+        "date": "05.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Conteh (33926) ist jetzt VERLETZT (Knieverletzung)",
+        "id": "0",
+        "playerId": "33926"
+      }
+    ]
   },
   {
     "date": "05.09.2025",
