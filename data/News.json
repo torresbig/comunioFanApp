@@ -8159,14 +8159,32 @@
   },
   {
     "date": "08.10.2025",
-    "news": [{
-      "date": "08.10.2025",
-      "art": "TRANSFER",
-      "gelesen": false,
-      "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Jaquez\",\"price\":3090009,\"buyerId\":\"10966300\",\"playerValue\":2990000,\"playerId\":\"34112\",\"buyer\":\"Alexander\"}",
-      "id": "953640827",
-      "playerId": "34112"
-    }]
+    "news": [
+      {
+        "date": "08.10.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Jaquez\",\"price\":3090009,\"buyerId\":\"10966300\",\"playerValue\":2990000,\"playerId\":\"34112\",\"buyer\":\"Alexander\"}",
+        "id": "953640827",
+        "playerId": "34112"
+      },
+      {
+        "date": "08.10.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Wimmer\",\"price\":3720000,\"buyerId\":\"1\",\"playerValue\":3720000,\"playerId\":\"33507\",\"buyer\":\"Computer\"}",
+        "id": "953640827",
+        "playerId": "33507"
+      },
+      {
+        "date": "08.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Baumann (31489) ist wieder AKTIV",
+        "id": "0",
+        "playerId": "31489"
+      }
+    ]
   },
   {
     "date": "08.09.2025",
