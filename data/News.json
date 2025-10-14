@@ -5888,6 +5888,35 @@
     ]
   },
   {
+    "date": "14.10.2025",
+    "news": [
+      {
+        "date": "14.10.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Burcu\",\"price\":370000,\"buyerId\":\"5981249\",\"playerValue\":340000,\"playerId\":\"34191\",\"buyer\":\"Thomas\"}",
+        "id": "953837431",
+        "playerId": "34191"
+      },
+      {
+        "date": "14.10.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Majer\",\"price\":3710000,\"buyerId\":\"5981249\",\"playerValue\":3540000,\"playerId\":\"33844\",\"buyer\":\"Thomas\"}",
+        "id": "953837431",
+        "playerId": "33844"
+      },
+      {
+        "date": "14.10.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Pejčinović\",\"price\":2440009,\"buyerId\":\"10966300\",\"playerValue\":2130000,\"playerId\":\"33657\",\"buyer\":\"Alexander\"}",
+        "id": "953837431",
+        "playerId": "33657"
+      }
+    ]
+  },
+  {
     "date": "14.09.2025",
     "news": [
       {
@@ -6517,14 +6546,24 @@
   },
   {
     "date": "13.10.2025",
-    "news": [{
-      "date": "13.10.2025",
-      "art": "TRANSFER",
-      "gelesen": false,
-      "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Ramaj\",\"price\":3100304,\"buyerId\":\"5949921\",\"playerValue\":3120000,\"playerId\":\"33440\",\"buyer\":\"Sascha\"}",
-      "id": "953805322",
-      "playerId": "33440"
-    }]
+    "news": [
+      {
+        "date": "13.10.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Ramaj\",\"price\":3100304,\"buyerId\":\"5949921\",\"playerValue\":3120000,\"playerId\":\"33440\",\"buyer\":\"Sascha\"}",
+        "id": "953805322",
+        "playerId": "33440"
+      },
+      {
+        "date": "13.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Baum (33869) ist jetzt VERLETZT (Oberschenkelverletzung)",
+        "id": "0",
+        "playerId": "33869"
+      }
+    ]
   },
   {
     "date": "13.09.2025",
