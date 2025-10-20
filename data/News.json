@@ -4161,14 +4161,160 @@
   },
   {
     "date": "20.10.2025",
-    "news": [{
-      "date": "20.10.2025",
-      "art": "TRANSFER",
-      "gelesen": false,
-      "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"D. Nemeth\",\"price\":310000,\"buyerId\":\"5981249\",\"playerValue\":290000,\"playerId\":\"33443\",\"buyer\":\"Thomas\"}",
-      "id": "954074099",
-      "playerId": "33443"
-    }]
+    "news": [
+      {
+        "date": "20.10.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"D. Nemeth\",\"price\":310000,\"buyerId\":\"5981249\",\"playerValue\":290000,\"playerId\":\"33443\",\"buyer\":\"Thomas\"}",
+        "id": "954074099",
+        "playerId": "33443"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "ELFDESTAGES",
+        "gelesen": false,
+        "text": "[{\"punkte\":9,\"owner\":\"1\",\"playerName\":\"Backhaus\",\"position\":\"keeper\",\"playerId\":\"33647\"},{\"punkte\":21,\"owner\":\"1\",\"playerName\":\"Doekhi\",\"position\":\"defender\",\"playerId\":\"33609\"},{\"punkte\":20,\"owner\":\"13721745\",\"playerName\":\"Grimaldo\",\"position\":\"defender\",\"playerId\":\"33771\"},{\"punkte\":13,\"owner\":\"1\",\"playerName\":\"Mittelstädt\",\"position\":\"defender\",\"playerId\":\"32509\"},{\"punkte\":13,\"owner\":\"1\",\"playerName\":\"Föhrenbach\",\"position\":\"defender\",\"playerId\":\"32596\"},{\"punkte\":18,\"owner\":\"9317431\",\"playerName\":\"Baumgartner\",\"position\":\"midfielder\",\"playerId\":\"32977\"},{\"punkte\":16,\"owner\":\"13641978\",\"playerName\":\"Stiller\",\"position\":\"midfielder\",\"playerId\":\"33437\"},{\"punkte\":15,\"owner\":\"11683432\",\"playerName\":\"Kramarić\",\"position\":\"midfielder\",\"playerId\":\"32553\"},{\"punkte\":16,\"owner\":\"1\",\"playerName\":\"Burkardt\",\"position\":\"striker\",\"playerId\":\"32948\"},{\"punkte\":12,\"owner\":\"9317431\",\"playerName\":\"Kane\",\"position\":\"striker\",\"playerId\":\"33838\"},{\"punkte\":12,\"owner\":\"6013585\",\"playerName\":\"Olise\",\"position\":\"striker\",\"playerId\":\"34014\"}]",
+        "id": "954084338",
+        "playerId": "0"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Fischer\",\"price\":2069600,\"buyerId\":\"1\",\"playerValue\":1940000,\"playerId\":\"33625\",\"buyer\":\"Computer\"}",
+        "id": "954074099",
+        "playerId": "33625"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Andi\",\"sellerId\":\"9317431\",\"playerName\":\"Couto\",\"price\":5304500,\"buyerId\":\"1\",\"playerValue\":4700000,\"playerId\":\"34033\",\"buyer\":\"Computer\"}",
+        "id": "954074099",
+        "playerId": "34033"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Collins (33836) ist wieder AKTIV",
+        "id": "0",
+        "playerId": "33836"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Irvine (33950) ist wieder AKTIV",
+        "id": "0",
+        "playerId": "33950"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Gebel  (34042) ist jetzt VERLETZT (Kreuzbandriss)",
+        "id": "0",
+        "playerId": "34042"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Hefti (34151) ist wieder AKTIV",
+        "id": "0",
+        "playerId": "34151"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Bülter (33139) ist wieder AKTIV",
+        "id": "0",
+        "playerId": "33139"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Osterhage (33156) ist jetzt VERLETZT (muskuläre Probleme)",
+        "id": "0",
+        "playerId": "33156"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Schick (33179) ist jetzt VERLETZT (Oberschenkelverletzung)",
+        "id": "0",
+        "playerId": "33179"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Quansah (34217) ist jetzt VERLETZT (Patellasehnenreizung)",
+        "id": "0",
+        "playerId": "34217"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Schäfer (33550) ist jetzt VERLETZT (Blessur)",
+        "id": "0",
+        "playerId": "33550"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Pieringer (33600) ist wieder AKTIV",
+        "id": "0",
+        "playerId": "33600"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Wahl (32633) ist jetzt VERLETZT (Krank)",
+        "id": "0",
+        "playerId": "32633"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Diehl (33718) ist jetzt VERLETZT (Bänderverletzung)",
+        "id": "0",
+        "playerId": "33718"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Gnabry (32696) ist jetzt VERLETZT (Adduktorenbeschwerden)",
+        "id": "0",
+        "playerId": "32696"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Gocholeishvili (34259) ist jetzt VERLETZT (Kopfverletzung)",
+        "id": "0",
+        "playerId": "34259"
+      },
+      {
+        "date": "20.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Lucas Vázquez (34277) ist jetzt VERLETZT (muskuläre Probleme)",
+        "id": "0",
+        "playerId": "34277"
+      }
+    ]
   },
   {
     "date": "20.09.2025",
