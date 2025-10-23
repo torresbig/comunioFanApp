@@ -2866,14 +2866,48 @@
   },
   {
     "date": "23.10.2025",
-    "news": [{
-      "date": "23.10.2025",
-      "art": "TRANSFER",
-      "gelesen": false,
-      "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Sieb\",\"price\":3480000,\"buyerId\":\"5949921\",\"playerValue\":3400000,\"playerId\":\"34006\",\"buyer\":\"Sascha\"}",
-      "id": "954204762",
-      "playerId": "34006"
-    }]
+    "news": [
+      {
+        "date": "23.10.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Sieb\",\"price\":3480000,\"buyerId\":\"5949921\",\"playerValue\":3400000,\"playerId\":\"34006\",\"buyer\":\"Sascha\"}",
+        "id": "954204762",
+        "playerId": "34006"
+      },
+      {
+        "date": "23.10.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Wahl\",\"price\":2968200,\"buyerId\":\"1\",\"playerValue\":3060000,\"playerId\":\"32633\",\"buyer\":\"Computer\"}",
+        "id": "954204762",
+        "playerId": "32633"
+      },
+      {
+        "date": "23.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: N. Stark (32120) ist wieder AKTIV",
+        "id": "0",
+        "playerId": "32120"
+      },
+      {
+        "date": "23.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Thielmann (33185) ist jetzt VERLETZT (Muskelverletzung)",
+        "id": "0",
+        "playerId": "33185"
+      },
+      {
+        "date": "23.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Fischer (33625) ist jetzt VERLETZT (Sprunggelenksverletzung)",
+        "id": "0",
+        "playerId": "33625"
+      }
+    ]
   },
   {
     "date": "23.09.2025",
