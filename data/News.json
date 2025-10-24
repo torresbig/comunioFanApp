@@ -2198,14 +2198,48 @@
   },
   {
     "date": "24.10.2025",
-    "news": [{
-      "date": "24.10.2025",
-      "art": "TRANSFER",
-      "gelesen": false,
-      "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Bouanani\",\"price\":4225009,\"buyerId\":\"10966300\",\"playerValue\":3830000,\"playerId\":\"34286\",\"buyer\":\"Alexander\"}",
-      "id": "954247103",
-      "playerId": "34286"
-    }]
+    "news": [
+      {
+        "date": "24.10.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Bouanani\",\"price\":4225009,\"buyerId\":\"10966300\",\"playerValue\":3830000,\"playerId\":\"34286\",\"buyer\":\"Alexander\"}",
+        "id": "954247103",
+        "playerId": "34286"
+      },
+      {
+        "date": "24.10.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Pejčinović\",\"price\":2225600,\"buyerId\":\"1\",\"playerValue\":2030000,\"playerId\":\"33657\",\"buyer\":\"Computer\"}",
+        "id": "954247103",
+        "playerId": "33657"
+      },
+      {
+        "date": "24.10.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Stefan 8\",\"sellerId\":\"6013585\",\"playerName\":\"Dinkçi\",\"price\":1736800,\"buyerId\":\"1\",\"playerValue\":1670000,\"playerId\":\"33364\",\"buyer\":\"Computer\"}",
+        "id": "954247103",
+        "playerId": "33364"
+      },
+      {
+        "date": "24.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Urbig (33494) ist wieder AKTIV",
+        "id": "0",
+        "playerId": "33494"
+      },
+      {
+        "date": "24.10.2025",
+        "art": "SPIELERSTATUS",
+        "gelesen": false,
+        "text": "Statuswechsel: Kaufmann (33791) ist jetzt VERLETZT (Adduktorenbeschwerden)",
+        "id": "0",
+        "playerId": "33791"
+      }
+    ]
   },
   {
     "date": "24.09.2025",
