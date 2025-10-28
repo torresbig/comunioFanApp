@@ -90,12 +90,13 @@
 
 .user-stats-inner { 
   display: flex; 
-  gap: 16px; 
-  align-items: flex-start; 
+  gap: 24px; 
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .user-stats-col { 
-  flex: 1;
+  flex: 0 1 auto;
   min-width: 140px;
 }
 
@@ -214,6 +215,7 @@
   .user-stats-inner {
     flex-direction: column;
     gap: 12px;
+    justify-content: flex-start;
   }
   
   .section-separator {
