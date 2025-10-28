@@ -1,0 +1,142 @@
+/* User info card styling (moved from inline styles) */
+.user-info-card {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: linear-gradient(180deg,#ffffff, #f7f9fb);
+  border: 1px solid #e1e6ea;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin: 10px 0 18px 0;
+  box-shadow: 0 1px 2px rgba(16,24,40,0.04);
+  flex-wrap: wrap;
+}
+
+.user-info-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  flex: 0 0 64px;
+  box-shadow: 0 2px 6px rgba(31,99,235,0.12);
+}
+
+.user-info-main {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex: 1 1 auto;
+  min-width: 260px;
+}
+
+.user-info-left {
+  min-width: 220px;
+}
+
+.user-info-name {
+  font-weight: 800;
+  font-size: 1.04rem;
+  margin-bottom: 6px;
+}
+
+.user-info-login { color: #6b7280; font-size:0.82rem; margin-bottom:6px }
+.user-info-subline { color:#374151; font-size:0.92rem; margin:3px 0 }
+
+.user-badges { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-top:6px }
+.user-badge { background:#eef2ff; color:#3730a3; padding:6px 10px; border-radius:999px; font-size:0.82rem; font-weight:700 }
+
+.user-info-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(80px, 1fr));
+  gap: 8px 12px;
+  align-items: center;
+}
+
+.user-info-item {
+  font-size: 0.95rem;
+  color: #1f2937;
+  display:flex;
+  gap:8px;
+  align-items:center;
+}
+
+.user-info-label {
+  color: #6b7280;
+  font-size: 0.82rem;
+}
+
+.user-info-value { font-weight: 700; font-size: 0.98rem; }
+
+.user-stats-group { display:flex; flex-direction:column; gap:6px; }
+.user-stats-row { display:flex; gap:16px; align-items:center; }
+.user-stats-big { font-weight:800; font-size:1.1rem; }
+
+.user-stats-inner { display:flex; gap:12px; align-items:flex-start; }
+.user-stats-col { flex:1 }
+.section-separator { width:1px; background:#e6eefc; margin:6px 12px; border-radius:1px }
+
+/* make the sparkline larger on desktop */
+.user-sparkline { width: 260px; height: 80px; display:block; }
+.user-sparkline-caption { font-size:0.82rem; color:#6b7280; margin-bottom:6px; }
+
+.user-info-section-label { font-size:0.85rem; color:#374151; font-weight:700; margin-bottom:6px; }
+
+/* slightly larger labels for desktop sparkline */
+.sparkline-point-label { font-size:12px; fill:#0f172a; font-weight:600; pointer-events:none }
+@media (max-width:700px) {
+  .sparkline-point-label { font-size:9px; opacity:0.8 }
+}
+
+/* Sparkline wrapper: on desktop right-aligned, on mobile collapsible */
+.user-sparkline-wrapper {
+  order: 3;
+  margin-left: auto;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+}
+.user-sparkline-wrapper .sparkline-toggle {
+  display:none;
+  background:transparent;
+  border:none;
+  color:#374151;
+  font-weight:700;
+  cursor:pointer;
+  margin-bottom:6px;
+}
+.user-sparkline-container { position: relative; }
+.user-sparkline-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: rgba(17,24,39,0.95);
+  color: #fff;
+  padding:6px 8px;
+  border-radius:6px;
+  font-size:0.85rem;
+  transform: translate(-50%, -120%);
+  white-space:nowrap;
+  display:none;
+  z-index: 40;
+}
+
+@media (max-width:700px) {
+  .user-info-card { padding:12px; flex-direction:column; align-items:stretch }
+  .user-info-avatar { width:56px; height:56px; font-size:18px; margin:0 auto 8px auto; }
+  .user-info-main { flex-direction:row; gap:12px; align-items:flex-start; }
+  .user-info-left { flex:1 1 auto }
+  .user-info-meta { grid-template-columns: 1fr 1fr; width:100%; }
+  .user-sparkline { width:100%; }
+  /* show toggle on mobile */
+  .user-sparkline-wrapper { order: 4; margin-left:0; align-items:stretch; }
+  .user-sparkline-wrapper .sparkline-toggle { display:block; text-align:left }
+  .user-sparkline-container { display:none; }
+  .user-sparkline-wrapper.expanded .user-sparkline-container { display:block; }
+  /* make separator horizontal and very subtle on mobile */
+  .user-stats-inner { flex-direction:column; }
+  .section-separator { width:100%; height:1px; background:#f1f5f9; margin:8px 0 }
+}
