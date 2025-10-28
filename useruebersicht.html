@@ -11,11 +11,8 @@
   <link rel="stylesheet" href="css/styleMenueHamburger.css">
   <link rel="stylesheet" href="css/debugPanel.css">
   <link rel="stylesheet" href="css/buttonBack.css">
-  <style>
-
-  </style>
+  <link rel="stylesheet" href="css/userInfo.css">
 </head>
-
 <body>
   <!-- Floating Debug Button and Panel -->
   <button id="floatingDebugBtn" title="Debug"><span style="pointer-events:none;">🐞</span></button>
@@ -39,8 +36,7 @@
       <a href="#" class="menu-item" id="linkNews">📰 News</a>
       <a href="#" class="menu-item" id="linkTransfermarktComunio">📑 Transfermarkt-Liste</a>
       <a href="#" class="menu-item" id="linkTransferuebersicht">🔄 Transferübersicht</a>
-      <a href="https://www.instagram.com/comuniofanapp/." class="menu-item" target="_blank">📸 Instagram:
-        ComunioFanApp</a>
+      <a href="https://www.instagram.com/comuniofanapp/." class="menu-item" target="_blank">📸 Instagram: ComunioFanApp</a>
       <div class="menu-item menu-tarn" id="menuTarnItem" style="font-size:0.95em; color:#888; cursor:pointer;">
         erstellt von comunioFanApp</div>
     </div>
@@ -60,6 +56,12 @@
     <div class="dropdown">
       <button id="userSelectBtn">User wählen ▼</button>
       <ul id="userDropdown"></ul>
+      <div id="urlNotice" style="display:none; color:#b33; margin-top:6px; font-size:0.95em;"></div>
+    </div>
+
+    <!-- User Info Card (under dropdown) -->
+    <div id="userInfo" class="user-info-card" style="display:none;">
+      <!-- dynamically filled -->
     </div>
 
     <!-- Spieler-Tabelle + Details nebeneinander -->
@@ -141,16 +143,46 @@
   <script src="js/config.js"></script>
   <script src="js/debugPanel.js"></script>
   <script src="js/utils.js"></script>
-
   <script src="js/hamburgerMenu.js"></script>
   <script src="js/playerDisplayTabs.js"></script>
   <script src="js/generatePlayerTable.js"></script>
-
+  <script src="js/smokeTest.js" type="module"></script>
+  <script src="js/userInfo.js"></script>
 
   <script>
     let newsData, playersData, p2uData, usersData, clubsData;
     const clubsMap = new Map();
     const ownersMap = new Map();
+    // URL-Parameter (werden nach dem Laden der Daten gesetzt)
+    let urlParams = { username: null, withMenue: true };
+
+    // Liest URL-Parameter: ?username=Name&withMenue=false
+    function getUrlParams() {
+      const params = new URLSearchParams(window.location.search);
+      return {
+        username: params.get('username'),
+        withMenue: params.get('withMenue') !== 'false'
+      };
+    }
+
+    // Findet User anhand Vor- oder Nachname (case-insensitive)
+    function findUserByName(users, username) {
+      if (!username) return null;
+      const name = username.toLowerCase();
+      return users.find(u => (
+        (u.user.firstName && u.user.firstName.toLowerCase() === name) ||
+        (u.user.lastName && u.user.lastName.toLowerCase() === name)
+      )) || null;
+    }
+
+    // Verarbeitet Params (z.B. Menü ausblenden)
+    function processUrlParams(params) {
+      // Menü anzeigen/ausblenden
+      const hamburgerMenu = document.querySelector('.hamburger-menu');
+      if (hamburgerMenu) hamburgerMenu.style.display = params.withMenue ? '' : 'none';
+      // Merken für späteren Gebrauch (initUserDropdown)
+      urlParams = params;
+    }
 
     // Lade alle benötigten Daten
     async function loadData() {
@@ -175,8 +207,22 @@
           ownersMap.set(user.user.id, user.user.firstName || 'Computer');
         });
 
+        // URL-Parameter parsen und verarbeiten (funktioniert auch wenn keine params vorhanden sind)
+        const params = getUrlParams();
+        processUrlParams(params);
+
         initUserDropdown();
         initTabs();
+        // Run smoke tests (module import via dynamic import to avoid module scoping issues)
+        try {
+          import('./js/smokeTest.js').then(m => {
+            if (m && typeof m.runSmokeTest === 'function') {
+              m.runSmokeTest({newsData, playersData, usersData, p2uData});
+            }
+          }).catch(err => addDebug && addDebug('SmokeTest import error: ' + err.message));
+        } catch (err) {
+          addDebug && addDebug('SmokeTest error: ' + err.message);
+        }
       } catch (error) {
         console.error("Fehler beim Laden:", error); // <-- alles ausgeben, nicht nur message!
         addDebug("Fehler beim Laden: " + (error && error.message ? error.message : JSON.stringify(error)));
@@ -237,7 +283,36 @@
         if (!e.target.closest('.dropdown')) ul.classList.remove('show');
       });
 
-      // Beim Start: Ersten echten User vorauswählen
+      // Wenn ein username-Parameter gesetzt ist, versuche den User zu finden
+      if (urlParams && urlParams.username) {
+        const userFromUrl = findUserByName(usersData, urlParams.username);
+        const noticeEl = document.getElementById('urlNotice');
+        if (userFromUrl) {
+          const displayName = userFromUrl.user.firstName + (userFromUrl.user.lastName ? ' ' + userFromUrl.user.lastName : '');
+          // Ersetze den Button durch ein unveränderliches Label (sauberer als disabled button)
+          btn.style.display = 'none';
+          ul.style.display = 'none';
+          const label = document.createElement('div');
+          label.id = 'selectedUserLabel';
+          label.textContent = displayName;
+          label.style.fontWeight = '600';
+          label.style.margin = '6px 0';
+          // Füge das Label an Stelle des Buttons ein
+          btn.parentNode.insertBefore(label, btn);
+          addDebug(`Username aus URL verwendet: ${displayName}`);
+          loadPlayersForUser(userFromUrl.user.id);
+          return; // fertig
+        } else {
+          const msg = `Username in URL nicht gefunden: ${urlParams.username} — zeige Standard-User.`;
+          addDebug(msg);
+          if (noticeEl) {
+            noticeEl.textContent = msg;
+            noticeEl.style.display = 'block';
+          }
+        }
+      }
+
+      // Beim Start: Ersten echten User vorauswählen (Fallback)
       const firstUser = realUsers[0];
       if (firstUser) {
         btn.textContent = firstUser.user.firstName + (firstUser.user.lastName ? ' ' + firstUser.user.lastName : '') + ' ▼';
@@ -258,11 +333,67 @@
 
     // Spieler für ausgewählten User laden und Tabelle rendern
     function loadPlayersForUser(userId) {
+      addDebug("=== loadPlayersForUser START ===");
+        // Render user info card for selected user (if available)
+        try { renderUserInfo(userId); } catch (err) { addDebug && addDebug('renderUserInfo error: ' + err.message); }
       const map = Object.assign({}, ...p2uData);
-      const list = (playersData.playerDB || []).filter(p => map[p.id] == userId);
-      renderTable(list);
+      let list = (playersData.playerDB || []).filter(p => map[p.id] == userId);
+      
+      addDebug(`Found ${list.length} players for user ${userId}`);
+      
+      // Debug positions before sorting
+      list.forEach(p => {
+        addDebug(`Player ${p.name}: Position = ${p.data?.position}`);
+      });
+      
+      // Hilfsfunktion für Positionssortierung
+      const getPositionSortValue = (position) => {
+        const positionOrder = {
+          'TORHÜTER': 0,
+          'ABWEHR': 1,
+          'MITTELFELD': 2,
+          'STURM': 3
+        };
+        const value = positionOrder[position];
+        if (value === undefined) {
+          addDebug(`WARNING: Unknown position: ${position}`);
+          return 999; // Unbekannte Positionen ans Ende
+        }
+        return value;
+      };
+      
+      // Liste nach Position sortieren
+      const sortedList = [...list].sort((a, b) => {
+        const posA = getPositionSortValue(a.data?.position || '');
+        const posB = getPositionSortValue(b.data?.position || '');
+        
+        if (posA !== posB) {
+          return posA - posB;
+        }
+        
+        // Bei gleicher Position nach Name sortieren
+        return a.name.localeCompare(b.name, 'de', { sensitivity: 'base' });
+      });
+      
+      // Debug positions after sorting
+      addDebug("=== Sorted Players ===");
+      sortedList.forEach(p => {
+        addDebug(`${p.data?.position}: ${p.name}`);
+      });
+
+      // Rendere die sortierte Liste und erzwinge die Positionssortierung
+      renderTable(sortedList);
+      // Warte einen kurzen Moment und sortiere dann nochmal explizit nach Position
+      setTimeout(() => {
+        const playerTable = document.getElementById('playerTable');
+        if (playerTable) {
+          sortTable(playerTable, 2); // Position ist Spalte 2 (0-basiert)
+        }
+      }, 100);
       clearDetails();
+      
       renderTransfers(userId);
+      addDebug("=== loadPlayersForUser END ===");
     }
 
     // Spielerdetails füllen
@@ -303,7 +434,15 @@
         const logoHtml = `<img src="logos/${logoFile}" class="club-logo" alt="${clubName}" title="${clubName}">`;
         const playerNameHtml = `<a href="${getPlayerUrl(player.id)}" title="${player.name} (ID: ${player.id})" target="_self">${player.name}</a>`;
 
+        // Position mit Sortier-Index
+        const positionOrder = {
+          'TORHÜTER': 0,
+          'ABWEHR': 1,
+          'MITTELFELD': 2,
+          'STURM': 3
+        };
         const position = player.data?.position || "Unbekannt";
+        const positionSortValue = positionOrder[position] ?? 999;
         const hauptposition = player.data?.spielerDaten?.hauptposition || "N/A";
         const nebenpositionen = player.data?.spielerDaten?.nebenpositionen || [];
         const nebenpositionenTooltip = nebenpositionen.length > 0 ? "Hauptposition: " + hauptposition + " | Nebenposition: " + nebenpositionen.join(", ") : "";
@@ -331,7 +470,7 @@
         row.innerHTML = `
         <td data-sort="${player.name}">${playerNameHtml}</td>
         <td data-sort="${clubName}">${logoHtml}</td>
-        <td data-sort="${position}">${positionHtml}</td>
+        <td data-sort="${String(positionSortValue).padStart(3, '0')}_${position}">${positionHtml}</td>
         <td data-sort="${status}" class="${statusClass}">
   <span title="${getStatusDisplayName(status)}">${getStatusIndicator(status)}</span>
 </td>
@@ -340,80 +479,177 @@
       `;
         tableBody.appendChild(row);
       });
+
+      // Initial sort by position (column index 2)
+      sortTable(document.getElementById('playerTable'), 2);
     }
 
     // Transfers anzeigen (mit Filtern für Käufe/Verkäufe)
     function renderTransfers(userId) {
-      const map = Object.assign({}, ...p2uData);
-      const myPlayers = (playersData.playerDB || []).filter(p => map[p.id] == userId);
+      addDebug("=== renderTransfers START ===");
+      
+      const entries = [];
+      try {
+          newsData.forEach(day => {
+              day.news.forEach(item => {
+                  if (item.art === 'TRANSFER') {
+                      const t = JSON.parse(item.text);
+                      const isMyPurchase = t.buyerId && t.buyerId == userId;
+                      const isMySale = t.sellerId && t.sellerId == userId;
 
-      let entries = [];
-      newsData.forEach(day => {
-        day.news.forEach(item => {
-          if (item.art === 'TRANSFER') {
-            const t = JSON.parse(item.text);
-            const isMyPurchase = t.buyerId && t.buyerId == userId;
-            const isMySale = t.sellerId && t.sellerId == userId;
-
-            if (isMyPurchase || isMySale) {
-              const playerObj = (playersData.playerDB || []).find(p => p.id === item.playerId);
-              entries.push({
-                playerId: playerObj?.id,
-                playerName: playerObj?.name || "Unbekannt",
-                date: day.date,
-                type: isMyPurchase ? "Einkauf" : "Verkauf",
-                price: t.price,
-                partner: isMyPurchase ? t.seller : t.buyer
+                      if (isMyPurchase || isMySale) {
+                          const playerObj = playersData.playerDB.find(p => p.id === item.playerId);
+                          addDebug(`Transfer found: ${playerObj?.name || t.playerName || 'Unknown'} (ID: ${item.playerId})`);
+                          entries.push({
+                              playerId: item.playerId,
+                              playerName: playerObj?.name || t.playerName,
+                              date: day.date,
+                              type: isMyPurchase ? "Einkauf" : "Verkauf",
+                              price: t.price,
+                              partner: isMyPurchase ? t.seller : t.buyer
+                          });
+                      }
+                  }
               });
-            }
-          }
-        });
-      });
-      entries.sort((a, b) => new Date(b.date) - new Date(a.date));
-      fillTransferTable("#transferTableAll tbody", entries);
-      fillTransferTable("#transferTableBuy tbody", entries.filter(e => e.type === "Einkauf"));
-      fillTransferTable("#transferTableSell tbody", entries.filter(e => e.type === "Verkauf"));
+          });
+
+          addDebug(`Found ${entries.length} transfers`);
+          
+          fillTransferTable("#transferTableAll tbody", entries);
+          fillTransferTable("#transferTableBuy tbody", entries.filter(e => e.type === "Einkauf"));
+          fillTransferTable("#transferTableSell tbody", entries.filter(e => e.type === "Verkauf"));
+
+          // Initial nach Datum (neueste zuerst) sortieren
+          document.querySelectorAll('.rivals-table').forEach(table => {
+              sortTable(table, 0); // Erste Spalte (Datum)
+              sortTable(table, 0); // Zweimal für absteigende Sortierung
+          });
+
+      } catch (error) {
+          addDebug("ERROR in renderTransfers: " + error.message);
+          console.error(error);
+      }
+      
+      addDebug("=== renderTransfers END ===");
     }
 
     // Hilfsfunktion zum Füllen der Transfers-Tabellen
     function fillTransferTable(selector, list) {
-      const tbody = document.querySelector(selector);
-      tbody.innerHTML = "";
-      list.forEach(e => {
-        const tr = document.createElement("tr");
-        const playerLink = e.playerId
-          ? `<a href="${getPlayerUrl(e.playerId)}" target="_self" title="${e.playerName}">${e.playerName}</a>`
-          : e.playerName;
+        console.group('fillTransferTable');
+        addDebug(`Processing ${selector} with ${list.length} entries`);
 
-        if (selector.includes("All")) {
-          tr.innerHTML = `
-           <td>${e.date}</td>
-        <td>${playerLink}</td>
-       
-        <td>${e.type}</td>
-        <td>€${e.price.toLocaleString('de-DE')}</td>
-        <td>${e.partner}</td>
-      `;
-        } else {
-          tr.innerHTML = `
-           <td>${e.date}</td>
-        <td>${playerLink}</td>
-        <td>€${e.price.toLocaleString('de-DE')}</td>
-        <td>${e.partner}</td>
-      `;
+        try {
+            const tbody = document.querySelector(selector);
+            if (!tbody) {
+                throw new Error(`Table body not found: ${selector}`);
+            }
+
+            tbody.innerHTML = "";
+            
+            list.forEach((e, index) => {
+                const tr = document.createElement('tr');
+                
+                // Try to find player in database
+                const player = e.playerId ? playersData.playerDB.find(p => p.id === e.playerId) : null;
+                const displayName = player?.name || e.playerName || 'Unbekannt';
+                
+                // Create cell content
+                const playerCell = player ? 
+                    `<a href="${getPlayerUrl(e.playerId)}" target="_self">${displayName}</a>` : 
+                    displayName;
+
+                // Build row content
+                if (selector.includes("All")) {
+                    tr.innerHTML = `
+                        <td data-sort="${formatDateForSort(e.date)}">${e.date}</td>
+                        <td>${playerCell}</td>
+                        <td data-sort="${e.type}">${e.type}</td>
+                        <td data-sort="${e.price}">€${e.price.toLocaleString('de-DE')}</td>
+                        <td data-sort="${e.partner?.toLowerCase() || ''}">${e.partner}</td>
+                    `;
+                } else {
+                    tr.innerHTML = `
+                        <td data-sort="${formatDateForSort(e.date)}">${e.date}</td>
+                        <td>${playerCell}</td>
+                        <td data-sort="${e.price}">€${e.price.toLocaleString('de-DE')}</td>
+                        <td data-sort="${e.partner?.toLowerCase() || ''}">${e.partner}</td>
+                    `;
+                }
+                tbody.appendChild(tr);
+            });
+            
+            addDebug(`Successfully filled table ${selector}`);
+
+        } catch (error) {
+            addDebug(`Error in fillTransferTable: ${error.message}`);
+            console.error(error);
         }
-
-        tbody.appendChild(tr);
-      });
+        
+        console.groupEnd();
     }
+
+    // User info helpers moved to js/userInfo.js
+
 
     // Hilfsfunktionen (fetchJSON, addDebug, showLoading, hideLoading, showContent) sollten in deinen utils.js o.ä. liegen
 
     // Nach Laden der Seite starten
     document.addEventListener('DOMContentLoaded', () => {
-      loadData();
-      initTabs();
+    loadData();
+    initTabs();
+    
+    // Spaltensortierung hinzufügen
+    const tables = document.querySelectorAll('.rivals-table');
+    tables.forEach(table => {
+        const headers = table.querySelectorAll('th');
+        headers.forEach((header, index) => {
+            header.addEventListener('click', () => {
+                sortTable(table, index);
+            });
+            header.style.cursor = 'pointer';
+        });
     });
+});
+
+// Hilfsfunktion zum Formatieren des Datums für die Sortierung (z.B. "30.09.2025" -> "20250930")
+function formatDateForSort(dateStr) {
+    const [day, month, year] = dateStr.split('.');
+    return year + (month.padStart(2, '0')) + (day.padStart(2, '0'));
+}
+
+function sortTable(table, column) {
+    const tbody = table.querySelector('tbody');
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    
+    // Prüfe ob die Spalte numerisch sortiert werden soll anhand des ersten data-sort Werts
+    let firstCell = rows[0]?.cells[column];
+    let sortValue = firstCell?.getAttribute('data-sort') || firstCell?.textContent || '';
+    const isNumeric = !isNaN(sortValue);
+
+    rows.sort((a, b) => {
+        let aVal = a.cells[column].getAttribute('data-sort') || a.cells[column].textContent;
+        let bVal = b.cells[column].getAttribute('data-sort') || b.cells[column].textContent;
+        
+        if (isNumeric) {
+            // Konvertiere leere Werte zu 0 für numerische Sortierung
+            return (parseFloat(aVal) || 0) - (parseFloat(bVal) || 0);
+        }
+        // Case-insensitive String-Vergleich
+        return aVal.toLowerCase().localeCompare(bVal.toLowerCase());
+    });
+
+    // Toggle Sortierrichtung
+    if (table.getAttribute('data-sort-column') === column.toString()) {
+        rows.reverse();
+        table.removeAttribute('data-sort-column');
+    } else {
+        table.setAttribute('data-sort-column', column);
+    }
+
+    // Neue Sortierung anwenden
+    tbody.innerHTML = '';
+    rows.forEach(row => tbody.appendChild(row));
+}
   </script>
 
 
