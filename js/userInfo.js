@@ -9,7 +9,7 @@ function buildPointsSparkline(punkteHistorie) {
   const keys = Object.keys(punkteHistorie).sort((a,b)=> Number(a)-Number(b));
   const vals = keys.map(k=> Number(punkteHistorie[k]) || 0);
   if (vals.length === 0) return '';
-  const w = 140, h = 40, pad = 6;
+  const w = 280, h = 60, pad = 8;
   const min = Math.min(...vals);
   const max = Math.max(...vals);
   const range = Math.max(1, max - min);
@@ -23,9 +23,8 @@ function buildPointsSparkline(punkteHistorie) {
   const areaPath = `M ${pad} ${h-pad} ` + pointsArr.map(p=> `L ${p.x} ${p.y}`).join(' ') + ` L ${w-pad} ${h-pad} Z`;
   const title = vals.join(', ');
 
-  // build circles for each point to allow interaction
-  const circles = pointsArr.map((p, idx) => `<circle data-idx="${idx}" data-value="${p.v}" data-round="${p.round}" cx="${p.x}" cy="${p.y}" r="3" fill="#1f6feb" opacity="0.95"></circle>`).join('');
-  const labels = pointsArr.map((p, idx) => `<text class="sparkline-point-label" x="${p.x}" y="${p.y - 8}" text-anchor="middle">${p.v}</text>`).join('');
+  const circles = pointsArr.map((p, idx) => `<circle data-idx="${idx}" data-value="${p.v}" data-round="${p.round}" cx="${p.x}" cy="${p.y}" r="4" fill="#1f6feb" opacity="0.95"></circle>`).join('');
+  const labels = pointsArr.map((p, idx) => `<text class="sparkline-point-label" x="${p.x}" y="${p.y - 10}" text-anchor="middle" font-size="11">${p.v}</text>`).join('');
 
   const svg = `<svg class="user-sparkline" viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Punkteentwicklung: ${title}">
     <path d="${areaPath}" fill="rgba(31,111,235,0.08)" stroke="none" />
@@ -37,11 +36,9 @@ function buildPointsSparkline(punkteHistorie) {
   return svg;
 }
 
-// attach interactions (tooltip, hover) to the sparkline inside container
 function attachSparklineInteractions(container) {
   const svg = container.querySelector('.user-sparkline');
   if (!svg) return;
-  const wrapper = container.closest('.user-info-card') || document;
   let tooltip = container.querySelector('.user-sparkline-tooltip');
   if (!tooltip) {
     tooltip = document.createElement('div');
@@ -56,31 +53,20 @@ function attachSparklineInteractions(container) {
       const r = c.getAttribute('data-round');
       tooltip.textContent = `Runde ${r}: ${v}`;
       tooltip.style.display = 'block';
-      c.setAttribute('r', 5);
+      c.setAttribute('r', 6);
     });
     c.addEventListener('mousemove', (ev) => {
       const rect = container.querySelector('.user-sparkline-container').getBoundingClientRect();
       const x = ev.clientX - rect.left;
       const y = ev.clientY - rect.top;
       tooltip.style.left = x + 'px';
-      tooltip.style.top = (y - 10) + 'px';
+      tooltip.style.top = (y - 30) + 'px';
     });
     c.addEventListener('mouseleave', (ev) => {
       tooltip.style.display = 'none';
-      c.setAttribute('r', 3);
+      c.setAttribute('r', 4);
     });
   });
-
-  // mobile toggle
-  const wrapperNode = container.closest('.user-sparkline-wrapper');
-  if (wrapperNode) {
-    const toggle = wrapperNode.querySelector('.sparkline-toggle');
-    if (toggle) {
-      toggle.addEventListener('click', () => {
-        wrapperNode.classList.toggle('expanded');
-      });
-    }
-  }
 }
 
 function avatarGradient(seed) {
@@ -128,54 +114,59 @@ function renderUserInfo(userId) {
 
   const spark = buildPointsSparkline(entry.punkteHistorie);
   const avatarStyle = avatarGradient(u.id || u.loginName || name);
+  
+  const isMobile = window.innerWidth <= 700;
 
   container.innerHTML = `
-    <div class="user-info-avatar" style="${avatarStyle}">${escapeHtml(initials)}</div>
-    <div class="user-info-main">
-      <div class="user-info-left">
-        <div class="user-info-name">${escapeHtml(name)}</div>
-        ${ login ? `<div class="user-info-login">@${escapeHtml(login)}</div>` : '' }
-        <div class="user-badges">
-          <div class="user-badge">Rang: ${escapeHtml(rank)}</div>
-          <div class="user-badge">Taktik: ${escapeHtml(tactic)}</div>
+    <div class="user-info-card">
+      <div class="user-info-avatar" style="${avatarStyle}">${escapeHtml(initials)}</div>
+      <div class="user-info-main">
+        <div class="user-info-left">
+          ${isMobile ? `<span class="user-info-initials-mobile">${escapeHtml(initials)} </span>` : ''}
+          <div class="user-info-name">${escapeHtml(name)}</div>
+          ${ login ? `<div class="user-info-login">@${escapeHtml(login)}</div>` : '' }
+          <div class="user-badges">
+            <div class="user-badge">Rang: ${escapeHtml(rank)}</div>
+            <div class="user-badge">Taktik: ${escapeHtml(tactic)}</div>
+          </div>
         </div>
-      </div>
 
-      <div class="user-stats-group">
-        <div class="user-stats-inner">
-          <div class="user-stats-col">
-            <div class="user-info-section-label">Leistung</div>
-            <div class="user-stats-row">
-              <div style="min-width:160px">
-                <div class="user-info-label">Punkte (letzte)</div>
-                <div class="user-stats-big">${escapeHtml(punkte)} ${lastPoints && lastPoints !== '—' ? `(<span class="user-info-value">${escapeHtml(lastPoints)}</span>)` : ''}</div>
+        <div class="user-stats-group">
+          <div class="user-stats-inner">
+            <div class="user-stats-col">
+              <div class="user-info-section-label">Finanzen</div>
+              <div class="user-stats-row">
+                <div>
+                  <div class="user-info-label">Guthaben</div>
+                  <div class="user-info-value">${formatCurrencyEUR(guthaben)}</div>
+                </div>
+                <div>
+                  <div class="user-info-label">Teamwert</div>
+                  <div class="user-info-value">${formatCurrencyEUR(teamValue)}</div>
+                </div>
+              </div>
+            </div>
+            <div class="section-separator" aria-hidden="true"></div>
+            <div class="user-stats-col">
+              <div class="user-info-section-label">Leistung</div>
+              <div class="user-stats-row">
+                <div>
+                  <div class="user-info-label">Punkte (letzte)</div>
+                  <div class="user-stats-big">${escapeHtml(punkte)} ${lastPoints && lastPoints !== '—' ? `(<span class="user-info-value">${escapeHtml(lastPoints)}</span>)` : ''}</div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="section-separator" aria-hidden="true"></div>
-          <div class="user-stats-col">
-            <div class="user-info-section-label">Finanzen</div>
-            <div class="user-stats-row">
-              <div>
-                <div class="user-info-label">Guthaben</div>
-                <div class="user-info-value">${formatCurrencyEUR(guthaben)}</div>
-              </div>
-              <div>
-                <div class="user-info-label">Teamwert</div>
-                <div class="user-info-value">${formatCurrencyEUR(teamValue)}</div>
-              </div>
-            </div>
-          </div>
+          
+          ${!isMobile ? `<div class="user-sparkline-section">
+            <div class="user-info-section-label">Punkte Verlauf</div>
+            <div class="user-sparkline-container">${spark}<div class="user-sparkline-tooltip"></div></div>
+          </div>` : ''}
         </div>
-      </div>
-
-      <div class="user-sparkline-wrapper">
-        <button class="sparkline-toggle">Punkte Verlauf ▾</button>
-        <div class="user-sparkline-container">${spark}<div class="user-sparkline-tooltip"></div></div>
       </div>
     </div>
   `;
   container.style.display = '';
-  // attach interactive behaviour for sparkline (tooltip, toggle)
+
   try { attachSparklineInteractions(container); } catch (e) { console.warn('sparkline attach error', e); }
 }
