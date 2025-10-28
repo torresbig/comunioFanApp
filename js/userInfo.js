@@ -1,4 +1,5 @@
 // Helpers and renderer for the user info card
+
 function formatCurrencyEUR(value) {
   if (value === null || value === undefined || isNaN(Number(value))) return '—';
   return '€' + Number(value).toLocaleString('de-DE');
@@ -6,29 +7,29 @@ function formatCurrencyEUR(value) {
 
 function buildPointsSparkline(punkteHistorie) {
   if (!punkteHistorie || typeof punkteHistorie !== 'object') return '';
-  const keys = Object.keys(punkteHistorie).sort((a,b)=> Number(a)-Number(b));
-  const vals = keys.map(k=> Number(punkteHistorie[k]) || 0);
+  const keys = Object.keys(punkteHistorie).sort((a, b) => Number(a) - Number(b));
+  const vals = keys.map(k => Number(punkteHistorie[k]) || 0);
   if (vals.length === 0) return '';
-  const w = 280, h = 60, pad = 8;
+  const w = 240, h = 50, pad = 12;
   const min = Math.min(...vals);
   const max = Math.max(...vals);
   const range = Math.max(1, max - min);
-  const step = (w - pad*2) / Math.max(1, vals.length - 1);
-  const pointsArr = vals.map((v,i)=> {
+  const step = (w - pad * 2) / Math.max(1, vals.length - 1);
+  const pointsArr = vals.map((v, i) => {
     const x = Math.round(pad + i * step);
-    const y = Math.round(pad + (1 - (v - min) / range) * (h - pad*2));
-    return {x,y,v,round: keys[i]};
+    const y = Math.round(pad + (1 - (v - min) / range) * (h - pad * 2));
+    return { x, y, v, round: keys[i] };
   });
-  const points = pointsArr.map(p=> `${p.x},${p.y}`).join(' ');
-  const areaPath = `M ${pad} ${h-pad} ` + pointsArr.map(p=> `L ${p.x} ${p.y}`).join(' ') + ` L ${w-pad} ${h-pad} Z`;
+  const points = pointsArr.map(p => `${p.x},${p.y}`).join(' ');
+  const areaPath = `M ${pad} ${h-pad} ` + pointsArr.map(p => `L ${p.x} ${p.y}`).join(' ') + ` L ${w-pad} ${h-pad} Z`;
   const title = vals.join(', ');
 
-  const circles = pointsArr.map((p, idx) => `<circle data-idx="${idx}" data-value="${p.v}" data-round="${p.round}" cx="${p.x}" cy="${p.y}" r="4" fill="#1f6feb" opacity="0.95"></circle>`).join('');
-  const labels = pointsArr.map((p, idx) => `<text class="sparkline-point-label" x="${p.x}" y="${p.y - 10}" text-anchor="middle" font-size="11">${p.v}</text>`).join('');
+  const circles = pointsArr.map((p, idx) => `<circle data-idx="${idx}" data-value="${p.v}" data-round="${p.round}" cx="${p.x}" cy="${p.y}" r="2.5" fill="#1f6feb" opacity="0.95"></circle>`).join('');
+  const labels = pointsArr.map((p, idx) => `<text class="sparkline-point-label" x="${p.x}" y="${p.y - 6}" text-anchor="middle">${p.v}</text>`).join('');
 
   const svg = `<svg class="user-sparkline" viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Punkteentwicklung: ${title}">
     <path d="${areaPath}" fill="rgba(31,111,235,0.08)" stroke="none" />
-    <polyline points="${points}" fill="none" stroke="#1f6feb" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+    <polyline points="${points}" fill="none" stroke="#1f6feb" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
     ${circles}
     ${labels}
     <title>Punkteentwicklung: ${title}</title>
@@ -53,7 +54,7 @@ function attachSparklineInteractions(container) {
       const r = c.getAttribute('data-round');
       tooltip.textContent = `Runde ${r}: ${v}`;
       tooltip.style.display = 'block';
-      c.setAttribute('r', 6);
+      c.setAttribute('r', 4);
     });
     c.addEventListener('mousemove', (ev) => {
       const rect = container.querySelector('.user-sparkline-container').getBoundingClientRect();
@@ -64,16 +65,16 @@ function attachSparklineInteractions(container) {
     });
     c.addEventListener('mouseleave', (ev) => {
       tooltip.style.display = 'none';
-      c.setAttribute('r', 4);
+      c.setAttribute('r', 2.5);
     });
   });
 }
 
 function avatarGradient(seed) {
-  const palette = ['#1f6feb','#7cc3ff','#ff7a7a','#ffb86b','#a78bfa','#34d399','#f97316','#06b6d4'];
+  const palette = ['#1f6feb', '#7cc3ff', '#ff7a7a', '#ffb86b', '#a78bfa', '#34d399', '#f97316', '#06b6d4'];
   const s = String(seed || 'x');
   let h = 0;
-  for (let i=0;i<s.length;i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
   const c1 = palette[h % palette.length];
   const c2 = palette[(h + 3) % palette.length];
   return `background: linear-gradient(135deg, ${c1}, ${c2});`;
@@ -81,7 +82,7 @@ function avatarGradient(seed) {
 
 function escapeHtml(str) {
   if (str === null || str === undefined) return '';
-  return String(str).replace(/[&<>\"'`]/g, function (s) {
+  return String(str).replace(/[&<>"'`]/g, function (s) {
     return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;', '`': '&#96;' })[s];
   });
 }
@@ -119,9 +120,9 @@ function renderUserInfo(userId) {
 
   container.innerHTML = `
     <div class="user-info-card">
-      <div class="user-info-avatar" style="${avatarStyle}">${escapeHtml(initials)}</div>
-      <div class="user-info-main">
-        <div class="user-info-left">
+      <div class="user-info-header">
+        <div class="user-info-avatar" style="${avatarStyle}">${escapeHtml(initials)}</div>
+        <div class="user-info-identity">
           ${isMobile ? `<span class="user-info-initials-mobile">${escapeHtml(initials)} </span>` : ''}
           <div class="user-info-name">${escapeHtml(name)}</div>
           ${ login ? `<div class="user-info-login">@${escapeHtml(login)}</div>` : '' }
@@ -130,39 +131,43 @@ function renderUserInfo(userId) {
             <div class="user-badge">Taktik: ${escapeHtml(tactic)}</div>
           </div>
         </div>
+      </div>
 
-        <div class="user-stats-group">
-          <div class="user-stats-inner">
-            <div class="user-stats-col">
-              <div class="user-info-section-label">Finanzen</div>
-              <div class="user-stats-row">
-                <div>
-                  <div class="user-info-label">Guthaben</div>
-                  <div class="user-info-value">${formatCurrencyEUR(guthaben)}</div>
-                </div>
-                <div>
-                  <div class="user-info-label">Teamwert</div>
-                  <div class="user-info-value">${formatCurrencyEUR(teamValue)}</div>
-                </div>
+      <div class="user-stats-group">
+        <div class="user-stats-inner">
+          <div class="user-stats-col">
+            <div class="user-info-section-label">Finanzen</div>
+            <div class="user-stats-row">
+              <div>
+                <div class="user-info-label">Guthaben</div>
+                <div class="user-info-value">${formatCurrencyEUR(guthaben)}</div>
               </div>
-            </div>
-            <div class="section-separator" aria-hidden="true"></div>
-            <div class="user-stats-col">
-              <div class="user-info-section-label">Leistung</div>
-              <div class="user-stats-row">
-                <div>
-                  <div class="user-info-label">Punkte (letzte)</div>
-                  <div class="user-stats-big">${escapeHtml(punkte)} ${lastPoints && lastPoints !== '—' ? `(<span class="user-info-value">${escapeHtml(lastPoints)}</span>)` : ''}</div>
-                </div>
+              <div>
+                <div class="user-info-label">Teamwert</div>
+                <div class="user-info-value">${formatCurrencyEUR(teamValue)}</div>
               </div>
             </div>
           </div>
-          
-          ${!isMobile ? `<div class="user-sparkline-section">
-            <div class="user-info-section-label">Punkte Verlauf</div>
-            <div class="user-sparkline-container">${spark}<div class="user-sparkline-tooltip"></div></div>
-          </div>` : ''}
+          <div class="section-separator" aria-hidden="true"></div>
+          <div class="user-stats-col">
+            <div class="user-info-section-label">Punkte</div>
+            <div class="user-stats-points">
+              <div class="points-item">
+                <div class="user-info-label">Punkte</div>
+                <div class="user-stats-big">${escapeHtml(punkte)}</div>
+              </div>
+              <div class="points-item">
+                <div class="user-info-label">Letzte Punkte</div>
+                <div class="user-stats-big">${escapeHtml(lastPoints)}</div>
+              </div>
+            </div>
+          </div>
         </div>
+        
+        ${!isMobile ? `<div class="user-sparkline-section">
+          <div class="user-info-section-label">Punkte Verlauf</div>
+          <div class="user-sparkline-container">${spark}<div class="user-sparkline-tooltip"></div></div>
+        </div>` : ''}
       </div>
     </div>
   `;
