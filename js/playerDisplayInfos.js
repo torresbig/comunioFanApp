@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
         addDebug('Lade Spielerdatenbank...', 'info');
-        const resp = await fetch(DATA_URLS.players );
+        const resp = await fetch(DATA_URLS.players);
         const allPlayersResponse = await resp.json();
 
         // Array aus playerDB extrahieren oder leeres Array, falls playerDB fehlt
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             logoImg.src = logoUrl;
             logoImg.alt = `Logo ${clubId}`;
             logoImg.onerror = () => {
-                logoImg.src =  DATA_URLS.logos + unbestimmt.png;
+                logoImg.src = DATA_URLS.logos + unbestimmt.png;
             };
             clubLogoEl.appendChild(logoImg);
         } else {
@@ -156,11 +156,21 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const statusData = player.data?.status || {};
         const statusIndicator = document.getElementById('statusIndicator');
+        const statusInfoRow = document.querySelector('.info-row:has(#detailStatusInfo)');
         let statusTooltip = "";
+
         if (statusIndicator) {
             statusIndicator.textContent = getStatusIndicator(statusData.status);
             statusTooltip = `${getStatusDisplayName(statusData.status)}${statusData.grund ? ' - ' + statusData.grund : ''}${statusData.seit ? ' seit ' + statusData.seit : ''}`;
             statusIndicator.title = statusTooltip;
+
+            // Zeige/Verstecke die Status-Info Zeile
+            if (statusInfoRow) {
+                statusInfoRow.style.display = statusData.status === 'AKTIV' ? 'none' : '';
+                if (statusData.status !== 'AKTIV') {
+                    document.getElementById('detailStatusInfo').textContent = statusTooltip;
+                }
+            }
         } else {
             addDebug('Element fehlt: statusIndicator', 'error');
         }
@@ -185,7 +195,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         safeSet('realmarketValue', 'textContent', formatCurrencyFull(player.data?.realWert || 0));
         safeSet('pointsWithLastYear', 'textContent', player.data?.punkte + " (" + (player.data?.lastSeasonPoints || 0) + ")" || '-');
         safeSet('owner', 'textContent', globalOwnersMap.get(player.id) || 'Computer');
-        safeSet('11desTages', 'textContent', (player.data?.elfDesSpieltages || 0) + " x" );
+        safeSet('11desTages', 'textContent', (player.data?.elfDesSpieltages || 0) + " x");
 
 
         // für den Besitzer oben im Header
@@ -193,7 +203,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
         safeSet('detailStatus', 'textContent', getStatusDisplayName(statusData.status));
-         safeSet('detailStatusInfo', 'textContent', getStatusDisplayName(statusTooltip));
+        if (statusData.status === 'AKTIV' || statusData.status === "aktiv") {
+            statusTooltip = 'Aktiv';
+        } else {
+            if (statusData.grund !== undefined && statusData.grund !== '') {
+                statusTooltip += ' - ' + statusData.grund;
+            }
+
+        }
+        safeSet('detailStatusInfo', 'textContent', statusTooltip);
         const stats = player.data?.stats || {};
         safeSet('gamesPlayed', 'textContent', stats.playedGames || '-');
         safeSet('goals', 'textContent', stats.totalGoals || '-');
