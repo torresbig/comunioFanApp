@@ -1,17 +1,20 @@
 /* User info card styling */
 .user-info-card {
-  display: flex;
-  gap: 16px;
-  align-items: center;
   background: linear-gradient(180deg,#ffffff, #f7f9fb);
   border: 1px solid #e1e6ea;
   padding: 14px 16px;
   border-radius: 10px;
   margin: 10px 0 18px 0;
   box-shadow: 0 1px 2px rgba(16,24,40,0.04);
-  flex-wrap: wrap;
 }
-/* Avatar Kreis */
+
+.user-info-header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
 .user-info-avatar {
   width: 64px;
   height: 64px;
@@ -22,59 +25,227 @@
   justify-content: center;
   font-weight: 700;
   font-size: 20px;
-  flex: 0 0 64px;
+  flex-shrink: 0;
   box-shadow: 0 2px 6px rgba(31,99,235,0.12);
 }
-/* Name + @login */
-.user-info-main {
+
+.user-info-identity {
+  flex: 1;
+  min-width: 0;
+}
+
+.user-info-initials-mobile {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #1f6feb;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.user-info-name {
+  font-weight: 800;
+  font-size: 1.04rem;
+  margin-bottom: 4px;
+  display: inline;
+  color: #111827;
+}
+
+.user-info-login { 
+  color: #6b7280; 
+  font-size: 0.82rem; 
+  margin-bottom: 6px;
+  display: block;
+}
+
+.user-badges { 
+  display: flex; 
+  gap: 8px; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  margin-top: 6px;
+}
+
+.user-badge { 
+  background: #eef2ff; 
+  color: #3730a3; 
+  padding: 6px 10px; 
+  border-radius: 999px; 
+  font-size: 0.82rem; 
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.user-info-section-label { 
+  font-size: 0.85rem; 
+  color: #374151; 
+  font-weight: 700; 
+  margin-bottom: 8px; 
+}
+
+.user-stats-group { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 12px; 
+}
+
+.user-stats-inner { 
+  display: flex; 
+  gap: 16px; 
+  align-items: flex-start; 
+}
+
+.user-stats-col { 
+  flex: 1;
+  min-width: 140px;
+}
+
+.user-stats-row { 
+  display: flex; 
+  gap: 16px; 
+  align-items: flex-start; 
+}
+
+.user-stats-points {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   align-items: flex-start;
-  flex: 1 1 auto;
-  min-width: 260px;
+  flex-wrap: nowrap;
 }
-.user-info-left {
-  min-width: 220px;
+
+.points-item {
+  flex: 0 1 auto;
+  min-width: 0;
 }
-/* Initialen und Name: */
-.user-info-initials { font-weight: 800; font-size: 1.2em; color: #374151; margin-right: 8px; }
-.user-info-name { font-weight: 800; font-size: 1.04rem; margin-bottom: 6px;}
-.user-info-login { color: #6b7280; font-size:0.82rem; margin-bottom:6px }
-.user-badges { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-top:6px }
-.user-badge { background:#eef2ff; color:#3730a3; padding:6px 10px; border-radius:999px; font-size:0.82rem; font-weight:700 }
-.user-info-section-label { font-size:0.85rem; color:#374151; font-weight:700; margin-bottom:6px; }
 
-.user-stats-group { display:flex; flex-direction:column; gap:6px; }
-.user-stats-row { display:flex; gap:16px; align-items:center; }
-.user-stats-big { font-weight:800; font-size:1.1rem;}
+.user-stats-big { 
+  font-weight: 800; 
+  font-size: 1.2rem;
+  color: #111827;
+}
 
-.user-stats-inner { display:flex; gap:12px; align-items:flex-start; }
-.user-stats-col { flex:1 }
-.section-separator { width:1px; background:#e6eefc; margin:6px 12px; border-radius:1px }
+.user-info-label { 
+  font-size: 0.75rem; 
+  color: #6b7280; 
+  margin-bottom: 4px; 
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
 
-.user-sparkline { width: 260px; height: 80px; display:block; }
-.user-sparkline-caption { font-size:0.82rem; color:#6b7280; margin-bottom:6px; }
+.user-info-value { 
+  font-weight: 600; 
+  font-size: 0.95rem; 
+  color: #374151; 
+}
 
-@media (max-width:700px) {
+.section-separator { 
+  width: 1px; 
+  background: #e6eefc; 
+  align-self: stretch;
+  border-radius: 1px;
+}
+
+/* Sparkline Section - volle Breite unter den Stats */
+.user-sparkline-section {
+  width: 100%;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e6eefc;
+}
+
+.user-sparkline-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  padding: 8px;
+  background: #f9fafb;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  overflow: visible;
+}
+
+.user-sparkline {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.sparkline-point-label {
+  fill: #374151;
+  font-size: 9px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.user-sparkline-tooltip {
+  position: absolute;
+  background: rgba(0,0,0,0.85);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  pointer-events: none;
+  display: none;
+  white-space: nowrap;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Mobile Anpassungen */
+@media (max-width: 700px) {
   .user-info-card {
-    padding:12px;
-    flex-direction:column;
-    align-items:stretch;
+    padding: 12px;
   }
-  .user-info-avatar { width:56px; height:56px; font-size:18px; margin:0 auto 8px auto; }
-  .user-info-main { flex-direction:row; gap:12px; align-items:flex-start; }
-  .user-info-left { flex:1 1 auto }
-  /* Initialen bzw. Struktur für Handy */
-  .user-info-initials, .user-info-name, .user-info-login {
-    display: inline-block;
-    vertical-align: middle;
+  
+  .user-info-header {
+    margin-bottom: 12px;
   }
-  /* Graph und Verlauf auf Handy ausblenden */
-  .user-sparkline-wrapper,
-  .user-sparkline-container,
-  .user-sparkline-caption {
+  
+  .user-info-avatar {
+    width: 56px;
+    height: 56px;
+    font-size: 18px;
+  }
+  
+  .user-stats-inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .section-separator {
+    display: none;
+  }
+  
+  .user-stats-col {
+    width: 100%;
+  }
+  
+  .user-stats-row {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .user-stats-points {
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
+  
+  .points-item {
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+  
+  /* Graph auf Mobile ausblenden */
+  .user-sparkline-section {
     display: none !important;
   }
-  .user-stats-inner { flex-direction:column; }
-  .section-separator { width:100%; height:1px; background:#f1f5f9; margin:8px 0 }
+  
+  .user-info-value,
+  .user-stats-big {
+    font-size: 0.9rem;
+  }
 }
