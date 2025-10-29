@@ -290,6 +290,7 @@ body {
     font-size: 11px !important;
     min-width: 360px;           /* minimale Breite, kann angepasst werden */
     width: 100%;
+    padding: 0px !important;
     table-layout: auto !important;
   }
 
