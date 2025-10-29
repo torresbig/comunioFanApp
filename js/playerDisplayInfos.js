@@ -40,6 +40,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadOwnersData();
     initTabs();
 
+
+ // URL-Parameter für withMenue parsen und verarbeiten (funktioniert auch wenn keine params vorhanden sind)
+        const params = getUrlParams();
+        processUrlParams(params);
+
+
     const url = window.location.href;
     addDebug(`Aktuelle URL: ${url}`, 'info');
 

@@ -28,6 +28,14 @@ function initTabs() {
     addDebug('Tabs initialisiert', 'success');
 }
 
+  function getPlayerUrlWithParams(playerId) {
+       let playerUrl = getPlayerUrl(playerId);
+        if (urlParams.withMenue === false) {
+          playerUrl += '&withMenue=false';
+        }
+        return playerUrl;
+    }
+
 function displayRivals(player, allPlayers) {
     addDebug('Erstelle Rivalen-Tabelle', 'info');
     const container = document.getElementById('rivalsList');
@@ -69,7 +77,7 @@ function displayRivals(player, allPlayers) {
             const statusData = rival.data.status || {};
             const statusTooltip = `${getStatusDisplayName(statusData.status)}${statusData.grund ? ' - ' + statusData.grund : ''}${statusData.seit ? ' seit ' + statusData.seit : ''}`;
             const ownerName = globalOwnersMap.get(rival.id) || "Computer";
-            const playerUrl = getPlayerUrl(rival.id);
+            const playerUrl = getPlayerUrlWithParams(rival.id);
             const rankingObj = getLigainsiderRankingObj(rival);
             const ligRank = (rankingObj && rankingObj.rang !== undefined && rankingObj.rang !== null && rankingObj.rang !== 0 && rankingObj.rang !== '') ? rankingObj.rang : '-';
             const status = statusData.status || 'unbekannt';
