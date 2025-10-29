@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/buttonBack.css">
   <link rel="stylesheet" href="css/userInfo.css">
 </head>
+
 <body>
   <!-- Floating Debug Button and Panel -->
   <button id="floatingDebugBtn" title="Debug"><span style="pointer-events:none;">🐞</span></button>
@@ -36,7 +37,8 @@
       <a href="#" class="menu-item" id="linkNews">📰 News</a>
       <a href="#" class="menu-item" id="linkTransfermarktComunio">📑 Transfermarkt-Liste</a>
       <a href="#" class="menu-item" id="linkTransferuebersicht">🔄 Transferübersicht</a>
-      <a href="https://www.instagram.com/comuniofanapp/." class="menu-item" target="_blank">📸 Instagram: ComunioFanApp</a>
+      <a href="https://www.instagram.com/comuniofanapp/." class="menu-item" target="_blank">📸 Instagram:
+        ComunioFanApp</a>
       <div class="menu-item menu-tarn" id="menuTarnItem" style="font-size:0.95em; color:#888; cursor:pointer;">
         erstellt von comunioFanApp</div>
     </div>
@@ -165,6 +167,7 @@
       };
     }
 
+
     // Findet User anhand Vor- oder Nachname (case-insensitive)
     function findUserByName(users, username) {
       if (!username) return null;
@@ -217,7 +220,7 @@
         try {
           import('./js/smokeTest.js').then(m => {
             if (m && typeof m.runSmokeTest === 'function') {
-              m.runSmokeTest({newsData, playersData, usersData, p2uData});
+              m.runSmokeTest({ newsData, playersData, usersData, p2uData });
             }
           }).catch(err => addDebug && addDebug('SmokeTest import error: ' + err.message));
         } catch (err) {
@@ -329,23 +332,31 @@
       }
     });
 
+    function getPlayerUrlWithParams(playerId) {
+       let playerUrl = getPlayerUrl(playerId);
+        if (urlParams.withMenue === false) {
+          playerUrl += '&withMenue=false';
+        }
+        return playerUrl;
+    }
 
+   
 
     // Spieler für ausgewählten User laden und Tabelle rendern
     function loadPlayersForUser(userId) {
       addDebug("=== loadPlayersForUser START ===");
-        // Render user info card for selected user (if available)
-        try { renderUserInfo(userId); } catch (err) { addDebug && addDebug('renderUserInfo error: ' + err.message); }
+      // Render user info card for selected user (if available)
+      try { renderUserInfo(userId); } catch (err) { addDebug && addDebug('renderUserInfo error: ' + err.message); }
       const map = Object.assign({}, ...p2uData);
       let list = (playersData.playerDB || []).filter(p => map[p.id] == userId);
-      
+
       addDebug(`Found ${list.length} players for user ${userId}`);
-      
+
       // Debug positions before sorting
       list.forEach(p => {
         addDebug(`Player ${p.name}: Position = ${p.data?.position}`);
       });
-      
+
       // Hilfsfunktion für Positionssortierung
       const getPositionSortValue = (position) => {
         const positionOrder = {
@@ -361,20 +372,20 @@
         }
         return value;
       };
-      
+
       // Liste nach Position sortieren
       const sortedList = [...list].sort((a, b) => {
         const posA = getPositionSortValue(a.data?.position || '');
         const posB = getPositionSortValue(b.data?.position || '');
-        
+
         if (posA !== posB) {
           return posA - posB;
         }
-        
+
         // Bei gleicher Position nach Name sortieren
         return a.name.localeCompare(b.name, 'de', { sensitivity: 'base' });
       });
-      
+
       // Debug positions after sorting
       addDebug("=== Sorted Players ===");
       sortedList.forEach(p => {
@@ -391,7 +402,7 @@
         }
       }, 100);
       clearDetails();
-      
+
       renderTransfers(userId);
       addDebug("=== loadPlayersForUser END ===");
     }
@@ -428,11 +439,13 @@
           fillPlayerDetails(player);
         });
 
+        
+
         const clubId = player.data?.verein || "0";
         const clubName = clubsMap.get(clubId) || 'UNBEKANNT';
         const logoFile = getLogoFileName(clubId);
         const logoHtml = `<img src="logos/${logoFile}" class="club-logo" alt="${clubName}" title="${clubName}">`;
-        const playerNameHtml = `<a href="${getPlayerUrl(player.id)}" title="${player.name} (ID: ${player.id})" target="_self">${player.name}</a>`;
+        const playerNameHtml = `<a href="${getPlayerUrlWithParams(player.id)}" title="${player.name} (ID: ${player.id})" target="_self">${player.name}</a>`;
 
         // Position mit Sortier-Index
         const positionOrder = {
@@ -487,105 +500,105 @@
     // Transfers anzeigen (mit Filtern für Käufe/Verkäufe)
     function renderTransfers(userId) {
       addDebug("=== renderTransfers START ===");
-      
+
       const entries = [];
       try {
-          newsData.forEach(day => {
-              day.news.forEach(item => {
-                  if (item.art === 'TRANSFER') {
-                      const t = JSON.parse(item.text);
-                      const isMyPurchase = t.buyerId && t.buyerId == userId;
-                      const isMySale = t.sellerId && t.sellerId == userId;
+        newsData.forEach(day => {
+          day.news.forEach(item => {
+            if (item.art === 'TRANSFER') {
+              const t = JSON.parse(item.text);
+              const isMyPurchase = t.buyerId && t.buyerId == userId;
+              const isMySale = t.sellerId && t.sellerId == userId;
 
-                      if (isMyPurchase || isMySale) {
-                          const playerObj = playersData.playerDB.find(p => p.id === item.playerId);
-                          addDebug(`Transfer found: ${playerObj?.name || t.playerName || 'Unknown'} (ID: ${item.playerId})`);
-                          entries.push({
-                              playerId: item.playerId,
-                              playerName: playerObj?.name || t.playerName,
-                              date: day.date,
-                              type: isMyPurchase ? "Einkauf" : "Verkauf",
-                              price: t.price,
-                              partner: isMyPurchase ? t.seller : t.buyer
-                          });
-                      }
-                  }
-              });
+              if (isMyPurchase || isMySale) {
+                const playerObj = playersData.playerDB.find(p => p.id === item.playerId);
+                addDebug(`Transfer found: ${playerObj?.name || t.playerName || 'Unknown'} (ID: ${item.playerId})`);
+                entries.push({
+                  playerId: item.playerId,
+                  playerName: playerObj?.name || t.playerName,
+                  date: day.date,
+                  type: isMyPurchase ? "Einkauf" : "Verkauf",
+                  price: t.price,
+                  partner: isMyPurchase ? t.seller : t.buyer
+                });
+              }
+            }
           });
+        });
 
-          addDebug(`Found ${entries.length} transfers`);
-          
-          fillTransferTable("#transferTableAll tbody", entries);
-          fillTransferTable("#transferTableBuy tbody", entries.filter(e => e.type === "Einkauf"));
-          fillTransferTable("#transferTableSell tbody", entries.filter(e => e.type === "Verkauf"));
+        addDebug(`Found ${entries.length} transfers`);
 
-          // Initial nach Datum (neueste zuerst) sortieren
-          document.querySelectorAll('.rivals-table').forEach(table => {
-              sortTable(table, 0); // Erste Spalte (Datum)
-              sortTable(table, 0); // Zweimal für absteigende Sortierung
-          });
+        fillTransferTable("#transferTableAll tbody", entries);
+        fillTransferTable("#transferTableBuy tbody", entries.filter(e => e.type === "Einkauf"));
+        fillTransferTable("#transferTableSell tbody", entries.filter(e => e.type === "Verkauf"));
+
+        // Initial nach Datum (neueste zuerst) sortieren
+        document.querySelectorAll('.rivals-table').forEach(table => {
+          sortTable(table, 0); // Erste Spalte (Datum)
+          sortTable(table, 0); // Zweimal für absteigende Sortierung
+        });
 
       } catch (error) {
-          addDebug("ERROR in renderTransfers: " + error.message);
-          console.error(error);
+        addDebug("ERROR in renderTransfers: " + error.message);
+        console.error(error);
       }
-      
+
       addDebug("=== renderTransfers END ===");
     }
 
     // Hilfsfunktion zum Füllen der Transfers-Tabellen
     function fillTransferTable(selector, list) {
-        console.group('fillTransferTable');
-        addDebug(`Processing ${selector} with ${list.length} entries`);
+      console.group('fillTransferTable');
+      addDebug(`Processing ${selector} with ${list.length} entries`);
 
-        try {
-            const tbody = document.querySelector(selector);
-            if (!tbody) {
-                throw new Error(`Table body not found: ${selector}`);
-            }
+      try {
+        const tbody = document.querySelector(selector);
+        if (!tbody) {
+          throw new Error(`Table body not found: ${selector}`);
+        }
 
-            tbody.innerHTML = "";
-            
-            list.forEach((e, index) => {
-                const tr = document.createElement('tr');
-                
-                // Try to find player in database
-                const player = e.playerId ? playersData.playerDB.find(p => p.id === e.playerId) : null;
-                const displayName = player?.name || e.playerName || 'Unbekannt';
-                
-                // Create cell content
-                const playerCell = player ? 
-                    `<a href="${getPlayerUrl(e.playerId)}" target="_self">${displayName}</a>` : 
-                    displayName;
+        tbody.innerHTML = "";
 
-                // Build row content
-                if (selector.includes("All")) {
-                    tr.innerHTML = `
+        list.forEach((e, index) => {
+          const tr = document.createElement('tr');
+
+          // Try to find player in database
+          const player = e.playerId ? playersData.playerDB.find(p => p.id === e.playerId) : null;
+          const displayName = player?.name || e.playerName || 'Unbekannt';
+
+          // Create cell content
+          const playerCell = player ?
+            `<a href="${getPlayerUrlWithParams(e.playerId)}" target="_self">${displayName}</a>` :
+            displayName;
+
+          // Build row content
+          if (selector.includes("All")) {
+            tr.innerHTML = `
                         <td data-sort="${formatDateForSort(e.date)}">${e.date}</td>
                         <td>${playerCell}</td>
                         <td data-sort="${e.type}">${e.type}</td>
                         <td data-sort="${e.price}">€${e.price.toLocaleString('de-DE')}</td>
                         <td data-sort="${e.partner?.toLowerCase() || ''}">${e.partner}</td>
                     `;
-                } else {
-                    tr.innerHTML = `
+          } else {
+            tr.innerHTML = `
                         <td data-sort="${formatDateForSort(e.date)}">${e.date}</td>
                         <td>${playerCell}</td>
                         <td data-sort="${e.price}">€${e.price.toLocaleString('de-DE')}</td>
                         <td data-sort="${e.partner?.toLowerCase() || ''}">${e.partner}</td>
                     `;
-                }
-                tbody.appendChild(tr);
-            });
-            
-            addDebug(`Successfully filled table ${selector}`);
+          }
+          tbody.appendChild(tr);
+        });
 
-        } catch (error) {
-            addDebug(`Error in fillTransferTable: ${error.message}`);
-            console.error(error);
-        }
-        
-        console.groupEnd();
+        addDebug(`Successfully filled table ${selector}`);
+
+      } catch (error) {
+        addDebug(`Error in fillTransferTable: ${error.message}`);
+        console.error(error);
+      }
+
+      console.groupEnd();
     }
 
     // User info helpers moved to js/userInfo.js
@@ -595,61 +608,61 @@
 
     // Nach Laden der Seite starten
     document.addEventListener('DOMContentLoaded', () => {
-    loadData();
-    initTabs();
-    
-    // Spaltensortierung hinzufügen
-    const tables = document.querySelectorAll('.rivals-table');
-    tables.forEach(table => {
+      loadData();
+      initTabs();
+
+      // Spaltensortierung hinzufügen
+      const tables = document.querySelectorAll('.rivals-table');
+      tables.forEach(table => {
         const headers = table.querySelectorAll('th');
         headers.forEach((header, index) => {
-            header.addEventListener('click', () => {
-                sortTable(table, index);
-            });
-            header.style.cursor = 'pointer';
+          header.addEventListener('click', () => {
+            sortTable(table, index);
+          });
+          header.style.cursor = 'pointer';
         });
+      });
     });
-});
 
-// Hilfsfunktion zum Formatieren des Datums für die Sortierung (z.B. "30.09.2025" -> "20250930")
-function formatDateForSort(dateStr) {
-    const [day, month, year] = dateStr.split('.');
-    return year + (month.padStart(2, '0')) + (day.padStart(2, '0'));
-}
+    // Hilfsfunktion zum Formatieren des Datums für die Sortierung (z.B. "30.09.2025" -> "20250930")
+    function formatDateForSort(dateStr) {
+      const [day, month, year] = dateStr.split('.');
+      return year + (month.padStart(2, '0')) + (day.padStart(2, '0'));
+    }
 
-function sortTable(table, column) {
-    const tbody = table.querySelector('tbody');
-    const rows = Array.from(tbody.querySelectorAll('tr'));
-    
-    // Prüfe ob die Spalte numerisch sortiert werden soll anhand des ersten data-sort Werts
-    let firstCell = rows[0]?.cells[column];
-    let sortValue = firstCell?.getAttribute('data-sort') || firstCell?.textContent || '';
-    const isNumeric = !isNaN(sortValue);
+    function sortTable(table, column) {
+      const tbody = table.querySelector('tbody');
+      const rows = Array.from(tbody.querySelectorAll('tr'));
 
-    rows.sort((a, b) => {
+      // Prüfe ob die Spalte numerisch sortiert werden soll anhand des ersten data-sort Werts
+      let firstCell = rows[0]?.cells[column];
+      let sortValue = firstCell?.getAttribute('data-sort') || firstCell?.textContent || '';
+      const isNumeric = !isNaN(sortValue);
+
+      rows.sort((a, b) => {
         let aVal = a.cells[column].getAttribute('data-sort') || a.cells[column].textContent;
         let bVal = b.cells[column].getAttribute('data-sort') || b.cells[column].textContent;
-        
+
         if (isNumeric) {
-            // Konvertiere leere Werte zu 0 für numerische Sortierung
-            return (parseFloat(aVal) || 0) - (parseFloat(bVal) || 0);
+          // Konvertiere leere Werte zu 0 für numerische Sortierung
+          return (parseFloat(aVal) || 0) - (parseFloat(bVal) || 0);
         }
         // Case-insensitive String-Vergleich
         return aVal.toLowerCase().localeCompare(bVal.toLowerCase());
-    });
+      });
 
-    // Toggle Sortierrichtung
-    if (table.getAttribute('data-sort-column') === column.toString()) {
+      // Toggle Sortierrichtung
+      if (table.getAttribute('data-sort-column') === column.toString()) {
         rows.reverse();
         table.removeAttribute('data-sort-column');
-    } else {
+      } else {
         table.setAttribute('data-sort-column', column);
-    }
+      }
 
-    // Neue Sortierung anwenden
-    tbody.innerHTML = '';
-    rows.forEach(row => tbody.appendChild(row));
-}
+      // Neue Sortierung anwenden
+      tbody.innerHTML = '';
+      rows.forEach(row => tbody.appendChild(row));
+    }
   </script>
 
 
