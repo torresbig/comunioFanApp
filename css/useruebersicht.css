@@ -242,3 +242,33 @@ table tr.selected {
   height: 25px;
   background: none;
 }
+
+/* Zusätzlicher Block für mobile Geräte */
+@media (max-width: 600px) {
+  /* Tabellen kleiner machen */
+  table,
+  .rivals-table,
+  .table-card table {
+    font-size: 11px !important;       /* Kleinere Schrift */
+  }
+  .table-card th, .table-card td {
+    padding: 4px !important;          /* Weniger Padding */
+    font-size: 11px !important;
+  }
+  .table-card {
+    overflow-x: auto !important;      /* Scrollen nur im Container */
+    width: 100vw !important;
+    box-sizing: border-box;
+  }
+  /* Optional: maximale Breite der Tabelle */
+  .table-card table,
+  .rivals-table {
+    min-width: 100%;
+    width: 100%;
+    table-layout: auto !important;
+  }
+}
+/* Ganz wichtig: Die Seite selbst darf kein overflow-x zulassen */
+body {
+  overflow-x: hidden;
+}

@@ -251,3 +251,7 @@
     font-size: 0.9rem;
   }
 }
+/* WICHTIG: Initialen vor dem Namen auf Mobile ausblenden */
+.user-info-initials-mobile {
+	display: none !important;
+}
