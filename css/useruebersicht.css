@@ -275,9 +275,9 @@ body {
 
 @media (max-width: 600px) {
   .transfer-section {
-    padding: 3px !important; /* weniger weißer Rand */
+    padding: 0px !important; /* weniger weißer Rand */
     margin: 0 !important;
-    width: 100vw !important;
+    width: 100% !important;
     box-sizing: border-box;
     border-radius: 0 !important;
     /* Optional: Schatten weg auf Handy */
@@ -288,7 +288,7 @@ body {
 
   .transfer-section table {
     font-size: 11px !important;
-    min-width: 440px;           /* minimale Breite, kann angepasst werden */
+    min-width: 360px;           /* minimale Breite, kann angepasst werden */
     width: 100%;
     table-layout: auto !important;
   }
