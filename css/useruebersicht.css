@@ -272,3 +272,35 @@ table tr.selected {
 body {
   overflow-x: hidden;
 }
+
+@media (max-width: 600px) {
+  .transfer-section {
+    padding: 3px !important; /* weniger weißer Rand */
+    margin: 0 !important;
+    width: 100vw !important;
+    box-sizing: border-box;
+    border-radius: 0 !important;
+    /* Optional: Schatten weg auf Handy */
+    box-shadow: none !important;
+    overflow-x: auto !important;
+    background: white;
+  }
+
+  .transfer-section table {
+    font-size: 11px !important;
+    min-width: 440px;           /* minimale Breite, kann angepasst werden */
+    width: 100%;
+    table-layout: auto !important;
+  }
+
+  /* Scrollbalken sichtbar machen */
+  .transfer-section {
+    scrollbar-color: #3498db #e0e6ed;
+    scrollbar-width: thin;
+  }
+
+  /* Body soll niemals horizontal scrollen */
+  body {
+    overflow-x: hidden;
+  }
+}
