@@ -240,25 +240,25 @@
 
         addDebug('Script gestartet', 'info');
 
-        async function fetchJSON(url) {
-            addDebug(`Lade JSON von: ${url}`, 'info');
-            try {
-                const response = await fetch(url);
-                addDebug(`Response Status: ${response.status}`, response.ok ? 'success' : 'error');
-                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-                const data = await response.json();
-                addDebug(`JSON erfolgreich geladen (${Array.isArray(data) ? data.length + ' Einträge' : 'Object'})`, 'success');
-                return data;
-            } catch (error) {
-                addDebug(`Fehler beim JSON-Laden: ${error.message}`, 'error');
-                throw error;
-            }
-        }
+        // URL-Parameter (werden nach dem Laden der Daten gesetzt)
+    let urlParams = {withMenue: true };
 
+    // Liest URL-Parameter: ?username=Name&withMenue=false
+    function getUrlParams() {
+      const params = new URLSearchParams(window.location.search);
+      return {
+        withMenue: params.get('withMenue') !== 'false'
+      };
+    }
 
-
-       
-
+       // Verarbeitet Params (z.B. Menü ausblenden)
+    function processUrlParams(params) {
+      // Menü anzeigen/ausblenden
+      const hamburgerMenu = document.querySelector('.hamburger-menu');
+      if (hamburgerMenu) hamburgerMenu.style.display = params.withMenue ? '' : 'none';
+      // Merken für späteren Gebrauch (initUserDropdown)
+      urlParams = params;
+    }
 
     </script>
 </body>
