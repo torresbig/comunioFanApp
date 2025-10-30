@@ -3526,6 +3526,14 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
+        "comAnalysticsTopFlop": {
+          "punkte": "4",
+          "zielwert": "24.160.000",
+          "platz": 8,
+          "typ": "top",
+          "marktwert": "23.900.000",
+          "aenderung": "+260.000"
+        },
         "lastUpdate": "29.10.2025",
         "historicalPoints": [
           {"2023": 302},
@@ -5711,6 +5719,14 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
+        "comAnalysticsTopFlop": {
+          "punkte": "5",
+          "zielwert": "5.370.000",
+          "platz": 7,
+          "typ": "top",
+          "marktwert": "5.100.000",
+          "aenderung": "+270.000"
+        },
         "lastUpdate": "29.10.2025",
         "historicalPoints": [
           {"2017": 50},
@@ -6349,6 +6365,14 @@
           "gelbrotekarten": 0,
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
+        },
+        "comAnalysticsTopFlop": {
+          "punkte": "0",
+          "zielwert": "3.900.000",
+          "platz": 7,
+          "typ": "flop",
+          "marktwert": "4.240.000",
+          "aenderung": "-340.000"
         },
         "lastUpdate": "29.10.2025",
         "historicalPoints": [
@@ -14921,6 +14945,14 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
+        "comAnalysticsTopFlop": {
+          "punkte": "15",
+          "zielwert": "8.430.000",
+          "platz": 1,
+          "typ": "top",
+          "marktwert": "7.910.000",
+          "aenderung": "+520.000"
+        },
         "lastUpdate": "29.10.2025",
         "spieltagspunkte": [
           {
@@ -15072,6 +15104,14 @@
           "gelbrotekarten": 0,
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
+        },
+        "comAnalysticsTopFlop": {
+          "punkte": "0",
+          "zielwert": "10.120.000",
+          "platz": 10,
+          "typ": "flop",
+          "marktwert": "10.420.000",
+          "aenderung": "-300.000"
         },
         "lastUpdate": "29.10.2025",
         "historicalPoints": [{"2024": 136}],
@@ -16596,6 +16636,47 @@
     {
       "data": {
         "elfDesSpieltages": 1,
+        "transfermarktDoDe": {
+          "date": "19.10.2025",
+          "name": "Michael Olise",
+          "link": "https://www.transfermarkt.de/michael-olise/profil/spieler/566723",
+          "id": 566723,
+          "leistungsDaten": {}
+        },
+        "lastBigUpdate": "26.10.2025",
+        "stats": {
+          "notenDurchschnitt": "7,63",
+          "gelbekarten": 2,
+          "totalPenalties": 0,
+          "ratedGames": 8,
+          "lastUpdate": "26.10.2025",
+          "playedGames": 8,
+          "totalGoals": 4,
+          "punkteDurchschnitt": "8,25",
+          "gelbrotekarten": 0,
+          "rotekarten": 0,
+          "manOfTheMatchAmount": 0
+        },
+        "withinSquad": true,
+        "attribute": {
+          "SontigeInfos": ["meisten Punkte letzte Saison (286)"],
+          "ligainsiderRanking": {
+            "punkte": 536,
+            "einsaetzeBewertet": 8,
+            "durchschnittsnote": 2.38,
+            "verein": "FC Bayern München",
+            "lastUpdate": "29.10.2025",
+            "durchschnittsminuten": 87,
+            "durchschnittspunkte": 67,
+            "rang": 2
+          }
+        },
+        "possibleNames": [
+          "Michael Olise",
+          "Michäl Olise",
+          "M. Olise",
+          "Olise"
+        ],
         "comAnalystics": {
           "topFlop": {
             "punkte": "9",
@@ -16629,29 +16710,16 @@
         "wert": 19650000,
         "verein": "1",
         "lastPoints": 9,
-        "transfermarktDoDe": {
-          "date": "19.10.2025",
-          "name": "Michael Olise",
-          "link": "https://www.transfermarkt.de/michael-olise/profil/spieler/566723",
-          "id": 566723,
-          "leistungsDaten": {}
-        },
         "lastSeasonPoints": 286,
         "punkte": 66,
         "realWert": 130000000,
-        "lastBigUpdate": "26.10.2025",
-        "stats": {
-          "notenDurchschnitt": "7,63",
-          "gelbekarten": 2,
-          "totalPenalties": 0,
-          "ratedGames": 8,
-          "lastUpdate": "26.10.2025",
-          "playedGames": 8,
-          "totalGoals": 4,
-          "punkteDurchschnitt": "8,25",
-          "gelbrotekarten": 0,
-          "rotekarten": 0,
-          "manOfTheMatchAmount": 0
+        "comAnalysticsTopFlop": {
+          "punkte": "9",
+          "zielwert": "18.830.000",
+          "platz": 2,
+          "typ": "flop",
+          "marktwert": "19.650.000",
+          "aenderung": "-820.000"
         },
         "lastUpdate": "29.10.2025",
         "historicalPoints": [{"2024": 286}],
@@ -16697,28 +16765,8 @@
             "key": 8
           }
         ],
-        "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {
-          "SontigeInfos": ["meisten Punkte letzte Saison (286)"],
-          "ligainsiderRanking": {
-            "punkte": 536,
-            "einsaetzeBewertet": 8,
-            "durchschnittsnote": 2.38,
-            "verein": "FC Bayern München",
-            "lastUpdate": "29.10.2025",
-            "durchschnittsminuten": 87,
-            "durchschnittspunkte": 67,
-            "rang": 2
-          }
-        },
-        "possibleNames": [
-          "Michael Olise",
-          "Michäl Olise",
-          "M. Olise",
-          "Olise"
-        ],
         "comunioStatus": {
           "grund": "unbekannt",
           "lastUpdate": "26.10.2025",
@@ -25855,6 +25903,14 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
+        "comAnalysticsTopFlop": {
+          "punkte": "9",
+          "zielwert": "6.380.000",
+          "platz": 6,
+          "typ": "top",
+          "marktwert": "6.070.000",
+          "aenderung": "+310.000"
+        },
         "lastUpdate": "29.10.2025",
         "historicalPoints": [{"2024": 40}],
         "spieltagspunkte": [
@@ -31123,6 +31179,55 @@
     {
       "data": {
         "elfDesSpieltages": 2,
+        "transfermarktDoDe": {
+          "date": "29.10.2025",
+          "name": "Marius Bülter 3,00 Mio. \u20ac",
+          "link": "https://www.transfermarkt.de/marius-bulter/profil/spieler/116088",
+          "id": 116088,
+          "leistungsDaten": {}
+        },
+        "lastBigUpdate": "26.10.2025",
+        "stats": {
+          "notenDurchschnitt": "7,32",
+          "gelbekarten": 0,
+          "totalPenalties": 0,
+          "ratedGames": 6,
+          "lastUpdate": "26.10.2025",
+          "playedGames": 6,
+          "totalGoals": 2,
+          "punkteDurchschnitt": "6,33",
+          "gelbrotekarten": 0,
+          "rotekarten": 0,
+          "manOfTheMatchAmount": 0
+        },
+        "withinSquad": true,
+        "attribute": {"ligainsiderRanking": {
+          "punkte": 278,
+          "einsaetzeBewertet": 6,
+          "durchschnittsnote": 3.33,
+          "verein": "1. FC Köln",
+          "lastUpdate": "29.10.2025",
+          "durchschnittsminuten": 69,
+          "durchschnittspunkte": 46.33,
+          "rang": 75
+        }},
+        "possibleNames": [
+          "Marius Buelter",
+          "marius buelter",
+          "Marius Bülter",
+          "Marius Bulter",
+          "marius bülter",
+          "M. Buelter",
+          "m. buelter",
+          "M. Bülter",
+          "M. Bulter",
+          "m. bülter",
+          "Buelter",
+          "buelter",
+          "Bulter",
+          "Bülter",
+          "bülter"
+        ],
         "comAnalystics": {
           "topFlop": {
             "punkte": "0",
@@ -31156,29 +31261,16 @@
         "wert": 6860000,
         "verein": "13",
         "lastPoints": 4,
-        "transfermarktDoDe": {
-          "date": "29.10.2025",
-          "name": "Marius Bülter 3,00 Mio. \u20ac",
-          "link": "https://www.transfermarkt.de/marius-bulter/profil/spieler/116088",
-          "id": 116088,
-          "leistungsDaten": {}
-        },
         "lastSeasonPoints": 125,
         "punkte": 38,
         "realWert": 2500000,
-        "lastBigUpdate": "26.10.2025",
-        "stats": {
-          "notenDurchschnitt": "7,32",
-          "gelbekarten": 0,
-          "totalPenalties": 0,
-          "ratedGames": 6,
-          "lastUpdate": "26.10.2025",
-          "playedGames": 6,
-          "totalGoals": 2,
-          "punkteDurchschnitt": "6,33",
-          "gelbrotekarten": 0,
-          "rotekarten": 0,
-          "manOfTheMatchAmount": 0
+        "comAnalysticsTopFlop": {
+          "punkte": "0",
+          "zielwert": "6.460.000",
+          "platz": 3,
+          "typ": "flop",
+          "marktwert": "6.860.000",
+          "aenderung": "-400.000"
         },
         "lastUpdate": "29.10.2025",
         "historicalPoints": [
@@ -31230,36 +31322,8 @@
             "key": 8
           }
         ],
-        "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 278,
-          "einsaetzeBewertet": 6,
-          "durchschnittsnote": 3.33,
-          "verein": "1. FC Köln",
-          "lastUpdate": "29.10.2025",
-          "durchschnittsminuten": 69,
-          "durchschnittspunkte": 46.33,
-          "rang": 75
-        }},
-        "possibleNames": [
-          "Marius Buelter",
-          "marius buelter",
-          "Marius Bülter",
-          "Marius Bulter",
-          "marius bülter",
-          "M. Buelter",
-          "m. buelter",
-          "M. Bülter",
-          "M. Bulter",
-          "m. bülter",
-          "Buelter",
-          "buelter",
-          "Bulter",
-          "Bülter",
-          "bülter"
-        ],
         "comunioStatus": {
           "grund": "unbekannt",
           "lastUpdate": "26.10.2025",
@@ -35185,6 +35249,43 @@
     {
       "data": {
         "elfDesSpieltages": 2,
+        "transfermarktDoDe": {
+          "date": "05.10.2025",
+          "name": "Patrik Schick",
+          "link": "https://www.transfermarkt.de/patrik-schick/profil/spieler/242086",
+          "id": 242086,
+          "leistungsDaten": {}
+        },
+        "lastBigUpdate": "26.10.2025",
+        "stats": {
+          "notenDurchschnitt": "6,97",
+          "gelbekarten": 0,
+          "totalPenalties": 2,
+          "ratedGames": 6,
+          "lastUpdate": "26.10.2025",
+          "playedGames": 6,
+          "totalGoals": 3,
+          "punkteDurchschnitt": "5,33",
+          "gelbrotekarten": 0,
+          "rotekarten": 0,
+          "manOfTheMatchAmount": 0
+        },
+        "withinSquad": true,
+        "attribute": {"ligainsiderRanking": {
+          "punkte": 210,
+          "einsaetzeBewertet": 5,
+          "durchschnittsnote": 3.8,
+          "verein": "Bayer 04 Leverkusen",
+          "lastUpdate": "29.10.2025",
+          "durchschnittsminuten": 88,
+          "durchschnittspunkte": 37.8,
+          "rang": 159
+        }},
+        "possibleNames": [
+          "Patrik Schick",
+          "P. Schick",
+          "Schick"
+        ],
         "comAnalystics": {
           "topFlop": {
             "punkte": "0",
@@ -35218,29 +35319,16 @@
         "wert": 15300000,
         "verein": "8",
         "lastPoints": 2,
-        "transfermarktDoDe": {
-          "date": "05.10.2025",
-          "name": "Patrik Schick",
-          "link": "https://www.transfermarkt.de/patrik-schick/profil/spieler/242086",
-          "id": 242086,
-          "leistungsDaten": {}
-        },
         "lastSeasonPoints": 190,
         "punkte": 32,
         "realWert": 27000000,
-        "lastBigUpdate": "26.10.2025",
-        "stats": {
-          "notenDurchschnitt": "6,97",
-          "gelbekarten": 0,
-          "totalPenalties": 2,
-          "ratedGames": 6,
-          "lastUpdate": "26.10.2025",
-          "playedGames": 6,
-          "totalGoals": 3,
-          "punkteDurchschnitt": "5,33",
-          "gelbrotekarten": 0,
-          "rotekarten": 0,
-          "manOfTheMatchAmount": 0
+        "comAnalysticsTopFlop": {
+          "punkte": "0",
+          "zielwert": "14.390.000",
+          "platz": 1,
+          "typ": "flop",
+          "marktwert": "15.300.000",
+          "aenderung": "-910.000"
         },
         "lastUpdate": "29.10.2025",
         "historicalPoints": [
@@ -35293,24 +35381,8 @@
             "key": 8
           }
         ],
-        "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 210,
-          "einsaetzeBewertet": 5,
-          "durchschnittsnote": 3.8,
-          "verein": "Bayer 04 Leverkusen",
-          "lastUpdate": "29.10.2025",
-          "durchschnittsminuten": 88,
-          "durchschnittspunkte": 37.8,
-          "rang": 159
-        }},
-        "possibleNames": [
-          "Patrik Schick",
-          "P. Schick",
-          "Schick"
-        ],
         "comunioStatus": {
           "grund": "unbekannt",
           "lastUpdate": "26.10.2025",
@@ -35886,6 +35958,14 @@
           "gelbrotekarten": 0,
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
+        },
+        "comAnalysticsTopFlop": {
+          "punkte": "10",
+          "zielwert": "6.240.000",
+          "platz": 2,
+          "typ": "top",
+          "marktwert": "5.870.000",
+          "aenderung": "+370.000"
         },
         "lastUpdate": "29.10.2025",
         "spieltagspunkte": [
@@ -39729,6 +39809,14 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
+        "comAnalysticsTopFlop": {
+          "punkte": "0",
+          "zielwert": "12.000.000",
+          "platz": 8,
+          "typ": "flop",
+          "marktwert": "12.310.000",
+          "aenderung": "-310.000"
+        },
         "lastUpdate": "29.10.2025",
         "historicalPoints": [
           {"2020": 82},
@@ -41554,6 +41642,14 @@
           "gelbrotekarten": 0,
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
+        },
+        "comAnalysticsTopFlop": {
+          "punkte": "11",
+          "zielwert": "2.790.000",
+          "platz": 3,
+          "typ": "top",
+          "marktwert": "2.440.000",
+          "aenderung": "+350.000"
         },
         "lastUpdate": "29.10.2025",
         "historicalPoints": [
@@ -45382,6 +45478,46 @@
     {
       "data": {
         "elfDesSpieltages": 2,
+        "transfermarktDoDe": {
+          "date": "07.10.2025",
+          "name": "Nadiem Amiri 4,00 Mio. \u20ac",
+          "link": "https://www.transfermarkt.de/nadiem-amiri/profil/spieler/232454",
+          "id": 232454,
+          "leistungsDaten": {}
+        },
+        "lastBigUpdate": "26.10.2025",
+        "stats": {
+          "notenDurchschnitt": "7,24",
+          "gelbekarten": 4,
+          "totalPenalties": 3,
+          "ratedGames": 8,
+          "lastUpdate": "26.10.2025",
+          "playedGames": 8,
+          "totalGoals": 3,
+          "punkteDurchschnitt": "6,25",
+          "gelbrotekarten": 0,
+          "rotekarten": 0,
+          "manOfTheMatchAmount": 0
+        },
+        "withinSquad": true,
+        "attribute": {"ligainsiderRanking": {
+          "punkte": 430,
+          "einsaetzeBewertet": 8,
+          "durchschnittsnote": 3.19,
+          "verein": "1. FSV Mainz 05",
+          "lastUpdate": "29.10.2025",
+          "durchschnittsminuten": 90,
+          "durchschnittspunkte": 53.75,
+          "rang": 25
+        }},
+        "possibleNames": [
+          "Nadiem Amiri",
+          "nadiem amiri",
+          "N. Amiri",
+          "n. amiri",
+          "Amiri",
+          "amiri"
+        ],
         "comAnalystics": {
           "topFlop": {
             "punkte": "0",
@@ -45415,29 +45551,16 @@
         "wert": 12080000,
         "verein": "18",
         "lastPoints": 9,
-        "transfermarktDoDe": {
-          "date": "07.10.2025",
-          "name": "Nadiem Amiri 4,00 Mio. \u20ac",
-          "link": "https://www.transfermarkt.de/nadiem-amiri/profil/spieler/232454",
-          "id": 232454,
-          "leistungsDaten": {}
-        },
         "lastSeasonPoints": 178,
         "punkte": 50,
         "realWert": 20000000,
-        "lastBigUpdate": "26.10.2025",
-        "stats": {
-          "notenDurchschnitt": "7,24",
-          "gelbekarten": 4,
-          "totalPenalties": 3,
-          "ratedGames": 8,
-          "lastUpdate": "26.10.2025",
-          "playedGames": 8,
-          "totalGoals": 3,
-          "punkteDurchschnitt": "6,25",
-          "gelbrotekarten": 0,
-          "rotekarten": 0,
-          "manOfTheMatchAmount": 0
+        "comAnalysticsTopFlop": {
+          "punkte": "0",
+          "zielwert": "11.720.000",
+          "platz": 5,
+          "typ": "flop",
+          "marktwert": "12.080.000",
+          "aenderung": "-360.000"
         },
         "lastUpdate": "29.10.2025",
         "historicalPoints": [
@@ -45495,27 +45618,8 @@
             "key": 8
           }
         ],
-        "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 430,
-          "einsaetzeBewertet": 8,
-          "durchschnittsnote": 3.19,
-          "verein": "1. FSV Mainz 05",
-          "lastUpdate": "29.10.2025",
-          "durchschnittsminuten": 90,
-          "durchschnittspunkte": 53.75,
-          "rang": 25
-        }},
-        "possibleNames": [
-          "Nadiem Amiri",
-          "nadiem amiri",
-          "N. Amiri",
-          "n. amiri",
-          "Amiri",
-          "amiri"
-        ],
         "comunioStatus": {
           "grund": "unbekannt",
           "lastUpdate": "26.10.2025",
@@ -46017,6 +46121,14 @@
           "gelbrotekarten": 0,
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
+        },
+        "comAnalysticsTopFlop": {
+          "punkte": "0",
+          "zielwert": "10.490.000",
+          "platz": 4,
+          "typ": "flop",
+          "marktwert": "10.880.000",
+          "aenderung": "-390.000"
         },
         "lastUpdate": "29.10.2025",
         "historicalPoints": [
@@ -59079,6 +59191,14 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
+        "comAnalysticsTopFlop": {
+          "punkte": "0",
+          "zielwert": "13.530.000",
+          "platz": 6,
+          "typ": "flop",
+          "marktwert": "13.890.000",
+          "aenderung": "-360.000"
+        },
         "lastUpdate": "29.10.2025",
         "historicalPoints": [
           {"2016": 4},
@@ -59785,6 +59905,14 @@
           "gelbrotekarten": 0,
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
+        },
+        "comAnalysticsTopFlop": {
+          "punkte": "5",
+          "zielwert": "3.930.000",
+          "platz": 4,
+          "typ": "top",
+          "marktwert": "3.610.000",
+          "aenderung": "+320.000"
         },
         "lastUpdate": "29.10.2025",
         "historicalPoints": [{"2022": 3}],
@@ -67154,6 +67282,14 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
+        "comAnalysticsTopFlop": {
+          "punkte": "12",
+          "zielwert": "7.530.000",
+          "platz": 9,
+          "typ": "top",
+          "marktwert": "7.270.000",
+          "aenderung": "+260.000"
+        },
         "lastUpdate": "29.10.2025",
         "spieltagspunkte": [
           {
@@ -68932,6 +69068,14 @@
           "gelbrotekarten": 0,
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
+        },
+        "comAnalysticsTopFlop": {
+          "punkte": "4",
+          "zielwert": "23.890.000",
+          "platz": 10,
+          "typ": "top",
+          "marktwert": "23.630.000",
+          "aenderung": "+260.000"
         },
         "lastUpdate": "29.10.2025",
         "spieltagspunkte": [
@@ -74503,6 +74647,14 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
+        "comAnalysticsTopFlop": {
+          "punkte": "0",
+          "zielwert": "13.290.000",
+          "platz": 9,
+          "typ": "flop",
+          "marktwert": "13.600.000",
+          "aenderung": "-310.000"
+        },
         "lastUpdate": "29.10.2025",
         "spieltagspunkte": [
           {
@@ -74750,6 +74902,14 @@
           "gelbrotekarten": 0,
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
+        },
+        "comAnalysticsTopFlop": {
+          "punkte": "8",
+          "zielwert": "5.510.000",
+          "platz": 5,
+          "typ": "top",
+          "marktwert": "5.190.000",
+          "aenderung": "+320.000"
         },
         "lastUpdate": "29.10.2025",
         "spieltagspunkte": [
