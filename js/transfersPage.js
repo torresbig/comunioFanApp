@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Alle Transfers extrahieren (flach als Array)
     const transfers = [];
-    newsJson.forEach(day => {
+    newsJson.newsDB.forEach(day => {
         (day.news || []).forEach(entry => {
             if (entry.art === "TRANSFER") {
                 try {

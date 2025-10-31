@@ -92,8 +92,9 @@ async function loadData() {
                     PlayerToUser: ${playerToUserMap.length}
                     News: ${newsList.length}`);
         processData(clubsData, playersData, usersData, playerToUserMap);
-        renderNews(newsList);
-        lastUpdateTime = new Date();
+        renderNews(newsList.newsDB || []);
+        // newsList.lastUpdate beispiel: "31.10.2025 16:34"
+        lastUpdateTime = newsList.lastUpdate ? newsList.lastUpdate : null;
         hideLoading();
         showStats();
         showContent();
@@ -182,7 +183,7 @@ function showError(message) {
 function showStats() {
     const statsDiv = document.getElementById('stats');
     const statsText = document.getElementById('statsText');
-    const updateTime = lastUpdateTime ? lastUpdateTime.toLocaleTimeString() : "Noch nicht aktualisiert";
+    const updateTime = lastUpdateTime ? lastUpdateTime : "Noch nicht aktualisiert";
     const anzahlBesitzer = (() => {
         const ownerSet = new Set(ownersMap.values());
         ownerSet.delete("Kein Besitzer");

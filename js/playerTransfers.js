@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(newsData => {
             const transfers = [];
 
-            newsData.forEach(day => {
+            newsData.newsDB.forEach(day => {
                 if (!Array.isArray(day.news)) return;
                 day.news.forEach(entry => {
                     if (entry.art === "TRANSFER" && entry.playerId === playerId) {
