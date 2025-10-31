@@ -241,8 +241,8 @@
 
             try {
                 const newsData = await fetchJSON(DATA_URLS.news);
-                const users = [...new Set(newsData.flatMap(day => day.news.map(n => n.user)))];
-                const newsTypes = [...new Set(newsData.flatMap(day => day.news.map(n => n.art)))];
+                const users = [...new Set(newsData.newsDB.flatMap(day => day.news.map(n => n.user)))];
+                const newsTypes = [...new Set(newsData.newsDB.flatMap(day => day.news.map(n => n.art)))];
 
                 // Populate user filter dropdown
                 userFilter.innerHTML = '<option value="">Alle Benutzer</option>';
@@ -297,7 +297,7 @@
                     const activeChip = newsTypeFilters.querySelector('.filter-chip.active');
                     const selectedType = activeChip ? activeChip.dataset.type : 'all';
 
-                    const filteredNews = newsData.flatMap(day => {
+                    const filteredNews = newsData.newsDB.flatMap(day => {
                         const filteredDayNews = day.news.filter(news => {
                             if (news.art === 'OWNERCHANGE') return false;
                             const userMatch = !selectedUser || news.user === selectedUser;
@@ -398,7 +398,7 @@
                     const selectedUserId = userFilter.value;
                     const selectedUserName = userMap.get(selectedUserId);
 
-                    const filteredNews = newsData.flatMap(day => {
+                    const filteredNews = newsData.newsDB.flatMap(day => {
                         const filteredDayNews = day.news.filter(news => {
                             if (news.art === 'OWNERCHANGE') return false; // Exclude OWNERCHANGE news
 

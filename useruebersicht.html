@@ -503,7 +503,7 @@
 
       const entries = [];
       try {
-        newsData.forEach(day => {
+        newsData.newsDB.forEach(day => {
           day.news.forEach(item => {
             if (item.art === 'TRANSFER') {
               const t = JSON.parse(item.text);
