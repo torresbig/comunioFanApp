@@ -64,6 +64,9 @@
   border-collapse: collapse;
   min-width: 900px;              /* sorgt dafür, dass bei schmalen Screens gescrollt wird */
   font-size: 15px;
+            display: inline-table;      /* schrumpft auf Inhaltsbreite */
+  table-layout: auto;         /* Spaltenbreiten folgen dem Inhalt */
+ // width: auto;                /* keine erzwungene Dehnung */
 }
 
 /* Zellen ohne Umbruch, damit horizontal gescrollt wird */
@@ -72,3 +75,4 @@
   white-space: nowrap;
   padding: 8px 12px;
 }
+
