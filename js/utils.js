@@ -97,7 +97,7 @@ function getLogoPositionFilename(pos) {
     "ABWEHR": "defs",
     "TORHÜTER": "tors",
   };
-  return (mapping[pos] || "unbestimmt") + ".png";
+  return (mapping[pos] || "ubs") + ".png";
 }
 
 

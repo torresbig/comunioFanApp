@@ -25,12 +25,7 @@ function renderTable(players) {
         const nebenpositionen = player.data?.spielerDaten?.nebenpositionen || [];
         const nebenpositionenTooltip = nebenpositionen.length > 0 ? "Hauptposition: " + hauptposition + " | Nebenposition: " + nebenpositionen.join(", ") : hauptposition;
         const posLogoFile = getLogoPositionFilename(player.position);
-        const positionHtml = `
-  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-    <img src="logos/${posLogoFile}" class="club-logo" alt="${hauptposition}" title="${nebenpositionenTooltip}">
-    <small style="font-size: 0.7em; color: #666; margin-top: 2px;">${player.position}</small>
-  </div>
-`;
+        const positionHtml = `<img src="logos/${posLogoFile}" class="pos-logo" alt="${hauptposition}" title="${nebenpositionenTooltip}">`;
 
         // const positionHtml = `<span title="${nebenpositionenTooltip}">${player.position || "Unbekannt"}</span>`;
 
