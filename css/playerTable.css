@@ -45,13 +45,15 @@
         }
 
 
- .spielerdb-player-table {
-          width: 100%;
-          border-collapse: collapse;
-          margin-top: 10px;
-          background: white;
-          border-radius: 10px;
-          overflow: hidden;
-          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-          font-size: 15px;
- }
+ /* Scrollbarer Wrapper (dein <div class="spielerdb-player-table">) */
+.spielerdb-player-table {
+  width: 100%;
+  overflow-x: auto;              /* horizontaler Scroll bei Bedarf */
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch; /* sanftes Scrollen auf iOS */
+  margin-top: 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
