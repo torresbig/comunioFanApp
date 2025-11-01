@@ -1,5 +1,5 @@
 function renderTable(players) {
-    const tableBody = document.querySelector('#playerTable tbody');
+    const tableBody = document.querySelector('#spielerdb-playerTable tbody');
     tableBody.innerHTML = '';
     addDebug(`Rendere Tabelle mit ${players.length} Spielern`);
     players.forEach(player => {
@@ -121,4 +121,5 @@ function setupSorting() {
         const tbody = table.querySelector('tbody');
         rows.forEach(row => tbody.appendChild(row));
     }
+
 }
