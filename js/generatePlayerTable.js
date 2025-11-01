@@ -64,7 +64,7 @@ function renderTable(players) {
 }
 
 function setupSorting() {
-    const table = document.getElementById('playerTable');
+    const table = document.getElementById('spielerdb-playerTable');
     const headers = table.querySelectorAll('th[data-sort]');
     headers.forEach(header => {
         header.addEventListener('click', () => {
@@ -123,3 +123,4 @@ function setupSorting() {
     }
 
 }
+
