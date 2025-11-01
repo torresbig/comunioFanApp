@@ -60,6 +60,19 @@
           object-fit: contain;
       }
 
+       .pos-logo {
+          width: 55px;
+          height: 55px;
+          border-radius: 50%;
+          background: #3498db;
+          overflow: hidden;
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+
       .player-name {
           font-size: 22px;
           font-weight: bold;
@@ -459,6 +472,11 @@
           .club-logo {
               width: 34px;
               height: 34px;
+          }
+
+          .pos-logo {
+              width: 45px;
+              height: 45px;
           }
 
           .tab-button {

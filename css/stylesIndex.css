@@ -172,6 +172,14 @@
             vertical-align: middle;
         }
 
+        .pos-logo {
+            width: 35px;
+            height: 35px;
+            object-fit: contain;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
 
         #news-section {
             margin-bottom: 24px;
