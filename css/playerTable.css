@@ -48,25 +48,22 @@
  /* Scrollbarer Wrapper (dein <div class="spielerdb-player-table">) */
 .spielerdb-player-table {
   width: 100%;
-  overflow-x: auto;              /* horizontaler Scroll bei Bedarf */
+  overflow-x: auto;           /* horizontaler Scroll bei Bedarf */
   overflow-y: hidden;
-  -webkit-overflow-scrolling: touch; /* sanftes Scrollen auf iOS */
+  -webkit-overflow-scrolling: touch;
   margin-top: 10px;
   background: white;
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
-
-/* Die eigentliche Tabelle */
-#spielerdb-playerTable {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 900px;              /* sorgt dafür, dass bei schmalen Screens gescrollt wird */
-  font-size: 15px;
-            display: inline-table;      /* schrumpft auf Inhaltsbreite */
+/* Die Tabelle nur so breit wie nötig, nicht auf 100% strecken */
+#playerTable {
+  display: inline-table;      /* schrumpft auf Inhaltsbreite */
   table-layout: auto;         /* Spaltenbreiten folgen dem Inhalt */
- // width: auto;                /* keine erzwungene Dehnung */
+  width: auto;                /* keine erzwungene Dehnung */
+  border-collapse: collapse;
+  font-size: 15px;
 }
 
 /* Zellen ohne Umbruch, damit horizontal gescrollt wird */
@@ -75,4 +72,5 @@
   white-space: nowrap;
   padding: 8px 12px;
 }
+
 
