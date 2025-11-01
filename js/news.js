@@ -9,36 +9,31 @@ function toggleNewsList() {
         icon.style.transform = 'rotate(-90deg)';
     }
 }
-
 function renderNews(newsList) {
     try {
-        // Nach Datum absteigend sortieren (neueste zuerst!)
+        addDebug('[renderNews] Start mit ' + newsList.length + ' Tagen');
+        
+        // Nach Datum absteigend sortieren
         newsList.sort((a, b) => {
             const da = a.date.split('.').reverse().join('-');
             const db = b.date.split('.').reverse().join('-');
             return new Date(db) - new Date(da);
         });
+        
         let html = '';
+        let errorCount = 0;
+        let elfContainersToUpdate = [];
+        
         for (const day of newsList) {
-            // Filter alle OWNERCHANGE NEWS aus day.news heraus
             const newsForDisplay = day.news.filter(n => n.art !== 'OWNERCHANGE' && n.art !== 'UNBESTIMMT');
-
-            // Debug-Log für "OWNERCHANGE" separat anzeigen
-            day.news.forEach(n => {
-                if (n.art === 'OWNERCHANGE' || n.art === 'UNBESTIMMT') {
-                    addDebug(`Ownerchange-Text: ${n.text}`);
-                }
-            });
 
             const grouped = {};
             for (const news of newsForDisplay) {
-                // Prüfe ob es bereits einen Eintrag für dieses Datum und diese Art gibt
                 if (!grouped[news.art]) {
                     grouped[news.art] = [];
                 }
-                // Füge nur hinzu wenn nicht bereits vorhanden
-                const isDuplicate = grouped[news.art].some(existingNews => 
-                    existingNews.text === news.text && 
+                const isDuplicate = grouped[news.art].some(existingNews =>
+                    existingNews.text === news.text &&
                     existingNews.date === news.date
                 );
                 if (!isDuplicate) {
@@ -50,102 +45,131 @@ function renderNews(newsList) {
 
             for (const art of Object.keys(grouped).sort()) {
                 html += `<div class="news-art">${art}</div><ul class="news-list-ul">`;
+                
                 for (const news of grouped[art]) {
                     let text = '';
                     try {
                         if (art === 'TRANSFER') {
-                            const obj = JSON.parse(news.text);
-                            const pid = obj.playerId || news.playerId || null; // fallback falls obj.playerId fehlt
-                            text = `${linkPlayer(pid, obj.playerName)} von <b style="color:#00f;">${obj.seller}</b> zu <b style="color:#00f;">${obj.buyer}</b> für <b>${obj.price.toLocaleString('de-DE')} €</b> (Marktwert: ${obj.playerValue.toLocaleString('de-DE')} €)`;
+                            try {
+                                const obj = JSON.parse(news.text);
+                                const pid = obj.playerId || news.playerId || null;
+                                text = `${linkPlayer(pid, obj.playerName)} von <b style="color:#00f;">${obj.seller}</b> zu <b style="color:#00f;">${obj.buyer}</b> für <b>${obj.price.toLocaleString('de-DE')} €</b> (Marktwert: ${obj.playerValue.toLocaleString('de-DE')} €)`;
+                            } catch (e) {
+                                addDebug('[renderNews] TRANSFER Parse-Fehler: ' + e.message);
+                                text = news.text;
+                                errorCount++;
+                            }
                         }
                         else if (art === 'USERPOINTS') {
-                            const obj = JSON.parse(news.text);
-                            text = `<div class="player-entry">
-                                <b style="color:#00f;">${obj.userName}</b> - 
-                                <span class="points">${obj.gamedayPoints} Pkt.</span>
-                                (Gesamt: ${obj.totalPoints} Pkt.)
-                            </div>`;
+                            try {
+                                const obj = JSON.parse(news.text);
+                                text = `<div class="player-entry"><b style="color:#00f;">${obj.userName}</b> - <span class="points">${obj.gamedayPoints} Pkt.</span> (Gesamt: ${obj.totalPoints} Pkt.)</div>`;
+                            } catch (e) {
+                                addDebug('[renderNews] USERPOINTS Parse-Fehler: ' + e.message);
+                                text = news.text;
+                                errorCount++;
+                            }
                         }
                         else if (art === 'SPIELERSTATUS') {
-                            const regex = /Statuswechsel:\s(.+?)\s\(\d+\)\sist\s(wieder|jetzt)\s([A-Z_]+)(?:\s\((.+)\))?/i;
-                            const match = regex.exec(news.text);
-                            if (match) {
-                                const playerName = match[1];
-                                const status = match[3];
-                                const statusDetail = match[4] || '';
-                                let statusDisplay = `<b>${status.replace(/_/g, ' ')}</b>`;
-                                if (statusDetail) statusDisplay += ` (${statusDetail})`;
-
-                                if (news.text.includes(`AKTIV`)) {
-                                    text = `🟢 ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
-                                } else if (news.text.includes(`NICHT_IN_LIGA`)) {
-                                    text = `❌ ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
-                                } else {
-                                    text = `🔴 ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
-                                }
-                            } else {
-                                text = news.text;
-                            }
-
-
-                        } else if (art === 'VEREINSWECHSEL') {
                             try {
-                                const obj = JSON.parse(news.text); // falls JSON
-                                const pid = obj.playerId || news.playerId || null;
-                                text = `${linkPlayer(pid, obj.playerName)} wechselt von <b>${clubsMap.get(obj.oldClub)}</b> zu <b>${clubsMap.get(obj.newClub)}</b>`;
-                            } catch (e) {
-                                // kein JSON, Versuch Name aus Text per Regex
-                                const regex = /^Vereinswechsel:\s(.+?)\s\(Verein \d+ → \d+\)$/;
+                                const regex = /Statuswechsel:\s(.+?)\s\(\d+\)\sist\s(wieder|jetzt)\s([A-Z_]+)(?:\s\((.+)\))?/i;
                                 const match = regex.exec(news.text);
                                 if (match) {
                                     const playerName = match[1];
-                                    text = `Vereinswechsel: ${linkPlayer(news.playerId, playerName)}`
+                                    const status = match[3];
+                                    const statusDetail = match[4] || '';
+                                    let statusDisplay = `<b>${status.replace(/_/g, ' ')}</b>`;
+                                    if (statusDetail) statusDisplay += ` (${statusDetail})`;
+
+                                    if (news.text.includes('AKTIV')) {
+                                        text = `🟢 ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
+                                    } else if (news.text.includes('NICHT_IN_LIGA')) {
+                                        text = `❌ ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
+                                    } else {
+                                        text = `🔴 ${linkPlayer(news.playerId, playerName)} ist ${match[2]} ${statusDisplay}`;
+                                    }
                                 } else {
+                                    addDebug('[renderNews] SPIELERSTATUS Regex match failed');
                                     text = news.text;
                                 }
-                            }
-                        } else if (art === 'POSITIONSWECHSEL') {
-                            try {
-                                const obj = JSON.parse(news.text); // falls JSON
-                                const pid = obj.playerId || news.playerId || null;
-                                text = `${linkPlayer(pid, obj.playerName)} wechselt von <b>${obj.oldPos}</b> zu <b>${obj.newPos}</b>`;
                             } catch (e) {
-
+                                addDebug('[renderNews] SPIELERSTATUS Fehler: ' + e.message);
                                 text = news.text;
-
+                                errorCount++;
+                            }
+                        }
+                        else if (art === 'VEREINSWECHSEL') {
+                            try {
+                                try {
+                                    const obj = JSON.parse(news.text);
+                                    const pid = obj.playerId || news.playerId || null;
+                                    text = `${linkPlayer(pid, obj.playerName)} wechselt von <b>${obj.oldClub || 'N/A'}</b> zu <b>${obj.newClub || 'N/A'}</b>`;
+                                } catch (jsonErr) {
+                                    const regex = /^Vereinswechsel:\s(.+?)\s\(/;
+                                    const match = regex.exec(news.text);
+                                    if (match) {
+                                        text = `Vereinswechsel: ${linkPlayer(news.playerId, match[1])}`;
+                                    } else {
+                                        text = news.text;
+                                    }
+                                }
+                            } catch (e) {
+                                addDebug('[renderNews] VEREINSWECHSEL Fehler: ' + e.message);
+                                text = news.text;
+                                errorCount++;
+                            }
+                        }
+                        else if (art === 'POSITIONSWECHSEL') {
+                            try {
+                                try {
+                                    const obj = JSON.parse(news.text);
+                                    const pid = obj.playerId || news.playerId || null;
+                                    text = `${linkPlayer(pid, obj.playerName)} wechselt von <b>${obj.oldPos}</b> zu <b>${obj.newPos}</b>`;
+                                } catch (e) {
+                                    text = news.text;
+                                }
+                            } catch (e) {
+                                addDebug('[renderNews] POSITIONSWECHSEL Fehler: ' + e.message);
+                                text = news.text;
+                                errorCount++;
                             }
                         }
                         else if (art === 'NEW_PLAYER') {
-                            const regex = /^Neuer Spieler:\s(.+?)\s\(ID: \d+\)$/;
-                            const match = regex.exec(news.text);
-                            if (match) {
-                                const playerName = match[1];
-                                text = `Neuer Spieler: ${linkPlayer(news.playerId, playerName)} (ID: ${news.text.match(/\(ID: (\d+)\)/)[1]})`;
-                            } else {
+                            try {
+                                const regex = /^Neuer Spieler:\s(.+?)\s\(ID: (\d+)\)$/;
+                                const match = regex.exec(news.text);
+                                if (match) {
+                                    text = `Neuer Spieler: ${linkPlayer(news.playerId, match[1])} (ID: ${match[2]})`;
+                                } else {
+                                    addDebug('[renderNews] NEW_PLAYER Regex match failed');
+                                    text = news.text;
+                                }
+                            } catch (e) {
+                                addDebug('[renderNews] NEW_PLAYER Fehler: ' + e.message);
                                 text = news.text;
+                                errorCount++;
                             }
-                        }else if (art === 'ELFDESTAGES') {
+                        }
+                        else if (art === 'ELFDESTAGES') {
                             try {
                                 const players = JSON.parse(news.text);
-                                
-                                // Sortiere nach Position
+
                                 const positionOrder = {
                                     'keeper': 1,
                                     'defender': 2,
                                     'midfielder': 3,
                                     'striker': 4
                                 };
-                                
+
                                 players.sort((a, b) => positionOrder[a.position] - positionOrder[b.position]);
 
-                                // Eindeutige ID für diesen Container
                                 const containerId = `elf-${day.date}-${Math.random().toString(36).substr(2, 9)}`;
-                                
+
                                 text = `<div class="top11-container" id="${containerId}" style="text-align: left; padding: 10px;">
                                     <h3 style="margin-bottom: 10px;">🏆 Elf des Tages</h3>`;
-                                
+
                                 let currentPosition = '';
-                                players.forEach((player, index) => {
+                                players.forEach((player) => {
                                     if (currentPosition !== player.position) {
                                         if (currentPosition !== '') text += '</div>';
                                         currentPosition = player.position;
@@ -161,34 +185,27 @@ function renderNews(newsList) {
                                             'midfielder': 'Mittelfeld',
                                             'striker': 'Sturm'
                                         };
-                                        text += `<div class="position-group" style="margin-bottom: 5px;">
-                                            <h4 style="margin: 5px 0;">${positionIcons[player.position]} ${positionNames[player.position]}</h4>`;
+                                        text += `<div class="position-group" style="margin-bottom: 10px;">
+                                            <h4 style="margin: 8px 0 6px 0;">${positionIcons[player.position]} ${positionNames[player.position]}</h4>`;
                                     }
-                                    
-                                    text += `<div class="player-entry">
+
+                                    text += `<div class="elf-player-entry" style="margin-bottom: 12px; padding: 8px; background: #f9f9f9; border-radius: 4px;">
                                         ${linkPlayer(player.playerId, player.playerName)} - 
                                         <span class="points">${player.punkte} Pkt.</span> 
-                                        (<span class="owner-name" data-owner-id="${player.owner}">${player.owner || 'Computer'}</span>)
+                                        (<span class="owner-name" data-owner-id="${player.owner}">Laden...</span>)
                                     </div>`;
                                 });
                                 text += '</div></div>';
-
-                                // Verzögere die Namen-Aktualisierung bis nach dem Rendern
-                                requestAnimationFrame(() => {
-                                    const ownerPromises = players.map(player => getUserString(player.owner));
-                                    Promise.all(ownerPromises).then(ownerNames => {
-                                        const container = document.getElementById(containerId);
-                                        if (container) {
-                                            const ownerSpans = container.querySelectorAll('.owner-name');
-                                            ownerSpans.forEach((span, index) => {
-                                                span.textContent = ownerNames[index] || 'Computer';
-                                            });
-                                        }
-                                    });
+                                
+                                elfContainersToUpdate.push({
+                                    containerId: containerId,
+                                    players: players
                                 });
+
                             } catch (e) {
-                                console.error("Fehler beim Verarbeiten der Elf des Tages:", e);
+                                addDebug('[renderNews] ELFDESTAGES Fehler: ' + e.message);
                                 text = news.text;
+                                errorCount++;
                             }
                         }
                         else {
@@ -196,28 +213,55 @@ function renderNews(newsList) {
                         }
 
                     } catch (e) {
-                        console.error("Fehler beim Verarbeiten des News-Textes:", news.text, e);
+                        addDebug('[renderNews] Unerwarteter Fehler bei News: ' + e.message);
                         text = news.text;
+                        errorCount++;
                     }
-                    html += `<li class=\"news-list-li\">${text}</li>`;
+                    
+                    html += `<li class="news-list-li">${text}</li>`;
                 }
                 html += `</ul>`;
             }
             html += `</div>`;
         }
-        document.getElementById('news-list').innerHTML = html || '<div style=\"padding:16px; color:#888;\">Keine News vorhanden.</div>';
-    } catch {
-        document.getElementById('news-list').innerHTML = '<div style=\"padding:16px; color:#e53935;\">Fehler beim Laden der News.</div>';
+        
+        const newsListDiv = document.getElementById('news-list');
+        if (newsListDiv) {
+            newsListDiv.innerHTML = html || '<div style="padding:16px; color:#888;">Keine News vorhanden.</div>';
+            newsListDiv.style.display = '';
+            addDebug('[renderNews] Erfolgreich gerendert mit ' + errorCount + ' Fehlern');
+            
+            requestAnimationFrame(() => {
+                elfContainersToUpdate.forEach(async (item) => {
+                    const container = document.getElementById(item.containerId);
+                    if (container) {
+                        const ownerSpans = container.querySelectorAll('.owner-name');
+                        for (let i = 0; i < item.players.length; i++) {
+                            const ownerId = item.players[i].owner;
+                            try {
+                                const ownerName = await getUserString(ownerId);
+                                if (ownerSpans[i]) {
+                                    ownerSpans[i].textContent = ownerName.trim();  // ← .trim() entfernt Leerzeichen!
+                                }
+                            } catch (e) {
+                                addDebug('[renderNews] Fehler beim Laden von Owner ' + ownerId + ': ' + e);
+                                if (ownerSpans[i]) {
+                                    ownerSpans[i].textContent = 'Unbekannt';
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+        } else {
+            addDebug('[renderNews] FEHLER: news-list nicht gefunden!');
+        }
+        
+    } catch (error) {
+        addDebug('[renderNews] Kritischer Fehler: ' + error.message);
+        const newsListDiv = document.getElementById('news-list');
+        if (newsListDiv) {
+            newsListDiv.innerHTML = '<div style="padding:16px; color:#e53935;">Fehler: ' + error.message + '</div>';
+        }
     }
-    document.getElementById('news-list').style.display = '';
-}
-
-// Hilfsfunktion innerhalb von renderNews oder global verfügbar
-function linkPlayer(playerId, playerName) {
-    if (!playerId) {
-        // Keine playerId vorhanden, kein Link, nur farbig hervorgehoben
-        return `<span style="color:#80f; font-weight:bold;">${playerName}</span>`;
-    }
-    const url = getPlayerUrl(playerId);
-    return `<a href="${url}" style="color:#80f; font-weight:bold;">${playerName}</a>`;
 }

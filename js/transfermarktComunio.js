@@ -77,6 +77,8 @@ function renderTable(data) {
         const clubLogo = document.createElement('img');
         clubLogo.src = DATA_URLS.logos + getLogoFileName(item.verein);
         clubLogo.alt = `Club ${item.verein}`;
+        clubLogo.width = 30;  // in Pixel, an Statusbild anpassen
+        clubLogo.height = 30;
         clubCell.appendChild(clubLogo);
 
         // Spieler
@@ -113,7 +115,16 @@ function renderTable(data) {
         // Position
         const positionCell = document.createElement('td');
         positionCell.className = 'position';
-        positionCell.textContent = item.position;
+
+        const posLogoFile = getLogoPositionFilename(item.position);
+        const img = document.createElement('img');
+        img.src = `logos/${posLogoFile}`;
+        img.className = 'club-logo';
+        img.alt = item.position;
+        img.title = item.position;
+        img.width = 30;  // in Pixel, an Statusbild anpassen
+        img.height = 30;
+        positionCell.appendChild(img);
 
         // Marktwert (rechtsbündig)
         const valueCell = document.createElement('td');
@@ -219,7 +230,7 @@ function getDeadlineDate(dateString) {
     // Korrigiere Zeitzonen-Format wie bisher
     const normalized = dateString.replace(/([+-]\d{2})(\d{2})$/, '$1:$2');
     const deadline = new Date(normalized);
-return deadline;
+    return deadline;
 }
 
 function calculateRemainingTime(dateString) {

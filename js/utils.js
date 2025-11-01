@@ -53,6 +53,16 @@ function getPlayerUrl(playerId) {
   }
 }
 
+// Hilfsfunktion innerhalb von renderNews oder global verfügbar
+function linkPlayer(playerId, playerName) {
+    if (!playerId) {
+        // Keine playerId vorhanden, kein Link, nur farbig hervorgehoben
+        return `<span style="color:#80f; font-weight:bold;">${playerName}</span>`;
+    }
+    const url = getPlayerUrl(playerId);
+    return `<a href="${url}" style="color:#80f; font-weight:bold;">${playerName}</a>`;
+}
+
 
 function getLogoFileName(clubId) {
   if (!clubId) return "unbestimmt.png";
@@ -77,6 +87,17 @@ function getLogoFileName(clubId) {
     "4": "hamburg",
   };
   return (mapping[clubId] || "unbestimmt") + ".png";
+}
+
+function getLogoPositionFilename(pos) {
+  if (!pos) return "unbestimmt.png";
+  const mapping = {
+    "STURM": "sts",
+    "MITTELFELD": "mits",
+    "ABWEHR": "defs",
+    "TORHÜTER": "tors",
+  };
+  return (mapping[pos] || "unbestimmt") + ".png";
 }
 
 
