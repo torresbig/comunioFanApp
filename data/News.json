@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "01.11.2025 15:00:08",
+  "lastUpdate": "02.11.2025 05:18:22",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -11845,6 +11845,27 @@
       ]
     },
     {
+      "date": "02.11.2025",
+      "news": [
+        {
+          "date": "02.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Raab\",\"price\":160000,\"buyerId\":\"5981249\",\"playerValue\":160000,\"playerId\":\"34144\",\"buyer\":\"Thomas\"}",
+          "id": "954660228",
+          "playerId": "34144"
+        },
+        {
+          "date": "02.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Ngoumou\",\"price\":300000,\"buyerId\":\"5981249\",\"playerValue\":330000,\"playerId\":\"33681\",\"buyer\":\"Thomas\"}",
+          "id": "954660228",
+          "playerId": "33681"
+        }
+      ]
+    },
+    {
       "date": "02.10.2025",
       "news": [
         {
@@ -12487,14 +12508,24 @@
     },
     {
       "date": "01.11.2025",
-      "news": [{
-        "date": "01.11.2025",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Couto\",\"price\":4888009,\"buyerId\":\"10966300\",\"playerValue\":5000000,\"playerId\":\"34033\",\"buyer\":\"Alexander\"}",
-        "id": "954630835",
-        "playerId": "34033"
-      }]
+      "news": [
+        {
+          "date": "01.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Couto\",\"price\":4888009,\"buyerId\":\"10966300\",\"playerValue\":5000000,\"playerId\":\"34033\",\"buyer\":\"Alexander\"}",
+          "id": "954630835",
+          "playerId": "34033"
+        },
+        {
+          "date": "01.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Tiago Tomás (33557) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33557"
+        }
+      ]
     },
     {
       "date": "01.10.2025",
