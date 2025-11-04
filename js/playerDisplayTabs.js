@@ -28,13 +28,13 @@ function initTabs() {
     addDebug('Tabs initialisiert', 'success');
 }
 
-  function getPlayerUrlWithParams(playerId) {
-       let playerUrl = getPlayerUrl(playerId);
-        if (urlParams.withMenue === false) {
-          playerUrl += '&withMenue=false';
-        }
-        return playerUrl;
+function getPlayerUrlWithParams(playerId) {
+    let playerUrl = getPlayerUrl(playerId);
+    if (urlParams.withMenue === false) {
+        playerUrl += '&withMenue=false';
     }
+    return playerUrl;
+}
 
 function displayRivals(player, allPlayers) {
     addDebug('Erstelle Rivalen-Tabelle', 'info');
@@ -184,69 +184,80 @@ function makeTableSortable(tableSelector, defaultSortCol = 0, defaultSortDir = '
     }
 }
 
-function displayPointsHistory(player) {
-    addDebug('Erstelle Punkte-Anzeige', 'info');
-    const container = document.getElementById('pointsHistory');
-    if (!container) return;
-    const pointsHistory = player.data?.historicalPoints || [];
+window.addEventListener('DOMContentLoaded', initTabs);
+
+// --- Responsive Punkte/Spielzeiten-Tabelle + Historische Saisons ---
+function renderPointsTableResponsive(player, lastPorcessedMatchday) {
+    const container = document.getElementById("pointsHistory");
+    const isMobile = window.matchMedia("(max-width: 600px)").matches;
     const spieltagspunkte = player.data?.spieltagspunkte || [];
-    const currentPoints = player.data?.punkte || 0;
+    const pointsHistory = player.data?.historicalPoints || [];
     const currentSeason = new Date().getFullYear();
+    let html = `<h3>Punkte & Spielzeiten - Aktuelle Saison (${currentSeason})</h3>`;
+    html += '<table class="points-table"><thead><tr>';
+    html += '<th>Spieltag</th><th>Punkte</th><th>Spielzeit</th><th>Tore</th>';
+    html += isMobile ? '</tr></thead><tbody>' : '<th>Spieltag</th><th>Punkte</th><th>Spielzeit</th><th>Tore</th><th>Spieltag</th><th>Punkte</th><th>Spielzeit</th><th>Tore</th></tr></thead><tbody>';
 
-    let html = `
-        <h3>📈 Punkte & Spielzeiten - Aktuelle Saison (${currentSeason})</h3>
-        <table class="points-table">
-            <thead>
-                <tr>
-                    <th>Spieltag</th><th>Punkte</th><th>zus. Infos</th>
-                    <th>Spieltag</th><th>Punkte</th><th>zus. Infos</th>
-                    <th>Spieltag</th><th>Punkte</th><th>zus. Infos</th>
-                    
-                </tr>
-            </thead>
-            <tbody>
-    `;
-
-    for (let i = 1; i <= 34; i += 3) {
-        html += '<tr>';
-        for (let j = 0; j < 3; j++) {
-            const spieltag = i + j;
-            if (spieltag > 34) {
-                html += '<td></td><td></td>';
-            } else {
-                const punktEntry = spieltagspunkte.find(p => p.key === spieltag);
+    if (isMobile) {
+        for (let i = 1; i <= 34; i++) {
+            if (lastPorcessedMatchday && i <= lastPorcessedMatchday) {
+                const punktEntry = spieltagspunkte.find(p => p.key === i);
                 const punkte = punktEntry ? punktEntry.value : '-';
                 const einsatzzeit = punktEntry && punktEntry.einsatzzeit !== undefined ? punktEntry.einsatzzeit + " min" : '-';
-                const tore = punktEntry && punktEntry.tore !== undefined ? punktEntry.tore + " Tor(e)": '-';
-                html += `<td class="matchday-cell">${spieltag}</td><td class="points-cell">${punkte}</td><td class="points-cell">${einsatzzeit} / ${tore}</td>`;
+                const tore = punktEntry && punktEntry.tore !== undefined ? punktEntry.tore : '-';
+                html += `<tr>
+                      <td class="matchday-cell">${i}</td>
+                      <td class="points-cell">${punkte}</td>
+                      <td class="points-cell">${einsatzzeit}</td>
+                      <td class="points-cell">${tore}</td>
+                    </tr>`;
             }
         }
-        html += '</tr>';
+    } else {
+        for (let i = 1; i <= 34; i += 3) {
+            html += '<tr>';
+            for (let j = 0; j < 3; j++) {
+                const spieltag = i + j;
+                if (spieltag > 34) {
+                    html += '<td></td><td></td><td></td>';
+                } else {
+                    if (lastPorcessedMatchday && spieltag <= lastPorcessedMatchday) {
+                        const punktEntry = spieltagspunkte.find(p => p.key === spieltag);
+                        const punkte = punktEntry ? punktEntry.value : '-';
+                        const einsatzzeit = punktEntry && punktEntry.einsatzzeit !== undefined ? punktEntry.einsatzzeit + " min" : '-';
+                        const tore = punktEntry && punktEntry.tore !== undefined ? punktEntry.tore : '-';
+                        html += `<td class="matchday-cell">${spieltag}</td>
+                             <td class="points-cell">${punkte}</td>
+                             <td class="points-cell">${einsatzzeit}</td>
+                             <td class="points-cell">${tore}</td>`;
+                    }
+                }
+            }
+            html += '</tr>';
+        }
     }
+    html += '</tbody></table>';
 
-    html += `
-            </tbody>
-        </table>
-    `;
-
+    // Historische Saisons
     if (pointsHistory.length > 0) {
-        html += '<h3>📅 Historische Saisons</h3>';
-        html += '<table class="points-table">';
-        html += '<thead><tr><th>Saison</th><th>Punkte</th></tr></thead><tbody>';
-
+        html += `<h3>Historische Saisons</h3>`;
+        html += `<table class="points-table"><thead><tr><th>Saison</th><th>Punkte</th></tr></thead><tbody>`;
         pointsHistory.forEach(season => {
-            // season ist z. B. { "2011": 2 }
+            // Annahme: season wie { "2011": 136 }
             const [year, points] = Object.entries(season)[0];
             html += `<tr><td>${year}</td><td>${points}</td></tr>`;
         });
-
-        html += '</tbody></table>';
+        html += `</tbody></table>`;
     }
-
-
     container.innerHTML = html;
-    addDebug('Punkte-Anzeige erstellt', 'success');
 }
+
+// Optional, für dynamische Umschaltung ohne Seitenreload:
+window.addEventListener("resize", () => {
+    if (document.getElementById("pointsHistory") && typeof player !== "undefined") {
+        renderPointsTableResponsive(player);
+    }
+});
 
 // NEU (ohne Fehler, für jede Seite nutzbar):
 const defaultTabBtn = document.querySelector('.tab-button[data-tab="market"]')

@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         displayRivals(player, allPlayers);
         displayMarketValue(player);
-        displayPointsHistory(player);
+        renderPointsTableResponsive(player, allPlayersResponse.lastProcessedMatchday);
 
         addDebug('Spielerdaten vollständig geladen und angezeigt', 'success');
 
