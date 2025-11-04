@@ -198,25 +198,26 @@ function displayPointsHistory(player) {
         <table class="points-table">
             <thead>
                 <tr>
-                    <th>Spieltag</th><th>Punkte</th>
-                    <th>Spieltag</th><th>Punkte</th>
-                    <th>Spieltag</th><th>Punkte</th>
-                    <th>Spieltag</th><th>Punkte</th>
+                    <th>Spieltag</th><th>Punkte</th><th>Einsatzzeit</th>
+                    <th>Spieltag</th><th>Punkte</th><th>Einsatzzeit</th>
+                    <th>Spieltag</th><th>Punkte</th><th>Einsatzzeit</th>
+                    
                 </tr>
             </thead>
             <tbody>
     `;
 
-    for (let i = 1; i <= 34; i += 4) {
+    for (let i = 1; i <= 34; i += 3) {
         html += '<tr>';
-        for (let j = 0; j < 4; j++) {
+        for (let j = 0; j < 3; j++) {
             const spieltag = i + j;
             if (spieltag > 34) {
                 html += '<td></td><td></td>';
             } else {
                 const punktEntry = spieltagspunkte.find(p => p.key === spieltag);
                 const punkte = punktEntry ? punktEntry.value : '-';
-                html += `<td class="matchday-cell">${spieltag}</td><td class="points-cell">${punkte}</td>`;
+                const einsatzzeit = punktEntry && punktEntry.einsatzzeit !== undefined ? punktEntry.einsatzzeit + " min" : '-';
+                html += `<td class="matchday-cell">${spieltag}</td><td class="points-cell">${punkte}</td><td class="points-cell">${einsatzzeit}</td>`;
             }
         }
         html += '</tr>';
