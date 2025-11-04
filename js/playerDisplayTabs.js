@@ -194,13 +194,13 @@ function displayPointsHistory(player) {
     const currentSeason = new Date().getFullYear();
 
     let html = `
-        <h3>📈 Punkteverlauf - Aktuelle Saison (${currentSeason})</h3>
+        <h3>📈 Punkte & Spielzeiten - Aktuelle Saison (${currentSeason})</h3>
         <table class="points-table">
             <thead>
                 <tr>
-                    <th>Spieltag</th><th>Punkte</th><th>Einsatzzeit</th>
-                    <th>Spieltag</th><th>Punkte</th><th>Einsatzzeit</th>
-                    <th>Spieltag</th><th>Punkte</th><th>Einsatzzeit</th>
+                    <th>Spieltag</th><th>Punkte</th><th>zus. Infos</th>
+                    <th>Spieltag</th><th>Punkte</th><th>zus. Infos</th>
+                    <th>Spieltag</th><th>Punkte</th><th>zus. Infos</th>
                     
                 </tr>
             </thead>
@@ -217,7 +217,8 @@ function displayPointsHistory(player) {
                 const punktEntry = spieltagspunkte.find(p => p.key === spieltag);
                 const punkte = punktEntry ? punktEntry.value : '-';
                 const einsatzzeit = punktEntry && punktEntry.einsatzzeit !== undefined ? punktEntry.einsatzzeit + " min" : '-';
-                html += `<td class="matchday-cell">${spieltag}</td><td class="points-cell">${punkte}</td><td class="points-cell">${einsatzzeit}</td>`;
+                const tore = punktEntry && punktEntry.tore !== undefined ? punktEntry.tore + " Tor(e)": '-';
+                html += `<td class="matchday-cell">${spieltag}</td><td class="points-cell">${punkte}</td><td class="points-cell">${einsatzzeit} / ${tore}</td>`;
             }
         }
         html += '</tr>';
