@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "04.11.2025 15:03:57",
+  "lastUpdate": "05.11.2025 05:18:29",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -10642,6 +10642,17 @@
       ]
     },
     {
+      "date": "05.11.2025",
+      "news": [{
+        "date": "05.11.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Ulreich\",\"price\":160000,\"buyerId\":\"5981249\",\"playerValue\":160000,\"playerId\":\"31216\",\"buyer\":\"Thomas\"}",
+        "id": "954786728",
+        "playerId": "31216"
+      }]
+    },
+    {
       "date": "05.10.2025",
       "news": [
         {
@@ -10980,14 +10991,32 @@
     },
     {
       "date": "04.11.2025",
-      "news": [{
-        "date": "04.11.2025",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Pherai\",\"price\":759200,\"buyerId\":\"1\",\"playerValue\":680000,\"playerId\":\"33254\",\"buyer\":\"Computer\"}",
-        "id": "954757074",
-        "playerId": "33254"
-      }]
+      "news": [
+        {
+          "date": "04.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Pherai\",\"price\":759200,\"buyerId\":\"1\",\"playerValue\":680000,\"playerId\":\"33254\",\"buyer\":\"Computer\"}",
+          "id": "954757074",
+          "playerId": "33254"
+        },
+        {
+          "date": "04.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: N. Schlotterbeck (33038) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33038"
+        },
+        {
+          "date": "04.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Brandt (32236) ist jetzt VERLETZT (muskuläre Probleme)",
+          "id": "0",
+          "playerId": "32236"
+        }
+      ]
     },
     {
       "date": "04.10.2025",
