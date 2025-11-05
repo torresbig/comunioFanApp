@@ -57,6 +57,27 @@
 
         <!-- Content -->
         <div id="content" style="display:none;">
+            <!-- Filtermenü, zuerst eingeklappt -->
+<div id="filterMenuContainer" style="margin-bottom:16px;">
+  <button id="toggleFilterMenuBtn" style="margin-bottom:6px;">🔎 Filter anzeigen</button>
+  <form id="filterForm" style="display:none; background:#fff; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,0.09); padding:12px; margin-bottom:10px;">
+    <div style="display:flex; flex-wrap:wrap; gap:16px;">
+      <label>
+        <input type="checkbox" id="filterComputerOwner" /> Nur Computer-Angebote
+      </label>
+      <label>
+        <input type="checkbox" id="filterPrice160000" /> Preis = 160.000&nbsp;€
+      </label>
+      <label>
+        <input type="checkbox" id="filterNotStatusAktiv" /> Status ungleich "aktiv"
+      </label>
+      <label>
+        <input type="checkbox" id="filterPriceBelowValue" /> Preis < Marktwert
+      </label>
+    </div>
+    <button type="button" id="resetFilterBtn" style="margin-top:10px;">Reset Filter</button>
+  </form>
+        </div>
             <div class="table-container">
                 <table id="transferTable">
                     <thead>
@@ -84,5 +105,6 @@
     <script src="js/hamburgerMenu.js"></script>
     <script src="js/transfermarktComunio.js"></script>
 </body>
+
 
 </html>
