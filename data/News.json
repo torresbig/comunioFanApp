@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "05.11.2025 05:18:29",
+  "lastUpdate": "05.11.2025 15:04:08",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -10643,14 +10643,24 @@
     },
     {
       "date": "05.11.2025",
-      "news": [{
-        "date": "05.11.2025",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Ulreich\",\"price\":160000,\"buyerId\":\"5981249\",\"playerValue\":160000,\"playerId\":\"31216\",\"buyer\":\"Thomas\"}",
-        "id": "954786728",
-        "playerId": "31216"
-      }]
+      "news": [
+        {
+          "date": "05.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Ulreich\",\"price\":160000,\"buyerId\":\"5981249\",\"playerValue\":160000,\"playerId\":\"31216\",\"buyer\":\"Thomas\"}",
+          "id": "954786728",
+          "playerId": "31216"
+        },
+        {
+          "date": "05.11.2025",
+          "art": "ELFDESTAGES",
+          "gelesen": false,
+          "text": "[{\"punkte\":8,\"owner\":\"9317431\",\"playerName\":\"Nicolas\",\"position\":\"keeper\",\"playerId\":\"32654\"},{\"punkte\":12,\"owner\":\"13641978\",\"playerName\":\"Kristensen\",\"position\":\"defender\",\"playerId\":\"34025\"},{\"punkte\":12,\"owner\":\"1\",\"playerName\":\"Widmer\",\"position\":\"defender\",\"playerId\":\"33478\"},{\"punkte\":7,\"owner\":\"1\",\"playerName\":\"Coufal\",\"position\":\"defender\",\"playerId\":\"34257\"},{\"punkte\":18,\"owner\":\"1\",\"playerName\":\"Burger\",\"position\":\"midfielder\",\"playerId\":\"34242\"},{\"punkte\":14,\"owner\":\"5949921\",\"playerName\":\"J. Kaminski\",\"position\":\"midfielder\",\"playerId\":\"33607\"},{\"punkte\":12,\"owner\":\"9317431\",\"playerName\":\"Prömel\",\"position\":\"midfielder\",\"playerId\":\"32492\"},{\"punkte\":12,\"owner\":\"1\",\"playerName\":\"Kainz\",\"position\":\"midfielder\",\"playerId\":\"32636\"},{\"punkte\":18,\"owner\":\"5949921\",\"playerName\":\"Tabaković\",\"position\":\"striker\",\"playerId\":\"34047\"},{\"punkte\":16,\"owner\":\"13654613\",\"playerName\":\"Amoura\",\"position\":\"striker\",\"playerId\":\"34015\"},{\"punkte\":12,\"owner\":\"1\",\"playerName\":\"S. El Mala\",\"position\":\"striker\",\"playerId\":\"34139\"}]",
+          "id": "954800679",
+          "playerId": "0"
+        }
+      ]
     },
     {
       "date": "05.10.2025",
