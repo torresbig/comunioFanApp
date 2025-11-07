@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "07.11.2025 05:18:34",
+  "lastUpdate": "07.11.2025 15:05:00",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -10105,6 +10105,22 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kainz\",\"price\":2500000,\"buyerId\":\"13806423\",\"playerValue\":2390000,\"playerId\":\"32636\",\"buyer\":\"Florian\"}",
           "id": "954876049",
           "playerId": "32636"
+        },
+        {
+          "date": "07.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Florian\",\"sellerId\":\"13806423\",\"playerName\":\"J. Hofmann\",\"price\":3841200,\"buyerId\":\"1\",\"playerValue\":3580000,\"playerId\":\"32080\",\"buyer\":\"Computer\"}",
+          "id": "954876049",
+          "playerId": "32080"
+        },
+        {
+          "date": "07.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: N. Stark (32120) ist jetzt VERLETZT (Hüftprobleme)",
+          "id": "0",
+          "playerId": "32120"
         }
       ]
     },
