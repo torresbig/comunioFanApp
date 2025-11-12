@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "11.11.2025 15:03:59",
+  "lastUpdate": "12.11.2025 15:04:28",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -8223,6 +8223,75 @@
       ]
     },
     {
+      "date": "12.11.2025",
+      "news": [
+        {
+          "date": "12.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Lindstrøm\",\"price\":1790000,\"buyerId\":\"5981249\",\"playerValue\":1940000,\"playerId\":\"33480\",\"buyer\":\"Thomas\"}",
+          "id": "955090921",
+          "playerId": "33480"
+        },
+        {
+          "date": "12.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Schick\",\"price\":17850000,\"buyerId\":\"5949921\",\"playerValue\":16860000,\"playerId\":\"33179\",\"buyer\":\"Sascha\"}",
+          "id": "955090921",
+          "playerId": "33179"
+        },
+        {
+          "date": "12.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Coufal\",\"price\":6750000,\"buyerId\":\"5949921\",\"playerValue\":6370000,\"playerId\":\"34257\",\"buyer\":\"Sascha\"}",
+          "id": "955090921",
+          "playerId": "34257"
+        },
+        {
+          "date": "12.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Jenz\",\"price\":1600000,\"buyerId\":\"1\",\"playerValue\":1610000,\"playerId\":\"33727\",\"buyer\":\"Computer\"}",
+          "id": "955090921",
+          "playerId": "33727"
+        },
+        {
+          "date": "12.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Fujita\",\"price\":2440000,\"buyerId\":\"1\",\"playerValue\":2460000,\"playerId\":\"34211\",\"buyer\":\"Computer\"}",
+          "id": "955090921",
+          "playerId": "34211"
+        },
+        {
+          "date": "12.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Zehnter\",\"price\":2140000,\"buyerId\":\"1\",\"playerValue\":2130000,\"playerId\":\"33587\",\"buyer\":\"Computer\"}",
+          "id": "955090921",
+          "playerId": "33587"
+        },
+        {
+          "date": "12.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: J. Lee (33477) ist jetzt VERLETZT (Innenbandverletzung)",
+          "id": "0",
+          "playerId": "33477"
+        },
+        {
+          "date": "12.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gouweleeuw (32549) ist jetzt VERLETZT (Innenbandverletzung)",
+          "id": "0",
+          "playerId": "32549"
+        }
+      ]
+    },
+    {
       "date": "12.10.2025",
       "news": [
         {
@@ -8497,14 +8566,32 @@
     },
     {
       "date": "11.11.2025",
-      "news": [{
-        "date": "11.11.2025",
-        "art": "SPIELERSTATUS",
-        "gelesen": false,
-        "text": "Statuswechsel: Jenz (33727) ist jetzt VERLETZT (Muskelverletzung)",
-        "id": "0",
-        "playerId": "33727"
-      }]
+      "news": [
+        {
+          "date": "11.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jenz (33727) ist jetzt VERLETZT (Muskelverletzung)",
+          "id": "0",
+          "playerId": "33727"
+        },
+        {
+          "date": "11.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Andi\",\"sellerId\":\"9317431\",\"playerName\":\"Beier\",\"price\":7248800,\"buyerId\":\"1\",\"playerValue\":6770000,\"playerId\":\"33208\",\"buyer\":\"Computer\"}",
+          "id": "955079727",
+          "playerId": "33208"
+        },
+        {
+          "date": "11.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Andi\",\"sellerId\":\"9317431\",\"playerName\":\"Stöger\",\"price\":3621000,\"buyerId\":\"1\",\"playerValue\":3190000,\"playerId\":\"31985\",\"buyer\":\"Computer\"}",
+          "id": "955079727",
+          "playerId": "31985"
+        }
+      ]
     },
     {
       "date": "11.10.2025",
