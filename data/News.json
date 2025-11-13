@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "13.11.2025 05:18:25",
+  "lastUpdate": "13.11.2025 15:03:56",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -7967,14 +7967,40 @@
     },
     {
       "date": "13.11.2025",
-      "news": [{
-        "date": "13.11.2025",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Fernández\",\"price\":2700000,\"buyerId\":\"5981249\",\"playerValue\":2730000,\"playerId\":\"34289\",\"buyer\":\"Thomas\"}",
-        "id": "955130732",
-        "playerId": "34289"
-      }]
+      "news": [
+        {
+          "date": "13.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Fernández\",\"price\":2700000,\"buyerId\":\"5981249\",\"playerValue\":2730000,\"playerId\":\"34289\",\"buyer\":\"Thomas\"}",
+          "id": "955130732",
+          "playerId": "34289"
+        },
+        {
+          "date": "13.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kimmich (32445) ist jetzt VERLETZT (Kapselverletzung)",
+          "id": "0",
+          "playerId": "32445"
+        },
+        {
+          "date": "13.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Omlin (33716) ist jetzt VERLETZT (Adduktorenbeschwerden)",
+          "id": "0",
+          "playerId": "33716"
+        },
+        {
+          "date": "13.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Larsson (33782) ist jetzt VERLETZT (Muskelverletzung)",
+          "id": "0",
+          "playerId": "33782"
+        }
+      ]
     },
     {
       "date": "13.10.2025",
