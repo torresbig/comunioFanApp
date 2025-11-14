@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "13.11.2025 15:03:56",
+  "lastUpdate": "14.11.2025 15:03:54",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -7305,6 +7305,51 @@
           "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Gendrey\",\"price\":2233800,\"playerValue\":1630000,\"playerId\":\"34051\",\"buyer\":\"Computer\",\"buyerId\":\"1\"}",
           "id": "949052504",
           "playerId": "34051"
+        }
+      ]
+    },
+    {
+      "date": "14.11.2025",
+      "news": [
+        {
+          "date": "14.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Schäfer\",\"price\":2220009,\"buyerId\":\"10966300\",\"playerValue\":1980000,\"playerId\":\"33550\",\"buyer\":\"Alexander\"}",
+          "id": "955167640",
+          "playerId": "33550"
+        },
+        {
+          "date": "14.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Undav\",\"price\":15240009,\"buyerId\":\"10966300\",\"playerValue\":14210000,\"playerId\":\"33832\",\"buyer\":\"Alexander\"}",
+          "id": "955167640",
+          "playerId": "33832"
+        },
+        {
+          "date": "14.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Sieb\",\"price\":1919000,\"buyerId\":\"1\",\"playerValue\":1870000,\"playerId\":\"34006\",\"buyer\":\"Computer\"}",
+          "id": "955167640",
+          "playerId": "34006"
+        },
+        {
+          "date": "14.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Finkgräfe (33848) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33848"
+        },
+        {
+          "date": "14.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Bensebaini (33167) ist jetzt VERLETZT (Rückenprobleme)",
+          "id": "0",
+          "playerId": "33167"
         }
       ]
     },
