@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "16.11.2025 15:03:49",
+  "lastUpdate": "17.11.2025 05:18:16",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -6298,6 +6298,17 @@
       ]
     },
     {
+      "date": "17.11.2025",
+      "news": [{
+        "date": "17.11.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Castro-Montes\",\"price\":400000,\"buyerId\":\"13654613\",\"playerValue\":420000,\"playerId\":\"34287\",\"buyer\":\"Christoph\"}",
+        "id": "955249070",
+        "playerId": "34287"
+      }]
+    },
+    {
       "date": "17.10.2025",
       "news": [
         {
@@ -6564,6 +6575,46 @@
           "text": "{\"seller\":\"Florian\",\"sellerId\":\"13806423\",\"playerName\":\"Scally\",\"price\":1927800,\"buyerId\":\"1\",\"playerValue\":1890000,\"playerId\":\"33258\",\"buyer\":\"Computer\"}",
           "id": "955224189",
           "playerId": "33258"
+        },
+        {
+          "date": "16.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Arnold\",\"price\":7864200,\"buyerId\":\"1\",\"playerValue\":7730000,\"playerId\":\"31884\",\"buyer\":\"Computer\"}",
+          "id": "955224189",
+          "playerId": "31884"
+        },
+        {
+          "date": "16.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Giannoulis (34027) ist jetzt VERLETZT (Muskelverletzung)",
+          "id": "0",
+          "playerId": "34027"
+        },
+        {
+          "date": "16.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Y. Poulsen (32591) ist jetzt VERLETZT (Muskelfaserriss)",
+          "id": "0",
+          "playerId": "32591"
+        },
+        {
+          "date": "16.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Coulibaly (34239) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34239"
+        },
+        {
+          "date": "16.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Mbangula (34243) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34243"
         }
       ]
     },
