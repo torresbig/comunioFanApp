@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "28.11.2025 15:04:02",
+  "lastUpdate": "29.11.2025 05:18:24",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -570,6 +570,17 @@
           "playerId": "34072"
         }
       ]
+    },
+    {
+      "date": "29.11.2025",
+      "news": [{
+        "date": "29.11.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Rieß\",\"price\":370000,\"buyerId\":\"5949921\",\"playerValue\":350000,\"playerId\":\"33466\",\"buyer\":\"Sascha\"}",
+        "id": "955754109",
+        "playerId": "33466"
+      }]
     },
     {
       "date": "29.10.2025",
@@ -1195,6 +1206,22 @@
           "text": "Statuswechsel: Zentner (32364) ist jetzt VERLETZT (Adduktorenverletzung)",
           "id": "0",
           "playerId": "32364"
+        },
+        {
+          "date": "28.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christian\",\"sellerId\":\"13641446\",\"playerName\":\"Wahi\",\"price\":930000,\"buyerId\":\"5981249\",\"playerValue\":1360000,\"playerId\":\"34096\",\"buyer\":\"Thomas\"}",
+          "id": "955716987",
+          "playerId": "34096"
+        },
+        {
+          "date": "28.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Hložek (33619) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33619"
         }
       ]
     },
