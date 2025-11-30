@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "30.11.2025 05:18:28",
+  "lastUpdate": "30.11.2025 15:03:46",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -263,14 +263,24 @@
     },
     {
       "date": "30.11.2025",
-      "news": [{
-        "date": "30.11.2025",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Haidara\",\"price\":652000,\"buyerId\":\"9317431\",\"playerValue\":580000,\"playerId\":\"33023\",\"buyer\":\"Andi\"}",
-        "id": "955782614",
-        "playerId": "33023"
-      }]
+      "news": [
+        {
+          "date": "30.11.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Haidara\",\"price\":652000,\"buyerId\":\"9317431\",\"playerValue\":580000,\"playerId\":\"33023\",\"buyer\":\"Andi\"}",
+          "id": "955782614",
+          "playerId": "33023"
+        },
+        {
+          "date": "30.11.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Heintz (31882) ist jetzt VERLETZT (Muskelfaserriss)",
+          "id": "0",
+          "playerId": "31882"
+        }
+      ]
     },
     {
       "date": "30.10.2025",
