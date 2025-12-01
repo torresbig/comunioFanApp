@@ -15,22 +15,6 @@
     "latestKickoff": "2025-11-23T17:30:00+01:00",
     "fetchNow": false
   },
-  "1": {
-    "earliestKickoff": "2025-08-22T20:30:00+02:00",
-    "pointsMatchday": 0,
-    "eventInfo": {
-      "date": "22.08.2025",
-      "next": 392924,
-      "previous": 0,
-      "id": 392453,
-      "event": "Aufstellung 1. Spieltag"
-    },
-    "currentMatchday": 1,
-    "isStarted": false,
-    "isFinished": true,
-    "latestKickoff": "2025-08-24T17:30:00+0200",
-    "fetchNow": false
-  },
   "12": {
     "earliestKickoff": "2025-11-28T20:30:00+01:00",
     "pointsMatchday": 11,
@@ -45,6 +29,38 @@
     "isStarted": true,
     "isFinished": false,
     "latestKickoff": "2025-11-30T19:30:00+01:00",
+    "fetchNow": false
+  },
+  "13": {
+    "earliestKickoff": "2025-12-05T20:30:00+01:00",
+    "pointsMatchday": 12,
+    "eventInfo": {
+      "date": "05.12.2025",
+      "next": 395799,
+      "previous": 395605,
+      "id": 395789,
+      "event": "Aufstellung 13. Spieltag"
+    },
+    "currentMatchday": 13,
+    "isStarted": false,
+    "isFinished": false,
+    "latestKickoff": "2025-12-07T17:30:00+01:00",
+    "fetchNow": false
+  },
+  "1": {
+    "earliestKickoff": "2025-08-22T20:30:00+02:00",
+    "pointsMatchday": 0,
+    "eventInfo": {
+      "date": "22.08.2025",
+      "next": 392924,
+      "previous": 0,
+      "id": 392453,
+      "event": "Aufstellung 1. Spieltag"
+    },
+    "currentMatchday": 1,
+    "isStarted": false,
+    "isFinished": true,
+    "latestKickoff": "2025-08-24T17:30:00+0200",
     "fetchNow": false
   },
   "2": {
