@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "02.12.2025 05:18:24",
+  "lastUpdate": "02.12.2025 13:44:25",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -13632,14 +13632,40 @@
     },
     {
       "date": "02.12.2025",
-      "news": [{
-        "date": "02.12.2025",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Gerhardt\",\"price\":1600000,\"buyerId\":\"13806423\",\"playerValue\":1300000,\"playerId\":\"32280\",\"buyer\":\"Florian\"}",
-        "id": "955863425",
-        "playerId": "32280"
-      }]
+      "news": [
+        {
+          "date": "02.12.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Gerhardt\",\"price\":1600000,\"buyerId\":\"13806423\",\"playerValue\":1300000,\"playerId\":\"32280\",\"buyer\":\"Florian\"}",
+          "id": "955863425",
+          "playerId": "32280"
+        },
+        {
+          "date": "02.12.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Florian\",\"sellerId\":\"13806423\",\"playerName\":\"Adamu\",\"price\":2038400,\"buyerId\":\"1\",\"playerValue\":2080000,\"playerId\":\"33802\",\"buyer\":\"Computer\"}",
+          "id": "955863425",
+          "playerId": "33802"
+        },
+        {
+          "date": "02.12.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Glatzel (33375) ist jetzt VERLETZT (Muskelfaserriss)",
+          "id": "0",
+          "playerId": "33375"
+        },
+        {
+          "date": "02.12.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Hountondji (34229) ist jetzt VERLETZT (Oberschenkelprobleme)",
+          "id": "0",
+          "playerId": "34229"
+        }
+      ]
     },
     {
       "date": "02.11.2025",
