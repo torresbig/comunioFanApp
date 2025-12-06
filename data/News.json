@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "05.12.2025 15:04:00",
+  "lastUpdate": "06.12.2025 15:02:01",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -11953,6 +11953,43 @@
       ]
     },
     {
+      "date": "06.12.2025",
+      "news": [
+        {
+          "date": "06.12.2025",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Moreno Fell (ID: 34308)",
+          "id": "0",
+          "playerId": "34308"
+        },
+        {
+          "date": "06.12.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Fell (34306) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "34306"
+        },
+        {
+          "date": "06.12.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"W. Orbán\",\"price\":7100000,\"buyerId\":\"13806423\",\"playerValue\":7360000,\"playerId\":\"31846\",\"buyer\":\"Florian\"}",
+          "id": "956054498",
+          "playerId": "31846"
+        },
+        {
+          "date": "06.12.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kofane\",\"price\":5500000,\"buyerId\":\"13654613\",\"playerValue\":5520000,\"playerId\":\"34234\",\"buyer\":\"Christoph\"}",
+          "id": "956054498",
+          "playerId": "34234"
+        }
+      ]
+    },
+    {
       "date": "06.11.2025",
       "news": [{
         "date": "06.11.2025",
@@ -12374,6 +12411,14 @@
           "text": "Statuswechsel: Bogdanov (34265) ist jetzt VERLETZT (Blessur)",
           "id": "0",
           "playerId": "34265"
+        },
+        {
+          "date": "05.12.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Florian\",\"sellerId\":\"13806423\",\"playerName\":\"Mbangula\",\"price\":5044000,\"buyerId\":\"1\",\"playerValue\":4630000,\"playerId\":\"34243\",\"buyer\":\"Computer\"}",
+          "id": "956034802",
+          "playerId": "34243"
         }
       ]
     },
