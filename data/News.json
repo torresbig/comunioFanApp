@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "08.12.2025 15:03:48",
+  "lastUpdate": "09.12.2025 05:18:17",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -11041,6 +11041,17 @@
       ]
     },
     {
+      "date": "09.12.2025",
+      "news": [{
+        "date": "09.12.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Harder\",\"price\":4699999,\"buyerId\":\"13721745\",\"playerValue\":4680000,\"playerId\":\"34295\",\"buyer\":\"damian\"}",
+        "id": "956159266",
+        "playerId": "34295"
+      }]
+    },
+    {
       "date": "09.11.2025",
       "news": [{
         "date": "09.11.2025",
@@ -11414,6 +11425,14 @@
           "text": "Statuswechsel: Arthur (33772) ist wieder AKTIV",
           "id": "0",
           "playerId": "33772"
+        },
+        {
+          "date": "08.12.2025",
+          "art": "ELFDESTAGES",
+          "gelesen": false,
+          "text": "[{\"punkte\":9,\"owner\":\"13641978\",\"playerName\":\"Grabara\",\"position\":\"keeper\",\"playerId\":\"33921\"},{\"punkte\":15,\"owner\":\"13654613\",\"playerName\":\"Mainka\",\"position\":\"defender\",\"playerId\":\"33273\"},{\"punkte\":14,\"owner\":\"10966300\",\"playerName\":\"N. Schlotterbeck\",\"position\":\"defender\",\"playerId\":\"33038\"},{\"punkte\":14,\"owner\":\"5981249\",\"playerName\":\"Laimer\",\"position\":\"defender\",\"playerId\":\"32800\"},{\"punkte\":14,\"owner\":\"11683432\",\"playerName\":\"Giannoulis\",\"position\":\"defender\",\"playerId\":\"34027\"},{\"punkte\":15,\"owner\":\"9317431\",\"playerName\":\"Baumgartner\",\"position\":\"midfielder\",\"playerId\":\"32977\"},{\"punkte\":12,\"owner\":\"1\",\"playerName\":\"Kade\",\"position\":\"midfielder\",\"playerId\":\"33564\"},{\"punkte\":12,\"owner\":\"1\",\"playerName\":\"Sambi Lokonga\",\"position\":\"midfielder\",\"playerId\":\"34290\"},{\"punkte\":21,\"owner\":\"9317431\",\"playerName\":\"Kane\",\"position\":\"striker\",\"playerId\":\"33838\"},{\"punkte\":20,\"owner\":\"1\",\"playerName\":\"Diomande\",\"position\":\"striker\",\"playerId\":\"34237\"},{\"punkte\":12,\"owner\":\"1\",\"playerName\":\"Harder\",\"position\":\"striker\",\"playerId\":\"34295\"}]",
+          "id": "956149866",
+          "playerId": "0"
         }
       ]
     },
