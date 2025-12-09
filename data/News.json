@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "09.12.2025 05:18:17",
+  "lastUpdate": "09.12.2025 15:03:55",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -11042,14 +11042,48 @@
     },
     {
       "date": "09.12.2025",
-      "news": [{
-        "date": "09.12.2025",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Harder\",\"price\":4699999,\"buyerId\":\"13721745\",\"playerValue\":4680000,\"playerId\":\"34295\",\"buyer\":\"damian\"}",
-        "id": "956159266",
-        "playerId": "34295"
-      }]
+      "news": [
+        {
+          "date": "09.12.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Harder\",\"price\":4699999,\"buyerId\":\"13721745\",\"playerValue\":4680000,\"playerId\":\"34295\",\"buyer\":\"damian\"}",
+          "id": "956159266",
+          "playerId": "34295"
+        },
+        {
+          "date": "09.12.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Honorat (33817) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33817"
+        },
+        {
+          "date": "09.12.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Sander (33978) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33978"
+        },
+        {
+          "date": "09.12.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Mwene (32178) ist jetzt VERLETZT (Muskelverletzung)",
+          "id": "0",
+          "playerId": "32178"
+        },
+        {
+          "date": "09.12.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Omlin (33716) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33716"
+        }
+      ]
     },
     {
       "date": "09.11.2025",
