@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "13.12.2025 15:00:09",
+  "lastUpdate": "14.12.2025 05:18:23",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -8383,6 +8383,17 @@
       ]
     },
     {
+      "date": "14.12.2025",
+      "news": [{
+        "date": "14.12.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Hack\",\"price\":3330001,\"buyerId\":\"5981249\",\"playerValue\":3560000,\"playerId\":\"32787\",\"buyer\":\"Thomas\"}",
+        "id": "956398756",
+        "playerId": "32787"
+      }]
+    },
+    {
       "date": "14.11.2025",
       "news": [
         {
@@ -9105,6 +9116,27 @@
           "text": "{\"seller\":\"Stefan 8\",\"sellerId\":\"6013585\",\"playerName\":\"Terrier\",\"price\":3047200,\"playerValue\":2330000,\"playerId\":\"34024\",\"buyer\":\"Computer\",\"buyerId\":\"1\"}",
           "id": "949037849",
           "playerId": "34024"
+        }
+      ]
+    },
+    {
+      "date": "13.12.2025",
+      "news": [
+        {
+          "date": "13.12.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"Burcu\",\"price\":634400,\"buyerId\":\"1\",\"playerValue\":620000,\"playerId\":\"34191\",\"buyer\":\"Computer\"}",
+          "id": "956378596",
+          "playerId": "34191"
+        },
+        {
+          "date": "13.12.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: M. Friedrich (32311) ist jetzt VERLETZT (Sprunggelenksprobleme)",
+          "id": "0",
+          "playerId": "32311"
         }
       ]
     },
