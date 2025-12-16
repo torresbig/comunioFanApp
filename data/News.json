@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "15.12.2025 15:04:10",
+  "lastUpdate": "16.12.2025 05:18:41",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -7515,6 +7515,17 @@
       ]
     },
     {
+      "date": "16.12.2025",
+      "news": [{
+        "date": "16.12.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Chabot\",\"price\":3933339,\"buyerId\":\"10966300\",\"playerValue\":4040000,\"playerId\":\"33552\",\"buyer\":\"Alexander\"}",
+        "id": "956494540",
+        "playerId": "33552"
+      }]
+    },
+    {
       "date": "16.11.2025",
       "news": [
         {
@@ -8026,6 +8037,14 @@
           "text": "Statuswechsel: Vini Souza (34226) ist wieder AKTIV",
           "id": "0",
           "playerId": "34226"
+        },
+        {
+          "date": "15.12.2025",
+          "art": "ELFDESTAGES",
+          "gelesen": false,
+          "text": "[{\"punkte\":9,\"owner\":\"1\",\"playerName\":\"Batz\",\"position\":\"keeper\",\"playerId\":\"31693\"},{\"punkte\":13,\"owner\":\"1\",\"playerName\":\"Potulski\",\"position\":\"defender\",\"playerId\":\"34307\"},{\"punkte\":12,\"owner\":\"1\",\"playerName\":\"Kabak\",\"position\":\"defender\",\"playerId\":\"33026\"},{\"punkte\":11,\"owner\":\"10967926\",\"playerName\":\"Bensebaini\",\"position\":\"defender\",\"playerId\":\"33167\"},{\"punkte\":16,\"owner\":\"5981249\",\"playerName\":\"Leweling\",\"position\":\"midfielder\",\"playerId\":\"33411\"},{\"punkte\":13,\"owner\":\"13654613\",\"playerName\":\"El Khannouss\",\"position\":\"midfielder\",\"playerId\":\"34288\"},{\"punkte\":13,\"owner\":\"9317431\",\"playerName\":\"Prömel\",\"position\":\"midfielder\",\"playerId\":\"32492\"},{\"punkte\":12,\"owner\":\"1\",\"playerName\":\"Karl\",\"position\":\"midfielder\",\"playerId\":\"34206\"},{\"punkte\":15,\"owner\":\"1\",\"playerName\":\"P. Wimmer\",\"position\":\"striker\",\"playerId\":\"33507\"},{\"punkte\":14,\"owner\":\"1\",\"playerName\":\"Kaars\",\"position\":\"striker\",\"playerId\":\"34279\"},{\"punkte\":12,\"owner\":\"10966300\",\"playerName\":\"Undav\",\"position\":\"striker\",\"playerId\":\"33832\"}]",
+          "id": "956474520",
+          "playerId": "0"
         }
       ]
     },
