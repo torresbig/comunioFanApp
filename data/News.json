@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "16.12.2025 05:18:41",
+  "lastUpdate": "16.12.2025 15:03:56",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -7516,14 +7516,40 @@
     },
     {
       "date": "16.12.2025",
-      "news": [{
-        "date": "16.12.2025",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Chabot\",\"price\":3933339,\"buyerId\":\"10966300\",\"playerValue\":4040000,\"playerId\":\"33552\",\"buyer\":\"Alexander\"}",
-        "id": "956494540",
-        "playerId": "33552"
-      }]
+      "news": [
+        {
+          "date": "16.12.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Chabot\",\"price\":3933339,\"buyerId\":\"10966300\",\"playerValue\":4040000,\"playerId\":\"33552\",\"buyer\":\"Alexander\"}",
+          "id": "956494540",
+          "playerId": "33552"
+        },
+        {
+          "date": "16.12.2025",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Neuendorff (ID: 34310)",
+          "id": "0",
+          "playerId": "34310"
+        },
+        {
+          "date": "16.12.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Jaquez\",\"price\":1312500,\"buyerId\":\"1\",\"playerValue\":1170000,\"playerId\":\"34112\",\"buyer\":\"Computer\"}",
+          "id": "956494540",
+          "playerId": "34112"
+        },
+        {
+          "date": "16.12.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Özcan (32677) ist jetzt VERLETZT (Achillessehnenprobleme)",
+          "id": "0",
+          "playerId": "32677"
+        }
+      ]
     },
     {
       "date": "16.11.2025",
