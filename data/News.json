@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "20.12.2025 05:18:40",
+  "lastUpdate": "20.12.2025 15:04:03",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -5835,14 +5835,24 @@
     },
     {
       "date": "20.12.2025",
-      "news": [{
-        "date": "20.12.2025",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Musiala\",\"price\":16999999,\"buyerId\":\"5981249\",\"playerValue\":16550000,\"playerId\":\"33236\",\"buyer\":\"Thomas\"}",
-        "id": "956716582",
-        "playerId": "33236"
-      }]
+      "news": [
+        {
+          "date": "20.12.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Musiala\",\"price\":16999999,\"buyerId\":\"5981249\",\"playerValue\":16550000,\"playerId\":\"33236\",\"buyer\":\"Thomas\"}",
+          "id": "956716582",
+          "playerId": "33236"
+        },
+        {
+          "date": "20.12.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kimmich (32445) ist jetzt VERLETZT (Sprunggelenksprobleme)",
+          "id": "0",
+          "playerId": "32445"
+        }
+      ]
     },
     {
       "date": "20.11.2025",
