@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "19.12.2025 15:03:52",
+  "lastUpdate": "20.12.2025 05:18:40",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -5834,6 +5834,17 @@
       ]
     },
     {
+      "date": "20.12.2025",
+      "news": [{
+        "date": "20.12.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Musiala\",\"price\":16999999,\"buyerId\":\"5981249\",\"playerValue\":16550000,\"playerId\":\"33236\",\"buyer\":\"Thomas\"}",
+        "id": "956716582",
+        "playerId": "33236"
+      }]
+    },
+    {
       "date": "20.11.2025",
       "news": [
         {
@@ -6425,6 +6436,14 @@
           "text": "Statuswechsel: Daghim (34294) ist wieder AKTIV",
           "id": "0",
           "playerId": "34294"
+        },
+        {
+          "date": "19.12.2025",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Schick (33179) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33179"
         }
       ]
     },
