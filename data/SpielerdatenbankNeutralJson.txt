@@ -3665,7 +3665,7 @@
           "topFlop": {
             "punkte": "12",
             "zielwert": "15.870.000",
-            "platz": 3,
+            "platz": 5,
             "lastUpdate": "19.12.2025",
             "typ": "flop",
             "marktwert": "16.180.000",
@@ -4799,7 +4799,7 @@
           "topFlop": {
             "punkte": "6",
             "zielwert": "21.740.000",
-            "platz": 5,
+            "platz": 7,
             "lastUpdate": "19.12.2025",
             "typ": "flop",
             "marktwert": "22.020.000",
@@ -8685,18 +8685,7 @@
           "Führich",
           "Fuhrich"
         ],
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "10",
-            "zielwert": "5.480.000",
-            "platz": 3,
-            "lastUpdate": "19.12.2025",
-            "typ": "top",
-            "marktwert": "5.220.000",
-            "aenderung": "+260.000"
-          },
-          "link": "https://www.com-analytics.de/player/32858"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/32858"},
         "spielerDaten": {
           "groesse": "1,81",
           "geburtstag": "09.01.1998",
@@ -9122,18 +9111,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "10",
-            "zielwert": "4.590.000",
-            "platz": 9,
-            "lastUpdate": "19.12.2025",
-            "typ": "top",
-            "marktwert": "4.410.000",
-            "aenderung": "+180.000"
-          },
-          "link": "https://www.com-analytics.de/player/32861"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/32861"},
         "spielerDaten": {
           "groesse": "1,84",
           "geburtstag": "10.07.1994",
@@ -17237,18 +17215,7 @@
     {
       "data": {
         "elfDesSpieltages": 3,
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "10.430.000",
-            "platz": 2,
-            "lastUpdate": "19.12.2025",
-            "typ": "top",
-            "marktwert": "10.160.000",
-            "aenderung": "+270.000"
-          },
-          "link": "https://www.com-analytics.de/player/32948"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/32948"},
         "spielerDaten": {
           "groesse": "1,81",
           "geburtstag": "11.07.2000",
@@ -19096,7 +19063,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/31935"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "7",
+            "zielwert": "5.860.000",
+            "platz": 2,
+            "lastUpdate": "19.12.2025",
+            "typ": "top",
+            "marktwert": "5.120.000",
+            "aenderung": "+740.000"
+          },
+          "link": "https://www.com-analytics.de/player/31935"
+        },
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "12.01.1994",
@@ -20425,18 +20403,7 @@
           "Ouédraogo",
           "Oüdraogo"
         ],
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "7.500.000",
-            "platz": 4,
-            "lastUpdate": "19.12.2025",
-            "typ": "top",
-            "marktwert": "7.240.000",
-            "aenderung": "+260.000"
-          },
-          "link": "https://www.com-analytics.de/player/33991"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33991"},
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "09.05.2006",
@@ -22894,7 +22861,10 @@
         },
         "withinSquad": true,
         "attribute": {
-          "SontigeInfos": ["meisten Punkte letzte Saison (286)"],
+          "SontigeInfos": [
+            "teuerster Spieler (Realwert) (130,000,000 \u20ac)",
+            "meisten Punkte letzte Saison (286)"
+          ],
           "ligainsiderRanking": {
             "punkte": 935,
             "einsaetzeBewertet": 14,
@@ -27658,7 +27628,18 @@
           "Tabakovic",
           "Tabaković"
         ],
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34047"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "3",
+            "zielwert": "10.090.000",
+            "platz": 4,
+            "lastUpdate": "19.12.2025",
+            "typ": "flop",
+            "marktwert": "10.410.000",
+            "aenderung": "-320.000"
+          },
+          "link": "https://www.com-analytics.de/player/34047"
+        },
         "spielerDaten": {
           "groesse": "1,96",
           "geburtstag": "20.06.1994",
@@ -30055,7 +30036,18 @@
           "N. Schlotterbeck",
           "Schlotterbeck"
         ],
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33038"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "9",
+            "zielwert": "9.180.000",
+            "platz": 8,
+            "lastUpdate": "19.12.2025",
+            "typ": "top",
+            "marktwert": "8.830.000",
+            "aenderung": "+350.000"
+          },
+          "link": "https://www.com-analytics.de/player/33038"
+        },
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "01.12.1999",
@@ -43192,6 +43184,18 @@
     },
     {
       "data": {
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "8",
+            "zielwert": "1.880.000",
+            "platz": 6,
+            "lastUpdate": "19.12.2025",
+            "typ": "top",
+            "marktwert": "1.380.000",
+            "aenderung": "+500.000"
+          },
+          "link": "https://www.com-analytics.de/player/32122"
+        },
         "spielerDaten": {
           "groesse": "1,95",
           "geburtstag": "03.09.1995",
@@ -45365,7 +45369,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34187"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "3",
+            "zielwert": "5.600.000",
+            "platz": 9,
+            "lastUpdate": "19.12.2025",
+            "typ": "top",
+            "marktwert": "5.290.000",
+            "aenderung": "+310.000"
+          },
+          "link": "https://www.com-analytics.de/player/34187"
+        },
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "06.10.1996",
@@ -48487,9 +48502,9 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Sprunggelenksverletzung",
+          "grund": "",
           "lastUpdate": "19.12.2025",
-          "seit": "11.12.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -48499,8 +48514,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Schick",
@@ -48935,18 +48950,7 @@
           "tah",
           "Tah"
         ],
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "5.980.000",
-            "platz": 8,
-            "lastUpdate": "19.12.2025",
-            "typ": "flop",
-            "marktwert": "6.240.000",
-            "aenderung": "-260.000"
-          },
-          "link": "https://www.com-analytics.de/player/32157"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/32157"},
         "spielerDaten": {
           "groesse": "1,95",
           "geburtstag": "11.02.1996",
@@ -50434,18 +50438,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "3.260.000",
-            "platz": 8,
-            "lastUpdate": "19.12.2025",
-            "typ": "top",
-            "marktwert": "3.070.000",
-            "aenderung": "+190.000"
-          },
-          "link": "https://www.com-analytics.de/player/33189"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33189"},
         "spielerDaten": {
           "groesse": "1,78",
           "geburtstag": "05.10.1998",
@@ -52711,7 +52704,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33208"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "9",
+            "zielwert": "6.390.000",
+            "platz": 1,
+            "lastUpdate": "19.12.2025",
+            "typ": "top",
+            "marktwert": "5.550.000",
+            "aenderung": "+840.000"
+          },
+          "link": "https://www.com-analytics.de/player/33208"
+        },
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "17.10.2002",
@@ -54482,7 +54486,7 @@
           "topFlop": {
             "punkte": "0",
             "zielwert": "16.260.000",
-            "platz": 4,
+            "platz": 6,
             "lastUpdate": "19.12.2025",
             "typ": "flop",
             "marktwert": "16.550.000",
@@ -54610,7 +54614,7 @@
           }
         ],
         "position": "MITTELFELD",
-        "attribute": {"SontigeInfos": ["teuerster Spieler (Realwert) (140,000,000 \u20ac)"]},
+        "attribute": {"SontigeInfos": ["teuerster Spieler (Realwert) (130,000,000 \u20ac)"]},
         "possibleNames": [
           "Jamal Musiala",
           "J. Musiala",
@@ -55372,7 +55376,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33258"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "0",
+            "zielwert": "3.030.000",
+            "platz": 10,
+            "lastUpdate": "19.12.2025",
+            "typ": "flop",
+            "marktwert": "3.300.000",
+            "aenderung": "-270.000"
+          },
+          "link": "https://www.com-analytics.de/player/33258"
+        },
         "spielerDaten": {
           "groesse": "1,84",
           "geburtstag": "31.12.2002",
@@ -55590,7 +55605,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/32236"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "10",
+            "zielwert": "7.550.000",
+            "platz": 5,
+            "lastUpdate": "19.12.2025",
+            "typ": "top",
+            "marktwert": "7.010.000",
+            "aenderung": "+540.000"
+          },
+          "link": "https://www.com-analytics.de/player/32236"
+        },
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "02.05.1996",
@@ -62223,18 +62249,7 @@
           "J. Leweling",
           "Leweling"
         ],
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "16",
-            "zielwert": "7.040.000",
-            "platz": 6,
-            "lastUpdate": "19.12.2025",
-            "typ": "top",
-            "marktwert": "6.820.000",
-            "aenderung": "+220.000"
-          },
-          "link": "https://www.com-analytics.de/player/33411"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33411"},
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "26.02.2001",
@@ -62628,7 +62643,7 @@
           "topFlop": {
             "punkte": "0",
             "zielwert": "10.600.000",
-            "platz": 7,
+            "platz": 9,
             "lastUpdate": "19.12.2025",
             "typ": "flop",
             "marktwert": "10.870.000",
@@ -64379,6 +64394,18 @@
     },
     {
       "data": {
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "5",
+            "zielwert": "2.790.000",
+            "platz": 7,
+            "lastUpdate": "19.12.2025",
+            "typ": "top",
+            "marktwert": "2.400.000",
+            "aenderung": "+390.000"
+          },
+          "link": "https://www.com-analytics.de/player/31419"
+        },
         "spielerDaten": {
           "groesse": "1,81",
           "geburtstag": "15.06.1991",
@@ -64589,7 +64616,7 @@
           "topFlop": {
             "punkte": "10",
             "zielwert": "17.720.000",
-            "platz": 6,
+            "platz": 8,
             "lastUpdate": "19.12.2025",
             "typ": "flop",
             "marktwert": "18.000.000",
@@ -65037,18 +65064,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "10",
-            "zielwert": "6.100.000",
-            "platz": 5,
-            "lastUpdate": "19.12.2025",
-            "typ": "top",
-            "marktwert": "5.850.000",
-            "aenderung": "+250.000"
-          },
-          "link": "https://www.com-analytics.de/player/33477"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33477"},
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "10.07.1991",
@@ -66808,6 +66824,18 @@
     },
     {
       "data": {
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "7",
+            "zielwert": "7.450.000",
+            "platz": 3,
+            "lastUpdate": "19.12.2025",
+            "typ": "top",
+            "marktwert": "6.740.000",
+            "aenderung": "+710.000"
+          },
+          "link": "https://www.com-analytics.de/player/33498"
+        },
         "spielerDaten": {
           "groesse": "1,90",
           "geburtstag": "10.10.2000",
@@ -69915,18 +69943,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "2",
-            "zielwert": "5.630.000",
-            "platz": 10,
-            "lastUpdate": "19.12.2025",
-            "typ": "top",
-            "marktwert": "5.470.000",
-            "aenderung": "+160.000"
-          },
-          "link": "https://www.com-analytics.de/player/33557"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33557"},
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "16.06.2002",
@@ -71253,18 +71270,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "10.760.000",
-            "platz": 7,
-            "lastUpdate": "19.12.2025",
-            "typ": "top",
-            "marktwert": "10.560.000",
-            "aenderung": "+200.000"
-          },
-          "link": "https://www.com-analytics.de/player/33575"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33575"},
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "18.01.2002",
@@ -75838,18 +75844,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "5.300.000",
-            "platz": 9,
-            "lastUpdate": "19.12.2025",
-            "typ": "flop",
-            "marktwert": "5.540.000",
-            "aenderung": "-240.000"
-          },
-          "link": "https://www.com-analytics.de/player/32599"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/32599"},
         "spielerDaten": {
           "groesse": "1,94",
           "geburtstag": "31.08.1995",
@@ -81437,7 +81432,18 @@
     {
       "data": {
         "elfDesSpieltages": 2,
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/32667"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "4",
+            "zielwert": "13.690.000",
+            "platz": 2,
+            "lastUpdate": "19.12.2025",
+            "typ": "flop",
+            "marktwert": "14.200.000",
+            "aenderung": "-510.000"
+          },
+          "link": "https://www.com-analytics.de/player/32667"
+        },
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "12.03.1996",
@@ -83852,7 +83858,7 @@
           "topFlop": {
             "punkte": "7",
             "zielwert": "11.660.000",
-            "platz": 2,
+            "platz": 3,
             "lastUpdate": "19.12.2025",
             "typ": "flop",
             "marktwert": "11.990.000",
@@ -86792,18 +86798,7 @@
           "Á. Grimaldo",
           "Grimaldo"
         ],
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "13.470.000",
-            "platz": 10,
-            "lastUpdate": "19.12.2025",
-            "typ": "flop",
-            "marktwert": "13.690.000",
-            "aenderung": "-220.000"
-          },
-          "link": "https://www.com-analytics.de/player/33771"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33771"},
         "spielerDaten": {
           "groesse": "1,71",
           "geburtstag": "20.09.1995",
@@ -92379,7 +92374,7 @@
           "groesse": "1,91",
           "geburtstag": "23.05.2007",
           "laenderspiele": 4,
-          "lastUpdate": "21.11.2025",
+          "lastUpdate": "19.12.2025",
           "nebenpositionen": [],
           "trikotNummer": 31,
           "nationalitaet": "Deutschland",
@@ -92400,7 +92395,7 @@
         },
         "lastPoints": -3,
         "transfermarktDoDe": {
-          "date": "21.11.2025",
+          "date": "19.12.2025",
           "haveToCheck": true,
           "name": "Karim Coulibaly",
           "link": "https://www.transfermarkt.de/karim-coulibaly/profil/spieler/1084638",
@@ -92412,7 +92407,7 @@
           "alter": 18
         },
         "punkte": 31,
-        "realWert": 8000000,
+        "realWert": 20000000,
         "lastBigUpdate": "14.12.2025",
         "stats": {
           "notenDurchschnitt": "6,56",
@@ -94666,7 +94661,7 @@
         "spielerDaten": {
           "groesse": "1,98",
           "geburtstag": "22.02.2006",
-          "lastUpdate": "22.11.2025",
+          "lastUpdate": "19.12.2025",
           "nebenpositionen": [],
           "trikotNummer": 29,
           "nationalitaet": "Deutschland",
@@ -94679,7 +94674,7 @@
         "wert": 190000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "22.11.2025",
+          "date": "19.12.2025",
           "haveToCheck": true,
           "name": "Salim Musah",
           "link": "https://www.transfermarkt.de/salim-musah/profil/spieler/1042472",
@@ -95194,7 +95189,7 @@
           "topFlop": {
             "punkte": "0",
             "zielwert": "22.770.000",
-            "platz": 1,
+            "platz": 4,
             "lastUpdate": "19.12.2025",
             "typ": "top",
             "marktwert": "22.180.000",
@@ -96556,8 +96551,16 @@
     {
       "data": {
         "transfermarktDoDe": {
-          "date": "01.01.1900",
-          "haveToCheck": true
+          "date": "19.12.2025",
+          "haveToCheck": true,
+          "name": "Wisdom Mike",
+          "link": "https://www.transfermarkt.de/wisdom-mike/profil/spieler/1084539",
+          "id": "1084539",
+          "position": "LA",
+          "marktwert": 5000000,
+          "nationalitaet": "Deutschland",
+          "leistungsDaten": {},
+          "alter": 17
         },
         "hauptposition": "",
         "groesse": "",
@@ -96577,17 +96580,31 @@
         },
         "nebenpositionen": [],
         "nationalitaet": "",
-        "possibleNames": [],
+        "possibleNames": [
+          "Wisdom Mike",
+          "Mike",
+          "W. Mike"
+        ],
         "fuss": "",
         "geburtstag": "",
-        "spielerDaten": {},
+        "spielerDaten": {
+          "groesse": "1,76",
+          "geburtstag": "24.09.2008",
+          "laenderspiele": 8,
+          "lastUpdate": "19.12.2025",
+          "nebenpositionen": [],
+          "nationalitaet": "Deutschland",
+          "laenderspielTore": 3,
+          "hauptposition": "Linksaußen",
+          "fuss": "beidfüßig"
+        },
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "1",
         "wert": 700000,
         "lastPoints": 0,
         "punkte": 4,
-        "realWert": 0,
+        "realWert": 5000000,
         "laenderspiele": 0,
         "lastUpdate": "19.12.2025",
         "spieltagspunkte": [
@@ -96685,7 +96702,7 @@
     {
       "data": {
         "transfermarktDoDe": {
-          "date": "22.11.2025",
+          "date": "19.12.2025",
           "haveToCheck": true,
           "name": "Florian Hellstern",
           "link": "https://www.transfermarkt.de/florian-hellstern/profil/spieler/1009438",
@@ -96725,7 +96742,7 @@
           "groesse": "1,88",
           "geburtstag": "18.10.2007",
           "laenderspiele": 2,
-          "lastUpdate": "22.11.2025",
+          "lastUpdate": "19.12.2025",
           "nebenpositionen": [],
           "trikotNummer": 44,
           "nationalitaet": "Deutschland",
@@ -97672,7 +97689,7 @@
           "groesse": "2,02",
           "geburtstag": "03.02.2005",
           "laenderspiele": 2,
-          "lastUpdate": "22.11.2025",
+          "lastUpdate": "19.12.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 45,
@@ -97687,7 +97704,7 @@
         "wert": 180000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "22.11.2025",
+          "date": "19.12.2025",
           "haveToCheck": true,
           "name": "Kelven Frees",
           "link": "https://www.transfermarkt.de/kelven-frees/profil/spieler/934529",
@@ -98287,8 +98304,8 @@
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "04.02.1999",
-          "laenderspiele": 0,
-          "lastUpdate": "22.11.2025",
+          "laenderspiele": 1,
+          "lastUpdate": "19.12.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 39,
@@ -98310,7 +98327,7 @@
         },
         "lastPoints": 4,
         "transfermarktDoDe": {
-          "date": "22.11.2025",
+          "date": "19.12.2025",
           "haveToCheck": true,
           "name": "Derrick Köhn",
           "link": "https://www.transfermarkt.de/derrick-kohn/profil/spieler/391780",
@@ -98322,7 +98339,7 @@
           "alter": 26
         },
         "punkte": 21,
-        "realWert": 5000000,
+        "realWert": 4000000,
         "lastBigUpdate": "14.12.2025",
         "stats": {
           "notenDurchschnitt": "6,45",
@@ -98830,7 +98847,7 @@
           "groesse": "1,93",
           "geburtstag": "13.04.2002",
           "laenderspiele": 43,
-          "lastUpdate": "22.11.2025",
+          "lastUpdate": "19.12.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 13,
@@ -98852,7 +98869,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "22.11.2025",
+          "date": "19.12.2025",
           "haveToCheck": true,
           "name": "Karl Hein",
           "link": "https://www.transfermarkt.de/karl-hein/profil/spieler/493513",
@@ -99406,7 +99423,7 @@
           "groesse": "1,79",
           "geburtstag": "28.06.2000",
           "laenderspiele": 18,
-          "lastUpdate": "22.11.2025",
+          "lastUpdate": "19.12.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 3,
@@ -99428,7 +99445,7 @@
         },
         "lastPoints": -2,
         "transfermarktDoDe": {
-          "date": "22.11.2025",
+          "date": "19.12.2025",
           "haveToCheck": true,
           "name": "Yukinari Sugawara",
           "link": "https://www.transfermarkt.de/yukinari-sugawara/profil/spieler/405385",
@@ -99440,7 +99457,7 @@
           "alter": 25
         },
         "punkte": 36,
-        "realWert": 6000000,
+        "realWert": 7500000,
         "lastBigUpdate": "14.12.2025",
         "stats": {
           "notenDurchschnitt": "6,7",
@@ -100357,7 +100374,7 @@
           "groesse": "1,72",
           "geburtstag": "07.12.1999",
           "laenderspiele": 5,
-          "lastUpdate": "22.11.2025",
+          "lastUpdate": "19.12.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 23,
@@ -100372,7 +100389,7 @@
         "wert": 980000,
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "22.11.2025",
+          "date": "19.12.2025",
           "haveToCheck": true,
           "name": "Isaac Schmidt",
           "link": "https://www.transfermarkt.de/isaac-schmidt/profil/spieler/449597",
@@ -100521,7 +100538,7 @@
           "groesse": "1,75",
           "geburtstag": "26.03.2005",
           "laenderspiele": 6,
-          "lastUpdate": "22.11.2025",
+          "lastUpdate": "19.12.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 26,
@@ -100536,7 +100553,7 @@
         "wert": 2160000,
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "22.11.2025",
+          "date": "19.12.2025",
           "haveToCheck": true,
           "name": "Saël Kumbedi",
           "link": "https://www.transfermarkt.de/sael-kumbedi/profil/spieler/951579",
@@ -100548,7 +100565,7 @@
           "alter": 20
         },
         "punkte": 17,
-        "realWert": 7000000,
+        "realWert": 9000000,
         "lastBigUpdate": "14.12.2025",
         "stats": {
           "notenDurchschnitt": "6,59",
@@ -100820,7 +100837,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34283"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "3",
+            "zielwert": "5.080.000",
+            "platz": 10,
+            "lastUpdate": "19.12.2025",
+            "typ": "top",
+            "marktwert": "4.770.000",
+            "aenderung": "+310.000"
+          },
+          "link": "https://www.com-analytics.de/player/34283"
+        },
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "19.07.2002",
@@ -101268,7 +101296,7 @@
           "groesse": "1,77",
           "geburtstag": "08.12.2004",
           "laenderspiele": 5,
-          "lastUpdate": "22.11.2025",
+          "lastUpdate": "19.12.2025",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 27,
@@ -101283,7 +101311,7 @@
         "wert": 1500000,
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "22.11.2025",
+          "date": "19.12.2025",
           "haveToCheck": true,
           "name": "Badredine Bouanani",
           "link": "https://www.transfermarkt.de/badredine-bouanani/profil/spieler/707242",
