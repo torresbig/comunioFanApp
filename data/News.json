@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "25.12.2025 15:00:39",
+  "lastUpdate": "26.12.2025 05:18:30",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -2292,6 +2292,17 @@
       }]
     },
     {
+      "date": "26.12.2025",
+      "news": [{
+        "date": "26.12.2025",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Jakić\",\"price\":3710000,\"buyerId\":\"9317431\",\"playerValue\":3620000,\"playerId\":\"33517\",\"buyer\":\"Andi\"}",
+        "id": "956903098",
+        "playerId": "33517"
+      }]
+    },
+    {
       "date": "26.11.2025",
       "news": [
         {
@@ -2769,6 +2780,14 @@
           "text": "Statuswechsel: Kampl (31612) ist jetzt NICHT_IN_LIGA",
           "id": "0",
           "playerId": "31612"
+        },
+        {
+          "date": "25.12.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"damian\",\"sellerId\":\"13721745\",\"playerName\":\"Harder\",\"price\":7207200,\"buyerId\":\"1\",\"playerValue\":6430000,\"playerId\":\"34295\",\"buyer\":\"Computer\"}",
+          "id": "956880619",
+          "playerId": "34295"
         }
       ]
     },
