@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "28.12.2025 05:18:28",
+  "lastUpdate": "28.12.2025 15:00:34",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -1339,14 +1339,32 @@
     },
     {
       "date": "28.12.2025",
-      "news": [{
-        "date": "28.12.2025",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Friedl\",\"price\":3605000,\"buyerId\":\"9317431\",\"playerValue\":3540000,\"playerId\":\"32754\",\"buyer\":\"Andi\"}",
-        "id": "956950307",
-        "playerId": "32754"
-      }]
+      "news": [
+        {
+          "date": "28.12.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Friedl\",\"price\":3605000,\"buyerId\":\"9317431\",\"playerValue\":3540000,\"playerId\":\"32754\",\"buyer\":\"Andi\"}",
+          "id": "956950307",
+          "playerId": "32754"
+        },
+        {
+          "date": "28.12.2025",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Micheler\",\"newClub\":\"62\",\"oldClub\":\"0\",\"playerID\":\"34064\"}",
+          "id": "0",
+          "playerId": "34064"
+        },
+        {
+          "date": "28.12.2025",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Čvančara\",\"newClub\":\"3\",\"oldClub\":\"0\",\"playerID\":\"33819\"}",
+          "id": "0",
+          "playerId": "33819"
+        }
+      ]
     },
     {
       "date": "28.11.2025",
