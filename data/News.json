@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "30.12.2025 05:18:21",
+  "lastUpdate": "30.12.2025 15:03:58",
   "newsDB": [
     {
       "date": "31.10.2025",
@@ -263,14 +263,48 @@
     },
     {
       "date": "30.12.2025",
-      "news": [{
-        "date": "30.12.2025",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Rômulo\",\"price\":12390000,\"buyerId\":\"10967926\",\"playerValue\":12440000,\"playerId\":\"34271\",\"buyer\":\"Tom\"}",
-        "id": "956992357",
-        "playerId": "34271"
-      }]
+      "news": [
+        {
+          "date": "30.12.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Rômulo\",\"price\":12390000,\"buyerId\":\"10967926\",\"playerValue\":12440000,\"playerId\":\"34271\",\"buyer\":\"Tom\"}",
+          "id": "956992357",
+          "playerId": "34271"
+        },
+        {
+          "date": "30.12.2025",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Ebnoutalib (ID: 34316)",
+          "id": "0",
+          "playerId": "34316"
+        },
+        {
+          "date": "30.12.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Tom\",\"sellerId\":\"10967926\",\"playerName\":\"Rexhbeçaj\",\"price\":1315800,\"buyerId\":\"1\",\"playerValue\":1300000,\"playerId\":\"32817\",\"buyer\":\"Computer\"}",
+          "id": "956992357",
+          "playerId": "32817"
+        },
+        {
+          "date": "30.12.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Gouweleeuw\",\"price\":708100,\"buyerId\":\"1\",\"playerValue\":690000,\"playerId\":\"32549\",\"buyer\":\"Computer\"}",
+          "id": "956992357",
+          "playerId": "32549"
+        },
+        {
+          "date": "30.12.2025",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Tom\",\"sellerId\":\"10967926\",\"playerName\":\"Thielmann\",\"price\":4000000,\"buyerId\":\"13806423\",\"playerValue\":3660000,\"playerId\":\"33185\",\"buyer\":\"Florian\"}",
+          "id": "956992357",
+          "playerId": "33185"
+        }
+      ]
     },
     {
       "date": "30.11.2025",
