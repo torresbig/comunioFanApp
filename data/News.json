@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "02.01.2026 15:03:53",
+  "lastUpdate": "03.01.2026 05:18:25",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -16776,6 +16776,22 @@
           "art": "SPIELERSTATUS",
           "gelesen": false,
           "text": "Statuswechsel: Omari (34258) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34258"
+        },
+        {
+          "date": "02.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Timo\",\"sellerId\":\"13641978\",\"playerName\":\"Groß\",\"price\":2430800,\"buyerId\":\"1\",\"playerValue\":2360000,\"playerId\":\"31419\",\"buyer\":\"Computer\"}",
+          "id": "957061408",
+          "playerId": "31419"
+        },
+        {
+          "date": "02.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Omari (34258) ist jetzt VERLETZT (Außenbandriss)",
           "id": "0",
           "playerId": "34258"
         }
