@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "04.01.2026 15:04:13",
+  "lastUpdate": "05.01.2026 05:18:23",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -14808,6 +14808,17 @@
       ]
     },
     {
+      "date": "05.01.2026",
+      "news": [{
+        "date": "05.01.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Goretzka\",\"price\":5000000,\"buyerId\":\"13641978\",\"playerValue\":4910000,\"playerId\":\"32187\",\"buyer\":\"Timo\"}",
+        "id": "957140129",
+        "playerId": "32187"
+      }]
+    },
+    {
       "date": "04.12.2025",
       "news": [
         {
@@ -15300,6 +15311,14 @@
           "text": "Statuswechsel: Hountondji (34229) ist jetzt VERLETZT (Haarriss im Fuß)",
           "id": "0",
           "playerId": "34229"
+        },
+        {
+          "date": "04.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Klostermann (32581) ist jetzt VERLETZT (Grippaler Infekt)",
+          "id": "0",
+          "playerId": "32581"
         }
       ]
     },
