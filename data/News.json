@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "05.01.2026 05:18:23",
+  "lastUpdate": "05.01.2026 15:03:53",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -14809,14 +14809,48 @@
     },
     {
       "date": "05.01.2026",
-      "news": [{
-        "date": "05.01.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Goretzka\",\"price\":5000000,\"buyerId\":\"13641978\",\"playerValue\":4910000,\"playerId\":\"32187\",\"buyer\":\"Timo\"}",
-        "id": "957140129",
-        "playerId": "32187"
-      }]
+      "news": [
+        {
+          "date": "05.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Goretzka\",\"price\":5000000,\"buyerId\":\"13641978\",\"playerValue\":4910000,\"playerId\":\"32187\",\"buyer\":\"Timo\"}",
+          "id": "957140129",
+          "playerId": "32187"
+        },
+        {
+          "date": "05.01.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Gazdov (ID: 34322)",
+          "id": "0",
+          "playerId": "34322"
+        },
+        {
+          "date": "05.01.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Campbell\",\"newClub\":\"62\",\"oldClub\":\"5\",\"playerID\":\"34016\"}",
+          "id": "0",
+          "playerId": "34016"
+        },
+        {
+          "date": "05.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Bauer (33403) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "33403"
+        },
+        {
+          "date": "05.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Tom\",\"sellerId\":\"10967926\",\"playerName\":\"Asllani\",\"price\":12535100,\"buyerId\":\"1\",\"playerValue\":12170000,\"playerId\":\"33536\",\"buyer\":\"Computer\"}",
+          "id": "957140129",
+          "playerId": "33536"
+        }
+      ]
     },
     {
       "date": "04.12.2025",
