@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "06.01.2026 05:15:09",
+  "lastUpdate": "07.01.2026 05:19:00",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -13972,6 +13972,27 @@
       ]
     },
     {
+      "date": "07.01.2026",
+      "news": [
+        {
+          "date": "07.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Wahl\",\"price\":1900000,\"buyerId\":\"13806423\",\"playerValue\":1760000,\"playerId\":\"32633\",\"buyer\":\"Florian\"}",
+          "id": "957204728",
+          "playerId": "32633"
+        },
+        {
+          "date": "07.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Hajdari\",\"price\":3100000,\"buyerId\":\"13654613\",\"playerValue\":2570000,\"playerId\":\"34275\",\"buyer\":\"Christoph\"}",
+          "id": "957204728",
+          "playerId": "34275"
+        }
+      ]
+    },
+    {
       "date": "06.12.2025",
       "news": [
         {
@@ -14337,6 +14358,107 @@
           "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Haberer\",\"price\":1678100,\"playerValue\":840000,\"playerId\":\"32310\",\"buyer\":\"Computer\",\"buyerId\":\"1\"}",
           "id": "948842240",
           "playerId": "32310"
+        }
+      ]
+    },
+    {
+      "date": "06.01.2026",
+      "news": [
+        {
+          "date": "06.01.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Simpson-Pusey (ID: 34323)",
+          "id": "0",
+          "playerId": "34323"
+        },
+        {
+          "date": "06.01.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Silas\",\"newClub\":\"18\",\"oldClub\":\"14\",\"playerID\":\"33247\"}",
+          "id": "0",
+          "playerId": "33247"
+        },
+        {
+          "date": "06.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Telle (34136) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "34136"
+        },
+        {
+          "date": "06.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Florian\",\"sellerId\":\"13806423\",\"playerName\":\"Gerhardt\",\"price\":1567500,\"buyerId\":\"1\",\"playerValue\":1540000,\"playerId\":\"32280\",\"buyer\":\"Computer\"}",
+          "id": "957185466",
+          "playerId": "32280"
+        },
+        {
+          "date": "06.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Florian\",\"sellerId\":\"13806423\",\"playerName\":\"Philippe\",\"price\":3088800,\"buyerId\":\"1\",\"playerValue\":3100000,\"playerId\":\"34216\",\"buyer\":\"Computer\"}",
+          "id": "957185466",
+          "playerId": "34216"
+        },
+        {
+          "date": "06.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Florian\",\"sellerId\":\"13806423\",\"playerName\":\"Ibrahimović\",\"price\":3350000,\"buyerId\":\"10967926\",\"playerValue\":3060000,\"playerId\":\"33713\",\"buyer\":\"Tom\"}",
+          "id": "957185466",
+          "playerId": "33713"
+        },
+        {
+          "date": "06.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Tom\",\"sellerId\":\"10967926\",\"playerName\":\"Bülter\",\"price\":5200000,\"buyerId\":\"13806423\",\"playerValue\":4940000,\"playerId\":\"33139\",\"buyer\":\"Florian\"}",
+          "id": "957185466",
+          "playerId": "33139"
+        },
+        {
+          "date": "06.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Bittencourt (31932) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "31932"
+        },
+        {
+          "date": "06.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Demirović (33311) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33311"
+        },
+        {
+          "date": "06.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Henrichs (32461) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32461"
+        },
+        {
+          "date": "06.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Mbangula (34243) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34243"
+        },
+        {
+          "date": "06.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Musah (34244) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34244"
         }
       ]
     },
