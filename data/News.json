@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "08.01.2026 05:18:52",
+  "lastUpdate": "08.01.2026 15:03:55",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -13466,14 +13466,368 @@
     },
     {
       "date": "08.01.2026",
-      "news": [{
-        "date": "08.01.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Köhn\",\"price\":1700000,\"buyerId\":\"10967926\",\"playerValue\":1530000,\"playerId\":\"34061\",\"buyer\":\"Tom\"}",
-        "id": "957233526",
-        "playerId": "34061"
-      }]
+      "news": [
+        {
+          "date": "08.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Köhn\",\"price\":1700000,\"buyerId\":\"10967926\",\"playerValue\":1530000,\"playerId\":\"34061\",\"buyer\":\"Tom\"}",
+          "id": "957233526",
+          "playerId": "34061"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"Musiala\",\"price\":18700500,\"buyerId\":\"1\",\"playerValue\":17810000,\"playerId\":\"33236\",\"buyer\":\"Computer\"}",
+          "id": "957233526",
+          "playerId": "33236"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kim (33823) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33823"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Lienhart (32807) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32807"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Bahoya (33890) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "33890"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ma. Müller (31930) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "31930"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ouédraogo (33991) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33991"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Nusa (34039) ist jetzt VERLETZT (Sprunggelenksverletzung)",
+          "id": "0",
+          "playerId": "34039"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Davies (33021) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "33021"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Al-Dakhil (34050) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "34050"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kabar (34066) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34066"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Zivzivadze (34080) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34080"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Skov Olsen (34089) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34089"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Dickes (34094) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "34094"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jeltsch (34115) ist jetzt VERLETZT (Rückenprobleme)",
+          "id": "0",
+          "playerId": "34115"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: S. El Mala (34139) ist jetzt VERLETZT (Muskelriss)",
+          "id": "0",
+          "playerId": "34139"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: M. El Mala (34141) ist jetzt VERLETZT (Muskelriss)",
+          "id": "0",
+          "playerId": "34141"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Soumahoro (34147) ist jetzt VERLETZT (Blessur)",
+          "id": "0",
+          "playerId": "34147"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Røssing-Lelesiit (34156) ist jetzt VERLETZT (Trainingsrückstand)",
+          "id": "0",
+          "playerId": "34156"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Banzuzi (34185) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34185"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Rothweiler (34192) ist jetzt VERLETZT (Oberschenkelverletzung)",
+          "id": "0",
+          "playerId": "34192"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Baldé (34194) ist jetzt VERLETZT (Knieprobleme)",
+          "id": "0",
+          "playerId": "34194"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Assignon (34197) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34197"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Markgraf (34214) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34214"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Darvich (34215) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34215"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Philippe (34216) ist jetzt VERLETZT (Blessur)",
+          "id": "0",
+          "playerId": "34216"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Keitel (33211) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33211"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Silas (33247) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "33247"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Drljača (33342) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33342"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Dinkçi (33364) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33364"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Glatzel (33375) ist jetzt VERLETZT (Muskelfaserriss)",
+          "id": "0",
+          "playerId": "33375"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Anton (32452) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32452"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jakić (33517) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "33517"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Paredes (33553) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33553"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Tiago Tomás (33557) ist jetzt VERLETZT (Muskelverletzung)",
+          "id": "0",
+          "playerId": "33557"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: M. Wolf (32546) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "32546"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Caci (33577) ist jetzt VERLETZT (Oberschenkelverletzung)",
+          "id": "0",
+          "playerId": "33577"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kobel (32638) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "32638"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Grimaldo (33771) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33771"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Wöber (33831) ist jetzt VERLETZT (muskuläre Probleme)",
+          "id": "0",
+          "playerId": "33831"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jovanović (34230) ist jetzt VERLETZT (Rückenprobleme)",
+          "id": "0",
+          "playerId": "34230"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Oppie (34235) ist jetzt VERLETZT (Oberschenkelprobleme)",
+          "id": "0",
+          "playerId": "34235"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Musah (34244) ist jetzt VERLETZT (Trainingsrückstand)",
+          "id": "0",
+          "playerId": "34244"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Bøving (34291) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "34291"
+        },
+        {
+          "date": "08.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Seelt (34293) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "34293"
+        }
+      ]
     },
     {
       "date": "07.12.2025",
