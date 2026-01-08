@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "07.01.2026 05:19:00",
+  "lastUpdate": "08.01.2026 05:18:52",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -13465,6 +13465,17 @@
       ]
     },
     {
+      "date": "08.01.2026",
+      "news": [{
+        "date": "08.01.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Köhn\",\"price\":1700000,\"buyerId\":\"10967926\",\"playerValue\":1530000,\"playerId\":\"34061\",\"buyer\":\"Tom\"}",
+        "id": "957233526",
+        "playerId": "34061"
+      }]
+    },
+    {
       "date": "07.12.2025",
       "news": [
         {
@@ -13989,6 +14000,22 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Hajdari\",\"price\":3100000,\"buyerId\":\"13654613\",\"playerValue\":2570000,\"playerId\":\"34275\",\"buyer\":\"Christoph\"}",
           "id": "957204728",
           "playerId": "34275"
+        },
+        {
+          "date": "07.01.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Gregoritsch\",\"newClub\":\"68\",\"oldClub\":\"0\",\"playerID\":\"31958\"}",
+          "id": "0",
+          "playerId": "31958"
+        },
+        {
+          "date": "07.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Burkardt (32948) ist jetzt VERLETZT (Wadenverletzung)",
+          "id": "0",
+          "playerId": "32948"
         }
       ]
     },
