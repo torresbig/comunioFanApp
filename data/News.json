@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "09.01.2026 05:18:28",
+  "lastUpdate": "09.01.2026 15:04:12",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -13071,14 +13071,112 @@
     },
     {
       "date": "09.01.2026",
-      "news": [{
-        "date": "09.01.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Tella\",\"price\":4750009,\"buyerId\":\"10966300\",\"playerValue\":4480000,\"playerId\":\"33853\",\"buyer\":\"Alexander\"}",
-        "id": "957270838",
-        "playerId": "33853"
-      }]
+      "news": [
+        {
+          "date": "09.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Tella\",\"price\":4750009,\"buyerId\":\"10966300\",\"playerValue\":4480000,\"playerId\":\"33853\",\"buyer\":\"Alexander\"}",
+          "id": "957270838",
+          "playerId": "33853"
+        },
+        {
+          "date": "09.01.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Downs\",\"newClub\":\"4\",\"oldClub\":\"0\",\"playerID\":\"33746\"}",
+          "id": "0",
+          "playerId": "33746"
+        },
+        {
+          "date": "09.01.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Kalimuendo (ID: 34324)",
+          "id": "0",
+          "playerId": "34324"
+        },
+        {
+          "date": "09.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Peretz (33852) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "33852"
+        },
+        {
+          "date": "09.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ahlstrand (33952) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "33952"
+        },
+        {
+          "date": "09.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Neuer (30755) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "30755"
+        },
+        {
+          "date": "09.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Matsima (34057) ist jetzt VERLETZT (Sehnenanriss)",
+          "id": "0",
+          "playerId": "34057"
+        },
+        {
+          "date": "09.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Pereira Cardoso (34122) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "34122"
+        },
+        {
+          "date": "09.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Røssing-Lelesiit (34156) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34156"
+        },
+        {
+          "date": "09.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Skarke (33616) ist jetzt VERLETZT (Blessur)",
+          "id": "0",
+          "playerId": "33616"
+        },
+        {
+          "date": "09.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Hložek (33619) ist jetzt VERLETZT (Wadenverletzung)",
+          "id": "0",
+          "playerId": "33619"
+        },
+        {
+          "date": "09.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Oppie (34235) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34235"
+        },
+        {
+          "date": "09.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Poku (34264) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34264"
+        }
+      ]
     },
     {
       "date": "08.12.2025",
