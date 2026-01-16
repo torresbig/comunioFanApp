@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "16.01.2026 05:33:15",
+  "lastUpdate": "16.01.2026 15:04:02",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -9112,14 +9112,152 @@
     },
     {
       "date": "16.01.2026",
-      "news": [{
-        "date": "16.01.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Sahiti\",\"price\":160500,\"buyerId\":\"9317431\",\"playerValue\":160000,\"playerId\":\"34157\",\"buyer\":\"Andi\"}",
-        "id": "957650581",
-        "playerId": "34157"
-      }]
+      "news": [
+        {
+          "date": "16.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Sahiti\",\"price\":160500,\"buyerId\":\"9317431\",\"playerValue\":160000,\"playerId\":\"34157\",\"buyer\":\"Andi\"}",
+          "id": "957650581",
+          "playerId": "34157"
+        },
+        {
+          "date": "16.01.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Stergiou\",\"newClub\":\"110\",\"oldClub\":\"14\",\"playerID\":\"33850\"}",
+          "id": "0",
+          "playerId": "33850"
+        },
+        {
+          "date": "16.01.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Ribeiro (ID: 34331)",
+          "id": "0",
+          "playerId": "34331"
+        },
+        {
+          "date": "16.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Schopp (34195) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "34195"
+        },
+        {
+          "date": "16.01.2026",
+          "art": "ELFDESTAGES",
+          "gelesen": false,
+          "text": "[{\"punkte\":9,\"owner\":\"11683432\",\"playerName\":\"Atubolu\",\"position\":\"keeper\",\"playerId\":\"33439\"},{\"punkte\":16,\"owner\":\"10966300\",\"playerName\":\"N. Schlotterbeck\",\"position\":\"defender\",\"playerId\":\"33038\"},{\"punkte\":15,\"owner\":\"13806423\",\"playerName\":\"Orbán\",\"position\":\"defender\",\"playerId\":\"31846\"},{\"punkte\":12,\"owner\":\"1\",\"playerName\":\"Kim\",\"position\":\"defender\",\"playerId\":\"33823\"},{\"punkte\":11,\"owner\":\"6013585\",\"playerName\":\"Smith\",\"position\":\"defender\",\"playerId\":\"33944\"},{\"punkte\":23,\"owner\":\"11683432\",\"playerName\":\"Kramarić\",\"position\":\"midfielder\",\"playerId\":\"32553\"},{\"punkte\":16,\"owner\":\"13548242\",\"playerName\":\"Amiri\",\"position\":\"midfielder\",\"playerId\":\"32395\"},{\"punkte\":12,\"owner\":\"6013585\",\"playerName\":\"Claude-Maurice\",\"position\":\"midfielder\",\"playerId\":\"34063\"},{\"punkte\":12,\"owner\":\"1\",\"playerName\":\"Maina\",\"position\":\"midfielder\",\"playerId\":\"32881\"},{\"punkte\":11,\"owner\":\"10967926\",\"playerName\":\"Sabitzer\",\"position\":\"midfielder\",\"playerId\":\"32590\"},{\"punkte\":11,\"owner\":\"5981249\",\"playerName\":\"Lemperle\",\"position\":\"striker\",\"playerId\":\"33270\"}]",
+          "id": "957684370",
+          "playerId": "0"
+        },
+        {
+          "date": "16.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Conteh (33926) ist jetzt VERLETZT (Blessur)",
+          "id": "0",
+          "playerId": "33926"
+        },
+        {
+          "date": "16.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ouédraogo (33991) ist jetzt VERLETZT (Knieprobleme)",
+          "id": "0",
+          "playerId": "33991"
+        },
+        {
+          "date": "16.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Veratschnig (33999) ist jetzt VERLETZT (Blessur)",
+          "id": "0",
+          "playerId": "33999"
+        },
+        {
+          "date": "16.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Uzun (34008) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34008"
+        },
+        {
+          "date": "16.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Davies (33021) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33021"
+        },
+        {
+          "date": "16.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Bensebaini (33167) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "33167"
+        },
+        {
+          "date": "16.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Musiala (33236) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33236"
+        },
+        {
+          "date": "16.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Silas (33247) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33247"
+        },
+        {
+          "date": "16.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kimmich (32445) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32445"
+        },
+        {
+          "date": "16.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Sabitzer (32590) ist jetzt VERLETZT (Wadenprobleme)",
+          "id": "0",
+          "playerId": "32590"
+        },
+        {
+          "date": "16.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: M. Götze (31572) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "31572"
+        },
+        {
+          "date": "16.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Larsson (33782) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "33782"
+        },
+        {
+          "date": "16.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: C. Conteh (34329) ist jetzt VERLETZT (Blessur)",
+          "id": "0",
+          "playerId": "34329"
+        }
+      ]
     },
     {
       "date": "15.12.2025",
