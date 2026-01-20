@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "19.01.2026 15:03:51",
+  "lastUpdate": "20.01.2026 05:18:20",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -7122,6 +7122,17 @@
       ]
     },
     {
+      "date": "20.01.2026",
+      "news": [{
+        "date": "20.01.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Nebel\",\"price\":4300006,\"buyerId\":\"5981249\",\"playerValue\":4310000,\"playerId\":\"33296\",\"buyer\":\"Thomas\"}",
+        "id": "957881941",
+        "playerId": "33296"
+      }]
+    },
+    {
       "date": "19.12.2025",
       "news": [
         {
@@ -7857,6 +7868,14 @@
           "text": "Statuswechsel: Larsson (33782) ist wieder AKTIV",
           "id": "0",
           "playerId": "33782"
+        },
+        {
+          "date": "19.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Anselmino (34278) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34278"
         }
       ]
     },
