@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "20.01.2026 05:18:20",
+  "lastUpdate": "20.01.2026 15:03:49",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -7123,14 +7123,24 @@
     },
     {
       "date": "20.01.2026",
-      "news": [{
-        "date": "20.01.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Nebel\",\"price\":4300006,\"buyerId\":\"5981249\",\"playerValue\":4310000,\"playerId\":\"33296\",\"buyer\":\"Thomas\"}",
-        "id": "957881941",
-        "playerId": "33296"
-      }]
+      "news": [
+        {
+          "date": "20.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Nebel\",\"price\":4300006,\"buyerId\":\"5981249\",\"playerValue\":4310000,\"playerId\":\"33296\",\"buyer\":\"Thomas\"}",
+          "id": "957881941",
+          "playerId": "33296"
+        },
+        {
+          "date": "20.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Andi\",\"sellerId\":\"9317431\",\"playerName\":\"Jakić\",\"price\":2821500,\"buyerId\":\"1\",\"playerValue\":2780000,\"playerId\":\"33517\",\"buyer\":\"Computer\"}",
+          "id": "957881941",
+          "playerId": "33517"
+        }
+      ]
     },
     {
       "date": "19.12.2025",
