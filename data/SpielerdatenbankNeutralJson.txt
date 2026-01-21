@@ -3953,9 +3953,9 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Krank",
+          "grund": "",
           "lastUpdate": "20.01.2026",
-          "seit": "13.01.2026",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -3965,8 +3965,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Hollerbach",
@@ -7456,7 +7456,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 68,
           "durchschnittspunkte": 50,
-          "rang": 39
+          "rang": 40
         }},
         "possibleNames": [
           "Aleksandar Pavlovic",
@@ -8797,7 +8797,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 95,
           "durchschnittspunkte": 43.17,
-          "rang": 103
+          "rang": 104
         }},
         "possibleNames": [
           "Robin Koch",
@@ -9638,7 +9638,7 @@
           "topFlop": {
             "punkte": "13",
             "zielwert": "7.800.000",
-            "platz": 6,
+            "platz": 5,
             "lastUpdate": "20.01.2026",
             "typ": "top",
             "marktwert": "7.140.000",
@@ -15686,7 +15686,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 97,
           "durchschnittspunkte": 49,
-          "rang": 46
+          "rang": 47
         }},
         "possibleNames": [
           "Nikola Vasilj",
@@ -19004,7 +19004,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 71,
           "durchschnittspunkte": 46.5,
-          "rang": 68
+          "rang": 69
         }},
         "possibleNames": [
           "Jonathan Burkardt",
@@ -19443,7 +19443,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 85,
           "durchschnittspunkte": 42.62,
-          "rang": 110
+          "rang": 111
         }},
         "possibleNames": [
           "Nathaniel Brown",
@@ -25148,7 +25148,7 @@
           "topFlop": {
             "punkte": "15",
             "zielwert": "23.100.000",
-            "platz": 9,
+            "platz": 10,
             "lastUpdate": "20.01.2026",
             "typ": "flop",
             "marktwert": "23.520.000",
@@ -25933,7 +25933,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 88,
           "durchschnittspunkte": 39,
-          "rang": 146
+          "rang": 145
         }},
         "possibleNames": [
           "Noahkai Banks",
@@ -38617,7 +38617,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 81,
           "durchschnittspunkte": 39,
-          "rang": 145
+          "rang": 146
         }},
         "possibleNames": [
           "Daniel Svensson",
@@ -41131,7 +41131,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 93,
           "durchschnittspunkte": 49,
-          "rang": 47
+          "rang": 46
         }},
         "possibleNames": [
           "Romano Schmid",
@@ -41802,7 +41802,7 @@
         },
         "lastSeasonPoints": 0,
         "punkte": 90,
-        "realWert": 250000,
+        "realWert": 40000000,
         "lastBigUpdate": "18.01.2026",
         "stats": {
           "notenDurchschnitt": "6,92",
@@ -41976,9 +41976,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "Muskelriss",
+          "grund": "Krank",
           "lastUpdate": "20.01.2026",
-          "seit": "05.11.2025",
+          "seit": "20.01.2026",
           "details": "",
           "historie": [],
           "bis": "",
@@ -47741,7 +47741,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 74,
           "durchschnittspunkte": 34,
-          "rang": 210
+          "rang": 211
         }},
         "possibleNames": [
           "Ellyes Skhiri",
@@ -48359,7 +48359,7 @@
           "topFlop": {
             "punkte": "9",
             "zielwert": "5.530.000",
-            "platz": 5,
+            "platz": 4,
             "lastUpdate": "20.01.2026",
             "typ": "top",
             "marktwert": "4.850.000",
@@ -49194,7 +49194,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 90,
           "durchschnittspunkte": 43.17,
-          "rang": 104
+          "rang": 103
         }},
         "possibleNames": [
           "Kevin Diks",
@@ -51050,7 +51050,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 76,
           "durchschnittspunkte": 34,
-          "rang": 211
+          "rang": 210
         }},
         "possibleNames": [
           "Lorenz Assignon",
@@ -51487,7 +51487,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 70,
           "durchschnittspunkte": 34.67,
-          "rang": 203
+          "rang": 202
         }},
         "possibleNames": [
           "Ilyas Ansah",
@@ -52242,7 +52242,7 @@
           "topFlop": {
             "punkte": "-1",
             "zielwert": "11.080.000",
-            "platz": 8,
+            "platz": 9,
             "lastUpdate": "20.01.2026",
             "typ": "flop",
             "marktwert": "11.500.000",
@@ -60392,7 +60392,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 90,
           "durchschnittspunkte": 37.06,
-          "rang": 169
+          "rang": 168
         }},
         "possibleNames": [
           "Joe Scally",
@@ -60696,7 +60696,7 @@
           "topFlop": {
             "punkte": "16",
             "zielwert": "4.670.000",
-            "platz": 4,
+            "platz": 3,
             "lastUpdate": "20.01.2026",
             "typ": "top",
             "marktwert": "3.970.000",
@@ -63240,7 +63240,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33311"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "2",
+            "zielwert": "11.270.000",
+            "platz": 8,
+            "lastUpdate": "20.01.2026",
+            "typ": "flop",
+            "marktwert": "11.770.000",
+            "aenderung": "-500.000"
+          },
+          "link": "https://www.com-analytics.de/player/33311"
+        },
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "25.03.1998",
@@ -65260,7 +65271,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 87,
           "durchschnittspunkte": 36,
-          "rang": 186
+          "rang": 187
         }},
         "possibleNames": [
           "Tim Siersleben",
@@ -68341,9 +68352,9 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Krank",
+          "grund": "",
           "lastUpdate": "20.01.2026",
-          "seit": "17.01.2026",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -68353,8 +68364,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Amiri",
@@ -71117,7 +71128,7 @@
             "lastUpdate": "20.01.2026",
             "durchschnittsminuten": 74,
             "durchschnittspunkte": 34.67,
-            "rang": 202
+            "rang": 203
           },
           "SonstigeInfos": ["häufigsten Transfers (3)"]
         },
@@ -73591,7 +73602,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 53,
           "durchschnittspunkte": 42.62,
-          "rang": 111
+          "rang": 110
         }},
         "possibleNames": [
           "Grischa Proemel",
@@ -73985,7 +73996,8 @@
           },
           "SonstigeInfos": [
             "häufigsten Transfers (4)",
-            "häufigsten Transfers (5)"
+            "häufigsten Transfers (5)",
+            "häufigsten Transfers (6)"
           ]
         },
         "possibleNames": [
@@ -75729,7 +75741,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 89,
           "durchschnittspunkte": 50,
-          "rang": 40
+          "rang": 39
         }},
         "possibleNames": [
           "Julian Chabot",
@@ -77437,7 +77449,7 @@
           "topFlop": {
             "punkte": "12",
             "zielwert": "9.350.000",
-            "platz": 7,
+            "platz": 6,
             "lastUpdate": "20.01.2026",
             "typ": "top",
             "marktwert": "8.710.000",
@@ -78453,13 +78465,13 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Krank",
+          "grund": "",
           "lastUpdate": "20.01.2026",
-          "seit": "12.01.2026",
+          "seit": "",
           "details": "",
           "historie": [],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Weiper",
@@ -78473,7 +78485,7 @@
           "groesse": "1,80",
           "geburtstag": "31.10.2004",
           "laenderspiele": 2,
-          "lastUpdate": "24.12.2025",
+          "lastUpdate": "20.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 25,
@@ -78495,7 +78507,7 @@
         },
         "lastPoints": 1,
         "transfermarktDoDe": {
-          "date": "24.12.2025",
+          "date": "20.01.2026",
           "name": "Aaron Zehnter",
           "link": "https://www.transfermarkt.de/aaron-zehnter/profil/spieler/730484",
           "id": "730484",
@@ -82019,7 +82031,7 @@
           "groesse": "1,72",
           "geburtstag": "10.02.1997",
           "laenderspiele": 5,
-          "lastUpdate": "24.12.2025",
+          "lastUpdate": "20.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 24,
@@ -82034,7 +82046,7 @@
         "verein": "9",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "24.12.2025",
+          "date": "20.01.2026",
           "name": "Aurélio Buta",
           "link": "https://www.transfermarkt.de/aurelio-buta/profil/spieler/258039",
           "id": "258039",
@@ -85172,7 +85184,7 @@
           "groesse": "1,86",
           "geburtstag": "19.05.1998",
           "laenderspiele": 48,
-          "lastUpdate": "24.12.2025",
+          "lastUpdate": "20.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 33,
@@ -85194,7 +85206,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "24.12.2025",
+          "date": "20.01.2026",
           "name": "Alex Král",
           "link": "https://www.transfermarkt.de/alex-kral/profil/spieler/337333",
           "id": "337333",
@@ -85558,7 +85570,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 94,
           "durchschnittspunkte": 37.06,
-          "rang": 168
+          "rang": 169
         }},
         "possibleNames": [
           "Hauke Wahl",
@@ -85605,18 +85617,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "6.810.000",
-            "platz": 10,
-            "lastUpdate": "20.01.2026",
-            "typ": "flop",
-            "marktwert": "7.200.000",
-            "aenderung": "-390.000"
-          },
-          "link": "https://www.com-analytics.de/player/33657"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33657"},
         "elfDesSpieltages": 1,
         "spielerDaten": {
           "groesse": "1,90",
@@ -86968,7 +86969,7 @@
           "groesse": "1,85",
           "geburtstag": "09.04.2004",
           "laenderspiele": 6,
-          "lastUpdate": "24.12.2025",
+          "lastUpdate": "20.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 10,
@@ -86990,7 +86991,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "24.12.2025",
+          "date": "20.01.2026",
           "name": "Muhammed Damar",
           "link": "https://www.transfermarkt.de/muhammed-damar/profil/spieler/789898",
           "id": "789898",
@@ -89590,7 +89591,7 @@
           "groesse": "1,78",
           "geburtstag": "11.12.2005",
           "laenderspiele": 1,
-          "lastUpdate": "24.12.2025",
+          "lastUpdate": "20.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 22,
@@ -89612,7 +89613,7 @@
         },
         "lastPoints": 5,
         "transfermarktDoDe": {
-          "date": "24.12.2025",
+          "date": "20.01.2026",
           "name": "Arijon Ibrahimovic",
           "link": "https://www.transfermarkt.de/arijon-ibrahimovic/profil/spieler/744728",
           "id": "744728",
@@ -90219,7 +90220,7 @@
           "groesse": "1,86",
           "geburtstag": "14.05.1995",
           "laenderspiele": 0,
-          "lastUpdate": "24.12.2025",
+          "lastUpdate": "20.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 13,
@@ -90241,7 +90242,7 @@
         },
         "lastPoints": 6,
         "transfermarktDoDe": {
-          "date": "24.12.2025",
+          "date": "20.01.2026",
           "name": "Bernardo",
           "link": "https://www.transfermarkt.de/bernardo/profil/spieler/364258",
           "id": "364258",
@@ -90736,7 +90737,7 @@
           "url": "https://www.fussballdaten.de/person/oliver-burke/"
         },
         "transfermarktDoDe": {
-          "date": "24.12.2025",
+          "date": "20.01.2026",
           "name": "Oliver Burke",
           "link": "https://www.transfermarkt.de/oliver-burke/profil/spieler/341317",
           "id": "341317",
@@ -90789,7 +90790,7 @@
           "groesse": "1,88",
           "geburtstag": "07.04.1997",
           "laenderspiele": 13,
-          "lastUpdate": "24.12.2025",
+          "lastUpdate": "20.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 7,
@@ -91210,12 +91211,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "9",
-            "zielwert": "11.970.000",
-            "platz": 3,
+            "zielwert": "11.890.000",
+            "platz": 7,
             "lastUpdate": "20.01.2026",
             "typ": "top",
             "marktwert": "11.250.000",
-            "aenderung": "+720.000"
+            "aenderung": "+640.000"
           },
           "link": "https://www.com-analytics.de/player/32696"
         },
@@ -92014,7 +92015,7 @@
           "groesse": "1,91",
           "geburtstag": "07.08.1997",
           "laenderspiele": 1,
-          "lastUpdate": "24.12.2025",
+          "lastUpdate": "20.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 25,
@@ -92036,7 +92037,7 @@
         },
         "lastPoints": 6,
         "transfermarktDoDe": {
-          "date": "24.12.2025",
+          "date": "20.01.2026",
           "name": "Jordan Torunarigha",
           "link": "https://www.transfermarkt.de/jordan-torunarigha/profil/spieler/227110",
           "id": "227110",
@@ -93092,7 +93093,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 77,
           "durchschnittspunkte": 45.33,
-          "rang": 80
+          "rang": 79
         }},
         "possibleNames": [
           "Dayot Upamecano",
@@ -93137,7 +93138,7 @@
           "url": "https://www.fussballdaten.de/person/ibrahim-maza/"
         },
         "transfermarktDoDe": {
-          "date": "24.12.2025",
+          "date": "20.01.2026",
           "name": "Ibrahim Maza",
           "link": "https://www.transfermarkt.de/ibrahim-maza/profil/spieler/905011",
           "id": "905011",
@@ -93181,13 +93182,13 @@
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "24.11.2005",
-          "laenderspiele": 9,
-          "lastUpdate": "24.12.2025",
+          "laenderspiele": 13,
+          "lastUpdate": "20.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 30,
           "nationalitaet": "Algerien",
-          "laenderspielTore": 1,
+          "laenderspielTore": 2,
           "hauptposition": "Offensives Mittelfeld",
           "fuss": "rechts"
         },
@@ -93956,7 +93957,7 @@
           "groesse": "1,90",
           "geburtstag": "20.07.1996",
           "laenderspiele": 0,
-          "lastUpdate": "24.12.2025",
+          "lastUpdate": "20.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 4,
@@ -93978,7 +93979,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "24.12.2025",
+          "date": "20.01.2026",
           "name": "Timo Hübers",
           "link": "https://www.transfermarkt.de/timo-hubers/profil/spieler/236981",
           "id": "236981",
@@ -94131,7 +94132,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 92,
           "durchschnittspunkte": 45.12,
-          "rang": 83
+          "rang": 84
         }},
         "possibleNames": [
           "timo huebers",
@@ -100207,12 +100208,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "4",
-            "zielwert": "11.130.000",
-            "platz": 7,
+            "zielwert": "11.110.000",
+            "platz": 6,
             "lastUpdate": "20.01.2026",
             "typ": "flop",
             "marktwert": "11.680.000",
-            "aenderung": "-550.000"
+            "aenderung": "-570.000"
           },
           "link": "https://www.com-analytics.de/player/33530"
         },
@@ -104083,7 +104084,7 @@
           "topFlop": {
             "punkte": "5",
             "zielwert": "21.270.000",
-            "platz": 6,
+            "platz": 7,
             "lastUpdate": "20.01.2026",
             "typ": "flop",
             "marktwert": "21.820.000",
@@ -108261,7 +108262,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 67,
           "durchschnittspunkte": 36,
-          "rang": 187
+          "rang": 186
         }},
         "possibleNames": [
           "Anton Kade",
@@ -108507,7 +108508,7 @@
           "lastUpdate": "20.01.2026",
           "durchschnittsminuten": 84,
           "durchschnittspunkte": 46.5,
-          "rang": 69
+          "rang": 68
         }},
         "possibleNames": [
           "Albian Hajdari",
