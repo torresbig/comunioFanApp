@@ -2001,7 +2001,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33821"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "7",
+            "zielwert": "2.280.000",
+            "platz": 9,
+            "lastUpdate": "21.01.2026",
+            "typ": "top",
+            "marktwert": "1.950.000",
+            "aenderung": "+330.000"
+          },
+          "link": "https://www.com-analytics.de/player/33821"
+        },
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "02.08.2004",
@@ -2182,7 +2193,7 @@
             "lastUpdate": "21.01.2026",
             "durchschnittsminuten": 68,
             "durchschnittspunkte": 32.07,
-            "rang": 233
+            "rang": 232
           },
           "SonstigeInfos": [
             "häufigsten Transfers (4)",
@@ -8808,7 +8819,7 @@
           "lastUpdate": "21.01.2026",
           "durchschnittsminuten": 95,
           "durchschnittspunkte": 43.17,
-          "rang": 104
+          "rang": 103
         }},
         "possibleNames": [
           "Robin Koch",
@@ -15697,7 +15708,7 @@
           "lastUpdate": "21.01.2026",
           "durchschnittsminuten": 97,
           "durchschnittspunkte": 49,
-          "rang": 47
+          "rang": 46
         }},
         "possibleNames": [
           "Nikola Vasilj",
@@ -17647,9 +17658,9 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Fußverletzung",
+          "grund": "",
           "lastUpdate": "21.01.2026",
-          "seit": "13.01.2026",
+          "seit": "",
           "details": "",
           "historie": [
             {
@@ -17677,8 +17688,8 @@
               "status": "AUFBAUTRAINING"
             }
           ],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Irvine",
@@ -18080,7 +18091,7 @@
           "lastUpdate": "21.01.2026",
           "durchschnittsminuten": 65,
           "durchschnittspunkte": 36.75,
-          "rang": 175
+          "rang": 174
         }},
         "possibleNames": [
           "Florian Neuhaus",
@@ -18764,7 +18775,7 @@
           "lastUpdate": "21.01.2026",
           "durchschnittsminuten": 78,
           "durchschnittspunkte": 45.17,
-          "rang": 82
+          "rang": 81
         }},
         "possibleNames": [
           "Daniel Sinani",
@@ -18809,9 +18820,9 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Wadenprobleme",
+          "grund": "",
           "lastUpdate": "21.01.2026",
-          "seit": "13.01.2026",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -18821,8 +18832,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Sinani",
@@ -19454,7 +19465,7 @@
           "lastUpdate": "21.01.2026",
           "durchschnittsminuten": 85,
           "durchschnittspunkte": 42.62,
-          "rang": 111
+          "rang": 110
         }},
         "possibleNames": [
           "Nathaniel Brown",
@@ -22604,7 +22615,7 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Knieprobleme",
+          "grund": "Knieverletzung",
           "lastUpdate": "21.01.2026",
           "seit": "15.01.2026",
           "details": "",
@@ -22616,7 +22627,7 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
+          "bis": "31.03.2026",
           "status": "VERLETZT"
         }
       },
@@ -23037,7 +23048,7 @@
           "lastUpdate": "21.01.2026",
           "durchschnittsminuten": 98,
           "durchschnittspunkte": 45.11,
-          "rang": 86
+          "rang": 85
         }},
         "possibleNames": [
           "Leopold Querfeld",
@@ -32271,18 +32282,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "9",
-            "zielwert": "3.160.000",
-            "platz": 10,
-            "lastUpdate": "21.01.2026",
-            "typ": "top",
-            "marktwert": "2.850.000",
-            "aenderung": "+310.000"
-          },
-          "link": "https://www.com-analytics.de/player/33035"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33035"},
         "spielerDaten": {
           "groesse": "1,79",
           "geburtstag": "20.09.1999",
@@ -37338,9 +37338,9 @@
           "status": "AUFBAUTRAINING"
         },
         "status": {
-          "grund": "Muskelfaserriss",
+          "grund": "Trainingsrückstand",
           "lastUpdate": "21.01.2026",
-          "seit": "20.09.2025",
+          "seit": "21.01.2026",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -41142,7 +41142,7 @@
           "lastUpdate": "21.01.2026",
           "durchschnittsminuten": 93,
           "durchschnittspunkte": 49,
-          "rang": 46
+          "rang": 47
         }},
         "possibleNames": [
           "Romano Schmid",
@@ -48369,12 +48369,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "9",
-            "zielwert": "5.410.000",
-            "platz": 3,
+            "zielwert": "5.370.000",
+            "platz": 5,
             "lastUpdate": "21.01.2026",
             "typ": "top",
             "marktwert": "4.930.000",
-            "aenderung": "+480.000"
+            "aenderung": "+440.000"
           },
           "link": "https://www.com-analytics.de/player/34184"
         },
@@ -49205,7 +49205,7 @@
           "lastUpdate": "21.01.2026",
           "durchschnittsminuten": 90,
           "durchschnittspunkte": 43.17,
-          "rang": 103
+          "rang": 104
         }},
         "possibleNames": [
           "Kevin Diks",
@@ -60527,12 +60527,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "16",
-            "zielwert": "4.530.000",
-            "platz": 4,
+            "zielwert": "4.590.000",
+            "platz": 3,
             "lastUpdate": "21.01.2026",
             "typ": "top",
             "marktwert": "4.080.000",
-            "aenderung": "+450.000"
+            "aenderung": "+510.000"
           },
           "link": "https://www.com-analytics.de/player/33263"
         },
@@ -61353,7 +61353,7 @@
             "lastUpdate": "21.01.2026",
             "durchschnittsminuten": 96,
             "durchschnittspunkte": 45.11,
-            "rang": 85
+            "rang": 86
           },
           "SonstigeInfos": ["häufigsten Transfers (3)"]
         },
@@ -63025,7 +63025,7 @@
           "lastUpdate": "21.01.2026",
           "durchschnittsminuten": 78,
           "durchschnittspunkte": 36.75,
-          "rang": 174
+          "rang": 175
         }},
         "possibleNames": [
           "Yannick Gerhardt",
@@ -63077,7 +63077,7 @@
           "groesse": "1,85",
           "geburtstag": "25.03.1998",
           "laenderspiele": 36,
-          "lastUpdate": "25.12.2025",
+          "lastUpdate": "21.01.2026",
           "nebenpositionen": [
             "LA",
             "RA"
@@ -63102,7 +63102,7 @@
         },
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "25.12.2025",
+          "date": "21.01.2026",
           "name": "Ermedin Demirovic",
           "link": "https://www.transfermarkt.de/ermedin-demirovic/profil/spieler/335457",
           "id": 335457,
@@ -63512,7 +63512,7 @@
           "groesse": "1,93",
           "geburtstag": "30.09.1996",
           "laenderspiele": 2,
-          "lastUpdate": "25.12.2025",
+          "lastUpdate": "21.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 33,
@@ -63534,7 +63534,7 @@
         },
         "lastPoints": 5,
         "transfermarktDoDe": {
-          "date": "25.12.2025",
+          "date": "21.01.2026",
           "name": "Alexander Nübel",
           "link": "https://www.transfermarkt.de/alexander-nubel/profil/spieler/195778",
           "id": 195778,
@@ -63748,7 +63748,7 @@
           "groesse": "1,84",
           "geburtstag": "15.05.2003",
           "laenderspiele": 17,
-          "lastUpdate": "25.12.2025",
+          "lastUpdate": "21.01.2026",
           "nebenpositionen": [
             "IV",
             "LM"
@@ -63773,7 +63773,7 @@
         },
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "25.12.2025",
+          "date": "21.01.2026",
           "name": "Luca Netz",
           "link": "https://www.transfermarkt.de/luca-netz/profil/spieler/524285",
           "id": 524285,
@@ -63967,7 +63967,7 @@
           "groesse": "1,87",
           "geburtstag": "02.04.1994",
           "laenderspiele": 9,
-          "lastUpdate": "25.12.2025",
+          "lastUpdate": "21.01.2026",
           "nebenpositionen": [
             "OM",
             "HS"
@@ -63992,7 +63992,7 @@
         },
         "lastPoints": 4,
         "transfermarktDoDe": {
-          "date": "25.12.2025",
+          "date": "21.01.2026",
           "name": "Janik Haberer",
           "link": "https://www.transfermarkt.de/janik-haberer/profil/spieler/177779",
           "id": 177779,
@@ -65092,7 +65092,7 @@
           "lastUpdate": "21.01.2026",
           "durchschnittsminuten": 87,
           "durchschnittspunkte": 36,
-          "rang": 187
+          "rang": 186
         }},
         "possibleNames": [
           "Tim Siersleben",
@@ -73423,7 +73423,7 @@
           "lastUpdate": "21.01.2026",
           "durchschnittsminuten": 53,
           "durchschnittspunkte": 42.62,
-          "rang": 110
+          "rang": 111
         }},
         "possibleNames": [
           "Grischa Proemel",
@@ -76448,7 +76448,7 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
+          "bis": "28.02.2026",
           "status": "VERLETZT"
         }
       },
@@ -88295,7 +88295,7 @@
           "lastUpdate": "21.01.2026",
           "durchschnittsminuten": 58,
           "durchschnittspunkte": 32.07,
-          "rang": 232
+          "rang": 233
         }},
         "possibleNames": [
           "Justin Njinmah",
@@ -91336,7 +91336,7 @@
           "topFlop": {
             "punkte": "14",
             "zielwert": "2.440.000",
-            "platz": 9,
+            "platz": 10,
             "lastUpdate": "21.01.2026",
             "typ": "top",
             "marktwert": "2.120.000",
@@ -93003,7 +93003,7 @@
           "lastUpdate": "21.01.2026",
           "durchschnittsminuten": 64,
           "durchschnittspunkte": 45.17,
-          "rang": 81
+          "rang": 82
         }},
         "possibleNames": [
           "Ibrahim Maza",
@@ -96285,12 +96285,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "10",
-            "zielwert": "4.320.000",
-            "platz": 5,
+            "zielwert": "4.350.000",
+            "platz": 4,
             "lastUpdate": "21.01.2026",
             "typ": "top",
             "marktwert": "3.870.000",
-            "aenderung": "+450.000"
+            "aenderung": "+480.000"
           },
           "link": "https://www.com-analytics.de/player/33783"
         },
@@ -97971,7 +97971,7 @@
           "groesse": "1,87",
           "geburtstag": "17.06.1999",
           "laenderspiele": 0,
-          "lastUpdate": "25.12.2025",
+          "lastUpdate": "21.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 5,
@@ -97986,7 +97986,7 @@
         "wert": 1070000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "25.12.2025",
+          "date": "21.01.2026",
           "name": "Vini Souza",
           "link": "https://www.transfermarkt.de/vini-souza/profil/spieler/663581",
           "id": "663581",
@@ -98149,7 +98149,7 @@
           "groesse": "1,83",
           "geburtstag": "22.03.1988",
           "laenderspiele": 0,
-          "lastUpdate": "25.12.2025",
+          "lastUpdate": "21.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 21,
@@ -98164,7 +98164,7 @@
         "wert": 160000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "25.12.2025",
+          "date": "21.01.2026",
           "name": "Tobias Sippel",
           "link": "https://www.transfermarkt.de/tobias-sippel/profil/spieler/31653",
           "id": "31653",
@@ -98308,7 +98308,7 @@
           "groesse": "1,88",
           "geburtstag": "12.02.1989",
           "laenderspiele": 6,
-          "lastUpdate": "25.12.2025",
+          "lastUpdate": "21.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 20,
@@ -98330,7 +98330,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "25.12.2025",
+          "date": "21.01.2026",
           "name": "Ron-Robert Zieler",
           "link": "https://www.transfermarkt.de/ron-robert-zieler/profil/spieler/21327",
           "id": "21327",
@@ -98734,7 +98734,7 @@
           "groesse": "1,84",
           "geburtstag": "30.11.2006",
           "laenderspiele": 5,
-          "lastUpdate": "25.12.2025",
+          "lastUpdate": "21.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 45,
@@ -98756,7 +98756,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "25.12.2025",
+          "date": "21.01.2026",
           "name": "Lazar Jovanovic",
           "link": "https://www.transfermarkt.de/lazar-jovanovic/profil/spieler/897505",
           "id": "897505",
@@ -98932,7 +98932,7 @@
           "groesse": "1,72",
           "geburtstag": "30.07.2001",
           "laenderspiele": 0,
-          "lastUpdate": "25.12.2025",
+          "lastUpdate": "21.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 24,
@@ -98954,7 +98954,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "25.12.2025",
+          "date": "21.01.2026",
           "name": "Sota Kawasaki",
           "link": "https://www.transfermarkt.de/sota-kawasaki/profil/spieler/733371",
           "id": "733371",
@@ -99122,7 +99122,7 @@
           "groesse": "1,77",
           "geburtstag": "14.09.1998",
           "laenderspiele": 9,
-          "lastUpdate": "25.12.2025",
+          "lastUpdate": "21.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 24,
@@ -99144,7 +99144,7 @@
         },
         "lastPoints": 5,
         "transfermarktDoDe": {
-          "date": "25.12.2025",
+          "date": "21.01.2026",
           "link": "https://www.transfermarkt.de/nicolas-capaldo/profil/spieler/649672",
           "name": "Nicolás Capaldo",
           "leistungsDaten": {}
@@ -105216,13 +105216,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "Außenbandriss",
+          "grund": "",
           "lastUpdate": "21.01.2026",
-          "seit": "28.09.2025",
+          "seit": "",
           "details": "",
           "historie": [],
-          "bis": "31.01.2026",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Omari",
@@ -108083,7 +108083,7 @@
           "lastUpdate": "21.01.2026",
           "durchschnittsminuten": 67,
           "durchschnittspunkte": 36,
-          "rang": 186
+          "rang": 187
         }},
         "possibleNames": [
           "Anton Kade",
@@ -114926,17 +114926,17 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34313"},
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "",
-          "laenderspiele": 0,
-          "lastUpdate": null,
+          "groesse": "1,72",
+          "geburtstag": "18.03.2006",
+          "laenderspiele": 5,
+          "lastUpdate": "21.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
-          "nationalitaet": "",
+          "trikotNummer": 26,
+          "nationalitaet": "Japan",
           "laenderspielTore": 0,
-          "hauptposition": "",
-          "fuss": ""
+          "hauptposition": "Linker Verteidiger",
+          "fuss": "links"
         },
         "isNotName": [],
         "punktekorrektur": [],
@@ -114944,11 +114944,19 @@
         "wert": 2140000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "01.01.1900",
-          "haveToCheck": true
+          "date": "21.01.2026",
+          "haveToCheck": true,
+          "name": "Keita Kosugi",
+          "link": "https://www.transfermarkt.de/keita-kosugi/profil/spieler/1146988",
+          "id": "1146988",
+          "position": "LV",
+          "marktwert": 4000000,
+          "nationalitaet": "Japan",
+          "leistungsDaten": {},
+          "alter": 19
         },
         "punkte": 0,
-        "realWert": 0,
+        "realWert": 4000000,
         "lastBigUpdate": "18.01.2026",
         "stats": {
           "notenDurchschnitt": "0",
@@ -114982,7 +114990,11 @@
         "onMarket": false,
         "position": "ABWEHR",
         "attribute": [],
-        "possibleNames": [],
+        "possibleNames": [
+          "Keita Kosugi",
+          "Kosugi",
+          "K. Kosugi"
+        ],
         "comunioStatus": {
           "grund": "unbekannt",
           "lastUpdate": "18.01.2026",
