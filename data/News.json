@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "23.01.2026 05:18:26",
+  "lastUpdate": "23.01.2026 15:04:30",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -4948,14 +4948,64 @@
     },
     {
       "date": "23.01.2026",
-      "news": [{
-        "date": "23.01.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Palacios\",\"price\":4409009,\"buyerId\":\"13721745\",\"playerValue\":4140000,\"playerId\":\"33189\",\"buyer\":\"damian\"}",
-        "id": "958039250",
-        "playerId": "33189"
-      }]
+      "news": [
+        {
+          "date": "23.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Palacios\",\"price\":4409009,\"buyerId\":\"13721745\",\"playerValue\":4140000,\"playerId\":\"33189\",\"buyer\":\"damian\"}",
+          "id": "958039250",
+          "playerId": "33189"
+        },
+        {
+          "date": "23.01.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Tangvik (ID: 34334)",
+          "id": "0",
+          "playerId": "34334"
+        },
+        {
+          "date": "23.01.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Chaves\",\"newClub\":\"68\",\"oldClub\":\"62\",\"playerID\":\"34062\"}",
+          "id": "0",
+          "playerId": "34062"
+        },
+        {
+          "date": "23.01.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Schlich (ID: 34333)",
+          "id": "0",
+          "playerId": "34333"
+        },
+        {
+          "date": "23.01.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Posch (ID: 32786)",
+          "id": "0",
+          "playerId": "32786"
+        },
+        {
+          "date": "23.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Duranville (33728) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "33728"
+        },
+        {
+          "date": "23.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Simpson-Pusey (34323) ist jetzt VERLETZT (muskuläre Probleme)",
+          "id": "0",
+          "playerId": "34323"
+        }
+      ]
     },
     {
       "date": "22.12.2025",
