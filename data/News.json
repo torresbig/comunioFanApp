@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "22.01.2026 15:04:08",
+  "lastUpdate": "23.01.2026 05:18:26",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -4947,6 +4947,17 @@
       ]
     },
     {
+      "date": "23.01.2026",
+      "news": [{
+        "date": "23.01.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Palacios\",\"price\":4409009,\"buyerId\":\"13721745\",\"playerValue\":4140000,\"playerId\":\"33189\",\"buyer\":\"damian\"}",
+        "id": "958039250",
+        "playerId": "33189"
+      }]
+    },
+    {
       "date": "22.12.2025",
       "news": [
         {
@@ -5594,6 +5605,30 @@
           "text": "Statuswechsel: Lukeba (33837) ist jetzt VERLETZT (Knieprobleme)",
           "id": "0",
           "playerId": "33837"
+        },
+        {
+          "date": "22.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Stiller (33437) ist jetzt VERLETZT (Leistenprobleme)",
+          "id": "0",
+          "playerId": "33437"
+        },
+        {
+          "date": "22.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Pejčinović (33657) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33657"
+        },
+        {
+          "date": "22.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Svanberg (33658) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33658"
         }
       ]
     },
