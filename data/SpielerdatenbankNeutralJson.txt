@@ -2248,7 +2248,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33823"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "0",
+            "zielwert": "3.690.000",
+            "platz": 9,
+            "lastUpdate": "22.01.2026",
+            "typ": "flop",
+            "marktwert": "3.880.000",
+            "aenderung": "-190.000"
+          },
+          "link": "https://www.com-analytics.de/player/33823"
+        },
         "elfDesSpieltages": 1,
         "spielerDaten": {
           "groesse": "1,90",
@@ -22519,7 +22530,7 @@
           "topFlop": {
             "punkte": "5",
             "zielwert": "12.850.000",
-            "platz": 9,
+            "platz": 10,
             "lastUpdate": "22.01.2026",
             "typ": "flop",
             "marktwert": "13.040.000",
@@ -22713,12 +22724,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "5",
-            "zielwert": "5.710.000",
-            "platz": 3,
+            "zielwert": "5.600.000",
+            "platz": 6,
             "lastUpdate": "22.01.2026",
             "typ": "top",
             "marktwert": "5.340.000",
-            "aenderung": "+370.000"
+            "aenderung": "+260.000"
           },
           "link": "https://www.com-analytics.de/player/33995"
         },
@@ -29958,7 +29969,7 @@
           "topFlop": {
             "punkte": "2",
             "zielwert": "11.690.000",
-            "platz": 5,
+            "platz": 4,
             "lastUpdate": "22.01.2026",
             "typ": "top",
             "marktwert": "11.380.000",
@@ -44484,18 +44495,7 @@
           "X. Schlager",
           "Schlager"
         ],
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "2",
-            "zielwert": "5.260.000",
-            "platz": 10,
-            "lastUpdate": "22.01.2026",
-            "typ": "flop",
-            "marktwert": "5.440.000",
-            "aenderung": "-180.000"
-          },
-          "link": "https://www.com-analytics.de/player/33133"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33133"},
         "spielerDaten": {
           "groesse": "1,74",
           "geburtstag": "28.09.1997",
@@ -48262,7 +48262,7 @@
           "topFlop": {
             "punkte": "9",
             "zielwert": "5.610.000",
-            "platz": 4,
+            "platz": 3,
             "lastUpdate": "22.01.2026",
             "typ": "top",
             "marktwert": "5.280.000",
@@ -60413,7 +60413,7 @@
           "topFlop": {
             "punkte": "16",
             "zielwert": "4.630.000",
-            "platz": 6,
+            "platz": 5,
             "lastUpdate": "22.01.2026",
             "typ": "top",
             "marktwert": "4.360.000",
@@ -68483,7 +68483,7 @@
           "groesse": "1,81",
           "geburtstag": "22.04.1998",
           "laenderspiele": 34,
-          "lastUpdate": "26.12.2025",
+          "lastUpdate": "22.01.2026",
           "nebenpositionen": ["LM"],
           "nationalspieler": "",
           "trikotNummer": 22,
@@ -68505,7 +68505,7 @@
         },
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "26.12.2025",
+          "date": "22.01.2026",
           "name": "David Raum",
           "link": "https://www.transfermarkt.de/david-raum/profil/spieler/318204",
           "id": 318204,
@@ -68704,7 +68704,7 @@
           "groesse": "1,83",
           "geburtstag": "04.04.2001",
           "laenderspiele": 5,
-          "lastUpdate": "26.12.2025",
+          "lastUpdate": "22.01.2026",
           "nebenpositionen": ["ZM"],
           "nationalspieler": "",
           "trikotNummer": 6,
@@ -68726,7 +68726,7 @@
         },
         "lastPoints": 4,
         "transfermarktDoDe": {
-          "date": "26.12.2025",
+          "date": "22.01.2026",
           "name": "Angelo Stiller",
           "link": "https://www.transfermarkt.de/angelo-stiller/profil/spieler/443710",
           "id": 443710,
@@ -68907,9 +68907,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "17.08.2025",
-          "seit": "",
+          "grund": "Leistenprobleme",
+          "lastUpdate": "22.01.2026",
+          "seit": "21.01.2026",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -68919,8 +68919,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Stiller",
@@ -68933,7 +68933,7 @@
           "groesse": "1,90",
           "geburtstag": "25.05.2002",
           "laenderspiele": 0,
-          "lastUpdate": "27.12.2025",
+          "lastUpdate": "22.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "Deutschland U21",
           "trikotNummer": 1,
@@ -68948,7 +68948,7 @@
         "verein": "21",
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "27.12.2025",
+          "date": "22.01.2026",
           "name": "Noah Atubolu",
           "link": "https://www.transfermarkt.de/noah-atubolu/profil/spieler/526845",
           "id": 526845,
@@ -69110,7 +69110,7 @@
           "groesse": "1,89",
           "geburtstag": "19.09.2001",
           "laenderspiele": 3,
-          "lastUpdate": "27.12.2025",
+          "lastUpdate": "22.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 41,
@@ -69132,7 +69132,7 @@
         },
         "lastPoints": 4,
         "transfermarktDoDe": {
-          "date": "27.12.2025",
+          "date": "22.01.2026",
           "name": "Diant Ramaj",
           "link": "https://www.transfermarkt.de/diant-ramaj/profil/spieler/448705",
           "id": "448705",
@@ -69644,7 +69644,7 @@
           "groesse": "1,92",
           "geburtstag": "27.07.2001",
           "laenderspiele": 0,
-          "lastUpdate": "27.12.2025",
+          "lastUpdate": "22.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 1,
@@ -69666,7 +69666,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "27.12.2025",
+          "date": "22.01.2026",
           "name": "Lasse Rieß 200 Tsd. \u20ac",
           "link": "https://www.transfermarkt.de/lasse-riess/profil/spieler/490609",
           "id": 490609,
@@ -69851,7 +69851,7 @@
           "groesse": "1,77",
           "geburtstag": "08.02.1995",
           "laenderspiele": 106,
-          "lastUpdate": "27.12.2025",
+          "lastUpdate": "22.01.2026",
           "nebenpositionen": [
             "RV",
             "DM"
@@ -69876,7 +69876,7 @@
         },
         "lastPoints": 4,
         "transfermarktDoDe": {
-          "date": "27.12.2025",
+          "date": "22.01.2026",
           "name": "Joshua Kimmich",
           "link": "https://www.transfermarkt.de/joshua-kimmich/profil/spieler/161056",
           "id": 161056,
@@ -70101,7 +70101,7 @@
           "groesse": "1,89",
           "geburtstag": "20.07.1996",
           "laenderspiele": 12,
-          "lastUpdate": "27.12.2025",
+          "lastUpdate": "22.01.2026",
           "nebenpositionen": [
             "RV",
             "DM"
@@ -70126,7 +70126,7 @@
         },
         "lastPoints": 6,
         "transfermarktDoDe": {
-          "date": "27.12.2025",
+          "date": "22.01.2026",
           "name": "Waldemar Anton",
           "link": "https://www.transfermarkt.de/waldemar-anton/profil/spieler/193004",
           "id": 193004,
@@ -70390,7 +70390,7 @@
           "groesse": "1,88",
           "geburtstag": "10.07.1991",
           "laenderspiele": 3,
-          "lastUpdate": "27.12.2025",
+          "lastUpdate": "22.01.2026",
           "nebenpositionen": ["DM"],
           "nationalspieler": "",
           "trikotNummer": 6,
@@ -70412,7 +70412,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "27.12.2025",
+          "date": "22.01.2026",
           "name": "Jeffrey Gouweleeuw 3,00 Mio. \u20ac",
           "link": "https://www.transfermarkt.de/jeffrey-gouweleeuw/profil/spieler/106405",
           "id": 106405,
@@ -70874,7 +70874,7 @@
           "groesse": "1,87",
           "geburtstag": "19.02.1997",
           "laenderspiele": 10,
-          "lastUpdate": "27.12.2025",
+          "lastUpdate": "22.01.2026",
           "nebenpositionen": [
             "LV",
             "DM"
@@ -70899,7 +70899,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "27.12.2025",
+          "date": "22.01.2026",
           "name": "Benedikt Gimber",
           "link": "https://www.transfermarkt.de/benedikt-gimber/profil/spieler/227084",
           "id": 227084,
@@ -85463,13 +85463,13 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Fußverletzung",
+          "grund": "",
           "lastUpdate": "22.01.2026",
-          "seit": "15.01.2026",
+          "seit": "",
           "details": "",
           "historie": [],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Pejčinović",
@@ -85697,9 +85697,9 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Krank",
+          "grund": "",
           "lastUpdate": "22.01.2026",
-          "seit": "16.01.2026",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -85709,8 +85709,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Svanberg",
@@ -100315,7 +100315,7 @@
           "groesse": "1,78",
           "geburtstag": "07.07.2001",
           "laenderspiele": 2,
-          "lastUpdate": "26.12.2025",
+          "lastUpdate": "22.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 4,
@@ -100337,7 +100337,7 @@
         },
         "lastPoints": 1,
         "transfermarktDoDe": {
-          "date": "26.12.2025",
+          "date": "22.01.2026",
           "name": "Han-Noah Massengo",
           "link": "https://www.transfermarkt.de/han-noah-massengo/profil/spieler/536508",
           "id": "536508",
@@ -114986,17 +114986,17 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34315"},
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "",
+          "groesse": "1,94",
+          "geburtstag": "25.04.2003",
           "laenderspiele": 0,
-          "lastUpdate": null,
+          "lastUpdate": "22.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
-          "nationalitaet": "",
+          "trikotNummer": 33,
+          "nationalitaet": "Brasilien",
           "laenderspielTore": 0,
-          "hauptposition": "",
-          "fuss": ""
+          "hauptposition": "Innenverteidiger",
+          "fuss": "links"
         },
         "isNotName": [],
         "punktekorrektur": [],
@@ -115004,11 +115004,19 @@
         "wert": 1060000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "01.01.1900",
-          "haveToCheck": true
+          "date": "22.01.2026",
+          "haveToCheck": false,
+          "name": "Cleiton",
+          "link": "https://www.transfermarkt.de/cleiton/profil/spieler/943237",
+          "id": "943237",
+          "position": "IV",
+          "marktwert": 800000,
+          "nationalitaet": "Brasilien",
+          "leistungsDaten": {},
+          "alter": 22
         },
         "punkte": 0,
-        "realWert": 0,
+        "realWert": 800000,
         "lastBigUpdate": "18.01.2026",
         "stats": {
           "notenDurchschnitt": "0",
@@ -115042,7 +115050,7 @@
         "onMarket": false,
         "position": "ABWEHR",
         "attribute": [],
-        "possibleNames": [],
+        "possibleNames": ["Cleiton"],
         "comunioStatus": {
           "grund": "unbekannt",
           "lastUpdate": "18.01.2026",
