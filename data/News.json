@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "24.01.2026 05:18:21",
+  "lastUpdate": "24.01.2026 15:00:38",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -4393,14 +4393,24 @@
     },
     {
       "date": "24.01.2026",
-      "news": [{
-        "date": "24.01.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Vasilj\",\"price\":1800000,\"buyerId\":\"5981249\",\"playerValue\":1830000,\"playerId\":\"33943\",\"buyer\":\"Thomas\"}",
-        "id": "958106642",
-        "playerId": "33943"
-      }]
+      "news": [
+        {
+          "date": "24.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Vasilj\",\"price\":1800000,\"buyerId\":\"5981249\",\"playerValue\":1830000,\"playerId\":\"33943\",\"buyer\":\"Thomas\"}",
+          "id": "958106642",
+          "playerId": "33943"
+        },
+        {
+          "date": "24.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Bobzien (33538) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "33538"
+        }
+      ]
     },
     {
       "date": "23.12.2025",
