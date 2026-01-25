@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "24.01.2026 15:00:38",
+  "lastUpdate": "25.01.2026 05:18:37",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -3549,6 +3549,17 @@
       ]
     },
     {
+      "date": "25.01.2026",
+      "news": [{
+        "date": "25.01.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Irvine\",\"price\":3480000,\"buyerId\":\"13548242\",\"playerValue\":3660000,\"playerId\":\"33950\",\"buyer\":\"Christopher\"}",
+        "id": "958141148",
+        "playerId": "33950"
+      }]
+    },
+    {
       "date": "24.12.2025",
       "news": [
         {
@@ -4409,6 +4420,14 @@
           "text": "Statuswechsel: Bobzien (33538) ist jetzt NICHT_IN_LIGA",
           "id": "0",
           "playerId": "33538"
+        },
+        {
+          "date": "24.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Huseinbašić (33621) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33621"
         }
       ]
     },
