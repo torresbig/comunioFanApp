@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "25.01.2026 05:18:37",
+  "lastUpdate": "25.01.2026 15:03:49",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -3550,14 +3550,48 @@
     },
     {
       "date": "25.01.2026",
-      "news": [{
-        "date": "25.01.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Irvine\",\"price\":3480000,\"buyerId\":\"13548242\",\"playerValue\":3660000,\"playerId\":\"33950\",\"buyer\":\"Christopher\"}",
-        "id": "958141148",
-        "playerId": "33950"
-      }]
+      "news": [
+        {
+          "date": "25.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Irvine\",\"price\":3480000,\"buyerId\":\"13548242\",\"playerValue\":3660000,\"playerId\":\"33950\",\"buyer\":\"Christopher\"}",
+          "id": "958141148",
+          "playerId": "33950"
+        },
+        {
+          "date": "25.01.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Rasmussen (ID: 34335)",
+          "id": "0",
+          "playerId": "34335"
+        },
+        {
+          "date": "25.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Castrop (34186) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "34186"
+        },
+        {
+          "date": "25.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Reyna (33198) ist jetzt VERLETZT (muskuläre Probleme)",
+          "id": "0",
+          "playerId": "33198"
+        },
+        {
+          "date": "25.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Bogdanov (34265) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34265"
+        }
+      ]
     },
     {
       "date": "24.12.2025",
