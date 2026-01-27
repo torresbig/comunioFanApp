@@ -279,7 +279,7 @@
           "groesse": "1,88",
           "geburtstag": "20.12.1996",
           "laenderspiele": 1,
-          "lastUpdate": "31.12.2025",
+          "lastUpdate": "26.01.2026",
           "nebenpositionen": [
             "LV",
             "LM"
@@ -304,7 +304,7 @@
         },
         "lastPoints": 1,
         "transfermarktDoDe": {
-          "date": "31.12.2025",
+          "date": "26.01.2026",
           "name": "Mathias Honsak",
           "link": "https://www.transfermarkt.de/mathias-honsak/profil/spieler/283497",
           "id": 283497,
@@ -545,7 +545,7 @@
           "groesse": "1,83",
           "geburtstag": "06.06.2001",
           "laenderspiele": 9,
-          "lastUpdate": "31.12.2025",
+          "lastUpdate": "26.01.2026",
           "nebenpositionen": [
             "LA",
             "RA"
@@ -563,7 +563,7 @@
         "verein": "21",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "31.12.2025",
+          "date": "26.01.2026",
           "name": "Junior Adamu",
           "link": "https://www.transfermarkt.de/junior-adamu/profil/spieler/452477",
           "id": 452477,
@@ -2743,7 +2743,7 @@
           "groesse": "1,96",
           "geburtstag": "16.05.2005",
           "laenderspiele": 1,
-          "lastUpdate": "31.12.2025",
+          "lastUpdate": "26.01.2026",
           "nebenpositionen": [
             "LV",
             "DM"
@@ -2768,7 +2768,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "31.12.2025",
+          "date": "26.01.2026",
           "name": "El Chadaille Bitshiabu",
           "link": "https://www.transfermarkt.de/el-chadaille-bitshiabu/profil/spieler/787912",
           "id": 787912,
@@ -2957,7 +2957,7 @@
           "groesse": "1,93",
           "geburtstag": "27.03.1986",
           "laenderspiele": 124,
-          "lastUpdate": "31.12.2025",
+          "lastUpdate": "26.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 1,
@@ -2979,7 +2979,7 @@
         },
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "31.12.2025",
+          "date": "26.01.2026",
           "name": "Manuel Neuer",
           "link": "https://www.transfermarkt.de/manuel-neuer/profil/spieler/17259",
           "id": 17259,
@@ -19237,12 +19237,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "5",
-            "zielwert": "5.270.000",
-            "platz": 8,
+            "zielwert": "5.260.000",
+            "platz": 9,
             "lastUpdate": "26.01.2026",
             "typ": "top",
             "marktwert": "4.750.000",
-            "aenderung": "+520.000"
+            "aenderung": "+510.000"
           },
           "link": "https://www.com-analytics.de/player/33975"
         },
@@ -24536,9 +24536,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "16.01.2026",
-          "seit": "",
+          "grund": "Oberschenkelverletzung",
+          "lastUpdate": "26.01.2026",
+          "seit": "25.01.2026",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -24548,8 +24548,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Uzun",
@@ -29926,12 +29926,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "-2",
-            "zielwert": "10.520.000",
+            "zielwert": "10.480.000",
             "platz": 4,
             "lastUpdate": "26.01.2026",
             "typ": "flop",
             "marktwert": "11.490.000",
-            "aenderung": "-970.000"
+            "aenderung": "-1.010.000"
           },
           "link": "https://www.com-analytics.de/player/34047"
         },
@@ -30337,7 +30337,7 @@
           "topFlop": {
             "punkte": "15",
             "zielwert": "4.370.000",
-            "platz": 7,
+            "platz": 6,
             "lastUpdate": "26.01.2026",
             "typ": "top",
             "marktwert": "3.850.000",
@@ -37376,12 +37376,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "5",
-            "zielwert": "5.480.000",
-            "platz": 5,
+            "zielwert": "5.460.000",
+            "platz": 7,
             "lastUpdate": "26.01.2026",
             "typ": "top",
             "marktwert": "4.940.000",
-            "aenderung": "+540.000"
+            "aenderung": "+520.000"
           },
           "link": "https://www.com-analytics.de/player/33085"
         },
@@ -71759,7 +71759,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33496"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "12",
+            "zielwert": "5.780.000",
+            "platz": 10,
+            "lastUpdate": "26.01.2026",
+            "typ": "top",
+            "marktwert": "5.280.000",
+            "aenderung": "+500.000"
+          },
+          "link": "https://www.com-analytics.de/player/33496"
+        },
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "12.05.1999",
@@ -75048,18 +75059,7 @@
     {
       "data": {
         "elfDesSpieltages": 1,
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "8",
-            "zielwert": "5.270.000",
-            "platz": 10,
-            "lastUpdate": "26.01.2026",
-            "typ": "top",
-            "marktwert": "4.770.000",
-            "aenderung": "+500.000"
-          },
-          "link": "https://www.com-analytics.de/player/33552"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33552"},
         "spielerDaten": {
           "groesse": "1,95",
           "geburtstag": "12.02.1998",
@@ -89321,7 +89321,7 @@
           "topFlop": {
             "punkte": "14",
             "zielwert": "2.950.000",
-            "platz": 6,
+            "platz": 5,
             "lastUpdate": "26.01.2026",
             "typ": "top",
             "marktwert": "2.410.000",
@@ -92093,7 +92093,7 @@
           "groesse": "1,86",
           "geburtstag": "27.10.1998",
           "laenderspiele": 35,
-          "lastUpdate": "31.12.2025",
+          "lastUpdate": "26.01.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 2,
@@ -92115,7 +92115,7 @@
         },
         "lastPoints": 5,
         "transfermarktDoDe": {
-          "date": "31.12.2025",
+          "date": "26.01.2026",
           "name": "Dayot Upamecano",
           "link": "https://www.transfermarkt.de/dayot-upamecano/profil/spieler/344695",
           "id": 344695,
@@ -92534,7 +92534,7 @@
           "groesse": "1,90",
           "geburtstag": "12.06.1999",
           "laenderspiele": 0,
-          "lastUpdate": "31.12.2025",
+          "lastUpdate": "26.01.2026",
           "nebenpositionen": ["DM"],
           "nationalspieler": "",
           "trikotNummer": 3,
@@ -92556,7 +92556,7 @@
         },
         "lastPoints": 1,
         "transfermarktDoDe": {
-          "date": "31.12.2025",
+          "date": "26.01.2026",
           "name": "Jan Schöppner",
           "link": "https://www.transfermarkt.de/jan-schoppner/profil/spieler/581357",
           "id": 581357,
@@ -92761,7 +92761,7 @@
           "groesse": "1,81",
           "geburtstag": "09.03.1990",
           "laenderspiele": 2,
-          "lastUpdate": "31.12.2025",
+          "lastUpdate": "26.01.2026",
           "nebenpositionen": [
             "IV",
             "ZM"
@@ -92779,7 +92779,7 @@
         "verein": "21",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "31.12.2025",
+          "date": "26.01.2026",
           "name": "Nicolas Höfler",
           "link": "https://www.transfermarkt.de/nicolas-hofler/profil/spieler/55099",
           "id": 55099,
@@ -92959,7 +92959,7 @@
           "groesse": "1,86",
           "geburtstag": "08.01.1999",
           "laenderspiele": 18,
-          "lastUpdate": "31.12.2025",
+          "lastUpdate": "26.01.2026",
           "nebenpositionen": [
             "DM",
             "RM"
@@ -92984,7 +92984,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "31.12.2025",
+          "date": "26.01.2026",
           "name": "Arne Maier",
           "link": "https://www.transfermarkt.de/arne-maier/profil/spieler/296397",
           "id": 296397,
@@ -93436,7 +93436,7 @@
           "groesse": "1,80",
           "geburtstag": "04.05.2001",
           "laenderspiele": 44,
-          "lastUpdate": "31.12.2025",
+          "lastUpdate": "26.01.2026",
           "nebenpositionen": [
             "DM",
             "RM"
@@ -93461,7 +93461,7 @@
         },
         "lastPoints": 4,
         "transfermarktDoDe": {
-          "date": "31.12.2025",
+          "date": "26.01.2026",
           "name": "Nicolas Seiwald",
           "link": "https://www.transfermarkt.de/nicolas-seiwald/profil/spieler/404950",
           "id": 404950,
@@ -93661,7 +93661,7 @@
           "url": "https://www.fussballdaten.de/person/alejandro-grimaldo/"
         },
         "transfermarktDoDe": {
-          "date": "31.12.2025",
+          "date": "26.01.2026",
           "name": "Alejandro Grimaldo",
           "link": "https://www.transfermarkt.de/alejandro-grimaldo/profil/spieler/193082",
           "id": 193082,
@@ -93716,7 +93716,7 @@
           "groesse": "1,71",
           "geburtstag": "20.09.1995",
           "laenderspiele": 11,
-          "lastUpdate": "31.12.2025",
+          "lastUpdate": "26.01.2026",
           "nebenpositionen": ["LM"],
           "nationalspieler": "",
           "trikotNummer": 20,
@@ -100464,7 +100464,7 @@
           "topFlop": {
             "punkte": "6",
             "zielwert": "18.500.000",
-            "platz": 9,
+            "platz": 8,
             "lastUpdate": "26.01.2026",
             "typ": "top",
             "marktwert": "17.980.000",
