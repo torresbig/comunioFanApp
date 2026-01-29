@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "29.01.2026 05:18:25",
+  "lastUpdate": "29.01.2026 15:04:25",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -1538,14 +1538,64 @@
     },
     {
       "date": "29.01.2026",
-      "news": [{
-        "date": "29.01.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Drljača\",\"price\":160000,\"buyerId\":\"5981249\",\"playerValue\":160000,\"playerId\":\"33342\",\"buyer\":\"Thomas\"}",
-        "id": "958360010",
-        "playerId": "33342"
-      }]
+      "news": [
+        {
+          "date": "29.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Drljača\",\"price\":160000,\"buyerId\":\"5981249\",\"playerValue\":160000,\"playerId\":\"33342\",\"buyer\":\"Thomas\"}",
+          "id": "958360010",
+          "playerId": "33342"
+        },
+        {
+          "date": "29.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Castrop (34186) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34186"
+        },
+        {
+          "date": "29.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Tapsoba (33207) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33207"
+        },
+        {
+          "date": "29.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gnabry (32696) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32696"
+        },
+        {
+          "date": "29.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Upamecano (32720) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32720"
+        },
+        {
+          "date": "29.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Chandler (31743) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "31743"
+        },
+        {
+          "date": "29.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Sani (34330) ist jetzt VERLETZT (Knöchelverletzung)",
+          "id": "0",
+          "playerId": "34330"
+        }
+      ]
     },
     {
       "date": "28.12.2025",
