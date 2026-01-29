@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "28.01.2026 15:05:22",
+  "lastUpdate": "29.01.2026 05:18:25",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -1537,6 +1537,17 @@
       ]
     },
     {
+      "date": "29.01.2026",
+      "news": [{
+        "date": "29.01.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Drljača\",\"price\":160000,\"buyerId\":\"5981249\",\"playerValue\":160000,\"playerId\":\"33342\",\"buyer\":\"Thomas\"}",
+        "id": "958360010",
+        "playerId": "33342"
+      }]
+    },
+    {
       "date": "28.12.2025",
       "news": [
         {
@@ -2125,6 +2136,14 @@
           "text": "Statuswechsel: Skarke (33616) ist wieder AKTIV",
           "id": "0",
           "playerId": "33616"
+        },
+        {
+          "date": "28.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Anton (32452) ist jetzt VERLETZT (Infekt)",
+          "id": "0",
+          "playerId": "32452"
         }
       ]
     },
