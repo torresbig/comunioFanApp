@@ -1273,7 +1273,8 @@
             "totalPoints": 3,
             "tore": 0,
             "value": 3,
-            "key": 2
+            "key": 2,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 3,
@@ -3212,9 +3213,12 @@
         ],
         "spieltagspunkte": [
           {
+            "einsatzzeit": 90,
             "totalPoints": 2,
+            "tore": 0,
             "value": 2,
-            "key": 1
+            "key": 1,
+            "status": "FULL"
           },
           {
             "totalPoints": 2,
@@ -3728,9 +3732,12 @@
         ],
         "spieltagspunkte": [
           {
+            "einsatzzeit": 90,
             "totalPoints": 4,
+            "tore": 0,
             "value": 4,
-            "key": 1
+            "key": 1,
+            "status": "FULL"
           },
           {
             "totalPoints": 4,
@@ -4748,7 +4755,8 @@
             "totalPoints": 2,
             "tore": 0,
             "value": 2,
-            "key": 6
+            "key": 6,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 2,
@@ -4760,19 +4768,24 @@
             "totalPoints": 4,
             "tore": 0,
             "value": 2,
-            "key": 8
+            "key": 8,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 12,
             "totalPoints": 14,
             "tore": 1,
             "value": 10,
-            "key": 9
+            "key": 9,
+            "status": "SUBIN"
           },
           {
+            "einsatzzeit": -6,
             "totalPoints": 16,
+            "tore": 0,
             "value": 2,
-            "key": 10
+            "key": 10,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 16,
@@ -5160,14 +5173,16 @@
             "totalPoints": 1,
             "tore": 0,
             "value": 1,
-            "key": 1
+            "key": 1,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 29,
             "totalPoints": 1,
             "tore": 0,
             "value": 0,
-            "key": 2
+            "key": 2,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 1,
@@ -5179,7 +5194,8 @@
             "totalPoints": 4,
             "tore": 0,
             "value": 3,
-            "key": 4
+            "key": 4,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 4,
@@ -5206,7 +5222,8 @@
             "totalPoints": 4,
             "tore": 0,
             "value": 0,
-            "key": 9
+            "key": 9,
+            "status": "SUBOUT"
           },
           {
             "totalPoints": 4,
@@ -5223,14 +5240,16 @@
             "totalPoints": 6,
             "tore": 0,
             "value": 2,
-            "key": 12
+            "key": 12,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 9,
             "totalPoints": 8,
             "tore": 0,
             "value": 2,
-            "key": 13
+            "key": 13,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 8,
@@ -6351,7 +6370,8 @@
             "totalPoints": 3,
             "tore": 0,
             "value": 3,
-            "key": 2
+            "key": 2,
+            "status": "SUBOUT"
           },
           {
             "totalPoints": 3,
@@ -6388,12 +6408,16 @@
             "totalPoints": 9,
             "tore": 0,
             "value": 6,
-            "key": 9
+            "key": 9,
+            "status": "FULL"
           },
           {
+            "einsatzzeit": -3,
             "totalPoints": 9,
+            "tore": 0,
             "value": 0,
-            "key": 10
+            "key": 10,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 9,
@@ -6405,14 +6429,16 @@
             "totalPoints": 19,
             "tore": 1,
             "value": 10,
-            "key": 12
+            "key": 12,
+            "status": "FULL"
           },
           {
             "einsatzzeit": 90,
             "totalPoints": 23,
             "tore": 0,
             "value": 4,
-            "key": 13
+            "key": 13,
+            "status": "FULL"
           },
           {
             "totalPoints": 23,
@@ -7980,7 +8006,8 @@
             "totalPoints": 2,
             "tore": 0,
             "value": 2,
-            "key": 3
+            "key": 3,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 2,
@@ -8007,7 +8034,8 @@
             "totalPoints": 3,
             "tore": 0,
             "value": 1,
-            "key": 8
+            "key": 8,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 3,
@@ -8040,9 +8068,12 @@
             "key": 14
           },
           {
+            "einsatzzeit": 12,
             "totalPoints": 5,
+            "tore": 0,
             "value": 2,
-            "key": 15
+            "key": 15,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 5,
@@ -8855,14 +8886,20 @@
         "historicalPoints": [{"2024": 102}],
         "spieltagspunkte": [
           {
+            "einsatzzeit": 90,
             "totalPoints": 10,
+            "tore": 1,
             "value": 10,
-            "key": 1
+            "key": 1,
+            "status": "FULL"
           },
           {
+            "einsatzzeit": 90,
             "totalPoints": 13,
+            "tore": 0,
             "value": 3,
-            "key": 2
+            "key": 2,
+            "status": "FULL"
           }
         ],
         "withinSquad": true,
@@ -9593,7 +9630,8 @@
             "totalPoints": 1,
             "tore": 0,
             "value": 1,
-            "key": 2
+            "key": 2,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 1,
@@ -11978,21 +12016,24 @@
             "totalPoints": 2,
             "tore": 0,
             "value": 2,
-            "key": 11
+            "key": 11,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 90,
             "totalPoints": 6,
             "tore": 0,
             "value": 4,
-            "key": 12
+            "key": 12,
+            "status": "FULL"
           },
           {
             "einsatzzeit": 46,
             "totalPoints": 6,
             "tore": 0,
             "value": 0,
-            "key": 13
+            "key": 13,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 46,
@@ -12153,7 +12194,8 @@
             "einsatzzeit": 4,
             "tore": 0,
             "value": 0,
-            "key": 1
+            "key": 1,
+            "status": "SUBIN"
           },
           {
             "value": 0,
@@ -12164,7 +12206,8 @@
             "totalPoints": 2,
             "tore": 0,
             "value": 2,
-            "key": 3
+            "key": 3,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 2,
@@ -12181,7 +12224,8 @@
             "totalPoints": 4,
             "tore": 0,
             "value": 2,
-            "key": 6
+            "key": 6,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 4,
@@ -12308,8 +12352,11 @@
         "lastUpdate": "02.09.2025",
         "spieltagspunkte": [
           {
+            "einsatzzeit": 4,
+            "tore": 0,
             "value": 0,
-            "key": 1
+            "key": 1,
+            "status": "SUBIN"
           },
           {
             "value": 0,
@@ -12626,9 +12673,12 @@
             "key": 1
           },
           {
+            "einsatzzeit": 15,
             "totalPoints": 3,
+            "tore": 0,
             "value": 3,
-            "key": 2
+            "key": 2,
+            "status": "SUBIN"
           }
         ],
         "position": "STURM",
@@ -13460,21 +13510,24 @@
             "totalPoints": 4,
             "tore": 0,
             "value": 4,
-            "key": 1
+            "key": 1,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 4,
             "totalPoints": 4,
             "tore": 0,
             "value": 0,
-            "key": 2
+            "key": 2,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 65,
             "totalPoints": 8,
             "tore": 0,
             "value": 4,
-            "key": 3
+            "key": 3,
+            "status": "SUBOUT"
           },
           {
             "totalPoints": 8,
@@ -13486,42 +13539,48 @@
             "totalPoints": 11,
             "tore": 0,
             "value": 3,
-            "key": 5
+            "key": 5,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 9,
             "totalPoints": 13,
             "tore": 0,
             "value": 2,
-            "key": 6
+            "key": 6,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 84,
             "totalPoints": 14,
             "tore": 0,
             "value": 1,
-            "key": 7
+            "key": 7,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 68,
             "totalPoints": 19,
             "tore": 0,
             "value": 5,
-            "key": 8
+            "key": 8,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 90,
             "totalPoints": 25,
             "tore": 0,
             "value": 6,
-            "key": 9
+            "key": 9,
+            "status": "FULL"
           },
           {
             "einsatzzeit": 90,
             "totalPoints": 30,
             "tore": 0,
             "value": 5,
-            "key": 10
+            "key": 10,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 90,
@@ -13551,9 +13610,12 @@
             "status": "SUBIN"
           },
           {
+            "einsatzzeit": 71,
             "totalPoints": 36,
+            "tore": 0,
             "value": 5,
-            "key": 15
+            "key": 15,
+            "status": "SUBOUT"
           }
         ],
         "withinSquad": true,
@@ -13766,28 +13828,32 @@
             "totalPoints": 2,
             "tore": 0,
             "value": 2,
-            "key": 1
+            "key": 1,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 64,
             "totalPoints": 5,
             "tore": 0,
             "value": 3,
-            "key": 2
+            "key": 2,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 69,
             "totalPoints": 9,
             "tore": 0,
             "value": 4,
-            "key": 3
+            "key": 3,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 46,
             "totalPoints": 11,
             "tore": 0,
             "value": 2,
-            "key": 4
+            "key": 4,
+            "status": "SUBOUT"
           },
           {
             "totalPoints": 11,
@@ -13799,42 +13865,48 @@
             "totalPoints": 12,
             "tore": 0,
             "value": 1,
-            "key": 6
+            "key": 6,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 46,
             "totalPoints": 12,
             "tore": 0,
             "value": 0,
-            "key": 7
+            "key": 7,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 65,
             "totalPoints": 21,
             "tore": 0,
             "value": 9,
-            "key": 8
+            "key": 8,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 27,
             "totalPoints": 23,
             "tore": 0,
             "value": 2,
-            "key": 9
+            "key": 9,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 9,
             "totalPoints": 26,
             "tore": 0,
             "value": 3,
-            "key": 10
+            "key": 10,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 26,
             "totalPoints": 27,
             "tore": 0,
             "value": 1,
-            "key": 11
+            "key": 11,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 27,
@@ -15306,9 +15378,12 @@
         ],
         "spieltagspunkte": [
           {
+            "einsatzzeit": 90,
             "totalPoints": 1,
+            "tore": 0,
             "value": 1,
-            "key": 1
+            "key": 1,
+            "status": "FULL"
           },
           {
             "totalPoints": 1,
@@ -16791,14 +16866,20 @@
         ],
         "spieltagspunkte": [
           {
+            "einsatzzeit": 46,
             "totalPoints": 2,
+            "tore": 0,
             "value": 2,
-            "key": 1
+            "key": 1,
+            "status": "SUBOUT"
           },
           {
+            "einsatzzeit": 5,
             "totalPoints": 4,
+            "tore": 0,
             "value": 2,
-            "key": 2
+            "key": 2,
+            "status": "SUBIN"
           }
         ],
         "position": "STURM",
@@ -18013,13 +18094,19 @@
         "historicalPoints": [{"2023": 52}],
         "spieltagspunkte": [
           {
+            "einsatzzeit": 1,
+            "tore": 0,
             "value": 0,
-            "key": 1
+            "key": 1,
+            "status": "SUBIN"
           },
           {
+            "einsatzzeit": 44,
             "totalPoints": 2,
+            "tore": 0,
             "value": 2,
-            "key": 2
+            "key": 2,
+            "status": "SUBIN"
           }
         ],
         "withinSquad": true,
@@ -18916,17 +19003,26 @@
             "key": 2
           },
           {
+            "einsatzzeit": -3,
+            "tore": 0,
             "value": 0,
-            "key": 3
+            "key": 3,
+            "status": "SUBIN"
           },
           {
+            "einsatzzeit": -1,
+            "tore": 0,
             "value": 0,
-            "key": 4
+            "key": 4,
+            "status": "SUBIN"
           },
           {
+            "einsatzzeit": -3,
             "totalPoints": -1,
+            "tore": 0,
             "value": -1,
-            "key": 5
+            "key": 5,
+            "status": "SUBIN"
           },
           {
             "totalPoints": -1,
@@ -20780,14 +20876,16 @@
             "totalPoints": 4,
             "tore": 0,
             "value": 4,
-            "key": 1
+            "key": 1,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 59,
             "totalPoints": 5,
             "tore": 0,
             "value": 1,
-            "key": 2
+            "key": 2,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 90,
@@ -20801,14 +20899,16 @@
             "totalPoints": 7,
             "tore": 0,
             "value": 2,
-            "key": 4
+            "key": 4,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 5,
             "totalPoints": 9,
             "tore": 0,
             "value": 2,
-            "key": 5
+            "key": 5,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 9,
@@ -20850,7 +20950,8 @@
             "totalPoints": 11,
             "tore": 0,
             "value": 2,
-            "key": 13
+            "key": 13,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 11,
@@ -21712,42 +21813,48 @@
             "totalPoints": 2,
             "tore": 0,
             "value": 2,
-            "key": 1
+            "key": 1,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 83,
             "totalPoints": 4,
             "tore": 0,
             "value": 2,
-            "key": 2
+            "key": 2,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 7,
             "totalPoints": 6,
             "tore": 0,
             "value": 2,
-            "key": 3
+            "key": 3,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 69,
             "totalPoints": 8,
             "tore": 0,
             "value": 2,
-            "key": 4
+            "key": 4,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 19,
             "totalPoints": 9,
             "tore": 0,
             "value": 1,
-            "key": 5
+            "key": 5,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 8,
             "totalPoints": 10,
             "tore": 0,
             "value": 1,
-            "key": 6
+            "key": 6,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 10,
@@ -21759,28 +21866,32 @@
             "totalPoints": 13,
             "tore": 0,
             "value": 3,
-            "key": 8
+            "key": 8,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 76,
             "totalPoints": 14,
             "tore": 0,
             "value": 1,
-            "key": 9
+            "key": 9,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 11,
             "totalPoints": 14,
             "tore": 0,
             "value": 0,
-            "key": 10
+            "key": 10,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 12,
             "totalPoints": 15,
             "tore": 0,
             "value": 1,
-            "key": 11
+            "key": 11,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 15,
@@ -22437,14 +22548,20 @@
         ],
         "spieltagspunkte": [
           {
+            "einsatzzeit": 20,
             "totalPoints": 2,
+            "tore": 0,
             "value": 2,
-            "key": 1
+            "key": 1,
+            "status": "SUBIN"
           },
           {
+            "einsatzzeit": 44,
             "totalPoints": 3,
+            "tore": 0,
             "value": 1,
-            "key": 2
+            "key": 2,
+            "status": "SUBIN"
           }
         ],
         "withinSquad": true,
@@ -23267,28 +23384,32 @@
             "totalPoints": 12,
             "tore": 1,
             "value": 12,
-            "key": 1
+            "key": 1,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 46,
             "totalPoints": 14,
             "tore": 0,
             "value": 2,
-            "key": 2
+            "key": 2,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 89,
             "totalPoints": 17,
             "tore": 0,
             "value": 3,
-            "key": 3
+            "key": 3,
+            "status": "SUBOUT"
           },
           {
             "einsatzzeit": 46,
             "totalPoints": 18,
             "tore": 0,
             "value": 1,
-            "key": 4
+            "key": 4,
+            "status": "SUBOUT"
           },
           {
             "totalPoints": 18,
@@ -23300,21 +23421,24 @@
             "totalPoints": 21,
             "tore": 0,
             "value": 3,
-            "key": 6
+            "key": 6,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 22,
             "totalPoints": 24,
             "tore": 0,
             "value": 3,
-            "key": 7
+            "key": 7,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 23,
             "totalPoints": 26,
             "tore": 0,
             "value": 2,
-            "key": 8
+            "key": 8,
+            "status": "SUBIN"
           },
           {
             "totalPoints": 26,
@@ -23326,7 +23450,8 @@
             "totalPoints": 26,
             "tore": 0,
             "value": 0,
-            "key": 10
+            "key": 10,
+            "status": "SUBIN"
           },
           {
             "einsatzzeit": 90,
