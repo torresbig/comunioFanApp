@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "30.01.2026 05:18:26",
+  "lastUpdate": "30.01.2026 11:02:03",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -892,14 +892,40 @@
     },
     {
       "date": "30.01.2026",
-      "news": [{
-        "date": "30.01.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"van den Berg\",\"price\":2440000,\"buyerId\":\"5981249\",\"playerValue\":2200000,\"playerId\":\"34267\",\"buyer\":\"Thomas\"}",
-        "id": "958413896",
-        "playerId": "34267"
-      }]
+      "news": [
+        {
+          "date": "30.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"van den Berg\",\"price\":2440000,\"buyerId\":\"5981249\",\"playerValue\":2200000,\"playerId\":\"34267\",\"buyer\":\"Thomas\"}",
+          "id": "958413896",
+          "playerId": "34267"
+        },
+        {
+          "date": "30.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Hefti (34151) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "34151"
+        },
+        {
+          "date": "30.01.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Werner (32211) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "32211"
+        },
+        {
+          "date": "30.01.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Dompé\",\"price\":6552000,\"buyerId\":\"1\",\"playerValue\":6240000,\"playerId\":\"34155\",\"buyer\":\"Computer\"}",
+          "id": "958413896",
+          "playerId": "34155"
+        }
+      ]
     },
     {
       "date": "29.12.2025",
