@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "01.02.2026 05:16:33",
+  "lastUpdate": "01.02.2026 15:04:42",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -20596,6 +20596,38 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Couto\",\"price\":3050009,\"buyerId\":\"10966300\",\"playerValue\":2980000,\"playerId\":\"34033\",\"buyer\":\"Alexander\"}",
           "id": "958522525",
           "playerId": "34033"
+        },
+        {
+          "date": "01.02.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Hara (ID: 34338)",
+          "id": "0",
+          "playerId": "34338"
+        },
+        {
+          "date": "01.02.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Grønbæk (ID: 34337)",
+          "id": "0",
+          "playerId": "34337"
+        },
+        {
+          "date": "01.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gui Ramos (34160) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "34160"
+        },
+        {
+          "date": "01.02.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"Hollerbach\",\"price\":2890600,\"buyerId\":\"1\",\"playerValue\":2980000,\"playerId\":\"33830\",\"buyer\":\"Computer\"}",
+          "id": "958522525",
+          "playerId": "33830"
         }
       ]
     },
