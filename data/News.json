@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "02.02.2026 20:21:15",
+  "lastUpdate": "03.02.2026 05:18:36",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -18931,6 +18931,27 @@
       ]
     },
     {
+      "date": "03.02.2026",
+      "news": [
+        {
+          "date": "03.02.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Andō\",\"price\":1751300,\"buyerId\":\"9317431\",\"playerValue\":1830000,\"playerId\":\"34317\",\"buyer\":\"Andi\"}",
+          "id": "958609114",
+          "playerId": "34317"
+        },
+        {
+          "date": "03.02.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Belocian\",\"price\":1530009,\"buyerId\":\"10966300\",\"playerValue\":1430000,\"playerId\":\"33988\",\"buyer\":\"Alexander\"}",
+          "id": "958609114",
+          "playerId": "33988"
+        }
+      ]
+    },
+    {
       "date": "03.01.2026",
       "news": [
         {
@@ -20180,6 +20201,14 @@
           "text": "Statuswechsel: Bakayoko (34240) ist wieder AKTIV",
           "id": "0",
           "playerId": "34240"
+        },
+        {
+          "date": "02.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Baldé (34194) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34194"
         }
       ]
     },
