@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "03.02.2026",
+  "lastUpdate": "06.02.2026",
   "db": {
     "34065": {
       "data": {
@@ -406,7 +406,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 170000,
+        "wert": 180000,
         "verein": "62",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -431,7 +431,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "05.02.2026",
+        "lastUpdate": "06.02.2026",
         "historicalPoints": [{"2024": 1}],
         "spieltagspunkte": [
           {
@@ -1199,6 +1199,168 @@
       },
       "name": "Sakar",
       "id": "34069"
+    },
+    "33894": {
+      "data": {
+        "spielerDaten": {
+          "groesse": "1,78",
+          "geburtstag": "13.09.2000",
+          "laenderspiele": 0,
+          "lastUpdate": "29.01.2026",
+          "nebenpositionen": [],
+          "nationalspieler": "",
+          "trikotNummer": 23,
+          "nationalitaet": "Frankreich",
+          "laenderspielTore": 0,
+          "hauptposition": "Rechter Verteidiger",
+          "fuss": "rechts"
+        },
+        "isNotName": [],
+        "punktekorrektur": [],
+        "wert": 570000,
+        "verein": "0",
+        "fussballdatenDe": {
+          "lastProcessedMatchday": 12,
+          "lastUpdate": "08.12.2025 05:29:46",
+          "name": "Sacha Boey",
+          "nationalitaet": "Frankreich",
+          "url": "https://www.fussballdaten.de/person/sacha-boey/"
+        },
+        "lastPoints": 0,
+        "transfermarktDoDe": {
+          "date": "29.01.2026",
+          "name": "Sacha Boey",
+          "link": "https://www.transfermarkt.de/sacha-boey/profil/spieler/475413",
+          "id": 475413,
+          "leistungsDaten": {}
+        },
+        "lastSeasonPoints": 30,
+        "punkte": 15,
+        "realWert": 15000000,
+        "lastBigUpdate": "02.02.2026",
+        "stats": {
+          "notenDurchschnitt": "6,48",
+          "gelbekarten": 1,
+          "totalPenalties": 0,
+          "ratedGames": 9,
+          "lastUpdate": "02.02.2026",
+          "playedGames": 9,
+          "totalGoals": 0,
+          "punkteDurchschnitt": "1,67",
+          "gelbrotekarten": 0,
+          "rotekarten": 0,
+          "manOfTheMatchAmount": 0
+        },
+        "lastUpdate": "05.02.2026",
+        "historicalPoints": [{"2024": 30}],
+        "spieltagspunkte": [{
+          "totalPoints": 15,
+          "value": 0,
+          "key": 20
+        }],
+        "position": "ABWEHR",
+        "attribute": {"ligainsiderRanking": {
+          "punkte": 279,
+          "einsaetzeBewertet": 7,
+          "durchschnittsnote": 4.07,
+          "verein": "FC Bayern München",
+          "lastUpdate": "18.01.2026",
+          "durchschnittsminuten": 65,
+          "durchschnittspunkte": 34.71,
+          "rang": 205
+        }},
+        "possibleNames": [
+          "Sacha Boey",
+          "Sacha Böy",
+          "S. Boey",
+          "S. Böy",
+          "Boey",
+          "Böy"
+        ],
+        "comunioStatus": {
+          "grund": "unbekannt",
+          "lastUpdate": "02.02.2026",
+          "seit": "unbekannt",
+          "details": "unbekannt",
+          "historie": [
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "28.09.2025",
+              "seit": "unbekannt",
+              "details": "Oberschenkelblessur",
+              "historie": [],
+              "status": "VERLETZT"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "18.01.2026",
+              "seit": "unbekannt",
+              "details": "Aufbautraining nach Magen-Darm-Erkrankung",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "15.01.2026",
+              "seit": "unbekannt",
+              "details": "Erkältung",
+              "historie": [],
+              "status": "VERLETZT"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "12.01.2026",
+              "seit": "unbekannt",
+              "details": "krank",
+              "historie": [],
+              "status": "VERLETZT"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "14.12.2025",
+              "seit": "unbekannt",
+              "details": "krank",
+              "historie": [],
+              "status": "VERLETZT"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "21.09.2025",
+              "seit": "unbekannt",
+              "details": "Oberschenkelblessur",
+              "historie": [],
+              "status": "VERLETZT"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "27.01.2026",
+              "seit": "unbekannt",
+              "details": "Aufbautraining nach Magen-Darm-Erkrankung",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            }
+          ],
+          "status": "AKTIV"
+        },
+        "status": {
+          "grund": "",
+          "lastUpdate": "06.02.2026",
+          "seit": "",
+          "details": "",
+          "historie": [{
+            "grund": "unbekannt",
+            "lastUpdate": "24.05.2025",
+            "seit": "unbekannt",
+            "details": "",
+            "historie": [],
+            "status": "AKTIV"
+          }],
+          "bis": null,
+          "status": "NICHT_IN_LIGA"
+        }
+      },
+      "name": "Boey",
+      "id": "33894"
     },
     "34068": {
       "data": {
@@ -3090,7 +3252,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 1500000,
+        "wert": 1610000,
         "verein": "62",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -3115,7 +3277,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "05.02.2026",
+        "lastUpdate": "06.02.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -8181,7 +8343,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 2130000,
+        "wert": 2120000,
         "verein": "4",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -8206,7 +8368,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "05.02.2026",
+        "lastUpdate": "06.02.2026",
         "historicalPoints": [{"2023": 19}],
         "spieltagspunkte": [
           {
@@ -13976,7 +14138,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "05.02.2026",
+        "lastUpdate": "06.02.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -18818,7 +18980,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 3900000,
+        "wert": 3860000,
         "verein": "6",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -18846,7 +19008,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "05.02.2026",
+        "lastUpdate": "06.02.2026",
         "historicalPoints": [{"2023": 4}],
         "spieltagspunkte": [
           {
@@ -20509,7 +20671,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 350000,
+        "wert": 330000,
         "verein": "1",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -20539,7 +20701,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "05.02.2026",
+        "lastUpdate": "06.02.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -20724,7 +20886,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "05.02.2026",
+        "lastUpdate": "06.02.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -21090,7 +21252,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 600000,
+        "wert": 580000,
         "verein": "1",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -21120,7 +21282,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "05.02.2026",
+        "lastUpdate": "06.02.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -23293,7 +23455,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 7060000,
+        "wert": 7250000,
         "verein": "68",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -23320,7 +23482,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "05.02.2026",
+        "lastUpdate": "06.02.2026",
         "historicalPoints": [
           {"2015": 59},
           {"2016": 45},
@@ -26172,7 +26334,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "05.02.2026",
+        "lastUpdate": "06.02.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -27771,7 +27933,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 280000,
+        "wert": 260000,
         "verein": "3",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -27796,7 +27958,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "05.02.2026",
+        "lastUpdate": "06.02.2026",
         "historicalPoints": [{"2022": 12}],
         "spieltagspunkte": [
           {
