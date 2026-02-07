@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "07.02.2026 05:18:27",
+  "lastUpdate": "07.02.2026 15:00:40",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -16750,14 +16750,32 @@
     },
     {
       "date": "07.02.2026",
-      "news": [{
-        "date": "07.02.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Amoura\",\"price\":9994009,\"buyerId\":\"13721745\",\"playerValue\":9580000,\"playerId\":\"34015\",\"buyer\":\"damian\"}",
-        "id": "958811276",
-        "playerId": "34015"
-      }]
+      "news": [
+        {
+          "date": "07.02.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Amoura\",\"price\":9994009,\"buyerId\":\"13721745\",\"playerValue\":9580000,\"playerId\":\"34015\",\"buyer\":\"damian\"}",
+          "id": "958811276",
+          "playerId": "34015"
+        },
+        {
+          "date": "07.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ngankam (33214) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "33214"
+        },
+        {
+          "date": "07.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kujović (34225) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "34225"
+        }
+      ]
     },
     {
       "date": "07.01.2026",
