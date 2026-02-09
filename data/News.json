@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "09.02.2026 05:32:52",
+  "lastUpdate": "09.02.2026 15:04:04",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -15318,14 +15318,128 @@
     },
     {
       "date": "09.02.2026",
-      "news": [{
-        "date": "09.02.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Backhaus\",\"price\":1900000,\"buyerId\":\"13654613\",\"playerValue\":1800000,\"playerId\":\"33647\",\"buyer\":\"Christoph\"}",
-        "id": "958887235",
-        "playerId": "33647"
-      }]
+      "news": [
+        {
+          "date": "09.02.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Backhaus\",\"price\":1900000,\"buyerId\":\"13654613\",\"playerValue\":1800000,\"playerId\":\"33647\",\"buyer\":\"Christoph\"}",
+          "id": "958887235",
+          "playerId": "33647"
+        },
+        {
+          "date": "09.02.2026",
+          "art": "ELFDESTAGES",
+          "gelesen": false,
+          "text": "[{\"punkte\":9,\"owner\":\"11683432\",\"playerName\":\"Atubolu\",\"position\":\"keeper\",\"playerId\":\"33439\"},{\"punkte\":12,\"owner\":\"13641446\",\"playerName\":\"Brown\",\"position\":\"defender\",\"playerId\":\"33975\"},{\"punkte\":12,\"owner\":\"1\",\"playerName\":\"Saliakas\",\"position\":\"defender\",\"playerId\":\"33948\"},{\"punkte\":10,\"owner\":\"5949921\",\"playerName\":\"Querfeld\",\"position\":\"defender\",\"playerId\":\"33995\"},{\"punkte\":19,\"owner\":\"9317431\",\"playerName\":\"Baumgartner\",\"position\":\"midfielder\",\"playerId\":\"32977\"},{\"punkte\":17,\"owner\":\"13548242\",\"playerName\":\"Amiri\",\"position\":\"midfielder\",\"playerId\":\"32395\"},{\"punkte\":12,\"owner\":\"11683432\",\"playerName\":\"Kramarić\",\"position\":\"midfielder\",\"playerId\":\"32553\"},{\"punkte\":12,\"owner\":\"13654613\",\"playerName\":\"Y. Engelhardt\",\"position\":\"midfielder\",\"playerId\":\"33603\"},{\"punkte\":10,\"owner\":\"13721745\",\"playerName\":\"Brandt\",\"position\":\"midfielder\",\"playerId\":\"32236\"},{\"punkte\":21,\"owner\":\"1\",\"playerName\":\"Luis Díaz\",\"position\":\"striker\",\"playerId\":\"34254\"},{\"punkte\":16,\"owner\":\"9317431\",\"playerName\":\"Kane\",\"position\":\"striker\",\"playerId\":\"33838\"}]",
+          "id": "958897294",
+          "playerId": "0"
+        },
+        {
+          "date": "09.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Hranáč (34048) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "34048"
+        },
+        {
+          "date": "09.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kabar (34066) ist jetzt VERLETZT (Knieprobleme)",
+          "id": "0",
+          "playerId": "34066"
+        },
+        {
+          "date": "09.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Schmied (34135) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34135"
+        },
+        {
+          "date": "09.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Pereira Lage (34209) ist jetzt VERLETZT (muskuläre Probleme)",
+          "id": "0",
+          "playerId": "34209"
+        },
+        {
+          "date": "09.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Keitel (33211) ist jetzt VERLETZT (muskuläre Probleme)",
+          "id": "0",
+          "playerId": "33211"
+        },
+        {
+          "date": "09.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Lemperle (33270) ist jetzt VERLETZT (Sprunggelenksprobleme)",
+          "id": "0",
+          "playerId": "33270"
+        },
+        {
+          "date": "09.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Fischer (33625) ist jetzt VERLETZT (Oberschenkelverletzung)",
+          "id": "0",
+          "playerId": "33625"
+        },
+        {
+          "date": "09.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Bernardo (32693) ist jetzt VERLETZT (Knieprobleme)",
+          "id": "0",
+          "playerId": "32693"
+        },
+        {
+          "date": "09.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Burke (32694) ist jetzt VERLETZT (Blessur)",
+          "id": "0",
+          "playerId": "32694"
+        },
+        {
+          "date": "09.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Vini Souza (34226) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "34226"
+        },
+        {
+          "date": "09.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Frees  (34269) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34269"
+        },
+        {
+          "date": "09.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kumbedi (34281) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "34281"
+        },
+        {
+          "date": "09.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Oermann (33630) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "33630"
+        }
+      ]
     },
     {
       "date": "09.01.2026",
