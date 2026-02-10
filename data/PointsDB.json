@@ -144,6 +144,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 23,
+      "totalPoints": 62,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 6,
+      "totalPoints": 61,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "32680": [
@@ -370,6 +387,23 @@
       "value": 1,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 124,
+      "tore": 0,
+      "value": 9,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 116,
+      "tore": 0,
+      "value": 9,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33656": [
@@ -497,6 +531,23 @@
       "totalPoints": 18,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 2,
+      "totalPoints": 23,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 7,
+      "totalPoints": 21,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33777": [
@@ -768,6 +819,23 @@
       "value": 11,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 44,
+      "totalPoints": 107,
+      "tore": 1,
+      "value": 10,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 100,
+      "tore": 0,
+      "value": 7,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33774": [
@@ -906,6 +974,23 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 44,
+      "totalPoints": 32,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 13,
+      "totalPoints": 30,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33896": [
@@ -1141,6 +1226,23 @@
       "value": 1,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 42,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 36,
+      "tore": 1,
+      "value": 7,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33530": [
@@ -1279,6 +1381,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 103,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 82,
+      "totalPoints": 95,
+      "tore": 1,
+      "value": 9,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33894": [
@@ -1548,6 +1667,23 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 113,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 108,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33417": [
@@ -1651,6 +1787,11 @@
       "totalPoints": 8,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 8,
+      "value": 0,
+      "key": 21
     }
   ],
   "33659": [
@@ -1792,6 +1933,20 @@
       "value": 3,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 47,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 75,
+      "totalPoints": 46,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "32208": [
@@ -1917,6 +2072,20 @@
       "totalPoints": 39,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 8,
+      "totalPoints": 42,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 41,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "33539": [
@@ -1995,6 +2164,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33536": [
@@ -2147,6 +2320,23 @@
       "value": 4,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 66,
+      "totalPoints": 103,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 78,
+      "totalPoints": 98,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33657": [
@@ -2292,6 +2482,23 @@
       "value": 1,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 7,
+      "totalPoints": 63,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 60,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33778": [
@@ -2432,6 +2639,20 @@
       "value": 0,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 88,
+      "totalPoints": 23,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 22,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "32206": [
@@ -2571,6 +2792,20 @@
       "value": 1,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 12,
+      "totalPoints": 55,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 54,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "33658": [
@@ -2719,6 +2954,20 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 7,
+      "totalPoints": 39,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 39,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "33779": [
@@ -2819,6 +3068,11 @@
       "totalPoints": 1,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 1,
+      "value": 0,
+      "key": 21
     }
   ],
   "32677": [
@@ -2929,6 +3183,14 @@
       "value": 0,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 2,
+      "totalPoints": 5,
+      "tore": 0,
+      "value": 0,
+      "key": 21,
+      "status": "SUBIN"
     }
   ],
   "32311": [
@@ -3035,6 +3297,20 @@
       "totalPoints": 4,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 7,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 21,
+      "totalPoints": 6,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "32553": [
@@ -3190,6 +3466,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 71,
+      "totalPoints": 140,
+      "tore": 1,
+      "value": 12,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 83,
+      "totalPoints": 126,
+      "tore": 1,
+      "value": 15,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33885": [
@@ -3326,6 +3619,23 @@
       "value": 7,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 9,
+      "totalPoints": 40,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 44,
+      "totalPoints": 38,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33882": [
@@ -3439,6 +3749,14 @@
       "value": 4,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 62,
+      "totalPoints": 7,
+      "tore": 0,
+      "value": -2,
+      "key": 21,
+      "status": "SUBOUT"
     }
   ],
   "33640": [
@@ -3585,6 +3903,23 @@
       "tore": 0,
       "value": 3,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 118,
+      "tore": 0,
+      "value": 6,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 112,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -3735,6 +4070,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 11,
+      "totalPoints": 46,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 44,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33769": [
@@ -3890,6 +4242,23 @@
       "value": 6,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 91,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 86,
+      "totalPoints": 86,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33647": [
@@ -4039,16 +4408,52 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 75,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 73,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
-  "32786": [{
-    "einsatzzeit": 90,
-    "totalPoints": 6,
-    "tore": 0,
-    "value": 6,
-    "key": 19,
-    "status": "FULL"
-  }],
+  "32786": [
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 6,
+      "tore": 0,
+      "value": 6,
+      "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 12,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 9,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
+    }
+  ],
   "32787": [
     {
       "einsatzzeit": 90,
@@ -4156,6 +4561,11 @@
       "totalPoints": 14,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 14,
+      "value": 0,
+      "key": 21
     }
   ],
   "33997": [
@@ -4297,6 +4707,23 @@
       "tore": 0,
       "value": 1,
       "key": 19,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 9,
+      "totalPoints": 73,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 60,
+      "totalPoints": 71,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBOUT"
     }
   ],
@@ -4452,6 +4879,23 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 94,
+      "tore": 0,
+      "value": 10,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 88,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33992": [
@@ -4603,6 +5047,23 @@
       "value": 5,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 88,
+      "totalPoints": 124,
+      "tore": 0,
+      "value": 7,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 114,
+      "tore": 1,
+      "value": 10,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33630": [{
@@ -4685,6 +5146,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33991": [
@@ -4818,6 +5283,11 @@
       "totalPoints": 63,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 63,
+      "value": 0,
+      "key": 21
     }
   ],
   "31572": [
@@ -4955,6 +5425,23 @@
       "totalPoints": 27,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 82,
+      "totalPoints": 31,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 69,
+      "totalPoints": 29,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "31693": [
@@ -5061,6 +5548,23 @@
       "value": 2,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 40,
+      "tore": 0,
+      "value": 9,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 34,
+      "tore": 0,
+      "value": 7,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "31458": [
@@ -5139,6 +5643,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33637": [
@@ -5217,6 +5725,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "31216": [
@@ -5295,6 +5807,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33517": [
@@ -5439,6 +5955,20 @@
       "totalPoints": 58,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 33,
+      "totalPoints": 61,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 60,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "32549": [
@@ -5551,6 +6081,11 @@
       "totalPoints": 10,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 10,
+      "value": 0,
+      "key": 21
     }
   ],
   "32546": [
@@ -5693,6 +6228,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 57,
+      "totalPoints": 34,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 77,
+      "totalPoints": 34,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "32667": [
@@ -5846,6 +6398,23 @@
       "value": 6,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 116,
+      "tore": 1,
+      "value": 9,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 93,
+      "totalPoints": 105,
+      "tore": 1,
+      "value": 12,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33999": [
@@ -5983,6 +6552,11 @@
       "totalPoints": 22,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 22,
+      "value": 0,
+      "key": 21
     }
   ],
   "32654": [
@@ -6138,6 +6712,23 @@
       "value": 7,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 97,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 94,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33986": [
@@ -6220,6 +6811,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33744": [
@@ -6359,6 +6954,11 @@
       "value": 8,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 68,
+      "value": 0,
+      "key": 21
     }
   ],
   "32773": [
@@ -6455,6 +7055,11 @@
       "totalPoints": 14,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 14,
+      "value": 0,
+      "key": 21
     }
   ],
   "33620": [
@@ -6704,6 +7309,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 43,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 1,
+      "totalPoints": 38,
+      "tore": 1,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33984": [
@@ -6786,6 +7408,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33621": [
@@ -6925,6 +7551,11 @@
       "totalPoints": 34,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 34,
+      "value": 0,
+      "key": 21
     }
   ],
   "32891": [
@@ -7003,6 +7634,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33507": [
@@ -7149,6 +7784,20 @@
       "value": 1,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 54,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 74,
+      "totalPoints": 53,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33629": [
@@ -7293,6 +7942,23 @@
       "tore": 1,
       "value": 6,
       "key": 19,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 6,
+      "totalPoints": 60,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 76,
+      "totalPoints": 59,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBOUT"
     }
   ],
@@ -7465,6 +8131,11 @@
       "totalPoints": 1,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 1,
+      "value": 0,
+      "key": 21
     }
   ],
   "32656": [
@@ -7539,6 +8210,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33988": [
@@ -7653,6 +8328,20 @@
       "totalPoints": 8,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 14,
+      "tore": 0,
+      "value": 6,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "totalPoints": 11,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "33504": [
@@ -7796,6 +8485,11 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 59,
+      "value": 0,
+      "key": 21
     }
   ],
   "33625": [
@@ -7920,6 +8614,23 @@
       "totalPoints": 11,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 17,
+      "totalPoints": 17,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 74,
+      "totalPoints": 14,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33853": [
@@ -8047,6 +8758,11 @@
       "totalPoints": 30,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 30,
+      "value": 0,
+      "key": 21
     }
   ],
   "33854": [
@@ -8193,6 +8909,23 @@
       "tore": 0,
       "value": 9,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 102,
+      "tore": 0,
+      "value": 9,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 94,
+      "tore": 0,
+      "value": 8,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -8345,6 +9078,23 @@
       "value": 5,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 79,
+      "tore": 1,
+      "value": 12,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 84,
+      "totalPoints": 72,
+      "tore": 0,
+      "value": 7,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "32881": [
@@ -8478,6 +9228,20 @@
       "value": 4,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 48,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 75,
+      "totalPoints": 43,
+      "tore": 1,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33850": [
@@ -8567,6 +9331,11 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 5,
+      "value": 0,
+      "key": 21
     }
   ],
   "32880": [
@@ -8719,6 +9488,23 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 69,
+      "totalPoints": 65,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 62,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33619": [
@@ -8814,6 +9600,11 @@
       "totalPoints": 2,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 2,
+      "value": 0,
+      "key": 21
     }
   ],
   "32408": [
@@ -8944,6 +9735,11 @@
       "totalPoints": 31,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 31,
+      "value": 0,
+      "key": 21
     }
   ],
   "32889": [
@@ -9093,6 +9889,23 @@
       "value": 13,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 26,
+      "totalPoints": 83,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 59,
+      "totalPoints": 82,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33978": [
@@ -9237,6 +10050,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 65,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 69,
+      "totalPoints": 61,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "32526": [
@@ -9333,6 +10163,11 @@
       "totalPoints": 6,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 6,
+      "value": 0,
+      "key": 21
     }
   ],
   "33736": [
@@ -9481,6 +10316,20 @@
       "value": 4,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 63,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "totalPoints": 63,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "33858": [
@@ -9573,6 +10422,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 62,
+      "totalPoints": 16,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 11,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33616": [
@@ -9705,6 +10571,11 @@
       "totalPoints": 30,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 30,
+      "value": 0,
+      "key": 21
     }
   ],
   "33855": [
@@ -9822,6 +10693,14 @@
       "tore": 0,
       "value": -1,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 4,
+      "tore": 0,
+      "value": 0,
+      "key": 21,
       "status": "FULL"
     }
   ],
@@ -9943,6 +10822,23 @@
       "tore": 0,
       "value": 0,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": -3,
+      "totalPoints": 14,
+      "tore": 0,
+      "value": 0,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 13,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -10088,6 +10984,20 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 67,
+      "totalPoints": 63,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 62,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "32874": [
@@ -10202,6 +11112,11 @@
       "totalPoints": 15,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 15,
+      "value": 0,
+      "key": 21
     }
   ],
   "33600": [
@@ -10332,6 +11247,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 46,
+      "totalPoints": 52,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 80,
+      "totalPoints": 51,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "32632": [
@@ -10461,6 +11393,11 @@
       "totalPoints": 59,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 59,
+      "value": 0,
+      "key": 21
     }
   ],
   "33601": [
@@ -10576,6 +11513,23 @@
       "value": 0,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 2,
+      "totalPoints": 12,
+      "tore": 0,
+      "value": 0,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 11,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "32633": [
@@ -10728,6 +11682,11 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 61,
+      "value": 0,
+      "key": 21
     }
   ],
   "32754": [
@@ -10877,6 +11836,23 @@
       "value": 8,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 85,
+      "tore": 0,
+      "value": 7,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 78,
+      "tore": 0,
+      "value": 7,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "32630": [
@@ -10980,6 +11956,23 @@
       "value": 2,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 23,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 59,
+      "totalPoints": 21,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33720": [
@@ -11092,6 +12085,11 @@
       "value": 7,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 18,
+      "value": 0,
+      "key": 21
     }
   ],
   "33609": [
@@ -11246,6 +12244,23 @@
       "value": 1,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 100,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 99,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33848": [
@@ -11340,6 +12355,14 @@
       "tore": 0,
       "value": 2,
       "key": 19,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": -6,
+      "totalPoints": 6,
+      "tore": 0,
+      "value": 0,
+      "key": 21,
       "status": "SUBIN"
     }
   ],
@@ -11495,6 +12518,23 @@
       "value": 6,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 74,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 72,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33727": [
@@ -11627,6 +12667,20 @@
       "tore": 0,
       "value": 2,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "totalPoints": 38,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 37,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -11782,6 +12836,23 @@
       "value": 3,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 111,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 75,
+      "totalPoints": 108,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "32636": [
@@ -11910,6 +12981,11 @@
       "totalPoints": 32,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 32,
+      "value": 0,
+      "key": 21
     }
   ],
   "31666": [
@@ -12055,6 +13131,23 @@
       "tore": 1,
       "value": 14,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 64,
+      "tore": 0,
+      "value": 7,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 59,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -12204,6 +13297,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 26,
+      "totalPoints": 64,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 46,
+      "totalPoints": 63,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "32877": [
@@ -12358,6 +13468,23 @@
       "value": 7,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 53,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 48,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33603": [
@@ -12500,6 +13627,23 @@
       "value": 0,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 71,
+      "tore": 1,
+      "value": 12,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 63,
+      "tore": 0,
+      "value": 8,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33831": [
@@ -12582,6 +13726,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33832": [
@@ -12724,6 +13872,23 @@
       "value": 9,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 118,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 93,
+      "totalPoints": 116,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "32861": [
@@ -12875,6 +14040,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 6,
+      "totalPoints": 63,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 14,
+      "totalPoints": 62,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33950": [
@@ -12994,6 +14176,23 @@
       "tore": 0,
       "value": 1,
       "key": 19,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 37,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 20,
+      "totalPoints": 34,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBIN"
     }
   ],
@@ -13130,6 +14329,20 @@
       "tore": 0,
       "value": 3,
       "key": 19,
+      "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 33,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 14,
+      "totalPoints": 33,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBOUT"
     }
   ],
@@ -13271,6 +14484,11 @@
       "totalPoints": 27,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 27,
+      "value": 0,
+      "key": 21
     }
   ],
   "33839": [
@@ -13387,6 +14605,11 @@
       "totalPoints": 13,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 13,
+      "value": 0,
+      "key": 21
     }
   ],
   "32629": [
@@ -13538,6 +14761,23 @@
       "value": 9,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 81,
+      "tore": 0,
+      "value": 7,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 76,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33718": [
@@ -13616,6 +14856,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "32509": [
@@ -13768,6 +15012,23 @@
       "value": 4,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 117,
+      "tore": 0,
+      "value": 7,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 31,
+      "totalPoints": 111,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33837": [
@@ -13914,6 +15175,11 @@
       "totalPoints": 72,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 72,
+      "value": 0,
+      "key": 21
     }
   ],
   "33958": [
@@ -14110,6 +15376,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33716": [
@@ -14188,6 +15458,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33838": [
@@ -14342,6 +15616,23 @@
       "value": 2,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 68,
+      "totalPoints": 236,
+      "tore": 0,
+      "value": 16,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 223,
+      "tore": 1,
+      "value": 13,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33959": [
@@ -14488,6 +15779,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 84,
+      "tore": 0,
+      "value": 9,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 63,
+      "totalPoints": 77,
+      "tore": 0,
+      "value": 7,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33835": [
@@ -14640,6 +15948,23 @@
       "value": 6,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 88,
+      "totalPoints": 65,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 62,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33836": [
@@ -14790,6 +16115,11 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 35,
+      "value": 0,
+      "key": 21
     }
   ],
   "32744": [
@@ -14911,6 +16241,11 @@
       "totalPoints": 30,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 30,
+      "value": 0,
+      "key": 21
     }
   ],
   "33834": [
@@ -14989,6 +16324,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33713": [
@@ -15143,6 +16482,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 63,
+      "totalPoints": 77,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 44,
+      "totalPoints": 74,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "31762": [
@@ -15297,6 +16653,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 69,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 64,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "32731": [
@@ -15450,6 +16823,20 @@
       "value": 0,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 37,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 20,
+      "totalPoints": 36,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33821": [
@@ -15597,6 +16984,23 @@
       "value": 1,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 88,
+      "totalPoints": 55,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 83,
+      "totalPoints": 52,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "31882": [
@@ -15710,6 +17114,11 @@
       "totalPoints": 16,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 16,
+      "value": 0,
+      "key": 21
     }
   ],
   "31884": [
@@ -15860,6 +17269,23 @@
       "totalPoints": 83,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 94,
+      "tore": 0,
+      "value": 7,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 89,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33707": [
@@ -15996,6 +17422,11 @@
       "totalPoints": 39,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 39,
+      "value": 0,
+      "key": 21
     }
   ],
   "33829": [
@@ -16126,6 +17557,23 @@
       "totalPoints": 17,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 22,
+      "totalPoints": 23,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 20,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "32858": [
@@ -16277,6 +17725,23 @@
       "value": 4,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 69,
+      "totalPoints": 88,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 31,
+      "totalPoints": 86,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33947": [
@@ -16421,6 +17886,20 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 54,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 78,
+      "totalPoints": 53,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33827": [
@@ -16550,6 +18029,11 @@
       "totalPoints": 35,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 35,
+      "value": 0,
+      "key": 21
     }
   ],
   "33948": [
@@ -16675,6 +18159,23 @@
       "totalPoints": 31,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 50,
+      "tore": 1,
+      "value": 12,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 84,
+      "totalPoints": 41,
+      "tore": 0,
+      "value": 10,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "32738": [
@@ -16865,6 +18366,20 @@
       "value": 5,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 17,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 59,
+      "totalPoints": 16,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33945": [
@@ -16995,6 +18510,23 @@
       "tore": 0,
       "value": 4,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 45,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 42,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -17151,6 +18683,20 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 126,
+      "tore": 2,
+      "value": 19,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "totalPoints": 117,
+      "value": 10,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "33946": [
@@ -17287,6 +18833,20 @@
       "value": 7,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 51,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "totalPoints": 50,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "33943": [
@@ -17442,6 +19002,23 @@
       "value": 6,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 73,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 70,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33823": [
@@ -17574,6 +19151,20 @@
       "tore": 0,
       "value": 3,
       "key": 19,
+      "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 61,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 65,
+      "totalPoints": 60,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBOUT"
     }
   ],
@@ -17727,6 +19318,20 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 74,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 73,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33130": [
@@ -17870,6 +19475,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 63,
+      "tore": 0,
+      "value": 6,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 57,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "32162": [
@@ -17972,6 +19594,14 @@
       "totalPoints": 3,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": -9,
+      "tore": 0,
+      "value": -12,
+      "key": 21,
+      "status": "FULL"
     }
   ],
   "34341": [{
@@ -18082,6 +19712,11 @@
       "value": 3,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 15,
+      "value": 0,
+      "key": 21
     }
   ],
   "34340": [{
@@ -18205,6 +19840,20 @@
       "value": 1,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 26,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 91,
+      "totalPoints": 25,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34107": [
@@ -18287,6 +19936,14 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 9,
+      "totalPoints": 3,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
     }
   ],
   "34106": [
@@ -18369,6 +20026,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 11,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 7,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33139": [
@@ -18518,6 +20192,23 @@
       "value": 3,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 22,
+      "totalPoints": 85,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 66,
+      "totalPoints": 82,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34226": [
@@ -18653,6 +20344,20 @@
       "tore": 0,
       "value": 2,
       "key": 19,
+      "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 40,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 46,
+      "totalPoints": 39,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBOUT"
     }
   ],
@@ -18804,6 +20509,23 @@
       "value": -7,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 11,
+      "totalPoints": 54,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 84,
+      "totalPoints": 51,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34225": [
@@ -18987,6 +20709,20 @@
       "totalPoints": 8,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 10,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 13,
+      "totalPoints": 9,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34345": [{
@@ -19145,6 +20881,23 @@
       "value": 4,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 88,
+      "totalPoints": 88,
+      "tore": 0,
+      "value": 6,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 83,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34344": [{
@@ -19235,6 +20988,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33495": [
@@ -19309,6 +21066,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34343": [{
@@ -19455,6 +21216,23 @@
       "tore": 0,
       "value": 4,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 67,
+      "tore": 0,
+      "value": 8,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 62,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -19691,6 +21469,20 @@
       "value": 1,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 29,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 5,
+      "totalPoints": 29,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33496": [
@@ -19802,6 +21594,20 @@
       "value": 12,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 27,
+      "totalPoints": 40,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 38,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "34342": [{
@@ -19953,6 +21759,23 @@
       "totalPoints": 67,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 71,
+      "totalPoints": 71,
+      "tore": 0,
+      "value": -2,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 91,
+      "totalPoints": 69,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34229": [
@@ -20087,6 +21910,11 @@
       "totalPoints": 41,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 41,
+      "value": 0,
+      "key": 21
     }
   ],
   "34330": [
@@ -20109,6 +21937,10 @@
       "totalPoints": 0,
       "value": 0,
       "key": 16
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33480": [
@@ -20203,6 +22035,23 @@
       "tore": 0,
       "value": 1,
       "key": 19,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 26,
+      "totalPoints": 11,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 16,
+      "totalPoints": 8,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBIN"
     }
   ],
@@ -20347,6 +22196,23 @@
       "tore": 0,
       "value": 7,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 67,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 64,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -20509,6 +22375,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 22,
+      "totalPoints": 72,
+      "tore": 1,
+      "value": 9,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 17,
+      "totalPoints": 67,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34337": [
@@ -20669,6 +22552,23 @@
       "value": 7,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 63,
+      "totalPoints": 95,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 25,
+      "totalPoints": 93,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34215": [
@@ -20743,6 +22643,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34336": [
@@ -20827,6 +22731,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33247": [
@@ -20913,6 +22821,23 @@
       "value": 1,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 63,
+      "totalPoints": 13,
+      "tore": 0,
+      "value": 0,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 76,
+      "totalPoints": 7,
+      "tore": 1,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34335": [
@@ -20929,6 +22854,26 @@
       "value": 2,
       "key": 16,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 7,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "totalPoints": 3,
+      "value": 1,
+      "key": 17,
+      "info": "Interpoliert, weil Datenlücke erkannt"
+    },
+    {
+      "totalPoints": 4,
+      "value": 1,
+      "key": 18,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "34213": [
@@ -21025,12 +22970,23 @@
       "totalPoints": 1,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 1,
+      "value": 0,
+      "key": 21
     }
   ],
-  "34334": [{
-    "value": 0,
-    "key": 19
-  }],
+  "34334": [
+    {
+      "value": 0,
+      "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
+    }
+  ],
   "32398": [
     {
       "einsatzzeit": 90,
@@ -21183,12 +23139,35 @@
       "value": 3,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 93,
+      "tore": 0,
+      "value": 6,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 88,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
-  "34333": [{
-    "value": 0,
-    "key": 19
-  }],
+  "34333": [
+    {
+      "value": 0,
+      "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
+    }
+  ],
   "34211": [
     {
       "einsatzzeit": 90,
@@ -21342,6 +23321,20 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 67,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 70,
+      "totalPoints": 65,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "32395": [
@@ -21487,16 +23480,43 @@
       "value": 12,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 81,
+      "totalPoints": 139,
+      "tore": 0,
+      "value": 17,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 72,
+      "totalPoints": 127,
+      "tore": 0,
+      "value": 13,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
-  "34332": [{
-    "einsatzzeit": 6,
-    "totalPoints": 3,
-    "tore": 0,
-    "value": 3,
-    "key": 19,
-    "status": "SUBIN"
-  }],
+  "34332": [
+    {
+      "einsatzzeit": 6,
+      "totalPoints": 3,
+      "tore": 0,
+      "value": 3,
+      "key": 19,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 64,
+      "totalPoints": 3,
+      "tore": 0,
+      "value": -1,
+      "key": 21,
+      "status": "SUBOUT"
+    }
+  ],
   "34210": [
     {
       "value": 0,
@@ -21569,6 +23589,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33364": [
@@ -21691,6 +23715,23 @@
       "totalPoints": 13,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 20,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 80,
+      "totalPoints": 17,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34331": [
@@ -21701,6 +23742,14 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 33,
+      "totalPoints": 5,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "SUBIN"
     }
   ],
   "34218": [
@@ -21775,6 +23824,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34339": [{
@@ -21927,6 +23980,23 @@
       "totalPoints": 51,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 58,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 55,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34206": [
@@ -22076,6 +24146,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 27,
+      "totalPoints": 82,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 46,
+      "totalPoints": 79,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "32269": [
@@ -22154,6 +24241,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34326": [
@@ -22171,6 +24262,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34204": [
@@ -22274,6 +24369,20 @@
       "value": 3,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 28,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 63,
+      "totalPoints": 27,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "32267": [
@@ -22356,6 +24465,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33356": [
@@ -22508,6 +24621,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 76,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 74,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33477": [
@@ -22656,6 +24786,23 @@
       "value": 5,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 88,
+      "totalPoints": 79,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 75,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34325": [
@@ -22679,6 +24826,20 @@
       "value": 0,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 0,
+      "totalPoints": 7,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 6,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "34203": [
@@ -22753,6 +24914,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33236": [
@@ -22838,6 +25003,23 @@
       "tore": 0,
       "value": 2,
       "key": 19,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 27,
+      "totalPoints": 11,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 25,
+      "totalPoints": 9,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBIN"
     }
   ],
@@ -22982,6 +25164,23 @@
       "value": 5,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 81,
+      "totalPoints": 65,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 82,
+      "totalPoints": 63,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34324": [
@@ -23016,6 +25215,23 @@
       "value": 8,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 26,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 25,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34202": [
@@ -23171,6 +25387,23 @@
       "value": 3,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 81,
+      "totalPoints": 75,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 73,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34323": [
@@ -23202,6 +25435,11 @@
       "totalPoints": 10,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 10,
+      "value": 0,
+      "key": 21
     }
   ],
   "34201": [
@@ -23313,6 +25551,11 @@
       "totalPoints": 5,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 5,
+      "value": 0,
+      "key": 21
     }
   ],
   "34322": [
@@ -23335,6 +25578,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33110": [
@@ -23490,6 +25737,23 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 84,
+      "totalPoints": 91,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 86,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34200": [
@@ -23638,6 +25902,23 @@
       "value": 6,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 48,
+      "tore": 0,
+      "value": 6,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 58,
+      "totalPoints": 44,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34321": [
@@ -23656,6 +25937,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33353": [
@@ -23810,6 +26095,23 @@
       "value": 1,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 86,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 84,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34320": [
@@ -23838,6 +26140,20 @@
       "totalPoints": 2,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 5,
+      "totalPoints": 6,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 4,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "34209": [
@@ -23993,6 +26309,20 @@
       "value": 4,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 62,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 27,
+      "totalPoints": 61,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34208": [
@@ -24075,6 +26405,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34329": [
@@ -24089,6 +26423,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34328": [
@@ -24109,6 +26447,20 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 0,
+      "totalPoints": 7,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 6,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "32492": [
@@ -24263,6 +26615,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 103,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 100,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33105": [
@@ -24341,6 +26710,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34316": [
@@ -24369,6 +26742,11 @@
       "totalPoints": 7,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 7,
+      "value": 0,
+      "key": 21
     }
   ],
   "34315": [
@@ -24387,6 +26765,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33224": [
@@ -24515,6 +26897,11 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 53,
+      "value": 0,
+      "key": 21
     }
   ],
   "33345": [
@@ -24652,6 +27039,11 @@
       "totalPoints": 37,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 37,
+      "value": 0,
+      "key": 21
     }
   ],
   "33466": [
@@ -24759,6 +27151,11 @@
       "totalPoints": 10,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 10,
+      "value": 0,
+      "key": 21
     }
   ],
   "33587": [
@@ -24903,6 +27300,11 @@
       "value": -1,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 50,
+      "value": 0,
+      "key": 21
     }
   ],
   "34314": [
@@ -24921,6 +27323,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34313": [
@@ -24939,6 +27345,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34312": [
@@ -24957,6 +27367,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34311": [
@@ -24987,6 +27401,11 @@
       "totalPoints": 9,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 9,
+      "value": 0,
+      "key": 21
     }
   ],
   "34310": [
@@ -25009,6 +27428,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33342": [
@@ -25087,6 +27510,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34319": [
@@ -25121,6 +27548,11 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 5,
+      "value": 0,
+      "key": 21
     }
   ],
   "34318": [
@@ -25150,6 +27582,23 @@
       "tore": 0,
       "value": 1,
       "key": 19,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 8,
+      "totalPoints": 17,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 21,
+      "totalPoints": 15,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBIN"
     }
   ],
@@ -25287,6 +27736,20 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 68,
+      "totalPoints": 28,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 27,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "34317": [
@@ -25316,6 +27779,23 @@
       "totalPoints": 5,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 13,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 9,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33578": [
@@ -25452,6 +27932,20 @@
       "totalPoints": 16,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 18,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 8,
+      "totalPoints": 17,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34305": [
@@ -25498,6 +27992,11 @@
       "totalPoints": 2,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 2,
+      "value": 0,
+      "key": 21
     }
   ],
   "34304": [
@@ -25557,6 +28056,20 @@
       "totalPoints": 7,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 73,
+      "totalPoints": 9,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 8,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "34303": [
@@ -25630,6 +28143,11 @@
       "totalPoints": 6,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 6,
+      "value": 0,
+      "key": 21
     }
   ],
   "33214": [
@@ -25880,6 +28398,23 @@
       "value": 3,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 82,
+      "totalPoints": 96,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 69,
+      "totalPoints": 94,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33577": [
@@ -25989,6 +28524,11 @@
       "totalPoints": 20,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 20,
+      "value": 0,
+      "key": 21
     }
   ],
   "34302": [
@@ -26043,6 +28583,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "32122": [
@@ -26149,6 +28693,23 @@
       "totalPoints": 17,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 88,
+      "totalPoints": 23,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 44,
+      "totalPoints": 20,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33211": [
@@ -26234,6 +28795,20 @@
       "tore": 0,
       "value": 2,
       "key": 19,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 7,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 44,
+      "totalPoints": 6,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBIN"
     }
   ],
@@ -26359,6 +28934,11 @@
       "totalPoints": 27,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 27,
+      "value": 0,
+      "key": 21
     }
   ],
   "33695": [{
@@ -26518,6 +29098,20 @@
       "totalPoints": 71,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 75,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 69,
+      "totalPoints": 73,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34300": [
@@ -26588,6 +29182,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "32120": [
@@ -26707,6 +29305,11 @@
       "totalPoints": 1,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 1,
+      "value": 0,
+      "key": 21
     }
   ],
   "34309": [
@@ -26744,6 +29347,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34308": [
@@ -26787,6 +29394,11 @@
       "totalPoints": 1,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 1,
+      "value": 0,
+      "key": 21
     }
   ],
   "32007": [
@@ -26865,6 +29477,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34307": [
@@ -26916,6 +29532,23 @@
       "totalPoints": 28,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 9,
+      "totalPoints": 33,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 31,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "32129": [
@@ -27064,6 +29697,23 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 2,
+      "totalPoints": 60,
+      "tore": 0,
+      "value": 0,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 58,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "32591": [
@@ -27185,6 +29835,11 @@
       "totalPoints": 28,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 28,
+      "value": 0,
+      "key": 21
     }
   ],
   "33681": [
@@ -27263,6 +29918,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "32590": [
@@ -27406,6 +30065,11 @@
       "totalPoints": 51,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 51,
+      "value": 0,
+      "key": 21
     }
   ],
   "32236": [
@@ -27545,6 +30209,23 @@
       "totalPoints": 79,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 88,
+      "totalPoints": 98,
+      "tore": 1,
+      "value": 10,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 89,
+      "tore": 0,
+      "value": 10,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33567": [
@@ -27678,6 +30359,11 @@
       "totalPoints": 26,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 26,
+      "value": 0,
+      "key": 21
     }
   ],
   "32599": [
@@ -27770,6 +30456,11 @@
       "totalPoints": 2,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 2,
+      "value": 0,
+      "key": 21
     }
   ],
   "32597": [
@@ -27915,6 +30606,11 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 67,
+      "value": 0,
+      "key": 21
     }
   ],
   "32356": [
@@ -28070,6 +30766,23 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 77,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 73,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33687": [
@@ -28222,6 +30935,23 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 84,
+      "totalPoints": 69,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 64,
+      "totalPoints": 66,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33443": [
@@ -28304,6 +31034,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "32596": [
@@ -28459,6 +31193,11 @@
       "value": 2,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 43,
+      "value": 0,
+      "key": 21
     }
   ],
   "33564": [
@@ -28593,6 +31332,23 @@
       "value": 1,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 33,
+      "totalPoints": 62,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 30,
+      "totalPoints": 60,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33440": [
@@ -28747,6 +31503,23 @@
       "value": 1,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 69,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 68,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "32472": [
@@ -28900,6 +31673,23 @@
       "tore": 0,
       "value": 2,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 82,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 76,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -29130,6 +31920,23 @@
       "value": 9,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 95,
+      "totalPoints": 86,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 32,
+      "totalPoints": 81,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33207": [
@@ -29269,6 +32076,23 @@
       "totalPoints": 87,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 96,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 92,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "32581": [
@@ -29377,6 +32201,11 @@
       "totalPoints": 3,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 3,
+      "value": 0,
+      "key": 21
     }
   ],
   "33791": [
@@ -29510,6 +32339,20 @@
       "totalPoints": 33,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 34,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 10,
+      "totalPoints": 34,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33436": [
@@ -29665,6 +32508,23 @@
       "value": 14,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 137,
+      "tore": 0,
+      "value": 8,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 130,
+      "tore": 0,
+      "value": 7,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33557": [
@@ -29804,6 +32664,11 @@
       "totalPoints": 59,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 59,
+      "value": 0,
+      "key": 21
     }
   ],
   "33797": [
@@ -29949,6 +32814,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 27,
+      "totalPoints": 39,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 46,
+      "totalPoints": 38,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33313": [
@@ -30031,6 +32913,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33552": [
@@ -30180,6 +33066,20 @@
       "value": 8,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 81,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 78,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33673": [
@@ -30307,6 +33207,20 @@
       "value": 0,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 19,
+      "totalPoints": 29,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 27,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "33311": [
@@ -30434,6 +33348,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 85,
+      "totalPoints": 59,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 13,
+      "totalPoints": 53,
+      "tore": 1,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33553": [
@@ -30525,6 +33456,20 @@
       "totalPoints": 9,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 64,
+      "totalPoints": 13,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 11,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "32461": [
@@ -30613,6 +33558,14 @@
       "value": 0,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 64,
+      "totalPoints": 4,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBOUT"
     }
   ],
   "33550": [
@@ -30756,6 +33709,23 @@
       "tore": 0,
       "value": 0,
       "key": 19,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 79,
+      "totalPoints": 44,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 36,
+      "totalPoints": 42,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBIN"
     }
   ],
@@ -30910,6 +33880,23 @@
       "tore": 0,
       "value": 5,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 81,
+      "tore": 0,
+      "value": 9,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 73,
+      "tore": 0,
+      "value": 9,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -31208,6 +34195,23 @@
       "value": 7,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 105,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 101,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33559": [
@@ -31326,6 +34330,11 @@
       "totalPoints": 18,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 18,
+      "value": 0,
+      "key": 21
     }
   ],
   "33787": [
@@ -31473,6 +34482,20 @@
       "value": 0,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 13,
+      "totalPoints": 51,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 50,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "32457": [
@@ -31609,6 +34632,20 @@
       "value": 0,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 77,
+      "totalPoints": 16,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 14,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "31489": [
@@ -31763,6 +34800,23 @@
       "tore": 0,
       "value": 3,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 74,
+      "tore": 0,
+      "value": 6,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 71,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -31919,6 +34973,23 @@
       "value": 5,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 75,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 74,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "32696": [
@@ -32060,6 +35131,23 @@
       "totalPoints": 87,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 63,
+      "totalPoints": 94,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 65,
+      "totalPoints": 91,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33786": [
@@ -32138,6 +35226,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "32452": [
@@ -32286,6 +35378,23 @@
       "tore": 0,
       "value": 4,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 101,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 93,
+      "tore": 1,
+      "value": 8,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -32440,6 +35549,20 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 57,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 54,
+      "totalPoints": 57,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33783": [
@@ -32583,6 +35706,23 @@
       "value": 5,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 84,
+      "totalPoints": 76,
+      "tore": 0,
+      "value": 6,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 70,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "32693": [
@@ -32735,6 +35875,11 @@
       "value": 2,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 70,
+      "value": 0,
+      "key": 21
     }
   ],
   "33782": [
@@ -32870,6 +36015,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 40,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 57,
+      "totalPoints": 39,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "32579": [
@@ -32990,6 +36152,20 @@
       "totalPoints": 11,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 22,
+      "totalPoints": 13,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 12,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "33669": [
@@ -33087,6 +36263,23 @@
       "value": 1,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 15,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 54,
+      "totalPoints": 14,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34066": [
@@ -33165,6 +36358,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34187": [
@@ -33316,6 +36513,20 @@
       "totalPoints": 82,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 85,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "totalPoints": 84,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "34186": [
@@ -33455,6 +36666,23 @@
       "totalPoints": 29,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 79,
+      "totalPoints": 34,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 6,
+      "totalPoints": 32,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34185": [
@@ -33601,6 +36829,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 8,
+      "totalPoints": 42,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 31,
+      "totalPoints": 39,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34063": [
@@ -33745,6 +36990,23 @@
       "tore": 0,
       "value": 8,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 86,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 80,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -33894,6 +37156,20 @@
       "value": 0,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 58,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "totalPoints": 57,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "34184": [
@@ -34033,6 +37309,23 @@
       "value": 8,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 34,
+      "totalPoints": 65,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 76,
+      "totalPoints": 61,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34062": [
@@ -34146,6 +37439,23 @@
       "tore": 1,
       "value": 13,
       "key": 19,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 30,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 46,
+      "totalPoints": 26,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBOUT"
     }
   ],
@@ -34280,6 +37590,23 @@
       "value": 1,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 2,
+      "totalPoints": 22,
+      "tore": 0,
+      "value": 0,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 18,
+      "totalPoints": 21,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34183": [
@@ -34380,6 +37707,20 @@
       "totalPoints": 2,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 4,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 22,
+      "totalPoints": 3,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34061": [
@@ -34528,6 +37869,23 @@
       "totalPoints": 31,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 35,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 36,
+      "totalPoints": 33,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34189": [
@@ -34675,6 +38033,23 @@
       "tore": 0,
       "value": 2,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 91,
+      "totalPoints": 49,
+      "tore": 0,
+      "value": 7,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 44,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -34827,6 +38202,23 @@
       "value": 6,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 80,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 75,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34297": [
@@ -34957,6 +38349,20 @@
       "value": 3,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 22,
+      "totalPoints": 47,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 46,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "34296": [
@@ -35086,6 +38492,23 @@
       "tore": 0,
       "value": 5,
       "key": 19,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 80,
+      "totalPoints": 73,
+      "tore": 0,
+      "value": 6,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 85,
+      "totalPoints": 66,
+      "tore": 0,
+      "value": 7,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBOUT"
     }
   ],
@@ -35227,6 +38650,23 @@
       "totalPoints": 39,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 26,
+      "totalPoints": 50,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 45,
+      "tore": 1,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34052": [
@@ -35305,6 +38745,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33085": [
@@ -35453,6 +38897,23 @@
       "value": 5,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 85,
+      "totalPoints": 55,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 77,
+      "totalPoints": 53,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34294": [
@@ -35582,6 +39043,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 83,
+      "totalPoints": 48,
+      "tore": 0,
+      "value": 8,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 44,
+      "totalPoints": 43,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34051": [
@@ -35677,6 +39155,20 @@
       "totalPoints": 6,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 19,
+      "totalPoints": 7,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 7,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "34293": [
@@ -35795,6 +39287,11 @@
       "totalPoints": 20,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 20,
+      "value": 0,
+      "key": 21
     }
   ],
   "34050": [
@@ -35908,6 +39405,11 @@
       "totalPoints": 11,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 11,
+      "value": 0,
+      "key": 21
     }
   ],
   "34171": [
@@ -36062,6 +39564,23 @@
       "value": 3,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 81,
+      "totalPoints": 74,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 73,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34292": [
@@ -36168,6 +39687,11 @@
       "totalPoints": 11,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 11,
+      "value": 0,
+      "key": 21
     }
   ],
   "34291": [
@@ -36281,6 +39805,11 @@
       "value": 0,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 12,
+      "value": 0,
+      "key": 21
     }
   ],
   "34290": [
@@ -36413,6 +39942,23 @@
       "value": 0,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 46,
+      "totalPoints": 75,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 85,
+      "totalPoints": 72,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34059": [
@@ -36564,6 +40110,23 @@
       "value": 3,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 19,
+      "totalPoints": 57,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 55,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34057": [
@@ -36703,6 +40266,11 @@
       "totalPoints": 55,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 55,
+      "value": 0,
+      "key": 21
     }
   ],
   "34299": [
@@ -36833,6 +40401,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 69,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 65,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34056": [
@@ -36937,6 +40522,23 @@
       "tore": 0,
       "value": 5,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 21,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 18,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -37071,6 +40673,20 @@
       "totalPoints": 37,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 6,
+      "totalPoints": 40,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 39,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "34044": [
@@ -37221,6 +40837,20 @@
       "totalPoints": 46,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 56,
+      "tore": 1,
+      "value": 10,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "totalPoints": 51,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "34286": [
@@ -37345,6 +40975,14 @@
       "value": 5,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 21,
+      "totalPoints": 27,
+      "tore": 0,
+      "value": 0,
+      "key": 21,
+      "status": "SUBIN"
     }
   ],
   "34043": [
@@ -37493,6 +41131,23 @@
       "totalPoints": 60,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 93,
+      "totalPoints": 66,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 63,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34285": [
@@ -37604,6 +41259,11 @@
       "totalPoints": 18,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 18,
+      "value": 0,
+      "key": 21
     }
   ],
   "34042": [
@@ -37686,6 +41346,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34284": [
@@ -37760,6 +41424,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34283": [
@@ -37888,6 +41556,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 21,
+      "totalPoints": 39,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 21,
+      "totalPoints": 36,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34040": [
@@ -38104,6 +41789,23 @@
       "tore": 0,
       "value": 9,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 115,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 107,
+      "tore": 1,
+      "value": 8,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -38350,6 +42052,20 @@
       "value": 3,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 22,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 16,
+      "totalPoints": 21,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34280": [
@@ -38476,6 +42192,20 @@
       "value": 1,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 32,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 15,
+      "totalPoints": 31,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33070": [
@@ -38614,6 +42344,23 @@
       "tore": 1,
       "value": 5,
       "key": 19,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 37,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 82,
+      "totalPoints": 33,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBOUT"
     }
   ],
@@ -38767,6 +42514,20 @@
       "totalPoints": 57,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 62,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 60,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34047": [
@@ -38918,6 +42679,23 @@
       "value": -2,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 68,
+      "totalPoints": 110,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 84,
+      "totalPoints": 105,
+      "tore": 1,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34289": [
@@ -39036,6 +42814,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 65,
+      "totalPoints": 37,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 64,
+      "totalPoints": 34,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33198": [
@@ -39170,6 +42965,11 @@
       "totalPoints": 29,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 29,
+      "value": 0,
+      "key": 21
     }
   ],
   "34288": [
@@ -39300,6 +43100,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 46,
+      "totalPoints": 91,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 77,
+      "totalPoints": 88,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34287": [
@@ -39413,6 +43230,20 @@
       "tore": 0,
       "value": 6,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "totalPoints": 35,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 33,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -39551,6 +43382,20 @@
       "totalPoints": 58,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 61,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 58,
+      "totalPoints": 60,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33185": [
@@ -39696,6 +43541,23 @@
       "value": 1,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 61,
+      "tore": 1,
+      "value": 5,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 15,
+      "totalPoints": 58,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34275": [
@@ -39837,6 +43699,23 @@
       "value": 3,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 71,
+      "tore": 0,
+      "value": -1,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 70,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34032": [
@@ -39915,6 +43794,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34274": [
@@ -40017,6 +43900,11 @@
       "totalPoints": 14,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 14,
+      "value": 0,
+      "key": 21
     }
   ],
   "34030": [
@@ -40099,6 +43987,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34272": [
@@ -40246,6 +44138,20 @@
       "value": 8,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 46,
+      "totalPoints": 70,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 69,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "34150": [
@@ -40380,6 +44286,23 @@
       "totalPoints": 18,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 22,
+      "totalPoints": 24,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 73,
+      "totalPoints": 21,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34271": [
@@ -40523,6 +44446,23 @@
       "value": 3,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 64,
+      "totalPoints": 84,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 72,
+      "totalPoints": 81,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34270": [
@@ -40622,6 +44562,11 @@
       "value": 1,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 8,
+      "value": 0,
+      "key": 21
     }
   ],
   "34039": [
@@ -40768,6 +44713,23 @@
       "value": 11,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 96,
+      "totalPoints": 92,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 87,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34158": [
@@ -40920,6 +44882,23 @@
       "value": 1,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 68,
+      "totalPoints": 55,
+      "tore": 1,
+      "value": 7,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 73,
+      "totalPoints": 51,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33189": [
@@ -41024,6 +45003,23 @@
       "tore": 0,
       "value": 2,
       "key": 19,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 25,
+      "totalPoints": 11,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 26,
+      "totalPoints": 9,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBIN"
     }
   ],
@@ -41166,6 +45162,23 @@
       "value": 1,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 91,
+      "totalPoints": 47,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 27,
+      "totalPoints": 46,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34157": [
@@ -41397,6 +45410,11 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 19,
+      "value": 0,
+      "key": 21
     }
   ],
   "34277": [
@@ -41509,6 +45527,11 @@
       "value": 11,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 30,
+      "value": 0,
+      "key": 21
     }
   ],
   "34034": [
@@ -41658,6 +45681,23 @@
       "value": 2,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 81,
+      "totalPoints": 48,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 7,
+      "totalPoints": 45,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34155": [
@@ -41800,6 +45840,11 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 76,
+      "value": 0,
+      "key": 21
     }
   ],
   "34276": [
@@ -41947,6 +45992,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 51,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 64,
+      "totalPoints": 49,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34022": [
@@ -42092,6 +46154,14 @@
       "totalPoints": 81,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 77,
+      "tore": 0,
+      "value": -7,
+      "key": 21,
+      "status": "FULL"
     }
   ],
   "33053": [
@@ -42170,6 +46240,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34264": [
@@ -42315,6 +46389,23 @@
       "value": 1,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 44,
+      "totalPoints": 74,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 8,
+      "totalPoints": 71,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34021": [
@@ -42404,6 +46495,23 @@
       "tore": 0,
       "value": 3,
       "key": 19,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 17,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 12,
+      "totalPoints": 16,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBIN"
     }
   ],
@@ -42547,6 +46655,23 @@
       "value": 7,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 9,
+      "totalPoints": 39,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 8,
+      "totalPoints": 37,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34263": [
@@ -42678,6 +46803,23 @@
       "totalPoints": 23,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 28,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 26,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34141": [
@@ -42756,6 +46898,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34262": [
@@ -42834,6 +46980,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34261": [
@@ -42939,6 +47089,11 @@
       "totalPoints": 6,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 6,
+      "value": 0,
+      "key": 21
     }
   ],
   "34260": [
@@ -43017,6 +47172,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "32080": [
@@ -43156,6 +47315,23 @@
       "value": 8,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 80,
+      "totalPoints": 73,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 26,
+      "totalPoints": 70,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34027": [
@@ -43301,6 +47477,11 @@
       "value": 7,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 71,
+      "value": 0,
+      "key": 21
     }
   ],
   "34148": [
@@ -43452,6 +47633,23 @@
       "value": 8,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 94,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 91,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34269": [
@@ -43534,6 +47732,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34147": [
@@ -43788,6 +47990,23 @@
       "value": 3,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 84,
+      "tore": 0,
+      "value": 7,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 79,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34146": [
@@ -43921,6 +48140,23 @@
       "totalPoints": 29,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 46,
+      "totalPoints": 35,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 32,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33179": [
@@ -44061,6 +48297,23 @@
       "value": 6,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 80,
+      "totalPoints": 76,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 18,
+      "totalPoints": 74,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34267": [
@@ -44178,6 +48431,11 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 15,
+      "value": 0,
+      "key": 21
     }
   ],
   "34024": [
@@ -44296,6 +48554,23 @@
       "totalPoints": 44,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 10,
+      "totalPoints": 50,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 64,
+      "totalPoints": 47,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34145": [
@@ -44374,6 +48649,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34144": [
@@ -44452,6 +48731,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33298": [
@@ -44530,6 +48813,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34265": [
@@ -44608,6 +48895,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34011": [
@@ -44686,6 +48977,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34253": [
@@ -44825,6 +49120,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 5,
+      "totalPoints": 52,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 13,
+      "totalPoints": 50,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34251": [
@@ -44907,6 +49219,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "32073": [
@@ -45057,6 +49373,23 @@
       "tore": 0,
       "value": 1,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 83,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 76,
+      "tore": 1,
+      "value": 7,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -45212,6 +49545,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 56,
+      "totalPoints": 104,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 14,
+      "totalPoints": 102,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34019": [
@@ -45348,6 +49698,23 @@
       "totalPoints": 16,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 17,
+      "tore": 0,
+      "value": -3,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 33,
+      "totalPoints": 17,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34139": [
@@ -45502,6 +49869,23 @@
       "value": 1,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 94,
+      "tore": 0,
+      "value": -1,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 15,
+      "totalPoints": 93,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34017": [
@@ -45643,6 +50027,23 @@
       "totalPoints": 54,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 46,
+      "totalPoints": 62,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 58,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34138": [
@@ -45721,6 +50122,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34259": [
@@ -45860,6 +50265,23 @@
       "totalPoints": 18,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 10,
+      "totalPoints": 23,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 31,
+      "totalPoints": 21,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34016": [
@@ -45959,6 +50381,11 @@
       "totalPoints": 2,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 2,
+      "value": 0,
+      "key": 21
     }
   ],
   "34258": [
@@ -46071,6 +50498,23 @@
       "totalPoints": 12,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 16,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 17,
+      "totalPoints": 14,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34015": [
@@ -46219,6 +50663,20 @@
       "value": 6,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 83,
+      "totalPoints": 93,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 92,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "33167": [
@@ -46352,6 +50810,14 @@
       "totalPoints": 61,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 2,
+      "totalPoints": 61,
+      "tore": 0,
+      "value": 0,
+      "key": 21,
+      "status": "SUBIN"
     }
   ],
   "33288": [
@@ -46468,6 +50934,20 @@
       "totalPoints": 17,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 28,
+      "totalPoints": 20,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 19,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "34257": [
@@ -46623,6 +51103,14 @@
       "value": 2,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 94,
+      "tore": 0,
+      "value": -3,
+      "key": 21,
+      "status": "FULL"
     }
   ],
   "34014": [
@@ -46777,6 +51265,23 @@
       "value": 7,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 63,
+      "totalPoints": 178,
+      "tore": 0,
+      "value": 8,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 173,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34135": [
@@ -46907,6 +51412,11 @@
       "totalPoints": 20,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 20,
+      "value": 0,
+      "key": 21
     }
   ],
   "34256": [
@@ -47060,6 +51570,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 78,
+      "totalPoints": 52,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 86,
+      "totalPoints": 46,
+      "tore": 0,
+      "value": 7,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33286": [
@@ -47198,6 +51725,23 @@
       "value": 1,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 44,
+      "totalPoints": 66,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 10,
+      "totalPoints": 64,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34255": [
@@ -47304,6 +51848,11 @@
       "totalPoints": 9,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 9,
+      "value": 0,
+      "key": 21
     }
   ],
   "34254": [
@@ -47455,6 +52004,23 @@
       "value": 2,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 167,
+      "tore": 3,
+      "value": 21,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 44,
+      "totalPoints": 153,
+      "tore": 1,
+      "value": 14,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33273": [
@@ -47610,6 +52176,23 @@
       "value": 3,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 95,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 92,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34242": [
@@ -47762,6 +52345,11 @@
       "value": 9,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 102,
+      "value": 0,
+      "key": 21
     }
   ],
   "34241": [
@@ -47916,6 +52504,23 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 48,
+      "tore": 0,
+      "value": 0,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 46,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33271": [
@@ -47994,6 +52599,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34240": [
@@ -48130,6 +52739,11 @@
       "totalPoints": 47,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 47,
+      "value": 0,
+      "key": 21
     }
   ],
   "33270": [
@@ -48279,6 +52893,20 @@
       "totalPoints": 90,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 91,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 46,
+      "totalPoints": 91,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34008": [
@@ -48418,6 +53046,11 @@
       "value": 4,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 79,
+      "value": 0,
+      "key": 21
     }
   ],
   "34006": [
@@ -48560,6 +53193,11 @@
       "totalPoints": 36,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 36,
+      "value": 0,
+      "key": 21
     }
   ],
   "33158": [
@@ -48666,6 +53304,11 @@
       "totalPoints": 5,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 5,
+      "value": 0,
+      "key": 21
     }
   ],
   "34248": [
@@ -48744,6 +53387,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34005": [
@@ -48876,6 +53523,20 @@
       "tore": 0,
       "value": 4,
       "key": 19,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 42,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 6,
+      "totalPoints": 41,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBIN"
     }
   ],
@@ -49016,6 +53677,23 @@
       "value": 13,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 120,
+      "tore": 0,
+      "value": 8,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 116,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34247": [
@@ -49094,6 +53772,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33035": [
@@ -49241,6 +53923,23 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 71,
+      "totalPoints": 56,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 54,
+      "totalPoints": 55,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33156": [
@@ -49378,6 +54077,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 84,
+      "totalPoints": 45,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 22,
+      "totalPoints": 43,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33157": [
@@ -49509,6 +54225,11 @@
       "value": 1,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 26,
+      "value": 0,
+      "key": 21
     }
   ],
   "34245": [
@@ -49591,6 +54312,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34244": [
@@ -49673,6 +54398,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34001": [
@@ -49820,6 +54549,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 47,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 59,
+      "totalPoints": 43,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34122": [
@@ -49898,6 +54644,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "32187": [
@@ -50051,6 +54801,11 @@
       "value": 3,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 77,
+      "value": 0,
+      "key": 21
     }
   ],
   "34243": [
@@ -50197,6 +54952,23 @@
       "totalPoints": 62,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 28,
+      "totalPoints": 72,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 89,
+      "totalPoints": 67,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34009": [
@@ -50351,6 +55123,23 @@
       "value": 3,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 91,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 87,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33141": [
@@ -50503,6 +55292,20 @@
       "value": 6,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 69,
+      "totalPoints": 70,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 68,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "33383": [
@@ -50655,6 +55458,20 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 71,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 21,
+      "totalPoints": 70,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34231": [
@@ -50768,6 +55585,11 @@
       "totalPoints": 9,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 9,
+      "value": 0,
+      "key": 21
     }
   ],
   "33021": [
@@ -50864,6 +55686,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 80,
+      "totalPoints": 15,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 12,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33263": [
@@ -51015,6 +55854,23 @@
       "value": 5,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 80,
+      "tore": 0,
+      "value": 6,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 86,
+      "totalPoints": 76,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34230": [
@@ -51121,6 +55977,11 @@
       "totalPoints": 6,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 6,
+      "value": 0,
+      "key": 21
     }
   ],
   "32290": [
@@ -51275,6 +56136,23 @@
       "value": 8,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 93,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 88,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34239": [
@@ -51427,6 +56305,23 @@
       "value": 3,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 47,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 43,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34238": [
@@ -51542,6 +56437,11 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 13,
+      "value": 0,
+      "key": 21
     }
   ],
   "34117": [
@@ -51682,6 +56582,23 @@
       "value": 4,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 2,
+      "totalPoints": 52,
+      "tore": 0,
+      "value": 0,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 32,
+      "totalPoints": 51,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33026": [
@@ -51802,6 +56719,23 @@
       "tore": 1,
       "value": 15,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 48,
+      "tore": 0,
+      "value": -2,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 47,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -51926,6 +56860,23 @@
       "tore": 0,
       "value": 3,
       "key": 19,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 8,
+      "totalPoints": 30,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 18,
+      "totalPoints": 29,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBIN"
     }
   ],
@@ -52079,6 +57030,23 @@
       "value": 6,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 82,
+      "totalPoints": 126,
+      "tore": 0,
+      "value": 6,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 121,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34115": [
@@ -52219,6 +57187,23 @@
       "tore": 0,
       "value": 2,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 45,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 41,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -52374,6 +57359,23 @@
       "value": 12,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 78,
+      "tore": 0,
+      "value": 6,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 73,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34114": [
@@ -52528,6 +57530,23 @@
       "value": 3,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 80,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 76,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34235": [
@@ -52680,6 +57699,11 @@
       "value": 2,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 49,
+      "value": 0,
+      "key": 21
     }
   ],
   "32178": [
@@ -52818,6 +57842,23 @@
       "tore": 0,
       "value": 1,
       "key": 19,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 9,
+      "totalPoints": 35,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 8,
+      "totalPoints": 34,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBIN"
     }
   ],
@@ -52961,6 +58002,23 @@
       "totalPoints": 54,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 10,
+      "totalPoints": 59,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 72,
+      "totalPoints": 57,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34113": [
@@ -53071,6 +58129,11 @@
       "totalPoints": -1,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": -1,
+      "value": 0,
+      "key": 21
     }
   ],
   "34112": [
@@ -53183,6 +58246,11 @@
       "totalPoints": 23,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 23,
+      "value": 0,
+      "key": 21
     }
   ],
   "34233": [
@@ -53329,6 +58397,20 @@
       "tore": 0,
       "value": 6,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "totalPoints": 62,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 60,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -53549,6 +58631,23 @@
       "totalPoints": 60,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 70,
+      "tore": 0,
+      "value": 8,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 65,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34232": [
@@ -53631,6 +58730,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34119": [
@@ -53713,6 +58816,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "32841": [
@@ -53791,6 +58898,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "32720": [
@@ -53935,6 +59046,23 @@
       "totalPoints": 66,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 74,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 70,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "32842": [
@@ -54062,6 +59190,23 @@
       "tore": 0,
       "value": 2,
       "key": 19,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 24,
+      "totalPoints": 25,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 12,
+      "totalPoints": 24,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBIN"
     }
   ],
@@ -54200,6 +59345,23 @@
       "value": 3,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 68,
+      "totalPoints": 59,
+      "tore": 1,
+      "value": 10,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 68,
+      "totalPoints": 53,
+      "tore": 0,
+      "value": 7,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "33817": [
@@ -54336,6 +59498,23 @@
       "value": 1,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 88,
+      "totalPoints": 53,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 50,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33938": [
@@ -54487,6 +59666,23 @@
       "value": 1,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 2,
+      "totalPoints": 64,
+      "tore": 0,
+      "value": 0,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 6,
+      "totalPoints": 64,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33815": [
@@ -54607,6 +59803,23 @@
       "value": 0,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 16,
+      "tore": 0,
+      "value": 6,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 12,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "32603": [
@@ -54760,6 +59973,23 @@
       "value": 2,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 65,
+      "tore": 0,
+      "value": 8,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 60,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "31634": [
@@ -54840,6 +60070,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33935": [
@@ -54988,6 +60222,23 @@
       "value": 1,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 76,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 72,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33919": [
@@ -55070,6 +60321,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "32830": [
@@ -55217,6 +60472,20 @@
       "value": 5,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 63,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 59,
+      "totalPoints": 60,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "32710": [
@@ -55344,6 +60613,20 @@
       "value": 8,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 44,
+      "totalPoints": 50,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 48,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "33807": [
@@ -55495,6 +60778,14 @@
       "totalPoints": 22,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 46,
+      "totalPoints": 22,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "SUBOUT"
     }
   ],
   "32836": [
@@ -55649,6 +60940,23 @@
       "value": 0,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 88,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 80,
+      "tore": 1,
+      "value": 9,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33925": [
@@ -55781,6 +61089,11 @@
       "value": 1,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 15,
+      "value": 0,
+      "key": 21
     }
   ],
   "33926": [
@@ -55900,6 +61213,23 @@
       "tore": 0,
       "value": 2,
       "key": 19,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 44,
+      "totalPoints": 28,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 10,
+      "totalPoints": 26,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBIN"
     }
   ],
@@ -56179,6 +61509,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 6,
+      "totalPoints": 83,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 26,
+      "totalPoints": 80,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "33924": [
@@ -56319,6 +61666,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 64,
+      "totalPoints": 62,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 70,
+      "totalPoints": 53,
+      "tore": 2,
+      "value": 10,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "31985": [
@@ -56460,6 +61824,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 78,
+      "totalPoints": 43,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 33,
+      "totalPoints": 39,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "31743": [
@@ -56538,6 +61919,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33921": [
@@ -56692,6 +62077,23 @@
       "value": 7,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 72,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 70,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "32953": [
@@ -56833,6 +62235,23 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 61,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 56,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "31988": [
@@ -56911,6 +62330,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33922": [
@@ -57004,6 +62427,11 @@
       "totalPoints": 3,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 3,
+      "value": 0,
+      "key": 21
     }
   ],
   "32948": [
@@ -57131,6 +62559,11 @@
       "totalPoints": 73,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 73,
+      "value": 0,
+      "key": 21
     }
   ],
   "32949": [
@@ -57209,6 +62642,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33914": [
@@ -57287,6 +62724,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "31618": [
@@ -57365,6 +62806,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "33913": [
@@ -57447,6 +62892,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "32807": [
@@ -57580,6 +63029,11 @@
       "totalPoints": 37,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 37,
+      "value": 0,
+      "key": 21
     }
   ],
   "32817": [
@@ -57724,6 +63178,23 @@
       "tore": 0,
       "value": 3,
       "key": 19,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 57,
+      "totalPoints": 43,
+      "tore": 0,
+      "value": 0,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 77,
+      "totalPoints": 43,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBOUT"
     }
   ],
@@ -57880,6 +63351,23 @@
       "value": 7,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 113,
+      "tore": 0,
+      "value": 5,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 109,
+      "tore": 0,
+      "value": 5,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "32815": [
@@ -58009,6 +63497,14 @@
       "totalPoints": 19,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": -1,
+      "totalPoints": 19,
+      "tore": 0,
+      "value": 0,
+      "key": 21,
+      "status": "SUBIN"
     }
   ],
   "32931": [
@@ -58147,6 +63643,20 @@
       "tore": 0,
       "value": 5,
       "key": 19,
+      "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 49,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 57,
+      "totalPoints": 48,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBOUT"
     }
   ],
@@ -58292,6 +63802,23 @@
       "totalPoints": 44,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 51,
+      "tore": 0,
+      "value": 7,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 48,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "33900": [
@@ -58519,6 +64046,20 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 81,
+      "totalPoints": 52,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 50,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "32925": [
@@ -58667,6 +64208,11 @@
       "totalPoints": 59,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 59,
+      "value": 0,
+      "key": 21
     }
   ],
   "31710": [
@@ -58781,6 +64327,11 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 10,
+      "value": 0,
+      "key": 21
     }
   ],
   "32800": [
@@ -58926,6 +64477,20 @@
       "totalPoints": 75,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 10,
+      "totalPoints": 77,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 76,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "32921": [
@@ -59080,6 +64645,23 @@
       "value": -1,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 57,
+      "tore": 0,
+      "value": 1,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 57,
+      "tore": 0,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34091": [
@@ -59208,6 +64790,11 @@
       "totalPoints": 15,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 15,
+      "value": 0,
+      "key": 21
     }
   ],
   "34098": [
@@ -59421,6 +65008,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "31827": [
@@ -59506,6 +65097,23 @@
       "tore": 0,
       "value": 6,
       "key": 19,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 22,
+      "tore": 0,
+      "value": 7,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 17,
+      "tore": 0,
+      "value": 6,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "FULL"
     }
   ],
@@ -59628,6 +65236,20 @@
       "totalPoints": 15,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 26,
+      "totalPoints": 18,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 17,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "31929": [
@@ -59710,6 +65332,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34088": [
@@ -59792,6 +65418,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34086": [
@@ -59874,6 +65504,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34084": [
@@ -59980,6 +65614,20 @@
       "value": 0,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": -2,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 46,
+      "totalPoints": -3,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBOUT"
     }
   ],
   "34082": [
@@ -60058,6 +65706,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34081": [
@@ -60192,6 +65844,20 @@
       "totalPoints": 17,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 20,
+      "value": 0,
+      "key": 21
+    },
+    {
+      "einsatzzeit": 6,
+      "totalPoints": 19,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "31935": [
@@ -60306,6 +65972,11 @@
       "value": 10,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 46,
+      "value": 0,
+      "key": 21
     }
   ],
   "31930": [
@@ -60384,6 +66055,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "31932": [
@@ -60506,6 +66181,11 @@
       "totalPoints": 12,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 12,
+      "value": 0,
+      "key": 21
     }
   ],
   "34198": [
@@ -60584,6 +66264,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34076": [
@@ -60736,6 +66420,23 @@
       "value": 4,
       "key": 19,
       "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 71,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "FULL"
+    },
+    {
+      "einsatzzeit": 90,
+      "totalPoints": 68,
+      "tore": 0,
+      "value": 4,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "FULL"
     }
   ],
   "34197": [
@@ -60872,6 +66573,20 @@
       "totalPoints": 9,
       "value": 0,
       "key": 19
+    },
+    {
+      "einsatzzeit": 21,
+      "totalPoints": 11,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 10,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "34196": [
@@ -61024,6 +66739,23 @@
       "value": 3,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 68,
+      "totalPoints": 64,
+      "tore": 0,
+      "value": 4,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 24,
+      "totalPoints": 61,
+      "tore": 0,
+      "value": 3,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ],
   "34073": [
@@ -61102,6 +66834,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34194": [
@@ -61225,6 +66961,11 @@
       "value": 1,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 23,
+      "value": 0,
+      "key": 21
     }
   ],
   "34072": [
@@ -61303,6 +67044,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34193": [
@@ -61412,6 +67157,11 @@
       "totalPoints": 14,
       "value": 0,
       "key": 19
+    },
+    {
+      "totalPoints": 14,
+      "value": 0,
+      "key": 21
     }
   ],
   "34192": [
@@ -61486,6 +67236,10 @@
     {
       "value": 0,
       "key": 19
+    },
+    {
+      "value": 0,
+      "key": 21
     }
   ],
   "34191": [
@@ -61584,6 +67338,23 @@
       "tore": 0,
       "value": 2,
       "key": 19,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 19,
+      "totalPoints": 16,
+      "tore": 0,
+      "value": 3,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 15,
+      "totalPoints": 14,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
       "status": "SUBIN"
     }
   ],
@@ -61685,6 +67456,20 @@
       "value": 2,
       "key": 19,
       "status": "SUBIN"
+    },
+    {
+      "einsatzzeit": 22,
+      "totalPoints": 10,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBIN"
+    },
+    {
+      "totalPoints": 9,
+      "value": 1,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt"
     }
   ],
   "34199": [
@@ -61840,6 +67625,23 @@
       "value": 2,
       "key": 19,
       "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 71,
+      "totalPoints": 72,
+      "tore": 0,
+      "value": 2,
+      "key": 21,
+      "status": "SUBOUT"
+    },
+    {
+      "einsatzzeit": 36,
+      "totalPoints": 70,
+      "tore": 0,
+      "value": 2,
+      "key": 20,
+      "info": "Interpoliert, weil Datenlücke erkannt",
+      "status": "SUBIN"
     }
   ]
 }
