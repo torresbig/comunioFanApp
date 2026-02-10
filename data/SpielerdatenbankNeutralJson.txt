@@ -36698,9 +36698,9 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Erkältung",
+          "grund": "",
           "lastUpdate": "10.02.2026",
-          "seit": "05.02.2026",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -36710,8 +36710,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Knauff",
@@ -50168,7 +50168,7 @@
         "status": {
           "grund": "Adduktorenverletzung",
           "lastUpdate": "10.02.2026",
-          "seit": "07.02.2026",
+          "seit": "08.02.2026",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -51445,13 +51445,13 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Knieprobleme",
+          "grund": "",
           "lastUpdate": "10.02.2026",
-          "seit": "30.01.2026",
+          "seit": "",
           "details": "",
           "historie": [],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Maza",
@@ -51897,12 +51897,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "5",
-            "zielwert": "5.960.000",
+            "zielwert": "5.980.000",
             "platz": 4,
             "lastUpdate": "10.02.2026",
             "typ": "top",
             "marktwert": "5.460.000",
-            "aenderung": "+500.000"
+            "aenderung": "+520.000"
           },
           "link": "https://www.com-analytics.de/player/33769"
         },
