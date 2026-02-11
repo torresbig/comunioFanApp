@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "11.02.2026 05:18:26",
+  "lastUpdate": "11.02.2026 15:03:53",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -14255,14 +14255,48 @@
     },
     {
       "date": "11.02.2026",
-      "news": [{
-        "date": "11.02.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Majer\",\"price\":2200001,\"buyerId\":\"5981249\",\"playerValue\":2200000,\"playerId\":\"33844\",\"buyer\":\"Thomas\"}",
-        "id": "958975224",
-        "playerId": "33844"
-      }]
+      "news": [
+        {
+          "date": "11.02.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Majer\",\"price\":2200001,\"buyerId\":\"5981249\",\"playerValue\":2200000,\"playerId\":\"33844\",\"buyer\":\"Thomas\"}",
+          "id": "958975224",
+          "playerId": "33844"
+        },
+        {
+          "date": "11.02.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Rönnow\",\"price\":1040300,\"buyerId\":\"1\",\"playerValue\":990000,\"playerId\":\"32921\",\"buyer\":\"Computer\"}",
+          "id": "958975224",
+          "playerId": "32921"
+        },
+        {
+          "date": "11.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Couto (34033) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34033"
+        },
+        {
+          "date": "11.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Adeyemi (33575) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33575"
+        },
+        {
+          "date": "11.02.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Sabitzer (32590) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32590"
+        }
+      ]
     },
     {
       "date": "11.01.2026",
