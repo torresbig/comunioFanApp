@@ -1454,7 +1454,18 @@
     {
       "data": {
         "elfDesSpieltages": 2,
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/32800"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "2",
+            "zielwert": "6.540.000",
+            "platz": 10,
+            "lastUpdate": "11.02.2026",
+            "typ": "flop",
+            "marktwert": "6.770.000",
+            "aenderung": "-230.000"
+          },
+          "link": "https://www.com-analytics.de/player/32800"
+        },
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "27.05.1997",
@@ -3299,9 +3310,9 @@
           "status": "AUFBAUTRAINING"
         },
         "status": {
-          "grund": "Trainingsrückstand",
+          "grund": "",
           "lastUpdate": "11.02.2026",
-          "seit": "10.02.2026",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -3311,8 +3322,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Lukeba",
@@ -16629,9 +16640,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "unbekannt",
-          "lastUpdate": "24.05.2025",
-          "seit": "unbekannt",
+          "grund": "Meniskusverletzung",
+          "lastUpdate": "11.02.2026",
+          "seit": "11.02.2026",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -16641,7 +16652,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Theate",
@@ -25854,7 +25866,7 @@
           "groesse": "1,90",
           "geburtstag": "14.04.1995",
           "laenderspiele": 2,
-          "lastUpdate": "18.01.2026",
+          "lastUpdate": "11.02.2026",
           "nebenpositionen": ["DM"],
           "nationalspieler": "",
           "trikotNummer": 4,
@@ -25876,7 +25888,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "18.01.2026",
+          "date": "11.02.2026",
           "name": "Niklas Stark",
           "link": "https://www.transfermarkt.de/niklas-stark/profil/spieler/162434",
           "id": 162434,
@@ -26049,9 +26061,9 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Blessur",
+          "grund": "",
           "lastUpdate": "11.02.2026",
-          "seit": "12.01.2026",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -26061,8 +26073,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "N. Stark",
@@ -26075,7 +26087,7 @@
           "groesse": "1,95",
           "geburtstag": "03.09.1995",
           "laenderspiele": 49,
-          "lastUpdate": "18.01.2026",
+          "lastUpdate": "11.02.2026",
           "nebenpositionen": ["RV"],
           "nationalspieler": "",
           "trikotNummer": 25,
@@ -26097,7 +26109,7 @@
         },
         "lastPoints": 5,
         "transfermarktDoDe": {
-          "date": "18.01.2026",
+          "date": "11.02.2026",
           "name": "Niklas Süle",
           "link": "https://www.transfermarkt.de/niklas-sule/profil/spieler/166601",
           "id": 166601,
@@ -26391,7 +26403,7 @@
           "groesse": "1,87",
           "geburtstag": "22.09.1994",
           "laenderspiele": 19,
-          "lastUpdate": "18.01.2026",
+          "lastUpdate": "11.02.2026",
           "nebenpositionen": [
             "IV",
             "ZM"
@@ -26416,7 +26428,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "18.01.2026",
+          "date": "11.02.2026",
           "name": "Robert Andrich",
           "link": "https://www.transfermarkt.de/robert-andrich/profil/spieler/159088",
           "id": 159088,
@@ -26532,7 +26544,7 @@
           "groesse": "1,86",
           "geburtstag": "01.02.2000",
           "laenderspiele": 4,
-          "lastUpdate": "18.01.2026",
+          "lastUpdate": "11.02.2026",
           "nebenpositionen": ["DM"],
           "nationalspieler": "",
           "trikotNummer": 6,
@@ -26547,7 +26559,7 @@
         "verein": "21",
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "18.01.2026",
+          "date": "11.02.2026",
           "name": "Patrick Osterhage",
           "link": "https://www.transfermarkt.de/patrick-osterhage/profil/spieler/443331",
           "id": 443331,
@@ -26665,13 +26677,13 @@
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "10.05.1995",
-          "laenderspiele": 74,
-          "lastUpdate": "18.01.2026",
+          "laenderspiele": 78,
+          "lastUpdate": "11.02.2026",
           "nebenpositionen": ["ZM"],
           "nationalspieler": "",
           "trikotNummer": 15,
           "nationalitaet": "Tunesien",
-          "laenderspielTore": 3,
+          "laenderspielTore": 4,
           "hauptposition": "Defensives Mittelfeld",
           "fuss": "rechts"
         },
@@ -26688,7 +26700,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "18.01.2026",
+          "date": "11.02.2026",
           "name": "Ellyes Skhiri 13,00 Mio. \u20ac",
           "link": "https://www.transfermarkt.de/ellyes-skhiri/profil/spieler/290587",
           "id": 290587,
@@ -26805,7 +26817,7 @@
           "groesse": "1,85",
           "geburtstag": "20.05.1996",
           "laenderspiele": 14,
-          "lastUpdate": "18.01.2026",
+          "lastUpdate": "11.02.2026",
           "nebenpositionen": [
             "RM",
             "RA"
@@ -26830,7 +26842,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "18.01.2026",
+          "date": "11.02.2026",
           "name": "Robert Skov 6,50 Mio. \u20ac",
           "link": "https://www.transfermarkt.de/robert-skov/profil/spieler/270393",
           "id": 270393,
@@ -27765,7 +27777,7 @@
           "groesse": "1,87",
           "geburtstag": "16.04.1995",
           "laenderspiele": 79,
-          "lastUpdate": "18.01.2026",
+          "lastUpdate": "11.02.2026",
           "nebenpositionen": ["IV"],
           "nationalspieler": "Akt. Nationalspieler:: Algerien",
           "trikotNummer": 5,
@@ -27787,7 +27799,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "18.01.2026",
+          "date": "11.02.2026",
           "name": "Ramy Bensebaini",
           "link": "https://www.transfermarkt.de/ramy-bensebaini/profil/spieler/284732",
           "id": 284732,
@@ -30022,7 +30034,7 @@
           "groesse": "1,78",
           "geburtstag": "26.05.2002",
           "laenderspiele": 20,
-          "lastUpdate": "18.01.2026",
+          "lastUpdate": "11.02.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 29,
@@ -30044,7 +30056,7 @@
         },
         "lastPoints": 5,
         "transfermarktDoDe": {
-          "date": "18.01.2026",
+          "date": "11.02.2026",
           "name": "Jan Thielmann",
           "link": "https://www.transfermarkt.de/jan-thielmann/profil/spieler/472249",
           "id": "472249",
@@ -30548,7 +30560,7 @@
           "groesse": "1,78",
           "geburtstag": "05.10.1998",
           "laenderspiele": 37,
-          "lastUpdate": "18.01.2026",
+          "lastUpdate": "11.02.2026",
           "nebenpositionen": [
             "DM",
             "OM"
@@ -30573,7 +30585,7 @@
         },
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "18.01.2026",
+          "date": "11.02.2026",
           "name": "Exequiel Palacios",
           "link": "https://www.transfermarkt.de/exequiel-palacios/profil/spieler/401578",
           "id": 401578,
@@ -31383,12 +31395,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "9",
-            "zielwert": "3.550.000",
+            "zielwert": "3.530.000",
             "platz": 2,
             "lastUpdate": "11.02.2026",
             "typ": "top",
             "marktwert": "3.220.000",
-            "aenderung": "+330.000"
+            "aenderung": "+310.000"
           },
           "link": "https://www.com-analytics.de/player/34216"
         },
@@ -31686,7 +31698,7 @@
           "groesse": "1,87",
           "geburtstag": "13.11.2002",
           "laenderspiele": 34,
-          "lastUpdate": "18.01.2026",
+          "lastUpdate": "11.02.2026",
           "nebenpositionen": [
             "LA",
             "RA"
@@ -31711,7 +31723,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "18.01.2026",
+          "date": "11.02.2026",
           "name": "Giovanni Reyna",
           "link": "https://www.transfermarkt.de/giovanni-reyna/profil/spieler/504215",
           "id": 504215,
@@ -38769,18 +38781,7 @@
     {
       "data": {
         "elfDesSpieltages": 1,
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "5",
-            "zielwert": "7.560.000",
-            "platz": 10,
-            "lastUpdate": "11.02.2026",
-            "typ": "flop",
-            "marktwert": "7.800.000",
-            "aenderung": "-240.000"
-          },
-          "link": "https://www.com-analytics.de/player/32452"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/32452"},
         "spielerDaten": {
           "groesse": "1,89",
           "geburtstag": "20.07.1996",
