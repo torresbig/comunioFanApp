@@ -2225,7 +2225,7 @@
           "lastUpdate": "12.02.2026",
           "durchschnittsminuten": 72,
           "durchschnittspunkte": 29.5,
-          "rang": 252
+          "rang": 251
         }},
         "possibleNames": [
           "Benedict Hollerbach",
@@ -6417,7 +6417,18 @@
     {
       "data": {
         "elfDesSpieltages": 3,
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/31846"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "5",
+            "zielwert": "8.730.000",
+            "platz": 8,
+            "lastUpdate": "12.02.2026",
+            "typ": "top",
+            "marktwert": "8.570.000",
+            "aenderung": "+160.000"
+          },
+          "link": "https://www.com-analytics.de/player/31846"
+        },
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "03.11.1992",
@@ -10419,7 +10430,7 @@
           "topFlop": {
             "punkte": "9",
             "zielwert": "4.860.000",
-            "platz": 8,
+            "platz": 10,
             "lastUpdate": "12.02.2026",
             "typ": "top",
             "marktwert": "4.710.000",
@@ -13400,7 +13411,7 @@
           "lastUpdate": "12.02.2026",
           "durchschnittsminuten": 83,
           "durchschnittspunkte": 40.5,
-          "rang": 135
+          "rang": 134
         }},
         "possibleNames": [
           "Ramon Hendriks",
@@ -15586,9 +15597,9 @@
           "status": "AUFBAUTRAINING"
         },
         "status": {
-          "grund": "Muskelfaserriss",
+          "grund": "",
           "lastUpdate": "12.02.2026",
-          "seit": "30.01.2026",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -15598,8 +15609,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Giannoulis",
@@ -19891,9 +19902,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "29.07.2025",
-          "seit": "",
+          "grund": "Fußverletzung",
+          "lastUpdate": "12.02.2026",
+          "seit": "12.02.2026",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -19903,8 +19914,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Sarco",
@@ -20934,7 +20945,7 @@
           "lastUpdate": "12.02.2026",
           "durchschnittsminuten": 56,
           "durchschnittspunkte": 29.29,
-          "rang": 256
+          "rang": 257
         }},
         "possibleNames": [
           "Phillip Tietz",
@@ -21868,9 +21879,9 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Krank",
+          "grund": "",
           "lastUpdate": "12.02.2026",
-          "seit": "06.02.2026",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -21880,8 +21891,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Jaquez",
@@ -24616,12 +24627,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "2",
-            "zielwert": "4.550.000",
+            "zielwert": "4.580.000",
             "platz": 5,
             "lastUpdate": "12.02.2026",
             "typ": "flop",
             "marktwert": "4.930.000",
-            "aenderung": "-380.000"
+            "aenderung": "-350.000"
           },
           "link": "https://www.com-analytics.de/player/34148"
         },
@@ -25468,18 +25479,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "7",
-            "zielwert": "3.790.000",
-            "platz": 10,
-            "lastUpdate": "12.02.2026",
-            "typ": "top",
-            "marktwert": "3.650.000",
-            "aenderung": "+140.000"
-          },
-          "link": "https://www.com-analytics.de/player/34158"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34158"},
         "spielerDaten": {
           "groesse": "1,82",
           "geburtstag": "13.09.2001",
@@ -29080,7 +29080,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34202"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "1",
+            "zielwert": "4.780.000",
+            "platz": 9,
+            "lastUpdate": "12.02.2026",
+            "typ": "top",
+            "marktwert": "4.620.000",
+            "aenderung": "+160.000"
+          },
+          "link": "https://www.com-analytics.de/player/34202"
+        },
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "23.02.2004",
@@ -31372,18 +31383,7 @@
     {
       "data": {
         "elfDesSpieltages": 1,
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "9",
-            "zielwert": "3.540.000",
-            "platz": 9,
-            "lastUpdate": "12.02.2026",
-            "typ": "top",
-            "marktwert": "3.390.000",
-            "aenderung": "+150.000"
-          },
-          "link": "https://www.com-analytics.de/player/34216"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34216"},
         "spielerDaten": {
           "groesse": "1,82",
           "geburtstag": "23.10.2000",
@@ -31550,7 +31550,7 @@
           "lastUpdate": "12.02.2026",
           "durchschnittsminuten": 90,
           "durchschnittspunkte": 40.5,
-          "rang": 134
+          "rang": 135
         }},
         "possibleNames": [
           "Jarell Quansah",
@@ -32025,7 +32025,7 @@
           "lastUpdate": "12.02.2026",
           "durchschnittsminuten": 94,
           "durchschnittspunkte": 47.5,
-          "rang": 57
+          "rang": 56
         }},
         "position": "ABWEHR",
         "possibleNames": [
@@ -32348,7 +32348,7 @@
           "groesse": "1,89",
           "geburtstag": "06.02.1995",
           "laenderspiele": 67,
-          "lastUpdate": "19.01.2026",
+          "lastUpdate": "12.02.2026",
           "nebenpositionen": [
             "DM",
             "OM"
@@ -32373,7 +32373,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "19.01.2026",
+          "date": "12.02.2026",
           "name": "Leon Goretzka",
           "link": "https://www.transfermarkt.de/leon-goretzka/profil/spieler/153084",
           "id": 153084,
@@ -32421,7 +32421,7 @@
           "lastUpdate": "12.02.2026",
           "durchschnittsminuten": 64,
           "durchschnittspunkte": 45.61,
-          "rang": 75
+          "rang": 74
         }},
         "position": "MITTELFELD",
         "possibleNames": [
@@ -32473,7 +32473,7 @@
           "groesse": "1,92",
           "geburtstag": "17.01.1998",
           "laenderspiele": 10,
-          "lastUpdate": "19.01.2026",
+          "lastUpdate": "12.02.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 5,
@@ -32495,7 +32495,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "19.01.2026",
+          "date": "12.02.2026",
           "name": "Amos Pieper",
           "link": "https://www.transfermarkt.de/amos-pieper/profil/spieler/334221",
           "id": 334221,
@@ -32765,7 +32765,7 @@
           "groesse": "1,78",
           "geburtstag": "01.01.1996",
           "laenderspiele": 2,
-          "lastUpdate": "19.01.2026",
+          "lastUpdate": "12.02.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 18,
@@ -32787,7 +32787,7 @@
         },
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "19.01.2026",
+          "date": "12.02.2026",
           "name": "Mahmoud Dahoud",
           "link": "https://www.transfermarkt.de/mahmoud-dahoud/profil/spieler/191422",
           "id": 191422,
@@ -32927,7 +32927,7 @@
           "groesse": "1,84",
           "geburtstag": "26.02.2003",
           "laenderspiele": 40,
-          "lastUpdate": "19.01.2026",
+          "lastUpdate": "12.02.2026",
           "nebenpositionen": [
             "ZM",
             "LA"
@@ -32945,7 +32945,7 @@
         "verein": "1",
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "19.01.2026",
+          "date": "12.02.2026",
           "name": "Jamal Musiala",
           "link": "https://www.transfermarkt.de/jamal-musiala/profil/spieler/580195",
           "id": 580195,
@@ -33366,7 +33366,7 @@
           "groesse": "1,84",
           "geburtstag": "31.12.2002",
           "laenderspiele": 22,
-          "lastUpdate": "19.01.2026",
+          "lastUpdate": "12.02.2026",
           "nebenpositionen": [
             "LV",
             "RM"
@@ -33391,7 +33391,7 @@
         },
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "19.01.2026",
+          "date": "12.02.2026",
           "name": "Joe Scally",
           "link": "https://www.transfermarkt.de/joe-scally/profil/spieler/504153",
           "id": 504153,
@@ -33487,7 +33487,7 @@
           "groesse": "1,85",
           "geburtstag": "02.05.1996",
           "laenderspiele": 48,
-          "lastUpdate": "19.01.2026",
+          "lastUpdate": "12.02.2026",
           "nebenpositionen": [
             "LA",
             "RA"
@@ -33512,7 +33512,7 @@
         },
         "lastPoints": 10,
         "transfermarktDoDe": {
-          "date": "19.01.2026",
+          "date": "12.02.2026",
           "name": "Julian Brandt",
           "link": "https://www.transfermarkt.de/julian-brandt/profil/spieler/187492",
           "id": 187492,
@@ -34962,7 +34962,7 @@
           "groesse": "1,84",
           "geburtstag": "13.03.1994",
           "laenderspiele": 1,
-          "lastUpdate": "19.01.2026",
+          "lastUpdate": "12.02.2026",
           "nebenpositionen": [
             "LV",
             "OM"
@@ -34987,7 +34987,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "19.01.2026",
+          "date": "12.02.2026",
           "name": "Yannick Gerhardt",
           "link": "https://www.transfermarkt.de/yannick-gerhardt/profil/spieler/119277",
           "id": 119277,
@@ -38050,9 +38050,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "25.01.2026",
-          "seit": "",
+          "grund": "Krank",
+          "lastUpdate": "12.02.2026",
+          "seit": "09.02.2026",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -38062,8 +38062,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Stiller",
@@ -39050,7 +39050,7 @@
           "groesse": "1,83",
           "geburtstag": "05.03.1993",
           "laenderspiele": 56,
-          "lastUpdate": "19.01.2026",
+          "lastUpdate": "12.02.2026",
           "nebenpositionen": [
             "IV",
             "RM"
@@ -39075,7 +39075,7 @@
         },
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "19.01.2026",
+          "date": "12.02.2026",
           "name": "Silvan Widmer",
           "link": "https://www.transfermarkt.de/silvan-widmer/profil/spieler/168989",
           "id": "168989",
@@ -39569,7 +39569,7 @@
           "groesse": "1,89",
           "geburtstag": "08.08.2003",
           "laenderspiele": 8,
-          "lastUpdate": "19.01.2026",
+          "lastUpdate": "12.02.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 40,
@@ -39584,7 +39584,7 @@
         "verein": "1",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "19.01.2026",
+          "date": "12.02.2026",
           "name": "Jonas Urbig",
           "link": "https://www.transfermarkt.de/jonas-urbig/profil/spieler/607720",
           "id": "607720",
@@ -39670,7 +39670,7 @@
           "groesse": "1,96",
           "geburtstag": "28.05.1997",
           "laenderspiele": 2,
-          "lastUpdate": "19.01.2026",
+          "lastUpdate": "12.02.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 44,
@@ -39685,7 +39685,7 @@
         "verein": "13",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "19.01.2026",
+          "date": "12.02.2026",
           "name": "Matthias Köbbing",
           "link": "https://www.transfermarkt.de/matthias-kobbing/profil/spieler/227089",
           "id": "227089",
@@ -42043,9 +42043,9 @@
           "status": "AUFBAUTRAINING"
         },
         "status": {
-          "grund": "Muskelverletzung",
+          "grund": "",
           "lastUpdate": "12.02.2026",
-          "seit": "05.01.2026",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -42055,8 +42055,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Tiago Tomás",
@@ -45344,7 +45344,7 @@
           "lastUpdate": "12.02.2026",
           "durchschnittsminuten": 47,
           "durchschnittspunkte": 29.29,
-          "rang": 257
+          "rang": 256
         }},
         "possibleNames": [
           "Mario Goetze",
@@ -45791,7 +45791,7 @@
           "lastUpdate": "12.02.2026",
           "durchschnittsminuten": 59,
           "durchschnittspunkte": 29.5,
-          "rang": 251
+          "rang": 252
         }},
         "possibleNames": [
           "Denis Huseinbasic",
@@ -50303,13 +50303,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "Blessur",
+          "grund": "",
           "lastUpdate": "12.02.2026",
-          "seit": "06.02.2026",
+          "seit": "",
           "details": "",
           "historie": [],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Burke",
@@ -51924,12 +51924,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "5",
-            "zielwert": "5.700.000",
-            "platz": 3,
+            "zielwert": "5.710.000",
+            "platz": 2,
             "lastUpdate": "12.02.2026",
             "typ": "top",
             "marktwert": "5.410.000",
-            "aenderung": "+290.000"
+            "aenderung": "+300.000"
           },
           "link": "https://www.com-analytics.de/player/33769"
         },
@@ -55658,7 +55658,7 @@
           "topFlop": {
             "punkte": "6",
             "zielwert": "19.790.000",
-            "platz": 2,
+            "platz": 3,
             "lastUpdate": "12.02.2026",
             "typ": "top",
             "marktwert": "19.500.000",
@@ -59508,7 +59508,7 @@
           "lastUpdate": "12.02.2026",
           "durchschnittsminuten": 87,
           "durchschnittspunkte": 45.61,
-          "rang": 74
+          "rang": 75
         }},
         "possibleNames": [
           "Albian Hajdari",
