@@ -1918,9 +1918,11 @@
             "key": 1
           },
           {
-            "einsatzzeit": 9,
+            "einsatzzeit": 8,
             "totalPoints": 3,
             "tore": 0,
+            "rating": 6.7,
+            "xgoals": 0,
             "value": 3,
             "key": 2,
             "status": "SUBIN"
@@ -3962,6 +3964,8 @@
             "einsatzzeit": 90,
             "totalPoints": 2,
             "tore": 0,
+            "rating": 6.5,
+            "xgoals": 0,
             "value": 2,
             "key": 1,
             "status": "FULL"
@@ -4592,6 +4596,8 @@
             "einsatzzeit": 90,
             "totalPoints": 4,
             "tore": 0,
+            "rating": 7,
+            "xgoals": 0.73,
             "value": 4,
             "key": 1,
             "status": "FULL"
@@ -5611,6 +5617,8 @@
             "einsatzzeit": 21,
             "totalPoints": 2,
             "tore": 0,
+            "rating": 6.5,
+            "xgoals": 0,
             "value": 2,
             "key": 6,
             "status": "SUBIN"
@@ -5624,6 +5632,8 @@
             "einsatzzeit": 6,
             "totalPoints": 4,
             "tore": 0,
+            "rating": 6.5,
+            "xgoals": 0,
             "value": 2,
             "key": 8,
             "status": "SUBIN"
@@ -5632,6 +5642,8 @@
             "einsatzzeit": 12,
             "totalPoints": 14,
             "tore": 1,
+            "rating": 7.3,
+            "xgoals": 0.45,
             "value": 10,
             "key": 9,
             "status": "SUBIN"
@@ -5640,6 +5652,8 @@
             "einsatzzeit": -6,
             "totalPoints": 16,
             "tore": 0,
+            "rating": 6.5,
+            "xgoals": 0,
             "value": 2,
             "key": 10,
             "status": "SUBIN"
@@ -6029,6 +6043,8 @@
             "einsatzzeit": 6,
             "totalPoints": 1,
             "tore": 0,
+            "rating": 6.4,
+            "xgoals": 0,
             "value": 1,
             "key": 1,
             "status": "SUBIN"
@@ -6037,6 +6053,8 @@
             "einsatzzeit": 29,
             "totalPoints": 1,
             "tore": 0,
+            "rating": 6.2,
+            "xgoals": 0,
             "value": 0,
             "key": 2,
             "status": "SUBIN"
@@ -6050,6 +6068,8 @@
             "einsatzzeit": 14,
             "totalPoints": 4,
             "tore": 0,
+            "rating": 6.7,
+            "xgoals": 0,
             "value": 3,
             "key": 4,
             "status": "SUBIN"
@@ -6078,6 +6098,8 @@
             "einsatzzeit": 56,
             "totalPoints": 4,
             "tore": 0,
+            "rating": 6.2,
+            "xgoals": 0,
             "value": 0,
             "key": 9,
             "status": "SUBOUT"
@@ -6096,6 +6118,8 @@
             "einsatzzeit": 16,
             "totalPoints": 6,
             "tore": 0,
+            "rating": 6.6,
+            "xgoals": 0,
             "value": 2,
             "key": 12,
             "status": "SUBIN"
@@ -6104,6 +6128,8 @@
             "einsatzzeit": 9,
             "totalPoints": 8,
             "tore": 0,
+            "rating": 6.6,
+            "xgoals": 0.21,
             "value": 2,
             "key": 13,
             "status": "SUBIN"
@@ -7530,6 +7556,8 @@
             "einsatzzeit": 76,
             "totalPoints": 3,
             "tore": 0,
+            "rating": 6.8,
+            "xgoals": 0,
             "value": 3,
             "key": 2,
             "status": "SUBOUT"
@@ -7568,6 +7596,8 @@
             "einsatzzeit": 90,
             "totalPoints": 9,
             "tore": 0,
+            "rating": 7.4,
+            "xgoals": 0,
             "value": 6,
             "key": 9,
             "status": "FULL"
@@ -7576,6 +7606,8 @@
             "einsatzzeit": -3,
             "totalPoints": 9,
             "tore": 0,
+            "rating": 0,
+            "xgoals": 0,
             "value": 0,
             "key": 10,
             "status": "SUBIN"
@@ -7589,6 +7621,8 @@
             "einsatzzeit": 90,
             "totalPoints": 19,
             "tore": 1,
+            "rating": 7.2,
+            "xgoals": 0.09,
             "value": 10,
             "key": 12,
             "status": "FULL"
@@ -7597,6 +7631,8 @@
             "einsatzzeit": 90,
             "totalPoints": 23,
             "tore": 0,
+            "rating": 7,
+            "xgoals": 0,
             "value": 4,
             "key": 13,
             "status": "FULL"
@@ -9477,6 +9513,8 @@
             "einsatzzeit": 6,
             "totalPoints": 2,
             "tore": 0,
+            "rating": 6.5,
+            "xgoals": 0,
             "value": 2,
             "key": 3,
             "status": "SUBIN"
@@ -9505,6 +9543,8 @@
             "einsatzzeit": 13,
             "totalPoints": 3,
             "tore": 0,
+            "rating": 6.3,
+            "xgoals": 0,
             "value": 1,
             "key": 8,
             "status": "SUBIN"
@@ -9543,6 +9583,8 @@
             "einsatzzeit": 12,
             "totalPoints": 5,
             "tore": 0,
+            "rating": 6.5,
+            "xgoals": 0.04,
             "value": 2,
             "key": 15,
             "status": "SUBIN"
@@ -10361,6 +10403,8 @@
             "einsatzzeit": 90,
             "totalPoints": 10,
             "tore": 1,
+            "rating": 7.6,
+            "xgoals": 0.13,
             "value": 10,
             "key": 1,
             "status": "FULL"
@@ -10369,6 +10413,8 @@
             "einsatzzeit": 90,
             "totalPoints": 13,
             "tore": 0,
+            "rating": 6.8,
+            "xgoals": 0.08,
             "value": 3,
             "key": 2,
             "status": "FULL"
@@ -11101,6 +11147,8 @@
             "einsatzzeit": 22,
             "totalPoints": 1,
             "tore": 0,
+            "rating": 6.3,
+            "xgoals": 0,
             "value": 1,
             "key": 2,
             "status": "SUBIN"
@@ -13487,6 +13535,8 @@
             "einsatzzeit": 7,
             "totalPoints": 2,
             "tore": 0,
+            "rating": 6.5,
+            "xgoals": 0,
             "value": 2,
             "key": 11,
             "status": "SUBIN"
@@ -13495,6 +13545,8 @@
             "einsatzzeit": 90,
             "totalPoints": 6,
             "tore": 0,
+            "rating": 7,
+            "xgoals": 0,
             "value": 4,
             "key": 12,
             "status": "FULL"
@@ -13503,6 +13555,8 @@
             "einsatzzeit": 46,
             "totalPoints": 6,
             "tore": 0,
+            "rating": 6.1,
+            "xgoals": 0.04,
             "value": 0,
             "key": 13,
             "status": "SUBOUT"
@@ -13511,6 +13565,8 @@
             "einsatzzeit": 46,
             "totalPoints": 7,
             "tore": 0,
+            "rating": 6.3,
+            "xgoals": 0.01,
             "value": 1,
             "key": 14,
             "status": "SUBOUT"
@@ -13665,6 +13721,8 @@
           {
             "einsatzzeit": 4,
             "tore": 0,
+            "rating": 0,
+            "xgoals": 0,
             "value": 0,
             "key": 1,
             "status": "SUBIN"
@@ -13677,6 +13735,8 @@
             "einsatzzeit": 44,
             "totalPoints": 2,
             "tore": 0,
+            "rating": 6.6,
+            "xgoals": 0,
             "value": 2,
             "key": 3,
             "status": "SUBIN"
@@ -13695,6 +13755,8 @@
             "einsatzzeit": 28,
             "totalPoints": 4,
             "tore": 0,
+            "rating": 6.6,
+            "xgoals": 0,
             "value": 2,
             "key": 6,
             "status": "SUBIN"
@@ -13738,6 +13800,8 @@
             "einsatzzeit": 67,
             "totalPoints": 7,
             "tore": 0,
+            "rating": 6.8,
+            "xgoals": 0,
             "value": 3,
             "key": 14,
             "status": "SUBOUT"
@@ -13826,6 +13890,8 @@
           {
             "einsatzzeit": 4,
             "tore": 0,
+            "rating": 0,
+            "xgoals": 0,
             "value": 0,
             "key": 1,
             "status": "SUBIN"
@@ -14148,6 +14214,8 @@
             "einsatzzeit": 15,
             "totalPoints": 3,
             "tore": 0,
+            "rating": 6.7,
+            "xgoals": 0,
             "value": 3,
             "key": 2,
             "status": "SUBIN"
@@ -15082,6 +15150,8 @@
             "einsatzzeit": 87,
             "totalPoints": 4,
             "tore": 0,
+            "rating": 7,
+            "xgoals": 0.3,
             "value": 4,
             "key": 1,
             "status": "SUBOUT"
@@ -15090,6 +15160,8 @@
             "einsatzzeit": 4,
             "totalPoints": 4,
             "tore": 0,
+            "rating": 0,
+            "xgoals": 0,
             "value": 0,
             "key": 2,
             "status": "SUBIN"
@@ -15098,6 +15170,8 @@
             "einsatzzeit": 65,
             "totalPoints": 8,
             "tore": 0,
+            "rating": 6.9,
+            "xgoals": 0.2,
             "value": 4,
             "key": 3,
             "status": "SUBOUT"
@@ -15111,6 +15185,8 @@
             "einsatzzeit": 13,
             "totalPoints": 11,
             "tore": 0,
+            "rating": 6.7,
+            "xgoals": 0,
             "value": 3,
             "key": 5,
             "status": "SUBIN"
@@ -15119,6 +15195,8 @@
             "einsatzzeit": 9,
             "totalPoints": 13,
             "tore": 0,
+            "rating": 6.6,
+            "xgoals": 0.06,
             "value": 2,
             "key": 6,
             "status": "SUBIN"
@@ -15127,6 +15205,8 @@
             "einsatzzeit": 84,
             "totalPoints": 14,
             "tore": 0,
+            "rating": 6.3,
+            "xgoals": 0,
             "value": 1,
             "key": 7,
             "status": "SUBOUT"
@@ -15135,6 +15215,8 @@
             "einsatzzeit": 68,
             "totalPoints": 19,
             "tore": 0,
+            "rating": 7.2,
+            "xgoals": 0.15,
             "value": 5,
             "key": 8,
             "status": "SUBOUT"
@@ -15143,14 +15225,18 @@
             "einsatzzeit": 90,
             "totalPoints": 25,
             "tore": 0,
+            "rating": 7.4,
+            "xgoals": 0,
             "value": 6,
             "key": 9,
             "status": "FULL"
           },
           {
-            "einsatzzeit": 90,
+            "einsatzzeit": 93,
             "totalPoints": 30,
             "tore": 0,
+            "rating": 7.2,
+            "xgoals": 0.13,
             "value": 5,
             "key": 10,
             "status": "SUBOUT"
@@ -15178,6 +15264,8 @@
             "einsatzzeit": 34,
             "totalPoints": 31,
             "tore": 0,
+            "rating": 6.4,
+            "xgoals": 0,
             "value": 1,
             "key": 14,
             "status": "SUBIN"
@@ -15186,6 +15274,8 @@
             "einsatzzeit": 71,
             "totalPoints": 36,
             "tore": 0,
+            "rating": 7.1,
+            "xgoals": 0,
             "value": 5,
             "key": 15,
             "status": "SUBOUT"
@@ -15400,6 +15490,8 @@
             "einsatzzeit": 70,
             "totalPoints": 2,
             "tore": 0,
+            "rating": 6.5,
+            "xgoals": 0.07,
             "value": 2,
             "key": 1,
             "status": "SUBOUT"
@@ -15408,6 +15500,8 @@
             "einsatzzeit": 64,
             "totalPoints": 5,
             "tore": 0,
+            "rating": 6.8,
+            "xgoals": 0,
             "value": 3,
             "key": 2,
             "status": "SUBOUT"
@@ -15416,6 +15510,8 @@
             "einsatzzeit": 69,
             "totalPoints": 9,
             "tore": 0,
+            "rating": 6.9,
+            "xgoals": 0.1,
             "value": 4,
             "key": 3,
             "status": "SUBOUT"
@@ -15424,6 +15520,8 @@
             "einsatzzeit": 46,
             "totalPoints": 11,
             "tore": 0,
+            "rating": 6.6,
+            "xgoals": 0,
             "value": 2,
             "key": 4,
             "status": "SUBOUT"
@@ -15437,6 +15535,8 @@
             "einsatzzeit": 79,
             "totalPoints": 12,
             "tore": 0,
+            "rating": 6.4,
+            "xgoals": 0.21,
             "value": 1,
             "key": 6,
             "status": "SUBOUT"
@@ -15445,6 +15545,8 @@
             "einsatzzeit": 46,
             "totalPoints": 12,
             "tore": 0,
+            "rating": 6.2,
+            "xgoals": 0,
             "value": 0,
             "key": 7,
             "status": "SUBOUT"
@@ -15453,6 +15555,8 @@
             "einsatzzeit": 65,
             "totalPoints": 21,
             "tore": 0,
+            "rating": 8.2,
+            "xgoals": 0.04,
             "value": 9,
             "key": 8,
             "status": "SUBOUT"
@@ -15461,6 +15565,8 @@
             "einsatzzeit": 27,
             "totalPoints": 23,
             "tore": 0,
+            "rating": 6.6,
+            "xgoals": 0,
             "value": 2,
             "key": 9,
             "status": "SUBIN"
@@ -15469,6 +15575,8 @@
             "einsatzzeit": 9,
             "totalPoints": 26,
             "tore": 0,
+            "rating": 6.8,
+            "xgoals": 0.01,
             "value": 3,
             "key": 10,
             "status": "SUBIN"
@@ -15477,6 +15585,8 @@
             "einsatzzeit": 26,
             "totalPoints": 27,
             "tore": 0,
+            "rating": 6.3,
+            "xgoals": 0,
             "value": 1,
             "key": 11,
             "status": "SUBIN"
@@ -17040,6 +17150,8 @@
             "einsatzzeit": 90,
             "totalPoints": 1,
             "tore": 0,
+            "rating": 6.4,
+            "xgoals": 0,
             "value": 1,
             "key": 1,
             "status": "FULL"
@@ -18913,6 +19025,8 @@
           "einsatzzeit": 5,
           "totalPoints": -3,
           "tore": 0,
+          "rating": 6.7,
+          "xgoals": 0,
           "value": 3,
           "key": 20,
           "status": "SUBIN"
@@ -19058,6 +19172,8 @@
             "einsatzzeit": 46,
             "totalPoints": 2,
             "tore": 0,
+            "rating": 6.5,
+            "xgoals": 0.02,
             "value": 2,
             "key": 1,
             "status": "SUBOUT"
@@ -19066,6 +19182,8 @@
             "einsatzzeit": 5,
             "totalPoints": 4,
             "tore": 0,
+            "rating": 6.6,
+            "xgoals": 0.08,
             "value": 2,
             "key": 2,
             "status": "SUBIN"
@@ -20285,6 +20403,8 @@
           {
             "einsatzzeit": 1,
             "tore": 0,
+            "rating": 0,
+            "xgoals": 0,
             "value": 0,
             "key": 1,
             "status": "SUBIN"
@@ -20293,6 +20413,8 @@
             "einsatzzeit": 44,
             "totalPoints": 2,
             "tore": 0,
+            "rating": 6.5,
+            "xgoals": 0.09,
             "value": 2,
             "key": 2,
             "status": "SUBIN"
@@ -21287,6 +21409,8 @@
           {
             "einsatzzeit": -3,
             "tore": 0,
+            "rating": 0,
+            "xgoals": 0,
             "value": 0,
             "key": 3,
             "status": "SUBIN"
@@ -21294,6 +21418,8 @@
           {
             "einsatzzeit": -1,
             "tore": 0,
+            "rating": 0,
+            "xgoals": 0,
             "value": 0,
             "key": 4,
             "status": "SUBIN"
@@ -21302,6 +21428,8 @@
             "einsatzzeit": -3,
             "totalPoints": -1,
             "tore": 0,
+            "rating": 6,
+            "xgoals": 0,
             "value": -1,
             "key": 5,
             "status": "SUBIN"
@@ -23473,6 +23601,8 @@
             "einsatzzeit": 44,
             "totalPoints": 4,
             "tore": 0,
+            "rating": 6.9,
+            "xgoals": 0.09,
             "value": 4,
             "key": 1,
             "status": "SUBIN"
@@ -23481,6 +23611,8 @@
             "einsatzzeit": 59,
             "totalPoints": 5,
             "tore": 0,
+            "rating": 6.3,
+            "xgoals": 0.04,
             "value": 1,
             "key": 2,
             "status": "SUBOUT"
@@ -23496,6 +23628,8 @@
             "einsatzzeit": 8,
             "totalPoints": 7,
             "tore": 0,
+            "rating": 6.5,
+            "xgoals": 0,
             "value": 2,
             "key": 4,
             "status": "SUBIN"
@@ -23504,6 +23638,8 @@
             "einsatzzeit": 5,
             "totalPoints": 9,
             "tore": 0,
+            "rating": 6.5,
+            "xgoals": 0,
             "value": 2,
             "key": 5,
             "status": "SUBIN"
@@ -23547,6 +23683,8 @@
             "einsatzzeit": 17,
             "totalPoints": 11,
             "tore": 0,
+            "rating": 6.5,
+            "xgoals": 0,
             "value": 2,
             "key": 13,
             "status": "SUBIN"
@@ -24524,6 +24662,8 @@
             "einsatzzeit": 23,
             "totalPoints": 2,
             "tore": 0,
+            "rating": 6.5,
+            "xgoals": 0,
             "value": 2,
             "key": 1,
             "status": "SUBIN"
@@ -24532,6 +24672,8 @@
             "einsatzzeit": 83,
             "totalPoints": 4,
             "tore": 0,
+            "rating": 6.6,
+            "xgoals": 0,
             "value": 2,
             "key": 2,
             "status": "SUBOUT"
@@ -24540,6 +24682,8 @@
             "einsatzzeit": 7,
             "totalPoints": 6,
             "tore": 0,
+            "rating": 6.5,
+            "xgoals": 0.1,
             "value": 2,
             "key": 3,
             "status": "SUBIN"
@@ -24548,6 +24692,8 @@
             "einsatzzeit": 69,
             "totalPoints": 8,
             "tore": 0,
+            "rating": 6.6,
+            "xgoals": 0.29,
             "value": 2,
             "key": 4,
             "status": "SUBOUT"
@@ -24556,6 +24702,8 @@
             "einsatzzeit": 19,
             "totalPoints": 9,
             "tore": 0,
+            "rating": 6.4,
+            "xgoals": 0,
             "value": 1,
             "key": 5,
             "status": "SUBIN"
@@ -24564,6 +24712,8 @@
             "einsatzzeit": 8,
             "totalPoints": 10,
             "tore": 0,
+            "rating": 6.4,
+            "xgoals": 0,
             "value": 1,
             "key": 6,
             "status": "SUBIN"
@@ -24577,6 +24727,8 @@
             "einsatzzeit": 12,
             "totalPoints": 13,
             "tore": 0,
+            "rating": 6.7,
+            "xgoals": 0,
             "value": 3,
             "key": 8,
             "status": "SUBIN"
@@ -24585,6 +24737,8 @@
             "einsatzzeit": 76,
             "totalPoints": 14,
             "tore": 0,
+            "rating": 6.4,
+            "xgoals": 0.03,
             "value": 1,
             "key": 9,
             "status": "SUBOUT"
@@ -24593,6 +24747,8 @@
             "einsatzzeit": 11,
             "totalPoints": 14,
             "tore": 0,
+            "rating": 6.2,
+            "xgoals": 0.38,
             "value": 0,
             "key": 10,
             "status": "SUBIN"
@@ -24601,6 +24757,8 @@
             "einsatzzeit": 12,
             "totalPoints": 15,
             "tore": 0,
+            "rating": 6.4,
+            "xgoals": 0.03,
             "value": 1,
             "key": 11,
             "status": "SUBIN"
@@ -25548,6 +25706,8 @@
             "einsatzzeit": 20,
             "totalPoints": 2,
             "tore": 0,
+            "rating": 6.5,
+            "xgoals": 0,
             "value": 2,
             "key": 1,
             "status": "SUBIN"
@@ -25556,6 +25716,8 @@
             "einsatzzeit": 44,
             "totalPoints": 3,
             "tore": 0,
+            "rating": 6.3,
+            "xgoals": 0,
             "value": 1,
             "key": 2,
             "status": "SUBIN"
@@ -26380,6 +26542,8 @@
             "einsatzzeit": 89,
             "totalPoints": 12,
             "tore": 1,
+            "rating": 8.1,
+            "xgoals": 0.04,
             "value": 12,
             "key": 1,
             "status": "SUBOUT"
@@ -26388,6 +26552,8 @@
             "einsatzzeit": 46,
             "totalPoints": 14,
             "tore": 0,
+            "rating": 6.6,
+            "xgoals": 0,
             "value": 2,
             "key": 2,
             "status": "SUBOUT"
@@ -26396,6 +26562,8 @@
             "einsatzzeit": 89,
             "totalPoints": 17,
             "tore": 0,
+            "rating": 6.8,
+            "xgoals": 0.22,
             "value": 3,
             "key": 3,
             "status": "SUBOUT"
@@ -26404,6 +26572,8 @@
             "einsatzzeit": 46,
             "totalPoints": 18,
             "tore": 0,
+            "rating": 6.4,
+            "xgoals": 0.02,
             "value": 1,
             "key": 4,
             "status": "SUBOUT"
@@ -26417,6 +26587,8 @@
             "einsatzzeit": 44,
             "totalPoints": 21,
             "tore": 0,
+            "rating": 6.8,
+            "xgoals": 0.03,
             "value": 3,
             "key": 6,
             "status": "SUBIN"
@@ -26425,6 +26597,8 @@
             "einsatzzeit": 22,
             "totalPoints": 24,
             "tore": 0,
+            "rating": 6.7,
+            "xgoals": 0.02,
             "value": 3,
             "key": 7,
             "status": "SUBIN"
@@ -26433,6 +26607,8 @@
             "einsatzzeit": 23,
             "totalPoints": 26,
             "tore": 0,
+            "rating": 6.6,
+            "xgoals": 0,
             "value": 2,
             "key": 8,
             "status": "SUBIN"
@@ -26446,6 +26622,8 @@
             "einsatzzeit": 3,
             "totalPoints": 26,
             "tore": 0,
+            "rating": 0,
+            "xgoals": 0,
             "value": 0,
             "key": 10,
             "status": "SUBIN"
@@ -26636,6 +26814,8 @@
           "einsatzzeit": 90,
           "totalPoints": 41,
           "tore": 0,
+          "rating": 6.7,
+          "xgoals": 0,
           "value": 3,
           "key": 20,
           "status": "FULL"
@@ -27939,6 +28119,8 @@
             "einsatzzeit": -3,
             "totalPoints": 0,
             "tore": 0,
+            "rating": 6.1,
+            "xgoals": 0,
             "value": 0,
             "key": 5,
             "status": "SUBIN"
@@ -27987,6 +28169,8 @@
             "einsatzzeit": 0,
             "totalPoints": 0,
             "tore": 0,
+            "rating": 0,
+            "xgoals": 0,
             "value": 0,
             "key": 14,
             "status": "SUBIN"
@@ -27995,6 +28179,8 @@
             "einsatzzeit": 11,
             "totalPoints": 2,
             "tore": 0,
+            "rating": 6.5,
+            "xgoals": 0,
             "value": 2,
             "key": 15,
             "status": "SUBIN"
