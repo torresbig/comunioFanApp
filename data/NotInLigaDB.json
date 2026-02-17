@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "07.02.2026",
+  "lastUpdate": "17.02.2026",
   "db": {
     "34065": {
       "data": {
@@ -431,7 +431,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "16.02.2026",
+        "lastUpdate": "17.02.2026",
         "historicalPoints": [{"2024": 1}],
         "spieltagspunkte": [
           {
@@ -3259,7 +3259,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 1140000,
+        "wert": 1060000,
         "verein": "62",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -3284,7 +3284,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "16.02.2026",
+        "lastUpdate": "17.02.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -8469,7 +8469,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 2210000,
+        "wert": 2090000,
         "verein": "4",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -8494,7 +8494,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "16.02.2026",
+        "lastUpdate": "17.02.2026",
         "historicalPoints": [{"2023": 19}],
         "spieltagspunkte": [
           {
@@ -14350,7 +14350,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "4",
-        "wert": 1000000,
+        "wert": 930000,
         "lastPoints": 3,
         "transfermarktDoDe": {"date": "01.01.1900"},
         "punkte": 3,
@@ -14369,7 +14369,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "16.02.2026",
+        "lastUpdate": "17.02.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -14606,6 +14606,419 @@
       },
       "name": "Hämmerle",
       "id": "34126"
+    },
+    "34005": {
+      "data": {
+        "spielerDaten": {
+          "groesse": "1,93",
+          "geburtstag": "23.01.1998",
+          "laenderspiele": 11,
+          "lastUpdate": "02.02.2026",
+          "nebenpositionen": [],
+          "nationalspieler": "",
+          "trikotNummer": 9,
+          "nationalitaet": "DR Kongo",
+          "laenderspielTore": 1,
+          "hauptposition": "Mittelstürmer",
+          "fuss": "rechts"
+        },
+        "isNotName": [],
+        "punktekorrektur": [],
+        "wert": 1010000,
+        "verein": "0",
+        "fussballdatenDe": {
+          "lastProcessedMatchday": 13,
+          "lastUpdate": "09.12.2025 15:00:44",
+          "name": "Samuel Essende",
+          "nationalitaet": "Frankreich",
+          "url": "https://www.fussballdaten.de/person/samuel-essende/"
+        },
+        "lastPoints": 0,
+        "transfermarktDoDe": {
+          "date": "02.02.2026",
+          "name": "Samuel Essende",
+          "link": "https://www.transfermarkt.de/samuel-essende/profil/spieler/395522",
+          "id": 395522,
+          "leistungsDaten": {}
+        },
+        "lastSeasonPoints": 72,
+        "punkte": 42,
+        "realWert": 3500000,
+        "lastBigUpdate": "15.02.2026",
+        "stats": {
+          "notenDurchschnitt": "6,7",
+          "gelbekarten": 2,
+          "totalPenalties": 0,
+          "ratedGames": 14,
+          "lastUpdate": "15.02.2026",
+          "playedGames": 14,
+          "totalGoals": 1,
+          "punkteDurchschnitt": "3",
+          "gelbrotekarten": 0,
+          "rotekarten": 0,
+          "manOfTheMatchAmount": 0
+        },
+        "lastUpdate": "16.02.2026",
+        "historicalPoints": [{"2024": 72}],
+        "spieltagspunkte": [
+          {
+            "value": 0,
+            "key": 1
+          },
+          {
+            "value": 0,
+            "key": 2
+          },
+          {
+            "value": 0,
+            "key": 3
+          },
+          {
+            "rating": 7.5,
+            "yellow": 0,
+            "xgoals": 0.33,
+            "red": 0,
+            "yellowRed": 0,
+            "einsatzzeit": 44,
+            "assists": 0,
+            "stats": "{\"shots\":3,\"shotsOnGoal\":2,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":80,\"duelRate\":43,\"minutesPlayed\":44}",
+            "totalPoints": 10,
+            "tore": 1,
+            "value": 10,
+            "key": 4,
+            "status": "SUBIN"
+          },
+          {
+            "rating": 6.7,
+            "yellow": 1,
+            "xgoals": 0,
+            "red": 0,
+            "yellowRed": 0,
+            "einsatzzeit": 90,
+            "assists": 0,
+            "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":6,\"passingRate\":73,\"duelRate\":41,\"minutesPlayed\":90}",
+            "totalPoints": 13,
+            "tore": 0,
+            "value": 3,
+            "key": 5,
+            "status": "FULL"
+          },
+          {
+            "rating": 6.9,
+            "yellow": 0,
+            "xgoals": 0.11,
+            "red": 0,
+            "yellowRed": 0,
+            "einsatzzeit": 11,
+            "assists": 0,
+            "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":60,\"duelRate\":33,\"minutesPlayed\":11}",
+            "totalPoints": 17,
+            "tore": 0,
+            "value": 4,
+            "key": 6,
+            "status": "SUBIN"
+          },
+          {
+            "rating": 6.4,
+            "yellow": 0,
+            "xgoals": 0,
+            "red": 0,
+            "yellowRed": 0,
+            "einsatzzeit": 5,
+            "assists": 0,
+            "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":null,\"duelRate\":null,\"minutesPlayed\":5}",
+            "totalPoints": 18,
+            "tore": 0,
+            "value": 1,
+            "key": 7,
+            "status": "SUBIN"
+          },
+          {
+            "totalPoints": 18,
+            "value": 0,
+            "key": 8
+          },
+          {
+            "rating": 6.6,
+            "yellow": 0,
+            "xgoals": 0,
+            "red": 0,
+            "yellowRed": 0,
+            "einsatzzeit": 8,
+            "assists": 0,
+            "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":100,\"duelRate\":50,\"minutesPlayed\":8}",
+            "totalPoints": 20,
+            "tore": 0,
+            "value": 2,
+            "key": 9,
+            "status": "SUBIN"
+          },
+          {
+            "rating": 6.5,
+            "yellow": 0,
+            "xgoals": 0.21,
+            "red": 0,
+            "yellowRed": 0,
+            "einsatzzeit": 28,
+            "assists": 0,
+            "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":50,\"duelRate\":14,\"minutesPlayed\":28}",
+            "totalPoints": 22,
+            "tore": 0,
+            "value": 2,
+            "key": 10,
+            "status": "SUBIN"
+          },
+          {
+            "rating": 6.5,
+            "yellow": 0,
+            "xgoals": 0.02,
+            "red": 0,
+            "yellowRed": 0,
+            "einsatzzeit": 26,
+            "assists": 0,
+            "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":50,\"duelRate\":33,\"minutesPlayed\":26}",
+            "totalPoints": 24,
+            "tore": 0,
+            "value": 2,
+            "key": 11,
+            "status": "SUBIN"
+          },
+          {
+            "rating": 6.7,
+            "yellow": 0,
+            "xgoals": 0.26,
+            "red": 0,
+            "yellowRed": 0,
+            "einsatzzeit": 90,
+            "assists": 0,
+            "stats": "{\"shots\":3,\"shotsOnGoal\":null,\"foulsDrawn\":3,\"foulsCommitted\":2,\"passingRate\":80,\"duelRate\":33,\"minutesPlayed\":90}",
+            "totalPoints": 27,
+            "tore": 0,
+            "value": 3,
+            "key": 12,
+            "status": "FULL"
+          },
+          {
+            "rating": 6.4,
+            "yellow": 1,
+            "xgoals": 0,
+            "red": 0,
+            "yellowRed": 0,
+            "einsatzzeit": 1,
+            "assists": 0,
+            "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":67,\"duelRate\":20,\"minutesPlayed\":1}",
+            "totalPoints": 28,
+            "tore": 0,
+            "value": 1,
+            "key": 13,
+            "status": "SUBIN"
+          },
+          {
+            "rating": 6.8,
+            "yellow": 0,
+            "xgoals": 0.09,
+            "red": 0,
+            "yellowRed": 0,
+            "einsatzzeit": 15,
+            "assists": 0,
+            "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":75,\"duelRate\":33,\"minutesPlayed\":15}",
+            "totalPoints": 31,
+            "tore": 0,
+            "value": 3,
+            "key": 14,
+            "status": "SUBIN"
+          },
+          {
+            "totalPoints": 31,
+            "value": 0,
+            "key": 15
+          },
+          {
+            "rating": 6.6,
+            "yellow": 0,
+            "xgoals": 0.44,
+            "red": 0,
+            "yellowRed": 0,
+            "einsatzzeit": 44,
+            "assists": 0,
+            "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":70,\"duelRate\":50,\"minutesPlayed\":44}",
+            "totalPoints": 33,
+            "tore": 0,
+            "value": 2,
+            "key": 16,
+            "status": "SUBIN"
+          },
+          {
+            "rating": 6.6,
+            "yellow": 0,
+            "xgoals": 0,
+            "red": 0,
+            "yellowRed": 0,
+            "einsatzzeit": 7,
+            "assists": 0,
+            "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":50,\"duelRate\":100,\"minutesPlayed\":7}",
+            "totalPoints": 35,
+            "tore": 0,
+            "value": 2,
+            "key": 17,
+            "status": "SUBIN"
+          },
+          {
+            "totalPoints": 35,
+            "value": 0,
+            "key": 18
+          },
+          {
+            "rating": 6.9,
+            "yellow": 0,
+            "xgoals": 0.03,
+            "red": 0,
+            "yellowRed": 0,
+            "einsatzzeit": 27,
+            "assists": 0,
+            "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":100,\"duelRate\":80,\"minutesPlayed\":27}",
+            "totalPoints": 39,
+            "tore": 0,
+            "value": 4,
+            "key": 19,
+            "status": "SUBIN"
+          },
+          {
+            "rating": 6.7,
+            "yellow": 0,
+            "xgoals": 0.14,
+            "red": 0,
+            "yellowRed": 0,
+            "einsatzzeit": 6,
+            "assists": 0,
+            "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":43,\"duelRate\":100,\"minutesPlayed\":6}",
+            "totalPoints": 41,
+            "tore": 0,
+            "value": 2,
+            "key": 20,
+            "info": "Interpoliert, weil Datenlücke erkannt",
+            "status": "SUBIN"
+          },
+          {
+            "totalPoints": 42,
+            "value": 0,
+            "key": 21
+          },
+          {
+            "totalPoints": 42,
+            "value": 0,
+            "key": 22
+          }
+        ],
+        "position": "STURM",
+        "attribute": {"ligainsiderRanking": {
+          "punkte": 184,
+          "einsaetzeBewertet": 5,
+          "durchschnittsnote": 4.3,
+          "verein": "FC Augsburg",
+          "lastUpdate": "07.12.2025",
+          "durchschnittsminuten": 63,
+          "durchschnittspunkte": 26.6,
+          "rang": 261
+        }},
+        "possibleNames": [
+          "Samuel Essende",
+          "Samül Essende",
+          "S. Essende",
+          "Essende"
+        ],
+        "comunioStatus": {
+          "grund": "unbekannt",
+          "lastUpdate": "15.02.2026",
+          "seit": "unbekannt",
+          "details": "unbekannt",
+          "historie": [
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "14.09.2025",
+              "seit": "unbekannt",
+              "details": "bis einschl. 3. Spieltag gesperrt",
+              "historie": [],
+              "status": "ROTE_KARTE"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "29.07.2025",
+              "seit": "unbekannt",
+              "details": "bis einschl. 3. Spieltag gesperrt",
+              "historie": [],
+              "status": "ROTE_KARTE"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "29.07.2025",
+              "seit": "unbekannt",
+              "details": "bis einschl. 3. Spieltag gesperrt",
+              "historie": [],
+              "status": "ROTE_KARTE"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "03.09.2025",
+              "seit": "unbekannt",
+              "details": "bis einschl. 3. Spieltag gesperrt",
+              "historie": [],
+              "status": "ROTE_KARTE"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "30.07.2025",
+              "seit": "unbekannt",
+              "details": "bis einschl. 3. Spieltag gesperrt",
+              "historie": [],
+              "status": "ROTE_KARTE"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "24.08.2025",
+              "seit": "unbekannt",
+              "details": "bis einschl. 3. Spieltag gesperrt",
+              "historie": [],
+              "status": "ROTE_KARTE"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "25.08.2025",
+              "seit": "unbekannt",
+              "details": "bis einschl. 3. Spieltag gesperrt",
+              "historie": [],
+              "status": "ROTE_KARTE"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "25.08.2025",
+              "seit": "unbekannt",
+              "details": "bis einschl. 3. Spieltag gesperrt",
+              "historie": [],
+              "status": "ROTE_KARTE"
+            }
+          ],
+          "status": "AKTIV"
+        },
+        "status": {
+          "grund": "",
+          "lastUpdate": "17.02.2026",
+          "seit": "",
+          "details": "",
+          "historie": [{
+            "grund": "",
+            "lastUpdate": "03.07.2025",
+            "seit": "",
+            "details": "Nach Platzverweis: Saftige Sperre für Essende",
+            "historie": [],
+            "status": "ROTE_KARTE"
+          }],
+          "bis": null,
+          "status": "NICHT_IN_LIGA"
+        }
+      },
+      "name": "Essende",
+      "id": "34005"
     },
     "34125": {
       "data": {
@@ -18349,7 +18762,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 220000,
+        "wert": 210000,
         "verein": "62",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -18381,7 +18794,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "16.02.2026",
+        "lastUpdate": "17.02.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -19666,7 +20079,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 2620000,
+        "wert": 2480000,
         "verein": "6",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -19694,7 +20107,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "16.02.2026",
+        "lastUpdate": "17.02.2026",
         "historicalPoints": [{"2023": 4}],
         "spieltagspunkte": [
           {
@@ -21371,7 +21784,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 250000,
+        "wert": 240000,
         "verein": "1",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -21401,7 +21814,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "16.02.2026",
+        "lastUpdate": "17.02.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -21586,7 +21999,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "16.02.2026",
+        "lastUpdate": "17.02.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -21973,7 +22386,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 450000,
+        "wert": 430000,
         "verein": "1",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -22003,7 +22416,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "16.02.2026",
+        "lastUpdate": "17.02.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -24430,7 +24843,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 6850000,
+        "wert": 6920000,
         "verein": "68",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -24457,7 +24870,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "16.02.2026",
+        "lastUpdate": "17.02.2026",
         "historicalPoints": [
           {"2015": 59},
           {"2016": 45},
@@ -27456,7 +27869,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "16.02.2026",
+        "lastUpdate": "17.02.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -29076,7 +29489,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 240000,
+        "wert": 250000,
         "verein": "3",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -29101,7 +29514,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "16.02.2026",
+        "lastUpdate": "17.02.2026",
         "historicalPoints": [{"2022": 12}],
         "spieltagspunkte": [
           {
