@@ -2250,7 +2250,7 @@
           "lastUpdate": "17.02.2026",
           "durchschnittsminuten": 72,
           "durchschnittspunkte": 29.5,
-          "rang": 255
+          "rang": 256
         }},
         "possibleNames": [
           "Benedict Hollerbach",
@@ -4388,9 +4388,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "Adduktorenverletzung",
+          "grund": "",
           "lastUpdate": "17.02.2026",
-          "seit": "30.01.2026",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -4400,8 +4400,8 @@
             "historie": [],
             "status": "VERLETZT"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Stergiou",
@@ -4668,18 +4668,7 @@
           "Pavlovic",
           "Pavlović"
         ],
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "11.250.000",
-            "platz": 10,
-            "lastUpdate": "17.02.2026",
-            "typ": "flop",
-            "marktwert": "11.540.000",
-            "aenderung": "-290.000"
-          },
-          "link": "https://www.com-analytics.de/player/33854"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33854"},
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "03.05.2004",
@@ -10771,7 +10760,7 @@
           "lastUpdate": "17.02.2026",
           "durchschnittsminuten": 71,
           "durchschnittspunkte": 46.5,
-          "rang": 60
+          "rang": 61
         }},
         "possibleNames": [
           "Jonathan Burkardt",
@@ -13099,7 +13088,18 @@
           "Garcia",
           "García"
         ],
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33992"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "7",
+            "zielwert": "12.310.000",
+            "platz": 9,
+            "lastUpdate": "17.02.2026",
+            "typ": "flop",
+            "marktwert": "12.650.000",
+            "aenderung": "-340.000"
+          },
+          "link": "https://www.com-analytics.de/player/33992"
+        },
         "spielerDaten": {
           "groesse": "1,73",
           "geburtstag": "28.06.1997",
@@ -13435,7 +13435,7 @@
           "topFlop": {
             "punkte": "2",
             "zielwert": "13.270.000",
-            "platz": 9,
+            "platz": 10,
             "lastUpdate": "17.02.2026",
             "typ": "flop",
             "marktwert": "13.610.000",
@@ -16156,7 +16156,7 @@
           "lastUpdate": "17.02.2026",
           "durchschnittsminuten": 53,
           "durchschnittspunkte": 34.69,
-          "rang": 199
+          "rang": 198
         }},
         "possibleNames": [
           "Alexander Prass",
@@ -16432,7 +16432,7 @@
           "groesse": "1,75",
           "geburtstag": "22.11.2007",
           "laenderspiele": 1,
-          "lastUpdate": "24.01.2026",
+          "lastUpdate": "17.02.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 24,
@@ -16447,7 +16447,7 @@
         "verein": "92",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "24.01.2026",
+          "date": "17.02.2026",
           "name": "Viggo Gebel",
           "link": "https://www.transfermarkt.de/viggo-gebel/profil/spieler/1074526",
           "id": "1074526",
@@ -20402,7 +20402,7 @@
           "groesse": "1,81",
           "geburtstag": "01.02.2005",
           "laenderspiele": 0,
-          "lastUpdate": "24.01.2026",
+          "lastUpdate": "17.02.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 42,
@@ -20417,7 +20417,7 @@
         "verein": "18",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "24.01.2026",
+          "date": "17.02.2026",
           "name": "Daniel Gleiber",
           "link": "https://www.transfermarkt.de/daniel-gleiber/profil/spieler/906969",
           "id": "906969",
@@ -21738,7 +21738,7 @@
           "lastUpdate": "17.02.2026",
           "durchschnittsminuten": 77,
           "durchschnittspunkte": 46.5,
-          "rang": 61
+          "rang": 60
         }},
         "possibleNames": [
           "Bazoumana Toure",
@@ -29437,7 +29437,7 @@
           "lastUpdate": "17.02.2026",
           "durchschnittsminuten": 76,
           "durchschnittspunkte": 38.56,
-          "rang": 162
+          "rang": 163
         }},
         "possibleNames": [
           "Patrik Schick",
@@ -34618,7 +34618,7 @@
           "lastUpdate": "17.02.2026",
           "durchschnittsminuten": 41,
           "durchschnittspunkte": 34.69,
-          "rang": 198
+          "rang": 199
         }},
         "possibleNames": [
           "Stefan Schimmer",
@@ -37050,9 +37050,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "10.02.2026",
-          "seit": "",
+          "grund": "Operation",
+          "lastUpdate": "17.02.2026",
+          "seit": "17.02.2026",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -37062,8 +37062,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Knauff",
@@ -42800,7 +42800,7 @@
           "groesse": "1,88",
           "geburtstag": "27.05.1995",
           "laenderspiele": 5,
-          "lastUpdate": "24.01.2026",
+          "lastUpdate": "17.02.2026",
           "nebenpositionen": ["RM"],
           "nationalspieler": "",
           "trikotNummer": 27,
@@ -42822,7 +42822,7 @@
         },
         "lastPoints": 1,
         "transfermarktDoDe": {
-          "date": "24.01.2026",
+          "date": "17.02.2026",
           "name": "Marius Wolf",
           "link": "https://www.transfermarkt.de/marius-wolf/profil/spieler/193900",
           "id": 193900,
@@ -42929,7 +42929,7 @@
           "groesse": "1,88",
           "geburtstag": "10.07.1991",
           "laenderspiele": 3,
-          "lastUpdate": "24.01.2026",
+          "lastUpdate": "17.02.2026",
           "nebenpositionen": ["DM"],
           "nationalspieler": "",
           "trikotNummer": 6,
@@ -42951,7 +42951,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "24.01.2026",
+          "date": "17.02.2026",
           "name": "Jeffrey Gouweleeuw",
           "link": "https://www.transfermarkt.de/jeffrey-gouweleeuw/profil/spieler/106405",
           "id": 106405,
@@ -43181,7 +43181,7 @@
           "groesse": "1,80",
           "geburtstag": "18.01.2002",
           "laenderspiele": 11,
-          "lastUpdate": "24.01.2026",
+          "lastUpdate": "17.02.2026",
           "nebenpositionen": [
             "RA",
             "MS"
@@ -43206,7 +43206,7 @@
         },
         "lastPoints": 1,
         "transfermarktDoDe": {
-          "date": "24.01.2026",
+          "date": "17.02.2026",
           "name": "Karim Adeyemi",
           "link": "https://www.transfermarkt.de/karim-adeyemi/profil/spieler/496094",
           "id": 496094,
@@ -43306,7 +43306,7 @@
           "groesse": "1,84",
           "geburtstag": "01.07.1997",
           "laenderspiele": 1,
-          "lastUpdate": "24.01.2026",
+          "lastUpdate": "17.02.2026",
           "nebenpositionen": [
             "IV",
             "LM"
@@ -43331,7 +43331,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "24.01.2026",
+          "date": "17.02.2026",
           "name": "Anthony Caci 7,00 Mio. \u20ac",
           "link": "https://www.transfermarkt.de/anthony-caci/profil/spieler/453016",
           "id": 453016,
@@ -43579,7 +43579,7 @@
           "url": "https://www.fussballdaten.de/person/andrej-kramaric/"
         },
         "transfermarktDoDe": {
-          "date": "24.01.2026",
+          "date": "17.02.2026",
           "name": "Andrej Kramaric 8,00 Mio. \u20ac",
           "link": "https://www.transfermarkt.de/andrej-kramaric/profil/spieler/46580",
           "id": 46580,
@@ -43626,7 +43626,7 @@
           "groesse": "1,77",
           "geburtstag": "19.06.1991",
           "laenderspiele": 112,
-          "lastUpdate": "24.01.2026",
+          "lastUpdate": "17.02.2026",
           "nebenpositionen": [
             "OM",
             "HS"
@@ -43919,7 +43919,7 @@
           "groesse": "1,93",
           "geburtstag": "06.05.1990",
           "laenderspiele": 58,
-          "lastUpdate": "24.01.2026",
+          "lastUpdate": "17.02.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 1,
@@ -43941,7 +43941,7 @@
         },
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "24.01.2026",
+          "date": "17.02.2026",
           "name": "Péter Gulácsi",
           "link": "https://www.transfermarkt.de/peter-gulacsi/profil/spieler/57071",
           "id": 57071,
@@ -44035,7 +44035,7 @@
           "groesse": "1,91",
           "geburtstag": "04.10.1999",
           "laenderspiele": 0,
-          "lastUpdate": "24.01.2026",
+          "lastUpdate": "17.02.2026",
           "nebenpositionen": [
             "OM",
             "LA"
@@ -44060,7 +44060,7 @@
         },
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "24.01.2026",
+          "date": "17.02.2026",
           "name": "Marvin Pieringer",
           "link": "https://www.transfermarkt.de/Marvin Pieringer/profil/spieler/471055",
           "id": 471055,
@@ -44248,7 +44248,7 @@
           "groesse": "1,86",
           "geburtstag": "05.06.2005",
           "laenderspiele": 2,
-          "lastUpdate": "24.01.2026",
+          "lastUpdate": "17.02.2026",
           "nebenpositionen": ["LV"],
           "nationalspieler": "",
           "trikotNummer": 2,
@@ -44270,7 +44270,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "24.01.2026",
+          "date": "17.02.2026",
           "name": "Fabio Chiarodia",
           "link": "https://www.transfermarkt.de/fabio-chiarodia/profil/spieler/724104",
           "id": 724104,
@@ -46205,7 +46205,7 @@
           "lastUpdate": "17.02.2026",
           "durchschnittsminuten": 59,
           "durchschnittspunkte": 29.5,
-          "rang": 256
+          "rang": 255
         }},
         "possibleNames": [
           "Denis Huseinbasic",
@@ -59348,12 +59348,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "2",
-            "zielwert": "9.320.000",
+            "zielwert": "9.330.000",
             "platz": 2,
             "lastUpdate": "17.02.2026",
             "typ": "flop",
             "marktwert": "9.890.000",
-            "aenderung": "-570.000"
+            "aenderung": "-560.000"
           },
           "link": "https://www.com-analytics.de/player/34271"
         },
