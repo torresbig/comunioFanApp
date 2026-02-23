@@ -6740,12 +6740,12 @@
     {
       "rating": 6.8,
       "yellow": 0,
-      "xgoals": 0.35,
+      "xgoals": 0.27,
       "red": 0,
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":61,\"duelRate\":25,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":60,\"duelRate\":25,\"minutesPlayed\":90}",
       "totalPoints": 124,
       "tore": 0,
       "value": 3,
@@ -12843,7 +12843,7 @@
     {
       "rating": 6.6,
       "yellow": 0,
-      "xgoals": 0.21,
+      "xgoals": 0.19,
       "red": 0,
       "yellowRed": 0,
       "einsatzzeit": 11,
@@ -20369,7 +20369,7 @@
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":88,\"duelRate\":100,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":90,\"duelRate\":100,\"minutesPlayed\":90}",
       "totalPoints": 75,
       "tore": 1,
       "value": 14,
@@ -24488,7 +24488,7 @@
       "yellowRed": 0,
       "einsatzzeit": 38,
       "assists": 0,
-      "stats": "{\"shots\":4,\"shotsOnGoal\":3,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":58,\"duelRate\":50,\"minutesPlayed\":38}",
+      "stats": "{\"shots\":4,\"shotsOnGoal\":3,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":58,\"duelRate\":67,\"minutesPlayed\":38}",
       "totalPoints": 135,
       "tore": 1,
       "value": 6,
@@ -27811,7 +27811,7 @@
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":3,\"foulsCommitted\":4,\"passingRate\":74,\"duelRate\":33,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":3,\"foulsCommitted\":4,\"passingRate\":76,\"duelRate\":38,\"minutesPlayed\":90}",
       "totalPoints": 90,
       "tore": 0,
       "value": 4,
@@ -31438,7 +31438,7 @@
       "yellowRed": 0,
       "einsatzzeit": 66,
       "assists": 0,
-      "stats": "{\"shots\":2,\"shotsOnGoal\":2,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":82,\"duelRate\":67,\"minutesPlayed\":66}",
+      "stats": "{\"shots\":2,\"shotsOnGoal\":2,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":83,\"duelRate\":67,\"minutesPlayed\":66}",
       "totalPoints": 102,
       "tore": 1,
       "value": 12,
@@ -32221,7 +32221,7 @@
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":71,\"duelRate\":80,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":72,\"duelRate\":83,\"minutesPlayed\":90}",
       "totalPoints": 56,
       "tore": 0,
       "value": 5,
@@ -35633,7 +35633,7 @@
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":1,\"passingRate\":74,\"duelRate\":60,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":1,\"passingRate\":74,\"duelRate\":56,\"minutesPlayed\":90}",
       "totalPoints": 17,
       "tore": 0,
       "value": 3,
@@ -35970,10 +35970,18 @@
       "status": "SUBIN"
     }
   ],
-  "34348": [{
-    "value": 0,
-    "key": 23
-  }],
+  "34348": [
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 1,
+      "info": "Interpoliert (Startspieltag aus 0 berechnet)"
+    },
+    {
+      "value": 0,
+      "key": 23
+    }
+  ],
   "34226": [
     {
       "rating": 6.9,
@@ -36232,11 +36240,145 @@
       "key": 23
     }
   ],
-  "34347": [{
-    "totalPoints": 0,
-    "value": 0,
-    "key": 23
-  }],
+  "34347": [
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 1,
+      "info": "Interpoliert (Startspieltag aus 0 berechnet)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 2,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 3,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 4,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 5,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 6,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 7,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 8,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 9,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 10,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 11,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 12,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 13,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 14,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 15,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 16,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 17,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 18,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 19,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 20,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 21,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 22,
+      "info": "Interpoliert (mehrere fehlende Spieltage)"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 23
+    }
+  ],
   "33258": [
     {
       "rating": 7.3,
@@ -41072,7 +41214,7 @@
       "yellowRed": 0,
       "einsatzzeit": 3,
       "assists": 0,
-      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":75,\"duelRate\":100,\"minutesPlayed\":3}",
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":67,\"duelRate\":100,\"minutesPlayed\":3}",
       "totalPoints": 8,
       "tore": 0,
       "value": 0,
@@ -42766,7 +42908,7 @@
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":57,\"duelRate\":25,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":59,\"duelRate\":25,\"minutesPlayed\":90}",
       "totalPoints": 31,
       "tore": 1,
       "value": 8,
@@ -46760,7 +46902,7 @@
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":68,\"duelRate\":50,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":69,\"duelRate\":50,\"minutesPlayed\":90}",
       "totalPoints": 103,
       "tore": 0,
       "value": 3,
@@ -49388,7 +49530,7 @@
       "yellowRed": 0,
       "einsatzzeit": 75,
       "assists": 0,
-      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":71,\"duelRate\":43,\"minutesPlayed\":75}",
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":71,\"duelRate\":38,\"minutesPlayed\":75}",
       "totalPoints": 37,
       "tore": 0,
       "value": 0,
@@ -50409,7 +50551,7 @@
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":80,\"duelRate\":65,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":80,\"duelRate\":61,\"minutesPlayed\":90}",
       "totalPoints": 7,
       "tore": 0,
       "value": 2,
@@ -50999,7 +51141,7 @@
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":86,\"duelRate\":80,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":84,\"duelRate\":80,\"minutesPlayed\":90}",
       "totalPoints": 18,
       "tore": 0,
       "value": 5,
@@ -53771,12 +53913,12 @@
     {
       "rating": 7,
       "yellow": 1,
-      "xgoals": 0.31,
+      "xgoals": 0.22,
       "red": 0,
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":92,\"duelRate\":70,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":92,\"duelRate\":64,\"minutesPlayed\":90}",
       "totalPoints": 5,
       "tore": 0,
       "value": 4,
@@ -56847,7 +56989,7 @@
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":97,\"duelRate\":60,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":97,\"duelRate\":40,\"minutesPlayed\":90}",
       "totalPoints": 76,
       "tore": 0,
       "value": 5,
@@ -58230,7 +58372,7 @@
     {
       "rating": 6.8,
       "yellow": 0,
-      "xgoals": 0.03,
+      "xgoals": 0.09,
       "red": 0,
       "yellowRed": 0,
       "einsatzzeit": 90,
@@ -59964,7 +60106,7 @@
       "yellowRed": 0,
       "einsatzzeit": 52,
       "assists": 0,
-      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":86,\"duelRate\":29,\"minutesPlayed\":52}",
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":86,\"duelRate\":43,\"minutesPlayed\":52}",
       "totalPoints": 61,
       "tore": 0,
       "value": 1,
@@ -61164,7 +61306,7 @@
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":2,\"foulsCommitted\":1,\"passingRate\":73,\"duelRate\":25,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":2,\"foulsCommitted\":1,\"passingRate\":69,\"duelRate\":20,\"minutesPlayed\":90}",
       "totalPoints": 77,
       "tore": 0,
       "value": 2,
@@ -62629,7 +62771,7 @@
       "yellowRed": 0,
       "einsatzzeit": 78,
       "assists": 0,
-      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":84,\"duelRate\":67,\"minutesPlayed\":78}",
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":83,\"duelRate\":67,\"minutesPlayed\":78}",
       "totalPoints": 114,
       "tore": 0,
       "value": 4,
@@ -63402,7 +63544,7 @@
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":72,\"duelRate\":70,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":71,\"duelRate\":70,\"minutesPlayed\":90}",
       "totalPoints": 20,
       "tore": 0,
       "value": 1,
@@ -65440,12 +65582,12 @@
     {
       "rating": 7,
       "yellow": 0,
-      "xgoals": 0.61,
+      "xgoals": 0.59,
       "red": 0,
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":3,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":3,\"passingRate\":55,\"duelRate\":22,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":3,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":3,\"passingRate\":55,\"duelRate\":25,\"minutesPlayed\":90}",
       "totalPoints": 86,
       "tore": 1,
       "value": 7,
@@ -69621,7 +69763,7 @@
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":72,\"duelRate\":75,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":72,\"duelRate\":100,\"minutesPlayed\":90}",
       "totalPoints": 54,
       "tore": 0,
       "value": 3,
@@ -78024,7 +78166,7 @@
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":4,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":70,\"duelRate\":42,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":4,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":70,\"duelRate\":46,\"minutesPlayed\":90}",
       "totalPoints": 121,
       "tore": 1,
       "value": 8,
@@ -82427,7 +82569,7 @@
     {
       "rating": 6.5,
       "yellow": 1,
-      "xgoals": 0.15,
+      "xgoals": 0.16,
       "red": 0,
       "yellowRed": 0,
       "einsatzzeit": 53,
@@ -84783,7 +84925,7 @@
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":83,\"duelRate\":50,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":83,\"duelRate\":40,\"minutesPlayed\":90}",
       "totalPoints": 22,
       "tore": 0,
       "value": 3,
@@ -88996,7 +89138,7 @@
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":null,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":81,\"duelRate\":73,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":null,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":82,\"duelRate\":73,\"minutesPlayed\":90}",
       "totalPoints": 62,
       "tore": 0,
       "value": 7,
@@ -93772,7 +93914,7 @@
       "yellowRed": 0,
       "einsatzzeit": 25,
       "assists": 0,
-      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":86,\"duelRate\":50,\"minutesPlayed\":25}",
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":75,\"duelRate\":50,\"minutesPlayed\":25}",
       "totalPoints": 71,
       "tore": 0,
       "value": 4,
@@ -94614,7 +94756,7 @@
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":67,\"duelRate\":70,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":65,\"duelRate\":80,\"minutesPlayed\":90}",
       "totalPoints": 99,
       "tore": 0,
       "value": 0,
@@ -107335,7 +107477,7 @@
       "yellowRed": 0,
       "einsatzzeit": 90,
       "assists": 0,
-      "stats": "{\"shots\":2,\"shotsOnGoal\":2,\"foulsDrawn\":2,\"foulsCommitted\":2,\"passingRate\":50,\"duelRate\":33,\"minutesPlayed\":90}",
+      "stats": "{\"shots\":2,\"shotsOnGoal\":2,\"foulsDrawn\":2,\"foulsCommitted\":2,\"passingRate\":53,\"duelRate\":33,\"minutesPlayed\":90}",
       "totalPoints": 61,
       "tore": 0,
       "value": 2,
@@ -108525,7 +108667,7 @@
       "yellowRed": 0,
       "einsatzzeit": 15,
       "assists": 0,
-      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":100,\"duelRate\":50,\"minutesPlayed\":15}",
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":100,\"duelRate\":100,\"minutesPlayed\":15}",
       "totalPoints": 67,
       "tore": 0,
       "value": 2,
