@@ -302,6 +302,21 @@
       "value": 9,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 1,
+      "xgoals": 0.07,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":88,\"duelRate\":40,\"minutesPlayed\":90}",
+      "totalPoints": 75,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32680": [
@@ -679,6 +694,21 @@
       "value": 5,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7.2,
+      "yellow": 0,
+      "xgoals": 0.06,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 94,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":90,\"duelRate\":33,\"minutesPlayed\":90}",
+      "totalPoints": 134,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33656": [
@@ -921,6 +951,21 @@
       "tore": 0,
       "value": 2,
       "key": 22,
+      "status": "SUBIN"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0.03,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 19,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":100,\"duelRate\":100,\"minutesPlayed\":19}",
+      "totalPoints": 28,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
       "status": "SUBIN"
     }
   ],
@@ -1365,6 +1410,21 @@
       "value": 4,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 24,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":71,\"duelRate\":100,\"minutesPlayed\":24}",
+      "totalPoints": 115,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "33774": [
@@ -1639,6 +1699,21 @@
       "tore": 0,
       "value": 6,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":82,\"duelRate\":43,\"minutesPlayed\":90}",
+      "totalPoints": 39,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -1998,6 +2073,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 61,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":83,\"duelRate\":100,\"minutesPlayed\":61}",
+      "totalPoints": 46,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33530": [
@@ -2280,6 +2370,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0.04,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 81,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":74,\"duelRate\":33,\"minutesPlayed\":81}",
+      "totalPoints": 108,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33894": [
@@ -2693,6 +2798,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7.4,
+      "yellow": 0,
+      "xgoals": 0.12,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":3,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":88,\"duelRate\":50,\"minutesPlayed\":90}",
+      "totalPoints": 121,
+      "tore": 0,
+      "value": 6,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33417": [
@@ -2833,6 +2953,11 @@
       "totalPoints": 8,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 8,
+      "value": 0,
+      "key": 23
     }
   ],
   "33659": [
@@ -3105,6 +3230,11 @@
       "totalPoints": 47,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 47,
+      "value": 0,
+      "key": 23
     }
   ],
   "32208": [
@@ -3336,6 +3466,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0.06,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 60,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":81,\"duelRate\":25,\"minutesPlayed\":60}",
+      "totalPoints": 47,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33539": [
@@ -3422,6 +3567,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33536": [
@@ -3746,6 +3895,21 @@
       "value": 10,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0.2,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 92,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":65,\"duelRate\":50,\"minutesPlayed\":90}",
+      "totalPoints": 117,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33657": [
@@ -4049,6 +4213,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 8,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":100,\"duelRate\":null,\"minutesPlayed\":8}",
+      "totalPoints": 68,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "33778": [
@@ -4316,6 +4495,21 @@
       "value": 4,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0.02,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 62,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":84,\"duelRate\":80,\"minutesPlayed\":62}",
+      "totalPoints": 31,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "32206": [
@@ -4581,6 +4775,21 @@
       "tore": 0,
       "value": 5,
       "key": 22,
+      "status": "SUBIN"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 5,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":null,\"duelRate\":null,\"minutesPlayed\":5}",
+      "totalPoints": 61,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
       "status": "SUBIN"
     }
   ],
@@ -4885,6 +5094,21 @@
       "value": 8,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.3,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 65,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":3,\"foulsCommitted\":3,\"passingRate\":82,\"duelRate\":50,\"minutesPlayed\":65}",
+      "totalPoints": 48,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33779": [
@@ -5008,6 +5232,11 @@
       "totalPoints": 1,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 1,
+      "value": 0,
+      "key": 23
     }
   ],
   "32677": [
@@ -5189,6 +5418,11 @@
       "totalPoints": 5,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 5,
+      "value": 0,
+      "key": 23
     }
   ],
   "32311": [
@@ -5349,6 +5583,11 @@
       "totalPoints": 7,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 7,
+      "value": 0,
+      "key": 23
     }
   ],
   "32553": [
@@ -5683,6 +5922,21 @@
       "value": 8,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7.3,
+      "yellow": 0,
+      "xgoals": 0.49,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 89,
+      "assists": 0,
+      "stats": "{\"shots\":3,\"shotsOnGoal\":2,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":82,\"duelRate\":25,\"minutesPlayed\":89}",
+      "totalPoints": 158,
+      "tore": 1,
+      "value": 10,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33885": [
@@ -5956,6 +6210,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 1,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":50,\"duelRate\":null,\"minutesPlayed\":1}",
+      "totalPoints": 43,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "33882": [
@@ -6150,6 +6419,11 @@
       "value": 1,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 8,
+      "value": 0,
+      "key": 23
     }
   ],
   "33640": [
@@ -6462,6 +6736,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0.35,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":61,\"duelRate\":25,\"minutesPlayed\":90}",
+      "totalPoints": 124,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32310": [
@@ -6766,6 +7055,21 @@
       "totalPoints": 46,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.6,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 11,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":100,\"duelRate\":50,\"minutesPlayed\":11}",
+      "totalPoints": 48,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33769": [
@@ -7100,6 +7404,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7.1,
+      "yellow": 0,
+      "xgoals": 0.03,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":95,\"duelRate\":75,\"minutesPlayed\":90}",
+      "totalPoints": 99,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33647": [
@@ -7414,6 +7733,21 @@
       "value": 4,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 5.9,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":80,\"duelRate\":null,\"minutesPlayed\":90}",
+      "totalPoints": 78,
+      "tore": 0,
+      "value": -1,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32786": [
@@ -7585,6 +7919,21 @@
       "value": -2,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0.04,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":68,\"duelRate\":77,\"minutesPlayed\":90}",
+      "totalPoints": 14,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32787": [
@@ -7738,6 +8087,11 @@
       "totalPoints": 14,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 14,
+      "value": 0,
+      "key": 23
     }
   ],
   "33997": [
@@ -8050,6 +8404,21 @@
       "tore": 0,
       "value": 0,
       "key": 22,
+      "status": "SUBIN"
+    },
+    {
+      "rating": 6.3,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 32,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":85,\"duelRate\":null,\"minutesPlayed\":32}",
+      "totalPoints": 74,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
       "status": "SUBIN"
     }
   ],
@@ -8384,6 +8753,21 @@
       "value": 8,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":3,\"passingRate\":76,\"duelRate\":14,\"minutesPlayed\":90}",
+      "totalPoints": 105,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33992": [
@@ -8707,6 +9091,21 @@
       "value": 7,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.1,
+      "yellow": 0,
+      "xgoals": 0.08,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":90,\"duelRate\":29,\"minutesPlayed\":90}",
+      "totalPoints": 136,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33630": [
@@ -8723,6 +9122,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33990": [
@@ -8809,6 +9212,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33991": [
@@ -9042,6 +9449,11 @@
       "totalPoints": 63,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 63,
+      "value": 0,
+      "key": 23
     }
   ],
   "31572": [
@@ -9316,6 +9728,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0.24,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 30,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":91,\"duelRate\":null,\"minutesPlayed\":30}",
+      "totalPoints": 38,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "31693": [
@@ -9517,6 +9944,21 @@
       "value": 3,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":60,\"duelRate\":null,\"minutesPlayed\":90}",
+      "totalPoints": 47,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "31458": [
@@ -9603,6 +10045,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33637": [
@@ -9689,6 +10135,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "31216": [
@@ -9775,6 +10225,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33517": [
@@ -10060,6 +10514,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 1,
+      "xgoals": 0.16,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":81,\"duelRate\":50,\"minutesPlayed\":90}",
+      "totalPoints": 65,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32549": [
@@ -10223,6 +10692,11 @@
       "totalPoints": 10,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 10,
+      "value": 0,
+      "key": 23
     }
   ],
   "32546": [
@@ -10515,6 +10989,21 @@
       "tore": 0,
       "value": 1,
       "key": 22,
+      "status": "SUBIN"
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0.07,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 21,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":60,\"duelRate\":100,\"minutesPlayed\":21}",
+      "totalPoints": 37,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
       "status": "SUBIN"
     }
   ],
@@ -10841,6 +11330,21 @@
       "value": 15,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 71,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":74,\"duelRate\":42,\"minutesPlayed\":71}",
+      "totalPoints": 133,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33999": [
@@ -11085,6 +11589,21 @@
       "totalPoints": 22,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0.03,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 31,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":91,\"duelRate\":20,\"minutesPlayed\":31}",
+      "totalPoints": 24,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "32654": [
@@ -11419,6 +11938,21 @@
       "value": 5,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":80,\"duelRate\":100,\"minutesPlayed\":90}",
+      "totalPoints": 105,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33986": [
@@ -11509,6 +12043,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33744": [
@@ -11772,6 +12310,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7.4,
+      "yellow": 0,
+      "xgoals": 0.09,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":3,\"shotsOnGoal\":null,\"foulsDrawn\":5,\"foulsCommitted\":1,\"passingRate\":83,\"duelRate\":60,\"minutesPlayed\":90}",
+      "totalPoints": 75,
+      "tore": 0,
+      "value": 6,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32773": [
@@ -11898,6 +12451,11 @@
       "totalPoints": 14,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 14,
+      "value": 0,
+      "key": 23
     }
   ],
   "33620": [
@@ -12281,6 +12839,21 @@
       "totalPoints": 43,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0.21,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 11,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":100,\"duelRate\":25,\"minutesPlayed\":11}",
+      "totalPoints": 45,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "33984": [
@@ -12371,6 +12944,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33621": [
@@ -12627,6 +13204,11 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 36,
+      "value": 0,
+      "key": 23
     }
   ],
   "32891": [
@@ -12713,6 +13295,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33507": [
@@ -12997,6 +13583,11 @@
       "totalPoints": 54,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 54,
+      "value": 0,
+      "key": 23
     }
   ],
   "33629": [
@@ -13300,6 +13891,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 11,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":83,\"duelRate\":100,\"minutesPlayed\":11}",
+      "totalPoints": 65,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "33989": [
@@ -13512,6 +14118,21 @@
       "totalPoints": 1,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 13,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":100,\"duelRate\":null,\"minutesPlayed\":13}",
+      "totalPoints": 2,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "32656": [
@@ -13594,6 +14215,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33988": [
@@ -13799,6 +14424,21 @@
       "tore": 0,
       "value": 4,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 1,
+      "xgoals": 0.04,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":87,\"duelRate\":63,\"minutesPlayed\":90}",
+      "totalPoints": 20,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -14081,6 +14721,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0.05,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 13,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":100,\"duelRate\":100,\"minutesPlayed\":13}",
+      "totalPoints": 65,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "33625": [
@@ -14304,6 +14959,11 @@
       "totalPoints": 17,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 17,
+      "value": 0,
+      "key": 23
     }
   ],
   "33853": [
@@ -14517,6 +15177,11 @@
       "totalPoints": 30,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 30,
+      "value": 0,
+      "key": 23
     }
   ],
   "33854": [
@@ -14812,6 +15477,21 @@
       "totalPoints": 102,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 7.4,
+      "yellow": 0,
+      "xgoals": 0.04,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 77,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":95,\"duelRate\":null,\"minutesPlayed\":77}",
+      "totalPoints": 112,
+      "tore": 1,
+      "value": 10,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33975": [
@@ -15135,6 +15815,21 @@
       "value": 11,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0.12,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":88,\"duelRate\":100,\"minutesPlayed\":90}",
+      "totalPoints": 94,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32881": [
@@ -15385,6 +16080,11 @@
       "totalPoints": 48,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 48,
+      "value": 0,
+      "key": 23
     }
   ],
   "33850": [
@@ -15511,6 +16211,11 @@
       "totalPoints": 5,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 5,
+      "value": 0,
+      "key": 23
     }
   ],
   "32880": [
@@ -15828,6 +16533,21 @@
       "value": 0,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.2,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 12,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":63,\"duelRate\":null,\"minutesPlayed\":12}",
+      "totalPoints": 65,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "33619": [
@@ -15960,6 +16680,11 @@
       "totalPoints": 2,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 2,
+      "value": 0,
+      "key": 23
     }
   ],
   "32408": [
@@ -16183,6 +16908,11 @@
       "totalPoints": 31,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 31,
+      "value": 0,
+      "key": 23
     }
   ],
   "32889": [
@@ -16497,6 +17227,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0.16,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 82,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":88,\"duelRate\":80,\"minutesPlayed\":82}",
+      "totalPoints": 88,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33978": [
@@ -16792,6 +17537,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0.07,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":84,\"duelRate\":67,\"minutesPlayed\":90}",
+      "totalPoints": 70,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32526": [
@@ -16918,6 +17678,11 @@
       "totalPoints": 6,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 6,
+      "value": 0,
+      "key": 23
     }
   ],
   "33736": [
@@ -17221,6 +17986,21 @@
       "value": 5,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7.2,
+      "yellow": 0,
+      "xgoals": 0.06,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 58,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":69,\"duelRate\":75,\"minutesPlayed\":58}",
+      "totalPoints": 73,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33858": [
@@ -17370,6 +18150,11 @@
       "totalPoints": 16,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 16,
+      "value": 0,
+      "key": 23
     }
   ],
   "33616": [
@@ -17612,6 +18397,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 5,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":67,\"duelRate\":100,\"minutesPlayed\":5}",
+      "totalPoints": 35,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "33855": [
@@ -17831,6 +18631,21 @@
       "tore": 0,
       "value": 8,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 7.8,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":58,\"duelRate\":100,\"minutesPlayed\":90}",
+      "totalPoints": 20,
+      "tore": 0,
+      "value": 8,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -18061,6 +18876,21 @@
       "tore": 0,
       "value": 6,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 5.5,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":87,\"duelRate\":40,\"minutesPlayed\":90}",
+      "totalPoints": 17,
+      "tore": 0,
+      "value": -3,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -18337,6 +19167,21 @@
       "totalPoints": 63,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 13,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":71,\"duelRate\":null,\"minutesPlayed\":13}",
+      "totalPoints": 65,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "32874": [
@@ -18509,6 +19354,11 @@
       "totalPoints": 15,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 15,
+      "value": 0,
+      "key": 23
     }
   ],
   "33600": [
@@ -18776,6 +19626,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.3,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 65,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":76,\"duelRate\":22,\"minutesPlayed\":65}",
+      "totalPoints": 56,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "32632": [
@@ -18998,6 +19863,11 @@
       "totalPoints": 59,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 59,
+      "value": 0,
+      "key": 23
     }
   ],
   "33601": [
@@ -19191,6 +20061,11 @@
       "totalPoints": 12,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 12,
+      "value": 0,
+      "key": 23
     }
   ],
   "32633": [
@@ -19485,6 +20360,21 @@
       "totalPoints": 61,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 8.1,
+      "yellow": 0,
+      "xgoals": 0.03,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":88,\"duelRate\":100,\"minutesPlayed\":90}",
+      "totalPoints": 75,
+      "tore": 1,
+      "value": 14,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32754": [
@@ -19799,6 +20689,21 @@
       "value": 2,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":2,\"passingRate\":85,\"duelRate\":43,\"minutesPlayed\":90}",
+      "totalPoints": 89,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32630": [
@@ -19990,6 +20895,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.2,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 65,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":92,\"duelRate\":17,\"minutesPlayed\":65}",
+      "totalPoints": 26,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33720": [
@@ -20153,6 +21073,11 @@
       "totalPoints": 18,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 18,
+      "value": 0,
+      "key": 23
     }
   ],
   "33609": [
@@ -20486,6 +21411,21 @@
       "value": 1,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.2,
+      "yellow": 0,
+      "xgoals": 0.04,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":68,\"duelRate\":78,\"minutesPlayed\":90}",
+      "totalPoints": 106,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33848": [
@@ -20638,6 +21578,21 @@
       "value": 6,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 0,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": -4,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":null,\"duelRate\":null,\"minutesPlayed\":1}",
+      "totalPoints": 12,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "32638": [
@@ -20971,6 +21926,21 @@
       "value": 11,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.3,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":70,\"duelRate\":50,\"minutesPlayed\":90}",
+      "totalPoints": 86,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33727": [
@@ -21223,6 +22193,21 @@
       "tore": 0,
       "value": 3,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 6.3,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":3,\"passingRate\":91,\"duelRate\":50,\"minutesPlayed\":90}",
+      "totalPoints": 42,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -21557,6 +22542,21 @@
       "value": 2,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.9,
+      "yellow": 0,
+      "xgoals": 0.06,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 91,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":83,\"duelRate\":67,\"minutesPlayed\":90}",
+      "totalPoints": 121,
+      "tore": 0,
+      "value": 8,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "32636": [
@@ -21781,6 +22781,11 @@
       "value": -3,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 29,
+      "value": 0,
+      "key": 23
     }
   ],
   "31666": [
@@ -22078,6 +23083,11 @@
       "value": 0,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 64,
+      "value": 0,
+      "key": 23
     }
   ],
   "33844": [
@@ -22390,6 +23400,21 @@
       "tore": 0,
       "value": 2,
       "key": 22,
+      "status": "SUBOUT"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 1,
+      "xgoals": 0.21,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 65,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":72,\"duelRate\":43,\"minutesPlayed\":65}",
+      "totalPoints": 68,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
       "status": "SUBOUT"
     }
   ],
@@ -22724,6 +23749,21 @@
       "value": 4,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":75,\"duelRate\":100,\"minutesPlayed\":90}",
+      "totalPoints": 60,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33603": [
@@ -23037,6 +24077,21 @@
       "value": 4,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 62,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":82,\"duelRate\":50,\"minutesPlayed\":62}",
+      "totalPoints": 78,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33831": [
@@ -23127,6 +24182,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33832": [
@@ -23420,6 +24479,21 @@
       "value": 11,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0.61,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 38,
+      "assists": 0,
+      "stats": "{\"shots\":4,\"shotsOnGoal\":3,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":58,\"duelRate\":50,\"minutesPlayed\":38}",
+      "totalPoints": 135,
+      "tore": 1,
+      "value": 6,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "32861": [
@@ -23743,6 +24817,21 @@
       "value": 2,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 11,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":63,\"duelRate\":75,\"minutesPlayed\":11}",
+      "totalPoints": 67,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "33950": [
@@ -23978,6 +25067,21 @@
       "tore": 0,
       "value": -1,
       "key": 22,
+      "status": "SUBOUT"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 80,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":64,\"duelRate\":56,\"minutesPlayed\":80}",
+      "totalPoints": 39,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
       "status": "SUBOUT"
     }
   ],
@@ -24232,6 +25336,11 @@
       "totalPoints": 33,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 33,
+      "value": 0,
+      "key": 23
     }
   ],
   "33951": [
@@ -24486,6 +25595,11 @@
       "totalPoints": 27,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 27,
+      "value": 0,
+      "key": 23
     }
   ],
   "33839": [
@@ -24667,6 +25781,11 @@
       "totalPoints": 13,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 13,
+      "value": 0,
+      "key": 23
     }
   ],
   "32629": [
@@ -24990,6 +26109,21 @@
       "value": 1,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":85,\"duelRate\":null,\"minutesPlayed\":90}",
+      "totalPoints": 84,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33718": [
@@ -25076,6 +26210,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "32509": [
@@ -25400,6 +26538,21 @@
       "value": 8,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0.82,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":83,\"duelRate\":56,\"minutesPlayed\":90}",
+      "totalPoints": 132,
+      "tore": 1,
+      "value": 7,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33837": [
@@ -25684,6 +26837,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 1,
+      "xgoals": 0.03,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":93,\"duelRate\":50,\"minutesPlayed\":90}",
+      "totalPoints": 76,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33958": [
@@ -25888,6 +27056,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33716": [
@@ -25974,6 +27146,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33838": [
@@ -26307,6 +27483,21 @@
       "value": 16,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 9,
+      "yellow": 0,
+      "xgoals": 0.75,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":8,\"shotsOnGoal\":6,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":53,\"duelRate\":67,\"minutesPlayed\":90}",
+      "totalPoints": 269,
+      "tore": 2,
+      "value": 17,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33959": [
@@ -26610,6 +27801,21 @@
       "tore": 0,
       "value": 2,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":3,\"foulsCommitted\":4,\"passingRate\":74,\"duelRate\":33,\"minutesPlayed\":90}",
+      "totalPoints": 90,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -26935,6 +28141,21 @@
       "value": -1,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":84,\"duelRate\":38,\"minutesPlayed\":90}",
+      "totalPoints": 66,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33836": [
@@ -27230,6 +28451,21 @@
       "value": 5,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":3,\"foulsCommitted\":2,\"passingRate\":92,\"duelRate\":67,\"minutesPlayed\":90}",
+      "totalPoints": 42,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32744": [
@@ -27423,6 +28659,11 @@
       "totalPoints": 30,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 30,
+      "value": 0,
+      "key": 23
     }
   ],
   "33834": [
@@ -27509,6 +28750,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33713": [
@@ -27841,6 +29086,21 @@
       "tore": 0,
       "value": 5,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 7.5,
+      "yellow": 0,
+      "xgoals": 1.16,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":3,\"shotsOnGoal\":3,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":78,\"duelRate\":22,\"minutesPlayed\":90}",
+      "totalPoints": 92,
+      "tore": 1,
+      "value": 10,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -28175,6 +29435,21 @@
       "value": -1,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":70,\"duelRate\":55,\"minutesPlayed\":90}",
+      "totalPoints": 75,
+      "tore": 0,
+      "value": 7,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32731": [
@@ -28490,6 +29765,21 @@
       "value": 5,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 24,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":60,\"duelRate\":100,\"minutesPlayed\":24}",
+      "totalPoints": 43,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33821": [
@@ -28802,6 +30092,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":75,\"duelRate\":17,\"minutesPlayed\":90}",
+      "totalPoints": 60,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "31882": [
@@ -28980,6 +30285,11 @@
       "totalPoints": 16,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 16,
+      "value": 0,
+      "key": 23
     }
   ],
   "31884": [
@@ -29295,6 +30605,11 @@
       "value": 4,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 98,
+      "value": 0,
+      "key": 23
     }
   ],
   "33707": [
@@ -29538,6 +30853,11 @@
       "totalPoints": 39,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 39,
+      "value": 0,
+      "key": 23
     }
   ],
   "33829": [
@@ -29781,6 +31101,11 @@
       "totalPoints": 23,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 23,
+      "value": 0,
+      "key": 23
     }
   ],
   "32858": [
@@ -30104,6 +31429,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7.7,
+      "yellow": 0,
+      "xgoals": 0.27,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 66,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":2,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":82,\"duelRate\":67,\"minutesPlayed\":66}",
+      "totalPoints": 102,
+      "tore": 1,
+      "value": 12,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33947": [
@@ -30396,6 +31736,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":79,\"duelRate\":44,\"minutesPlayed\":90}",
+      "totalPoints": 58,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33827": [
@@ -30618,6 +31973,11 @@
       "totalPoints": 35,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 35,
+      "value": 0,
+      "key": 23
     }
   ],
   "33948": [
@@ -30852,6 +32212,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7.1,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":71,\"duelRate\":80,\"minutesPlayed\":90}",
+      "totalPoints": 56,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32738": [
@@ -31110,6 +32485,11 @@
       "totalPoints": 17,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 17,
+      "value": 0,
+      "key": 23
     }
   ],
   "33945": [
@@ -31377,6 +32757,21 @@
       "tore": 0,
       "value": -2,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":82,\"duelRate\":75,\"minutesPlayed\":90}",
+      "totalPoints": 46,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -31702,6 +33097,21 @@
       "value": 2,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 8.5,
+      "yellow": 0,
+      "xgoals": 1.77,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":4,\"shotsOnGoal\":2,\"foulsDrawn\":1,\"foulsCommitted\":4,\"passingRate\":70,\"duelRate\":46,\"minutesPlayed\":90}",
+      "totalPoints": 146,
+      "tore": 2,
+      "value": 18,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33946": [
@@ -31958,6 +33368,11 @@
       "value": 1,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 52,
+      "value": 0,
+      "key": 23
     }
   ],
   "33943": [
@@ -32292,6 +33707,21 @@
       "value": 0,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":78,\"duelRate\":null,\"minutesPlayed\":90}",
+      "totalPoints": 76,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33823": [
@@ -32544,6 +33974,21 @@
       "tore": 0,
       "value": 5,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":97,\"duelRate\":57,\"minutesPlayed\":90}",
+      "totalPoints": 67,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -32849,6 +34294,21 @@
       "totalPoints": 74,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":70,\"duelRate\":25,\"minutesPlayed\":90}",
+      "totalPoints": 76,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33130": [
@@ -33143,6 +34603,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 91,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":78,\"duelRate\":67,\"minutesPlayed\":90}",
+      "totalPoints": 68,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "32162": [
@@ -33308,6 +34783,11 @@
       "totalPoints": -9,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": -9,
+      "value": 0,
+      "key": 23
     }
   ],
   "34341": [
@@ -33459,6 +34939,21 @@
       "tore": 0,
       "value": 4,
       "key": 22,
+      "status": "SUBOUT"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0.15,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 76,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":78,\"duelRate\":36,\"minutesPlayed\":76}",
+      "totalPoints": 13,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
       "status": "SUBOUT"
     }
   ],
@@ -33616,6 +35111,21 @@
       "value": 5,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":92,\"duelRate\":100,\"minutesPlayed\":90}",
+      "totalPoints": 22,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34340": [
@@ -33632,6 +35142,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "32280": [
@@ -33847,6 +35361,21 @@
       "totalPoints": 26,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 7.4,
+      "yellow": 0,
+      "xgoals": 0.3,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":86,\"duelRate\":46,\"minutesPlayed\":90}",
+      "totalPoints": 36,
+      "tore": 1,
+      "value": 10,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34107": [
@@ -33955,6 +35484,11 @@
       "totalPoints": 3,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 3,
+      "value": 0,
+      "key": 23
     }
   ],
   "34106": [
@@ -34090,6 +35624,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":1,\"passingRate\":74,\"duelRate\":60,\"minutesPlayed\":90}",
+      "totalPoints": 17,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33139": [
@@ -34404,9 +35953,27 @@
       "value": 3,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 5,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":100,\"duelRate\":null,\"minutesPlayed\":5}",
+      "totalPoints": 90,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
-  "34348": [],
+  "34348": [{
+    "value": 0,
+    "key": 23
+  }],
   "34226": [
     {
       "rating": 6.9,
@@ -34658,9 +36225,18 @@
       "totalPoints": 40,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 40,
+      "value": 0,
+      "key": 23
     }
   ],
-  "34347": [],
+  "34347": [{
+    "totalPoints": 0,
+    "value": 0,
+    "key": 23
+  }],
   "33258": [
     {
       "rating": 7.3,
@@ -34974,6 +36550,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0.01,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":81,\"duelRate\":33,\"minutesPlayed\":90}",
+      "totalPoints": 58,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34225": [
@@ -35089,6 +36680,21 @@
       "value": 4,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.2,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 64,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":82,\"duelRate\":50,\"minutesPlayed\":64}",
+      "totalPoints": 4,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33134": [
@@ -35248,6 +36854,11 @@
       "totalPoints": 10,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 10,
+      "value": 0,
+      "key": 23
     }
   ],
   "34345": [
@@ -35264,6 +36875,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33498": [
@@ -35597,6 +37212,21 @@
       "value": 5,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0.12,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 65,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":85,\"duelRate\":25,\"minutesPlayed\":65}",
+      "totalPoints": 94,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34344": [
@@ -35613,6 +37243,21 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 9,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":50,\"duelRate\":33,\"minutesPlayed\":9}",
+      "totalPoints": 2,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "33135": [
@@ -35765,6 +37410,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0.14,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 44,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":75,\"duelRate\":null,\"minutesPlayed\":44}",
+      "totalPoints": 7,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34101": [
@@ -35851,6 +37511,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33495": [
@@ -35933,6 +37597,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34343": [
@@ -35958,6 +37626,20 @@
       "xgoals": 0,
       "value": 0,
       "key": 22,
+      "status": "SUBIN"
+    },
+    {
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": -5,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":50,\"duelRate\":100,\"minutesPlayed\":1}",
+      "tore": 0,
+      "rating": 0,
+      "yellow": 0,
+      "xgoals": 0.02,
+      "value": 0,
+      "key": 23,
       "status": "SUBIN"
     }
   ],
@@ -36253,6 +37935,21 @@
       "value": 4,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 65,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":80,\"duelRate\":20,\"minutesPlayed\":65}",
+      "totalPoints": 73,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33254": [
@@ -36601,6 +38298,21 @@
       "value": 4,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0.15,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 65,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":67,\"duelRate\":60,\"minutesPlayed\":65}",
+      "totalPoints": 34,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33496": [
@@ -36794,6 +38506,21 @@
       "totalPoints": 40,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.1,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 40,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":93,\"duelRate\":null,\"minutesPlayed\":40}",
+      "totalPoints": 40,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34342": [
@@ -36946,6 +38673,21 @@
       "value": 0,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 62,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":100,\"duelRate\":43,\"minutesPlayed\":62}",
+      "totalPoints": 5,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34109": [
@@ -37240,6 +38982,21 @@
       "value": 5,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0.36,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 92,
+      "assists": 0,
+      "stats": "{\"shots\":4,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":72,\"duelRate\":14,\"minutesPlayed\":90}",
+      "totalPoints": 79,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34229": [
@@ -37474,6 +39231,11 @@
       "totalPoints": 41,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 41,
+      "value": 0,
+      "key": 23
     }
   ],
   "34330": [
@@ -37594,6 +39356,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33480": [
@@ -37753,6 +39519,11 @@
       "totalPoints": 11,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 11,
+      "value": 0,
+      "key": 23
     }
   ],
   "34217": [
@@ -38048,6 +39819,11 @@
       "value": 14,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 81,
+      "value": 0,
+      "key": 23
     }
   ],
   "34338": [
@@ -38089,6 +39865,11 @@
       "value": 1,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 1,
+      "value": 0,
+      "key": 23
     }
   ],
   "34216": [
@@ -38392,6 +40173,21 @@
       "totalPoints": 72,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0.02,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 14,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":null,\"duelRate\":null,\"minutesPlayed\":14}",
+      "totalPoints": 74,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34337": [
@@ -38412,6 +40208,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "32157": [
@@ -38720,6 +40520,21 @@
       "value": 5,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 0,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": -4,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":null,\"duelRate\":null,\"minutesPlayed\":1}",
+      "totalPoints": 100,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34215": [
@@ -38802,6 +40617,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34336": [
@@ -38822,6 +40641,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34214": [
@@ -38904,6 +40727,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33247": [
@@ -39049,6 +40876,21 @@
       "tore": 0,
       "value": 2,
       "key": 22,
+      "status": "SUBOUT"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 1,
+      "xgoals": 0.04,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 46,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":88,\"duelRate\":38,\"minutesPlayed\":46}",
+      "totalPoints": 19,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
       "status": "SUBOUT"
     }
   ],
@@ -39221,6 +41063,21 @@
       "value": 1,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 0,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 3,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":75,\"duelRate\":100,\"minutesPlayed\":3}",
+      "totalPoints": 8,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34213": [
@@ -39346,6 +41203,11 @@
       "totalPoints": 1,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 1,
+      "value": 0,
+      "key": 23
     }
   ],
   "34334": [
@@ -39366,6 +41228,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "32398": [
@@ -39699,6 +41565,21 @@
       "value": 4,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0.13,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":70,\"duelRate\":44,\"minutesPlayed\":90}",
+      "totalPoints": 99,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34333": [
@@ -39719,6 +41600,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34211": [
@@ -40043,6 +41928,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0.17,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 87,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":79,\"duelRate\":38,\"minutesPlayed\":87}",
+      "totalPoints": 76,
+      "tore": 1,
+      "value": 8,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "32395": [
@@ -40346,6 +42246,21 @@
       "value": 2,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.4,
+      "yellow": 0,
+      "xgoals": 0.46,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":3,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":74,\"duelRate\":50,\"minutesPlayed\":90}",
+      "totalPoints": 151,
+      "tore": 1,
+      "value": 10,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34332": [
@@ -40517,6 +42432,21 @@
       "value": 0,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7.1,
+      "yellow": 0,
+      "xgoals": 0.61,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 25,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":2,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":67,\"duelRate\":50,\"minutesPlayed\":25}",
+      "totalPoints": 11,
+      "tore": 1,
+      "value": 8,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34210": [
@@ -40599,6 +42529,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33364": [
@@ -40823,6 +42757,21 @@
       "value": 3,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.2,
+      "yellow": 0,
+      "xgoals": 0.24,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":57,\"duelRate\":25,\"minutesPlayed\":90}",
+      "totalPoints": 31,
+      "tore": 1,
+      "value": 8,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34331": [
@@ -40875,6 +42824,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 7.5,
+      "yellow": 1,
+      "xgoals": 0.33,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 81,
+      "assists": 0,
+      "stats": "{\"shots\":3,\"shotsOnGoal\":3,\"foulsDrawn\":null,\"foulsCommitted\":3,\"passingRate\":100,\"duelRate\":40,\"minutesPlayed\":81}",
+      "totalPoints": 17,
+      "tore": 1,
+      "value": 10,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34218": [
@@ -40957,6 +42921,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34339": [
@@ -40973,6 +42941,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "32380": [
@@ -41286,6 +43258,11 @@
       "value": 3,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 61,
+      "value": 0,
+      "key": 23
     }
   ],
   "34206": [
@@ -41600,6 +43577,11 @@
       "value": 5,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 87,
+      "value": 0,
+      "key": 23
     }
   ],
   "32269": [
@@ -41686,6 +43668,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34326": [
@@ -41724,6 +43710,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34204": [
@@ -41902,6 +43892,11 @@
       "totalPoints": 28,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 28,
+      "value": 0,
+      "key": 23
     }
   ],
   "32267": [
@@ -41992,6 +43987,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33356": [
@@ -42316,6 +44315,21 @@
       "value": 0,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7.1,
+      "yellow": 0,
+      "xgoals": 0.05,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":3,\"foulsCommitted\":1,\"passingRate\":74,\"duelRate\":57,\"minutesPlayed\":90}",
+      "totalPoints": 81,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33477": [
@@ -42629,6 +44643,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0.09,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 86,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":96,\"duelRate\":43,\"minutesPlayed\":86}",
+      "totalPoints": 81,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34325": [
@@ -42808,6 +44837,21 @@
       "value": 0,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 0,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": -1,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":null,\"duelRate\":null,\"minutesPlayed\":1}",
+      "totalPoints": 7,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34203": [
@@ -42890,6 +44934,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33236": [
@@ -43036,6 +45084,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0.45,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 78,
+      "assists": 0,
+      "stats": "{\"shots\":3,\"shotsOnGoal\":null,\"foulsDrawn\":3,\"foulsCommitted\":null,\"passingRate\":89,\"duelRate\":60,\"minutesPlayed\":78}",
+      "totalPoints": 16,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33478": [
@@ -43323,6 +45386,11 @@
       "value": 1,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 66,
+      "value": 0,
+      "key": 23
     }
   ],
   "34324": [
@@ -43521,6 +45589,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7.4,
+      "yellow": 0,
+      "xgoals": 0.47,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 30,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":100,\"duelRate\":100,\"minutesPlayed\":30}",
+      "totalPoints": 36,
+      "tore": 1,
+      "value": 9,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34202": [
@@ -43855,6 +45938,21 @@
       "value": 4,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":92,\"duelRate\":33,\"minutesPlayed\":90}",
+      "totalPoints": 81,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34323": [
@@ -44013,6 +46111,21 @@
       "totalPoints": 10,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 21,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":75,\"duelRate\":null,\"minutesPlayed\":21}",
+      "totalPoints": 12,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34201": [
@@ -44175,6 +46288,11 @@
       "totalPoints": 5,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 5,
+      "value": 0,
+      "key": 23
     }
   ],
   "34322": [
@@ -44295,6 +46413,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33110": [
@@ -44629,6 +46751,21 @@
       "value": 9,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0.03,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":68,\"duelRate\":50,\"minutesPlayed\":90}",
+      "totalPoints": 103,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34200": [
@@ -44942,6 +47079,21 @@
       "value": 4,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":83,\"duelRate\":80,\"minutesPlayed\":90}",
+      "totalPoints": 55,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34321": [
@@ -44974,6 +47126,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33353": [
@@ -45307,6 +47463,11 @@
       "value": 0,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 86,
+      "value": 0,
+      "key": 23
     }
   ],
   "34320": [
@@ -45465,6 +47626,11 @@
       "totalPoints": 6,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 6,
+      "value": 0,
+      "key": 23
     }
   ],
   "34209": [
@@ -45779,6 +47945,21 @@
       "totalPoints": 62,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0.05,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 37,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":30,\"duelRate\":50,\"minutesPlayed\":37}",
+      "totalPoints": 64,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34208": [
@@ -45869,6 +48050,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34329": [
@@ -45907,6 +48092,21 @@
       "tore": 0,
       "value": 4,
       "key": 22,
+      "status": "SUBOUT"
+    },
+    {
+      "rating": 6.1,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 64,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":60,\"duelRate\":33,\"minutesPlayed\":64}",
+      "totalPoints": 4,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
       "status": "SUBOUT"
     }
   ],
@@ -46067,6 +48267,11 @@
       "totalPoints": 7,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 7,
+      "value": 0,
+      "key": 23
     }
   ],
   "32492": [
@@ -46400,6 +48605,21 @@
       "value": 5,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.3,
+      "yellow": 0,
+      "xgoals": 0.35,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":5,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":3,\"passingRate\":77,\"duelRate\":47,\"minutesPlayed\":90}",
+      "totalPoints": 114,
+      "tore": 0,
+      "value": 6,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33105": [
@@ -46486,6 +48706,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34316": [
@@ -46634,6 +48858,11 @@
       "totalPoints": 7,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 7,
+      "value": 0,
+      "key": 23
     }
   ],
   "34315": [
@@ -46666,6 +48895,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33224": [
@@ -46894,6 +49127,11 @@
       "totalPoints": 53,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 53,
+      "value": 0,
+      "key": 23
     }
   ],
   "33345": [
@@ -47141,6 +49379,21 @@
       "totalPoints": 37,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.2,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 75,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":71,\"duelRate\":43,\"minutesPlayed\":75}",
+      "totalPoints": 37,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33466": [
@@ -47292,6 +49545,11 @@
       "totalPoints": 10,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 10,
+      "value": 0,
+      "key": 23
     }
   ],
   "33587": [
@@ -47567,6 +49825,11 @@
       "totalPoints": 50,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 50,
+      "value": 0,
+      "key": 23
     }
   ],
   "34314": [
@@ -47610,6 +49873,11 @@
       "value": 0,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 0,
+      "value": 0,
+      "key": 23
     }
   ],
   "34313": [
@@ -47642,6 +49910,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34312": [
@@ -47674,6 +49946,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34311": [
@@ -47811,6 +50087,11 @@
       "totalPoints": 9,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 9,
+      "value": 0,
+      "key": 23
     }
   ],
   "34310": [
@@ -47847,6 +50128,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33342": [
@@ -47933,6 +50218,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34319": [
@@ -48111,6 +50400,21 @@
       "value": 0,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.6,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":80,\"duelRate\":65,\"minutesPlayed\":90}",
+      "totalPoints": 7,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34318": [
@@ -48213,6 +50517,21 @@
       "tore": 1,
       "value": 9,
       "key": 22,
+      "status": "SUBOUT"
+    },
+    {
+      "rating": 6.2,
+      "yellow": 0,
+      "xgoals": 0.04,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 60,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":85,\"duelRate\":25,\"minutesPlayed\":60}",
+      "totalPoints": 26,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
       "status": "SUBOUT"
     }
   ],
@@ -48477,6 +50796,21 @@
       "value": 1,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":83,\"duelRate\":67,\"minutesPlayed\":90}",
+      "totalPoints": 32,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34317": [
@@ -48655,6 +50989,21 @@
       "tore": 0,
       "value": 0,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 7.2,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":86,\"duelRate\":80,\"minutesPlayed\":90}",
+      "totalPoints": 18,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -48919,6 +51268,11 @@
       "value": 5,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 23,
+      "value": 0,
+      "key": 23
     }
   ],
   "34305": [
@@ -49084,6 +51438,11 @@
       "totalPoints": 2,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 2,
+      "value": 0,
+      "key": 23
     }
   ],
   "34304": [
@@ -49257,6 +51616,21 @@
       "totalPoints": 9,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 0,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": -5,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":100,\"duelRate\":null,\"minutesPlayed\":1}",
+      "totalPoints": 9,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34303": [
@@ -49406,6 +51780,11 @@
       "totalPoints": 6,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 6,
+      "value": 0,
+      "key": 23
     }
   ],
   "33214": [
@@ -49835,6 +52214,21 @@
       "value": 8,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.1,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 60,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":65,\"duelRate\":20,\"minutesPlayed\":60}",
+      "totalPoints": 104,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33577": [
@@ -49988,6 +52382,11 @@
       "totalPoints": 20,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 20,
+      "value": 0,
+      "key": 23
     }
   ],
   "34302": [
@@ -50056,6 +52455,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "32122": [
@@ -50243,6 +52646,11 @@
       "value": 3,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 26,
+      "value": 0,
+      "key": 23
     }
   ],
   "33211": [
@@ -50369,6 +52777,11 @@
       "totalPoints": 7,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 7,
+      "value": 0,
+      "key": 23
     }
   ],
   "32364": [
@@ -50572,6 +52985,11 @@
       "totalPoints": 27,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 27,
+      "value": 0,
+      "key": 23
     }
   ],
   "33695": [
@@ -50724,6 +53142,21 @@
       "value": 16,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.1,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 82,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":4,\"foulsCommitted\":2,\"passingRate\":83,\"duelRate\":50,\"minutesPlayed\":82}",
+      "totalPoints": 23,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33575": [
@@ -51037,6 +53470,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0.13,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 14,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":57,\"duelRate\":null,\"minutesPlayed\":14}",
+      "totalPoints": 80,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34300": [
@@ -51121,6 +53569,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "32120": [
@@ -51315,6 +53767,21 @@
       "value": 0,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7,
+      "yellow": 1,
+      "xgoals": 0.31,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":92,\"duelRate\":70,\"minutesPlayed\":90}",
+      "totalPoints": 5,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34309": [
@@ -51373,6 +53840,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34308": [
@@ -51518,6 +53989,11 @@
       "totalPoints": 1,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 1,
+      "value": 0,
+      "key": 23
     }
   ],
   "32007": [
@@ -51604,6 +54080,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34307": [
@@ -51811,6 +54291,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 1,
+      "xgoals": 0.24,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":5,\"passingRate\":82,\"duelRate\":36,\"minutesPlayed\":90}",
+      "totalPoints": 37,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32129": [
@@ -52124,6 +54619,21 @@
       "value": 4,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.3,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":93,\"duelRate\":22,\"minutesPlayed\":90}",
+      "totalPoints": 65,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32591": [
@@ -52327,6 +54837,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 25,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":33,\"duelRate\":50,\"minutesPlayed\":25}",
+      "totalPoints": 34,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "33681": [
@@ -52413,6 +54938,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "32590": [
@@ -52680,6 +55209,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0.18,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 76,
+      "assists": 0,
+      "stats": "{\"shots\":3,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":80,\"duelRate\":43,\"minutesPlayed\":76}",
+      "totalPoints": 56,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "32236": [
@@ -52963,6 +55507,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0.07,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 26,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":64,\"duelRate\":75,\"minutesPlayed\":26}",
+      "totalPoints": 104,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "33567": [
@@ -53196,6 +55755,11 @@
       "totalPoints": 26,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 26,
+      "value": 0,
+      "key": 23
     }
   ],
   "32599": [
@@ -53318,6 +55882,11 @@
       "totalPoints": 2,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 2,
+      "value": 0,
+      "key": 23
     }
   ],
   "32597": [
@@ -53591,6 +56160,11 @@
       "totalPoints": 67,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 67,
+      "value": 0,
+      "key": 23
     }
   ],
   "32356": [
@@ -53925,6 +56499,21 @@
       "value": 1,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.2,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":42,\"duelRate\":100,\"minutesPlayed\":90}",
+      "totalPoints": 83,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33687": [
@@ -54249,6 +56838,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7.1,
+      "yellow": 0,
+      "xgoals": 0.09,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":97,\"duelRate\":60,\"minutesPlayed\":90}",
+      "totalPoints": 76,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33443": [
@@ -54339,6 +56943,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "32596": [
@@ -54643,6 +57251,11 @@
       "totalPoints": 43,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 43,
+      "value": 0,
+      "key": 23
     }
   ],
   "33564": [
@@ -54927,6 +57540,11 @@
       "value": 2,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 64,
+      "value": 0,
+      "key": 23
     }
   ],
   "33440": [
@@ -55260,6 +57878,21 @@
       "value": 3,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":58,\"duelRate\":null,\"minutesPlayed\":90}",
+      "totalPoints": 76,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32472": [
@@ -55592,6 +58225,21 @@
       "tore": 0,
       "value": 3,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0.03,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":96,\"duelRate\":80,\"minutesPlayed\":90}",
+      "totalPoints": 88,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -55987,6 +58635,21 @@
       "value": 11,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.3,
+      "yellow": 0,
+      "xgoals": 0.09,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 64,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":56,\"duelRate\":25,\"minutesPlayed\":64}",
+      "totalPoints": 98,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33207": [
@@ -56270,6 +58933,21 @@
       "value": 16,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0.19,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":87,\"duelRate\":47,\"minutesPlayed\":90}",
+      "totalPoints": 116,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32581": [
@@ -56422,6 +59100,11 @@
       "totalPoints": 3,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 3,
+      "value": 0,
+      "key": 23
     }
   ],
   "33791": [
@@ -56665,6 +59348,11 @@
       "totalPoints": 34,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 34,
+      "value": 0,
+      "key": 23
     }
   ],
   "33436": [
@@ -56989,6 +59677,21 @@
       "totalPoints": 137,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 7.4,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":85,\"duelRate\":14,\"minutesPlayed\":90}",
+      "totalPoints": 143,
+      "tore": 0,
+      "value": 6,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33557": [
@@ -57252,6 +59955,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.3,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 52,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":86,\"duelRate\":29,\"minutesPlayed\":52}",
+      "totalPoints": 61,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33797": [
@@ -57555,6 +60273,11 @@
       "value": 0,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 39,
+      "value": 0,
+      "key": 23
     }
   ],
   "33313": [
@@ -57645,6 +60368,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33552": [
@@ -57942,6 +60669,21 @@
       "value": 3,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0.02,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":88,\"duelRate\":57,\"minutesPlayed\":90}",
+      "totalPoints": 87,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33673": [
@@ -58165,6 +60907,11 @@
       "totalPoints": 29,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 29,
+      "value": 0,
+      "key": 23
     }
   ],
   "33311": [
@@ -58408,6 +61155,21 @@
       "value": 16,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0.09,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":2,\"foulsCommitted\":1,\"passingRate\":73,\"duelRate\":25,\"minutesPlayed\":90}",
+      "totalPoints": 77,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33553": [
@@ -58546,6 +61308,21 @@
       "totalPoints": 13,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 25,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":3,\"foulsCommitted\":null,\"passingRate\":100,\"duelRate\":75,\"minutesPlayed\":25}",
+      "totalPoints": 15,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "32461": [
@@ -58694,6 +61471,21 @@
       "value": 4,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.2,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 8,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":75,\"duelRate\":null,\"minutesPlayed\":8}",
+      "totalPoints": 8,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "33550": [
@@ -58989,6 +61781,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 7.5,
+      "yellow": 0,
+      "xgoals": 0.22,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 85,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":2,\"foulsDrawn\":2,\"foulsCommitted\":2,\"passingRate\":81,\"duelRate\":63,\"minutesPlayed\":85}",
+      "totalPoints": 54,
+      "tore": 0,
+      "value": 7,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33439": [
@@ -59321,6 +62128,21 @@
       "tore": 0,
       "value": 4,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":38,\"duelRate\":100,\"minutesPlayed\":90}",
+      "totalPoints": 86,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -59798,6 +62620,21 @@
       "value": 5,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 78,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":84,\"duelRate\":67,\"minutesPlayed\":78}",
+      "totalPoints": 114,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33559": [
@@ -59988,6 +62825,11 @@
       "totalPoints": 18,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 18,
+      "value": 0,
+      "key": 23
     }
   ],
   "33787": [
@@ -60283,6 +63125,11 @@
       "value": 4,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 55,
+      "value": 0,
+      "key": 23
     }
   ],
   "32457": [
@@ -60545,6 +63392,21 @@
       "tore": 0,
       "value": 3,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":72,\"duelRate\":70,\"minutesPlayed\":90}",
+      "totalPoints": 20,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -60880,6 +63742,21 @@
       "value": 6,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":83,\"duelRate\":100,\"minutesPlayed\":90}",
+      "totalPoints": 81,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32575": [
@@ -61214,6 +64091,11 @@
       "value": 2,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 77,
+      "value": 0,
+      "key": 23
     }
   ],
   "32696": [
@@ -61499,6 +64381,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0.74,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 12,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":100,\"duelRate\":100,\"minutesPlayed\":12}",
+      "totalPoints": 98,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "33786": [
@@ -61585,6 +64482,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "32452": [
@@ -61898,6 +64799,21 @@
       "tore": 0,
       "value": 8,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0.28,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":83,\"duelRate\":64,\"minutesPlayed\":90}",
+      "totalPoints": 113,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -62214,6 +65130,11 @@
       "value": 5,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 62,
+      "value": 0,
+      "key": 23
     }
   ],
   "33783": [
@@ -62515,6 +65436,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0.61,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":3,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":3,\"passingRate\":55,\"duelRate\":22,\"minutesPlayed\":90}",
+      "totalPoints": 86,
+      "tore": 1,
+      "value": 7,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32693": [
@@ -62809,6 +65745,11 @@
       "totalPoints": 70,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 70,
+      "value": 0,
+      "key": 23
     }
   ],
   "33782": [
@@ -63074,6 +66015,21 @@
       "value": 6,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":90,\"duelRate\":14,\"minutesPlayed\":90}",
+      "totalPoints": 48,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32579": [
@@ -63286,6 +66242,11 @@
       "value": 3,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 16,
+      "value": 0,
+      "key": 23
     }
   ],
   "33669": [
@@ -63457,6 +66418,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":71,\"duelRate\":60,\"minutesPlayed\":90}",
+      "totalPoints": 21,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34066": [
@@ -63543,6 +66519,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34187": [
@@ -63846,6 +66826,21 @@
       "totalPoints": 85,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0.06,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 83,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":87,\"duelRate\":82,\"minutesPlayed\":83}",
+      "totalPoints": 89,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34186": [
@@ -64129,6 +67124,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 28,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":79,\"duelRate\":33,\"minutesPlayed\":28}",
+      "totalPoints": 38,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34185": [
@@ -64423,6 +67433,21 @@
       "totalPoints": 42,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 8,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":57,\"duelRate\":null,\"minutesPlayed\":8}",
+      "totalPoints": 43,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34063": [
@@ -64725,6 +67750,21 @@
       "tore": 1,
       "value": 11,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 8.1,
+      "yellow": 0,
+      "xgoals": 0.2,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":3,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":89,\"duelRate\":43,\"minutesPlayed\":90}",
+      "totalPoints": 106,
+      "tore": 0,
+      "value": 9,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -65029,6 +68069,21 @@
       "value": 2,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 79,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":71,\"duelRate\":60,\"minutesPlayed\":79}",
+      "totalPoints": 63,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34184": [
@@ -65312,6 +68367,21 @@
       "value": 0,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0.04,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 79,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":3,\"passingRate\":77,\"duelRate\":20,\"minutesPlayed\":79}",
+      "totalPoints": 68,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34062": [
@@ -65497,6 +68567,11 @@
       "totalPoints": 30,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 30,
+      "value": 0,
+      "key": 23
     }
   ],
   "33093": [
@@ -65750,6 +68825,11 @@
       "totalPoints": 22,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 22,
+      "value": 0,
+      "key": 23
     }
   ],
   "34183": [
@@ -65893,6 +68973,11 @@
       "value": 2,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 6,
+      "value": 0,
+      "key": 23
     }
   ],
   "34061": [
@@ -66206,6 +69291,21 @@
       "value": 3,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.2,
+      "yellow": 0,
+      "xgoals": 0.03,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":82,\"duelRate\":75,\"minutesPlayed\":90}",
+      "totalPoints": 43,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34189": [
@@ -66511,6 +69611,21 @@
       "tore": 0,
       "value": 2,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":72,\"duelRate\":75,\"minutesPlayed\":90}",
+      "totalPoints": 54,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -66835,6 +69950,21 @@
       "value": 2,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.3,
+      "yellow": 0,
+      "xgoals": 0.37,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":70,\"duelRate\":67,\"minutesPlayed\":90}",
+      "totalPoints": 93,
+      "tore": 1,
+      "value": 11,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34297": [
@@ -67098,6 +70228,11 @@
       "value": 0,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 47,
+      "value": 0,
+      "key": 23
     }
   ],
   "34296": [
@@ -67370,6 +70505,21 @@
       "tore": 0,
       "value": 6,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 7.7,
+      "yellow": 0,
+      "xgoals": 0.21,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":5,\"shotsOnGoal\":3,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":83,\"duelRate\":57,\"minutesPlayed\":90}",
+      "totalPoints": 91,
+      "tore": 1,
+      "value": 12,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -67675,6 +70825,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0.03,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 9,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":25,\"duelRate\":25,\"minutesPlayed\":9}",
+      "totalPoints": 55,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34052": [
@@ -67761,6 +70926,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33085": [
@@ -68074,6 +71243,21 @@
       "value": 5,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 12,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":100,\"duelRate\":50,\"minutesPlayed\":12}",
+      "totalPoints": 62,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34294": [
@@ -68346,6 +71530,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":81,\"duelRate\":82,\"minutesPlayed\":90}",
+      "totalPoints": 53,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34051": [
@@ -68504,6 +71703,21 @@
       "tore": 1,
       "value": 11,
       "key": 22,
+      "status": "SUBIN"
+    },
+    {
+      "rating": 0,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": -2,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":100,\"duelRate\":100,\"minutesPlayed\":1}",
+      "totalPoints": 18,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
       "status": "SUBIN"
     }
   ],
@@ -68708,6 +71922,11 @@
       "totalPoints": 20,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 20,
+      "value": 0,
+      "key": 23
     }
   ],
   "34050": [
@@ -68886,6 +72105,11 @@
       "totalPoints": 11,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 11,
+      "value": 0,
+      "key": 23
     }
   ],
   "34171": [
@@ -69219,6 +72443,21 @@
       "value": 4,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 81,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":4,\"foulsCommitted\":null,\"passingRate\":86,\"duelRate\":70,\"minutesPlayed\":81}",
+      "totalPoints": 82,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34292": [
@@ -69382,6 +72621,11 @@
       "totalPoints": 11,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 11,
+      "value": 0,
+      "key": 23
     }
   ],
   "34291": [
@@ -69559,6 +72803,11 @@
       "totalPoints": 12,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 12,
+      "value": 0,
+      "key": 23
     }
   ],
   "34290": [
@@ -69831,6 +73080,11 @@
       "totalPoints": 75,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 75,
+      "value": 0,
+      "key": 23
     }
   ],
   "34059": [
@@ -70154,6 +73408,21 @@
       "value": 11,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 1,
+      "xgoals": 0.49,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 86,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":53,\"duelRate\":52,\"minutesPlayed\":86}",
+      "totalPoints": 72,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34057": [
@@ -70407,6 +73676,11 @@
       "totalPoints": 55,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 55,
+      "value": 0,
+      "key": 23
     }
   ],
   "34299": [
@@ -70713,6 +73987,21 @@
       "value": 4,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.9,
+      "yellow": 0,
+      "xgoals": 0.03,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":92,\"duelRate\":50,\"minutesPlayed\":90}",
+      "totalPoints": 81,
+      "tore": 0,
+      "value": 8,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34056": [
@@ -70906,6 +74195,21 @@
       "value": 5,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0.44,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 95,
+      "assists": 0,
+      "stats": "{\"shots\":3,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":96,\"duelRate\":40,\"minutesPlayed\":90}",
+      "totalPoints": 27,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34298": [
@@ -71192,6 +74496,21 @@
       "value": 6,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 79,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":90,\"duelRate\":60,\"minutesPlayed\":79}",
+      "totalPoints": 50,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34044": [
@@ -71497,6 +74816,11 @@
       "value": 1,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 57,
+      "value": 0,
+      "key": 23
     }
   ],
   "34286": [
@@ -71730,6 +75054,11 @@
       "totalPoints": 27,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 27,
+      "value": 0,
+      "key": 23
     }
   ],
   "34043": [
@@ -72033,6 +75362,11 @@
       "totalPoints": 66,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 66,
+      "value": 0,
+      "key": 23
     }
   ],
   "34285": [
@@ -72215,6 +75549,11 @@
       "totalPoints": 18,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 18,
+      "value": 0,
+      "key": 23
     }
   ],
   "34042": [
@@ -72305,6 +75644,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34284": [
@@ -72393,6 +75736,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34283": [
@@ -72663,6 +76010,21 @@
       "tore": 0,
       "value": 2,
       "key": 22,
+      "status": "SUBIN"
+    },
+    {
+      "rating": 7.2,
+      "yellow": 1,
+      "xgoals": 0.42,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 19,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":75,\"duelRate\":25,\"minutesPlayed\":19}",
+      "totalPoints": 49,
+      "tore": 1,
+      "value": 8,
+      "key": 23,
       "status": "SUBIN"
     }
   ],
@@ -73045,6 +76407,11 @@
       "value": 4,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 119,
+      "value": 0,
+      "key": 23
     }
   ],
   "34160": [
@@ -73423,6 +76790,21 @@
       "value": 3,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.1,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 95,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":86,\"duelRate\":40,\"minutesPlayed\":90}",
+      "totalPoints": 25,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34280": [
@@ -73668,6 +77050,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 60,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":67,\"duelRate\":33,\"minutesPlayed\":60}",
+      "totalPoints": 36,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33070": [
@@ -73951,6 +77348,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0.7,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":5,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":2,\"passingRate\":48,\"duelRate\":45,\"minutesPlayed\":90}",
+      "totalPoints": 42,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34048": [
@@ -74264,6 +77676,21 @@
       "tore": 0,
       "value": 5,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":81,\"duelRate\":70,\"minutesPlayed\":90}",
+      "totalPoints": 68,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -74588,6 +78015,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7.1,
+      "yellow": 0,
+      "xgoals": 0.88,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":4,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":70,\"duelRate\":42,\"minutesPlayed\":90}",
+      "totalPoints": 121,
+      "tore": 1,
+      "value": 8,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34289": [
@@ -74811,6 +78253,21 @@
       "totalPoints": 37,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0.09,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 61,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":89,\"duelRate\":57,\"minutesPlayed\":61}",
+      "totalPoints": 40,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33198": [
@@ -75052,6 +78509,11 @@
       "totalPoints": 29,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 29,
+      "value": 0,
+      "key": 23
     }
   ],
   "34288": [
@@ -75325,6 +78787,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 7.4,
+      "yellow": 1,
+      "xgoals": 0.2,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 66,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":87,\"duelRate\":60,\"minutesPlayed\":66}",
+      "totalPoints": 99,
+      "tore": 0,
+      "value": 6,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34287": [
@@ -75520,6 +78997,11 @@
       "totalPoints": 35,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 35,
+      "value": 0,
+      "key": 23
     }
   ],
   "34033": [
@@ -75767,6 +79249,21 @@
       "totalPoints": 61,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 26,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":75,\"duelRate\":null,\"minutesPlayed\":26}",
+      "totalPoints": 63,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "33185": [
@@ -76070,6 +79567,11 @@
       "value": 1,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 62,
+      "value": 0,
+      "key": 23
     }
   ],
   "34275": [
@@ -76375,6 +79877,21 @@
       "value": 4,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":75,\"duelRate\":50,\"minutesPlayed\":90}",
+      "totalPoints": 79,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34032": [
@@ -76461,6 +79978,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34274": [
@@ -76593,6 +80114,11 @@
       "totalPoints": 14,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 14,
+      "value": 0,
+      "key": 23
     }
   ],
   "34030": [
@@ -76683,6 +80209,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34272": [
@@ -76975,6 +80505,21 @@
       "totalPoints": 70,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0.04,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 68,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":82,\"duelRate\":63,\"minutesPlayed\":68}",
+      "totalPoints": 73,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34150": [
@@ -77238,6 +80783,21 @@
       "tore": 0,
       "value": -6,
       "key": 22,
+      "status": "SUBIN"
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 25,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":50,\"duelRate\":50,\"minutesPlayed\":25}",
+      "totalPoints": 20,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
       "status": "SUBIN"
     }
   ],
@@ -77533,6 +81093,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 1,
+      "xgoals": 0.23,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 81,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":83,\"duelRate\":58,\"minutesPlayed\":81}",
+      "totalPoints": 90,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34270": [
@@ -77692,6 +81267,21 @@
       "tore": 0,
       "value": 3,
       "key": 22,
+      "status": "SUBIN"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0.12,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 28,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":83,\"duelRate\":50,\"minutesPlayed\":28}",
+      "totalPoints": 13,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
       "status": "SUBIN"
     }
   ],
@@ -77997,6 +81587,21 @@
       "value": 7,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0.22,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 25,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":3,\"foulsCommitted\":null,\"passingRate\":73,\"duelRate\":67,\"minutesPlayed\":25}",
+      "totalPoints": 101,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34158": [
@@ -78321,6 +81926,21 @@
       "value": 16,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0.09,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 87,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":85,\"duelRate\":42,\"minutesPlayed\":87}",
+      "totalPoints": 75,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33189": [
@@ -78493,6 +82113,11 @@
       "value": 5,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 16,
+      "value": 0,
+      "key": 23
     }
   ],
   "34279": [
@@ -78797,6 +82422,21 @@
       "tore": 0,
       "value": 0,
       "key": 22,
+      "status": "SUBOUT"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 1,
+      "xgoals": 0.15,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 53,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":78,\"duelRate\":20,\"minutesPlayed\":53}",
+      "totalPoints": 49,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
       "status": "SUBOUT"
     }
   ],
@@ -79128,6 +82768,11 @@
       "totalPoints": 19,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 19,
+      "value": 0,
+      "key": 23
     }
   ],
   "34277": [
@@ -79321,6 +82966,21 @@
       "value": 6,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 29,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":89,\"duelRate\":null,\"minutesPlayed\":29}",
+      "totalPoints": 39,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34034": [
@@ -79635,6 +83295,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0.03,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 17,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":92,\"duelRate\":60,\"minutesPlayed\":17}",
+      "totalPoints": 53,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34155": [
@@ -79901,6 +83576,11 @@
       "value": 1,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 77,
+      "value": 0,
+      "key": 23
     }
   ],
   "34276": [
@@ -80226,6 +83906,11 @@
       "value": 1,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 52,
+      "value": 0,
+      "key": 23
     }
   ],
   "34022": [
@@ -80519,6 +84204,11 @@
       "totalPoints": 77,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 77,
+      "value": 0,
+      "key": 23
     }
   ],
   "33053": [
@@ -80605,6 +84295,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34264": [
@@ -80908,6 +84602,21 @@
       "value": 16,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 29,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":73,\"duelRate\":50,\"minutesPlayed\":29}",
+      "totalPoints": 92,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34021": [
@@ -81064,6 +84773,21 @@
       "tore": 0,
       "value": 2,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":83,\"duelRate\":50,\"minutesPlayed\":90}",
+      "totalPoints": 22,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -81358,6 +85082,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0.07,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 4,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":50,\"duelRate\":null,\"minutesPlayed\":4}",
+      "totalPoints": 46,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34263": [
@@ -81605,6 +85344,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 1,
+      "xgoals": 0.12,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":74,\"duelRate\":50,\"minutesPlayed\":90}",
+      "totalPoints": 31,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34141": [
@@ -81691,6 +85445,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34262": [
@@ -81777,6 +85535,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34261": [
@@ -81926,6 +85688,11 @@
       "totalPoints": 6,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 6,
+      "value": 0,
+      "key": 23
     }
   ],
   "34260": [
@@ -82012,6 +85779,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "32080": [
@@ -82302,6 +86073,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 1,
+      "xgoals": 0.02,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 22,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":87,\"duelRate\":null,\"minutesPlayed\":22}",
+      "totalPoints": 78,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34027": [
@@ -82585,6 +86371,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 7.2,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 69,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":81,\"duelRate\":56,\"minutesPlayed\":69}",
+      "totalPoints": 79,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34148": [
@@ -82908,6 +86709,21 @@
       "value": 3,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 88,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":4,\"foulsCommitted\":1,\"passingRate\":70,\"duelRate\":67,\"minutesPlayed\":88}",
+      "totalPoints": 101,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34269": [
@@ -82998,6 +86814,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34147": [
@@ -83410,6 +87230,11 @@
       "value": 2,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 86,
+      "value": 0,
+      "key": 23
     }
   ],
   "34146": [
@@ -83672,6 +87497,21 @@
       "tore": 0,
       "value": 0,
       "key": 22,
+      "status": "SUBIN"
+    },
+    {
+      "rating": 0,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 3,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":null,\"duelRate\":100,\"minutesPlayed\":3}",
+      "totalPoints": 35,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
       "status": "SUBIN"
     }
   ],
@@ -83957,6 +87797,21 @@
       "value": 9,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0.46,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 30,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":50,\"duelRate\":75,\"minutesPlayed\":30}",
+      "totalPoints": 87,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34267": [
@@ -84149,6 +88004,21 @@
       "totalPoints": 15,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":81,\"duelRate\":44,\"minutesPlayed\":90}",
+      "totalPoints": 19,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34024": [
@@ -84376,6 +88246,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.3,
+      "yellow": 0,
+      "xgoals": 0.05,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 9,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":100,\"duelRate\":null,\"minutesPlayed\":9}",
+      "totalPoints": 52,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34145": [
@@ -84462,6 +88347,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34144": [
@@ -84548,6 +88437,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33298": [
@@ -84634,6 +88527,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34265": [
@@ -84720,6 +88617,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34011": [
@@ -84806,6 +88707,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34253": [
@@ -85082,6 +88987,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":81,\"duelRate\":73,\"minutesPlayed\":90}",
+      "totalPoints": 62,
+      "tore": 0,
+      "value": 7,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34251": [
@@ -85172,6 +89092,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "32073": [
@@ -85495,6 +89419,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0.17,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":3,\"passingRate\":46,\"duelRate\":27,\"minutesPlayed\":90}",
+      "totalPoints": 94,
+      "tore": 1,
+      "value": 8,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32071": [
@@ -85828,6 +89767,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 7.2,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 79,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":90,\"duelRate\":67,\"minutesPlayed\":79}",
+      "totalPoints": 110,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34019": [
@@ -86091,6 +90045,21 @@
       "totalPoints": 17,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 77,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":93,\"duelRate\":17,\"minutesPlayed\":77}",
+      "totalPoints": 18,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34139": [
@@ -86424,6 +90393,21 @@
       "value": 0,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 7.6,
+      "yellow": 0,
+      "xgoals": 0.37,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 85,
+      "assists": 0,
+      "stats": "{\"shots\":3,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":71,\"duelRate\":36,\"minutesPlayed\":85}",
+      "totalPoints": 104,
+      "tore": 1,
+      "value": 10,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34017": [
@@ -86716,6 +90700,21 @@
       "value": 6,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.3,
+      "yellow": 0,
+      "xgoals": 0.15,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":4,\"passingRate\":89,\"duelRate\":33,\"minutesPlayed\":90}",
+      "totalPoints": 69,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34138": [
@@ -86802,6 +90801,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34259": [
@@ -87085,6 +91088,21 @@
       "value": 4,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 0,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 2,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":100,\"duelRate\":100,\"minutesPlayed\":2}",
+      "totalPoints": 27,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34016": [
@@ -87207,6 +91225,11 @@
       "totalPoints": 2,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 2,
+      "value": 0,
+      "key": 23
     }
   ],
   "34258": [
@@ -87390,6 +91413,21 @@
       "totalPoints": 16,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 7.2,
+      "yellow": 0,
+      "xgoals": 0.06,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":2,\"foulsCommitted\":1,\"passingRate\":86,\"duelRate\":45,\"minutesPlayed\":90}",
+      "totalPoints": 21,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34015": [
@@ -87693,6 +91731,21 @@
       "value": 9,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 82,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":74,\"duelRate\":40,\"minutesPlayed\":82}",
+      "totalPoints": 106,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33167": [
@@ -87939,6 +91992,21 @@
       "value": 13,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7,
+      "yellow": 1,
+      "xgoals": 0.26,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":3,\"foulsCommitted\":4,\"passingRate\":70,\"duelRate\":50,\"minutesPlayed\":90}",
+      "totalPoints": 78,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33288": [
@@ -88133,6 +92201,11 @@
       "value": 4,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 24,
+      "value": 0,
+      "key": 23
     }
   ],
   "34257": [
@@ -88467,6 +92540,21 @@
       "value": 11,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7.7,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":65,\"duelRate\":86,\"minutesPlayed\":90}",
+      "totalPoints": 113,
+      "tore": 0,
+      "value": 8,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34014": [
@@ -88790,6 +92878,21 @@
       "totalPoints": 178,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 8.2,
+      "yellow": 0,
+      "xgoals": 0.52,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 94,
+      "assists": 0,
+      "stats": "{\"shots\":6,\"shotsOnGoal\":1,\"foulsDrawn\":2,\"foulsCommitted\":2,\"passingRate\":86,\"duelRate\":58,\"minutesPlayed\":90}",
+      "totalPoints": 187,
+      "tore": 0,
+      "value": 9,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34135": [
@@ -89023,6 +93126,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":65,\"duelRate\":50,\"minutesPlayed\":90}",
+      "totalPoints": 23,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34256": [
@@ -89348,6 +93466,21 @@
       "value": 5,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":5,\"foulsCommitted\":null,\"passingRate\":72,\"duelRate\":54,\"minutesPlayed\":90}",
+      "totalPoints": 60,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33286": [
@@ -89630,6 +93763,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0.03,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 25,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":86,\"duelRate\":50,\"minutesPlayed\":25}",
+      "totalPoints": 71,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34255": [
@@ -89780,6 +93928,11 @@
       "totalPoints": 9,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 9,
+      "value": 0,
+      "key": 23
     }
   ],
   "34254": [
@@ -90102,6 +94255,21 @@
       "tore": 0,
       "value": 7,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 7.5,
+      "yellow": 0,
+      "xgoals": 0.18,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":88,\"duelRate\":63,\"minutesPlayed\":90}",
+      "totalPoints": 181,
+      "tore": 0,
+      "value": 7,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -90437,6 +94605,21 @@
       "value": 4,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.1,
+      "yellow": 0,
+      "xgoals": 0.07,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":67,\"duelRate\":70,\"minutesPlayed\":90}",
+      "totalPoints": 99,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34242": [
@@ -90741,6 +94924,21 @@
       "value": 9,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 73,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":82,\"duelRate\":33,\"minutesPlayed\":73}",
+      "totalPoints": 113,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34241": [
@@ -91074,6 +95272,21 @@
       "value": -3,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 69,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":87,\"duelRate\":57,\"minutesPlayed\":69}",
+      "totalPoints": 48,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33271": [
@@ -91160,6 +95373,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34240": [
@@ -91416,6 +95633,11 @@
       "value": 3,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 50,
+      "value": 0,
+      "key": 23
     }
   ],
   "33270": [
@@ -91710,6 +95932,11 @@
       "totalPoints": 91,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 91,
+      "value": 0,
+      "key": 23
     }
   ],
   "34008": [
@@ -91963,6 +96190,11 @@
       "totalPoints": 79,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 79,
+      "value": 0,
+      "key": 23
     }
   ],
   "34006": [
@@ -92226,6 +96458,11 @@
       "totalPoints": 36,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 36,
+      "value": 0,
+      "key": 23
     }
   ],
   "33158": [
@@ -92369,6 +96606,11 @@
       "totalPoints": 5,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 5,
+      "value": 0,
+      "key": 23
     }
   ],
   "34248": [
@@ -92455,6 +96697,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34005": [
@@ -92985,6 +97231,11 @@
       "totalPoints": 120,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 120,
+      "value": 0,
+      "key": 23
     }
   ],
   "34247": [
@@ -93071,6 +97322,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33035": [
@@ -93383,6 +97638,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 71,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":75,\"duelRate\":40,\"minutesPlayed\":71}",
+      "totalPoints": 60,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33156": [
@@ -93664,6 +97934,21 @@
       "value": 0,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":94,\"duelRate\":40,\"minutesPlayed\":90}",
+      "totalPoints": 49,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33157": [
@@ -93915,6 +98200,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 77,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":98,\"duelRate\":60,\"minutesPlayed\":77}",
+      "totalPoints": 30,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34245": [
@@ -94005,6 +98305,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34244": [
@@ -94095,6 +98399,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34001": [
@@ -94400,6 +98708,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":3,\"foulsCommitted\":1,\"passingRate\":90,\"duelRate\":80,\"minutesPlayed\":90}",
+      "totalPoints": 51,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34122": [
@@ -94486,6 +98809,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "32187": [
@@ -94791,6 +99118,21 @@
       "value": 11,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 0,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": -4,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":null,\"duelRate\":null,\"minutesPlayed\":1}",
+      "totalPoints": 88,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34243": [
@@ -95095,6 +99437,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0.03,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":83,\"duelRate\":29,\"minutesPlayed\":90}",
+      "totalPoints": 76,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34009": [
@@ -95428,6 +99785,21 @@
       "value": 1,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":79,\"duelRate\":70,\"minutesPlayed\":90}",
+      "totalPoints": 96,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33141": [
@@ -95741,6 +100113,21 @@
       "tore": 0,
       "value": 12,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 7.1,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":4,\"passingRate\":81,\"duelRate\":44,\"minutesPlayed\":90}",
+      "totalPoints": 87,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -96056,6 +100443,11 @@
       "value": 9,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 80,
+      "value": 0,
+      "key": 23
     }
   ],
   "34231": [
@@ -96227,6 +100619,11 @@
       "totalPoints": 9,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 9,
+      "value": 0,
+      "key": 23
     }
   ],
   "33021": [
@@ -96397,6 +100794,21 @@
       "value": 4,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 50,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":100,\"duelRate\":60,\"minutesPlayed\":50}",
+      "totalPoints": 23,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33263": [
@@ -96720,6 +101132,21 @@
       "value": 10,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.5,
+      "yellow": 0,
+      "xgoals": 0.29,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 85,
+      "assists": 0,
+      "stats": "{\"shots\":3,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":86,\"duelRate\":33,\"minutesPlayed\":85}",
+      "totalPoints": 100,
+      "tore": 1,
+      "value": 10,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34230": [
@@ -96863,6 +101290,11 @@
       "totalPoints": 6,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 6,
+      "value": 0,
+      "key": 23
     }
   ],
   "32290": [
@@ -97196,6 +101628,21 @@
       "value": 4,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.3,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":63,\"duelRate\":null,\"minutesPlayed\":90}",
+      "totalPoints": 98,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34239": [
@@ -97520,6 +101967,11 @@
       "value": 0,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 47,
+      "value": 0,
+      "key": 23
     }
   ],
   "34238": [
@@ -97707,6 +102159,11 @@
       "totalPoints": 13,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 13,
+      "value": 0,
+      "key": 23
     }
   ],
   "34117": [
@@ -98011,6 +102468,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 25,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":89,\"duelRate\":75,\"minutesPlayed\":25}",
+      "totalPoints": 56,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "33026": [
@@ -98247,6 +102719,21 @@
       "tore": 1,
       "value": 14,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 7.8,
+      "yellow": 0,
+      "xgoals": 0.56,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":3,\"shotsOnGoal\":2,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":87,\"duelRate\":60,\"minutesPlayed\":90}",
+      "totalPoints": 75,
+      "tore": 1,
+      "value": 13,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -98485,6 +102972,11 @@
       "totalPoints": 30,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 30,
+      "value": 0,
+      "key": 23
     }
   ],
   "34237": [
@@ -98809,6 +103301,21 @@
       "value": 13,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.6,
+      "yellow": 0,
+      "xgoals": 0.18,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 94,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":94,\"duelRate\":50,\"minutesPlayed\":90}",
+      "totalPoints": 146,
+      "tore": 0,
+      "value": 7,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34115": [
@@ -99087,6 +103594,11 @@
       "value": 0,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 45,
+      "value": 0,
+      "key": 23
     }
   ],
   "34236": [
@@ -99420,6 +103932,21 @@
       "value": 4,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0.02,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 68,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":83,\"duelRate\":29,\"minutesPlayed\":68}",
+      "totalPoints": 84,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34114": [
@@ -99753,6 +104280,21 @@
       "value": 3,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":70,\"duelRate\":50,\"minutesPlayed\":90}",
+      "totalPoints": 86,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34235": [
@@ -100047,6 +104589,11 @@
       "totalPoints": 49,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 49,
+      "value": 0,
+      "key": 23
     }
   ],
   "32178": [
@@ -100330,6 +104877,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":78,\"duelRate\":100,\"minutesPlayed\":90}",
+      "totalPoints": 40,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34234": [
@@ -100623,6 +105185,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 60,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":91,\"duelRate\":33,\"minutesPlayed\":60}",
+      "totalPoints": 64,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "34113": [
@@ -100784,6 +105361,11 @@
       "totalPoints": -1,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": -1,
+      "value": 0,
+      "key": 23
     }
   ],
   "34112": [
@@ -100957,6 +105539,11 @@
       "totalPoints": 23,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 23,
+      "value": 0,
+      "key": 23
     }
   ],
   "34233": [
@@ -101252,6 +105839,21 @@
       "value": 10,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.7,
+      "yellow": 0,
+      "xgoals": 0.04,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":4,\"foulsCommitted\":1,\"passingRate\":90,\"duelRate\":56,\"minutesPlayed\":90}",
+      "totalPoints": 75,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34111": [
@@ -101594,6 +106196,21 @@
       "value": 4,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 7.4,
+      "yellow": 0,
+      "xgoals": 0.03,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":88,\"duelRate\":75,\"minutesPlayed\":90}",
+      "totalPoints": 80,
+      "tore": 0,
+      "value": 6,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34232": [
@@ -101684,6 +106301,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34119": [
@@ -101774,6 +106395,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "32841": [
@@ -101860,6 +106485,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "32720": [
@@ -102145,6 +106774,21 @@
       "totalPoints": 74,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 7.1,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":96,\"duelRate\":67,\"minutesPlayed\":90}",
+      "totalPoints": 79,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32842": [
@@ -102396,6 +107040,11 @@
       "value": 0,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 25,
+      "value": 0,
+      "key": 23
     }
   ],
   "32961": [
@@ -102677,6 +107326,21 @@
       "value": 0,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 1,
+      "xgoals": 0.74,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":2,\"foulsDrawn\":2,\"foulsCommitted\":2,\"passingRate\":50,\"duelRate\":33,\"minutesPlayed\":90}",
+      "totalPoints": 61,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33817": [
@@ -102949,6 +107613,21 @@
       "tore": 0,
       "value": 6,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0.05,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":77,\"duelRate\":40,\"minutesPlayed\":90}",
+      "totalPoints": 63,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -103273,6 +107952,21 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 28,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":83,\"duelRate\":33,\"minutesPlayed\":28}",
+      "totalPoints": 68,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "33815": [
@@ -103502,6 +108196,11 @@
       "value": 0,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 16,
+      "value": 0,
+      "key": 23
     }
   ],
   "32603": [
@@ -103817,6 +108516,21 @@
       "totalPoints": 65,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 15,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":100,\"duelRate\":50,\"minutesPlayed\":15}",
+      "totalPoints": 67,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "31634": [
@@ -103905,6 +108619,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33935": [
@@ -104218,6 +108936,21 @@
       "value": 3,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.1,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":91,\"duelRate\":50,\"minutesPlayed\":90}",
+      "totalPoints": 84,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "33919": [
@@ -104319,6 +109052,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "rating": 7.3,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":71,\"duelRate\":null,\"minutesPlayed\":90}",
+      "totalPoints": 7,
+      "tore": 0,
+      "value": 6,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32830": [
@@ -104611,6 +109359,21 @@
       "totalPoints": 63,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 24,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":85,\"duelRate\":100,\"minutesPlayed\":24}",
+      "totalPoints": 66,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "32710": [
@@ -104843,6 +109606,21 @@
       "tore": 0,
       "value": 0,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 7.3,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":2,\"passingRate\":95,\"duelRate\":33,\"minutesPlayed\":90}",
+      "totalPoints": 56,
+      "tore": 0,
+      "value": 6,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -105157,6 +109935,21 @@
       "totalPoints": 22,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.1,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 66,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":63,\"duelRate\":25,\"minutesPlayed\":66}",
+      "totalPoints": 22,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "32836": [
@@ -105490,6 +110283,11 @@
       "value": 5,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 93,
+      "value": 0,
+      "key": 23
     }
   ],
   "33925": [
@@ -105715,6 +110513,11 @@
       "totalPoints": 15,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 15,
+      "value": 0,
+      "key": 23
     }
   ],
   "33926": [
@@ -105936,6 +110739,21 @@
       "tore": 0,
       "value": 2,
       "key": 22,
+      "status": "SUBIN"
+    },
+    {
+      "rating": 7,
+      "yellow": 0,
+      "xgoals": 0.47,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 26,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":33,\"duelRate\":null,\"minutesPlayed\":26}",
+      "totalPoints": 37,
+      "tore": 1,
+      "value": 7,
+      "key": 23,
       "status": "SUBIN"
     }
   ],
@@ -106394,6 +111212,21 @@
       "value": 4,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.3,
+      "yellow": 0,
+      "xgoals": 0.03,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 61,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":88,\"duelRate\":null,\"minutesPlayed\":61}",
+      "totalPoints": 88,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "33924": [
@@ -106677,6 +111510,21 @@
       "tore": 0,
       "value": 3,
       "key": 22,
+      "status": "SUBOUT"
+    },
+    {
+      "rating": 6.3,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 75,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":73,\"duelRate\":33,\"minutesPlayed\":75}",
+      "totalPoints": 66,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
       "status": "SUBOUT"
     }
   ],
@@ -106963,6 +111811,21 @@
       "value": 3,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 7,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":80,\"duelRate\":null,\"minutesPlayed\":7}",
+      "totalPoints": 50,
+      "tore": 0,
+      "value": 4,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "31743": [
@@ -107049,6 +111912,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33921": [
@@ -107382,6 +112249,21 @@
       "value": 7,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.4,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":59,\"duelRate\":null,\"minutesPlayed\":90}",
+      "totalPoints": 80,
+      "tore": 0,
+      "value": 1,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32953": [
@@ -107667,6 +112549,21 @@
       "value": 9,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":95,\"duelRate\":60,\"minutesPlayed\":90}",
+      "totalPoints": 73,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "31988": [
@@ -107753,6 +112650,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33922": [
@@ -107869,6 +112770,11 @@
       "totalPoints": 3,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 3,
+      "value": 0,
+      "key": 23
     }
   ],
   "32948": [
@@ -108082,6 +112988,21 @@
       "totalPoints": 73,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.9,
+      "yellow": 0,
+      "xgoals": 1.13,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 30,
+      "assists": 0,
+      "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":100,\"duelRate\":60,\"minutesPlayed\":30}",
+      "totalPoints": 80,
+      "tore": 1,
+      "value": 7,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "32949": [
@@ -108168,6 +113089,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33914": [
@@ -108254,6 +113179,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "31618": [
@@ -108340,6 +113269,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "33913": [
@@ -108430,6 +113363,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "32807": [
@@ -108663,6 +113600,11 @@
       "totalPoints": 37,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 37,
+      "value": 0,
+      "key": 23
     }
   ],
   "32817": [
@@ -108965,6 +113907,21 @@
       "tore": 0,
       "value": 2,
       "key": 22,
+      "status": "SUBIN"
+    },
+    {
+      "rating": 7.1,
+      "yellow": 0,
+      "xgoals": 0.09,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 22,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":88,\"duelRate\":50,\"minutesPlayed\":22}",
+      "totalPoints": 54,
+      "tore": 1,
+      "value": 9,
+      "key": 23,
       "status": "SUBIN"
     }
   ],
@@ -109300,6 +114257,21 @@
       "value": 5,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.1,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":84,\"duelRate\":62,\"minutesPlayed\":90}",
+      "totalPoints": 123,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "32815": [
@@ -109535,6 +114507,11 @@
       "value": 3,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 22,
+      "value": 0,
+      "key": 23
     }
   ],
   "32931": [
@@ -109798,6 +114775,11 @@
       "totalPoints": 49,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 49,
+      "value": 0,
+      "key": 23
     }
   ],
   "30755": [
@@ -110093,6 +115075,11 @@
       "value": 3,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "totalPoints": 54,
+      "value": 0,
+      "key": 23
     }
   ],
   "33900": [
@@ -110461,6 +115448,21 @@
       "value": -2,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.2,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 59,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":2,\"passingRate\":79,\"duelRate\":67,\"minutesPlayed\":59}",
+      "totalPoints": 55,
+      "tore": 0,
+      "value": 5,
+      "key": 23,
+      "status": "SUBOUT"
     }
   ],
   "32925": [
@@ -110744,6 +115746,11 @@
       "totalPoints": 59,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 59,
+      "value": 0,
+      "key": 23
     }
   ],
   "31710": [
@@ -110916,6 +115923,11 @@
       "totalPoints": 10,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 10,
+      "value": 0,
+      "key": 23
     }
   ],
   "32800": [
@@ -111209,6 +116221,11 @@
       "value": 5,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "totalPoints": 82,
+      "value": 0,
+      "key": 23
     }
   ],
   "32921": [
@@ -111542,6 +116559,21 @@
       "value": -2,
       "key": 22,
       "status": "FULL"
+    },
+    {
+      "rating": 7.4,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":36,\"duelRate\":null,\"minutesPlayed\":90}",
+      "totalPoints": 61,
+      "tore": 0,
+      "value": 6,
+      "key": 23,
+      "status": "FULL"
     }
   ],
   "34091": [
@@ -111766,6 +116798,11 @@
       "value": 1,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 16,
+      "value": 0,
+      "key": 23
     }
   ],
   "34098": [
@@ -111987,6 +117024,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "31827": [
@@ -112132,6 +117173,21 @@
       "tore": 0,
       "value": 3,
       "key": 22,
+      "status": "FULL"
+    },
+    {
+      "rating": 6.8,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 90,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":53,\"duelRate\":null,\"minutesPlayed\":90}",
+      "totalPoints": 28,
+      "tore": 0,
+      "value": 3,
+      "key": 23,
       "status": "FULL"
     }
   ],
@@ -112346,6 +117402,11 @@
       "value": 1,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 19,
+      "value": 0,
+      "key": 23
     }
   ],
   "31929": [
@@ -112436,6 +117497,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34088": [
@@ -112526,6 +117591,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34086": [
@@ -112616,6 +117685,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34084": [
@@ -112769,6 +117842,11 @@
       "totalPoints": -2,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": -2,
+      "value": 0,
+      "key": 23
     }
   ],
   "34082": [
@@ -112855,6 +117933,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34081": [
@@ -113109,6 +118191,11 @@
       "value": 2,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 22,
+      "value": 0,
+      "key": 23
     }
   ],
   "31935": [
@@ -113295,6 +118382,11 @@
       "totalPoints": 46,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 46,
+      "value": 0,
+      "key": 23
     }
   ],
   "31930": [
@@ -113381,6 +118473,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "31932": [
@@ -113575,6 +118671,21 @@
       "totalPoints": 12,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6.6,
+      "yellow": 1,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 30,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":77,\"duelRate\":67,\"minutesPlayed\":30}",
+      "totalPoints": 14,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34198": [
@@ -113661,6 +118772,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34076": [
@@ -113985,6 +119100,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 6.6,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 10,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":60,\"duelRate\":50,\"minutesPlayed\":10}",
+      "totalPoints": 74,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34197": [
@@ -114240,6 +119370,21 @@
       "tore": 0,
       "value": 4,
       "key": 22,
+      "status": "SUBOUT"
+    },
+    {
+      "rating": 6.5,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 78,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":79,\"duelRate\":71,\"minutesPlayed\":78}",
+      "totalPoints": 17,
+      "tore": 0,
+      "value": 2,
+      "key": 23,
       "status": "SUBOUT"
     }
   ],
@@ -114555,6 +119700,21 @@
       "totalPoints": 64,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 0,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": -1,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":50,\"duelRate\":null,\"minutesPlayed\":1}",
+      "totalPoints": 64,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34073": [
@@ -114641,6 +119801,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34194": [
@@ -114863,6 +120027,11 @@
       "totalPoints": 23,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 23,
+      "value": 0,
+      "key": 23
     }
   ],
   "34072": [
@@ -114949,6 +120118,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34193": [
@@ -115109,6 +120282,21 @@
       "totalPoints": 14,
       "value": 0,
       "key": 22
+    },
+    {
+      "rating": 6,
+      "yellow": 0,
+      "xgoals": 0.24,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 15,
+      "assists": 0,
+      "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":71,\"duelRate\":33,\"minutesPlayed\":15}",
+      "totalPoints": 13,
+      "tore": 0,
+      "value": -1,
+      "key": 23,
+      "status": "SUBIN"
     }
   ],
   "34192": [
@@ -115191,6 +120379,10 @@
     {
       "value": 0,
       "key": 22
+    },
+    {
+      "value": 0,
+      "key": 23
     }
   ],
   "34191": [
@@ -115378,6 +120570,11 @@
       "value": 4,
       "key": 22,
       "status": "SUBIN"
+    },
+    {
+      "totalPoints": 20,
+      "value": 0,
+      "key": 23
     }
   ],
   "34079": [
@@ -115532,6 +120729,11 @@
       "totalPoints": 10,
       "value": 0,
       "key": 22
+    },
+    {
+      "totalPoints": 10,
+      "value": 0,
+      "key": 23
     }
   ],
   "34199": [
@@ -115866,6 +121068,21 @@
       "value": 1,
       "key": 22,
       "status": "SUBOUT"
+    },
+    {
+      "rating": 0,
+      "yellow": 0,
+      "xgoals": 0,
+      "red": 0,
+      "yellowRed": 0,
+      "einsatzzeit": 4,
+      "assists": 0,
+      "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":null,\"duelRate\":100,\"minutesPlayed\":4}",
+      "totalPoints": 73,
+      "tore": 0,
+      "value": 0,
+      "key": 23,
+      "status": "SUBIN"
     }
   ]
 }
