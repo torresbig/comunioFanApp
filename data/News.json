@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "01.03.2026 15:03:57",
+  "lastUpdate": "02.03.2026 05:18:20",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -22371,6 +22371,17 @@
       ]
     },
     {
+      "date": "02.03.2026",
+      "news": [{
+        "date": "02.03.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Philippe\",\"price\":3310000,\"buyerId\":\"5981249\",\"playerValue\":3450000,\"playerId\":\"34216\",\"buyer\":\"Thomas\"}",
+        "id": "959813820",
+        "playerId": "34216"
+      }]
+    },
+    {
       "date": "02.02.2026",
       "news": [
         {
@@ -23433,6 +23444,46 @@
           "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"Pieringer\",\"price\":1809600,\"buyerId\":\"1\",\"playerValue\":1740000,\"playerId\":\"33600\",\"buyer\":\"Computer\"}",
           "id": "959780217",
           "playerId": "33600"
+        },
+        {
+          "date": "01.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Belocian\",\"price\":3024000,\"buyerId\":\"1\",\"playerValue\":2880000,\"playerId\":\"33988\",\"buyer\":\"Computer\"}",
+          "id": "959780217",
+          "playerId": "33988"
+        },
+        {
+          "date": "01.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Can (31935) ist jetzt VERLETZT (Kreuzbandriss)",
+          "id": "0",
+          "playerId": "31935"
+        },
+        {
+          "date": "01.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: B. Jatta (32630) ist jetzt VERLETZT (Infekt)",
+          "id": "0",
+          "playerId": "32630"
+        },
+        {
+          "date": "01.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Arthur (33772) ist jetzt VERLETZT (Syndesmosebandriss)",
+          "id": "0",
+          "playerId": "33772"
+        },
+        {
+          "date": "01.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Lindstrøm (33480) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33480"
         }
       ]
     },
