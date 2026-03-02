@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "02.03.2026 05:18:20",
+  "lastUpdate": "02.03.2026 15:03:53",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -22372,14 +22372,112 @@
     },
     {
       "date": "02.03.2026",
-      "news": [{
-        "date": "02.03.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Philippe\",\"price\":3310000,\"buyerId\":\"5981249\",\"playerValue\":3450000,\"playerId\":\"34216\",\"buyer\":\"Thomas\"}",
-        "id": "959813820",
-        "playerId": "34216"
-      }]
+      "news": [
+        {
+          "date": "02.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Philippe\",\"price\":3310000,\"buyerId\":\"5981249\",\"playerValue\":3450000,\"playerId\":\"34216\",\"buyer\":\"Thomas\"}",
+          "id": "959813820",
+          "playerId": "34216"
+        },
+        {
+          "date": "02.03.2026",
+          "art": "ELFDESTAGES",
+          "gelesen": false,
+          "text": "[{\"punkte\":12,\"owner\":\"1\",\"playerName\":\"Vasilj\",\"position\":\"keeper\",\"playerId\":\"33943\"},{\"punkte\":14,\"owner\":\"11683432\",\"playerName\":\"Quansah\",\"position\":\"defender\",\"playerId\":\"34217\"},{\"punkte\":14,\"owner\":\"13721745\",\"playerName\":\"Svensson\",\"position\":\"defender\",\"playerId\":\"34114\"},{\"punkte\":12,\"owner\":\"13548242\",\"playerName\":\"Diks\",\"position\":\"defender\",\"playerId\":\"34187\"},{\"punkte\":17,\"owner\":\"5981249\",\"playerName\":\"Leweling\",\"position\":\"midfielder\",\"playerId\":\"33411\"},{\"punkte\":13,\"owner\":\"1\",\"playerName\":\"Kimmich\",\"position\":\"midfielder\",\"playerId\":\"32445\"},{\"punkte\":13,\"owner\":\"1\",\"playerName\":\"Chaïbi\",\"position\":\"midfielder\",\"playerId\":\"33856\"},{\"punkte\":11,\"owner\":\"1\",\"playerName\":\"Nartey\",\"position\":\"midfielder\",\"playerId\":\"32830\"},{\"punkte\":16,\"owner\":\"9317431\",\"playerName\":\"Kane\",\"position\":\"striker\",\"playerId\":\"33838\"},{\"punkte\":12,\"owner\":\"1\",\"playerName\":\"Diomande\",\"position\":\"striker\",\"playerId\":\"34237\"},{\"punkte\":12,\"owner\":\"13641446\",\"playerName\":\"Bahoya\",\"position\":\"striker\",\"playerId\":\"33890\"}]",
+          "id": "959844339",
+          "playerId": "0"
+        },
+        {
+          "date": "02.03.2026",
+          "art": "ELFDESTAGES",
+          "gelesen": false,
+          "text": "[{\"punkte\":12,\"owner\":\"1\",\"playerName\":\"Vasilj\",\"position\":\"keeper\",\"playerId\":\"33943\"},{\"punkte\":14,\"owner\":\"11683432\",\"playerName\":\"Quansah\",\"position\":\"defender\",\"playerId\":\"34217\"},{\"punkte\":14,\"owner\":\"13721745\",\"playerName\":\"Svensson\",\"position\":\"defender\",\"playerId\":\"34114\"},{\"punkte\":12,\"owner\":\"13548242\",\"playerName\":\"Diks\",\"position\":\"defender\",\"playerId\":\"34187\"},{\"punkte\":17,\"owner\":\"5981249\",\"playerName\":\"Leweling\",\"position\":\"midfielder\",\"playerId\":\"33411\"},{\"punkte\":13,\"owner\":\"1\",\"playerName\":\"Kimmich\",\"position\":\"midfielder\",\"playerId\":\"32445\"},{\"punkte\":13,\"owner\":\"1\",\"playerName\":\"Chaïbi\",\"position\":\"midfielder\",\"playerId\":\"33856\"},{\"punkte\":11,\"owner\":\"1\",\"playerName\":\"Nartey\",\"position\":\"midfielder\",\"playerId\":\"32830\"},{\"punkte\":16,\"owner\":\"9317431\",\"playerName\":\"Kane\",\"position\":\"striker\",\"playerId\":\"33838\"},{\"punkte\":12,\"owner\":\"1\",\"playerName\":\"Diomande\",\"position\":\"striker\",\"playerId\":\"34237\"},{\"punkte\":12,\"owner\":\"13641446\",\"playerName\":\"Bahoya\",\"position\":\"striker\",\"playerId\":\"33890\"}]",
+          "id": "959838625",
+          "playerId": "0"
+        },
+        {
+          "date": "02.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Arthur\",\"price\":3019500,\"buyerId\":\"1\",\"playerValue\":3050000,\"playerId\":\"33772\",\"buyer\":\"Computer\"}",
+          "id": "959813820",
+          "playerId": "33772"
+        },
+        {
+          "date": "02.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kauã Santos (33855) ist jetzt VERLETZT (Innenbandverletzung)",
+          "id": "0",
+          "playerId": "33855"
+        },
+        {
+          "date": "02.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Moerstedt (33885) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "33885"
+        },
+        {
+          "date": "02.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Vagnoman (32880) ist jetzt VERLETZT (Oberschenkelprobleme)",
+          "id": "0",
+          "playerId": "32880"
+        },
+        {
+          "date": "02.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Terrier (34024) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34024"
+        },
+        {
+          "date": "02.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Lemperle (33270) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33270"
+        },
+        {
+          "date": "02.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Haberer (32310) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32310"
+        },
+        {
+          "date": "02.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Chabot (33552) ist jetzt VERLETZT (Rückenprobleme)",
+          "id": "0",
+          "playerId": "33552"
+        },
+        {
+          "date": "02.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Svanberg (33658) ist jetzt VERLETZT (Blessur)",
+          "id": "0",
+          "playerId": "33658"
+        },
+        {
+          "date": "02.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Rasmussen (34335) ist jetzt VERLETZT (muskuläre Probleme)",
+          "id": "0",
+          "playerId": "34335"
+        }
+      ]
     },
     {
       "date": "02.02.2026",
