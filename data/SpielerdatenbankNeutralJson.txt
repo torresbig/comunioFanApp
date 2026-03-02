@@ -1,7 +1,7 @@
 {
   "lastProcessedMatchday": 23,
   "lastBigUpdate": "22.02.2026",
-  "lastProcessedComstatsSpieltagsdaten": 23,
+  "lastProcessedComstatsSpieltagsdaten": 16,
   "lastUpdate": "01.03.2026",
   "playerDB": [
     {
@@ -3190,7 +3190,7 @@
           "groesse": "1,88",
           "geburtstag": "10.01.2004",
           "laenderspiele": 12,
-          "lastUpdate": "05.02.2026",
+          "lastUpdate": "01.03.2026",
           "nebenpositionen": ["RV"],
           "nationalspieler": "",
           "trikotNummer": 34,
@@ -3212,7 +3212,7 @@
         },
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "05.02.2026",
+          "date": "01.03.2026",
           "name": "Nnamdi Collins 750 Tsd. \u20ac",
           "link": "https://www.transfermarkt.de/nnamdi-collins/profil/spieler/684315",
           "id": 684315,
@@ -3304,7 +3304,7 @@
           "url": "https://www.fussballdaten.de/person/castello-lukeba/"
         },
         "transfermarktDoDe": {
-          "date": "05.02.2026",
+          "date": "01.03.2026",
           "name": "Castello Lukeba",
           "link": "https://www.transfermarkt.de/castello-lukeba/profil/spieler/618472",
           "id": 618472,
@@ -3345,7 +3345,7 @@
           "groesse": "1,84",
           "geburtstag": "17.12.2002",
           "laenderspiele": 27,
-          "lastUpdate": "05.02.2026",
+          "lastUpdate": "01.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 23,
@@ -3449,7 +3449,7 @@
           "groesse": "1,88",
           "geburtstag": "28.07.1993",
           "laenderspiele": 112,
-          "lastUpdate": "05.02.2026",
+          "lastUpdate": "01.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "England",
           "trikotNummer": 9,
@@ -3471,7 +3471,7 @@
         },
         "lastPoints": 17,
         "transfermarktDoDe": {
-          "date": "05.02.2026",
+          "date": "01.03.2026",
           "name": "Harry Kane",
           "link": "https://www.transfermarkt.de/harry-kane/profil/spieler/132098",
           "id": 132098,
@@ -3587,7 +3587,7 @@
           "groesse": "1,85",
           "geburtstag": "07.05.1998",
           "laenderspiele": 0,
-          "lastUpdate": "05.02.2026",
+          "lastUpdate": "01.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 21,
@@ -3609,7 +3609,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "05.02.2026",
+          "date": "01.03.2026",
           "name": "Lars Ritzka",
           "link": "https://www.transfermarkt.de/lars-ritzka/profil/spieler/333903",
           "id": "333903",
@@ -4834,7 +4834,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/32830"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "11",
+            "zielwert": "4.450.000",
+            "platz": 10,
+            "lastUpdate": "01.03.2026",
+            "typ": "top",
+            "marktwert": "3.540.000",
+            "aenderung": "+910.000"
+          },
+          "link": "https://www.com-analytics.de/player/32830"
+        },
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "22.02.2000",
@@ -5110,7 +5121,18 @@
     {
       "data": {
         "elfDesSpieltages": 1,
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33856"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "13",
+            "zielwert": "3.530.000",
+            "platz": 9,
+            "lastUpdate": "01.03.2026",
+            "typ": "top",
+            "marktwert": "2.610.000",
+            "aenderung": "+920.000"
+          },
+          "link": "https://www.com-analytics.de/player/33856"
+        },
         "spielerDaten": {
           "groesse": "1,83",
           "geburtstag": "28.11.2002",
@@ -6493,23 +6515,6 @@
     {
       "data": {
         "elfDesSpieltages": 2,
-        "spielerDaten": {
-          "groesse": "1,80",
-          "geburtstag": "07.05.2005",
-          "laenderspiele": 5,
-          "lastUpdate": "22.02.2026",
-          "nebenpositionen": [],
-          "nationalspieler": "",
-          "trikotNummer": 19,
-          "nationalitaet": "Frankreich",
-          "laenderspielTore": 1,
-          "hauptposition": "Linksaußen",
-          "fuss": "rechts"
-        },
-        "isNotName": [],
-        "punktekorrektur": [],
-        "wert": 6400000,
-        "verein": "9",
         "fussballdatenDe": {
           "lastProcessedMatchday": 13,
           "lastUpdate": "09.12.2025 15:00:44",
@@ -6517,7 +6522,6 @@
           "nationalitaet": "Frankreich",
           "url": "https://www.fussballdaten.de/person/jean-matteo-bahoya/"
         },
-        "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "22.02.2026",
           "name": "Jean-Mattéo Bahoya",
@@ -6529,9 +6533,6 @@
           "leistungsDaten": {},
           "alter": 20
         },
-        "lastSeasonPoints": 80,
-        "punkte": 75,
-        "realWert": 25000000,
         "lastBigUpdate": "22.02.2026",
         "stats": {
           "notenDurchschnitt": "6,9",
@@ -6546,14 +6547,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.03.2026",
-        "historicalPoints": [
-          {"2023": 8},
-          {"2024": 80}
-        ],
         "withinSquad": true,
-        "onMarket": false,
-        "position": "STURM",
         "attribute": {"ligainsiderRanking": {
           "punkte": 667,
           "einsaetzeBewertet": 17,
@@ -6581,6 +6575,46 @@
           "J. Mattéo",
           "Bahoya"
         ],
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "12",
+            "zielwert": "7.330.000",
+            "platz": 8,
+            "lastUpdate": "01.03.2026",
+            "typ": "top",
+            "marktwert": "6.400.000",
+            "aenderung": "+930.000"
+          },
+          "link": "https://www.com-analytics.de/player/33890"
+        },
+        "spielerDaten": {
+          "groesse": "1,80",
+          "geburtstag": "07.05.2005",
+          "laenderspiele": 5,
+          "lastUpdate": "22.02.2026",
+          "nebenpositionen": [],
+          "nationalspieler": "",
+          "trikotNummer": 19,
+          "nationalitaet": "Frankreich",
+          "laenderspielTore": 1,
+          "hauptposition": "Linksaußen",
+          "fuss": "rechts"
+        },
+        "isNotName": [],
+        "punktekorrektur": [],
+        "wert": 6400000,
+        "verein": "9",
+        "lastPoints": 4,
+        "lastSeasonPoints": 80,
+        "punkte": 75,
+        "realWert": 25000000,
+        "lastUpdate": "01.03.2026",
+        "historicalPoints": [
+          {"2023": 8},
+          {"2024": 80}
+        ],
+        "onMarket": false,
+        "position": "STURM",
         "comunioStatus": {
           "grund": "unbekannt",
           "lastUpdate": "22.02.2026",
@@ -12452,9 +12486,9 @@
           "status": "AUFBAUTRAINING"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "24.02.2026",
-          "seit": "",
+          "grund": "Kreuzbandriss",
+          "lastUpdate": "01.03.2026",
+          "seit": "01.03.2026",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -12464,8 +12498,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Can",
@@ -13281,7 +13315,7 @@
           "topFlop": {
             "punkte": "3",
             "zielwert": "11.800.000",
-            "platz": 6,
+            "platz": 8,
             "lastUpdate": "01.03.2026",
             "typ": "flop",
             "marktwert": "12.270.000",
@@ -14511,7 +14545,7 @@
           "topFlop": {
             "punkte": "5",
             "zielwert": "18.980.000",
-            "platz": 4,
+            "platz": 7,
             "lastUpdate": "01.03.2026",
             "typ": "top",
             "marktwert": "18.000.000",
@@ -22288,23 +22322,12 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "14",
-            "zielwert": "4.770.000",
-            "platz": 5,
-            "lastUpdate": "01.03.2026",
-            "typ": "top",
-            "marktwert": "4.040.000",
-            "aenderung": "+730.000"
-          },
-          "link": "https://www.com-analytics.de/player/34114"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34114"},
         "spielerDaten": {
           "groesse": "1,83",
           "geburtstag": "12.02.2002",
           "laenderspiele": 9,
-          "lastUpdate": "05.02.2026",
+          "lastUpdate": "01.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 24,
@@ -22326,7 +22349,7 @@
         },
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "05.02.2026",
+          "date": "01.03.2026",
           "name": "Daniel Svensson",
           "link": "https://www.transfermarkt.de/daniel-svensson/profil/spieler/579287",
           "id": "579287",
@@ -22405,7 +22428,7 @@
           "groesse": "1,88",
           "geburtstag": "17.07.2006",
           "laenderspiele": 4,
-          "lastUpdate": "05.02.2026",
+          "lastUpdate": "01.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 29,
@@ -22427,7 +22450,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "05.02.2026",
+          "date": "01.03.2026",
           "name": "Finn Jeltsch",
           "link": "https://www.transfermarkt.de/finn-jeltsch/profil/spieler/924117",
           "id": 0,
@@ -22520,7 +22543,7 @@
           "groesse": "1,83",
           "geburtstag": "08.08.2006",
           "laenderspiele": 5,
-          "lastUpdate": "05.02.2026",
+          "lastUpdate": "01.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 27,
@@ -22542,7 +22565,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "05.02.2026",
+          "date": "01.03.2026",
           "name": "Tidiam Gomis",
           "link": "https://www.transfermarkt.de/tidiam-gomis/profil/spieler/955448",
           "id": 0,
@@ -22656,7 +22679,7 @@
           "groesse": "1,88",
           "geburtstag": "08.10.1999",
           "laenderspiele": 2,
-          "lastUpdate": "05.02.2026",
+          "lastUpdate": "01.03.2026",
           "nebenpositionen": [
             "IV",
             "RV"
@@ -22681,7 +22704,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "05.02.2026",
+          "date": "01.03.2026",
           "name": "Lennard Maloney",
           "link": "https://www.transfermarkt.de/lennard-maloney/profil/spieler/392710",
           "id": 392710,
@@ -22772,7 +22795,7 @@
           "groesse": "1,80",
           "geburtstag": "07.04.1993",
           "laenderspiele": 9,
-          "lastUpdate": "05.02.2026",
+          "lastUpdate": "01.03.2026",
           "nebenpositionen": [
             "OM",
             "RA"
@@ -22790,7 +22813,7 @@
         "verein": "21",
         "lastPoints": 5,
         "transfermarktDoDe": {
-          "date": "05.02.2026",
+          "date": "01.03.2026",
           "name": "Vincenzo Grifo",
           "link": "https://www.transfermarkt.de/vincenzo-grifo/profil/spieler/185077",
           "id": 185077,
@@ -22872,7 +22895,7 @@
           "groesse": "1,89",
           "geburtstag": "24.02.1987",
           "laenderspiele": 25,
-          "lastUpdate": "05.02.2026",
+          "lastUpdate": "01.03.2026",
           "nebenpositionen": [
             "IV",
             "RM"
@@ -22897,7 +22920,7 @@
         },
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "05.02.2026",
+          "date": "01.03.2026",
           "name": "Christopher Trimmel",
           "link": "https://www.transfermarkt.de/christopher-trimmel/profil/spieler/75921",
           "id": 75921,
@@ -23689,18 +23712,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "9",
-            "zielwert": "6.460.000",
-            "platz": 9,
-            "lastUpdate": "01.03.2026",
-            "typ": "top",
-            "marktwert": "5.830.000",
-            "aenderung": "+630.000"
-          },
-          "link": "https://www.com-analytics.de/player/33110"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33110"},
         "spielerDaten": {
           "groesse": "1,68",
           "geburtstag": "27.01.2000",
@@ -24279,7 +24291,7 @@
           "topFlop": {
             "punkte": "0",
             "zielwert": "9.400.000",
-            "platz": 5,
+            "platz": 7,
             "lastUpdate": "01.03.2026",
             "typ": "flop",
             "marktwert": "9.870.000",
@@ -27943,18 +27955,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "12",
-            "zielwert": "5.270.000",
-            "platz": 6,
-            "lastUpdate": "01.03.2026",
-            "typ": "top",
-            "marktwert": "4.610.000",
-            "aenderung": "+660.000"
-          },
-          "link": "https://www.com-analytics.de/player/34187"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34187"},
         "elfDesSpieltages": 1,
         "spielerDaten": {
           "groesse": "1,86",
@@ -28237,12 +28238,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "-1",
-            "zielwert": "4.690.000",
+            "zielwert": "4.640.000",
             "platz": 9,
             "lastUpdate": "01.03.2026",
             "typ": "flop",
             "marktwert": "5.080.000",
-            "aenderung": "-390.000"
+            "aenderung": "-440.000"
           },
           "link": "https://www.com-analytics.de/player/33167"
         },
@@ -30651,18 +30652,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "10",
-            "zielwert": "2.530.000",
-            "platz": 7,
-            "lastUpdate": "01.03.2026",
-            "typ": "top",
-            "marktwert": "1.870.000",
-            "aenderung": "+660.000"
-          },
-          "link": "https://www.com-analytics.de/player/34209"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34209"},
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "30.11.1996",
@@ -32053,18 +32043,7 @@
     {
       "data": {
         "elfDesSpieltages": 3,
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "14",
-            "zielwert": "7.800.000",
-            "platz": 10,
-            "lastUpdate": "01.03.2026",
-            "typ": "top",
-            "marktwert": "7.310.000",
-            "aenderung": "+490.000"
-          },
-          "link": "https://www.com-analytics.de/player/34217"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34217"},
         "spielerDaten": {
           "groesse": "1,90",
           "geburtstag": "29.01.2003",
@@ -37950,7 +37929,18 @@
           "J. Leweling",
           "Leweling"
         ],
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33411"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "17",
+            "zielwert": "11.980.000",
+            "platz": 2,
+            "lastUpdate": "01.03.2026",
+            "typ": "top",
+            "marktwert": "10.540.000",
+            "aenderung": "+1.440.000"
+          },
+          "link": "https://www.com-analytics.de/player/33411"
+        },
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "26.02.2001",
@@ -38207,7 +38197,7 @@
           "topFlop": {
             "punkte": "0",
             "zielwert": "13.820.000",
-            "platz": 1,
+            "platz": 2,
             "lastUpdate": "01.03.2026",
             "typ": "flop",
             "marktwert": "14.810.000",
@@ -38636,7 +38626,18 @@
     {
       "data": {
         "elfDesSpieltages": 1,
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33437"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "8",
+            "zielwert": "10.380.000",
+            "platz": 5,
+            "lastUpdate": "01.03.2026",
+            "typ": "top",
+            "marktwert": "9.300.000",
+            "aenderung": "+1.080.000"
+          },
+          "link": "https://www.com-analytics.de/player/33437"
+        },
         "spielerDaten": {
           "groesse": "1,83",
           "geburtstag": "04.04.2001",
@@ -39317,7 +39318,7 @@
           "topFlop": {
             "punkte": "13",
             "zielwert": "15.740.000",
-            "platz": 2,
+            "platz": 3,
             "lastUpdate": "01.03.2026",
             "typ": "top",
             "marktwert": "14.510.000",
@@ -39507,12 +39508,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "0",
-            "zielwert": "6.590.000",
-            "platz": 7,
+            "zielwert": "6.510.000",
+            "platz": 6,
             "lastUpdate": "01.03.2026",
             "typ": "flop",
             "marktwert": "7.030.000",
-            "aenderung": "-440.000"
+            "aenderung": "-520.000"
           },
           "link": "https://www.com-analytics.de/player/32452"
         },
@@ -41830,7 +41831,7 @@
           "topFlop": {
             "punkte": "4",
             "zielwert": "12.180.000",
-            "platz": 4,
+            "platz": 5,
             "lastUpdate": "01.03.2026",
             "typ": "flop",
             "marktwert": "12.830.000",
@@ -44038,7 +44039,7 @@
           "topFlop": {
             "punkte": "2",
             "zielwert": "14.470.000",
-            "platz": 3,
+            "platz": 4,
             "lastUpdate": "01.03.2026",
             "typ": "flop",
             "marktwert": "15.330.000",
@@ -48229,13 +48230,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "07.10.2025",
-          "seit": "",
+          "grund": "Infekt",
+          "lastUpdate": "01.03.2026",
+          "seit": "01.03.2026",
           "details": "",
           "historie": [],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "B. Jatta",
@@ -52445,12 +52446,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "1",
-            "zielwert": "8.650.000",
-            "platz": 8,
+            "zielwert": "8.670.000",
+            "platz": 10,
             "lastUpdate": "01.03.2026",
             "typ": "flop",
             "marktwert": "9.090.000",
-            "aenderung": "-440.000"
+            "aenderung": "-420.000"
           },
           "link": "https://www.com-analytics.de/player/33744"
         },
@@ -53327,9 +53328,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "08.12.2025",
-          "seit": "",
+          "grund": "Syndesmosebandriss",
+          "lastUpdate": "01.03.2026",
+          "seit": "01.03.2026",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -53339,8 +53340,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Arthur",
@@ -57545,13 +57546,13 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Krank",
+          "grund": "",
           "lastUpdate": "01.03.2026",
-          "seit": "13.02.2026",
+          "seit": "",
           "details": "",
           "historie": [],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Lindstrøm",
@@ -58289,7 +58290,7 @@
           "topFlop": {
             "punkte": "3",
             "zielwert": "20.750.000",
-            "platz": 2,
+            "platz": 3,
             "lastUpdate": "01.03.2026",
             "typ": "flop",
             "marktwert": "21.680.000",
@@ -59937,7 +59938,18 @@
     {
       "data": {
         "elfDesSpieltages": 2,
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34271"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "11",
+            "zielwert": "9.960.000",
+            "platz": 4,
+            "lastUpdate": "01.03.2026",
+            "typ": "top",
+            "marktwert": "8.850.000",
+            "aenderung": "+1.110.000"
+          },
+          "link": "https://www.com-analytics.de/player/34271"
+        },
         "spielerDaten": {
           "groesse": "1,93",
           "geburtstag": "08.02.2002",
@@ -65921,18 +65933,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "9",
-            "zielwert": "6.230.000",
-            "platz": 8,
-            "lastUpdate": "01.03.2026",
-            "typ": "top",
-            "marktwert": "5.600.000",
-            "aenderung": "+630.000"
-          },
-          "link": "https://www.com-analytics.de/player/34331"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34331"},
         "spielerDaten": {
           "groesse": "",
           "geburtstag": "",
@@ -66856,13 +66857,13 @@
       "data": {
         "comAnalystics": {
           "topFlop": {
-            "punkte": "5",
-            "zielwert": "14.950.000",
-            "platz": 10,
+            "punkte": "1",
+            "zielwert": "13.970.000",
+            "platz": 1,
             "lastUpdate": "01.03.2026",
             "typ": "flop",
             "marktwert": "15.310.000",
-            "aenderung": "-360.000"
+            "aenderung": "-1.340.000"
           },
           "link": "https://www.com-analytics.de/player/33695"
         },
@@ -67138,7 +67139,7 @@
           "topFlop": {
             "punkte": "10",
             "zielwert": "4.870.000",
-            "platz": 3,
+            "platz": 6,
             "lastUpdate": "01.03.2026",
             "typ": "top",
             "marktwert": "3.880.000",
