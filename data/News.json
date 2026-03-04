@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "03.03.2026 15:04:01",
+  "lastUpdate": "04.03.2026 05:18:25",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -20353,6 +20353,27 @@
       ]
     },
     {
+      "date": "04.03.2026",
+      "news": [
+        {
+          "date": "04.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Blaswich\",\"price\":2580000,\"buyerId\":\"6013585\",\"playerValue\":2800000,\"playerId\":\"31827\",\"buyer\":\"Stefan 8\"}",
+          "id": "959918244",
+          "playerId": "31827"
+        },
+        {
+          "date": "04.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kimmich\",\"price\":15340009,\"buyerId\":\"10966300\",\"playerValue\":14830000,\"playerId\":\"32445\",\"buyer\":\"Alexander\"}",
+          "id": "959918244",
+          "playerId": "32445"
+        }
+      ]
+    },
+    {
       "date": "04.02.2026",
       "news": [
         {
@@ -21231,6 +21252,22 @@
           "text": "Statuswechsel: Tillman (33530) ist wieder AKTIV",
           "id": "0",
           "playerId": "33530"
+        },
+        {
+          "date": "03.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Gregoritsch\",\"price\":6687200,\"buyerId\":\"1\",\"playerValue\":6320000,\"playerId\":\"31958\",\"buyer\":\"Computer\"}",
+          "id": "959892379",
+          "playerId": "31958"
+        },
+        {
+          "date": "03.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Giannoulis (34027) ist jetzt VERLETZT (Achillesfersenprobleme)",
+          "id": "0",
+          "playerId": "34027"
         }
       ]
     },
