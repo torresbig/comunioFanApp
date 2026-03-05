@@ -1,20 +1,4 @@
 {
-  "11": {
-    "earliestKickoff": "2025-11-21T20:30:00+01:00",
-    "pointsMatchday": 10,
-    "eventInfo": {
-      "date": "21.11.2025",
-      "next": 395605,
-      "previous": 395585,
-      "id": 395595,
-      "event": "Aufstellung 11. Spieltag"
-    },
-    "currentMatchday": 11,
-    "isStarted": true,
-    "isFinished": false,
-    "latestKickoff": "2025-11-23T17:30:00+01:00",
-    "fetchNow": false
-  },
   "22": {
     "earliestKickoff": "2026-02-13T20:30:00+01:00",
     "pointsMatchday": 21,
@@ -29,22 +13,6 @@
     "isStarted": true,
     "isFinished": false,
     "latestKickoff": "2026-02-15T17:30:00+01:00",
-    "fetchNow": false
-  },
-  "12": {
-    "earliestKickoff": "2025-11-28T20:30:00+01:00",
-    "pointsMatchday": 11,
-    "eventInfo": {
-      "date": "28.11.2025",
-      "next": 395789,
-      "previous": 395595,
-      "id": 395605,
-      "event": "Aufstellung 12. Spieltag"
-    },
-    "currentMatchday": 12,
-    "isStarted": true,
-    "isFinished": false,
-    "latestKickoff": "2025-11-30T19:30:00+01:00",
     "fetchNow": false
   },
   "23": {
@@ -63,22 +31,6 @@
     "latestKickoff": "2026-02-22T19:30:00+01:00",
     "fetchNow": false
   },
-  "13": {
-    "earliestKickoff": "2025-12-05T20:30:00+01:00",
-    "pointsMatchday": 12,
-    "eventInfo": {
-      "date": "05.12.2025",
-      "next": 395799,
-      "previous": 395605,
-      "id": 395789,
-      "event": "Aufstellung 13. Spieltag"
-    },
-    "currentMatchday": 13,
-    "isStarted": true,
-    "isFinished": false,
-    "latestKickoff": "2025-12-07T17:30:00+01:00",
-    "fetchNow": false
-  },
   "24": {
     "earliestKickoff": "2026-02-27T20:30:00+01:00",
     "pointsMatchday": 23,
@@ -93,6 +45,86 @@
     "isStarted": true,
     "isFinished": false,
     "latestKickoff": "2026-03-01T19:30:00+01:00",
+    "fetchNow": false
+  },
+  "25": {
+    "earliestKickoff": "2026-03-06T20:30:00+01:00",
+    "pointsMatchday": 24,
+    "eventInfo": {
+      "date": "04.03.2026",
+      "next": 396547,
+      "previous": 396254,
+      "id": 396537,
+      "event": "Aufstellung 25. Spieltag"
+    },
+    "currentMatchday": 25,
+    "isStarted": false,
+    "isFinished": false,
+    "latestKickoff": "2026-03-08T17:30:00+01:00",
+    "fetchNow": false
+  },
+  "10": {
+    "earliestKickoff": "2025-11-07T20:30:00+01:00",
+    "pointsMatchday": 9,
+    "eventInfo": {
+      "date": "07.11.2025",
+      "next": 395595,
+      "previous": 395575,
+      "id": 395585,
+      "event": "Aufstellung 10. Spieltag"
+    },
+    "currentMatchday": 10,
+    "isStarted": true,
+    "isFinished": false,
+    "latestKickoff": "2025-11-09T19:30:00+01:00",
+    "fetchNow": false
+  },
+  "11": {
+    "earliestKickoff": "2025-11-21T20:30:00+01:00",
+    "pointsMatchday": 10,
+    "eventInfo": {
+      "date": "21.11.2025",
+      "next": 395605,
+      "previous": 395585,
+      "id": 395595,
+      "event": "Aufstellung 11. Spieltag"
+    },
+    "currentMatchday": 11,
+    "isStarted": true,
+    "isFinished": false,
+    "latestKickoff": "2025-11-23T17:30:00+01:00",
+    "fetchNow": false
+  },
+  "12": {
+    "earliestKickoff": "2025-11-28T20:30:00+01:00",
+    "pointsMatchday": 11,
+    "eventInfo": {
+      "date": "28.11.2025",
+      "next": 395789,
+      "previous": 395595,
+      "id": 395605,
+      "event": "Aufstellung 12. Spieltag"
+    },
+    "currentMatchday": 12,
+    "isStarted": true,
+    "isFinished": false,
+    "latestKickoff": "2025-11-30T19:30:00+01:00",
+    "fetchNow": false
+  },
+  "13": {
+    "earliestKickoff": "2025-12-05T20:30:00+01:00",
+    "pointsMatchday": 12,
+    "eventInfo": {
+      "date": "05.12.2025",
+      "next": 395799,
+      "previous": 395605,
+      "id": 395789,
+      "event": "Aufstellung 13. Spieltag"
+    },
+    "currentMatchday": 13,
+    "isStarted": true,
+    "isFinished": false,
+    "latestKickoff": "2025-12-07T17:30:00+01:00",
     "fetchNow": false
   },
   "14": {
@@ -349,22 +381,6 @@
     "isStarted": true,
     "isFinished": false,
     "latestKickoff": "2026-02-01T17:30:00+01:00",
-    "fetchNow": false
-  },
-  "10": {
-    "earliestKickoff": "2025-11-07T20:30:00+01:00",
-    "pointsMatchday": 9,
-    "eventInfo": {
-      "date": "07.11.2025",
-      "next": 395595,
-      "previous": 395575,
-      "id": 395585,
-      "event": "Aufstellung 10. Spieltag"
-    },
-    "currentMatchday": 10,
-    "isStarted": true,
-    "isFinished": false,
-    "latestKickoff": "2025-11-09T19:30:00+01:00",
     "fetchNow": false
   },
   "21": {
