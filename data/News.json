@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "07.03.2026 15:03:58",
+  "lastUpdate": "08.03.2026 05:18:25",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -17623,6 +17623,27 @@
       ]
     },
     {
+      "date": "08.03.2026",
+      "news": [
+        {
+          "date": "08.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Tiago Tomás\",\"price\":3930009,\"buyerId\":\"10966300\",\"playerValue\":3770000,\"playerId\":\"33557\",\"buyer\":\"Alexander\"}",
+          "id": "960124395",
+          "playerId": "33557"
+        },
+        {
+          "date": "08.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Chema Andrés\",\"price\":3559500,\"buyerId\":\"1\",\"playerValue\":3420000,\"playerId\":\"34253\",\"buyer\":\"Computer\"}",
+          "id": "960117911",
+          "playerId": "34253"
+        }
+      ]
+    },
+    {
       "date": "08.02.2026",
       "news": [
         {
@@ -18685,6 +18706,14 @@
           "text": "Statuswechsel: Neuer (30755) ist jetzt VERLETZT (Muskelfasereinriss)",
           "id": "0",
           "playerId": "30755"
+        },
+        {
+          "date": "07.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kawasaki (34231) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34231"
         }
       ]
     },
