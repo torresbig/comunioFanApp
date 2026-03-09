@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "09.03.2026 05:32:26",
+  "lastUpdate": "09.03.2026 15:03:56",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -16939,14 +16939,40 @@
     },
     {
       "date": "09.03.2026",
-      "news": [{
-        "date": "09.03.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Topp\",\"price\":1355000,\"buyerId\":\"9317431\",\"playerValue\":1460000,\"playerId\":\"33741\",\"buyer\":\"Andi\"}",
-        "id": "960153747",
-        "playerId": "33741"
-      }]
+      "news": [
+        {
+          "date": "09.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Topp\",\"price\":1355000,\"buyerId\":\"9317431\",\"playerValue\":1460000,\"playerId\":\"33741\",\"buyer\":\"Andi\"}",
+          "id": "960153747",
+          "playerId": "33741"
+        },
+        {
+          "date": "09.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kane (33838) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33838"
+        },
+        {
+          "date": "09.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Süle (32122) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32122"
+        },
+        {
+          "date": "09.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Castro-Montes (34287) ist jetzt VERLETZT (muskuläre Probleme)",
+          "id": "0",
+          "playerId": "34287"
+        }
+      ]
     },
     {
       "date": "09.02.2026",
