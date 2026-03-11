@@ -507,7 +507,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/31762"},
-        "elfDesSpieltages": 1,
+        "elfDesSpieltages": 2,
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "13.07.1993",
@@ -5483,15 +5483,16 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "14",
-            "zielwert": "2.460.000",
+            "zielwert": "2.470.000",
             "platz": 4,
             "lastUpdate": "11.03.2026",
             "typ": "top",
             "marktwert": "2.020.000",
-            "aenderung": "+440.000"
+            "aenderung": "+450.000"
           },
           "link": "https://www.com-analytics.de/player/33858"
         },
+        "elfDesSpieltages": 1,
         "spielerDaten": {
           "groesse": "1,81",
           "geburtstag": "06.04.2000",
@@ -6354,12 +6355,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "4",
-            "zielwert": "7.670.000",
-            "platz": 8,
+            "zielwert": "7.720.000",
+            "platz": 9,
             "lastUpdate": "11.03.2026",
             "typ": "flop",
             "marktwert": "8.010.000",
-            "aenderung": "-340.000"
+            "aenderung": "-290.000"
           },
           "link": "https://www.com-analytics.de/player/32858"
         },
@@ -7262,6 +7263,7 @@
     },
     {
       "data": {
+        "elfDesSpieltages": 1,
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "27.03.1998",
@@ -8721,6 +8723,7 @@
     },
     {
       "data": {
+        "elfDesSpieltages": 1,
         "spielerDaten": {
           "groesse": "1,84",
           "geburtstag": "10.03.2002",
@@ -14234,7 +14237,7 @@
           "topFlop": {
             "punkte": "0",
             "zielwert": "13.190.000",
-            "platz": 9,
+            "platz": 8,
             "lastUpdate": "11.03.2026",
             "typ": "flop",
             "marktwert": "13.500.000",
@@ -16984,6 +16987,7 @@
     },
     {
       "data": {
+        "elfDesSpieltages": 1,
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "26.05.2001",
@@ -18084,9 +18088,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "10.03.2026",
-          "seit": "",
+          "grund": "Oberschenkelzerrung",
+          "lastUpdate": "11.03.2026",
+          "seit": "11.03.2026",
           "details": "",
           "historie": [{
             "grund": "Kreuzbandriss",
@@ -18096,8 +18100,8 @@
             "historie": [],
             "status": "VERLETZT"
           }],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Davies",
@@ -26265,12 +26269,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "11",
-            "zielwert": "5.650.000",
+            "zielwert": "5.630.000",
             "platz": 5,
             "lastUpdate": "11.03.2026",
             "typ": "top",
             "marktwert": "5.210.000",
-            "aenderung": "+440.000"
+            "aenderung": "+420.000"
           },
           "link": "https://www.com-analytics.de/player/34155"
         },
@@ -33854,6 +33858,51 @@
     },
     {
       "data": {
+        "elfDesSpieltages": 1,
+        "fussballdatenDe": {
+          "lastProcessedMatchday": 13,
+          "lastUpdate": "09.12.2025 15:00:44",
+          "name": "Maximilian Beier",
+          "nationalitaet": "Deutschland",
+          "url": "https://www.fussballdaten.de/person/maximilian-beier/"
+        },
+        "transfermarktDoDe": {
+          "date": "07.03.2026",
+          "name": "Maximilian Beier",
+          "link": "https://www.transfermarkt.de/maximilian-beier/profil/spieler/578392",
+          "id": 578392,
+          "leistungsDaten": {}
+        },
+        "lastBigUpdate": "08.03.2026",
+        "stats": {
+          "notenDurchschnitt": "6,9",
+          "gelbekarten": 2,
+          "totalPenalties": 0,
+          "ratedGames": 23,
+          "lastUpdate": "08.03.2026",
+          "playedGames": 23,
+          "totalGoals": 8,
+          "punkteDurchschnitt": "4,87",
+          "gelbrotekarten": 0,
+          "rotekarten": 0,
+          "manOfTheMatchAmount": 0
+        },
+        "withinSquad": true,
+        "attribute": {"ligainsiderRanking": {
+          "punkte": 924,
+          "einsaetzeBewertet": 22,
+          "durchschnittsnote": 3.66,
+          "verein": "Borussia Dortmund",
+          "lastUpdate": "11.03.2026",
+          "durchschnittsminuten": 64,
+          "durchschnittspunkte": 41.14,
+          "rang": 124
+        }},
+        "possibleNames": [
+          "Maximilian Beier",
+          "M. Beier",
+          "Beier"
+        ],
         "comAnalystics": {
           "topFlop": {
             "punkte": "12",
@@ -33886,38 +33935,10 @@
         "punktekorrektur": [],
         "wert": 9650000,
         "verein": "5",
-        "fussballdatenDe": {
-          "lastProcessedMatchday": 13,
-          "lastUpdate": "09.12.2025 15:00:44",
-          "name": "Maximilian Beier",
-          "nationalitaet": "Deutschland",
-          "url": "https://www.fussballdaten.de/person/maximilian-beier/"
-        },
         "lastPoints": 12,
-        "transfermarktDoDe": {
-          "date": "07.03.2026",
-          "name": "Maximilian Beier",
-          "link": "https://www.transfermarkt.de/maximilian-beier/profil/spieler/578392",
-          "id": 578392,
-          "leistungsDaten": {}
-        },
         "lastSeasonPoints": 115,
         "punkte": 112,
         "realWert": 30000000,
-        "lastBigUpdate": "08.03.2026",
-        "stats": {
-          "notenDurchschnitt": "6,9",
-          "gelbekarten": 2,
-          "totalPenalties": 0,
-          "ratedGames": 23,
-          "lastUpdate": "08.03.2026",
-          "playedGames": 23,
-          "totalGoals": 8,
-          "punkteDurchschnitt": "4,87",
-          "gelbrotekarten": 0,
-          "rotekarten": 0,
-          "manOfTheMatchAmount": 0
-        },
         "lastUpdate": "11.03.2026",
         "historicalPoints": [
           {"2019": 2},
@@ -33925,24 +33946,8 @@
           {"2023": 174},
           {"2024": 115}
         ],
-        "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 924,
-          "einsaetzeBewertet": 22,
-          "durchschnittsnote": 3.66,
-          "verein": "Borussia Dortmund",
-          "lastUpdate": "11.03.2026",
-          "durchschnittsminuten": 64,
-          "durchschnittspunkte": 41.14,
-          "rang": 124
-        }},
-        "possibleNames": [
-          "Maximilian Beier",
-          "M. Beier",
-          "Beier"
-        ],
         "comunioStatus": {
           "grund": "unbekannt",
           "lastUpdate": "08.03.2026",
@@ -35005,9 +35010,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "16.01.2026",
-          "seit": "",
+          "grund": "Sprunggelenksprobleme",
+          "lastUpdate": "11.03.2026",
+          "seit": "11.03.2026",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -35017,8 +35022,8 @@
             "historie": [],
             "status": "VERLETZT"
           }],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Musiala",
@@ -40574,9 +40579,9 @@
           "status": "AUFBAUTRAINING"
         },
         "status": {
-          "grund": "muskuläre Probleme",
+          "grund": "Trainingsrückstand",
           "lastUpdate": "11.03.2026",
-          "seit": "20.08.2025",
+          "seit": "20.02.2026",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -41708,9 +41713,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "24.10.2025",
-          "seit": "",
+          "grund": "Gehirnerschütterung",
+          "lastUpdate": "11.03.2026",
+          "seit": "11.03.2026",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -41720,8 +41725,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Urbig",
@@ -41812,7 +41817,7 @@
           "groesse": "1,88",
           "geburtstag": "12.05.1999",
           "laenderspiele": 21,
-          "lastUpdate": "16.02.2026",
+          "lastUpdate": "11.03.2026",
           "nebenpositionen": [
             "LV",
             "DM"
@@ -41837,7 +41842,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "16.02.2026",
+          "date": "11.03.2026",
           "name": "Hiroki Ito",
           "link": "https://www.transfermarkt.de/hiroki-ito/profil/spieler/353892",
           "id": 353892,
@@ -42063,7 +42068,7 @@
           "groesse": "1,89",
           "geburtstag": "30.09.1996",
           "laenderspiele": 63,
-          "lastUpdate": "16.02.2026",
+          "lastUpdate": "11.03.2026",
           "nebenpositionen": ["RV"],
           "nationalspieler": "",
           "trikotNummer": 30,
@@ -42085,7 +42090,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "16.02.2026",
+          "date": "11.03.2026",
           "name": "Nico Elvedi",
           "link": "https://www.transfermarkt.de/nico-elvedi/profil/spieler/192635",
           "id": 192635,
@@ -42185,7 +42190,7 @@
           "groesse": "1,90",
           "geburtstag": "10.10.2000",
           "laenderspiele": 6,
-          "lastUpdate": "16.02.2026",
+          "lastUpdate": "11.03.2026",
           "nebenpositionen": ["OM"],
           "nationalspieler": "",
           "trikotNummer": 8,
@@ -42207,7 +42212,7 @@
         },
         "lastPoints": 5,
         "transfermarktDoDe": {
-          "date": "16.02.2026",
+          "date": "11.03.2026",
           "name": "Felix Nmecha",
           "link": "https://www.transfermarkt.de/felix-nmecha/profil/spieler/406640",
           "id": 406640,
@@ -42289,7 +42294,7 @@
           "groesse": "1,76",
           "geburtstag": "28.06.2005",
           "laenderspiele": 4,
-          "lastUpdate": "16.02.2026",
+          "lastUpdate": "11.03.2026",
           "nebenpositionen": [
             "OM",
             "RM"
@@ -42314,7 +42319,7 @@
         },
         "lastPoints": 6,
         "transfermarktDoDe": {
-          "date": "16.02.2026",
+          "date": "11.03.2026",
           "name": "Tom Bischof",
           "link": "https://www.transfermarkt.de/Tom Bischof/profil/spieler/822959",
           "id": 822959,
@@ -42434,7 +42439,7 @@
           "groesse": "1,92",
           "geburtstag": "22.09.1988",
           "laenderspiele": 0,
-          "lastUpdate": "16.02.2026",
+          "lastUpdate": "11.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 33,
@@ -42449,7 +42454,7 @@
         "verein": "9",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "16.02.2026",
+          "date": "11.03.2026",
           "name": "Jens Grahl 200 Tsd. \u20ac",
           "link": "https://www.transfermarkt.de/jens-grahl/profil/spieler/40034",
           "id": 40034,
@@ -42526,7 +42531,7 @@
           "url": "https://www.fussballdaten.de/person/patrick-wimmer/"
         },
         "transfermarktDoDe": {
-          "date": "16.02.2026",
+          "date": "11.03.2026",
           "name": "Patrick Wimmer",
           "link": "https://www.transfermarkt.de/patrick-wimmer/profil/spieler/533295",
           "id": 533295,
@@ -42567,7 +42572,7 @@
           "groesse": "1,82",
           "geburtstag": "30.05.2001",
           "laenderspiele": 28,
-          "lastUpdate": "16.02.2026",
+          "lastUpdate": "11.03.2026",
           "nebenpositionen": [
             "OM",
             "LA"
@@ -42708,7 +42713,7 @@
           "url": "https://www.fussballdaten.de/person/grischa-proemel/"
         },
         "transfermarktDoDe": {
-          "date": "16.02.2026",
+          "date": "11.03.2026",
           "name": "Grischa Prömel 7,00 Mio. \u20ac",
           "link": "https://www.transfermarkt.de/grischa-promel/profil/spieler/234029",
           "id": 234029,
@@ -42763,7 +42768,7 @@
           "groesse": "1,84",
           "geburtstag": "09.01.1995",
           "laenderspiele": 0,
-          "lastUpdate": "16.02.2026",
+          "lastUpdate": "11.03.2026",
           "nebenpositionen": [
             "DM",
             "OM"
@@ -42829,7 +42834,7 @@
           "groesse": "1,84",
           "geburtstag": "14.05.1997",
           "laenderspiele": 15,
-          "lastUpdate": "16.02.2026",
+          "lastUpdate": "11.03.2026",
           "nebenpositionen": [
             "IV",
             "RV"
@@ -42854,7 +42859,7 @@
         },
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "16.02.2026",
+          "date": "11.03.2026",
           "name": "Kristijan Jakic",
           "link": "https://www.transfermarkt.de/kristijan-jakic/profil/spieler/374954",
           "id": 374954,
@@ -42975,7 +42980,7 @@
           "groesse": "1,85",
           "geburtstag": "15.04.1994",
           "laenderspiele": 2,
-          "lastUpdate": "16.02.2026",
+          "lastUpdate": "11.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 24,
@@ -42990,7 +42995,7 @@
         "verein": "21",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "16.02.2026",
+          "date": "11.03.2026",
           "name": "Jannik Huth",
           "link": "https://www.transfermarkt.de/jannik-huth/profil/spieler/160954",
           "id": 160954,
@@ -43062,7 +43067,7 @@
           "groesse": "1,80",
           "geburtstag": "18.03.1997",
           "laenderspiele": 15,
-          "lastUpdate": "16.02.2026",
+          "lastUpdate": "11.03.2026",
           "nebenpositionen": ["LM"],
           "nationalspieler": "",
           "trikotNummer": 7,
@@ -43084,7 +43089,7 @@
         },
         "lastPoints": 5,
         "transfermarktDoDe": {
-          "date": "16.02.2026",
+          "date": "11.03.2026",
           "name": "Maximilian Mittelstädt",
           "link": "https://www.transfermarkt.de/maximilian-mittelstadt/profil/spieler/282660",
           "id": 282660,
@@ -43185,7 +43190,7 @@
     },
     {
       "data": {
-        "elfDesSpieltages": 2,
+        "elfDesSpieltages": 3,
         "fussballdatenDe": {
           "lastProcessedMatchday": 13,
           "lastUpdate": "09.12.2025 15:00:44",
@@ -46647,7 +46652,7 @@
     },
     {
       "data": {
-        "elfDesSpieltages": 1,
+        "elfDesSpieltages": 2,
         "fussballdatenDe": {
           "lastProcessedMatchday": 13,
           "lastUpdate": "09.12.2025 15:00:43",
@@ -49405,7 +49410,7 @@
     },
     {
       "data": {
-        "elfDesSpieltages": 4,
+        "elfDesSpieltages": 5,
         "fussballdatenDe": {
           "lastProcessedMatchday": 13,
           "lastUpdate": "09.12.2025 15:00:43",
@@ -60399,7 +60404,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "elfDesSpieltages": 5,
+        "elfDesSpieltages": 6,
         "comAnalystics": {
           "topFlop": {
             "punkte": "12",
@@ -63566,7 +63571,7 @@
     },
     {
       "data": {
-        "elfDesSpieltages": 3,
+        "elfDesSpieltages": 4,
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34282"},
         "spielerDaten": {
           "groesse": "",
@@ -65688,12 +65693,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "10",
-            "zielwert": "5.180.000",
+            "zielwert": "5.200.000",
             "platz": 3,
             "lastUpdate": "11.03.2026",
             "typ": "top",
             "marktwert": "4.680.000",
-            "aenderung": "+500.000"
+            "aenderung": "+520.000"
           },
           "link": "https://www.com-analytics.de/player/34299"
         },
