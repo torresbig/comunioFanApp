@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "10.03.2026 15:00:42",
+  "lastUpdate": "11.03.2026 05:23:11",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -15761,6 +15761,17 @@
       ]
     },
     {
+      "date": "11.03.2026",
+      "news": [{
+        "date": "11.03.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Arnold\",\"price\":6589000,\"buyerId\":\"13721745\",\"playerValue\":6430000,\"playerId\":\"31884\",\"buyer\":\"damian\"}",
+        "id": "960235983",
+        "playerId": "31884"
+      }]
+    },
+    {
       "date": "11.02.2026",
       "news": [
         {
@@ -16517,6 +16528,14 @@
           "text": "Neuer Spieler: Prescott (ID: 34353)",
           "id": "0",
           "playerId": "34353"
+        },
+        {
+          "date": "10.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Davies (33021) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33021"
         }
       ]
     },
