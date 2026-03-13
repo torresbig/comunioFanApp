@@ -1309,16 +1309,19 @@
           {"2024": 36}
         ],
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 726,
-          "einsaetzeBewertet": 22,
-          "durchschnittsnote": 4.11,
-          "verein": "1. FC Union Berlin",
-          "lastUpdate": "12.03.2026",
-          "durchschnittsminuten": 72,
-          "durchschnittspunkte": 32.09,
-          "rang": 232
-        }},
+        "attribute": {
+          "ligainsiderRanking": {
+            "punkte": 726,
+            "einsaetzeBewertet": 22,
+            "durchschnittsnote": 4.11,
+            "verein": "1. FC Union Berlin",
+            "lastUpdate": "12.03.2026",
+            "durchschnittsminuten": 72,
+            "durchschnittspunkte": 32.09,
+            "rang": 232
+          },
+          "SonstigeInfos": ["häufigsten Transfers (6)"]
+        },
         "possibleNames": [
           "Aljoscha Kemlein",
           "A. Kemlein",
@@ -3237,7 +3240,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33835"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "6",
+            "zielwert": "2.410.000",
+            "platz": 10,
+            "lastUpdate": "12.03.2026",
+            "typ": "top",
+            "marktwert": "2.180.000",
+            "aenderung": "+230.000"
+          },
+          "link": "https://www.com-analytics.de/player/33835"
+        },
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "19.02.1999",
@@ -4122,9 +4136,9 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Schulterverletzung",
+          "grund": "",
           "lastUpdate": "12.03.2026",
-          "seit": "29.10.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -4134,8 +4148,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Mæhle",
@@ -32179,12 +32193,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "0",
-            "zielwert": "5.730.000",
+            "zielwert": "5.720.000",
             "platz": 7,
             "lastUpdate": "12.03.2026",
             "typ": "flop",
             "marktwert": "5.970.000",
-            "aenderung": "-240.000"
+            "aenderung": "-250.000"
           },
           "link": "https://www.com-analytics.de/player/33189"
         },
@@ -44368,9 +44382,9 @@
           "status": "VERLETZT"
         },
         "status": {
-          "grund": "Oberschenkelverletzung",
+          "grund": "",
           "lastUpdate": "12.03.2026",
-          "seit": "24.11.2025",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -44380,8 +44394,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "31.03.2026",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Wind",
@@ -45022,7 +45036,7 @@
           "groesse": "1,80",
           "geburtstag": "18.01.2002",
           "laenderspiele": 11,
-          "lastUpdate": "17.02.2026",
+          "lastUpdate": "12.03.2026",
           "nebenpositionen": [
             "RA",
             "MS"
@@ -45047,7 +45061,7 @@
         },
         "lastPoints": 1,
         "transfermarktDoDe": {
-          "date": "17.02.2026",
+          "date": "12.03.2026",
           "name": "Karim Adeyemi",
           "link": "https://www.transfermarkt.de/karim-adeyemi/profil/spieler/496094",
           "id": 496094,
@@ -45147,7 +45161,7 @@
           "groesse": "1,84",
           "geburtstag": "01.07.1997",
           "laenderspiele": 1,
-          "lastUpdate": "17.02.2026",
+          "lastUpdate": "12.03.2026",
           "nebenpositionen": [
             "IV",
             "LM"
@@ -45172,7 +45186,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "17.02.2026",
+          "date": "12.03.2026",
           "name": "Anthony Caci 7,00 Mio. \u20ac",
           "link": "https://www.transfermarkt.de/anthony-caci/profil/spieler/453016",
           "id": 453016,
@@ -45452,7 +45466,7 @@
           "url": "https://www.fussballdaten.de/person/andrej-kramaric/"
         },
         "transfermarktDoDe": {
-          "date": "17.02.2026",
+          "date": "12.03.2026",
           "name": "Andrej Kramaric 8,00 Mio. \u20ac",
           "link": "https://www.transfermarkt.de/andrej-kramaric/profil/spieler/46580",
           "id": 46580,
@@ -45510,7 +45524,7 @@
           "groesse": "1,77",
           "geburtstag": "19.06.1991",
           "laenderspiele": 112,
-          "lastUpdate": "17.02.2026",
+          "lastUpdate": "12.03.2026",
           "nebenpositionen": [
             "OM",
             "HS"
@@ -45800,13 +45814,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "19.02.2026",
-          "seit": "",
+          "grund": "Krank",
+          "lastUpdate": "12.03.2026",
+          "seit": "09.03.2026",
           "details": "",
           "historie": [],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Zehnter",
@@ -45818,7 +45832,7 @@
           "groesse": "1,93",
           "geburtstag": "06.05.1990",
           "laenderspiele": 58,
-          "lastUpdate": "17.02.2026",
+          "lastUpdate": "12.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 1,
@@ -45840,7 +45854,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "17.02.2026",
+          "date": "12.03.2026",
           "name": "Péter Gulácsi",
           "link": "https://www.transfermarkt.de/peter-gulacsi/profil/spieler/57071",
           "id": 57071,
@@ -45967,7 +45981,7 @@
           "groesse": "1,91",
           "geburtstag": "04.10.1999",
           "laenderspiele": 0,
-          "lastUpdate": "17.02.2026",
+          "lastUpdate": "12.03.2026",
           "nebenpositionen": [
             "OM",
             "LA"
@@ -45992,7 +46006,7 @@
         },
         "lastPoints": 1,
         "transfermarktDoDe": {
-          "date": "17.02.2026",
+          "date": "12.03.2026",
           "name": "Marvin Pieringer",
           "link": "https://www.transfermarkt.de/Marvin Pieringer/profil/spieler/471055",
           "id": 471055,
@@ -46180,7 +46194,7 @@
           "groesse": "1,86",
           "geburtstag": "05.06.2005",
           "laenderspiele": 2,
-          "lastUpdate": "17.02.2026",
+          "lastUpdate": "12.03.2026",
           "nebenpositionen": ["LV"],
           "nationalspieler": "",
           "trikotNummer": 2,
@@ -46202,7 +46216,7 @@
         },
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "17.02.2026",
+          "date": "12.03.2026",
           "name": "Fabio Chiarodia",
           "link": "https://www.transfermarkt.de/fabio-chiarodia/profil/spieler/724104",
           "id": 724104,
@@ -46351,7 +46365,7 @@
           "groesse": "1,86",
           "geburtstag": "03.11.1991",
           "laenderspiele": 2,
-          "lastUpdate": "18.02.2026",
+          "lastUpdate": "12.03.2026",
           "nebenpositionen": [
             "LV",
             "LM"
@@ -46369,7 +46383,7 @@
         "verein": "21",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "18.02.2026",
+          "date": "12.03.2026",
           "name": "Anthony Jung",
           "link": "https://www.transfermarkt.de/anthony-jung/profil/spieler/58995",
           "id": 58995,
@@ -47161,9 +47175,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "08.02.2026",
-          "seit": "",
+          "grund": "Oberschenkelverletzung",
+          "lastUpdate": "12.03.2026",
+          "seit": "11.03.2026",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -47173,8 +47187,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Y. Poulsen",
@@ -48103,9 +48117,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "Knieverletzung",
+          "grund": "",
           "lastUpdate": "12.03.2026",
-          "seit": "26.01.2026",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -48115,8 +48129,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Kübler",
@@ -55861,18 +55875,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "5",
-            "zielwert": "3.870.000",
-            "platz": 10,
-            "lastUpdate": "12.03.2026",
-            "typ": "top",
-            "marktwert": "3.630.000",
-            "aenderung": "+240.000"
-          },
-          "link": "https://www.com-analytics.de/player/33782"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33782"},
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "27.06.2004",
@@ -58934,7 +58937,7 @@
           "groesse": "1,79",
           "geburtstag": "20.04.2003",
           "laenderspiele": 18,
-          "lastUpdate": "17.02.2026",
+          "lastUpdate": "12.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 9,
@@ -58956,7 +58959,7 @@
         },
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "17.02.2026",
+          "date": "12.03.2026",
           "name": "Johan Bakayoko",
           "link": "https://www.transfermarkt.de/johan-bakayoko/profil/spieler/565424",
           "id": "565424",
@@ -68494,7 +68497,7 @@
           "groesse": "1,93",
           "geburtstag": "29.11.2002",
           "laenderspiele": 0,
-          "lastUpdate": "17.02.2026",
+          "lastUpdate": "12.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 12,
@@ -68509,7 +68512,7 @@
         "wert": 240000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "17.02.2026",
+          "date": "12.03.2026",
           "haveToCheck": true,
           "name": "Sander Tangvik",
           "link": "https://www.transfermarkt.de/sander-tangvik/profil/spieler/549378",
@@ -68572,7 +68575,7 @@
           "groesse": "",
           "geburtstag": "12.07.2007",
           "laenderspiele": 2,
-          "lastUpdate": "17.02.2026",
+          "lastUpdate": "12.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 1,
@@ -68587,7 +68590,7 @@
         "wert": 160000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "17.02.2026",
+          "date": "12.03.2026",
           "haveToCheck": true,
           "name": "Jesper Schlich",
           "link": "https://www.transfermarkt.de/jesper-schlich/profil/spieler/1041647",
