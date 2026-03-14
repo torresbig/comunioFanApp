@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "14.03.2026 05:18:25",
+  "lastUpdate": "14.03.2026 13:20:30",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -13621,14 +13621,24 @@
     },
     {
       "date": "14.03.2026",
-      "news": [{
-        "date": "14.03.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Jaquez\",\"price\":1350000,\"buyerId\":\"5949921\",\"playerValue\":1480000,\"playerId\":\"34112\",\"buyer\":\"Sascha\"}",
-        "id": "960393716",
-        "playerId": "34112"
-      }]
+      "news": [
+        {
+          "date": "14.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Jaquez\",\"price\":1350000,\"buyerId\":\"5949921\",\"playerValue\":1480000,\"playerId\":\"34112\",\"buyer\":\"Sascha\"}",
+          "id": "960393716",
+          "playerId": "34112"
+        },
+        {
+          "date": "14.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Timo\",\"sellerId\":\"13641978\",\"playerName\":\"Masanka Bungi\",\"price\":166400,\"buyerId\":\"1\",\"playerValue\":160000,\"playerId\":\"34119\",\"buyer\":\"Computer\"}",
+          "id": "960393716",
+          "playerId": "34119"
+        }
+      ]
     },
     {
       "date": "14.02.2026",
