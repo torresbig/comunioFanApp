@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "17.03.2026 15:00:10",
+  "lastUpdate": "18.03.2026 05:18:21",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -10396,6 +10396,17 @@
       ]
     },
     {
+      "date": "18.03.2026",
+      "news": [{
+        "date": "18.03.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Bebou\",\"price\":380000,\"buyerId\":\"13654613\",\"playerValue\":370000,\"playerId\":\"32842\",\"buyer\":\"Christoph\"}",
+        "id": "960541804",
+        "playerId": "32842"
+      }]
+    },
+    {
       "date": "18.02.2026",
       "news": [
         {
@@ -10928,14 +10939,24 @@
     },
     {
       "date": "17.03.2026",
-      "news": [{
-        "date": "17.03.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Downs\",\"price\":2220000,\"buyerId\":\"13806423\",\"playerValue\":2110000,\"playerId\":\"33746\",\"buyer\":\"Florian\"}",
-        "id": "960503072",
-        "playerId": "33746"
-      }]
+      "news": [
+        {
+          "date": "17.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Downs\",\"price\":2220000,\"buyerId\":\"13806423\",\"playerValue\":2110000,\"playerId\":\"33746\",\"buyer\":\"Florian\"}",
+          "id": "960503072",
+          "playerId": "33746"
+        },
+        {
+          "date": "17.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Uzun (34008) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34008"
+        }
+      ]
     },
     {
       "date": "17.02.2026",
