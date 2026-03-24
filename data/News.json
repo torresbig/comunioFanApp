@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "24.03.2026 05:18:40",
+  "lastUpdate": "24.03.2026 15:03:49",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -5342,14 +5342,24 @@
     },
     {
       "date": "24.03.2026",
-      "news": [{
-        "date": "24.03.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Nartey\",\"price\":3760009,\"buyerId\":\"10966300\",\"playerValue\":3260000,\"playerId\":\"32830\",\"buyer\":\"Alexander\"}",
-        "id": "960790361",
-        "playerId": "32830"
-      }]
+      "news": [
+        {
+          "date": "24.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Nartey\",\"price\":3760009,\"buyerId\":\"10966300\",\"playerValue\":3260000,\"playerId\":\"32830\",\"buyer\":\"Alexander\"}",
+          "id": "960790361",
+          "playerId": "32830"
+        },
+        {
+          "date": "24.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ngoumou (33681) ist jetzt VERLETZT (Trainingsrückstand)",
+          "id": "0",
+          "playerId": "33681"
+        }
+      ]
     },
     {
       "date": "24.02.2026",
