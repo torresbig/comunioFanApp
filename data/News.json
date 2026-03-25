@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "24.03.2026 15:03:49",
+  "lastUpdate": "25.03.2026 05:18:24",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -4392,6 +4392,27 @@
       ]
     },
     {
+      "date": "25.03.2026",
+      "news": [
+        {
+          "date": "25.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Doekhi\",\"price\":4760000,\"buyerId\":\"13641978\",\"playerValue\":4470000,\"playerId\":\"33609\",\"buyer\":\"Timo\"}",
+          "id": "960827159",
+          "playerId": "33609"
+        },
+        {
+          "date": "25.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Ilić\",\"price\":2380009,\"buyerId\":\"10966300\",\"playerValue\":2310000,\"playerId\":\"34059\",\"buyer\":\"Alexander\"}",
+          "id": "960827159",
+          "playerId": "34059"
+        }
+      ]
+    },
+    {
       "date": "25.02.2026",
       "news": [
         {
@@ -5358,6 +5379,14 @@
           "text": "Statuswechsel: Ngoumou (33681) ist jetzt VERLETZT (Trainingsrückstand)",
           "id": "0",
           "playerId": "33681"
+        },
+        {
+          "date": "24.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Dal (34052) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34052"
         }
       ]
     },
