@@ -2632,12 +2632,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "5",
-            "zielwert": "3.220.000",
-            "platz": 8,
+            "zielwert": "3.200.000",
+            "platz": 9,
             "lastUpdate": "26.03.2026",
             "typ": "top",
             "marktwert": "2.990.000",
-            "aenderung": "+230.000"
+            "aenderung": "+210.000"
           },
           "link": "https://www.com-analytics.de/player/32807"
         },
@@ -12180,7 +12180,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/32953"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "0",
+            "zielwert": "3.830.000",
+            "platz": 10,
+            "lastUpdate": "26.03.2026",
+            "typ": "flop",
+            "marktwert": "4.080.000",
+            "aenderung": "-250.000"
+          },
+          "link": "https://www.com-analytics.de/player/32953"
+        },
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "28.04.1997",
@@ -23748,18 +23759,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "-1",
-            "zielwert": "4.470.000",
-            "platz": 10,
-            "lastUpdate": "26.03.2026",
-            "typ": "flop",
-            "marktwert": "4.720.000",
-            "aenderung": "-250.000"
-          },
-          "link": "https://www.com-analytics.de/player/34114"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34114"},
         "elfDesSpieltages": 2,
         "spielerDaten": {
           "groesse": "1,83",
@@ -28406,7 +28406,7 @@
           "groesse": "1,82",
           "geburtstag": "21.01.1998",
           "laenderspiele": 2,
-          "lastUpdate": "05.03.2026",
+          "lastUpdate": "26.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 19,
@@ -28428,7 +28428,7 @@
         },
         "lastPoints": 4,
         "transfermarktDoDe": {
-          "date": "05.03.2026",
+          "date": "26.03.2026",
           "name": "Robin Fellhauer",
           "link": "https://www.transfermarkt.de/robin-fellhauer/profil/spieler/264960",
           "id": "264960",
@@ -28440,7 +28440,7 @@
         },
         "lastSeasonPoints": 0,
         "punkte": 100,
-        "realWert": 2500000,
+        "realWert": 3000000,
         "lastBigUpdate": "22.03.2026",
         "stats": {
           "notenDurchschnitt": "6,83",
@@ -29454,13 +29454,13 @@
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "16.02.2005",
-          "laenderspiele": 10,
-          "lastUpdate": "05.03.2026",
+          "laenderspiele": 0,
+          "lastUpdate": "26.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 6,
-          "nationalitaet": "Niederlande",
-          "laenderspielTore": 1,
+          "nationalitaet": "DR Kongo",
+          "laenderspielTore": 0,
           "hauptposition": "Zentrales Mittelfeld",
           "fuss": "rechts"
         },
@@ -29477,7 +29477,7 @@
         },
         "lastPoints": 4,
         "transfermarktDoDe": {
-          "date": "05.03.2026",
+          "date": "26.03.2026",
           "name": "Ezechiel Banzuzi",
           "link": "https://www.transfermarkt.de/ezechiel-banzuzi/profil/spieler/865682",
           "id": "865682",
@@ -29589,7 +29589,7 @@
           "groesse": "1,78",
           "geburtstag": "29.07.2003",
           "laenderspiele": 5,
-          "lastUpdate": "05.03.2026",
+          "lastUpdate": "26.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 17,
@@ -29611,7 +29611,7 @@
         },
         "lastPoints": 19,
         "transfermarktDoDe": {
-          "date": "05.03.2026",
+          "date": "26.03.2026",
           "name": "Jens Castrop",
           "link": "https://www.transfermarkt.de/jens-castrop/profil/spieler/613192",
           "id": "613192",
@@ -29733,7 +29733,7 @@
           "groesse": "1,86",
           "geburtstag": "06.10.1996",
           "laenderspiele": 8,
-          "lastUpdate": "05.03.2026",
+          "lastUpdate": "26.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 4,
@@ -29755,7 +29755,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "05.03.2026",
+          "date": "26.03.2026",
           "name": "Kevin Diks",
           "link": "https://www.transfermarkt.de/kevin-diks/profil/spieler/335209",
           "id": 0,
@@ -29864,15 +29864,15 @@
         "spielerDaten": {
           "groesse": "1,77",
           "geburtstag": "20.09.2002",
-          "laenderspiele": 1,
-          "lastUpdate": "05.03.2026",
+          "laenderspiele": 2,
+          "lastUpdate": "26.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 11,
           "nationalitaet": "Polen",
           "laenderspielTore": 0,
           "hauptposition": "Rechter Verteidiger",
-          "fuss": ""
+          "fuss": "rechts"
         },
         "isNotName": [],
         "punktekorrektur": [],
@@ -29887,7 +29887,7 @@
         },
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "05.03.2026",
+          "date": "26.03.2026",
           "name": "Arkadiusz Pyrka",
           "link": "https://www.transfermarkt.de/arkadiusz-pyrka/profil/spieler/599733",
           "id": "599733",
@@ -29899,7 +29899,7 @@
         },
         "lastSeasonPoints": 0,
         "punkte": 65,
-        "realWert": 3000000,
+        "realWert": 3500000,
         "lastBigUpdate": "22.03.2026",
         "stats": {
           "notenDurchschnitt": "6,69",
@@ -30100,7 +30100,7 @@
           "groesse": "1,80",
           "geburtstag": "28.09.2004",
           "laenderspiele": 7,
-          "lastUpdate": "05.03.2026",
+          "lastUpdate": "26.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 9,
@@ -30122,7 +30122,7 @@
         },
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "05.03.2026",
+          "date": "26.03.2026",
           "name": "Livan Burcu",
           "link": "https://www.transfermarkt.de/livan-burcu/profil/spieler/519872",
           "id": "519872",
@@ -30290,7 +30290,7 @@
           "groesse": "1,90",
           "geburtstag": "16.06.2006",
           "laenderspiele": 0,
-          "lastUpdate": "05.03.2026",
+          "lastUpdate": "26.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 33,
@@ -30305,7 +30305,7 @@
         "verein": "110",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "05.03.2026",
+          "date": "26.03.2026",
           "name": "Nick Rothweiler",
           "link": "https://www.transfermarkt.de/nick-rothweiler/profil/spieler/1052350",
           "id": "1052350",
@@ -30558,13 +30558,13 @@
         "spielerDaten": {
           "groesse": "1,82",
           "geburtstag": "20.07.2005",
-          "laenderspiele": 2,
-          "lastUpdate": "05.03.2026",
+          "laenderspiele": 0,
+          "lastUpdate": "26.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 45,
           "nationalitaet": "Portugal",
-          "laenderspielTore": 1,
+          "laenderspielTore": 0,
           "hauptposition": "Linksaußen",
           "fuss": "rechts"
         },
@@ -30581,7 +30581,7 @@
         },
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "05.03.2026",
+          "date": "26.03.2026",
           "name": "Fabio Baldé",
           "link": "https://www.transfermarkt.de/fabio-balde/profil/spieler/910541",
           "id": "910541",
@@ -30690,7 +30690,7 @@
           "groesse": "1,84",
           "geburtstag": "23.03.2003",
           "laenderspiele": 41,
-          "lastUpdate": "05.03.2026",
+          "lastUpdate": "26.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 18,
@@ -30712,7 +30712,7 @@
         },
         "lastPoints": 5,
         "transfermarktDoDe": {
-          "date": "05.03.2026",
+          "date": "26.03.2026",
           "name": "Ísak Jóhannesson",
           "link": "https://www.transfermarkt.de/isak-johannesson/profil/spieler/579565",
           "id": "579565",
@@ -30724,7 +30724,7 @@
         },
         "lastSeasonPoints": 0,
         "punkte": 77,
-        "realWert": 10000000,
+        "realWert": 8000000,
         "lastBigUpdate": "22.03.2026",
         "stats": {
           "notenDurchschnitt": "6,75",
@@ -34754,7 +34754,7 @@
           "topFlop": {
             "punkte": "5",
             "zielwert": "11.390.000",
-            "platz": 9,
+            "platz": 8,
             "lastUpdate": "26.03.2026",
             "typ": "top",
             "marktwert": "11.170.000",
@@ -37524,7 +37524,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33296"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "18",
+            "zielwert": "10.720.000",
+            "platz": 10,
+            "lastUpdate": "26.03.2026",
+            "typ": "top",
+            "marktwert": "10.520.000",
+            "aenderung": "+200.000"
+          },
+          "link": "https://www.com-analytics.de/player/33296"
+        },
         "elfDesSpieltages": 2,
         "spielerDaten": {
           "groesse": "1,69",
@@ -51578,7 +51589,7 @@
           "groesse": "1,90",
           "geburtstag": "15.02.2005",
           "laenderspiele": 5,
-          "lastUpdate": "05.03.2026",
+          "lastUpdate": "26.03.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 17,
@@ -51600,7 +51611,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "05.03.2026",
+          "date": "26.03.2026",
           "haveToCheck": true,
           "name": "Dzenan Pejcinovic",
           "link": "https://www.transfermarkt.de/dzenan-pejcinovic/profil/spieler/819636",
@@ -51613,7 +51624,7 @@
         },
         "lastSeasonPoints": 0,
         "punkte": 72,
-        "realWert": 6000000,
+        "realWert": 10000000,
         "lastBigUpdate": "22.03.2026",
         "stats": {
           "notenDurchschnitt": "6,75",
@@ -64121,18 +64132,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "8",
-            "zielwert": "2.360.000",
-            "platz": 10,
-            "lastUpdate": "26.03.2026",
-            "typ": "top",
-            "marktwert": "2.150.000",
-            "aenderung": "+210.000"
-          },
-          "link": "https://www.com-analytics.de/player/33564"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33564"},
         "elfDesSpieltages": 1,
         "spielerDaten": {
           "groesse": "1,85",
