@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "27.03.2026 05:18:27",
+  "lastUpdate": "27.03.2026 15:04:02",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -2935,14 +2935,48 @@
     },
     {
       "date": "27.03.2026",
-      "news": [{
-        "date": "27.03.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Bensebaini\",\"price\":7190000,\"buyerId\":\"11683432\",\"playerValue\":6970000,\"playerId\":\"33167\",\"buyer\":\"Simon\"}",
-        "id": "960893280",
-        "playerId": "33167"
-      }]
+      "news": [
+        {
+          "date": "27.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Bensebaini\",\"price\":7190000,\"buyerId\":\"11683432\",\"playerValue\":6970000,\"playerId\":\"33167\",\"buyer\":\"Simon\"}",
+          "id": "960893280",
+          "playerId": "33167"
+        },
+        {
+          "date": "27.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Elvedi\",\"price\":3696000,\"buyerId\":\"1\",\"playerValue\":3610000,\"playerId\":\"32472\",\"buyer\":\"Computer\"}",
+          "id": "960893280",
+          "playerId": "32472"
+        },
+        {
+          "date": "27.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Timo\",\"sellerId\":\"13641978\",\"playerName\":\"Kristensen\",\"price\":1396500,\"buyerId\":\"1\",\"playerValue\":1400000,\"playerId\":\"34025\",\"buyer\":\"Computer\"}",
+          "id": "960893280",
+          "playerId": "34025"
+        },
+        {
+          "date": "27.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Urbig (33494) ist jetzt VERLETZT (Kapselverletzung)",
+          "id": "0",
+          "playerId": "33494"
+        },
+        {
+          "date": "27.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Topp (33741) ist jetzt VERLETZT (Kreuzbandriss)",
+          "id": "0",
+          "playerId": "33741"
+        }
+      ]
     },
     {
       "date": "27.02.2026",
