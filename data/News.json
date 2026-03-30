@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "29.03.2026 15:00:12",
+  "lastUpdate": "30.03.2026 05:40:52",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -1008,6 +1008,17 @@
       ]
     },
     {
+      "date": "30.03.2026",
+      "news": [{
+        "date": "30.03.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Knauff\",\"price\":3188000,\"buyerId\":\"6013585\",\"playerValue\":3080000,\"playerId\":\"33383\",\"buyer\":\"Stefan 8\"}",
+        "id": "960960500",
+        "playerId": "33383"
+      }]
+    },
+    {
       "date": "30.01.2026",
       "news": [
         {
@@ -1703,6 +1714,27 @@
           "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"Raimund\",\"price\":428400,\"playerValue\":160000,\"playerId\":\"33870\",\"buyer\":\"Computer\",\"buyerId\":\"1\"}",
           "id": "948618742",
           "playerId": "33870"
+        }
+      ]
+    },
+    {
+      "date": "29.03.2026",
+      "news": [
+        {
+          "date": "29.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Castrop (34186) ist jetzt VERLETZT (unbekannte Verletzung)",
+          "id": "0",
+          "playerId": "34186"
+        },
+        {
+          "date": "29.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ngoumou (33681) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33681"
         }
       ]
     },
