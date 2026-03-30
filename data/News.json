@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "30.03.2026 05:40:52",
+  "lastUpdate": "30.03.2026 15:04:00",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -1009,14 +1009,40 @@
     },
     {
       "date": "30.03.2026",
-      "news": [{
-        "date": "30.03.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Knauff\",\"price\":3188000,\"buyerId\":\"6013585\",\"playerValue\":3080000,\"playerId\":\"33383\",\"buyer\":\"Stefan 8\"}",
-        "id": "960960500",
-        "playerId": "33383"
-      }]
+      "news": [
+        {
+          "date": "30.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Knauff\",\"price\":3188000,\"buyerId\":\"6013585\",\"playerValue\":3080000,\"playerId\":\"33383\",\"buyer\":\"Stefan 8\"}",
+          "id": "960960500",
+          "playerId": "33383"
+        },
+        {
+          "date": "30.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Finkgräfe (33848) ist jetzt VERLETZT (unbekannte Verletzung)",
+          "id": "0",
+          "playerId": "33848"
+        },
+        {
+          "date": "30.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Krauß (33130) ist jetzt VERLETZT (Knieprobleme)",
+          "id": "0",
+          "playerId": "33130"
+        },
+        {
+          "date": "30.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Burcu (34191) ist jetzt VERLETZT (unbekannte Verletzung)",
+          "id": "0",
+          "playerId": "34191"
+        }
+      ]
     },
     {
       "date": "30.01.2026",
