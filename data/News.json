@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "30.03.2026 15:04:00",
+  "lastUpdate": "31.03.2026 05:18:23",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -289,6 +289,17 @@
           "playerId": "33494"
         }
       ]
+    },
+    {
+      "date": "31.03.2026",
+      "news": [{
+        "date": "31.03.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kofane\",\"price\":5710000,\"buyerId\":\"10967926\",\"playerValue\":5480000,\"playerId\":\"34234\",\"buyer\":\"Tom\"}",
+        "id": "960992610",
+        "playerId": "34234"
+      }]
     },
     {
       "date": "31.01.2026",
@@ -1041,6 +1052,22 @@
           "text": "Statuswechsel: Burcu (34191) ist jetzt VERLETZT (unbekannte Verletzung)",
           "id": "0",
           "playerId": "34191"
+        },
+        {
+          "date": "30.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: M. Weiser (31929) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "31929"
+        },
+        {
+          "date": "30.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ouédraogo (33991) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33991"
         }
       ]
     },
