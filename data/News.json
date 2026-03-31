@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "31.03.2026 05:18:23",
+  "lastUpdate": "31.03.2026 15:04:03",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -292,14 +292,88 @@
     },
     {
       "date": "31.03.2026",
-      "news": [{
-        "date": "31.03.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kofane\",\"price\":5710000,\"buyerId\":\"10967926\",\"playerValue\":5480000,\"playerId\":\"34234\",\"buyer\":\"Tom\"}",
-        "id": "960992610",
-        "playerId": "34234"
-      }]
+      "news": [
+        {
+          "date": "31.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kofane\",\"price\":5710000,\"buyerId\":\"10967926\",\"playerValue\":5480000,\"playerId\":\"34234\",\"buyer\":\"Tom\"}",
+          "id": "960992610",
+          "playerId": "34234"
+        },
+        {
+          "date": "31.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Tom\",\"sellerId\":\"10967926\",\"playerName\":\"Harder\",\"price\":2348400,\"buyerId\":\"1\",\"playerValue\":2280000,\"playerId\":\"34295\",\"buyer\":\"Computer\"}",
+          "id": "960992610",
+          "playerId": "34295"
+        },
+        {
+          "date": "31.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Tom\",\"sellerId\":\"10967926\",\"playerName\":\"N. Collins\",\"price\":2777500,\"buyerId\":\"1\",\"playerValue\":2750000,\"playerId\":\"33836\",\"buyer\":\"Computer\"}",
+          "id": "960992610",
+          "playerId": "33836"
+        },
+        {
+          "date": "31.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Andi\",\"sellerId\":\"9317431\",\"playerName\":\"Amaimouni-Echghouyab\",\"price\":3386400,\"buyerId\":\"1\",\"playerValue\":3320000,\"playerId\":\"34318\",\"buyer\":\"Computer\"}",
+          "id": "960992610",
+          "playerId": "34318"
+        },
+        {
+          "date": "31.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Andi\",\"sellerId\":\"9317431\",\"playerName\":\"Andō\",\"price\":1194800,\"buyerId\":\"1\",\"playerValue\":1160000,\"playerId\":\"34317\",\"buyer\":\"Computer\"}",
+          "id": "960992610",
+          "playerId": "34317"
+        },
+        {
+          "date": "31.03.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Andi\",\"sellerId\":\"9317431\",\"playerName\":\"Topp\",\"price\":1213800,\"buyerId\":\"1\",\"playerValue\":1190000,\"playerId\":\"33741\",\"buyer\":\"Computer\"}",
+          "id": "960992610",
+          "playerId": "33741"
+        },
+        {
+          "date": "31.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Smith (33944) ist jetzt VERLETZT (Wadenverletzung)",
+          "id": "0",
+          "playerId": "33944"
+        },
+        {
+          "date": "31.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Pereira Cardoso (34122) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "34122"
+        },
+        {
+          "date": "31.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ngoumou (33681) ist jetzt VERLETZT (Trainingsrückstand)",
+          "id": "0",
+          "playerId": "33681"
+        },
+        {
+          "date": "31.03.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Sippel (31618) ist jetzt VERLETZT (Wadenzerrung)",
+          "id": "0",
+          "playerId": "31618"
+        }
+      ]
     },
     {
       "date": "31.01.2026",
