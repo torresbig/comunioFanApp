@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "04.04.2026 05:18:25",
+  "lastUpdate": "04.04.2026 15:03:53",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -22292,14 +22292,24 @@
     },
     {
       "date": "04.04.2026",
-      "news": [{
-        "date": "04.04.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Avdullahu\",\"price\":2570009,\"buyerId\":\"10966300\",\"playerValue\":2470000,\"playerId\":\"34202\",\"buyer\":\"Alexander\"}",
-        "id": "961145731",
-        "playerId": "34202"
-      }]
+      "news": [
+        {
+          "date": "04.04.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Avdullahu\",\"price\":2570009,\"buyerId\":\"10966300\",\"playerValue\":2470000,\"playerId\":\"34202\",\"buyer\":\"Alexander\"}",
+          "id": "961145731",
+          "playerId": "34202"
+        },
+        {
+          "date": "04.04.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Nartey\",\"price\":4804800,\"buyerId\":\"1\",\"playerValue\":4660000,\"playerId\":\"32830\",\"buyer\":\"Computer\"}",
+          "id": "961145731",
+          "playerId": "32830"
+        }
+      ]
     },
     {
       "date": "04.03.2026",
