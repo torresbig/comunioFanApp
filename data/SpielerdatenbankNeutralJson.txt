@@ -1135,7 +1135,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33817"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "8",
+            "zielwert": "8.360.000",
+            "platz": 7,
+            "lastUpdate": "04.04.2026",
+            "typ": "top",
+            "marktwert": "7.350.000",
+            "aenderung": "+1.010.000"
+          },
+          "link": "https://www.com-analytics.de/player/33817"
+        },
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "11.08.1996",
@@ -2019,18 +2030,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "910.000",
-            "platz": 9,
-            "lastUpdate": "04.04.2026",
-            "typ": "top",
-            "marktwert": "840.000",
-            "aenderung": "+70.000"
-          },
-          "link": "https://www.com-analytics.de/player/33827"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33827"},
         "spielerDaten": {
           "groesse": "1,90",
           "geburtstag": "23.12.2000",
@@ -2840,13 +2840,13 @@
       "data": {
         "comAnalystics": {
           "topFlop": {
-            "punkte": "17",
-            "zielwert": "21.990.000",
-            "platz": 2,
+            "punkte": "4",
+            "zielwert": "20.920.000",
+            "platz": 4,
             "lastUpdate": "04.04.2026",
-            "typ": "top",
+            "typ": "flop",
             "marktwert": "21.710.000",
-            "aenderung": "+280.000"
+            "aenderung": "-790.000"
           },
           "link": "https://www.com-analytics.de/player/33832"
         },
@@ -5182,18 +5182,7 @@
           "Pavlovic",
           "Pavlović"
         ],
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "7.580.000",
-            "platz": 1,
-            "lastUpdate": "04.04.2026",
-            "typ": "flop",
-            "marktwert": "8.000.000",
-            "aenderung": "-420.000"
-          },
-          "link": "https://www.com-analytics.de/player/33854"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33854"},
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "03.05.2004",
@@ -5321,16 +5310,19 @@
           {"2024": 1}
         ],
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 857,
-          "einsaetzeBewertet": 19,
-          "durchschnittsnote": 3.63,
-          "verein": "VfB Stuttgart",
-          "lastUpdate": "04.04.2026",
-          "durchschnittsminuten": 55,
-          "durchschnittspunkte": 41.68,
-          "rang": 117
-        }},
+        "attribute": {
+          "ligainsiderRanking": {
+            "punkte": 857,
+            "einsaetzeBewertet": 19,
+            "durchschnittsnote": 3.63,
+            "verein": "VfB Stuttgart",
+            "lastUpdate": "04.04.2026",
+            "durchschnittsminuten": 55,
+            "durchschnittspunkte": 41.68,
+            "rang": 117
+          },
+          "SonstigeInfos": ["häufigsten Transfers (6)"]
+        },
         "possibleNames": [
           "Nikolas Nartey",
           "N. Nartey",
@@ -15519,7 +15511,18 @@
           "M. Olise",
           "Olise"
         ],
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34014"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "2",
+            "zielwert": "15.960.000",
+            "platz": 3,
+            "lastUpdate": "04.04.2026",
+            "typ": "flop",
+            "marktwert": "16.770.000",
+            "aenderung": "-810.000"
+          },
+          "link": "https://www.com-analytics.de/player/34014"
+        },
         "spielerDaten": {
           "groesse": "1,84",
           "geburtstag": "12.12.2001",
@@ -15643,7 +15646,18 @@
           "M. Amoura",
           "Amoura"
         ],
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34015"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "0",
+            "zielwert": "7.660.000",
+            "platz": 5,
+            "lastUpdate": "04.04.2026",
+            "typ": "flop",
+            "marktwert": "8.410.000",
+            "aenderung": "-750.000"
+          },
+          "link": "https://www.com-analytics.de/player/34015"
+        },
         "spielerDaten": {
           "groesse": "1,70",
           "geburtstag": "09.05.2000",
@@ -16230,7 +16244,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34022"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "11",
+            "zielwert": "7.880.000",
+            "platz": 3,
+            "lastUpdate": "04.04.2026",
+            "typ": "top",
+            "marktwert": "6.790.000",
+            "aenderung": "+1.090.000"
+          },
+          "link": "https://www.com-analytics.de/player/34022"
+        },
         "elfDesSpieltages": 1,
         "spielerDaten": {
           "groesse": "1,82",
@@ -17596,7 +17621,18 @@
           "A. Nusa",
           "Nusa"
         ],
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34039"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "11",
+            "zielwert": "9.120.000",
+            "platz": 5,
+            "lastUpdate": "04.04.2026",
+            "typ": "top",
+            "marktwert": "8.070.000",
+            "aenderung": "+1.050.000"
+          },
+          "link": "https://www.com-analytics.de/player/34039"
+        },
         "spielerDaten": {
           "groesse": "1,83",
           "geburtstag": "17.04.2005",
@@ -18567,18 +18603,7 @@
           "Tabakovic",
           "Tabaković"
         ],
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "1",
-            "zielwert": "9.790.000",
-            "platz": 8,
-            "lastUpdate": "04.04.2026",
-            "typ": "flop",
-            "marktwert": "9.940.000",
-            "aenderung": "-150.000"
-          },
-          "link": "https://www.com-analytics.de/player/34047"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34047"},
         "spielerDaten": {
           "groesse": "1,96",
           "geburtstag": "20.06.1994",
@@ -20403,18 +20428,7 @@
           "N. Schlotterbeck",
           "Schlotterbeck"
         ],
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "3",
-            "zielwert": "12.400.000",
-            "platz": 8,
-            "lastUpdate": "04.04.2026",
-            "typ": "top",
-            "marktwert": "12.330.000",
-            "aenderung": "+70.000"
-          },
-          "link": "https://www.com-analytics.de/player/33038"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33038"},
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "01.12.1999",
@@ -22683,7 +22697,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33070"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "15",
+            "zielwert": "2.860.000",
+            "platz": 6,
+            "lastUpdate": "04.04.2026",
+            "typ": "top",
+            "marktwert": "1.830.000",
+            "aenderung": "+1.030.000"
+          },
+          "link": "https://www.com-analytics.de/player/33070"
+        },
         "spielerDaten": {
           "groesse": "1,90",
           "geburtstag": "09.07.1997",
@@ -24215,18 +24240,7 @@
     {
       "data": {
         "elfDesSpieltages": 4,
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "4",
-            "zielwert": "8.310.000",
-            "platz": 6,
-            "lastUpdate": "04.04.2026",
-            "typ": "top",
-            "marktwert": "8.230.000",
-            "aenderung": "+80.000"
-          },
-          "link": "https://www.com-analytics.de/player/32071"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/32071"},
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "07.04.1993",
@@ -26610,7 +26624,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34148"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "-3",
+            "zielwert": "3.020.000",
+            "platz": 9,
+            "lastUpdate": "04.04.2026",
+            "typ": "flop",
+            "marktwert": "3.490.000",
+            "aenderung": "-470.000"
+          },
+          "link": "https://www.com-analytics.de/player/34148"
+        },
         "spielerDaten": {
           "groesse": "1,82",
           "geburtstag": "24.03.1998",
@@ -29564,18 +29589,7 @@
     {
       "data": {
         "elfDesSpieltages": 2,
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "19",
-            "zielwert": "3.500.000",
-            "platz": 7,
-            "lastUpdate": "04.04.2026",
-            "typ": "top",
-            "marktwert": "3.420.000",
-            "aenderung": "+80.000"
-          },
-          "link": "https://www.com-analytics.de/player/34186"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34186"},
         "spielerDaten": {
           "groesse": "1,78",
           "geburtstag": "29.07.2003",
@@ -29998,18 +30012,7 @@
           "R. Bensebaini",
           "Bensebaini"
         ],
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "15",
-            "zielwert": "7.000.000",
-            "platz": 7,
-            "lastUpdate": "04.04.2026",
-            "typ": "flop",
-            "marktwert": "7.190.000",
-            "aenderung": "-190.000"
-          },
-          "link": "https://www.com-analytics.de/player/33167"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33167"},
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "16.04.1995",
@@ -31483,13 +31486,13 @@
         ],
         "comAnalystics": {
           "topFlop": {
-            "punkte": "16",
-            "zielwert": "16.080.000",
-            "platz": 1,
+            "punkte": "9",
+            "zielwert": "14.720.000",
+            "platz": 2,
             "lastUpdate": "04.04.2026",
-            "typ": "top",
+            "typ": "flop",
             "marktwert": "15.750.000",
-            "aenderung": "+330.000"
+            "aenderung": "-1.030.000"
           },
           "link": "https://www.com-analytics.de/player/33179"
         },
@@ -32183,7 +32186,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34206"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "9",
+            "zielwert": "10.240.000",
+            "platz": 8,
+            "lastUpdate": "04.04.2026",
+            "typ": "top",
+            "marktwert": "9.250.000",
+            "aenderung": "+990.000"
+          },
+          "link": "https://www.com-analytics.de/player/34206"
+        },
         "elfDesSpieltages": 2,
         "spielerDaten": {
           "groesse": "1,68",
@@ -34612,18 +34626,7 @@
           "E. Tapsoba",
           "Tapsoba"
         ],
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "8.910.000",
-            "platz": 3,
-            "lastUpdate": "04.04.2026",
-            "typ": "top",
-            "marktwert": "8.680.000",
-            "aenderung": "+230.000"
-          },
-          "link": "https://www.com-analytics.de/player/33207"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33207"},
         "spielerDaten": {
           "groesse": "1,94",
           "geburtstag": "02.02.1999",
@@ -34764,7 +34767,18 @@
           "M. Beier",
           "Beier"
         ],
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33208"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "1",
+            "zielwert": "8.320.000",
+            "platz": 10,
+            "lastUpdate": "04.04.2026",
+            "typ": "flop",
+            "marktwert": "8.790.000",
+            "aenderung": "-470.000"
+          },
+          "link": "https://www.com-analytics.de/player/33208"
+        },
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "17.10.2002",
@@ -35347,9 +35361,9 @@
           "status": "AUFBAUTRAINING"
         },
         "status": {
-          "grund": "Trainingsrückstand",
+          "grund": "",
           "lastUpdate": "04.04.2026",
-          "seit": "31.03.2026",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -35359,8 +35373,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Pieper",
@@ -35642,18 +35656,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "13.440.000",
-            "platz": 4,
-            "lastUpdate": "04.04.2026",
-            "typ": "flop",
-            "marktwert": "13.690.000",
-            "aenderung": "-250.000"
-          },
-          "link": "https://www.com-analytics.de/player/33236"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33236"},
         "spielerDaten": {
           "groesse": "1,84",
           "geburtstag": "26.02.2003",
@@ -36276,7 +36279,18 @@
           "brandt",
           "Brandt"
         ],
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/32236"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "9",
+            "zielwert": "6.580.000",
+            "platz": 10,
+            "lastUpdate": "04.04.2026",
+            "typ": "top",
+            "marktwert": "5.740.000",
+            "aenderung": "+840.000"
+          },
+          "link": "https://www.com-analytics.de/player/32236"
+        },
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "02.05.1996",
@@ -40283,13 +40297,13 @@
         ],
         "comAnalystics": {
           "topFlop": {
-            "punkte": "0",
-            "zielwert": "9.000.000",
-            "platz": 2,
+            "punkte": "1",
+            "zielwert": "8.720.000",
+            "platz": 7,
             "lastUpdate": "04.04.2026",
             "typ": "flop",
             "marktwert": "9.310.000",
-            "aenderung": "-310.000"
+            "aenderung": "-590.000"
           },
           "link": "https://www.com-analytics.de/player/33411"
         },
@@ -40545,18 +40559,7 @@
           "Amiri",
           "amiri"
         ],
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "12.240.000",
-            "platz": 5,
-            "lastUpdate": "04.04.2026",
-            "typ": "flop",
-            "marktwert": "12.440.000",
-            "aenderung": "-200.000"
-          },
-          "link": "https://www.com-analytics.de/player/32395"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/32395"},
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "27.10.1996",
@@ -41719,23 +41722,12 @@
     {
       "data": {
         "elfDesSpieltages": 3,
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "9",
-            "zielwert": "16.370.000",
-            "platz": 3,
-            "lastUpdate": "04.04.2026",
-            "typ": "flop",
-            "marktwert": "16.660.000",
-            "aenderung": "-290.000"
-          },
-          "link": "https://www.com-analytics.de/player/32445"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/32445"},
         "spielerDaten": {
           "groesse": "1,77",
           "geburtstag": "08.02.1995",
           "laenderspiele": 106,
-          "lastUpdate": "11.03.2026",
+          "lastUpdate": "04.04.2026",
           "nebenpositionen": [
             "RV",
             "DM"
@@ -41760,7 +41752,7 @@
         },
         "lastPoints": 9,
         "transfermarktDoDe": {
-          "date": "11.03.2026",
+          "date": "04.04.2026",
           "name": "Joshua Kimmich",
           "link": "https://www.transfermarkt.de/joshua-kimmich/profil/spieler/161056",
           "id": 161056,
@@ -41871,7 +41863,7 @@
           "url": "https://www.fussballdaten.de/person/waldemar-anton/"
         },
         "transfermarktDoDe": {
-          "date": "11.03.2026",
+          "date": "04.04.2026",
           "name": "Waldemar Anton",
           "link": "https://www.transfermarkt.de/waldemar-anton/profil/spieler/193004",
           "id": 193004,
@@ -41915,7 +41907,7 @@
           "groesse": "1,89",
           "geburtstag": "20.07.1996",
           "laenderspiele": 12,
-          "lastUpdate": "11.03.2026",
+          "lastUpdate": "04.04.2026",
           "nebenpositionen": [
             "RV",
             "DM"
@@ -42000,7 +41992,7 @@
           "groesse": "1,88",
           "geburtstag": "10.07.1991",
           "laenderspiele": 3,
-          "lastUpdate": "11.03.2026",
+          "lastUpdate": "04.04.2026",
           "nebenpositionen": ["DM"],
           "nationalspieler": "",
           "trikotNummer": 6,
@@ -42022,7 +42014,7 @@
         },
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "11.03.2026",
+          "date": "04.04.2026",
           "name": "Jeffrey Gouweleeuw 3,00 Mio. \u20ac",
           "link": "https://www.transfermarkt.de/jeffrey-gouweleeuw/profil/spieler/106405",
           "id": 106405,
@@ -42266,7 +42258,7 @@
           "groesse": "1,87",
           "geburtstag": "19.02.1997",
           "laenderspiele": 10,
-          "lastUpdate": "11.03.2026",
+          "lastUpdate": "04.04.2026",
           "nebenpositionen": [
             "LV",
             "DM"
@@ -42291,7 +42283,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "11.03.2026",
+          "date": "04.04.2026",
           "name": "Benedikt Gimber",
           "link": "https://www.transfermarkt.de/benedikt-gimber/profil/spieler/227084",
           "id": 227084,
@@ -42299,7 +42291,7 @@
         },
         "lastSeasonPoints": 84,
         "punkte": 26,
-        "realWert": 2500000,
+        "realWert": 2000000,
         "lastBigUpdate": "22.03.2026",
         "stats": {
           "notenDurchschnitt": "6,42",
@@ -42379,7 +42371,7 @@
           "groesse": "1,85",
           "geburtstag": "23.02.1997",
           "laenderspiele": 19,
-          "lastUpdate": "11.03.2026",
+          "lastUpdate": "04.04.2026",
           "nebenpositionen": [
             "LV",
             "RM"
@@ -42397,7 +42389,7 @@
         "verein": "92",
         "lastPoints": 10,
         "transfermarktDoDe": {
-          "date": "11.03.2026",
+          "date": "04.04.2026",
           "name": "Benjamin Henrichs",
           "link": "https://www.transfermarkt.de/benjamin-henrichs/profil/spieler/202591",
           "id": 202591,
@@ -42405,7 +42397,7 @@
         },
         "lastSeasonPoints": 49,
         "punkte": 21,
-        "realWert": 12000000,
+        "realWert": 9000000,
         "lastBigUpdate": "22.03.2026",
         "stats": {
           "notenDurchschnitt": "6,65",
@@ -42858,7 +42850,7 @@
           "groesse": "1,88",
           "geburtstag": "12.05.1999",
           "laenderspiele": 21,
-          "lastUpdate": "11.03.2026",
+          "lastUpdate": "04.04.2026",
           "nebenpositionen": [
             "LV",
             "DM"
@@ -42883,7 +42875,7 @@
         },
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "11.03.2026",
+          "date": "04.04.2026",
           "name": "Hiroki Ito",
           "link": "https://www.transfermarkt.de/hiroki-ito/profil/spieler/353892",
           "id": 353892,
@@ -43116,8 +43108,8 @@
         "spielerDaten": {
           "groesse": "1,89",
           "geburtstag": "30.09.1996",
-          "laenderspiele": 63,
-          "lastUpdate": "11.03.2026",
+          "laenderspiele": 65,
+          "lastUpdate": "04.04.2026",
           "nebenpositionen": ["RV"],
           "nationalspieler": "",
           "trikotNummer": 30,
@@ -43139,7 +43131,7 @@
         },
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "11.03.2026",
+          "date": "04.04.2026",
           "name": "Nico Elvedi",
           "link": "https://www.transfermarkt.de/nico-elvedi/profil/spieler/192635",
           "id": 192635,
@@ -43228,7 +43220,7 @@
           "groesse": "1,90",
           "geburtstag": "10.10.2000",
           "laenderspiele": 6,
-          "lastUpdate": "11.03.2026",
+          "lastUpdate": "04.04.2026",
           "nebenpositionen": ["OM"],
           "nationalspieler": "",
           "trikotNummer": 8,
@@ -43250,7 +43242,7 @@
         },
         "lastPoints": -2,
         "transfermarktDoDe": {
-          "date": "11.03.2026",
+          "date": "04.04.2026",
           "name": "Felix Nmecha",
           "link": "https://www.transfermarkt.de/felix-nmecha/profil/spieler/406640",
           "id": 406640,
@@ -43328,12 +43320,23 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33504"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "19",
+            "zielwert": "4.020.000",
+            "platz": 2,
+            "lastUpdate": "04.04.2026",
+            "typ": "top",
+            "marktwert": "2.890.000",
+            "aenderung": "+1.130.000"
+          },
+          "link": "https://www.com-analytics.de/player/33504"
+        },
         "spielerDaten": {
           "groesse": "1,76",
           "geburtstag": "28.06.2005",
-          "laenderspiele": 4,
-          "lastUpdate": "11.03.2026",
+          "laenderspiele": 6,
+          "lastUpdate": "04.04.2026",
           "nebenpositionen": [
             "OM",
             "RM"
@@ -43358,7 +43361,7 @@
         },
         "lastPoints": 2,
         "transfermarktDoDe": {
-          "date": "11.03.2026",
+          "date": "04.04.2026",
           "name": "Tom Bischof",
           "link": "https://www.transfermarkt.de/Tom Bischof/profil/spieler/822959",
           "id": 822959,
@@ -43478,7 +43481,7 @@
           "groesse": "1,92",
           "geburtstag": "22.09.1988",
           "laenderspiele": 0,
-          "lastUpdate": "11.03.2026",
+          "lastUpdate": "04.04.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 33,
@@ -43493,7 +43496,7 @@
         "verein": "9",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "11.03.2026",
+          "date": "04.04.2026",
           "name": "Jens Grahl 200 Tsd. \u20ac",
           "link": "https://www.transfermarkt.de/jens-grahl/profil/spieler/40034",
           "id": 40034,
@@ -46181,7 +46184,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33575"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "9",
+            "zielwert": "7.570.000",
+            "platz": 4,
+            "lastUpdate": "04.04.2026",
+            "typ": "top",
+            "marktwert": "6.500.000",
+            "aenderung": "+1.070.000"
+          },
+          "link": "https://www.com-analytics.de/player/33575"
+        },
         "elfDesSpieltages": 1,
         "spielerDaten": {
           "groesse": "1,80",
@@ -46675,18 +46689,7 @@
           "Kramaric",
           "kramaric"
         ],
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "2",
-            "zielwert": "11.510.000",
-            "platz": 10,
-            "lastUpdate": "04.04.2026",
-            "typ": "top",
-            "marktwert": "11.440.000",
-            "aenderung": "+70.000"
-          },
-          "link": "https://www.com-analytics.de/player/32553"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/32553"},
         "spielerDaten": {
           "groesse": "1,77",
           "geburtstag": "19.06.1991",
@@ -47846,18 +47849,7 @@
           "Kamiński",
           "kaminski"
         ],
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "9",
-            "zielwert": "9.000.000",
-            "platz": 10,
-            "lastUpdate": "04.04.2026",
-            "typ": "flop",
-            "marktwert": "9.140.000",
-            "aenderung": "-140.000"
-          },
-          "link": "https://www.com-analytics.de/player/33607"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33607"},
         "spielerDaten": {
           "groesse": "1,79",
           "geburtstag": "05.06.2002",
@@ -50796,9 +50788,9 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "12.09.2025",
-          "seit": "",
+          "grund": "muskuläre Probleme",
+          "lastUpdate": "04.04.2026",
+          "seit": "04.04.2026",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -50808,8 +50800,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Stage",
@@ -56327,7 +56319,18 @@
           "Á. Grimaldo",
           "Grimaldo"
         ],
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33771"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "20",
+            "zielwert": "15.360.000",
+            "platz": 1,
+            "lastUpdate": "04.04.2026",
+            "typ": "top",
+            "marktwert": "14.140.000",
+            "aenderung": "+1.220.000"
+          },
+          "link": "https://www.com-analytics.de/player/33771"
+        },
         "spielerDaten": {
           "groesse": "1,71",
           "geburtstag": "20.09.1995",
@@ -60186,13 +60189,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "",
-          "lastUpdate": "15.03.2026",
-          "seit": "",
+          "grund": "muskuläre Probleme",
+          "lastUpdate": "04.04.2026",
+          "seit": "04.04.2026",
           "details": "",
           "historie": [],
-          "bis": null,
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Coulibaly",
@@ -60308,7 +60311,18 @@
     {
       "data": {
         "elfDesSpieltages": 5,
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34237"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "1",
+            "zielwert": "16.290.000",
+            "platz": 1,
+            "lastUpdate": "04.04.2026",
+            "typ": "flop",
+            "marktwert": "17.370.000",
+            "aenderung": "-1.080.000"
+          },
+          "link": "https://www.com-analytics.de/player/34237"
+        },
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "14.11.2006",
@@ -61878,7 +61892,18 @@
           "manOfTheMatchAmount": 0
         },
         "elfDesSpieltages": 6,
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34254"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "5",
+            "zielwert": "19.280.000",
+            "platz": 6,
+            "lastUpdate": "04.04.2026",
+            "typ": "flop",
+            "marktwert": "20.000.000",
+            "aenderung": "-720.000"
+          },
+          "link": "https://www.com-analytics.de/player/34254"
+        },
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "13.01.1997",
@@ -63544,7 +63569,18 @@
     {
       "data": {
         "elfDesSpieltages": 2,
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34271"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "8",
+            "zielwert": "9.550.000",
+            "platz": 9,
+            "lastUpdate": "04.04.2026",
+            "typ": "top",
+            "marktwert": "8.650.000",
+            "aenderung": "+900.000"
+          },
+          "link": "https://www.com-analytics.de/player/34271"
+        },
         "spielerDaten": {
           "groesse": "1,93",
           "geburtstag": "08.02.2002",
@@ -65594,18 +65630,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "7",
-            "zielwert": "8.050.000",
-            "platz": 4,
-            "lastUpdate": "04.04.2026",
-            "typ": "top",
-            "marktwert": "7.930.000",
-            "aenderung": "+120.000"
-          },
-          "link": "https://www.com-analytics.de/player/34296"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34296"},
         "elfDesSpieltages": 1,
         "spielerDaten": {
           "groesse": "1,70",
@@ -66712,13 +66737,13 @@
         "elfDesSpieltages": 3,
         "comAnalystics": {
           "topFlop": {
-            "punkte": "0",
-            "zielwert": "11.020.000",
-            "platz": 6,
+            "punkte": "1",
+            "zielwert": "10.740.000",
+            "platz": 8,
             "lastUpdate": "04.04.2026",
             "typ": "flop",
             "marktwert": "11.220.000",
-            "aenderung": "-200.000"
+            "aenderung": "-480.000"
           },
           "link": "https://www.com-analytics.de/player/34288"
         },
@@ -69458,18 +69483,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "3",
-            "zielwert": "9.250.000",
-            "platz": 9,
-            "lastUpdate": "04.04.2026",
-            "typ": "flop",
-            "marktwert": "9.390.000",
-            "aenderung": "-140.000"
-          },
-          "link": "https://www.com-analytics.de/player/34324"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34324"},
         "elfDesSpieltages": 1,
         "spielerDaten": {
           "groesse": "1,75",
@@ -70794,18 +70808,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "7",
-            "zielwert": "4.840.000",
-            "platz": 5,
-            "lastUpdate": "04.04.2026",
-            "typ": "top",
-            "marktwert": "4.740.000",
-            "aenderung": "+100.000"
-          },
-          "link": "https://www.com-analytics.de/player/34341"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34341"},
         "spielerDaten": {
           "groesse": "1,78",
           "geburtstag": "15.04.1999",
