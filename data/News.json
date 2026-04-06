@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "06.04.2026 05:32:44",
+  "lastUpdate": "06.04.2026 15:04:02",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -20896,14 +20896,80 @@
     },
     {
       "date": "06.04.2026",
-      "news": [{
-        "date": "06.04.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Davies\",\"price\":5280009,\"buyerId\":\"10966300\",\"playerValue\":5650000,\"playerId\":\"33021\",\"buyer\":\"Alexander\"}",
-        "id": "961234661",
-        "playerId": "33021"
-      }]
+      "news": [
+        {
+          "date": "06.04.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Davies\",\"price\":5280009,\"buyerId\":\"10966300\",\"playerValue\":5650000,\"playerId\":\"33021\",\"buyer\":\"Alexander\"}",
+          "id": "961234661",
+          "playerId": "33021"
+        },
+        {
+          "date": "06.04.2026",
+          "art": "ELFDESTAGES",
+          "gelesen": false,
+          "text": "[{\"punkte\":8,\"owner\":\"1\",\"playerName\":\"Zetterer\",\"position\":\"keeper\",\"playerId\":\"32408\"},{\"punkte\":20,\"owner\":\"13721745\",\"playerName\":\"Grimaldo\",\"position\":\"defender\",\"playerId\":\"33771\"},{\"punkte\":13,\"owner\":\"1\",\"playerName\":\"Mainka\",\"position\":\"defender\",\"playerId\":\"33273\"},{\"punkte\":11,\"owner\":\"1\",\"playerName\":\"Ma. Busch\",\"position\":\"defender\",\"playerId\":\"32380\"},{\"punkte\":19,\"owner\":\"1\",\"playerName\":\"Bischof\",\"position\":\"midfielder\",\"playerId\":\"33504\"},{\"punkte\":13,\"owner\":\"1\",\"playerName\":\"Maza\",\"position\":\"midfielder\",\"playerId\":\"33744\"},{\"punkte\":11,\"owner\":\"5981249\",\"playerName\":\"Manzambi\",\"position\":\"midfielder\",\"playerId\":\"34022\"},{\"punkte\":10,\"owner\":\"5949921\",\"playerName\":\"J. Kaminski\",\"position\":\"midfielder\",\"playerId\":\"33607\"},{\"punkte\":15,\"owner\":\"1\",\"playerName\":\"Tietz\",\"position\":\"striker\",\"playerId\":\"33070\"},{\"punkte\":11,\"owner\":\"6013585\",\"playerName\":\"Nusa\",\"position\":\"striker\",\"playerId\":\"34039\"},{\"punkte\":10,\"owner\":\"5981249\",\"playerName\":\"Kalimuendo\",\"position\":\"striker\",\"playerId\":\"34324\"}]",
+          "id": "961250028",
+          "playerId": "0"
+        },
+        {
+          "date": "06.04.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"K. Schlotterbeck\",\"price\":2603700,\"buyerId\":\"1\",\"playerValue\":2630000,\"playerId\":\"32953\",\"buyer\":\"Computer\"}",
+          "id": "961234661",
+          "playerId": "32953"
+        },
+        {
+          "date": "06.04.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Kömür\",\"price\":2030100,\"buyerId\":\"1\",\"playerValue\":1850000,\"playerId\":\"33736\",\"buyer\":\"Computer\"}",
+          "id": "961234661",
+          "playerId": "33736"
+        },
+        {
+          "date": "06.04.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Burcu (34191) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34191"
+        },
+        {
+          "date": "06.04.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Avdullahu (34202) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34202"
+        },
+        {
+          "date": "06.04.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Musiala (33236) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33236"
+        },
+        {
+          "date": "06.04.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Urbig (33494) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33494"
+        },
+        {
+          "date": "06.04.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kaufmann (33791) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33791"
+        }
+      ]
     },
     {
       "date": "06.03.2026",
