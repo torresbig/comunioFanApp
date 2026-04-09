@@ -512,7 +512,7 @@
           "groesse": "1,87",
           "geburtstag": "13.07.1993",
           "laenderspiele": 5,
-          "lastUpdate": "14.03.2026",
+          "lastUpdate": "08.04.2026",
           "nebenpositionen": ["RM"],
           "nationalspieler": "",
           "trikotNummer": 21,
@@ -534,7 +534,7 @@
         },
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "14.03.2026",
+          "date": "08.04.2026",
           "name": "Danny da Costa 1,50 Mio. \u20ac",
           "link": "https://www.transfermarkt.de/danny-da-costa/profil/spieler/85906",
           "id": 85906,
@@ -635,7 +635,7 @@
           "groesse": "1,78",
           "geburtstag": "27.08.1998",
           "laenderspiele": 5,
-          "lastUpdate": "14.03.2026",
+          "lastUpdate": "08.04.2026",
           "nebenpositionen": [
             "OM",
             "HS"
@@ -660,7 +660,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "14.03.2026",
+          "date": "08.04.2026",
           "name": "Robin Hack",
           "link": "https://www.transfermarkt.de/robin-hack/profil/spieler/284010",
           "id": 284010,
@@ -11764,7 +11764,18 @@
     {
       "data": {
         "elfDesSpieltages": 3,
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/32948"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "8",
+            "zielwert": "13.440.000",
+            "platz": 10,
+            "lastUpdate": "08.04.2026",
+            "typ": "flop",
+            "marktwert": "13.660.000",
+            "aenderung": "-220.000"
+          },
+          "link": "https://www.com-analytics.de/player/32948"
+        },
         "spielerDaten": {
           "groesse": "1,81",
           "geburtstag": "11.07.2000",
@@ -20637,7 +20648,7 @@
           "topFlop": {
             "punkte": "4",
             "zielwert": "11.250.000",
-            "platz": 10,
+            "platz": 9,
             "lastUpdate": "08.04.2026",
             "typ": "flop",
             "marktwert": "11.470.000",
@@ -28145,18 +28156,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "2",
-            "zielwert": "6.000.000",
-            "platz": 9,
-            "lastUpdate": "08.04.2026",
-            "typ": "flop",
-            "marktwert": "6.230.000",
-            "aenderung": "-230.000"
-          },
-          "link": "https://www.com-analytics.de/player/33141"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33141"},
         "spielerDaten": {
           "groesse": "1,83",
           "geburtstag": "17.11.1997",
@@ -53724,7 +53724,7 @@
           "groesse": "1,87",
           "geburtstag": "12.03.1996",
           "laenderspiele": 26,
-          "lastUpdate": "13.03.2026",
+          "lastUpdate": "08.04.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 9,
@@ -53746,7 +53746,7 @@
         },
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "13.03.2026",
+          "date": "08.04.2026",
           "name": "Serhou Guirassy",
           "link": "https://www.transfermarkt.de/serhou-guirassy/profil/spieler/270541",
           "id": 270541,
@@ -53835,8 +53835,8 @@
         "spielerDaten": {
           "groesse": "1,83",
           "geburtstag": "11.01.1998",
-          "laenderspiele": 27,
-          "lastUpdate": "13.03.2026",
+          "laenderspiele": 28,
+          "lastUpdate": "08.04.2026",
           "nebenpositionen": ["ZM"],
           "nationalspieler": "",
           "trikotNummer": 6,
@@ -53858,7 +53858,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "13.03.2026",
+          "date": "08.04.2026",
           "name": "Salih Özcan",
           "link": "https://www.transfermarkt.de/salih-ozcan/profil/spieler/244940",
           "id": 244940,
@@ -53939,7 +53939,7 @@
           "groesse": "1,85",
           "geburtstag": "17.01.1997",
           "laenderspiele": 22,
-          "lastUpdate": "13.03.2026",
+          "lastUpdate": "08.04.2026",
           "nebenpositionen": [
             "LV",
             "RV"
@@ -53964,7 +53964,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "13.03.2026",
+          "date": "08.04.2026",
           "name": "Andreas Hanche-Olsen 7,50 Mio. \u20ac",
           "link": "https://www.transfermarkt.de/andreas-hanche-olsen/profil/spieler/370683",
           "id": 370683,
@@ -54245,7 +54245,7 @@
           "url": "https://www.fussballdaten.de/person/stefan-bell/"
         },
         "transfermarktDoDe": {
-          "date": "13.03.2026",
+          "date": "08.04.2026",
           "name": "Stefan Bell 1,00 Mio. \u20ac",
           "link": "https://www.transfermarkt.de/stefan-bell/profil/spieler/82350",
           "id": 82350,
@@ -54289,7 +54289,7 @@
           "groesse": "1,92",
           "geburtstag": "24.08.1991",
           "laenderspiele": 6,
-          "lastUpdate": "13.03.2026",
+          "lastUpdate": "08.04.2026",
           "nebenpositionen": ["RV"],
           "nationalspieler": "",
           "trikotNummer": 16,
@@ -68162,7 +68162,7 @@
           "groesse": "1,88",
           "geburtstag": "23.06.2004",
           "laenderspiele": 0,
-          "lastUpdate": "13.03.2026",
+          "lastUpdate": "08.04.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 11,
@@ -68177,7 +68177,7 @@
         "wert": 180000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "13.03.2026",
+          "date": "08.04.2026",
           "haveToCheck": true,
           "name": "Jan Urbich",
           "link": "https://www.transfermarkt.de/jan-urbich/profil/spieler/820723",
@@ -68377,8 +68377,8 @@
         "spielerDaten": {
           "groesse": "1,95",
           "geburtstag": "19.10.2007",
-          "laenderspiele": 1,
-          "lastUpdate": "13.03.2026",
+          "laenderspiele": 2,
+          "lastUpdate": "08.04.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 48,
@@ -68400,7 +68400,7 @@
         },
         "lastPoints": 6,
         "transfermarktDoDe": {
-          "date": "13.03.2026",
+          "date": "08.04.2026",
           "haveToCheck": true,
           "name": "Kacper Potulski",
           "link": "https://www.transfermarkt.de/kacper-potulski/profil/spieler/1073748",
@@ -68412,7 +68412,7 @@
           "alter": 18
         },
         "punkte": 47,
-        "realWert": 2500000,
+        "realWert": 12000000,
         "lastBigUpdate": "05.04.2026",
         "stats": {
           "notenDurchschnitt": "6,84",
@@ -68472,7 +68472,7 @@
           "groesse": "1,88",
           "geburtstag": "08.06.2007",
           "laenderspiele": 0,
-          "lastUpdate": "13.03.2026",
+          "lastUpdate": "08.04.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 37,
@@ -68487,7 +68487,7 @@
         "wert": 200000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "13.03.2026",
+          "date": "08.04.2026",
           "haveToCheck": true,
           "name": "Pharell Hensel",
           "link": "https://www.transfermarkt.de/pharell-hensel/profil/spieler/1150105",
@@ -68498,7 +68498,7 @@
           "alter": 18
         },
         "punkte": 3,
-        "realWert": 1000000,
+        "realWert": 3000000,
         "lastBigUpdate": "05.04.2026",
         "stats": {
           "notenDurchschnitt": "6,45",
@@ -71175,7 +71175,7 @@
           "groesse": "1,80",
           "geburtstag": "25.11.1997",
           "laenderspiele": 3,
-          "lastUpdate": "13.03.2026",
+          "lastUpdate": "08.04.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 20,
@@ -71190,7 +71190,7 @@
         "wert": 850000,
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "13.03.2026",
+          "date": "08.04.2026",
           "haveToCheck": true,
           "name": "Mathias Rasmussen",
           "link": "https://www.transfermarkt.de/mathias-rasmussen/profil/spieler/268327",
