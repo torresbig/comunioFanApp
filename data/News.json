@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "10.04.2026 05:18:23",
+  "lastUpdate": "10.04.2026 15:04:08",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -17993,14 +17993,56 @@
     },
     {
       "date": "10.04.2026",
-      "news": [{
-        "date": "10.04.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"S. Conteh\",\"price\":566499,\"buyerId\":\"9317431\",\"playerValue\":500000,\"playerId\":\"33926\",\"buyer\":\"Andi\"}",
-        "id": "961387132",
-        "playerId": "33926"
-      }]
+      "news": [
+        {
+          "date": "10.04.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"S. Conteh\",\"price\":566499,\"buyerId\":\"9317431\",\"playerValue\":500000,\"playerId\":\"33926\",\"buyer\":\"Andi\"}",
+          "id": "961387132",
+          "playerId": "33926"
+        },
+        {
+          "date": "10.04.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Lindstrøm\",\"price\":1246300,\"buyerId\":\"1\",\"playerValue\":1210000,\"playerId\":\"33480\",\"buyer\":\"Computer\"}",
+          "id": "961387132",
+          "playerId": "33480"
+        },
+        {
+          "date": "10.04.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Honsak\",\"price\":642600,\"buyerId\":\"1\",\"playerValue\":630000,\"playerId\":\"33797\",\"buyer\":\"Computer\"}",
+          "id": "961387132",
+          "playerId": "33797"
+        },
+        {
+          "date": "10.04.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Karl (34206) ist jetzt VERLETZT (Muskelfaserriss)",
+          "id": "0",
+          "playerId": "34206"
+        },
+        {
+          "date": "10.04.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Njinmah (33687) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33687"
+        },
+        {
+          "date": "10.04.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Coulibaly (34239) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34239"
+        }
+      ]
     },
     {
       "date": "10.03.2026",
