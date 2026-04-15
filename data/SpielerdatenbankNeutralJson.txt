@@ -10913,9 +10913,9 @@
           "status": "AUFBAUTRAINING"
         },
         "status": {
-          "grund": "Oberschenkelverletzung",
+          "grund": "",
           "lastUpdate": "14.04.2026",
-          "seit": "10.03.2026",
+          "seit": "",
           "details": "",
           "historie": [{
             "grund": "unbekannt",
@@ -10925,8 +10925,8 @@
             "historie": [],
             "status": "AKTIV"
           }],
-          "bis": "",
-          "status": "VERLETZT"
+          "bis": null,
+          "status": "AKTIV"
         }
       },
       "name": "Saliakas",
@@ -11674,13 +11674,24 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/31910"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "5",
+            "zielwert": "5.210.000",
+            "platz": 10,
+            "lastUpdate": "14.04.2026",
+            "typ": "top",
+            "marktwert": "4.700.000",
+            "aenderung": "+510.000"
+          },
+          "link": "https://www.com-analytics.de/player/31910"
+        },
         "elfDesSpieltages": 1,
         "spielerDaten": {
           "groesse": "1,89",
           "geburtstag": "19.01.1994",
           "laenderspiele": 51,
-          "lastUpdate": "18.03.2026",
+          "lastUpdate": "14.04.2026",
           "nebenpositionen": [
             "RV",
             "DM"
@@ -11698,7 +11709,7 @@
         "verein": "21",
         "lastPoints": 5,
         "transfermarktDoDe": {
-          "date": "18.03.2026",
+          "date": "14.04.2026",
           "name": "Matthias Ginter",
           "link": "https://www.transfermarkt.de/matthias-ginter/profil/spieler/124502",
           "id": 124502,
@@ -11784,7 +11795,7 @@
           "groesse": "1,85",
           "geburtstag": "05.04.1997",
           "laenderspiele": 71,
-          "lastUpdate": "18.03.2026",
+          "lastUpdate": "14.04.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 10,
@@ -11806,7 +11817,7 @@
         },
         "lastPoints": 1,
         "transfermarktDoDe": {
-          "date": "18.03.2026",
+          "date": "14.04.2026",
           "name": "Danel Sinani",
           "link": "https://www.transfermarkt.de/danel-sinani/profil/spieler/346499",
           "id": "346499",
@@ -11924,7 +11935,7 @@
           "groesse": "1,81",
           "geburtstag": "11.07.2000",
           "laenderspiele": 5,
-          "lastUpdate": "18.03.2026",
+          "lastUpdate": "14.04.2026",
           "nebenpositionen": [
             "RA",
             "HS"
@@ -11949,7 +11960,7 @@
         },
         "lastPoints": 1,
         "transfermarktDoDe": {
-          "date": "18.03.2026",
+          "date": "14.04.2026",
           "name": "Jonathan Burkardt 7,00 Mio. \u20ac",
           "link": "https://www.transfermarkt.de/jonathan-burkardt/profil/spieler/333647",
           "id": 333647,
@@ -12129,7 +12140,7 @@
           "groesse": "1,94",
           "geburtstag": "13.11.1987",
           "laenderspiele": 7,
-          "lastUpdate": "18.03.2026",
+          "lastUpdate": "14.04.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 12,
@@ -12144,7 +12155,7 @@
         "verein": "12",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "18.03.2026",
+          "date": "14.04.2026",
           "name": "Pavao Pervan",
           "link": "https://www.transfermarkt.de/pavao-pervan/profil/spieler/51977",
           "id": 51977,
@@ -12258,8 +12269,8 @@
         "spielerDaten": {
           "groesse": "1,76",
           "geburtstag": "16.06.2003",
-          "laenderspiele": 2,
-          "lastUpdate": "18.03.2026",
+          "laenderspiele": 3,
+          "lastUpdate": "14.04.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 21,
@@ -12281,7 +12292,7 @@
         },
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "18.03.2026",
+          "date": "14.04.2026",
           "name": "Nathaniel Brown",
           "link": "https://www.transfermarkt.de/nathaniel-brown/profil/spieler/691892",
           "id": "691892",
@@ -12366,8 +12377,8 @@
         "spielerDaten": {
           "groesse": "1,94",
           "geburtstag": "31.07.2003",
-          "laenderspiele": 4,
-          "lastUpdate": "18.03.2026",
+          "laenderspiele": 6,
+          "lastUpdate": "14.04.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 5,
@@ -12389,7 +12400,7 @@
         },
         "lastPoints": 6,
         "transfermarktDoDe": {
-          "date": "18.03.2026",
+          "date": "14.04.2026",
           "name": "Aurèle Amenda",
           "link": "https://www.transfermarkt.de/aurele-amenda/profil/spieler/635645",
           "id": "635645",
@@ -12401,7 +12412,7 @@
         },
         "lastSeasonPoints": 14,
         "punkte": 51,
-        "realWert": 6000000,
+        "realWert": 8000000,
         "lastBigUpdate": "12.04.2026",
         "stats": {
           "notenDurchschnitt": "6,75",
@@ -12471,7 +12482,7 @@
           "groesse": "1,88",
           "geburtstag": "28.04.1997",
           "laenderspiele": 3,
-          "lastUpdate": "18.03.2026",
+          "lastUpdate": "14.04.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 31,
@@ -12493,7 +12504,7 @@
         },
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "18.03.2026",
+          "date": "14.04.2026",
           "name": "Keven Schlotterbeck",
           "link": "https://www.transfermarkt.de/Keven Schlotterbeck/profil/spieler/413843",
           "id": 413843,
@@ -12603,7 +12614,7 @@
           "groesse": "1,77",
           "geburtstag": "21.04.1994",
           "laenderspiele": 12,
-          "lastUpdate": "18.03.2026",
+          "lastUpdate": "14.04.2026",
           "nebenpositionen": [
             "RM",
             "RA"
@@ -12621,7 +12632,7 @@
         "verein": "6",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "18.03.2026",
+          "date": "14.04.2026",
           "name": "Mitchell Weiser",
           "link": "https://www.transfermarkt.de/mitchell-weiser/profil/spieler/119211",
           "id": 119211,
@@ -12983,13 +12994,13 @@
           "groesse": "1,86",
           "geburtstag": "21.02.1998",
           "laenderspiele": 0,
-          "lastUpdate": "19.03.2026",
+          "lastUpdate": "14.04.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 16,
           "nationalitaet": "Deutschland",
           "laenderspielTore": 0,
-          "hauptposition": "Innenverteidiger",
+          "hauptposition": "Defensives Mittelfeld",
           "fuss": "beidfüßig"
         },
         "isNotName": [],
@@ -13005,7 +13016,7 @@
         },
         "lastPoints": 3,
         "transfermarktDoDe": {
-          "date": "19.03.2026",
+          "date": "14.04.2026",
           "name": "Philipp Sander",
           "link": "https://www.transfermarkt.de/philipp-sander/profil/spieler/388409",
           "id": "388409",
@@ -13120,7 +13131,7 @@
           "groesse": "1,92",
           "geburtstag": "12.07.1993",
           "laenderspiele": 0,
-          "lastUpdate": "19.03.2026",
+          "lastUpdate": "14.04.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 29,
@@ -13135,7 +13146,7 @@
         "verein": "12",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "19.03.2026",
+          "date": "14.04.2026",
           "name": "Marius Müller",
           "link": "https://www.transfermarkt.de/marius-muller/profil/spieler/118161",
           "id": 118161,
@@ -24765,12 +24776,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "2",
-            "zielwert": "7.820.000",
+            "zielwert": "7.790.000",
             "platz": 9,
             "lastUpdate": "14.04.2026",
             "typ": "flop",
             "marktwert": "8.080.000",
-            "aenderung": "-260.000"
+            "aenderung": "-290.000"
           },
           "link": "https://www.com-analytics.de/player/32071"
         },
@@ -25758,18 +25769,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "7",
-            "zielwert": "6.960.000",
-            "platz": 9,
-            "lastUpdate": "14.04.2026",
-            "typ": "top",
-            "marktwert": "6.430.000",
-            "aenderung": "+530.000"
-          },
-          "link": "https://www.com-analytics.de/player/33110"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33110"},
         "spielerDaten": {
           "groesse": "1,68",
           "geburtstag": "27.01.2000",
@@ -32167,12 +32167,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "1",
-            "zielwert": "11.660.000",
+            "zielwert": "11.550.000",
             "platz": 5,
             "lastUpdate": "14.04.2026",
             "typ": "flop",
             "marktwert": "12.040.000",
-            "aenderung": "-380.000"
+            "aenderung": "-490.000"
           },
           "link": "https://www.com-analytics.de/player/33179"
         },
@@ -60899,12 +60899,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "0",
-            "zielwert": "10.480.000",
+            "zielwert": "10.420.000",
             "platz": 6,
             "lastUpdate": "14.04.2026",
             "typ": "flop",
             "marktwert": "10.850.000",
-            "aenderung": "-370.000"
+            "aenderung": "-430.000"
           },
           "link": "https://www.com-analytics.de/player/33530"
         },
@@ -67988,7 +67988,7 @@
           "topFlop": {
             "punkte": "10",
             "zielwert": "6.100.000",
-            "platz": 10,
+            "platz": 9,
             "lastUpdate": "14.04.2026",
             "typ": "top",
             "marktwert": "5.570.000",
@@ -71740,12 +71740,13 @@
           "status": "AKTIV"
         },
         "status": {
-          "grund": "unbekannt",
-          "lastUpdate": "23.01.2026",
-          "seit": "unbekannt",
+          "grund": "Krank",
+          "lastUpdate": "14.04.2026",
+          "seit": "11.04.2026",
           "details": "",
           "historie": [],
-          "status": "AKTIV"
+          "bis": "",
+          "status": "VERLETZT"
         }
       },
       "name": "Tangvik",
