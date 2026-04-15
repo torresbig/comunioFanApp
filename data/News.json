@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "15.04.2026 05:18:17",
+  "lastUpdate": "15.04.2026 15:03:59",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -13251,14 +13251,40 @@
     },
     {
       "date": "15.04.2026",
-      "news": [{
-        "date": "15.04.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kyereh\",\"price\":170008,\"buyerId\":\"13548242\",\"playerValue\":180000,\"playerId\":\"33637\",\"buyer\":\"Christopher\"}",
-        "id": "961577835",
-        "playerId": "33637"
-      }]
+      "news": [
+        {
+          "date": "15.04.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kyereh\",\"price\":170008,\"buyerId\":\"13548242\",\"playerValue\":180000,\"playerId\":\"33637\",\"buyer\":\"Christopher\"}",
+          "id": "961577835",
+          "playerId": "33637"
+        },
+        {
+          "date": "15.04.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Mané (34084) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34084"
+        },
+        {
+          "date": "15.04.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Banzuzi (34185) ist jetzt VERLETZT (Kapselverletzung)",
+          "id": "0",
+          "playerId": "34185"
+        },
+        {
+          "date": "15.04.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Quansah (34217) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34217"
+        }
+      ]
     },
     {
       "date": "15.03.2026",
