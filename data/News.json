@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "14.04.2026 15:00:10",
+  "lastUpdate": "15.04.2026 05:18:17",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -13250,6 +13250,17 @@
       ]
     },
     {
+      "date": "15.04.2026",
+      "news": [{
+        "date": "15.04.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kyereh\",\"price\":170008,\"buyerId\":\"13548242\",\"playerValue\":180000,\"playerId\":\"33637\",\"buyer\":\"Christopher\"}",
+        "id": "961577835",
+        "playerId": "33637"
+      }]
+    },
+    {
       "date": "15.03.2026",
       "news": [
         {
@@ -14696,6 +14707,27 @@
           "text": "{\"seller\":\"Stefan 8\",\"sellerId\":\"6013585\",\"playerName\":\"Terrier\",\"price\":3047200,\"playerValue\":2330000,\"playerId\":\"34024\",\"buyer\":\"Computer\",\"buyerId\":\"1\"}",
           "id": "949037849",
           "playerId": "34024"
+        }
+      ]
+    },
+    {
+      "date": "14.04.2026",
+      "news": [
+        {
+          "date": "14.04.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Saliakas (33948) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33948"
+        },
+        {
+          "date": "14.04.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Tangvik (34334) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "34334"
         }
       ]
     },
