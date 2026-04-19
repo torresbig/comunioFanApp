@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "18.04.2026 15:00:10",
+  "lastUpdate": "19.04.2026 05:18:25",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -11225,6 +11225,38 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Beste\",\"price\":3810009,\"buyerId\":\"10966300\",\"playerValue\":3710000,\"playerId\":\"32961\",\"buyer\":\"Alexander\"}",
           "id": "961717511",
           "playerId": "32961"
+        },
+        {
+          "date": "18.04.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Ache\",\"price\":7695000,\"buyerId\":\"1\",\"playerValue\":7500000,\"playerId\":\"33263\",\"buyer\":\"Computer\"}",
+          "id": "961717511",
+          "playerId": "33263"
+        },
+        {
+          "date": "18.04.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"Uzun\",\"price\":6510100,\"buyerId\":\"1\",\"playerValue\":6440000,\"playerId\":\"34008\",\"buyer\":\"Computer\"}",
+          "id": "961717511",
+          "playerId": "34008"
+        },
+        {
+          "date": "18.04.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ache (33263) ist jetzt VERLETZT (Muskelverletzung)",
+          "id": "0",
+          "playerId": "33263"
+        },
+        {
+          "date": "18.04.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gnabry (32696) ist jetzt VERLETZT (Adduktorenverletzung)",
+          "id": "0",
+          "playerId": "32696"
         }
       ]
     },
