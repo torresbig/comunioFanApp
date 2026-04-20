@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "20.04.2026 05:32:47",
+  "lastUpdate": "20.04.2026 15:04:34",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -9341,6 +9341,51 @@
           "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Krattenmacher\",\"price\":1638000,\"playerValue\":1110000,\"playerId\":\"33996\",\"buyer\":\"Computer\",\"buyerId\":\"1\"}",
           "id": "949159884",
           "playerId": "33996"
+        }
+      ]
+    },
+    {
+      "date": "20.04.2026",
+      "news": [
+        {
+          "date": "20.04.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Mensah (ID: 34360)",
+          "id": "0",
+          "playerId": "34360"
+        },
+        {
+          "date": "20.04.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Ofli (ID: 34359)",
+          "id": "0",
+          "playerId": "34359"
+        },
+        {
+          "date": "20.04.2026",
+          "art": "ELFDESTAGES",
+          "gelesen": false,
+          "text": "[{\"punkte\":11,\"owner\":\"6013585\",\"playerName\":\"Dahmen\",\"position\":\"keeper\",\"playerId\":\"32877\"},{\"punkte\":12,\"owner\":\"1\",\"playerName\":\"Raphaël Guerreiro\",\"position\":\"defender\",\"playerId\":\"32632\"},{\"punkte\":11,\"owner\":\"10966300\",\"playerName\":\"Davies\",\"position\":\"defender\",\"playerId\":\"33021\"},{\"punkte\":10,\"owner\":\"13721745\",\"playerName\":\"Grimaldo\",\"position\":\"defender\",\"playerId\":\"33771\"},{\"punkte\":17,\"owner\":\"1\",\"playerName\":\"Stage\",\"position\":\"midfielder\",\"playerId\":\"33640\"},{\"punkte\":17,\"owner\":\"1\",\"playerName\":\"Rieder\",\"position\":\"midfielder\",\"playerId\":\"33997\"},{\"punkte\":15,\"owner\":\"11683432\",\"playerName\":\"Kramarić\",\"position\":\"midfielder\",\"playerId\":\"32553\"},{\"punkte\":14,\"owner\":\"1\",\"playerName\":\"Puertas\",\"position\":\"midfielder\",\"playerId\":\"34298\"},{\"punkte\":12,\"owner\":\"13548242\",\"playerName\":\"Amiri\",\"position\":\"midfielder\",\"playerId\":\"32395\"},{\"punkte\":12,\"owner\":\"6013585\",\"playerName\":\"Nusa\",\"position\":\"striker\",\"playerId\":\"34039\"},{\"punkte\":11,\"owner\":\"1\",\"playerName\":\"Diomande\",\"position\":\"striker\",\"playerId\":\"34237\"}]",
+          "id": "961784020",
+          "playerId": "0"
+        },
+        {
+          "date": "20.04.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: J. Lee (33477) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33477"
+        },
+        {
+          "date": "20.04.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gouweleeuw (32549) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32549"
         }
       ]
     },
