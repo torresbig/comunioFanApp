@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "09.05.2026 15:04:01",
+  "lastUpdate": "10.05.2026 05:18:25",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -19737,6 +19737,27 @@
       ]
     },
     {
+      "date": "10.05.2026",
+      "news": [
+        {
+          "date": "10.05.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kömür\",\"price\":1030000,\"buyerId\":\"5949921\",\"playerValue\":990000,\"playerId\":\"33736\",\"buyer\":\"Sascha\"}",
+          "id": "962504192",
+          "playerId": "33736"
+        },
+        {
+          "date": "10.05.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"D. Nemeth\",\"price\":168100,\"buyerId\":\"1\",\"playerValue\":160000,\"playerId\":\"33443\",\"buyer\":\"Computer\"}",
+          "id": "962504192",
+          "playerId": "33443"
+        }
+      ]
+    },
+    {
       "date": "10.04.2026",
       "news": [
         {
@@ -20290,14 +20311,24 @@
     },
     {
       "date": "09.05.2026",
-      "news": [{
-        "date": "09.05.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Davies\",\"price\":6204400,\"buyerId\":\"1\",\"playerValue\":6490000,\"playerId\":\"33021\",\"buyer\":\"Computer\"}",
-        "id": "962484170",
-        "playerId": "33021"
-      }]
+      "news": [
+        {
+          "date": "09.05.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Davies\",\"price\":6204400,\"buyerId\":\"1\",\"playerValue\":6490000,\"playerId\":\"33021\",\"buyer\":\"Computer\"}",
+          "id": "962484170",
+          "playerId": "33021"
+        },
+        {
+          "date": "09.05.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Lucas Vázquez (34277) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34277"
+        }
+      ]
     },
     {
       "date": "09.04.2026",
