@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "12.05.2026 05:18:31",
+  "lastUpdate": "12.05.2026 15:04:14",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -17560,6 +17560,22 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Dorsch\",\"price\":1800000,\"buyerId\":\"5949921\",\"playerValue\":1660000,\"playerId\":\"32603\",\"buyer\":\"Sascha\"}",
           "id": "962560082",
           "playerId": "32603"
+        },
+        {
+          "date": "12.05.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Kamiński\",\"price\":8652800,\"buyerId\":\"1\",\"playerValue\":7700000,\"playerId\":\"33607\",\"buyer\":\"Computer\"}",
+          "id": "962560082",
+          "playerId": "33607"
+        },
+        {
+          "date": "12.05.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Fischer (33625) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33625"
         }
       ]
     },
