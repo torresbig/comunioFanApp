@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "11.05.2026 15:04:16",
+  "lastUpdate": "12.05.2026 05:18:31",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -17535,6 +17535,35 @@
       ]
     },
     {
+      "date": "12.05.2026",
+      "news": [
+        {
+          "date": "12.05.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Rieder\",\"price\":8080009,\"buyerId\":\"10966300\",\"playerValue\":7480000,\"playerId\":\"33997\",\"buyer\":\"Alexander\"}",
+          "id": "962560082",
+          "playerId": "33997"
+        },
+        {
+          "date": "12.05.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Pyrka\",\"price\":790009,\"buyerId\":\"10966300\",\"playerValue\":590000,\"playerId\":\"34189\",\"buyer\":\"Alexander\"}",
+          "id": "962560082",
+          "playerId": "34189"
+        },
+        {
+          "date": "12.05.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Dorsch\",\"price\":1800000,\"buyerId\":\"5949921\",\"playerValue\":1660000,\"playerId\":\"32603\",\"buyer\":\"Sascha\"}",
+          "id": "962560082",
+          "playerId": "32603"
+        }
+      ]
+    },
+    {
       "date": "12.04.2026",
       "news": [
         {
@@ -18997,6 +19026,22 @@
           "text": "Statuswechsel: F. Nmecha (33498) ist wieder AKTIV",
           "id": "0",
           "playerId": "33498"
+        },
+        {
+          "date": "11.05.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Querfeld\",\"price\":3411600,\"buyerId\":\"1\",\"playerValue\":3460000,\"playerId\":\"33995\",\"buyer\":\"Computer\"}",
+          "id": "962549265",
+          "playerId": "33995"
+        },
+        {
+          "date": "11.05.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Klanac (34101) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34101"
         }
       ]
     },
