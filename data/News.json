@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "15.05.2026 05:18:17",
+  "lastUpdate": "15.05.2026 15:03:54",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -14683,14 +14683,64 @@
     },
     {
       "date": "15.05.2026",
-      "news": [{
-        "date": "15.05.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Honsak\",\"price\":1600000,\"buyerId\":\"5949921\",\"playerValue\":1580000,\"playerId\":\"33797\",\"buyer\":\"Sascha\"}",
-        "id": "962646368",
-        "playerId": "33797"
-      }]
+      "news": [
+        {
+          "date": "15.05.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Honsak\",\"price\":1600000,\"buyerId\":\"5949921\",\"playerValue\":1580000,\"playerId\":\"33797\",\"buyer\":\"Sascha\"}",
+          "id": "962646368",
+          "playerId": "33797"
+        },
+        {
+          "date": "15.05.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Kaba (ID: 34364)",
+          "id": "0",
+          "playerId": "34364"
+        },
+        {
+          "date": "15.05.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Bittencourt (31932) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "31932"
+        },
+        {
+          "date": "15.05.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Rothweiler (34192) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34192"
+        },
+        {
+          "date": "15.05.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ma. Busch (32380) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32380"
+        },
+        {
+          "date": "15.05.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gimber (32457) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32457"
+        },
+        {
+          "date": "15.05.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Wöber (33831) ist jetzt VERLETZT (Krank)",
+          "id": "0",
+          "playerId": "33831"
+        }
+      ]
     },
     {
       "date": "15.04.2026",
