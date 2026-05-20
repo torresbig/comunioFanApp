@@ -40194,7 +40194,18 @@
           "Kramaric",
           "kramaric"
         ],
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/32553"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "1",
+            "zielwert": "10.700.000",
+            "platz": 10,
+            "lastUpdate": "20.05.2026",
+            "typ": "flop",
+            "marktwert": "10.880.000",
+            "aenderung": "-180.000"
+          },
+          "link": "https://www.com-analytics.de/player/32553"
+        },
         "spielerDaten": {
           "groesse": "1,77",
           "geburtstag": "19.06.1991",
@@ -50941,18 +50952,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "2",
-            "zielwert": "7.760.000",
-            "platz": 10,
-            "lastUpdate": "20.05.2026",
-            "typ": "flop",
-            "marktwert": "7.990.000",
-            "aenderung": "-230.000"
-          },
-          "link": "https://www.com-analytics.de/player/34242"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34242"},
         "elfDesSpieltages": 4,
         "spielerDaten": {
           "groesse": "1,91",
