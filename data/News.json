@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "20.05.2026 23:42:25",
+  "lastUpdate": "21.05.2026 05:15:12",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -10379,14 +10379,24 @@
     },
     {
       "date": "20.05.2026",
-      "news": [{
-        "date": "20.05.2026",
-        "art": "SPIELERSTATUS",
-        "gelesen": false,
-        "text": "Statuswechsel: Osterhage (33156) ist wieder AKTIV",
-        "id": "0",
-        "playerId": "33156"
-      }]
+      "news": [
+        {
+          "date": "20.05.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Osterhage (33156) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33156"
+        },
+        {
+          "date": "20.05.2026",
+          "art": "USERPOINTS",
+          "gelesen": false,
+          "text": "{\"totalPoints\":0,\"userName\":\"Gerry soonwald\",\"gamedayPoints\":0,\"userID\":\"13830745\"}",
+          "id": "0",
+          "playerId": "0"
+        }
+      ]
     },
     {
       "date": "20.04.2026",
