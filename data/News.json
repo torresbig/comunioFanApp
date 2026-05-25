@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "25.05.2026 05:15:11",
+  "lastUpdate": "25.05.2026 15:00:44",
   "newsDB": [
     {
       "date": "31.12.2025",
@@ -5601,6 +5601,35 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Labrović\",\"price\":173500,\"playerValue\":270000,\"playerId\":\"33990\",\"buyer\":\"Stefan 8\",\"buyerId\":\"6013585\"}",
           "id": "949251727",
           "playerId": "33990"
+        }
+      ]
+    },
+    {
+      "date": "25.05.2026",
+      "news": [
+        {
+          "date": "25.05.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Prosche  (ID: 34367)",
+          "id": "0",
+          "playerId": "34367"
+        },
+        {
+          "date": "25.05.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Prömel\",\"newClub\":\"14\",\"oldClub\":\"0\",\"playerID\":\"32492\"}",
+          "id": "0",
+          "playerId": "32492"
+        },
+        {
+          "date": "25.05.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Wisbereit (34363) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "34363"
         }
       ]
     },
