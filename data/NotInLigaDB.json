@@ -22,7 +22,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 180000,
-        "verein": "0",
+        "verein": "62",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "25.01.2026",
@@ -48,7 +48,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.02.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2017": 58},
           {"2018": 10},
@@ -411,7 +411,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 340000,
-        "verein": "0",
+        "verein": "1",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "22.07.2025",
@@ -441,7 +441,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "30.07.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2023": 14}],
         "spieltagspunkte": [
           {
@@ -500,7 +500,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 400000,
-        "verein": "0",
+        "verein": "3",
         "fussballdatenDe": {
           "lastProcessedMatchday": 13,
           "lastUpdate": "09.12.2025 15:00:44",
@@ -537,16 +537,23 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.02.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2023": 3},
           {"2024": 1}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 21,
-          "value": 0,
-          "key": 20
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 21,
+            "value": 0,
+            "key": 20
+          },
+          {
+            "totalPoints": 21,
+            "value": 0,
+            "key": 34
+          }
+        ],
         "position": "STURM",
         "possibleNames": [
           "Grant Leon Ranos",
@@ -1185,7 +1192,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 250000,
-        "verein": "0",
+        "verein": "6",
         "fussballdatenDe": {
           "lastProcessedMatchday": 3,
           "lastUpdate": "04.11.2025 14:21:32",
@@ -1218,16 +1225,23 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.02.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2023": 22},
           {"2024": 15}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 6,
-          "value": 0,
-          "key": 20
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 6,
+            "value": 0,
+            "key": 20
+          },
+          {
+            "totalPoints": 6,
+            "value": 0,
+            "key": 34
+          }
+        ],
         "position": "MITTELFELD",
         "possibleNames": [
           "Skelly Alvero",
@@ -1397,7 +1411,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 570000,
-        "verein": "0",
+        "verein": "1",
         "fussballdatenDe": {
           "lastProcessedMatchday": 12,
           "lastUpdate": "08.12.2025 05:29:46",
@@ -1430,13 +1444,20 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "05.02.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2024": 30}],
-        "spieltagspunkte": [{
-          "totalPoints": 15,
-          "value": 0,
-          "key": 20
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 15,
+            "value": 0,
+            "key": 20
+          },
+          {
+            "totalPoints": 15,
+            "value": 0,
+            "key": 34
+          }
+        ],
         "position": "ABWEHR",
         "attribute": {"ligainsiderRanking": {
           "punkte": 279,
@@ -1559,7 +1580,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 240000,
-        "verein": "0",
+        "verein": "1",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "22.07.2025",
@@ -1589,7 +1610,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "29.07.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2023": 9}],
         "spieltagspunkte": [
           {
@@ -1785,7 +1806,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 170000,
-        "verein": "0",
+        "verein": "18",
         "fussballdatenDe": {
           "lastProcessedMatchday": 2,
           "lastUpdate": "04.11.2025 14:21:29",
@@ -1822,7 +1843,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "23.01.2026",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -1922,6 +1943,11 @@
             "totalPoints": 3,
             "value": 0,
             "key": 18
+          },
+          {
+            "totalPoints": 3,
+            "value": 0,
+            "key": 34
           }
         ],
         "position": "STURM",
@@ -6525,7 +6551,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 600000,
-        "verein": "0",
+        "verein": "3",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "22.08.2024",
@@ -6551,7 +6577,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "22.08.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2023": 4},
           {"2024": 9}
@@ -6834,7 +6860,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 160000,
-        "verein": "0",
+        "verein": "68",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "",
@@ -6858,7 +6884,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "18.06.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -6954,7 +6980,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.05.2026",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -7123,7 +7149,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 1110000,
-        "verein": "0",
+        "verein": "1",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "",
@@ -7147,7 +7173,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "30.06.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -7658,7 +7684,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 780000,
-        "verein": "0",
+        "verein": "68",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "26.07.2025",
@@ -7684,7 +7710,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "09.08.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2024": 41}],
         "spieltagspunkte": [
           {
@@ -8273,7 +8299,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 810000,
+        "wert": 740000,
         "verein": "3",
         "fussballdatenDe": {
           "lastProcessedMatchday": 13,
@@ -8307,7 +8333,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.05.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2023": 16}],
         "spieltagspunkte": [
           {
@@ -9399,8 +9425,8 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 180000,
-        "verein": "0",
+        "wert": 1000000,
+        "verein": "4",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "",
@@ -9424,7 +9450,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "05.07.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -9694,7 +9720,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 270000,
-        "verein": "0",
+        "verein": "92",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "23.08.2025",
@@ -9724,7 +9750,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.09.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2023": 20},
           {"2024": 4}
@@ -10237,7 +10263,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 190000,
-        "verein": "0",
+        "verein": "68",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "24.08.2025",
@@ -10263,7 +10289,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "12.09.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2024": 16}],
         "spieltagspunkte": [
           {
@@ -11145,7 +11171,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 1170000,
-        "verein": "0",
+        "verein": "9",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "24.08.2025",
@@ -11171,7 +11197,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.09.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2023": 83},
           {"2024": 31}
@@ -11238,7 +11264,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 160000,
-        "verein": "0",
+        "verein": "109",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -11263,7 +11289,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "30.08.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -12029,8 +12055,8 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 160000,
-        "verein": "0",
+        "wert": 1500000,
+        "verein": "14",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "22.08.2024",
@@ -12055,7 +12081,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.05.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -13181,7 +13207,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 1210000,
-        "verein": "0",
+        "verein": "109",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "22.07.2025",
@@ -13211,7 +13237,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "16.08.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2016": 18},
           {"2017": 4},
@@ -13291,7 +13317,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 160000,
-        "verein": "0",
+        "verein": "1",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.2026",
@@ -13317,7 +13343,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "08.01.2026",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -13537,7 +13563,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 170000,
-        "verein": "0",
+        "verein": "62",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "",
@@ -13561,7 +13587,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "16.06.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2023": 7}],
         "spieltagspunkte": [
           {
@@ -14130,7 +14156,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 160000,
-        "verein": "0",
+        "verein": "13",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "",
@@ -14154,7 +14180,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "18.06.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -14227,7 +14253,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 180000,
-        "verein": "0",
+        "verein": "9",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "04.09.2025",
@@ -14258,7 +14284,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "06.09.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2022": 22},
           {"2023": 21}
@@ -17679,7 +17705,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 610000,
-        "verein": "0",
+        "verein": "5",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "30.12.2025",
@@ -17705,7 +17731,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "22.01.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2022": 5},
           {"2023": 1},
@@ -18026,7 +18052,7 @@
         "lastSeasonPoints": 54,
         "punkte": 172,
         "realWert": 12000000,
-        "lastUpdate": "26.05.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2022": 73},
           {"2023": 15},
@@ -19866,7 +19892,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 280000,
-        "verein": "0",
+        "verein": "6",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "24.08.2025",
@@ -19892,7 +19918,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "30.08.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2023": 2}],
         "spieltagspunkte": [
           {
@@ -20782,7 +20808,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 180000,
-        "verein": "0",
+        "verein": "68",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "22.07.2025",
@@ -20812,7 +20838,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.07.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2022": 15}],
         "spieltagspunkte": [
           {
@@ -25167,7 +25193,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 660000,
-        "verein": "0",
+        "verein": "68",
         "fussballdatenDe": {
           "lastProcessedMatchday": 11,
           "lastUpdate": "01.12.2025 05:29:41",
@@ -25200,7 +25226,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "14.01.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2024": 66}],
         "spieltagspunkte": [
           {
@@ -25382,6 +25408,11 @@
             "totalPoints": 27,
             "value": 0,
             "key": 16
+          },
+          {
+            "totalPoints": 27,
+            "value": 0,
+            "key": 34
           }
         ],
         "position": "STURM",
@@ -25449,7 +25480,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 180000,
-        "verein": "0",
+        "verein": "13",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "Jacob Christensen",
@@ -25473,7 +25504,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "07.07.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2023": 30}],
         "spieltagspunkte": [
           {
@@ -26329,7 +26360,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "22.01.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2023": 51},
           {"2024": 35}
@@ -28151,7 +28182,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 180000,
-        "verein": "0",
+        "verein": "62",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "",
@@ -28175,7 +28206,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "11.07.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2023": 1}],
         "spieltagspunkte": [
           {
@@ -30231,7 +30262,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 370000,
-        "verein": "0",
+        "verein": "18",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "22.07.2025",
@@ -30261,7 +30292,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "31.07.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2017": 19},
           {"2018": 72},
@@ -33522,7 +33553,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.05.2026",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -34208,7 +34239,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "verein": "0",
+        "verein": "13",
         "wert": 170000,
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -34239,7 +34270,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "06.02.2026",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [{
           "value": 0,
           "key": 20
@@ -34661,8 +34692,8 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 180000,
-        "verein": "0",
+        "wert": 170000,
+        "verein": "9",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "19.08.2025",
@@ -34692,7 +34723,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "13.09.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -35120,7 +35151,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 300000,
-        "verein": "0",
+        "verein": "4",
         "fussballdatenDe": {
           "lastProcessedMatchday": 11,
           "lastUpdate": "01.12.2025 05:29:41",
@@ -35153,22 +35184,29 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.02.2026",
-        "spieltagspunkte": [{
-          "rating": 6.7,
-          "yellow": 0,
-          "xgoals": 0,
-          "red": 0,
-          "yellowRed": 0,
-          "einsatzzeit": 5,
-          "assists": 0,
-          "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":null,\"duelRate\":100,\"minutesPlayed\":5}",
-          "totalPoints": -3,
-          "tore": 0,
-          "value": 3,
-          "key": 20,
-          "status": "SUBIN"
-        }],
+        "lastUpdate": "27.05.2026",
+        "spieltagspunkte": [
+          {
+            "rating": 6.7,
+            "yellow": 0,
+            "xgoals": 0,
+            "red": 0,
+            "yellowRed": 0,
+            "einsatzzeit": 5,
+            "assists": 0,
+            "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":null,\"duelRate\":100,\"minutesPlayed\":5}",
+            "totalPoints": -3,
+            "tore": 0,
+            "value": 3,
+            "key": 20,
+            "status": "SUBIN"
+          },
+          {
+            "totalPoints": -3,
+            "value": 0,
+            "key": 34
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
@@ -38611,7 +38649,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 820000,
-        "verein": "0",
+        "verein": "8",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "22.07.2025",
@@ -38641,7 +38679,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "29.07.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -40214,7 +40252,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 710000,
-        "verein": "0",
+        "verein": "21",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "18.08.2024",
@@ -40240,7 +40278,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "09.08.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2018": 48},
           {"2023": 14},
@@ -41465,7 +41503,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 410000,
+        "wert": 390000,
         "verein": "1",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -41495,7 +41533,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.05.2026",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -42171,7 +42209,7 @@
         "lastSeasonPoints": 0,
         "punkte": 115,
         "realWert": 8000000,
-        "lastUpdate": "26.05.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2022": 64},
           {"2023": 92}
@@ -45523,7 +45561,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.05.2026",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -45653,7 +45691,7 @@
         "lastSeasonPoints": 3,
         "punkte": 144,
         "realWert": 3500000,
-        "lastUpdate": "26.05.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2019": 16},
           {"2020": 70},
@@ -48274,7 +48312,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.05.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2022": 2}],
         "spieltagspunkte": [
           {
@@ -48441,7 +48479,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 190000,
-        "verein": "0",
+        "verein": "92",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "Frederik Jäkel",
@@ -48465,7 +48503,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "03.07.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -49883,7 +49921,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 1360000,
-        "verein": "0",
+        "verein": "21",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "25.07.2025",
@@ -49909,7 +49947,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.09.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2021": 8},
           {"2022": 31},
@@ -50401,7 +50439,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 200000,
-        "verein": "0",
+        "verein": "21",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "",
@@ -50425,7 +50463,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.05.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2024": 13}],
         "spieltagspunkte": [
           {
@@ -50501,7 +50539,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 280000,
-        "verein": "0",
+        "verein": "9",
         "fussballdatenDe": {
           "lastProcessedMatchday": 13,
           "lastUpdate": "09.12.2025 15:00:44",
@@ -50534,7 +50572,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "06.02.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2019": 6},
           {"2020": 25},
@@ -50542,11 +50580,18 @@
           {"2022": 35},
           {"2023": 8}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 5,
-          "value": 0,
-          "key": 20
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 5,
+            "value": 0,
+            "key": 20
+          },
+          {
+            "totalPoints": 5,
+            "value": 0,
+            "key": 34
+          }
+        ],
         "position": "STURM",
         "possibleNames": [
           "Jessic Ngankam",
@@ -50918,7 +50963,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 400000,
-        "verein": "0",
+        "verein": "62",
         "fussballdatenDe": {
           "lastProcessedMatchday": 13,
           "lastUpdate": "09.12.2025 15:00:44",
@@ -50951,7 +50996,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "02.01.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2022": 4},
           {"2023": 32},
@@ -51084,6 +51129,11 @@
             "totalPoints": 11,
             "value": 0,
             "key": 15
+          },
+          {
+            "totalPoints": 11,
+            "value": 0,
+            "key": 34
           }
         ],
         "position": "MITTELFELD",
@@ -51147,7 +51197,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "verein": "0",
+        "verein": "62",
         "wert": 170000,
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -51170,7 +51220,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "20.01.2026",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -55819,7 +55869,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 170000,
-        "verein": "0",
+        "verein": "9",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "27.07.2025",
@@ -55845,7 +55895,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.09.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2022": 51},
           {"2023": 111},
@@ -55975,7 +56025,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 180000,
-        "verein": "0",
+        "verein": "1",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "26.08.2024",
@@ -56001,7 +56051,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "05.08.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -60667,7 +60717,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.05.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2022": 12}],
         "spieltagspunkte": [
           {
@@ -60834,7 +60884,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 180000,
+        "wert": 170000,
         "verein": "62",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -60859,7 +60909,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.05.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2024": 1}],
         "spieltagspunkte": [
           {
@@ -60939,8 +60989,8 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 180000,
-        "verein": "0",
+        "wert": 170000,
+        "verein": "68",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "04.09.2025",
@@ -60971,7 +61021,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "13.09.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -61812,7 +61862,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 240000,
-        "verein": "0",
+        "verein": "68",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -61837,7 +61887,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.09.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -61892,7 +61942,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 900000,
-        "verein": "0",
+        "verein": "92",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "24.08.2025",
@@ -61922,7 +61972,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.09.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2024": 64}],
         "spieltagspunkte": [
           {
@@ -63087,7 +63137,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 340000,
-        "verein": "0",
+        "verein": "18",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "22.07.2025",
@@ -63117,7 +63167,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "30.07.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2024": 38}],
         "spieltagspunkte": [
           {
@@ -66834,7 +66884,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 200000,
-        "verein": "0",
+        "verein": "4",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -66859,7 +66909,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.09.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -69108,7 +69158,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 1130000,
-        "verein": "0",
+        "verein": "92",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "24.08.2025",
@@ -69138,7 +69188,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "30.08.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2024": 56}],
         "spieltagspunkte": [
           {
@@ -69397,7 +69447,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 190000,
-        "verein": "0",
+        "verein": "4",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "22.07.2025",
@@ -69427,7 +69477,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "30.07.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -69484,7 +69534,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "6",
-        "wert": 160000,
+        "wert": 190000,
         "fussballdatenDe": {
           "lastProcessedMatchday": 7,
           "lastUpdate": "04.11.2025 14:21:44",
@@ -69521,7 +69571,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.05.2026",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -71322,7 +71372,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 180000,
-        "verein": "0",
+        "verein": "109",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "13.12.2025",
@@ -71352,7 +71402,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "03.01.2026",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -71468,7 +71518,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 4000000,
+        "wert": 3720000,
         "verein": "18",
         "fussballdatenDe": {
           "lastProcessedMatchday": 13,
@@ -71506,7 +71556,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.05.2026",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "rating": 6.4,
@@ -72943,7 +72993,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 190000,
-        "verein": "0",
+        "verein": "4",
         "fussballdatenDe": {
           "lastProcessedMatchday": 3,
           "lastUpdate": "04.11.2025 14:21:32",
@@ -72980,7 +73030,8 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "30.01.2026",
+        "lastUpdate": "27.05.2026",
+        "spieltagspunkte": [],
         "position": "STURM",
         "attribute": {"ligainsiderRanking": {
           "punkte": 32,
@@ -73830,7 +73881,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 260000,
-        "verein": "0",
+        "verein": "13",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "",
@@ -73854,7 +73905,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "09.07.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -74469,7 +74520,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 160000,
-        "verein": "0",
+        "verein": "13",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "27.08.2025",
@@ -74499,7 +74550,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "03.09.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -74775,7 +74826,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 180000,
-        "verein": "0",
+        "verein": "4",
         "fussballdatenDe": {
           "lastProcessedMatchday": 13,
           "lastUpdate": "09.12.2025 15:00:44",
@@ -74812,12 +74863,19 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.02.2026",
-        "spieltagspunkte": [{
-          "totalPoints": -1,
-          "value": 0,
-          "key": 20
-        }],
+        "lastUpdate": "27.05.2026",
+        "spieltagspunkte": [
+          {
+            "totalPoints": -1,
+            "value": 0,
+            "key": 20
+          },
+          {
+            "totalPoints": -1,
+            "value": 0,
+            "key": 34
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
@@ -74890,7 +74948,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "verein": "0",
+        "verein": "68",
         "wert": 280000,
         "fussballdatenDe": {
           "lastProcessedMatchday": 8,
@@ -74927,7 +74985,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "14.01.2026",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -75036,6 +75094,11 @@
             "totalPoints": 5,
             "value": 0,
             "key": 16
+          },
+          {
+            "totalPoints": 5,
+            "value": 0,
+            "key": 34
           }
         ],
         "withinSquad": false,
@@ -75728,7 +75791,7 @@
         "spielerDaten": {},
         "isNotName": [],
         "punktekorrektur": [],
-        "verein": "0",
+        "verein": "92",
         "wert": 180000,
         "lastPoints": 0,
         "transfermarktDoDe": {"date": "01.01.1900"},
@@ -75748,7 +75811,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.09.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -75800,7 +75863,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 1090000,
-        "verein": "0",
+        "verein": "1",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "26.08.2024",
@@ -75826,7 +75889,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "03.08.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2024": 33}],
         "spieltagspunkte": [
           {
@@ -76414,7 +76477,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 160000,
-        "verein": "0",
+        "verein": "13",
         "fussballdatenDe": {
           "lastProcessedMatchday": 2,
           "lastUpdate": "04.11.2025 14:21:29",
@@ -76451,7 +76514,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "22.12.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -76536,6 +76599,11 @@
             "totalPoints": 1,
             "value": 0,
             "key": 15
+          },
+          {
+            "totalPoints": 1,
+            "value": 0,
+            "key": 34
           }
         ],
         "withinSquad": true,
@@ -78170,7 +78238,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 270000,
-        "verein": "0",
+        "verein": "13",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "27.08.2025",
@@ -78196,7 +78264,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "29.08.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -79081,7 +79149,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 710000,
-        "verein": "0",
+        "verein": "68",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "24.08.2025",
@@ -79107,7 +79175,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "12.09.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2024": 34}],
         "spieltagspunkte": [
           {
@@ -80810,7 +80878,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 470000,
-        "verein": "0",
+        "verein": "6",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "",
@@ -80834,7 +80902,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "21.07.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2018": 34},
           {"2019": 23},
@@ -81357,7 +81425,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 2260000,
-        "verein": "0",
+        "verein": "1",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -81382,7 +81450,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "02.09.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "red": 0,
@@ -81450,7 +81518,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "4",
-        "wert": 720000,
+        "wert": 680000,
         "lastPoints": 3,
         "transfermarktDoDe": {"date": "01.01.1900"},
         "punkte": 22,
@@ -81469,7 +81537,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.05.2026",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -82427,7 +82495,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "verein": "0",
+        "verein": "8",
         "wert": 1240000,
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -82452,7 +82520,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.09.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -82593,7 +82661,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 340000,
-        "verein": "0",
+        "verein": "3",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "",
@@ -82617,7 +82685,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "29.07.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2024": 2}],
         "spieltagspunkte": [
           {
@@ -82681,7 +82749,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 160000,
-        "verein": "0",
+        "verein": "62",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "",
@@ -82705,7 +82773,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "09.07.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -84798,7 +84866,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "4",
-        "wert": 180000,
+        "wert": 170000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -84820,7 +84888,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.05.2026",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "totalPoints": 0,
@@ -85125,7 +85193,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 1960000,
-        "verein": "0",
+        "verein": "109",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "13.01.2026",
@@ -85156,8 +85224,9 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "30.01.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2024": 23}],
+        "spieltagspunkte": [],
         "position": "STURM",
         "possibleNames": [
           "Marin Ljubicic",
@@ -85211,7 +85280,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 160000,
-        "verein": "0",
+        "verein": "92",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "22.02.2026",
@@ -85240,7 +85309,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.02.2026",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -85393,7 +85462,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 230000,
-        "verein": "0",
+        "verein": "68",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "02.09.2025",
@@ -85423,7 +85492,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.09.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2023": 19},
           {"2024": 6}
@@ -86898,7 +86967,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 1770000,
+        "wert": 1930000,
         "verein": "14",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -86926,7 +86995,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.05.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2023": 4}],
         "spieltagspunkte": [
           {
@@ -86985,7 +87054,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 170000,
-        "verein": "0",
+        "verein": "9",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "Krisztián Lisztes",
@@ -87010,7 +87079,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "09.08.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -88863,7 +88932,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 690000,
-        "verein": "0",
+        "verein": "21",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "26.01.2026",
@@ -88889,16 +88958,23 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.02.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2023": 9},
           {"2024": 52}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 30,
-          "value": 0,
-          "key": 20
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 30,
+            "value": 0,
+            "key": 20
+          },
+          {
+            "totalPoints": 30,
+            "value": 0,
+            "key": 34
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
@@ -91744,7 +91820,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 230000,
-        "verein": "0",
+        "verein": "5",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "18.08.2024",
@@ -91769,7 +91845,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "23.06.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [
           {"2023": 8},
           {"2024": 1}
@@ -94119,7 +94195,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 570000,
-        "verein": "0",
+        "verein": "18",
         "fussballdatenDe": {
           "lastProcessedMatchday": 13,
           "lastUpdate": "09.12.2025 15:00:44",
@@ -94156,13 +94232,20 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.02.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2024": 10}],
-        "spieltagspunkte": [{
-          "totalPoints": 27,
-          "value": 0,
-          "key": 20
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 27,
+            "value": 0,
+            "key": 20
+          },
+          {
+            "totalPoints": 27,
+            "value": 0,
+            "key": 34
+          }
+        ],
         "position": "MITTELFELD",
         "attribute": {"ligainsiderRanking": {
           "punkte": 322,
@@ -94232,7 +94315,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 640000,
-        "verein": "0",
+        "verein": "9",
         "fussballdatenDe": {
           "lastProcessedMatchday": 11,
           "lastUpdate": "01.12.2025 05:29:41",
@@ -94269,7 +94352,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "01.01.2026",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2024": 11}],
         "spieltagspunkte": [
           {
@@ -94446,6 +94529,11 @@
             "totalPoints": 15,
             "value": 0,
             "key": 15
+          },
+          {
+            "totalPoints": 15,
+            "value": 0,
+            "key": 34
           }
         ],
         "withinSquad": true,
@@ -95976,8 +96064,8 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 230000,
-        "verein": "0",
+        "wert": 4000000,
+        "verein": "8",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "",
@@ -96001,7 +96089,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "03.07.2025",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -97705,7 +97793,7 @@
         },
         "isNotName": [],
         "punktekorrektur": [],
-        "wert": 190000,
+        "wert": 180000,
         "verein": "8",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -97730,7 +97818,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "26.05.2026",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -97799,7 +97887,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 200000,
-        "verein": "0",
+        "verein": "62",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "name": "",
@@ -97823,7 +97911,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "19.07.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2024": 9}],
         "spieltagspunkte": [
           {
@@ -98821,7 +98909,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 160000,
-        "verein": "0",
+        "verein": "18",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "20.12.2025",
@@ -98851,7 +98939,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "15.01.2026",
+        "lastUpdate": "27.05.2026",
         "spieltagspunkte": [
           {
             "value": 0,
@@ -99797,7 +99885,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "wert": 1610000,
-        "verein": "0",
+        "verein": "62",
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "19.08.2025",
@@ -99827,7 +99915,7 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "lastUpdate": "27.08.2025",
+        "lastUpdate": "27.05.2026",
         "historicalPoints": [{"2024": 44}],
         "spieltagspunkte": [
           {
