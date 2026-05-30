@@ -1,0 +1,1364 @@
+Mai 30, 2026 3:45:56 PM comunio.nas.dataScraper.comunio.ComunioDataUpdater main
+INFORMATION: Starte ComunioDataUpdater...
+Mai 30, 2026 3:45:56 PM comunio.nas.dataScraper.comunio.Login login
+INFORMATION: Starte Login-Prozess...
+Mai 30, 2026 3:45:56 PM comunio.nas.dataScraper.comunio.Login shouldGetToken
+FEIN: Kein Token vorhanden, muss neu geholt werden.
+Mai 30, 2026 3:45:56 PM comunio.nas.dataScraper.comunio.Login getTokenFromServer
+INFORMATION: Starte Login-Request an Comunio-API...
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:57:0a:11:97:42:c4:e3:cc, Subject:CN=Actalis Authentication Root CA, O=Actalis S.p.A./03358520967, L=Milan, C=IT, Issuer:CN=Actalis Authentication Root CA, O=Actalis S.p.A./03358520967, L=Milan, C=IT, Key type:RSA, Length:4096, Cert Id:1729119956, Valid from:22.09.11, 13:22, Valid until:22.09.30, 13:22
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:01, Subject:CN=AddTrust External CA Root, OU=AddTrust External TTP Network, O=AddTrust AB, C=SE, Issuer:CN=AddTrust External CA Root, OU=AddTrust External TTP Network, O=AddTrust AB, C=SE, Key type:RSA, Length:2048, Cert Id:3968614624, Valid from:30.05.00, 12:48, Valid until:30.05.20, 12:48
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:01, Subject:CN=AddTrust Qualified CA Root, OU=AddTrust TTP Network, O=AddTrust AB, C=SE, Issuer:CN=AddTrust Qualified CA Root, OU=AddTrust TTP Network, O=AddTrust AB, C=SE, Key type:RSA, Length:2048, Cert Id:607365522, Valid from:30.05.00, 12:44, Valid until:30.05.20, 12:44
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:06:6c:9f:cf:99:bf:8c:0a:39:e2:f0:78:8a:43:e6:96:36:5b:ca, Subject:CN=Amazon Root CA 1, O=Amazon, C=US, Issuer:CN=Amazon Root CA 1, O=Amazon, C=US, Key type:RSA, Length:2048, Cert Id:2822522334, Valid from:26.05.15, 02:00, Valid until:17.01.38, 01:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:06:6c:9f:d2:96:35:86:9f:0a:0f:e5:86:78:f8:5b:26:bb:8a:37, Subject:CN=Amazon Root CA 2, O=Amazon, C=US, Issuer:CN=Amazon Root CA 2, O=Amazon, C=US, Key type:RSA, Length:4096, Cert Id:2528834908, Valid from:26.05.15, 02:00, Valid until:26.05.40, 02:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withECDSA, Serial:06:6c:9f:d5:74:97:36:66:3f:3b:0b:9a:d9:e8:9e:76:03:f2:4a, Subject:CN=Amazon Root CA 3, O=Amazon, C=US, Issuer:CN=Amazon Root CA 3, O=Amazon, C=US, Key type:EC, Length:256, Cert Id:2732679773, Valid from:26.05.15, 02:00, Valid until:26.05.40, 02:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:06:6c:9f:d7:c1:bb:10:4c:29:43:e5:71:7b:7b:2c:c8:1a:c1:0e, Subject:CN=Amazon Root CA 4, O=Amazon, C=US, Issuer:CN=Amazon Root CA 4, O=Amazon, C=US, Key type:EC, Length:384, Cert Id:2640694783, Valid from:26.05.15, 02:00, Valid until:26.05.40, 02:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:02, Subject:CN=Buypass Class 2 Root CA, O=Buypass AS-983163327, C=NO, Issuer:CN=Buypass Class 2 Root CA, O=Buypass AS-983163327, C=NO, Key type:RSA, Length:4096, Cert Id:969960563, Valid from:26.10.10, 10:38, Valid until:26.10.40, 10:38
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:02, Subject:CN=Buypass Class 3 Root CA, O=Buypass AS-983163327, C=NO, Issuer:CN=Buypass Class 3 Root CA, O=Buypass AS-983163327, C=NO, Key type:RSA, Length:4096, Cert Id:1264269967, Valid from:26.10.10, 10:28, Valid until:26.10.40, 10:28
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:00:a3:da:42:7e:a4:b1:ae:da, Subject:CN=Chambers of Commerce Root - 2008, O=AC Camerfirma S.A., SERIALNUMBER=A82743287, L=Madrid (see current address at www.camerfirma.com/address), C=EU, Issuer:CN=Chambers of Commerce Root - 2008, O=AC Camerfirma S.A., SERIALNUMBER=A82743287, L=Madrid (see current address at www.camerfirma.com/address), C=EU, Key type:RSA, Length:4096, Cert Id:4266703372, Valid from:01.08.08, 14:29, Valid until:31.07.38, 14:29
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:06:25:33:b1:47:03:33:27:5c:f9:8d:9a:b9:bf:cc:f8, Subject:CN=Certainly Root E1, O=Certainly, C=US, Issuer:CN=Certainly Root E1, O=Certainly, C=US, Key type:EC, Length:384, Cert Id:792571453, Valid from:01.04.21, 02:00, Valid until:01.04.46, 02:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00:8e:0f:f9:4b:90:71:68:65:33:54:f4:d4:44:39:b7:e0, Subject:CN=Certainly Root R1, O=Certainly, C=US, Issuer:CN=Certainly Root R1, O=Certainly, C=US, Key type:RSA, Length:4096, Cert Id:2255958535, Valid from:01.04.21, 02:00, Valid until:01.04.46, 02:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:00:fe:dc:e3:01:0f:c9:48:ff, Subject:CN=Certigna, O=Dhimyotis, C=FR, Issuer:CN=Certigna, O=Dhimyotis, C=FR, Key type:RSA, Length:2048, Cert Id:3506875840, Valid from:29.06.07, 17:13, Valid until:29.06.27, 17:13
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00:ca:e9:1b:89:f1:55:03:0d:a3:e6:41:6d:c4:e3:a6:e1, Subject:CN=Certigna Root CA, OU=0002 48146308100036, O=Dhimyotis, C=FR, Issuer:CN=Certigna Root CA, OU=0002 48146308100036, O=Dhimyotis, C=FR, Key type:RSA, Length:4096, Cert Id:356684591, Valid from:01.10.13, 10:32, Valid until:01.10.33, 10:32
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:01:00:20, Subject:CN=Certum CA, O=Unizeto Sp. z o.o., C=PL, Issuer:CN=Certum CA, O=Unizeto Sp. z o.o., C=PL, Key type:RSA, Length:2048, Cert Id:3550516030, Valid from:11.06.02, 12:46, Valid until:11.06.27, 12:46
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:04:44:c0, Subject:CN=Certum Trusted Network CA, OU=Certum Certification Authority, O=Unizeto Technologies S.A., C=PL, Issuer:CN=Certum Trusted Network CA, OU=Certum Certification Authority, O=Unizeto Technologies S.A., C=PL, Key type:RSA, Length:2048, Cert Id:2014002193, Valid from:22.10.08, 14:07, Valid until:31.12.29, 13:07
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:15:c8:bd:65:47:5c:af:b8:97:00:5e:e4:06:d2:bc:9d, Subject:OU=ePKI Root Certification Authority, O="Chunghwa Telecom Co., Ltd.", C=TW, Issuer:OU=ePKI Root Certification Authority, O="Chunghwa Telecom Co., Ltd.", C=TW, Key type:RSA, Length:4096, Cert Id:3632331159, Valid from:20.12.04, 03:31, Valid until:20.12.34, 03:31
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:01, Subject:CN=AAA Certificate Services, O=Comodo CA Limited, L=Salford, ST=Greater Manchester, C=GB, Issuer:CN=AAA Certificate Services, O=Comodo CA Limited, L=Salford, ST=Greater Manchester, C=GB, Key type:RSA, Length:2048, Cert Id:3097386402, Valid from:01.01.04, 01:00, Valid until:01.01.29, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:1f:47:af:aa:62:00:70:50:54:4c:01:9e:9b:63:99:2a, Subject:CN=COMODO ECC Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB, Issuer:CN=COMODO ECC Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB, Key type:EC, Length:384, Cert Id:1146488932, Valid from:06.03.08, 01:00, Valid until:19.01.38, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:4c:aa:f9:ca:db:63:6f:e0:1f:f7:4e:d8:5b:03:86:9d, Subject:CN=COMODO RSA Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB, Issuer:CN=COMODO RSA Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB, Key type:RSA, Length:4096, Cert Id:1769425049, Valid from:19.01.10, 01:00, Valid until:19.01.38, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:0b:93:1c:3a:d6:39:67:ea:67:23:bf:c3:af:9a:f4:4b, Subject:CN=DigiCert Assured ID Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Assured ID Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:2048, Cert Id:3909568913, Valid from:01.08.13, 14:00, Valid until:15.01.38, 13:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:0b:a1:5a:fa:1d:df:a0:b5:49:44:af:cd:24:a0:6c:ec, Subject:CN=DigiCert Assured ID Root G3, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Assured ID Root G3, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:EC, Length:384, Cert Id:3649430051, Valid from:01.08.13, 14:00, Valid until:15.01.38, 13:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:0c:e7:e0:e5:17:d8:46:fe:8f:e5:60:fc:1b:f0:30:39, Subject:CN=DigiCert Assured ID Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Assured ID Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:2048, Cert Id:3434562768, Valid from:10.11.06, 01:00, Valid until:10.11.31, 01:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:03:69:8f:e7:12:d5:19:f3:ce:d0:fd:b7:b1:64:30:11, Subject:CN=DigiCert CS ECC P384 Root G5, O="DigiCert, Inc.", C=US, Issuer:CN=DigiCert CS ECC P384 Root G5, O="DigiCert, Inc.", C=US, Key type:EC, Length:384, Cert Id:381797637, Valid from:15.01.21, 01:00, Valid until:15.01.46, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:06:ce:e1:31:be:6d:55:c8:07:f7:c0:c7:fb:44:e6:20, Subject:CN=DigiCert CS RSA4096 Root G5, O="DigiCert, Inc.", C=US, Issuer:CN=DigiCert CS RSA4096 Root G5, O="DigiCert, Inc.", C=US, Key type:RSA, Length:4096, Cert Id:1193514382, Valid from:15.01.21, 01:00, Valid until:15.01.46, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:08:3b:e0:56:90:42:46:b1:a1:75:6a:c9:59:91:c7:4a, Subject:CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:2048, Cert Id:1341898239, Valid from:10.11.06, 01:00, Valid until:10.11.31, 01:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:03:3a:f1:e6:a7:11:a9:a0:bb:28:64:b1:1d:09:fa:e5, Subject:CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:2048, Cert Id:1136084297, Valid from:01.08.13, 14:00, Valid until:15.01.38, 13:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:05:55:56:bc:f2:5e:a4:35:35:c3:a4:0f:d5:ab:45:72, Subject:CN=DigiCert Global Root G3, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Global Root G3, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:EC, Length:384, Cert Id:3498998753, Valid from:01.08.13, 14:00, Valid until:15.01.38, 13:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:02:ac:5c:26:6a:0b:40:9b:8f:0b:79:f2:ae:46:25:77, Subject:CN=DigiCert High Assurance EV Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert High Assurance EV Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:2048, Cert Id:2884286942, Valid from:10.11.06, 01:00, Valid until:10.11.31, 01:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:09:e0:93:65:ac:f7:d9:c8:b9:3e:1c:0b:04:2a:2e:f3, Subject:CN=DigiCert TLS ECC P384 Root G5, O="DigiCert, Inc.", C=US, Issuer:CN=DigiCert TLS ECC P384 Root G5, O="DigiCert, Inc.", C=US, Key type:EC, Length:384, Cert Id:3940772018, Valid from:15.01.21, 01:00, Valid until:15.01.46, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:08:f9:b4:78:a8:fa:7e:da:6a:33:37:89:de:7c:cf:8a, Subject:CN=DigiCert TLS RSA4096 Root G5, O="DigiCert, Inc.", C=US, Issuer:CN=DigiCert TLS RSA4096 Root G5, O="DigiCert, Inc.", C=US, Key type:RSA, Length:4096, Cert Id:165956757, Valid from:15.01.21, 01:00, Valid until:15.01.46, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:05:9b:1b:57:9e:8e:21:32:e2:39:07:bd:a7:77:75:5c, Subject:CN=DigiCert Trusted Root G4, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Trusted Root G4, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:4096, Cert Id:1057369358, Valid from:01.08.13, 14:00, Valid until:15.01.38, 13:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:09:83:f3, Subject:CN=D-TRUST Root Class 3 CA 2 2009, O=D-Trust GmbH, C=DE, Issuer:CN=D-TRUST Root Class 3 CA 2 2009, O=D-Trust GmbH, C=DE, Key type:RSA, Length:2048, Cert Id:1430153102, Valid from:05.11.09, 09:35, Valid until:05.11.29, 09:35
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:09:83:f4, Subject:CN=D-TRUST Root Class 3 CA 2 EV 2009, O=D-Trust GmbH, C=DE, Issuer:CN=D-TRUST Root Class 3 CA 2 EV 2009, O=D-Trust GmbH, C=DE, Key type:RSA, Length:2048, Cert Id:971313728, Valid from:05.11.09, 09:50, Valid until:05.11.29, 09:50
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:3c:f6:07:a9:68:70:0e:da:8b:84, Subject:CN=emSign ECC Root CA - G3, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Issuer:CN=emSign ECC Root CA - G3, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Key type:EC, Length:384, Cert Id:3832035707, Valid from:18.02.18, 19:30, Valid until:18.02.43, 19:30
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:31:f5:e4:62:0c:6c:58:ed:d6:d8, Subject:CN=emSign Root CA - G1, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Issuer:CN=emSign Root CA - G1, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Key type:RSA, Length:2048, Cert Id:392709196, Valid from:18.02.18, 19:30, Valid until:18.02.43, 19:30
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:00:86:4d:bf:0f:e3:5e:d7:7d:8e:d8, Subject:CN=emSign Root CA - G2, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Issuer:CN=emSign Root CA - G2, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Key type:RSA, Length:4096, Cert Id:3373940126, Valid from:18.02.18, 19:30, Valid until:18.02.43, 19:30
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:38:63:de:f8, Subject:CN=Entrust.net Certification Authority (2048), OU=(c) 1999 Entrust.net Limited, OU=www.entrust.net/CPS_2048 incorp. by ref. (limits liab.), O=Entrust.net, Issuer:CN=Entrust.net Certification Authority (2048), OU=(c) 1999 Entrust.net Limited, OU=www.entrust.net/CPS_2048 incorp. by ref. (limits liab.), O=Entrust.net, Key type:RSA, Length:2048, Cert Id:3966431214, Valid from:24.12.99, 18:50, Valid until:24.07.29, 16:15
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:45:6b:50:54, Subject:CN=Entrust Root Certification Authority, OU="(c) 2006 Entrust, Inc.", OU=www.entrust.net/CPS is incorporated by reference, O="Entrust, Inc.", C=US, Issuer:CN=Entrust Root Certification Authority, OU="(c) 2006 Entrust, Inc.", OU=www.entrust.net/CPS is incorporated by reference, O="Entrust, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:3033563200, Valid from:27.11.06, 21:23, Valid until:27.11.26, 21:53
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:00:a6:8b:79:29:00:00:00:00:50:d0:91:f9, Subject:CN=Entrust Root Certification Authority - EC1, OU="(c) 2012 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Issuer:CN=Entrust Root Certification Authority - EC1, OU="(c) 2012 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Key type:EC, Length:384, Cert Id:924514073, Valid from:18.12.12, 16:25, Valid until:18.12.37, 16:55
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:4a:53:8c:28, Subject:CN=Entrust Root Certification Authority - G2, OU="(c) 2009 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Issuer:CN=Entrust Root Certification Authority - G2, OU="(c) 2009 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:1936920337, Valid from:07.07.09, 19:25, Valid until:07.12.30, 18:55
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00:d9:b5:43:7f:af:a9:39:0f:00:00:00:00:55:65:ad:58, Subject:CN=Entrust Root Certification Authority - G4, OU="(c) 2015 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Issuer:CN=Entrust Root Certification Authority - G4, OU="(c) 2015 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Key type:RSA, Length:4096, Cert Id:1368037548, Valid from:27.05.15, 13:11, Valid until:27.12.37, 12:41
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:02:34:56, Subject:CN=GeoTrust Global CA, O=GeoTrust Inc., C=US, Issuer:CN=GeoTrust Global CA, O=GeoTrust Inc., C=US, Key type:RSA, Length:2048, Cert Id:2266349922, Valid from:21.05.02, 06:00, Valid until:21.05.22, 06:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:18:ac:b5:6a:fd:69:b6:15:3a:63:6c:af:da:fa:c4:a1, Subject:CN=GeoTrust Primary Certification Authority, O=GeoTrust Inc., C=US, Issuer:CN=GeoTrust Primary Certification Authority, O=GeoTrust Inc., C=US, Key type:RSA, Length:2048, Cert Id:3329622139, Valid from:27.11.06, 01:00, Valid until:17.07.36, 01:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:3c:b2:f4:48:0a:00:e2:fe:eb:24:3b:5e:60:3e:c3:6b, Subject:CN=GeoTrust Primary Certification Authority - G2, OU=(c) 2007 GeoTrust Inc. - For authorized use only, O=GeoTrust Inc., C=US, Issuer:CN=GeoTrust Primary Certification Authority - G2, OU=(c) 2007 GeoTrust Inc. - For authorized use only, O=GeoTrust Inc., C=US, Key type:EC, Length:384, Cert Id:3180663474, Valid from:05.11.07, 01:00, Valid until:19.01.38, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:15:ac:6e:94:19:b2:79:4b:41:f6:27:a9:c3:18:0f:1f, Subject:CN=GeoTrust Primary Certification Authority - G3, OU=(c) 2008 GeoTrust Inc. - For authorized use only, O=GeoTrust Inc., C=US, Issuer:CN=GeoTrust Primary Certification Authority - G3, OU=(c) 2008 GeoTrust Inc. - For authorized use only, O=GeoTrust Inc., C=US, Key type:RSA, Length:2048, Cert Id:2964813538, Valid from:02.04.08, 02:00, Valid until:02.12.37, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:01, Subject:CN=GeoTrust Universal CA, O=GeoTrust Inc., C=US, Issuer:CN=GeoTrust Universal CA, O=GeoTrust Inc., C=US, Key type:RSA, Length:4096, Cert Id:313566089, Valid from:04.03.04, 06:00, Valid until:04.03.29, 06:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:04:00:00:00:00:01:15:4b:5a:c3:94, Subject:CN=GlobalSign Root CA, OU=Root CA, O=GlobalSign nv-sa, C=BE, Issuer:CN=GlobalSign Root CA, OU=Root CA, O=GlobalSign nv-sa, C=BE, Key type:RSA, Length:2048, Cert Id:536948034, Valid from:01.09.98, 14:00, Valid until:28.01.28, 13:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:11:d2:bb:ba:33:6e:d4:bc:e6:24:68:c5:0d:84:1d:98:e8:43, Subject:CN=GlobalSign Root E46, O=GlobalSign nv-sa, C=BE, Issuer:CN=GlobalSign Root E46, O=GlobalSign nv-sa, C=BE, Key type:EC, Length:384, Cert Id:3405603905, Valid from:20.03.19, 01:00, Valid until:20.03.46, 01:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withECDSA, Serial:2a:38:a4:1c:96:0a:04:de:42:b2:28:a5:0b:e8:34:98:02, Subject:CN=GlobalSign, O=GlobalSign, OU=GlobalSign ECC Root CA - R4, Issuer:CN=GlobalSign, O=GlobalSign, OU=GlobalSign ECC Root CA - R4, Key type:EC, Length:256, Cert Id:2371693751, Valid from:13.11.12, 01:00, Valid until:19.01.38, 04:14
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:60:59:49:e0:26:2e:bb:55:f9:0a:77:8a:71:f9:4a:d8:6c, Subject:CN=GlobalSign, O=GlobalSign, OU=GlobalSign ECC Root CA - R5, Issuer:CN=GlobalSign, O=GlobalSign, OU=GlobalSign ECC Root CA - R5, Key type:EC, Length:384, Cert Id:1997048439, Valid from:13.11.12, 01:00, Valid until:19.01.38, 04:14
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:04:00:00:00:00:01:21:58:53:08:a2, Subject:CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R3, Issuer:CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R3, Key type:RSA, Length:2048, Cert Id:733875591, Valid from:18.03.09, 11:00, Valid until:18.03.29, 11:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:11:d2:bb:b9:d7:23:18:9e:40:5f:0a:9d:2d:d0:df:25:67:d1, Subject:CN=GlobalSign Root R46, O=GlobalSign nv-sa, C=BE, Issuer:CN=GlobalSign Root R46, O=GlobalSign nv-sa, C=BE, Key type:RSA, Length:4096, Cert Id:1275948927, Valid from:20.03.19, 01:00, Valid until:20.03.46, 01:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:45:e6:bb:03:83:33:c3:85:65:48:e6:ff:45:51, Subject:CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R6, Issuer:CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R6, Key type:RSA, Length:4096, Cert Id:3788339543, Valid from:10.12.14, 01:00, Valid until:10.12.34, 01:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:00, Subject:OU=Go Daddy Class 2 Certification Authority, O="The Go Daddy Group, Inc.", C=US, Issuer:OU=Go Daddy Class 2 Certification Authority, O="The Go Daddy Group, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:4023522997, Valid from:29.06.04, 19:06, Valid until:29.06.34, 19:06
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00, Subject:CN=Go Daddy Root Certificate Authority - G2, O="GoDaddy.com, Inc.", L=Scottsdale, ST=Arizona, C=US, Issuer:CN=Go Daddy Root Certificate Authority - G2, O="GoDaddy.com, Inc.", L=Scottsdale, ST=Arizona, C=US, Key type:RSA, Length:2048, Cert Id:439600313, Valid from:01.09.09, 02:00, Valid until:01.01.38, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:02:03:e5:93:6f:31:b0:13:49:88:6b:a2:17, Subject:CN=GTS Root R1, O=Google Trust Services LLC, C=US, Issuer:CN=GTS Root R1, O=Google Trust Services LLC, C=US, Key type:RSA, Length:4096, Cert Id:657172038, Valid from:22.06.16, 02:00, Valid until:22.06.36, 02:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:02:03:e5:ae:c5:8d:04:25:1a:ab:11:25:aa, Subject:CN=GTS Root R2, O=Google Trust Services LLC, C=US, Issuer:CN=GTS Root R2, O=Google Trust Services LLC, C=US, Key type:RSA, Length:4096, Cert Id:948387669, Valid from:22.06.16, 02:00, Valid until:22.06.36, 02:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:02:03:e5:b8:82:eb:20:f8:25:27:6d:3d:66, Subject:CN=GTS Root R3, O=Google Trust Services LLC, C=US, Issuer:CN=GTS Root R3, O=Google Trust Services LLC, C=US, Key type:EC, Length:384, Cert Id:1163081155, Valid from:22.06.16, 02:00, Valid until:22.06.36, 02:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:02:03:e5:c0:68:ef:63:1a:9c:72:90:50:52, Subject:CN=GTS Root R4, O=Google Trust Services LLC, C=US, Issuer:CN=GTS Root R4, O=Google Trust Services LLC, C=US, Key type:EC, Length:384, Cert Id:1326433111, Valid from:22.06.16, 02:00, Valid until:22.06.36, 02:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withECDSA, Serial:00, Subject:CN=Hellenic Academic and Research Institutions ECC RootCA 2015, O=Hellenic Academic and Research Institutions Cert. Authority, L=Athens, C=GR, Issuer:CN=Hellenic Academic and Research Institutions ECC RootCA 2015, O=Hellenic Academic and Research Institutions Cert. Authority, L=Athens, C=GR, Key type:EC, Length:384, Cert Id:513613456, Valid from:07.07.15, 12:37, Valid until:30.06.40, 12:37
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00, Subject:CN=Hellenic Academic and Research Institutions RootCA 2015, O=Hellenic Academic and Research Institutions Cert. Authority, L=Athens, C=GR, Issuer:CN=Hellenic Academic and Research Institutions RootCA 2015, O=Hellenic Academic and Research Institutions Cert. Authority, L=Athens, C=GR, Key type:RSA, Length:4096, Cert Id:3491990565, Valid from:07.07.15, 12:11, Valid until:30.06.40, 12:11
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:0a:01:42:80:00:00:01:45:23:c8:44:b5:00:00:00:02, Subject:CN=IdenTrust Commercial Root CA 1, O=IdenTrust, C=US, Issuer:CN=IdenTrust Commercial Root CA 1, O=IdenTrust, C=US, Key type:RSA, Length:4096, Cert Id:1232565210, Valid from:16.01.14, 19:12, Valid until:16.01.34, 19:12
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:0a:01:42:80:00:00:01:45:23:cf:46:7c:00:00:00:02, Subject:CN=IdenTrust Public Sector Root CA 1, O=IdenTrust, C=US, Issuer:CN=IdenTrust Public Sector Root CA 1, O=IdenTrust, C=US, Key type:RSA, Length:4096, Cert Id:2123370772, Valid from:16.01.14, 18:53, Valid until:16.01.34, 18:53
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00:82:10:cf:b0:d2:40:e3:59:44:63:e0:bb:63:82:8b:00, Subject:CN=ISRG Root X1, O=Internet Security Research Group, C=US, Issuer:CN=ISRG Root X1, O=Internet Security Research Group, C=US, Key type:RSA, Length:4096, Cert Id:1521974916, Valid from:04.06.15, 13:04, Valid until:04.06.35, 13:04
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:41:d2:9d:d1:72:ea:ee:a7:80:c1:2c:6c:e9:2f:87:52, Subject:CN=ISRG Root X2, O=Internet Security Research Group, C=US, Issuer:CN=ISRG Root X2, O=Internet Security Research Group, C=US, Key type:EC, Length:384, Cert Id:3398642244, Valid from:04.09.20, 02:00, Valid until:17.09.40, 18:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:0a:7e:a6:df:4b:44:9e:da:6a:24:85:9e:e6:b8:15:d3:16:7f:bb:b1, Subject:CN=LuxTrust Global Root 2, O=LuxTrust S.A., C=LU, Issuer:CN=LuxTrust Global Root 2, O=LuxTrust S.A., C=LU, Key type:RSA, Length:4096, Cert Id:3055636602, Valid from:05.03.15, 14:21, Valid until:05.03.35, 14:21
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:0b:b8, Subject:CN=LuxTrust Global Root, O=LuxTrust s.a., C=LU, Issuer:CN=LuxTrust Global Root, O=LuxTrust s.a., C=LU, Key type:RSA, Length:2048, Cert Id:1714819687, Valid from:17.03.11, 10:51, Valid until:17.03.21, 10:51
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:66:f2:3d:af:87:de:8b:b1:4a:ea:0c:57:31:01:c2:ec, Subject:CN=Microsoft ECC Root Certificate Authority 2017, O=Microsoft Corporation, C=US, Issuer:CN=Microsoft ECC Root Certificate Authority 2017, O=Microsoft Corporation, C=US, Key type:EC, Length:384, Cert Id:3240761285, Valid from:19.12.19, 00:06, Valid until:19.07.42, 01:16
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:1e:d3:97:09:5f:d8:b4:b3:47:70:1e:aa:be:7f:45:b3, Subject:CN=Microsoft RSA Root Certificate Authority 2017, O=Microsoft Corporation, C=US, Issuer:CN=Microsoft RSA Root Certificate Authority 2017, O=Microsoft Corporation, C=US, Key type:RSA, Length:4096, Cert Id:2848349048, Valid from:18.12.19, 23:51, Valid until:19.07.42, 01:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:3a:b6:50:8b, Subject:CN=QuoVadis Root Certification Authority, OU=Root Certification Authority, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root Certification Authority, OU=Root Certification Authority, O=QuoVadis Limited, C=BM, Key type:RSA, Length:2048, Cert Id:2412561694, Valid from:19.03.01, 19:33, Valid until:17.03.21, 19:33
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:78:58:5f:2e:ad:2c:19:4b:e3:37:07:35:34:13:28:b5:96:d4:65:93, Subject:CN=QuoVadis Root CA 1 G3, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root CA 1 G3, O=QuoVadis Limited, C=BM, Key type:RSA, Length:4096, Cert Id:3532531262, Valid from:12.01.12, 18:27, Valid until:12.01.42, 18:27
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:05:09, Subject:CN=QuoVadis Root CA 2, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root CA 2, O=QuoVadis Limited, C=BM, Key type:RSA, Length:4096, Cert Id:338250116, Valid from:24.11.06, 19:27, Valid until:24.11.31, 19:23
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:44:57:34:24:5b:81:89:9b:35:f2:ce:b8:2b:3b:5b:a7:26:f0:75:28, Subject:CN=QuoVadis Root CA 2 G3, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root CA 2 G3, O=QuoVadis Limited, C=BM, Key type:RSA, Length:4096, Cert Id:696763521, Valid from:12.01.12, 19:59, Valid until:12.01.42, 19:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:05:c6, Subject:CN=QuoVadis Root CA 3, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root CA 3, O=QuoVadis Limited, C=BM, Key type:RSA, Length:4096, Cert Id:1470392860, Valid from:24.11.06, 20:11, Valid until:24.11.31, 20:06
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:2e:f5:9b:02:28:a7:db:7a:ff:d5:a3:a9:ee:bd:03:a0:cf:12:6a:1d, Subject:CN=QuoVadis Root CA 3 G3, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root CA 3 G3, O=QuoVadis Limited, C=BM, Key type:RSA, Length:4096, Cert Id:3589344305, Valid from:12.01.12, 21:26, Valid until:12.01.42, 21:26
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00, Subject:OU=Security Communication RootCA2, O="SECOM Trust Systems CO.,LTD.", C=JP, Issuer:OU=Security Communication RootCA2, O="SECOM Trust Systems CO.,LTD.", C=JP, Key type:RSA, Length:2048, Cert Id:1521072570, Valid from:29.05.09, 07:00, Valid until:29.05.29, 07:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:50:24:9b:a2:ef:8e:a6:bf:6c:2c:1f:1a:63:85:d4:c3, Subject:CN=Sectigo Public Code Signing Root E46, O=Sectigo Limited, C=GB, Issuer:CN=Sectigo Public Code Signing Root E46, O=Sectigo Limited, C=GB, Key type:EC, Length:384, Cert Id:3143279241, Valid from:22.03.21, 01:00, Valid until:22.03.46, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:4b:2c:3b:01:01:8b:ad:2a:bc:8c:7b:5b:3e:ed:90:57, Subject:CN=Sectigo Public Code Signing Root R46, O=Sectigo Limited, C=GB, Issuer:CN=Sectigo Public Code Signing Root R46, O=Sectigo Limited, C=GB, Key type:RSA, Length:4096, Cert Id:2667769042, Valid from:22.03.21, 01:00, Valid until:22.03.46, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:42:f2:cc:da:1b:69:37:44:5f:15:fe:75:28:10:b8:f4, Subject:CN=Sectigo Public Server Authentication Root E46, O=Sectigo Limited, C=GB, Issuer:CN=Sectigo Public Server Authentication Root E46, O=Sectigo Limited, C=GB, Key type:EC, Length:384, Cert Id:3789385269, Valid from:22.03.21, 01:00, Valid until:22.03.46, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:75:8d:fd:8b:ae:7c:07:00:fa:a9:25:a7:e1:c7:ad:14, Subject:CN=Sectigo Public Server Authentication Root R46, O=Sectigo Limited, C=GB, Issuer:CN=Sectigo Public Server Authentication Root R46, O=Sectigo Limited, C=GB, Key type:RSA, Length:4096, Cert Id:3806652169, Valid from:22.03.21, 01:00, Valid until:22.03.46, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:0c:f0:8e:5c:08:16:a5:ad:42:7f:f0:eb:27:18:59:d0, Subject:CN=SecureTrust CA, O=SecureTrust Corporation, C=US, Issuer:CN=SecureTrust CA, O=SecureTrust Corporation, C=US, Key type:RSA, Length:2048, Cert Id:2034155325, Valid from:07.11.06, 20:31, Valid until:31.12.29, 20:40
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withECDSA, Serial:75:e6:df:cb:c1:68:5b:a8, Subject:CN=SSL.com Root Certification Authority ECC, O=SSL Corporation, L=Houston, ST=Texas, C=US, Issuer:CN=SSL.com Root Certification Authority ECC, O=SSL Corporation, L=Houston, ST=Texas, C=US, Key type:EC, Length:384, Cert Id:2926673683, Valid from:12.02.16, 19:14, Valid until:12.02.41, 19:14
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:56:b6:29:cd:34:bc:78:f6, Subject:CN=SSL.com EV Root Certification Authority RSA R2, O=SSL Corporation, L=Houston, ST=Texas, C=US, Issuer:CN=SSL.com EV Root Certification Authority RSA R2, O=SSL Corporation, L=Houston, ST=Texas, C=US, Key type:RSA, Length:4096, Cert Id:1381862403, Valid from:31.05.17, 20:14, Valid until:30.05.42, 20:14
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:7b:2c:9b:d3:16:80:32:99, Subject:CN=SSL.com Root Certification Authority RSA, O=SSL Corporation, L=Houston, ST=Texas, C=US, Issuer:CN=SSL.com Root Certification Authority RSA, O=SSL Corporation, L=Houston, ST=Texas, C=US, Key type:RSA, Length:4096, Cert Id:156725711, Valid from:12.02.16, 18:39, Valid until:12.02.41, 18:39
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:14:03:f5:ab:fb:37:8b:17:40:5b:e2:43:b2:a5:d1:c4, Subject:CN=SSL.com TLS ECC Root CA 2022, O=SSL Corporation, C=US, Issuer:CN=SSL.com TLS ECC Root CA 2022, O=SSL Corporation, C=US, Key type:EC, Length:384, Cert Id:683561703, Valid from:25.08.22, 18:33, Valid until:19.08.46, 18:33
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:6f:be:da:ad:73:bd:08:40:e2:8b:4d:be:d4:f7:5b:91, Subject:CN=SSL.com TLS RSA Root CA 2022, O=SSL Corporation, C=US, Issuer:CN=SSL.com TLS RSA Root CA 2022, O=SSL Corporation, C=US, Key type:RSA, Length:4096, Cert Id:556880013, Valid from:25.08.22, 18:34, Valid until:19.08.46, 18:34
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:00, Subject:OU=Starfield Class 2 Certification Authority, O="Starfield Technologies, Inc.", C=US, Issuer:OU=Starfield Class 2 Certification Authority, O="Starfield Technologies, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:1825617644, Valid from:29.06.04, 19:39, Valid until:29.06.34, 19:39
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00, Subject:CN=Starfield Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US, Issuer:CN=Starfield Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US, Key type:RSA, Length:2048, Cert Id:3268325709, Valid from:01.09.09, 02:00, Valid until:01.01.38, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00, Subject:CN=Starfield Services Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US, Issuer:CN=Starfield Services Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US, Key type:RSA, Length:2048, Cert Id:1964785574, Valid from:01.09.09, 02:00, Valid until:01.01.38, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:00:bb:40:1c:43:f5:5e:4f:b0, Subject:CN=SwissSign Gold CA - G2, O=SwissSign AG, C=CH, Issuer:CN=SwissSign Gold CA - G2, O=SwissSign AG, C=CH, Key type:RSA, Length:4096, Cert Id:1516221943, Valid from:25.10.06, 10:30, Valid until:25.10.36, 10:30
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:4e:b2:00:67:0c:03:5d:4f, Subject:CN=SwissSign Platinum CA - G2, O=SwissSign AG, C=CH, Issuer:CN=SwissSign Platinum CA - G2, O=SwissSign AG, C=CH, Key type:RSA, Length:4096, Cert Id:771312514, Valid from:25.10.06, 10:36, Valid until:25.10.36, 10:36
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:4f:1b:d4:2f:54:bb:2f:4b, Subject:CN=SwissSign Silver CA - G2, O=SwissSign AG, C=CH, Issuer:CN=SwissSign Silver CA - G2, O=SwissSign AG, C=CH, Key type:RSA, Length:4096, Cert Id:126726124, Valid from:25.10.06, 10:32, Valid until:25.10.36, 10:32
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:01:67:5f:27:d6:fe:7a:e3:e4:ac:be:09:5b:05:9e, Subject:CN=Telia Root CA v2, O=Telia Finland Oyj, C=FI, Issuer:CN=Telia Root CA v2, O=Telia Finland Oyj, C=FI, Key type:RSA, Length:4096, Cert Id:3473063976, Valid from:29.11.18, 12:55, Valid until:29.11.43, 12:55
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:00:95:be:16:a0:f7:2e:46:f1:7b:39:82:72:fa:8b:cd:96, Subject:CN=TeliaSonera Root CA v1, O=TeliaSonera, Issuer:CN=TeliaSonera Root CA v1, O=TeliaSonera, Key type:RSA, Length:4096, Cert Id:1495358374, Valid from:18.10.07, 14:00, Valid until:18.10.32, 14:00
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:34:4e:d5:57:20:d5:ed:ec:49:f4:2f:ce:37:db:2b:6d, Subject:CN=thawte Primary Root CA, OU="(c) 2006 thawte, Inc. - For authorized use only", OU=Certification Services Division, O="thawte, Inc.", C=US, Issuer:CN=thawte Primary Root CA, OU="(c) 2006 thawte, Inc. - For authorized use only", OU=Certification Services Division, O="thawte, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:643000026, Valid from:17.11.06, 01:00, Valid until:17.07.36, 01:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:35:fc:26:5c:d9:84:4f:c9:3d:26:3d:57:9b:ae:d7:56, Subject:CN=thawte Primary Root CA - G2, OU="(c) 2007 thawte, Inc. - For authorized use only", O="thawte, Inc.", C=US, Issuer:CN=thawte Primary Root CA - G2, OU="(c) 2007 thawte, Inc. - For authorized use only", O="thawte, Inc.", C=US, Key type:EC, Length:384, Cert Id:2068083090, Valid from:05.11.07, 01:00, Valid until:19.01.38, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:60:01:97:b7:46:a7:ea:b4:b4:9a:d6:4b:2f:f7:90:fb, Subject:CN=thawte Primary Root CA - G3, OU="(c) 2008 thawte, Inc. - For authorized use only", OU=Certification Services Division, O="thawte, Inc.", C=US, Issuer:CN=thawte Primary Root CA - G3, OU="(c) 2008 thawte, Inc. - For authorized use only", OU=Certification Services Division, O="thawte, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:1032730720, Valid from:02.04.08, 02:00, Valid until:02.12.37, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:01, Subject:CN=T-TeleSec GlobalRoot Class 2, OU=T-Systems Trust Center, O=T-Systems Enterprise Services GmbH, C=DE, Issuer:CN=T-TeleSec GlobalRoot Class 2, OU=T-Systems Trust Center, O=T-Systems Enterprise Services GmbH, C=DE, Key type:RSA, Length:2048, Cert Id:3056503257, Valid from:01.10.08, 12:40, Valid until:02.10.33, 01:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:01, Subject:CN=T-TeleSec GlobalRoot Class 3, OU=T-Systems Trust Center, O=T-Systems Enterprise Services GmbH, C=DE, Issuer:CN=T-TeleSec GlobalRoot Class 3, OU=T-Systems Trust Center, O=T-Systems Enterprise Services GmbH, C=DE, Key type:RSA, Length:2048, Cert Id:1894096264, Valid from:01.10.08, 12:29, Valid until:02.10.33, 01:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:0c:be, Subject:CN=TWCA Global Root CA, OU=Root CA, O=TAIWAN-CA, C=TW, Issuer:CN=TWCA Global Root CA, OU=Root CA, O=TAIWAN-CA, C=TW, Key type:RSA, Length:4096, Cert Id:861175838, Valid from:27.06.12, 08:28, Valid until:31.12.30, 16:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:5c:8b:99:c5:5a:94:c5:d2:71:56:de:cd:89:80:cc:26, Subject:CN=USERTrust ECC Certification Authority, O=The USERTRUST Network, L=Jersey City, ST=New Jersey, C=US, Issuer:CN=USERTrust ECC Certification Authority, O=The USERTRUST Network, L=Jersey City, ST=New Jersey, C=US, Key type:EC, Length:384, Cert Id:3329287386, Valid from:01.02.10, 01:00, Valid until:19.01.38, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:01:fd:6d:30:fc:a3:ca:51:a8:1b:bc:64:0e:35:03:2d, Subject:CN=USERTrust RSA Certification Authority, O=The USERTRUST Network, L=Jersey City, ST=New Jersey, C=US, Issuer:CN=USERTrust RSA Certification Authority, O=The USERTRUST Network, L=Jersey City, ST=New Jersey, C=US, Key type:RSA, Length:4096, Cert Id:3947601401, Valid from:01.02.10, 01:00, Valid until:19.01.38, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:44:be:0c:8b:50:00:24:b4:11:d3:36:2d:e0:b3:5f:1b, Subject:CN=UTN-USERFirst-Object, OU=http://www.usertrust.com, O=The USERTRUST Network, L=Salt Lake City, ST=UT, C=US, Issuer:CN=UTN-USERFirst-Object, OU=http://www.usertrust.com, O=The USERTRUST Network, L=Salt Lake City, ST=UT, C=US, Key type:RSA, Length:2048, Cert Id:3997913868, Valid from:09.07.99, 20:31, Valid until:09.07.19, 20:40
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:00:9b:7e:06:49:a3:3e:62:b9:d5:ee:90:48:71:29:ef:57, Subject:CN=VeriSign Class 3 Public Primary Certification Authority - G3, OU="(c) 1999 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Issuer:CN=VeriSign Class 3 Public Primary Certification Authority - G3, OU="(c) 1999 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:2057300190, Valid from:01.10.99, 02:00, Valid until:17.07.36, 01:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:2f:80:fe:23:8c:0e:22:0f:48:67:12:28:91:87:ac:b3, Subject:CN=VeriSign Class 3 Public Primary Certification Authority - G4, OU="(c) 2007 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Issuer:CN=VeriSign Class 3 Public Primary Certification Authority - G4, OU="(c) 2007 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Key type:EC, Length:384, Cert Id:4163473319, Valid from:05.11.07, 01:00, Valid until:19.01.38, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:18:da:d1:9e:26:7d:e8:bb:4a:21:58:cd:cc:6b:3b:4a, Subject:CN=VeriSign Class 3 Public Primary Certification Authority - G5, OU="(c) 2006 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Issuer:CN=VeriSign Class 3 Public Primary Certification Authority - G5, OU="(c) 2006 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:303010488, Valid from:08.11.06, 01:00, Valid until:17.07.36, 01:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:40:1a:c4:64:21:b3:13:21:03:0e:bb:e4:12:1a:c5:1d, Subject:CN=VeriSign Universal Root Certification Authority, OU="(c) 2008 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Issuer:CN=VeriSign Universal Root Certification Authority, OU="(c) 2008 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:2318285810, Valid from:02.04.08, 02:00, Valid until:02.12.37, 00:59
+Mai 30, 2026 3:45:56 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:50:94:6c:ec:18:ea:d5:9c:4d:d5:97:ef:75:8f:a0:ad, Subject:CN=XRamp Global Certification Authority, O=XRamp Security Services Inc, OU=www.xrampsecurity.com, C=US, Issuer:CN=XRamp Global Certification Authority, O=XRamp Security Services Inc, OU=www.xrampsecurity.com, C=US, Key type:RSA, Length:2048, Cert Id:3342493210, Valid from:01.11.04, 18:14, Valid until:01.01.35, 06:37
+Mai 30, 2026 3:45:56 PM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+AM FEINSTEN: ProxySelector Request for https://www.comunio.de/api/login
+Mai 30, 2026 3:45:56 PM sun.net.www.protocol.https.HttpsClient New
+AM FEINSTEN: Looking for HttpClient for URL https://www.comunio.de/api/login and proxy value of DIRECT
+Mai 30, 2026 3:45:56 PM sun.net.www.protocol.https.HttpsClient <init>
+AM FEINSTEN: Creating new HttpsClient with url:https://www.comunio.de/api/login and proxy:DIRECT with connect timeout:30000
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+AM FEINSTEN: Proxy used: DIRECT
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:06:a4:0f:1f:2a:8a:6e:13:04:91:9c:a0:df:be:f5:46:90:19, Subject:CN=comunio.de, Issuer:CN=E8, O=Let's Encrypt, C=US, Key type:EC, Length:256, Cert Id:681444384, Valid from:24.04.26, 00:36, Valid until:23.07.26, 00:36
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:63:95:93:63:c2:4e:70:82:71:59:18:bf:c3:d7:ed:56, Subject:CN=E8, O=Let's Encrypt, C=US, Issuer:CN=ISRG Root X1, O=Internet Security Research Group, C=US, Key type:EC, Length:384, Cert Id:1317345227, Valid from:13.03.24, 01:00, Valid until:13.03.27, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509ValidationEvent
+FEIN: ValidationChain: 1521974916, 1317345227, 681444384
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:57:0a:11:97:42:c4:e3:cc, Subject:CN=Actalis Authentication Root CA, O=Actalis S.p.A./03358520967, L=Milan, C=IT, Issuer:CN=Actalis Authentication Root CA, O=Actalis S.p.A./03358520967, L=Milan, C=IT, Key type:RSA, Length:4096, Cert Id:1729119956, Valid from:22.09.11, 13:22, Valid until:22.09.30, 13:22
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:01, Subject:CN=AddTrust External CA Root, OU=AddTrust External TTP Network, O=AddTrust AB, C=SE, Issuer:CN=AddTrust External CA Root, OU=AddTrust External TTP Network, O=AddTrust AB, C=SE, Key type:RSA, Length:2048, Cert Id:3968614624, Valid from:30.05.00, 12:48, Valid until:30.05.20, 12:48
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:01, Subject:CN=AddTrust Qualified CA Root, OU=AddTrust TTP Network, O=AddTrust AB, C=SE, Issuer:CN=AddTrust Qualified CA Root, OU=AddTrust TTP Network, O=AddTrust AB, C=SE, Key type:RSA, Length:2048, Cert Id:607365522, Valid from:30.05.00, 12:44, Valid until:30.05.20, 12:44
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:06:6c:9f:cf:99:bf:8c:0a:39:e2:f0:78:8a:43:e6:96:36:5b:ca, Subject:CN=Amazon Root CA 1, O=Amazon, C=US, Issuer:CN=Amazon Root CA 1, O=Amazon, C=US, Key type:RSA, Length:2048, Cert Id:2822522334, Valid from:26.05.15, 02:00, Valid until:17.01.38, 01:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:06:6c:9f:d2:96:35:86:9f:0a:0f:e5:86:78:f8:5b:26:bb:8a:37, Subject:CN=Amazon Root CA 2, O=Amazon, C=US, Issuer:CN=Amazon Root CA 2, O=Amazon, C=US, Key type:RSA, Length:4096, Cert Id:2528834908, Valid from:26.05.15, 02:00, Valid until:26.05.40, 02:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withECDSA, Serial:06:6c:9f:d5:74:97:36:66:3f:3b:0b:9a:d9:e8:9e:76:03:f2:4a, Subject:CN=Amazon Root CA 3, O=Amazon, C=US, Issuer:CN=Amazon Root CA 3, O=Amazon, C=US, Key type:EC, Length:256, Cert Id:2732679773, Valid from:26.05.15, 02:00, Valid until:26.05.40, 02:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:06:6c:9f:d7:c1:bb:10:4c:29:43:e5:71:7b:7b:2c:c8:1a:c1:0e, Subject:CN=Amazon Root CA 4, O=Amazon, C=US, Issuer:CN=Amazon Root CA 4, O=Amazon, C=US, Key type:EC, Length:384, Cert Id:2640694783, Valid from:26.05.15, 02:00, Valid until:26.05.40, 02:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:02, Subject:CN=Buypass Class 2 Root CA, O=Buypass AS-983163327, C=NO, Issuer:CN=Buypass Class 2 Root CA, O=Buypass AS-983163327, C=NO, Key type:RSA, Length:4096, Cert Id:969960563, Valid from:26.10.10, 10:38, Valid until:26.10.40, 10:38
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:02, Subject:CN=Buypass Class 3 Root CA, O=Buypass AS-983163327, C=NO, Issuer:CN=Buypass Class 3 Root CA, O=Buypass AS-983163327, C=NO, Key type:RSA, Length:4096, Cert Id:1264269967, Valid from:26.10.10, 10:28, Valid until:26.10.40, 10:28
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:00:a3:da:42:7e:a4:b1:ae:da, Subject:CN=Chambers of Commerce Root - 2008, O=AC Camerfirma S.A., SERIALNUMBER=A82743287, L=Madrid (see current address at www.camerfirma.com/address), C=EU, Issuer:CN=Chambers of Commerce Root - 2008, O=AC Camerfirma S.A., SERIALNUMBER=A82743287, L=Madrid (see current address at www.camerfirma.com/address), C=EU, Key type:RSA, Length:4096, Cert Id:4266703372, Valid from:01.08.08, 14:29, Valid until:31.07.38, 14:29
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:06:25:33:b1:47:03:33:27:5c:f9:8d:9a:b9:bf:cc:f8, Subject:CN=Certainly Root E1, O=Certainly, C=US, Issuer:CN=Certainly Root E1, O=Certainly, C=US, Key type:EC, Length:384, Cert Id:792571453, Valid from:01.04.21, 02:00, Valid until:01.04.46, 02:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00:8e:0f:f9:4b:90:71:68:65:33:54:f4:d4:44:39:b7:e0, Subject:CN=Certainly Root R1, O=Certainly, C=US, Issuer:CN=Certainly Root R1, O=Certainly, C=US, Key type:RSA, Length:4096, Cert Id:2255958535, Valid from:01.04.21, 02:00, Valid until:01.04.46, 02:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:00:fe:dc:e3:01:0f:c9:48:ff, Subject:CN=Certigna, O=Dhimyotis, C=FR, Issuer:CN=Certigna, O=Dhimyotis, C=FR, Key type:RSA, Length:2048, Cert Id:3506875840, Valid from:29.06.07, 17:13, Valid until:29.06.27, 17:13
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00:ca:e9:1b:89:f1:55:03:0d:a3:e6:41:6d:c4:e3:a6:e1, Subject:CN=Certigna Root CA, OU=0002 48146308100036, O=Dhimyotis, C=FR, Issuer:CN=Certigna Root CA, OU=0002 48146308100036, O=Dhimyotis, C=FR, Key type:RSA, Length:4096, Cert Id:356684591, Valid from:01.10.13, 10:32, Valid until:01.10.33, 10:32
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:01:00:20, Subject:CN=Certum CA, O=Unizeto Sp. z o.o., C=PL, Issuer:CN=Certum CA, O=Unizeto Sp. z o.o., C=PL, Key type:RSA, Length:2048, Cert Id:3550516030, Valid from:11.06.02, 12:46, Valid until:11.06.27, 12:46
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:04:44:c0, Subject:CN=Certum Trusted Network CA, OU=Certum Certification Authority, O=Unizeto Technologies S.A., C=PL, Issuer:CN=Certum Trusted Network CA, OU=Certum Certification Authority, O=Unizeto Technologies S.A., C=PL, Key type:RSA, Length:2048, Cert Id:2014002193, Valid from:22.10.08, 14:07, Valid until:31.12.29, 13:07
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:15:c8:bd:65:47:5c:af:b8:97:00:5e:e4:06:d2:bc:9d, Subject:OU=ePKI Root Certification Authority, O="Chunghwa Telecom Co., Ltd.", C=TW, Issuer:OU=ePKI Root Certification Authority, O="Chunghwa Telecom Co., Ltd.", C=TW, Key type:RSA, Length:4096, Cert Id:3632331159, Valid from:20.12.04, 03:31, Valid until:20.12.34, 03:31
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:01, Subject:CN=AAA Certificate Services, O=Comodo CA Limited, L=Salford, ST=Greater Manchester, C=GB, Issuer:CN=AAA Certificate Services, O=Comodo CA Limited, L=Salford, ST=Greater Manchester, C=GB, Key type:RSA, Length:2048, Cert Id:3097386402, Valid from:01.01.04, 01:00, Valid until:01.01.29, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:1f:47:af:aa:62:00:70:50:54:4c:01:9e:9b:63:99:2a, Subject:CN=COMODO ECC Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB, Issuer:CN=COMODO ECC Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB, Key type:EC, Length:384, Cert Id:1146488932, Valid from:06.03.08, 01:00, Valid until:19.01.38, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:4c:aa:f9:ca:db:63:6f:e0:1f:f7:4e:d8:5b:03:86:9d, Subject:CN=COMODO RSA Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB, Issuer:CN=COMODO RSA Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB, Key type:RSA, Length:4096, Cert Id:1769425049, Valid from:19.01.10, 01:00, Valid until:19.01.38, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:0b:93:1c:3a:d6:39:67:ea:67:23:bf:c3:af:9a:f4:4b, Subject:CN=DigiCert Assured ID Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Assured ID Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:2048, Cert Id:3909568913, Valid from:01.08.13, 14:00, Valid until:15.01.38, 13:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:0b:a1:5a:fa:1d:df:a0:b5:49:44:af:cd:24:a0:6c:ec, Subject:CN=DigiCert Assured ID Root G3, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Assured ID Root G3, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:EC, Length:384, Cert Id:3649430051, Valid from:01.08.13, 14:00, Valid until:15.01.38, 13:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:0c:e7:e0:e5:17:d8:46:fe:8f:e5:60:fc:1b:f0:30:39, Subject:CN=DigiCert Assured ID Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Assured ID Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:2048, Cert Id:3434562768, Valid from:10.11.06, 01:00, Valid until:10.11.31, 01:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:03:69:8f:e7:12:d5:19:f3:ce:d0:fd:b7:b1:64:30:11, Subject:CN=DigiCert CS ECC P384 Root G5, O="DigiCert, Inc.", C=US, Issuer:CN=DigiCert CS ECC P384 Root G5, O="DigiCert, Inc.", C=US, Key type:EC, Length:384, Cert Id:381797637, Valid from:15.01.21, 01:00, Valid until:15.01.46, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:06:ce:e1:31:be:6d:55:c8:07:f7:c0:c7:fb:44:e6:20, Subject:CN=DigiCert CS RSA4096 Root G5, O="DigiCert, Inc.", C=US, Issuer:CN=DigiCert CS RSA4096 Root G5, O="DigiCert, Inc.", C=US, Key type:RSA, Length:4096, Cert Id:1193514382, Valid from:15.01.21, 01:00, Valid until:15.01.46, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:08:3b:e0:56:90:42:46:b1:a1:75:6a:c9:59:91:c7:4a, Subject:CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:2048, Cert Id:1341898239, Valid from:10.11.06, 01:00, Valid until:10.11.31, 01:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:03:3a:f1:e6:a7:11:a9:a0:bb:28:64:b1:1d:09:fa:e5, Subject:CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:2048, Cert Id:1136084297, Valid from:01.08.13, 14:00, Valid until:15.01.38, 13:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:05:55:56:bc:f2:5e:a4:35:35:c3:a4:0f:d5:ab:45:72, Subject:CN=DigiCert Global Root G3, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Global Root G3, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:EC, Length:384, Cert Id:3498998753, Valid from:01.08.13, 14:00, Valid until:15.01.38, 13:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:02:ac:5c:26:6a:0b:40:9b:8f:0b:79:f2:ae:46:25:77, Subject:CN=DigiCert High Assurance EV Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert High Assurance EV Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:2048, Cert Id:2884286942, Valid from:10.11.06, 01:00, Valid until:10.11.31, 01:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:09:e0:93:65:ac:f7:d9:c8:b9:3e:1c:0b:04:2a:2e:f3, Subject:CN=DigiCert TLS ECC P384 Root G5, O="DigiCert, Inc.", C=US, Issuer:CN=DigiCert TLS ECC P384 Root G5, O="DigiCert, Inc.", C=US, Key type:EC, Length:384, Cert Id:3940772018, Valid from:15.01.21, 01:00, Valid until:15.01.46, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:08:f9:b4:78:a8:fa:7e:da:6a:33:37:89:de:7c:cf:8a, Subject:CN=DigiCert TLS RSA4096 Root G5, O="DigiCert, Inc.", C=US, Issuer:CN=DigiCert TLS RSA4096 Root G5, O="DigiCert, Inc.", C=US, Key type:RSA, Length:4096, Cert Id:165956757, Valid from:15.01.21, 01:00, Valid until:15.01.46, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:05:9b:1b:57:9e:8e:21:32:e2:39:07:bd:a7:77:75:5c, Subject:CN=DigiCert Trusted Root G4, OU=www.digicert.com, O=DigiCert Inc, C=US, Issuer:CN=DigiCert Trusted Root G4, OU=www.digicert.com, O=DigiCert Inc, C=US, Key type:RSA, Length:4096, Cert Id:1057369358, Valid from:01.08.13, 14:00, Valid until:15.01.38, 13:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:09:83:f3, Subject:CN=D-TRUST Root Class 3 CA 2 2009, O=D-Trust GmbH, C=DE, Issuer:CN=D-TRUST Root Class 3 CA 2 2009, O=D-Trust GmbH, C=DE, Key type:RSA, Length:2048, Cert Id:1430153102, Valid from:05.11.09, 09:35, Valid until:05.11.29, 09:35
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:09:83:f4, Subject:CN=D-TRUST Root Class 3 CA 2 EV 2009, O=D-Trust GmbH, C=DE, Issuer:CN=D-TRUST Root Class 3 CA 2 EV 2009, O=D-Trust GmbH, C=DE, Key type:RSA, Length:2048, Cert Id:971313728, Valid from:05.11.09, 09:50, Valid until:05.11.29, 09:50
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:3c:f6:07:a9:68:70:0e:da:8b:84, Subject:CN=emSign ECC Root CA - G3, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Issuer:CN=emSign ECC Root CA - G3, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Key type:EC, Length:384, Cert Id:3832035707, Valid from:18.02.18, 19:30, Valid until:18.02.43, 19:30
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:31:f5:e4:62:0c:6c:58:ed:d6:d8, Subject:CN=emSign Root CA - G1, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Issuer:CN=emSign Root CA - G1, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Key type:RSA, Length:2048, Cert Id:392709196, Valid from:18.02.18, 19:30, Valid until:18.02.43, 19:30
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:00:86:4d:bf:0f:e3:5e:d7:7d:8e:d8, Subject:CN=emSign Root CA - G2, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Issuer:CN=emSign Root CA - G2, O=eMudhra Technologies Limited, OU=emSign PKI, C=IN, Key type:RSA, Length:4096, Cert Id:3373940126, Valid from:18.02.18, 19:30, Valid until:18.02.43, 19:30
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:38:63:de:f8, Subject:CN=Entrust.net Certification Authority (2048), OU=(c) 1999 Entrust.net Limited, OU=www.entrust.net/CPS_2048 incorp. by ref. (limits liab.), O=Entrust.net, Issuer:CN=Entrust.net Certification Authority (2048), OU=(c) 1999 Entrust.net Limited, OU=www.entrust.net/CPS_2048 incorp. by ref. (limits liab.), O=Entrust.net, Key type:RSA, Length:2048, Cert Id:3966431214, Valid from:24.12.99, 18:50, Valid until:24.07.29, 16:15
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:45:6b:50:54, Subject:CN=Entrust Root Certification Authority, OU="(c) 2006 Entrust, Inc.", OU=www.entrust.net/CPS is incorporated by reference, O="Entrust, Inc.", C=US, Issuer:CN=Entrust Root Certification Authority, OU="(c) 2006 Entrust, Inc.", OU=www.entrust.net/CPS is incorporated by reference, O="Entrust, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:3033563200, Valid from:27.11.06, 21:23, Valid until:27.11.26, 21:53
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:00:a6:8b:79:29:00:00:00:00:50:d0:91:f9, Subject:CN=Entrust Root Certification Authority - EC1, OU="(c) 2012 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Issuer:CN=Entrust Root Certification Authority - EC1, OU="(c) 2012 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Key type:EC, Length:384, Cert Id:924514073, Valid from:18.12.12, 16:25, Valid until:18.12.37, 16:55
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:4a:53:8c:28, Subject:CN=Entrust Root Certification Authority - G2, OU="(c) 2009 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Issuer:CN=Entrust Root Certification Authority - G2, OU="(c) 2009 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:1936920337, Valid from:07.07.09, 19:25, Valid until:07.12.30, 18:55
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00:d9:b5:43:7f:af:a9:39:0f:00:00:00:00:55:65:ad:58, Subject:CN=Entrust Root Certification Authority - G4, OU="(c) 2015 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Issuer:CN=Entrust Root Certification Authority - G4, OU="(c) 2015 Entrust, Inc. - for authorized use only", OU=See www.entrust.net/legal-terms, O="Entrust, Inc.", C=US, Key type:RSA, Length:4096, Cert Id:1368037548, Valid from:27.05.15, 13:11, Valid until:27.12.37, 12:41
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:02:34:56, Subject:CN=GeoTrust Global CA, O=GeoTrust Inc., C=US, Issuer:CN=GeoTrust Global CA, O=GeoTrust Inc., C=US, Key type:RSA, Length:2048, Cert Id:2266349922, Valid from:21.05.02, 06:00, Valid until:21.05.22, 06:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:18:ac:b5:6a:fd:69:b6:15:3a:63:6c:af:da:fa:c4:a1, Subject:CN=GeoTrust Primary Certification Authority, O=GeoTrust Inc., C=US, Issuer:CN=GeoTrust Primary Certification Authority, O=GeoTrust Inc., C=US, Key type:RSA, Length:2048, Cert Id:3329622139, Valid from:27.11.06, 01:00, Valid until:17.07.36, 01:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:3c:b2:f4:48:0a:00:e2:fe:eb:24:3b:5e:60:3e:c3:6b, Subject:CN=GeoTrust Primary Certification Authority - G2, OU=(c) 2007 GeoTrust Inc. - For authorized use only, O=GeoTrust Inc., C=US, Issuer:CN=GeoTrust Primary Certification Authority - G2, OU=(c) 2007 GeoTrust Inc. - For authorized use only, O=GeoTrust Inc., C=US, Key type:EC, Length:384, Cert Id:3180663474, Valid from:05.11.07, 01:00, Valid until:19.01.38, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:15:ac:6e:94:19:b2:79:4b:41:f6:27:a9:c3:18:0f:1f, Subject:CN=GeoTrust Primary Certification Authority - G3, OU=(c) 2008 GeoTrust Inc. - For authorized use only, O=GeoTrust Inc., C=US, Issuer:CN=GeoTrust Primary Certification Authority - G3, OU=(c) 2008 GeoTrust Inc. - For authorized use only, O=GeoTrust Inc., C=US, Key type:RSA, Length:2048, Cert Id:2964813538, Valid from:02.04.08, 02:00, Valid until:02.12.37, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:01, Subject:CN=GeoTrust Universal CA, O=GeoTrust Inc., C=US, Issuer:CN=GeoTrust Universal CA, O=GeoTrust Inc., C=US, Key type:RSA, Length:4096, Cert Id:313566089, Valid from:04.03.04, 06:00, Valid until:04.03.29, 06:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:04:00:00:00:00:01:15:4b:5a:c3:94, Subject:CN=GlobalSign Root CA, OU=Root CA, O=GlobalSign nv-sa, C=BE, Issuer:CN=GlobalSign Root CA, OU=Root CA, O=GlobalSign nv-sa, C=BE, Key type:RSA, Length:2048, Cert Id:536948034, Valid from:01.09.98, 14:00, Valid until:28.01.28, 13:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:11:d2:bb:ba:33:6e:d4:bc:e6:24:68:c5:0d:84:1d:98:e8:43, Subject:CN=GlobalSign Root E46, O=GlobalSign nv-sa, C=BE, Issuer:CN=GlobalSign Root E46, O=GlobalSign nv-sa, C=BE, Key type:EC, Length:384, Cert Id:3405603905, Valid from:20.03.19, 01:00, Valid until:20.03.46, 01:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withECDSA, Serial:2a:38:a4:1c:96:0a:04:de:42:b2:28:a5:0b:e8:34:98:02, Subject:CN=GlobalSign, O=GlobalSign, OU=GlobalSign ECC Root CA - R4, Issuer:CN=GlobalSign, O=GlobalSign, OU=GlobalSign ECC Root CA - R4, Key type:EC, Length:256, Cert Id:2371693751, Valid from:13.11.12, 01:00, Valid until:19.01.38, 04:14
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:60:59:49:e0:26:2e:bb:55:f9:0a:77:8a:71:f9:4a:d8:6c, Subject:CN=GlobalSign, O=GlobalSign, OU=GlobalSign ECC Root CA - R5, Issuer:CN=GlobalSign, O=GlobalSign, OU=GlobalSign ECC Root CA - R5, Key type:EC, Length:384, Cert Id:1997048439, Valid from:13.11.12, 01:00, Valid until:19.01.38, 04:14
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:04:00:00:00:00:01:21:58:53:08:a2, Subject:CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R3, Issuer:CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R3, Key type:RSA, Length:2048, Cert Id:733875591, Valid from:18.03.09, 11:00, Valid until:18.03.29, 11:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:11:d2:bb:b9:d7:23:18:9e:40:5f:0a:9d:2d:d0:df:25:67:d1, Subject:CN=GlobalSign Root R46, O=GlobalSign nv-sa, C=BE, Issuer:CN=GlobalSign Root R46, O=GlobalSign nv-sa, C=BE, Key type:RSA, Length:4096, Cert Id:1275948927, Valid from:20.03.19, 01:00, Valid until:20.03.46, 01:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:45:e6:bb:03:83:33:c3:85:65:48:e6:ff:45:51, Subject:CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R6, Issuer:CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R6, Key type:RSA, Length:4096, Cert Id:3788339543, Valid from:10.12.14, 01:00, Valid until:10.12.34, 01:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:00, Subject:OU=Go Daddy Class 2 Certification Authority, O="The Go Daddy Group, Inc.", C=US, Issuer:OU=Go Daddy Class 2 Certification Authority, O="The Go Daddy Group, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:4023522997, Valid from:29.06.04, 19:06, Valid until:29.06.34, 19:06
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00, Subject:CN=Go Daddy Root Certificate Authority - G2, O="GoDaddy.com, Inc.", L=Scottsdale, ST=Arizona, C=US, Issuer:CN=Go Daddy Root Certificate Authority - G2, O="GoDaddy.com, Inc.", L=Scottsdale, ST=Arizona, C=US, Key type:RSA, Length:2048, Cert Id:439600313, Valid from:01.09.09, 02:00, Valid until:01.01.38, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:02:03:e5:93:6f:31:b0:13:49:88:6b:a2:17, Subject:CN=GTS Root R1, O=Google Trust Services LLC, C=US, Issuer:CN=GTS Root R1, O=Google Trust Services LLC, C=US, Key type:RSA, Length:4096, Cert Id:657172038, Valid from:22.06.16, 02:00, Valid until:22.06.36, 02:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:02:03:e5:ae:c5:8d:04:25:1a:ab:11:25:aa, Subject:CN=GTS Root R2, O=Google Trust Services LLC, C=US, Issuer:CN=GTS Root R2, O=Google Trust Services LLC, C=US, Key type:RSA, Length:4096, Cert Id:948387669, Valid from:22.06.16, 02:00, Valid until:22.06.36, 02:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:02:03:e5:b8:82:eb:20:f8:25:27:6d:3d:66, Subject:CN=GTS Root R3, O=Google Trust Services LLC, C=US, Issuer:CN=GTS Root R3, O=Google Trust Services LLC, C=US, Key type:EC, Length:384, Cert Id:1163081155, Valid from:22.06.16, 02:00, Valid until:22.06.36, 02:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:02:03:e5:c0:68:ef:63:1a:9c:72:90:50:52, Subject:CN=GTS Root R4, O=Google Trust Services LLC, C=US, Issuer:CN=GTS Root R4, O=Google Trust Services LLC, C=US, Key type:EC, Length:384, Cert Id:1326433111, Valid from:22.06.16, 02:00, Valid until:22.06.36, 02:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withECDSA, Serial:00, Subject:CN=Hellenic Academic and Research Institutions ECC RootCA 2015, O=Hellenic Academic and Research Institutions Cert. Authority, L=Athens, C=GR, Issuer:CN=Hellenic Academic and Research Institutions ECC RootCA 2015, O=Hellenic Academic and Research Institutions Cert. Authority, L=Athens, C=GR, Key type:EC, Length:384, Cert Id:513613456, Valid from:07.07.15, 12:37, Valid until:30.06.40, 12:37
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00, Subject:CN=Hellenic Academic and Research Institutions RootCA 2015, O=Hellenic Academic and Research Institutions Cert. Authority, L=Athens, C=GR, Issuer:CN=Hellenic Academic and Research Institutions RootCA 2015, O=Hellenic Academic and Research Institutions Cert. Authority, L=Athens, C=GR, Key type:RSA, Length:4096, Cert Id:3491990565, Valid from:07.07.15, 12:11, Valid until:30.06.40, 12:11
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:0a:01:42:80:00:00:01:45:23:c8:44:b5:00:00:00:02, Subject:CN=IdenTrust Commercial Root CA 1, O=IdenTrust, C=US, Issuer:CN=IdenTrust Commercial Root CA 1, O=IdenTrust, C=US, Key type:RSA, Length:4096, Cert Id:1232565210, Valid from:16.01.14, 19:12, Valid until:16.01.34, 19:12
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:0a:01:42:80:00:00:01:45:23:cf:46:7c:00:00:00:02, Subject:CN=IdenTrust Public Sector Root CA 1, O=IdenTrust, C=US, Issuer:CN=IdenTrust Public Sector Root CA 1, O=IdenTrust, C=US, Key type:RSA, Length:4096, Cert Id:2123370772, Valid from:16.01.14, 18:53, Valid until:16.01.34, 18:53
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00:82:10:cf:b0:d2:40:e3:59:44:63:e0:bb:63:82:8b:00, Subject:CN=ISRG Root X1, O=Internet Security Research Group, C=US, Issuer:CN=ISRG Root X1, O=Internet Security Research Group, C=US, Key type:RSA, Length:4096, Cert Id:1521974916, Valid from:04.06.15, 13:04, Valid until:04.06.35, 13:04
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:41:d2:9d:d1:72:ea:ee:a7:80:c1:2c:6c:e9:2f:87:52, Subject:CN=ISRG Root X2, O=Internet Security Research Group, C=US, Issuer:CN=ISRG Root X2, O=Internet Security Research Group, C=US, Key type:EC, Length:384, Cert Id:3398642244, Valid from:04.09.20, 02:00, Valid until:17.09.40, 18:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:0a:7e:a6:df:4b:44:9e:da:6a:24:85:9e:e6:b8:15:d3:16:7f:bb:b1, Subject:CN=LuxTrust Global Root 2, O=LuxTrust S.A., C=LU, Issuer:CN=LuxTrust Global Root 2, O=LuxTrust S.A., C=LU, Key type:RSA, Length:4096, Cert Id:3055636602, Valid from:05.03.15, 14:21, Valid until:05.03.35, 14:21
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:0b:b8, Subject:CN=LuxTrust Global Root, O=LuxTrust s.a., C=LU, Issuer:CN=LuxTrust Global Root, O=LuxTrust s.a., C=LU, Key type:RSA, Length:2048, Cert Id:1714819687, Valid from:17.03.11, 10:51, Valid until:17.03.21, 10:51
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:66:f2:3d:af:87:de:8b:b1:4a:ea:0c:57:31:01:c2:ec, Subject:CN=Microsoft ECC Root Certificate Authority 2017, O=Microsoft Corporation, C=US, Issuer:CN=Microsoft ECC Root Certificate Authority 2017, O=Microsoft Corporation, C=US, Key type:EC, Length:384, Cert Id:3240761285, Valid from:19.12.19, 00:06, Valid until:19.07.42, 01:16
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:1e:d3:97:09:5f:d8:b4:b3:47:70:1e:aa:be:7f:45:b3, Subject:CN=Microsoft RSA Root Certificate Authority 2017, O=Microsoft Corporation, C=US, Issuer:CN=Microsoft RSA Root Certificate Authority 2017, O=Microsoft Corporation, C=US, Key type:RSA, Length:4096, Cert Id:2848349048, Valid from:18.12.19, 23:51, Valid until:19.07.42, 01:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:3a:b6:50:8b, Subject:CN=QuoVadis Root Certification Authority, OU=Root Certification Authority, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root Certification Authority, OU=Root Certification Authority, O=QuoVadis Limited, C=BM, Key type:RSA, Length:2048, Cert Id:2412561694, Valid from:19.03.01, 19:33, Valid until:17.03.21, 19:33
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:78:58:5f:2e:ad:2c:19:4b:e3:37:07:35:34:13:28:b5:96:d4:65:93, Subject:CN=QuoVadis Root CA 1 G3, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root CA 1 G3, O=QuoVadis Limited, C=BM, Key type:RSA, Length:4096, Cert Id:3532531262, Valid from:12.01.12, 18:27, Valid until:12.01.42, 18:27
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:05:09, Subject:CN=QuoVadis Root CA 2, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root CA 2, O=QuoVadis Limited, C=BM, Key type:RSA, Length:4096, Cert Id:338250116, Valid from:24.11.06, 19:27, Valid until:24.11.31, 19:23
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:44:57:34:24:5b:81:89:9b:35:f2:ce:b8:2b:3b:5b:a7:26:f0:75:28, Subject:CN=QuoVadis Root CA 2 G3, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root CA 2 G3, O=QuoVadis Limited, C=BM, Key type:RSA, Length:4096, Cert Id:696763521, Valid from:12.01.12, 19:59, Valid until:12.01.42, 19:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:05:c6, Subject:CN=QuoVadis Root CA 3, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root CA 3, O=QuoVadis Limited, C=BM, Key type:RSA, Length:4096, Cert Id:1470392860, Valid from:24.11.06, 20:11, Valid until:24.11.31, 20:06
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:2e:f5:9b:02:28:a7:db:7a:ff:d5:a3:a9:ee:bd:03:a0:cf:12:6a:1d, Subject:CN=QuoVadis Root CA 3 G3, O=QuoVadis Limited, C=BM, Issuer:CN=QuoVadis Root CA 3 G3, O=QuoVadis Limited, C=BM, Key type:RSA, Length:4096, Cert Id:3589344305, Valid from:12.01.12, 21:26, Valid until:12.01.42, 21:26
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00, Subject:OU=Security Communication RootCA2, O="SECOM Trust Systems CO.,LTD.", C=JP, Issuer:OU=Security Communication RootCA2, O="SECOM Trust Systems CO.,LTD.", C=JP, Key type:RSA, Length:2048, Cert Id:1521072570, Valid from:29.05.09, 07:00, Valid until:29.05.29, 07:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:50:24:9b:a2:ef:8e:a6:bf:6c:2c:1f:1a:63:85:d4:c3, Subject:CN=Sectigo Public Code Signing Root E46, O=Sectigo Limited, C=GB, Issuer:CN=Sectigo Public Code Signing Root E46, O=Sectigo Limited, C=GB, Key type:EC, Length:384, Cert Id:3143279241, Valid from:22.03.21, 01:00, Valid until:22.03.46, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:4b:2c:3b:01:01:8b:ad:2a:bc:8c:7b:5b:3e:ed:90:57, Subject:CN=Sectigo Public Code Signing Root R46, O=Sectigo Limited, C=GB, Issuer:CN=Sectigo Public Code Signing Root R46, O=Sectigo Limited, C=GB, Key type:RSA, Length:4096, Cert Id:2667769042, Valid from:22.03.21, 01:00, Valid until:22.03.46, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:42:f2:cc:da:1b:69:37:44:5f:15:fe:75:28:10:b8:f4, Subject:CN=Sectigo Public Server Authentication Root E46, O=Sectigo Limited, C=GB, Issuer:CN=Sectigo Public Server Authentication Root E46, O=Sectigo Limited, C=GB, Key type:EC, Length:384, Cert Id:3789385269, Valid from:22.03.21, 01:00, Valid until:22.03.46, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:75:8d:fd:8b:ae:7c:07:00:fa:a9:25:a7:e1:c7:ad:14, Subject:CN=Sectigo Public Server Authentication Root R46, O=Sectigo Limited, C=GB, Issuer:CN=Sectigo Public Server Authentication Root R46, O=Sectigo Limited, C=GB, Key type:RSA, Length:4096, Cert Id:3806652169, Valid from:22.03.21, 01:00, Valid until:22.03.46, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:0c:f0:8e:5c:08:16:a5:ad:42:7f:f0:eb:27:18:59:d0, Subject:CN=SecureTrust CA, O=SecureTrust Corporation, C=US, Issuer:CN=SecureTrust CA, O=SecureTrust Corporation, C=US, Key type:RSA, Length:2048, Cert Id:2034155325, Valid from:07.11.06, 20:31, Valid until:31.12.29, 20:40
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withECDSA, Serial:75:e6:df:cb:c1:68:5b:a8, Subject:CN=SSL.com Root Certification Authority ECC, O=SSL Corporation, L=Houston, ST=Texas, C=US, Issuer:CN=SSL.com Root Certification Authority ECC, O=SSL Corporation, L=Houston, ST=Texas, C=US, Key type:EC, Length:384, Cert Id:2926673683, Valid from:12.02.16, 19:14, Valid until:12.02.41, 19:14
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:56:b6:29:cd:34:bc:78:f6, Subject:CN=SSL.com EV Root Certification Authority RSA R2, O=SSL Corporation, L=Houston, ST=Texas, C=US, Issuer:CN=SSL.com EV Root Certification Authority RSA R2, O=SSL Corporation, L=Houston, ST=Texas, C=US, Key type:RSA, Length:4096, Cert Id:1381862403, Valid from:31.05.17, 20:14, Valid until:30.05.42, 20:14
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:7b:2c:9b:d3:16:80:32:99, Subject:CN=SSL.com Root Certification Authority RSA, O=SSL Corporation, L=Houston, ST=Texas, C=US, Issuer:CN=SSL.com Root Certification Authority RSA, O=SSL Corporation, L=Houston, ST=Texas, C=US, Key type:RSA, Length:4096, Cert Id:156725711, Valid from:12.02.16, 18:39, Valid until:12.02.41, 18:39
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:14:03:f5:ab:fb:37:8b:17:40:5b:e2:43:b2:a5:d1:c4, Subject:CN=SSL.com TLS ECC Root CA 2022, O=SSL Corporation, C=US, Issuer:CN=SSL.com TLS ECC Root CA 2022, O=SSL Corporation, C=US, Key type:EC, Length:384, Cert Id:683561703, Valid from:25.08.22, 18:33, Valid until:19.08.46, 18:33
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:6f:be:da:ad:73:bd:08:40:e2:8b:4d:be:d4:f7:5b:91, Subject:CN=SSL.com TLS RSA Root CA 2022, O=SSL Corporation, C=US, Issuer:CN=SSL.com TLS RSA Root CA 2022, O=SSL Corporation, C=US, Key type:RSA, Length:4096, Cert Id:556880013, Valid from:25.08.22, 18:34, Valid until:19.08.46, 18:34
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:00, Subject:OU=Starfield Class 2 Certification Authority, O="Starfield Technologies, Inc.", C=US, Issuer:OU=Starfield Class 2 Certification Authority, O="Starfield Technologies, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:1825617644, Valid from:29.06.04, 19:39, Valid until:29.06.34, 19:39
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00, Subject:CN=Starfield Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US, Issuer:CN=Starfield Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US, Key type:RSA, Length:2048, Cert Id:3268325709, Valid from:01.09.09, 02:00, Valid until:01.01.38, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00, Subject:CN=Starfield Services Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US, Issuer:CN=Starfield Services Root Certificate Authority - G2, O="Starfield Technologies, Inc.", L=Scottsdale, ST=Arizona, C=US, Key type:RSA, Length:2048, Cert Id:1964785574, Valid from:01.09.09, 02:00, Valid until:01.01.38, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:00:bb:40:1c:43:f5:5e:4f:b0, Subject:CN=SwissSign Gold CA - G2, O=SwissSign AG, C=CH, Issuer:CN=SwissSign Gold CA - G2, O=SwissSign AG, C=CH, Key type:RSA, Length:4096, Cert Id:1516221943, Valid from:25.10.06, 10:30, Valid until:25.10.36, 10:30
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:4e:b2:00:67:0c:03:5d:4f, Subject:CN=SwissSign Platinum CA - G2, O=SwissSign AG, C=CH, Issuer:CN=SwissSign Platinum CA - G2, O=SwissSign AG, C=CH, Key type:RSA, Length:4096, Cert Id:771312514, Valid from:25.10.06, 10:36, Valid until:25.10.36, 10:36
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:4f:1b:d4:2f:54:bb:2f:4b, Subject:CN=SwissSign Silver CA - G2, O=SwissSign AG, C=CH, Issuer:CN=SwissSign Silver CA - G2, O=SwissSign AG, C=CH, Key type:RSA, Length:4096, Cert Id:126726124, Valid from:25.10.06, 10:32, Valid until:25.10.36, 10:32
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:01:67:5f:27:d6:fe:7a:e3:e4:ac:be:09:5b:05:9e, Subject:CN=Telia Root CA v2, O=Telia Finland Oyj, C=FI, Issuer:CN=Telia Root CA v2, O=Telia Finland Oyj, C=FI, Key type:RSA, Length:4096, Cert Id:3473063976, Valid from:29.11.18, 12:55, Valid until:29.11.43, 12:55
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:00:95:be:16:a0:f7:2e:46:f1:7b:39:82:72:fa:8b:cd:96, Subject:CN=TeliaSonera Root CA v1, O=TeliaSonera, Issuer:CN=TeliaSonera Root CA v1, O=TeliaSonera, Key type:RSA, Length:4096, Cert Id:1495358374, Valid from:18.10.07, 14:00, Valid until:18.10.32, 14:00
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:34:4e:d5:57:20:d5:ed:ec:49:f4:2f:ce:37:db:2b:6d, Subject:CN=thawte Primary Root CA, OU="(c) 2006 thawte, Inc. - For authorized use only", OU=Certification Services Division, O="thawte, Inc.", C=US, Issuer:CN=thawte Primary Root CA, OU="(c) 2006 thawte, Inc. - For authorized use only", OU=Certification Services Division, O="thawte, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:643000026, Valid from:17.11.06, 01:00, Valid until:17.07.36, 01:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:35:fc:26:5c:d9:84:4f:c9:3d:26:3d:57:9b:ae:d7:56, Subject:CN=thawte Primary Root CA - G2, OU="(c) 2007 thawte, Inc. - For authorized use only", O="thawte, Inc.", C=US, Issuer:CN=thawte Primary Root CA - G2, OU="(c) 2007 thawte, Inc. - For authorized use only", O="thawte, Inc.", C=US, Key type:EC, Length:384, Cert Id:2068083090, Valid from:05.11.07, 01:00, Valid until:19.01.38, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:60:01:97:b7:46:a7:ea:b4:b4:9a:d6:4b:2f:f7:90:fb, Subject:CN=thawte Primary Root CA - G3, OU="(c) 2008 thawte, Inc. - For authorized use only", OU=Certification Services Division, O="thawte, Inc.", C=US, Issuer:CN=thawte Primary Root CA - G3, OU="(c) 2008 thawte, Inc. - For authorized use only", OU=Certification Services Division, O="thawte, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:1032730720, Valid from:02.04.08, 02:00, Valid until:02.12.37, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:01, Subject:CN=T-TeleSec GlobalRoot Class 2, OU=T-Systems Trust Center, O=T-Systems Enterprise Services GmbH, C=DE, Issuer:CN=T-TeleSec GlobalRoot Class 2, OU=T-Systems Trust Center, O=T-Systems Enterprise Services GmbH, C=DE, Key type:RSA, Length:2048, Cert Id:3056503257, Valid from:01.10.08, 12:40, Valid until:02.10.33, 01:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:01, Subject:CN=T-TeleSec GlobalRoot Class 3, OU=T-Systems Trust Center, O=T-Systems Enterprise Services GmbH, C=DE, Issuer:CN=T-TeleSec GlobalRoot Class 3, OU=T-Systems Trust Center, O=T-Systems Enterprise Services GmbH, C=DE, Key type:RSA, Length:2048, Cert Id:1894096264, Valid from:01.10.08, 12:29, Valid until:02.10.33, 01:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:0c:be, Subject:CN=TWCA Global Root CA, OU=Root CA, O=TAIWAN-CA, C=TW, Issuer:CN=TWCA Global Root CA, OU=Root CA, O=TAIWAN-CA, C=TW, Key type:RSA, Length:4096, Cert Id:861175838, Valid from:27.06.12, 08:28, Valid until:31.12.30, 16:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:5c:8b:99:c5:5a:94:c5:d2:71:56:de:cd:89:80:cc:26, Subject:CN=USERTrust ECC Certification Authority, O=The USERTRUST Network, L=Jersey City, ST=New Jersey, C=US, Issuer:CN=USERTrust ECC Certification Authority, O=The USERTRUST Network, L=Jersey City, ST=New Jersey, C=US, Key type:EC, Length:384, Cert Id:3329287386, Valid from:01.02.10, 01:00, Valid until:19.01.38, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withRSA, Serial:01:fd:6d:30:fc:a3:ca:51:a8:1b:bc:64:0e:35:03:2d, Subject:CN=USERTrust RSA Certification Authority, O=The USERTRUST Network, L=Jersey City, ST=New Jersey, C=US, Issuer:CN=USERTrust RSA Certification Authority, O=The USERTRUST Network, L=Jersey City, ST=New Jersey, C=US, Key type:RSA, Length:4096, Cert Id:3947601401, Valid from:01.02.10, 01:00, Valid until:19.01.38, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:44:be:0c:8b:50:00:24:b4:11:d3:36:2d:e0:b3:5f:1b, Subject:CN=UTN-USERFirst-Object, OU=http://www.usertrust.com, O=The USERTRUST Network, L=Salt Lake City, ST=UT, C=US, Issuer:CN=UTN-USERFirst-Object, OU=http://www.usertrust.com, O=The USERTRUST Network, L=Salt Lake City, ST=UT, C=US, Key type:RSA, Length:2048, Cert Id:3997913868, Valid from:09.07.99, 20:31, Valid until:09.07.19, 20:40
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:00:9b:7e:06:49:a3:3e:62:b9:d5:ee:90:48:71:29:ef:57, Subject:CN=VeriSign Class 3 Public Primary Certification Authority - G3, OU="(c) 1999 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Issuer:CN=VeriSign Class 3 Public Primary Certification Authority - G3, OU="(c) 1999 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:2057300190, Valid from:01.10.99, 02:00, Valid until:17.07.36, 01:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA384withECDSA, Serial:2f:80:fe:23:8c:0e:22:0f:48:67:12:28:91:87:ac:b3, Subject:CN=VeriSign Class 3 Public Primary Certification Authority - G4, OU="(c) 2007 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Issuer:CN=VeriSign Class 3 Public Primary Certification Authority - G4, OU="(c) 2007 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Key type:EC, Length:384, Cert Id:4163473319, Valid from:05.11.07, 01:00, Valid until:19.01.38, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:18:da:d1:9e:26:7d:e8:bb:4a:21:58:cd:cc:6b:3b:4a, Subject:CN=VeriSign Class 3 Public Primary Certification Authority - G5, OU="(c) 2006 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Issuer:CN=VeriSign Class 3 Public Primary Certification Authority - G5, OU="(c) 2006 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:303010488, Valid from:08.11.06, 01:00, Valid until:17.07.36, 01:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:40:1a:c4:64:21:b3:13:21:03:0e:bb:e4:12:1a:c5:1d, Subject:CN=VeriSign Universal Root Certification Authority, OU="(c) 2008 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Issuer:CN=VeriSign Universal Root Certification Authority, OU="(c) 2008 VeriSign, Inc. - For authorized use only", OU=VeriSign Trust Network, O="VeriSign, Inc.", C=US, Key type:RSA, Length:2048, Cert Id:2318285810, Valid from:02.04.08, 02:00, Valid until:02.12.37, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA1withRSA, Serial:50:94:6c:ec:18:ea:d5:9c:4d:d5:97:ef:75:8f:a0:ad, Subject:CN=XRamp Global Certification Authority, O=XRamp Security Services Inc, OU=www.xrampsecurity.com, C=US, Issuer:CN=XRamp Global Certification Authority, O=XRamp Security Services Inc, OU=www.xrampsecurity.com, C=US, Key type:RSA, Length:2048, Cert Id:3342493210, Valid from:01.11.04, 18:14, Valid until:01.01.35, 06:37
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logTLSHandshakeEvent
+FEIN:  TLSHandshake: www.comunio.de:443, TLSv1.2, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, 681444384
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FEIN: sun.net.www.MessageHeader@4681c1758 pairs: {POST /api/login HTTP/1.1: null}{Accept-Encoding: gzip}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36}{Content-Type: application/json;charset=UTF-8}{Host: www.comunio.de}{Accept: */*}{Connection: keep-alive}{Content-Length: 64}
+Mai 30, 2026 3:45:57 PM sun.net.www.http.HttpClient logFinest
+AM FEINSTEN: KeepAlive stream used: https://www.comunio.de/api/login
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FEIN: sun.net.www.MessageHeader@cecf63914 pairs: {null: HTTP/1.1 200 OK}{Server: nginx}{Date: Sat, 30 May 2026 13:45:57 GMT}{Content-Type: application/json}{Content-Length: 149}{Connection: keep-alive}{Vary: Origin,Accept-Encoding}{Content-Encoding: gzip}{X-UA-Compatible: IE=edge}{X-Varnish: 1928900498}{Age: 0}{Via: 1.1 lb1 (Varnish/7.7)}{Content-Security-Policy: frame-ancestors 'self';}{Strict-Transport-Security: max-age=3600; includeSubDomains; preload;}
+Mai 30, 2026 3:45:57 PM comunio.nas.dataScraper.comunio.Login getTokenFromServer
+INFORMATION: Login erfolgreich. Access-Token und Refresh-Token erhalten.
+Mai 30, 2026 3:45:57 PM comunio.nas.dataScraper.comunio.Login setToken
+FEIN: Token gesetzt: 47b33ec81d...
+Mai 30, 2026 3:45:57 PM comunio.nas.dataScraper.comunio.Login login
+INFORMATION: Token erfolgreich geholt und gesetzt. Token läuft ab: Sat May 30 15:45:57 CEST 2026
+Mai 30, 2026 3:45:57 PM comunio.nas.dataScraper.comunio.Login updateSettingsFromServer
+INFORMATION: Rufe aktuelle Einstellungen vom Server ab...
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+AM FEINSTEN: ProxySelector Request for https://www.comunio.de/api
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.https.HttpsClient New
+AM FEINSTEN: Looking for HttpClient for URL https://www.comunio.de/api and proxy value of DIRECT
+Mai 30, 2026 3:45:57 PM sun.net.www.http.KeepAliveCache$ClientVector get
+AM FEINSTEN: cached HttpClient was idle for 9
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.https.HttpsClient New
+AM FEINSTEN: KeepAlive stream retrieved from the cache, sun.net.www.protocol.https.HttpsClient(https://www.comunio.de/api/login)
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+AM FEINSTEN: Proxy used: DIRECT
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FEIN: sun.net.www.MessageHeader@3f4faf537 pairs: {GET /api HTTP/1.1: null}{Accept-Encoding: gzip}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36}{Accept: application/json, text/plain, */*}{Authorization: Bearer 47b33ec81ded7b42365b2a38091fac580d31f4ad}{Host: www.comunio.de}{Connection: keep-alive}
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FEIN: sun.net.www.MessageHeader@533bda9214 pairs: {null: HTTP/1.1 301 Moved Permanently}{Server: nginx}{Date: Sat, 30 May 2026 13:45:57 GMT}{Content-Type: text/html; charset=iso-8859-1}{Transfer-Encoding: chunked}{Connection: keep-alive}{Location: http://www.comunio.de/api/}{Content-Encoding: gzip}{Vary: Accept-Encoding}{X-Varnish: 1943601661}{Age: 0}{Via: 1.1 lb1 (Varnish/7.7)}{Content-Security-Policy: frame-ancestors 'self';}{Strict-Transport-Security: max-age=3600; includeSubDomains; preload;}
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+AM FEINSTEN: ProxySelector Request for http://www.comunio.de/api/
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+AM FEINSTEN: Proxy used: DIRECT
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FEIN: sun.net.www.MessageHeader@28dcca0c7 pairs: {GET /api/ HTTP/1.1: null}{Accept-Encoding: gzip}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36}{Accept: application/json, text/plain, */*}{Authorization: Bearer 47b33ec81ded7b42365b2a38091fac580d31f4ad}{Host: www.comunio.de}{Connection: keep-alive}
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FEIN: sun.net.www.MessageHeader@45d84a207 pairs: {null: HTTP/1.1 301 Moved Permanently}{Date: Sat, 30 May 2026 13:45:57 GMT}{Server: Varnish}{X-Varnish: 1942946600}{Location: https://www.comunio.de/api/}{Content-Length: 0}{Connection: keep-alive}
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+AM FEINSTEN: ProxySelector Request for https://www.comunio.de/api/
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.https.HttpsClient New
+AM FEINSTEN: Looking for HttpClient for URL https://www.comunio.de/api/ and proxy value of DIRECT
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.https.HttpsClient <init>
+AM FEINSTEN: Creating new HttpsClient with url:https://www.comunio.de/api/ and proxy:DIRECT with connect timeout:30000
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+AM FEINSTEN: Proxy used: DIRECT
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FEIN: sun.net.www.MessageHeader@536f2a7e7 pairs: {GET /api/ HTTP/1.1: null}{Accept-Encoding: gzip}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36}{Accept: application/json, text/plain, */*}{Authorization: Bearer 47b33ec81ded7b42365b2a38091fac580d31f4ad}{Host: www.comunio.de}{Connection: keep-alive}
+Mai 30, 2026 3:45:57 PM sun.net.www.http.HttpClient logFinest
+AM FEINSTEN: KeepAlive stream used: https://www.comunio.de/api/
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FEIN: sun.net.www.MessageHeader@72bc655314 pairs: {null: HTTP/1.1 200 OK}{Server: nginx}{Date: Sat, 30 May 2026 13:45:57 GMT}{Content-Type: application/json}{Content-Length: 2127}{Connection: keep-alive}{Vary: Origin,Authorization,Accept-Encoding}{Content-Encoding: gzip}{X-UA-Compatible: IE=edge}{X-Varnish: 1928900507}{Age: 0}{Via: 1.1 lb1 (Varnish/7.7)}{Content-Security-Policy: frame-ancestors 'self';}{Strict-Transport-Security: max-age=3600; includeSubDomains; preload;}
+Mai 30, 2026 3:45:57 PM comunio.nas.dataScraper.comunio.Login updateSettingsFromServer
+FEIN: Einstellungen vom Server geladen: [_links, community, user]
+Mai 30, 2026 3:45:57 PM comunio.nas.dataScraper.comunio.MatchdayInfo fetchCurrentMatchday
+INFORMATION: Hole aktuellen Spieltag von: https://www.comunio.de/api/matchdays/current
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+AM FEINSTEN: ProxySelector Request for https://www.comunio.de/api/matchdays/current
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.https.HttpsClient New
+AM FEINSTEN: Looking for HttpClient for URL https://www.comunio.de/api/matchdays/current and proxy value of DIRECT
+Mai 30, 2026 3:45:57 PM sun.net.www.http.KeepAliveCache$ClientVector get
+AM FEINSTEN: cached HttpClient was idle for 7
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.https.HttpsClient New
+AM FEINSTEN: KeepAlive stream retrieved from the cache, sun.net.www.protocol.https.HttpsClient(https://www.comunio.de/api/)
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection plainConnect0
+AM FEINSTEN: Proxy used: DIRECT
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection writeRequests
+FEIN: sun.net.www.MessageHeader@5a37d3ed9 pairs: {GET /api/matchdays/current HTTP/1.1: null}{User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36}{Accept: application/json, text/plain, */*}{Authorization: Bearer 47b33ec81ded7b42365b2a38091fac580d31f4ad}{Accept-Encoding: gzip, deflate, br, zstd}{Accept-Language: de-DE,en-EN;q=0.9}{x-timezone: Europe/Berlin}{Host: www.comunio.de}{Connection: keep-alive}
+Mai 30, 2026 3:45:57 PM sun.net.www.http.HttpClient logFinest
+AM FEINSTEN: KeepAlive stream used: https://www.comunio.de/api/matchdays/current
+Mai 30, 2026 3:45:57 PM sun.net.www.protocol.http.HttpURLConnection getInputStream0
+FEIN: sun.net.www.MessageHeader@26df6e3a14 pairs: {null: HTTP/1.1 200 OK}{Server: nginx}{Date: Sat, 30 May 2026 13:45:57 GMT}{Content-Type: application/json}{Content-Length: 1418}{Connection: keep-alive}{Vary: Origin,Authorization,Accept-Encoding}{Content-Encoding: gzip}{X-UA-Compatible: IE=edge}{X-Varnish: 1940359841}{Age: 0}{Via: 1.1 lb1 (Varnish/7.7)}{Content-Security-Policy: frame-ancestors 'self';}{Strict-Transport-Security: max-age=3600; includeSubDomains; preload;}
+Mai 30, 2026 3:45:57 PM comunio.nas.dataScraper.comunio.MatchdayInfo fetchCurrentMatchday
+INFORMATION: Matchday geladen: 34 (Started: true, Finished: true, Frühester Kickoff: 2026-05-16T15:30+02:00, Spätester Kickoff: 2026-05-16T15:30+02:00)
+Mai 30, 2026 3:45:57 PM comunio.nas.dataScraper.comunio.ComunioDataUpdater main
+INFORMATION: Current matchday: 34, Finished: true
+Mai 30, 2026 3:45:57 PM comunio.nas.dataScraper.comunio.ComunioDataUpdater main
+INFORMATION: Lade Vereinsdaten von GitHub
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:05:8d:52:ab:70:2d:0f:f4:b6:2b:74:7a:8a:fe:3c:3b:b8:da, Subject:CN=*.github.io, Issuer:CN=R12, O=Let's Encrypt, C=US, Key type:RSA, Length:2048, Cert Id:1003096697, Valid from:07.04.26, 01:32, Valid until:06.07.26, 01:32
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509CertificateEvent
+FEIN: X509Certificate: Alg:SHA256withRSA, Serial:00:c2:12:32:4b:70:a9:b4:91:71:dc:40:f7:e2:85:26:3c, Subject:CN=R12, O=Let's Encrypt, C=US, Issuer:CN=ISRG Root X1, O=Internet Security Research Group, C=US, Key type:RSA, Length:2048, Cert Id:2381631701, Valid from:13.03.24, 01:00, Valid until:13.03.27, 00:59
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logX509ValidationEvent
+FEIN: ValidationChain: 1521974916, 2381631701, 1003096697
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logTLSHandshakeEvent
+FEIN:  TLSHandshake: raw.githubusercontent.com:443, TLSv1.3, TLS_AES_128_GCM_SHA256, 1003096697
+Mai 30, 2026 3:45:57 PM comunio.nas.dataScraper.comunio.ComunioDataUpdater main
+INFORMATION: Lade Spielerdatenbank von GitHub
+Mai 30, 2026 3:45:57 PM jdk.internal.event.EventHelper logTLSHandshakeEvent
+FEIN:  TLSHandshake: raw.githubusercontent.com:443, TLSv1.3, TLS_AES_128_GCM_SHA256, 1003096697
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.comunio.ComunioDataUpdater main
+INFORMATION: Lade Playerpoints von GitHub
+Mai 30, 2026 3:45:58 PM jdk.internal.event.EventHelper logTLSHandshakeEvent
+FEIN:  TLSHandshake: raw.githubusercontent.com:443, TLSv1.3, TLS_AES_128_GCM_SHA256, 1003096697
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 31762 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32787 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33815 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33817 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33821 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33823 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32800 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33824 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 30755 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33827 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33829 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33830 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32807 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33832 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33835 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33836 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33837 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33838 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33848 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33850 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33853 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33854 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32830 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33855 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33856 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33858 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32836 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32841 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33869 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 31827 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32858 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33882 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32861 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33885 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33890 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 31846 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32874 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32877 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32880 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32881 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32889 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33913 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33914 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32891 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33919 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33923 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33935 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32921 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33947 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32925 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32931 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 31910 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32948 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33975 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33976 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32953 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33978 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 31935 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32961 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33986 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33988 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33990 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33991 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33992 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33995 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33999 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32977 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34001 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34006 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 31959 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34008 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34009 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34011 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34014 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34016 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34017 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34019 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34021 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34022 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34024 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34025 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34027 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34032 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 31985 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34033 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34034 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 31988 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34039 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34042 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34043 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33021 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34047 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34048 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33026 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34050 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34051 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34052 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32007 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34057 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33035 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34059 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33038 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34062 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34063 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34066 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32019 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34072 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34073 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33053 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34079 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34082 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34084 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34086 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34091 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33070 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34094 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34101 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34106 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33085 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34109 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34112 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34114 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34115 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34116 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33093 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32071 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33096 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32073 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34122 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32080 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33110 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34135 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34138 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34139 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34141 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34144 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34145 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34146 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34148 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33130 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34155 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34156 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33134 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33139 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33141 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32120 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34171 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32129 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33156 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33157 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33158 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34183 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34184 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34185 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34186 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34187 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33167 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34191 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34194 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34196 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34197 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34199 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34200 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34201 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34202 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33179 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34203 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32157 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34206 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33185 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33189 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34213 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34214 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34215 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34216 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34217 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34218 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33198 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32178 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33207 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33208 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33211 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33224 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32206 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33236 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33247 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33258 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33263 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33270 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33288 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32267 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33296 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33311 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32290 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32310 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33335 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33342 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33353 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33364 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33375 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32356 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33383 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33386 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32364 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33411 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32395 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32398 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32408 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33436 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33437 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33439 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33440 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33466 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32445 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32452 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33477 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33478 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32461 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33494 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33495 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33496 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32472 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33498 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33504 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 31458 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33517 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32506 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32509 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33536 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 31489 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33550 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33552 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33557 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33567 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32546 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32549 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33575 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33577 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32553 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33578 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32575 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33601 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32579 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32581 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32590 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32591 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33616 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33619 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 31572 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32597 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33621 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32599 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33629 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33640 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33647 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32630 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32638 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33669 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33673 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32654 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32656 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33681 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33687 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32667 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33707 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33713 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 31666 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33716 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32693 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33718 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32694 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33720 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32696 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32710 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33736 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33741 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32720 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33744 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32744 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33769 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33771 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33772 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33774 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33778 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 32754 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33782 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33783 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 31618 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 31634 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34230 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34231 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34233 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33539 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34232 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34234 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33530 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34236 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34239 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34238 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34237 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34240 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34241 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34242 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34243 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33938 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34248 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34247 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34251 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34245 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34244 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34253 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 31216 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34254 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34257 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34258 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34261 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34260 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34262 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34264 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34265 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34267 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34269 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34271 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34270 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34061 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34272 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33564 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34275 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34117 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34277 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34283 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34285 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34284 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34286 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34290 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33997 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34287 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34295 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34289 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34291 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34288 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34303 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34307 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34308 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34309 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34310 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34311 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34313 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34314 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34312 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34316 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34318 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34320 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34326 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34325 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34328 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34330 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34334 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34333 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34336 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34344 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34340 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34339 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33630 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 33135 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34342 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34345 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34346 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34347 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34348 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34349 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34350 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34351 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34352 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34353 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34355 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34357 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34358 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34360 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34359 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34362 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34361 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34364 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+FEIN: Punkte für Spieler 34367 erfolgreich übertragen. Anzahl Punkteentrys: 1 (vor Fix: 1)
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+INFORMATION: Punkte erfolgreich in Spielerobjekte übertragen. Anzahl Fixes (interpoliert-Fehler): 0
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+INFORMATION: Anzahl Spieler mit Punkten: 465
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject putPointsToPlayerObject
+INFORMATION: Anzahl Spieler in playerDBObject: 465
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.comunio.ComunioDataUpdater main
+INFORMATION: Lade Matchday Liste von GitHub
+Mai 30, 2026 3:45:58 PM jdk.internal.event.EventHelper logTLSHandshakeEvent
+FEIN:  TLSHandshake: raw.githubusercontent.com:443, TLSv1.3, TLS_AES_128_GCM_SHA256, 1003096697
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.comunio.ComunioDataUpdater main
+INFORMATION: Lade LastUpdates Liste von GitHub
+Mai 30, 2026 3:45:58 PM jdk.internal.event.EventHelper logTLSHandshakeEvent
+FEIN:  TLSHandshake: raw.githubusercontent.com:443, TLSv1.3, TLS_AES_128_GCM_SHA256, 1003096697
+Mai 30, 2026 3:45:58 PM comunio.nas.util.LoadJSONfromFile loadJsonObjectFromUrl
+INFORMATION: DEBUG LoadJSONfromFile: URL = https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/LastUpdatesList.json?t=1780148758376
+Mai 30, 2026 3:45:58 PM comunio.nas.util.LoadJSONfromFile loadJsonObjectFromUrl
+INFORMATION: DEBUG LoadJSONfromFile: Response-Body = {
+  "news": 1780113600000,
+  "comAnalystics": 1780146395236,
+  "matchdayInfo": 0,
+  "ligainsider": 1780063649694,
+  "playerDbFull": 1780063639349,
+  "seasonStart": 1779940800000,
+  "notInLigaDb": 1779790147639,
+  "transfermarktDe": 1780146586562,
+  "clubDb": 0,
+  "users": 1780063614544,
+  "playerDbShort": 1780146392944,
+  "transfermarktList": 1780146393172,
+  "playerStatus": 1780146587754
+}
+Mai 30, 2026 3:45:58 PM comunio.nas.dataVariable.LastUpdates fromJson
+WARNUNG: seasonStart ist null in LastUpdates. Bitte überprüfen Sie die JSON-Daten.
+Mai 30, 2026 3:45:58 PM comunio.nas.dataScraper.comunio.ComunioDataUpdater main
+INFORMATION: Lade Marktwertdatenbank von GitHub
+Mai 30, 2026 3:45:58 PM jdk.internal.event.EventHelper logTLSHandshakeEvent
+FEIN:  TLSHandshake: raw.githubusercontent.com:443, TLSv1.3, TLS_AES_128_GCM_SHA256, 1003096697
+Mai 30, 2026 3:45:59 PM comunio.nas.dataScraper.comunio.ComunioDataUpdater main
+INFORMATION: Lade Newsdatenbank von GitHub
+Mai 30, 2026 3:45:59 PM jdk.internal.event.EventHelper logTLSHandshakeEvent
+FEIN:  TLSHandshake: raw.githubusercontent.com:443, TLSv1.3, TLS_AES_128_GCM_SHA256, 1003096697
+Mai 30, 2026 3:45:59 PM comunio.nas.dataScraper.comunio.ComunioDataUpdater main
+INFORMATION: Lade Userdatenbank von GitHub

@@ -169,7 +169,7 @@ public class SeasonChange {
 		}
 
 		// Nur prüfen, wenn Saisonende erkannt und noch kein Übergang für diesen Zeitraum markiert wurde
-		if (LastUpdates.isSeasonTransitionBeforeLastMatchday(lastUpdates, matchdayInfo)) {
+		if (LastUpdates.isStuckBetweenTheSeasons(lastUpdates, matchdayInfo)) {
 			try {
 				LOGGER.info("Saisonende erkannt. Aktueller Spieltag: " + matchdayInfo.getCurrentMatchday() + ". Warte auf Saisonübergang in den News...");
 				

@@ -39,7 +39,8 @@ public class MatchdayInfo {
 	/**
 	 * Konstruktor (privat, zur Erzeugung über fetchCurrentMatchday)
 	 */
-	private MatchdayInfo(int currentMatchday, boolean isStarted, boolean isFinished, ZonedDateTime earliestKickoff, ZonedDateTime latestKickoff, EventInfo eventInfo, boolean isShifted) {
+	private MatchdayInfo(int currentMatchday, boolean isStarted, boolean isFinished, ZonedDateTime earliestKickoff,
+			ZonedDateTime latestKickoff, EventInfo eventInfo, boolean isShifted) {
 		this.currentMatchday = currentMatchday;
 		this.isFinished = isFinished;
 		this.isStarted = isStarted;
@@ -133,15 +134,15 @@ public class MatchdayInfo {
 			ZonedDateTime earliest = null;
 			ZonedDateTime latest = null;
 			DateTimeFormatter fmt = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssZ");
-			
+
 			boolean isShifted = false;
-			
-			if(matchdayData.has("type")) {
-				if(matchdayData.getString("type").equalsIgnoreCase("SHIFTED")) {
+
+			if (matchdayData.has("type")) {
+				if (matchdayData.getString("type").equalsIgnoreCase("SHIFTED")) {
 					logger.info("NACHHOLSPIEL!!!");
 					isShifted = true;
 				}
-				
+
 			}
 
 			if (matchdayData.has("items")) {
@@ -159,7 +160,8 @@ public class MatchdayInfo {
 								latest = kickoff;
 							}
 						} catch (Exception pe) {
-							logger.log(Level.WARNING, "Fehler beim Parsen von kickoff '" + item.optString("kickoff") + "'", pe);
+							logger.log(Level.WARNING,
+									"Fehler beim Parsen von kickoff '" + item.optString("kickoff") + "'", pe);
 						}
 					}
 				}
@@ -174,7 +176,8 @@ public class MatchdayInfo {
 			}
 
 			cached = new MatchdayInfo(matchday, isStarted, isFinished, earliest, latest, eventInfo, isShifted);
-			logger.info("Matchday geladen: " + matchday + " (Started: " + isStarted + ", Finished: " + isFinished + ", Frühester Kickoff: " + earliest + ", Spätester Kickoff: " + latest + ")");
+			logger.info("Matchday geladen: " + matchday + " (Started: " + isStarted + ", Finished: " + isFinished
+					+ ", Frühester Kickoff: " + earliest + ", Spätester Kickoff: " + latest + ")");
 			return cached;
 
 		} catch (Exception e) {
@@ -235,7 +238,8 @@ public class MatchdayInfo {
 			return false; // Kein Datum, zu unsicher
 		}
 		// 5 Uhr morgens am Tag nach dem Kickoff
-		ZonedDateTime fiveAMNextDay = latestKickoff.toLocalDate().plusDays(1).atTime(5, 0).atZone(latestKickoff.getZone());
+		ZonedDateTime fiveAMNextDay = latestKickoff.toLocalDate().plusDays(1).atTime(5, 0)
+				.atZone(latestKickoff.getZone());
 		boolean time = ZonedDateTime.now(latestKickoff.getZone()).isAfter(fiveAMNextDay);
 		return time;
 	}
@@ -305,7 +309,8 @@ public class MatchdayInfo {
 		}
 
 		// MatchdayInfo erzeugen
-		MatchdayInfo info = new MatchdayInfo(currentMatchday, isStarted, isFinished, earliestKickoff, latestKickoff, eventInfo, isShifted);
+		MatchdayInfo info = new MatchdayInfo(currentMatchday, isStarted, isFinished, earliestKickoff, latestKickoff,
+				eventInfo, isShifted);
 
 		// Punktewert setzen, falls im JSON vorhanden
 		if (obj.has("pointsMatchday")) {
@@ -319,7 +324,7 @@ public class MatchdayInfo {
 
 		return info;
 	}
-	
+
 	/**
 	 * Prüft, ob die aktuelle Saison beendet ist.
 	 * <p>
@@ -333,29 +338,30 @@ public class MatchdayInfo {
 	 * @return {@code true}, wenn die Saison beendet ist
 	 */
 	public boolean isSeasonOver(LastUpdates lastUpdates) {
-	    // Grundvoraussetzungen prüfen
-	    if (currentMatchday < 34) {
-	        return false; // Noch nicht am letzten Spieltag
-	    }
-	    
-	    if (!isFinished) {
-	        return false; // 34. Spieltag noch nicht abgeschlossen
-	    }
-	    
-	    // Prüfen, ob eine neue Saison bereits gestartet ist
-	    if (lastUpdates == null || lastUpdates.getSeasonStart() == null) {
-	        System.err.println("Warnung: Keine Saisonstart-Informationen vorhanden – nehme Saisonende an.");
-	        return true;
-	    }
-	    
-	    // Wenn der Saisonstart NACH dem letzten Kickoff dieses Spieltags liegt,
-	    // dann ist der aktuelle Spieltag bereits ein Spieltag der neuen Saison.
-	    // (z.B. API zeigt noch den alten 34. Spieltag an, aber die neue Saison läuft schon)
-	    if (lastUpdates.getSeasonStart().isAfter(latestKickoff.toInstant())) {
-	        return false; // Neue Saison hat begonnen
-	    }
-	    
-	    return true; // Letzter Spieltag abgeschlossen, keine neue Saison
+		// Grundvoraussetzungen prüfen
+		if (currentMatchday < 34) {
+			return false; // Noch nicht am letzten Spieltag
+		}
+
+		if (!isFinished) {
+			return false; // 34. Spieltag noch nicht abgeschlossen
+		}
+
+		// Prüfen, ob eine neue Saison bereits gestartet ist
+		if (lastUpdates == null || lastUpdates.getSeasonStart() == null) {
+			System.err.println("Warnung: Keine Saisonstart-Informationen vorhanden – nehme Saisonende an.");
+			return true;
+		}
+
+		// Wenn der Saisonstart NACH dem letzten Kickoff dieses Spieltags liegt,
+		// dann ist der aktuelle Spieltag bereits ein Spieltag der neuen Saison.
+		// (z.B. API zeigt noch den alten 34. Spieltag an, aber die neue Saison läuft
+		// schon)
+		if (lastUpdates.getSeasonStart().isAfter(latestKickoff.toInstant())) {
+			return false; // Neue Saison hat begonnen
+		}
+
+		return true; // Letzter Spieltag abgeschlossen, keine neue Saison
 	}
 
 

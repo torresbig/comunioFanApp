@@ -9,6 +9,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
 
+import comunio.nas.dataVariable.LastUpdates;
 import comunio.nas.enu.Position;
 import comunio.nas.git.GitHubUploader;
 import comunio.nas.objects.News;
@@ -23,13 +24,13 @@ public class TeamsFromUser {
 
 	private static final Logger LOGGER = LogManager.getLogger(PlayerUpdater.class);
 
-	public static void loadAllPlayerForUser(JSONObject playerDBObject, JSONArray userDB, JSONArray marketValueDB, Map<String, String> playerToUserDB, NewsManager newsManager, JSONObject notInligaDBObj) {
+	public static void loadAllPlayerForUser(JSONObject playerDBObject, JSONArray userDB, JSONArray marketValueDB, Map<String, String> playerToUserDB, NewsManager newsManager, JSONObject notInligaDBObj, LastUpdates lastUpdates) {
 		for (Object obj : userDB) {
 			JSONObject userObj = (JSONObject) obj;
 			if (userObj.has("user")) {
 				JSONObject user = userObj.getJSONObject("user");
 				if (user.has("id")) {
-					mergePlayerDataWithDB(playerDBObject, marketValueDB, newsManager, userObj, playerToUserDB, notInligaDBObj);
+					mergePlayerDataWithDB(playerDBObject, marketValueDB, newsManager, userObj, playerToUserDB, notInligaDBObj, lastUpdates);
 				}
 			}
 		}
@@ -109,7 +110,7 @@ public class TeamsFromUser {
 
 	public static Set<String> playerWithOwner = new HashSet<String>();
 
-	public static void mergePlayerDataWithDB(JSONObject playerDBObject, JSONArray marketValueDB, NewsManager newsManager, JSONObject userObj, Map<String, String> playerToUserDB, JSONObject notInligaDBObj) {
+	public static void mergePlayerDataWithDB(JSONObject playerDBObject, JSONArray marketValueDB, NewsManager newsManager, JSONObject userObj, Map<String, String> playerToUserDB, JSONObject notInligaDBObj, LastUpdates lastUpdates) {
 		JSONArray playerDB = playerDBObject.optJSONArray("playerDB");
 
 		JSONObject user = userObj.optJSONObject("user", new JSONObject());
@@ -204,7 +205,7 @@ public class TeamsFromUser {
 					if (apiJObj.has("lastPoints")) {
 						data.put("lastPoints", apiJObj.optInt("lastPoints", 0));
 					}
-					PlayerUpdater.updateSpielerPointsFromJson(playerDBObject, player.optJSONObject("data", new JSONObject()), apiJObj);
+					PlayerUpdater.updateSpielerPointsFromJson(playerDBObject, player.optJSONObject("data", new JSONObject()), apiJObj, lastUpdates);
 
 //					if (apiJObj.has("matchdayPoints")) {
 //						data.put("matchdayPoints", apiJObj.optInt("matchdayPoints", 0));

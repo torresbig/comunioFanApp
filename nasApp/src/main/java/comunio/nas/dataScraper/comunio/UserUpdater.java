@@ -50,7 +50,7 @@ public class UserUpdater {
 					JSONObject userObj = (JSONObject) userDB.get(i);
 					JSONObject userNew = userObj.optJSONObject("user", new JSONObject());
 					if (userNew.has("id")) {
-						TeamsFromUser.mergePlayerDataWithDB(playerDbObject, marketValueDB, newsManager, userObj, playerToUserMap, notInligaDBObj);
+						TeamsFromUser.mergePlayerDataWithDB(playerDbObject, marketValueDB, newsManager, userObj, playerToUserMap, notInligaDBObj, lastUpdates);
 					}
 					if (!foundComputer && userNew.optString("id", "").equals("1")) {
 						foundComputer = true;

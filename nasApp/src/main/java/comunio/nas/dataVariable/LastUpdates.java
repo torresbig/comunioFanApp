@@ -38,22 +38,24 @@ public class LastUpdates {
 		this.matchdayInfo = json.has("matchdayInfo") ? Instant.ofEpochMilli(json.getLong("matchdayInfo")) : null;
 		this.news = json.has("news") ? Instant.ofEpochMilli(json.getLong("news")) : null;
 		this.users = json.has("users") ? Instant.ofEpochMilli(json.getLong("users")) : null;
-		this.transfermarktList = json.has("transfermarktList") ? Instant.ofEpochMilli(json.getLong("transfermarktList")) : null;
-		this.fussballdatenDe = json.has("fussballdatenDe") ? Instant.ofEpochMilli(json.getLong("fussballdatenDe")) : null;
-		this.transfermarktDe = json.has("transfermarktDe") ? Instant.ofEpochMilli(json.getLong("transfermarktDe")) : null;
+		this.transfermarktList = json.has("transfermarktList") ? Instant.ofEpochMilli(json.getLong("transfermarktList"))
+				: null;
+		this.fussballdatenDe = json.has("fussballdatenDe") ? Instant.ofEpochMilli(json.getLong("fussballdatenDe"))
+				: null;
+		this.transfermarktDe = json.has("transfermarktDe") ? Instant.ofEpochMilli(json.getLong("transfermarktDe"))
+				: null;
 		this.ligainsider = json.has("ligainsider") ? Instant.ofEpochMilli(json.getLong("ligainsider")) : null;
 		this.comAnalystics = json.has("comAnalystics") ? Instant.ofEpochMilli(json.getLong("comAnalystics")) : null;
 		this.notInLigaDb = json.has("notInLigaDb") ? Instant.ofEpochMilli(json.getLong("notInLigaDb")) : null;
 		this.playerStatus = json.has("playerStatus") ? Instant.ofEpochMilli(json.getLong("playerStatus")) : null;
 		this.seasonStart = json.has("seasonStart") ? Instant.ofEpochMilli(json.getLong("seasonStart")) : null;
 		this.clubDb = json.has("clubDb") ? Instant.ofEpochMilli(json.getLong("clubDb")) : null;
-		
-		if(this.seasonStart != null && this.seasonStart.toEpochMilli() > 0) {
+
+		if (this.seasonStart != null && this.seasonStart.toEpochMilli() > 0) {
 			Dates.setSeasonStart(this.seasonStart);
 			LOGGER.warning("seasonStart ist null in LastUpdates. Bitte überprüfen Sie die JSON-Daten.");
 		}
-		
-		
+
 	}
 
 	public JSONObject toJson() {
@@ -111,11 +113,11 @@ public class LastUpdates {
 	public Instant getSeasonStart() {
 		return seasonStart;
 	}
-	
+
 	public Instant getClubDb() {
 		return clubDb;
 	}
-	
+
 	public void setClubDb(Instant clubDb) {
 		this.clubDb = clubDb;
 	}
@@ -216,6 +218,19 @@ public class LastUpdates {
 		this.playerStatus = playerStatus;
 	}
 
+	/**
+	 * Prüft, ob der Saisonübergangszeitpunkt (seasonStart in LastUpdates) vor dem
+	 * Ende
+	 * des letzten Spieltags liegt, sofern die Saison bereits vorbei ist.
+	 *
+	 * @param lastUpdates  die aktuellen Saison-Updates (enthält seasonStart)
+	 * @param matchdayInfo Informationen zum aktuellen Spieltag (kann null sein)
+	 * @return true, wenn:
+	 *         - matchdayInfo null ist (Standard-Fallback)
+	 *         - seasonStart null ist (wird als "davor" gewertet)
+	 *         - die Saison vorbei ist und seasonStart vor dem letzten Anstoß liegt;
+	 *         false sonst
+	 */
 	public static boolean isSeasonTransitionBeforeLastMatchday(LastUpdates lastUpdates, MatchdayInfo matchdayInfo) {
 		if (matchdayInfo == null) {
 			return false; // Kein gültiges MatchdayInfo-Objekt oder Saison bereits vorbei
@@ -237,4 +252,41 @@ public class LastUpdates {
 		return false; // Saisonübergang liegt nicht vor dem Ende der letzten Spieltag
 	}
 
+	/**
+	 * Prüft, ob die Anwendung sich in einem Zustand "zwischen den Saisons"
+	 * befindet,
+	 * also der Saisonübergangszeitpunkt (seasonStart) bereits verstrichen ist, aber
+	 * die neue Saison noch nicht begonnen hat (d.h. seasonStart liegt nach dem Ende
+	 * des letzten Spieltags der alten Saison).
+	 *
+	 * @param lastUpdates  die aktuellen Saison-Updates (enthält seasonStart)
+	 * @param matchdayInfo Informationen zum aktuellen Spieltag (kann null sein)
+	 * @return true, wenn:
+	 *         - die Saison vorbei ist UND
+	 *         - seasonStart nicht null ist UND
+	 *         - seasonStart nach dem letzten Anstoß des letzten Spieltags liegt;
+	 *         false sonst (z.B. bei null-Werten oder wenn der Übergang noch
+	 *         aussteht)
+	 */
+
+	public static boolean isStuckBetweenTheSeasons(LastUpdates lastUpdates, MatchdayInfo matchdayInfo) {
+		if (matchdayInfo == null) {
+			return false; // Kein gültiges MatchdayInfo-Objekt oder Saison bereits vorbei
+		}
+		Instant seasonTransmission = lastUpdates.getSeasonStart();
+
+		if (seasonTransmission == null) {
+			return false;
+		}
+
+		if (matchdayInfo.isSeasonOver(lastUpdates)) {
+			Instant lastMatchOver = matchdayInfo.getLatestKickoff().toInstant();
+			if (seasonTransmission.isBefore(lastMatchOver)) {
+				return false; // Saisonübergang liegt vor dem Ende der letzten Spieltag
+			} else {
+				return true; // Saisonübergang liegt nach dem Ende der letzten Spieltag
+			}
+		}
+		return false; // Saisonübergang liegt nicht vor dem Ende der letzten Spieltag
+	}
 }
