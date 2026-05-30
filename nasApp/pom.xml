@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>comunio.nas.new</groupId>
-  <artifactId>comunio.nas.new</artifactId>
-  <version>1.0</version>
+  <groupId>nasApp</groupId>
+  <artifactId>nasApp</artifactId>
+  <version>2.0</version>
   <name>Comunio NAS Datensammler</name>
   
   <!-- Java 17 für HttpClient -->
