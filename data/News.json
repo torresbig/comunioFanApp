@@ -1,6 +1,35 @@
 {
-  "lastUpdate": "30.05.2026 19:00:09",
+  "lastUpdate": "31.05.2026 05:18:24",
   "newsDB": [
+    {
+      "date": "31.05.2026",
+      "news": [
+        {
+          "date": "31.05.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Maza\",\"price\":7870000,\"buyerId\":\"5981249\",\"playerValue\":6670000,\"playerId\":\"33744\",\"buyer\":\"Thomas\"}",
+          "id": "963001108",
+          "playerId": "33744"
+        },
+        {
+          "date": "31.05.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Gnabry\",\"price\":7066009,\"buyerId\":\"10966300\",\"playerValue\":6060000,\"playerId\":\"32696\",\"buyer\":\"Alexander\"}",
+          "id": "963001108",
+          "playerId": "32696"
+        },
+        {
+          "date": "31.05.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Querfeld\",\"price\":3850000,\"buyerId\":\"11683432\",\"playerValue\":3330000,\"playerId\":\"33995\",\"buyer\":\"Simon\"}",
+          "id": "963001108",
+          "playerId": "33995"
+        }
+      ]
+    },
     {
       "date": "30.05.2026",
       "news": [
@@ -1739,6 +1768,14 @@
           "text": "Neuer Spieler: Milošević  (ID: 33812)",
           "id": "0",
           "playerId": "33812"
+        },
+        {
+          "date": "30.05.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Giannoulis (34027) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34027"
         }
       ]
     },
