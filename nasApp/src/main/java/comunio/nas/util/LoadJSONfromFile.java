@@ -78,10 +78,10 @@ public class LoadJSONfromFile {
 		
 		// DEBUG: Log den Response-Body bevor er zu JSONObject konvertiert wird
 		String responseBody = response.body();
-		if (responseBody.contains("LastUpdates") || urlString.contains("LastUpdates")) {
-			LOGGER.info("DEBUG LoadJSONfromFile: URL = " + urlWithCacheBuster);
-			LOGGER.info("DEBUG LoadJSONfromFile: Response-Body = " + responseBody);
-		}
+		// if (responseBody.contains("LastUpdates") || urlString.contains("LastUpdates")) {
+		// 	LOGGER.info("DEBUG LoadJSONfromFile: URL = " + urlWithCacheBuster);
+		// 	LOGGER.info("DEBUG LoadJSONfromFile: Response-Body = " + responseBody);
+		// }
 		
 		return new JSONObject(responseBody);
 	}

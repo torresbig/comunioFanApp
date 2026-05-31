@@ -278,8 +278,6 @@ public class PlayerUpdater {
 						updateMarketValueData(apiPlayer, marketValueDB);
 					}
 
-					playerDBObject.put("lastUpdate", new ComunioDate());
-					// TODO: DATUM RAUS
 					lastUpdates.setPlayerDbShort(Instant.now());
 				} catch (Exception e) {
 					LOGGER.log(Level.SEVERE, "Fehler beim Verarbeiten des Vereins " + clubId + ": " + e.getMessage(),
@@ -326,7 +324,10 @@ public class PlayerUpdater {
 				// Data-Objekt mit Standardwerten
 				data.put("position", Position.fromString(apiPlayer.getString("position")).toString());
 				data.put("verein", verein);
-				data.put("punkte", apiPlayer.getInt("points"));
+
+				int points = apiPlayer.getInt("points");
+				addPointsToPlayerData(points, null, data, lastUpdates, currentMatchdayInfo);
+
 				data.put("wert", apiPlayer.getInt("quotedprice"));
 
 				playerToUserMap.put(apiPlayerId, "1");
@@ -367,16 +368,9 @@ public class PlayerUpdater {
 				data.put("position", newPosition.toString());
 				data.put("verein", newClubId);
 
-				// punkte auf 0 wenn saison noch nicht los ging.
-				if ((currentMatchdayInfo.getCurrentMatchday() == 1 && !currentMatchdayInfo.isFinished())
-						|| LastUpdates.isStuckBetweenTheSeasons(lastUpdates, currentMatchdayInfo)) {
-					data.put("punkte", 0);
-					if (apiPlayer.getInt("points") > 0) {
-						data.put("lastSeasonPoints", apiPlayer.getInt("points"));
-					}
-				} else {
-					data.put("punkte", apiPlayer.getInt("points"));
-				}
+				int totalPoints = extractTotalPoints(apiPlayer);
+
+				addPointsToPlayerData(totalPoints, null, data, lastUpdates, currentMatchdayInfo);
 
 				data.put("wert", apiPlayer.getInt("quotedprice"));
 				data.put("lastUpdate", new ComunioDate().toString());
@@ -391,6 +385,39 @@ public class PlayerUpdater {
 			System.out.println("Spieler: " + playerName + " (ID: " + apiPlayerId + ") erfolgreich aktualisiert!");
 		} catch (Exception e) {
 			LOGGER.log(Level.WARNING, "Error updating player data: " + e.getMessage(), e);
+		}
+	}
+
+	/**
+	 * Hilfsmethode um die punkte je nach saisonstand an die korrekte stelle zu
+	 * setzten.
+	 * wenn es zwischen den Saisons ist, sollen die punkte 0 sein und die aktuelle
+	 * ausgelesenen punkte sollen zu LastSeasonPoints
+	 */
+	private static void addPointsToPlayerData(Integer points, Integer lastPoints, JSONObject data,
+			LastUpdates lastUpdates,
+			MatchdayInfo matchdayInfo) {
+		// punkte auf 0 wenn saison noch nicht los ging.
+		if ((matchdayInfo.getCurrentMatchday() == 1 && !matchdayInfo.isFinished())
+				|| matchdayInfo.isStuckBetweenTheSeasons(lastUpdates )) {
+			data.put("punkte", 0);
+			data.put("lastPoints", 0);
+			if (points > 0) {
+				data.put("lastSeasonPoints", points);
+			}
+		} else {
+			if (points != null) {
+				data.put("punkte", points);
+			} else {
+				LOGGER.warning("addPointsToPlayerData - points sind null");
+			}
+
+			if (lastPoints != null) {
+				data.put("lastPoints", lastPoints);
+			} else {
+				LOGGER.info("addPointsToPlayerData - lastPoints sind null");
+			}
+
 		}
 	}
 
@@ -834,18 +861,7 @@ public class PlayerUpdater {
 			Integer lastPoints = extractLastPoints(apiPlayer);
 
 			// 5. Gesamt- und Spieltagspunkte im Spielerobjekt persistieren
-			if (LastUpdates.isStuckBetweenTheSeasons(lastUpdates, matchdayInfo)) {
-				if (totalPoints != null) {
-					playerData.put("punkte", totalPoints);
-				}
-				if (lastPoints != null) {
-					playerData.put("lastPoints", lastPoints);
-				}
-			} else {
-				playerData.put("lastSeasonPoints", totalPoints);
-				playerData.put("punkte", 0);
-				playerData.put("lastPoints", 0);
-			}
+			addPointsToPlayerData(totalPoints, lastPoints, playerData, lastUpdates, matchdayInfo);
 
 			// 6. Prüfen, ob für aktuellen Spieltag diese Daten schon gespeichert wurden
 			boolean punktSchonVorhanden = false;

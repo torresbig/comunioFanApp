@@ -269,24 +269,7 @@ public class LastUpdates {
 	 *         aussteht)
 	 */
 
-	public static boolean isStuckBetweenTheSeasons(LastUpdates lastUpdates, MatchdayInfo matchdayInfo) {
-		if (matchdayInfo == null) {
-			return false; // Kein gültiges MatchdayInfo-Objekt oder Saison bereits vorbei
-		}
-		Instant seasonTransmission = lastUpdates.getSeasonStart();
+	
 
-		if (seasonTransmission == null) {
-			return false;
-		}
-
-		if (matchdayInfo.isSeasonOver(lastUpdates)) {
-			Instant lastMatchOver = matchdayInfo.getLatestKickoff().toInstant();
-			if (seasonTransmission.isBefore(lastMatchOver)) {
-				return false; // Saisonübergang liegt vor dem Ende der letzten Spieltag
-			} else {
-				return true; // Saisonübergang liegt nach dem Ende der letzten Spieltag
-			}
-		}
-		return false; // Saisonübergang liegt nicht vor dem Ende der letzten Spieltag
-	}
+	
 }

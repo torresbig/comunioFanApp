@@ -1,5 +1,6 @@
 package comunio.nas.dataScraper.comunio;
 
+import java.time.Instant;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.logging.Level;
@@ -362,6 +363,46 @@ public class MatchdayInfo {
 		}
 
 		return true; // Letzter Spieltag abgeschlossen, keine neue Saison
+	}
+
+	public boolean askForTransfers(LastUpdates lastUpdates) {
+		if(this.getCurrentMatchday() < 34){
+			return true;
+		}
+		if (!isFinished) {
+			return true; // 34. Spieltag noch nicht abgeschlossen
+		}
+
+		if (lastUpdates == null || lastUpdates.getSeasonStart() == null) {
+			return false;
+		}
+
+		if (lastUpdates.getSeasonStart().isAfter(latestKickoff.toInstant())) {
+			return true; // Neue Saison hat begonnen
+		} else {
+			return false;
+		}
+		
+	}
+
+	public boolean isStuckBetweenTheSeasons(LastUpdates lastUpdates) {
+	
+		Instant seasonTransmission = lastUpdates.getSeasonStart();
+
+		if (seasonTransmission == null) {
+			return false;
+		}
+
+		// Wenn der Saisonstart NACH dem letzten Kickoff dieses Spieltags liegt,
+		// dann ist der aktuelle Spieltag bereits ein Spieltag der neuen Saison.
+		// (z.B. API zeigt noch den alten 34. Spieltag an, aber die neue Saison läuft
+		// schon)
+		Instant latestKickoff = getLatestKickoff().toInstant();
+		if (lastUpdates.getSeasonStart().isAfter(latestKickoff)) {
+			return true; // Neue Saison hat begonnen
+		}
+		return false;
+
 	}
 
 

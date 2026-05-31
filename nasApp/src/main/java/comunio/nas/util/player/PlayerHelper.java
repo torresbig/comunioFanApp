@@ -27,6 +27,7 @@ public class PlayerHelper {
 	 * @return JSONObject des Spielers oder null, falls nicht gefunden
 	 */
 	public static JSONObject findPlayerByComunioId(JSONArray playerDB, String playerId, JSONObject notInLigaDBObj) {
+
 		for (int i = 0; i < playerDB.length(); i++) {
 			JSONObject playerObj = playerDB.getJSONObject(i);
 			String dbId = convertIdToString(playerObj.get("id"));
