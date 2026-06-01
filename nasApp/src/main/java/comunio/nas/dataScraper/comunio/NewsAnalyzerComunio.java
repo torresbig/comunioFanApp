@@ -134,7 +134,7 @@ public class NewsAnalyzerComunio {
 	                    String title = entry.optString("title", "");
 
 	                    if ("TRANSACTION_TRANSFER".equals(type)) {
-	                        if (matchdayInfo != null && matchdayInfo.askForTransfers(lastUpdates)) {
+	                        if (matchdayInfo != null && !matchdayInfo.askForTransfers(lastUpdates)) {
 	                            LOGGER.info("Transfer-News am " + newsDate + " übersprungen, da Saison beendet.");
 	                            continue;
 	                        }
