@@ -3085,7 +3085,7 @@
             "rang": 2
           },
           "SonstigeInfos": [
-            "teuerster Spieler (23.730.000 \u20ac)",
+            "teuerster Spieler (23,730,000 \u20ac)",
             "meisten Punkte letzte Saison (338)"
           ]
         },
@@ -7094,16 +7094,19 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1393,
-          "einsaetzeBewertet": 32,
-          "durchschnittsnote": 3.53,
-          "verein": "Hamburger SV",
-          "lastUpdate": "29.05.2026",
-          "durchschnittsminuten": 98,
-          "durchschnittspunkte": 43.53,
-          "rang": 93
-        }},
+        "attribute": {
+          "ligainsiderRanking": {
+            "punkte": 1393,
+            "einsaetzeBewertet": 32,
+            "durchschnittsnote": 3.53,
+            "verein": "Hamburger SV",
+            "lastUpdate": "29.05.2026",
+            "durchschnittsminuten": 98,
+            "durchschnittspunkte": 43.53,
+            "rang": 93
+          },
+          "SonstigeInfos": ["häufigsten Transfers (1)"]
+        },
         "possibleNames": [
           "nicolai remberg",
           "n. remberg",
@@ -10937,7 +10940,7 @@
             "durchschnittspunkte": 67.66,
             "rang": 1
           },
-          "SonstigeInfos": ["teuerster Spieler (Realwert) (150.000.000 \u20ac)"]
+          "SonstigeInfos": ["teuerster Spieler (Realwert) (150,000,000 \u20ac)"]
         },
         "position": "STURM",
         "possibleNames": [
@@ -19057,7 +19060,7 @@
           "groesse": "1,89",
           "geburtstag": "27.01.1994",
           "laenderspiele": 2,
-          "lastUpdate": "15.05.2026",
+          "lastUpdate": "01.06.2026",
           "nebenpositionen": [
             "IV",
             "ZM"
@@ -19074,7 +19077,7 @@
         "verein": "109",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "15.05.2026",
+          "date": "01.06.2026",
           "name": "Rani Khedira",
           "link": "https://www.transfermarkt.de/rani-khedira/profil/spieler/124410",
           "id": 124410,
@@ -19171,7 +19174,7 @@
           "groesse": "1,90",
           "geburtstag": "07.04.2006",
           "laenderspiele": 7,
-          "lastUpdate": "15.05.2026",
+          "lastUpdate": "01.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 42,
@@ -19185,7 +19188,7 @@
         "verein": "3",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "15.05.2026",
+          "date": "01.06.2026",
           "name": "Tiago Pereira Cardoso",
           "link": "https://www.transfermarkt.de/tiago-pereira-cardoso/profil/spieler/926301",
           "id": "926301",
@@ -19295,7 +19298,7 @@
           "groesse": "1,76",
           "geburtstag": "14.07.1992",
           "laenderspiele": 23,
-          "lastUpdate": "15.05.2026",
+          "lastUpdate": "01.06.2026",
           "nebenpositionen": ["RA"],
           "nationalspieler": "",
           "trikotNummer": 7,
@@ -19309,7 +19312,7 @@
         "verein": "8",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "15.05.2026",
+          "date": "01.06.2026",
           "name": "Jonas Hofmann",
           "link": "https://www.transfermarkt.de/jonas-hofmann/profil/spieler/7161",
           "id": 7161,
@@ -19317,7 +19320,7 @@
         },
         "lastSeasonPoints": 91,
         "punkte": 0,
-        "realWert": 2000000,
+        "realWert": 1500000,
         "lastBigUpdate": "30.05.2026",
         "stats": {
           "notenDurchschnitt": "0",
@@ -19443,7 +19446,7 @@
           "groesse": "1,68",
           "geburtstag": "27.01.2000",
           "laenderspiele": 33,
-          "lastUpdate": "15.05.2026",
+          "lastUpdate": "01.06.2026",
           "nebenpositionen": [
             "ZM",
             "LM"
@@ -19460,7 +19463,7 @@
         "verein": "6",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "15.05.2026",
+          "date": "01.06.2026",
           "name": "Romano Schmid",
           "link": "https://www.transfermarkt.de/romano-schmid/profil/spieler/346853",
           "id": 346853,
@@ -19542,7 +19545,7 @@
           "groesse": "1,88",
           "geburtstag": "23.09.1998",
           "laenderspiele": 2,
-          "lastUpdate": "15.05.2026",
+          "lastUpdate": "01.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 2,
@@ -19556,7 +19559,7 @@
         "verein": "13",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "15.05.2026",
+          "date": "01.06.2026",
           "name": "Joël Schmied",
           "link": "https://www.transfermarkt.de/joel-schmied/profil/spieler/322517",
           "id": "322517",
@@ -19568,7 +19571,7 @@
         },
         "lastSeasonPoints": 23,
         "punkte": 0,
-        "realWert": 3500000,
+        "realWert": 3000000,
         "lastBigUpdate": "30.05.2026",
         "stats": {
           "notenDurchschnitt": "0",
@@ -19743,7 +19746,7 @@
           "groesse": "1,75",
           "geburtstag": "15.01.2006",
           "laenderspiele": 1,
-          "lastUpdate": "15.05.2026",
+          "lastUpdate": "01.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 34,
@@ -19757,7 +19760,7 @@
         "verein": "13",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "15.05.2026",
+          "date": "01.06.2026",
           "name": "Fayssal Harchaoui",
           "link": "https://www.transfermarkt.de/fayssal-harchaoui/profil/spieler/890532",
           "id": "890532",
@@ -20171,7 +20174,7 @@
           "groesse": "1,87",
           "geburtstag": "26.08.2006",
           "laenderspiele": 7,
-          "lastUpdate": "15.05.2026",
+          "lastUpdate": "01.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 13,
@@ -20185,7 +20188,7 @@
         "verein": "13",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "15.05.2026",
+          "date": "01.06.2026",
           "haveToCheck": false,
           "name": "Said El Mala",
           "link": "https://www.transfermarkt.de/said-el-mala/profil/spieler/1168219",
@@ -20198,7 +20201,7 @@
         },
         "lastSeasonPoints": 151,
         "punkte": 0,
-        "realWert": 35000000,
+        "realWert": 45000000,
         "lastBigUpdate": "30.05.2026",
         "stats": {
           "notenDurchschnitt": "0",
@@ -20283,7 +20286,7 @@
           "groesse": "1,94",
           "geburtstag": "02.04.2005",
           "laenderspiele": 1,
-          "lastUpdate": "15.05.2026",
+          "lastUpdate": "01.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 19,
@@ -20297,7 +20300,7 @@
         "verein": "13",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "15.05.2026",
+          "date": "01.06.2026",
           "haveToCheck": false,
           "name": "Malek El Mala",
           "link": "https://www.transfermarkt.de/malek-el-mala/profil/spieler/1168222",
@@ -20717,7 +20720,7 @@
           "groesse": "1,86",
           "geburtstag": "18.12.1998",
           "laenderspiele": 0,
-          "lastUpdate": "15.05.2026",
+          "lastUpdate": "01.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 31,
@@ -20731,7 +20734,7 @@
         "verein": "109",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "15.05.2026",
+          "date": "01.06.2026",
           "haveToCheck": false,
           "name": "Matheo Raab",
           "link": "https://www.transfermarkt.de/matheo-raab/profil/spieler/386685",
@@ -52431,7 +52434,7 @@
           "groesse": "1,82",
           "geburtstag": "05.04.2007",
           "laenderspiele": 0,
-          "lastUpdate": "15.05.2026",
+          "lastUpdate": "01.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 10,
@@ -52445,7 +52448,7 @@
         "wert": 170000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "15.05.2026",
+          "date": "01.06.2026",
           "haveToCheck": true,
           "name": "Ryota Onoda",
           "link": "https://www.transfermarkt.de/ryota-onoda/profil/spieler/1416295",
@@ -56082,7 +56085,7 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
+        "attribute": {"SonstigeInfos": ["häufigsten Transfers (1)"]},
         "possibleNames": [],
         "comunioStatus": {
           "grund": "unbekannt",
