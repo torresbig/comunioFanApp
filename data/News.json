@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "31.05.2026 21:41:56",
+  "lastUpdate": "02.06.2026 15:03:47",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4434,6 +4434,368 @@
           "text": "{\"seller\":\"Gerry\",\"sellerId\":\"13830745\",\"playerName\":\"Tangvik\",\"price\":406400,\"buyerId\":\"1\",\"playerValue\":390000,\"playerId\":\"34334\",\"buyer\":\"Computer\"}",
           "id": "962929886",
           "playerId": "34334"
+        }
+      ]
+    },
+    {
+      "date": "02.06.2026",
+      "news": [
+        {
+          "date": "02.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Leweling\",\"price\":7908000,\"buyerId\":\"11683432\",\"playerValue\":7520000,\"playerId\":\"33411\",\"buyer\":\"Simon\"}",
+          "id": "963047178",
+          "playerId": "33411"
+        },
+        {
+          "date": "02.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Culbreath\",\"price\":3000000,\"buyerId\":\"5949921\",\"playerValue\":3220000,\"playerId\":\"34311\",\"buyer\":\"Sascha\"}",
+          "id": "963047178",
+          "playerId": "34311"
+        },
+        {
+          "date": "02.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Drewes\",\"price\":160000,\"buyerId\":\"5981249\",\"playerValue\":160000,\"playerId\":\"31988\",\"buyer\":\"Thomas\"}",
+          "id": "963047178",
+          "playerId": "31988"
+        },
+        {
+          "date": "02.06.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Doumbia (34218) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "34218"
+        },
+        {
+          "date": "02.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Opitz\",\"price\":252300,\"buyerId\":\"1\",\"playerValue\":230000,\"playerId\":\"33845\",\"buyer\":\"Computer\"}",
+          "id": "963047178",
+          "playerId": "33845"
+        },
+        {
+          "date": "02.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Gerry\",\"sellerId\":\"13830745\",\"playerName\":\"Dinkçi\",\"price\":2793100,\"buyerId\":\"1\",\"playerValue\":2660000,\"playerId\":\"33364\",\"buyer\":\"Computer\"}",
+          "id": "963047178",
+          "playerId": "33364"
+        }
+      ]
+    },
+    {
+      "date": "01.06.2026",
+      "news": [
+        {
+          "date": "01.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Schlieck\",\"price\":162300,\"buyerId\":\"13830745\",\"playerValue\":160000,\"playerId\":\"33664\",\"buyer\":\"Gerry\"}",
+          "id": "963022591",
+          "playerId": "33664"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Remberg\",\"price\":2630009,\"buyerId\":\"10966300\",\"playerValue\":2250000,\"playerId\":\"33935\",\"buyer\":\"Alexander\"}",
+          "id": "963022591",
+          "playerId": "33935"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Gerry\",\"sellerId\":\"13830745\",\"playerName\":\"Michel\",\"price\":912600,\"buyerId\":\"1\",\"playerValue\":0,\"playerId\":\"32087\",\"buyer\":\"Computer\"}",
+          "id": "963022591",
+          "playerId": "32087"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Pruhs (ID: 34400)",
+          "id": "0",
+          "playerId": "34400"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Schubert (ID: 33140)",
+          "id": "0",
+          "playerId": "33140"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Ens (ID: 34404)",
+          "id": "0",
+          "playerId": "34404"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: F. Götze (ID: 31586)",
+          "id": "0",
+          "playerId": "31586"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Hansen (ID: 34401)",
+          "id": "0",
+          "playerId": "34401"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Hoffmeier (ID: 34403)",
+          "id": "0",
+          "playerId": "34403"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Lippmann (ID: 34440)",
+          "id": "0",
+          "playerId": "34440"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Scheller (ID: 34402)",
+          "id": "0",
+          "playerId": "34402"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Zobel (ID: 34405)",
+          "id": "0",
+          "playerId": "34405"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Baack  (ID: 34436)",
+          "id": "0",
+          "playerId": "34436"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Bäuerle (ID: 34413)",
+          "id": "0",
+          "playerId": "34413"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Baur (ID: 34407)",
+          "id": "0",
+          "playerId": "34407"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Castañeda (ID: 34406)",
+          "id": "0",
+          "playerId": "34406"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Curda (ID: 34410)",
+          "id": "0",
+          "playerId": "34410"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Đurić\",\"newClub\":\"81\",\"oldClub\":\"0\",\"playerID\":\"34107\"}",
+          "id": "0",
+          "playerId": "34107"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Gayret (ID: 34409)",
+          "id": "0",
+          "playerId": "34409"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Klaas (ID: 34408)",
+          "id": "0",
+          "playerId": "34408"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: N. Mohr (ID: 34414)",
+          "id": "0",
+          "playerId": "34414"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: R. Müller (ID: 34412)",
+          "id": "0",
+          "playerId": "34412"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Sticker (ID: 34411)",
+          "id": "0",
+          "playerId": "34411"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Bätzner (ID: 34415)",
+          "id": "0",
+          "playerId": "34415"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Bröger \",\"oldPos\":\"MITTELFELD\",\"playerID\":\"33916\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "33916"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Bröger \",\"newClub\":\"81\",\"oldClub\":\"0\",\"playerID\":\"33916\"}",
+          "id": "0",
+          "playerId": "33916"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Eickel (ID: 34416)",
+          "id": "0",
+          "playerId": "34416"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: L. Copado (ID: 33546)",
+          "id": "0",
+          "playerId": "33546"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Marino (ID: 34419)",
+          "id": "0",
+          "playerId": "34419"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Michel (ID: 32087)",
+          "id": "0",
+          "playerId": "32087"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Millgramm (ID: 34418)",
+          "id": "0",
+          "playerId": "34418"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Okpala (ID: 34417)",
+          "id": "0",
+          "playerId": "34417"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Tigges\",\"newClub\":\"81\",\"oldClub\":\"0\",\"playerID\":\"33365\"}",
+          "id": "0",
+          "playerId": "33365"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Wörner (ID: 34420)",
+          "id": "0",
+          "playerId": "34420"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Baumgartner (32977) ist jetzt VERLETZT (Oberschenkelprobleme)",
+          "id": "0",
+          "playerId": "32977"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Đurić (ID: 34107)",
+          "id": "0",
+          "playerId": "34107"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Bröger  (ID: 33916)",
+          "id": "0",
+          "playerId": "33916"
+        },
+        {
+          "date": "01.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Tigges (ID: 33365)",
+          "id": "0",
+          "playerId": "33365"
         }
       ]
     }
