@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "02.06.2026 05:18:16",
+  "lastUpdate": "02.06.2026 15:03:47",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4463,6 +4463,30 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Drewes\",\"price\":160000,\"buyerId\":\"5981249\",\"playerValue\":160000,\"playerId\":\"31988\",\"buyer\":\"Thomas\"}",
           "id": "963047178",
           "playerId": "31988"
+        },
+        {
+          "date": "02.06.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Doumbia (34218) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "34218"
+        },
+        {
+          "date": "02.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Opitz\",\"price\":252300,\"buyerId\":\"1\",\"playerValue\":230000,\"playerId\":\"33845\",\"buyer\":\"Computer\"}",
+          "id": "963047178",
+          "playerId": "33845"
+        },
+        {
+          "date": "02.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Gerry\",\"sellerId\":\"13830745\",\"playerName\":\"Dinkçi\",\"price\":2793100,\"buyerId\":\"1\",\"playerValue\":2660000,\"playerId\":\"33364\",\"buyer\":\"Computer\"}",
+          "id": "963047178",
+          "playerId": "33364"
         }
       ]
     },
