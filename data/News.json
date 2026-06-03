@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "03.06.2026 05:18:12",
+  "lastUpdate": "03.06.2026 15:03:59",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4439,14 +4439,80 @@
     },
     {
       "date": "03.06.2026",
-      "news": [{
-        "date": "03.06.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Noll\",\"price\":160000,\"buyerId\":\"5981249\",\"playerValue\":160000,\"playerId\":\"33397\",\"buyer\":\"Thomas\"}",
-        "id": "963072562",
-        "playerId": "33397"
-      }]
+      "news": [
+        {
+          "date": "03.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Noll\",\"price\":160000,\"buyerId\":\"5981249\",\"playerValue\":160000,\"playerId\":\"33397\",\"buyer\":\"Thomas\"}",
+          "id": "963072562",
+          "playerId": "33397"
+        },
+        {
+          "date": "03.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Chuki  (ID: 34442)",
+          "id": "0",
+          "playerId": "34442"
+        },
+        {
+          "date": "03.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Awortwie-Grant (ID: 34443)",
+          "id": "0",
+          "playerId": "34443"
+        },
+        {
+          "date": "03.06.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jäkel (33109) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "33109"
+        },
+        {
+          "date": "03.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Stefan 8\",\"sellerId\":\"6013585\",\"playerName\":\"Alvero\",\"price\":277600,\"buyerId\":\"1\",\"playerValue\":270000,\"playerId\":\"33896\",\"buyer\":\"Computer\"}",
+          "id": "963072562",
+          "playerId": "33896"
+        },
+        {
+          "date": "03.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Simon\",\"sellerId\":\"11683432\",\"playerName\":\"Coulibaly\",\"price\":1784300,\"buyerId\":\"1\",\"playerValue\":1830000,\"playerId\":\"34239\",\"buyer\":\"Computer\"}",
+          "id": "963072562",
+          "playerId": "34239"
+        },
+        {
+          "date": "03.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Simon\",\"sellerId\":\"11683432\",\"playerName\":\"Tohumcu\",\"price\":577600,\"buyerId\":\"1\",\"playerValue\":590000,\"playerId\":\"33574\",\"buyer\":\"Computer\"}",
+          "id": "963072562",
+          "playerId": "33574"
+        },
+        {
+          "date": "03.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Simon\",\"sellerId\":\"11683432\",\"playerName\":\"N. Collins\",\"price\":1564600,\"buyerId\":\"1\",\"playerValue\":1590000,\"playerId\":\"33836\",\"buyer\":\"Computer\"}",
+          "id": "963072562",
+          "playerId": "33836"
+        },
+        {
+          "date": "03.06.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Assignon (34197) ist jetzt VERLETZT (Schulterverletzung)",
+          "id": "0",
+          "playerId": "34197"
+        }
+      ]
     },
     {
       "date": "02.06.2026",
