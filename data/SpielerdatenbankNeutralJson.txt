@@ -2731,16 +2731,19 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 793,
-          "einsaetzeBewertet": 20,
-          "durchschnittsnote": 3.88,
-          "verein": "Eintracht Frankfurt",
-          "lastUpdate": "29.05.2026",
-          "durchschnittsminuten": 80,
-          "durchschnittspunkte": 36.65,
-          "rang": 199
-        }},
+        "attribute": {
+          "ligainsiderRanking": {
+            "punkte": 793,
+            "einsaetzeBewertet": 20,
+            "durchschnittsnote": 3.88,
+            "verein": "Eintracht Frankfurt",
+            "lastUpdate": "29.05.2026",
+            "durchschnittsminuten": 80,
+            "durchschnittspunkte": 36.65,
+            "rang": 199
+          },
+          "SonstigeInfos": ["häufigsten Transfers (1)"]
+        },
         "possibleNames": [
           "Nnamdi Collins",
           "N. Collins",
@@ -24587,7 +24590,7 @@
           "groesse": "1,97",
           "geburtstag": "08.11.2004",
           "laenderspiele": 6,
-          "lastUpdate": "19.05.2026",
+          "lastUpdate": "03.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 10,
@@ -24601,7 +24604,7 @@
         "verein": "109",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "19.05.2026",
+          "date": "03.06.2026",
           "name": "Ilyas Ansah",
           "link": "https://www.transfermarkt.de/ilyas-ansah/profil/spieler/1035765",
           "id": "1035765",
@@ -24673,7 +24676,7 @@
           "groesse": "1,91",
           "geburtstag": "23.09.2005",
           "laenderspiele": 11,
-          "lastUpdate": "19.05.2026",
+          "lastUpdate": "03.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 7,
@@ -24687,7 +24690,7 @@
         "verein": "5",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "19.05.2026",
+          "date": "03.06.2026",
           "name": "Jobe Bellingham",
           "link": "https://www.transfermarkt.de/jobe-bellingham/profil/spieler/796297",
           "id": "796297",
@@ -24699,7 +24702,7 @@
         },
         "lastSeasonPoints": 95,
         "punkte": 0,
-        "realWert": 30000000,
+        "realWert": 40000000,
         "lastBigUpdate": "30.05.2026",
         "stats": {
           "notenDurchschnitt": "0",
@@ -24777,7 +24780,7 @@
           "groesse": "1,80",
           "geburtstag": "10.08.2007",
           "laenderspiele": 4,
-          "lastUpdate": "19.05.2026",
+          "lastUpdate": "03.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 16,
@@ -24791,7 +24794,7 @@
         "verein": "8",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "19.05.2026",
+          "date": "03.06.2026",
           "name": "Axel Tape",
           "link": "https://www.transfermarkt.de/axel-tape/profil/spieler/1077670",
           "id": "1077670",
@@ -24920,8 +24923,8 @@
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "23.02.2004",
-          "laenderspiele": 5,
-          "lastUpdate": "19.05.2026",
+          "laenderspiele": 6,
+          "lastUpdate": "03.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 7,
@@ -24935,7 +24938,7 @@
         "verein": "62",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "19.05.2026",
+          "date": "03.06.2026",
           "name": "Leon Avdullahu",
           "link": "https://www.transfermarkt.de/leon-avdullahu/profil/spieler/667457",
           "id": "667457",
@@ -24947,7 +24950,7 @@
         },
         "lastSeasonPoints": 121,
         "punkte": 0,
-        "realWert": 25000000,
+        "realWert": 30000000,
         "lastBigUpdate": "30.05.2026",
         "stats": {
           "notenDurchschnitt": "0",
@@ -25017,7 +25020,7 @@
           "groesse": "1,91",
           "geburtstag": "24.01.1996",
           "laenderspiele": 52,
-          "lastUpdate": "19.05.2026",
+          "lastUpdate": "03.06.2026",
           "nebenpositionen": [
             "RA",
             "HS"
@@ -25034,7 +25037,7 @@
         "verein": "8",
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "19.05.2026",
+          "date": "03.06.2026",
           "name": "Patrik Schick",
           "link": "https://www.transfermarkt.de/patrik-schick/profil/spieler/242086",
           "id": 242086,
@@ -25042,7 +25045,7 @@
         },
         "lastSeasonPoints": 174,
         "punkte": 0,
-        "realWert": 20000000,
+        "realWert": 18000000,
         "lastBigUpdate": "30.05.2026",
         "stats": {
           "notenDurchschnitt": "0",
@@ -44859,16 +44862,19 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 798,
-          "einsaetzeBewertet": 26,
-          "durchschnittsnote": 4.23,
-          "verein": "SV Werder Bremen",
-          "lastUpdate": "29.05.2026",
-          "durchschnittsminuten": 87,
-          "durchschnittspunkte": 29.81,
-          "rang": 264
-        }},
+        "attribute": {
+          "ligainsiderRanking": {
+            "punkte": 798,
+            "einsaetzeBewertet": 26,
+            "durchschnittsnote": 4.23,
+            "verein": "SV Werder Bremen",
+            "lastUpdate": "29.05.2026",
+            "durchschnittsminuten": 87,
+            "durchschnittspunkte": 29.81,
+            "rang": 264
+          },
+          "SonstigeInfos": ["häufigsten Transfers (1)"]
+        },
         "possibleNames": [
           "Karim Coulibaly",
           "Coulibaly",
@@ -49864,7 +49870,7 @@
           "groesse": "1,76",
           "geburtstag": "01.03.2003",
           "laenderspiele": 22,
-          "lastUpdate": "18.05.2026",
+          "lastUpdate": "03.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 14,
@@ -49878,7 +49884,7 @@
         "wert": 290000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "18.05.2026",
+          "date": "03.06.2026",
           "name": "William Bøving",
           "link": "https://www.transfermarkt.de/william-boving/profil/spieler/610400",
           "id": "610400",
@@ -49943,7 +49949,7 @@
           "groesse": "1,80",
           "geburtstag": "10.05.2004",
           "laenderspiele": 35,
-          "lastUpdate": "18.05.2026",
+          "lastUpdate": "03.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 11,
@@ -49957,7 +49963,7 @@
         "wert": 8010000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "18.05.2026",
+          "date": "03.06.2026",
           "name": "Bilal El Khannouss",
           "link": "https://www.transfermarkt.de/bilal-el-khannouss/profil/spieler/654982",
           "id": "654982",
@@ -49969,7 +49975,7 @@
         },
         "lastSeasonPoints": 139,
         "punkte": 0,
-        "realWert": 32000000,
+        "realWert": 35000000,
         "lastBigUpdate": "30.05.2026",
         "stats": {
           "notenDurchschnitt": "0",
@@ -50809,7 +50815,7 @@
           "groesse": "1,91",
           "geburtstag": "13.09.2003",
           "laenderspiele": 0,
-          "lastUpdate": "18.05.2026",
+          "lastUpdate": "03.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 11,
@@ -50823,7 +50829,7 @@
         "wert": 3460000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "18.05.2026",
+          "date": "03.06.2026",
           "haveToCheck": true,
           "link": "https://www.transfermarkt.de/younes-ebnoutalib/profil/spieler/692368",
           "name": "Younes Ebnoutalib",
@@ -51392,7 +51398,7 @@
           "groesse": "1,75",
           "geburtstag": "01.09.2006",
           "laenderspiele": 3,
-          "lastUpdate": "18.05.2026",
+          "lastUpdate": "03.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 18,
@@ -51406,7 +51412,7 @@
         "wert": 280000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "18.05.2026",
+          "date": "03.06.2026",
           "haveToCheck": true,
           "name": "Suleiman Sani",
           "link": "https://www.transfermarkt.de/suleiman-sani/profil/spieler/1235583",
@@ -52420,8 +52426,8 @@
         "spielerDaten": {
           "groesse": "1,94",
           "geburtstag": "09.01.2008",
-          "laenderspiele": 3,
-          "lastUpdate": "18.05.2026",
+          "laenderspiele": 0,
+          "lastUpdate": "03.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 49,
@@ -52435,7 +52441,7 @@
         "wert": 2570000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "18.05.2026",
+          "date": "03.06.2026",
           "haveToCheck": true,
           "name": "Luca Reggiani",
           "link": "https://www.transfermarkt.de/luca-reggiani/profil/spieler/1074990",
@@ -52448,7 +52454,7 @@
         },
         "lastSeasonPoints": 26,
         "punkte": 0,
-        "realWert": 5000000,
+        "realWert": 10000000,
         "lastBigUpdate": "30.05.2026",
         "stats": {
           "notenDurchschnitt": "0",
@@ -59600,7 +59606,7 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
+        "attribute": {"SonstigeInfos": ["häufigsten Transfers (1)"]},
         "possibleNames": [],
         "comunioStatus": {
           "grund": "unbekannt",
@@ -62930,7 +62936,7 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
+        "attribute": {"SonstigeInfos": ["häufigsten Transfers (1)"]},
         "possibleNames": [],
         "comunioStatus": {
           "grund": "unbekannt",
