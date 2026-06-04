@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "04.06.2026 05:18:11",
+  "lastUpdate": "04.06.2026 15:03:53",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4471,6 +4471,38 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Reggiani\",\"price\":2730700,\"buyerId\":\"13830745\",\"playerValue\":2570000,\"playerId\":\"34346\",\"buyer\":\"Gerry\"}",
           "id": "963099574",
           "playerId": "34346"
+        },
+        {
+          "date": "04.06.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Wimmer\",\"newClub\":\"62\",\"oldClub\":\"0\",\"playerID\":\"33507\"}",
+          "id": "0",
+          "playerId": "33507"
+        },
+        {
+          "date": "04.06.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Bos (34203) ist jetzt NICHT_IN_LIGA",
+          "id": "0",
+          "playerId": "34203"
+        },
+        {
+          "date": "04.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Lisztes\",\"price\":173400,\"buyerId\":\"1\",\"playerValue\":160000,\"playerId\":\"33920\",\"buyer\":\"Computer\"}",
+          "id": "963099574",
+          "playerId": "33920"
+        },
+        {
+          "date": "04.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Koudossou\",\"price\":867400,\"buyerId\":\"1\",\"playerValue\":830000,\"playerId\":\"33634\",\"buyer\":\"Computer\"}",
+          "id": "963099574",
+          "playerId": "33634"
         }
       ]
     },
