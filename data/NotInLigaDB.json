@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "03.06.2026",
+  "lastUpdate": "04.06.2026",
   "db": {
     "34065": {
       "data": {
@@ -10147,628 +10147,6 @@
       },
       "name": "Sugawara",
       "id": "34276"
-    },
-    "33507": {
-      "data": {
-        "elfDesSpieltages": 1,
-        "fussballdatenDe": {
-          "lastProcessedMatchday": 13,
-          "lastUpdate": "09.12.2025 15:00:44",
-          "name": "Patrick Wimmer",
-          "nationalitaet": "Österreich",
-          "url": "https://www.fussballdaten.de/person/patrick-wimmer/"
-        },
-        "transfermarktDoDe": {
-          "date": "21.05.2026",
-          "name": "Patrick Wimmer",
-          "link": "https://www.transfermarkt.de/patrick-wimmer/profil/spieler/533295",
-          "id": 533295,
-          "leistungsDaten": {}
-        },
-        "lastBigUpdate": "16.05.2026",
-        "stats": {
-          "notenDurchschnitt": "6,8",
-          "gelbekarten": 4,
-          "totalPenalties": 0,
-          "ratedGames": 25,
-          "lastUpdate": "16.05.2026",
-          "playedGames": 25,
-          "totalGoals": 4,
-          "punkteDurchschnitt": "3,6",
-          "gelbrotekarten": 0,
-          "rotekarten": 0,
-          "manOfTheMatchAmount": 0
-        },
-        "withinSquad": true,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 955,
-          "einsaetzeBewertet": 24,
-          "durchschnittsnote": 3.73,
-          "verein": "VfL Wolfsburg",
-          "lastUpdate": "24.05.2026",
-          "durchschnittsminuten": 70,
-          "durchschnittspunkte": 39.04,
-          "rang": 163
-        }},
-        "possibleNames": [
-          "Patrick Wimmer",
-          "P. Wimmer",
-          "Wimmer"
-        ],
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33507"},
-        "spielerDaten": {
-          "groesse": "1,82",
-          "geburtstag": "30.05.2001",
-          "laenderspiele": 30,
-          "lastUpdate": "21.05.2026",
-          "nebenpositionen": [
-            "OM",
-            "LA"
-          ],
-          "nationalspieler": "",
-          "trikotNummer": 39,
-          "nationalitaet": "Österreich",
-          "laenderspielTore": 1,
-          "hauptposition": "Rechtsaußen",
-          "fuss": "rechts"
-        },
-        "isNotName": [],
-        "punktekorrektur": [],
-        "wert": 1730000,
-        "verein": "0",
-        "lastPoints": 0,
-        "lastSeasonPoints": 108,
-        "punkte": 90,
-        "realWert": 15000000,
-        "lastUpdate": "25.05.2026",
-        "historicalPoints": [
-          {"2021": 84},
-          {"2022": 92},
-          {"2023": 20},
-          {"2024": 108}
-        ],
-        "spieltagspunkte": [
-          {
-            "rating": 6.8,
-            "yellow": 0,
-            "xgoals": 0.21,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 90,
-            "assists": 0,
-            "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":3,\"foulsCommitted\":null,\"passingRate\":68,\"duelRate\":47,\"minutesPlayed\":90}",
-            "totalPoints": 3,
-            "tore": 0,
-            "value": 3,
-            "key": 1,
-            "status": "FULL"
-          },
-          {
-            "rating": 6.4,
-            "yellow": 1,
-            "xgoals": 0.1,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 90,
-            "assists": 0,
-            "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":3,\"foulsCommitted\":1,\"passingRate\":63,\"duelRate\":40,\"minutesPlayed\":90}",
-            "totalPoints": 4,
-            "tore": 0,
-            "value": 1,
-            "key": 2,
-            "status": "FULL"
-          },
-          {
-            "rating": 7.1,
-            "yellow": 0,
-            "xgoals": 0,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 89,
-            "assists": 0,
-            "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":4,\"foulsCommitted\":1,\"passingRate\":76,\"duelRate\":67,\"minutesPlayed\":89}",
-            "totalPoints": 9,
-            "tore": 0,
-            "value": 5,
-            "key": 3,
-            "status": "SUBOUT"
-          },
-          {
-            "rating": 6.5,
-            "yellow": 0,
-            "xgoals": 0.04,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 73,
-            "assists": 0,
-            "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":1,\"passingRate\":82,\"duelRate\":50,\"minutesPlayed\":73}",
-            "totalPoints": 11,
-            "tore": 0,
-            "value": 2,
-            "key": 4,
-            "status": "SUBOUT"
-          },
-          {
-            "rating": 6.9,
-            "yellow": 0,
-            "xgoals": 0.04,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 46,
-            "assists": 0,
-            "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":null,\"passingRate\":79,\"duelRate\":40,\"minutesPlayed\":46}",
-            "totalPoints": 15,
-            "tore": 0,
-            "value": 4,
-            "key": 5,
-            "status": "SUBOUT"
-          },
-          {
-            "totalPoints": 15,
-            "value": 0,
-            "key": 6
-          },
-          {
-            "totalPoints": 15,
-            "value": 0,
-            "key": 7
-          },
-          {
-            "rating": 6.4,
-            "yellow": 1,
-            "xgoals": 0,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 34,
-            "assists": 0,
-            "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":7,\"passingRate\":100,\"duelRate\":29,\"minutesPlayed\":34}",
-            "totalPoints": 16,
-            "tore": 0,
-            "value": 1,
-            "key": 8,
-            "status": "SUBIN"
-          },
-          {
-            "totalPoints": 16,
-            "value": 0,
-            "key": 9
-          },
-          {
-            "rating": 6.1,
-            "yellow": 0,
-            "xgoals": 0,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 23,
-            "assists": 0,
-            "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":2,\"passingRate\":44,\"duelRate\":29,\"minutesPlayed\":23}",
-            "totalPoints": 16,
-            "tore": 0,
-            "value": 0,
-            "key": 10,
-            "status": "SUBIN"
-          },
-          {
-            "rating": 6.2,
-            "yellow": 0,
-            "xgoals": 0,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 61,
-            "assists": 0,
-            "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":78,\"duelRate\":33,\"minutesPlayed\":61}",
-            "totalPoints": 17,
-            "tore": 0,
-            "value": 1,
-            "key": 11,
-            "info": "Interpoliert, weil Datenlücke erkannt",
-            "status": "SUBOUT"
-          },
-          {
-            "rating": 6.3,
-            "yellow": 1,
-            "xgoals": 0.25,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 71,
-            "assists": 0,
-            "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":57,\"duelRate\":31,\"minutesPlayed\":71}",
-            "totalPoints": 17,
-            "tore": 0,
-            "value": 1,
-            "key": 12,
-            "status": "SUBOUT"
-          },
-          {
-            "rating": 7.4,
-            "yellow": 0,
-            "xgoals": 0.13,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 65,
-            "assists": 0,
-            "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":53,\"duelRate\":45,\"minutesPlayed\":65}",
-            "totalPoints": 26,
-            "tore": 1,
-            "value": 9,
-            "key": 13,
-            "status": "SUBOUT"
-          },
-          {
-            "rating": 8.3,
-            "yellow": 0,
-            "xgoals": 0.68,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 69,
-            "assists": 0,
-            "stats": "{\"shots\":3,\"shotsOnGoal\":3,\"foulsDrawn\":null,\"foulsCommitted\":1,\"passingRate\":74,\"duelRate\":35,\"minutesPlayed\":69}",
-            "totalPoints": 41,
-            "tore": 2,
-            "value": 15,
-            "key": 14,
-            "status": "SUBOUT"
-          },
-          {
-            "rating": 7.1,
-            "yellow": 0,
-            "xgoals": 0.11,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 80,
-            "assists": 0,
-            "stats": "{\"shots\":2,\"shotsOnGoal\":1,\"foulsDrawn\":null,\"foulsCommitted\":3,\"passingRate\":71,\"duelRate\":33,\"minutesPlayed\":80}",
-            "totalPoints": 46,
-            "tore": 0,
-            "value": 5,
-            "key": 15,
-            "status": "SUBOUT"
-          },
-          {
-            "rating": 6,
-            "yellow": 0,
-            "xgoals": 0,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 64,
-            "assists": 0,
-            "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":67,\"duelRate\":25,\"minutesPlayed\":64}",
-            "totalPoints": 45,
-            "tore": 0,
-            "value": -1,
-            "key": 16,
-            "status": "SUBOUT"
-          },
-          {
-            "rating": 6.6,
-            "yellow": 0,
-            "xgoals": 0,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 73,
-            "assists": 0,
-            "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":null,\"passingRate\":76,\"duelRate\":70,\"minutesPlayed\":73}",
-            "totalPoints": 47,
-            "tore": 0,
-            "value": 2,
-            "key": 17,
-            "status": "SUBOUT"
-          },
-          {
-            "rating": 6.9,
-            "yellow": 0,
-            "xgoals": 0,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 90,
-            "assists": 0,
-            "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":1,\"passingRate\":69,\"duelRate\":53,\"minutesPlayed\":90}",
-            "totalPoints": 51,
-            "tore": 0,
-            "value": 4,
-            "key": 18,
-            "status": "FULL"
-          },
-          {
-            "rating": 6.2,
-            "yellow": 1,
-            "xgoals": 0,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 75,
-            "assists": 0,
-            "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":45,\"duelRate\":37,\"minutesPlayed\":75}",
-            "totalPoints": 51,
-            "tore": 0,
-            "value": 1,
-            "key": 19,
-            "status": "SUBOUT"
-          },
-          {
-            "rating": 6.7,
-            "yellow": 0,
-            "xgoals": 0.16,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 74,
-            "assists": 0,
-            "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":59,\"duelRate\":50,\"minutesPlayed\":74}",
-            "totalPoints": 53,
-            "tore": 0,
-            "value": 2,
-            "key": 20,
-            "info": "Interpoliert, weil Datenlücke erkannt",
-            "status": "SUBOUT"
-          },
-          {
-            "totalPoints": 54,
-            "value": 0,
-            "key": 21
-          },
-          {
-            "totalPoints": 54,
-            "value": 0,
-            "key": 22
-          },
-          {
-            "totalPoints": 54,
-            "value": 0,
-            "key": 23
-          },
-          {
-            "totalPoints": 54,
-            "value": 0,
-            "key": 24
-          },
-          {
-            "totalPoints": 54,
-            "value": 0,
-            "key": 25
-          },
-          {
-            "rating": 6.6,
-            "yellow": 0,
-            "xgoals": 0,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 10,
-            "assists": 0,
-            "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":1,\"passingRate\":null,\"duelRate\":75,\"minutesPlayed\":10}",
-            "totalPoints": 56,
-            "tore": 0,
-            "value": 2,
-            "key": 26,
-            "status": "SUBIN"
-          },
-          {
-            "rating": 6.6,
-            "yellow": 0,
-            "xgoals": 0,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 26,
-            "assists": 0,
-            "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":69,\"duelRate\":67,\"minutesPlayed\":26}",
-            "totalPoints": 58,
-            "tore": 0,
-            "value": 2,
-            "key": 27,
-            "status": "SUBIN"
-          },
-          {
-            "rating": 7.3,
-            "yellow": 0,
-            "xgoals": 0.04,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 66,
-            "assists": 0,
-            "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":1,\"passingRate\":53,\"duelRate\":62,\"minutesPlayed\":66}",
-            "totalPoints": 64,
-            "tore": 0,
-            "value": 6,
-            "key": 28,
-            "status": "SUBOUT"
-          },
-          {
-            "rating": 7,
-            "yellow": 0,
-            "xgoals": 0.78,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 73,
-            "assists": 0,
-            "stats": "{\"shots\":4,\"shotsOnGoal\":1,\"foulsDrawn\":1,\"foulsCommitted\":1,\"passingRate\":25,\"duelRate\":40,\"minutesPlayed\":73}",
-            "totalPoints": 68,
-            "tore": 0,
-            "value": 4,
-            "key": 29,
-            "status": "SUBOUT"
-          },
-          {
-            "rating": 7.8,
-            "yellow": 0,
-            "xgoals": 0.05,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 71,
-            "assists": 0,
-            "stats": "{\"shots\":1,\"shotsOnGoal\":1,\"foulsDrawn\":2,\"foulsCommitted\":2,\"passingRate\":65,\"duelRate\":63,\"minutesPlayed\":71}",
-            "totalPoints": 79,
-            "tore": 1,
-            "value": 11,
-            "key": 30,
-            "status": "SUBOUT"
-          },
-          {
-            "rating": 7,
-            "yellow": 0,
-            "xgoals": 0,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 83,
-            "assists": 0,
-            "stats": "{\"shots\":null,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":2,\"passingRate\":61,\"duelRate\":64,\"minutesPlayed\":83}",
-            "totalPoints": 83,
-            "tore": 0,
-            "value": 4,
-            "key": 31,
-            "status": "SUBOUT"
-          },
-          {
-            "rating": 7,
-            "yellow": 0,
-            "xgoals": 0.09,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 72,
-            "assists": 0,
-            "stats": "{\"shots\":1,\"shotsOnGoal\":null,\"foulsDrawn\":2,\"foulsCommitted\":2,\"passingRate\":56,\"duelRate\":53,\"minutesPlayed\":72}",
-            "totalPoints": 87,
-            "tore": 0,
-            "value": 4,
-            "key": 32,
-            "status": "SUBOUT"
-          },
-          {
-            "rating": 6.7,
-            "yellow": 0,
-            "xgoals": 0.63,
-            "red": 0,
-            "yellowRed": 0,
-            "einsatzzeit": 67,
-            "assists": 0,
-            "stats": "{\"shots\":2,\"shotsOnGoal\":null,\"foulsDrawn\":null,\"foulsCommitted\":null,\"passingRate\":88,\"duelRate\":31,\"minutesPlayed\":67}",
-            "totalPoints": 90,
-            "tore": 0,
-            "value": 3,
-            "key": 33,
-            "status": "SUBOUT"
-          },
-          {
-            "totalPoints": 90,
-            "value": 0,
-            "key": 34
-          }
-        ],
-        "onMarket": false,
-        "position": "STURM",
-        "comunioStatus": {
-          "grund": "unbekannt",
-          "lastUpdate": "16.05.2026",
-          "seit": "unbekannt",
-          "details": "unbekannt",
-          "historie": [
-            {
-              "grund": "unbekannt",
-              "lastUpdate": "08.03.2026",
-              "seit": "unbekannt",
-              "details": "Reha nach muskulärer Verletzung im linken Oberschenkel",
-              "historie": [],
-              "status": "AUFBAUTRAINING"
-            },
-            {
-              "grund": "unbekannt",
-              "lastUpdate": "15.03.2026",
-              "seit": "unbekannt",
-              "details": "Reha nach muskulärer Verletzung im linken Oberschenkel",
-              "historie": [],
-              "status": "AUFBAUTRAINING"
-            },
-            {
-              "grund": "unbekannt",
-              "lastUpdate": "10.02.2026",
-              "seit": "unbekannt",
-              "details": "Reha nach muskulären Beschwerden",
-              "historie": [],
-              "status": "VERLETZT"
-            },
-            {
-              "grund": "unbekannt",
-              "lastUpdate": "19.10.2025",
-              "seit": "unbekannt",
-              "details": "Muskelfaserriss im linken Oberschenkel",
-              "historie": [],
-              "status": "VERLETZT"
-            },
-            {
-              "grund": "unbekannt",
-              "lastUpdate": "22.02.2026",
-              "seit": "unbekannt",
-              "details": "Team- und Aufbautraining nach muskulären Beschwerden",
-              "historie": [],
-              "status": "VERLETZT"
-            },
-            {
-              "grund": "unbekannt",
-              "lastUpdate": "04.03.2026",
-              "seit": "unbekannt",
-              "details": "muskuläre Verletzung im linken Oberschenkel",
-              "historie": [],
-              "status": "VERLETZT"
-            },
-            {
-              "grund": "unbekannt",
-              "lastUpdate": "26.10.2025",
-              "seit": "unbekannt",
-              "details": "Reha nach Muskelfaserriss im linken Oberschenkel",
-              "historie": [],
-              "status": "AUFBAUTRAINING"
-            },
-            {
-              "grund": "unbekannt",
-              "lastUpdate": "10.11.2025",
-              "seit": "unbekannt",
-              "details": "krank",
-              "historie": [],
-              "status": "VERLETZT"
-            },
-            {
-              "grund": "unbekannt",
-              "lastUpdate": "06.03.2026",
-              "seit": "unbekannt",
-              "details": "Reha nach muskulärer Verletzung im linken Oberschenkel",
-              "historie": [],
-              "status": "VERLETZT"
-            },
-            {
-              "grund": "unbekannt",
-              "lastUpdate": "15.02.2026",
-              "seit": "unbekannt",
-              "details": "Reha nach muskulären Beschwerden",
-              "historie": [],
-              "status": "VERLETZT"
-            },
-            {
-              "grund": "unbekannt",
-              "lastUpdate": "16.05.2026",
-              "seit": "unbekannt",
-              "details": "Blessur",
-              "historie": [],
-              "status": "VERLETZT"
-            }
-          ],
-          "status": "AKTIV"
-        },
-        "status": {
-          "grund": "",
-          "lastUpdate": "26.05.2026",
-          "seit": "",
-          "details": "",
-          "historie": [{
-            "grund": "unbekannt",
-            "lastUpdate": "24.05.2025",
-            "seit": "unbekannt",
-            "details": "",
-            "historie": [],
-            "status": "AKTIV"
-          }],
-          "bis": null,
-          "status": "NICHT_IN_LIGA"
-        }
-      },
-      "name": "P. Wimmer",
-      "id": "33507"
     },
     "33989": {
       "data": {
@@ -31619,6 +30997,246 @@
       },
       "name": "Fernandes",
       "id": "33117"
+    },
+    "34203": {
+      "data": {
+        "spielerDaten": {
+          "groesse": "1,86",
+          "geburtstag": "08.05.2004",
+          "laenderspiele": 0,
+          "lastUpdate": "01.06.2026",
+          "nebenpositionen": [],
+          "nationalspieler": "",
+          "trikotNummer": 18,
+          "nationalitaet": "Australien",
+          "laenderspielTore": 0,
+          "hauptposition": "Linker Verteidiger",
+          "fuss": "links"
+        },
+        "isNotName": [],
+        "wert": 170000,
+        "verein": "0",
+        "lastPoints": 0,
+        "transfermarktDoDe": {
+          "date": "01.06.2026",
+          "haveToCheck": false,
+          "name": "Kasey Bos",
+          "link": "https://www.transfermarkt.de/kasey-bos/profil/spieler/1154876",
+          "id": "1154876",
+          "position": "LV",
+          "marktwert": 450000,
+          "nationalitaet": "Australien",
+          "leistungsDaten": {},
+          "alter": 21
+        },
+        "punkte": 0,
+        "realWert": 450000,
+        "lastBigUpdate": "30.05.2026",
+        "stats": {
+          "notenDurchschnitt": "0",
+          "gelbekarten": 0,
+          "totalPenalties": 0,
+          "ratedGames": 0,
+          "lastUpdate": "30.05.2026",
+          "playedGames": 0,
+          "totalGoals": 0,
+          "punkteDurchschnitt": "0",
+          "gelbrotekarten": 0,
+          "rotekarten": 0,
+          "manOfTheMatchAmount": 0
+        },
+        "lastUpdate": "03.06.2026",
+        "spieltagspunkte": [{
+          "value": 0,
+          "key": 34
+        }],
+        "position": "ABWEHR",
+        "possibleNames": [
+          "Kasey Bos",
+          "K. Bos",
+          "Bos"
+        ],
+        "comunioStatus": {
+          "grund": "unbekannt",
+          "lastUpdate": "30.05.2026",
+          "seit": "unbekannt",
+          "details": "",
+          "historie": [
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "19.04.2026",
+              "seit": "unbekannt",
+              "details": "Team- und Aufbautraining nach Schulter-OP",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "15.02.2026",
+              "seit": "unbekannt",
+              "details": "Reha nach Schulter-OP",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "27.01.2026",
+              "seit": "unbekannt",
+              "details": "Rehabilitation",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "08.03.2026",
+              "seit": "unbekannt",
+              "details": "Reha nach Schulter-OP",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "16.05.2026",
+              "seit": "unbekannt",
+              "details": "Team- und Aufbautraining nach Schulter-OP",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "10.05.2026",
+              "seit": "unbekannt",
+              "details": "Team- und Aufbautraining nach Schulter-OP",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "22.03.2026",
+              "seit": "unbekannt",
+              "details": "Reha nach Schulter-OP",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "05.04.2026",
+              "seit": "unbekannt",
+              "details": "Reha nach Schulter-OP",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "08.02.2026",
+              "seit": "unbekannt",
+              "details": "Reha nach Schulter-OP",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "26.04.2026",
+              "seit": "unbekannt",
+              "details": "Team- und Aufbautraining nach Schulter-OP",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "15.03.2026",
+              "seit": "unbekannt",
+              "details": "Reha nach Schulter-OP",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "22.02.2026",
+              "seit": "unbekannt",
+              "details": "Reha nach Schulter-OP",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "04.03.2026",
+              "seit": "unbekannt",
+              "details": "Reha nach Schulter-OP",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "12.04.2026",
+              "seit": "unbekannt",
+              "details": "Team- und Aufbautraining nach Schulter-OP",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "15.01.2026",
+              "seit": "unbekannt",
+              "details": "Rehabilitation",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "18.01.2026",
+              "seit": "unbekannt",
+              "details": "Rehabilitation",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "10.02.2026",
+              "seit": "unbekannt",
+              "details": "Reha nach Schulter-OP",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "06.03.2026",
+              "seit": "unbekannt",
+              "details": "Reha nach Schulter-OP",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "02.02.2026",
+              "seit": "unbekannt",
+              "details": "Rehabilitation",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            },
+            {
+              "grund": "unbekannt",
+              "lastUpdate": "03.05.2026",
+              "seit": "unbekannt",
+              "details": "Team- und Aufbautraining nach Schulter-OP",
+              "historie": [],
+              "status": "AUFBAUTRAINING"
+            }
+          ],
+          "status": "AKTIV"
+        },
+        "status": {
+          "grund": "",
+          "lastUpdate": "04.06.2026",
+          "seit": "",
+          "details": "",
+          "historie": [],
+          "bis": null,
+          "status": "NICHT_IN_LIGA"
+        }
+      },
+      "name": "Bos",
+      "id": "34203"
     },
     "34322": {
       "data": {
