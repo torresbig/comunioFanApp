@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "05.06.2026 05:18:17",
+  "lastUpdate": "05.06.2026 15:03:48",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4439,14 +4439,32 @@
     },
     {
       "date": "05.06.2026",
-      "news": [{
-        "date": "05.06.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Manzambi\",\"price\":7485700,\"buyerId\":\"13830745\",\"playerValue\":6780000,\"playerId\":\"34022\",\"buyer\":\"Gerry\"}",
-        "id": "963124813",
-        "playerId": "34022"
-      }]
+      "news": [
+        {
+          "date": "05.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Manzambi\",\"price\":7485700,\"buyerId\":\"13830745\",\"playerValue\":6780000,\"playerId\":\"34022\",\"buyer\":\"Gerry\"}",
+          "id": "963124813",
+          "playerId": "34022"
+        },
+        {
+          "date": "05.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Wimmer (ID: 33507)",
+          "id": "0",
+          "playerId": "33507"
+        },
+        {
+          "date": "05.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"João Palhinha\",\"price\":1030000,\"buyerId\":\"1\",\"playerValue\":970000,\"playerId\":\"34018\",\"buyer\":\"Computer\"}",
+          "id": "963124813",
+          "playerId": "34018"
+        }
+      ]
     },
     {
       "date": "04.06.2026",
