@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "05.06.2026 19:00:08",
+  "lastUpdate": "06.06.2026 05:18:20",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4438,6 +4438,27 @@
       ]
     },
     {
+      "date": "06.06.2026",
+      "news": [
+        {
+          "date": "06.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Brown\",\"price\":7795000,\"buyerId\":\"5949921\",\"playerValue\":7240000,\"playerId\":\"33975\",\"buyer\":\"Sascha\"}",
+          "id": "963145148",
+          "playerId": "33975"
+        },
+        {
+          "date": "06.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kramarić\",\"price\":13020009,\"buyerId\":\"10966300\",\"playerValue\":12720000,\"playerId\":\"32553\",\"buyer\":\"Alexander\"}",
+          "id": "963145148",
+          "playerId": "32553"
+        }
+      ]
+    },
+    {
       "date": "05.06.2026",
       "news": [
         {
@@ -4471,6 +4492,14 @@
           "text": "Statuswechsel: Burcu (34191) ist wieder AKTIV",
           "id": "0",
           "playerId": "34191"
+        },
+        {
+          "date": "05.06.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Karl (34206) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34206"
         }
       ]
     },
