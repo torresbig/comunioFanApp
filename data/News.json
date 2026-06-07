@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "06.06.2026 19:00:09",
+  "lastUpdate": "07.06.2026 05:18:16",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4438,6 +4438,35 @@
       ]
     },
     {
+      "date": "07.06.2026",
+      "news": [
+        {
+          "date": "07.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kabak\",\"price\":4710000,\"buyerId\":\"10967926\",\"playerValue\":4860000,\"playerId\":\"33026\",\"buyer\":\"Tom\"}",
+          "id": "963165689",
+          "playerId": "33026"
+        },
+        {
+          "date": "07.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Siebeking\",\"price\":160000,\"buyerId\":\"5981249\",\"playerValue\":160000,\"playerId\":\"34369\",\"buyer\":\"Thomas\"}",
+          "id": "963165689",
+          "playerId": "34369"
+        },
+        {
+          "date": "07.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Ens\",\"price\":160000,\"buyerId\":\"5981249\",\"playerValue\":160000,\"playerId\":\"34404\",\"buyer\":\"Thomas\"}",
+          "id": "963165689",
+          "playerId": "34404"
+        }
+      ]
+    },
+    {
       "date": "06.06.2026",
       "news": [
         {
@@ -4535,6 +4564,22 @@
           "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"R. Müller\",\"price\":541100,\"buyerId\":\"1\",\"playerValue\":530000,\"playerId\":\"34412\",\"buyer\":\"Computer\"}",
           "id": "963145148",
           "playerId": "34412"
+        },
+        {
+          "date": "06.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Avdullahu\",\"price\":5645300,\"buyerId\":\"1\",\"playerValue\":5330000,\"playerId\":\"34202\",\"buyer\":\"Computer\"}",
+          "id": "963145148",
+          "playerId": "34202"
+        },
+        {
+          "date": "06.06.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Neuer (30755) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "30755"
         }
       ]
     },
