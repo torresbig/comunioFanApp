@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "08.06.2026 05:18:14",
+  "lastUpdate": "08.06.2026 15:03:43",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4463,6 +4463,46 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Jatta\",\"price\":809000,\"buyerId\":\"10966300\",\"playerValue\":840000,\"playerId\":\"32630\",\"buyer\":\"Alexander\"}",
           "id": "963186412",
           "playerId": "32630"
+        },
+        {
+          "date": "08.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Etringer (ID: 34445)",
+          "id": "0",
+          "playerId": "34445"
+        },
+        {
+          "date": "08.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Tom\",\"sellerId\":\"10967926\",\"playerName\":\"Blaswich\",\"price\":620400,\"buyerId\":\"1\",\"playerValue\":610000,\"playerId\":\"31827\",\"buyer\":\"Computer\"}",
+          "id": "963186412",
+          "playerId": "31827"
+        },
+        {
+          "date": "08.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Tom\",\"sellerId\":\"10967926\",\"playerName\":\"Kübler\",\"price\":1462500,\"buyerId\":\"1\",\"playerValue\":1500000,\"playerId\":\"32597\",\"buyer\":\"Computer\"}",
+          "id": "963186412",
+          "playerId": "32597"
+        },
+        {
+          "date": "08.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Tom\",\"sellerId\":\"10967926\",\"playerName\":\"Irié\",\"price\":660300,\"buyerId\":\"1\",\"playerValue\":680000,\"playerId\":\"34183\",\"buyer\":\"Computer\"}",
+          "id": "963186412",
+          "playerId": "34183"
+        },
+        {
+          "date": "08.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Tom\",\"sellerId\":\"10967926\",\"playerName\":\"Bedia\",\"price\":1116200,\"buyerId\":\"1\",\"playerValue\":1170000,\"playerId\":\"33884\",\"buyer\":\"Computer\"}",
+          "id": "963186412",
+          "playerId": "33884"
         }
       ]
     },
