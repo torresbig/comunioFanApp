@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "07.06.2026 19:00:09",
+  "lastUpdate": "08.06.2026 05:18:14",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4434,6 +4434,35 @@
           "text": "{\"seller\":\"Gerry\",\"sellerId\":\"13830745\",\"playerName\":\"Tangvik\",\"price\":406400,\"buyerId\":\"1\",\"playerValue\":390000,\"playerId\":\"34334\",\"buyer\":\"Computer\"}",
           "id": "962929886",
           "playerId": "34334"
+        }
+      ]
+    },
+    {
+      "date": "08.06.2026",
+      "news": [
+        {
+          "date": "08.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Dompé\",\"price\":2499300,\"buyerId\":\"13830745\",\"playerValue\":2490000,\"playerId\":\"34155\",\"buyer\":\"Gerry\"}",
+          "id": "963186412",
+          "playerId": "34155"
+        },
+        {
+          "date": "08.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Makengo\",\"price\":670011,\"buyerId\":\"13548242\",\"playerValue\":700000,\"playerId\":\"33829\",\"buyer\":\"Christopher\"}",
+          "id": "963186412",
+          "playerId": "33829"
+        },
+        {
+          "date": "08.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Jatta\",\"price\":809000,\"buyerId\":\"10966300\",\"playerValue\":840000,\"playerId\":\"32630\",\"buyer\":\"Alexander\"}",
+          "id": "963186412",
+          "playerId": "32630"
         }
       ]
     },
