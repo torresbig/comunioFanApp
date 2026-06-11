@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "11.06.2026 10:00:46",
+  "lastUpdate": "11.06.2026 15:03:18",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4479,6 +4479,22 @@
           "text": "Neuer Spieler: Tanaka (ID: 34450)",
           "id": "0",
           "playerId": "34450"
+        },
+        {
+          "date": "11.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"Banzuzi\",\"price\":978500,\"buyerId\":\"1\",\"playerValue\":970000,\"playerId\":\"34185\",\"buyer\":\"Computer\"}",
+          "id": "963248280",
+          "playerId": "34185"
+        },
+        {
+          "date": "11.06.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gebel  (34042) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34042"
         }
       ]
     },
