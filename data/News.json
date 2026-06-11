@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "11.06.2026 05:18:13",
+  "lastUpdate": "11.06.2026 10:00:46",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4439,14 +4439,48 @@
     },
     {
       "date": "11.06.2026",
-      "news": [{
-        "date": "11.06.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Ansah\",\"price\":1970000,\"buyerId\":\"13830745\",\"playerValue\":1930000,\"playerId\":\"34199\",\"buyer\":\"Gerry\"}",
-        "id": "963248280",
-        "playerId": "34199"
-      }]
+      "news": [
+        {
+          "date": "11.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Ansah\",\"price\":1970000,\"buyerId\":\"13830745\",\"playerValue\":1930000,\"playerId\":\"34199\",\"buyer\":\"Gerry\"}",
+          "id": "963248280",
+          "playerId": "34199"
+        },
+        {
+          "date": "11.06.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"M. Friedrich\",\"newClub\":\"109\",\"oldClub\":\"0\",\"playerID\":\"32311\"}",
+          "id": "0",
+          "playerId": "32311"
+        },
+        {
+          "date": "11.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Eichhorn (ID: 34448)",
+          "id": "0",
+          "playerId": "34448"
+        },
+        {
+          "date": "11.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Uwakhonye (ID: 34449)",
+          "id": "0",
+          "playerId": "34449"
+        },
+        {
+          "date": "11.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Tanaka (ID: 34450)",
+          "id": "0",
+          "playerId": "34450"
+        }
+      ]
     },
     {
       "date": "10.06.2026",
