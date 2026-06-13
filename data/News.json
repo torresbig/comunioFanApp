@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "13.06.2026 05:18:16",
+  "lastUpdate": "13.06.2026 10:03:51",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4479,6 +4479,46 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Couto\",\"price\":1820000,\"buyerId\":\"5981249\",\"playerValue\":1940000,\"playerId\":\"34033\",\"buyer\":\"Thomas\"}",
           "id": "963294082",
           "playerId": "34033"
+        },
+        {
+          "date": "13.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Gregoritsch (ID: 31958)",
+          "id": "0",
+          "playerId": "31958"
+        },
+        {
+          "date": "13.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Simpson-Pusey (ID: 34323)",
+          "id": "0",
+          "playerId": "34323"
+        },
+        {
+          "date": "13.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Gruber (ID: 34454)",
+          "id": "0",
+          "playerId": "34454"
+        },
+        {
+          "date": "13.06.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Krattenmacher\",\"newClub\":\"118\",\"oldClub\":\"1\",\"playerID\":\"33996\"}",
+          "id": "0",
+          "playerId": "33996"
+        },
+        {
+          "date": "13.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Stefan 8\",\"sellerId\":\"6013585\",\"playerName\":\"Kauã Santos\",\"price\":1013700,\"buyerId\":\"1\",\"playerValue\":970000,\"playerId\":\"33855\",\"buyer\":\"Computer\"}",
+          "id": "963294082",
+          "playerId": "33855"
         }
       ]
     },
