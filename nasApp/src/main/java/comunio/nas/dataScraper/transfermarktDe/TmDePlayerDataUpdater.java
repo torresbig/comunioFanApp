@@ -250,7 +250,7 @@ public class TmDePlayerDataUpdater {
 
 				StringBuilder zwischenInfo = new StringBuilder();
 				zwischenInfo.append("#").append(i).append(" Spieler: ").append(name).append(" (ID: ").append(id).append(")").append(" wurde Abgefragt: updateAllPlayerWithMissedData");
-				if (faildRetry) {
+			if (faildRetry) {
 					LOGGER.info("FaildRetry TRUE! : " + zwischenInfo.toString());
 				} else {
 					LOGGER.info(zwischenInfo.toString());
