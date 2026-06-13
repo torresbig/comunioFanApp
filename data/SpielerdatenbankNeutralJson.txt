@@ -4535,7 +4535,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33992"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "8",
+            "zielwert": "12.430.000",
+            "platz": 10,
+            "lastUpdate": "13.06.2026",
+            "typ": "top",
+            "marktwert": "12.280.000",
+            "aenderung": "+150.000"
+          },
+          "link": "https://www.com-analytics.de/player/33992"
+        },
         "spielerDaten": {
           "groesse": "1,73",
           "geburtstag": "28.06.1997",
@@ -4735,8 +4746,7 @@
           "Nikolas Veratschnig",
           "N. Veratschnig",
           "Veratschnig"
-        ],
-        "status": {}
+        ]
       },
       "name": "Veratschnig",
       "id": "33999"
@@ -17698,8 +17708,7 @@
           "D. Huseinbasic",
           "Huseinbasic",
           "Huseinbašić"
-        ],
-        "status": {}
+        ]
       },
       "name": "Huseinbašić",
       "id": "33621"
@@ -18861,8 +18870,7 @@
           "Jonas Omlin",
           "J. Omlin",
           "Omlin"
-        ],
-        "status": {}
+        ]
       },
       "name": "Omlin",
       "id": "33716"
@@ -20890,7 +20898,7 @@
           "groesse": "1,91",
           "geburtstag": "23.05.2007",
           "laenderspiele": 1,
-          "lastUpdate": "03.06.2026",
+          "lastUpdate": "13.06.2026",
           "nebenpositionen": [],
           "trikotNummer": 31,
           "nationalitaet": "Deutschland",
@@ -20903,7 +20911,7 @@
         "wert": 1660000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "03.06.2026",
+          "date": "13.06.2026",
           "haveToCheck": true,
           "name": "Karim Coulibaly",
           "link": "https://www.transfermarkt.de/karim-coulibaly/profil/spieler/1084638",
@@ -21641,7 +21649,7 @@
           "groesse": "1,98",
           "geburtstag": "22.02.2006",
           "laenderspiele": 2,
-          "lastUpdate": "03.06.2026",
+          "lastUpdate": "13.06.2026",
           "nebenpositionen": [],
           "trikotNummer": 29,
           "nationalitaet": "Deutschland",
@@ -21654,7 +21662,7 @@
         "wert": 1250000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "03.06.2026",
+          "date": "13.06.2026",
           "haveToCheck": true,
           "name": "Salim Musah",
           "link": "https://www.transfermarkt.de/salim-musah/profil/spieler/1042472",
@@ -22079,7 +22087,7 @@
     {
       "data": {
         "transfermarktDoDe": {
-          "date": "03.06.2026",
+          "date": "13.06.2026",
           "haveToCheck": true,
           "name": "Wisdom Mike",
           "link": "https://www.transfermarkt.de/wisdom-mike/profil/spieler/1084539",
@@ -22119,7 +22127,7 @@
           "groesse": "1,76",
           "geburtstag": "24.09.2008",
           "laenderspiele": 8,
-          "lastUpdate": "03.06.2026",
+          "lastUpdate": "13.06.2026",
           "nebenpositionen": [],
           "nationalitaet": "Deutschland",
           "laenderspielTore": 3,
@@ -22147,7 +22155,7 @@
     {
       "data": {
         "transfermarktDoDe": {
-          "date": "03.06.2026",
+          "date": "13.06.2026",
           "haveToCheck": true,
           "name": "Florian Hellstern",
           "link": "https://www.transfermarkt.de/florian-hellstern/profil/spieler/1009438",
@@ -22188,7 +22196,7 @@
           "groesse": "1,88",
           "geburtstag": "18.10.2007",
           "laenderspiele": 5,
-          "lastUpdate": "03.06.2026",
+          "lastUpdate": "13.06.2026",
           "nebenpositionen": [],
           "trikotNummer": 44,
           "nationalitaet": "Deutschland",
@@ -23392,7 +23400,7 @@
           "groesse": "1,75",
           "geburtstag": "17.05.1997",
           "laenderspiele": 0,
-          "lastUpdate": "03.06.2026",
+          "lastUpdate": "13.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 17,
@@ -23406,7 +23414,7 @@
         "wert": 1280000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "03.06.2026",
+          "date": "13.06.2026",
           "name": "Alessio Castro-Montes",
           "link": "https://www.transfermarkt.de/alessio-castro-montes/profil/spieler/340166",
           "id": "340166",
@@ -23589,7 +23597,7 @@
           "groesse": "1,76",
           "geburtstag": "01.03.2003",
           "laenderspiele": 22,
-          "lastUpdate": "03.06.2026",
+          "lastUpdate": "13.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 14,
@@ -23603,7 +23611,7 @@
         "wert": 220000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "03.06.2026",
+          "date": "13.06.2026",
           "name": "William Bøving",
           "link": "https://www.transfermarkt.de/william-boving/profil/spieler/610400",
           "id": "610400",
@@ -23650,8 +23658,8 @@
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "10.05.2004",
-          "laenderspiele": 35,
-          "lastUpdate": "03.06.2026",
+          "laenderspiele": 37,
+          "lastUpdate": "13.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 11,
@@ -23665,7 +23673,7 @@
         "wert": 7540000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "03.06.2026",
+          "date": "13.06.2026",
           "name": "Bilal El Khannouss",
           "link": "https://www.transfermarkt.de/bilal-el-khannouss/profil/spieler/654982",
           "id": "654982",
@@ -23773,8 +23781,7 @@
           "Jan Urbich",
           "Urbich",
           "J. Urbich"
-        ],
-        "status": {}
+        ]
       },
       "name": "Urbich",
       "id": "34303"
@@ -24276,7 +24283,7 @@
           "groesse": "1,91",
           "geburtstag": "13.09.2003",
           "laenderspiele": 0,
-          "lastUpdate": "03.06.2026",
+          "lastUpdate": "13.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 11,
@@ -24290,7 +24297,7 @@
         "wert": 3950000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "03.06.2026",
+          "date": "13.06.2026",
           "haveToCheck": true,
           "link": "https://www.transfermarkt.de/younes-ebnoutalib/profil/spieler/692368",
           "name": "Younes Ebnoutalib",
@@ -24629,7 +24636,7 @@
           "groesse": "1,75",
           "geburtstag": "01.09.2006",
           "laenderspiele": 3,
-          "lastUpdate": "03.06.2026",
+          "lastUpdate": "13.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 18,
@@ -24643,7 +24650,7 @@
         "wert": 280000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "03.06.2026",
+          "date": "13.06.2026",
           "haveToCheck": true,
           "name": "Suleiman Sani",
           "link": "https://www.transfermarkt.de/suleiman-sani/profil/spieler/1235583",
@@ -25305,8 +25312,8 @@
         "spielerDaten": {
           "groesse": "1,94",
           "geburtstag": "09.01.2008",
-          "laenderspiele": 0,
-          "lastUpdate": "03.06.2026",
+          "laenderspiele": 1,
+          "lastUpdate": "13.06.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 49,
@@ -25320,7 +25327,7 @@
         "wert": 2330000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "03.06.2026",
+          "date": "13.06.2026",
           "haveToCheck": true,
           "name": "Luca Reggiani",
           "link": "https://www.transfermarkt.de/luca-reggiani/profil/spieler/1074990",
@@ -34608,8 +34615,7 @@
         "onMarket": false,
         "position": "STURM",
         "attribute": [],
-        "possibleNames": [],
-        "status": {}
+        "possibleNames": []
       },
       "name": "Fukuda",
       "id": "33883"
@@ -34709,8 +34715,7 @@
         "onMarket": false,
         "position": "TORHÜTER",
         "attribute": [],
-        "possibleNames": [],
-        "status": {}
+        "possibleNames": []
       },
       "name": "Peretz",
       "id": "33852"
@@ -37394,18 +37399,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "Nur Full Premium",
-            "platz": 10,
-            "lastUpdate": "13.06.2026",
-            "typ": "top",
-            "marktwert": "160.000",
-            "aenderung": "Nur Full Premium"
-          },
-          "link": "https://www.com-analytics.de/player/34453"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34453"},
         "spielerDaten": {
           "groesse": "",
           "geburtstag": "",
@@ -37608,24 +37602,7 @@
         "onMarket": false,
         "position": "STURM",
         "attribute": [],
-        "possibleNames": [],
-        "comunioStatus": {
-          "grund": "unbekannt",
-          "lastUpdate": "13.06.2026",
-          "seit": "unbekannt",
-          "details": "",
-          "bis": "unbekannt",
-          "historie": [],
-          "status": "AKTIV"
-        },
-        "status": {
-          "grund": "unbekannt",
-          "lastUpdate": "13.06.2026",
-          "seit": "unbekannt",
-          "details": "",
-          "historie": [],
-          "status": "AKTIV"
-        }
+        "possibleNames": []
       },
       "name": "Gregoritsch",
       "id": "31958"
@@ -37675,24 +37652,7 @@
         "onMarket": false,
         "position": "ABWEHR",
         "attribute": [],
-        "possibleNames": [],
-        "comunioStatus": {
-          "grund": "unbekannt",
-          "lastUpdate": "13.06.2026",
-          "seit": "unbekannt",
-          "details": "",
-          "bis": "unbekannt",
-          "historie": [],
-          "status": "AKTIV"
-        },
-        "status": {
-          "grund": "unbekannt",
-          "lastUpdate": "13.06.2026",
-          "seit": "unbekannt",
-          "details": "",
-          "historie": [],
-          "status": "AKTIV"
-        }
+        "possibleNames": []
       },
       "name": "Simpson-Pusey",
       "id": "34323"
@@ -37753,24 +37713,7 @@
         "onMarket": false,
         "position": "ABWEHR",
         "attribute": [],
-        "possibleNames": [],
-        "comunioStatus": {
-          "grund": "unbekannt",
-          "lastUpdate": "13.06.2026",
-          "seit": "unbekannt",
-          "details": "",
-          "bis": "unbekannt",
-          "historie": [],
-          "status": "AKTIV"
-        },
-        "status": {
-          "grund": "unbekannt",
-          "lastUpdate": "13.06.2026",
-          "seit": "unbekannt",
-          "details": "",
-          "historie": [],
-          "status": "AKTIV"
-        }
+        "possibleNames": []
       },
       "name": "Gruber",
       "id": "34454"
