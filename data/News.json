@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "16.06.2026 05:15:09",
+  "lastUpdate": "16.06.2026 10:05:26",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4434,6 +4434,35 @@
           "text": "{\"seller\":\"Gerry\",\"sellerId\":\"13830745\",\"playerName\":\"Tangvik\",\"price\":406400,\"buyerId\":\"1\",\"playerValue\":390000,\"playerId\":\"34334\",\"buyer\":\"Computer\"}",
           "id": "962929886",
           "playerId": "34334"
+        }
+      ]
+    },
+    {
+      "date": "16.06.2026",
+      "news": [
+        {
+          "date": "16.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Van Den Bosch (ID: 34455)",
+          "id": "0",
+          "playerId": "34455"
+        },
+        {
+          "date": "16.06.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"F. Onyeka\",\"newClub\":\"118\",\"oldClub\":\"8\",\"playerID\":\"34427\"}",
+          "id": "0",
+          "playerId": "34427"
+        },
+        {
+          "date": "16.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Chiarodia\",\"price\":938200,\"buyerId\":\"1\",\"playerValue\":850000,\"playerId\":\"33601\",\"buyer\":\"Computer\"}",
+          "id": "963352876",
+          "playerId": "33601"
         }
       ]
     },
