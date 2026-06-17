@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "17.06.2026 05:20:00",
+  "lastUpdate": "17.06.2026 10:00:38",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4439,14 +4439,24 @@
     },
     {
       "date": "17.06.2026",
-      "news": [{
-        "date": "17.06.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Tohumcu\",\"price\":1000000,\"buyerId\":\"13654613\",\"playerValue\":820000,\"playerId\":\"33574\",\"buyer\":\"Christoph\"}",
-        "id": "963365996",
-        "playerId": "33574"
-      }]
+      "news": [
+        {
+          "date": "17.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Tohumcu\",\"price\":1000000,\"buyerId\":\"13654613\",\"playerValue\":820000,\"playerId\":\"33574\",\"buyer\":\"Christoph\"}",
+          "id": "963365996",
+          "playerId": "33574"
+        },
+        {
+          "date": "17.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Obermair (ID: 34456)",
+          "id": "0",
+          "playerId": "34456"
+        }
+      ]
     },
     {
       "date": "16.06.2026",
