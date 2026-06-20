@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "20.06.2026 10:00:29",
+  "lastUpdate": "20.06.2026 15:04:50",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4439,14 +4439,24 @@
     },
     {
       "date": "20.06.2026",
-      "news": [{
-        "date": "20.06.2026",
-        "art": "NEW_PLAYER",
-        "gelesen": false,
-        "text": "Neuer Spieler: L. Philipp (ID: 33313)",
-        "id": "0",
-        "playerId": "33313"
-      }]
+      "news": [
+        {
+          "date": "20.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: L. Philipp (ID: 33313)",
+          "id": "0",
+          "playerId": "33313"
+        },
+        {
+          "date": "20.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"Ens\",\"price\":177300,\"buyerId\":\"1\",\"playerValue\":170000,\"playerId\":\"34404\",\"buyer\":\"Computer\"}",
+          "id": "963431379",
+          "playerId": "34404"
+        }
+      ]
     },
     {
       "date": "19.06.2026",
