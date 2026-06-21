@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "21.06.2026 05:20:05",
+  "lastUpdate": "21.06.2026 10:00:18",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4439,14 +4439,24 @@
     },
     {
       "date": "21.06.2026",
-      "news": [{
-        "date": "21.06.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Philippe\",\"price\":1400000,\"buyerId\":\"13806423\",\"playerValue\":1350000,\"playerId\":\"34216\",\"buyer\":\"Florian\"}",
-        "id": "963439012",
-        "playerId": "34216"
-      }]
+      "news": [
+        {
+          "date": "21.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Philippe\",\"price\":1400000,\"buyerId\":\"13806423\",\"playerValue\":1350000,\"playerId\":\"34216\",\"buyer\":\"Florian\"}",
+          "id": "963439012",
+          "playerId": "34216"
+        },
+        {
+          "date": "21.06.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Weiser\",\"newClub\":\"6\",\"oldClub\":\"0\",\"playerID\":\"31929\"}",
+          "id": "0",
+          "playerId": "31929"
+        }
+      ]
     },
     {
       "date": "20.06.2026",
