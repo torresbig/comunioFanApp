@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "22.06.2026 05:20:03",
+  "lastUpdate": "22.06.2026 10:05:56",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4439,14 +4439,48 @@
     },
     {
       "date": "22.06.2026",
-      "news": [{
-        "date": "22.06.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Lomb\",\"price\":160000,\"buyerId\":\"5981249\",\"playerValue\":160000,\"playerId\":\"32007\",\"buyer\":\"Thomas\"}",
-        "id": "963453944",
-        "playerId": "32007"
-      }]
+      "news": [
+        {
+          "date": "22.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Lomb\",\"price\":160000,\"buyerId\":\"5981249\",\"playerValue\":160000,\"playerId\":\"32007\",\"buyer\":\"Thomas\"}",
+          "id": "963453944",
+          "playerId": "32007"
+        },
+        {
+          "date": "22.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Barkowsky (ID: 34462)",
+          "id": "0",
+          "playerId": "34462"
+        },
+        {
+          "date": "22.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Weiser (ID: 31929)",
+          "id": "0",
+          "playerId": "31929"
+        },
+        {
+          "date": "22.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Itten (ID: 33520)",
+          "id": "0",
+          "playerId": "33520"
+        },
+        {
+          "date": "22.06.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Weiser (31929) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "31929"
+        }
+      ]
     },
     {
       "date": "21.06.2026",
