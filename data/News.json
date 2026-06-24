@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "24.06.2026 05:19:58",
+  "lastUpdate": "24.06.2026 10:05:22",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4439,14 +4439,32 @@
     },
     {
       "date": "24.06.2026",
-      "news": [{
-        "date": "24.06.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Diehl\",\"price\":290000,\"buyerId\":\"5949921\",\"playerValue\":290000,\"playerId\":\"33718\",\"buyer\":\"Sascha\"}",
-        "id": "963485308",
-        "playerId": "33718"
-      }]
+      "news": [
+        {
+          "date": "24.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Diehl\",\"price\":290000,\"buyerId\":\"5949921\",\"playerValue\":290000,\"playerId\":\"33718\",\"buyer\":\"Sascha\"}",
+          "id": "963485308",
+          "playerId": "33718"
+        },
+        {
+          "date": "24.06.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Keitel\",\"newClub\":\"68\",\"oldClub\":\"14\",\"playerID\":\"33211\"}",
+          "id": "0",
+          "playerId": "33211"
+        },
+        {
+          "date": "24.06.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ryerson (33141) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33141"
+        }
+      ]
     },
     {
       "date": "23.06.2026",
