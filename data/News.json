@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "26.06.2026 05:19:56",
+  "lastUpdate": "26.06.2026 10:05:32",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4455,6 +4455,38 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Coufal\",\"price\":5880000,\"buyerId\":\"6013585\",\"playerValue\":5660000,\"playerId\":\"34257\",\"buyer\":\"Stefan 8\"}",
           "id": "963518329",
           "playerId": "34257"
+        },
+        {
+          "date": "26.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Chandler (ID: 31743)",
+          "id": "0",
+          "playerId": "31743"
+        },
+        {
+          "date": "26.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Batista Meier (ID: 33219)",
+          "id": "0",
+          "playerId": "33219"
+        },
+        {
+          "date": "26.06.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Darvich\",\"newClub\":\"118\",\"oldClub\":\"14\",\"playerID\":\"34215\"}",
+          "id": "0",
+          "playerId": "34215"
+        },
+        {
+          "date": "26.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"M. Friedrich\",\"price\":1390500,\"buyerId\":\"1\",\"playerValue\":1240000,\"playerId\":\"32311\",\"buyer\":\"Computer\"}",
+          "id": "963518329",
+          "playerId": "32311"
         }
       ]
     },
