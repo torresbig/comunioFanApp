@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "25.06.2026 22:00:09",
+  "lastUpdate": "26.06.2026 05:19:56",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4438,15 +4438,46 @@
       ]
     },
     {
+      "date": "26.06.2026",
+      "news": [
+        {
+          "date": "26.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Claude-Maurice\",\"price\":5580000,\"buyerId\":\"6013585\",\"playerValue\":5450000,\"playerId\":\"34063\",\"buyer\":\"Stefan 8\"}",
+          "id": "963518329",
+          "playerId": "34063"
+        },
+        {
+          "date": "26.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Coufal\",\"price\":5880000,\"buyerId\":\"6013585\",\"playerValue\":5660000,\"playerId\":\"34257\",\"buyer\":\"Stefan 8\"}",
+          "id": "963518329",
+          "playerId": "34257"
+        }
+      ]
+    },
+    {
       "date": "25.06.2026",
-      "news": [{
-        "date": "25.06.2026",
-        "art": "SPIELERSTATUS",
-        "gelesen": false,
-        "text": "Statuswechsel: Muheim (34148) ist jetzt VERLETZT",
-        "id": "0",
-        "playerId": "34148"
-      }]
+      "news": [
+        {
+          "date": "25.06.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Muheim (34148) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34148"
+        },
+        {
+          "date": "25.06.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Brown (33975) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33975"
+        }
+      ]
     },
     {
       "date": "24.06.2026",
