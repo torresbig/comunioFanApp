@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "27.06.2026 05:19:59",
+  "lastUpdate": "27.06.2026 10:00:42",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4439,14 +4439,32 @@
     },
     {
       "date": "27.06.2026",
-      "news": [{
-        "date": "27.06.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Moreira\",\"price\":12050009,\"buyerId\":\"10966300\",\"playerValue\":13150000,\"playerId\":\"34461\",\"buyer\":\"Alexander\"}",
-        "id": "963535670",
-        "playerId": "34461"
-      }]
+      "news": [
+        {
+          "date": "27.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Moreira\",\"price\":12050009,\"buyerId\":\"10966300\",\"playerValue\":13150000,\"playerId\":\"34461\",\"buyer\":\"Alexander\"}",
+          "id": "963535670",
+          "playerId": "34461"
+        },
+        {
+          "date": "27.06.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Stalmach (ID: 34463)",
+          "id": "0",
+          "playerId": "34463"
+        },
+        {
+          "date": "27.06.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Noll\",\"newClub\":\"81\",\"oldClub\":\"62\",\"playerID\":\"33397\"}",
+          "id": "0",
+          "playerId": "33397"
+        }
+      ]
     },
     {
       "date": "26.06.2026",
