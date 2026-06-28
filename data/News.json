@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "27.06.2026 22:00:09",
+  "lastUpdate": "28.06.2026 05:19:50",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4417,6 +4417,27 @@
       ]
     },
     {
+      "date": "28.06.2026",
+      "news": [
+        {
+          "date": "28.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Matanović\",\"price\":7700000,\"buyerId\":\"13806423\",\"playerValue\":7270000,\"playerId\":\"33783\",\"buyer\":\"Florian\"}",
+          "id": "963549118",
+          "playerId": "33783"
+        },
+        {
+          "date": "28.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Hack\",\"price\":3800000,\"buyerId\":\"13654613\",\"playerValue\":3470000,\"playerId\":\"32787\",\"buyer\":\"Christoph\"}",
+          "id": "963549118",
+          "playerId": "32787"
+        }
+      ]
+    },
+    {
       "date": "28.05.2026",
       "news": [
         {
@@ -4463,6 +4484,14 @@
           "text": "{\"playerName\":\"Noll\",\"newClub\":\"81\",\"oldClub\":\"62\",\"playerID\":\"33397\"}",
           "id": "0",
           "playerId": "33397"
+        },
+        {
+          "date": "27.06.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ryerson (33141) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33141"
         }
       ]
     },
