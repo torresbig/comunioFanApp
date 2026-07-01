@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "01.07.2026 05:19:44",
+  "lastUpdate": "01.07.2026 10:03:28",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -6324,14 +6324,56 @@
     },
     {
       "date": "01.07.2026",
-      "news": [{
-        "date": "01.07.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Benjamin\",\"price\":180000,\"buyerId\":\"13830745\",\"playerValue\":180000,\"playerId\":\"34301\",\"buyer\":\"Gerry\"}",
-        "id": "963595703",
-        "playerId": "34301"
-      }]
+      "news": [
+        {
+          "date": "01.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Benjamin\",\"price\":180000,\"buyerId\":\"13830745\",\"playerValue\":180000,\"playerId\":\"34301\",\"buyer\":\"Gerry\"}",
+          "id": "963595703",
+          "playerId": "34301"
+        },
+        {
+          "date": "01.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Pimpong (ID: 34465)",
+          "id": "0",
+          "playerId": "34465"
+        },
+        {
+          "date": "01.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Kinzig (ID: 34464)",
+          "id": "0",
+          "playerId": "34464"
+        },
+        {
+          "date": "01.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gebel  (34042) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34042"
+        },
+        {
+          "date": "01.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gadou (34422) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34422"
+        },
+        {
+          "date": "01.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Glatzel (33375) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33375"
+        }
+      ]
     },
     {
       "date": "01.06.2026",
