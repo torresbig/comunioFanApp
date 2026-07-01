@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "30.06.2026 22:00:09",
+  "lastUpdate": "01.07.2026 05:19:44",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -72,14 +72,32 @@
     },
     {
       "date": "30.06.2026",
-      "news": [{
-        "date": "30.06.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Zimmerschied\",\"price\":1400600,\"buyerId\":\"13830745\",\"playerValue\":1030000,\"playerId\":\"34177\",\"buyer\":\"Gerry\"}",
-        "id": "963576462",
-        "playerId": "34177"
-      }]
+      "news": [
+        {
+          "date": "30.06.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Zimmerschied\",\"price\":1400600,\"buyerId\":\"13830745\",\"playerValue\":1030000,\"playerId\":\"34177\",\"buyer\":\"Gerry\"}",
+          "id": "963576462",
+          "playerId": "34177"
+        },
+        {
+          "date": "30.06.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gayret (34409) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34409"
+        },
+        {
+          "date": "30.06.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kalas (32331) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "32331"
+        }
+      ]
     },
     {
       "date": "30.05.2026",
@@ -6303,6 +6321,17 @@
           "playerId": "34339"
         }
       ]
+    },
+    {
+      "date": "01.07.2026",
+      "news": [{
+        "date": "01.07.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Benjamin\",\"price\":180000,\"buyerId\":\"13830745\",\"playerValue\":180000,\"playerId\":\"34301\",\"buyer\":\"Gerry\"}",
+        "id": "963595703",
+        "playerId": "34301"
+      }]
     },
     {
       "date": "01.06.2026",
