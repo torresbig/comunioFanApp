@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "02.07.2026 05:19:36",
+  "lastUpdate": "02.07.2026 10:00:33",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -6015,14 +6015,40 @@
     },
     {
       "date": "02.07.2026",
-      "news": [{
-        "date": "02.07.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Treu\",\"price\":1660001,\"buyerId\":\"5981249\",\"playerValue\":1500000,\"playerId\":\"33947\",\"buyer\":\"Thomas\"}",
-        "id": "963611495",
-        "playerId": "33947"
-      }]
+      "news": [
+        {
+          "date": "02.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Treu\",\"price\":1660001,\"buyerId\":\"5981249\",\"playerValue\":1500000,\"playerId\":\"33947\",\"buyer\":\"Thomas\"}",
+          "id": "963611495",
+          "playerId": "33947"
+        },
+        {
+          "date": "02.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Nsoki\",\"newClub\":\"109\",\"oldClub\":\"62\",\"playerID\":\"33669\"}",
+          "id": "0",
+          "playerId": "33669"
+        },
+        {
+          "date": "02.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Ruoppi (ID: 34467)",
+          "id": "0",
+          "playerId": "34467"
+        },
+        {
+          "date": "02.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Saibari (ID: 34466)",
+          "id": "0",
+          "playerId": "34466"
+        }
+      ]
     },
     {
       "date": "02.06.2026",
