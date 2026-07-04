@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "04.07.2026 05:19:45",
+  "lastUpdate": "04.07.2026 10:00:37",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -5845,14 +5845,40 @@
     },
     {
       "date": "04.07.2026",
-      "news": [{
-        "date": "04.07.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Labrović\",\"price\":160000,\"buyerId\":\"5949921\",\"playerValue\":160000,\"playerId\":\"33990\",\"buyer\":\"Sascha\"}",
-        "id": "963645109",
-        "playerId": "33990"
-      }]
+      "news": [
+        {
+          "date": "04.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Labrović\",\"price\":160000,\"buyerId\":\"5949921\",\"playerValue\":160000,\"playerId\":\"33990\",\"buyer\":\"Sascha\"}",
+          "id": "963645109",
+          "playerId": "33990"
+        },
+        {
+          "date": "04.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Leszczyński  (ID: 34470)",
+          "id": "0",
+          "playerId": "34470"
+        },
+        {
+          "date": "04.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Brown\",\"newClub\":\"1\",\"oldClub\":\"9\",\"playerID\":\"33975\"}",
+          "id": "0",
+          "playerId": "33975"
+        },
+        {
+          "date": "04.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Zagadou (ID: 32773)",
+          "id": "0",
+          "playerId": "32773"
+        }
+      ]
     },
     {
       "date": "04.06.2026",
