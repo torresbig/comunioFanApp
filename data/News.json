@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "05.07.2026 05:19:50",
+  "lastUpdate": "05.07.2026 10:00:18",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -5800,14 +5800,24 @@
     },
     {
       "date": "05.07.2026",
-      "news": [{
-        "date": "05.07.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Schäfer\",\"price\":800000,\"buyerId\":\"13806423\",\"playerValue\":740000,\"playerId\":\"33550\",\"buyer\":\"Florian\"}",
-        "id": "963660629",
-        "playerId": "33550"
-      }]
+      "news": [
+        {
+          "date": "05.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Schäfer\",\"price\":800000,\"buyerId\":\"13806423\",\"playerValue\":740000,\"playerId\":\"33550\",\"buyer\":\"Florian\"}",
+          "id": "963660629",
+          "playerId": "33550"
+        },
+        {
+          "date": "05.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Erevbenagie (ID: 34471)",
+          "id": "0",
+          "playerId": "34471"
+        }
+      ]
     },
     {
       "date": "05.06.2026",
