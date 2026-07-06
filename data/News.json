@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "06.07.2026 19:00:10",
+  "lastUpdate": "06.07.2026 22:05:57",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -5683,14 +5683,32 @@
     },
     {
       "date": "06.07.2026",
-      "news": [{
-        "date": "06.07.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Hollerbach\",\"price\":1240000,\"buyerId\":\"5981249\",\"playerValue\":1290000,\"playerId\":\"33830\",\"buyer\":\"Thomas\"}",
-        "id": "963678207",
-        "playerId": "33830"
-      }]
+      "news": [
+        {
+          "date": "06.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Hollerbach\",\"price\":1240000,\"buyerId\":\"5981249\",\"playerValue\":1290000,\"playerId\":\"33830\",\"buyer\":\"Thomas\"}",
+          "id": "963678207",
+          "playerId": "33830"
+        },
+        {
+          "date": "06.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Saibari (34466) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34466"
+        },
+        {
+          "date": "06.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kalas (32331) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32331"
+        }
+      ]
     },
     {
       "date": "06.06.2026",
