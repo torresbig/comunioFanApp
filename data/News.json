@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "06.07.2026 22:05:57",
+  "lastUpdate": "07.07.2026 05:19:52",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -5641,6 +5641,27 @@
           "text": "{\"seller\":\"Tom\",\"sellerId\":\"10967926\",\"playerName\":\"Bedia\",\"price\":1116200,\"buyerId\":\"1\",\"playerValue\":1170000,\"playerId\":\"33884\",\"buyer\":\"Computer\"}",
           "id": "963186412",
           "playerId": "33884"
+        }
+      ]
+    },
+    {
+      "date": "07.07.2026",
+      "news": [
+        {
+          "date": "07.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Stark\",\"price\":570000,\"buyerId\":\"13830745\",\"playerValue\":610000,\"playerId\":\"32120\",\"buyer\":\"Gerry\"}",
+          "id": "963695278",
+          "playerId": "32120"
+        },
+        {
+          "date": "07.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"M. Eggestein\",\"price\":3927401,\"buyerId\":\"11683432\",\"playerValue\":3370000,\"playerId\":\"32398\",\"buyer\":\"Simon\"}",
+          "id": "963695278",
+          "playerId": "32398"
         }
       ]
     },
