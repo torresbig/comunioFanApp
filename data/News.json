@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "08.07.2026 19:00:09",
+  "lastUpdate": "09.07.2026 15:06:54",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -5561,6 +5561,35 @@
           "text": "Neuer Spieler: Lidberg (ID: 34447)",
           "id": "0",
           "playerId": "34447"
+        }
+      ]
+    },
+    {
+      "date": "09.07.2026",
+      "news": [
+        {
+          "date": "09.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"K. Müller\",\"newClub\":\"10\",\"oldClub\":\"0\",\"playerID\":\"32225\"}",
+          "id": "0",
+          "playerId": "32225"
+        },
+        {
+          "date": "09.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Undav\",\"price\":13290000,\"buyerId\":\"5981249\",\"playerValue\":12130000,\"playerId\":\"33832\",\"buyer\":\"Thomas\"}",
+          "id": "963740790",
+          "playerId": "33832"
+        },
+        {
+          "date": "09.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"Hermann\",\"price\":168000,\"buyerId\":\"1\",\"playerValue\":160000,\"playerId\":\"34145\",\"buyer\":\"Computer\"}",
+          "id": "963740790",
+          "playerId": "34145"
         }
       ]
     },
