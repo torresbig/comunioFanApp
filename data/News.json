@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "10.07.2026 05:20:02",
+  "lastUpdate": "10.07.2026 10:00:47",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -5529,14 +5529,32 @@
     },
     {
       "date": "10.07.2026",
-      "news": [{
-        "date": "10.07.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Batista Meier\",\"price\":1279000,\"buyerId\":\"6013585\",\"playerValue\":1130000,\"playerId\":\"33219\",\"buyer\":\"Stefan 8\"}",
-        "id": "963757978",
-        "playerId": "33219"
-      }]
+      "news": [
+        {
+          "date": "10.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Batista Meier\",\"price\":1279000,\"buyerId\":\"6013585\",\"playerValue\":1130000,\"playerId\":\"33219\",\"buyer\":\"Stefan 8\"}",
+          "id": "963757978",
+          "playerId": "33219"
+        },
+        {
+          "date": "10.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Wójcik  (ID: 34472)",
+          "id": "0",
+          "playerId": "34472"
+        },
+        {
+          "date": "10.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: K. Müller (ID: 32225)",
+          "id": "0",
+          "playerId": "32225"
+        }
+      ]
     },
     {
       "date": "10.06.2026",
