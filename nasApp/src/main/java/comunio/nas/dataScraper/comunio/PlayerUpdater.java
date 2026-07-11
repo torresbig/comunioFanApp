@@ -1,11 +1,8 @@
 package comunio.nas.dataScraper.comunio;
 
 import java.time.Instant;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -30,15 +27,14 @@ import comunio.nas.objects.player.Spielerstats;
 import comunio.nas.objects.player.Status;
 import comunio.nas.objects.user.User;
 import comunio.nas.util.HttpHeaderUtil;
+import comunio.nas.util.StatusManager;
 import comunio.nas.util.player.PlayerHelper;
 
 public class PlayerUpdater {
 
 	private static final Logger LOGGER = LogManager.getLogger(PlayerUpdater.class);
 
-	public static void updatePlayers(boolean isNewSeason, JSONArray clubDB, JSONObject playerDBObject,
-			JSONArray marketValueDB, Map<String, String> playerToUserMap, NewsManager newsManager,
-			MatchdayInfo currentMatchdayInfo, JSONObject notInLigaDBObj, LastUpdates lastUpdates, User user) {
+	public static void updatePlayers(boolean isNewSeason, JSONArray clubDB, JSONObject playerDBObject, JSONArray marketValueDB, Map<String, String> playerToUserMap, NewsManager newsManager, MatchdayInfo currentMatchdayInfo, JSONObject notInLigaDBObj, LastUpdates lastUpdates, User user, StatusManager statusManager) {
 
 		JSONArray playerDB = playerDBObject.optJSONArray("playerDB");
 		if (playerDB == null) {
@@ -46,14 +42,11 @@ public class PlayerUpdater {
 			return;
 		}
 
-		String lastBigUpdate = lastUpdates.getPlayerDbFull() != null
-				? new ComunioDate(Date.from(lastUpdates.getPlayerDbFull())).toString()
-				: null;
+		String lastBigUpdate = lastUpdates.getPlayerDbFull() != null ? new ComunioDate(Date.from(lastUpdates.getPlayerDbFull())).toString() : null;
 		;// playerDBObject.optString("lastBigUpdate", null);
 		int lastProcessedMatchday = playerDBObject.optInt("lastProcessedMatchday", 0);
 		int currentMatchday = currentMatchdayInfo.getCurrentMatchday();
-		LOGGER.log(Level.INFO,
-				"Aktueller Spieltag: " + currentMatchday + ", zuletzt verarbeitet: " + lastProcessedMatchday);
+		LOGGER.log(Level.INFO, "Aktueller Spieltag: " + currentMatchday + ", zuletzt verarbeitet: " + lastProcessedMatchday);
 
 		// ------------Große Detailabfrage, wenn BigUpdate fällig oder noch keines
 		// gemacht wurde --------------
@@ -63,29 +56,21 @@ public class PlayerUpdater {
 		try {
 			if (lastBigUpdate == null || lastBigUpdate.isBlank() || isNewSeason) {
 				if (ComunioDataUpdater.uld.isDebug()) {
-					getDetailsForAllPlayerFast(clubDB, playerDBObject, marketValueDB, playerToUserMap, newsManager,
-							currentMatchdayInfo, lastUpdates, user);
+					getDetailsForAllPlayerFast(clubDB, playerDBObject, marketValueDB, playerToUserMap, newsManager, currentMatchdayInfo, lastUpdates, user, statusManager);
 				} else {
-					getDetailsForAllPlayer(clubDB, playerDBObject, marketValueDB, playerToUserMap, newsManager,
-							currentMatchdayInfo, lastUpdates, user);
+					getDetailsForAllPlayer(clubDB, playerDBObject, marketValueDB, playerToUserMap, newsManager, currentMatchdayInfo, lastUpdates, user, statusManager);
 				}
-				LOGGER.log(Level.INFO,
-						"Detailabfrage aller spieler durchgeführt, da lastBigUpdate nicht bekannt war");
-			} else if (currentMatchdayInfo.getPointsMatchday() > 0
-					&& currentMatchdayInfo.isNewMatchday(lastProcessedMatchday)
-					&& currentMatchdayInfo.getPointsMatchday() != lastProcessedMatchday) {
+				LOGGER.log(Level.INFO, "Detailabfrage aller spieler durchgeführt, da lastBigUpdate nicht bekannt war");
+			} else if (currentMatchdayInfo.getPointsMatchday() > 0 && currentMatchdayInfo.isNewMatchday(lastProcessedMatchday) && currentMatchdayInfo.getPointsMatchday() != lastProcessedMatchday) {
 				if (currentMatchdayInfo.canFetchPoints()) {
 					if (ComunioDataUpdater.uld.isDebug()) {
-						getDetailsForAllPlayerFast(clubDB, playerDBObject, marketValueDB, playerToUserMap, newsManager,
-								currentMatchdayInfo, lastUpdates, user);
+						getDetailsForAllPlayerFast(clubDB, playerDBObject, marketValueDB, playerToUserMap, newsManager, currentMatchdayInfo, lastUpdates, user, statusManager);
 					} else {
-						getDetailsForAllPlayer(clubDB, playerDBObject, marketValueDB, playerToUserMap, newsManager,
-								currentMatchdayInfo, lastUpdates, user);
+						getDetailsForAllPlayer(clubDB, playerDBObject, marketValueDB, playerToUserMap, newsManager, currentMatchdayInfo, lastUpdates, user, statusManager);
 					}
 					LOGGER.log(Level.INFO, "Detailabfrage aller spieler durchgeführt, da neuer Spieltag war!");
 				} else {
-					LOGGER.log(Level.INFO,
-							"Abfrage noch nicht möglich: Punkte nicht verfügbar (vor 5 Uhr nach Kickoff oder Spieltag nicht beendet)");
+					LOGGER.log(Level.INFO, "Abfrage noch nicht möglich: Punkte nicht verfügbar (vor 5 Uhr nach Kickoff oder Spieltag nicht beendet)");
 				}
 			}
 		} catch (Exception e) {
@@ -93,8 +78,7 @@ public class PlayerUpdater {
 		}
 
 		long endTime = System.nanoTime(); // Endzeit für die Messung
-		System.out.println(
-				"Ladezeit Playerdaten (detail / each DB-Player): " + (endTime - startTime) / 1_000_000 + " ms");
+		System.out.println("Ladezeit Playerdaten (detail / each DB-Player): " + (endTime - startTime) / 1_000_000 + " ms");
 
 		// ----------Wenn noch kein Update oder am selben Tag noch keins gemacht wurde
 		// -----------------------
@@ -102,9 +86,7 @@ public class PlayerUpdater {
 		// Abfrage-------------------------------------------------------------------------
 		startTime = System.nanoTime(); // Startzeit für die Performance-Messung
 
-		String lastU = lastUpdates.getPlayerDbShort() != null
-				? new ComunioDate(Date.from(lastUpdates.getPlayerDbShort())).toString()
-				: null;
+		String lastU = lastUpdates.getPlayerDbShort() != null ? new ComunioDate(Date.from(lastUpdates.getPlayerDbShort())).toString() : null;
 		try {
 			ComunioDate lastUpdate = null;
 			if (lastU != null) {
@@ -112,8 +94,7 @@ public class PlayerUpdater {
 			}
 
 			if (lastUpdate == null || lastUpdate.before(new ComunioDate()) || isNewSeason) {
-				processClub(clubDB, playerDBObject, marketValueDB, playerToUserMap, newsManager, currentMatchdayInfo,
-						notInLigaDBObj, lastUpdates);
+				processClub(clubDB, playerDBObject, marketValueDB, playerToUserMap, newsManager, currentMatchdayInfo, notInLigaDBObj, lastUpdates, statusManager);
 				LOGGER.log(Level.INFO, "Spielerabfrage über Clubs durchgeführt! ");
 			}
 
@@ -126,9 +107,7 @@ public class PlayerUpdater {
 
 	}
 
-	static void getDetailsForAllPlayer(JSONArray clubDB, JSONObject playerDBObject, JSONArray marketValueDB,
-			Map<String, String> playerToUserMap, NewsManager newsManager, MatchdayInfo currentMatchdayInfo,
-			LastUpdates lastUpdates, User user) {
+	static void getDetailsForAllPlayer(JSONArray clubDB, JSONObject playerDBObject, JSONArray marketValueDB, Map<String, String> playerToUserMap, NewsManager newsManager, MatchdayInfo currentMatchdayInfo, LastUpdates lastUpdates, User user, StatusManager statusManager) {
 
 		JSONArray playerDB = playerDBObject.optJSONArray("playerDB");
 		if (playerDB == null) {
@@ -137,7 +116,7 @@ public class PlayerUpdater {
 		}
 		for (int i = 0; i < playerDB.length(); i++) {
 			JSONObject player = playerDB.getJSONObject(i);
-			loadPlayerData(player, playerToUserMap, newsManager, playerDBObject, user, lastUpdates);
+			loadPlayerData(player, playerToUserMap, newsManager, playerDBObject, user, lastUpdates, statusManager);
 			playerDBObject.put("lastBigUpdate", new ComunioDate());
 			// TODO: DATUM RAUS
 			lastUpdates.setPlayerDbFull(Instant.now());
@@ -160,9 +139,7 @@ public class PlayerUpdater {
 	 * Durchführung. Die Thread-Sicherheit für {@code playerDBObject} und
 	 * {@code playerToUserMap} wird dabei gewährleistet.
 	 */
-	static void getDetailsForAllPlayerFast(JSONArray clubDB, JSONObject playerDBObject, JSONArray marketValueDB,
-			Map<String, String> playerToUserMap, NewsManager newsManager, MatchdayInfo currentMatchdayInfo,
-			LastUpdates lastUpdates, User user) {
+	static void getDetailsForAllPlayerFast(JSONArray clubDB, JSONObject playerDBObject, JSONArray marketValueDB, Map<String, String> playerToUserMap, NewsManager newsManager, MatchdayInfo currentMatchdayInfo, LastUpdates lastUpdates, User user, StatusManager statusManager) {
 
 		JSONArray playerDB = playerDBObject.optJSONArray("playerDB");
 		if (playerDB == null) {
@@ -188,8 +165,7 @@ public class PlayerUpdater {
 						// Schreibzugriffe auf shared Strukturen (playerDBObject, playerToUserMap,
 						// newsManager)
 						synchronized (playerDBObject) {
-							updateSpielerFromJson(currentPlayer, apiPlayer, concurrentPlayerMap, newsManager,
-									playerDBObject, lastUpdates);
+							updateSpielerFromJson(currentPlayer, apiPlayer, concurrentPlayerMap, newsManager, playerDBObject, lastUpdates, statusManager);
 						}
 					}
 				} catch (Exception e) {
@@ -226,9 +202,7 @@ public class PlayerUpdater {
 	 * Punktehistorie (nur bei abgeschlossenem Spieltag) - Aktualisiert
 	 * Marktwert-Historie (täglich)
 	 */
-	static void processClub(JSONArray clubDB, JSONObject playerDBObject, JSONArray marketValueDB,
-			Map<String, String> playerToUserMap, NewsManager newsManager, MatchdayInfo currentMatchdayInfo,
-			JSONObject notInLigaDBObj, LastUpdates lastUpdates) {
+	static void processClub(JSONArray clubDB, JSONObject playerDBObject, JSONArray marketValueDB, Map<String, String> playerToUserMap, NewsManager newsManager, MatchdayInfo currentMatchdayInfo, JSONObject notInLigaDBObj, LastUpdates lastUpdates, StatusManager statusManager) {
 		LOGGER.log(Level.INFO, "Spielerdaten von jedem Club werden geladen...");
 		JSONArray playerDB = playerDBObject.optJSONArray("playerDB");
 		if (playerDB == null) {
@@ -254,8 +228,7 @@ public class PlayerUpdater {
 				}
 				try {
 					String url = Urls.COM_CLUB + clubId;
-					Login.ensureValidToken(ComunioDataUpdater.uld.getUsername(),
-							ComunioDataUpdater.uld.getPasswortAlsString());
+					Login.ensureValidToken(ComunioDataUpdater.uld.getUsername(), ComunioDataUpdater.uld.getPasswortAlsString());
 					String jsonResponse = Jsoup.connect(url)//
 							.userAgent(HttpHeaderUtil.getRandomUserAgent())//
 							.header("Accept", "application/json, text/plain, */*")//
@@ -273,15 +246,13 @@ public class PlayerUpdater {
 
 					for (int j = 0; j < squad.length(); j++) {
 						JSONObject apiPlayer = squad.getJSONObject(j);
-						updatePlayerData(playerDBObject, apiPlayer, playerDB, playerToUserMap, newsManager,
-								currentMatchdayInfo, clubDB, notInLigaDBObj, lastUpdates);
+						updatePlayerData(playerDBObject, apiPlayer, playerDB, playerToUserMap, newsManager, currentMatchdayInfo, clubDB, notInLigaDBObj, lastUpdates, statusManager);
 						updateMarketValueData(apiPlayer, marketValueDB);
 					}
 
 					lastUpdates.setPlayerDbShort(Instant.now());
 				} catch (Exception e) {
-					LOGGER.log(Level.SEVERE, "Fehler beim Verarbeiten des Vereins " + clubId + ": " + e.getMessage(),
-							e);
+					LOGGER.log(Level.SEVERE, "Fehler beim Verarbeiten des Vereins " + clubId + ": " + e.getMessage(), e);
 					fehler = true;
 				}
 
@@ -299,9 +270,7 @@ public class PlayerUpdater {
 	 * Aktualisiert die Punkte und Spieltagspunkte eines Spielers. Punkte werden nur
 	 * bei abgeschlossenem Spieltag verarbeitet.
 	 */
-	private static void updatePlayerData(JSONObject playerDBObject, JSONObject apiPlayer, JSONArray playerDB,
-			Map<String, String> playerToUserMap, NewsManager newsManager, MatchdayInfo currentMatchdayInfo,
-			JSONArray clubDB, JSONObject notInLigaDBObj, LastUpdates lastUpdates) {
+	private static void updatePlayerData(JSONObject playerDBObject, JSONObject apiPlayer, JSONArray playerDB, Map<String, String> playerToUserMap, NewsManager newsManager, MatchdayInfo currentMatchdayInfo, JSONArray clubDB, JSONObject notInLigaDBObj, LastUpdates lastUpdates, StatusManager statusManager) {
 
 		try {
 			StringBuilder log = new StringBuilder();
@@ -333,15 +302,13 @@ public class PlayerUpdater {
 				playerToUserMap.put(apiPlayerId, "1");
 				GitHubUploader.mappingChanged = true;
 
-				TmDePlayerDataUpdater.getTmDeDataForPlayer(player, clubDB, false, log, lastUpdates);
+				TmDePlayerDataUpdater.getTmDeDataForPlayer(player, clubDB, false, log, lastUpdates, statusManager);
 				data.put("lastUpdate", new ComunioDate().toString());
 				// TODO: DATUM RAUS
 				playerDB.put(player);
 
 				// News: Neuer Spieler
-				newsManager.addNews(new News(NewsArt.NEW_PLAYER,
-						"Neuer Spieler: " + apiPlayer.getString("name") + " (ID: " + apiPlayerId + ")", apiPlayerId),
-						true);
+				newsManager.addNews(new News(NewsArt.NEW_PLAYER, "Neuer Spieler: " + apiPlayer.getString("name") + " (ID: " + apiPlayerId + ")", apiPlayerId), true);
 			} else {
 
 				playerName = apiPlayer.getString("name");
@@ -354,9 +321,7 @@ public class PlayerUpdater {
 
 				// Positionswechsel prüfen
 				if (!oldPosition.equals(newPosition.toString())) {
-					newsManager.addNews(
-							News.getPositionswechsel(oldPosition, newPosition.toString(), apiPlayerId, playerName),
-							true);
+					newsManager.addNews(News.getPositionswechsel(oldPosition, newPosition.toString(), apiPlayerId, playerName), true);
 				}
 
 				// Vereinswechsel prüfen
@@ -390,16 +355,12 @@ public class PlayerUpdater {
 
 	/**
 	 * Hilfsmethode um die punkte je nach saisonstand an die korrekte stelle zu
-	 * setzten.
-	 * wenn es zwischen den Saisons ist, sollen die punkte 0 sein und die aktuelle
-	 * ausgelesenen punkte sollen zu LastSeasonPoints
+	 * setzten. wenn es zwischen den Saisons ist, sollen die punkte 0 sein und die
+	 * aktuelle ausgelesenen punkte sollen zu LastSeasonPoints
 	 */
-	private static void addPointsToPlayerData(Integer points, Integer lastPoints, JSONObject data,
-			LastUpdates lastUpdates,
-			MatchdayInfo matchdayInfo) {
+	private static void addPointsToPlayerData(Integer points, Integer lastPoints, JSONObject data, LastUpdates lastUpdates, MatchdayInfo matchdayInfo) {
 		// punkte auf 0 wenn saison noch nicht los ging.
-		if ((matchdayInfo.getCurrentMatchday() == 1 && !matchdayInfo.isFinished())
-				|| matchdayInfo.isStuckBetweenTheSeasons(lastUpdates )) {
+		if ((matchdayInfo.getCurrentMatchday() == 1 && !matchdayInfo.isFinished()) || matchdayInfo.isStuckBetweenTheSeasons(lastUpdates)) {
 			data.put("punkte", 0);
 			data.put("lastPoints", 0);
 			if (points > 0) {
@@ -479,10 +440,8 @@ public class PlayerUpdater {
 				} else if (lastValue == currentValue) {
 					// Wert unverändert zum letzten Eintrag
 					// Prüfe, ob mindestens 5 Tage seit letztem Eintrag vergangen sind
-					java.time.LocalDate lastDate = java.time.LocalDate.parse(lastDateStr,
-							java.time.format.DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-					java.time.LocalDate currentLocalDate = java.time.LocalDate.parse(currentDate,
-							java.time.format.DateTimeFormatter.ofPattern("dd.MM.yyyy"));
+					java.time.LocalDate lastDate = java.time.LocalDate.parse(lastDateStr, java.time.format.DateTimeFormatter.ofPattern("dd.MM.yyyy"));
+					java.time.LocalDate currentLocalDate = java.time.LocalDate.parse(currentDate, java.time.format.DateTimeFormatter.ofPattern("dd.MM.yyyy"));
 					long daysDiff = java.time.temporal.ChronoUnit.DAYS.between(lastDate, currentLocalDate);
 
 					if (daysDiff >= 5) {
@@ -524,8 +483,7 @@ public class PlayerUpdater {
 		}
 	}
 
-	public static void updateEachComunioPlayer(JSONArray playerDB, Map<String, String> playerToUserMap,
-			NewsManager newsManager, JSONObject playerDBObject, LastUpdates lastUpdates, User user) {
+	public static void updateEachComunioPlayer(JSONArray playerDB, Map<String, String> playerToUserMap, NewsManager newsManager, JSONObject playerDBObject, LastUpdates lastUpdates, User user, StatusManager statusManager) {
 		int threads = Runtime.getRuntime().availableProcessors();
 		ExecutorService executor = Executors.newFixedThreadPool(threads);
 
@@ -541,7 +499,7 @@ public class PlayerUpdater {
 			}
 
 			executor.submit(() -> {
-				loadPlayerData(player, playerToUserMap2, newsManager, playerDBObject, user, lastUpdates);
+				loadPlayerData(player, playerToUserMap2, newsManager, playerDBObject, user, lastUpdates, statusManager);
 			});
 		}
 
@@ -573,8 +531,7 @@ public class PlayerUpdater {
 	 * @param loader  Der Loader, der verwendet wird.
 	 * @return Der Spieler mit den geladenen Daten.
 	 */
-	public static void loadPlayerData(JSONObject player, Map<String, String> playerToUserMap, NewsManager newsManager,
-			JSONObject playerDBObject, User user, LastUpdates lastUpdates) {
+	public static void loadPlayerData(JSONObject player, Map<String, String> playerToUserMap, NewsManager newsManager, JSONObject playerDBObject, User user, LastUpdates lastUpdates, StatusManager statusManager) {
 		if (player == null || player.getString("id") == null || player.getString("id").isEmpty()) {
 			handleInvalidSpieler(player);
 			return;
@@ -582,7 +539,7 @@ public class PlayerUpdater {
 		try {
 			JSONObject apiPlayer = fetchSpielerJson(player.getString("id"), user);
 			if (apiPlayer != null) {
-				updateSpielerFromJson(player, apiPlayer, playerToUserMap, newsManager, playerDBObject, lastUpdates);
+				updateSpielerFromJson(player, apiPlayer, playerToUserMap, newsManager, playerDBObject, lastUpdates, statusManager);
 			}
 		} catch (Exception e) {
 			handleSpielerDataLoadingException(e);
@@ -620,8 +577,7 @@ public class PlayerUpdater {
 	private static JSONObject fetchSpielerJson(String playerID, User user) {
 		try {
 
-			String url = "https://www.comunio.de/api/communities/" + ComunioDataUpdater.community.getId() + "/users/"
-					+ user.getId() + "/players/" + playerID;
+			String url = "https://www.comunio.de/api/communities/" + ComunioDataUpdater.community.getId() + "/users/" + user.getId() + "/players/" + playerID;
 			Login.ensureValidToken(ComunioDataUpdater.uld.getUsername(), ComunioDataUpdater.uld.getPasswortAlsString());
 			String jsonResponse = Jsoup.connect(url)//
 					.userAgent(HttpHeaderUtil.getRandomUserAgent())//
@@ -636,13 +592,11 @@ public class PlayerUpdater {
 
 			JSONObject playerData = new JSONObject(jsonResponse);
 
-			LOGGER.info("Comunio-Daten für Spieler " + playerData.getString("name") + " (ID: " + playerID
-					+ ") erfoglreich geladen!");
+			LOGGER.info("Comunio-Daten für Spieler " + playerData.getString("name") + " (ID: " + playerID + ") erfoglreich geladen!");
 
 			return playerData;
 		} catch (Exception e) {
-			LOGGER.warning(
-					"Comunio-Daten für Spieler ID: " + playerID + "NICHT geladen! | Exception: " + e.getMessage());
+			LOGGER.warning("Comunio-Daten für Spieler ID: " + playerID + "NICHT geladen! | Exception: " + e.getMessage());
 			return null;
 		}
 
@@ -655,9 +609,7 @@ public class PlayerUpdater {
 	 * @param json    Das JSON, das verwendet wird.
 	 * @param db      Die Datenbank, die verwendet wird.
 	 */
-	private static void updateSpielerFromJson(JSONObject player, JSONObject apiPlayer,
-			Map<String, String> playerToUserMap, NewsManager newsManager, JSONObject playerDBObject,
-			LastUpdates lastUpdates) {
+	private static void updateSpielerFromJson(JSONObject player, JSONObject apiPlayer, Map<String, String> playerToUserMap, NewsManager newsManager, JSONObject playerDBObject, LastUpdates lastUpdates, StatusManager statusManager) {
 		JSONObject old = new JSONObject(player.toString());
 		String playerId, playerName;
 		playerId = player.getString("id");
@@ -679,8 +631,7 @@ public class PlayerUpdater {
 			Position pos = Position.fromString(apiPlayer.getString("type"));
 			data.put("position", pos.toString());
 			if (!oldDataFaild && !oldData.getString("position").equals(data.getString("position"))) {
-				News news = News.getPositionswechsel(oldData.getString("position"), pos.toString(), playerId,
-						playerName);// new News(NewsArt.POSITIONSWECHSEL, job.toString(), playerId);
+				News news = News.getPositionswechsel(oldData.getString("position"), pos.toString(), playerId, playerName);// new News(NewsArt.POSITIONSWECHSEL, job.toString(), playerId);
 				newsManager.addNews(news, true);
 
 			}
@@ -692,7 +643,7 @@ public class PlayerUpdater {
 			updateSpielerHistoryFromJson(data, apiPlayer);
 
 			updateSpielerPointsFromJson(playerDBObject, data, apiPlayer, lastUpdates);
-			updateSpielerStatusFromJson(data, apiPlayer);
+			updateSpielerStatusFromJson(player, apiPlayer, statusManager, newsManager);
 			data.put("lastBigUpdate", new ComunioDate().toString());
 
 			try {
@@ -720,14 +671,12 @@ public class PlayerUpdater {
 					}
 				}
 			} catch (Exception e) {
-				LOGGER.warning("FEHLER BEIM ERMITTELN DES OWNERS von Comunio!!!! " + apiPlayer.toString()
-						+ " | Exception: " + e.getMessage());
+				LOGGER.warning("FEHLER BEIM ERMITTELN DES OWNERS von Comunio!!!! " + apiPlayer.toString() + " | Exception: " + e.getMessage());
 			}
 
 		} catch (Exception e) {
 			e.printStackTrace();
-			LOGGER.warning("Fehler bei updateSpielerFromJson bei Spieler: " + playerName + " | Exception: "
-					+ e.getStackTrace());
+			LOGGER.warning("Fehler bei updateSpielerFromJson bei Spieler: " + playerName + " | Exception: " + e.getStackTrace());
 		}
 	}
 
@@ -781,8 +730,7 @@ public class PlayerUpdater {
 									playerData.put("historicalPoints", arrHist);
 								}
 							} catch (NumberFormatException ne) {
-								LOGGER.warning("Fehler bei updateSpielerHistoryFromJson bei Spieler | Exception: "
-										+ ne.getStackTrace());
+								LOGGER.warning("Fehler bei updateSpielerHistoryFromJson bei Spieler | Exception: " + ne.getStackTrace());
 							}
 						}
 					}
@@ -815,8 +763,7 @@ public class PlayerUpdater {
 	 * @param apiPlayer  Die externe Datenquelle für diesen Spieler aus der API
 	 *                   (verschiedene Formate möglich)
 	 */
-	public static void updateSpielerPointsFromJson(JSONObject playerDBObject, JSONObject playerData,
-			JSONObject apiPlayer, LastUpdates lastUpdates) {
+	public static void updateSpielerPointsFromJson(JSONObject playerDBObject, JSONObject playerData, JSONObject apiPlayer, LastUpdates lastUpdates) {
 		try {
 			// Den aktuellen Spieltag bestimmen (externe Methode; kann auch injizierbar
 			// sein)
@@ -895,13 +842,11 @@ public class PlayerUpdater {
 			}
 
 			// 8. Lückenerkennung und Auffüllen der Punktehistorie
-			if (letzterGespeicherterSpieltag > 0 && letzterGespeicherterSpieltag < aktuellerSpieltag - 1
-					&& totalPoints != null && letzteGespeicherteGesamtpunkte != null) {
+			if (letzterGespeicherterSpieltag > 0 && letzterGespeicherterSpieltag < aktuellerSpieltag - 1 && totalPoints != null && letzteGespeicherteGesamtpunkte != null) {
 				int fehlendeSpieltage = aktuellerSpieltag - letzterGespeicherterSpieltag - 1;
 				int punkteDifferenz = totalPoints - letzteGespeicherteGesamtpunkte;
 				if (fehlendeSpieltage > 0 && punkteDifferenz > 0) {
-					fuelleLueckeMitDifferenz(punkteHistorie, letzterGespeicherterSpieltag, aktuellerSpieltag,
-							letzteGespeicherteGesamtpunkte, totalPoints);
+					fuelleLueckeMitDifferenz(punkteHistorie, letzterGespeicherterSpieltag, aktuellerSpieltag, letzteGespeicherteGesamtpunkte, totalPoints);
 					playerData.put("spieltagspunkte", punkteHistorie);
 				}
 			}
@@ -997,8 +942,7 @@ public class PlayerUpdater {
 	 * @param alteGesamtpunkte Gesamtpunkte nach dem vonSpieltag
 	 * @param neueGesamtpunkte Gesamtpunkte nach dem bisSpieltag
 	 */
-	private static void fuelleLueckeMitDifferenz(JSONArray punkteHistorie, int vonSpieltag, int bisSpieltag,
-			int alteGesamtpunkte, int neueGesamtpunkte) {
+	private static void fuelleLueckeMitDifferenz(JSONArray punkteHistorie, int vonSpieltag, int bisSpieltag, int alteGesamtpunkte, int neueGesamtpunkte) {
 
 		int diff = neueGesamtpunkte - alteGesamtpunkte;
 		int fehlendeSpieltage = bisSpieltag - vonSpieltag - 1;
@@ -1035,24 +979,19 @@ public class PlayerUpdater {
 	 * @param spieler Der Spieler, dessen Status aktualisiert wird.
 	 * @param json    Das JSON, das verwendet wird.
 	 */
-	private static void updateSpielerStatusFromJson(JSONObject playerData, JSONObject apiPlayer) {
-		String status = apiPlayer.optString("status");
+	private static void updateSpielerStatusFromJson(JSONObject player, JSONObject apiPlayer, StatusManager statusManager, NewsManager newsManager) {
+		String status = apiPlayer.optString("status", "").trim().toLowerCase();
 		if (status != null && !status.isEmpty() && !status.equalsIgnoreCase("na")) {
-			String statusInfo = apiPlayer.getString("statusInfo");
-			JSONObject dbStatus = playerData.optJSONObject("comunioStatus");
-			Status statusObj = new Status();
-			if (dbStatus != null) {
-				statusObj = Status.fromJSON(dbStatus);
-				Set<Status> newList = new HashSet<Status>();
-				for (Status st : statusObj.getHistorie()) {
-					if (!st.getStatus().isAKTIV()) {
-						newList.add(st);
-					}
-				}
-				statusObj.setHistorie(new ArrayList<Status>(newList));
+			String statusInfo = apiPlayer.optString("statusInfo", "");
+			String playerId = player.optString("id", "0");
+			String playerName = player.optString("name", "N/A");
+			if (playerId == null || playerId.isEmpty()) {
+				LOGGER.warning("StatusUpdate übersprungen: playerId fehlt");
+				return;
 			}
-			statusObj.changeStatus(new ComunioDate(), status, statusInfo);
-			playerData.put("comunioStatus", statusObj.toJSON());
+
+			Status statusObj = new Status(new ComunioDate(), status, statusInfo, "comunio");
+			statusManager.addStatusToBuffer(playerId, statusObj);
 		}
 	}
 

@@ -116,23 +116,32 @@ public class TmDePlayerFinder {
 			log.append("Fehler bei Seite: ").append(site).append(" mit Name: ").append(nameInput).append(System.lineSeparator());
 			return null;
 		}
-
-		Elements rows = doc.select("div#yw0 table.items > tbody > tr");
 		JSONArray spielerArray = new JSONArray();
+		Elements rows = doc.select("div#player-grid table.items tbody tr");
 
 		for (Element row : rows) {
-			Element nameLink = row.selectFirst("td.hauptlink a[href]");
-			if (nameLink == null)
-				continue;
-
-			String name = nameLink.text();
-			String profilLink = nameLink.attr("href");
-
-			Element vereinElem = row.select("td:nth-of-type(1) tr:last-of-type a").first();
-			String verein = vereinElem != null ? vereinElem.text().trim() : "Karriereende";
-
-			String position = row.select("td:nth-of-type(2)").text().trim();
-			String alterRaw = row.select("td:nth-of-type(4)").text().trim();
+		    // Name-Extraktion (verbessert für responsive Tabellen)
+		    Element nameLink = row.selectFirst("td.hauptlink a[href]");
+		    if (nameLink == null) continue;
+		    
+		    String name = nameLink.text(); // "Eliesse Ben Seghir"
+		    String profilLink = nameLink.attr("href");
+		    
+		    // Verein-Extraktion (korrekt für inline-table Struktur)
+		    Element clubLink = row.selectFirst("td.hauptlink a[title]:not([href])");
+		    String verein;
+		    if (clubLink != null) {
+		        verein = clubLink.attr("title").trim();
+		    } else {
+		        // Fallback für andere Tabellenformate
+		        Elements clubElements = row.select("td.zentriert a[title]");
+		        verein = clubElements.isEmpty() ? "Karriereende" : clubElements.get(0).attr("title").trim();
+		    }
+		    
+		    // Weitere Extraktionen wie bisher...
+		    String position = row.select("td.zentriert:nth-of-type(1)").text().trim();
+		    String alterRaw = row.select("td.zentriert:nth-of-type(2)").text().trim();
+		    
 			int alter = -1;
 			try {
 				alter = Integer.parseInt(alterRaw);
@@ -170,7 +179,22 @@ public class TmDePlayerFinder {
 			if (!clubMatch)
 				continue;
 
-			boolean nameMatch = PlayerHelper.namesMatchWithInitial(p.getString("name"), nameInput) || PlayerHelper.namesMatchWithInitial(nameInput, p.getString("name"));
+			// In der Methode searchPlayerSinglePass, ersetzen Sie die Name-Prüfung (um Zeile 170):
+
+			String tmName = p.getString("name");
+			boolean nameMatch = false;
+
+			// Verbesserte Name-Matching-Logik:
+			if (nameInput.equalsIgnoreCase(tmName)) {
+			    nameMatch = true;
+			} else if (PlayerHelper.containsSubstringMatch(PlayerHelper.normalizeName(nameInput), PlayerHelper.normalizeName(tmName))) {
+			    // Teilvergleich: "Ben Seghir" in "Eliesse Ben Seghir"
+			    nameMatch = true;
+			} else {
+			    // Fallback auf Initial-basierte Übereinstimmung
+			    nameMatch = PlayerHelper.namesMatchWithInitial(nameInput, tmName) || 
+			                PlayerHelper.namesMatchWithInitial(tmName, nameInput);
+			}
 
 			boolean vornameEntfernt = false;
 

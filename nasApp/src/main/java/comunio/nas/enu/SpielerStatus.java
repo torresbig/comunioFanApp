@@ -2,40 +2,34 @@ package comunio.nas.enu;
 
 public enum SpielerStatus {
 	
-	VERLETZT ,
+	VERLETZT,
 	AUFBAUTRAINING,
-	AKTIV ,
-	NICHT_IM_KADER ,
+	GESPERRT,
+	AKTIV,
+	NICHT_IM_KADER,
 	ROTE_KARTE,
 	GELBROTE_KARTE,
-	FUENFTE_GELBE_KARTE ,
-	SONSTIGES ,
-	NICHT_IN_LIGA ,
-	UNBESTIMMT ;
-	
+	FUENFTE_GELBE_KARTE,
+	SONSTIGES,
+	NICHT_IN_LIGA,
+	UNBESTIMMT;
 	
 	public static SpielerStatus fromString(String status) {
 		SpielerStatus spStat = null;
-		if (status.toUpperCase().contains("Aufbautraining".toUpperCase()) || status.toUpperCase().equals("REHABILITATION".toUpperCase()) ) {
+		String upperStatus = status.toUpperCase();
+		
+		if (upperStatus.contains("AUFBAUTRAINING") || upperStatus.equals("REHABILITATION")) {
 			spStat = SpielerStatus.AUFBAUTRAINING;
-		} else if (status.toUpperCase().contains("Nicht im Kader".toUpperCase()) || status.toUpperCase().equals("SUSPENDED") || status.toUpperCase().equals("NICHT_IM_KADER".toUpperCase())) {
+		} else if (upperStatus.contains("NICHT IM KADER") || upperStatus.equals("SUSPENDED") || upperStatus.equals("NICHT_IM_KADER")) {
 			spStat = SpielerStatus.NICHT_IM_KADER;
-		} else if (status.toUpperCase().contains("Abwesend".toUpperCase())) {
+		} else if (upperStatus.contains("ABWESEND")) {
 			spStat = SpielerStatus.NICHT_IM_KADER;
-		} else if (status.toUpperCase().contains("Nicht in Liga".toUpperCase()) || status.toUpperCase().equals("NICHT_IN_LIGA".toUpperCase())) {
+		} else if (upperStatus.contains("NICHT IN LIGA") || upperStatus.equals("NICHT_IN_LIGA")) {
 			spStat = SpielerStatus.NICHT_IN_LIGA;
-		} else if (status.toUpperCase().contains("Verletzung".toUpperCase()) || status.toUpperCase().equals("INJURED".toUpperCase()) || status.toUpperCase().equals("VERLETZT".toUpperCase())) {
+		} else if (upperStatus.contains("GESPERRT") || upperStatus.contains("SPERRE") || upperStatus.contains("ROTE KARTE") || upperStatus.contains("RED_BANNED") || upperStatus.contains("ROTE_KARTE") || upperStatus.contains("GELB-ROTE KARTE") || upperStatus.contains("YELLOW_RED_BANNED") || upperStatus.contains("GELBROTE_KARTE") || upperStatus.contains("5. GELBE KARTE") || upperStatus.contains("YELLOW_BANNED") || upperStatus.contains("FUENFTE_GELBE_KARTE")) {
+			spStat = SpielerStatus.GESPERRT;
+		} else if (upperStatus.contains("VERLETZUNG") || upperStatus.equals("INJURED") || upperStatus.equals("VERLETZT") || upperStatus.contains("ANGESCHLAGEN") || upperStatus.equals("WEAKENED")) {
 			spStat = SpielerStatus.VERLETZT;
-		} else if (status.toUpperCase().contains("Schwerer angeschlagen".toUpperCase())) {
-			spStat = SpielerStatus.VERLETZT;
-		} else if (status.toUpperCase().contains("Angeschlagen".toUpperCase()) || status.toUpperCase().equals("WEAKENED".toUpperCase())) {
-			spStat = SpielerStatus.VERLETZT;
-		} else if (status.toUpperCase().contains("Rote Karte".toUpperCase()) || status.toUpperCase().equals("RED_BANNED".toUpperCase())|| status.toUpperCase().equals("ROTE_KARTE".toUpperCase())) {
-			spStat = SpielerStatus.ROTE_KARTE;
-		} else if (status.toUpperCase().contains("Gelb-Rote Karte".toUpperCase()) || status.toUpperCase().equals("YELLOW_RED_BANNED".toUpperCase())|| status.toUpperCase().equals("GELBROTE_KARTE".toUpperCase())) {
-			spStat = SpielerStatus.GELBROTE_KARTE;
-		} else if (status.toUpperCase().contains("5. Gelbe Karte".toUpperCase()) || status.toUpperCase().equals("YELLOW_BANNED".toUpperCase())|| status.toUpperCase().equals("FUENFTE_GELBE_KARTE".toUpperCase())) {
-			spStat = SpielerStatus.FUENFTE_GELBE_KARTE;
 		} else if (status.isEmpty()) {
 			spStat = SpielerStatus.UNBESTIMMT;
 		} else {
@@ -54,6 +48,10 @@ public enum SpielerStatus {
 	
 	public boolean isAUFBAUTRAINING() {
 		return this == AUFBAUTRAINING;
+	}
+	
+	public boolean isGESPERRT() {
+		return this == GESPERRT;
 	}
 	
 	public boolean isNICHT_IM_KADER() {

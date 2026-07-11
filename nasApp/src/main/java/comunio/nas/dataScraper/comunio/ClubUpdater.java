@@ -1,16 +1,10 @@
 package comunio.nas.dataScraper.comunio;
 
 import java.util.logging.Logger;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
-
-import comunio.nas.dataVariable.LastUpdates;
-import comunio.nas.git.GitHubUploader;
-import comunio.nas.objects.NewsManager;
 import comunio.nas.objects.helper.LogManager;
-import comunio.nas.objects.user.User;
 import comunio.nas.util.HttpHeaderUtil;
 
 public class ClubUpdater {
@@ -88,7 +82,7 @@ public class ClubUpdater {
 	            // 3. Dynamischer Abruf der Transfermarkt-Daten für diesen spezifischen Verein
 	            // (Ersetze 'TransfermarktAPI.getDetailsForClub' durch deinen tatsächlichen Service/Datenbank-Call)
 	           // TODO: noch tmde einfügen um die daten anzureichern.  
-	            JSONObject tmDetails = new JSONObject(); //TransfermarktAPI.getDetailsForClub(clubId, clubName);
+//	            JSONObject tmDetails = new JSONObject(); //TransfermarktAPI.getDetailsForClub(clubId, clubName);
 
 	            JSONObject out = new JSONObject();
 	            out.put("inLiga", true);

@@ -109,7 +109,7 @@ public class SeasonChange {
 	 * @see #archiveSeasonData(int)
 	 */
 	public static void archiveCurrentSeasonData() throws Exception {
-		archiveSeasonData(Year.now().getValue());
+		archiveSeasonData(Year.now().minusYears(1).getValue());
 
 	}
 

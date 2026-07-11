@@ -5,7 +5,6 @@ import java.util.logging.Logger;
 
 import org.json.JSONObject;
 
-import comunio.nas.dataScraper.comunio.ComunioDataUpdater;
 import comunio.nas.dataScraper.comunio.MatchdayInfo;
 import comunio.nas.objects.helper.LogManager;
 

@@ -69,7 +69,7 @@ public class PlayerJSONHelper {
 		if (current instanceof JSONObject obj) {
 			if (obj.has(lastKey)) {
 				obj.remove(lastKey);
-				LOGGER.info(() -> String.format("Key '%s' erfolgreich in Pfad '%s' gelöscht.", lastKey, path));
+				// LOGGER.info(() -> String.format("Key '%s' erfolgreich in Pfad '%s' gelöscht.", lastKey, path));
 			} else {
 				LOGGER.fine(() -> String.format("Key '%s' in Pfad '%s' existiert nicht. Keine Änderung.", lastKey, path));
 			}

@@ -2,6 +2,9 @@ package comunio.nas.objects;
 
 import java.util.Set;
 
+import comunio.nas.enu.SpielerStatus;
+import comunio.nas.objects.player.Status;
+
 public class TransfermarktVerletzter {
     public String name;
     public String id;
@@ -26,6 +29,16 @@ public class TransfermarktVerletzter {
         this.marktwert = marktwert;
         this.tmVereinName = tmVereinName;
         this.nameVariants = nameVariants;
+    }
+
+    public Status toStatus(){
+        Status result = new Status();
+        result.setDetails("");
+        result.setGrund(this.verletzung);
+        result.setSeit(this.seit);
+        result.setStatus(SpielerStatus.VERLETZT);
+        result.setBis(this.bis);
+        return result; 
     }
 }
 

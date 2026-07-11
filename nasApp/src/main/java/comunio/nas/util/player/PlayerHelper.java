@@ -1,8 +1,10 @@
 package comunio.nas.util.player;
 
+import java.text.Normalizer;
 import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 import java.util.Map;
 import java.util.logging.Logger;
 
@@ -190,41 +192,129 @@ public class PlayerHelper {
 	}
 
 	/**
-	 * Prüft, ob zwei Spielernamen als gleich oder ähnlich betrachtet werden können,
-	 * wobei auch Initialen anstelle des ausgeschriebenen Vornamens erlaubt sind.
-	 *
-	 * Beispiel:
-	 * <ul>
-	 * <li>"Thomas Sborn" und "T. Sborn" werden als Match erkannt.</li>
-	 * <li>Kleine Tippfehler werden ebenfalls toleriert.</li>
-	 * </ul>
-	 *
-	 * @param name1 Erster Name (z. B. "Thomas Sborn")
-	 * @param name2 Zweiter Name (z. B. "T. Sborn")
-	 * @return {@code true} wenn die Namen als passend gelten, sonst {@code false}
+	 * Normalisiert Namen für Vergleiche:
+	 * - Entfernt diakritische Zeichen
+	 * - Konvertiert zu Kleinbuchstaben
+	 * - Entfernt Sonderzeichen außer Leerzeichen
+	 */
+	public static String normalizeName(String name) {
+	    if (name == null) return "";
+	    try {
+	        String normalized = Normalizer.normalize(name, Normalizer.Form.NFD)
+	                           .replaceAll("\\p{M}", "") // diakritische Zeichen entfernen
+	                           .toLowerCase(Locale.ROOT)
+	                           .replaceAll("[^a-z0-9\\s]", "");
+	        return normalized.trim();
+	    } catch (Exception e) {
+	        return name.toLowerCase(Locale.ROOT).replaceAll("[^a-z0-9\\s]", "").trim();
+	    }
+	}
+
+	/**
+	 * Prüft ob ein Suchname als Teil des vollständigen Namens vorkommt
+	 * Berücksichtigt auch diakritische Zeichen
+	 */
+	public static boolean containsSubstringMatch(String searchName, String fullName) {
+	    if (searchName == null || fullName == null) return false;
+	    
+	    // Direkter Teil-String-Vergleich
+	    if (fullName.contains(searchName)) {
+	        return true;
+	    }
+	    
+	    // Umgekehrt prüfen (selten nötig, aber sicherheitshalber)
+	    if (searchName.contains(fullName)) {
+	        return true;
+	    }
+	    
+	    return false;
+	}
+
+	/**
+	 * Erweiterte Name-Übereinstimmung mit mehreren Strategien
 	 */
 	public static boolean namesMatchWithInitial(String name1, String name2) {
-		if (name1 == null || name2 == null)
-			return false;
-
-		String n1 = normalizeSimple(name1);
-		String n2 = normalizeSimple(name2);
-
-		if (n1.equals(n2))
-			return true;
-
-		int lev = LevenshteinDistance.getDefaultInstance().apply(n1, n2);
-		double similarity = 1.0 - (double) lev / Math.max(n1.length(), n2.length());
-
-		return similarity > 0.9;
+	    if (name1 == null || name2 == null) return false;
+	    
+	    String normName1 = normalizeName(name1);
+	    String normName2 = normalizeName(name2);
+	    
+	    // Direkte Übereinstimmung
+	    if (normName1.equals(normName2)) {
+	        return true;
+	    }
+	    
+	    // Teil-String-Übereinstimmung
+	    if (containsSubstringMatch(normName1, normName2)) {
+	        return true;
+	    }
+	    
+	    // Initial-basierter Vergleich
+	    String[] parts1 = normName1.split("\\s+");
+	    String[] parts2 = normName2.split("\\s+");
+	    
+	    if (parts1.length >= 2 && parts2.length >= 2) {
+	        // Beide Namen haben mindestens Vornamen + Nachnamen
+	        String lastName1 = parts1[parts1.length - 1];
+	        String lastName2 = parts2[parts2.length - 1];
+	        
+	        String firstInitial1 = parts1[0].substring(0, 1);
+	        String firstInitial2 = parts2[0].substring(0, 1);
+	        
+	        // Gleicher Nachname + gleiche erste Initial
+	        if (lastName1.equals(lastName2) && firstInitial1.equals(firstInitial2)) {
+	            return true;
+	        }
+	        
+	        // Nur gleicher Nachname (letzter Ausweg)
+	        if (lastName1.equals(lastName2)) {
+	            return true; // Wird später durch Vereins-Check weiter eingeschränkt
+	        }
+	    }
+	    
+	    // Levenshtein-Distanz für ähnliche Namen
+	    int maxLen = Math.max(normName1.length(), normName2.length());
+	    if (maxLen == 0) return false;
+	    
+	    int lev = new LevenshteinDistance().apply(normName1, normName2);
+	    double similarity = 1.0 - ((double) lev / maxLen);
+	    
+	    return similarity > 0.85; // Etwas lockerere Schwelle
 	}
+
+	/**
+	 * Einfache Levenshtein-Distanz-Implementierung
+	 */
+	private static class LevenshteinDistance {
+	    public int apply(String s, String t) {
+	        if (s.length() == 0) return t.length();
+	        if (t.length() == 0) return s.length();
+	        
+	        int[][] dp = new int[s.length() + 1][t.length() + 1];
+	        
+	        for (int i = 0; i <= s.length(); i++) dp[i][0] = i;
+	        for (int j = 0; j <= t.length(); j++) dp[0][j] = j;
+	        
+	        for (int i = 1; i <= s.length(); i++) {
+	            for (int j = 1; j <= t.length(); j++) {
+	                int cost = (s.charAt(i-1) == t.charAt(j-1)) ? 0 : 1;
+	                dp[i][j] = Math.min(Math.min(dp[i-1][j] + 1, dp[i][j-1] + 1), 
+	                                  dp[i-1][j-1] + cost);
+	            }
+	        }
+	        
+	        return dp[s.length()][t.length()];
+	    }
+	}
+
 
 	/**
 	 * Hilfsmethode, um Namen in das Format "Initial Nachname" zu bringen. Entfernt
 	 * Sonderzeichen und gibt Kleinbuchstaben zurück.
+	 * Behandelt auch Initial-Präfixe: "A. Sambi Lokonga" wird wie "Sambi Lokonga" normalisiert.
 	 *
-	 * @param name Name, z. B. "Thomas Sborn"
-	 * @return Normalisierte Zeichenkette z. B. "t sborn"
+	 * @param name Name, z. B. "Thomas Sborn" oder "A. Sambi Lokonga"
+	 * @return Normalisierte Zeichenkette z. B. "t sborn" oder "s lokonga"
 	 */
 	private static String normalizeSimple(String name) {
 		if (name == null || name.isBlank())
@@ -233,7 +323,21 @@ public class PlayerHelper {
 		if (parts.length < 2) {
 			return name.toLowerCase().replaceAll("[^a-z]", "");
 		}
-		String firstInitial = parts[0].substring(0, 1).toLowerCase();
+		// Wenn der erste Teil nur ein Buchstabe ist (z.B. "A." bei "A. Sambi Lokonga"),
+		// ignoriere dieses Initial und nehm den zweiten Teil als Vornamen
+		boolean isJustInitial = parts[0].replaceAll("[^a-z]", "").length() <= 1;
+		
+		String firstInitial;
+		if (isJustInitial && parts.length >= 3) {
+			// "A. Sambi Lokonga" -> "s lokonga" (zweites Teil als First-Name-Initial)
+			firstInitial = parts[1].substring(0, 1).toLowerCase();
+		} else if (isJustInitial && parts.length == 2) {
+			// "A. Lokonga" -> nur ein Name nach Initial, nutze ihn als Ganzes
+			firstInitial = parts[1].substring(0, 1).toLowerCase();
+		} else {
+			// Normal: "Thomas Sborn" -> "t sborn"
+			firstInitial = parts[0].substring(0, 1).toLowerCase();
+		}
 		String lastName = parts[parts.length - 1].toLowerCase().replaceAll("[^a-z]", "");
 		return firstInitial + " " + lastName;
 	}

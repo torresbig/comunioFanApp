@@ -400,7 +400,7 @@ public class PlayerDbFixer {
                     int nextValue = next.optInt("value", 0);
 
                     int diffTotal = (nextTotal - prevTotal) - nextValue;
-
+					
                     if (gap == 1) {
                         // einfacher Fall: ein Spieltag fehlt
                         int interpolValue = diffTotal;
@@ -440,5 +440,16 @@ public class PlayerDbFixer {
         });
     }
 
+	public static void removeAllStatusFromPlayerObject(JSONObject playerDbObject){
+		JSONArray spielerDB = playerDbObject.optJSONArray("playerDB", new JSONArray());
+		
+		for(int i=0;i<spielerDB.length();i++){
+			JSONObject spielerObj = spielerDB.getJSONObject(i);
+			JSONObject data = spielerObj.optJSONObject("data");
+			data.remove("status"); // remove status from player object
+			data.remove("comunioStatus"); // remove status from player object
+			spielerObj.put("data", data);
+		}
+	}
 
 }

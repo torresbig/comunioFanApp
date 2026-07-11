@@ -21,15 +21,16 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import comunio.nas.dataVariable.LastUpdates;
-import comunio.nas.enu.NewsArt;
-import comunio.nas.objects.News;
+import comunio.nas.enu.SpielerStatus;
 import comunio.nas.objects.NewsManager;
 import comunio.nas.objects.TransfermarktVerletzter;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.orga.ComunioDate;
 import comunio.nas.objects.player.Spielerdaten;
+import comunio.nas.objects.player.Status;
 import comunio.nas.util.ClubMapper;
 import comunio.nas.util.HttpHeaderUtil;
+import comunio.nas.util.StatusManager;
 import comunio.nas.util.player.PlayerHelper;
 import comunio.nas.util.player.PlayerMatcher;
 
@@ -57,15 +58,17 @@ public class TmDePlayerDataUpdater {
 	 * @return Ein Statusstring: "OK", "NOT_FOUND", "NO_DATA", "HAS_ALREADY_DATA",
 	 *         "FAIL"
 	 */
-	public static String getTmDeDataForPlayer(JSONObject player, JSONArray clubDB, boolean faildRetry, StringBuilder log, LastUpdates lastUpdates) {
+
+	public static String getTmDeDataForPlayer(JSONObject player, JSONArray clubDB, boolean faildRetry, StringBuilder log, LastUpdates lastUpdates, 	StatusManager statusManager) {
 		JSONObject data = player.optJSONObject("data");
 		if (data == null) {
 			return "NO_DATA";
 		}
 
-		JSONObject status = data.optJSONObject("status");
-		if (status != null && "NICHT_IN_LIGA".equalsIgnoreCase(status.optString("status"))) {
-			// Spieler nicht in Liga - überspringen
+		String playerId = player.optString("id", "0");
+		Status playerStatus = StatusManager.getStatusForPlayer(playerId, statusManager.getInjuryDB()) ;
+		
+		if (playerStatus.getStatus() == SpielerStatus.NICHT_IN_LIGA) {
 			return "HAS_ALREADY_DATA";
 		}
 
@@ -202,7 +205,7 @@ public class TmDePlayerDataUpdater {
 	 * @param faildRetry     true, um auch Spieler mit vorherigen Fehlschlägen neu
 	 *                       abzufragen
 	 */
-	public static void updateAllPlayerWithMissedData(JSONObject playerDBObject, JSONArray clubDB, boolean faildRetry, LastUpdates lastUpdates) {
+	public static void updateAllPlayerWithMissedData(JSONObject playerDBObject, JSONArray clubDB, boolean faildRetry, LastUpdates lastUpdates, StatusManager statusManager) {
 		StringBuilder log = new StringBuilder();
 
 		int playerCountUpdate = 0;
@@ -211,7 +214,7 @@ public class TmDePlayerDataUpdater {
 		int playerNoData = 0;
 		int playerFail = 0;
 		int gesamtCount = 0;
-		final int MAX_REQUEST = faildRetry ? 10 : 30;
+		final int MAX_REQUEST = faildRetry ? 25 : 50;
 
 		JSONArray playerDB = playerDBObject.optJSONArray("playerDB");
 		if (playerDB == null) {
@@ -227,7 +230,7 @@ public class TmDePlayerDataUpdater {
 
 			JSONObject player = playerDB.getJSONObject(i);
 
-			String status = getTmDeDataForPlayer(player, clubDB, faildRetry, log, lastUpdates);
+			String status = getTmDeDataForPlayer(player, clubDB, faildRetry, log, lastUpdates, statusManager);
 
 			switch (status) {
 			case "OK" -> {
@@ -250,7 +253,7 @@ public class TmDePlayerDataUpdater {
 
 				StringBuilder zwischenInfo = new StringBuilder();
 				zwischenInfo.append("#").append(i).append(" Spieler: ").append(name).append(" (ID: ").append(id).append(")").append(" wurde Abgefragt: updateAllPlayerWithMissedData");
-				if (faildRetry) {
+			if (faildRetry) {
 					LOGGER.info("FaildRetry TRUE! : " + zwischenInfo.toString());
 				} else {
 					LOGGER.info(zwischenInfo.toString());
@@ -281,7 +284,8 @@ public class TmDePlayerDataUpdater {
 		// Erneuter Versuch, wenn keine Updates/Nicht gefunden aber Fehler da sind
 		if (playerCountNotFound == 0 && playerCountUpdate == 0 && playerFail > 0 && !faildRetry) {
 			LOGGER.info("2. Update-Durchgang wird gestartet, da vorher Fehler bestanden und sonst alle Spieler aktualisiert erscheinen.");
-			updateAllPlayerWithMissedData(playerDBObject, clubDB, true, lastUpdates);
+
+			updateAllPlayerWithMissedData(playerDBObject, clubDB, true, lastUpdates, statusManager);
 		}
 	}
 
@@ -313,7 +317,7 @@ public class TmDePlayerDataUpdater {
 	 * @param secondTry      true, wenn der zweite Versuch ausgeführt wird
 	 *                       (Sortierung nach Datum).
 	 */
-	public static void updateAllPlayerWithLink(JSONObject playerDBObject, boolean updateAll, boolean secondTry, LastUpdates lastUpdates) {
+	public static void updateAllPlayerWithLink(JSONObject playerDBObject, boolean updateAll, boolean secondTry, LastUpdates lastUpdates, StatusManager statusManager) {
 		int playerCountUpdate = 0;
 		int playerCountFail = 0;
 		int playerCountSkip = 0;
@@ -358,7 +362,9 @@ public class TmDePlayerDataUpdater {
 				playerCountFail++;
 				continue;
 			}
-			JSONObject status = data.optJSONObject("status");
+			String playerId = player.optString("id", "0");
+			Status playerStatus = StatusManager.getStatusForPlayer(playerId, statusManager.getInjuryDB());
+
 			JSONObject tmDe = data.optJSONObject("transfermarktDoDe");
 
 			if (tmDe == null) {
@@ -374,7 +380,7 @@ public class TmDePlayerDataUpdater {
 			}
 
 			// Spieler überspringen, wenn er nicht mehr in der Liga ist.
-			if (status.has("status") && status.getString("status").equals("NICHT_IN_LIGA")) {
+			if (playerStatus.getStatus() == SpielerStatus.NICHT_IN_LIGA) {
 				continue;
 			}
 			Spielerdaten spielerDaten = Spielerdaten.fromJSON((JSONObject) data.opt("spielerDaten"));
@@ -404,7 +410,7 @@ public class TmDePlayerDataUpdater {
 
 		// Im zweiten Versuch erneut übersprungene Spieler updaten
 		if (playerCountUpdate == 0 && playerCountSkip > 0 && playerListSkipped.size() > 0 && !secondTry) {
-			updateAllPlayerWithLink(playerDBObject, true, true, lastUpdates);
+			updateAllPlayerWithLink(playerDBObject, true, true, lastUpdates, statusManager);
 		}
 
 		LOGGER.log(Level.INFO, "Transfermarkt.de Updater ausgeführt. Erfolgreich aktualisiert: " + playerCountUpdate + " - fehlerhaft: " + playerCountFail + " - übersprungen: " + playerCountSkip);
@@ -435,7 +441,8 @@ public class TmDePlayerDataUpdater {
 		if (lastUpdate != null) {
 			lastUpdate.addDays(30);
 			if (lastUpdate.after(new ComunioDate()) || lastUpdate.equals(new ComunioDate())) {
-//				LOGGER.log(Level.INFO, "Spielerdaten von Transfermarkt.de nicht neu geladen. Sind noch aktuell! LastUdate: " + lastUpdate.toString());
+				// LOGGER.log(Level.INFO, "Spielerdaten von Transfermarkt.de nicht neu geladen.
+				// Sind noch aktuell! LastUdate: " + lastUpdate.toString());
 				return false;
 			}
 		}
@@ -443,7 +450,8 @@ public class TmDePlayerDataUpdater {
 			JSONObject tmDe = playerData.optJSONObject("transfermarktDoDe");
 			Spielerdaten spielerDaten = Spielerdaten.fromJSON((JSONObject) playerData.optJSONObject("spielerDaten", new JSONObject()));
 			if (tmDe == null) {
-//				LOGGER.log(Level.WARNING, "kein TransfermarktDoDe daten im Spielerobject! playerData-Object: " + playerData.toString());
+				// LOGGER.log(Level.WARNING, "kein TransfermarktDoDe daten im Spielerobject!
+				// playerData-Object: " + playerData.toString());
 				return false;
 			}
 			String link = tmDe.has("link") ? tmDe.getString("link") : "";
@@ -451,7 +459,8 @@ public class TmDePlayerDataUpdater {
 			// Lade das HTML-Dokument der Spieler-Seite
 			// Baue die Verbindung mit allen wichtigen Headern auf
 			if (link == null || link.isBlank()) {
-//				LOGGER.log(Level.WARNING, "kein Spielerlink! tmDe-Object: " + tmDe.toString());
+				// LOGGER.log(Level.WARNING, "kein Spielerlink! tmDe-Object: " +
+				// tmDe.toString());
 				return false;
 			}
 			Document doc = null;
@@ -486,8 +495,8 @@ public class TmDePlayerDataUpdater {
 				// Name & Trikotnummer
 				Element nameElem = header.selectFirst("h1.data-header__headline-wrapper");
 				if (nameElem != null) {
-//					String name = nameElem.ownText().trim();
-//			                spielerDaten.setName(name);
+					// String name = nameElem.ownText().trim();
+					// spielerDaten.setName(name);
 					Element numElem = nameElem.selectFirst("span.data-header__shirt-number");
 					if (numElem != null) {
 						String num = numElem.text().replace("#", "").trim();
@@ -610,13 +619,13 @@ public class TmDePlayerDataUpdater {
 	 *                     prüft und speichert.
 	 * @param LOGGER       Der Logger zur Protokollierung während des Updates.
 	 */
-	public static void updateVerletzteVonTransfermarkt(JSONObject playerDBObject, JSONArray clubsMapping, NewsManager newsManager, Logger LOGGER, LastUpdates lastUpdates) {
+	public static void updateVerletzteVonTransfermarkt(JSONObject playerDBObject, JSONArray clubsMapping, NewsManager newsManager, Logger LOGGER, LastUpdates lastUpdates, StatusManager statusManager) {
 		try {
 			Map<String, String> dbIdToTmName = ClubMapper.getClubMapDbIdToTmName(clubsMapping);
 
 			JSONArray playerDB = playerDBObject.optJSONArray("playerDB");
 			if (playerDB == null) {
-				LOGGER.log(Level.WARNING, "KEINE SIELERDATENBANK vorhanden!");
+				LOGGER.log(Level.WARNING, "KEINE SPIELERDATENBANK vorhanden!");
 				return;
 			}
 
@@ -680,11 +689,9 @@ public class TmDePlayerDataUpdater {
 			for (int i = 0; i < playerDB.length(); i++) {
 				JSONObject spieler = playerDB.getJSONObject(i);
 				JSONObject data = spieler.getJSONObject("data");
-				JSONObject status = data.optJSONObject("status");
-				if (status == null) {
-					status = new JSONObject();
-					data.put("status", status);
-				}
+				String playerId = spieler.optString("id", "0");
+				String playerName = spieler.optString("name", "N/A");
+				Status playerStatus = StatusManager.getStatusForPlayer(playerId, statusManager.getInjuryDB());
 				JSONObject spielerDaten = data.optJSONObject("spielerDaten");
 				if (spielerDaten == null) {
 					spielerDaten = new JSONObject();
@@ -783,27 +790,17 @@ public class TmDePlayerDataUpdater {
 					}
 				}
 
-				String alterStatus = status.optString("status", "AKTIV");
-				String playerId = spieler.optString("id", "0");
+				String alterStatus = playerStatus.getStatus().toString();
 
 				// --- Spieler ohne Verein auf NICHT_IN_LIGA setzen ---
 				if (vereinDbId == null || vereinDbId.equals("0") || vereinDbId.isEmpty()) {
 					if (!"NICHT_IN_LIGA".equals(alterStatus)) {
+
+						Status statusObj = new Status();
+						statusObj.setNichtInLiga();
+						statusManager.addStatusToBuffer(playerId, statusObj);						
 						nichtInLiga++;
-						String newsText = "Statuswechsel: " + spielerName + " (" + playerId + ") ist jetzt NICHT_IN_LIGA";
-						News news = new News(NewsArt.SPIELERSTATUS, newsText, playerId);
-						if (!newsManager.contains(news)) {
-							newsManager.addNews(news, true);
-						}
-						LOGGER.info(newsText);
-						status.put("status", "NICHT_IN_LIGA");
-						status.put("grund", "");
-						status.put("seit", "");
-						status.put("bis", JSONObject.NULL);
-						status.put("details", "");
-						status.put("lastUpdate", abfrageDatum);
-						// TODO: DATUM RAUS
-						lastUpdates.setPlayerStatus(Instant.now());
+						LOGGER.info("Spieler " + playerName + " scheint keinen Verein zu haben, Status auf NICHT_IN_LIGA gesetzt.");
 					}
 					continue;
 				}
@@ -811,60 +808,38 @@ public class TmDePlayerDataUpdater {
 				// --- Verletzten-Status-Logik ---
 				if (match != null) {
 					String neuerStatus = "VERLETZT";
-					if (!alterStatus.equals(neuerStatus) && !"AKTIV".equals(alterStatus)) {
-						JSONObject alterStatusObj = new JSONObject(status.toString());
-						if (!alterStatusObj.has("bis") || alterStatusObj.isNull("bis") || alterStatusObj.optString("bis").isEmpty()) {
-							alterStatusObj.put("bis", abfrageDatum);
-						}
-						JSONArray historie = status.optJSONArray("historie");
-						if (historie == null) {
-							historie = new JSONArray();
-						}
-						historie.put(alterStatusObj);
-						status.put("historie", historie);
-					}
 					if (!alterStatus.equals(neuerStatus)) {
+
+						Status statusObj = new Status(new ComunioDate(abfrageDatum), neuerStatus, "", match.verletzung, match.seit, match.bis, "transfermarkt");
+						statusManager.addStatusToBuffer(playerId, statusObj);	
+
 						updated++;
-						String newsText = "Statuswechsel: " + spielerName + " (" + playerId + ") ist jetzt VERLETZT (" + match.verletzung + ")";
-						News news = new News(NewsArt.SPIELERSTATUS, newsText, playerId);
-						if (!newsManager.contains(news)) {
-							newsManager.addNews(news, true);
-						}
-						LOGGER.info(newsText);
+						LOGGER.info("Spieler " + playerName + " scheint verletzt zu sein (Match in aktueller Verletztenliste), Status auf VERLETZT gesetzt.");
+					} else {
+
+						Status statusObj = new Status(new ComunioDate(abfrageDatum), neuerStatus, "", match.verletzung, match.seit, match.bis, "transfermarkt");
+						statusManager.addStatusToBuffer(playerId, statusObj);	
+
 					}
-					status.put("status", neuerStatus);
-					status.put("grund", match.verletzung);
-					status.put("seit", match.seit);
-					status.put("bis", match.bis == null ? JSONObject.NULL : match.bis);
-					status.put("details", "");
-					status.put("lastUpdate", abfrageDatum);
-					// TODO: DATUM RAUS
-					lastUpdates.setPlayerStatus(Instant.now());
 				} else {
 					// Spieler NICHT mehr verletzt, war aber vorher verletzt
 					if ("VERLETZT".equals(alterStatus)) {
+						
+						Status statusObj = new Status();
+						statusObj.setWiederGesund("transfermarkt");
+						statusManager.addStatusToBuffer(playerId, statusObj);	
+						
 						reaktiviert++;
-						String newsText = "Statuswechsel: " + spielerName + " (" + playerId + ") ist wieder AKTIV";
-						News news = new News(NewsArt.SPIELERSTATUS, newsText, playerId);
-						if (!newsManager.contains(news)) {
-							newsManager.addNews(news, true);
-						}
-						LOGGER.info(newsText);
-						status.put("status", "AKTIV");
-						status.put("grund", "");
-						status.put("seit", "");
-						status.put("bis", JSONObject.NULL);
-						status.put("details", "");
-						status.put("lastUpdate", abfrageDatum);
-						// TODO: DATUM RAUS
-						lastUpdates.setPlayerStatus(Instant.now());
+						LOGGER.info("Spieler " + playerName + " scheint nicht mehr verletzt zu sein (kein Match in aktueller Verletztenliste), Status auf AKTIV gesetzt.");
 					}
 				}
+
 			}
-			LOGGER.info("Verletzten-Update abgeschlossen: " + updated + " Spieler auf VERLETZT, " + reaktiviert + " reaktiviert, " + nichtInLiga + " NICHT_IN_LIGA.");
+			LOGGER.info("Transfermarkt: Verletzten-Update abgeschlossen: " + updated + " Spieler auf VERLETZT, " + reaktiviert + " reaktiviert, " + nichtInLiga + " NICHT_IN_LIGA.");
+			lastUpdates.setPlayerStatus(new ComunioDate().toInstant());
+			
 		} catch (Exception e) {
 			LOGGER.log(Level.SEVERE, "Fehler beim Update der Verletzten von transfermarkt.de: " + e.getMessage(), e);
 		}
 	}
-
 }
