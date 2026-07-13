@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "13.07.2026 05:20:58",
+  "lastUpdate": "13.07.2026 10:00:45",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -5282,6 +5282,22 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Krauß\",\"price\":1500000,\"buyerId\":\"13806423\",\"playerValue\":1360000,\"playerId\":\"33130\",\"buyer\":\"Florian\"}",
           "id": "963809255",
           "playerId": "33130"
+        },
+        {
+          "date": "13.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Steinmann (ID: 34476)",
+          "id": "0",
+          "playerId": "34476"
+        },
+        {
+          "date": "13.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Campbell\",\"newClub\":\"118\",\"oldClub\":\"5\",\"playerID\":\"34016\"}",
+          "id": "0",
+          "playerId": "34016"
         }
       ]
     },
