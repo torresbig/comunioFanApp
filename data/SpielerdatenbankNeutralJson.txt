@@ -26738,17 +26738,17 @@
     {
       "data": {
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "",
+          "groesse": "1,88",
+          "geburtstag": "26.01.2004",
           "laenderspiele": 0,
-          "lastUpdate": null,
+          "lastUpdate": "13.07.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
+          "trikotNummer": 4,
           "nationalitaet": "Deutschland",
           "laenderspielTore": 0,
-          "hauptposition": "",
-          "fuss": ""
+          "hauptposition": "Innenverteidiger",
+          "fuss": "rechts"
         },
         "isNotName": [],
         "punktekorrektur": [],
@@ -26756,10 +26756,11 @@
         "wert": 200000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "01.01.1900",
+          "date": "13.07.2026",
           "haveToCheck": true,
           "link": "https://www.transfermarkt.de/luis-seifert/profil/spieler/806007",
-          "name": "Luis Seifert"
+          "name": "Luis Seifert",
+          "leistungsDaten": {}
         },
         "punkte": 0,
         "realWert": 200000,
@@ -33922,17 +33923,17 @@
     {
       "data": {
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "",
-          "laenderspiele": 0,
-          "lastUpdate": null,
+          "groesse": "1,84",
+          "geburtstag": "21.11.2000",
+          "laenderspiele": 3,
+          "lastUpdate": "13.07.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 0,
-          "nationalitaet": "",
+          "nationalitaet": "Kamerun",
           "laenderspielTore": 0,
-          "hauptposition": "",
-          "fuss": ""
+          "hauptposition": "Rechtes Mittelfeld",
+          "fuss": "rechts"
         },
         "isNotName": [],
         "punktekorrektur": [],
@@ -33940,12 +33941,20 @@
         "wert": 1760000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "01.01.1900",
-          "haveToCheck": true
+          "date": "13.07.2026",
+          "haveToCheck": false,
+          "name": "Junior Dina Ebimbe",
+          "link": "https://www.transfermarkt.de/junior-dina-ebimbe/profil/spieler/536482",
+          "id": "536482",
+          "position": "",
+          "marktwert": 6000000,
+          "nationalitaet": "Kamerun",
+          "leistungsDaten": {},
+          "alter": -1
         },
         "lastSeasonPoints": 0,
         "punkte": 0,
-        "realWert": 0,
+        "realWert": 6000000,
         "stats": {
           "notenDurchschnitt": "0",
           "gelbekarten": 0,
@@ -33964,7 +33973,11 @@
         "onMarket": false,
         "position": "MITTELFELD",
         "attribute": [],
-        "possibleNames": []
+        "possibleNames": [
+          "Junior Dina Ebimbe",
+          "Ebimbe",
+          "J. Ebimbe"
+        ]
       },
       "name": "Dina Ebimbe",
       "id": "33678"
@@ -36279,17 +36292,17 @@
     {
       "data": {
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "",
+          "groesse": "1,88",
+          "geburtstag": "28.02.2005",
           "laenderspiele": 0,
-          "lastUpdate": null,
+          "lastUpdate": "13.07.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
+          "trikotNummer": 28,
           "nationalitaet": "Deutschland",
           "laenderspielTore": 0,
-          "hauptposition": "",
-          "fuss": ""
+          "hauptposition": "Innenverteidiger",
+          "fuss": "rechts"
         },
         "isNotName": [],
         "punktekorrektur": [],
@@ -36297,10 +36310,11 @@
         "wert": 190000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "01.01.1900",
+          "date": "13.07.2026",
           "haveToCheck": true,
           "link": "https://www.transfermarkt.de/tarek-buchmann/profil/spieler/744729",
-          "name": "Tarek Buchmann"
+          "name": "Tarek Buchmann",
+          "leistungsDaten": {}
         },
         "lastSeasonPoints": 0,
         "punkte": 0,
