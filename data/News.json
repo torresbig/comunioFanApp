@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "15.07.2026 05:19:43",
+  "lastUpdate": "15.07.2026 10:00:26",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -5202,14 +5202,32 @@
     },
     {
       "date": "15.07.2026",
-      "news": [{
-        "date": "15.07.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"Lomb\",\"price\":169800,\"buyerId\":\"1\",\"playerValue\":160000,\"playerId\":\"32007\",\"buyer\":\"Computer\"}",
-        "id": "963856175",
-        "playerId": "32007"
-      }]
+      "news": [
+        {
+          "date": "15.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"Lomb\",\"price\":169800,\"buyerId\":\"1\",\"playerValue\":160000,\"playerId\":\"32007\",\"buyer\":\"Computer\"}",
+          "id": "963856175",
+          "playerId": "32007"
+        },
+        {
+          "date": "15.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Wisbereit\",\"newClub\":\"68\",\"oldClub\":\"0\",\"playerID\":\"34363\"}",
+          "id": "0",
+          "playerId": "34363"
+        },
+        {
+          "date": "15.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Fürst (ID: 34478)",
+          "id": "0",
+          "playerId": "34478"
+        }
+      ]
     },
     {
       "date": "15.06.2026",
