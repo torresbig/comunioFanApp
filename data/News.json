@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "16.07.2026 05:19:42",
+  "lastUpdate": "16.07.2026 10:05:26",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -5173,14 +5173,32 @@
     },
     {
       "date": "16.07.2026",
-      "news": [{
-        "date": "16.07.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Ginter\",\"price\":4305000,\"buyerId\":\"9317431\",\"playerValue\":4330000,\"playerId\":\"31910\",\"buyer\":\"Andi\"}",
-        "id": "963868886",
-        "playerId": "31910"
-      }]
+      "news": [
+        {
+          "date": "16.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Ginter\",\"price\":4305000,\"buyerId\":\"9317431\",\"playerValue\":4330000,\"playerId\":\"31910\",\"buyer\":\"Andi\"}",
+          "id": "963868886",
+          "playerId": "31910"
+        },
+        {
+          "date": "16.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Wisbereit (ID: 34363)",
+          "id": "0",
+          "playerId": "34363"
+        },
+        {
+          "date": "16.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Awortwie-Grant (34443) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34443"
+        }
+      ]
     },
     {
       "date": "16.06.2026",
