@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "21.07.2026 05:19:56",
+  "lastUpdate": "21.07.2026 10:05:36",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4948,14 +4948,24 @@
     },
     {
       "date": "21.07.2026",
-      "news": [{
-        "date": "21.07.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Prass\",\"price\":1443100,\"buyerId\":\"13830745\",\"playerValue\":1420000,\"playerId\":\"34034\",\"buyer\":\"Gerry\"}",
-        "id": "963967096",
-        "playerId": "34034"
-      }]
+      "news": [
+        {
+          "date": "21.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Prass\",\"price\":1443100,\"buyerId\":\"13830745\",\"playerValue\":1420000,\"playerId\":\"34034\",\"buyer\":\"Gerry\"}",
+          "id": "963967096",
+          "playerId": "34034"
+        },
+        {
+          "date": "21.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Diehl\",\"price\":304500,\"buyerId\":\"1\",\"playerValue\":300000,\"playerId\":\"33718\",\"buyer\":\"Computer\"}",
+          "id": "963967096",
+          "playerId": "33718"
+        }
+      ]
     },
     {
       "date": "21.06.2026",
