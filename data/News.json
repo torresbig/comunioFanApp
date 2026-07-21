@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "20.07.2026 22:00:09",
+  "lastUpdate": "21.07.2026 05:19:56",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4947,6 +4947,17 @@
       ]
     },
     {
+      "date": "21.07.2026",
+      "news": [{
+        "date": "21.07.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Prass\",\"price\":1443100,\"buyerId\":\"13830745\",\"playerValue\":1420000,\"playerId\":\"34034\",\"buyer\":\"Gerry\"}",
+        "id": "963967096",
+        "playerId": "34034"
+      }]
+    },
+    {
       "date": "21.06.2026",
       "news": [
         {
@@ -4993,6 +5004,22 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Höler\",\"price\":2370005,\"buyerId\":\"13641446\",\"playerValue\":2430000,\"playerId\":\"32861\",\"buyer\":\"Christian\"}",
           "id": "963944053",
           "playerId": "32861"
+        },
+        {
+          "date": "20.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christian\",\"sellerId\":\"13641446\",\"playerName\":\"Rosenfelder\",\"price\":551000,\"buyerId\":\"1\",\"playerValue\":560000,\"playerId\":\"33815\",\"buyer\":\"Computer\"}",
+          "id": "963944053",
+          "playerId": "33815"
+        },
+        {
+          "date": "20.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ben Seghir (34285) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34285"
         }
       ]
     },
