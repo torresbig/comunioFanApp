@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "23.07.2026 05:19:52",
+  "lastUpdate": "23.07.2026 10:00:38",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4882,6 +4882,22 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Sylla\",\"price\":1610111,\"buyerId\":\"13548242\",\"playerValue\":1550000,\"playerId\":\"34387\",\"buyer\":\"Christopher\"}",
           "id": "964007448",
           "playerId": "34387"
+        },
+        {
+          "date": "23.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Daka (ID: 34483)",
+          "id": "0",
+          "playerId": "34483"
+        },
+        {
+          "date": "23.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Wöber\",\"newClub\":\"10\",\"oldClub\":\"0\",\"playerID\":\"33831\"}",
+          "id": "0",
+          "playerId": "33831"
         }
       ]
     },
