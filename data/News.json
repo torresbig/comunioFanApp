@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "26.07.2026 05:19:52",
+  "lastUpdate": "26.07.2026 10:00:36",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -4739,6 +4739,22 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Führich\",\"price\":7710000,\"buyerId\":\"10967926\",\"playerValue\":7360000,\"playerId\":\"32858\",\"buyer\":\"Tom\"}",
           "id": "964081743",
           "playerId": "32858"
+        },
+        {
+          "date": "26.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Erlein\",\"newClub\":\"8\",\"oldClub\":\"62\",\"playerID\":\"34105\"}",
+          "id": "0",
+          "playerId": "34105"
+        },
+        {
+          "date": "26.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Malanga (ID: 34074)",
+          "id": "0",
+          "playerId": "34074"
         }
       ]
     },
