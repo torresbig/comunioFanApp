@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "29.07.2026 10:00:22",
+  "lastUpdate": "29.07.2026 15:04:55",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -1850,14 +1850,24 @@
     },
     {
       "date": "29.07.2026",
-      "news": [{
-        "date": "29.07.2026",
-        "art": "NEW_PLAYER",
-        "gelesen": false,
-        "text": "Neuer Spieler: Otávio (ID: 34490)",
-        "id": "0",
-        "playerId": "34490"
-      }]
+      "news": [
+        {
+          "date": "29.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Otávio (ID: 34490)",
+          "id": "0",
+          "playerId": "34490"
+        },
+        {
+          "date": "29.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gantenbein (34377) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34377"
+        }
+      ]
     },
     {
       "date": "29.06.2026",
