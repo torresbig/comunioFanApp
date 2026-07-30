@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "30.07.2026 05:19:49",
+  "lastUpdate": "30.07.2026 10:07:25",
   "newsDB": [
     {
       "date": "31.05.2026",
@@ -72,14 +72,88 @@
     },
     {
       "date": "30.07.2026",
-      "news": [{
-        "date": "30.07.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Scherhant\",\"price\":2200000,\"buyerId\":\"5949921\",\"playerValue\":2310000,\"playerId\":\"33629\",\"buyer\":\"Sascha\"}",
-        "id": "964179857",
-        "playerId": "33629"
-      }]
+      "news": [
+        {
+          "date": "30.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Scherhant\",\"price\":2200000,\"buyerId\":\"5949921\",\"playerValue\":2310000,\"playerId\":\"33629\",\"buyer\":\"Sascha\"}",
+          "id": "964179857",
+          "playerId": "33629"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"R. Wagner\",\"newClub\":\"61\",\"oldClub\":\"21\",\"playerID\":\"33576\"}",
+          "id": "0",
+          "playerId": "33576"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Dal\",\"newClub\":\"76\",\"oldClub\":\"18\",\"playerID\":\"34052\"}",
+          "id": "0",
+          "playerId": "34052"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Damar\",\"newClub\":\"12\",\"oldClub\":\"62\",\"playerID\":\"33673\"}",
+          "id": "0",
+          "playerId": "33673"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Bénes\",\"newClub\":\"61\",\"oldClub\":\"109\",\"playerID\":\"32641\"}",
+          "id": "0",
+          "playerId": "32641"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Weißhaupt \",\"newClub\":\"89\",\"oldClub\":\"21\",\"playerID\":\"33458\"}",
+          "id": "0",
+          "playerId": "33458"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Sauer (ID: 34491)",
+          "id": "0",
+          "playerId": "34491"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christopher\",\"sellerId\":\"13548242\",\"playerName\":\"E. Højlund\",\"price\":188300,\"buyerId\":\"1\",\"playerValue\":190000,\"playerId\":\"34389\",\"buyer\":\"Computer\"}",
+          "id": "964179857",
+          "playerId": "34389"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Terrier (34024) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34024"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Sauer (34491) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34491"
+        }
+      ]
     },
     {
       "date": "30.06.2026",
