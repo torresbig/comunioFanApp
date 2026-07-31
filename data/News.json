@@ -1,6 +1,43 @@
 {
-  "lastUpdate": "30.07.2026 22:06:08",
+  "lastUpdate": "31.07.2026 10:06:05",
   "newsDB": [
+    {
+      "date": "31.07.2026",
+      "news": [
+        {
+          "date": "31.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Hashioka (ID: 34492)",
+          "id": "0",
+          "playerId": "34492"
+        },
+        {
+          "date": "31.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Gendrey\",\"price\":525000,\"buyerId\":\"5949921\",\"playerValue\":520000,\"playerId\":\"34051\",\"buyer\":\"Sascha\"}",
+          "id": "964208817",
+          "playerId": "34051"
+        },
+        {
+          "date": "31.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Amiri\",\"price\":9500000,\"buyerId\":\"5949921\",\"playerValue\":10420000,\"playerId\":\"32395\",\"buyer\":\"Sascha\"}",
+          "id": "964208817",
+          "playerId": "32395"
+        },
+        {
+          "date": "31.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Florian\",\"sellerId\":\"13806423\",\"playerName\":\"Belocian\",\"price\":966000,\"buyerId\":\"1\",\"playerValue\":920000,\"playerId\":\"33988\",\"buyer\":\"Computer\"}",
+          "id": "964208817",
+          "playerId": "33988"
+        }
+      ]
+    },
     {
       "date": "31.05.2026",
       "news": [
