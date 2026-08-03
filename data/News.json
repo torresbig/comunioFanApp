@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "03.08.2026 05:19:59",
+  "lastUpdate": "03.08.2026 10:05:33",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -7262,6 +7262,46 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Hashioka\",\"price\":1253001,\"buyerId\":\"13548242\",\"playerValue\":1300000,\"playerId\":\"34492\",\"buyer\":\"Christopher\"}",
           "id": "964286141",
           "playerId": "34492"
+        },
+        {
+          "date": "03.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Latte Lath (ID: 34494)",
+          "id": "0",
+          "playerId": "34494"
+        },
+        {
+          "date": "03.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Onyedika (ID: 34493)",
+          "id": "0",
+          "playerId": "34493"
+        },
+        {
+          "date": "03.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Daghim (ID: 34294)",
+          "id": "0",
+          "playerId": "34294"
+        },
+        {
+          "date": "03.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christopher\",\"sellerId\":\"13548242\",\"playerName\":\"Sieb\",\"price\":612400,\"buyerId\":\"1\",\"playerValue\":550000,\"playerId\":\"34006\",\"buyer\":\"Computer\"}",
+          "id": "964286141",
+          "playerId": "34006"
+        },
+        {
+          "date": "03.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Onyedika (34493) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34493"
         }
       ]
     },
