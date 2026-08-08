@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "08.08.2026 20:42:22",
+  "lastUpdate": "08.08.2026 22:04:48",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -6996,6 +6996,22 @@
           "text": "Statuswechsel: Konoplya (34439) ist jetzt VERLETZT",
           "id": "0",
           "playerId": "34439"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Karl\",\"price\":9900005,\"buyerId\":\"13641446\",\"playerValue\":9340000,\"playerId\":\"34206\",\"buyer\":\"Christian\"}",
+          "id": "964437124",
+          "playerId": "34206"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Leopold\",\"price\":3130008,\"buyerId\":\"13548242\",\"playerValue\":3120000,\"playerId\":\"34435\",\"buyer\":\"Christopher\"}",
+          "id": "964437124",
+          "playerId": "34435"
         }
       ]
     },
@@ -7128,6 +7144,17 @@
           "playerId": "33884"
         }
       ]
+    },
+    {
+      "date": "07.08.2026",
+      "news": [{
+        "date": "07.08.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Christopher\",\"sellerId\":\"13548242\",\"playerName\":\"Guirassy\",\"price\":12748600,\"buyerId\":\"1\",\"playerValue\":12660000,\"playerId\":\"32667\",\"buyer\":\"Computer\"}",
+        "id": "964419348",
+        "playerId": "32667"
+      }]
     },
     {
       "date": "07.07.2026",
