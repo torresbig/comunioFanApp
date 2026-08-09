@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "09.08.2026 05:15:09",
+  "lastUpdate": "09.08.2026 10:08:10",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -6647,6 +6647,35 @@
           "text": "Neuer Spieler: Lidberg (ID: 34447)",
           "id": "0",
           "playerId": "34447"
+        }
+      ]
+    },
+    {
+      "date": "09.08.2026",
+      "news": [
+        {
+          "date": "09.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Neves (ID: 34497)",
+          "id": "0",
+          "playerId": "34497"
+        },
+        {
+          "date": "09.08.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Dina Ebimbe\",\"newClub\":\"10\",\"oldClub\":\"9\",\"playerID\":\"33678\"}",
+          "id": "0",
+          "playerId": "33678"
+        },
+        {
+          "date": "09.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Chandler (31743) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "31743"
         }
       ]
     },
