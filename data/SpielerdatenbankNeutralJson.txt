@@ -1328,7 +1328,7 @@
             "rang": 2
           },
           "SonstigeInfos": [
-            "teuerster Spieler (22.380.000 \u20ac)",
+            "teuerster Spieler (22,380,000 \u20ac)",
             "meisten Punkte letzte Saison (338)"
           ]
         },
@@ -5334,7 +5334,7 @@
             "durchschnittspunkte": 67.66,
             "rang": 1
           },
-          "SonstigeInfos": ["teuerster Spieler (Realwert) (170.000.000 \u20ac)"]
+          "SonstigeInfos": ["teuerster Spieler (Realwert) (170,000,000 \u20ac)"]
         },
         "position": "STURM",
         "possibleNames": [
@@ -27034,17 +27034,17 @@
     {
       "data": {
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "",
-          "laenderspiele": 0,
-          "lastUpdate": null,
+          "groesse": "1,73",
+          "geburtstag": "06.01.1997",
+          "laenderspiele": 11,
+          "lastUpdate": "10.08.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
-          "nationalitaet": "",
+          "trikotNummer": 6,
+          "nationalitaet": "Deutschland",
           "laenderspielTore": 0,
-          "hauptposition": "",
-          "fuss": ""
+          "hauptposition": "Defensives Mittelfeld",
+          "fuss": "rechts"
         },
         "isNotName": [],
         "punktekorrektur": [],
@@ -27052,14 +27052,15 @@
         "wert": 670000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "01.01.1900",
+          "date": "10.08.2026",
           "haveToCheck": true,
-          "id": "207580",
           "name": "Amara Condé",
-          "link": "https://www.transfermarkt.de/amara-conde/profil/spieler/207580"
+          "link": "https://www.transfermarkt.de/amara-conde/profil/spieler/207580",
+          "id": "207580",
+          "leistungsDaten": {}
         },
         "punkte": 0,
-        "realWert": 0,
+        "realWert": 900000,
         "lastBigUpdate": "30.05.2026",
         "stats": {
           "notenDurchschnitt": "0",
@@ -27079,7 +27080,12 @@
         "onMarket": false,
         "position": "MITTELFELD",
         "attribute": [],
-        "possibleNames": ["Amara Condé", "A. Condé", "A. Conde", "Amara Conde"]
+        "possibleNames": [
+          "Amara Condé",
+          "A. Condé",
+          "A. Conde",
+          "Amara Conde"
+        ]
       },
       "name": "A. Condé",
       "id": "34397"
