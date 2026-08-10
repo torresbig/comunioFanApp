@@ -7896,6 +7896,7 @@
     },
     {
       "data": {
+        "realWert": 250000,
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "08.01.2007",
@@ -7909,22 +7910,8 @@
           "hauptposition": "Defensives Mittelfeld",
           "fuss": "beidfüßig"
         },
-        "isNotName": [],
-        "wert": 190000,
-        "verein": "6",
-        "transfermarktDoDe": {
-          "date": "05.08.2026",
-          "haveToCheck": false,
-          "name": "Wesley Adeh",
-          "link": "https://www.transfermarkt.de/wesley-adeh/profil/spieler/1074523",
-          "id": "1074523",
-          "position": "DM",
-          "nationalitaet": "Deutschland",
-          "leistungsDaten": {},
-          "alter": 18
-        },
-        "realWert": 250000,
         "lastBigUpdate": "30.05.2026",
+        "isNotName": [],
         "stats": {
           "notenDurchschnitt": "0",
           "gelbekarten": 0,
@@ -7938,6 +7925,8 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
+        "wert": 190000,
+        "verein": "6",
         "lastUpdate": "30.06.2026",
         "position": "MITTELFELD",
         "possibleNames": [
@@ -7945,6 +7934,17 @@
           "W. Adeh",
           "Adeh"
         ],
+        "transfermarktDoDe": {
+          "date": "05.08.2026",
+          "haveToCheck": false,
+          "name": "Wesley Adeh",
+          "link": "https://www.transfermarkt.de/wesley-adeh/profil/spieler/1074523",
+          "id": "1074523",
+          "position": "DM",
+          "nationalitaet": "Deutschland",
+          "leistungsDaten": {},
+          "alter": 18
+        },
         "status": {}
       },
       "name": "Adeh",
@@ -21471,6 +21471,7 @@
     },
     {
       "data": {
+        "realWert": 150000,
         "spielerDaten": {
           "groesse": "1,89",
           "geburtstag": "16.01.2007",
@@ -21483,22 +21484,8 @@
           "hauptposition": "Innenverteidiger",
           "fuss": "rechts"
         },
-        "isNotName": [],
-        "verein": "68",
-        "wert": 200000,
-        "transfermarktDoDe": {
-          "date": "09.08.2026",
-          "name": "Felix Meiser",
-          "link": "https://www.transfermarkt.de/felix-meiser/profil/spieler/1069641",
-          "id": "1069641",
-          "position": "IV",
-          "marktwert": 150000,
-          "nationalitaet": "Deutschland",
-          "leistungsDaten": {},
-          "alter": 18
-        },
-        "realWert": 150000,
         "lastBigUpdate": "30.05.2026",
+        "isNotName": [],
         "stats": {
           "notenDurchschnitt": "0",
           "gelbekarten": 0,
@@ -21512,6 +21499,8 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
+        "verein": "68",
+        "wert": 200000,
         "lastUpdate": "10.07.2026",
         "position": "ABWEHR",
         "possibleNames": [
@@ -21519,6 +21508,17 @@
           "Meiser",
           "F. Meiser"
         ],
+        "transfermarktDoDe": {
+          "date": "09.08.2026",
+          "name": "Felix Meiser",
+          "link": "https://www.transfermarkt.de/felix-meiser/profil/spieler/1069641",
+          "id": "1069641",
+          "position": "IV",
+          "marktwert": 150000,
+          "nationalitaet": "Deutschland",
+          "leistungsDaten": {},
+          "alter": 18
+        },
         "status": {}
       },
       "name": "Meiser",
@@ -21526,6 +21526,7 @@
     },
     {
       "data": {
+        "realWert": 400000,
         "spielerDaten": {
           "groesse": "1,76",
           "geburtstag": "31.07.2007",
@@ -21538,23 +21539,8 @@
           "hauptposition": "Linker Verteidiger",
           "fuss": "links"
         },
-        "isNotName": [],
-        "verein": "68",
-        "wert": 180000,
-        "transfermarktDoDe": {
-          "date": "02.08.2026",
-          "haveToCheck": true,
-          "name": "Oliver Sorg",
-          "link": "https://www.transfermarkt.de/oliver-sorg/profil/spieler/960444",
-          "id": "960444",
-          "position": "LV",
-          "marktwert": 400000,
-          "nationalitaet": "Österreich",
-          "leistungsDaten": {},
-          "alter": 18
-        },
-        "realWert": 400000,
         "lastBigUpdate": "30.05.2026",
+        "isNotName": [],
         "stats": {
           "notenDurchschnitt": "0",
           "gelbekarten": 0,
@@ -21568,6 +21554,8 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
+        "verein": "68",
+        "wert": 180000,
         "lastUpdate": "06.07.2026",
         "position": "ABWEHR",
         "possibleNames": [
@@ -21575,6 +21563,18 @@
           "Sorg",
           "O. Sorg"
         ],
+        "transfermarktDoDe": {
+          "date": "02.08.2026",
+          "haveToCheck": true,
+          "name": "Oliver Sorg",
+          "link": "https://www.transfermarkt.de/oliver-sorg/profil/spieler/960444",
+          "id": "960444",
+          "position": "LV",
+          "marktwert": 400000,
+          "nationalitaet": "Österreich",
+          "leistungsDaten": {},
+          "alter": 18
+        },
         "status": {}
       },
       "name": "Sorg",
@@ -22197,43 +22197,6 @@
     },
     {
       "data": {
-        "transfermarktDoDe": {
-          "date": "30.07.2026",
-          "haveToCheck": true,
-          "name": "Florian Hellstern",
-          "link": "https://www.transfermarkt.de/florian-hellstern/profil/spieler/1009438",
-          "id": "1009438",
-          "position": "TW",
-          "marktwert": 500000,
-          "nationalitaet": "Deutschland",
-          "leistungsDaten": {},
-          "alter": 17
-        },
-        "hauptposition": "",
-        "groesse": "",
-        "lastBigUpdate": "30.05.2026",
-        "stats": {
-          "notenDurchschnitt": "0",
-          "gelbekarten": 0,
-          "totalPenalties": 0,
-          "ratedGames": 0,
-          "lastUpdate": "30.05.2026",
-          "playedGames": 0,
-          "totalGoals": 0,
-          "punkteDurchschnitt": "0",
-          "gelbrotekarten": 0,
-          "rotekarten": 0,
-          "manOfTheMatchAmount": 0
-        },
-        "nebenpositionen": [],
-        "attribute": {},
-        "nationalitaet": "",
-        "possibleNames": [
-          "Florian Hellstern",
-          "Hellstern",
-          "F. Hellstern"
-        ],
-        "fuss": "",
         "geburtstag": "",
         "spielerDaten": {
           "groesse": "1,88",
@@ -22250,13 +22213,50 @@
         "isNotName": [],
         "verein": "14",
         "wert": 240000,
+        "transfermarktDoDe": {
+          "date": "30.07.2026",
+          "haveToCheck": true,
+          "name": "Florian Hellstern",
+          "link": "https://www.transfermarkt.de/florian-hellstern/profil/spieler/1009438",
+          "id": "1009438",
+          "position": "TW",
+          "marktwert": 500000,
+          "nationalitaet": "Deutschland",
+          "leistungsDaten": {},
+          "alter": 17
+        },
+        "hauptposition": "",
+        "groesse": "",
         "realWert": 4000000,
+        "lastBigUpdate": "30.05.2026",
+        "stats": {
+          "notenDurchschnitt": "0",
+          "gelbekarten": 0,
+          "totalPenalties": 0,
+          "ratedGames": 0,
+          "lastUpdate": "30.05.2026",
+          "playedGames": 0,
+          "totalGoals": 0,
+          "punkteDurchschnitt": "0",
+          "gelbrotekarten": 0,
+          "rotekarten": 0,
+          "manOfTheMatchAmount": 0
+        },
         "laenderspiele": 0,
         "lastUpdate": "16.06.2026",
+        "nebenpositionen": [],
         "nationalspieler": "",
         "trikotNummer": 0,
+        "attribute": {},
         "position": "TORHÜTER",
+        "nationalitaet": "",
+        "possibleNames": [
+          "Florian Hellstern",
+          "Hellstern",
+          "F. Hellstern"
+        ],
         "laenderspielTore": 0,
+        "fuss": "",
         "status": {}
       },
       "name": "Hellstern",
