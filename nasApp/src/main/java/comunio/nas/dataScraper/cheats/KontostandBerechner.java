@@ -128,9 +128,9 @@ public final class KontostandBerechner {
 
     private void processPunkte(Map<String, JSONObject> userContainerMap) {
         for (JSONObject userContainer : userContainerMap.values()) {
-            if (!"5981249".equals(userContainer.optJSONObject("user").optString("id"))) {
-                continue; // Nur für Thomas debuggen
-            }
+//            if (!"5981249".equals(userContainer.optJSONObject("user").optString("id"))) {
+//                continue; // Nur für Thomas debuggen
+//            }
             JSONObject punkteHistorie = userContainer.optJSONObject("punkteHistorie", new JSONObject());
             int sum = 0;
             int sumPunkte = 0;

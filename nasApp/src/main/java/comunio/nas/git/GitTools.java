@@ -313,9 +313,9 @@ public class GitTools {
 	        Urls.USER_TO_PLAYER_URL,
 	        Urls.USER_DB_URL,
 	        Urls.NOTINLIGA_DB_URL,
-	        Urls.TRANSFERMARKT_LIST,
-	        Urls.MATCHDAYDATA_LIST,
-	        Urls.LASTUPDATES_LIST,
+	        Urls.TRANSFERMARKT_LIST_URL,
+	        Urls.MATCHDAYDATA_LIST_URL,
+	        Urls.LASTUPDATES_LIST_URL,
 	        Urls.INJURIES_DB_URL,
 	        Urls.POINTS_DB_URL
 	    );

@@ -50,17 +50,17 @@ public class GitHubUploader {
 	}
 
 	public static void uploadTransfermarktListe(JSONArray transfermarktArray) {
-		uploadToGitHub(Urls.getFilePathForGit(Urls.TRANSFERMARKT_LIST), transfermarktArray.toString(2), "Update Transfermarkt-Liste feed");
+		uploadToGitHub(Urls.getFilePathForGit(Urls.TRANSFERMARKT_LIST_URL), transfermarktArray.toString(2), "Update Transfermarkt-Liste feed");
 
 	}
 
 	public static void uploadMatchdayInfoListe(JSONObject matchdayInfoList) {
-		uploadToGitHub(Urls.getFilePathForGit(Urls.MATCHDAYDATA_LIST), matchdayInfoList.toString(2), "Update matchdayInfoList-Liste feed");
+		uploadToGitHub(Urls.getFilePathForGit(Urls.MATCHDAYDATA_LIST_URL), matchdayInfoList.toString(2), "Update matchdayInfoList-Liste feed");
 
 	}
 
 	public static void uploadLastUpdateListe(JSONObject lastUpdates) {
-		uploadToGitHub(Urls.getFilePathForGit(Urls.LASTUPDATES_LIST), lastUpdates.toString(2), "Update lastUpdates-Liste feed");
+		uploadToGitHub(Urls.getFilePathForGit(Urls.LASTUPDATES_LIST_URL), lastUpdates.toString(2), "Update lastUpdates-Liste feed");
 
 	}
 

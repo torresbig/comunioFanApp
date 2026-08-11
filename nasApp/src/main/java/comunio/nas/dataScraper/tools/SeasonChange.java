@@ -35,7 +35,7 @@ public class SeasonChange {
 	private static final Logger LOGGER = LogManager.getLogger(SeasonChange.class);
 
 	/** URLs der Dateien, die beim Saisonwechsel archiviert und geleert werden. */
-	private static final List<String> SEASON_ARCHIVE_URLS = List.of(Urls.USER_DB_URL, Urls.POINTS_DB_URL, Urls.MATCHDAYDATA_LIST, Urls.NEWS_DB_URL, Urls.TRANSFERMARKT_LIST, Urls.USER_TO_PLAYER_URL, Urls.CLUB_DB_URL);
+	private static final List<String> SEASON_ARCHIVE_URLS = List.of(Urls.USER_DB_URL, Urls.POINTS_DB_URL, Urls.MATCHDAYDATA_LIST_URL, Urls.NEWS_DB_URL, Urls.TRANSFERMARKT_LIST_URL, Urls.USER_TO_PLAYER_URL, Urls.CLUB_DB_URL);
 //	private static final List<String> SEASON_ARCHIVE_URLS = List.of(Urls.USER_TO_PLAYER_URL);
 
 	/**

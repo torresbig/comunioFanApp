@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.logging.Logger;
 
@@ -21,6 +22,7 @@ import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.orga.ComunioDate;
 import comunio.nas.objects.user.User;
 import comunio.nas.util.HttpHeaderUtil;
+import comunio.nas.util.player.PlayerHelper;
 
 public class UserUpdater {
 
@@ -78,8 +80,53 @@ public class UserUpdater {
 			} catch (Exception e) {
 				LOGGER.warning("Fehler in updateAllUsers: " + e.getMessage());
 			}
+		} else {
+//			calculateTeamValuesForAllUsers(playerDbObject, notInligaDBObj, userDB, playerToUserMap);
+			UserDataLoader.fetchDataForAllUsers(userDB);
 		}
 
+	}
+
+	
+	// TODO: fehler. irgendwo werden die daten doch wieder komisch geändert!
+	private static void calculateTeamValuesForAllUsers(JSONObject playerDbObject, JSONObject notInligaDBObj, JSONArray userDB, Map<String, String> playerToUserMap) {
+		for (int i = 0; i < userDB.length(); i++) {
+			JSONObject userObj = (JSONObject) userDB.get(i);
+			JSONObject userNew = userObj.optJSONObject("user", new JSONObject());
+			Set<String> playerIdsForUser = new HashSet<>();
+			if (userNew.has("id") && !userNew.getString("id").equals("1")) {
+				String userId = userNew.optString("id", "");
+				for(Entry<String, String> entry : playerToUserMap.entrySet()) {
+					String playerId = entry.getKey();
+					if(entry.getValue().equals(userId)) {
+						playerIdsForUser.add(playerId);
+					}
+				}
+			} else {
+				LOGGER.warning("User-Objekt ohne 'id' in userDB an Index " + i + " – übersprungen.");
+			}
+			if(!playerIdsForUser.isEmpty()) {
+				long teamValue = 0L;
+				for(String playerId : playerIdsForUser) {
+					JSONArray playerDB = playerDbObject.optJSONArray("playerDB", new JSONArray());
+					JSONObject player = PlayerHelper.findPlayerByComunioId( playerDB, playerId,notInligaDBObj);
+					if(player == null) {
+						LOGGER.warning("Spieler mit playerId=" + playerId + " nicht in playerDB gefunden. Teamwert für userId=" + userNew.optString("id", "") + " wird ggf. unvollständig berechnet.");
+						continue;
+					}
+					JSONObject playerData = player.optJSONObject("data", new JSONObject());
+					teamValue += playerData.optInt("wert", 0);
+					userNew.put("teamValue", teamValue);
+				}
+				
+				
+			} else {
+				LOGGER.warning("Keine Spieler für userId=" + userNew.optString("id", "") + " gefunden. Teamwert auf 0 gesetzt.");	
+			}
+		}
+		
+		
+		
 	}
 
 	/**

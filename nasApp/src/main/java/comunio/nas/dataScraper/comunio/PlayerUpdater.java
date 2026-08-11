@@ -360,7 +360,7 @@ public class PlayerUpdater {
 	 */
 	private static void addPointsToPlayerData(Integer points, Integer lastPoints, JSONObject data, LastUpdates lastUpdates, MatchdayInfo matchdayInfo) {
 		// punkte auf 0 wenn saison noch nicht los ging.
-		if ((matchdayInfo.getCurrentMatchday() == 1 && !matchdayInfo.isFinished()) || matchdayInfo.isStuckBetweenTheSeasons(lastUpdates)) {
+		if ((matchdayInfo.getCurrentMatchday() == 999 || matchdayInfo.getCurrentMatchday() == 1 && !matchdayInfo.isFinished()) || matchdayInfo.isStuckBetweenTheSeasons(lastUpdates)) {
 			data.put("punkte", 0);
 			data.put("lastPoints", 0);
 			if (points > 0) {
@@ -769,6 +769,7 @@ public class PlayerUpdater {
 			// sein)
 			MatchdayInfo matchdayInfo = MatchdayInfo.fetchCurrentMatchday();
 			if (matchdayInfo.getPointsMatchday() == 0) {
+				LOGGER.warning("Aktueller Spieltag konnte nicht ermittelt werden. Punkteaktualisierung wird übersprungen.");
 				return;
 			}
 

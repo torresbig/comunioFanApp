@@ -13,6 +13,7 @@ import comunio.nas.dataScraper.transfermarktDe.TmDePlayerDataUpdater;
 import comunio.nas.dataVariable.LastUpdates;
 import comunio.nas.dataVariable.Urls;
 import comunio.nas.dataVariable.UserLoginData;
+import comunio.nas.error.ErrorsContainer;
 import comunio.nas.git.GitHubUploader;
 import comunio.nas.objects.NewsManager;
 import comunio.nas.objects.community.Community;
@@ -22,7 +23,9 @@ import comunio.nas.objects.player.SonstigeAttribute;
 import comunio.nas.objects.user.User;
 import comunio.nas.util.LoadJSONfromFile;
 import comunio.nas.util.StatusManager;
+import comunio.nas.util.player.PlayerHelper;
 
+import java.time.Instant;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -42,6 +45,7 @@ public class ComunioDataUpdater {
 	public static MatchdayInfo currentMatchdayInfo;
 	public static Community community = new Community();
 	public static UserLoginData uld;
+	public static ErrorsContainer errorDb = new ErrorsContainer();
 
 	/**
 	 * Hauptmethode: Startet den Aktualisierungsprozess.
@@ -81,7 +85,9 @@ public class ComunioDataUpdater {
 
 			LOGGER.info("Lade Spielerdatenbank von GitHub");
 			JSONObject playerDBObject = LoadJSONfromFile.loadJsonObjectWithPlayerArrayFromUrl(Urls.PLAYER_DB_URL);
-			PlayerDbFixer.removeAllStatusFromPlayerObject(playerDBObject);
+			
+			//TODO: WARUM?
+//			PlayerDbFixer.removeAllStatusFromPlayerObject(playerDBObject);
 
 			LOGGER.info("Lade Playerpoints von GitHub");
 			JSONObject pointsDB = LoadJSONfromFile.loadJsonObjectFromUrl(Urls.POINTS_DB_URL);
@@ -89,12 +95,12 @@ public class ComunioDataUpdater {
 			PlayerpointsToPlayerObject.putPointsToPlayerObject(pointsDB, playerDBObject);
 
 			LOGGER.info("Lade Matchday Liste von GitHub");
-			JSONObject matchdayInfoList = LoadJSONfromFile.loadJsonObjectFromUrl(Urls.MATCHDAYDATA_LIST);
+			JSONObject matchdayInfoList = LoadJSONfromFile.loadJsonObjectFromUrl(Urls.MATCHDAYDATA_LIST_URL);
 
 			LOGGER.info("Lade LastUpdates Liste von GitHub");
-			JSONObject lastUpdatesList = LoadJSONfromFile.loadJsonObjectFromUrl(Urls.LASTUPDATES_LIST);
+			JSONObject lastUpdatesList = LoadJSONfromFile.loadJsonObjectFromUrl(Urls.LASTUPDATES_LIST_URL);
 			lastUpdates.fromJson(lastUpdatesList);
-
+			
 			LOGGER.info("Lade Marktwertdatenbank von GitHub");
 			JSONArray marketValueDB = LoadJSONfromFile.loadJsonArrayFromUrl(Urls.MARKET_VALUE_DB_URL);
 
@@ -104,16 +110,24 @@ public class ComunioDataUpdater {
 			NewsManager newsManager = NewsManager.fromJsonObject(newsDbObjcet);
 
 			LOGGER.info("Lade Userdatenbank von GitHub");
-			JSONArray userDB = LoadJSONfromFile.loadJsonArrayFromUrl(Urls.USER_DB_URL);
+			JSONArray userDB = LoadJSONfromFile.loadJsonArrayFromUrl(Urls.USER_DB_URL);			
 
 			LOGGER.info("Lade NotInLiga-PlayerDB von GitHub");
 			JSONObject notInligaDBObj = LoadJSONfromFile.loadJsonObjectFromUrl(Urls.NOTINLIGA_DB_URL);
 
 			LOGGER.info("Lade TransfermarktListe von GitHub");
-			JSONArray transfermarktListe = LoadJSONfromFile.loadJsonArrayFromUrl(Urls.TRANSFERMARKT_LIST);
+			JSONArray transfermarktListe = LoadJSONfromFile.loadJsonArrayFromUrl(Urls.TRANSFERMARKT_LIST_URL);
 
 			LOGGER.info("Lade Player to User Map");
 			Map<String, String> playerToUserMap = GitHubUploader.downloadPlayerToUserMap(Urls.USER_TO_PLAYER_URL);
+			
+			LOGGER.info("Lade ErrorDb von GitHub");
+			try {
+				errorDb.fromJson(LoadJSONfromFile.loadJsonObjectFromUrl(Urls.ERROR_DB_URL));
+			} catch (Exception e) {
+				LOGGER.warning("Fehler beim Laden der ErrorDb von GitHub: " + e.getMessage());
+				errorDb = new ErrorsContainer(); // Leere ErrorDb erstellen, falls das Laden fehlschlägt
+			}
 
 			// -------------------- SEASON TRANSIT ANALYSE ---------------------------
 			// NEU:
@@ -225,7 +239,10 @@ public class ComunioDataUpdater {
 			GitHubUploader.uploadToGitHub(Urls.NOTINLIGA_DB_URL, notInligaDBObj);
 
 			LOGGER.info("Lade aktualisierte ClubDB auf GitHub hoch");
-			GitHubUploader.uploadClubsDatabase(clubDB);
+			GitHubUploader.uploadClubsDatabase(clubDB); 
+			
+			LOGGER.info("Lade aktualisierte ErrorDb.json auf GitHub hoch");
+			GitHubUploader.uploadToGitHub(Urls.ERROR_DB_URL, errorDb.toJson());
 
 			// WICHTIG: News hochladen (von dir ergänzt)
 			LOGGER.info("Lade aktualisierte News auf GitHub hoch");

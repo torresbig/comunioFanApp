@@ -61,6 +61,9 @@ public class MatchdayInfo {
 	 * Gibt die aktuelle Spieltagsnummer zurück.
 	 */
 	public int getCurrentMatchday() {
+		if(this.currentMatchday >= 34 && this.isFinished ){
+			return 0; // Saison ist vorbei, nächster Spieltag = 0
+		}
 		return currentMatchday;
 	}
 

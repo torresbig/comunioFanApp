@@ -31,12 +31,13 @@ public class Urls {
 	public static final String CLUB_DB_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("VereinsdatenbankJson.txt");
 	public static final String MARKET_VALUE_DB_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("MarktwerteJson.txt");
 	public static final String NEWS_DB_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("News.json");
+	public static final String ERROR_DB_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("ErrorDb.json");
 	public static final String USER_TO_PLAYER_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("PlayerToUserMap_" + ComunioDataUpdater.community.getId() + ".txt");
 	public static final String USER_DB_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("UserdatenbankJson_" + ComunioDataUpdater.community.getId() + ".txt");
 	public static final String NOTINLIGA_DB_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("NotInLigaDB.json");
-	public static final String TRANSFERMARKT_LIST = ComunioDataUpdater.uld.getCompleteGitProjectPath("TransfermarktListe.json");
-	public static final String MATCHDAYDATA_LIST = ComunioDataUpdater.uld.getCompleteGitProjectPath("MatchdayDataList.json");
-	public static final String LASTUPDATES_LIST = ComunioDataUpdater.uld.getCompleteGitProjectPath("LastUpdatesList.json");
+	public static final String TRANSFERMARKT_LIST_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("TransfermarktListe.json");
+	public static final String MATCHDAYDATA_LIST_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("MatchdayDataList.json");
+	public static final String LASTUPDATES_LIST_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("LastUpdatesList.json");
 	public static final String INJURIES_DB_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("InjuriesDB.json"); // wird in zukunft ausgelagert in extra DB
 	public static final String POINTS_DB_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("PointsDB.json");
 

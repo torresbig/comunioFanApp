@@ -2,6 +2,7 @@ package comunio.nas.dataScraper.comunio;
 
 import java.util.logging.Logger;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
 
@@ -22,6 +23,33 @@ public class UserDataLoader {
 		obj.put("id", "5981249");
 		fetchDataForUserJson(obj);
 
+	}
+	
+	public static void fetchDataForAllUsers(JSONArray userDB) {
+		if (userDB == null || userDB.isEmpty()) {
+			LOGGER.warning("fetchDataForAllUsers: userDB ist leer oder null!");
+			return;
+		}
+		for (int i = 0; i < userDB.length(); i++) {
+			JSONObject userObject = userDB.optJSONObject(i);
+			if (userObject == null) {
+				LOGGER.warning("fetchDataForAllUsers: userObject an Index " + i + " ist null!");
+				continue;
+			}
+			if(!userObject.has("user") ) {
+				LOGGER.warning("fetchDataForAllUsers: userObject an Index " + i + " hat kein 'user'-Feld!");
+				continue;
+			}
+			JSONObject user = userObject.optJSONObject("user");
+			if(user.getString("id").equals("1")) {
+				LOGGER.info("fetchDataForAllUsers: User mit ID=1 wird übersprungen (COMPUTER).");
+				continue;
+			}
+			JSONObject userData = fetchDataForUserJson(userObject);
+			if (userData == null) {
+				LOGGER.warning("fetchDataForAllUsers: Fehler beim Abrufen der Userdaten für Index " + i);
+			}
+		}	
 	}
 
 	/**

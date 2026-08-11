@@ -9,7 +9,10 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import comunio.nas.dataScraper.comunio.ComunioDataUpdater;
 import comunio.nas.dataVariable.Urls;
+import comunio.nas.error.Error;
+import comunio.nas.error.ErrorType;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.util.ClubMapper;
 import comunio.nas.util.HttpHeaderUtil;
@@ -91,6 +94,7 @@ public class TmDePlayerFinder {
 
 		log.append("Kein passender Spieler gefunden für: " + nameInput + " / " + vereinInput + ".").append(System.lineSeparator());
 		LOGGER.info(log.toString());
+		ComunioDataUpdater.errorDb.addError(new Error(ErrorType.TRANSFERMARKT_DE_FIND_PLAYER, log.toString()));
 		return null;
 	}
 
