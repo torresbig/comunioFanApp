@@ -1,17 +1,36 @@
-{"34": {
-  "earliestKickoff": "2026-05-16T15:30:00+02:00",
-  "pointsMatchday": 34,
-  "eventInfo": {
-    "date": "16.05.2026",
-    "next": 0,
-    "previous": 0,
-    "id": 396752,
-    "event": "Aufstellung 34. Spieltag"
+{
+  "34": {
+    "earliestKickoff": "2026-05-16T15:30:00+02:00",
+    "pointsMatchday": 34,
+    "eventInfo": {
+      "date": "16.05.2026",
+      "next": 0,
+      "previous": 0,
+      "id": 396752,
+      "event": "Aufstellung 34. Spieltag"
+    },
+    "currentMatchday": 34,
+    "isShifted": false,
+    "isStarted": true,
+    "isFinished": true,
+    "latestKickoff": "2026-05-16T15:30:00+02:00",
+    "fetchNow": false
   },
-  "currentMatchday": 34,
-  "isShifted": false,
-  "isStarted": true,
-  "isFinished": true,
-  "latestKickoff": "2026-05-16T15:30:00+02:00",
-  "fetchNow": false
-}}
+  "1": {
+    "earliestKickoff": "2026-08-28T20:30:00+02:00",
+    "pointsMatchday": 0,
+    "eventInfo": {
+      "date": "28.08.2026",
+      "next": 398950,
+      "previous": 0,
+      "id": 398940,
+      "event": "Aufstellung 1. Spieltag"
+    },
+    "currentMatchday": 1,
+    "isShifted": false,
+    "isStarted": false,
+    "isFinished": false,
+    "latestKickoff": "2026-08-30T17:30:00+02:00",
+    "fetchNow": false
+  }
+}

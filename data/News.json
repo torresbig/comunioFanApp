@@ -1,6 +1,51 @@
 {
-  "lastUpdate": "11.07.2026 19:00:09",
+  "lastUpdate": "11.08.2026 10:07:05",
   "newsDB": [
+    {
+      "date": "31.07.2026",
+      "news": [
+        {
+          "date": "31.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Hashioka (ID: 34492)",
+          "id": "0",
+          "playerId": "34492"
+        },
+        {
+          "date": "31.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Gendrey\",\"price\":525000,\"buyerId\":\"5949921\",\"playerValue\":520000,\"playerId\":\"34051\",\"buyer\":\"Sascha\"}",
+          "id": "964208817",
+          "playerId": "34051"
+        },
+        {
+          "date": "31.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Amiri\",\"price\":9500000,\"buyerId\":\"5949921\",\"playerValue\":10420000,\"playerId\":\"32395\",\"buyer\":\"Sascha\"}",
+          "id": "964208817",
+          "playerId": "32395"
+        },
+        {
+          "date": "31.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Florian\",\"sellerId\":\"13806423\",\"playerName\":\"Belocian\",\"price\":966000,\"buyerId\":\"1\",\"playerValue\":920000,\"playerId\":\"33988\",\"buyer\":\"Computer\"}",
+          "id": "964208817",
+          "playerId": "33988"
+        },
+        {
+          "date": "31.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ngoumou (33681) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33681"
+        }
+      ]
+    },
     {
       "date": "31.05.2026",
       "news": [
@@ -67,6 +112,99 @@
           "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Grüger\",\"price\":258800,\"buyerId\":\"1\",\"playerValue\":240000,\"playerId\":\"34380\",\"buyer\":\"Computer\"}",
           "id": "963001108",
           "playerId": "34380"
+        }
+      ]
+    },
+    {
+      "date": "30.07.2026",
+      "news": [
+        {
+          "date": "30.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Scherhant\",\"price\":2200000,\"buyerId\":\"5949921\",\"playerValue\":2310000,\"playerId\":\"33629\",\"buyer\":\"Sascha\"}",
+          "id": "964179857",
+          "playerId": "33629"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"R. Wagner\",\"newClub\":\"61\",\"oldClub\":\"21\",\"playerID\":\"33576\"}",
+          "id": "0",
+          "playerId": "33576"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Dal\",\"newClub\":\"76\",\"oldClub\":\"18\",\"playerID\":\"34052\"}",
+          "id": "0",
+          "playerId": "34052"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Damar\",\"newClub\":\"12\",\"oldClub\":\"62\",\"playerID\":\"33673\"}",
+          "id": "0",
+          "playerId": "33673"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Bénes\",\"newClub\":\"61\",\"oldClub\":\"109\",\"playerID\":\"32641\"}",
+          "id": "0",
+          "playerId": "32641"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Weißhaupt \",\"newClub\":\"89\",\"oldClub\":\"21\",\"playerID\":\"33458\"}",
+          "id": "0",
+          "playerId": "33458"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Sauer (ID: 34491)",
+          "id": "0",
+          "playerId": "34491"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christopher\",\"sellerId\":\"13548242\",\"playerName\":\"E. Højlund\",\"price\":188300,\"buyerId\":\"1\",\"playerValue\":190000,\"playerId\":\"34389\",\"buyer\":\"Computer\"}",
+          "id": "964179857",
+          "playerId": "34389"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Terrier (34024) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34024"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Sauer (34491) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34491"
+        },
+        {
+          "date": "30.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Chiarodia (33601) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33601"
         }
       ]
     },
@@ -1845,6 +1983,27 @@
           "text": "Statuswechsel: Giannoulis (34027) ist wieder AKTIV",
           "id": "0",
           "playerId": "34027"
+        }
+      ]
+    },
+    {
+      "date": "29.07.2026",
+      "news": [
+        {
+          "date": "29.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Otávio (ID: 34490)",
+          "id": "0",
+          "playerId": "34490"
+        },
+        {
+          "date": "29.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gantenbein (34377) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34377"
         }
       ]
     },
@@ -4643,6 +4802,51 @@
       ]
     },
     {
+      "date": "28.07.2026",
+      "news": [
+        {
+          "date": "28.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Baumgartner\",\"price\":6370000,\"buyerId\":\"13830745\",\"playerValue\":6420000,\"playerId\":\"32977\",\"buyer\":\"Gerry\"}",
+          "id": "964128577",
+          "playerId": "32977"
+        },
+        {
+          "date": "28.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kleindienst\",\"price\":7580011,\"buyerId\":\"13548242\",\"playerValue\":7430000,\"playerId\":\"32599\",\"buyer\":\"Christopher\"}",
+          "id": "964128577",
+          "playerId": "32599"
+        },
+        {
+          "date": "28.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Chávez\",\"price\":460000,\"buyerId\":\"5949921\",\"playerValue\":460000,\"playerId\":\"34328\",\"buyer\":\"Sascha\"}",
+          "id": "964128577",
+          "playerId": "34328"
+        },
+        {
+          "date": "28.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: A. Vogt (34425) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34425"
+        },
+        {
+          "date": "28.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Machida (34213) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34213"
+        }
+      ]
+    },
+    {
       "date": "28.06.2026",
       "news": [
         {
@@ -4685,6 +4889,35 @@
       ]
     },
     {
+      "date": "27.07.2026",
+      "news": [
+        {
+          "date": "27.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Bätzner (34415) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34415"
+        },
+        {
+          "date": "27.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Konoplya (34439) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34439"
+        },
+        {
+          "date": "27.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Tom\",\"sellerId\":\"10967926\",\"playerName\":\"Bitshiabu\",\"price\":651200,\"buyerId\":\"1\",\"playerValue\":670000,\"playerId\":\"33824\",\"buyer\":\"Computer\"}",
+          "id": "964123728",
+          "playerId": "33824"
+        }
+      ]
+    },
+    {
       "date": "27.06.2026",
       "news": [
         {
@@ -4718,6 +4951,67 @@
           "text": "Statuswechsel: Ryerson (33141) ist wieder AKTIV",
           "id": "0",
           "playerId": "33141"
+        }
+      ]
+    },
+    {
+      "date": "26.07.2026",
+      "news": [
+        {
+          "date": "26.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Yamamoto\",\"price\":2810880,\"buyerId\":\"10967926\",\"playerValue\":2620000,\"playerId\":\"34437\",\"buyer\":\"Tom\"}",
+          "id": "964081743",
+          "playerId": "34437"
+        },
+        {
+          "date": "26.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Führich\",\"price\":7710000,\"buyerId\":\"10967926\",\"playerValue\":7360000,\"playerId\":\"32858\",\"buyer\":\"Tom\"}",
+          "id": "964081743",
+          "playerId": "32858"
+        },
+        {
+          "date": "26.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Erlein\",\"newClub\":\"8\",\"oldClub\":\"62\",\"playerID\":\"34105\"}",
+          "id": "0",
+          "playerId": "34105"
+        },
+        {
+          "date": "26.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Malanga (ID: 34074)",
+          "id": "0",
+          "playerId": "34074"
+        },
+        {
+          "date": "26.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Collins (33836) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33836"
+        },
+        {
+          "date": "26.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Højlund (34019) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34019"
+        },
+        {
+          "date": "26.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kownacki (33030) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33030"
         }
       ]
     },
@@ -4775,6 +5069,75 @@
       ]
     },
     {
+      "date": "25.07.2026",
+      "news": [
+        {
+          "date": "25.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Stage\",\"price\":6390000,\"buyerId\":\"13830745\",\"playerValue\":6490000,\"playerId\":\"33640\",\"buyer\":\"Gerry\"}",
+          "id": "964058292",
+          "playerId": "33640"
+        },
+        {
+          "date": "25.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Gregoritsch\",\"price\":3680000,\"buyerId\":\"6013585\",\"playerValue\":3520000,\"playerId\":\"31958\",\"buyer\":\"Stefan 8\"}",
+          "id": "964058292",
+          "playerId": "31958"
+        },
+        {
+          "date": "25.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Nadir (ID: 34486)",
+          "id": "0",
+          "playerId": "34486"
+        },
+        {
+          "date": "25.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Abraha (ID: 34487)",
+          "id": "0",
+          "playerId": "34487"
+        },
+        {
+          "date": "25.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: James (ID: 34485)",
+          "id": "0",
+          "playerId": "34485"
+        },
+        {
+          "date": "25.07.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Malanga\",\"oldPos\":\"STURM\",\"playerID\":\"34074\",\"newPos\":\"MITTELFELD\"}",
+          "id": "0",
+          "playerId": "34074"
+        },
+        {
+          "date": "25.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Malanga\",\"newClub\":\"14\",\"oldClub\":\"0\",\"playerID\":\"34074\"}",
+          "id": "0",
+          "playerId": "34074"
+        },
+        {
+          "date": "25.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Yigit (ID: 34488)",
+          "id": "0",
+          "playerId": "34488"
+        }
+      ]
+    },
+    {
       "date": "25.06.2026",
       "news": [
         {
@@ -4792,6 +5155,27 @@
           "text": "Statuswechsel: Brown (33975) ist wieder AKTIV",
           "id": "0",
           "playerId": "33975"
+        }
+      ]
+    },
+    {
+      "date": "24.07.2026",
+      "news": [
+        {
+          "date": "24.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Okon-Engstler (ID: 34484)",
+          "id": "0",
+          "playerId": "34484"
+        },
+        {
+          "date": "24.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Wöber (ID: 33831)",
+          "id": "0",
+          "playerId": "33831"
         }
       ]
     },
@@ -4857,6 +5241,51 @@
       ]
     },
     {
+      "date": "23.07.2026",
+      "news": [
+        {
+          "date": "23.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Lenz\",\"price\":610000,\"buyerId\":\"5949921\",\"playerValue\":780000,\"playerId\":\"34128\",\"buyer\":\"Sascha\"}",
+          "id": "964007448",
+          "playerId": "34128"
+        },
+        {
+          "date": "23.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kade\",\"price\":4200000,\"buyerId\":\"13806423\",\"playerValue\":3820000,\"playerId\":\"33564\",\"buyer\":\"Florian\"}",
+          "id": "964007448",
+          "playerId": "33564"
+        },
+        {
+          "date": "23.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Sylla\",\"price\":1610111,\"buyerId\":\"13548242\",\"playerValue\":1550000,\"playerId\":\"34387\",\"buyer\":\"Christopher\"}",
+          "id": "964007448",
+          "playerId": "34387"
+        },
+        {
+          "date": "23.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Daka (ID: 34483)",
+          "id": "0",
+          "playerId": "34483"
+        },
+        {
+          "date": "23.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Wöber\",\"newClub\":\"10\",\"oldClub\":\"0\",\"playerID\":\"33831\"}",
+          "id": "0",
+          "playerId": "33831"
+        }
+      ]
+    },
+    {
       "date": "23.06.2026",
       "news": [
         {
@@ -4882,6 +5311,67 @@
           "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"Pathum\",\"price\":167800,\"buyerId\":\"1\",\"playerValue\":0,\"playerId\":\"34368\",\"buyer\":\"Computer\"}",
           "id": "963476584",
           "playerId": "34368"
+        }
+      ]
+    },
+    {
+      "date": "22.07.2026",
+      "news": [
+        {
+          "date": "22.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kübler\",\"price\":1000000,\"buyerId\":\"13806423\",\"playerValue\":910000,\"playerId\":\"32597\",\"buyer\":\"Florian\"}",
+          "id": "963985264",
+          "playerId": "32597"
+        },
+        {
+          "date": "22.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Dinkçi\",\"price\":1680000,\"buyerId\":\"5949921\",\"playerValue\":1760000,\"playerId\":\"33364\",\"buyer\":\"Sascha\"}",
+          "id": "963985264",
+          "playerId": "33364"
+        },
+        {
+          "date": "22.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christian\",\"sellerId\":\"13641446\",\"playerName\":\"Skhiri\",\"price\":1531900,\"buyerId\":\"1\",\"playerValue\":1560000,\"playerId\":\"33157\",\"buyer\":\"Computer\"}",
+          "id": "963981330",
+          "playerId": "33157"
+        },
+        {
+          "date": "22.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Sirch (ID: 34482)",
+          "id": "0",
+          "playerId": "34482"
+        },
+        {
+          "date": "22.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gendrey (34051) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34051"
+        },
+        {
+          "date": "22.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Diehl (33718) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33718"
+        },
+        {
+          "date": "22.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Seimen (33747) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33747"
         }
       ]
     },
@@ -4947,6 +5437,43 @@
       ]
     },
     {
+      "date": "21.07.2026",
+      "news": [
+        {
+          "date": "21.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Prass\",\"price\":1443100,\"buyerId\":\"13830745\",\"playerValue\":1420000,\"playerId\":\"34034\",\"buyer\":\"Gerry\"}",
+          "id": "963967096",
+          "playerId": "34034"
+        },
+        {
+          "date": "21.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Diehl\",\"price\":304500,\"buyerId\":\"1\",\"playerValue\":300000,\"playerId\":\"33718\",\"buyer\":\"Computer\"}",
+          "id": "963967096",
+          "playerId": "33718"
+        },
+        {
+          "date": "21.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Zaragoza (33898) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33898"
+        },
+        {
+          "date": "21.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Machida (34213) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34213"
+        }
+      ]
+    },
+    {
       "date": "21.06.2026",
       "news": [
         {
@@ -4968,6 +5495,51 @@
       ]
     },
     {
+      "date": "20.07.2026",
+      "news": [
+        {
+          "date": "20.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"El-Faouzi\",\"price\":2718000,\"buyerId\":\"13548242\",\"playerValue\":2770000,\"playerId\":\"34391\",\"buyer\":\"Christopher\"}",
+          "id": "963944053",
+          "playerId": "34391"
+        },
+        {
+          "date": "20.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Urbig\",\"price\":1700002,\"buyerId\":\"13641446\",\"playerValue\":1690000,\"playerId\":\"33494\",\"buyer\":\"Christian\"}",
+          "id": "963944053",
+          "playerId": "33494"
+        },
+        {
+          "date": "20.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Höler\",\"price\":2370005,\"buyerId\":\"13641446\",\"playerValue\":2430000,\"playerId\":\"32861\",\"buyer\":\"Christian\"}",
+          "id": "963944053",
+          "playerId": "32861"
+        },
+        {
+          "date": "20.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christian\",\"sellerId\":\"13641446\",\"playerName\":\"Rosenfelder\",\"price\":551000,\"buyerId\":\"1\",\"playerValue\":560000,\"playerId\":\"33815\",\"buyer\":\"Computer\"}",
+          "id": "963944053",
+          "playerId": "33815"
+        },
+        {
+          "date": "20.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ben Seghir (34285) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34285"
+        }
+      ]
+    },
+    {
       "date": "20.06.2026",
       "news": [
         {
@@ -4985,6 +5557,59 @@
           "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"Ens\",\"price\":177300,\"buyerId\":\"1\",\"playerValue\":170000,\"playerId\":\"34404\",\"buyer\":\"Computer\"}",
           "id": "963431379",
           "playerId": "34404"
+        }
+      ]
+    },
+    {
+      "date": "19.07.2026",
+      "news": [
+        {
+          "date": "19.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Aséko\",\"newClub\":\"9\",\"oldClub\":\"1\",\"playerID\":\"33912\"}",
+          "id": "0",
+          "playerId": "33912"
+        },
+        {
+          "date": "19.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Y. Engelhardt (ID: 33603)",
+          "id": "0",
+          "playerId": "33603"
+        },
+        {
+          "date": "19.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Horvat (ID: 34481)",
+          "id": "0",
+          "playerId": "34481"
+        },
+        {
+          "date": "19.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Stefan 8\",\"sellerId\":\"6013585\",\"playerName\":\"Lukeba\",\"price\":3405200,\"buyerId\":\"1\",\"playerValue\":3270000,\"playerId\":\"33837\",\"buyer\":\"Computer\"}",
+          "id": "963933741",
+          "playerId": "33837"
+        },
+        {
+          "date": "19.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Dickes (34094) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34094"
+        },
+        {
+          "date": "19.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gnabry (32696) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32696"
         }
       ]
     },
@@ -5058,6 +5683,107 @@
       ]
     },
     {
+      "date": "18.07.2026",
+      "news": [
+        {
+          "date": "18.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Agu\",\"price\":1111000,\"buyerId\":\"9317431\",\"playerValue\":1070000,\"playerId\":\"33288\",\"buyer\":\"Andi\"}",
+          "id": "963909844",
+          "playerId": "33288"
+        },
+        {
+          "date": "18.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Remberg\",\"price\":3455000,\"buyerId\":\"9317431\",\"playerValue\":3240000,\"playerId\":\"33935\",\"buyer\":\"Andi\"}",
+          "id": "963909844",
+          "playerId": "33935"
+        },
+        {
+          "date": "18.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Waldschmidt\",\"price\":1455000,\"buyerId\":\"9317431\",\"playerValue\":1380000,\"playerId\":\"32206\",\"buyer\":\"Andi\"}",
+          "id": "963909844",
+          "playerId": "32206"
+        },
+        {
+          "date": "18.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Heskey (ID: 34480)",
+          "id": "0",
+          "playerId": "34480"
+        },
+        {
+          "date": "18.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Estève (ID: 34479)",
+          "id": "0",
+          "playerId": "34479"
+        },
+        {
+          "date": "18.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Schwolow (ID: 31774)",
+          "id": "0",
+          "playerId": "31774"
+        },
+        {
+          "date": "18.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Gosens (ID: 33843)",
+          "id": "0",
+          "playerId": "33843"
+        },
+        {
+          "date": "18.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Florian\",\"sellerId\":\"13806423\",\"playerName\":\"Harder\",\"price\":2041200,\"buyerId\":\"1\",\"playerValue\":2100000,\"playerId\":\"34295\",\"buyer\":\"Computer\"}",
+          "id": "963909844",
+          "playerId": "34295"
+        },
+        {
+          "date": "18.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Dickes (34094) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34094"
+        },
+        {
+          "date": "18.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Muslija (33008) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33008"
+        },
+        {
+          "date": "18.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gadou (34422) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34422"
+        },
+        {
+          "date": "18.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kofane (34234) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34234"
+        }
+      ]
+    },
+    {
       "date": "18.06.2026",
       "news": [
         {
@@ -5091,6 +5817,35 @@
           "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"V. Becker\",\"price\":1359800,\"buyerId\":\"1\",\"playerValue\":1280000,\"playerId\":\"34376\",\"buyer\":\"Computer\"}",
           "id": "963385929",
           "playerId": "34376"
+        }
+      ]
+    },
+    {
+      "date": "17.07.2026",
+      "news": [
+        {
+          "date": "17.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kimmich\",\"price\":13188000,\"buyerId\":\"6013585\",\"playerValue\":12220000,\"playerId\":\"32445\",\"buyer\":\"Stefan 8\"}",
+          "id": "963887237",
+          "playerId": "32445"
+        },
+        {
+          "date": "17.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Kujović\",\"price\":404000,\"buyerId\":\"1\",\"playerValue\":400000,\"playerId\":\"34225\",\"buyer\":\"Computer\"}",
+          "id": "963887237",
+          "playerId": "34225"
+        },
+        {
+          "date": "17.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Manzambi (34022) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34022"
         }
       ]
     },
@@ -5172,6 +5927,35 @@
       ]
     },
     {
+      "date": "16.07.2026",
+      "news": [
+        {
+          "date": "16.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Ginter\",\"price\":4305000,\"buyerId\":\"9317431\",\"playerValue\":4330000,\"playerId\":\"31910\",\"buyer\":\"Andi\"}",
+          "id": "963868886",
+          "playerId": "31910"
+        },
+        {
+          "date": "16.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Wisbereit (ID: 34363)",
+          "id": "0",
+          "playerId": "34363"
+        },
+        {
+          "date": "16.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Awortwie-Grant (34443) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34443"
+        }
+      ]
+    },
+    {
       "date": "16.06.2026",
       "news": [
         {
@@ -5197,6 +5981,35 @@
           "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Chiarodia\",\"price\":938200,\"buyerId\":\"1\",\"playerValue\":850000,\"playerId\":\"33601\",\"buyer\":\"Computer\"}",
           "id": "963352876",
           "playerId": "33601"
+        }
+      ]
+    },
+    {
+      "date": "15.07.2026",
+      "news": [
+        {
+          "date": "15.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"Lomb\",\"price\":169800,\"buyerId\":\"1\",\"playerValue\":160000,\"playerId\":\"32007\",\"buyer\":\"Computer\"}",
+          "id": "963856175",
+          "playerId": "32007"
+        },
+        {
+          "date": "15.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Wisbereit\",\"newClub\":\"68\",\"oldClub\":\"0\",\"playerID\":\"34363\"}",
+          "id": "0",
+          "playerId": "34363"
+        },
+        {
+          "date": "15.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Fürst (ID: 34478)",
+          "id": "0",
+          "playerId": "34478"
         }
       ]
     },
@@ -5254,6 +6067,107 @@
       ]
     },
     {
+      "date": "14.07.2026",
+      "news": [
+        {
+          "date": "14.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"S. El Mala\",\"price\":8000000,\"buyerId\":\"13806423\",\"playerValue\":7790000,\"playerId\":\"34139\",\"buyer\":\"Florian\"}",
+          "id": "963828262",
+          "playerId": "34139"
+        },
+        {
+          "date": "14.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Adeline (ID: 34477)",
+          "id": "0",
+          "playerId": "34477"
+        },
+        {
+          "date": "14.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Behrens\",\"newClub\":\"68\",\"oldClub\":\"62\",\"playerID\":\"34106\"}",
+          "id": "0",
+          "playerId": "34106"
+        },
+        {
+          "date": "14.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Steinmann (ID: 34476)",
+          "id": "0",
+          "playerId": "34476"
+        },
+        {
+          "date": "14.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Gruda (ID: 33695)",
+          "id": "0",
+          "playerId": "33695"
+        },
+        {
+          "date": "14.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Campbell\",\"newClub\":\"118\",\"oldClub\":\"5\",\"playerID\":\"34016\"}",
+          "id": "0",
+          "playerId": "34016"
+        },
+        {
+          "date": "14.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Stefan 8\",\"sellerId\":\"6013585\",\"playerName\":\"Rothe\",\"price\":1123300,\"buyerId\":\"1\",\"playerValue\":1110000,\"playerId\":\"33567\",\"buyer\":\"Computer\"}",
+          "id": "963828262",
+          "playerId": "33567"
+        },
+        {
+          "date": "14.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Andi\",\"sellerId\":\"9317431\",\"playerName\":\"Olise\",\"price\":18439200,\"buyerId\":\"1\",\"playerValue\":16360000,\"playerId\":\"34014\",\"buyer\":\"Computer\"}",
+          "id": "963828262",
+          "playerId": "34014"
+        },
+        {
+          "date": "14.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Andi\",\"sellerId\":\"9317431\",\"playerName\":\"Glatzel\",\"price\":1374100,\"buyerId\":\"1\",\"playerValue\":1370000,\"playerId\":\"33375\",\"buyer\":\"Computer\"}",
+          "id": "963828262",
+          "playerId": "33375"
+        },
+        {
+          "date": "14.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Andi\",\"sellerId\":\"9317431\",\"playerName\":\"Kohr\",\"price\":1300300,\"buyerId\":\"1\",\"playerValue\":1290000,\"playerId\":\"31959\",\"buyer\":\"Computer\"}",
+          "id": "963828262",
+          "playerId": "31959"
+        },
+        {
+          "date": "14.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Andi\",\"sellerId\":\"9317431\",\"playerName\":\"Hein\",\"price\":1547100,\"buyerId\":\"1\",\"playerValue\":1580000,\"playerId\":\"34274\",\"buyer\":\"Computer\"}",
+          "id": "963828262",
+          "playerId": "34274"
+        },
+        {
+          "date": "14.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Gerry\",\"sellerId\":\"13830745\",\"playerName\":\"Manzambi\",\"price\":5418100,\"buyerId\":\"1\",\"playerValue\":5540000,\"playerId\":\"34022\",\"buyer\":\"Computer\"}",
+          "id": "963828262",
+          "playerId": "34022"
+        }
+      ]
+    },
+    {
       "date": "14.06.2026",
       "news": [{
         "date": "14.06.2026",
@@ -5263,6 +6177,59 @@
         "id": "963311729",
         "playerId": "34368"
       }]
+    },
+    {
+      "date": "13.07.2026",
+      "news": [
+        {
+          "date": "13.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Quansah\",\"price\":4520000,\"buyerId\":\"10967926\",\"playerValue\":3900000,\"playerId\":\"34217\",\"buyer\":\"Tom\"}",
+          "id": "963809255",
+          "playerId": "34217"
+        },
+        {
+          "date": "13.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Krauß\",\"price\":1500000,\"buyerId\":\"13806423\",\"playerValue\":1360000,\"playerId\":\"33130\",\"buyer\":\"Florian\"}",
+          "id": "963809255",
+          "playerId": "33130"
+        },
+        {
+          "date": "13.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Steinmann (ID: 34476)",
+          "id": "0",
+          "playerId": "34476"
+        },
+        {
+          "date": "13.07.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Campbell\",\"newClub\":\"118\",\"oldClub\":\"5\",\"playerID\":\"34016\"}",
+          "id": "0",
+          "playerId": "34016"
+        },
+        {
+          "date": "13.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Buchmann (33796) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33796"
+        },
+        {
+          "date": "13.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: L. Seifert (34393) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34393"
+        }
+      ]
     },
     {
       "date": "13.06.2026",
@@ -5346,6 +6313,51 @@
           "text": "{\"seller\":\"Stefan 8\",\"sellerId\":\"6013585\",\"playerName\":\"Kauã Santos\",\"price\":1013700,\"buyerId\":\"1\",\"playerValue\":970000,\"playerId\":\"33855\",\"buyer\":\"Computer\"}",
           "id": "963294082",
           "playerId": "33855"
+        }
+      ]
+    },
+    {
+      "date": "12.07.2026",
+      "news": [
+        {
+          "date": "12.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Moerstedt\",\"price\":1310000,\"buyerId\":\"10967926\",\"playerValue\":1110000,\"playerId\":\"33885\",\"buyer\":\"Tom\"}",
+          "id": "963794764",
+          "playerId": "33885"
+        },
+        {
+          "date": "12.07.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Muheim\",\"price\":3080000,\"buyerId\":\"6013585\",\"playerValue\":3130000,\"playerId\":\"34148\",\"buyer\":\"Stefan 8\"}",
+          "id": "963794764",
+          "playerId": "34148"
+        },
+        {
+          "date": "12.07.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: G. Mensah (ID: 34475)",
+          "id": "0",
+          "playerId": "34475"
+        },
+        {
+          "date": "12.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jaquez (34112) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34112"
+        },
+        {
+          "date": "12.07.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ngankam (33214) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33214"
         }
       ]
     },
@@ -5447,6 +6459,59 @@
           "text": "Statuswechsel: Tabaković (34047) ist wieder AKTIV",
           "id": "0",
           "playerId": "34047"
+        }
+      ]
+    },
+    {
+      "date": "11.08.2026",
+      "news": [
+        {
+          "date": "11.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Prömel\",\"price\":4848000,\"buyerId\":\"6013585\",\"playerValue\":4740000,\"playerId\":\"32492\",\"buyer\":\"Stefan 8\"}",
+          "id": "964537540",
+          "playerId": "32492"
+        },
+        {
+          "date": "11.08.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Sapoko Ndiaye\",\"newClub\":\"1\",\"oldClub\":\"0\",\"playerID\":\"34321\"}",
+          "id": "0",
+          "playerId": "34321"
+        },
+        {
+          "date": "11.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Pejčinović (ID: 33657)",
+          "id": "0",
+          "playerId": "33657"
+        },
+        {
+          "date": "11.08.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Zeitler\",\"newClub\":\"81\",\"oldClub\":\"62\",\"playerID\":\"34232\"}",
+          "id": "0",
+          "playerId": "34232"
+        },
+        {
+          "date": "11.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Culbreath\",\"price\":1858600,\"buyerId\":\"1\",\"playerValue\":1770000,\"playerId\":\"34311\",\"buyer\":\"Computer\"}",
+          "id": "964537540",
+          "playerId": "34311"
+        },
+        {
+          "date": "11.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Simon\",\"sellerId\":\"11683432\",\"playerName\":\"Giannoulis\",\"price\":2156400,\"buyerId\":\"1\",\"playerValue\":2230000,\"playerId\":\"34027\",\"buyer\":\"Computer\"}",
+          "id": "964537540",
+          "playerId": "34027"
         }
       ]
     },
@@ -5557,6 +6622,83 @@
       ]
     },
     {
+      "date": "10.08.2026",
+      "news": [
+        {
+          "date": "10.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kauã Santos\",\"price\":2120005,\"buyerId\":\"13641446\",\"playerValue\":2150000,\"playerId\":\"33855\",\"buyer\":\"Christian\"}",
+          "id": "964502599",
+          "playerId": "33855"
+        },
+        {
+          "date": "10.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Nebel\",\"price\":4478800,\"buyerId\":\"1\",\"playerValue\":3960000,\"playerId\":\"33296\",\"buyer\":\"Computer\"}",
+          "id": "964502599",
+          "playerId": "33296"
+        },
+        {
+          "date": "10.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Zaragoza (33898) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33898"
+        },
+        {
+          "date": "10.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Buchmann (33796) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33796"
+        },
+        {
+          "date": "10.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: N. Stark (32120) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "32120"
+        },
+        {
+          "date": "10.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Lynen (33835) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33835"
+        },
+        {
+          "date": "10.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gnabry (32696) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "32696"
+        },
+        {
+          "date": "10.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Agu (33288) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33288"
+        },
+        {
+          "date": "10.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Stefan 8\",\"sellerId\":\"6013585\",\"playerName\":\"Kimmich\",\"price\":15152500,\"buyerId\":\"1\",\"playerValue\":14870000,\"playerId\":\"32445\",\"buyer\":\"Computer\"}",
+          "id": "964502599",
+          "playerId": "32445"
+        }
+      ]
+    },
+    {
       "date": "10.07.2026",
       "news": [
         {
@@ -5639,6 +6781,51 @@
       ]
     },
     {
+      "date": "09.08.2026",
+      "news": [
+        {
+          "date": "09.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Neves (ID: 34497)",
+          "id": "0",
+          "playerId": "34497"
+        },
+        {
+          "date": "09.08.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Dina Ebimbe\",\"newClub\":\"10\",\"oldClub\":\"9\",\"playerID\":\"33678\"}",
+          "id": "0",
+          "playerId": "33678"
+        },
+        {
+          "date": "09.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Chandler (31743) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "31743"
+        },
+        {
+          "date": "09.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Sebulonsen  (34241) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34241"
+        },
+        {
+          "date": "09.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Culbreath (34311) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34311"
+        }
+      ]
+    },
+    {
       "date": "09.07.2026",
       "news": [
         {
@@ -5677,6 +6864,331 @@
         "id": "963218053",
         "playerId": "32874"
       }]
+    },
+    {
+      "date": "08.08.2026",
+      "news": [
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Weiser (31929) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "31929"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ben Seghir (34285) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34285"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: P. Nebel (33296) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33296"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Castrop (34186) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34186"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Claude-Maurice (34063) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34063"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Eichhorn (34448) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34448"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Karl (34206) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34206"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Tella (33853) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33853"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: A. Vogt (34425) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34425"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Buchmann (33796) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33796"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Martel (33356) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33356"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Zingerle (32267) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "32267"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: N. Schlotterbeck (33038) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33038"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Hollerbach (33830) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33830"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Awortwie-Grant (34443) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34443"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Stalmach (34463) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34463"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Raab (34144) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34144"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ouédraogo (33991) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33991"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Diehl (33718) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33718"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Can (31935) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "31935"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gayret (34409) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34409"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Hübers (32744) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "32744"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Assignon (34197) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34197"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: L. Seifert (34393) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34393"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Sauer (34491) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34491"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Dickes (34094) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34094"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Bätzner (34415) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34415"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Chiarodia (33601) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33601"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Topp (33741) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33741"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kramarić (32553) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "32553"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Silas (33247) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33247"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Machida (34213) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34213"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gantenbein (34377) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34377"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Røssing-Lelesiit (34156) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34156"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Seimen (33747) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33747"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Baumgartner (32977) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "32977"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Muslija (33008) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33008"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Konoplya (34439) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34439"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Karl\",\"price\":9900005,\"buyerId\":\"13641446\",\"playerValue\":9340000,\"playerId\":\"34206\",\"buyer\":\"Christian\"}",
+          "id": "964437124",
+          "playerId": "34206"
+        },
+        {
+          "date": "08.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Leopold\",\"price\":3130008,\"buyerId\":\"13548242\",\"playerValue\":3120000,\"playerId\":\"34435\",\"buyer\":\"Christopher\"}",
+          "id": "964437124",
+          "playerId": "34435"
+        }
+      ]
     },
     {
       "date": "08.07.2026",
@@ -5809,6 +7321,17 @@
       ]
     },
     {
+      "date": "07.08.2026",
+      "news": [{
+        "date": "07.08.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Christopher\",\"sellerId\":\"13548242\",\"playerName\":\"Guirassy\",\"price\":12748600,\"buyerId\":\"1\",\"playerValue\":12660000,\"playerId\":\"32667\",\"buyer\":\"Computer\"}",
+        "id": "964419348",
+        "playerId": "32667"
+      }]
+    },
+    {
       "date": "07.07.2026",
       "news": [
         {
@@ -5895,6 +7418,323 @@
           "text": "{\"playerName\":\"Poręba\",\"newClub\":\"118\",\"oldClub\":\"4\",\"playerID\":\"34153\"}",
           "id": "0",
           "playerId": "34153"
+        }
+      ]
+    },
+    {
+      "date": "06.08.2026",
+      "news": [
+        {
+          "date": "06.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Gutiérrez  (ID: 34496)",
+          "id": "0",
+          "playerId": "34496"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Weiser (31929) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "31929"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ben Seghir (34285) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34285"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Claude-Maurice (34063) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34063"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Eichhorn (34448) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34448"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Karl (34206) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34206"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Tella (33853) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33853"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: A. Vogt (34425) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34425"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Buchmann (33796) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33796"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Martel (33356) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33356"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Zingerle (32267) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32267"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: N. Schlotterbeck (33038) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33038"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Giannoulis (34027) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34027"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Hollerbach (33830) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33830"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Awortwie-Grant (34443) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34443"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Stalmach (34463) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34463"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Raab (34144) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34144"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Diehl (33718) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33718"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Can (31935) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "31935"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gayret (34409) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34409"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Hübers (32744) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32744"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Assignon (34197) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34197"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: L. Seifert (34393) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34393"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Sauer (34491) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34491"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Dickes (34094) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34094"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Bätzner (34415) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34415"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Chiarodia (33601) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33601"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Topp (33741) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33741"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kramarić (32553) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32553"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Silas (33247) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33247"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Machida (34213) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34213"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gantenbein (34377) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34377"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Røssing-Lelesiit (34156) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34156"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Seimen (33747) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33747"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Baumgartner (32977) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32977"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Muslija (33008) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33008"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Konoplya (34439) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34439"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christopher\",\"sellerId\":\"13548242\",\"playerName\":\"Makengo\",\"price\":701500,\"buyerId\":\"1\",\"playerValue\":680000,\"playerId\":\"33829\",\"buyer\":\"Computer\"}",
+          "id": "964400167",
+          "playerId": "33829"
+        },
+        {
+          "date": "06.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Gerry\",\"sellerId\":\"13830745\",\"playerName\":\"Scally\",\"price\":1870600,\"buyerId\":\"1\",\"playerValue\":1880000,\"playerId\":\"33258\",\"buyer\":\"Computer\"}",
+          "id": "964400167",
+          "playerId": "33258"
         }
       ]
     },
@@ -6045,6 +7885,35 @@
       ]
     },
     {
+      "date": "05.08.2026",
+      "news": [
+        {
+          "date": "05.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Demirović\",\"price\":8788000,\"buyerId\":\"6013585\",\"playerValue\":8960000,\"playerId\":\"33311\",\"buyer\":\"Stefan 8\"}",
+          "id": "964340573",
+          "playerId": "33311"
+        },
+        {
+          "date": "05.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Stöger\",\"price\":2900000,\"buyerId\":\"13806423\",\"playerValue\":2530000,\"playerId\":\"31985\",\"buyer\":\"Florian\"}",
+          "id": "964340573",
+          "playerId": "31985"
+        },
+        {
+          "date": "05.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Nyland (ID: 32481)",
+          "id": "0",
+          "playerId": "32481"
+        }
+      ]
+    },
+    {
       "date": "05.07.2026",
       "news": [
         {
@@ -6107,6 +7976,59 @@
           "text": "Statuswechsel: Karl (34206) ist jetzt VERLETZT",
           "id": "0",
           "playerId": "34206"
+        }
+      ]
+    },
+    {
+      "date": "04.08.2026",
+      "news": [
+        {
+          "date": "04.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Diomande\",\"price\":10153008,\"buyerId\":\"13548242\",\"playerValue\":10380000,\"playerId\":\"34237\",\"buyer\":\"Christopher\"}",
+          "id": "964310754",
+          "playerId": "34237"
+        },
+        {
+          "date": "04.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Karetsas (ID: 34495)",
+          "id": "0",
+          "playerId": "34495"
+        },
+        {
+          "date": "04.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Džeko (ID: 31145)",
+          "id": "0",
+          "playerId": "31145"
+        },
+        {
+          "date": "04.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Gerry\",\"sellerId\":\"13830745\",\"playerName\":\"Dompé\",\"price\":1569700,\"buyerId\":\"1\",\"playerValue\":1630000,\"playerId\":\"34155\",\"buyer\":\"Computer\"}",
+          "id": "964310754",
+          "playerId": "34155"
+        },
+        {
+          "date": "04.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Stalmach (34463) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34463"
+        },
+        {
+          "date": "04.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Gebel  (34042) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34042"
         }
       ]
     },
@@ -6229,6 +8151,91 @@
           "text": "Statuswechsel: Giannoulis (34027) ist jetzt VERLETZT",
           "id": "0",
           "playerId": "34027"
+        }
+      ]
+    },
+    {
+      "date": "03.08.2026",
+      "news": [
+        {
+          "date": "03.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"O. Højlund\",\"price\":1030009,\"buyerId\":\"13548242\",\"playerValue\":1130000,\"playerId\":\"34019\",\"buyer\":\"Christopher\"}",
+          "id": "964286141",
+          "playerId": "34019"
+        },
+        {
+          "date": "03.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Hashioka\",\"price\":1253001,\"buyerId\":\"13548242\",\"playerValue\":1300000,\"playerId\":\"34492\",\"buyer\":\"Christopher\"}",
+          "id": "964286141",
+          "playerId": "34492"
+        },
+        {
+          "date": "03.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Latte Lath (ID: 34494)",
+          "id": "0",
+          "playerId": "34494"
+        },
+        {
+          "date": "03.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Onyedika (ID: 34493)",
+          "id": "0",
+          "playerId": "34493"
+        },
+        {
+          "date": "03.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Daghim (ID: 34294)",
+          "id": "0",
+          "playerId": "34294"
+        },
+        {
+          "date": "03.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christopher\",\"sellerId\":\"13548242\",\"playerName\":\"Sieb\",\"price\":612400,\"buyerId\":\"1\",\"playerValue\":550000,\"playerId\":\"34006\",\"buyer\":\"Computer\"}",
+          "id": "964286141",
+          "playerId": "34006"
+        },
+        {
+          "date": "03.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Onyedika (34493) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34493"
+        },
+        {
+          "date": "03.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Onyedika (34493) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34493"
+        },
+        {
+          "date": "03.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christopher\",\"sellerId\":\"13548242\",\"playerName\":\"Adamu\",\"price\":2256800,\"buyerId\":\"1\",\"playerValue\":2250000,\"playerId\":\"33802\",\"buyer\":\"Computer\"}",
+          "id": "964286141",
+          "playerId": "33802"
+        },
+        {
+          "date": "03.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christopher\",\"sellerId\":\"13548242\",\"playerName\":\"Weiper\",\"price\":1170050,\"buyerId\":\"13641446\",\"playerValue\":970000,\"playerId\":\"33578\",\"buyer\":\"Christian\"}",
+          "id": "964286141",
+          "playerId": "33578"
         }
       ]
     },
@@ -6737,6 +8744,43 @@
           "text": "Statuswechsel: Thomas (34339) ist jetzt VERLETZT (Sprunggelenksprobleme)",
           "id": "0",
           "playerId": "34339"
+        }
+      ]
+    },
+    {
+      "date": "01.08.2026",
+      "news": [
+        {
+          "date": "01.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Rothe\",\"price\":1208800,\"buyerId\":\"6013585\",\"playerValue\":1010000,\"playerId\":\"33567\",\"buyer\":\"Stefan 8\"}",
+          "id": "964229046",
+          "playerId": "33567"
+        },
+        {
+          "date": "01.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Eichhorn (34448) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34448"
+        },
+        {
+          "date": "01.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Martel (33356) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33356"
+        },
+        {
+          "date": "01.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Florian\",\"sellerId\":\"13806423\",\"playerName\":\"Haberer\",\"price\":549700,\"buyerId\":\"1\",\"playerValue\":540000,\"playerId\":\"32310\",\"buyer\":\"Computer\"}",
+          "id": "964229046",
+          "playerId": "32310"
         }
       ]
     },
