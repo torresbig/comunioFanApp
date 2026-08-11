@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "11.08.2026 05:19:54",
+  "lastUpdate": "11.08.2026 10:07:05",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -6464,14 +6464,56 @@
     },
     {
       "date": "11.08.2026",
-      "news": [{
-        "date": "11.08.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Prömel\",\"price\":4848000,\"buyerId\":\"6013585\",\"playerValue\":4740000,\"playerId\":\"32492\",\"buyer\":\"Stefan 8\"}",
-        "id": "964537540",
-        "playerId": "32492"
-      }]
+      "news": [
+        {
+          "date": "11.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Prömel\",\"price\":4848000,\"buyerId\":\"6013585\",\"playerValue\":4740000,\"playerId\":\"32492\",\"buyer\":\"Stefan 8\"}",
+          "id": "964537540",
+          "playerId": "32492"
+        },
+        {
+          "date": "11.08.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Sapoko Ndiaye\",\"newClub\":\"1\",\"oldClub\":\"0\",\"playerID\":\"34321\"}",
+          "id": "0",
+          "playerId": "34321"
+        },
+        {
+          "date": "11.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Pejčinović (ID: 33657)",
+          "id": "0",
+          "playerId": "33657"
+        },
+        {
+          "date": "11.08.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Zeitler\",\"newClub\":\"81\",\"oldClub\":\"62\",\"playerID\":\"34232\"}",
+          "id": "0",
+          "playerId": "34232"
+        },
+        {
+          "date": "11.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Culbreath\",\"price\":1858600,\"buyerId\":\"1\",\"playerValue\":1770000,\"playerId\":\"34311\",\"buyer\":\"Computer\"}",
+          "id": "964537540",
+          "playerId": "34311"
+        },
+        {
+          "date": "11.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Simon\",\"sellerId\":\"11683432\",\"playerName\":\"Giannoulis\",\"price\":2156400,\"buyerId\":\"1\",\"playerValue\":2230000,\"playerId\":\"34027\",\"buyer\":\"Computer\"}",
+          "id": "964537540",
+          "playerId": "34027"
+        }
+      ]
     },
     {
       "date": "11.07.2026",
