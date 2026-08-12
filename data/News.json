@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "12.08.2026 05:20:58",
+  "lastUpdate": "12.08.2026 10:05:31",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -6318,14 +6318,72 @@
     },
     {
       "date": "12.08.2026",
-      "news": [{
-        "date": "12.08.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Al-Dakhil\",\"price\":535000,\"buyerId\":\"5949921\",\"playerValue\":530000,\"playerId\":\"34050\",\"buyer\":\"Sascha\"}",
-        "id": "964571006",
-        "playerId": "34050"
-      }]
+      "news": [
+        {
+          "date": "12.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Al-Dakhil\",\"price\":535000,\"buyerId\":\"5949921\",\"playerValue\":530000,\"playerId\":\"34050\",\"buyer\":\"Sascha\"}",
+          "id": "964571006",
+          "playerId": "34050"
+        },
+        {
+          "date": "12.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Medina (ID: 34498)",
+          "id": "0",
+          "playerId": "34498"
+        },
+        {
+          "date": "12.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Fleck (ID: 34500)",
+          "id": "0",
+          "playerId": "34500"
+        },
+        {
+          "date": "12.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Nguefack (ID: 34501)",
+          "id": "0",
+          "playerId": "34501"
+        },
+        {
+          "date": "12.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Danfa (ID: 34499)",
+          "id": "0",
+          "playerId": "34499"
+        },
+        {
+          "date": "12.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Sapoko Ndiaye (ID: 34321)",
+          "id": "0",
+          "playerId": "34321"
+        },
+        {
+          "date": "12.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christopher\",\"sellerId\":\"13548242\",\"playerName\":\"Diomande\",\"price\":9309300,\"buyerId\":\"1\",\"playerValue\":9300000,\"playerId\":\"34237\",\"buyer\":\"Computer\"}",
+          "id": "964571006",
+          "playerId": "34237"
+        },
+        {
+          "date": "12.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christopher\",\"sellerId\":\"13548242\",\"playerName\":\"O. Højlund\",\"price\":2300005,\"buyerId\":\"13641446\",\"playerValue\":1250000,\"playerId\":\"34019\",\"buyer\":\"Christian\"}",
+          "id": "964571006",
+          "playerId": "34019"
+        }
+      ]
     },
     {
       "date": "12.07.2026",
