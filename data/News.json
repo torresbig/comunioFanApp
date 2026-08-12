@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "11.08.2026 22:00:10",
+  "lastUpdate": "12.08.2026 05:20:58",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -6317,6 +6317,17 @@
       ]
     },
     {
+      "date": "12.08.2026",
+      "news": [{
+        "date": "12.08.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Al-Dakhil\",\"price\":535000,\"buyerId\":\"5949921\",\"playerValue\":530000,\"playerId\":\"34050\",\"buyer\":\"Sascha\"}",
+        "id": "964571006",
+        "playerId": "34050"
+      }]
+    },
+    {
       "date": "12.07.2026",
       "news": [
         {
@@ -6520,6 +6531,14 @@
           "text": "Statuswechsel: Zagadou (32773) ist jetzt VERLETZT",
           "id": "0",
           "playerId": "32773"
+        },
+        {
+          "date": "11.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Prates (34423) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34423"
         }
       ]
     },
