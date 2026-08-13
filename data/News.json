@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "13.08.2026 10:00:38",
+  "lastUpdate": "13.08.2026 15:04:45",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -6180,14 +6180,24 @@
     },
     {
       "date": "13.08.2026",
-      "news": [{
-        "date": "13.08.2026",
-        "art": "NEW_PLAYER",
-        "gelesen": false,
-        "text": "Neuer Spieler: Posch (ID: 32786)",
-        "id": "0",
-        "playerId": "32786"
-      }]
+      "news": [
+        {
+          "date": "13.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Posch (ID: 32786)",
+          "id": "0",
+          "playerId": "32786"
+        },
+        {
+          "date": "13.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"Seiwald\",\"price\":5610600,\"buyerId\":\"1\",\"playerValue\":5400000,\"playerId\":\"33769\",\"buyer\":\"Computer\"}",
+          "id": "964619579",
+          "playerId": "33769"
+        }
+      ]
     },
     {
       "date": "13.07.2026",
