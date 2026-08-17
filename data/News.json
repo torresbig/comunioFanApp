@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "17.08.2026 05:19:54",
+  "lastUpdate": "17.08.2026 10:00:52",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -5838,6 +5838,86 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Grüll\",\"price\":2670001,\"buyerId\":\"5981249\",\"playerValue\":2470000,\"playerId\":\"33923\",\"buyer\":\"Thomas\"}",
           "id": "964742257",
           "playerId": "33923"
+        },
+        {
+          "date": "17.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Lahti (ID: 34502)",
+          "id": "0",
+          "playerId": "34502"
+        },
+        {
+          "date": "17.08.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Burcu\",\"oldPos\":\"STURM\",\"playerID\":\"34191\",\"newPos\":\"MITTELFELD\"}",
+          "id": "0",
+          "playerId": "34191"
+        },
+        {
+          "date": "17.08.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Güther\",\"oldPos\":\"STURM\",\"playerID\":\"34358\",\"newPos\":\"MITTELFELD\"}",
+          "id": "0",
+          "playerId": "34358"
+        },
+        {
+          "date": "17.08.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Beier\",\"oldPos\":\"STURM\",\"playerID\":\"33208\",\"newPos\":\"MITTELFELD\"}",
+          "id": "0",
+          "playerId": "33208"
+        },
+        {
+          "date": "17.08.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Kumashiro\",\"oldPos\":\"STURM\",\"playerID\":\"34312\",\"newPos\":\"MITTELFELD\"}",
+          "id": "0",
+          "playerId": "34312"
+        },
+        {
+          "date": "17.08.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Uzun\",\"oldPos\":\"STURM\",\"playerID\":\"34008\",\"newPos\":\"MITTELFELD\"}",
+          "id": "0",
+          "playerId": "34008"
+        },
+        {
+          "date": "17.08.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Castro-Montes\",\"oldPos\":\"MITTELFELD\",\"playerID\":\"34287\",\"newPos\":\"ABWEHR\"}",
+          "id": "0",
+          "playerId": "34287"
+        },
+        {
+          "date": "17.08.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Bøving\",\"oldPos\":\"STURM\",\"playerID\":\"34291\",\"newPos\":\"MITTELFELD\"}",
+          "id": "0",
+          "playerId": "34291"
+        },
+        {
+          "date": "17.08.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Richter\",\"oldPos\":\"STURM\",\"playerID\":\"32733\",\"newPos\":\"MITTELFELD\"}",
+          "id": "0",
+          "playerId": "32733"
+        },
+        {
+          "date": "17.08.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Ulrich\",\"newClub\":\"81\",\"oldClub\":\"14\",\"playerID\":\"33666\"}",
+          "id": "0",
+          "playerId": "33666"
         }
       ]
     },
