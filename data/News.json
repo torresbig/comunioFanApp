@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "16.08.2026 22:05:04",
+  "lastUpdate": "17.08.2026 05:19:54",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -5821,6 +5821,27 @@
       ]
     },
     {
+      "date": "17.08.2026",
+      "news": [
+        {
+          "date": "17.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Bernardo\",\"price\":2650011,\"buyerId\":\"13548242\",\"playerValue\":2810000,\"playerId\":\"32693\",\"buyer\":\"Christopher\"}",
+          "id": "964742257",
+          "playerId": "32693"
+        },
+        {
+          "date": "17.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Grüll\",\"price\":2670001,\"buyerId\":\"5981249\",\"playerValue\":2470000,\"playerId\":\"33923\",\"buyer\":\"Thomas\"}",
+          "id": "964742257",
+          "playerId": "33923"
+        }
+      ]
+    },
+    {
       "date": "17.07.2026",
       "news": [
         {
@@ -5976,6 +5997,14 @@
           "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Maloney\",\"price\":195400,\"buyerId\":\"1\",\"playerValue\":200000,\"playerId\":\"33093\",\"buyer\":\"Computer\"}",
           "id": "964702820",
           "playerId": "33093"
+        },
+        {
+          "date": "16.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Prates (34423) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34423"
         }
       ]
     },
