@@ -256,7 +256,7 @@ public class Transfermarkt {
 					JSONObject tradable = json.getJSONObject("tradable");
 					String id = String.valueOf(tradable.getInt("id"));
 					String name = tradable.getString("name");
-					String.valueOf(tradable.get("status"));
+					String status = String.valueOf(tradable.get("status"));
 
 					int marktwert = tradable.optInt("quotedPrice", 0);
 					int mindestGebot = tradable.optInt("recommendedPrice", 0);
@@ -332,12 +332,17 @@ public class Transfermarkt {
 		JSONArray listOf160er = new JSONArray();
 		for (Object obj : gebotsListe) {
 			JSONObject offer = (JSONObject) obj;
+			int transWert = offer.optInt("marktwert", 0);
 			JSONObject player = PlayerHelper.findPlayerByComunioId(playerDB, offer.getString("playerID"), notInligaDBObj);
 			JSONObject data = player.optJSONObject("data");
 			if (data == null) {
 				continue;
 			}
 			int wert = data.optInt("wert", 0);
+			if(transWert > 0) {
+				wert = transWert;
+			}
+			
 			// TODO: ggf. noch für alle transfers machen. dass immer wenn das gebot Unter
 			// wert ist, außer man ist im Minus
 			if (offer.has("gebot") && (offer.getInt("gebot") < 168000)) {

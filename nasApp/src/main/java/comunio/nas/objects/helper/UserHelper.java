@@ -5,7 +5,7 @@ import org.json.JSONObject;
 
 public class UserHelper {
 
-	public static JSONObject findPlayerByComunioId(JSONArray userDB, String userId) {
+	public static JSONObject findUserByComunioId(JSONArray userDB, String userId) {
 		for (int i = 0; i < userDB.length(); i++) {
 			JSONObject userData = userDB.getJSONObject(i);
 			JSONObject user = userData.optJSONObject("user");

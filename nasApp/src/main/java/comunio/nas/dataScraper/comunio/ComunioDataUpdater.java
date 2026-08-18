@@ -19,6 +19,7 @@ import comunio.nas.objects.NewsManager;
 import comunio.nas.objects.community.Community;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.helper.PlayerDbFixer;
+import comunio.nas.objects.helper.UserHelper;
 import comunio.nas.objects.player.SonstigeAttribute;
 import comunio.nas.objects.user.User;
 import comunio.nas.util.LoadJSONfromFile;
@@ -155,7 +156,7 @@ public class ComunioDataUpdater {
 			// kontostände errechnen:
 			KontostandBerechner kontostandBerechner = new KontostandBerechner();
 			userDB = kontostandBerechner.calculateKontostaende(userDB, newsManager);
-
+			user = User.fromJson(UserHelper.findUserByComunioId(userDB, user.getId()));
 			matchdayInfoList.put(String.valueOf(currentMatchdayInfo.getCurrentMatchday()), currentMatchdayInfo.toJson());
 
 			Transfermarkt.acceptOrDecline160erOffer(playerDBObject, user, false, notInligaDBObj);

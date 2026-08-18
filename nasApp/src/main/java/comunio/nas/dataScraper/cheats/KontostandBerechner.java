@@ -14,8 +14,8 @@ import java.util.logging.Logger;
  */
 public final class KontostandBerechner {
     private static final Logger LOGGER = Logger.getLogger(KontostandBerechner.class.getName());
-    private static final int STARTGUTHABEN = 20_000_000;
-    private static final int PUNKTE_MULTIPLIKATOR = 10_000;
+    private static final int STARTGUTHABEN = 20000000;
+    private static final int PUNKTE_MULTIPLIKATOR = 10000;
 
 
 
@@ -147,10 +147,10 @@ public final class KontostandBerechner {
                 }
             }
 
-            System.out.println("Gezählte Spieltage: " + countedSpieltage);
-            System.out.println("Berechnete Summe: " + sum);
-            System.out.println("Gesamte Punkte: " + sumPunkte);
-            System.out.println("Erwartete Summe: " + (1404 * PUNKTE_MULTIPLIKATOR));
+//            System.out.println("Gezählte Spieltage: " + countedSpieltage);
+//            System.out.println("Berechnete Summe: " + sum);
+//            System.out.println("Gesamte Punkte: " + sumPunkte);
+//            System.out.println("Erwartete Summe: " + (1404 * PUNKTE_MULTIPLIKATOR));
 
             
             int altesGuthaben = userContainer.getInt("guthaben");
@@ -164,5 +164,9 @@ public final class KontostandBerechner {
         JSONArray result = new JSONArray();
         userContainerMap.values().forEach(result::put);
         return result;
+    }
+    
+    public String toString() {
+    	return "KontostandBerechner [STARTGUTHABEN=" + STARTGUTHABEN + ", PUNKTE_MULTIPLIKATOR=" + PUNKTE_MULTIPLIKATOR + "]";
     }
 }
