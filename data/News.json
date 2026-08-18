@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "17.08.2026 22:00:12",
+  "lastUpdate": "18.08.2026 10:05:10",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -5679,6 +5679,59 @@
           "text": "{\"seller\":\"Gerry\",\"sellerId\":\"13830745\",\"playerName\":\"Fernández\",\"price\":1600600,\"buyerId\":\"1\",\"playerValue\":1620000,\"playerId\":\"34289\",\"buyer\":\"Computer\"}",
           "id": "963403855",
           "playerId": "34289"
+        }
+      ]
+    },
+    {
+      "date": "18.08.2026",
+      "news": [
+        {
+          "date": "18.08.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Dinkçi\",\"newClub\":\"6\",\"oldClub\":\"21\",\"playerID\":\"33364\"}",
+          "id": "0",
+          "playerId": "33364"
+        },
+        {
+          "date": "18.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Konstantelias (ID: 34503)",
+          "id": "0",
+          "playerId": "34503"
+        },
+        {
+          "date": "18.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Dallinga (ID: 34504)",
+          "id": "0",
+          "playerId": "34504"
+        },
+        {
+          "date": "18.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kuruçay\",\"price\":1860011,\"buyerId\":\"13548242\",\"playerValue\":1920000,\"playerId\":\"34371\",\"buyer\":\"Christopher\"}",
+          "id": "964781069",
+          "playerId": "34371"
+        },
+        {
+          "date": "18.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Tohumcu\",\"price\":310500,\"buyerId\":\"1\",\"playerValue\":320000,\"playerId\":\"33574\",\"buyer\":\"Computer\"}",
+          "id": "964781069",
+          "playerId": "33574"
+        },
+        {
+          "date": "18.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Huth\",\"price\":165100,\"buyerId\":\"1\",\"playerValue\":160000,\"playerId\":\"32506\",\"buyer\":\"Computer\"}",
+          "id": "964781069",
+          "playerId": "32506"
         }
       ]
     },
