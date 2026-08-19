@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "18.08.2026 22:05:05",
+  "lastUpdate": "19.08.2026 10:05:43",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -5557,6 +5557,59 @@
           "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"Ens\",\"price\":177300,\"buyerId\":\"1\",\"playerValue\":170000,\"playerId\":\"34404\",\"buyer\":\"Computer\"}",
           "id": "963431379",
           "playerId": "34404"
+        }
+      ]
+    },
+    {
+      "date": "19.08.2026",
+      "news": [
+        {
+          "date": "19.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Füllkrug (ID: 31916)",
+          "id": "0",
+          "playerId": "31916"
+        },
+        {
+          "date": "19.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Veerman (ID: 34505)",
+          "id": "0",
+          "playerId": "34505"
+        },
+        {
+          "date": "19.08.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Vidović\",\"newClub\":\"81\",\"oldClub\":\"0\",\"playerID\":\"33570\"}",
+          "id": "0",
+          "playerId": "33570"
+        },
+        {
+          "date": "19.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"J. Hofmann\",\"price\":1919900,\"buyerId\":\"11683432\",\"playerValue\":1570000,\"playerId\":\"32080\",\"buyer\":\"Simon\"}",
+          "id": "964819381",
+          "playerId": "32080"
+        },
+        {
+          "date": "19.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Mokwa\",\"price\":2484300,\"buyerId\":\"1\",\"playerValue\":2270000,\"playerId\":\"34090\",\"buyer\":\"Computer\"}",
+          "id": "964819381",
+          "playerId": "34090"
+        },
+        {
+          "date": "19.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Stefan 8\",\"sellerId\":\"6013585\",\"playerName\":\"Demirović\",\"price\":9146300,\"buyerId\":\"1\",\"playerValue\":8580000,\"playerId\":\"33311\",\"buyer\":\"Computer\"}",
+          "id": "964819381",
+          "playerId": "33311"
         }
       ]
     },
