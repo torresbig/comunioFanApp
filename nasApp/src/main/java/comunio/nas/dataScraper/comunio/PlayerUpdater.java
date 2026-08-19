@@ -12,6 +12,8 @@ import java.util.logging.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
+
+import comunio.nas.ComunioDataUpdater;
 import comunio.nas.dataScraper.transfermarktDe.TmDePlayerDataUpdater;
 import comunio.nas.dataVariable.LastUpdates;
 import comunio.nas.dataVariable.Urls;
@@ -116,7 +118,7 @@ public class PlayerUpdater {
 		}
 		for (int i = 0; i < playerDB.length(); i++) {
 			JSONObject player = playerDB.getJSONObject(i);
-			loadPlayerData(player, playerToUserMap, newsManager, playerDBObject, user, lastUpdates, statusManager);
+			loadPlayerData(player, playerToUserMap, newsManager, playerDBObject, user, lastUpdates, statusManager, marketValueDB);
 			playerDBObject.put("lastBigUpdate", new ComunioDate());
 			// TODO: DATUM RAUS
 			lastUpdates.setPlayerDbFull(Instant.now());
@@ -166,6 +168,7 @@ public class PlayerUpdater {
 						// newsManager)
 						synchronized (playerDBObject) {
 							updateSpielerFromJson(currentPlayer, apiPlayer, concurrentPlayerMap, newsManager, playerDBObject, lastUpdates, statusManager);
+							updateMarketValueData(apiPlayer, marketValueDB);
 						}
 					}
 				} catch (Exception e) {
@@ -297,7 +300,7 @@ public class PlayerUpdater {
 				int points = apiPlayer.getInt("points");
 				addPointsToPlayerData(points, null, data, lastUpdates, currentMatchdayInfo);
 
-				data.put("wert", apiPlayer.getInt("quotedprice"));
+				setWertAndLastwert(data, apiPlayer);
 
 				playerToUserMap.put(apiPlayerId, "1");
 				GitHubUploader.mappingChanged = true;
@@ -337,7 +340,8 @@ public class PlayerUpdater {
 
 				addPointsToPlayerData(totalPoints, null, data, lastUpdates, currentMatchdayInfo);
 
-				data.put("wert", apiPlayer.getInt("quotedprice"));
+				setWertAndLastwert(data, apiPlayer);
+				
 				data.put("lastUpdate", new ComunioDate().toString());
 				// TODO: DATUM RAUS
 			}
@@ -350,6 +354,20 @@ public class PlayerUpdater {
 			System.out.println("Spieler: " + playerName + " (ID: " + apiPlayerId + ") erfolgreich aktualisiert!");
 		} catch (Exception e) {
 			LOGGER.log(Level.WARNING, "Error updating player data: " + e.getMessage(), e);
+		}
+	}
+
+	private static void setWertAndLastwert(JSONObject data, JSONObject apiPlayer) {
+		int newWert = 0;
+		if (apiPlayer.has("quotedprice")) {
+			newWert = apiPlayer.getInt("quotedprice");
+		} else {
+			newWert = apiPlayer.getInt("price");
+		}
+		int oldWert = data.has("wert") ? data.getInt("wert") : -1;
+		if(newWert != oldWert) {
+			data.put("lastWert", oldWert);
+			data.put("wert", newWert);
 		}
 	}
 
@@ -398,9 +416,22 @@ public class PlayerUpdater {
 	public static void updateMarketValueData(JSONObject apiPlayer, JSONArray marketValueDB) {
 		try {
 			// Spieler-ID als String aus API-Daten
-			String playerId = PlayerHelper.convertIdToString(apiPlayer.get("id"));
+			int id = 0;
+			if (apiPlayer.has("id")) {
+				id = apiPlayer.getInt("id");
+			} else {
+				apiPlayer.getInt("playerId");
+			}
+			// Spieler-ID als String aus API-Daten
+			String playerId = PlayerHelper.convertIdToString(id);
 			// Aktueller Marktwert
-			int currentValue = apiPlayer.getInt("quotedprice");
+
+			int currentValue = 0;
+			if (apiPlayer.has("quotedprice")) {
+				currentValue = apiPlayer.getInt("quotedprice");
+			} else {
+				currentValue = apiPlayer.getInt("price");
+			}
 			// Datum heute (dd.MM.yyyy)
 			String currentDate = new ComunioDate().toString();
 
@@ -483,7 +514,7 @@ public class PlayerUpdater {
 		}
 	}
 
-	public static void updateEachComunioPlayer(JSONArray playerDB, Map<String, String> playerToUserMap, NewsManager newsManager, JSONObject playerDBObject, LastUpdates lastUpdates, User user, StatusManager statusManager) {
+	public static void updateEachComunioPlayer(JSONArray playerDB, Map<String, String> playerToUserMap, NewsManager newsManager, JSONObject playerDBObject, LastUpdates lastUpdates, User user, StatusManager statusManager, JSONArray marketValueDB) {
 		int threads = Runtime.getRuntime().availableProcessors();
 		ExecutorService executor = Executors.newFixedThreadPool(threads);
 
@@ -499,7 +530,7 @@ public class PlayerUpdater {
 			}
 
 			executor.submit(() -> {
-				loadPlayerData(player, playerToUserMap2, newsManager, playerDBObject, user, lastUpdates, statusManager);
+				loadPlayerData(player, playerToUserMap2, newsManager, playerDBObject, user, lastUpdates, statusManager, marketValueDB);
 			});
 		}
 
@@ -525,13 +556,15 @@ public class PlayerUpdater {
 	 * https://www.comunio.de/api/players/32684 Der Link m�sste aber auch schon in
 	 * den spielerdaten sein!
 	 * 
+	 * @param marketValueDB
 	 * 
-	 * @param spieler Der Spieler, dessen Daten geladen werden sollen.
-	 * @param db      Die Datenbank, die verwendet wird.
-	 * @param loader  Der Loader, der verwendet wird.
+	 * 
+	 * @param spieler       Der Spieler, dessen Daten geladen werden sollen.
+	 * @param db            Die Datenbank, die verwendet wird.
+	 * @param loader        Der Loader, der verwendet wird.
 	 * @return Der Spieler mit den geladenen Daten.
 	 */
-	public static void loadPlayerData(JSONObject player, Map<String, String> playerToUserMap, NewsManager newsManager, JSONObject playerDBObject, User user, LastUpdates lastUpdates, StatusManager statusManager) {
+	public static void loadPlayerData(JSONObject player, Map<String, String> playerToUserMap, NewsManager newsManager, JSONObject playerDBObject, User user, LastUpdates lastUpdates, StatusManager statusManager, JSONArray marketValueDB) {
 		if (player == null || player.getString("id") == null || player.getString("id").isEmpty()) {
 			handleInvalidSpieler(player);
 			return;
@@ -540,6 +573,7 @@ public class PlayerUpdater {
 			JSONObject apiPlayer = fetchSpielerJson(player.getString("id"), user);
 			if (apiPlayer != null) {
 				updateSpielerFromJson(player, apiPlayer, playerToUserMap, newsManager, playerDBObject, lastUpdates, statusManager);
+				updateMarketValueData(apiPlayer, marketValueDB);
 			}
 		} catch (Exception e) {
 			handleSpielerDataLoadingException(e);
@@ -626,8 +660,8 @@ public class PlayerUpdater {
 			oldDataFaild = true;
 		}
 		try {
-			int wert = apiPlayer.getInt("price");
-			data.put("wert", wert);
+			setWertAndLastwert(data, apiPlayer);
+			
 			Position pos = Position.fromString(apiPlayer.getString("type"));
 			data.put("position", pos.toString());
 			if (!oldDataFaild && !oldData.getString("position").equals(data.getString("position"))) {
@@ -646,6 +680,13 @@ public class PlayerUpdater {
 			updateSpielerStatusFromJson(player, apiPlayer, statusManager, newsManager);
 			data.put("lastBigUpdate", new ComunioDate().toString());
 
+			
+			int wert = 0;
+			if (apiPlayer.has("quotedprice")) {
+				wert = apiPlayer.getInt("quotedprice");
+			} else {
+				wert = apiPlayer.getInt("price");
+			}
 			try {
 				String newOwnerID = String.valueOf(apiPlayer.getJSONObject("owner").getInt("id"));
 				if (!newOwnerID.equals(oldOwner)) {

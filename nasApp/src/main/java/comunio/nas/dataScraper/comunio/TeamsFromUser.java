@@ -9,6 +9,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
 
+import comunio.nas.ComunioDataUpdater;
 import comunio.nas.dataVariable.LastUpdates;
 import comunio.nas.enu.Position;
 import comunio.nas.git.GitHubUploader;

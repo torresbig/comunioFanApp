@@ -5,6 +5,7 @@ import java.util.logging.Logger;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
 
+import comunio.nas.ComunioDataUpdater;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.util.HttpHeaderUtil;
 

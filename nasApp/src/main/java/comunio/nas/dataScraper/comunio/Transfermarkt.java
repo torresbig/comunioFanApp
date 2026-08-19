@@ -12,6 +12,8 @@ import org.json.JSONObject;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.Connection.Response;
+
+import comunio.nas.ComunioDataUpdater;
 import comunio.nas.dataScraper.comunio.putAndPost.DataPostToComunio;
 import comunio.nas.dataVariable.LastUpdates;
 import comunio.nas.dataVariable.Urls;

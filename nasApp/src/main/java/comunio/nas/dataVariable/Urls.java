@@ -1,6 +1,6 @@
 package comunio.nas.dataVariable;
 
-import comunio.nas.dataScraper.comunio.ComunioDataUpdater;
+import comunio.nas.ComunioDataUpdater;
 import comunio.nas.objects.user.User;
 
 public class Urls {

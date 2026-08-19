@@ -3,7 +3,7 @@ package comunio.nas.git;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import comunio.nas.dataScraper.comunio.ComunioDataUpdater;
+import comunio.nas.ComunioDataUpdater;
 import comunio.nas.dataVariable.Urls;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.util.LoadJSONfromFile;

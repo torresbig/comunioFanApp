@@ -9,7 +9,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import comunio.nas.dataScraper.comunio.ComunioDataUpdater;
+import comunio.nas.ComunioDataUpdater;
 import comunio.nas.dataVariable.Urls;
 import comunio.nas.error.Error;
 import comunio.nas.error.ErrorType;

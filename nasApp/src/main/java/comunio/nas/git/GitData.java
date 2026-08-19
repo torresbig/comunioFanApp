@@ -1,6 +1,6 @@
 package comunio.nas.git;
 
-import comunio.nas.dataScraper.comunio.ComunioDataUpdater;
+import comunio.nas.ComunioDataUpdater;
 
 public class GitData {
 

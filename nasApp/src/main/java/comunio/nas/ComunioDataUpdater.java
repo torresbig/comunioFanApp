@@ -1,10 +1,17 @@
-package comunio.nas.dataScraper.comunio;
+package comunio.nas;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 import comunio.nas.dataScraper.cheats.KontostandBerechner;
 import comunio.nas.dataScraper.comAnalystics.ComAnalysticsTopFlop;
 import comunio.nas.dataScraper.comstats.ComstatsDataScraper;
+import comunio.nas.dataScraper.comunio.ClubUpdater;
+import comunio.nas.dataScraper.comunio.Login;
+import comunio.nas.dataScraper.comunio.MatchdayInfo;
+import comunio.nas.dataScraper.comunio.NewsAnalyzerComunio;
+import comunio.nas.dataScraper.comunio.PlayerUpdater;
+import comunio.nas.dataScraper.comunio.Transfermarkt;
+import comunio.nas.dataScraper.comunio.UserUpdater;
 import comunio.nas.dataScraper.ligainsider.LigainsiderRankingUpdater;
 import comunio.nas.dataScraper.tools.ExportNotInLiga;
 import comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject;
