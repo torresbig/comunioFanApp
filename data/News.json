@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "20.08.2026 22:05:30",
+  "lastUpdate": "21.08.2026 10:05:46",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -5433,6 +5433,67 @@
           "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Deman\",\"price\":1872200,\"buyerId\":\"1\",\"playerValue\":1720000,\"playerId\":\"33858\",\"buyer\":\"Computer\"}",
           "id": "963453944",
           "playerId": "33858"
+        }
+      ]
+    },
+    {
+      "date": "21.08.2026",
+      "news": [
+        {
+          "date": "21.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Bornauw (ID: 33164)",
+          "id": "0",
+          "playerId": "33164"
+        },
+        {
+          "date": "21.08.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Itakura\",\"newClub\":\"3\",\"oldClub\":\"0\",\"playerID\":\"33592\"}",
+          "id": "0",
+          "playerId": "33592"
+        },
+        {
+          "date": "21.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Grifo\",\"price\":6900000,\"buyerId\":\"13806423\",\"playerValue\":6430000,\"playerId\":\"32071\",\"buyer\":\"Florian\"}",
+          "id": "964902701",
+          "playerId": "32071"
+        },
+        {
+          "date": "21.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Sambi Lokonga\",\"price\":4100000,\"buyerId\":\"13654613\",\"playerValue\":4150000,\"playerId\":\"34290\",\"buyer\":\"Christoph\"}",
+          "id": "964902701",
+          "playerId": "34290"
+        },
+        {
+          "date": "21.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"van den Berg\",\"price\":910500,\"buyerId\":\"1\",\"playerValue\":840000,\"playerId\":\"34267\",\"buyer\":\"Computer\"}",
+          "id": "964902701",
+          "playerId": "34267"
+        },
+        {
+          "date": "21.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Muheim (34148) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34148"
+        },
+        {
+          "date": "21.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Musiala (33236) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33236"
         }
       ]
     },
