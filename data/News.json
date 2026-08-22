@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "21.08.2026 22:00:10",
+  "lastUpdate": "22.08.2026 10:05:26",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -5311,6 +5311,35 @@
           "text": "{\"seller\":\"Thomas\",\"sellerId\":\"5981249\",\"playerName\":\"Pathum\",\"price\":167800,\"buyerId\":\"1\",\"playerValue\":0,\"playerId\":\"34368\",\"buyer\":\"Computer\"}",
           "id": "963476584",
           "playerId": "34368"
+        }
+      ]
+    },
+    {
+      "date": "22.08.2026",
+      "news": [
+        {
+          "date": "22.08.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Skhiri\",\"newClub\":\"13\",\"oldClub\":\"9\",\"playerID\":\"33157\"}",
+          "id": "0",
+          "playerId": "33157"
+        },
+        {
+          "date": "22.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Itakura (ID: 33592)",
+          "id": "0",
+          "playerId": "33592"
+        },
+        {
+          "date": "22.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Fernández\",\"price\":2883000,\"buyerId\":\"13548242\",\"playerValue\":2820000,\"playerId\":\"34289\",\"buyer\":\"Christopher\"}",
+          "id": "964948041",
+          "playerId": "34289"
         }
       ]
     },
