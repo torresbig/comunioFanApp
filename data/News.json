@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "22.08.2026 22:00:10",
+  "lastUpdate": "23.08.2026 10:07:05",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -5237,6 +5237,75 @@
           "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Remberg\",\"price\":3442400,\"buyerId\":\"1\",\"playerValue\":3330000,\"playerId\":\"33935\",\"buyer\":\"Computer\"}",
           "id": "963485308",
           "playerId": "33935"
+        }
+      ]
+    },
+    {
+      "date": "23.08.2026",
+      "news": [
+        {
+          "date": "23.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Rots\",\"price\":2450009,\"buyerId\":\"5981249\",\"playerValue\":2330000,\"playerId\":\"34446\",\"buyer\":\"Thomas\"}",
+          "id": "964989169",
+          "playerId": "34446"
+        },
+        {
+          "date": "23.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Füllkrug\",\"price\":4868900,\"buyerId\":\"13830745\",\"playerValue\":5470000,\"playerId\":\"31916\",\"buyer\":\"Gerry\"}",
+          "id": "964989169",
+          "playerId": "31916"
+        },
+        {
+          "date": "23.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Schäfer\",\"price\":1600000,\"buyerId\":\"5949921\",\"playerValue\":1700000,\"playerId\":\"33550\",\"buyer\":\"Sascha\"}",
+          "id": "964989169",
+          "playerId": "33550"
+        },
+        {
+          "date": "23.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Nartey\",\"price\":4118300,\"buyerId\":\"1\",\"playerValue\":3780000,\"playerId\":\"32830\",\"buyer\":\"Computer\"}",
+          "id": "964989169",
+          "playerId": "32830"
+        },
+        {
+          "date": "23.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Florian\",\"sellerId\":\"13806423\",\"playerName\":\"Upamecano\",\"price\":6115700,\"buyerId\":\"1\",\"playerValue\":6130000,\"playerId\":\"32720\",\"buyer\":\"Computer\"}",
+          "id": "964989169",
+          "playerId": "32720"
+        },
+        {
+          "date": "23.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Florian\",\"sellerId\":\"13806423\",\"playerName\":\"Mittelstädt\",\"price\":7568000,\"buyerId\":\"1\",\"playerValue\":7500000,\"playerId\":\"32509\",\"buyer\":\"Computer\"}",
+          "id": "964989169",
+          "playerId": "32509"
+        },
+        {
+          "date": "23.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Leweling (33411) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33411"
+        },
+        {
+          "date": "23.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Zingerle (32267) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32267"
         }
       ]
     },
