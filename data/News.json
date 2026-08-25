@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "24.08.2026 22:00:11",
+  "lastUpdate": "25.08.2026 10:05:19",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -5069,6 +5069,67 @@
       ]
     },
     {
+      "date": "25.08.2026",
+      "news": [
+        {
+          "date": "25.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Moffi (ID: 34508)",
+          "id": "0",
+          "playerId": "34508"
+        },
+        {
+          "date": "25.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Nakuzola (ID: 34509)",
+          "id": "0",
+          "playerId": "34509"
+        },
+        {
+          "date": "25.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Tella\",\"price\":2875000,\"buyerId\":\"5949921\",\"playerValue\":2780000,\"playerId\":\"33853\",\"buyer\":\"Sascha\"}",
+          "id": "965075560",
+          "playerId": "33853"
+        },
+        {
+          "date": "25.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"N. Schlotterbeck\",\"price\":6540008,\"buyerId\":\"13548242\",\"playerValue\":6050000,\"playerId\":\"33038\",\"buyer\":\"Christopher\"}",
+          "id": "965075560",
+          "playerId": "33038"
+        },
+        {
+          "date": "25.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christopher\",\"sellerId\":\"13548242\",\"playerName\":\"Leopold\",\"price\":2704400,\"buyerId\":\"1\",\"playerValue\":2740000,\"playerId\":\"34435\",\"buyer\":\"Computer\"}",
+          "id": "965075560",
+          "playerId": "34435"
+        },
+        {
+          "date": "25.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christopher\",\"sellerId\":\"13548242\",\"playerName\":\"Bernardo\",\"price\":2930000,\"buyerId\":\"1\",\"playerValue\":2930000,\"playerId\":\"32693\",\"buyer\":\"Computer\"}",
+          "id": "965075560",
+          "playerId": "32693"
+        },
+        {
+          "date": "25.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Musiala (33236) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33236"
+        }
+      ]
+    },
+    {
       "date": "25.07.2026",
       "news": [
         {
@@ -5184,6 +5245,14 @@
           "text": "Statuswechsel: Awortwie-Grant (34443) ist wieder AKTIV",
           "id": "0",
           "playerId": "34443"
+        },
+        {
+          "date": "24.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Chávez\",\"price\":707300,\"buyerId\":\"1\",\"playerValue\":780000,\"playerId\":\"34328\",\"buyer\":\"Computer\"}",
+          "id": "965066022",
+          "playerId": "34328"
         }
       ]
     },
