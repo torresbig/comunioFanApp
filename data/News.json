@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "26.08.2026 22:00:15",
+  "lastUpdate": "27.08.2026 10:05:19",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -4885,6 +4885,43 @@
           "text": "{\"seller\":\"Gerry\",\"sellerId\":\"13830745\",\"playerName\":\"Tangvik\",\"price\":406400,\"buyerId\":\"1\",\"playerValue\":390000,\"playerId\":\"34334\",\"buyer\":\"Computer\"}",
           "id": "962929886",
           "playerId": "34334"
+        }
+      ]
+    },
+    {
+      "date": "27.08.2026",
+      "news": [
+        {
+          "date": "27.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Pieringer (ID: 33600)",
+          "id": "0",
+          "playerId": "33600"
+        },
+        {
+          "date": "27.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Anton\",\"price\":7123456,\"buyerId\":\"13548242\",\"playerValue\":7010000,\"playerId\":\"32452\",\"buyer\":\"Christopher\"}",
+          "id": "965191131",
+          "playerId": "32452"
+        },
+        {
+          "date": "27.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Al-Dakhil\",\"price\":538200,\"buyerId\":\"1\",\"playerValue\":490000,\"playerId\":\"34050\",\"buyer\":\"Computer\"}",
+          "id": "965191131",
+          "playerId": "34050"
+        },
+        {
+          "date": "27.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christopher\",\"sellerId\":\"13548242\",\"playerName\":\"Henrichs\",\"price\":1727100,\"buyerId\":\"1\",\"playerValue\":1710000,\"playerId\":\"32461\",\"buyer\":\"Computer\"}",
+          "id": "965191131",
+          "playerId": "32461"
         }
       ]
     },
