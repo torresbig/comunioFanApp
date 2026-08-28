@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "27.08.2026 22:00:09",
+  "lastUpdate": "28.08.2026 10:05:36",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -4798,6 +4798,51 @@
           "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Herold\",\"price\":2121600,\"buyerId\":\"1\",\"playerValue\":0,\"playerId\":\"34366\",\"buyer\":\"Computer\"}",
           "id": "962950484",
           "playerId": "34366"
+        }
+      ]
+    },
+    {
+      "date": "28.08.2026",
+      "news": [
+        {
+          "date": "28.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Seol (ID: 34510)",
+          "id": "0",
+          "playerId": "34510"
+        },
+        {
+          "date": "28.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Uduokhai (ID: 32801)",
+          "id": "0",
+          "playerId": "32801"
+        },
+        {
+          "date": "28.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"De Cat\",\"price\":5850000,\"buyerId\":\"13830745\",\"playerValue\":5690000,\"playerId\":\"34474\",\"buyer\":\"Gerry\"}",
+          "id": "965257911",
+          "playerId": "34474"
+        },
+        {
+          "date": "28.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Behrens\",\"price\":3160000,\"buyerId\":\"1\",\"playerValue\":3160000,\"playerId\":\"34106\",\"buyer\":\"Computer\"}",
+          "id": "965257911",
+          "playerId": "34106"
+        },
+        {
+          "date": "28.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Terrier\",\"price\":1590000,\"buyerId\":\"1\",\"playerValue\":1590000,\"playerId\":\"34024\",\"buyer\":\"Computer\"}",
+          "id": "965257911",
+          "playerId": "34024"
         }
       ]
     },
