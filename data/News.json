@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "28.08.2026 19:00:10",
+  "lastUpdate": "29.08.2026 10:05:23",
   "newsDB": [
     {
       "date": "31.07.2026",
@@ -1983,6 +1983,27 @@
           "text": "Statuswechsel: Giannoulis (34027) ist wieder AKTIV",
           "id": "0",
           "playerId": "34027"
+        }
+      ]
+    },
+    {
+      "date": "29.08.2026",
+      "news": [
+        {
+          "date": "29.08.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Atubolu\",\"newClub\":\"9\",\"oldClub\":\"21\",\"playerID\":\"33439\"}",
+          "id": "0",
+          "playerId": "33439"
+        },
+        {
+          "date": "29.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Avdullahu\",\"price\":4320000,\"buyerId\":\"13830745\",\"playerValue\":4520000,\"playerId\":\"34202\",\"buyer\":\"Gerry\"}",
+          "id": "965353707",
+          "playerId": "34202"
         }
       ]
     },
@@ -5139,6 +5160,14 @@
           "text": "Statuswechsel: Nsoki (33669) ist jetzt VERLETZT",
           "id": "0",
           "playerId": "33669"
+        },
+        {
+          "date": "28.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Bouanani\",\"price\":1168400,\"buyerId\":\"1\",\"playerValue\":1110000,\"playerId\":\"34286\",\"buyer\":\"Computer\"}",
+          "id": "965257911",
+          "playerId": "34286"
         }
       ]
     },
