@@ -2,8 +2,16 @@ package comunio.nas.error;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.logging.Logger;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import comunio.nas.ComunioDataUpdater;
+import comunio.nas.dataScraper.comunio.LineupParser;
+import comunio.nas.dataVariable.Urls;
+import comunio.nas.git.GitHubUploader;
+import comunio.nas.objects.helper.LogManager;
 
 /**
  * Fehlercontainer, der eine (String‑)Karte mit Zeitstempeln in einer einzigen,
@@ -24,6 +32,8 @@ import org.json.JSONObject;
  * </p>
  */
 public class ErrorsContainer {
+	
+	private static final Logger LOGGER = LogManager.getLogger(ErrorsContainer.class);
 
 	/*
 	 * ------------------------------------------------------------------ Formate
@@ -58,6 +68,9 @@ public class ErrorsContainer {
 		}
 		String key = NEW_DATE_FORMAT.format(new Date());
 		this.errors.computeIfAbsent(key, k -> new HashSet<>()).add(error);
+		
+		LOGGER.info("Lade aktualisierte ErrorDb.json auf GitHub hoch");
+		GitHubUploader.uploadToGitHub(Urls.ERROR_DB_URL, this.toJson());
 	}
 
 	/**

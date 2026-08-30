@@ -13,7 +13,16 @@ public class Urls {
 	public static final String COM_NEWS(User user) {
 		return COM_API(user) + "/news";
 	}
+	
+//	public static final String COM_LINEUP(User user) {
+//		return COM_API(user) + "/lineup";
+//	}
 
+	//"https://www.comunio.de/api/users/%d/squad?communityId=%d&eid=live&state=standings.mode"
+	public static final String COM_LINEUP(User user) {
+		return "https://www.comunio.de/api/users/" + user.getId() + "/squad?communityId=" + ComunioDataUpdater.community.getId() + "&eid=live&state=standings.mode";
+	}
+	
 	public static final String COM_CLUB = "https://www.comunio.de/api/clubs/";
 	public static final String COM_MATCHDAY = "https://www.comunio.de/api/matchdays/current";
 
@@ -40,6 +49,9 @@ public class Urls {
 	public static final String LASTUPDATES_LIST_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("LastUpdatesList.json");
 	public static final String INJURIES_DB_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("InjuriesDB.json"); // wird in zukunft ausgelagert in extra DB
 	public static final String POINTS_DB_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("PointsDB.json");
+	public static final String MARKET_VALUE_ARCHIVE_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("MarketValueArchive.json");
+	public static final String USER_LINEUPS = ComunioDataUpdater.uld.getCompleteGitProjectPath("UserLineups.json");
+
 
 	/** spielersuche auf Transfermarkt.de */
 //	public static final String TMDE_PLAYERSEARCH = "https://www.transfermarkt.de/schnellsuche/ergebnis/schnellsuche?query=";

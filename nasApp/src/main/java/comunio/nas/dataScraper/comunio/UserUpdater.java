@@ -4,6 +4,7 @@ import java.time.Instant;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -22,6 +23,7 @@ import comunio.nas.objects.community.Community;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.orga.ComunioDate;
 import comunio.nas.objects.user.User;
+import comunio.nas.objects.user.UserInfo;
 import comunio.nas.util.HttpHeaderUtil;
 import comunio.nas.util.player.PlayerHelper;
 
@@ -29,8 +31,8 @@ public class UserUpdater {
 
 	private static final Logger LOGGER = LogManager.getLogger(UserUpdater.class);
 
-	public static void updateAllUsers(LastUpdates lastUpdates, JSONObject playerDbObject, JSONArray marketValueDB, JSONObject notInligaDBObj, Map<String, String> playerToUserMap, JSONArray userDB, Community community, MatchdayInfo matchdayInfo, NewsManager newsManager, User user) {
-		
+	public static void updateAllUsers(LastUpdates lastUpdates, JSONObject playerDbObject, JSONArray marketValueDB, JSONObject notInligaDBObj, Map<String, String> playerToUserMap, Map<String, User> userMap, Community community, MatchdayInfo matchdayInfo, NewsManager newsManager, User user) {
+
 		Instant now = Instant.now();
 		Instant lastUserUpdateInstant = lastUpdates.getUsers();
 		if (lastUserUpdateInstant == null) {
@@ -38,7 +40,6 @@ public class UserUpdater {
 		}
 		ComunioDate lastUserUpdate = new ComunioDate(Date.from(lastUserUpdateInstant));
 
-		
 		if (lastUserUpdate.before(new ComunioDate(Date.from(now)).addDays(-30))) {
 			try {
 				JSONArray apiUsers = fetchStandingsAsArray(community);
@@ -46,35 +47,26 @@ public class UserUpdater {
 					LOGGER.warning("updateAllUsers: Keine API-User-Daten – Abbruch.");
 					return;
 				}
-				syncUsersJsonArray(playerToUserMap, apiUsers, userDB, matchdayInfo, newsManager, user);
-				
+				syncUsersJsonArray(playerToUserMap, apiUsers, userMap, matchdayInfo, newsManager, user);
+
 				boolean foundComputer = false;
-				for (int i = 0; i < userDB.length(); i++) {
-					JSONObject userObj = (JSONObject) userDB.get(i);
-					JSONObject userNew = userObj.optJSONObject("user", new JSONObject());
-					if (userNew.has("id")) {
+				for (Entry<String, User> entry : userMap.entrySet()) {
+					User userObj = entry.getValue();
+					UserInfo userNew = userObj.getUserInfo();
+					if (userNew.getId() != null && !userNew.getId().equals("1")) {
 						TeamsFromUser.mergePlayerDataWithDB(playerDbObject, marketValueDB, newsManager, userObj, playerToUserMap, notInligaDBObj, lastUpdates);
 					}
-					if (!foundComputer && userNew.optString("id", "").equals("1")) {
+					if (!foundComputer && userNew.getId() != null && userNew.getId().equals("1")) {
 						foundComputer = true;
 						LOGGER.info("COMPUTER-User (id=1) gefunden in userDB.");
 					}
 				}
 				if (!foundComputer) {
 					LOGGER.warning("COMPUTER-User (id=1) nicht gefunden in userDB nach Sync! Bitte prüfen.");
-					// Optional: COMPUTER-User automatisch hinzufügen, um Inkonsistenzen zu vermeiden
-						JSONObject computerUser = new JSONObject();
-						JSONObject computerUserData = new JSONObject();
-						computerUserData.put("id", "1");
-						computerUserData.put("name", "Computer");
-						computerUserData.put("firstname", "Computer");
-						computerUserData.put("lastname", "");
-						computerUserData.put("negativesBudget", false);
-						computerUser.put("user", computerUserData);
-						computerUser.put("punkte", 0);
-						computerUser.put("teamValue", 0L);
-						userDB.put(computerUser);
-						LOGGER.info("COMPUTER-User automatisch hinzugefügt zur userDB.");
+					// Optional: COMPUTER-User automatisch hinzufügen, um Inkonsistenzen zu
+					// vermeiden
+					userMap.put("1", User.createComupterUser());
+					LOGGER.info("COMPUTER-User automatisch hinzugefügt zur userDB.");
 				}
 
 				lastUpdates.setUsers(now);
@@ -83,12 +75,11 @@ public class UserUpdater {
 			}
 		} else {
 //			calculateTeamValuesForAllUsers(playerDbObject, notInligaDBObj, userDB, playerToUserMap);
-			UserDataLoader.fetchDataForAllUsers(userDB);
+			UserDataLoader.fetchDataForAllUsers(userMap);
 		}
 
 	}
 
-	
 	// TODO: fehler. irgendwo werden die daten doch wieder komisch geändert!
 	private static void calculateTeamValuesForAllUsers(JSONObject playerDbObject, JSONObject notInligaDBObj, JSONArray userDB, Map<String, String> playerToUserMap) {
 		for (int i = 0; i < userDB.length(); i++) {
@@ -97,21 +88,21 @@ public class UserUpdater {
 			Set<String> playerIdsForUser = new HashSet<>();
 			if (userNew.has("id") && !userNew.getString("id").equals("1")) {
 				String userId = userNew.optString("id", "");
-				for(Entry<String, String> entry : playerToUserMap.entrySet()) {
+				for (Entry<String, String> entry : playerToUserMap.entrySet()) {
 					String playerId = entry.getKey();
-					if(entry.getValue().equals(userId)) {
+					if (entry.getValue().equals(userId)) {
 						playerIdsForUser.add(playerId);
 					}
 				}
 			} else {
 				LOGGER.warning("User-Objekt ohne 'id' in userDB an Index " + i + " – übersprungen.");
 			}
-			if(!playerIdsForUser.isEmpty()) {
+			if (!playerIdsForUser.isEmpty()) {
 				long teamValue = 0L;
-				for(String playerId : playerIdsForUser) {
+				for (String playerId : playerIdsForUser) {
 					JSONArray playerDB = playerDbObject.optJSONArray("playerDB", new JSONArray());
-					JSONObject player = PlayerHelper.findPlayerByComunioId( playerDB, playerId,notInligaDBObj);
-					if(player == null) {
+					JSONObject player = PlayerHelper.findPlayerByComunioId(playerDB, playerId, notInligaDBObj);
+					if (player == null) {
 						LOGGER.warning("Spieler mit playerId=" + playerId + " nicht in playerDB gefunden. Teamwert für userId=" + userNew.optString("id", "") + " wird ggf. unvollständig berechnet.");
 						continue;
 					}
@@ -119,15 +110,12 @@ public class UserUpdater {
 					teamValue += playerData.optInt("wert", 0);
 					userNew.put("teamValue", teamValue);
 				}
-				
-				
+
 			} else {
-				LOGGER.warning("Keine Spieler für userId=" + userNew.optString("id", "") + " gefunden. Teamwert auf 0 gesetzt.");	
+				LOGGER.warning("Keine Spieler für userId=" + userNew.optString("id", "") + " gefunden. Teamwert auf 0 gesetzt.");
 			}
 		}
-		
-		
-		
+
 	}
 
 	/**
@@ -158,18 +146,15 @@ public class UserUpdater {
 	 * @param apiUsers        JSONArray aus der API
 	 * @param userDB          das lokale JSONArray (wird in-place verändert)
 	 */
-	public static void syncUsersJsonArray(Map<String, String> playerToUserMap, JSONArray apiUsers, JSONArray userDB, MatchdayInfo matchdayInfo, NewsManager newsManager, User user) {
+	public static void syncUsersJsonArray(Map<String, String> playerToUserMap, JSONArray apiUsers, Map<String, User> userMap, MatchdayInfo matchdayInfo, NewsManager newsManager, User user) {
 		if (apiUsers == null) {
 			LOGGER.warning("syncUsersJsonArray: apiUsers ist null – Abbruch.");
 			return;
 		}
-		if (userDB == null) {
-			LOGGER.warning("syncUsersJsonArray: userDB ist null – Abbruch.");
+		if (userMap == null) {
+			LOGGER.warning("syncUsersJsonArray: userMap ist null – Abbruch.");
 			return;
 		}
-
-		// Index für userDB aufbauen: userId -> Index im userDB-Array
-		Map<String, Integer> dbIndexById = buildIndexByUserId(userDB);
 
 		// Set der in API gesehenen IDs
 		Set<String> seenInApi = new HashSet<>();
@@ -197,49 +182,37 @@ public class UserUpdater {
 			}
 			seenInApi.add(userId);
 
-			Integer dbIdx = dbIndexById.get(userId);
-			String loginNameLog = "";
-			JSONObject apiUserForLog = apiItem.optJSONObject("user");
-			if (apiUserForLog != null) {
-				loginNameLog = apiUserForLog.optString("loginName", "");
-			}
-
-			if (dbIdx == null) {
+			if (!userMap.containsKey(userId)) {
 				// Neu anlegen (am Ende anhängen)
-				JSONObject newEntry = createDbEntryFromApi(apiItem);
-				userDB.put(newEntry);
-				dbIndexById.put(userId, userDB.length() - 1);
+				User newEntry = User.fromJson(createDbEntryFromApi(apiItem));
+
+				userMap.put(userId, newEntry);
 				added++;
-				addedLog.append("Neuer User angelegt: userId=").append(userId).append(", loginName=").append(loginNameLog).append("\n");
+				addedLog.append("Neuer User angelegt: userId=").append(userId).append(", loginName=").append(apiItem.optJSONObject("user").optString("loginName", "")).append("\n");
 			} else {
 				// Aktualisieren (keine Verschiebung)
-				JSONObject existing = userDB.optJSONObject(dbIdx);
+				User existing = userMap.get(userId);
 				if (existing == null) {
-					JSONObject replacement = createDbEntryFromApi(apiItem);
-					userDB.put(dbIdx, replacement);
+					User replacement = User.fromJson(createDbEntryFromApi(apiItem));
+					userMap.put(userId, replacement);
 					updated++;
-					updatedLog.append("Defekter Eintrag ersetzt an Index ").append(dbIdx).append(": userId=").append(userId).append(", loginName=").append(loginNameLog).append("\n");
+					updatedLog.append("Defekter Eintrag ersetzt an userId=").append(userId).append(", loginName=").append(apiItem.optJSONObject("user").optString("loginName", "")).append("\n");
 				} else {
-					updateDbEntryFromApi(existing, apiItem, matchdayInfo, newsManager);
+					User replacement = User.fromJson(createDbEntryFromApi(apiItem));
+					updateDbEntryFromApi(existing, replacement, matchdayInfo, newsManager);
 					// loginName nach Update ggf. aus DB holen
-					JSONObject exUser = existing.optJSONObject("user");
-					if (exUser != null && (loginNameLog == null || loginNameLog.isBlank())) {
-						loginNameLog = exUser.optString("loginName", "");
+					UserInfo exUser = existing.getUserInfo();
+					if (exUser != null && (apiItem.optJSONObject("user").optString("loginName", "").isBlank())) {
+						String loginName = exUser.getLoginName();
+						if (loginName.isBlank()) {
+							loginName = apiItem.optJSONObject("user").optString("loginName", "");
+						}
+						// we can log but not needed
 					}
 					updated++;
-					updatedLog.append("User aktualisiert: userId=").append(userId).append(", loginName=").append(loginNameLog).append("\n");
+					updatedLog.append("User aktualisiert: userId=").append(userId).append(", loginName=").append(apiItem.optJSONObject("user").optString("loginName", "")).append("\n");
 				}
 			}
-
-		}
-
-		for (int i = 0; i < userDB.length(); i++) {
-			JSONObject userObjJson = (JSONObject) userDB.get(i);
-			JSONObject userJson = userObjJson.getJSONObject("user");
-			if (userJson.getString("id").equals(user.getId())) {
-				user.updateFromJson(userObjJson);
-			}
-
 		}
 
 		// 2) Entfernen: DB-User, die nicht in der API sind, löschen (rückwärts
@@ -247,23 +220,16 @@ public class UserUpdater {
 		int removed = 0;
 		int reassignedTotal = 0;
 
-		for (int idx = userDB.length() - 1; idx >= 0; idx--) {
-			JSONObject dbItem = userDB.optJSONObject(idx);
-			if (dbItem == null)
+		Iterator<Map.Entry<String, User>> it = userMap.entrySet().iterator();
+		while (it.hasNext()) {
+			Map.Entry<String, User> e = it.next();
+			String userId = extractIdAsString(e.getValue().getUserInfo().getId());
+			if (userId == null || userId.isBlank()) {
 				continue;
-
-			JSONObject dbUser = dbItem.optJSONObject("user");
-			if (dbUser == null)
-				continue;
-
-			String userId = extractIdAsString(dbUser.opt("id"));
-			if (userId == null || userId.isBlank())
-				continue;
-
+			}
 			if (userId.equals("1")) {
 				continue;
 			}
-
 			if (!seenInApi.contains(userId)) {
 				// PlayerToUserMap: alle Values, die dieser userId entsprechen, auf "1" setzen
 				int reassigned = 0;
@@ -280,23 +246,16 @@ public class UserUpdater {
 					reassignLog.append("PlayerToUserMap: ").append(reassigned).append(" Zuordnungen auf COMPUTER (1) gesetzt für entfernte userId=").append(userId).append("\n");
 				}
 
-				// Aus userDB entfernen
-				userDB.remove(idx);
+				// Aus userMap entfernen
+				it.remove();
 				removed++;
 				removedLog.append("User aus DB entfernt (nicht in API vorhanden): userId=").append(userId).append("\n");
 			}
-
 		}
 
 		// Zusammenfassung
 		StringBuilder summary = new StringBuilder();
-		summary.append("syncUsersJsonArray: API=").append(apiUsers.length())//
-				.append(", DB_nachSync=").append(userDB.length())//
-				.append(", hinzugefügt=").append(added)//
-				.append(", aktualisiert=").append(updated)//
-				.append(", entfernt=").append(removed)//
-				.append(", reassignedInMap=").append(reassignedTotal)//
-				.append(", übersprungen=").append(skipped).append("\n");
+		summary.append("syncUsersJsonArray: API=").append(apiUsers.length()).append(", DB_nachSync=").append(userMap.size()).append(", hinzugefügt=").append(added).append(", aktualisiert=").append(updated).append(", entfernt=").append(removed).append(", reassignedInMap=").append(reassignedTotal).append(", übersprungen=").append(skipped).append("\n");
 
 		if (addedLog.length() > 0)
 			summary.append(addedLog);
@@ -308,25 +267,14 @@ public class UserUpdater {
 			summary.append(reassignLog);
 
 		LOGGER.warning(summary.toString());
-	}
 
-	// Index map: userId -> index im JSONArray
-	private static Map<String, Integer> buildIndexByUserId(JSONArray userDB) {
-		Map<String, Integer> map = new HashMap<>();
-		for (int i = 0; i < userDB.length(); i++) {
-			JSONObject item = userDB.optJSONObject(i);
-			if (item == null)
-				continue;
-			JSONObject user = item.optJSONObject("user");
-			if (user == null)
-				continue;
-			String userId = extractIdAsString(user.opt("id"));
-			if (userId == null || userId.isBlank())
-				continue;
-			// Nur den ersten Vorkommnis-Index behalten (Duplikate vermeiden)
-			map.putIfAbsent(userId, i);
-		}
-		return map;
+		// 3) Aktualisieren des übergebenen User-Objekts, falls vorhanden
+		// fällt gelaube ich weg, weil es direkt in die Map geschrieben wird und nicht
+		// mehr in der alten userDB.
+//	    User userObj = userMap.get(user.getId());
+//	    if (userObj != null) {
+//	        user.updateFromJson(userObj);
+//	    }
 	}
 
 	private static String extractIdAsString(Object idVal) {
@@ -387,7 +335,7 @@ public class UserUpdater {
 			dbItem.put("mitgliedSeit", apiItem.optString("mitgliedSeit", ""));
 		}
 
-		UserDataLoader.fetchDataForUserJson(dbItem);
+		UserDataLoader.fetchDataForUserJson(User.fromJson(dbItem));
 
 		return dbItem;
 
@@ -410,55 +358,41 @@ public class UserUpdater {
 	 * @param matchdayInfo Der aktuelle Spieltag (inkl. Informationen ob gestartet /
 	 *                     beendet).
 	 */
-	private static void updateDbEntryFromApi(JSONObject dbItem, JSONObject apiItem, MatchdayInfo matchdayInfo, NewsManager newsManager) {
+	private static void updateDbEntryFromApi(User dbItem, User apiItem, MatchdayInfo matchdayInfo, NewsManager newsManager) {
 		// --- Grundwerte übernehmen ---
-		int totalPoints = apiItem.optInt("totalPoints", dbItem.optInt("punkte", 0));
-		dbItem.put("punkte", totalPoints);
+//		int totalPoints = apiItem.optInt("totalPoints", dbItem.optInt("punkte", 0));
+		int totalPoints = apiItem.getPoints();
+		dbItem.setPoints(totalPoints);
 
 		// teamValue aktualisieren
-		dbItem.put("teamValue", safeLong(apiItem.opt("teamValue"), dbItem.optLong("teamValue", 0L)));
+		dbItem.setTeamValue(apiItem.getTeamValue());
 
 		// lastPoints (kann Zahl oder "-" sein)
-		if (apiItem.has("lastPoints")) {
-			dbItem.put("lastPoints", apiItem.opt("lastPoints"));
+		if (apiItem.getLastPoints() != null) {
+			dbItem.setLastPoints(apiItem.getLastPoints());
 		}
-		Object lastPointsObj = apiItem.opt("lastPoints");
+		Object lastPointsObj = apiItem.getLastPoints();
 
 		// --- User-Block aktualisieren ---
-		JSONObject apiUser = apiItem.optJSONObject("user");
+		UserInfo apiUser = apiItem.getUserInfo();
 
-		JSONObject dbUser = dbItem.optJSONObject("user");
+		UserInfo dbUser = dbItem.getUserInfo();
 		if (dbUser == null) {
-			dbUser = new JSONObject();
-			dbItem.put("user", dbUser);
+			LOGGER.warning("updateDbEntryFromApi: Kein User-Block in der DB vorhanden für userId=" + apiUser.getId() + " – übersprungen.");
+			return; // Kein User-Block in der DB vorhanden, kann nicht aktualisiert werden
 		}
 		if (apiUser != null) {
-			putIfPresent(dbUser, "id", apiUser);
-			putIfPresent(dbUser, "name", apiUser);
+			dbUser.setId(apiUser.getId());
+			dbUser.setName(apiUser.getName());
 
 			// Rank hinzufügen, wenn vorhanden!
-			if (apiItem.optInt("rank", 0) > 0) {
-				dbItem.put("rank", apiItem.optInt("rank", 0));
-			}
-
-			// Position übernehmen!
-			if (apiItem.optInt("position", 0) > 0) {
-				dbItem.put("position", apiItem.optInt("position", 0));
+			if (apiItem.getRank() > 0) {
+				dbItem.setRank(apiItem.getRank());
 			}
 
 			// negativesBudget finalisieren
-			if (apiUser.has("negativesBudget")) {
-				dbUser.put("negativesBudget", apiUser.optBoolean("negativesBudget", dbUser.optBoolean("negativesBudget", false)));
-			} else if (apiUser.has("negativeBudget")) {
-				dbUser.put("negativesBudget", apiUser.optBoolean("negativeBudget", dbUser.optBoolean("negativesBudget", false)));
-			}
+			dbUser.setNegativesBudget(apiUser.isNegativesBudget());
 
-			if (apiUser.has("blocked")) {
-				dbUser.put("blocked", apiUser.optBoolean("blocked", dbUser.optBoolean("blocked", false)));
-			}
-			if (apiUser.has("position")) {
-				dbUser.put("position", apiUser.optInt("position", dbUser.optInt("position", 0)));
-			}
 		}
 
 		// --- Punktehistorie führen ---
@@ -483,14 +417,14 @@ public class UserUpdater {
 					}
 				}
 
-				newsManager.addNews(News.getUserpoints(dbUser.getString("name"), dbUser.getString("id"), lastPoints, totalPoints), true);
+				newsManager.addNews(News.getUserpoints(dbUser.getName(), dbUser.getId(), lastPoints, totalPoints), true);
 
 				updatePunkteHistorie(dbItem, currentMatchday, totalPoints, lastPoints, LOGGER);
 			} else {
-				LOGGER.fine("Kein neuer Spieltag für user=" + dbUser.optString("id") + " (aktueller=" + currentMatchday + ", letzter in Historie=" + lastInHistorie + ")");
+				LOGGER.fine("Kein neuer Spieltag für user=" + dbUser.getId() + " (aktueller=" + currentMatchday + ", letzter in Historie=" + lastInHistorie + ")");
 			}
 		} catch (Exception e) {
-			LOGGER.warning("Fehler beim Aktualisieren der PunkteHistorie für user=" + dbUser.optString("id") + ": " + e.getMessage());
+			LOGGER.warning("Fehler beim Aktualisieren der PunkteHistorie für user=" + dbUser.getId() + ": " + e.getMessage());
 		}
 	}
 
@@ -498,28 +432,27 @@ public class UserUpdater {
 	 * Ermittelt den höchsten vorhandenen Spieltag in der Historie. Falls noch keine
 	 * vorhanden ist, wird 0 zurückgegeben.
 	 */
-	private static int getLastMatchdayFromHistorie(JSONObject dbItem) {
-		JSONObject historie = dbItem.optJSONObject("punkteHistorie");
+	private static int getLastMatchdayFromHistorie(User dbItem) {
+		Map<Integer, Integer> historie = dbItem.getPunkteHistorie();
 		if (historie == null)
 			return 0;
 
 		int max = 0;
-		for (String key : historie.keySet()) {
+		for (int key : historie.keySet()) {
 			try {
-				int k = Integer.parseInt(key);
-				if (k > max)
-					max = k;
+				if (key > max)
+					max = key;
 			} catch (Exception ignored) {
 			}
 		}
 		return max;
 	}
 
-	private static void putIfPresent(JSONObject target, String key, JSONObject source) {
-		if (source != null && source.has(key)) {
-			target.put(key, source.opt(key));
-		}
-	}
+//	private static void putIfPresent(JSONObject target, String key, JSONObject source) {
+//		if (source != null && source.has(key)) {
+//			target.put(key, source.opt(key));
+//		}
+//	}
 
 	private static long safeLong(Object val, long def) {
 		if (val == null)
@@ -755,38 +688,35 @@ public class UserUpdater {
 	 * @param lastPointsObj Punkte laut API für den letzten Spieltag (kann Zahl oder
 	 *                      "-" sein)
 	 */
-	private static void updatePunkteHistorie(JSONObject dbItem, int spieltag, int totalPoints, int lastPoints, Logger LOGGER) {
+	private static void updatePunkteHistorie(User dbItem, int spieltag, int totalPoints, int lastPoints, Logger LOGGER) {
 		if (spieltag < 1 || spieltag > 34) {
 			LOGGER.warning("Ungültiger Spieltag: " + spieltag);
 			return;
 		}
 
 		// Historie laden oder neu anlegen
-		JSONObject historie = dbItem.optJSONObject("punkteHistorie");
+		Map<Integer, Integer> historie = dbItem.getPunkteHistorie();
 		if (historie == null) {
-			historie = new JSONObject();
-			dbItem.put("punkteHistorie", historie);
+			historie = new HashMap<>();
+			dbItem.setPunkteHistorie(historie);
 		}
 
 		// Wenn Spieltag schon eingetragen, nichts tun
-		if (historie.has(String.valueOf(spieltag))) {
+		if (historie.containsKey(spieltag)) {
 			LOGGER.fine("Spieltag " + spieltag + " bereits in Historie -> überspringe.");
 			return;
 		}
 
 		// Summe bisheriger Punkte in der Historie
-		int sumHistorie = 0;
-		for (String key : historie.keySet()) {
-			sumHistorie += historie.optInt(key, 0);
-		}
+		int sumHistorie = historie.values().stream().mapToInt(Integer::intValue).sum();
 
 		// Vorheriger Spieltag fehlt?
 		int prev = spieltag - 1;
-		if (prev > 0 && !historie.has(String.valueOf(prev))) {
+		if (prev > 0 && !historie.containsKey(prev)) {
 			int diff = totalPoints - sumHistorie - lastPoints;
 			if (diff < 0)
 				diff = 0;
-			historie.put(String.valueOf(prev), diff);
+			historie.put(prev, diff);
 			LOGGER.info("Fehlender Spieltag " + prev + " ergänzt mit Differenzpunkten=" + diff);
 			sumHistorie += diff;
 		}
@@ -795,11 +725,11 @@ public class UserUpdater {
 		int calcPoints = totalPoints - sumHistorie;
 		// Fallback auf lastPoints, wenn Differenz unsinnig wirkt
 		if (calcPoints < 0) {
-			LOGGER.warning("Berechnete Differenzpunkte < 0 für user=" + dbItem.optJSONObject("user").optString("id") + " -> nutze lastPoints=" + lastPoints);
+			LOGGER.warning("Berechnete Differenzpunkte < 0 für user=" + dbItem.getId() + " -> nutze lastPoints=" + lastPoints);
 			calcPoints = lastPoints;
 		}
 
-		historie.put(String.valueOf(spieltag), calcPoints);
+		historie.put(spieltag, calcPoints);
 		LOGGER.info("Spieltag " + spieltag + " eingetragen mit " + calcPoints + " Punkten");
 	}
 

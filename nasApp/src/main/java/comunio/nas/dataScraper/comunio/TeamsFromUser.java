@@ -2,6 +2,7 @@ package comunio.nas.dataScraper.comunio;
 
 import java.util.HashSet;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.logging.Logger;
 
@@ -16,6 +17,8 @@ import comunio.nas.git.GitHubUploader;
 import comunio.nas.objects.News;
 import comunio.nas.objects.NewsManager;
 import comunio.nas.objects.helper.LogManager;
+import comunio.nas.objects.user.User;
+import comunio.nas.objects.user.UserInfo;
 import comunio.nas.util.HttpHeaderUtil;
 import comunio.nas.util.player.PlayerHelper;
 
@@ -25,13 +28,14 @@ public class TeamsFromUser {
 
 	private static final Logger LOGGER = LogManager.getLogger(PlayerUpdater.class);
 
-	public static void loadAllPlayerForUser(JSONObject playerDBObject, JSONArray userDB, JSONArray marketValueDB, Map<String, String> playerToUserDB, NewsManager newsManager, JSONObject notInligaDBObj, LastUpdates lastUpdates) {
-		for (Object obj : userDB) {
-			JSONObject userObj = (JSONObject) obj;
-			if (userObj.has("user")) {
-				JSONObject user = userObj.getJSONObject("user");
-				if (user.has("id")) {
-					mergePlayerDataWithDB(playerDBObject, marketValueDB, newsManager, userObj, playerToUserDB, notInligaDBObj, lastUpdates);
+	public static void loadAllPlayerForUser(JSONObject playerDBObject, Map<String, User> userMap, JSONArray marketValueDB, Map<String, String> playerToUserDB, NewsManager newsManager, JSONObject notInligaDBObj, LastUpdates lastUpdates) {
+		for (Entry<String, User> entry : userMap.entrySet()) {
+			User user = entry.getValue();
+			
+			if (user.getUserInfo() != null) {
+				UserInfo userInfo = user.getUserInfo();
+				if (userInfo.getId() != null && !userInfo.getId().isEmpty() && !userInfo.getId().equals("1")) {
+					mergePlayerDataWithDB(playerDBObject, marketValueDB, newsManager, user, playerToUserDB, notInligaDBObj, lastUpdates);
 				}
 			}
 		}
@@ -41,15 +45,15 @@ public class TeamsFromUser {
 		updateComputerPlayersWithMap(playerDBObject, playerToUserDB, newsManager);
 	}
 
-	private static JSONArray fetchlPlayerForUserJson(JSONObject userObj) {
+	private static JSONArray fetchlPlayerForUserJson(User user) {
 		try {
-			JSONObject user = userObj.optJSONObject("user", new JSONObject());
-			if (user == null) {
+			if(user == null) {
+				LOGGER.warning("User ist null, kann Spieler nicht abrufen.");
 				return new JSONArray();
 			}
-			String userID = user.optString("id", null);
+			String userID = user.getId();
 			if (userID == null || userID.equals("1")) {
-				return new JSONArray();
+				return  new JSONArray(); // Leeres JSON-Objekt zurückgeben, wenn userID null oder "1" ist
 			}
 
 			String url = "https://www.comunio.de/api/users/" + userID + "/squad?state=infoUserd";
@@ -70,7 +74,7 @@ public class TeamsFromUser {
 			JSONArray result = new JSONArray();
 
 			String tactic = String.valueOf(playerData.optInt("tactic", 0));
-			userObj.put("tactic", tactic);
+			user.setTactic(tactic);
 
 			for (int i = 0; i < items.length(); i++) {
 				JSONObject playerObj = items.getJSONObject(i);
@@ -111,18 +115,18 @@ public class TeamsFromUser {
 
 	public static Set<String> playerWithOwner = new HashSet<String>();
 
-	public static void mergePlayerDataWithDB(JSONObject playerDBObject, JSONArray marketValueDB, NewsManager newsManager, JSONObject userObj, Map<String, String> playerToUserDB, JSONObject notInligaDBObj, LastUpdates lastUpdates) {
+	public static void mergePlayerDataWithDB(JSONObject playerDBObject, JSONArray marketValueDB, NewsManager newsManager, User user, Map<String, String> playerToUserDB, JSONObject notInligaDBObj, LastUpdates lastUpdates) {
 		JSONArray playerDB = playerDBObject.optJSONArray("playerDB");
 
-		JSONObject user = userObj.optJSONObject("user", new JSONObject());
-		if (user == null) {
-			user = new JSONObject();
+		UserInfo userInfo = user.getUserInfo();
+		if (userInfo == null) {
+			userInfo = new UserInfo();
 		}
-		String userID = user.optString("id", null);
+		String userID = user.getId();
 		if (userID == null || userID.equals("1")) {
 			return;
 		}
-		JSONArray apiPlayerArray = fetchlPlayerForUserJson(userObj);
+		JSONArray apiPlayerArray = fetchlPlayerForUserJson(user);
 
 		try {
 			if (playerDB != null && apiPlayerArray != null && apiPlayerArray.length() > 0) {

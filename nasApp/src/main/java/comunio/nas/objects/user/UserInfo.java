@@ -1,5 +1,9 @@
 package comunio.nas.objects.user;
 
+import java.util.ArrayList;
+import java.util.Set;
+
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 // === Innere Klasse zur User-Unterobjektrepräsentation ===
@@ -14,6 +18,7 @@ public class UserInfo {
     private String type;
     private String email;
     private boolean negativesBudget;
+    private Set<String> oldNames;
 
     // Getter und Setter
     public String getDate() { return date; }
@@ -59,6 +64,7 @@ public class UserInfo {
         this.setType(obj.optString("type", this.type));
         this.setEmail(obj.optString("email", this.email));
         this.setNegativesBudget(obj.optBoolean("negativesBudget", this.negativesBudget));
+        this.oldNames = obj.has("oldNames") ? obj.optJSONArray("oldNames").toList().stream().map(Object::toString).collect(java.util.stream.Collectors.toSet()) : this.oldNames;
     }
 
     public JSONObject toJson() {
@@ -74,7 +80,11 @@ public class UserInfo {
         obj.put("type", type);
         obj.put("email", email);
         obj.put("negativesBudget", negativesBudget);
+        if(oldNames != null) {
+        	obj.put("oldNames", new JSONArray(new ArrayList<>(oldNames)));
 
+        }
+        
         return obj;
     }
 
@@ -85,4 +95,10 @@ public class UserInfo {
             return 0;
         }
     }
+	public Set<String> getOldNames() {
+		return oldNames;
+	}
+	public void setOldNames(Set<String> oldNames) {
+		this.oldNames = oldNames;
+	}
 }

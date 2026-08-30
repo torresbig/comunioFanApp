@@ -12,7 +12,9 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import comunio.nas.ComunioDataUpdater;
 import comunio.nas.dataVariable.LastUpdates;
+import comunio.nas.error.ErrorType;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.orga.ComunioDate;
 
@@ -61,6 +63,9 @@ public class ComAnalysticsTopFlop {
 
 			// Jetzt die neuen Daten holen
 			JSONArray daten = fetchPlayerTrends();
+			if(daten.isEmpty()) {
+				return;
+			}
 			for (int i = 0; i < daten.length(); i++) {
 				JSONObject trendObj = daten.getJSONObject(i);
 				String spielerId = trendObj.getString("id");
@@ -114,8 +119,8 @@ public class ComAnalysticsTopFlop {
 			parseTable(doc, "flop_absolute", "flop", result);
 
 		} catch (IOException e) {
+			ComunioDataUpdater.errorDb.addError(new comunio.nas.error.Error(ErrorType.COMANALYSTICS_FEHLER_WEBSITENABFRAGE, "Fehler beim Laden oder Parsen der Seite: " + e.getMessage()));
 			LOGGER.severe("Fehler beim Laden oder Parsen der Seite: " + e.getMessage());
-			e.printStackTrace();
 		}
 		return result;
 	}

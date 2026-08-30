@@ -1,5 +1,7 @@
 package comunio.nas.dataScraper.comunio;
 
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.logging.Logger;
 
 import org.json.JSONArray;
@@ -9,6 +11,8 @@ import org.jsoup.Jsoup;
 import comunio.nas.ComunioDataUpdater;
 import comunio.nas.dataVariable.Urls;
 import comunio.nas.objects.helper.LogManager;
+import comunio.nas.objects.user.User;
+import comunio.nas.objects.user.UserInfo;
 import comunio.nas.util.HttpHeaderUtil;
 
 public class UserDataLoader {
@@ -17,32 +21,34 @@ public class UserDataLoader {
 	private static final Logger LOGGER = LogManager.getLogger(UserDataLoader.class);
 
 	public static void main(String[] args) {
-		JSONObject obj = new JSONObject();
-		obj.put("id", "10966300");
+		User obj = new User();
+		obj.setId("10966300");
 		fetchDataForUserJson(obj);
-		obj.clear();
-		obj.put("id", "5981249");
+		obj = new User();
+		obj.setId("5981249");
 		fetchDataForUserJson(obj);
 
 	}
 	
-	public static void fetchDataForAllUsers(JSONArray userDB) {
-		if (userDB == null || userDB.isEmpty()) {
+	public static void fetchDataForAllUsers(Map<String, User> userMap) {
+		if (userMap == null || userMap.isEmpty()) {
 			LOGGER.warning("fetchDataForAllUsers: userDB ist leer oder null!");
 			return;
 		}
-		for (int i = 0; i < userDB.length(); i++) {
-			JSONObject userObject = userDB.optJSONObject(i);
+		int i = 0;
+		for (Entry<String, User> entry : userMap.entrySet()) {
+			i++;
+			User userObject = entry.getValue();
 			if (userObject == null) {
 				LOGGER.warning("fetchDataForAllUsers: userObject an Index " + i + " ist null!");
 				continue;
 			}
-			if(!userObject.has("user") ) {
+			if(userObject.getUserInfo() == null)  {
 				LOGGER.warning("fetchDataForAllUsers: userObject an Index " + i + " hat kein 'user'-Feld!");
 				continue;
 			}
-			JSONObject user = userObject.optJSONObject("user");
-			if(user.getString("id").equals("1")) {
+			UserInfo userInfo = userObject.getUserInfo();
+			if(userInfo.getId().equals("1")) {
 				LOGGER.info("fetchDataForAllUsers: User mit ID=1 wird übersprungen (COMPUTER).");
 				continue;
 			}
@@ -60,19 +66,23 @@ public class UserDataLoader {
 	 * @param userObject Das JSONObject eines Users aus der userDB, das mindestens ein Feld "id" enthält.
 	 * @return JSONObject mit den vom Server geholten Detaildaten oder null bei Fehler/nicht gefunden.
 	 */
-	public static JSONObject fetchDataForUserJson(JSONObject userObject) {
+	public static JSONObject fetchDataForUserJson(User user) {
 	    try {
-	    	JSONObject user = userObject.optJSONObject("user", new JSONObject());
+	    	
 	    	 if (user == null) {
 		            LOGGER.warning("fetchDataForUserJson: Kein 'Userobject' vorhanden!");
 		            return null;
 		        }
 	    	
 	    	
-	        String id = user.optString("id", "");
+	        String id = user.getId();
 	        if (id.isBlank()) {
 	            LOGGER.warning("fetchDataForUserJson: Kein 'id'-Feld im userObject vorhanden!");
 	            return null;
+	        }
+	        if(id.equals("1")) {
+	        	LOGGER.info("fetchDataForUserJson: User mit ID=1 wird übersprungen (COMPUTER).");
+	        	return null;
 	        }
 
 	        String url = Urls.COM_USERDATA + id;
@@ -98,17 +108,19 @@ public class UserDataLoader {
 	        // teamValue & points
 	        int teamValue = userData.optInt("teamValue", 0);
 	        if (teamValue > 0) {
-	            userObject.put("teamValue", teamValue);
+	            user.setTeamValue(teamValue);
 	        }
-	        userObject.put("points", userData.optInt("points", 0));
-	        userObject.put("type", userData.optString("type", "BASIC"));
+	        
+	        user.setPoints(userData.optInt("points", 0));
+	        user.getUserInfo().setType(userData.optString("type", "BASIC"));
 	        // Stammdaten
-	        putIfPresent(user, "firstName", userData);
-	        putIfPresent(user, "lastName", userData);
-	        putIfPresent(user, "login", userData);
-	        putIfPresent(user, "registered", userData);
-	        putIfPresent(user, "newsCount", userData);
 
+	        user.setFirstName(userData.optString("firstName", ""));
+	        user.setLastName(userData.optString("lastName", ""));
+	        user.getUserInfo().setLoginName(userData.optString("login", ""));
+	        user.setRegistered(userData.optString("registered", ""));
+//	        user.getUserInfo().setNewsCount(userData.optInt("newsCount", 0));
+	        
 	        LOGGER.info("fetchDataForUserJson: Userdaten für ID=" + id + " erfolgreich aktualisiert.");
 	        return userData;
 
@@ -118,14 +130,7 @@ public class UserDataLoader {
 	    }
 	}
 
-	/**
-	 * Hilfsfunktion: Kopiert ein Feld aus source in target, wenn vorhanden.
-	 */
-	private static void putIfPresent(JSONObject target, String key, JSONObject source) {
-	    if (source.has(key)) {
-	        target.put(key, source.opt(key));
-	    }
-	}
+	
 
 
 }

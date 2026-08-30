@@ -36,13 +36,17 @@ public class GitHubUploader {
 	public static void uploadClubsDatabase(JSONArray clubDb) {
 		uploadToGitHub(Urls.getFilePathForGit(Urls.CLUB_DB_URL), clubDb.toString(2), "Update market values");
 	}
+	
+	public static void uploadUserLineups(JSONObject userLineups) {
+		uploadToGitHub(Urls.getFilePathForGit(Urls.USER_LINEUPS), userLineups.toString(2), "Update userLineups database");
+	}
 
 	public static void uploadNews(JSONObject news) {
 		uploadToGitHub(Urls.getFilePathForGit(Urls.NEWS_DB_URL), news.toString(2), "Update news feed");
 	}
 
 	public static void uploadUserDatabase(JSONArray userMapToJsonArray) {
-		if (ComunioDataUpdater.community != null && !ComunioDataUpdater.community.getId().isEmpty()) {
+		if (ComunioDataUpdater.community != null && !ComunioDataUpdater.community.getId().isEmpty() && !ComunioDataUpdater.community.getId().equalsIgnoreCase("null")) {
 			uploadToGitHub(Urls.getFilePathForGit(Urls.USER_DB_URL), userMapToJsonArray.toString(2), "Update userDB feed");
 		}else {
 			LOGGER.info("userMapToJsonArray auf GitHub NICHT aktualisiert. Keine gültige Comunio-Community vorhanden.");
@@ -74,7 +78,7 @@ public class GitHubUploader {
 				obj.put(entry.getKey(), entry.getValue());
 				arr.put(obj);
 			}
-			if (ComunioDataUpdater.community != null && !ComunioDataUpdater.community.getId().isEmpty()) {
+			if (ComunioDataUpdater.community != null && !ComunioDataUpdater.community.getId().isEmpty() && !ComunioDataUpdater.community.getId().equalsIgnoreCase("null")) {
 				uploadToGitHub(Urls.getFilePathForGit(Urls.USER_TO_PLAYER_URL), arr.toString(2), "Update PlayerToUserMap");
 				LOGGER.info("PlayerToUserMap auf GitHub aktualisiert.");
 			} else {

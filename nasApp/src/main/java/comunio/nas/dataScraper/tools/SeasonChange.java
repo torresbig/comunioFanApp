@@ -113,66 +113,80 @@ public class SeasonChange {
 
 	}
 
-	
 	/**
-	 * Analysiert die Comunio-System-News auf das Ereignis "Saisonübergang abgeschlossen".
-	 * Wenn dieser Eintrag in den aktuellen News gefunden wird und der Übergang noch nicht
-	 * verarbeitet wurde, wird der In-Memory-Saisonwechsel angestoßen.
-	 * * <p><strong>Ablauf des Saisonwechsels:</strong></p>
+	 * Analysiert die Comunio-System-News auf das Ereignis "Saisonübergang
+	 * abgeschlossen". Wenn dieser Eintrag in den aktuellen News gefunden wird und
+	 * der Übergang noch nicht verarbeitet wurde, wird der In-Memory-Saisonwechsel
+	 * angestoßen. *
+	 * <p>
+	 * <strong>Ablauf des Saisonwechsels:</strong>
+	 * </p>
 	 * <ol>
-	 * <li>Sicherung der aktuellen Tabellenstände im historischen Jahresarchiv auf GitHub.</li>
-	 * <li>Berechnung und Setzen des neuen offiziellen Saisonstart-Datums (Erkennungsdatum + 1 Tag).</li>
-	 * <li>Aktualisierung des {@code seasonTransition}-Zeitstempels in {@link LastUpdates}.</li>
-	 * <li>Zurücksetzen aller relevanten Datums-Zeitstempel in {@code lastUpdates} auf {@link Instant#EPOCH}, 
-	 * damit nachfolgende Scraper-Prozesse gezwungen werden, die API-Daten vollständig neu einzulesen.</li>
-	 * <li>Bereinigung spielerspezifischer Attribute der bestehenden Spielerdatenbank (Punkte, Statistiken, etc.).</li>
-	 * <li>Vollständiges Leeren (In-Memory Reset) aller saisonspezifischen Kollektionen und JSON-Strukturen 
-	 * (Marktwerte, Punktehistorie, Matchdays, Userdaten, Transfermarktlisten, Player-to-User-Mappings).</li>
-	 * <li>Synchroner Upload der nun geleerten, initialen Datenstrukturen auf GitHub, um das Repository für die neue Saison vorzubereiten.</li>
+	 * <li>Sicherung der aktuellen Tabellenstände im historischen Jahresarchiv auf
+	 * GitHub.</li>
+	 * <li>Berechnung und Setzen des neuen offiziellen Saisonstart-Datums
+	 * (Erkennungsdatum + 1 Tag).</li>
+	 * <li>Aktualisierung des {@code seasonTransition}-Zeitstempels in
+	 * {@link LastUpdates}.</li>
+	 * <li>Zurücksetzen aller relevanten Datums-Zeitstempel in {@code lastUpdates}
+	 * auf {@link Instant#EPOCH}, damit nachfolgende Scraper-Prozesse gezwungen
+	 * werden, die API-Daten vollständig neu einzulesen.</li>
+	 * <li>Bereinigung spielerspezifischer Attribute der bestehenden
+	 * Spielerdatenbank (Punkte, Statistiken, etc.).</li>
+	 * <li>Vollständiges Leeren (In-Memory Reset) aller saisonspezifischen
+	 * Kollektionen und JSON-Strukturen (Marktwerte, Punktehistorie, Matchdays,
+	 * Userdaten, Transfermarktlisten, Player-to-User-Mappings).</li>
+	 * <li>Synchroner Upload der nun geleerten, initialen Datenstrukturen auf
+	 * GitHub, um das Repository für die neue Saison vorzubereiten.</li>
 	 * </ol>
 	 *
-	 * <p><strong>Wichtig:</strong> Diese Methode sollte idealerweise regelmäßig beim Start des Datenaktualisierungsprozesses aufgerufen werden, um einen nahtlosen Übergang zwischen den Saisons zu gewährleisten. Sie ist so konzipiert, dass sie nur einmal pro Saisonübergang eine Aktion auslöst, basierend auf dem Vergleich des letzten erkannten Saisonübergangs mit dem aktuellen Spieltag.</p>
-	 * @param user                Der aktuell angemeldete User, um die News-URL korrekt zu generieren.
-	 * @param newsManager         Verwaltungsobjekt für die News-Datenbank zur Konvertierung und Abfrage.
-	 * @param playerDBObject      Das JSON-Objekt der Spielerdatenbank (enthält das "playerDB"-Array).
-	 * @param marketValueDB       Das JSON-Array der Marktwertdatenbank (wird geleert).
-	 * @param pointsDB            Das JSON-Objekt der Punktedatenbank (wird geleert).
-	 * @param matchdayInfoList    Das JSON-Objekt der Spieltagsdaten-Liste (wird geleert).
-	 * @param userDB              Das JSON-Array der Userdatenbank (wird geleert).
-	 * @param transfermarktListe  Das JSON-Array der Transfermarktliste (wird geleert).
-	 * @param playerToUserMap     Die Map für die Zuordnung von Spielern zu Usern (wird geleert).
-	 * @param matchdayInfo        Die aktuellen Spieltagsinformationen zur Überprüfung des Saisonstatus.
-	 * @param lastUpdates         Die Instanz zur Verwaltung der letzten Update-Zeitstempel.
-	 * @return {@code true}, wenn ein Saisonübergang erkannt und erfolgreich im RAM sowie auf GitHub verarbeitet wurde;
-	 * {@code false}, wenn kein Saisonübergang vorlag oder der Prozess abgebrochen wurde.
+	 * <p>
+	 * <strong>Wichtig:</strong> Diese Methode sollte idealerweise regelmäßig beim
+	 * Start des Datenaktualisierungsprozesses aufgerufen werden, um einen nahtlosen
+	 * Übergang zwischen den Saisons zu gewährleisten. Sie ist so konzipiert, dass
+	 * sie nur einmal pro Saisonübergang eine Aktion auslöst, basierend auf dem
+	 * Vergleich des letzten erkannten Saisonübergangs mit dem aktuellen Spieltag.
+	 * </p>
+	 * 
+	 * @param user               Der aktuell angemeldete User, um die News-URL
+	 *                           korrekt zu generieren.
+	 * @param newsManager        Verwaltungsobjekt für die News-Datenbank zur
+	 *                           Konvertierung und Abfrage.
+	 * @param playerDBObject     Das JSON-Objekt der Spielerdatenbank (enthält das
+	 *                           "playerDB"-Array).
+	 * @param marketValueDB      Das JSON-Array der Marktwertdatenbank (wird
+	 *                           geleert).
+	 * @param pointsDB           Das JSON-Objekt der Punktedatenbank (wird geleert).
+	 * @param matchdayInfoList   Das JSON-Objekt der Spieltagsdaten-Liste (wird
+	 *                           geleert).
+	 * @param userDB             Das JSON-Array der Userdatenbank (wird geleert).
+	 * @param transfermarktListe Das JSON-Array der Transfermarktliste (wird
+	 *                           geleert).
+	 * @param playerToUserMap    Die Map für die Zuordnung von Spielern zu Usern
+	 *                           (wird geleert).
+	 * @param matchdayInfo       Die aktuellen Spieltagsinformationen zur
+	 *                           Überprüfung des Saisonstatus.
+	 * @param lastUpdates        Die Instanz zur Verwaltung der letzten
+	 *                           Update-Zeitstempel.
+	 * @return {@code true}, wenn ein Saisonübergang erkannt und erfolgreich im RAM
+	 *         sowie auf GitHub verarbeitet wurde; {@code false}, wenn kein
+	 *         Saisonübergang vorlag oder der Prozess abgebrochen wurde.
 	 */
-	public static boolean analyzeNewsForSeasonTransit(
-			NewsManager newsManager, 
-			JSONObject playerDBObject, 
-			JSONArray marketValueDB,
-			JSONObject pointsDB,
-			JSONObject matchdayInfoList,
-			JSONArray userDB,
-			JSONArray transfermarktListe,
-			Map<String, String> playerToUserMap,
-			MatchdayInfo matchdayInfo, 
-			LastUpdates lastUpdates,
-			User user,
-			JSONArray clubDB
-	) {
+	public static boolean analyzeNewsForSeasonTransit(NewsManager newsManager, JSONObject playerDBObject, JSONArray marketValueDB, JSONObject pointsDB, JSONObject matchdayInfoList, Map<String, User> userMap, JSONArray transfermarktListe, Map<String, String> playerToUserMap, MatchdayInfo matchdayInfo, LastUpdates lastUpdates, User user, JSONArray clubDB) {
 
 		lastUpdates = lastUpdates != null ? lastUpdates : new LastUpdates();
-		
+
 		if (matchdayInfo == null) {
 			LOGGER.warning("MatchdayInfo ist null. Saisonübergangserkennung könnte ungenau sein.");
 			return false;
 		}
 
-		// Nur prüfen, wenn Saisonende erkannt und noch kein Übergang für diesen Zeitraum markiert wurde
+		// Nur prüfen, wenn Saisonende erkannt und noch kein Übergang für diesen
+		// Zeitraum markiert wurde
 		if (matchdayInfo.isSeasonOver(lastUpdates)) {
 			try {
 				LOGGER.info("Saisonende erkannt. Aktueller Spieltag: " + matchdayInfo.getCurrentMatchday() + ". Warte auf Saisonübergang in den News...");
-				
+
 				ComunioDate lastTransferNewsDate = NewsAnalyzerComunio.getLastTransferNewsDateFromGitHub(newsManager.dbToJson());
 
 				int page = 0;
@@ -188,10 +202,7 @@ public class SeasonChange {
 					JSONObject newsRoot;
 
 					try {
-						Connection connection = Jsoup.connect(url)
-								.header("Accept", "application/json, text/plain, */*")
-								.header("Authorization", "Bearer " + Login.getToken())
-								.ignoreContentType(true);
+						Connection connection = Jsoup.connect(url).header("Accept", "application/json, text/plain, */*").header("Authorization", "Bearer " + Login.getToken()).ignoreContentType(true);
 						Document doc = connection.get();
 						newsRoot = doc != null ? new JSONObject(doc.body().text()) : null;
 					} catch (Exception e) {
@@ -248,8 +259,9 @@ public class SeasonChange {
 
 									// 3. MARKIERUNG & RESET: LastUpdates-Zeitstempel konfigurieren
 									lastUpdates.setSeasonStart(newSeasonStart.toInstant());
-									
-									// Alle Zeitstempel auf EPOCH setzen, damit Daten im Nachgang zwingend frisch von den APIs geholt werden
+
+									// Alle Zeitstempel auf EPOCH setzen, damit Daten im Nachgang zwingend frisch
+									// von den APIs geholt werden
 									lastUpdates.setPlayerDbFull(Instant.EPOCH);
 									lastUpdates.setPlayerDbShort(Instant.EPOCH);
 									lastUpdates.setMatchdayInfo(Instant.EPOCH);
@@ -261,20 +273,25 @@ public class SeasonChange {
 									// 4. IN-MEMORY BEREINIGUNG: Datenstrukturen im RAM leeren
 									// Spieler-Attribute für die neue Saison bereinigen
 									PlayerTools.deletePlayerDbAttributeForNewSeason(playerDBObject);
-									
+
 									// Map leeren
 									playerToUserMap.clear();
-									
+
 									// JSONArrays im RAM elementweise leeren
-									
-									while (userDB.length() > 0) userDB.remove(0);
-									while (transfermarktListe.length() > 0) transfermarktListe.remove(0);
-									while (clubDB.length() > 0) clubDB.remove(0);
+
+									while (userMap.size() > 0)
+										userMap.clear();
+									while (transfermarktListe.length() > 0)
+										transfermarktListe.remove(0);
+									while (clubDB.length() > 0)
+										clubDB.remove(0);
 									newsManager.clear(); // NewsManager intern leeren (alle News entfernen)
-									
+
 									// JSONObjects im RAM durch Entfernen aller Keys leeren
-									for (String key : List.of(pointsDB.keySet().toArray(new String[0]))) pointsDB.remove(key);
-									for (String key : List.of(matchdayInfoList.keySet().toArray(new String[0]))) matchdayInfoList.remove(key);
+									for (String key : List.of(pointsDB.keySet().toArray(new String[0])))
+										pointsDB.remove(key);
+									for (String key : List.of(matchdayInfoList.keySet().toArray(new String[0])))
+										matchdayInfoList.remove(key);
 
 									LOGGER.info("Lokale Datenbank-Objekte im Arbeitsspeicher erfolgreich für die neue Saison zurückgesetzt.");
 
@@ -311,7 +328,7 @@ public class SeasonChange {
 				LOGGER.severe("Fehler in analyzeNewsForSeasonTransit: " + e.getMessage());
 			}
 		}
-		
+
 		return false;
 	}
 

@@ -11,7 +11,12 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
+
+import comunio.nas.ComunioDataUpdater;
 import comunio.nas.dataVariable.Urls;
+import comunio.nas.error.Error;
+import comunio.nas.error.ErrorType;
+import comunio.nas.error.ErrorsContainer;
 import comunio.nas.git.GitHubUploader;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.orga.ComunioDate;
@@ -107,6 +112,12 @@ public class LoadJSONfromFile {
 	 * @throws Exception Bei HTTP-Fehlern, ungültigem Format oder Parsing-Problemen.
 	 */
 	public static JSONArray loadJsonArrayFromUrl(String urlString) throws Exception {
+		if(urlString.contains("UserdatenbankJson_null")|| urlString.contains("PlayerToUserMap_null")) {
+			LOGGER.warning("Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: " + urlString);
+			// programm beenden, da die Community-ID nicht korrekt ist
+			ComunioDataUpdater.errorDb.addError(new Error(ErrorType.GITHUB_LOADER_DATEN_FEHLEN, "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: " + urlString));
+			throw new IllegalArgumentException("Ungültige Community-ID in der URL: " + urlString);
+		}
 		HttpResponse<String> response = sendWithRetry(urlString);
 		int statusCode = response.statusCode();
 

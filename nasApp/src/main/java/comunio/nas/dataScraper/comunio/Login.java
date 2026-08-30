@@ -45,15 +45,13 @@ public class Login {
 		}
 
 		try {
-				updateSettingsFromServer(community, user);
-		
-			
+
+			updateSettingsFromServer(community, user);
+
 		} catch (IOException e) {
 			LOGGER.log(Level.WARNING, "Fehler beim Abrufen der Einstellungen: " + e.getMessage(), e);
 		}
 	}
-
-
 
 	public static void ensureValidToken(String username, String password) {
 		LOGGER.fine("Überprüfe Token-Gültigkeit...");
@@ -80,53 +78,60 @@ public class Login {
 	}
 
 	private static String getTokenFromServer(String username, String password) throws IOException {
-		if (refreshToken != null) {
-			try {
-				LOGGER.info("Versuche Token mit Refresh-Token zu erneuern...");
-				String newToken = refreshAccessToken();
-				LOGGER.info("Refresh-Token erfolgreich benutzt.");
-				return newToken;
-			} catch (IOException e) {
-				LOGGER.warning("Refresh-Token fehlgeschlagen, hole neuen Token mit Login.");
-				refreshToken = null;
-			}
-		}
+	    int maxAttempts = 10;
+	    long timeoutMillis = 5_000; // 5 seconds
+	    long startTime = System.currentTimeMillis();
+	    IOException lastException = null;
 
-		LOGGER.info("Starte Login-Request an Comunio-API...");
-		try {
-			Response response = Jsoup.connect(LOGIN_URL)//
-					.method(Connection.Method.POST)//
-					.userAgent(USER_AGENT)//
-					.header("Content-Type", CONTENT_TYPE)//
-					.requestBody("{\"username\":\"" + username + "\",\"password\":\"" + password + "\",\"tzoffset\":\"2\"}")//
-					.ignoreContentType(true)//
-					.execute();
+	    for (int attempt = 1; attempt <= maxAttempts; attempt++) {
+	        long elapsed = System.currentTimeMillis() - startTime;
+	        if (elapsed >= timeoutMillis) {
+	            throw new IOException("Token‑fetch timeout after " + timeoutMillis + " ms (attempt " + attempt + ")");
+	        }
 
-			JSONObject jsonResponse = new JSONObject(response.body());
-			refreshToken = jsonResponse.getString("refresh_token");
-			LOGGER.info("Login erfolgreich. Access-Token und Refresh-Token erhalten.");
-			return jsonResponse.getString("access_token");
-		} catch (IOException e) {
-			LOGGER.severe("Login fehlgeschlagen: " + e.getMessage());
-			
-			throw e;
-		}
+	        try {
+	            // Existing login request logic …
+	            Response response = Jsoup.connect(LOGIN_URL)
+	                .method(Connection.Method.POST)
+	                .userAgent(USER_AGENT)
+	                .header("Content-Type", CONTENT_TYPE)
+	                .requestBody("{\"username\":\"" + username + "\",\"password\":\"" + password + "\",\"tzoffset\":\"2\"}")
+	                .ignoreContentType(true)
+	                .execute();
+
+	            JSONObject jsonResponse = new JSONObject(response.body());
+	            refreshToken = jsonResponse.getString("refresh_token");
+	            LOGGER.info("Login erfolgreich. Access-Token und Refresh-Token erhalten.");
+	            return jsonResponse.getString("access_token");
+
+	        } catch (IOException e) {
+	            lastException = e;
+	            if (attempt < maxAttempts) {
+	                // Wait a short interval before retrying (e.g., 200 ms)
+	                try { Thread.sleep(200); } catch (InterruptedException ie) { Thread.currentThread().interrupt(); }
+	            }
+	        }
+	    }
+
+	    // All attempts exhausted
+	    throw new IOException("Token‑fetch failed after " + maxAttempts + " attempts. Last error: " + lastException.getMessage(), lastException);
 	}
 
-	private static String refreshAccessToken() throws IOException {
-		LOGGER.info("Sende Refresh-Token an API...");
-		Response response = Jsoup.connect(REFRESH_URL)//
-				.method(Connection.Method.POST)//
-				.userAgent(USER_AGENT)//
-				.header("Content-Type", CONTENT_TYPE)//
-				.requestBody("{\"refresh_token\":\"" + refreshToken + "\"}")//
-				.ignoreContentType(true)//
-				.execute();
 
-		JSONObject jsonResponse = new JSONObject(response.body());
-		LOGGER.info("Neues Access-Token durch Refresh erhalten.");
-		return jsonResponse.getString("access_token");
-	}
+//	private static String refreshAccessToken() throws IOException {
+//		LOGGER.info("Sende Refresh-Token an API...");
+//		Response response = Jsoup.connect(REFRESH_URL)//
+//				.method(Connection.Method.POST)//
+//				.userAgent(USER_AGENT)//
+//				.header("Content-Type", CONTENT_TYPE)//
+//				.requestBody("{\"refresh_token\":\"" + refreshToken + "\"}")//
+//				.ignoreContentType(true)//
+//				.execute();
+//
+//		JSONObject jsonResponse = new JSONObject(response.body());
+//		LOGGER.info("Neues Access-Token durch Refresh erhalten.");
+//		return jsonResponse.getString("access_token");
+//	}
 
 	public static void updateSettingsFromServer(Community community, User user) throws IOException {
 		try {

@@ -5,6 +5,8 @@ import org.json.JSONObject;
 
 import comunio.nas.objects.News;
 import comunio.nas.objects.NewsManager;
+import comunio.nas.objects.user.User;
+
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -18,51 +20,35 @@ public final class KontostandBerechner {
     private static final int PUNKTE_MULTIPLIKATOR = 10000;
 
 
-
     /**
      * Berechnet die Kontostände aller User basierend auf Transfers und Punkten
-     * @param userArray JSON-Array mit User-Daten
+     * Aktualisiert die User-Objekte in der übergebenen Map direkt
+     * @param userMap Map mit userId als Schlüssel und User-Objekt als Wert
      * @param newsManager NewsManager für Transfer-News
-     * @return Aktualisiertes JSON-Array mit Kontoständen
      */
-    public JSONArray calculateKontostaende(JSONArray userArray, NewsManager newsManager) {
-        Objects.requireNonNull(userArray, "userArray darf nicht null sein");
+    public void calculateKontostaende(Map<String, User> userMap, NewsManager newsManager) {
+        Objects.requireNonNull(userMap, "userMap darf nicht null sein");
         
-        Map<String, JSONObject> userContainerMap = userArrayToMap(userArray);
-        processTransfers(newsManager, userContainerMap);
-        processPunkte(userContainerMap);
-        
-        return toJsonArray(userContainerMap);
-    }
-
-    private Map<String, JSONObject> userArrayToMap(JSONArray userArray) {
-        Map<String, JSONObject> userContainerMap = new HashMap<>();
-        for (int i = 0; i < userArray.length(); i++) {
-            try {
-                JSONObject userContainer = userArray.getJSONObject(i);
-                JSONObject user = userContainer.getJSONObject("user");
-
-                String userId = user.getString("id");
-                int initialGuthaben = "Computer".equalsIgnoreCase(user.optString("firstName")) ? 0 : STARTGUTHABEN;
-                userContainer.put("guthaben", initialGuthaben);
-                userContainer.put("sellValue", 0);
-                userContainer.put("buyValue", 0);
-                
-                userContainerMap.put(userId, userContainer);
-            } catch (Exception e) {
-                LOGGER.log(Level.SEVERE, "Fehler bei User-Verarbeitung: " + e.getMessage(), e);
-            }
+        // Initialisiere die Kontostand-Felder für alle User
+        for (User user : userMap.values()) {
+            int initialGuthaben = "Computer".equalsIgnoreCase(user.getFirstName()) ? 0 : STARTGUTHABEN;
+            user.setGuthaben(initialGuthaben);
+            user.setSellValue(0);
+            user.setBuyValue(0);
+            user.setNegativesBudget(false); // Wird später basierend auf Guthaben gesetzt
         }
-        return userContainerMap;
+        
+        processTransfers(newsManager, userMap);
+        processPunkte(userMap);
     }
 
-    private void processTransfers(NewsManager newsManager, Map<String, JSONObject> userContainerMap) {
+    private void processTransfers(NewsManager newsManager, Map<String, User> userMap) {
         if (newsManager == null) return;
 
         newsManager.getNewsByDate().values().stream()
             .flatMap(List::stream)
             .filter(news -> news != null && news.getArt().isTRANSFER())
-            .forEach(news -> processTransfer(news, userContainerMap));
+            .forEach(news -> processTransfer(news, userMap));
     }
 
     /**
@@ -71,74 +57,62 @@ public final class KontostandBerechner {
      * - Summe aller Käufe/Verkäufe (buyValue/sellValue)
      * - negativesBudget Flag
      */
-    private void processTransfer(News transferNews, Map<String, JSONObject> userContainerMap) {
+    private void processTransfer(News transferNews, Map<String, User> userMap) {
         try {
             String transferString = transferNews.getText();
             if (transferString == null || transferString.isBlank()) return;
 
             JSONObject transfer = new JSONObject(transferString);
-            String sellerId = resolveUserId(transfer.getString("seller"), transfer.optString("sellerId"), userContainerMap);
-            String buyerId = resolveUserId(transfer.getString("buyer"), transfer.optString("buyerId"), userContainerMap);
+            String sellerId = resolveUserId(transfer.getString("seller"), transfer.optString("sellerId"), userMap);
+            String buyerId = resolveUserId(transfer.getString("buyer"), transfer.optString("buyerId"), userMap);
             int price = transfer.getInt("price");
 
             // Verkäufer bekommt Geld
-            if (sellerId != null && userContainerMap.containsKey(sellerId)) {
-                JSONObject sellerContainer = userContainerMap.get(sellerId);
-                int alt = sellerContainer.getInt("guthaben");
-                sellerContainer.put("guthaben", alt + price);
-                int sell = sellerContainer.optInt("sellValue",0);
-                sellerContainer.put("sellValue", sell + price);
-                JSONObject user = sellerContainer.optJSONObject("user");
-                if (user != null) {
-                    user.put("negativesBudget", (alt + price) < 0);
-                }
+            if (sellerId != null && userMap.containsKey(sellerId)) {
+                User seller = userMap.get(sellerId);
+                long alt = seller.getGuthaben();
+                seller.setGuthaben(alt + price);
+                int sell = seller.getSellValue();
+                seller.setSellValue(sell + price);
+                seller.setNegativesBudget((alt + price) < 0);
             }
 
             // Käufer zahlt
-            if (buyerId != null && userContainerMap.containsKey(buyerId)) {
-                JSONObject buyerContainer = userContainerMap.get(buyerId);
-                int alt = buyerContainer.getInt("guthaben");
-                buyerContainer.put("guthaben", alt - price);
-                int buy = buyerContainer.optInt("buyValue",0);
-                buyerContainer.put("buyValue", buy + price);
-                JSONObject user = buyerContainer.optJSONObject("user");
-                if (user != null) {
-                    user.put("negativesBudget", (alt - price) < 0);
-                }
-
+            if (buyerId != null && userMap.containsKey(buyerId)) {
+                User buyer = userMap.get(buyerId);
+                long alt = buyer.getGuthaben();
+                buyer.setGuthaben(alt - price);
+                int buy = buyer.getBuyValue();
+                buyer.setBuyValue(buy + price);
+                buyer.setNegativesBudget((alt - price) < 0);
             }
         } catch (Exception e) {
             LOGGER.log(Level.WARNING, "Fehler bei Transfer-Verarbeitung: " + e.getMessage(), e);
         }
     }
 
-    private String resolveUserId(String name, String id, Map<String, JSONObject> userContainerMap) {
+    private String resolveUserId(String name, String id, Map<String, User> userMap) {
         if (id != null && !id.isBlank() && !id.equals(name)) {
             return id;
         }
-        for (JSONObject container : userContainerMap.values()) {
-            JSONObject user = container.getJSONObject("user");
-            if (name.equalsIgnoreCase(user.optString("firstName"))) {
-                return user.getString("id");
+        for (User user : userMap.values()) {
+            if (name.equalsIgnoreCase(user.getFirstName())) {
+                return user.getId();
             }
         }
         LOGGER.warning("Unbekannter User: " + name);
         return null;
     }
 
-    private void processPunkte(Map<String, JSONObject> userContainerMap) {
-        for (JSONObject userContainer : userContainerMap.values()) {
-//            if (!"5981249".equals(userContainer.optJSONObject("user").optString("id"))) {
-//                continue; // Nur für Thomas debuggen
-//            }
-            JSONObject punkteHistorie = userContainer.optJSONObject("punkteHistorie", new JSONObject());
+    private void processPunkte(Map<String, User> userMap) {
+        for (User user : userMap.values()) {
+            Map<Integer, Integer> punkteHistorie = user.getPunkteHistorie();
             int sum = 0;
             int sumPunkte = 0;
             int countedSpieltage = 0;
-            Iterator<String> keys = punkteHistorie.keys();
-            while (keys.hasNext()) {
-                String key = keys.next();
-                int punkte = punkteHistorie.optInt(key, -999); // -999 als Marker für Fehler
+            for (Map.Entry<Integer, Integer> entry : punkteHistorie.entrySet()) {
+                int key = entry.getKey();
+                int punkte = entry.getValue();
                 System.out.printf("Spieltag %s: %d Punkte%n", key, punkte);
                 sumPunkte += punkte;
                 if (punkte > 0) {
@@ -147,25 +121,13 @@ public final class KontostandBerechner {
                 }
             }
 
-//            System.out.println("Gezählte Spieltage: " + countedSpieltage);
-//            System.out.println("Berechnete Summe: " + sum);
-//            System.out.println("Gesamte Punkte: " + sumPunkte);
-//            System.out.println("Erwartete Summe: " + (1404 * PUNKTE_MULTIPLIKATOR));
-
-            
-            int altesGuthaben = userContainer.getInt("guthaben");
-            userContainer.put("punktegeld", sum);
-            userContainer.put("guthaben", altesGuthaben + sum);
-            userContainer.getJSONObject("user").put("negativesBudget", (altesGuthaben + sum) < 0);
+            long altesGuthaben = user.getGuthaben();
+            user.setPunkteGeld(sum);
+            user.setGuthaben(altesGuthaben + sum);
+            user.setNegativesBudget((altesGuthaben + sum) < 0);
         }
     }
 
-    private JSONArray toJsonArray(Map<String, JSONObject> userContainerMap) {
-        JSONArray result = new JSONArray();
-        userContainerMap.values().forEach(result::put);
-        return result;
-    }
-    
     public String toString() {
     	return "KontostandBerechner [STARTGUTHABEN=" + STARTGUTHABEN + ", PUNKTE_MULTIPLIKATOR=" + PUNKTE_MULTIPLIKATOR + "]";
     }
