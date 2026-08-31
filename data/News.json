@@ -1,6 +1,35 @@
 {
-  "lastUpdate": "30.08.2026 23:22:55",
+  "lastUpdate": "31.08.2026 10:07:18",
   "newsDB": [
+    {
+      "date": "31.08.2026",
+      "news": [
+        {
+          "date": "31.08.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Maluze (ID: 34221)",
+          "id": "0",
+          "playerId": "34221"
+        },
+        {
+          "date": "31.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Schmetgens\",\"price\":1360000,\"buyerId\":\"5981249\",\"playerValue\":1380000,\"playerId\":\"34245\",\"buyer\":\"Thomas\"}",
+          "id": "965454192",
+          "playerId": "34245"
+        },
+        {
+          "date": "31.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Dallinga\",\"price\":4500000,\"buyerId\":\"13830745\",\"playerValue\":5230000,\"playerId\":\"34504\",\"buyer\":\"Gerry\"}",
+          "id": "965454192",
+          "playerId": "34504"
+        }
+      ]
+    },
     {
       "date": "31.07.2026",
       "news": [
