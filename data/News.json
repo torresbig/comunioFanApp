@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "31.08.2026 10:07:18",
+  "lastUpdate": "31.08.2026 15:07:46",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -27,6 +27,38 @@
           "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Dallinga\",\"price\":4500000,\"buyerId\":\"13830745\",\"playerValue\":5230000,\"playerId\":\"34504\",\"buyer\":\"Gerry\"}",
           "id": "965454192",
           "playerId": "34504"
+        },
+        {
+          "date": "31.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christopher\",\"sellerId\":\"13548242\",\"playerName\":\"Tillman\",\"price\":7851300,\"buyerId\":\"1\",\"playerValue\":7490000,\"playerId\":\"33530\",\"buyer\":\"Computer\"}",
+          "id": "965454192",
+          "playerId": "33530"
+        },
+        {
+          "date": "31.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christopher\",\"sellerId\":\"13548242\",\"playerName\":\"Hashioka\",\"price\":2509900,\"buyerId\":\"1\",\"playerValue\":2460000,\"playerId\":\"34492\",\"buyer\":\"Computer\"}",
+          "id": "965454192",
+          "playerId": "34492"
+        },
+        {
+          "date": "31.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Gerry\",\"sellerId\":\"13830745\",\"playerName\":\"Stage\",\"price\":8758300,\"buyerId\":\"1\",\"playerValue\":8820000,\"playerId\":\"33640\",\"buyer\":\"Computer\"}",
+          "id": "965454192",
+          "playerId": "33640"
+        },
+        {
+          "date": "31.08.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Chiarodia (33601) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33601"
         }
       ]
     },
