@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "31.08.2026 22:03:32",
+  "lastUpdate": "01.09.2026 10:05:38",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -139,6 +139,14 @@
           "text": "Statuswechsel: Gebel  (34042) ist jetzt VERLETZT",
           "id": "0",
           "playerId": "34042"
+        },
+        {
+          "date": "31.08.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Darvich\",\"price\":3546600,\"buyerId\":\"1\",\"playerValue\":2910000,\"playerId\":\"34215\",\"buyer\":\"Computer\"}",
+          "id": "965454192",
+          "playerId": "34215"
         }
       ]
     },
@@ -12812,6 +12820,59 @@
           "text": "Statuswechsel: Thomas (34339) ist jetzt VERLETZT (Sprunggelenksprobleme)",
           "id": "0",
           "playerId": "34339"
+        }
+      ]
+    },
+    {
+      "date": "01.09.2026",
+      "news": [
+        {
+          "date": "01.09.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Regeer (ID: 34513)",
+          "id": "0",
+          "playerId": "34513"
+        },
+        {
+          "date": "01.09.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Brassier (ID: 34511)",
+          "id": "0",
+          "playerId": "34511"
+        },
+        {
+          "date": "01.09.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Moore (ID: 34512)",
+          "id": "0",
+          "playerId": "34512"
+        },
+        {
+          "date": "01.09.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Gendrey\",\"price\":491200,\"buyerId\":\"1\",\"playerValue\":440000,\"playerId\":\"34051\",\"buyer\":\"Computer\"}",
+          "id": "965529233",
+          "playerId": "34051"
+        },
+        {
+          "date": "01.09.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Stefan 8\",\"sellerId\":\"6013585\",\"playerName\":\"Ayhan\",\"price\":1295400,\"buyerId\":\"1\",\"playerValue\":1190000,\"playerId\":\"34392\",\"buyer\":\"Computer\"}",
+          "id": "965529233",
+          "playerId": "34392"
+        },
+        {
+          "date": "01.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Regeer (34513) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34513"
         }
       ]
     },
