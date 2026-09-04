@@ -7,6 +7,8 @@ import org.jsoup.nodes.Document;
 import comunio.nas.dataVariable.Urls;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.user.User;
+import comunio.nas.util.HttpHeaderUtil;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -32,8 +34,9 @@ public class LineupParser {
 	}
 
 	public void fetchLineupForAllUsers(Map<String, User> users, MatchdayInfo matchdayInfo) {
-		if ( matchdayInfo.isStarted() && !matchdayInfo.isFinished()) {
-			// Wenn der Spieltag gestartet ist, aber noch nicht beendet, werden die aufstellungen abgefragt. sonst nicht. 
+		if (matchdayInfo.isStarted() && !matchdayInfo.isFinished()) {
+			// Wenn der Spieltag gestartet ist, aber noch nicht beendet, werden die
+			// aufstellungen abgefragt. sonst nicht.
 
 			if (isMatchdayCached(matchdayInfo)) {
 				// Wenn der Spieltag schon in der Map ist, nur die User abfragen, die noch nicht
@@ -50,7 +53,6 @@ public class LineupParser {
 			}
 		}
 	}
-
 
 	// Wandelt ein vorhandenes JSON (als String) wieder in die interne Map-Struktur
 	// um
@@ -70,66 +72,74 @@ public class LineupParser {
 	public JSONObject getFinalJSONObject() {
 		return new JSONObject(rootDataMap);
 	}
-	
-	
+
 	private void fetchAndStoreLineup(User user, MatchdayInfo matchdayInfo) {
 
-	    // Prüfen, ob User-Objekt oder ID vorhanden ist (id ist String in deinem User-Objekt)
-	    if (user == null || user.getId() == null || user.getId().equals("1")) {
-	        String userName = (user != null) ? user.getName() : "Unbekannt";
-	        LOGGER.info("fetchAndStoreLineup: User " + userName + " hat die ID 1 oder ist ungültig, wird übersprungen.");
-	        return;
-	    }
-	    
-	    String spieltag = String.valueOf(matchdayInfo.getCurrentMatchday());
+		// Prüfen, ob User-Objekt oder ID vorhanden ist (id ist String in deinem
+		// User-Objekt)
+		if (user == null || user.getId() == null || user.getId().equals("1")) {
+			String userName = (user != null) ? user.getName() : "Unbekannt";
+			LOGGER.info("fetchAndStoreLineup: User " + userName + " hat die ID 1 oder ist ungültig, wird übersprungen.");
+			return;
+		}
 
-	    // Wenn die Daten für den User an diesem Spieltag schon existieren, nicht nochmal abfragen
-	    if (isUserCached(matchdayInfo, user)) {
-	        return;
-	    }
+		String spieltag = String.valueOf(matchdayInfo.getCurrentMatchday());
 
-	    try {
-	        // 1. API-Daten via Jsoup abrufen (mit ignoreContentType für JSON)
-	        Document doc = Jsoup.connect(Urls.COM_LINEUP(user)).ignoreContentType(true).get();
-	        JSONObject responseJson = new JSONObject(doc.text());
+		// Wenn die Daten für den User an diesem Spieltag schon existieren, nicht
+		// nochmal abfragen
+		if (isUserCached(matchdayInfo, user)) {
+			return;
+		}
 
-	        // 2. Taktik auslesen (falls im Squad-Endpoint vorhanden, sonst Default)
-	        String taktik = responseJson.optString("taktik", "unknown");
+		try {
+			// 1. API-Daten via Jsoup abrufen (mit ignoreContentType für JSON)
 
-	        // 3. Spieler-Liste (aus dem "items"-Array der Squad-API) auslesen und in Maps verpacken
-	        JSONArray sourcePlayers = responseJson.optJSONArray("items");
-	        List<Map<String, Object>> playerList = new ArrayList<>();
+			String doc = Jsoup.connect(Urls.COM_LINEUP(user)).userAgent(HttpHeaderUtil.getRandomUserAgent()).header("Accept", "application/json, text/plain, */*").header("Authorization", "Bearer " + Login.getToken()).header("Accept-Encoding", "gzip, deflate, br, zstd").header("Accept-Language", "de-DE,en-EN;q=0.9").header("x-timezone", "Europe/Berlin").ignoreContentType(true).execute().body();
 
-	        if (sourcePlayers != null) {
-	            for (int i = 0; i < sourcePlayers.length(); i++) {
-	                JSONObject p = sourcePlayers.getJSONObject(i);
+			JSONObject responseJson = new JSONObject(doc);
 
-	                Map<String, Object> playerMap = new HashMap<>();
-	                // Hier greifen wir auf die Felder aus dem Squad-Endpoint zu
-	                playerMap.put("id", p.optLong("id"));
-	                playerMap.put("name", p.optString("name"));
-	                playerMap.put("type", p.optInt("position")); // Entspricht deiner alten "type"-Struktur
-	                
-	                // Weitere Attribute, die die Squad-API liefert (kannst du anpassen):
-	                playerMap.put("status", p.optString("matchStatus", "")); 
-	                playerMap.put("quotedprice", p.optLong("quotedprice"));
+			// 2. Taktik auslesen (falls im Squad-Endpoint vorhanden, sonst Default)
+			String taktik = responseJson.optString("tactic", "unknown");
 
-	                playerList.add(playerMap);
-	            }
-	        }
+			// 3. Spieler-Liste (aus dem "items"-Array der Squad-API) auslesen und in Maps
+			// verpacken
+			JSONArray sourcePlayers = responseJson.optJSONArray("items");
+			List<Map<String, Object>> playerList = new ArrayList<>();
 
-	        // 4. User-Daten-Map befüllen (enthält Taktik und die Spieler-Liste)
-	        Map<String, Object> userDataMap = new HashMap<>();
-	        userDataMap.put("taktik", taktik);
-	        userDataMap.put("players", playerList);
+			if (sourcePlayers != null) {
+				for (int i = 0; i < sourcePlayers.length(); i++) {
+					JSONObject p = sourcePlayers.getJSONObject(i);
+					boolean linedup = p.optBoolean("linedup", false);
+					if (!linedup) {
+						continue; // Spieler nicht in der Startaufstellung, überspringen
+					}
+					Map<String, Object> playerMap = new HashMap<>();
+					// Hier greifen wir auf die Felder aus dem Squad-Endpoint zu
+					playerMap.put("id", p.optLong("id"));
+					playerMap.put("name", p.optString("name"));
+					playerMap.put("kaderPos", Integer.parseInt(p.optString("pos"))); // Entspricht deiner alten "type"-Struktur
+					
+					playerMap.put("wasLiveSubstituted", p.optBooleanObject("wasLiveSubstituted", false));	
+					// Weitere Attribute, die die Squad-API liefert (kannst du anpassen):
+					playerMap.put("quotedprice", p.optLong("quotedprice"));
+					playerMap.put("substitute", p.optBooleanObject("substitute", false));
+					playerMap.put("position", p.optString("position", "unbekannt"));
+					playerList.add(playerMap);
+				}
+			}
 
-	        // 5. In die Spieltags-Struktur einhängen
-	        rootDataMap.computeIfAbsent(spieltag, k -> new HashMap<>()).put(user.getId(), userDataMap);
+			// 4. User-Daten-Map befüllen (enthält Taktik und die Spieler-Liste)
+			Map<String, Object> userDataMap = new HashMap<>();
+			userDataMap.put("tactic", taktik);
+			userDataMap.put("players", playerList);
 
-	    } catch (Exception e) {
-	        LOGGER.severe("Fehler beim Abrufen der Squad-Daten für User " + user.getName() + ": " + e.getMessage());
-	        e.printStackTrace();
-	    }
+			// 5. In die Spieltags-Struktur einhängen
+			rootDataMap.computeIfAbsent(spieltag, k -> new HashMap<>()).put(user.getId(), userDataMap);
+
+		} catch (Exception e) {
+			LOGGER.severe("Fehler beim Abrufen der Squad-Daten für User " + user.getName() + ": " + e.getMessage());
+			e.printStackTrace();
+		}
 	}
-	
+
 }
