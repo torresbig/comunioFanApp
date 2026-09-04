@@ -419,7 +419,7 @@ public class UserUpdater {
 
 				newsManager.addNews(News.getUserpoints(dbUser.getName(), dbUser.getId(), lastPoints, totalPoints), true);
 
-				updatePunkteHistorie(dbItem, currentMatchday, totalPoints, lastPoints, LOGGER);
+				updatePunkteHistorie(dbItem, currentMatchday, totalPoints, lastPoints);
 			} else {
 				LOGGER.fine("Kein neuer Spieltag für user=" + dbUser.getId() + " (aktueller=" + currentMatchday + ", letzter in Historie=" + lastInHistorie + ")");
 			}
@@ -464,6 +464,185 @@ public class UserUpdater {
 		} catch (Exception e) {
 			return def;
 		}
+	}
+
+	public static void getSquadForMatchday(JSONObject matchdayInfoList, JSONArray userDB, MatchdayInfo matchdayInfo) {
+		for (int i = 0; i < userDB.length(); i++) {
+
+			JSONObject array_element = (JSONObject) userDB.get(i);
+			JSONObject user = array_element.getJSONObject("user");
+			String userID = user.getString("id");
+			if (userID != null && !userID.equals("1")) {
+				fetchSquadFromStandingsAsArray(userID, matchdayInfo.getEventInfo().getPrevious());
+//				map noch to json und guvken wo hin. 
+			}
+		}
+	}
+
+	public static Map<Position, Set<String>> fetchSquadFromStandingsAsArray(String userID, long eid) {
+
+		String url = "https://www.comunio.de/api/users/" + userID + "/squad?communityId=" + ComunioDataUpdater.community.getId() + "&eid=" + eid + "&state=standings.mode";
+
+		try {
+			Login.ensureValidToken(ComunioDataUpdater.uld.getUsername(), ComunioDataUpdater.uld.getPasswortAlsString());
+			String jsonResponse = Jsoup.connect(url)//
+					.userAgent(HttpHeaderUtil.getRandomUserAgent())//
+					.header("Accept", "application/json, text/plain, */*")//
+					.header("Authorization", "Bearer " + Login.getToken())//
+					.header("Accept-Encoding", "gzip, deflate, br, zstd")//
+					.header("Accept-Language", "de-DE,en-EN;q=0.9")//
+					.header("x-timezone", "Europe/Berlin")//
+					.ignoreContentType(true)//
+					.execute()//
+					.body();
+
+			JSONObject root = new JSONObject(jsonResponse);
+
+			Map<Position, Set<String>> result = new HashMap<Position, Set<String>>();
+
+			if (!root.has("items")) {
+				LOGGER.warning("fetchStandingsAsArray: Antwort enthält kein 'standings'-Objekt. URL: " + url);
+				return result;
+			}
+
+			JSONArray items = root.getJSONArray("items");
+			for (int i = 0; i < items.length(); i++) {
+				JSONObject array_element = items.getJSONObject(i);
+				String id = String.valueOf(array_element.getInt("id"));
+				String position = String.valueOf(array_element.getString("position"));
+				Position enuPos = Position.fromString(position);
+				Set<String> playerIds = new HashSet<String>();
+				if (result.get(enuPos) != null) {
+					playerIds = result.get(enuPos);
+				}
+				playerIds.add(id);
+				result.put(enuPos, playerIds);
+
+			}
+			System.out.println();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return null;
+	}
+
+	/**
+	 * Aktualisiert die Punkte aller Benutzer in der userMap basierend auf den
+	 * aktuellen Standings der Comunio-API.
+	 *
+	 * @param userMap      Map von userId -> User-Objekt, das aktualisiert werden
+	 *                     soll
+	 * @param community    Die Community, für die die Standings abgerufen werden
+	 * @param matchdayInfo Informationen zum aktuellen Spieltag (inkl. Punkte)
+	 */
+
+	public static void updateUserPoints(Map<String, User> userMap, Community community, MatchdayInfo matchdayInfo) {
+
+		// Wenn der Spieltag schon in der Map ist, nur die User abfragen, die noch nicht
+		// drin sind
+		try {
+			JSONArray apiUsers = fetchStandingsAsArray(community);
+			int matchday = matchdayInfo.getPointsMatchday();
+
+			for (Entry<String, User> entry : userMap.entrySet()) {
+				User userObj = entry.getValue();
+				if (!isMatchdayCached(userObj, matchday)) {
+					UserInfo user = userObj.getUserInfo();
+					if (user.getId() != null && !user.getId().equals("1")) {
+						for (int i = 0; i < apiUsers.length(); i++) {
+							JSONObject apiItem = apiUsers.optJSONObject(i);
+							if (apiItem == null) {
+								continue;
+							}
+							String apiUserId = extractIdAsString(apiItem.opt("userID"));
+							if (apiUserId == null || apiUserId.isBlank()) {
+								continue;
+							}
+							if (apiUserId.equals(user.getId())) {
+
+								int totalPoints = apiItem.optInt("totalPoints", 0);
+								int lastPoints = apiItem.optInt("lastPoints", 0);
+								updatePunkteHistorie(userObj, matchday, totalPoints, lastPoints);
+								break;
+							}
+						}
+					}
+				}
+			}
+		} catch (Exception e) {
+			LOGGER.warning("Fehler in updateUserPoints: " + e.getMessage());
+
+		}
+		LOGGER.info("updateUserPoints: Punkte für Spieltag " + matchdayInfo.getPointsMatchday() + " aktualisiert.");
+	}
+
+	private static boolean isMatchdayCached(User user, int spieltag) {
+		if (user.getPunkteHistorie() == null) {
+			return false;
+		}
+		if (user.getPunkteHistorie().containsKey(spieltag)) {
+			return true;
+		}
+		return false;
+	}
+
+
+	/**
+	 * Aktualisiert die Punkte-Historie eines Users.
+	 *
+	 * - Nur wenn aktueller Spieltag noch nicht eingetragen ist - Fehlende vorherige
+	 * Spieltage werden ergänzt: -> Differenz aus totalPoints - Summe(Historie) -
+	 * Falls Differenz < 0, werden 0 Punkte eingetragen
+	 *
+	 * @param dbItem        das User-DB-Objekt
+	 * @param spieltag      der aktuelle Spieltag (abgeschlossen oder wertbar)
+	 * @param totalPoints   Gesamtpunkte laut API
+	 * @param lastPointsObj Punkte laut API für den letzten Spieltag (kann Zahl oder
+	 *                      "-" sein)
+	 */
+	private static void updatePunkteHistorie(User dbItem, int spieltag, int totalPoints, int lastPoints) {
+		if (spieltag < 1 || spieltag > 34) {
+			LOGGER.warning("Ungültiger Spieltag: " + spieltag);
+			return;
+		}
+
+		// Historie laden oder neu anlegen
+		Map<Integer, Integer> historie = dbItem.getPunkteHistorie();
+		if (historie == null) {
+			historie = new HashMap<>();
+			dbItem.setPunkteHistorie(historie);
+		}
+
+		// Wenn Spieltag schon eingetragen, nichts tun
+		if (historie.containsKey(spieltag)) {
+			LOGGER.fine("Spieltag " + spieltag + " bereits in Historie -> überspringe.");
+			return;
+		}
+
+		// Summe bisheriger Punkte in der Historie
+		int sumHistorie = historie.values().stream().mapToInt(Integer::intValue).sum();
+
+		// Vorheriger Spieltag fehlt?
+		int prev = spieltag - 1;
+		if (prev > 0 && !historie.containsKey(prev)) {
+			int diff = totalPoints - sumHistorie - lastPoints;
+			if (diff < 0)
+				diff = 0;
+			historie.put(prev, diff);
+			LOGGER.info("Fehlender Spieltag " + prev + " ergänzt mit Differenzpunkten=" + diff);
+			sumHistorie += diff;
+		}
+
+		// Punkte für aktuellen Spieltag
+		int calcPoints = totalPoints - sumHistorie;
+		// Fallback auf lastPoints, wenn Differenz unsinnig wirkt
+		if (calcPoints < 0) {
+			LOGGER.warning("Berechnete Differenzpunkte < 0 für user=" + dbItem.getId() + " -> nutze lastPoints=" + lastPoints);
+			calcPoints = lastPoints;
+		}
+
+		historie.put(spieltag, calcPoints);
+		LOGGER.info("Spieltag " + spieltag + " eingetragen mit " + calcPoints + " Punkten");
 	}
 
 	/**
@@ -614,123 +793,4 @@ public class UserUpdater {
 		}
 
 	}
-
-	public static void getSquadForMatchday(JSONObject matchdayInfoList, JSONArray userDB, MatchdayInfo matchdayInfo) {
-		for (int i = 0; i < userDB.length(); i++) {
-
-			JSONObject array_element = (JSONObject) userDB.get(i);
-			JSONObject user = array_element.getJSONObject("user");
-			String userID = user.getString("id");
-			if (userID != null && !userID.equals("1")) {
-				fetchSquadFromStandingsAsArray(userID, matchdayInfo.getEventInfo().getPrevious());
-//				map noch to json und guvken wo hin. 
-			}
-		}
-	}
-
-	public static Map<Position, Set<String>> fetchSquadFromStandingsAsArray(String userID, long eid) {
-
-		String url = "https://www.comunio.de/api/users/" + userID + "/squad?communityId=" + ComunioDataUpdater.community.getId() + "&eid=" + eid + "&state=standings.mode";
-
-		try {
-			Login.ensureValidToken(ComunioDataUpdater.uld.getUsername(), ComunioDataUpdater.uld.getPasswortAlsString());
-			String jsonResponse = Jsoup.connect(url)//
-					.userAgent(HttpHeaderUtil.getRandomUserAgent())//
-					.header("Accept", "application/json, text/plain, */*")//
-					.header("Authorization", "Bearer " + Login.getToken())//
-					.header("Accept-Encoding", "gzip, deflate, br, zstd")//
-					.header("Accept-Language", "de-DE,en-EN;q=0.9")//
-					.header("x-timezone", "Europe/Berlin")//
-					.ignoreContentType(true)//
-					.execute()//
-					.body();
-
-			JSONObject root = new JSONObject(jsonResponse);
-
-			Map<Position, Set<String>> result = new HashMap<Position, Set<String>>();
-
-			if (!root.has("items")) {
-				LOGGER.warning("fetchStandingsAsArray: Antwort enthält kein 'standings'-Objekt. URL: " + url);
-				return result;
-			}
-
-			JSONArray items = root.getJSONArray("items");
-			for (int i = 0; i < items.length(); i++) {
-				JSONObject array_element = items.getJSONObject(i);
-				String id = String.valueOf(array_element.getInt("id"));
-				String position = String.valueOf(array_element.getString("position"));
-				Position enuPos = Position.fromString(position);
-				Set<String> playerIds = new HashSet<String>();
-				if (result.get(enuPos) != null) {
-					playerIds = result.get(enuPos);
-				}
-				playerIds.add(id);
-				result.put(enuPos, playerIds);
-
-			}
-			System.out.println();
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-		return null;
-	}
-
-	/**
-	 * Aktualisiert die Punkte-Historie eines Users.
-	 *
-	 * - Nur wenn aktueller Spieltag noch nicht eingetragen ist - Fehlende vorherige
-	 * Spieltage werden ergänzt: -> Differenz aus totalPoints - Summe(Historie) -
-	 * Falls Differenz < 0, werden 0 Punkte eingetragen
-	 *
-	 * @param dbItem        das User-DB-Objekt
-	 * @param spieltag      der aktuelle Spieltag (abgeschlossen oder wertbar)
-	 * @param totalPoints   Gesamtpunkte laut API
-	 * @param lastPointsObj Punkte laut API für den letzten Spieltag (kann Zahl oder
-	 *                      "-" sein)
-	 */
-	private static void updatePunkteHistorie(User dbItem, int spieltag, int totalPoints, int lastPoints, Logger LOGGER) {
-		if (spieltag < 1 || spieltag > 34) {
-			LOGGER.warning("Ungültiger Spieltag: " + spieltag);
-			return;
-		}
-
-		// Historie laden oder neu anlegen
-		Map<Integer, Integer> historie = dbItem.getPunkteHistorie();
-		if (historie == null) {
-			historie = new HashMap<>();
-			dbItem.setPunkteHistorie(historie);
-		}
-
-		// Wenn Spieltag schon eingetragen, nichts tun
-		if (historie.containsKey(spieltag)) {
-			LOGGER.fine("Spieltag " + spieltag + " bereits in Historie -> überspringe.");
-			return;
-		}
-
-		// Summe bisheriger Punkte in der Historie
-		int sumHistorie = historie.values().stream().mapToInt(Integer::intValue).sum();
-
-		// Vorheriger Spieltag fehlt?
-		int prev = spieltag - 1;
-		if (prev > 0 && !historie.containsKey(prev)) {
-			int diff = totalPoints - sumHistorie - lastPoints;
-			if (diff < 0)
-				diff = 0;
-			historie.put(prev, diff);
-			LOGGER.info("Fehlender Spieltag " + prev + " ergänzt mit Differenzpunkten=" + diff);
-			sumHistorie += diff;
-		}
-
-		// Punkte für aktuellen Spieltag
-		int calcPoints = totalPoints - sumHistorie;
-		// Fallback auf lastPoints, wenn Differenz unsinnig wirkt
-		if (calcPoints < 0) {
-			LOGGER.warning("Berechnete Differenzpunkte < 0 für user=" + dbItem.getId() + " -> nutze lastPoints=" + lastPoints);
-			calcPoints = lastPoints;
-		}
-
-		historie.put(spieltag, calcPoints);
-		LOGGER.info("Spieltag " + spieltag + " eingetragen mit " + calcPoints + " Punkten");
-	}
-
 }

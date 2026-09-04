@@ -175,7 +175,8 @@ public class ComunioDataUpdater {
 		StatusManager statusManager = new StatusManager(ctx.injuryDB);
 
 		UserUpdater.updateAllUsers(lastUpdates, ctx.playerDBObject, ctx.marketValueDB, ctx.notInligaDBObj, ctx.playerToUserMap, ctx.userMap, community, currentMatchdayInfo, ctx.newsManager, user);
-
+		UserUpdater.updateUserPoints(ctx.userMap, community, currentMatchdayInfo);
+		
 		KontostandBerechner kontostandBerechner = new KontostandBerechner();
 		kontostandBerechner.calculateKontostaende(ctx.userMap, ctx.newsManager);
 
