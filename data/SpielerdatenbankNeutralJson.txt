@@ -16928,18 +16928,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "12",
-            "zielwert": "3.180.000",
-            "platz": 10,
-            "lastUpdate": "04.09.2026",
-            "typ": "top",
-            "marktwert": "2.990.000",
-            "aenderung": "+190.000"
-          },
-          "link": "https://www.com-analytics.de/player/32546"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/32546"},
         "lastWert": 2760000,
         "spielerDaten": {
           "groesse": "1,88",
@@ -20804,7 +20793,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33783"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "13",
+            "zielwert": "11.460.000",
+            "platz": 10,
+            "lastUpdate": "04.09.2026",
+            "typ": "top",
+            "marktwert": "11.270.000",
+            "aenderung": "+190.000"
+          },
+          "link": "https://www.com-analytics.de/player/33783"
+        },
         "elfDesSpieltages": 1,
         "lastWert": 11150000,
         "spielerDaten": {
@@ -38521,17 +38521,17 @@
       "data": {
         "lastWert": 1290000,
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "",
-          "laenderspiele": 0,
-          "lastUpdate": null,
+          "groesse": "1,85",
+          "geburtstag": "11.02.1998",
+          "laenderspiele": 2,
+          "lastUpdate": "04.09.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
+          "trikotNummer": 20,
           "nationalitaet": "Deutschland",
           "laenderspielTore": 0,
-          "hauptposition": "",
-          "fuss": ""
+          "hauptposition": "Innenverteidiger",
+          "fuss": "rechts"
         },
         "isNotName": [],
         "punktekorrektur": [],
@@ -38539,10 +38539,11 @@
         "wert": 1320000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "01.01.1900",
+          "date": "04.09.2026",
           "haveToCheck": true,
           "link": "https://www.transfermarkt.de/felix-gotze/profil/spieler/330635",
-          "name": "Felix Götze"
+          "name": "Felix Götze",
+          "leistungsDaten": {}
         },
         "punkte": 0,
         "realWert": 2000000,
