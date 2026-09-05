@@ -3833,9 +3833,16 @@
       "timestamp": "2026-09-03T17:01:52.576836409Z"
     }
   ],
-  "2026-09-05": [{
-    "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-    "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
-    "timestamp": "2026-09-05T03:15:12.849869673Z"
-  }]
+  "2026-09-05": [
+    {
+      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
+      "timestamp": "2026-09-05T03:15:15.496325911Z"
+    },
+    {
+      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
+      "timestamp": "2026-09-05T03:15:12.849869673Z"
+    }
+  ]
 }
