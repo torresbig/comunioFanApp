@@ -3949,6 +3949,11 @@
       "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
       "url": "",
       "timestamp": "2026-09-05T03:15:15.496325911Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: R. Wagner / Sport-Club Freiburg.\n",
+      "timestamp": "2026-09-05T08:03:10.399340744Z"
     }
   ]
 }
