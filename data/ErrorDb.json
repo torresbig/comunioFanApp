@@ -3836,16 +3836,6 @@
   "2026-09-05": [
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Mahmoud / SV Elversberg.\n",
-      "timestamp": "2026-09-05T08:01:21.117004382Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: F. Lehmann / SV Elversberg.\n",
-      "timestamp": "2026-09-05T08:01:14.165161999Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: Smolčić / Eintracht Frankfurt.\n",
       "timestamp": "2026-09-05T08:02:49.029475545Z"
     },
@@ -3856,23 +3846,8 @@
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Opitz / SV Werder Bremen.\n",
-      "timestamp": "2026-09-05T08:02:17.034870319Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: Boss / SV Elversberg.\n",
       "timestamp": "2026-09-05T08:01:05.530542443Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Bärtl / FC Bayern München.\n",
-      "timestamp": "2026-09-05T08:00:51.268348130Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: R. Adam / SV Elversberg.\n",
-      "timestamp": "2026-09-05T08:01:28.891976626Z"
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
@@ -3886,26 +3861,13 @@
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Albert / Borussia Dortmund.\n",
-      "timestamp": "2026-09-05T08:00:59.013132076Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Leonard / FC Schalke 04.\n",
-      "timestamp": "2026-09-05T08:01:44.222382542Z"
+      "message": "Kein passender Spieler gefunden für: At. Szalai / TSG Hoffenheim.\n",
+      "timestamp": "2026-09-05T08:03:24.586849617Z"
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: A. Haidara / 1. FSV Mainz 05.\n",
       "timestamp": "2026-09-05T08:01:36.854067835Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
-      "url": "",
-      "timestamp": "2026-09-05T03:15:12.849869673Z"
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
@@ -3919,11 +3881,6 @@
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: M. Zalazar / FC Schalke 04.\n",
-      "timestamp": "2026-09-05T08:01:51.972562669Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: Weißhaupt  / Sport-Club Freiburg.\n",
       "timestamp": "2026-09-05T08:03:16.686250668Z"
     },
@@ -3931,6 +3888,59 @@
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: Hamache / FC Schalke 04.\n",
       "timestamp": "2026-09-05T08:01:57.945295672Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: R. Wagner / Sport-Club Freiburg.\n",
+      "timestamp": "2026-09-05T08:03:10.399340744Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Mahmoud / SV Elversberg.\n",
+      "timestamp": "2026-09-05T08:01:21.117004382Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: F. Lehmann / SV Elversberg.\n",
+      "timestamp": "2026-09-05T08:01:14.165161999Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Opitz / SV Werder Bremen.\n",
+      "timestamp": "2026-09-05T08:02:17.034870319Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Bärtl / FC Bayern München.\n",
+      "timestamp": "2026-09-05T08:00:51.268348130Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: R. Adam / SV Elversberg.\n",
+      "timestamp": "2026-09-05T08:01:28.891976626Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Albert / Borussia Dortmund.\n",
+      "timestamp": "2026-09-05T08:00:59.013132076Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Leonard / FC Schalke 04.\n",
+      "timestamp": "2026-09-05T08:01:44.222382542Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
+      "url": "",
+      "timestamp": "2026-09-05T03:15:12.849869673Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: M. Zalazar / FC Schalke 04.\n",
+      "timestamp": "2026-09-05T08:01:51.972562669Z"
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
@@ -3954,11 +3964,6 @@
       "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
       "url": "",
       "timestamp": "2026-09-05T03:15:15.496325911Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: R. Wagner / Sport-Club Freiburg.\n",
-      "timestamp": "2026-09-05T08:03:10.399340744Z"
     }
   ]
 }
