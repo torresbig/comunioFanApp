@@ -129,55 +129,74 @@ public class TmDePlayerDataUpdater {
 				return "NOT_FOUND";
 			}
 
+			// Speichere den ursprünglichen Spielernamen aus der Datenbank für die Namensschutz-Regel
+			String originalPlayerName = player.optString("name", "");
+			JSONArray originalPossibleNames = data.optJSONArray("possibleNames");
+			
 			// Erfolgreiche Datenaktualisierung
+			// SCHUTZ: Aktualisiere nur den Namen im transfermarktDoDe-Objekt, nicht den Hauptspielernamen
 			tmDe.put("date", new ComunioDate().toString());
-			tmDe.put("name", tmDePlayerData.optString("name"));
+			tmDe.put("name", tmDePlayerData.optString("name")); // Nur Transfermarkt-Name
 			tmDe.put("link", tmDePlayerData.optString("link"));
 			tmDe.put("id", tmDePlayerData.optString("id"));
 			tmDe.put("position", tmDePlayerData.optString("position"));
 			tmDe.put("nationalitaet", tmDePlayerData.optString("nationalitaet"));
 			tmDe.put("alter", tmDePlayerData.optInt("alter"));
 			tmDe.put("haveToCheck", tmDePlayerData.optBoolean("haveToCheck", false));
-
+			
 			long marktwert = tmDePlayerData.optLong("marktwert");
 			if (marktwert > 0) {
 				tmDe.put("marktwert", marktwert);
 				data.put("realWert", marktwert);
 			}
-
-			data.put("transfermarktDoDe", tmDe);
-
-			// Zusätzliche Namensvarianten speichern
+			
+			// SCHUTZ: Behalte den ursprünglichen Spielernamen aus der Datenbank bei
+			// Spieler-ID und Name bleiben unverändert (aus comunio)
+			// Nur der Transfermarkt-Name wird im transfermarktDoDe-Objekt gespeichert
+			
+			// Zusätzliche Namensvarianten: Füge nur den Transfermarkt-Namen hinzu, wenn er nicht bereits vorhanden ist
 			JSONArray posNames = data.optJSONArray("possibleNames");
 			if (posNames == null)
 				posNames = new JSONArray();
-
-			String name = tmDePlayerData.optString("name");
-			if (!containsValue(posNames, name)) {
-				posNames.put(name);
+			
+			String tmName = tmDePlayerData.optString("name");
+			if (!containsValue(posNames, tmName)) {
+				posNames.put(tmName);
 			}
-
-			String[] split = name.split(" ");
+			
+			// Füge Nachnamen und Initial+Nachnamen für den Transfermarkt hinzu
+			String[] split = tmName.split(" ");
 			if (split.length > 1) {
 				String nachname = split[split.length - 1];
 				if (!containsValue(posNames, nachname)) {
 					posNames.put(nachname);
 				}
-				String initial = name.substring(0, 1);
+				String initial = tmName.substring(0, 1);
 				String kurzform = initial + ". " + nachname;
 				if (!containsValue(posNames, kurzform)) {
 					posNames.put(kurzform);
 				}
 			}
-
-			data.put("possibleNames", posNames);
-
+			
+			// SCHUTZ: Behalte die ursprünglichen möglichen Namen aus der Datenbank bei
+			// Füge sie nur hinzu, wenn sie nicht bereits vorhanden sind
+			if (originalPossibleNames != null) {
+				for (int i = 0; i < originalPossibleNames.length(); i++) {
+					String originalName = originalPossibleNames.optString(i);
+					if (originalName != null && !originalName.isBlank() && !containsValue(posNames, originalName)) {
+						posNames.put(originalName);
+					}
+				}
+			}
+			
+data.put("possibleNames", posNames);
+			
 			// Bei vorhandenem Link Spielerdaten laden
 			if (!tmDe.optString("link").isBlank()) {
 				getTransfermarktDeSpielerDaten(data, lastUpdates);
 			}
-
-			log.append("Spieler erfolgreich aktualisiert: ").append(name).append(" (").append(clubName).append(")").append(System.lineSeparator());
+			
+			log.append("Spieler erfolgreich aktualisiert: ").append(tmName).append(" (Transfermarkt: ").append(clubName).append(")").append(System.lineSeparator());
 			return "OK";
 
 		} catch (InterruptedException e) {

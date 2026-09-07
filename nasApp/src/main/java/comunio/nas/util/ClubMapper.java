@@ -62,21 +62,78 @@ public class ClubMapper {
 		return "";
 	}
 	
-	public static boolean vergleichClubNames(String clubName1, String clubName2) {
-		if (clubName1 != null && !clubName1.isEmpty() && clubName2 != null && !clubName2.isEmpty()) {
-            String v1 = normalizeClubName(clubName1);
-            String v2 = normalizeClubName(clubName2);
-            return v1.equals(v2);
-        }
+	/**
+	 * Verbesserte Vereinszuordnung mit hierarchischer Unterstützung für Zweitligavereine
+	 * Versucht zuerst, den Spieler im Zweitverein zu finden, und fällt dann auf den Hauptverein zurück
+	 * 
+	 * @param clubName Der zu suchende Vereinsname (z.B. "FC Bayern München II")
+	 * @param tmClubName Der Transfermarkt-Vereinsname (z.B. "FC Bayern München")
+	 * @return true wenn übereinstimmend, sonst false
+	 */
+	public static boolean vergleichClubNames(String clubName, String tmClubName) {
+	    if (clubName != null && !clubName.isEmpty() && tmClubName != null && !tmClubName.isEmpty()) {
+	        String v1 = normalizeClubName(clubName);
+	        String v2 = normalizeClubName(tmClubName);
+	        
+	        // Exakte Übereinstimmung zuerst
+	        if (v1.equals(v2)) {
+	            return true;
+	        }
+	        
+	        // Zweitligavereine: "FC Bayern München II" → "FC Bayern München"
+	        if (v1.contains(" ") && !v2.contains(" ") && v1.startsWith(v2)) {
+	            return true;
+	        }
+	        
+	        // Umgekehrter Fall: "FC Bayern München" → "FC Bayern München II"
+	        if (v2.contains(" ") && !v1.contains(" ") && v2.startsWith(v1)) {
+	            return true;
+	        }
+	        
+	        // Teilweise Übereinstimmung (z.B. "1.FC Heidenheim" → "1.FC Heidenheim 1846")
+	        if (v1.equals(v2) || v1.contains(v2) || v2.contains(v1)) {
+	            return true;
+	        }
+	        
+	        return false;
+	    }
 		return false; 
 	}
-	
+
+	/**
+	 * Verbesserte Namensüberprüfung mit hierarchischer Unterstützung
+	 * 
+	 * @param clubName1 Der erste Vereinsname
+	 * @param clubName2 Der zweite Vereinsname
+	 * @return true wenn übereinstimmend, sonst false
+	 */
 	public static boolean enthaeltClubNames(String clubName1, String clubName2) {
-		if (clubName1 != null && !clubName1.isEmpty() && clubName2 != null && !clubName2.isEmpty()) {
-            String v1 = normalizeClubName(clubName1);
-            String v2 = normalizeClubName(clubName2);
-            return v2.contains(v1);
-        }
+	    if (clubName1 != null && !clubName1.isEmpty() && clubName2 != null && !clubName2.isEmpty()) {
+	        String v1 = normalizeClubName(clubName1);
+	        String v2 = normalizeClubName(clubName2);
+	        
+	        // Exakte Übereinstimmung zuerst
+	        if (v1.equals(v2)) {
+	            return true;
+	        }
+	        
+	        // Zweitligavereine: "FC Bayern München II" → "FC Bayern München"
+	        if (v1.contains(" ") && !v2.contains(" ") && v1.startsWith(v2)) {
+	            return true;
+	        }
+	        
+	        // Umgekehrter Fall: "FC Bayern München" → "FC Bayern München II"
+	        if (v2.contains(" ") && !v1.contains(" ") && v2.startsWith(v1)) {
+	            return true;
+	        }
+	        
+	        // Teilweise Übereinstimmung
+	        if (v1.equals(v2) || v1.contains(v2) || v2.contains(v1)) {
+	            return true;
+	        }
+	        
+	        return false;
+	    }
 		return false; 
 	}
 

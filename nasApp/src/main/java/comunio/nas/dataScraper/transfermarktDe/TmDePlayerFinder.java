@@ -34,7 +34,7 @@ public class TmDePlayerFinder {
 	 * 
 	 * Wenn bei einem Treffer erkannt wird, dass der Vorname im Transfermarkt-Name
 	 * komplett entfernt wurde, wird dies im zurückgegebenen JSONObject mit
-	 * "vorname_entfernt" markiert.
+	 * "vorname_entfernt": true markiert.
 	 * 
 	 * Es werden maximal drei Seiten der Transfermarkt-Suchergebnisse durchgegangen.
 	 * 
@@ -50,8 +50,8 @@ public class TmDePlayerFinder {
 	 */
 	public static JSONObject searchPlayer(String nameInput, String vereinInput, List<String> possibleNames) throws Exception {
 		StringBuilder log = new StringBuilder();
-		int maxPages = 3;
-
+		int maxPages = 5; // Erhöht von 3 auf 5 für bessere Trefferquote
+		
 		// Versucht zuerst mit dem Hauptnamen
 		for (int site = 1; site <= maxPages; site++) {
 			LOGGER.info(site + ". Durchgang für Spielersuche gestartet - Transfermarkt-Seite " + site + " wird durchsucht");
@@ -61,7 +61,7 @@ public class TmDePlayerFinder {
 				return result;
 			}
 			if (site == 1 && nameInput.contains(".")) { // Nachnamen-Suche mit Punkt-Name
-				String lastName = nameInput.replaceAll("^.*?\\.\\s*", "");
+				String lastName = extractLastName(nameInput);
 				if (!lastName.isEmpty()) {
 					
 					randomWaiting();
@@ -77,7 +77,7 @@ public class TmDePlayerFinder {
 				randomWaiting();
 			}
 		}
-
+		
 		// Wenn unter dem Hauptnamen kein Ergebnis, versuche alternative Namen aus
 		// possibleNames
 		if (possibleNames != null && !possibleNames.isEmpty()) {
@@ -91,7 +91,44 @@ public class TmDePlayerFinder {
 				}
 			}
 		}
-
+		
+		// Zusätzliche Suchstrategien für bessere Trefferquote
+		// 1. Nachname-Suche (extrahiere Nachnamen aus dem Hauptnamen)
+		String lastName = extractLastName(nameInput);
+		if (!lastName.isEmpty() && !lastName.equals(nameInput)) {
+			for (int site = 1; site <= maxPages; site++) {
+				JSONObject result = searchPlayerSinglePass(lastName, vereinInput, site, log);
+				if (result != null) {
+					LOGGER.info("Gefunden mit Nachnamen-Suche '" + lastName + "':\n" + log.toString());
+					return result;
+				}
+			}
+		}
+		
+		// 2. Initial-basierte Suche (z.B. "R. Adam" → "r adam")
+		String initialBasedName = extractInitialBasedName(nameInput);
+		if (!initialBasedName.isEmpty() && !initialBasedName.equals(nameInput)) {
+			for (int site = 1; site <= maxPages; site++) {
+				JSONObject result = searchPlayerSinglePass(initialBasedName, vereinInput, site, log);
+				if (result != null) {
+					LOGGER.info("Gefunden mit Initial-basierter Suche '" + initialBasedName + "':\n" + log.toString());
+					return result;
+				}
+			}
+		}
+		
+		// 3. Transliterationsbasierte Suche für verschiedene Schriftzeichen
+		String transliteratedName = transliterateName(nameInput);
+		if (!transliteratedName.isEmpty() && !transliteratedName.equals(nameInput)) {
+			for (int site = 1; site <= maxPages; site++) {
+				JSONObject result = searchPlayerSinglePass(transliteratedName, vereinInput, site, log);
+				if (result != null) {
+					LOGGER.info("Gefunden mit Transliterations-Suche '" + transliteratedName + "':\n" + log.toString());
+					return result;
+				}
+			}
+		}
+		
 		log.append("Kein passender Spieler gefunden für: " + nameInput + " / " + vereinInput + ".").append(System.lineSeparator());
 		LOGGER.info(log.toString());
 		ComunioDataUpdater.errorDb.addError(new Error(ErrorType.TRANSFERMARKT_DE_FIND_PLAYER, log.toString()));
@@ -262,4 +299,93 @@ public class TmDePlayerFinder {
 		}
 	}
 
+	/**
+	 * Extrahiert den Nachnamen aus einem gegebenen Namen
+	 * 
+	 * @param fullName Vollständiger Name (z.B. "R. Adam", "Thomas Sborn")
+	 * @return Extrahierter Nachname (z.B. "Adam", "Sborn")
+	 */
+	private static String extractLastName(String fullName) {
+	    if (fullName == null || fullName.isEmpty()) {
+	        return "";
+	    }
+	    
+	    // Entferne Initialen mit Punkt (z.B. "R. Adam" → "Adam")
+	    String withoutInitial = fullName.replaceAll("^[A-Z]\\.\\s*", "");
+	    
+	    // Wenn der Name nur einen Teil hat, gib ihn zurück
+	    if (withoutInitial.isEmpty()) {
+	        return fullName;
+	    }
+	    
+	    // Teile den Namen durch Leerzeichen
+	    String[] parts = withoutInitial.split("\\s+");
+	    
+	    // Gib den letzten Teil zurück (Nachnamen)
+	    return parts[parts.length - 1];
+	}
+
+	/**
+	 * Erstellt einen initialenbasierten Namen für die Suche
+	 * 
+	 * @param fullName Vollständiger Name (z.B. "R. Adam", "Thomas Sborn")
+	 * @return Initial+basierten Namen (z.B. "r adam", "t sborn")
+	 */
+	private static String extractInitialBasedName(String fullName) {
+	    if (fullName == null || fullName.isEmpty()) {
+	        return "";
+	    }
+	    
+	    // Normalisiere den Namen
+	    String normalized = PlayerHelper.normalizeName(fullName);
+	    
+	    // Teile den Namen durch Leerzeichen
+	    String[] parts = normalized.split("\\s+");
+	    
+	    if (parts.length < 2) {
+	        return normalized;
+	    }
+	    
+	    // Erstelle Initial+basierten Namen: erster Buchstabe + Nachname
+	    String initial = parts[0].substring(0, 1);
+	    String lastName = parts[parts.length - 1];
+	    
+	    return initial + " " + lastName;
+	}
+
+	/**
+	 * Transliteriert einen Namen für verschiedene Schriftzeichen
+	 * Konvertiert z.B. "İ" → "I", "ğ" → "g", "ş" → "s", "ç" → "c", "ö" → "o", "ü" → "u"
+	 * 
+	 * @param name Name mit potenziellen Transliterationsproblemen
+	 * @return Transliterierter Name
+	 */
+	private static String transliterateName(String name) {
+	    if (name == null || name.isEmpty()) {
+	        return "";
+	    }
+	    
+	    // Einfache Transliteration für häufige Probleme
+	    String transliterated = name
+	        .replace('İ', 'I')    // İ → I
+	        .replace('ı', 'i')    // ı → i
+	        .replace('ğ', 'g')    // ğ → g
+	        .replace('ş', 's')    // ş → s
+	        .replace('ç', 'c')    // ç → c
+	        .replace('ö', 'o')    // ö → o
+	        .replace('ü', 'u')    // ü → u
+	        .replace('é', 'e')    // é → e
+	        .replace('è', 'e')    // è → e
+	        .replace('ê', 'e')    // ê → e
+	        .replace('à', 'a')    // à → a
+	        .replace('â', 'a')    // â → a
+	        .replace('î', 'i')    // î → i
+	        .replace('ô', 'o')    // ô → o
+	        .replace('û', 'u')    // û → u
+	        .replace('ë', 'e')    // ë → e
+	        .replace('ï', 'i')    // ï → i
+	        .replace('ü', 'u');   // ü → u (zweimal für Sicherheit)
+	    
+	    return transliterated;
+	}
 }

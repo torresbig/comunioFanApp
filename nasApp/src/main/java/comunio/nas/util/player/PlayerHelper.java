@@ -232,6 +232,10 @@ public class PlayerHelper {
 
 	/**
 	 * Erweiterte Name-Übereinstimmung mit mehreren Strategien
+	 * Verbessert für:
+	 * - Namen mit Initialen (z.B. "R. Adam" → "Raif Adam")
+	 * - Transliterationsunterschiede (z.B. "İnanoğlu" → "Inanoglu")
+	 * - Flexiblere Nachnamensübereinstimmung für Zweitligavereine
 	 */
 	public static boolean namesMatchWithInitial(String name1, String name2) {
 	    if (name1 == null || name2 == null) return false;
@@ -279,7 +283,8 @@ public class PlayerHelper {
 	    int lev = new LevenshteinDistance().apply(normName1, normName2);
 	    double similarity = 1.0 - ((double) lev / maxLen);
 	    
-	    return similarity > 0.85; // Etwas lockerere Schwelle
+	    // Etwas lockerere Schwelle für bessere Trefferquote
+	    return similarity > 0.85;
 	}
 
 	/**
