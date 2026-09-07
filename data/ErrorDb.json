@@ -7,11 +7,6 @@
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Koudossou / FC Augsburg.\n",
-      "timestamp": "2026-09-07T07:58:01.457126033Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: Łubik / FC Augsburg.\n",
       "timestamp": "2026-09-07T07:58:15.104001609Z"
     },
@@ -26,9 +21,52 @@
       "timestamp": "2026-09-07T07:57:48.427435543Z"
     },
     {
+      "methode": "",
+      "acception": "",
+      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
+      "url": "",
+      "timestamp": "2026-09-07T03:15:16.364284784Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: R. Adam / SV Elversberg.\n",
+      "timestamp": "2026-09-07T07:57:16.819193736Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Opitz / SV Werder Bremen.\n",
+      "timestamp": "2026-09-07T07:58:08.086173217Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Bénes / 1.FC Union Berlin.\n",
+      "timestamp": "2026-09-07T07:58:28.917060896Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Bärtl / FC Bayern München.\n",
+      "timestamp": "2026-09-07T07:56:37.287812180Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Duranville / Borussia Dortmund.\n",
+      "timestamp": "2026-09-07T07:58:35.426700848Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Koudossou / FC Augsburg.\n",
+      "timestamp": "2026-09-07T07:58:01.457126033Z"
+    },
+    {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: R. Wagner / Sport-Club Freiburg.\n",
       "timestamp": "2026-09-07T07:59:04.384848027Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: At. Szalai / TSG Hoffenheim.\n",
+      "timestamp": "2026-09-07T07:59:20.120204727Z"
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
@@ -44,19 +82,6 @@
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: Mahmoud / SV Elversberg.\n",
       "timestamp": "2026-09-07T07:57:08.433942646Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
-      "url": "",
-      "timestamp": "2026-09-07T03:15:16.364284784Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: R. Adam / SV Elversberg.\n",
-      "timestamp": "2026-09-07T07:57:16.819193736Z"
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
@@ -83,28 +108,13 @@
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Opitz / SV Werder Bremen.\n",
-      "timestamp": "2026-09-07T07:58:08.086173217Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: Weißhaupt  / Sport-Club Freiburg.\n",
       "timestamp": "2026-09-07T07:59:11.381920311Z"
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Bénes / 1.FC Union Berlin.\n",
-      "timestamp": "2026-09-07T07:58:28.917060896Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: F. Lehmann / SV Elversberg.\n",
       "timestamp": "2026-09-07T07:57:00.507352310Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Bärtl / FC Bayern München.\n",
-      "timestamp": "2026-09-07T07:56:37.287812180Z"
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
@@ -120,11 +130,6 @@
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: Leonard / FC Schalke 04.\n",
       "timestamp": "2026-09-07T07:57:32.664026763Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Duranville / Borussia Dortmund.\n",
-      "timestamp": "2026-09-07T07:58:35.426700848Z"
     }
   ],
   "2026-08-31": [
