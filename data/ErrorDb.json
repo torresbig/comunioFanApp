@@ -1,19 +1,6 @@
 {
   "2026-09-07": [
     {
-      "methode": "",
-      "acception": "",
-      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
-      "url": "",
-      "timestamp": "2026-09-07T03:15:13.295493121Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Boss / SV Elversberg.\n",
-      "timestamp": "2026-09-07T07:56:52.693013740Z"
-    },
-    {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: Albert / Borussia Dortmund.\n",
       "timestamp": "2026-09-07T07:56:45.320000144Z"
@@ -25,23 +12,8 @@
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: F. Lehmann / SV Elversberg.\n",
-      "timestamp": "2026-09-07T07:57:00.507352310Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: A. Haidara / 1. FSV Mainz 05.\n",
       "timestamp": "2026-09-07T07:57:24.932321201Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Bärtl / FC Bayern München.\n",
-      "timestamp": "2026-09-07T07:56:37.287812180Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: M. Zalazar / FC Schalke 04.\n",
-      "timestamp": "2026-09-07T07:57:41.925379366Z"
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
@@ -60,6 +32,39 @@
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: R. Adam / SV Elversberg.\n",
       "timestamp": "2026-09-07T07:57:16.819193736Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
+      "url": "",
+      "timestamp": "2026-09-07T03:15:13.295493121Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Boss / SV Elversberg.\n",
+      "timestamp": "2026-09-07T07:56:52.693013740Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Remmert / FC Schalke 04.\n",
+      "timestamp": "2026-09-07T07:57:54.912856135Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: F. Lehmann / SV Elversberg.\n",
+      "timestamp": "2026-09-07T07:57:00.507352310Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Bärtl / FC Bayern München.\n",
+      "timestamp": "2026-09-07T07:56:37.287812180Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: M. Zalazar / FC Schalke 04.\n",
+      "timestamp": "2026-09-07T07:57:41.925379366Z"
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
