@@ -40,6 +40,11 @@
       "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
       "url": "",
       "timestamp": "2026-09-07T03:15:16.364284784Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: R. Adam / SV Elversberg.\n",
+      "timestamp": "2026-09-07T07:57:16.819193736Z"
     }
   ],
   "2026-08-31": [
