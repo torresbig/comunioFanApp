@@ -12,27 +12,6 @@
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Duranville / Borussia Dortmund.\r\n",
-      "url": "",
-      "timestamp": "2026-09-07T22:07:03.418105300Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Lisztes / Eintracht Frankfurt.\r\n",
-      "url": "",
-      "timestamp": "2026-09-07T22:07:26.454008Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Hamache / FC Schalke 04.\n",
-      "timestamp": "2026-09-08T08:01:50.249951348Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: Łubik / FC Augsburg.\r\n",
       "url": "",
       "timestamp": "2026-09-07T22:06:37.657436Z"
@@ -49,27 +28,6 @@
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: M. Zalazar / FC Schalke 04.\n",
       "timestamp": "2026-09-08T08:01:38.177805362Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Bärtl / FC Bayern München.\r\n",
-      "url": "",
-      "timestamp": "2026-09-07T22:04:34.447380700Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Leonard / FC Schalke 04.\r\n",
-      "url": "",
-      "timestamp": "2026-09-07T22:05:41.739329600Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Dardari / FC Augsburg.\n",
-      "timestamp": "2026-09-08T08:02:21.154784246Z"
     },
     {
       "methode": "",
@@ -99,38 +57,9 @@
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: M. Zalazar / FC Schalke 04.\r\n",
-      "url": "",
-      "timestamp": "2026-09-07T22:05:55.941361100Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: Hamache / FC Schalke 04.\r\n",
       "url": "",
       "timestamp": "2026-09-07T22:06:08.017779300Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
-      "url": "",
-      "timestamp": "2026-09-08T03:15:20.266671643Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Mahmoud / SV Elversberg.\n",
-      "timestamp": "2026-09-08T08:01:09.464989290Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Smolčić / Eintracht Frankfurt.\r\n",
-      "url": "",
-      "timestamp": "2026-09-07T22:07:14.929347700Z"
     },
     {
       "methode": "",
@@ -165,6 +94,82 @@
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: Koudossou / FC Augsburg.\n",
       "timestamp": "2026-09-08T08:02:00.808335612Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Duranville / Borussia Dortmund.\r\n",
+      "url": "",
+      "timestamp": "2026-09-07T22:07:03.418105300Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Lisztes / Eintracht Frankfurt.\r\n",
+      "url": "",
+      "timestamp": "2026-09-07T22:07:26.454008Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Hamache / FC Schalke 04.\n",
+      "timestamp": "2026-09-08T08:01:50.249951348Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Bärtl / FC Bayern München.\r\n",
+      "url": "",
+      "timestamp": "2026-09-07T22:04:34.447380700Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Leonard / FC Schalke 04.\r\n",
+      "url": "",
+      "timestamp": "2026-09-07T22:05:41.739329600Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Dardari / FC Augsburg.\n",
+      "timestamp": "2026-09-08T08:02:21.154784246Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: M. Zalazar / FC Schalke 04.\r\n",
+      "url": "",
+      "timestamp": "2026-09-07T22:05:55.941361100Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
+      "url": "",
+      "timestamp": "2026-09-08T03:15:20.266671643Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Mahmoud / SV Elversberg.\n",
+      "timestamp": "2026-09-08T08:01:09.464989290Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Smolčić / Eintracht Frankfurt.\r\n",
+      "url": "",
+      "timestamp": "2026-09-07T22:07:14.929347700Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Duranville / Borussia Dortmund.\n",
+      "timestamp": "2026-09-08T08:02:32.617720368Z"
     },
     {
       "methode": "",
