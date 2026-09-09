@@ -3916,12 +3916,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "9",
-            "zielwert": "11.990.000",
-            "platz": 2,
+            "zielwert": "11.910.000",
+            "platz": 4,
             "lastUpdate": "09.09.2026",
             "typ": "top",
             "marktwert": "11.270.000",
-            "aenderung": "+720.000"
+            "aenderung": "+640.000"
           },
           "link": "https://www.com-analytics.de/player/32948"
         },
@@ -5282,18 +5282,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "8",
-            "zielwert": "8.390.000",
-            "platz": 9,
-            "lastUpdate": "09.09.2026",
-            "typ": "top",
-            "marktwert": "7.930.000",
-            "aenderung": "+460.000"
-          },
-          "link": "https://www.com-analytics.de/player/34009"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34009"},
         "lastWert": 7890000,
         "spielerDaten": {
           "groesse": "1,76",
@@ -8262,7 +8251,7 @@
           "topFlop": {
             "punkte": "16",
             "zielwert": "8.350.000",
-            "platz": 3,
+            "platz": 2,
             "lastUpdate": "09.09.2026",
             "typ": "top",
             "marktwert": "7.640.000",
@@ -12764,7 +12753,7 @@
           "topFlop": {
             "punkte": "17",
             "zielwert": "4.170.000",
-            "platz": 10,
+            "platz": 9,
             "lastUpdate": "09.09.2026",
             "typ": "top",
             "marktwert": "3.720.000",
@@ -13509,7 +13498,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33270"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "8",
+            "zielwert": "6.440.000",
+            "platz": 10,
+            "lastUpdate": "09.09.2026",
+            "typ": "top",
+            "marktwert": "5.990.000",
+            "aenderung": "+450.000"
+          },
+          "link": "https://www.com-analytics.de/player/33270"
+        },
         "lastWert": 5420000,
         "spielerDaten": {
           "groesse": "1,87",
@@ -19139,7 +19139,7 @@
           "topFlop": {
             "punkte": "11",
             "zielwert": "15.100.000",
-            "platz": 5,
+            "platz": 6,
             "lastUpdate": "09.09.2026",
             "typ": "flop",
             "marktwert": "15.410.000",
@@ -26183,7 +26183,7 @@
           "topFlop": {
             "punkte": "19",
             "zielwert": "7.010.000",
-            "platz": 4,
+            "platz": 3,
             "lastUpdate": "09.09.2026",
             "typ": "top",
             "marktwert": "6.360.000",
@@ -28559,14 +28559,23 @@
     {
       "data": {
         "lastWert": 190000,
-        "spielerDaten": {},
+        "spielerDaten": {
+          "groesse": "1,88",
+          "geburtstag": "07.09.2005",
+          "lastUpdate": "09.09.2026",
+          "nebenpositionen": [],
+          "trikotNummer": 15,
+          "nationalitaet": "Deutschland",
+          "hauptposition": "Rechtsaußen",
+          "fuss": "links"
+        },
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
         "wert": 180000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "07.09.2026",
+          "date": "09.09.2026",
           "haveToCheck": false,
           "name": "Raif Adam",
           "link": "https://www.transfermarkt.de/raif-adam/profil/spieler/910538",
@@ -36869,16 +36878,16 @@
       "data": {
         "lastWert": 180000,
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "",
+          "groesse": "1,80",
+          "geburtstag": "04.01.2008",
           "laenderspiele": 0,
-          "lastUpdate": null,
+          "lastUpdate": "09.09.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 0,
-          "nationalitaet": "",
+          "nationalitaet": "Montenegro",
           "laenderspielTore": 0,
-          "hauptposition": "",
+          "hauptposition": "Defensives Mittelfeld",
           "fuss": ""
         },
         "isNotName": [],
@@ -36887,8 +36896,15 @@
         "wert": 170000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "01.01.1900",
-          "haveToCheck": true
+          "date": "09.09.2026",
+          "haveToCheck": false,
+          "name": "Eldin Kujovic",
+          "link": "https://www.transfermarkt.de/eldin-kujovic/profil/spieler/1598067",
+          "id": "1598067",
+          "position": "",
+          "nationalitaet": "Montenegro",
+          "leistungsDaten": {},
+          "alter": -1
         },
         "lastSeasonPoints": 0,
         "punkte": 0,
@@ -36912,7 +36928,11 @@
         "onMarket": false,
         "position": "MITTELFELD",
         "attribute": {},
-        "possibleNames": [],
+        "possibleNames": [
+          "Eldin Kujovic",
+          "Kujovic",
+          "E. Kujovic"
+        ],
         "status": {}
       },
       "name": "Kujović",
@@ -36974,17 +36994,17 @@
       "data": {
         "lastWert": 220000,
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "",
+          "groesse": "1,90",
+          "geburtstag": "16.02.1999",
           "laenderspiele": 0,
-          "lastUpdate": null,
+          "lastUpdate": "09.09.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
-          "nationalitaet": "",
+          "trikotNummer": 15,
+          "nationalitaet": "Bosnien-Herzegowina",
           "laenderspielTore": 0,
-          "hauptposition": "",
-          "fuss": ""
+          "hauptposition": "Mittelstürmer",
+          "fuss": "links"
         },
         "isNotName": [],
         "punktekorrektur": [],
@@ -36992,12 +37012,20 @@
         "wert": 260000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "01.01.1900",
-          "haveToCheck": true
+          "date": "09.09.2026",
+          "haveToCheck": false,
+          "name": "Imad Rondic",
+          "link": "https://www.transfermarkt.de/imad-rondic/profil/spieler/464154",
+          "id": "464154",
+          "position": "",
+          "marktwert": 750000,
+          "nationalitaet": "Bosnien-Herzegowina",
+          "leistungsDaten": {},
+          "alter": -1
         },
         "lastSeasonPoints": 0,
         "punkte": 0,
-        "realWert": 0,
+        "realWert": 750000,
         "lastBigUpdate": "07.09.2026",
         "stats": {
           "notenDurchschnitt": "0",
@@ -37017,7 +37045,11 @@
         "onMarket": false,
         "position": "STURM",
         "attribute": [],
-        "possibleNames": []
+        "possibleNames": [
+          "Imad Rondic",
+          "Rondic",
+          "I. Rondic"
+        ]
       },
       "name": "Rondić",
       "id": "34140"
@@ -37081,15 +37113,15 @@
         "lastWert": 200000,
         "spielerDaten": {
           "groesse": "",
-          "geburtstag": "",
+          "geburtstag": "02.12.1956",
           "laenderspiele": 0,
-          "lastUpdate": null,
+          "lastUpdate": "09.09.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 0,
-          "nationalitaet": "",
+          "nationalitaet": "Polen",
           "laenderspielTore": 0,
-          "hauptposition": "",
+          "hauptposition": "Sturm",
           "fuss": ""
         },
         "isNotName": [],
@@ -37098,8 +37130,15 @@
         "wert": 190000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "01.01.1900",
-          "haveToCheck": true
+          "date": "09.09.2026",
+          "haveToCheck": false,
+          "name": "Zbigniew Stelmasiak",
+          "link": "https://www.transfermarkt.de/zbigniew-stelmasiak/profil/spieler/880361",
+          "id": "880361",
+          "position": "",
+          "nationalitaet": "Polen",
+          "leistungsDaten": {},
+          "alter": -1
         },
         "lastSeasonPoints": 0,
         "punkte": 0,
@@ -37127,7 +37166,11 @@
         "onMarket": false,
         "position": "MITTELFELD",
         "attribute": {},
-        "possibleNames": [],
+        "possibleNames": [
+          "Zbigniew Stelmasiak",
+          "Stelmasiak",
+          "Z. Stelmasiak"
+        ],
         "status": {}
       },
       "name": "Elmas",
@@ -37245,15 +37288,15 @@
         "lastWert": 260000,
         "spielerDaten": {
           "groesse": "",
-          "geburtstag": "",
+          "geburtstag": "02.11.1899",
           "laenderspiele": 0,
-          "lastUpdate": null,
+          "lastUpdate": "09.09.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
           "trikotNummer": 0,
-          "nationalitaet": "",
+          "nationalitaet": "Italien",
           "laenderspielTore": 0,
-          "hauptposition": "",
+          "hauptposition": "Mittelfeld",
           "fuss": ""
         },
         "isNotName": [],
@@ -37262,8 +37305,15 @@
         "wert": 260000,
         "lastPoints": 0,
         "transfermarktDoDe": {
-          "date": "01.01.1900",
-          "haveToCheck": true
+          "date": "09.09.2026",
+          "haveToCheck": false,
+          "name": "Antonio Fayenz",
+          "link": "https://www.transfermarkt.de/antonio-fayenz/profil/spieler/429090",
+          "id": "429090",
+          "position": "",
+          "nationalitaet": "Italien",
+          "leistungsDaten": {},
+          "alter": -1
         },
         "lastSeasonPoints": 0,
         "realWert": 0,
@@ -37286,7 +37336,11 @@
         "onMarket": false,
         "position": "ABWEHR",
         "attribute": [],
-        "possibleNames": [],
+        "possibleNames": [
+          "Antonio Fayenz",
+          "Fayenz",
+          "A. Fayenz"
+        ],
         "status": {}
       },
       "name": "Faye",
@@ -46590,12 +46644,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "-3",
-            "zielwert": "2.950.000",
-            "platz": 6,
+            "zielwert": "2.930.000",
+            "platz": 5,
             "lastUpdate": "09.09.2026",
             "typ": "flop",
             "marktwert": "3.240.000",
-            "aenderung": "-290.000"
+            "aenderung": "-310.000"
           },
           "link": "https://www.com-analytics.de/player/33164"
         },
