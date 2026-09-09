@@ -1850,6 +1850,11 @@
       "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
       "url": "",
       "timestamp": "2026-09-09T03:15:19.786013062Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Hamache / FC Schalke 04.\n",
+      "timestamp": "2026-09-09T08:01:39.027010094Z"
     }
   ],
   "2026-08-31": [
