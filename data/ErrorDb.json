@@ -2610,6 +2610,11 @@
       "timestamp": "2026-09-09T13:04:18.065603653Z"
     },
     {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: Leonard\nFehler bei Seite: 2 mit Name: Leonard\nFehler bei Seite: 3 mit Name: Leonard\nFehler bei Seite: 4 mit Name: Leonard\nFehler bei Seite: 5 mit Name: Leonard\nFehler bei Seite: 1 mit Name: leonard\nFehler bei Seite: 2 mit Name: leonard\nFehler bei Seite: 3 mit Name: leonard\nFehler bei Seite: 4 mit Name: leonard\nFehler bei Seite: 5 mit Name: leonard\nKein passender Spieler gefunden für: Leonard / FC Schalke 04.\n",
+      "timestamp": "2026-09-09T20:00:36.805105648Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
