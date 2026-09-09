@@ -1822,6 +1822,24 @@
   "2026-09-09": [
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: At. Szalai / TSG Hoffenheim.\n",
+      "timestamp": "2026-09-09T08:02:59.418476425Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Kein passender Spieler gefunden für: Dardari / FC Augsburg.\n",
+      "timestamp": "2026-09-09T08:01:58.279162716Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
+      "url": "",
+      "timestamp": "2026-09-09T03:15:19.786013062Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: Mahmoud / SV Elversberg.\n",
       "timestamp": "2026-09-09T08:01:00.693479504Z"
     },
@@ -1845,21 +1863,8 @@
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Kein passender Spieler gefunden für: Dardari / FC Augsburg.\n",
-      "timestamp": "2026-09-09T08:01:58.279162716Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Kein passender Spieler gefunden für: M. Zalazar / FC Schalke 04.\n",
       "timestamp": "2026-09-09T08:01:27.988476409Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
-      "url": "",
-      "timestamp": "2026-09-09T03:15:19.786013062Z"
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
