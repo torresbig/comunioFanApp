@@ -11,6 +11,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.Connection.Response;
 import org.jsoup.nodes.Document;
 
+import comunio.nas.dataVariable.Urls;
 import comunio.nas.objects.community.Community;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.user.User;
@@ -22,9 +23,7 @@ public class Login {
 	// Konstanten
 	private static final String CONTENT_TYPE = "application/json;charset=UTF-8";
 	private static final String BEARER = "Bearer ";
-	private static final String LOGIN_URL = "https://www.comunio.de/api/login";
-	private static final String REFRESH_URL = "https://www.comunio.de/api/refresh";
-	private static final String API_URL = "https://www.comunio.de/api";
+	
 
 	private static String token = null;
 	private static String refreshToken = null;
@@ -91,7 +90,7 @@ public class Login {
 
 	        try {
 	            // Existing login request logic …
-	            Response response = Jsoup.connect(LOGIN_URL)
+	            Response response = Jsoup.connect(Urls.LOGIN_URL)
 	                .method(Connection.Method.POST)
 	                .userAgent(USER_AGENT)
 	                .header("Content-Type", CONTENT_TYPE)
@@ -136,10 +135,11 @@ public class Login {
 	public static void updateSettingsFromServer(Community community, User user) throws IOException {
 		try {
 			LOGGER.info("Rufe aktuelle Einstellungen vom Server ab...");
-			Document doc = Jsoup.connect(API_URL)//
+			Document doc = Jsoup.connect(Urls.API_URL)//
 					.header("Accept", "application/json, text/plain, */*")//
 					.header("Authorization", BEARER + getToken())//
 					.ignoreContentType(true)//
+					.timeout(10000)//
 					.get();
 
 			JSONObject jsonO = new JSONObject(doc.body().text());
@@ -159,8 +159,9 @@ public class Login {
 			}
 
 			LOGGER.fine("Einstellungen vom Server geladen: " + jsonO.keySet());
-		} catch (Exception e) {
+		} catch (IOException e) {
 			LOGGER.log(Level.WARNING, "Fehler beim Abrufen der Einstellungen: " + e.getMessage(), e);
+			throw e;
 		}
 	}
 

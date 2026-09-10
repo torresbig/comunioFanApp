@@ -28,6 +28,7 @@ import comunio.nas.objects.community.Community;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.orga.UpdaterContextData;
 import comunio.nas.objects.player.SonstigeAttribute;
+import comunio.nas.objects.player.Spielerstats;
 import comunio.nas.objects.user.User;
 import comunio.nas.util.LoadJSONfromFile;
 import comunio.nas.util.StatusManager;
@@ -208,6 +209,9 @@ public class ComunioDataUpdater {
 		TmDePlayerDataUpdater.updateVerletzteVonTransfermarkt(ctx.playerDBObject, ctx.clubDB, ctx.newsManager, LOGGER, lastUpdates, statusManager);
 		LigainsiderRankingUpdater.updateLigainsiderRanking(ctx.playerDBObject, ctx.clubDB, currentMatchdayInfo, lastUpdates);
 
+
+
+		
 		kontostandBerechner.calculateKontostaende(ctx.userMap, ctx.newsManager);
 
 		ExportNotInLiga.exportAndRemoveNotInLiga(ctx.playerDBObject, ctx.notInligaDBObj, lastUpdates, ctx.injuryDB);

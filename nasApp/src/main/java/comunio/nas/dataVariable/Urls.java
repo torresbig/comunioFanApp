@@ -4,36 +4,44 @@ import comunio.nas.ComunioDataUpdater;
 import comunio.nas.objects.user.User;
 
 public class Urls {
+	// WICHTIG: trailing slash! Ohne "/" antwortet der Server mit 301
+	// (https→http→https).
+	// jsoup 1.23.2 entfernt bei Cross-Origin-Redirects den Authorization-Header
+	// (Sicherheitsfunktion gegen Open Redirects) -> finaler Request kommt ohne
+	// Token an -> 401.
+	public static final String API_URL = "https://www.comunio.de/api/";
+	public static final String LOGIN_URL = API_URL + "login";
+	public static final String REFRESH_URL = API_URL + "refresh";
 
 	/** API-URL für die Benutzerdaten, benötigt wird die userID */
 	public static final String COM_API(User user) {
-		return "https://www.comunio.de/api/communities/" + ComunioDataUpdater.community.getId() + "/users/" + user.getId();
+		return API_URL + "communities/" + ComunioDataUpdater.community.getId() + "/users/" + user.getId();
 	}
 
 	public static final String COM_NEWS(User user) {
 		return COM_API(user) + "/news";
 	}
-	
+
 //	public static final String COM_LINEUP(User user) {
 //		return COM_API(user) + "/lineup";
 //	}
 
-	//"https://www.comunio.de/api/users/%d/squad?communityId=%d&eid=live&state=standings.mode"
+	// "https://www.comunio.de/api/users/%d/squad?communityId=%d&eid=live&state=standings.mode"
 	public static final String COM_LINEUP(User user) {
-		return "https://www.comunio.de/api/users/" + user.getId() + "/squad?communityId=" + ComunioDataUpdater.community.getId() + "&eid=live&state=standings.mode";
+		return API_URL + "users/" + user.getId() + "/squad?communityId=" + ComunioDataUpdater.community.getId() + "&eid=live&state=standings.mode";
 	}
-	
-	public static final String COM_CLUB = "https://www.comunio.de/api/clubs/";
-	public static final String COM_MATCHDAY = "https://www.comunio.de/api/matchdays/current";
+
+	public static final String COM_CLUB = API_URL + "clubs/";
+	public static final String COM_MATCHDAY = API_URL + "matchdays/current";
 
 	public static String COM_PLAYER_FOTO(String playerID) {
-		return "https://www.comunio.de/api/players/" + playerID + "/photo";
+		return API_URL + "players/" + playerID + "/photo";
 	}
 
 	/**
 	 * Man benötigt noch die userID
 	 */
-	public static final String COM_USERDATA = "https://www.comunio.de/api/users/";
+	public static final String COM_USERDATA = API_URL + "users/";
 
 	/** GitHub-URLs für die Datenbanken */
 	public static final String PLAYER_DB_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("SpielerdatenbankNeutralJson.txt");
@@ -51,7 +59,6 @@ public class Urls {
 	public static final String POINTS_DB_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("PointsDB.json");
 	public static final String MARKET_VALUE_ARCHIVE_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("MarketValueArchive.json");
 	public static final String USER_LINEUPS = ComunioDataUpdater.uld.getCompleteGitProjectPath("UserLineups.json");
-
 
 	/** spielersuche auf Transfermarkt.de */
 //	public static final String TMDE_PLAYERSEARCH = "https://www.transfermarkt.de/schnellsuche/ergebnis/schnellsuche?query=";
