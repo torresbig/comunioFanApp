@@ -4016,6 +4016,11 @@
       "timestamp": "2026-09-10T08:01:10.948908528Z"
     },
     {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: Potočnik\r\nFehler bei Seite: 2 mit Name: Potočnik\r\nFehler bei Seite: 3 mit Name: Potočnik\r\nFehler bei Seite: 4 mit Name: Potočnik\r\nFehler bei Seite: 5 mit Name: Potočnik\r\nFehler bei Seite: 1 mit Name: potocnik\r\nFehler bei Seite: 2 mit Name: potocnik\r\nFehler bei Seite: 3 mit Name: potocnik\r\nFehler bei Seite: 4 mit Name: potocnik\r\nFehler bei Seite: 5 mit Name: potocnik\r\nKein passender Spieler gefunden für: Potočnik / 1. FC Köln.\r\n",
+      "timestamp": "2026-09-10T11:19:27.110758600Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
