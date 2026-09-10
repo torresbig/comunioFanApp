@@ -3801,22 +3801,9 @@
   ],
   "2026-09-10": [
     {
-      "methode": "",
-      "acception": "",
-      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
-      "url": "",
-      "timestamp": "2026-09-10T03:15:12.979161098Z"
-    },
-    {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Fehler bei Seite: 1 mit Name: Binder\nFehler bei Seite: 2 mit Name: Binder\nFehler bei Seite: 3 mit Name: Binder\nFehler bei Seite: 4 mit Name: Binder\nFehler bei Seite: 5 mit Name: Binder\nFehler bei Seite: 1 mit Name: binder\nFehler bei Seite: 2 mit Name: binder\nFehler bei Seite: 3 mit Name: binder\nFehler bei Seite: 4 mit Name: binder\nFehler bei Seite: 5 mit Name: binder\nKein passender Spieler gefunden für: Binder / FC Bayern München.\n",
       "timestamp": "2026-09-10T08:00:43.472605642Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Hamache\nFehler bei Seite: 2 mit Name: Hamache\nFehler bei Seite: 3 mit Name: Hamache\nFehler bei Seite: 4 mit Name: Hamache\nFehler bei Seite: 5 mit Name: Hamache\nFehler bei Seite: 1 mit Name: hamache\nFehler bei Seite: 2 mit Name: hamache\nFehler bei Seite: 3 mit Name: hamache\nFehler bei Seite: 4 mit Name: hamache\nFehler bei Seite: 5 mit Name: hamache\nKein passender Spieler gefunden für: Hamache / FC Schalke 04.\n",
-      "timestamp": "2026-09-10T08:01:32.357108748Z"
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
@@ -3848,11 +3835,6 @@
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Leonard\nFehler bei Seite: 2 mit Name: Leonard\nFehler bei Seite: 3 mit Name: Leonard\nFehler bei Seite: 4 mit Name: Leonard\nFehler bei Seite: 5 mit Name: Leonard\nFehler bei Seite: 1 mit Name: leonard\nFehler bei Seite: 2 mit Name: leonard\nFehler bei Seite: 3 mit Name: leonard\nFehler bei Seite: 4 mit Name: leonard\nFehler bei Seite: 5 mit Name: leonard\nKein passender Spieler gefunden für: Leonard / FC Schalke 04.\n",
-      "timestamp": "2026-09-10T08:01:10.948908528Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Fehler bei Seite: 1 mit Name: Duranville\nFehler bei Seite: 2 mit Name: Duranville\nFehler bei Seite: 3 mit Name: Duranville\nFehler bei Seite: 4 mit Name: Duranville\nFehler bei Seite: 5 mit Name: Duranville\nFehler bei Seite: 1 mit Name: duranville\nFehler bei Seite: 2 mit Name: duranville\nFehler bei Seite: 3 mit Name: duranville\nFehler bei Seite: 4 mit Name: duranville\nFehler bei Seite: 5 mit Name: duranville\nKein passender Spieler gefunden für: Duranville / Borussia Dortmund.\n",
       "timestamp": "2026-09-10T08:02:02.542345860Z"
     },
@@ -3860,6 +3842,29 @@
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Fehler bei Seite: 1 mit Name: M. Zalazar\nFehler bei Seite: 1 mit Name: Zalazar\nFehler bei Seite: 2 mit Name: M. Zalazar\nFehler bei Seite: 3 mit Name: M. Zalazar\nFehler bei Seite: 4 mit Name: M. Zalazar\nFehler bei Seite: 5 mit Name: M. Zalazar\nFehler bei Seite: 1 mit Name: Zalazar\nFehler bei Seite: 2 mit Name: Zalazar\nFehler bei Seite: 3 mit Name: Zalazar\nFehler bei Seite: 4 mit Name: Zalazar\nFehler bei Seite: 5 mit Name: Zalazar\nFehler bei Seite: 1 mit Name: m zalazar\nFehler bei Seite: 2 mit Name: m zalazar\nFehler bei Seite: 3 mit Name: m zalazar\nFehler bei Seite: 4 mit Name: m zalazar\nFehler bei Seite: 5 mit Name: m zalazar\nKein passender Spieler gefunden für: M. Zalazar / FC Schalke 04.\n",
       "timestamp": "2026-09-10T08:01:22.223083181Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
+      "url": "",
+      "timestamp": "2026-09-10T03:15:12.979161098Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: Hamache\nFehler bei Seite: 2 mit Name: Hamache\nFehler bei Seite: 3 mit Name: Hamache\nFehler bei Seite: 4 mit Name: Hamache\nFehler bei Seite: 5 mit Name: Hamache\nFehler bei Seite: 1 mit Name: hamache\nFehler bei Seite: 2 mit Name: hamache\nFehler bei Seite: 3 mit Name: hamache\nFehler bei Seite: 4 mit Name: hamache\nFehler bei Seite: 5 mit Name: hamache\nKein passender Spieler gefunden für: Hamache / FC Schalke 04.\n",
+      "timestamp": "2026-09-10T08:01:32.357108748Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: Leonard\nFehler bei Seite: 2 mit Name: Leonard\nFehler bei Seite: 3 mit Name: Leonard\nFehler bei Seite: 4 mit Name: Leonard\nFehler bei Seite: 5 mit Name: Leonard\nFehler bei Seite: 1 mit Name: leonard\nFehler bei Seite: 2 mit Name: leonard\nFehler bei Seite: 3 mit Name: leonard\nFehler bei Seite: 4 mit Name: leonard\nFehler bei Seite: 5 mit Name: leonard\nKein passender Spieler gefunden für: Leonard / FC Schalke 04.\n",
+      "timestamp": "2026-09-10T08:01:10.948908528Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: İnanoğlu\nFehler bei Seite: 2 mit Name: İnanoğlu\nFehler bei Seite: 3 mit Name: İnanoğlu\nFehler bei Seite: 4 mit Name: İnanoğlu\nFehler bei Seite: 5 mit Name: İnanoğlu\nFehler bei Seite: 1 mit Name: inanoglu\nFehler bei Seite: 2 mit Name: inanoglu\nFehler bei Seite: 3 mit Name: inanoglu\nFehler bei Seite: 4 mit Name: inanoglu\nFehler bei Seite: 5 mit Name: inanoglu\nFehler bei Seite: 1 mit Name: Inanoglu\nFehler bei Seite: 2 mit Name: Inanoglu\nFehler bei Seite: 3 mit Name: Inanoglu\nFehler bei Seite: 4 mit Name: Inanoglu\nFehler bei Seite: 5 mit Name: Inanoglu\nKein passender Spieler gefunden für: İnanoğlu / Eintracht Frankfurt.\n",
+      "timestamp": "2026-09-10T08:02:32.836466091Z"
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
