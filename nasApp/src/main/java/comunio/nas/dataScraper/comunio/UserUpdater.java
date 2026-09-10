@@ -30,12 +30,42 @@ import comunio.nas.util.player.PlayerHelper;
 public class UserUpdater {
 
 	private static final Logger LOGGER = LogManager.getLogger(UserUpdater.class);
+	
+	/**
+	 * Aktualisiert alle Benutzer in der userMap basierend auf den aktuellen Standings
+	 * der Comunio-API.
+	 *
+	 * @param lastUpdates       Objekt, das die Zeitpunkte der letzten Updates
+	 *                          enthält
+	 * @param playerDbObject    JSON-Objekt mit Spielerinformationen
+	 * @param marketValueDB     JSON-Array mit Marktwertinformationen
+	 * @param notInligaDBObj    JSON-Objekt mit Spielern, die nicht in der Liga sind
+	 * @param playerToUserMap   Map von playerId -> userId; alle Einträge, deren
+	 *                          Value der gelöschten userId entspricht, werden auf
+	 *                          "1" gesetzt (COMPUTER).
+	 * @param userMap           Map von userId -> User-Objekt, das aktualisiert
+	 *                          werden soll
+	 * @param community         Die Community, für die die Standings abgerufen
+	 *                          werden
+	 * @param matchdayInfo      Informationen zum aktuellen Spieltag (inkl. Punkte)
+	 * @param newsManager       Manager für News-Einträge
+	 * @param user              Der aktuelle Benutzer (optional, kann null sein)
+	 */
 
 	public static void updateAllUsers(LastUpdates lastUpdates, JSONObject playerDbObject, JSONArray marketValueDB, JSONObject notInligaDBObj, Map<String, String> playerToUserMap, Map<String, User> userMap, Community community, MatchdayInfo matchdayInfo, NewsManager newsManager, User user) {
 
 		Instant now = Instant.now();
 		Instant lastUserUpdateInstant = lastUpdates.getUsers();
 		if (lastUserUpdateInstant == null) {
+			lastUserUpdateInstant = Instant.EPOCH; // Sehr alt, damit Update erzwungen wird
+		}
+		
+		/**
+		 * Wenn die Anzahl der Mitglieder in der Community-Einstellung nicht mit der
+		 * Anzahl der Benutzer in userMap übereinstimmt, erzwinge ein Update, indem du
+		 * lastUserUpdateInstant auf Instant.EPOCH setzt.
+		 */
+		if(ComunioDataUpdater.community != null && ComunioDataUpdater.community.getSettings() != null && ComunioDataUpdater.community.getSettings().getMembers() != (userMap.size() - 1)) {
 			lastUserUpdateInstant = Instant.EPOCH; // Sehr alt, damit Update erzwungen wird
 		}
 		ComunioDate lastUserUpdate = new ComunioDate(Date.from(lastUserUpdateInstant));
@@ -83,7 +113,7 @@ public class UserUpdater {
 	// TODO: fehler. irgendwo werden die daten doch wieder komisch geändert!
 	private static void calculateTeamValuesForAllUsers(JSONObject playerDbObject, JSONObject notInligaDBObj, JSONArray userDB, Map<String, String> playerToUserMap) {
 		for (int i = 0; i < userDB.length(); i++) {
-			JSONObject userObj = (JSONObject) userDB.get(i);
+			JSONObject userObj = userDB.getJSONObject(i);
 			JSONObject userNew = userObj.optJSONObject("user", new JSONObject());
 			Set<String> playerIdsForUser = new HashSet<>();
 			if (userNew.has("id") && !userNew.getString("id").equals("1")) {
@@ -469,7 +499,7 @@ public class UserUpdater {
 	public static void getSquadForMatchday(JSONObject matchdayInfoList, JSONArray userDB, MatchdayInfo matchdayInfo) {
 		for (int i = 0; i < userDB.length(); i++) {
 
-			JSONObject array_element = (JSONObject) userDB.get(i);
+			JSONObject array_element = userDB.getJSONObject(i);
 			JSONObject user = array_element.getJSONObject("user");
 			String userID = user.getString("id");
 			if (userID != null && !userID.equals("1")) {

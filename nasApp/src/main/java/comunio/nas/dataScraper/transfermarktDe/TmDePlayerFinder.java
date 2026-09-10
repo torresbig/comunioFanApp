@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.logging.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -15,7 +14,6 @@ import comunio.nas.error.Error;
 import comunio.nas.error.ErrorType;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.util.ClubMapper;
-import comunio.nas.util.HttpHeaderUtil;
 import comunio.nas.util.player.PlayerHelper;
 
 public class TmDePlayerFinder {
@@ -51,7 +49,7 @@ public class TmDePlayerFinder {
 	public static JSONObject searchPlayer(String nameInput, String vereinInput, List<String> possibleNames) throws Exception {
 		StringBuilder log = new StringBuilder();
 		int maxPages = 5; // Erhöht von 3 auf 5 für bessere Trefferquote
-		
+
 		// Versucht zuerst mit dem Hauptnamen
 		for (int site = 1; site <= maxPages; site++) {
 			LOGGER.info(site + ". Durchgang für Spielersuche gestartet - Transfermarkt-Seite " + site + " wird durchsucht");
@@ -63,9 +61,9 @@ public class TmDePlayerFinder {
 			if (site == 1 && nameInput.contains(".")) { // Nachnamen-Suche mit Punkt-Name
 				String lastName = extractLastName(nameInput);
 				if (!lastName.isEmpty()) {
-					
+
 					randomWaiting();
-					
+
 					result = searchPlayerSinglePass(lastName, vereinInput, site, log);
 					if (result != null) {
 						LOGGER.info(log.toString());
@@ -77,7 +75,7 @@ public class TmDePlayerFinder {
 				randomWaiting();
 			}
 		}
-		
+
 		// Wenn unter dem Hauptnamen kein Ergebnis, versuche alternative Namen aus
 		// possibleNames
 		if (possibleNames != null && !possibleNames.isEmpty()) {
@@ -91,7 +89,7 @@ public class TmDePlayerFinder {
 				}
 			}
 		}
-		
+
 		// Zusätzliche Suchstrategien für bessere Trefferquote
 		// 1. Nachname-Suche (extrahiere Nachnamen aus dem Hauptnamen)
 		String lastName = extractLastName(nameInput);
@@ -104,7 +102,7 @@ public class TmDePlayerFinder {
 				}
 			}
 		}
-		
+
 		// 2. Initial-basierte Suche (z.B. "R. Adam" → "r adam")
 		String initialBasedName = extractInitialBasedName(nameInput);
 		if (!initialBasedName.isEmpty() && !initialBasedName.equals(nameInput)) {
@@ -116,7 +114,7 @@ public class TmDePlayerFinder {
 				}
 			}
 		}
-		
+
 		// 3. Transliterationsbasierte Suche für verschiedene Schriftzeichen
 		String transliteratedName = transliterateName(nameInput);
 		if (!transliteratedName.isEmpty() && !transliteratedName.equals(nameInput)) {
@@ -128,7 +126,7 @@ public class TmDePlayerFinder {
 				}
 			}
 		}
-		
+
 		log.append("Kein passender Spieler gefunden für: " + nameInput + " / " + vereinInput + ".").append(System.lineSeparator());
 		LOGGER.info(log.toString());
 		ComunioDataUpdater.errorDb.addError(new Error(ErrorType.TRANSFERMARKT_DE_FIND_PLAYER, log.toString()));
@@ -151,7 +149,11 @@ public class TmDePlayerFinder {
 		String url = Urls.TMDE_PLAYERSEARCH_WITH_SITES(site, nameInput);
 		Document doc;
 		try {
-			doc = Jsoup.connect(url).headers(HttpHeaderUtil.getRandomHeaders()).timeout(30000).get();
+			// Lade die Suchergebnisseite über die zentrale Transfermarkt-Session.
+			// Die Session verwaltet Cookies (DataDome), konsistente Browser-Header
+			// und wiederholt die Anfrage automatisch nach einem Session-Reset,
+			// falls der Server mit einer Bot-Sperre (403/405/406/429) antwortet.
+			doc = TmDeSession.getDocument(url);
 		} catch (Exception e) {
 			LOGGER.warning("Fehler bei Spielersuche: " + e.getMessage());
 			log.append("Fehler bei Seite: ").append(site).append(" mit Name: ").append(nameInput).append(System.lineSeparator());
@@ -161,33 +163,34 @@ public class TmDePlayerFinder {
 		Elements rows = doc.select("div#player-grid table.items tbody tr");
 
 		for (Element row : rows) {
-		    // Name-Extraktion (verbessert für responsive Tabellen)
-		    Element nameLink = row.selectFirst("td.hauptlink a[href]");
-		    if (nameLink == null) continue;
-		    
-		    String name = nameLink.text(); // "Eliesse Ben Seghir"
-		    String profilLink = nameLink.attr("href");
-		    
-		    // Verein-Extraktion (korrekt für inline-table Struktur)
-		    Element clubLink = row.selectFirst("td.hauptlink a[title]:not([href])");
-		    String verein;
-		    if (clubLink != null) {
-		        verein = clubLink.attr("title").trim();
-		    } else {
-		        // Fallback für andere Tabellenformate
-		        Elements clubElements = row.select("td.zentriert a[title]");
-		        verein = clubElements.isEmpty() ? "Karriereende" : clubElements.get(0).attr("title").trim();
-		    }
-		    
-		    // Weitere Extraktionen wie bisher...
-		    String position = row.select("td.zentriert:nth-of-type(1)").text().trim();
-		    String alterRaw = row.select("td.zentriert:nth-of-type(2)").text().trim();
-		    
+			// Name-Extraktion (verbessert für responsive Tabellen)
+			Element nameLink = row.selectFirst("td.hauptlink a[href]");
+			if (nameLink == null)
+				continue;
+
+			String name = nameLink.text(); // "Eliesse Ben Seghir"
+			String profilLink = nameLink.attr("href");
+
+			// Verein-Extraktion (korrekt für inline-table Struktur)
+			Element clubLink = row.selectFirst("td.hauptlink a[title]:not([href])");
+			String verein;
+			if (clubLink != null) {
+				verein = clubLink.attr("title").trim();
+			} else {
+				// Fallback für andere Tabellenformate
+				Elements clubElements = row.select("td.zentriert a[title]");
+				verein = clubElements.isEmpty() ? "Karriereende" : clubElements.get(0).attr("title").trim();
+			}
+
+			// Weitere Extraktionen wie bisher...
+			String position = row.select("td.zentriert:nth-of-type(1)").text().trim();
+			String alterRaw = row.select("td.zentriert:nth-of-type(2)").text().trim();
+
 			int alter = -1;
 			try {
 				alter = Integer.parseInt(alterRaw);
 			} catch (NumberFormatException e) {
-//	            log.append("Alter ist kein numerischer Wert: '" + alterRaw + "' bei Spieler: " + name).append(System.lineSeparator());
+				// log.append("Alter ist kein numerischer Wert: '" + alterRaw + "' bei Spieler: " + name).append(System.lineSeparator());
 			}
 			String nat = row.select("td:nth-of-type(5) img").attr("title").trim();
 			String mwText = row.select("td:nth-of-type(6)").text().trim();
@@ -220,10 +223,15 @@ public class TmDePlayerFinder {
 			if (!clubMatch)
 				continue;
 
-			// In der Methode searchPlayerSinglePass, ersetzen Sie die Name-Prüfung (um Zeile 170):
+			// In der Methode searchPlayerSinglePass, ersetzen Sie die Name-Prüfung (um
+			// Zeile 170):
 
 			String tmName = p.getString("name");
 			boolean nameMatch = false;
+
+			// Variabler Gültigkeitsbereich nach oben gezogen:
+			String dbLastName = extractLastName(nameInput);
+			String tmLastName = extractLastName(tmName);
 
 			// Verbesserte Name-Matching-Logik:
 			if (nameInput.equalsIgnoreCase(tmName)) {
@@ -232,9 +240,24 @@ public class TmDePlayerFinder {
 			    // Teilvergleich: "Ben Seghir" in "Eliesse Ben Seghir"
 			    nameMatch = true;
 			} else {
-			    // Fallback auf Initial-basierte Übereinstimmung
-			    nameMatch = PlayerHelper.namesMatchWithInitial(nameInput, tmName) || 
-			                PlayerHelper.namesMatchWithInitial(tmName, nameInput);
+			    // Nur Initial-basierte Übereinstimmung zulassen, wenn der TM-Nachname kürzer oder gleich ist
+			    if (tmLastName.length() <= dbLastName.length()) {
+			        nameMatch = PlayerHelper.namesMatchWithInitial(nameInput, tmName) || PlayerHelper.namesMatchWithInitial(tmName, nameInput);
+			    }
+			}
+
+			// Zusätzliche Sicherheitsregel: Wenn der Transfermarkt-Name LÄNGER ist als der Datenbank-Name
+			if (!nameMatch && tmName.length() > nameInput.length()) {
+			    boolean isValidInitialCase = false;
+			    
+			    // dbLastName ist hier nun wieder im Scope und fehlerfrei erreichbar:
+			    if (tmName.contains(dbLastName) && tmName.length() > dbLastName.length()) {
+			        isValidInitialCase = true;
+			    }
+
+			    if (!isValidInitialCase) {
+			        nameMatch = false;
+			    }
 			}
 
 			boolean vornameEntfernt = false;
@@ -261,6 +284,7 @@ public class TmDePlayerFinder {
 			}
 		}
 		return null;
+
 	}
 
 	private static String extractIdFromLink(String profilLink) {
@@ -286,11 +310,11 @@ public class TmDePlayerFinder {
 			return (long) (Double.parseDouble(text.replace("Tsd", "").replace(",", ".")) * 1_000);
 		return 0;
 	}
-	
+
 	private static void randomWaiting() {
 		// API-Freundlichkeit: kurze Pause vor Anfrage
 		long waitingTime = 1000 + (long) (Math.random() * 1000);
-		LOGGER.info("Waiting-Time: "+ waitingTime);
+		LOGGER.info("Waiting-Time: " + waitingTime);
 		try {
 			Thread.sleep(waitingTime);
 		} catch (InterruptedException e) {
@@ -306,23 +330,23 @@ public class TmDePlayerFinder {
 	 * @return Extrahierter Nachname (z.B. "Adam", "Sborn")
 	 */
 	private static String extractLastName(String fullName) {
-	    if (fullName == null || fullName.isEmpty()) {
-	        return "";
-	    }
-	    
-	    // Entferne Initialen mit Punkt (z.B. "R. Adam" → "Adam")
-	    String withoutInitial = fullName.replaceAll("^[A-Z]\\.\\s*", "");
-	    
-	    // Wenn der Name nur einen Teil hat, gib ihn zurück
-	    if (withoutInitial.isEmpty()) {
-	        return fullName;
-	    }
-	    
-	    // Teile den Namen durch Leerzeichen
-	    String[] parts = withoutInitial.split("\\s+");
-	    
-	    // Gib den letzten Teil zurück (Nachnamen)
-	    return parts[parts.length - 1];
+		if (fullName == null || fullName.isEmpty()) {
+			return "";
+		}
+
+		// Entferne Initialen mit Punkt (z.B. "R. Adam" → "Adam")
+		String withoutInitial = fullName.replaceAll("^[A-Z]\\.\\s*", "");
+
+		// Wenn der Name nur einen Teil hat, gib ihn zurück
+		if (withoutInitial.isEmpty()) {
+			return fullName;
+		}
+
+		// Teile den Namen durch Leerzeichen
+		String[] parts = withoutInitial.split("\\s+");
+
+		// Gib den letzten Teil zurück (Nachnamen)
+		return parts[parts.length - 1];
 	}
 
 	/**
@@ -332,60 +356,59 @@ public class TmDePlayerFinder {
 	 * @return Initial+basierten Namen (z.B. "r adam", "t sborn")
 	 */
 	private static String extractInitialBasedName(String fullName) {
-	    if (fullName == null || fullName.isEmpty()) {
-	        return "";
-	    }
-	    
-	    // Normalisiere den Namen
-	    String normalized = PlayerHelper.normalizeName(fullName);
-	    
-	    // Teile den Namen durch Leerzeichen
-	    String[] parts = normalized.split("\\s+");
-	    
-	    if (parts.length < 2) {
-	        return normalized;
-	    }
-	    
-	    // Erstelle Initial+basierten Namen: erster Buchstabe + Nachname
-	    String initial = parts[0].substring(0, 1);
-	    String lastName = parts[parts.length - 1];
-	    
-	    return initial + " " + lastName;
+		if (fullName == null || fullName.isEmpty()) {
+			return "";
+		}
+
+		// Normalisiere den Namen
+		String normalized = PlayerHelper.normalizeName(fullName);
+
+		// Teile den Namen durch Leerzeichen
+		String[] parts = normalized.split("\\s+");
+
+		if (parts.length < 2) {
+			return normalized;
+		}
+
+		// Erstelle Initial+basierten Namen: erster Buchstabe + Nachname
+		String initial = parts[0].substring(0, 1);
+		String lastName = parts[parts.length - 1];
+
+		return initial + " " + lastName;
 	}
 
 	/**
-	 * Transliteriert einen Namen für verschiedene Schriftzeichen
-	 * Konvertiert z.B. "İ" → "I", "ğ" → "g", "ş" → "s", "ç" → "c", "ö" → "o", "ü" → "u"
+	 * Transliteriert einen Namen für verschiedene Schriftzeichen Konvertiert z.B.
+	 * "İ" → "I", "ğ" → "g", "ş" → "s", "ç" → "c", "ö" → "o", "ü" → "u"
 	 * 
 	 * @param name Name mit potenziellen Transliterationsproblemen
 	 * @return Transliterierter Name
 	 */
 	private static String transliterateName(String name) {
-	    if (name == null || name.isEmpty()) {
-	        return "";
-	    }
-	    
-	    // Einfache Transliteration für häufige Probleme
-	    String transliterated = name
-	        .replace('İ', 'I')    // İ → I
-	        .replace('ı', 'i')    // ı → i
-	        .replace('ğ', 'g')    // ğ → g
-	        .replace('ş', 's')    // ş → s
-	        .replace('ç', 'c')    // ç → c
-	        .replace('ö', 'o')    // ö → o
-	        .replace('ü', 'u')    // ü → u
-	        .replace('é', 'e')    // é → e
-	        .replace('è', 'e')    // è → e
-	        .replace('ê', 'e')    // ê → e
-	        .replace('à', 'a')    // à → a
-	        .replace('â', 'a')    // â → a
-	        .replace('î', 'i')    // î → i
-	        .replace('ô', 'o')    // ô → o
-	        .replace('û', 'u')    // û → u
-	        .replace('ë', 'e')    // ë → e
-	        .replace('ï', 'i')    // ï → i
-	        .replace('ü', 'u');   // ü → u (zweimal für Sicherheit)
-	    
-	    return transliterated;
+		if (name == null || name.isEmpty()) {
+			return "";
+		}
+
+		// Einfache Transliteration für häufige Probleme
+		String transliterated = name.replace('İ', 'I') // İ → I
+				.replace('ı', 'i') // ı → i
+				.replace('ğ', 'g') // ğ → g
+				.replace('ş', 's') // ş → s
+				.replace('ç', 'c') // ç → c
+				.replace('ö', 'o') // ö → o
+				.replace('ü', 'u') // ü → u
+				.replace('é', 'e') // é → e
+				.replace('è', 'e') // è → e
+				.replace('ê', 'e') // ê → e
+				.replace('à', 'a') // à → a
+				.replace('â', 'a') // â → a
+				.replace('î', 'i') // î → i
+				.replace('ô', 'o') // ô → o
+				.replace('û', 'u') // û → u
+				.replace('ë', 'e') // ë → e
+				.replace('ï', 'i') // ï → i
+				.replace('ü', 'u'); // ü → u (zweimal für Sicherheit)
+
+		return transliterated;
 	}
 }

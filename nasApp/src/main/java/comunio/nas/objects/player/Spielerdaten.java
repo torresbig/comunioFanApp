@@ -45,6 +45,7 @@ public class Spielerdaten implements Serializable {
 	}
 
 	public static Spielerdaten fromJSON(JSONObject json) {
+
 		Spielerdaten sd = new Spielerdaten();
 		sd.groesse = json.optString("groesse", null);
 		String geb = json.optString("geburtstag", null);

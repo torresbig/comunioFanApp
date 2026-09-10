@@ -760,7 +760,7 @@ public class PlayerUpdater {
 										arrHist = new JSONArray();
 									}
 									for (int i = 0; i < arrHist.length(); i++) {
-										JSONObject xxx = (JSONObject) arrHist.get(i);
+										JSONObject xxx =  arrHist.getJSONObject(i);
 										if (xxx.has(season)) {
 											break schleife; // ich möchte, nicht, dass ein Eintrag doppelt vorkommt!
 										}

@@ -98,7 +98,7 @@ public class ComstatsDataScraper {
 					}
 
 					for (int j = 0; j < spieltagspunkte.length(); j++) {
-						JSONObject spP = (JSONObject) spieltagspunkte.get(j);
+						JSONObject spP = spieltagspunkte.getJSONObject(j);
 						if (spP.optInt("key", 0) == matchday) {
 							if (override || spP.optInt("einsatzzeit", -1) == -1) {
 								spP.put("einsatzzeit", spieler.get("playtime").getAsInt());

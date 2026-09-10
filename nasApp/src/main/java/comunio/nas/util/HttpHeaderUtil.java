@@ -61,4 +61,36 @@ public class HttpHeaderUtil {
 		headers.put("Connection", "keep-alive");
 		return headers;
 	}
+
+	/**
+	 * Liefert eine Map mit KONSISTENTEN, browser-ähnlichen Headern für
+	 * Transfermarkt.de-Anfragen.
+	 * <p>
+	 * <b>Warum wichtig?</b> Der Bot-Schutz von Transfermarkt (DataDome) wertet
+	 * unter anderem die Konsistenz der HTTP-Header aus. Ein echter Browser sendet
+	 * über eine gesamte Sitzung hinweg IMMER dieselben Header (gleicher
+	 * User-Agent, gleiches Accept, gleicher Referer usw.). Die Methode
+	 * {@link #getRandomHeaders()} liefert dagegen bei jedem Aufruf ANDERE Werte –
+	 * genau das ist ein klassisches Bot-Signal und kann mitverantwortlich für
+	 * HTTP 405 (DataDome-Sperre) sein.
+	 * <p>
+	 * Diese Methode liefert daher feste, realistische Werte, die für die gesamte
+	 * Session konstant bleiben. Sie wird von der zentralen Session-Klasse
+	 * {@code TmDeSession} beim Aufbau einer Session einmalig gesetzt.
+	 *
+	 * @return Map<String, String> mit stabilen Browser-Headern
+	 */
+	public static Map<String, String> getTransfermarktHeaders() {
+		Map<String, String> headers = new HashMap<>();
+		headers.put("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36");
+		headers.put("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8");
+		headers.put("Accept-Language", "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7");
+		headers.put("Referer", "https://www.transfermarkt.de/");
+		headers.put("Connection", "keep-alive");
+		headers.put("Upgrade-Insecure-Requests", "1");
+		headers.put("Sec-Fetch-Dest", "document");
+		headers.put("Sec-Fetch-Mode", "navigate");
+		headers.put("Sec-Fetch-Site", "same-origin");
+		return headers;
+	}
 }

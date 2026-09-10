@@ -15,7 +15,6 @@ import java.util.regex.Pattern;
 import org.apache.commons.text.similarity.LevenshteinDistance;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -29,7 +28,6 @@ import comunio.nas.objects.orga.ComunioDate;
 import comunio.nas.objects.player.Spielerdaten;
 import comunio.nas.objects.player.Status;
 import comunio.nas.util.ClubMapper;
-import comunio.nas.util.HttpHeaderUtil;
 import comunio.nas.util.StatusManager;
 import comunio.nas.util.player.PlayerHelper;
 import comunio.nas.util.player.PlayerMatcher;
@@ -375,6 +373,18 @@ data.put("possibleNames", posNames);
 				LOGGER.warning("Maximale Anfragen für Transfermarkt.de erreicht: " + MAX_REQUEST);
 				break;
 			}
+			// ABBRUCH-LOGIK: Wenn Transfermarkt mehrfach hintereinander mit einer
+			// Bot-Sperre (403/405/406/429) antwortet, macht weiteres Warten keinen
+			// Sinn. Die Session hat dann bereits mehrfach versucht, sich neu
+			// aufzubauen (neue Cookies). Wir brechen die Schleife ab, damit das
+			// Programm nicht endlos "wartezeit: ..." ausgibt und keinen Spieler
+			// aktualisiert.
+			if (TmDeSession.isBotBlocked()) {
+				LOGGER.log(Level.SEVERE,
+						"Transfermarkt blockiert weiterhin (Bot-Schutz). Spieler-Update mit Links wird abgebrochen, "
+						+ "um endlose Fehlversuche zu vermeiden. Bitte später erneut ausführen oder IP/Netzwerk prüfen.");
+				break;
+			}
 			JSONObject player = allPlayerList.get(i);
 			JSONObject data = player.optJSONObject("data");
 
@@ -403,7 +413,7 @@ data.put("possibleNames", posNames);
 			if (playerStatus.getStatus() == SpielerStatus.NICHT_IN_LIGA) {
 				continue;
 			}
-			Spielerdaten spielerDaten = Spielerdaten.fromJSON((JSONObject) data.opt("spielerDaten"));
+			Spielerdaten spielerDaten = Spielerdaten.fromJSON(data.optJSONObject("spielerDaten", new JSONObject()));
 
 			if (updateAll || spielerDaten.getLastUpdate() == null || spielerDaten.getLastUpdate().before(new ComunioDate().addDays(-45))) {
 
@@ -485,28 +495,18 @@ data.put("possibleNames", posNames);
 			}
 			Document doc = null;
 			try {
-				doc = Jsoup.connect(link)//
-						.headers(HttpHeaderUtil.getRandomHeaders())//
-						.ignoreContentType(true)//
-						.timeout(25000)//
-						.get();
-
+				// Lade die Spieler-Seite über die zentrale Transfermarkt-Session.
+				// Die Session verwaltet Cookies (DataDome), konsistente Browser-Header
+				// und wiederholt die Anfrage automatisch nach einem Session-Reset,
+				// falls der Server mit einer Bot-Sperre (403/405/406/429) antwortet.
+				doc = TmDeSession.getDocument(link);
+			} catch (InterruptedException e) {
+				Thread.currentThread().interrupt();
+				LOGGER.log(Level.WARNING, "Thread unterbrochen beim Laden der Transfermarkt-Daten", e);
+				return false;
 			} catch (Exception e) {
-				LOGGER.log(Level.WARNING, "Fehler beim laden der Daten von Transfermarkt.de", e);
-				long sleeptime = 15000 + (long) (Math.random() * 5000);
-				System.out.println("wartezeit: " + sleeptime);
-				Thread.sleep(sleeptime);
-
-				try {
-					doc = Jsoup.connect(link)//
-							.headers(HttpHeaderUtil.getRandomHeaders())//
-							.ignoreContentType(true)//
-							.timeout(25000)//
-							.get();
-				} catch (Exception e2) {
-					LOGGER.log(Level.WARNING, "2ter Durchgang: Fehler beim laden der Daten von Transfermarkt.de", e2);
-					return false;
-				}
+				LOGGER.log(Level.WARNING, "Fehler beim laden der Daten von Transfermarkt.de (auch nach Session-Reset): " + link, e);
+				return false;
 			}
 
 			// --- Stammdaten extrahieren und ins SpielerDaten-Objekt schreiben ---
@@ -651,7 +651,9 @@ data.put("possibleNames", posNames);
 
 			LOGGER.info("Starte Verletzten-Update von transfermarkt.de ...");
 			String url = "https://www.transfermarkt.de/bundesliga/verletztespieler/wettbewerb/L1/plus/1";
-			Document doc = Jsoup.connect(url).userAgent("Mozilla/5.0").get();
+			// Lade die Verletztenliste über die zentrale Transfermarkt-Session
+			// (Cookies, konsistente Header, Retry bei Bot-Sperren).
+			Document doc = TmDeSession.getDocument(url);
 
 			// Verletztenliste parsen
 			List<TransfermarktVerletzter> verletzte = new ArrayList<>();
