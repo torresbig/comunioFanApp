@@ -57,15 +57,15 @@ public class TmDePlayerDataUpdater {
 	 *         "FAIL"
 	 */
 
-	public static String getTmDeDataForPlayer(JSONObject player, JSONArray clubDB, boolean faildRetry, StringBuilder log, LastUpdates lastUpdates, 	StatusManager statusManager) {
+	public static String getTmDeDataForPlayer(JSONObject player, JSONArray clubDB, boolean faildRetry, StringBuilder log, LastUpdates lastUpdates, StatusManager statusManager) {
 		JSONObject data = player.optJSONObject("data");
 		if (data == null) {
 			return "NO_DATA";
 		}
 
 		String playerId = player.optString("id", "0");
-		Status playerStatus = StatusManager.getStatusForPlayer(playerId, statusManager.getInjuryDB()) ;
-		
+		Status playerStatus = StatusManager.getStatusForPlayer(playerId, statusManager.getInjuryDB());
+
 		if (playerStatus.getStatus() == SpielerStatus.NICHT_IN_LIGA) {
 			return "HAS_ALREADY_DATA";
 		}
@@ -127,12 +127,14 @@ public class TmDePlayerDataUpdater {
 				return "NOT_FOUND";
 			}
 
-			// Speichere den ursprünglichen Spielernamen aus der Datenbank für die Namensschutz-Regel
+			// Speichere den ursprünglichen Spielernamen aus der Datenbank für die
+			// Namensschutz-Regel
 			String originalPlayerName = player.optString("name", "");
 			JSONArray originalPossibleNames = data.optJSONArray("possibleNames");
-			
+
 			// Erfolgreiche Datenaktualisierung
-			// SCHUTZ: Aktualisiere nur den Namen im transfermarktDoDe-Objekt, nicht den Hauptspielernamen
+			// SCHUTZ: Aktualisiere nur den Namen im transfermarktDoDe-Objekt, nicht den
+			// Hauptspielernamen
 			tmDe.put("date", new ComunioDate().toString());
 			tmDe.put("name", tmDePlayerData.optString("name")); // Nur Transfermarkt-Name
 			tmDe.put("link", tmDePlayerData.optString("link"));
@@ -141,27 +143,28 @@ public class TmDePlayerDataUpdater {
 			tmDe.put("nationalitaet", tmDePlayerData.optString("nationalitaet"));
 			tmDe.put("alter", tmDePlayerData.optInt("alter"));
 			tmDe.put("haveToCheck", tmDePlayerData.optBoolean("haveToCheck", false));
-			
+
 			long marktwert = tmDePlayerData.optLong("marktwert");
 			if (marktwert > 0) {
 				tmDe.put("marktwert", marktwert);
 				data.put("realWert", marktwert);
 			}
-			
+
 			// SCHUTZ: Behalte den ursprünglichen Spielernamen aus der Datenbank bei
 			// Spieler-ID und Name bleiben unverändert (aus comunio)
 			// Nur der Transfermarkt-Name wird im transfermarktDoDe-Objekt gespeichert
-			
-			// Zusätzliche Namensvarianten: Füge nur den Transfermarkt-Namen hinzu, wenn er nicht bereits vorhanden ist
+
+			// Zusätzliche Namensvarianten: Füge nur den Transfermarkt-Namen hinzu, wenn er
+			// nicht bereits vorhanden ist
 			JSONArray posNames = data.optJSONArray("possibleNames");
 			if (posNames == null)
 				posNames = new JSONArray();
-			
+
 			String tmName = tmDePlayerData.optString("name");
 			if (!containsValue(posNames, tmName)) {
 				posNames.put(tmName);
 			}
-			
+
 			// Füge Nachnamen und Initial+Nachnamen für den Transfermarkt hinzu
 			String[] split = tmName.split(" ");
 			if (split.length > 1) {
@@ -175,7 +178,7 @@ public class TmDePlayerDataUpdater {
 					posNames.put(kurzform);
 				}
 			}
-			
+
 			// SCHUTZ: Behalte die ursprünglichen möglichen Namen aus der Datenbank bei
 			// Füge sie nur hinzu, wenn sie nicht bereits vorhanden sind
 			if (originalPossibleNames != null) {
@@ -186,14 +189,14 @@ public class TmDePlayerDataUpdater {
 					}
 				}
 			}
-			
-data.put("possibleNames", posNames);
-			
+
+			data.put("possibleNames", posNames);
+
 			// Bei vorhandenem Link Spielerdaten laden
 			if (!tmDe.optString("link").isBlank()) {
 				getTransfermarktDeSpielerDaten(data, lastUpdates);
 			}
-			
+
 			log.append("Spieler erfolgreich aktualisiert: ").append(tmName).append(" (Transfermarkt: ").append(clubName).append(")").append(System.lineSeparator());
 			return "OK";
 
@@ -231,7 +234,7 @@ data.put("possibleNames", posNames);
 		int playerNoData = 0;
 		int playerFail = 0;
 		int gesamtCount = 0;
-		final int MAX_REQUEST = faildRetry ? 25 : 50;
+		final int MAX_REQUEST = faildRetry ? 15 : 25;
 
 		JSONArray playerDB = playerDBObject.optJSONArray("playerDB");
 		if (playerDB == null) {
@@ -242,6 +245,18 @@ data.put("possibleNames", posNames);
 		for (int i = 0; i < playerDB.length(); i++) {
 			if (gesamtCount >= MAX_REQUEST) {
 				log.append("Maximale Anfragen für Transfermarkt.de erreicht: ").append(MAX_REQUEST).append(System.lineSeparator());
+				break;
+			}
+
+			// ABBRUCH-LOGIK: Wenn Transfermarkt bereits mehrfach mit einer
+			// Bot-Sperre (403/405/406/429/202-Challenge) geantwortet hat, ist
+			// jede weitere Spielersuche sinnlos. Wir brechen die komplette
+			// Schleife ab, damit das Programm nicht über hunderte Spieler
+			// durchläuft und dabei nur Fehlversuche produziert.
+			if (TmDeSession.isBotBlocked()) {
+				log.append("ABBRUCH: Transfermarkt blockiert (Bot-Schutz). Weitere Suchen werden übersprungen.").append(System.lineSeparator());
+				LOGGER.severe("Update der Spieler mit fehlenden Daten abgebrochen: Transfermarkt blockiert (Bot-Schutz). "
+						+ "Mehrfache 403/406/429/202-Antworten erkannt. Bitte später erneut ausführen oder IP/Netzwerk prüfen.");
 				break;
 			}
 
@@ -260,7 +275,10 @@ data.put("possibleNames", posNames);
 			}
 			case "HAS_ALREADY_DATA" -> playerAlreadyData++;
 			case "NO_DATA" -> playerNoData++;
-			case "FAIL" -> playerFail++;
+			case "FAIL" -> {
+				playerFail++;
+				gesamtCount++;
+			}
 			}
 
 			// API-Freundlichkeit: Pause nach jedem gültigen Anfrageversuch
@@ -270,13 +288,13 @@ data.put("possibleNames", posNames);
 
 				StringBuilder zwischenInfo = new StringBuilder();
 				zwischenInfo.append("#").append(i).append(" Spieler: ").append(name).append(" (ID: ").append(id).append(")").append(" wurde Abgefragt: updateAllPlayerWithMissedData");
-			if (faildRetry) {
+				if (faildRetry) {
 					LOGGER.info("FaildRetry TRUE! : " + zwischenInfo.toString());
 				} else {
 					LOGGER.info(zwischenInfo.toString());
 				}
 				try {
-					
+
 					Thread.sleep(1500);
 				} catch (InterruptedException e) {
 					Thread.currentThread().interrupt();
@@ -299,8 +317,12 @@ data.put("possibleNames", posNames);
 
 		LOGGER.info(log.toString());
 
-		// Erneuter Versuch, wenn keine Updates/Nicht gefunden aber Fehler da sind
-		if (playerCountNotFound == 0 && playerCountUpdate == 0 && playerFail > 0 && !faildRetry) {
+		// Erneuter Versuch, wenn keine Updates/Nicht gefunden aber Fehler da sind.
+		// WICHTIG: Bei einer Bot-Sperre (TmDeSession.isBotBlocked()) wird KEIN
+		// 2. Durchgang gestartet – der würde über die komplette Spielerliste
+		// laufen und nur weitere Fehlversuche produzieren (siehe Log: hunderte
+		// "Suche Spieler ..." mit 202-Challenge, obwohl die Sperre erkannt war).
+		if (playerCountNotFound == 0 && playerCountUpdate == 0 && playerFail > 0 && !faildRetry && !TmDeSession.isBotBlocked()) {
 			LOGGER.info("2. Update-Durchgang wird gestartet, da vorher Fehler bestanden und sonst alle Spieler aktualisiert erscheinen.");
 
 			updateAllPlayerWithMissedData(playerDBObject, clubDB, true, lastUpdates, statusManager);
@@ -380,9 +402,7 @@ data.put("possibleNames", posNames);
 			// Programm nicht endlos "wartezeit: ..." ausgibt und keinen Spieler
 			// aktualisiert.
 			if (TmDeSession.isBotBlocked()) {
-				LOGGER.log(Level.SEVERE,
-						"Transfermarkt blockiert weiterhin (Bot-Schutz). Spieler-Update mit Links wird abgebrochen, "
-						+ "um endlose Fehlversuche zu vermeiden. Bitte später erneut ausführen oder IP/Netzwerk prüfen.");
+				LOGGER.log(Level.SEVERE, "Transfermarkt blockiert weiterhin (Bot-Schutz). Spieler-Update mit Links wird abgebrochen, " + "um endlose Fehlversuche zu vermeiden. Bitte später erneut ausführen oder IP/Netzwerk prüfen.");
 				break;
 			}
 			JSONObject player = allPlayerList.get(i);
@@ -650,6 +670,17 @@ data.put("possibleNames", posNames);
 			}
 
 			LOGGER.info("Starte Verletzten-Update von transfermarkt.de ...");
+
+			// ABBRUCH-CHECK: Wenn Transfermarkt bereits mit einer Bot-Sperre
+			// (403/405/406/429/202-Challenge) geantwortet hat, bringt auch das
+			// Verletzten-Update nichts – wir überspringen es komplett, anstatt
+			// einen weiteren Request zu verschwenden.
+			if (TmDeSession.isBotBlocked()) {
+				LOGGER.severe("Verletzten-Update übersprungen: Transfermarkt blockiert (Bot-Schutz). "
+						+ "Bitte später erneut ausführen oder IP/Netzwerk prüfen.");
+				return;
+			}
+
 			String url = "https://www.transfermarkt.de/bundesliga/verletztespieler/wettbewerb/L1/plus/1";
 			// Lade die Verletztenliste über die zentrale Transfermarkt-Session
 			// (Cookies, konsistente Header, Retry bei Bot-Sperren).
@@ -820,7 +851,7 @@ data.put("possibleNames", posNames);
 
 						Status statusObj = new Status();
 						statusObj.setNichtInLiga();
-						statusManager.addStatusToBuffer(playerId, statusObj);						
+						statusManager.addStatusToBuffer(playerId, statusObj);
 						nichtInLiga++;
 						LOGGER.info("Spieler " + playerName + " scheint keinen Verein zu haben, Status auf NICHT_IN_LIGA gesetzt.");
 					}
@@ -833,24 +864,24 @@ data.put("possibleNames", posNames);
 					if (!alterStatus.equals(neuerStatus)) {
 
 						Status statusObj = new Status(new ComunioDate(abfrageDatum), neuerStatus, "", match.verletzung, match.seit, match.bis, "transfermarkt");
-						statusManager.addStatusToBuffer(playerId, statusObj);	
+						statusManager.addStatusToBuffer(playerId, statusObj);
 
 						updated++;
 						LOGGER.info("Spieler " + playerName + " scheint verletzt zu sein (Match in aktueller Verletztenliste), Status auf VERLETZT gesetzt.");
 					} else {
 
 						Status statusObj = new Status(new ComunioDate(abfrageDatum), neuerStatus, "", match.verletzung, match.seit, match.bis, "transfermarkt");
-						statusManager.addStatusToBuffer(playerId, statusObj);	
+						statusManager.addStatusToBuffer(playerId, statusObj);
 
 					}
 				} else {
 					// Spieler NICHT mehr verletzt, war aber vorher verletzt
 					if ("VERLETZT".equals(alterStatus)) {
-						
+
 						Status statusObj = new Status();
 						statusObj.setWiederGesund("transfermarkt");
-						statusManager.addStatusToBuffer(playerId, statusObj);	
-						
+						statusManager.addStatusToBuffer(playerId, statusObj);
+
 						reaktiviert++;
 						LOGGER.info("Spieler " + playerName + " scheint nicht mehr verletzt zu sein (kein Match in aktueller Verletztenliste), Status auf AKTIV gesetzt.");
 					}
@@ -859,7 +890,7 @@ data.put("possibleNames", posNames);
 			}
 			LOGGER.info("Transfermarkt: Verletzten-Update abgeschlossen: " + updated + " Spieler auf VERLETZT, " + reaktiviert + " reaktiviert, " + nichtInLiga + " NICHT_IN_LIGA.");
 			lastUpdates.setPlayerStatus(new ComunioDate().toInstant());
-			
+
 		} catch (Exception e) {
 			LOGGER.log(Level.SEVERE, "Fehler beim Update der Verletzten von transfermarkt.de: " + e.getMessage(), e);
 		}

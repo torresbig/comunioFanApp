@@ -81,12 +81,24 @@ public final class TmDeSession {
 	private static final int TIMEOUT_MS = 30000;
 
 	/**
+	 * Flag, ob der Warm-up in dieser Session bereits gelaufen ist.
+	 * <p>
+	 * <b>Warum ein Flag?</b> Der Warm-up feuert aktuell bei jedem Aufruf neu,
+	 * solange der Cookie-Jar leer ist. Da der Server aktuell bei der Startseite
+	 * OHNE Cookies antwortet (siehe {@link #warmUp()} – HTTP 202 DataDome-
+	 * Challenge), bleibt der Jar leer und das Warm-up würde für JEDE Seite
+	 * wiederholt, was das Log zuspammt. Mit diesem Flag läuft der Warm-up
+	 * garantiert nur einmal pro Session.
+	 */
+	private static boolean warmupDone = false;
+
+	/**
 	 * Der zentrale Cookie-Jar: speichert alle Cookies, die der Server gesetzt
 	 * hat (z. B. {@code datadome}). Wird bei jeder Anfrage mitgesendet.
 	 */
 	private static Map<String, String> cookieJar = new HashMap<>();
 
-	/** Zähler für aufeinanderfolgende Bot-Sperren (403/405/406/429). */
+	/** Zähler für aufeinanderfolgende Bot-Sperren (403/405/406/429/202-Challenge). */
 	private static int consecutiveBotBlocks = 0;
 
 	/** Privater Konstruktor: Nur statische Nutzung. */
@@ -175,6 +187,7 @@ public final class TmDeSession {
 	 */
 	public static synchronized void resetSession() {
 		cookieJar = new HashMap<>();
+		warmupDone = false;
 		ensureSessionWarmup();
 	}
 
@@ -217,8 +230,12 @@ public final class TmDeSession {
 	 * Cookie gilt jede Anfrage als "unbekannt" und wird leichter geblockt.
 	 */
 	private static void ensureSessionWarmup() {
-		if (cookieJar.isEmpty()) {
+		// Warm-up nur einmal pro Session ausführen (Flag statt "Cookie-Jar leer"-Check),
+		// sonst wiederholt er sich bei jeder Anfrage, solange der Server keine Cookies
+		// setzt (aktuell: 202-DataDome-Challenge) und spammt das Log.
+		if (!warmupDone) {
 			warmUp();
+			warmupDone = true;
 		}
 	}
 
@@ -248,9 +265,14 @@ public final class TmDeSession {
 			LOGGER.info("Transfermarkt-Session aufgebaut (Status " + response.statusCode() + "). "
 					+ "Cookie(s) vom Server: " + (cookieJar.isEmpty() ? "keine" : cookieJar.keySet()));
 
-			if (response.statusCode() == 405 || response.statusCode() == 403) {
-				LOGGER.warning("Warm-up bereits geblockt (HTTP " + response.statusCode() + "). "
-						+ "Startseite verweigert Cookies – Session funktioniert vermutlich nicht.");
+			// 202 = DataDome-JS/CAPTCHA-Challenge: Der Server verlangt JavaScript
+			// (das Java nicht ausführen kann) und setzt deshalb kein datadome-Cookie.
+			// Das ist ein klares Bot-Block-Signal – wir warnen, damit im Log sofort
+			// sichtbar ist, dass der Warm-up "erfolglos" war.
+			if (response.statusCode() == 202 || response.statusCode() == 405 || response.statusCode() == 403) {
+				LOGGER.warning("Warm-up zeigt Bot-Schutz an (HTTP " + response.statusCode() + "). "
+						+ "Startseite verweigert Cookies – Session funktioniert vermutlich nicht. "
+						+ "Tipp: IP/Netzwerk wechseln oder CAPTCHA im Browser lösen.");
 			}
 		} catch (IOException e) {
 			LOGGER.log(Level.WARNING, "Warm-up (Startseite) fehlgeschlagen: " + e.getMessage(), e);
@@ -279,10 +301,25 @@ public final class TmDeSession {
 				.timeout(TIMEOUT_MS)
 				.execute();
 
-		// Neue Cookies aus der Antwort übernehmen (z. B. erneuertes datadome-Cookie)
+		// WICHTIG: HTTP 202 ist für DataDome die "Human-Verification"-Challenge.
+		// 202 ist formal ein 2xx-Erfolgsstatus (jsoup wirft dafür KEINE Exception),
+		// die Seite enthält aber KEINE Spielerdaten, sondern nur den JS/CAPTCHA-
+		// Challenge-Code. Wir übersetzen sie deshalb in eine HttpStatusException,
+		// damit die zentrale Retry-/Abbruch-Logik in getDocument() greift
+		// (sonst würde der Aufrufer eine leere Seite als "gültige" Antwort werten
+		// und fälschlich "Spieler nicht gefunden" melden).
+		int statusCode = response.statusCode();
+
+		// Neue Cookies aus der Antwort übernehmen (z. B. erneuertes datadome-Cookie).
+		// WICHTIG: Das machen wir VOR dem 202-Throw, weil DataDome auch auf der
+		// Challenge-Seite Cookies setzt – die können beim nächsten Versuch helfen.
 		Map<String, String> newCookies = response.cookies();
 		if (newCookies != null && !newCookies.isEmpty()) {
 			cookieJar.putAll(newCookies);
+		}
+
+		if (statusCode == 202) {
+			throw new HttpStatusException("DataDome-Challenge (HTTP 202) – Seite verlangt JavaScript/CAPTCHA", 202, url);
 		}
 
 		return response.parse();
@@ -297,6 +334,10 @@ public final class TmDeSession {
 	 * @return true, wenn es sich um eine Bot-Klassifizierung handelt
 	 */
 	private static boolean isBotStatusCode(int statusCode) {
-		return statusCode == 403 || statusCode == 405 || statusCode == 406 || statusCode == 429;
+		// 202 = DataDome "Human Verification"-Challenge: Der Server liefert formal
+		// einen 2xx-Erfolgsstatus, aber nur den JS/CAPTCHA-Code statt echter Daten.
+		// In request() wird diese Challenge bereits in eine HttpStatusException
+		// übersetzt – hier behandeln wir sie als Bot-Block (Retry + Abbruch).
+		return statusCode == 202 || statusCode == 403 || statusCode == 405 || statusCode == 406 || statusCode == 429;
 	}
 }

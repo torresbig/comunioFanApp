@@ -86,7 +86,6 @@ public class HttpHeaderUtil {
 		headers.put("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8");
 		headers.put("Accept-Language", "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7");
 		headers.put("Referer", "https://www.transfermarkt.de/");
-		headers.put("Connection", "keep-alive");
 		headers.put("Upgrade-Insecure-Requests", "1");
 		headers.put("Sec-Fetch-Dest", "document");
 		headers.put("Sec-Fetch-Mode", "navigate");

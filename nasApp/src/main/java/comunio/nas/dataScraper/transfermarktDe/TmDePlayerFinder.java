@@ -34,7 +34,7 @@ public class TmDePlayerFinder {
 	 * komplett entfernt wurde, wird dies im zurückgegebenen JSONObject mit
 	 * "vorname_entfernt": true markiert.
 	 * 
-	 * Es werden maximal drei Seiten der Transfermarkt-Suchergebnisse durchgegangen.
+	 * Es werden maximal fünf Seiten der Transfermarkt-Suchergebnisse durchgegangen.
 	 * 
 	 * @param nameInput     Hauptsuchname des Spielers, z.B. "cerny" oder "Voll"
 	 * @param vereinInput   Verein, zu dem der Spieler gehören soll, z.B.
@@ -50,8 +50,30 @@ public class TmDePlayerFinder {
 		StringBuilder log = new StringBuilder();
 		int maxPages = 5; // Erhöht von 3 auf 5 für bessere Trefferquote
 
+		// ABBRUCH-CHECK: Wenn Transfermarkt bereits mit einer Bot-Sperre
+		// (403/405/406/429/202-Challenge) geantwortet hat, ist jede weitere
+		// Suche sinnlos. Statt 5 Seiten × mehrere Namensstrategien durchzuprobieren,
+		// brechen wir sofort ab – der Aufrufer (updateAllPlayerWithMissedData) prüft
+		// TmDeSession.isBotBlocked() ebenfalls und beendet dann seine komplette
+		// Schleife (kein endloses Durchlaufen über hunderte Spieler).
+		if (TmDeSession.isBotBlocked()) {
+			log.append("ABBRUCH: Transfermarkt hat mehrfach hintereinander mit einer Bot-Sperre geantwortet. ")
+					.append("Weitere Suchen werden übersprungen.").append(System.lineSeparator());
+			LOGGER.severe("Spielersuche abgebrochen: Transfermarkt blockiert (Bot-Schutz). "
+					+ "Keine weiteren Suchen, bis die Session entsperrt ist.");
+			return null;
+		}
+
 		// Versucht zuerst mit dem Hauptnamen
 		for (int site = 1; site <= maxPages; site++) {
+			// Zwischencheck innerhalb der Schleife: Falls Transfermarkt während der
+			// ersten Seiten bereits blockiert, keine weiteren Seiten abfragen.
+			if (TmDeSession.isBotBlocked()) {
+				log.append("Bot-Schutz-Sperre erreicht, weitere Seiten-Suchen übersprungen.")
+						.append(System.lineSeparator());
+				break;
+			}
+
 			LOGGER.info(site + ". Durchgang für Spielersuche gestartet - Transfermarkt-Seite " + site + " wird durchsucht");
 			JSONObject result = searchPlayerSinglePass(nameInput, vereinInput, site, log);
 			if (result != null) {
@@ -81,6 +103,11 @@ public class TmDePlayerFinder {
 		if (possibleNames != null && !possibleNames.isEmpty()) {
 			for (String altName : possibleNames) {
 				for (int site = 1; site <= maxPages; site++) {
+					if (TmDeSession.isBotBlocked()) {
+						log.append("Bot-Schutz-Sperre: alternative Namenssuche übersprungen.")
+								.append(System.lineSeparator());
+						break;
+					}
 					JSONObject result = searchPlayerSinglePass(altName, vereinInput, site, log);
 					if (result != null) {
 						LOGGER.info("Gefunden mit alternativen Namen '" + altName + "':\n" + log.toString());
@@ -95,6 +122,9 @@ public class TmDePlayerFinder {
 		String lastName = extractLastName(nameInput);
 		if (!lastName.isEmpty() && !lastName.equals(nameInput)) {
 			for (int site = 1; site <= maxPages; site++) {
+				if (TmDeSession.isBotBlocked()) {
+					break;
+				}
 				JSONObject result = searchPlayerSinglePass(lastName, vereinInput, site, log);
 				if (result != null) {
 					LOGGER.info("Gefunden mit Nachnamen-Suche '" + lastName + "':\n" + log.toString());
@@ -107,6 +137,9 @@ public class TmDePlayerFinder {
 		String initialBasedName = extractInitialBasedName(nameInput);
 		if (!initialBasedName.isEmpty() && !initialBasedName.equals(nameInput)) {
 			for (int site = 1; site <= maxPages; site++) {
+				if (TmDeSession.isBotBlocked()) {
+					break;
+				}
 				JSONObject result = searchPlayerSinglePass(initialBasedName, vereinInput, site, log);
 				if (result != null) {
 					LOGGER.info("Gefunden mit Initial-basierter Suche '" + initialBasedName + "':\n" + log.toString());
@@ -119,6 +152,9 @@ public class TmDePlayerFinder {
 		String transliteratedName = transliterateName(nameInput);
 		if (!transliteratedName.isEmpty() && !transliteratedName.equals(nameInput)) {
 			for (int site = 1; site <= maxPages; site++) {
+				if (TmDeSession.isBotBlocked()) {
+					break;
+				}
 				JSONObject result = searchPlayerSinglePass(transliteratedName, vereinInput, site, log);
 				if (result != null) {
 					LOGGER.info("Gefunden mit Transliterations-Suche '" + transliteratedName + "':\n" + log.toString());
@@ -152,9 +188,15 @@ public class TmDePlayerFinder {
 			// Lade die Suchergebnisseite über die zentrale Transfermarkt-Session.
 			// Die Session verwaltet Cookies (DataDome), konsistente Browser-Header
 			// und wiederholt die Anfrage automatisch nach einem Session-Reset,
-			// falls der Server mit einer Bot-Sperre (403/405/406/429) antwortet.
+			// falls der Server mit einer Bot-Sperre (403/405/406/429/202) antwortet.
 			doc = TmDeSession.getDocument(url);
 		} catch (Exception e) {
+			// Wenn die Session geblockt ist, wollen wir hier KEINE normale
+			// "kein Treffer"-Meldung erzeugen – der Aufrufer bricht dann ab.
+			if (TmDeSession.isBotBlocked()) {
+				LOGGER.warning("Bot-Schutz-Sperre in Spielersuche erkannt (Seite " + site + ", Name " + nameInput + "). Suche wird abgebrochen: " + e.getMessage());
+				return null;
+			}
 			LOGGER.warning("Fehler bei Spielersuche: " + e.getMessage());
 			log.append("Fehler bei Seite: ").append(site).append(" mit Name: ").append(nameInput).append(System.lineSeparator());
 			return null;
@@ -190,7 +232,7 @@ public class TmDePlayerFinder {
 			try {
 				alter = Integer.parseInt(alterRaw);
 			} catch (NumberFormatException e) {
-				// log.append("Alter ist kein numerischer Wert: '" + alterRaw + "' bei Spieler: " + name).append(System.lineSeparator());
+				// Alter ist optional
 			}
 			String nat = row.select("td:nth-of-type(5) img").attr("title").trim();
 			String mwText = row.select("td:nth-of-type(6)").text().trim();
@@ -223,9 +265,6 @@ public class TmDePlayerFinder {
 			if (!clubMatch)
 				continue;
 
-			// In der Methode searchPlayerSinglePass, ersetzen Sie die Name-Prüfung (um
-			// Zeile 170):
-
 			String tmName = p.getString("name");
 			boolean nameMatch = false;
 
@@ -235,29 +274,29 @@ public class TmDePlayerFinder {
 
 			// Verbesserte Name-Matching-Logik:
 			if (nameInput.equalsIgnoreCase(tmName)) {
-			    nameMatch = true;
+				nameMatch = true;
 			} else if (PlayerHelper.containsSubstringMatch(PlayerHelper.normalizeName(nameInput), PlayerHelper.normalizeName(tmName))) {
-			    // Teilvergleich: "Ben Seghir" in "Eliesse Ben Seghir"
-			    nameMatch = true;
+				// Teilvergleich: "Ben Seghir" in "Eliesse Ben Seghir"
+				nameMatch = true;
 			} else {
-			    // Nur Initial-basierte Übereinstimmung zulassen, wenn der TM-Nachname kürzer oder gleich ist
-			    if (tmLastName.length() <= dbLastName.length()) {
-			        nameMatch = PlayerHelper.namesMatchWithInitial(nameInput, tmName) || PlayerHelper.namesMatchWithInitial(tmName, nameInput);
-			    }
+				// Nur Initial-basierte Übereinstimmung zulassen, wenn der TM-Nachname kürzer oder gleich ist
+				if (tmLastName.length() <= dbLastName.length()) {
+					nameMatch = PlayerHelper.namesMatchWithInitial(nameInput, tmName) || PlayerHelper.namesMatchWithInitial(tmName, nameInput);
+				}
 			}
 
 			// Zusätzliche Sicherheitsregel: Wenn der Transfermarkt-Name LÄNGER ist als der Datenbank-Name
 			if (!nameMatch && tmName.length() > nameInput.length()) {
-			    boolean isValidInitialCase = false;
-			    
-			    // dbLastName ist hier nun wieder im Scope und fehlerfrei erreichbar:
-			    if (tmName.contains(dbLastName) && tmName.length() > dbLastName.length()) {
-			        isValidInitialCase = true;
-			    }
+				boolean isValidInitialCase = false;
 
-			    if (!isValidInitialCase) {
-			        nameMatch = false;
-			    }
+				// dbLastName ist hier nun wieder im Scope und fehlerfrei erreichbar:
+				if (tmName.contains(dbLastName) && tmName.length() > dbLastName.length()) {
+					isValidInitialCase = true;
+				}
+
+				if (!isValidInitialCase) {
+					nameMatch = false;
+				}
 			}
 
 			boolean vornameEntfernt = false;
@@ -293,7 +332,7 @@ public class TmDePlayerFinder {
 	}
 
 	/**
-	 * Konvertiert einen Transfermarkt-Marktwert-String (z. B. „1,00 Mio. €“ oder
+	 * Konvertiert einen Transfermarkt-Marktwert-String (z. B. „1,00 Mio. €“ oder
 	 * „100 Tsd. €“) in eine Long-Zahl in Euro. Falls kein Marktwert vorhanden ist
 	 * („-“), wird {@code 0} zurückgegeben.
 	 *
@@ -318,24 +357,23 @@ public class TmDePlayerFinder {
 		try {
 			Thread.sleep(waitingTime);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			Thread.currentThread().interrupt();
 		}
 	}
 
 	/**
 	 * Extrahiert den Nachnamen aus einem gegebenen Namen
 	 * 
-	 * @param fullName Vollständiger Name (z.B. "R. Adam", "Thomas Sborn")
-	 * @return Extrahierter Nachname (z.B. "Adam", "Sborn")
+	 * @param fullName Vollständiger Name (z.B. "R.Müller", "Thomas Sborn")
+	 * @return Extrahierter Nachname (z.B. "Müller", "Sborn")
 	 */
 	private static String extractLastName(String fullName) {
 		if (fullName == null || fullName.isEmpty()) {
 			return "";
 		}
 
-		// Entferne Initialen mit Punkt (z.B. "R. Adam" → "Adam")
-		String withoutInitial = fullName.replaceAll("^[A-Z]\\.\\s*", "");
+		// Entferne Initialen mit Punkt (z.B. "R.Müller" → "Müller")
+		String withoutInitial = fullName.replaceAll("^[A-Za-z]\\.\\s*", "");
 
 		// Wenn der Name nur einen Teil hat, gib ihn zurück
 		if (withoutInitial.isEmpty()) {
@@ -352,8 +390,8 @@ public class TmDePlayerFinder {
 	/**
 	 * Erstellt einen initialenbasierten Namen für die Suche
 	 * 
-	 * @param fullName Vollständiger Name (z.B. "R. Adam", "Thomas Sborn")
-	 * @return Initial+basierten Namen (z.B. "r adam", "t sborn")
+	 * @param fullName Vollständiger Name (z.B. "R.Müller", "Thomas Sborn")
+	 * @return Initial+basierten Namen (z.B. "r müller", "t sborn")
 	 */
 	private static String extractInitialBasedName(String fullName) {
 		if (fullName == null || fullName.isEmpty()) {
@@ -379,7 +417,7 @@ public class TmDePlayerFinder {
 
 	/**
 	 * Transliteriert einen Namen für verschiedene Schriftzeichen Konvertiert z.B.
-	 * "İ" → "I", "ğ" → "g", "ş" → "s", "ç" → "c", "ö" → "o", "ü" → "u"
+	 * "İ"" → "I", "ğ" → "g", "ş" → "s", "ç" → "c", "ö" → "o", "ü" → "u"
 	 * 
 	 * @param name Name mit potenziellen Transliterationsproblemen
 	 * @return Transliterierter Name
