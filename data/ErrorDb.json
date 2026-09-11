@@ -3759,6 +3759,11 @@
       "timestamp": "2026-09-11T14:07:27.763421900Z"
     },
     {
+      "errorType": "ESPN_PLAYER_MAPPER",
+      "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: Andrik Markgraf, DB-Name: Markgraf",
+      "timestamp": "2026-09-11T14:28:06.594487900Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "ESPN_PLAYER_MAPPER",
