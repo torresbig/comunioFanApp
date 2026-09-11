@@ -3824,6 +3824,11 @@
       "timestamp": "2026-09-11T14:28:06.594487900Z"
     },
     {
+      "errorType": "ESPN_PLAYER_MAPPER",
+      "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: Niklas Lomb, DB-Name: Lomb",
+      "timestamp": "2026-09-11T14:28:34.487747300Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "ESPN_PLAYER_MAPPER",
