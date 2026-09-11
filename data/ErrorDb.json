@@ -3028,6 +3028,11 @@
       "timestamp": "2026-09-11T14:27:51.943188800Z"
     },
     {
+      "errorType": "ESPN_PLAYER_MAPPER",
+      "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: Tom Rothe, DB-Name: Rothe",
+      "timestamp": "2026-09-11T14:28:02.274887500Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
