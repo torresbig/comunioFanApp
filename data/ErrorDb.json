@@ -3260,6 +3260,11 @@
       "timestamp": "2026-09-11T13:02:06.962163071Z"
     },
     {
+      "errorType": "ESPN_PLAYER_MAPPER",
+      "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: Carl Klaus, DB-Name: Klaus",
+      "timestamp": "2026-09-11T14:27:47.459117500Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "ESPN_PLAYER_MAPPER",
