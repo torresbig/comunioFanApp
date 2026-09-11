@@ -3498,6 +3498,11 @@
       "timestamp": "2026-09-11T14:07:41.627924300Z"
     },
     {
+      "errorType": "ESPN_PLAYER_MAPPER",
+      "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: Michel Aebischer, DB-Name: Aebischer",
+      "timestamp": "2026-09-11T14:28:14.058693800Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "ESPN_PLAYER_MAPPER",
