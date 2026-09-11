@@ -3177,6 +3177,11 @@
       "timestamp": "2026-09-11T08:02:38.722617830Z"
     },
     {
+      "errorType": "ESPN_PLAYER_MAPPER",
+      "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: Derrick Köhn, DB-Name: Köhn",
+      "timestamp": "2026-09-11T14:27:58.084560400Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
