@@ -3663,6 +3663,11 @@
       "timestamp": "2026-09-11T14:07:18.164781Z"
     },
     {
+      "errorType": "ESPN_PLAYER_MAPPER",
+      "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: Janik Haberer, DB-Name: Haberer",
+      "timestamp": "2026-09-11T14:28:08.768498Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
