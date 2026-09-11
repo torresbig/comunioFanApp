@@ -1,5 +1,15 @@
-{"2026-09-11": [{
-  "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-  "message": "Fehler bei Seite: 1 mit Name: Etse\r\nFehler bei Seite: 2 mit Name: Etse\r\nBot-Schutz-Sperre erreicht, weitere Seiten-Suchen übersprungen.\r\nKein passender Spieler gefunden für: Etse / Eintracht Frankfurt.\r\n",
-  "timestamp": "2026-09-11T20:29:39.477831400Z"
-}]}
+{"2026-09-11": [
+  {
+    "methode": "",
+    "acception": "",
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: Etse\r\nFehler bei Seite: 2 mit Name: Etse\r\nBot-Schutz-Sperre erreicht, weitere Seiten-Suchen übersprungen.\r\nKein passender Spieler gefunden für: Etse / Eintracht Frankfurt.\r\n",
+    "url": "",
+    "timestamp": "2026-09-11T20:29:39.477831400Z"
+  },
+  {
+    "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
+    "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
+    "timestamp": "2026-09-11T20:34:01.905919Z"
+  }
+]}
