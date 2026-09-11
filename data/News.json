@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "11.09.2026 01:40:13",
+  "lastUpdate": "11.09.2026 22:30:08",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -10519,6 +10519,43 @@
           "text": "Statuswechsel: Tabaković (34047) ist wieder AKTIV",
           "id": "0",
           "playerId": "34047"
+        }
+      ]
+    },
+    {
+      "date": "11.09.2026",
+      "news": [
+        {
+          "date": "11.09.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Etse (ID: 34525)",
+          "id": "0",
+          "playerId": "34525"
+        },
+        {
+          "date": "11.09.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Chaïbi\",\"price\":3554500,\"buyerId\":\"9317431\",\"playerValue\":3300000,\"playerId\":\"33856\",\"buyer\":\"Andi\"}",
+          "id": "966078655",
+          "playerId": "33856"
+        },
+        {
+          "date": "11.09.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Hack\",\"price\":3610000,\"buyerId\":\"1\",\"playerValue\":3610000,\"playerId\":\"32787\",\"buyer\":\"Computer\"}",
+          "id": "966078655",
+          "playerId": "32787"
+        },
+        {
+          "date": "11.09.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Khedira\",\"price\":2290000,\"buyerId\":\"1\",\"playerValue\":2290000,\"playerId\":\"32073\",\"buyer\":\"Computer\"}",
+          "id": "966078655",
+          "playerId": "32073"
         }
       ]
     },
