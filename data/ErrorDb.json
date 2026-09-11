@@ -3581,6 +3581,11 @@
     },
     {
       "errorType": "ESPN_PLAYER_MAPPER",
+      "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: András Schäfer, DB-Name: Schäfer",
+      "timestamp": "2026-09-11T14:28:16.206532700Z"
+    },
+    {
+      "errorType": "ESPN_PLAYER_MAPPER",
       "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: Carl Klaus, DB-Name: Klaus",
       "timestamp": "2026-09-11T14:27:47.459117500Z"
     },
