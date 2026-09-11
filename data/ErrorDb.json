@@ -3089,6 +3089,11 @@
       "timestamp": "2026-09-11T14:06:56.416761800Z"
     },
     {
+      "errorType": "ESPN_PLAYER_MAPPER",
+      "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: Leopold Querfeld, DB-Name: Querfeld",
+      "timestamp": "2026-09-11T14:28:04.277087800Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
