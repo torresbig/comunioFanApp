@@ -3023,6 +3023,11 @@
   ],
   "2026-09-11": [
     {
+      "errorType": "ESPN_PLAYER_MAPPER",
+      "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: Christopher Trimmel, DB-Name: Trimmel",
+      "timestamp": "2026-09-11T14:27:51.943188800Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
