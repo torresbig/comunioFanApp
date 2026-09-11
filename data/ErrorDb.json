@@ -3293,6 +3293,11 @@
       "timestamp": "2026-09-11T08:03:28.490424316Z"
     },
     {
+      "errorType": "ESPN_PLAYER_MAPPER",
+      "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: Oliver Burke, DB-Name: Burke",
+      "timestamp": "2026-09-11T14:28:22.423642300Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
