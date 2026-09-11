@@ -3457,6 +3457,11 @@
       "timestamp": "2026-09-11T14:07:29.607352600Z"
     },
     {
+      "errorType": "ESPN_PLAYER_MAPPER",
+      "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: Felix Uduokhai, DB-Name: Uduokhai",
+      "timestamp": "2026-09-11T14:27:56.055244400Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "ESPN_PLAYER_MAPPER",
