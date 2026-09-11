@@ -3399,6 +3399,11 @@
       "timestamp": "2026-09-10T23:29:47.932487300Z"
     },
     {
+      "errorType": "ESPN_PLAYER_MAPPER",
+      "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: Linus Güther, DB-Name: Güther",
+      "timestamp": "2026-09-11T14:28:28.291482800Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "ESPN_PLAYER_MAPPER",
