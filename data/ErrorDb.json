@@ -3679,6 +3679,11 @@
       "timestamp": "2026-09-11T08:04:07.186407113Z"
     },
     {
+      "errorType": "ESPN_PLAYER_MAPPER",
+      "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: Mekhi Anthony Gray, DB-Name: Gray",
+      "timestamp": "2026-09-11T14:28:30.033471200Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
