@@ -3123,6 +3123,11 @@
       "timestamp": "2026-09-11T14:27:45.508036Z"
     },
     {
+      "errorType": "ESPN_PLAYER_MAPPER",
+      "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: Tim Skarke, DB-Name: Skarke",
+      "timestamp": "2026-09-11T14:28:12.577086900Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
