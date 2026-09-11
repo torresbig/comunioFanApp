@@ -3497,6 +3497,11 @@
       "timestamp": "2026-09-11T13:03:49.433250806Z"
     },
     {
+      "errorType": "ESPN_PLAYER_MAPPER",
+      "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: Josip Juranovic, DB-Name: Juranović",
+      "timestamp": "2026-09-11T14:27:53.866215900Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
