@@ -3073,6 +3073,11 @@
       "timestamp": "2026-09-11T08:01:50.370409313Z"
     },
     {
+      "errorType": "ESPN_PLAYER_MAPPER",
+      "message": "KONTROLLE! ESPN-Update: Spielername nur Nachname in DB, aber Nachname + Vorname in ESPN. ESPN-Name: Andrej Ilic, DB-Name: Ilić",
+      "timestamp": "2026-09-11T14:28:24.428640Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "ESPN_PLAYER_MAPPER",
