@@ -1,12 +1,23 @@
 {"2026-09-12": [
   {
+    "methode": "",
+    "acception": "",
     "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
     "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
+    "url": "",
     "timestamp": "2026-09-12T03:15:14.936001586Z"
   },
   {
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: Mahmoud\nFehler bei Seite: 2 mit Name: Mahmoud\nFehler bei Seite: 3 mit Name: Mahmoud\nFehler bei Seite: 4 mit Name: Mahmoud\nFehler bei Seite: 5 mit Name: Mahmoud\nFehler bei Seite: 1 mit Name: mahmoud\nFehler bei Seite: 2 mit Name: mahmoud\nFehler bei Seite: 3 mit Name: mahmoud\nFehler bei Seite: 4 mit Name: mahmoud\nFehler bei Seite: 5 mit Name: mahmoud\nKein passender Spieler gefunden für: Mahmoud / SV Elversberg.\n",
+    "timestamp": "2026-09-12T08:00:53.790573428Z"
+  },
+  {
+    "methode": "",
+    "acception": "",
     "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
     "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
+    "url": "",
     "timestamp": "2026-09-12T03:15:12.714919019Z"
   }
 ]}
