@@ -1,127 +1,207 @@
 {"2026-09-13": [
   {
-    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Benjamin\nFehler bei Seite: 2 mit Name: Benjamin\nFehler bei Seite: 3 mit Name: Benjamin\nFehler bei Seite: 4 mit Name: Benjamin\nFehler bei Seite: 5 mit Name: Benjamin\nFehler bei Seite: 1 mit Name: benjamin\nFehler bei Seite: 2 mit Name: benjamin\nFehler bei Seite: 3 mit Name: benjamin\nFehler bei Seite: 4 mit Name: benjamin\nFehler bei Seite: 5 mit Name: benjamin\nKein passender Spieler gefunden für: Benjamin / TSG Hoffenheim.\n",
-    "timestamp": "2026-09-13T20:02:11.398525437Z"
+    "errorType": "ESPN_PLAYER_INTEGRATOR",
+    "message": "integrateAllPlayers: [Frederik Ronnow (ESPN-ID: 165424, ESPN-Verein: 598), Carl Klaus (ESPN-ID: 221460, ESPN-Verein: 598), Matheo Raab (ESPN-ID: 238706, ESPN-Verein: 598), Fritz Gagzow (ESPN-ID: 3131188, ESPN-Verein: 598), Christopher Trimmel (ESPN-ID: 146485, ESPN-Verein: 598), Marvin Friedrich (ESPN-ID: 202642, ESPN-Verein: 598), Josip Juranovic (ESPN-ID: 222567, ESPN-Verein: 598), Felix Uduokhai (ESPN-ID: 233499, ESPN-Verein: 598), Derrick Köhn (ESPN-ID: 263202, ESPN-Verein: 598), Stanley N'Soki (ESPN-ID: 268808, ESPN-Verein: 598), Zeno Van Den Bosch (ESPN-ID: 314184, ESPN-Verein: 598), Tom Rothe (ESPN-ID: 324269, ESPN-Verein: 598), Leopold Querfeld (ESPN-ID: 330455, ESPN-Verein: 598), Andrik Markgraf (ESPN-ID: 406371, ESPN-Verein: 598), Rani Khedira (ESPN-ID: 159152, ESPN-Verein: 598), Janik Haberer (ESPN-ID: 170604, ESPN-Verein: 598), Robert Skov (ESPN-ID: 218596, ESPN-Verein: 598), Tim Skarke (ESPN-ID: 220796, ESPN-Verein: 598), Michel Aebischer (ESPN-ID: 245623, ESPN-Verein: 598), Jeong Woo-Yeong (ESPN-ID: 276323, ESPN-Verein: 598), András Schäfer (ESPN-ID: 284702, ESPN-Verein: 598), Kastriot Imeri (ESPN-ID: 289527, ESPN-Verein: 598), Aljoscha Kemlein (ESPN-ID: 349922, ESPN-Verein: 598), Duje Sliskovic (ESPN-ID: 413775, ESPN-Verein: 598), Julien Piet Friedrich (ESPN-ID: 3101887, ESPN-Verein: 598), Oliver Burke (ESPN-ID: 212478, ESPN-Verein: 598), Emmanuel Latte Lath (ESPN-ID: 242439, ESPN-Verein: 598), Marin Ljubicic (ESPN-ID: 322098, ESPN-Verein: 598), Andrej Ilic (ESPN-ID: 341441, ESPN-Verein: 598), Livan Burcu (ESPN-ID: 366823, ESPN-Verein: 598), Linus Güther (ESPN-ID: 421735, ESPN-Verein: 598), Mekhi Anthony Gray (ESPN-ID: 3113344, ESPN-Verein: 598), Janis Blaswich (ESPN-ID: 161825, ESPN-Verein: 131), Niklas Lomb (ESPN-ID: 175069, ESPN-Verein: 131), Mark Flekken (ESPN-ID: 177821, ESPN-Verein: 131), Lucas Vázquez (ESPN-ID: 174967, ESPN-Verein: 131), Facundo Medina (ESPN-ID: 249663, ESPN-Verein: 131), Edmond Tapsoba (ESPN-ID: 257287, ESPN-Verein: 131), Miguel Gutiérrez (ESPN-ID: 290044, ESPN-Verein: 131), Jarell Quansah (ESPN-ID: 298524, ESPN-Verein: 131), Loïc Badé (ESPN-ID: 300410, ESPN-Verein: 131), Tim Oermann (ESPN-ID: 346376, ESPN-Verein: 131), Guela Doué (ESPN-ID: 346636, ESPN-Verein: 131), Jonas Hofmann (ESPN-ID: 174617, ESPN-Verein: 131), Robert Andrich (ESPN-ID: 180998, ESPN-Verein: 131), Aleix García (ESPN-ID: 219294, ESPN-Verein: 131), Malik Tillman (ESPN-ID: 301416, ESPN-Verein: 131), Ibrahim Maza (ESPN-ID: 361212, ESPN-Verein: 131), Ezequiel Fernández (ESPN-ID: 364080, ESPN-Verein: 131), Kennet Eichhorn (ESPN-ID: 408246, ESPN-Verein: 131), Montrell Culbreath (ESPN-ID: 408703, ESPN-Verein: 131), Patrik Schick (ESPN-ID: 212330, ESPN-Verein: 131), Martin Terrier (ESPN-ID: 241662, ESPN-Verein: 131), Nathan Tella (ESPN-ID: 263134, ESPN-Verein: 131), Moussa Diaby (ESPN-ID: 270670, ESPN-Verein: 131), Victor Boniface (ESPN-ID: 287276, ESPN-Verein: 131), Eliesse Ben Seghir (ESPN-ID: 346947, ESPN-Verein: 131), Afonso Moreira (ESPN-ID: 361258, ESPN-Verein: 131), Christian Kofane (ESPN-ID: 398709, ESPN-Verein: 131), Manuel Neuer (ESPN-ID: 84774, ESPN-Verein: 132), Sven Ulreich (ESPN-ID: 113733, ESPN-Verein: 132), Jonas Urbig (ESPN-ID: 323790, ESPN-Verein: 132), Hiroki Ito (ESPN-ID: 97111, ESPN-Verein: 132), Nathaniel Brown (ESPN-ID: 120829, ESPN-Verein: 132), Kim Min-Jae (ESPN-ID: 157688, ESPN-Verein: 132), Jonathan Tah (ESPN-ID: 188052, ESPN-Verein: 132), Dayot Upamecano (ESPN-ID: 222793, ESPN-Verein: 132), Alphonso Davies (ESPN-ID: 236721, ESPN-Verein: 132), Josip Stanisic (ESPN-ID: 276329, ESPN-Verein: 132), Sacha Boey (ESPN-ID: 287225, ESPN-Verein: 132), Konrad Laimer (ESPN-ID: 169189, ESPN-Verein: 132), Joshua Kimmich (ESPN-ID: 190161, ESPN-Verein: 132), Michael Olise (ESPN-ID: 286831, ESPN-Verein: 132), Jamal Musiala (ESPN-ID: 303821, ESPN-Verein: 132), Ismael Saibari (ESPN-ID: 304572, ESPN-Verein: 132), Tom Bischof (ESPN-ID: 324660, ESPN-Verein: 132), Aleksandar Pavlović (ESPN-ID: 359370, ESPN-Verein: 132), Lennart Karl (ESPN-ID: 402841, ESPN-Verein: 132), David Daiber (ESPN-ID: 405585, ESPN-Verein: 132), Bara Sapoko Ndiaye (ESPN-ID: 409016, ESPN-Verein: 132), Maycon Cardozo (ESPN-ID: 417373, ESPN-Verein: 132), Harry Kane (ESPN-ID: 142200, ESPN-Verein: 132), Serge Gnabry (ESPN-ID: 178980, ESPN-Verein: 132), Luis Díaz (ESPN-ID: 257390, ESPN-Verein: 132), Patrick Drewes (ESPN-ID: 174521, ESPN-Verein: 124), Alexander Meyer (ESPN-ID: 178380, ESPN-Verein: 124), Gregor Kobel (ESPN-ID: 238544, ESPN-Verein: 124), Silas Ostrzinski (ESPN-ID: 331297, ESPN-Verein: 124), Ramy Bensebaini (ESPN-ID: 220703, ESPN-Verein: 124), Waldemar Anton (ESPN-ID: 220714, ESPN-Verein: 124), Julian Ryerson (ESPN-ID: 222991, ESPN-Verein: 124), Nico Schlotterbeck (ESPN-ID: 286828, ESPN-Verein: 124), Daniel Svensson (ESPN-ID: 310709, ESPN-Verein: 124), Kouakou Gadou (ESPN-ID: 371500, ESPN-Verein: 124), Filippo Mané (ESPN-ID: 387437, ESPN-Verein: 124), Kauã Prates (ESPN-ID: 399455, ESPN-Verein: 124), Luca Reggiani (ESPN-ID: 413817, ESPN-Verein: 124), Miguel Adje (ESPN-ID: 414315, ESPN-Verein: 124), Jan-Luca Riedl (ESPN-ID: 3102556, ESPN-Verein: 124), Emre Can (ESPN-ID: 159142, ESPN-Verein: 124), Marcel Sabitzer (ESPN-ID: 173907, ESPN-Verein: 124), Joey Veerman (ESPN-ID: 240912, ESPN-Verein: 124), Felix Nmecha (ESPN-ID: 281122, ESPN-Verein: 124), Carney Chukwuemeka (ESPN-ID: 294317, ESPN-Verein: 124), Giannis Konstantelias (ESPN-ID: 311428, ESPN-Verein: 124), Jobe Bellingham (ESPN-ID: 324820, ESPN-Verein: 124), Ethan Nwaneri (ESPN-ID: 349733, ESPN-Verein: 124), Konstantinos Karetsas (ESPN-ID: 357801, ESPN-Verein: 124), Justin Lerma (ESPN-ID: 383070, ESPN-Verein: 124), Enzo De Pina Duarte Dos Santos (ESPN-ID: 401450, ESPN-Verein: 124), Mussa Kaba (ESPN-ID: 403933, ESPN-Verein: 124), Serhou Guirassy (ESPN-ID: 186381, ESPN-Verein: 124), Maximilian Beier (ESPN-ID: 290639, ESPN-Verein: 124), Fábio Silva (ESPN-ID: 291629, ESPN-Verein: 124), Mathis Albert (ESPN-ID: 403781, ESPN-Verein: 124), Samuele Inácio (ESPN-ID: 403833, ESPN-Verein: 124), Tobias Sippel (ESPN-ID: 122273, ESPN-Verein: 268), Daniel Batz (ESPN-ID: 149297, ESPN-Verein: 268), Moritz Nicolas (ESPN-ID: 238536, ESPN-Verein: 268), Jan Olschowsky (ESPN-ID: 304631, ESPN-Verein: 268), Kevin Diks (ESPN-ID: 206863, ESPN-Verein: 268), Kou Itakura (ESPN-ID: 238033, ESPN-Verein: 268), Daiki Hashioka (ESPN-ID: 256966, ESPN-Verein: 268), Joe Scally (ESPN-ID: 272135, ESPN-Verein: 268), Yukhym Konoplia (ESPN-ID: 276082, ESPN-Verein: 268), Fabio Chiarodia (ESPN-ID: 323061, ESPN-Verein: 268), David Herold (ESPN-ID: 345873, ESPN-Verein: 268), Lukas Ullrich (ESPN-ID: 346617, ESPN-Verein: 268), Jan Leszczynski (ESPN-ID: 384410, ESPN-Verein: 268), Kevin Stöger (ESPN-ID: 175006, ESPN-Verein: 268), Franck Honorat (ESPN-ID: 196029, ESPN-Verein: 268), Florian Neuhaus (ESPN-ID: 238527, ESPN-Verein: 268), Robin Hack (ESPN-ID: 258876, ESPN-Verein: 268), Philipp Sander (ESPN-ID: 275805, ESPN-Verein: 268), Jens Castrop (ESPN-ID: 304793, ESPN-Verein: 268), Hugo Bolin (ESPN-ID: 330239, ESPN-Verein: 268), Zento Uno (ESPN-ID: 341707, ESPN-Verein: 268), Enzo Leopold (ESPN-ID: 343990, ESPN-Verein: 268), Mathieu Nguefack (ESPN-ID: 403898, ESPN-Verein: 268), Wael Mohya (ESPN-ID: 408539, ESPN-Verein: 268), Fritz Fleck (ESPN-ID: 415726, ESPN-Verein: 268), Tim Kleindienst (ESPN-ID: 185906, ESPN-Verein: 268), Isac Lidberg (ESPN-ID: 221690, ESPN-Verein: 268), Nicolas Kühn (ESPN-ID: 260262, ESPN-Verein: 268), Shuto Machino (ESPN-ID: 271352, ESPN-Verein: 268), Iaia Manco Danfa (ESPN-ID: 3116071, ESPN-Verein: 268), Jens Grahl (ESPN-ID: 122396, ESPN-Verein: 125), Noah Atubolu (ESPN-ID: 321064, ESPN-Verein: 125), Kauã Santos (ESPN-ID: 338950, ESPN-Verein: 125), Amil Siljevic (ESPN-ID: 397160, ESPN-Verein: 125), Timothy Chandler (ESPN-ID: 128521, ESPN-Verein: 125), Robin Koch (ESPN-ID: 208285, ESPN-Verein: 125), Lilian Brassier (ESPN-ID: 290141, ESPN-Verein: 125), Nnamdi Collins (ESPN-ID: 305556, ESPN-Verein: 125), Keita Kosugi (ESPN-ID: 371596, ESPN-Verein: 125), Elias Baum (ESPN-ID: 372788, ESPN-Verein: 125), Otávio (ESPN-ID: 402890, ESPN-Verein: 125), Jeremiaha Maluze (ESPN-ID: 406374, ESPN-Verein: 125), Julian Etse (ESPN-ID: 408339, ESPN-Verein: 125), Mario Götze (ESPN-ID: 143020, ESPN-Verein: 125), Ritsu Doan (ESPN-ID: 219627, ESPN-Verein: 125), Raphael Onyedika (ESPN-ID: 320882, ESPN-Verein: 125), Farès Chaïbi (ESPN-ID: 337306, ESPN-Verein: 125), Noël Aséko (ESPN-ID: 352179, ESPN-Verein: 125), Can Uzun (ESPN-ID: 355369, ESPN-Verein: 125), Oscar Højlund (ESPN-ID: 365997, ESPN-Verein: 125), Love Arrhov (ESPN-ID: 399423, ESPN-Verein: 125), Jessic Ngankam (ESPN-ID: 266659, ESPN-Verein: 125), Jonathan Burkardt (ESPN-ID: 274887, ESPN-Verein: 125), Ansgar Knauff (ESPN-ID: 305555, ESPN-Verein: 125), Younes Ebnoutalib (ESPN-ID: 359793, ESPN-Verein: 125), Ayoube Amaimouni (ESPN-ID: 416636, ESPN-Verein: 125), Malik Pimpong (ESPN-ID: 418030, ESPN-Verein: 125), Finn Dahmen (ESPN-ID: 228507, ESPN-Verein: 3841), Nediljko Labrovic (ESPN-ID: 322693, ESPN-Verein: 3841), Tom Wisbereit (ESPN-ID: 422096, ESPN-Verein: 3841), Jeffrey Gouweleeuw (ESPN-ID: 140624, ESPN-Verein: 3841), Marius Wolf (ESPN-ID: 207623, ESPN-Verein: 3841), Chrislain Matsima (ESPN-ID: 297165, ESPN-Verein: 3841), Seol Young-Woo (ESPN-ID: 302793, ESPN-Verein: 3841), Calvin Brackelmann (ESPN-ID: 345106, ESPN-Verein: 3841), Juma Bah (ESPN-ID: 370703, ESPN-Verein: 3841), Noahkai Banks (ESPN-ID: 376514, ESPN-Verein: 3841), Hennes Behrens (ESPN-ID: 399214, ESPN-Verein: 3841), Alexis Claude-Maurice (ESPN-ID: 228503, ESPN-Verein: 3841), Yannik Keitel (ESPN-ID: 266657, ESPN-Verein: 3841), Han-Noah Massengo (ESPN-ID: 282885, ESPN-Verein: 3841), Robin Fellhauer (ESPN-ID: 306928, ESPN-Verein: 3841), Fabian Rieder (ESPN-ID: 308908, ESPN-Verein: 3841), Tim Breithaupt (ESPN-ID: 309634, ESPN-Verein: 3841), Arijon Ibrahimovic (ESPN-ID: 333400, ESPN-Verein: 3841), Anton Kade (ESPN-ID: 333837, ESPN-Verein: 3841), Mert Kömür (ESPN-ID: 359207, ESPN-Verein: 3841), Klaus Suso (ESPN-ID: 373992, ESPN-Verein: 3841), Tim Schnitzer (ESPN-ID: 416416, ESPN-Verein: 3841), Michael Gregoritsch (ESPN-ID: 146804, ESPN-Verein: 3841), Steve Mounié (ESPN-ID: 192672, ESPN-Verein: 3841), Rodrigo Ribeiro (ESPN-ID: 332689, ESPN-Verein: 3841), Faik Sakar (ESPN-ID: 397212, ESPN-Verein: 3841), Uchenna Ogundu (ESPN-ID: 406851, ESPN-Verein: 3841), Ron-Robert Zieler (ESPN-ID: 121007, ESPN-Verein: 122), Marvin Schwäbe (ESPN-ID: 205751, ESPN-Verein: 122), Matthias Köbbing (ESPN-ID: 258973, ESPN-Verein: 122), Martin James (ESPN-ID: 415149, ESPN-Verein: 122), Luka Lochoshvili (ESPN-ID: 222477, ESPN-Verein: 122), Borna Sosa (ESPN-ID: 228319, ESPN-Verein: 122), Timo Hübers (ESPN-ID: 238520, ESPN-Verein: 122), Gideon Mensah (ESPN-ID: 264484, ESPN-Verein: 122), Sebastian Sebulonsen (ESPN-ID: 302981, ESPN-Verein: 122), Rav van den Berg (ESPN-ID: 306161, ESPN-Verein: 122), Joel Schmied (ESPN-ID: 306378, ESPN-Verein: 122), Jahmai Simpson-Pusey (ESPN-ID: 357337, ESPN-Verein: 122), Ellyes Skhiri (ESPN-ID: 209595, ESPN-Verein: 122), Linton Maina (ESPN-ID: 231173, ESPN-Verein: 122), Alessio Castro-Montes (ESPN-ID: 236136, ESPN-Verein: 122), Tom Krauss (ESPN-ID: 283683, ESPN-Verein: 122), Ísak Jóhannesson (ESPN-ID: 286815, ESPN-Verein: 122), Jan Thielmann (ESPN-ID: 300444, ESPN-Verein: 122), Said El Mala (ESPN-ID: 380795, ESPN-Verein: 122), Paul Okon-Engstler (ESPN-ID: 403528, ESPN-Verein: 122), Gil Neves (ESPN-ID: 404143, ESPN-Verein: 122), Jonathan Friemel (ESPN-ID: 3114409, ESPN-Verein: 122), Luca Waldschmidt (ESPN-ID: 191352, ESPN-Verein: 122), Ragnar Ache (ESPN-ID: 255355, ESPN-Verein: 122), Thijs Dallinga (ESPN-ID: 266280, ESPN-Verein: 122), Marius Bulter (ESPN-ID: 275797, ESPN-Verein: 122), Imad Rondic (ESPN-ID: 306653, ESPN-Verein: 122), Mikey Moore (ESPN-ID: 365332, ESPN-Verein: 122), Reigan Heskey (ESPN-ID: 378369, ESPN-Verein: 122), Malek El Mala (ESPN-ID: 384155, ESPN-Verein: 122), Daniel Heuer Fernandes (ESPN-ID: 180162, ESPN-Verein: 127), Sander Tangvik (ESPN-ID: 304258, ESPN-Verein: 127), Fernando Dickes (ESPN-ID: 388681, ESPN-Verein: 127), Miro Muheim (ESPN-ID: 243626, ESPN-Verein: 127), Jordan Torunarigha (ESPN-ID: 251061, ESPN-Verein: 127), Sebastiaan Bornauw (ESPN-ID: 271130, ESPN-Verein: 127), Mario Vuskovic (ESPN-ID: 307725, ESPN-Verein: 127), Warmed Omari (ESPN-ID: 309840, ESPN-Verein: 127), David Møller Wolfe (ESPN-ID: 313361, ESPN-Verein: 127), Zakaria El Ouahdi (ESPN-ID: 325024, ESPN-Verein: 127), Joel Agyekum (ESPN-ID: 399587, ESPN-Verein: 127), Louis Lemke (ESPN-ID: 410645, ESPN-Verein: 127), Shafiq Nandja (ESPN-ID: 415376, ESPN-Verein: 127), Jason-Dean Bissi Mouelle (ESPN-ID: 3115345, ESPN-Verein: 127), Fabio Vieira (ESPN-ID: 88865, ESPN-Verein: 127), Bakery Jatta (ESPN-ID: 238542, ESPN-Verein: 127), Albert Sambi Lokonga (ESPN-ID: 268239, ESPN-Verein: 127), Nicolás Capaldo (ESPN-ID: 284835, ESPN-Verein: 127), Immanuel Pherai (ESPN-ID: 290412, ESPN-Verein: 127), Albert Grønbaek (ESPN-ID: 297750, ESPN-Verein: 127), Nicolai Remberg (ESPN-ID: 321226, ESPN-Verein: 127), Bilal Nadir (ESPN-ID: 324567, ESPN-Verein: 127), Martin Adeline (ESPN-ID: 332878, ESPN-Verein: 127), Kofi Amoako (ESPN-ID: 377704, ESPN-Verein: 127), Yussuf Poulsen (ESPN-ID: 182245, ESPN-Verein: 127), Patson Daka (ESPN-ID: 232662, ESPN-Verein: 127), Terem Moffi (ESPN-ID: 289769, ESPN-Verein: 127), Otto Stange (ESPN-ID: 376056, ESPN-Verein: 127), Alexander Røssing-Lelesiit (ESPN-ID: 384471, ESPN-Verein: 127), Kelvin Ojo (ESPN-ID: 3115342, ESPN-Verein: 127), Alexander Schwolow (ESPN-ID: 156416, ESPN-Verein: 2950), Robin Zentner (ESPN-ID: 206114, ESPN-Verein: 2950), Maximilian Kinzig (ESPN-ID: 341950, ESPN-Verein: 2950), Stefan Bell (ESPN-ID: 144620, ESPN-Verein: 2950), Danny da Costa (ESPN-ID: 154603, ESPN-Verein: 2950), Dominik Kohr (ESPN-ID: 172997, ESPN-Verein: 2950), Silvan Widmer (ESPN-ID: 175905, ESPN-Verein: 2950), Stefan Posch (ESPN-ID: 238906, ESPN-Verein: 2950), Phillipp Mwene (ESPN-ID: 239574, ESPN-Verein: 2950), Anthony Caci (ESPN-ID: 241297, ESPN-Verein: 2950), Kacper Potulski (ESPN-ID: 375371, ESPN-Verein: 2950), Fabio Gruber (ESPN-ID: 399746, ESPN-Verein: 2950), Rael-Tshimbela Nakuzola (ESPN-ID: 3121808, ESPN-Verein: 2950), Lee Jae-Sung (ESPN-ID: 134103, ESPN-Verein: 2950), Nadiem Amiri (ESPN-ID: 210818, ESPN-Verein: 2950), Lennard Maloney (ESPN-ID: 267798, ESPN-Verein: 2950), Hong Hyun-Seok (ESPN-ID: 271701, ESPN-Verein: 2950), Eric Martel (ESPN-ID: 290398, ESPN-Verein: 2950), Paul Nebel (ESPN-ID: 307282, ESPN-Verein: 2950), Sota Kawasaki (ESPN-ID: 333646, ESPN-Verein: 2950), Otto Ruoppi (ESPN-ID: 342667, ESPN-Verein: 2950), Kaishu Sano (ESPN-ID: 357030, ESPN-Verein: 2950), Sheraldo Becker (ESPN-ID: 195027, ESPN-Verein: 2950), Phillip Tietz (ESPN-ID: 234376, ESPN-Verein: 2950), Silas Katompa-Mvumpa (ESPN-ID: 279282, ESPN-Verein: 2950), Ransford-Yeboah Königsdörffer (ESPN-ID: 300961, ESPN-Verein: 2950), Benedict Hollerbach (ESPN-ID: 307515, ESPN-Verein: 2950), Alynho Haïdara (ESPN-ID: 404381, ESPN-Verein: 2950), Ørjan Nyland (ESPN-ID: 193610, ESPN-Verein: 11420), Leopold Zingerle (ESPN-ID: 200079, ESPN-Verein: 11420), Maarten Vandevoordt (ESPN-ID: 277377, ESPN-Verein: 11420), Willi Orbán (ESPN-ID: 162162, ESPN-Verein: 11420), Lukas Klostermann (ESPN-ID: 201803, ESPN-Verein: 11420), Benjamin Henrichs (ESPN-ID: 220711, ESPN-Verein: 11420), David Raum (ESPN-ID: 249548, ESPN-Verein: 11420), Ridle Baku (ESPN-ID: 258963, ESPN-Verein: 11420), Maxime Estève (ESPN-ID: 318316, ESPN-Verein: 11420), Castello Lukeba (ESPN-ID: 319100, ESPN-Verein: 11420), Max Finkgrafe (ESPN-ID: 368003, ESPN-Verein: 11420), Abdoul Koné (ESPN-ID: 384380, ESPN-Verein: 11420), Christoph Baumgartner (ESPN-ID: 274897, ESPN-Verein: 11420), Nicolas Seiwald (ESPN-ID: 305956, ESPN-Verein: 11420), Rocco Reitz (ESPN-ID: 307364, ESPN-Verein: 11420), Antonio Nusa (ESPN-ID: 319368, ESPN-Verein: 11420), Neil El Aynaoui (ESPN-ID: 323807, ESPN-Verein: 11420), Ezechiel Banzuzi (ESPN-ID: 330233, ESPN-Verein: 11420), Assan Ouédraogo (ESPN-ID: 364897, ESPN-Verein: 11420), Andrija Maksimovic (ESPN-ID: 372232, ESPN-Verein: 11420), Viggo Gebel (ESPN-ID: 388683, ESPN-Verein: 11420), Benno Kaltefleiter (ESPN-ID: 413837, ESPN-Verein: 11420), Christopher Nkunku (ESPN-ID: 222176, ESPN-Verein: 11420), Johan Bakayoko (ESPN-ID: 310131, ESPN-Verein: 11420), Rômulo (ESPN-ID: 324766, ESPN-Verein: 11420), Brajan Gruda (ESPN-ID: 357683, ESPN-Verein: 11420), Marc Guiu (ESPN-ID: 363038, ESPN-Verein: 11420), Tidiam Gomis (ESPN-ID: 366911, ESPN-Verein: 11420), Samba Konate (ESPN-ID: 413839, ESPN-Verein: 11420), Florian Müller (ESPN-ID: 122292, ESPN-Verein: 126), Jannik Huth (ESPN-ID: 224246, ESPN-Verein: 126), Mio Backhaus (ESPN-ID: 338852, ESPN-Verein: 126), Anthony Jung (ESPN-ID: 169753, ESPN-Verein: 126), Matthias Ginter (ESPN-ID: 170209, ESPN-Verein: 126), Lukas Kübler (ESPN-ID: 171701, ESPN-Verein: 126), Christian Günter (ESPN-ID: 174618, ESPN-Verein: 126), Philipp Lienhart (ESPN-ID: 219316, ESPN-Verein: 126), Philipp Treu (ESPN-ID: 364596, ESPN-Verein: 126), Max Rosenfelder (ESPN-ID: 367557, ESPN-Verein: 126), Jordy Makengo (ESPN-ID: 367558, ESPN-Verein: 126), Berkay Yilmaz (ESPN-ID: 387472, ESPN-Verein: 126), Ifechukwu Ogbus (ESPN-ID: 387474, ESPN-Verein: 126), Vincenzo Grifo (ESPN-ID: 179571, ESPN-Verein: 126), Maximilian Eggestein (ESPN-ID: 214203, ESPN-Verein: 126), Niklas Beste (ESPN-ID: 231190, ESPN-Verein: 126), Florent Muslija (ESPN-ID: 256768, ESPN-Verein: 126), Patrick Osterhage (ESPN-ID: 291203, ESPN-Verein: 126), Yuito Suzuki (ESPN-ID: 303031, ESPN-Verein: 126), Yannick Engelhardt (ESPN-ID: 337079, ESPN-Verein: 126), Rihito Yamamoto (ESPN-ID: 347980, ESPN-Verein: 126), Louey Farhat (ESPN-ID: 381471, ESPN-Verein: 126), Rouven Tarnutzer (ESPN-ID: 419274, ESPN-Verein: 126), Lucas Höler (ESPN-ID: 238525, ESPN-Verein: 126), Igor Matanovic (ESPN-ID: 310883, ESPN-Verein: 126), Keisuke Goto (ESPN-ID: 346208, ESPN-Verein: 126), Derry Scherhant (ESPN-ID: 346619, ESPN-Verein: 126), Cyriaque Irié (ESPN-ID: 390031, ESPN-Verein: 126), Mateo Zelic (ESPN-ID: 3114681, ESPN-Verein: 126), Markus Schubert (ESPN-ID: 225579, ESPN-Verein: 3307), Nahuel Nicolas Noll (ESPN-ID: 319415, ESPN-Verein: 3307), Florian Pruhs (ESPN-ID: 366362, ESPN-Verein: 3307), Felix Götze (ESPN-ID: 245940, ESPN-Verein: 3307), Marcel Hoffmeier (ESPN-ID: 291207, ESPN-Verein: 3307), Laurin Curda (ESPN-ID: 364593, ESPN-Verein: 3307), Mattes Hansen (ESPN-ID: 364892, ESPN-Verein: 3307), Jano Horst (ESPN-ID: 366370, ESPN-Verein: 3307), Nyamekye Awortwie-Grant (ESPN-ID: 367058, ESPN-Verein: 3307), Tjark Scheller (ESPN-ID: 371806, ESPN-Verein: 3307), Tristan Zobel (ESPN-ID: 401325, ESPN-Verein: 3307), Clemens Lippmann (ESPN-ID: 3098337, ESPN-Verein: 3307), Tom Baack (ESPN-ID: 220823, ESPN-Verein: 3307), Raphael Obermair (ESPN-ID: 251639, ESPN-Verein: 3307), Sebastian Klaas (ESPN-ID: 267513, ESPN-Verein: 3307), Oliver Batista Meier (ESPN-ID: 276330, ESPN-Verein: 3307), Santiago Castaneda (ESPN-ID: 338837, ESPN-Verein: 3307), Laurin Ulrich (ESPN-ID: 345394, ESPN-Verein: 3307), Timur Gayret (ESPN-ID: 364789, ESPN-Verein: 3307), Jonah Sticker (ESPN-ID: 366828, ESPN-Verein: 3307), Luka Djuric (ESPN-ID: 399219, ESPN-Verein: 3307), Niklas Mohr (ESPN-ID: 409108, ESPN-Verein: 3307), Sven Michel (ESPN-ID: 197796, ESPN-Verein: 3307), Steffen Tigges (ESPN-ID: 231764, ESPN-Verein: 3307), Rayan Philippe (ESPN-ID: 291849, ESPN-Verein: 3307), Marvin Pieringer (ESPN-ID: 312389, ESPN-Verein: 3307), Gabriel Vidovic (ESPN-ID: 323936, ESPN-Verein: 3307), Stefano Marino (ESPN-ID: 332543, ESPN-Verein: 3307), Deniz Zeitler (ESPN-ID: 386466, ESPN-Verein: 3307), Ruben Müller (ESPN-ID: 406466, ESPN-Verein: 3307), Lasse Eickel (ESPN-ID: 414361, ESPN-Verein: 3307), Albert Millgramm (ESPN-ID: 416412, ESPN-Verein: 3307), Frank Lehmann (ESPN-ID: 123772, ESPN-Verein: 10388), Tim Boss (ESPN-ID: 275817, ESPN-Verein: 10388), Nicolas Kristof (ESPN-ID: 324021, ESPN-Verein: 10388), Elias Etringer (ESPN-ID: 3113346, ESPN-Verein: 10388), Jan Gyamerah (ESPN-ID: 188031, ESPN-Verein: 10388), Maximilian Rohr (ESPN-ID: 190167, ESPN-Verein: 10388), Florian Le Joncour (ESPN-ID: 215035, ESPN-Verein: 10388), Nicholas Mickelson (ESPN-ID: 275987, ESPN-Verein: 10388), Lasse Günther (ESPN-ID: 321061, ESPN-Verein: 10388), Luca Sirch (ESPN-ID: 323882, ESPN-Verein: 10388), Felix Keidel (ESPN-ID: 340739, ESPN-Verein: 10388), Lukas Finn Pinckert (ESPN-ID: 341826, ESPN-Verein: 10388), Luis Seifert (ESPN-ID: 377481, ESPN-Verein: 10388), Luca Schnellbacher (ESPN-ID: 207335, ESPN-Verein: 10388), Amara Conde (ESPN-ID: 222614, ESPN-Verein: 10388), Lukasz Poreba (ESPN-ID: 326499, ESPN-Verein: 10388), Maurice Krattenmacher (ESPN-ID: 358496, ESPN-Verein: 10388), Noah Darvich (ESPN-ID: 372032, ESPN-Verein: 10388), Francis-Ikechukwu Onyeka (ESPN-ID: 379180, ESPN-Verein: 10388), Frederik Schmahl (ESPN-ID: 386454, ESPN-Verein: 10388), Luca Pfeiffer (ESPN-ID: 279959, ESPN-Verein: 10388), Jason Ceka (ESPN-ID: 290512, ESPN-Verein: 10388), Noel Futkeu (ESPN-ID: 306991, ESPN-Verein: 10388), Lukas Petkov (ESPN-ID: 310692, ESPN-Verein: 10388), Tom Zimmerschied (ESPN-ID: 364790, ESPN-Verein: 10388), Cole Campbell (ESPN-ID: 379024, ESPN-Verein: 10388), David Mokwa (ESPN-ID: 398004, ESPN-Verein: 10388), Raif Adam (ESPN-ID: 417336, ESPN-Verein: 10388), Kevin Müller (ESPN-ID: 149276, ESPN-Verein: 133), Loris Karius (ESPN-ID: 165764, ESPN-Verein: 133), Johannes Siebeking (ESPN-ID: 408247, ESPN-Verein: 133), Timo Becker (ESPN-ID: 169481, ESPN-Verein: 133), Robin Gosens (ESPN-ID: 198087, ESPN-Verein: 133), Nikola Katic (ESPN-ID: 220538, ESPN-Verein: 133), Maximilian Wöber (ESPN-ID: 231674, ESPN-Verein: 133), Hasan Kurucay (ESPN-ID: 246560, ESPN-Verein: 133), Adrian Gantenbein (ESPN-ID: 326766, ESPN-Verein: 133), Vitalie Becker (ESPN-ID: 386465, ESPN-Verein: 133), Mert Can Ayhan (ESPN-ID: 403400, ESPN-Verein: 133), Janik Bachmann (ESPN-ID: 205916, ESPN-Verein: 133), Finn Porath (ESPN-ID: 221671, ESPN-Verein: 133), Ron Schallenberg (ESPN-ID: 253816, ESPN-Verein: 133), Dejan Ljubicic (ESPN-ID: 262862, ESPN-Verein: 133), Junior Dina Ebimbe (ESPN-ID: 287645, ESPN-Verein: 133), Adil Aouchiche (ESPN-ID: 290166, ESPN-Verein: 133), Satoshi Tanaka (ESPN-ID: 297565, ESPN-Verein: 133), Soufian El-Faouzi (ESPN-ID: 318343, ESPN-Verein: 133), Luca Vozar (ESPN-ID: 414334, ESPN-Verein: 133), Moussa Sylla (ESPN-ID: 40791, ESPN-Verein: 133), Edin Dzeko (ESPN-ID: 102337, ESPN-Verein: 133), Kenan Karaman (ESPN-ID: 188057, ESPN-Verein: 133), Hwang Hee-Chan (ESPN-ID: 237224, ESPN-Verein: 133), Bryan Lasme (ESPN-ID: 250866, ESPN-Verein: 133), Junior Adamu (ESPN-ID: 305957, ESPN-Verein: 133), Emil Höjlund (ESPN-ID: 332429, ESPN-Verein: 133), Oliver Baumann (ESPN-ID: 138213, ESPN-Verein: 7911), Luca Philipp (ESPN-ID: 304795, ESPN-Verein: 7911), Lúkas Petersson (ESPN-ID: 364646, ESPN-Verein: 7911), Vladimír Coufal (ESPN-ID: 191209, ESPN-Verein: 7911), Bernardo (ESPN-ID: 218980, ESPN-Verein: 7911), Koki Machida (ESPN-ID: 238025, ESPN-Verein: 7911), Ozan Kabak (ESPN-ID: 266565, ESPN-Verein: 7911), Valentin Gendrey (ESPN-ID: 277301, ESPN-Verein: 7911), Albian Hajdari (ESPN-ID: 307567, ESPN-Verein: 7911), Arthur Chaves (ESPN-ID: 319530, ESPN-Verein: 7911), Alexander Prass (ESPN-ID: 320939, ESPN-Verein: 7911), Robin Hranác (ESPN-ID: 322510, ESPN-Verein: 7911), Mats Rots (ESPN-ID: 359744, ESPN-Verein: 7911), Natnael Abraha (ESPN-ID: 403802, ESPN-Verein: 7911), Sean Dulic (ESPN-ID: 3098291, ESPN-Verein: 7911), Tristan Spranger (ESPN-ID: 3111131, ESPN-Verein: 7911), Wouter Burger (ESPN-ID: 274860, ESPN-Verein: 7911), Patrick Wimmer (ESPN-ID: 300095, ESPN-Verein: 7911), Bambasé Conté (ESPN-ID: 336355, ESPN-Verein: 7911), Leon Avdullahu (ESPN-ID: 362590, ESPN-Verein: 7911), Luis Engelns (ESPN-ID: 383188, ESPN-Verein: 7911), Nathan De Cat (ESPN-ID: 386884, ESPN-Verein: 7911), Cajetan Lenz (ESPN-ID: 407682, ESPN-Verein: 7911), Andrej Kramaric (ESPN-ID: 139520, ESPN-Verein: 7911), Adam Hlozek (ESPN-ID: 292169, ESPN-Verein: 7911), Tim Lemperle (ESPN-ID: 303792, ESPN-Verein: 7911), Fisnik Asllani (ESPN-ID: 331057, ESPN-Verein: 7911), Adam Daghim (ESPN-ID: 338854, ESPN-Verein: 7911), Max Moerstedt (ESPN-ID: 372035, ESPN-Verein: 7911), Fabian Bredlow (ESPN-ID: 201123, ESPN-Verein: 134), Marius Funk (ESPN-ID: 238129, ESPN-Verein: 134), Stefan Drljaca (ESPN-ID: 301319, ESPN-Verein: 134), Dennis Seimen (ESPN-ID: 362585, ESPN-Verein: 134), Maximilian Mittelstädt (ESPN-ID: 216225, ESPN-Verein: 134), Dan-Axel Zagadou (ESPN-ID: 258870, ESPN-Verein: 134), Jeff Chabot (ESPN-ID: 258909, ESPN-Verein: 134), Josha Vagnoman (ESPN-ID: 266839, ESPN-Verein: 134), Leonidas Stergiou (ESPN-ID: 285866, ESPN-Verein: 134), Ramon Hendriks (ESPN-ID: 289322, ESPN-Verein: 134), Lorenz Assignon (ESPN-ID: 308461, ESPN-Verein: 134), Ameen Al Dakhil (ESPN-ID: 323847, ESPN-Verein: 134), Luca Jaquez (ESPN-ID: 332574, ESPN-Verein: 134), Finn Jeltsch (ESPN-ID: 372026, ESPN-Verein: 134), Maximilian Herwerth (ESPN-ID: 376559, ESPN-Verein: 134), Yanik Spalt (ESPN-ID: 403741, ESPN-Verein: 134), Grischa Prömel (ESPN-ID: 218714, ESPN-Verein: 134), Atakan Karazor (ESPN-ID: 241742, ESPN-Verein: 134), Nikolas Nartey (ESPN-ID: 259878, ESPN-Verein: 134), Chris Führich (ESPN-ID: 268951, ESPN-Verein: 134), Angelo Stiller (ESPN-ID: 290232, ESPN-Verein: 134), Bilal El Khannouss (ESPN-ID: 336595, ESPN-Verein: 134), Jarzinho Malanga (ESPN-ID: 372027, ESPN-Verein: 134), Ertugrul Yigit (ESPN-ID: 410646, ESPN-Verein: 134), Ermedin Demirovic (ESPN-ID: 269136, ESPN-Verein: 134), Deniz Undav (ESPN-ID: 273300, ESPN-Verein: 134), Jamie Leweling (ESPN-ID: 290811, ESPN-Verein: 134), Tiago Tomás (ESPN-ID: 304019, ESPN-Verein: 134), Dzenan Pejcinovic (ESPN-ID: 345905, ESPN-Verein: 134), Leo Sauer (ESPN-ID: 355487, ESPN-Verein: 134), Justin Diehl (ESPN-ID: 357684, ESPN-Verein: 134), Markus Kolke (ESPN-ID: 162111, ESPN-Verein: 137), Alexander Schlager (ESPN-ID: 195082, ESPN-Verein: 137), Karl Hein (ESPN-ID: 282646, ESPN-Verein: 137), Stefan Smarkalev (ESPN-ID: 385354, ESPN-Verein: 137), Mitchell Weiser (ESPN-ID: 159139, ESPN-Verein: 137), Niklas Stark (ESPN-ID: 186026, ESPN-Verein: 137), Marco Friedl (ESPN-ID: 232477, ESPN-Verein: 137), Amos Pieper (ESPN-ID: 275844, ESPN-Verein: 137), Felix Agu (ESPN-ID: 279961, ESPN-Verein: 137), Olivier Deman (ESPN-ID: 282388, ESPN-Verein: 137), Oskar Wójcik (ESPN-ID: 305821, ESPN-Verein: 137), Arthur (ESPN-ID: 334374, ESPN-Verein: 137), N'Diaye Moussa (ESPN-ID: 349838, ESPN-Verein: 137), Mick Schmetgens (ESPN-ID: 399865, ESPN-Verein: 137), Jens Stage (ESPN-ID: 234757, ESPN-Verein: 137), Ludovit Reis (ESPN-ID: 261363, ESPN-Verein: 137), Senne Lynen (ESPN-ID: 270389, ESPN-Verein: 137), Youri Regeer (ESPN-ID: 297292, ESPN-Verein: 137), Skelly Alvero (ESPN-ID: 330964, ESPN-Verein: 137), Chuki (ESPN-ID: 371689, ESPN-Verein: 137), Dariusz Stalmach (ESPN-ID: 399747, ESPN-Verein: 137), Darwin Kaan Soylu (ESPN-ID: 3100710, ESPN-Verein: 137), Niclas Füllkrug (ESPN-ID: 170257, ESPN-Verein: 137), Dawid Kownacki (ESPN-ID: 220060, ESPN-Verein: 137), Cedric Itten (ESPN-ID: 234153, ESPN-Verein: 137), Marco Grüll (ESPN-ID: 305853, ESPN-Verein: 137), Eren Dinkci (ESPN-ID: 312112, ESPN-Verein: 137), Keke Topp (ESPN-ID: 332325, ESPN-Verein: 137), Justin Njinmah (ESPN-ID: 340639, ESPN-Verein: 137), Salim Musah (ESPN-ID: 407196, ESPN-Verein: 137), Kenny Quetant (ESPN-ID: 415744, ESPN-Verein: 137), Paul Bright Max Erevbenagie (ESPN-ID: 3106924, ESPN-Verein: 137)]",
+    "timestamp": "2026-09-13T21:09:07.154043800Z"
   },
   {
-    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Leonard\nFehler bei Seite: 2 mit Name: Leonard\nFehler bei Seite: 3 mit Name: Leonard\nFehler bei Seite: 4 mit Name: Leonard\nFehler bei Seite: 5 mit Name: Leonard\nFehler bei Seite: 1 mit Name: leonard\nFehler bei Seite: 2 mit Name: leonard\nFehler bei Seite: 3 mit Name: leonard\nFehler bei Seite: 4 mit Name: leonard\nFehler bei Seite: 5 mit Name: leonard\nKein passender Spieler gefunden für: Leonard / FC Schalke 04.\n",
-    "timestamp": "2026-09-13T20:00:37.870263272Z"
-  },
-  {
-    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Dardari\nFehler bei Seite: 2 mit Name: Dardari\nFehler bei Seite: 3 mit Name: Dardari\nFehler bei Seite: 4 mit Name: Dardari\nFehler bei Seite: 5 mit Name: Dardari\nFehler bei Seite: 1 mit Name: dardari\nFehler bei Seite: 2 mit Name: dardari\nFehler bei Seite: 3 mit Name: dardari\nFehler bei Seite: 4 mit Name: dardari\nFehler bei Seite: 5 mit Name: dardari\nKein passender Spieler gefunden für: Dardari / FC Augsburg.\n",
-    "timestamp": "2026-09-13T20:01:15.414011484Z"
-  },
-  {
-    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Potočnik\nFehler bei Seite: 2 mit Name: Potočnik\nFehler bei Seite: 3 mit Name: Potočnik\nFehler bei Seite: 4 mit Name: Potočnik\nFehler bei Seite: 5 mit Name: Potočnik\nFehler bei Seite: 1 mit Name: potocnik\nFehler bei Seite: 2 mit Name: potocnik\nFehler bei Seite: 3 mit Name: potocnik\nFehler bei Seite: 4 mit Name: potocnik\nFehler bei Seite: 5 mit Name: potocnik\nKein passender Spieler gefunden für: Potočnik / 1. FC Köln.\n",
-    "timestamp": "2026-09-13T20:03:05.621500229Z"
-  },
-  {
-    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Bakatukanda\nFehler bei Seite: 2 mit Name: Bakatukanda\nFehler bei Seite: 3 mit Name: Bakatukanda\nFehler bei Seite: 4 mit Name: Bakatukanda\nFehler bei Seite: 5 mit Name: Bakatukanda\nFehler bei Seite: 1 mit Name: bakatukanda\nFehler bei Seite: 2 mit Name: bakatukanda\nFehler bei Seite: 3 mit Name: bakatukanda\nFehler bei Seite: 4 mit Name: bakatukanda\nFehler bei Seite: 5 mit Name: bakatukanda\nKein passender Spieler gefunden für: Bakatukanda / 1. FC Köln.\n",
-    "timestamp": "2026-09-13T20:02:29.991161711Z"
-  },
-  {
-    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Bobzien\nFehler bei Seite: 2 mit Name: Bobzien\nFehler bei Seite: 3 mit Name: Bobzien\nFehler bei Seite: 4 mit Name: Bobzien\nFehler bei Seite: 5 mit Name: Bobzien\nFehler bei Seite: 1 mit Name: bobzien\nFehler bei Seite: 2 mit Name: bobzien\nFehler bei Seite: 3 mit Name: bobzien\nFehler bei Seite: 4 mit Name: bobzien\nFehler bei Seite: 5 mit Name: bobzien\nKein passender Spieler gefunden für: Bobzien / 1. FSV Mainz 05.\n",
-    "timestamp": "2026-09-13T20:04:08.460877598Z"
-  },
-  {
-    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Masanka Bungi\nFehler bei Seite: 2 mit Name: Masanka Bungi\nFehler bei Seite: 3 mit Name: Masanka Bungi\nFehler bei Seite: 4 mit Name: Masanka Bungi\nFehler bei Seite: 5 mit Name: Masanka Bungi\nFehler bei Seite: 1 mit Name: Bungi\nFehler bei Seite: 2 mit Name: Bungi\nFehler bei Seite: 3 mit Name: Bungi\nFehler bei Seite: 4 mit Name: Bungi\nFehler bei Seite: 5 mit Name: Bungi\nFehler bei Seite: 1 mit Name: m bungi\nFehler bei Seite: 2 mit Name: m bungi\nFehler bei Seite: 3 mit Name: m bungi\nFehler bei Seite: 4 mit Name: m bungi\nFehler bei Seite: 5 mit Name: m bungi\nKein passender Spieler gefunden für: Masanka Bungi / RB Leipzig.\n",
-    "timestamp": "2026-09-13T20:03:23.442619967Z"
-  },
-  {
-    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Yardımcı\nFehler bei Seite: 2 mit Name: Yardımcı\nFehler bei Seite: 3 mit Name: Yardımcı\nFehler bei Seite: 4 mit Name: Yardımcı\nFehler bei Seite: 5 mit Name: Yardımcı\nFehler bei Seite: 1 mit Name: yardmc\nFehler bei Seite: 2 mit Name: yardmc\nFehler bei Seite: 3 mit Name: yardmc\nFehler bei Seite: 4 mit Name: yardmc\nFehler bei Seite: 5 mit Name: yardmc\nFehler bei Seite: 1 mit Name: Yardimci\nFehler bei Seite: 2 mit Name: Yardimci\nFehler bei Seite: 3 mit Name: Yardimci\nFehler bei Seite: 4 mit Name: Yardimci\nFehler bei Seite: 5 mit Name: Yardimci\nKein passender Spieler gefunden für: Yardımcı / TSG Hoffenheim.\n",
-    "timestamp": "2026-09-13T20:02:19.860509369Z"
-  },
-  {
-    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: M. Zalazar\nFehler bei Seite: 1 mit Name: Zalazar\nFehler bei Seite: 2 mit Name: M. Zalazar\nFehler bei Seite: 3 mit Name: M. Zalazar\nFehler bei Seite: 4 mit Name: M. Zalazar\nFehler bei Seite: 5 mit Name: M. Zalazar\nFehler bei Seite: 1 mit Name: Zalazar\nFehler bei Seite: 2 mit Name: Zalazar\nFehler bei Seite: 3 mit Name: Zalazar\nFehler bei Seite: 4 mit Name: Zalazar\nFehler bei Seite: 5 mit Name: Zalazar\nFehler bei Seite: 1 mit Name: m zalazar\nFehler bei Seite: 2 mit Name: m zalazar\nFehler bei Seite: 3 mit Name: m zalazar\nFehler bei Seite: 4 mit Name: m zalazar\nFehler bei Seite: 5 mit Name: m zalazar\nKein passender Spieler gefunden für: M. Zalazar / FC Schalke 04.\n",
-    "timestamp": "2026-09-13T20:00:48.861899889Z"
-  },
-  {
-    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Pauli\nFehler bei Seite: 2 mit Name: Pauli\nFehler bei Seite: 3 mit Name: Pauli\nFehler bei Seite: 4 mit Name: Pauli\nFehler bei Seite: 5 mit Name: Pauli\nFehler bei Seite: 1 mit Name: pauli\nFehler bei Seite: 2 mit Name: pauli\nFehler bei Seite: 3 mit Name: pauli\nFehler bei Seite: 4 mit Name: pauli\nFehler bei Seite: 5 mit Name: pauli\nKein passender Spieler gefunden für: Pauli / 1. FC Köln.\n",
-    "timestamp": "2026-09-13T20:02:57.133844075Z"
-  },
-  {
-    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: İnanoğlu\nFehler bei Seite: 2 mit Name: İnanoğlu\nFehler bei Seite: 3 mit Name: İnanoğlu\nFehler bei Seite: 4 mit Name: İnanoğlu\nFehler bei Seite: 5 mit Name: İnanoğlu\nFehler bei Seite: 1 mit Name: inanoglu\nFehler bei Seite: 2 mit Name: inanoglu\nFehler bei Seite: 3 mit Name: inanoglu\nFehler bei Seite: 4 mit Name: inanoglu\nFehler bei Seite: 5 mit Name: inanoglu\nFehler bei Seite: 1 mit Name: Inanoglu\nFehler bei Seite: 2 mit Name: Inanoglu\nFehler bei Seite: 3 mit Name: Inanoglu\nFehler bei Seite: 4 mit Name: Inanoglu\nFehler bei Seite: 5 mit Name: Inanoglu\nKein passender Spieler gefunden für: İnanoğlu / Eintracht Frankfurt.\n",
-    "timestamp": "2026-09-13T20:01:51.844672371Z"
-  },
-  {
+    "methode": "",
+    "acception": "",
     "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
     "message": "Fehler bei Seite: 1 mit Name: Smolčić\nFehler bei Seite: 2 mit Name: Smolčić\nFehler bei Seite: 3 mit Name: Smolčić\nFehler bei Seite: 4 mit Name: Smolčić\nFehler bei Seite: 5 mit Name: Smolčić\nFehler bei Seite: 1 mit Name: smolcic\nFehler bei Seite: 2 mit Name: smolcic\nFehler bei Seite: 3 mit Name: smolcic\nFehler bei Seite: 4 mit Name: smolcic\nFehler bei Seite: 5 mit Name: smolcic\nKein passender Spieler gefunden für: Smolčić / Eintracht Frankfurt.\n",
+    "url": "",
     "timestamp": "2026-09-13T20:01:33.858829268Z"
   },
   {
+    "methode": "",
+    "acception": "",
     "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Geertruida\nFehler bei Seite: 2 mit Name: Geertruida\nFehler bei Seite: 3 mit Name: Geertruida\nFehler bei Seite: 4 mit Name: Geertruida\nFehler bei Seite: 5 mit Name: Geertruida\nFehler bei Seite: 1 mit Name: geertruida\nFehler bei Seite: 2 mit Name: geertruida\nFehler bei Seite: 3 mit Name: geertruida\nFehler bei Seite: 4 mit Name: geertruida\nFehler bei Seite: 5 mit Name: geertruida\nKein passender Spieler gefunden für: Geertruida / RB Leipzig.\n",
-    "timestamp": "2026-09-13T20:03:14.822610120Z"
+    "message": "Fehler bei Seite: 1 mit Name: İnanoğlu\nFehler bei Seite: 2 mit Name: İnanoğlu\nFehler bei Seite: 3 mit Name: İnanoğlu\nFehler bei Seite: 4 mit Name: İnanoğlu\nFehler bei Seite: 5 mit Name: İnanoğlu\nFehler bei Seite: 1 mit Name: inanoglu\nFehler bei Seite: 2 mit Name: inanoglu\nFehler bei Seite: 3 mit Name: inanoglu\nFehler bei Seite: 4 mit Name: inanoglu\nFehler bei Seite: 5 mit Name: inanoglu\nFehler bei Seite: 1 mit Name: Inanoglu\nFehler bei Seite: 2 mit Name: Inanoglu\nFehler bei Seite: 3 mit Name: Inanoglu\nFehler bei Seite: 4 mit Name: Inanoglu\nFehler bei Seite: 5 mit Name: Inanoglu\nKein passender Spieler gefunden für: İnanoğlu / Eintracht Frankfurt.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:01:51.844672371Z"
   },
   {
+    "methode": "",
+    "acception": "",
     "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Nordin\nFehler bei Seite: 2 mit Name: Nordin\nFehler bei Seite: 3 mit Name: Nordin\nFehler bei Seite: 4 mit Name: Nordin\nFehler bei Seite: 5 mit Name: Nordin\nFehler bei Seite: 1 mit Name: nordin\nFehler bei Seite: 2 mit Name: nordin\nFehler bei Seite: 3 mit Name: nordin\nFehler bei Seite: 4 mit Name: nordin\nFehler bei Seite: 5 mit Name: nordin\nKein passender Spieler gefunden für: Nordin / 1. FSV Mainz 05.\n",
-    "timestamp": "2026-09-13T20:03:58.804536906Z"
+    "message": "Fehler bei Seite: 1 mit Name: Leonard\nFehler bei Seite: 2 mit Name: Leonard\nFehler bei Seite: 3 mit Name: Leonard\nFehler bei Seite: 4 mit Name: Leonard\nFehler bei Seite: 5 mit Name: Leonard\nFehler bei Seite: 1 mit Name: leonard\nFehler bei Seite: 2 mit Name: leonard\nFehler bei Seite: 3 mit Name: leonard\nFehler bei Seite: 4 mit Name: leonard\nFehler bei Seite: 5 mit Name: leonard\nKein passender Spieler gefunden für: Leonard / FC Schalke 04.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:00:37.870263272Z"
   },
   {
+    "methode": "",
+    "acception": "",
     "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Hamache\nFehler bei Seite: 2 mit Name: Hamache\nFehler bei Seite: 3 mit Name: Hamache\nFehler bei Seite: 4 mit Name: Hamache\nFehler bei Seite: 5 mit Name: Hamache\nFehler bei Seite: 1 mit Name: hamache\nFehler bei Seite: 2 mit Name: hamache\nFehler bei Seite: 3 mit Name: hamache\nFehler bei Seite: 4 mit Name: hamache\nFehler bei Seite: 5 mit Name: hamache\nKein passender Spieler gefunden für: Hamache / FC Schalke 04.\n",
-    "timestamp": "2026-09-13T20:00:57.860480539Z"
+    "message": "Fehler bei Seite: 1 mit Name: Bobzien\nFehler bei Seite: 2 mit Name: Bobzien\nFehler bei Seite: 3 mit Name: Bobzien\nFehler bei Seite: 4 mit Name: Bobzien\nFehler bei Seite: 5 mit Name: Bobzien\nFehler bei Seite: 1 mit Name: bobzien\nFehler bei Seite: 2 mit Name: bobzien\nFehler bei Seite: 3 mit Name: bobzien\nFehler bei Seite: 4 mit Name: bobzien\nFehler bei Seite: 5 mit Name: bobzien\nKein passender Spieler gefunden für: Bobzien / 1. FSV Mainz 05.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:04:08.460877598Z"
   },
   {
-    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Alfa-Ruprecht\nFehler bei Seite: 2 mit Name: Alfa-Ruprecht\nFehler bei Seite: 3 mit Name: Alfa-Ruprecht\nFehler bei Seite: 4 mit Name: Alfa-Ruprecht\nFehler bei Seite: 5 mit Name: Alfa-Ruprecht\nFehler bei Seite: 1 mit Name: alfaruprecht\nFehler bei Seite: 2 mit Name: alfaruprecht\nFehler bei Seite: 3 mit Name: alfaruprecht\nFehler bei Seite: 4 mit Name: alfaruprecht\nFehler bei Seite: 5 mit Name: alfaruprecht\nKein passender Spieler gefunden für: Alfa-Ruprecht / Bayer 04 Leverkusen.\n",
-    "timestamp": "2026-09-13T20:03:41.993825983Z"
-  },
-  {
-    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Carstensen\nFehler bei Seite: 2 mit Name: Carstensen\nFehler bei Seite: 3 mit Name: Carstensen\nFehler bei Seite: 4 mit Name: Carstensen\nFehler bei Seite: 5 mit Name: Carstensen\nFehler bei Seite: 1 mit Name: carstensen\nFehler bei Seite: 2 mit Name: carstensen\nFehler bei Seite: 3 mit Name: carstensen\nFehler bei Seite: 4 mit Name: carstensen\nFehler bei Seite: 5 mit Name: carstensen\nKein passender Spieler gefunden für: Carstensen / 1. FC Köln.\n",
-    "timestamp": "2026-09-13T20:02:38.768140139Z"
-  },
-  {
-    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Lisztes\nFehler bei Seite: 2 mit Name: Lisztes\nFehler bei Seite: 3 mit Name: Lisztes\nFehler bei Seite: 4 mit Name: Lisztes\nFehler bei Seite: 5 mit Name: Lisztes\nFehler bei Seite: 1 mit Name: lisztes\nFehler bei Seite: 2 mit Name: lisztes\nFehler bei Seite: 3 mit Name: lisztes\nFehler bei Seite: 4 mit Name: lisztes\nFehler bei Seite: 5 mit Name: lisztes\nKein passender Spieler gefunden für: Lisztes / Eintracht Frankfurt.\n",
-    "timestamp": "2026-09-13T20:01:42.881239613Z"
-  },
-  {
-    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Vermeeren\nFehler bei Seite: 2 mit Name: Vermeeren\nFehler bei Seite: 3 mit Name: Vermeeren\nFehler bei Seite: 4 mit Name: Vermeeren\nFehler bei Seite: 5 mit Name: Vermeeren\nFehler bei Seite: 1 mit Name: vermeeren\nFehler bei Seite: 2 mit Name: vermeeren\nFehler bei Seite: 3 mit Name: vermeeren\nFehler bei Seite: 4 mit Name: vermeeren\nFehler bei Seite: 5 mit Name: vermeeren\nKein passender Spieler gefunden für: Vermeeren / RB Leipzig.\n",
-    "timestamp": "2026-09-13T20:03:32.259913926Z"
-  },
-  {
+    "methode": "",
+    "acception": "",
     "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
     "message": "Fehler bei Seite: 1 mit Name: Mahmoud\nFehler bei Seite: 2 mit Name: Mahmoud\nFehler bei Seite: 3 mit Name: Mahmoud\nFehler bei Seite: 4 mit Name: Mahmoud\nFehler bei Seite: 5 mit Name: Mahmoud\nFehler bei Seite: 1 mit Name: mahmoud\nFehler bei Seite: 2 mit Name: mahmoud\nFehler bei Seite: 3 mit Name: mahmoud\nFehler bei Seite: 4 mit Name: mahmoud\nFehler bei Seite: 5 mit Name: mahmoud\nKein passender Spieler gefunden für: Mahmoud / SV Elversberg.\n",
+    "url": "",
     "timestamp": "2026-09-13T20:00:28.459390362Z"
   },
   {
+    "methode": "",
+    "acception": "",
     "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: At. Szalai\nFehler bei Seite: 1 mit Name: Szalai\nFehler bei Seite: 2 mit Name: At. Szalai\nFehler bei Seite: 3 mit Name: At. Szalai\nFehler bei Seite: 4 mit Name: At. Szalai\nFehler bei Seite: 5 mit Name: At. Szalai\nFehler bei Seite: 1 mit Name: Szalai\nFehler bei Seite: 2 mit Name: Szalai\nFehler bei Seite: 3 mit Name: Szalai\nFehler bei Seite: 4 mit Name: Szalai\nFehler bei Seite: 5 mit Name: Szalai\nFehler bei Seite: 1 mit Name: a szalai\nFehler bei Seite: 2 mit Name: a szalai\nFehler bei Seite: 3 mit Name: a szalai\nFehler bei Seite: 4 mit Name: a szalai\nFehler bei Seite: 5 mit Name: a szalai\nKein passender Spieler gefunden für: At. Szalai / TSG Hoffenheim.\n",
-    "timestamp": "2026-09-13T20:02:02.746483949Z"
+    "message": "Fehler bei Seite: 1 mit Name: Alfa-Ruprecht\nFehler bei Seite: 2 mit Name: Alfa-Ruprecht\nFehler bei Seite: 3 mit Name: Alfa-Ruprecht\nFehler bei Seite: 4 mit Name: Alfa-Ruprecht\nFehler bei Seite: 5 mit Name: Alfa-Ruprecht\nFehler bei Seite: 1 mit Name: alfaruprecht\nFehler bei Seite: 2 mit Name: alfaruprecht\nFehler bei Seite: 3 mit Name: alfaruprecht\nFehler bei Seite: 4 mit Name: alfaruprecht\nFehler bei Seite: 5 mit Name: alfaruprecht\nKein passender Spieler gefunden für: Alfa-Ruprecht / Bayer 04 Leverkusen.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:03:41.993825983Z"
   },
   {
+    "methode": "",
+    "acception": "",
     "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Gazibegović\nFehler bei Seite: 2 mit Name: Gazibegović\nFehler bei Seite: 3 mit Name: Gazibegović\nFehler bei Seite: 4 mit Name: Gazibegović\nFehler bei Seite: 5 mit Name: Gazibegović\nFehler bei Seite: 1 mit Name: gazibegovic\nFehler bei Seite: 2 mit Name: gazibegovic\nFehler bei Seite: 3 mit Name: gazibegovic\nFehler bei Seite: 4 mit Name: gazibegovic\nFehler bei Seite: 5 mit Name: gazibegovic\nKein passender Spieler gefunden für: Gazibegović / 1. FC Köln.\n",
-    "timestamp": "2026-09-13T20:02:47.402422959Z"
+    "message": "Fehler bei Seite: 1 mit Name: Masanka Bungi\nFehler bei Seite: 2 mit Name: Masanka Bungi\nFehler bei Seite: 3 mit Name: Masanka Bungi\nFehler bei Seite: 4 mit Name: Masanka Bungi\nFehler bei Seite: 5 mit Name: Masanka Bungi\nFehler bei Seite: 1 mit Name: Bungi\nFehler bei Seite: 2 mit Name: Bungi\nFehler bei Seite: 3 mit Name: Bungi\nFehler bei Seite: 4 mit Name: Bungi\nFehler bei Seite: 5 mit Name: Bungi\nFehler bei Seite: 1 mit Name: m bungi\nFehler bei Seite: 2 mit Name: m bungi\nFehler bei Seite: 3 mit Name: m bungi\nFehler bei Seite: 4 mit Name: m bungi\nFehler bei Seite: 5 mit Name: m bungi\nKein passender Spieler gefunden für: Masanka Bungi / RB Leipzig.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:03:23.442619967Z"
   },
   {
-    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-    "message": "Fehler bei Seite: 1 mit Name: Duranville\nFehler bei Seite: 2 mit Name: Duranville\nFehler bei Seite: 3 mit Name: Duranville\nFehler bei Seite: 4 mit Name: Duranville\nFehler bei Seite: 5 mit Name: Duranville\nFehler bei Seite: 1 mit Name: duranville\nFehler bei Seite: 2 mit Name: duranville\nFehler bei Seite: 3 mit Name: duranville\nFehler bei Seite: 4 mit Name: duranville\nFehler bei Seite: 5 mit Name: duranville\nKein passender Spieler gefunden für: Duranville / Borussia Dortmund.\n",
-    "timestamp": "2026-09-13T20:01:25.046789616Z"
-  },
-  {
+    "methode": "",
+    "acception": "",
     "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
     "message": "Fehler bei Seite: 1 mit Name: Hong\nFehler bei Seite: 2 mit Name: Hong\nFehler bei Seite: 3 mit Name: Hong\nFehler bei Seite: 4 mit Name: Hong\nFehler bei Seite: 5 mit Name: Hong\nFehler bei Seite: 1 mit Name: hong\nFehler bei Seite: 2 mit Name: hong\nFehler bei Seite: 3 mit Name: hong\nFehler bei Seite: 4 mit Name: hong\nFehler bei Seite: 5 mit Name: hong\nKein passender Spieler gefunden für: Hong / 1. FSV Mainz 05.\n",
+    "url": "",
     "timestamp": "2026-09-13T20:03:49.803851117Z"
   },
   {
+    "methode": "",
+    "acception": "",
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: Potočnik\nFehler bei Seite: 2 mit Name: Potočnik\nFehler bei Seite: 3 mit Name: Potočnik\nFehler bei Seite: 4 mit Name: Potočnik\nFehler bei Seite: 5 mit Name: Potočnik\nFehler bei Seite: 1 mit Name: potocnik\nFehler bei Seite: 2 mit Name: potocnik\nFehler bei Seite: 3 mit Name: potocnik\nFehler bei Seite: 4 mit Name: potocnik\nFehler bei Seite: 5 mit Name: potocnik\nKein passender Spieler gefunden für: Potočnik / 1. FC Köln.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:03:05.621500229Z"
+  },
+  {
+    "methode": "",
+    "acception": "",
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: Geertruida\nFehler bei Seite: 2 mit Name: Geertruida\nFehler bei Seite: 3 mit Name: Geertruida\nFehler bei Seite: 4 mit Name: Geertruida\nFehler bei Seite: 5 mit Name: Geertruida\nFehler bei Seite: 1 mit Name: geertruida\nFehler bei Seite: 2 mit Name: geertruida\nFehler bei Seite: 3 mit Name: geertruida\nFehler bei Seite: 4 mit Name: geertruida\nFehler bei Seite: 5 mit Name: geertruida\nKein passender Spieler gefunden für: Geertruida / RB Leipzig.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:03:14.822610120Z"
+  },
+  {
+    "methode": "",
+    "acception": "",
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: Dardari\nFehler bei Seite: 2 mit Name: Dardari\nFehler bei Seite: 3 mit Name: Dardari\nFehler bei Seite: 4 mit Name: Dardari\nFehler bei Seite: 5 mit Name: Dardari\nFehler bei Seite: 1 mit Name: dardari\nFehler bei Seite: 2 mit Name: dardari\nFehler bei Seite: 3 mit Name: dardari\nFehler bei Seite: 4 mit Name: dardari\nFehler bei Seite: 5 mit Name: dardari\nKein passender Spieler gefunden für: Dardari / FC Augsburg.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:01:15.414011484Z"
+  },
+  {
+    "methode": "",
+    "acception": "",
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: Vermeeren\nFehler bei Seite: 2 mit Name: Vermeeren\nFehler bei Seite: 3 mit Name: Vermeeren\nFehler bei Seite: 4 mit Name: Vermeeren\nFehler bei Seite: 5 mit Name: Vermeeren\nFehler bei Seite: 1 mit Name: vermeeren\nFehler bei Seite: 2 mit Name: vermeeren\nFehler bei Seite: 3 mit Name: vermeeren\nFehler bei Seite: 4 mit Name: vermeeren\nFehler bei Seite: 5 mit Name: vermeeren\nKein passender Spieler gefunden für: Vermeeren / RB Leipzig.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:03:32.259913926Z"
+  },
+  {
+    "methode": "",
+    "acception": "",
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: Gazibegović\nFehler bei Seite: 2 mit Name: Gazibegović\nFehler bei Seite: 3 mit Name: Gazibegović\nFehler bei Seite: 4 mit Name: Gazibegović\nFehler bei Seite: 5 mit Name: Gazibegović\nFehler bei Seite: 1 mit Name: gazibegovic\nFehler bei Seite: 2 mit Name: gazibegovic\nFehler bei Seite: 3 mit Name: gazibegovic\nFehler bei Seite: 4 mit Name: gazibegovic\nFehler bei Seite: 5 mit Name: gazibegovic\nKein passender Spieler gefunden für: Gazibegović / 1. FC Köln.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:02:47.402422959Z"
+  },
+  {
+    "methode": "",
+    "acception": "",
     "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
     "message": "Fehler bei Seite: 1 mit Name: Koudossou\nFehler bei Seite: 2 mit Name: Koudossou\nFehler bei Seite: 3 mit Name: Koudossou\nFehler bei Seite: 4 mit Name: Koudossou\nFehler bei Seite: 5 mit Name: Koudossou\nFehler bei Seite: 1 mit Name: koudossou\nFehler bei Seite: 2 mit Name: koudossou\nFehler bei Seite: 3 mit Name: koudossou\nFehler bei Seite: 4 mit Name: koudossou\nFehler bei Seite: 5 mit Name: koudossou\nKein passender Spieler gefunden für: Koudossou / FC Augsburg.\n",
+    "url": "",
     "timestamp": "2026-09-13T20:01:06.875321167Z"
+  },
+  {
+    "methode": "",
+    "acception": "",
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: M. Zalazar\nFehler bei Seite: 1 mit Name: Zalazar\nFehler bei Seite: 2 mit Name: M. Zalazar\nFehler bei Seite: 3 mit Name: M. Zalazar\nFehler bei Seite: 4 mit Name: M. Zalazar\nFehler bei Seite: 5 mit Name: M. Zalazar\nFehler bei Seite: 1 mit Name: Zalazar\nFehler bei Seite: 2 mit Name: Zalazar\nFehler bei Seite: 3 mit Name: Zalazar\nFehler bei Seite: 4 mit Name: Zalazar\nFehler bei Seite: 5 mit Name: Zalazar\nFehler bei Seite: 1 mit Name: m zalazar\nFehler bei Seite: 2 mit Name: m zalazar\nFehler bei Seite: 3 mit Name: m zalazar\nFehler bei Seite: 4 mit Name: m zalazar\nFehler bei Seite: 5 mit Name: m zalazar\nKein passender Spieler gefunden für: M. Zalazar / FC Schalke 04.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:00:48.861899889Z"
+  },
+  {
+    "methode": "",
+    "acception": "",
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: Nordin\nFehler bei Seite: 2 mit Name: Nordin\nFehler bei Seite: 3 mit Name: Nordin\nFehler bei Seite: 4 mit Name: Nordin\nFehler bei Seite: 5 mit Name: Nordin\nFehler bei Seite: 1 mit Name: nordin\nFehler bei Seite: 2 mit Name: nordin\nFehler bei Seite: 3 mit Name: nordin\nFehler bei Seite: 4 mit Name: nordin\nFehler bei Seite: 5 mit Name: nordin\nKein passender Spieler gefunden für: Nordin / 1. FSV Mainz 05.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:03:58.804536906Z"
+  },
+  {
+    "methode": "",
+    "acception": "",
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: Carstensen\nFehler bei Seite: 2 mit Name: Carstensen\nFehler bei Seite: 3 mit Name: Carstensen\nFehler bei Seite: 4 mit Name: Carstensen\nFehler bei Seite: 5 mit Name: Carstensen\nFehler bei Seite: 1 mit Name: carstensen\nFehler bei Seite: 2 mit Name: carstensen\nFehler bei Seite: 3 mit Name: carstensen\nFehler bei Seite: 4 mit Name: carstensen\nFehler bei Seite: 5 mit Name: carstensen\nKein passender Spieler gefunden für: Carstensen / 1. FC Köln.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:02:38.768140139Z"
+  },
+  {
+    "methode": "",
+    "acception": "",
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: Lisztes\nFehler bei Seite: 2 mit Name: Lisztes\nFehler bei Seite: 3 mit Name: Lisztes\nFehler bei Seite: 4 mit Name: Lisztes\nFehler bei Seite: 5 mit Name: Lisztes\nFehler bei Seite: 1 mit Name: lisztes\nFehler bei Seite: 2 mit Name: lisztes\nFehler bei Seite: 3 mit Name: lisztes\nFehler bei Seite: 4 mit Name: lisztes\nFehler bei Seite: 5 mit Name: lisztes\nKein passender Spieler gefunden für: Lisztes / Eintracht Frankfurt.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:01:42.881239613Z"
+  },
+  {
+    "methode": "",
+    "acception": "",
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: Pauli\nFehler bei Seite: 2 mit Name: Pauli\nFehler bei Seite: 3 mit Name: Pauli\nFehler bei Seite: 4 mit Name: Pauli\nFehler bei Seite: 5 mit Name: Pauli\nFehler bei Seite: 1 mit Name: pauli\nFehler bei Seite: 2 mit Name: pauli\nFehler bei Seite: 3 mit Name: pauli\nFehler bei Seite: 4 mit Name: pauli\nFehler bei Seite: 5 mit Name: pauli\nKein passender Spieler gefunden für: Pauli / 1. FC Köln.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:02:57.133844075Z"
+  },
+  {
+    "methode": "",
+    "acception": "",
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: Yardımcı\nFehler bei Seite: 2 mit Name: Yardımcı\nFehler bei Seite: 3 mit Name: Yardımcı\nFehler bei Seite: 4 mit Name: Yardımcı\nFehler bei Seite: 5 mit Name: Yardımcı\nFehler bei Seite: 1 mit Name: yardmc\nFehler bei Seite: 2 mit Name: yardmc\nFehler bei Seite: 3 mit Name: yardmc\nFehler bei Seite: 4 mit Name: yardmc\nFehler bei Seite: 5 mit Name: yardmc\nFehler bei Seite: 1 mit Name: Yardimci\nFehler bei Seite: 2 mit Name: Yardimci\nFehler bei Seite: 3 mit Name: Yardimci\nFehler bei Seite: 4 mit Name: Yardimci\nFehler bei Seite: 5 mit Name: Yardimci\nKein passender Spieler gefunden für: Yardımcı / TSG Hoffenheim.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:02:19.860509369Z"
+  },
+  {
+    "methode": "",
+    "acception": "",
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: Duranville\nFehler bei Seite: 2 mit Name: Duranville\nFehler bei Seite: 3 mit Name: Duranville\nFehler bei Seite: 4 mit Name: Duranville\nFehler bei Seite: 5 mit Name: Duranville\nFehler bei Seite: 1 mit Name: duranville\nFehler bei Seite: 2 mit Name: duranville\nFehler bei Seite: 3 mit Name: duranville\nFehler bei Seite: 4 mit Name: duranville\nFehler bei Seite: 5 mit Name: duranville\nKein passender Spieler gefunden für: Duranville / Borussia Dortmund.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:01:25.046789616Z"
+  },
+  {
+    "methode": "",
+    "acception": "",
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: Benjamin\nFehler bei Seite: 2 mit Name: Benjamin\nFehler bei Seite: 3 mit Name: Benjamin\nFehler bei Seite: 4 mit Name: Benjamin\nFehler bei Seite: 5 mit Name: Benjamin\nFehler bei Seite: 1 mit Name: benjamin\nFehler bei Seite: 2 mit Name: benjamin\nFehler bei Seite: 3 mit Name: benjamin\nFehler bei Seite: 4 mit Name: benjamin\nFehler bei Seite: 5 mit Name: benjamin\nKein passender Spieler gefunden für: Benjamin / TSG Hoffenheim.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:02:11.398525437Z"
+  },
+  {
+    "methode": "",
+    "acception": "",
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: At. Szalai\nFehler bei Seite: 1 mit Name: Szalai\nFehler bei Seite: 2 mit Name: At. Szalai\nFehler bei Seite: 3 mit Name: At. Szalai\nFehler bei Seite: 4 mit Name: At. Szalai\nFehler bei Seite: 5 mit Name: At. Szalai\nFehler bei Seite: 1 mit Name: Szalai\nFehler bei Seite: 2 mit Name: Szalai\nFehler bei Seite: 3 mit Name: Szalai\nFehler bei Seite: 4 mit Name: Szalai\nFehler bei Seite: 5 mit Name: Szalai\nFehler bei Seite: 1 mit Name: a szalai\nFehler bei Seite: 2 mit Name: a szalai\nFehler bei Seite: 3 mit Name: a szalai\nFehler bei Seite: 4 mit Name: a szalai\nFehler bei Seite: 5 mit Name: a szalai\nKein passender Spieler gefunden für: At. Szalai / TSG Hoffenheim.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:02:02.746483949Z"
+  },
+  {
+    "methode": "",
+    "acception": "",
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: Hamache\nFehler bei Seite: 2 mit Name: Hamache\nFehler bei Seite: 3 mit Name: Hamache\nFehler bei Seite: 4 mit Name: Hamache\nFehler bei Seite: 5 mit Name: Hamache\nFehler bei Seite: 1 mit Name: hamache\nFehler bei Seite: 2 mit Name: hamache\nFehler bei Seite: 3 mit Name: hamache\nFehler bei Seite: 4 mit Name: hamache\nFehler bei Seite: 5 mit Name: hamache\nKein passender Spieler gefunden für: Hamache / FC Schalke 04.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:00:57.860480539Z"
+  },
+  {
+    "methode": "",
+    "acception": "",
+    "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+    "message": "Fehler bei Seite: 1 mit Name: Bakatukanda\nFehler bei Seite: 2 mit Name: Bakatukanda\nFehler bei Seite: 3 mit Name: Bakatukanda\nFehler bei Seite: 4 mit Name: Bakatukanda\nFehler bei Seite: 5 mit Name: Bakatukanda\nFehler bei Seite: 1 mit Name: bakatukanda\nFehler bei Seite: 2 mit Name: bakatukanda\nFehler bei Seite: 3 mit Name: bakatukanda\nFehler bei Seite: 4 mit Name: bakatukanda\nFehler bei Seite: 5 mit Name: bakatukanda\nKein passender Spieler gefunden für: Bakatukanda / 1. FC Köln.\n",
+    "url": "",
+    "timestamp": "2026-09-13T20:02:29.991161711Z"
   }
 ]}
