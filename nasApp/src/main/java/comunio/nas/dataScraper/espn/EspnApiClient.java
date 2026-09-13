@@ -8,7 +8,6 @@ import java.net.http.HttpResponse;
 import java.time.Duration;
 import java.util.logging.Logger;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
@@ -145,7 +144,7 @@ public class EspnApiClient {
 		// Kurzer Retry bei vorübergehenden Serverfehlern
 		if (status >= 500 && status < 600) {
 			LOGGER.warning("ESPN HTTP " + status + " bei " + url + " – einmaliger Retry...");
-			Thread.sleep(1500);
+			Thread.sleep(2000);
 			response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
 			status = response.statusCode();
 			body = response.body();

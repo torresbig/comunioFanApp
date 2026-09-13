@@ -41,69 +41,81 @@ public class EspnDataExplorer {
 			export.put("teams", teams);
 			reportTeams(teams, report);
 
-// 2. Standings (Tabelle)
-			System.out.println("[2/6] Lade Standings ...");
-			JSONObject standings = EspnApiClient.getStandings();
-			export.put("standings", standings);
-			reportStandings(standings, report);
+//// 2. Standings (Tabelle)
+//			System.out.println("[2/6] Lade Standings ...");
+//			JSONObject standings = EspnApiClient.getStandings();
+//			export.put("standings", standings);
+//			reportStandings(standings, report);
+//
+//// 3. Scoreboard – Zeitraum um "heute" (7 Tage, damit beendete + kommende Spiele)
+//			
+//			// NICHT INTERESSANT! 
+//			String today = LocalDate.now().format(DateTimeFormatter.BASIC_ISO_DATE);
+//			String range = today + "-" + LocalDate.now().plusDays(6).format(DateTimeFormatter.BASIC_ISO_DATE);
+//			System.out.println("[3/6] Lade Scoreboard (Zeitraum " + range + ") ...");
+//			JSONObject scoreboard = EspnApiClient.getScoreboard(range);
+//			export.put("scoreboard", scoreboard);
+//			reportScoreboard(scoreboard, report);
+//
+//			// Aktuellen Spieltag aus dem Scoreboard ableiten (Saison-Start 2026-08 → Spieltag 1)
+//			int currentMatchday = deriveMatchday(scoreboard);
+//
+//// 4. Einzelspiel-Summary des ersten gefundenen Events (falls vorhanden)
+//			System.out.println("[4/6] Lade Event-Summary (Beispiel) ...");
+//			String eventId = firstEventId(scoreboard);
+//			if (eventId != null) {
+//				JSONObject summary = EspnApiClient.getEventSummary(eventId);
+//				export.put("summary_event_" + eventId, summary);
+//				reportSummary(summary, report);
+//			} else {
+//				report.add("--> Kein Event im aktuellen Scoreboard-Zeitraum gefunden.");
+//			}
 
-// 3. Scoreboard Ã¢â‚¬â€œ Zeitraum um "heute" (7 Tage, damit beendete + kommende Spiele)
-			String today = LocalDate.now().format(DateTimeFormatter.BASIC_ISO_DATE);
-			String range = today + "-" + LocalDate.now().plusDays(6).format(DateTimeFormatter.BASIC_ISO_DATE);
-			System.out.println("[3/6] Lade Scoreboard (Zeitraum " + range + ") ...");
-			JSONObject scoreboard = EspnApiClient.getScoreboard(range);
-			export.put("scoreboard", scoreboard);
-			reportScoreboard(scoreboard, report);
-
-// 4. Einzelspiel-Summary des ersten gefundenen Events (falls vorhanden)
-			System.out.println("[4/6] Lade Event-Summary (Beispiel) ...");
-			String eventId = firstEventId(scoreboard);
-			if (eventId != null) {
-				JSONObject summary = EspnApiClient.getEventSummary(eventId);
-				export.put("summary_event_" + eventId, summary);
-				reportSummary(summary, report);
-			} else {
-				report.add("--> Kein Event im aktuellen Scoreboard-Zeitraum gefunden.");
-			}
-
-// 5. Roster von bis zu 2 Teams (Spielerdaten mit Saison-Statistiken)
-			System.out.println("[5/6] Lade Roster (2 Teams) ...");
-			List<String> teamIds = firstTeamIds(teams, 2);
+// 5. Roster von ALLEN Teams (Spielerdaten mit Saison-Statistiken)
+			System.out.println("[5/6] Lade Roster (alle Teams) ...");
+			List<String> teamIds = allTeamIds(teams);
 			for (String tid : teamIds) {
 				JSONObject roster = EspnApiClient.getTeamRoster(tid);
+				Files.write(Paths.get("teamRoaster_" + tid + ".json"), roster.toString(2).getBytes(StandardCharsets.UTF_8));
 				export.put("roster_team_" + tid, roster);
 				reportRoster(roster, report);
 			}
 			if (teamIds.isEmpty()) {
 				report.add("--> Keine Teams gefunden.");
 			}
-
-// 6. Athlete-Profil des ersten Spielers aus dem ersten Roster
-// HINWEIS: Der /athletes/{id}-Endpunkt existiert fÃƒÂ¼r Soccer nicht (HTTP 404).
-// Die Profil-Daten (Geburtsdatum, GrÃƒÂ¶ÃƒÅ¸e, Gewicht, ...) sind bereits im Roster enthalten.
-			System.out.println("[6/6] Lade Athlete-Profil (Beispiel) ...");
-			if (!teamIds.isEmpty()) {
-				JSONObject roster = export.getJSONObject("roster_team_" + teamIds.get(0));
-				String athleteId = firstAthleteId(roster);
-				if (athleteId != null) {
-					try {
-						JSONObject athlete = EspnApiClient.getAthlete(athleteId);
-						export.put("athlete_" + athleteId, athlete);
-						reportAthlete(athlete, report);
-					} catch (IOException e) {
-						report.add("--> Athlete-Endpunkt nicht verfÃƒÂ¼gbar (HTTP 404) Ã¢â‚¬â€œ Profil-Daten stecken bereits im Roster.");
-						report.add("    Beispiel-Profil aus Roster:");
-						reportAthleteFromRoster(roster.getJSONArray("athletes").getJSONObject(0), report);
-					}
-				} else {
-					report.add("--> Kein Athlet im Roster gefunden.");
-				}
-			}
-
-// Export-Datei schreiben
-			Files.write(Paths.get(EXPORT_FILE), export.toString(2).getBytes(StandardCharsets.UTF_8));
-			report.add("");
-			report.add("VollstÃƒÂ¤ndige Rohdaten gespeichert in: " + EXPORT_FILE);
+//
+//			// 5b. Matchday-Stats aller Spieler der geladenen Rosters als JSON speichern
+//			System.out.println("[5b] Sammle Matchday-Stats (Snapshot Spieltag " + currentMatchday + ") ...");
+//			JSONObject matchdayStatsExport = collectMatchdayStats(export, teamIds, currentMatchday);
+//			Files.write(Paths.get("espnMatchdayStats.json"), matchdayStatsExport.toString(2).getBytes(StandardCharsets.UTF_8));
+//			report.add("Matchday-Stats gespeichert in: espnMatchdayStats.json (" + matchdayStatsExport.optInt("playerCount", 0) + " Spieler, Spieltag " + currentMatchday + ")");
+//
+//// 6. Athlete-Profil des ersten Spielers aus dem ersten Roster
+//// HINWEIS: Der /athletes/{id}-Endpunkt existiert fÃƒÂ¼r Soccer nicht (HTTP 404).
+//// Die Profil-Daten (Geburtsdatum, GrÃƒÂ¶ÃƒÅ¸e, Gewicht, ...) sind bereits im Roster enthalten.
+//			System.out.println("[6/6] Lade Athlete-Profil (Beispiel) ...");
+//			if (!teamIds.isEmpty()) {
+//				JSONObject roster = export.getJSONObject("roster_team_" + teamIds.get(0));
+//				String athleteId = firstAthleteId(roster);
+//				if (athleteId != null) {
+//					try {
+//						JSONObject athlete = EspnApiClient.getAthlete(athleteId);
+//						export.put("athlete_" + athleteId, athlete);
+//						reportAthlete(athlete, report);
+//					} catch (IOException e) {
+//						report.add("--> Athlete-Endpunkt nicht verfÃƒÂ¼gbar (HTTP 404) Ã¢â‚¬â€œ Profil-Daten stecken bereits im Roster.");
+//						report.add("    Beispiel-Profil aus Roster:");
+//						reportAthleteFromRoster(roster.getJSONArray("athletes").getJSONObject(0), report);
+//					}
+//				} else {
+//					report.add("--> Kein Athlet im Roster gefunden.");
+//				}
+//			}
+//
+//// Export-Datei schreiben
+//			Files.write(Paths.get(EXPORT_FILE), export.toString(2).getBytes(StandardCharsets.UTF_8));
+//			report.add("");
+//			report.add("VollstÃƒÂ¤ndige Rohdaten gespeichert in: " + EXPORT_FILE);
 
 		} catch (IOException | InterruptedException e) {
 			report.add("FEHLER: " + e.getMessage());
@@ -278,7 +290,7 @@ public class EspnDataExplorer {
 		JSONObject nat = athlete.optJSONObject("citizenshipCountry");
 		String nationality = nat != null ? nat.optString("abbreviation", "-") : athlete.optString("citizenshipCountry", "-");
 
-		out.add("  - " + athlete.optString("displayName", "?") + " | id=" + athlete.optString("id") + " | Trikot: " + athlete.optString("jersey", "-") + " | Position: " + position + " | Geboren: " + athlete.optString("dateOfBirth", "-") + " | " + athlete.optString("displayHeight", "-") + " | " + athlete.optString("displayWeight", "-") + " | NationalitÃƒÂ¤t: " + nationality);
+		out.add("  - " + athlete.optString("displayName", "?") + " | id=" + athlete.optString("id") + " | Trikot: " + athlete.optString("jersey", "-") + " | Position: " + position + " | Geboren: " + athlete.optString("dateOfBirth", "-") + " | " + athlete.optString("displayHeight", "-") + " | " + athlete.optString("displayWeight", "-") + " | Nationalität: " + nationality);
 
 // Saison-Statistiken liegen unter "statistics" -> "splits" -> "categories" (Kategorien mit Einzelwerten)
 		JSONObject statistics = athlete.optJSONObject("statistics");
@@ -346,8 +358,117 @@ public class EspnDataExplorer {
 		return ids;
 	}
 
+	private static List<String> allTeamIds(JSONObject teams) {
+		List<String> ids = new ArrayList<>();
+		JSONArray sports = teams.optJSONArray("sports");
+		if (sports == null || sports.isEmpty()) {
+			return ids;
+		}
+		JSONArray leagueTeams = sports.getJSONObject(0).optJSONArray("leagues").getJSONObject(0).optJSONArray("teams");
+		if (leagueTeams == null) {
+			return ids;
+		}
+		for (int i = 0; i < leagueTeams.length(); i++) {
+			ids.add(leagueTeams.getJSONObject(i).getJSONObject("team").optString("id"));
+		}
+		return ids;
+	}
+
 	private static String firstAthleteId(JSONObject roster) {
 		JSONArray athletes = roster.optJSONArray("athletes");
 		return athletes != null && athletes.length() > 0 ? athletes.getJSONObject(0).optString("id") : null;
+	}
+
+	private static JSONObject collectMatchdayStats(JSONObject export, List<String> teamIds, int currentMatchday) {
+		JSONObject result = new JSONObject();
+		JSONArray playerStats = new JSONArray();
+		int playerCount = 0;
+
+		// Durchlaufe die Team-IDs und sammele die Matchday-Stats der Spieler
+		for (String tid : teamIds) {
+			JSONObject roster = export.optJSONObject("roster_team_" + tid);
+			if (roster != null) {
+				JSONArray athletes = roster.optJSONArray("athletes");
+				if (athletes != null) {
+					for (int a = 0; a < athletes.length(); a++) {
+						JSONObject athlete = athletes.getJSONObject(a);
+						String playerId = athlete.optString("id");
+						String playerName = athlete.optString("displayName", "");
+
+						// ESPN-Stats aus dem statistics-Block extrahieren
+						JSONObject statsJson = extractStatsJson(athlete, currentMatchday);
+						if (statsJson != null && statsJson.length() > 0) {
+							JSONObject playerStat = new JSONObject();
+							playerStat.put("playerId", playerId);
+							playerStat.put("playerName", playerName);
+							playerStat.put("clubId", tid);
+							playerStat.put("stats", statsJson);
+							playerStats.put(playerStat);
+							playerCount++;
+						}
+					}
+				}
+			}
+		}
+		result.put("playerStats", playerStats);
+		result.put("playerCount", playerCount);
+		result.put("matchday", currentMatchday);
+		result.put("lastUpdate", LocalDate.now().toString());
+		return result;
+	}
+
+	/**
+	 * Extrahiert die ESPN-Saison-Statistiken aus dem statistics-Block eines
+	 * Athleten (statistics.splits.categories[].stats[]).
+	 */
+	private static JSONObject extractStatsJson(JSONObject athlete, int currentMatchday) {
+		JSONObject result = new JSONObject();
+		JSONObject statistics = athlete.optJSONObject("statistics");
+		if (statistics == null) {
+			return result;
+		}
+		JSONObject splits = statistics.optJSONObject("splits");
+		if (splits == null) {
+			return result;
+		}
+		JSONArray categories = splits.optJSONArray("categories");
+		if (categories == null) {
+			return result;
+		}
+		for (int c = 0; c < categories.length(); c++) {
+			JSONObject cat = categories.getJSONObject(c);
+			JSONArray stats = cat.optJSONArray("stats");
+			if (stats != null) {
+				for (int s = 0; s < stats.length(); s++) {
+					JSONObject st = stats.getJSONObject(s);
+					String name = st.optString("name", "");
+					if (!name.isEmpty()) {
+						Object val = st.has("value") ? st.opt("value") : 0;
+						result.put(name, val);
+					}
+				}
+			}
+		}
+		return result;
+	}
+
+	private static int deriveMatchday(JSONObject scoreboard) {
+		JSONArray events = scoreboard.optJSONArray("events");
+		if (events == null || events.length() == 0) {
+			return 1; // Standardmäßig Spieltag 1, wenn keine Events vorhanden sind
+		}
+		// Annahme: Der erste Event im Array ist das erste Spiel der Saison
+		JSONObject firstEvent = events.getJSONObject(0);
+		String startDateStr = firstEvent.optString("date", null);
+		if (startDateStr == null) {
+			return 1;
+		}
+		LocalDate startDate = LocalDate.parse(startDateStr.substring(0, 10));
+		LocalDate today = LocalDate.now();
+		// Berechne die Anzahl der Tage zwischen dem Saisonstart und heute
+		long daysBetween = java.time.temporal.ChronoUnit.DAYS.between(startDate, today);
+		// Jeder Spieltag umfasst etwa 7 Tage (angenommener Abstand zwischen den
+		// Spielen)
+		return (int) (daysBetween / 7) + 1;
 	}
 }

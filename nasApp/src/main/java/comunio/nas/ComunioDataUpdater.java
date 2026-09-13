@@ -13,6 +13,10 @@ import comunio.nas.dataScraper.comunio.NewsAnalyzerComunio;
 import comunio.nas.dataScraper.comunio.PlayerUpdater;
 import comunio.nas.dataScraper.comunio.Transfermarkt;
 import comunio.nas.dataScraper.comunio.UserUpdater;
+import comunio.nas.dataScraper.espn.EspnClubMapper;
+import comunio.nas.dataScraper.espn.EspnClubUpdater;
+import comunio.nas.dataScraper.espn.EspnPlayerMapper;
+import comunio.nas.dataScraper.espn.EspnPlayerUpdater;
 import comunio.nas.dataScraper.ligainsider.LigainsiderRankingUpdater;
 import comunio.nas.dataScraper.tools.ExportNotInLiga;
 import comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject;
@@ -25,16 +29,19 @@ import comunio.nas.error.ErrorsContainer;
 import comunio.nas.git.GitHubUploader;
 import comunio.nas.objects.NewsManager;
 import comunio.nas.objects.community.Community;
+import comunio.nas.objects.espn.EspnClubContainer;
+import comunio.nas.objects.espn.EspnPlayerContainer;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.orga.UpdaterContextData;
 import comunio.nas.objects.player.SonstigeAttribute;
-import comunio.nas.objects.player.Spielerstats;
 import comunio.nas.objects.user.User;
 import comunio.nas.util.LoadJSONfromFile;
 import comunio.nas.util.StatusManager;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -49,6 +56,7 @@ public class ComunioDataUpdater {
 	public static Community community = new Community();
 	public static UserLoginData uld;
 	public static ErrorsContainer errorDb = new ErrorsContainer();
+	public static Set<String> ownerList = new HashSet<>();
 
 	/**
 	 * Hauptmethode: Orchestriert den gesamten Aktualisierungsprozess.
@@ -69,6 +77,8 @@ public class ComunioDataUpdater {
 
 			// 1. Daten von GitHub / externen Quellen laden
 			UpdaterContextData context = loadAllData(lastUpdates, user);
+			
+			ownerList = getAllOwners(context.userMap);
 
 			// 2. Saisonwechsel prüfen & verarbeiten
 			boolean seasonChanged = handleSeasonTransit(context, lastUpdates, user);
@@ -76,8 +86,8 @@ public class ComunioDataUpdater {
 			// 3. Fachliche Datenverarbeitung
 			processData(context, seasonChanged, lastUpdates, user);
 
-			// 4. Ergebnisse zurück auf GitHub hochladen
-			uploadAllData(context, lastUpdates);
+			// 4. Ergebnisse zurück auf GitHub hochladen 
+			uploadAllData(context,lastUpdates);
 
 			long completeEndTime = System.nanoTime();
 			logExecutionTime("komplettes Programm", completeEndTime, completeStartTime);
@@ -87,6 +97,8 @@ public class ComunioDataUpdater {
 			LOGGER.log(Level.SEVERE, "Fehler im Hauptprozess: " + e.getMessage(), e);
 		}
 	}
+
+	
 
 	// =========================================================================
 	// PRIVATE HILFSMETHODEN (STRUKTURIERUNG)
@@ -156,7 +168,17 @@ public class ComunioDataUpdater {
 		LOGGER.info("Lade Player to User Map");
 		ctx.playerToUserMap = GitHubUploader.downloadPlayerToUserMap(Urls.USER_TO_PLAYER_URL);
 
+		// ESPN-Mappings laden (Club + Player)
+		LOGGER.info("Lade ESPN Club-Mapping von GitHub");
+		JSONObject espnClubMapping = LoadJSONfromFile.loadJsonObjectFromUrl(Urls.ESPN_CLUB_MAPPING_URL);
+		ctx.espnClubMappingContainer = EspnClubContainer.fromJson(espnClubMapping);
+
+		LOGGER.info("Lade ESPN Player-Mapping von GitHub");
+		JSONObject espnPlayerMapping = LoadJSONfromFile.loadJsonObjectFromUrl(Urls.ESPN_PLAYER_MAPPING_URL);
+		ctx.espnPlayerMappingContainer = EspnPlayerContainer.fromJson(espnPlayerMapping);
+
 		logExecutionTime("Github-Download", System.nanoTime(), start);
+
 		return ctx;
 	}
 
@@ -165,6 +187,7 @@ public class ComunioDataUpdater {
 
 		if (seasonChanged) {
 			ClubUpdater.fetchClubsAsArray(ctx.clubDB);
+			ctx.espnClubMappingContainer.setClubMap(EspnClubUpdater.updateEspnToComunioClubMap(ctx.clubDB));
 			LOGGER.info("Saisonwechsel wurde verarbeitet. Fahre direkt mit der Datenverarbeitung der neuen Saison fort...");
 		}
 		return seasonChanged;
@@ -177,6 +200,7 @@ public class ComunioDataUpdater {
 
 		UserUpdater.updateAllUsers(lastUpdates, ctx.playerDBObject, ctx.marketValueDB, ctx.notInligaDBObj, ctx.playerToUserMap, ctx.userMap, community, currentMatchdayInfo, ctx.newsManager, user);
 		UserUpdater.updateUserPoints(ctx.userMap, community, currentMatchdayInfo);
+		ownerList = getAllOwners(ctx.userMap);
 		
 		KontostandBerechner kontostandBerechner = new KontostandBerechner();
 		kontostandBerechner.calculateKontostaende(ctx.userMap, ctx.newsManager);
@@ -198,20 +222,12 @@ public class ComunioDataUpdater {
 
 		ComstatsDataScraper.getPlaytimeForNewMatchdays(currentMatchdayInfo.getPointsMatchday(), ctx.playerDBObject, ctx.notInligaDBObj);
 
-		if (uld.isDebug()) {
-			LOGGER.info("DEBUG-Modus: Transfermarkt.de Daten werden NICHT aktualisiert.");
-		} else {
-			TmDePlayerDataUpdater.updateAllPlayerWithMissedData(ctx.playerDBObject, ctx.clubDB, false, lastUpdates, statusManager);
-			TmDePlayerDataUpdater.updateAllPlayerWithLink(ctx.playerDBObject, false, false, lastUpdates, statusManager);
-		}
+		EspnPlayerUpdater.updatePlayers(ctx.playerDBObject, ctx.clubDB, ctx.espnClubMappingContainer.getClubMap(), ctx.espnPlayerMappingContainer, lastUpdates, currentMatchdayInfo);
 
 		NewsAnalyzerComunio.analyzeNews(ctx.newsManager, ctx.playerDBObject, ctx.playerToUserMap, ctx.notInligaDBObj, currentMatchdayInfo, lastUpdates, user);
 		TmDePlayerDataUpdater.updateVerletzteVonTransfermarkt(ctx.playerDBObject, ctx.clubDB, ctx.newsManager, LOGGER, lastUpdates, statusManager);
 		LigainsiderRankingUpdater.updateLigainsiderRanking(ctx.playerDBObject, ctx.clubDB, currentMatchdayInfo, lastUpdates);
 
-
-
-		
 		kontostandBerechner.calculateKontostaende(ctx.userMap, ctx.newsManager);
 
 		ExportNotInLiga.exportAndRemoveNotInLiga(ctx.playerDBObject, ctx.notInligaDBObj, lastUpdates, ctx.injuryDB);
@@ -270,6 +286,13 @@ public class ComunioDataUpdater {
 		JSONObject newsDbObjcet = ctx.newsManager.objectToJson();
 		GitHubUploader.uploadNews(newsDbObjcet);
 
+		// ESPN-Mappings hochladen (falls vorhanden)
+		LOGGER.info("Lade ESPN Club-Mapping auf GitHub hoch");
+		GitHubUploader.uploadEspnClubMapping(ctx.espnClubMappingContainer.toJson());
+
+		LOGGER.info("Lade ESPN Player-Mapping auf GitHub hoch");
+		GitHubUploader.uploadEspnPlayerMapping(ctx.espnPlayerMappingContainer.toJson());
+
 		logExecutionTime("Github-Upload", System.nanoTime(), start);
 	}
 
@@ -301,6 +324,11 @@ public class ComunioDataUpdater {
 		String msg = "Ladezeit für " + taskName + ": " + ms + " ms";
 		LOGGER.info(msg);
 		System.out.println(msg);
+	}
+	
+	private static Set<String> getAllOwners(Map<String, User> userMap) {
+		
+		return userMap.keySet();
 	}
 
 }

@@ -2,13 +2,10 @@ package comunio.nas.dataScraper.comstats;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken; // ← WICHTIG!
-
 import comunio.nas.enu.Playtime; // ← Deine Enum
 import comunio.nas.objects.helper.LogManager;
+import comunio.nas.objects.player.Spielerstats;
 import comunio.nas.util.player.PlayerHelper;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -16,13 +13,13 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
 import java.lang.reflect.Type;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -37,21 +34,6 @@ public class ComstatsDataScraper {
 	private static final String MATCH_DETAILS_URL = "https://stats.comunio.de/xhr/matchDetails.php?mid=%d";
 	private static final Gson GSON = new GsonBuilder().create();
 	private final HttpClient httpClient = HttpClient.newHttpClient();
-
-	public static void main(String[] args) {
-		ComstatsDataScraper scraper = new ComstatsDataScraper();
-		List<JsonObject> results = scraper.processMatchday(12);
-
-		// Pretty Print (erste 10 Spieler)
-		Gson pretty = new GsonBuilder().setPrettyPrinting().create();
-		System.out.println("=== TOP 10 SPIELER SPIELTAG 19 ===");
-		for (int i = 0; i < Math.min(10, results.size()); i++) {
-			System.out.println(pretty.toJson(results.get(i)));
-		}
-
-		// Optional: Als Datei speichern
-		// Gson.toJson(results, new FileWriter("comunio_spieltag19.json"));
-	}
 
 	public static void getPlaytimeForNewMatchdays(int maxSpieltag, JSONObject playerDBObject, JSONObject notInLigaDBObj) {
 		int lastMatchday = playerDBObject.optInt("lastProcessedComstatsSpieltagsdaten", 1);
@@ -74,7 +56,7 @@ public class ComstatsDataScraper {
 
 	public static void getPlaytimeForMatchdays(int matchday, JSONObject playerDBObject, JSONObject notInLigaDBObj, boolean override) {
 		ComstatsDataScraper scraper = new ComstatsDataScraper();
-		List<JsonObject> results = scraper.processMatchday(matchday);
+		List<JSONObject> results = scraper.processMatchday(matchday);
 
 		JSONArray playerDB = playerDBObject.optJSONArray("playerDB");
 		if (playerDB == null) {
@@ -85,8 +67,10 @@ public class ComstatsDataScraper {
 		if (results != null && results.size() > 0) {
 
 			for (int i = 0; i < results.size(); i++) {
-				JsonObject spieler = results.get(i);
-				JSONObject player = PlayerHelper.findPlayerByComunioId(playerDB, spieler.get("playerId").toString(), notInLigaDBObj);
+				JSONObject spieler = results.get(i);
+				String playerId = PlayerHelper.convertIdToString(spieler.get("playerId"));
+
+				JSONObject player = PlayerHelper.findPlayerByComunioId(playerDB, playerId, notInLigaDBObj);
 				if (player != null) {
 					JSONObject data = player.optJSONObject("data");
 					if (data == null) {
@@ -100,31 +84,33 @@ public class ComstatsDataScraper {
 					for (int j = 0; j < spieltagspunkte.length(); j++) {
 						JSONObject spP = spieltagspunkte.getJSONObject(j);
 						if (spP.optInt("key", 0) == matchday) {
-							if (override || spP.optInt("einsatzzeit", -1) == -1) {
-								spP.put("einsatzzeit", spieler.get("playtime").getAsInt());
-							}
+							// Spielerstats als Transportobjekt bauen (Mapping der Comstats-Felder)
+							Spielerstats stats = buildSpielerstats(spieler);
+							stats.setLastUpdate(null); // lastUpdate ist ein Saison-Feld, gehört nicht in den Spieltag-Eintrag
 
-							spP.put("tore", spieler.get("goals").getAsInt());
-							spP.put("status", spieler.get("status").getAsString()); // mit status ist gemeint ob voll, subin, subout
-							spP.put("xgoals", spieler.get("xgoals").getAsDouble());
-							spP.put("rating", spieler.get("rating").getAsDouble());
-							spP.put("assists", spieler.get("assists").getAsInt());
-							spP.put("yellow", spieler.get("yellow").getAsInt());
-							spP.put("yellowRed", spieler.get("yellowRed").getAsInt());
-							spP.put("red", spieler.get("red").getAsInt());
-							spP.put("stats", spieler.get("stats").getAsJsonObject().toString());
+							// Alle Felder flach in den Spieltag-Eintrag schreiben (kein stats-Unterobjekt)
+							JSONObject statsJson = stats.toJSON();
+							Iterator<String> keys = statsJson.keys();
+							while (keys.hasNext()) {
+								String key = keys.next();
+								// einsatzzeit nur überschreiben, wenn override oder noch nicht gesetzt
+								if ("einsatzzeit".equals(key) && !(override || spP.optInt("einsatzzeit", -1) == -1)) {
+									continue;
+								}
+								spP.put(key, statsJson.get(key));
+							}
 						}
 					}
 					player.put("data", data);
 				} else {
-					LOGGER.fine("Kein Match für Spieler mit ComunioId " + spieler.get("playerId").getAsInt() + " Name: " + spieler.get("name").getAsString());
+					LOGGER.fine("Kein Match für Spieler mit ComunioId " + spieler.getInt("playerId") + " Name: " + spieler.getString("name"));
 				}
 			}
 		}
 	}
 
-	public List<JsonObject> processMatchday(int matchday) {
-		List<JsonObject> allPlayers = new ArrayList<>();
+	public List<JSONObject> processMatchday(int matchday) {
+		List<JSONObject> allPlayers = new ArrayList<>();
 
 		try {
 			List<Integer> matchIds = extractMatchIds(matchday);
@@ -132,11 +118,12 @@ public class ComstatsDataScraper {
 
 			for (int matchId : matchIds) {
 				try {
-					JsonObject matchJson = fetchMatchDetails(matchId);
-					List<JsonObject> players = processMatchPlayers(matchJson);
+					JSONObject matchJson = fetchMatchDetails(matchId);
+					List<JSONObject> players = processMatchPlayers(matchJson);
 					allPlayers.addAll(players);
 				} catch (Exception e) {
 					System.err.println("Match " + matchId + ": " + e.getMessage());
+					// Continue processing other matches even if one fails
 				}
 			}
 		} catch (Exception e) {
@@ -160,58 +147,77 @@ public class ComstatsDataScraper {
 		return matchIds;
 	}
 
-	private JsonObject fetchMatchDetails(int matchId) throws Exception {
+	private JSONObject fetchMatchDetails(int matchId) throws Exception {
 		String url = String.format(MATCH_DETAILS_URL, matchId);
 		HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).GET().header("User-Agent", "Mozilla/5.0").build();
-
 		HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-		Type type = new TypeToken<JsonObject>() {
-		}.getType();
-		return GSON.fromJson(response.body(), type);
+		JSONObject result = new JSONObject(response.body().toString());
+		return result;
 	}
 
-	private List<JsonObject> processMatchPlayers(JsonObject matchJson) {
-		List<JsonObject> players = new ArrayList<>();
+	private List<JSONObject> processMatchPlayers(JSONObject matchJson) {
+		List<JSONObject> players = new ArrayList<>();
 
-		processPlayersList(matchJson.getAsJsonArray("homePlayers"), players);
-		processPlayersList(matchJson.getAsJsonArray("awayPlayers"), players);
+		processPlayersList(matchJson.getJSONArray("homePlayers"), players);
+		processPlayersList(matchJson.getJSONArray("awayPlayers"), players);
 		return players;
 	}
 
-	private void processPlayersList(JsonArray playersArray, List<JsonObject> result) {
-		for (int i = 0; i < playersArray.size(); i++) {
-			JsonObject player = null;
+	private void processPlayersList(JSONArray playersArray, List<JSONObject> result) {
+		for (int i = 0; i < playersArray.length(); i++) {
+			JSONObject player = null;
 			try {
-				player = playersArray.get(i).getAsJsonObject();
-				if (player.get("active").getAsInt() != 1)
+				player = playersArray.getJSONObject(i);
+				if (player.getInt("active") != 1) {
 					continue;
-
-				int playerId = player.get("playerId").getAsInt();
-				String name = player.get("name").getAsString();
+				}
+				int playerId = player.getInt("playerId");
+				String name = player.getString("name");
 				int goals = calculateGols(player);
 				int playtime = calculatePlaytime(player);
 				Playtime status = determineStatus(player);
 				double xgoals = calculateXGoals(player);
-				double rating = player.has("rating") && !player.get("rating").isJsonNull() ? player.get("rating").getAsDouble() : 0.0;
-				int assists = player.has("assists") && !player.get("assists").isJsonNull() ? player.get("assists").getAsInt() : 0;
-				int yellow = player.has("yellow") && !player.get("yellow").isJsonNull() ? player.get("yellow").getAsInt() : 0;
-				int yellowRed = player.has("yellowRed") && !player.get("yellowRed").isJsonNull() ? player.get("yellowRed").getAsInt() : 0;
-				int red = player.has("red") && !player.get("red").isJsonNull() ? player.get("red").getAsInt() : 0;
-				JsonObject stats = player.has("stats") && !player.get("stats").isJsonNull() ? player.get("stats").getAsJsonObject() : new JsonObject();
+				double rating = player.has("rating") && !player.isNull("rating") ? player.optDouble("rating", 0.0) : 0.0;
+				int assists = player.has("assists") && !player.isNull("assists") ? player.getInt("assists") : 0;
+				int yellow = player.has("yellow") && !player.isNull("yellow") ? player.getInt("yellow") : 0;
+				int yellowRed = player.has("yellowRed") && !player.isNull("yellowRed") ? player.getInt("yellowRed") : 0;
+				int red = player.has("red") && !player.isNull("red") ? player.getInt("red") : 0;
+				JSONObject stats = player.has("stats") && !player.isNull("stats") ? player.getJSONObject("stats") : new JSONObject();
 
-				JsonObject playerData = new JsonObject();
-				playerData.addProperty("playerId", playerId);
-				playerData.addProperty("name", name);
-				playerData.addProperty("playtime", playtime);
-				playerData.addProperty("goals", goals);
-				playerData.addProperty("status", status.name());
-				playerData.addProperty("xgoals", xgoals);
-				playerData.addProperty("rating", rating);
-				playerData.addProperty("assists", assists);
-				playerData.addProperty("yellow", yellow);
-				playerData.addProperty("yellowRed", yellowRed);
-				playerData.addProperty("red", red);
-				playerData.add("stats", stats);
+				int ownGoals = player.has("ownGoals") && !player.isNull("ownGoals") ? player.getInt("ownGoals") : 0;
+				int pens = player.has("pens") && !player.isNull("pens") ? player.getInt("pens") : 0;
+				int pensSaved = player.has("pensSaved") && !player.isNull("pensSaved") ? player.getInt("pensSaved") : 0;
+				int pensMissed = player.has("pensMissed") && !player.isNull("pensMissed") ? player.getInt("pensMissed") : 0;
+				int points = player.has("points") && !player.isNull("points") ? player.getInt("points") : 0;
+				int subIn = player.has("subIn") && !player.isNull("subIn") ? player.getInt("subIn") : 0;
+				int subOut = player.has("subOut") && !player.isNull("subOut") ? player.getInt("subOut") : 0;
+				int motm = player.has("motm") && !player.isNull("motm") ? player.getInt("motm") : 0;
+				int cleanSheet = player.has("cleanSheet") && !player.isNull("cleanSheet") ? player.getInt("cleanSheet") : 0;
+				int active = player.has("active") && !player.isNull("active") ? player.getInt("active") : 0;
+
+				JSONObject playerData = new JSONObject();
+				playerData.put("playerId", playerId);
+				playerData.put("name", name);
+				playerData.put("playtime", playtime);
+				playerData.put("goals", goals);
+				playerData.put("status", status.name());
+				playerData.put("xgoals", xgoals);
+				playerData.put("rating", rating);
+				playerData.put("assists", assists);
+				playerData.put("yellow", yellow);
+				playerData.put("yellowRed", yellowRed);
+				playerData.put("red", red);
+				playerData.put("stats", stats);
+				playerData.put("ownGoals", ownGoals);
+				playerData.put("pens", pens);
+				playerData.put("pensSaved", pensSaved);
+				playerData.put("pensMissed", pensMissed);
+				playerData.put("points", points);
+				playerData.put("subIn", subIn);
+				playerData.put("subOut", subOut);
+				playerData.put("motm", motm);
+				playerData.put("cleanSheet", cleanSheet);
+				playerData.put("active", active);
 
 				result.add(playerData);
 
@@ -221,21 +227,19 @@ public class ComstatsDataScraper {
 		}
 	}
 
-	private double calculateXGoals(JsonObject player) {
-		// Angenommen, 'player' ist dein JsonObject
+	private double calculateXGoals(JSONObject player) {
 		double xgoals = 0.0;
-
-		if (player.has("xgoals") && !player.get("xgoals").isJsonNull()) {
-			JsonElement xgoalsElement = player.get("xgoals");
-			if (xgoalsElement.isJsonPrimitive()) {
-				String xgoalsStr = xgoalsElement.getAsString().trim(); // Trim entfernt Leerzeichen
+		if (player.has("xgoals") && !player.isNull("xgoals")) {
+			Object xgoalsObj = player.get("xgoals");
+			if (xgoalsObj instanceof Number) {
+				xgoals = ((Number) xgoalsObj).doubleValue();
+			} else if (xgoalsObj instanceof String) {
+				String xgoalsStr = ((String) xgoalsObj).trim();
 				if (!xgoalsStr.isEmpty()) {
-					// Ersetze Komma durch Punkt für Java-Double-Parsing
 					String normalizedStr = xgoalsStr.replace(",", ".");
 					try {
 						xgoals = Double.parseDouble(normalizedStr);
 					} catch (NumberFormatException e) {
-						// Fallback bei ungültigem Format (z.B. "abc")
 						System.err.println("Ungültiges xGoals-Format: " + xgoalsStr + " -> Verwende 0.0");
 						xgoals = 0.0;
 					}
@@ -243,21 +247,20 @@ public class ComstatsDataScraper {
 			}
 		}
 		return xgoals;
-
 	}
 
-	private int calculateGols(JsonObject player) {
-		if (player.has("pens") && !player.get("pens").isJsonNull()) {
-			if (player.get("pens").getAsInt() > 0) {
-				return player.get("goals").getAsInt() + player.get("pens").getAsInt() - player.get("pensMissed").getAsInt();
+	private int calculateGols(JSONObject player) {
+		if (player.has("pens") && !player.isNull("pens")) {
+			if (player.getInt("pens") > 0) {
+				return player.getInt("goals") + player.getInt("pens") - player.getInt("pensMissed");
 			}
-			return player.get("goals").getAsInt();
+			return player.getInt("goals");
 		}
 
-		return player.get("goals").getAsInt();
+		return player.getInt("goals");
 	}
 
-	private int calculatePlaytime(JsonObject player) {
+	private int calculatePlaytime(JSONObject player) {
 		Integer subIn = getIntOrNull(player, "subIn");
 		Integer subOut = getIntOrNull(player, "subOut");
 		if (subIn != null)
@@ -267,7 +270,7 @@ public class ComstatsDataScraper {
 		return 90;
 	}
 
-	private Playtime determineStatus(JsonObject player) {
+	private Playtime determineStatus(JSONObject player) {
 		Integer subIn = getIntOrNull(player, "subIn");
 		Integer subOut = getIntOrNull(player, "subOut");
 		if (subIn != null)
@@ -277,8 +280,32 @@ public class ComstatsDataScraper {
 		return Playtime.FULL;
 	}
 
-	private Integer getIntOrNull(JsonObject obj, String key) {
-		return obj.has(key) && !obj.get(key).isJsonNull() ? obj.get(key).getAsInt() : null;
+	private Integer getIntOrNull(JSONObject obj, String key) {
+		return obj.has(key) && !obj.isNull(key) ? obj.getInt(key) : null;
 	}
 
+	// Hilfsmethode: Spielerstats-Objekt aus Comstats-JSON bauen
+	private static Spielerstats buildSpielerstats(JSONObject spieler) {
+		Spielerstats stats = new Spielerstats();
+		stats.setEinsatzzeit(spieler.optInt("playtime", -1));
+		stats.setTore(spieler.optInt("goals", 0));
+		stats.setStatus(spieler.optString("status", null));
+		stats.setXgoals(spieler.optDouble("xgoals", 0.0));
+		stats.setRating(spieler.optDouble("rating", 0.0));
+		stats.setGoalAssists(spieler.optInt("assists", 0));
+		stats.setGelbekarten(spieler.optInt("yellow", 0));
+		stats.setGelbrotekarten(spieler.optInt("yellowRed", 0));
+		stats.setRotekarten(spieler.optInt("red", 0));
+		stats.setOwnGoals(spieler.optInt("ownGoals", 0));
+		stats.setTotalPenalties(spieler.optInt("pens", 0));
+		stats.setPensSaved(spieler.optInt("pensSaved", 0));
+		stats.setPensMissed(spieler.optInt("pensMissed", 0));
+		stats.setPoints(spieler.optInt("points", 0));
+		stats.setSubIns(spieler.optInt("subIn", 0));
+		stats.setSubOut(spieler.optInt("subOut", 0));
+		stats.setManOfTheMatchAmount(spieler.optInt("motm", 0));
+		stats.setCleanSheet(spieler.optInt("cleanSheet", 0));
+		stats.setActive(spieler.optInt("active", 0));
+		return stats;
+	}
 }

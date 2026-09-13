@@ -7,7 +7,7 @@ public class Spielerstats {
 	private Integer totalPenalties;
 	private Integer ratedGames;
 	private Integer playedGames;
-	private Integer totalGoals;
+	private Integer tore;
 	private Integer manOfTheMatchAmount;
 	private String punkteDurchschnitt;
 	private String notenDurchschnitt;
@@ -15,6 +15,18 @@ public class Spielerstats {
 	private Integer rotekarten;
 	private Integer gelbrotekarten;
 	private ComunioDate lastUpdate;
+
+	// ===== Comstats-Spieltagswerte =====
+	private Integer einsatzzeit;
+	private String status;
+	private Double xgoals;
+	private Double rating;
+	private Integer pensSaved;
+	private Integer pensMissed;
+	private Integer points;
+	private Integer subOut;
+	private Integer cleanSheet;
+	private Integer active;
 
 	// ===== ESPN-Saison-Statistiken (Kategorie "General") =====
 	private Integer foulsCommitted;
@@ -38,7 +50,7 @@ public class Spielerstats {
 		totalPenalties = 0;
 		ratedGames = 0;
 		playedGames = 0;
-		totalGoals = 0;
+		tore = 0;
 		manOfTheMatchAmount = 0;
 		punkteDurchschnitt = "";
 		notenDurchschnitt = "";
@@ -46,6 +58,17 @@ public class Spielerstats {
 		rotekarten = 0;
 		gelbrotekarten = 0;
 		lastUpdate = null;
+
+		einsatzzeit = 0;
+		status = "";
+		xgoals = 0.0;
+		rating = 0.0;
+		pensSaved = 0;
+		pensMissed = 0;
+		points = 0;
+		subOut = 0;
+		cleanSheet = 0;
+		active = 0;
 
 		foulsCommitted = 0;
 		foulsSuffered = 0;
@@ -77,11 +100,29 @@ public class Spielerstats {
 			stats.lastUpdate = new ComunioDate(date);
 		}
 		stats.playedGames = json.has("playedGames") ? json.optInt("playedGames") : null;
-		stats.totalGoals = json.has("totalGoals") ? json.optInt("totalGoals") : null;
+		if (json.has("tore")) {
+			stats.tore = json.optInt("tore");
+		} else if (json.has("totalGoals")) {
+			stats.tore = json.optInt("totalGoals");
+		} else {
+			stats.tore = null;
+		}
 		stats.punkteDurchschnitt = json.optString("punkteDurchschnitt", null);
 		stats.gelbrotekarten = json.has("gelbrotekarten") ? json.optInt("gelbrotekarten") : null;
 		stats.rotekarten = json.has("rotekarten") ? json.optInt("rotekarten") : null;
 		stats.manOfTheMatchAmount = json.has("manOfTheMatchAmount") ? json.optInt("manOfTheMatchAmount") : null;
+
+		// Comstats-Felder
+		stats.einsatzzeit = json.has("einsatzzeit") ? json.optInt("einsatzzeit") : null;
+		stats.status = json.optString("status", null);
+		stats.xgoals = json.has("xgoals") ? json.optDouble("xgoals") : null;
+		stats.rating = json.has("rating") ? json.optDouble("rating") : null;
+		stats.pensSaved = json.has("pensSaved") ? json.optInt("pensSaved") : null;
+		stats.pensMissed = json.has("pensMissed") ? json.optInt("pensMissed") : null;
+		stats.points = json.has("points") ? json.optInt("points") : null;
+		stats.subOut = json.has("subOut") ? json.optInt("subOut") : null;
+		stats.cleanSheet = json.has("cleanSheet") ? json.optInt("cleanSheet") : null;
+		stats.active = json.has("active") ? json.optInt("active") : null;
 
 		// ESPN-Felder
 		stats.foulsCommitted = json.has("foulsCommitted") ? json.optInt("foulsCommitted") : null;
@@ -113,8 +154,8 @@ public class Spielerstats {
 			json.put("lastUpdate", lastUpdate.toString());
 		if (playedGames != null)
 			json.put("playedGames", playedGames);
-		if (totalGoals != null)
-			json.put("totalGoals", totalGoals);
+		if (tore != null)
+			json.put("tore", tore);
 		if (punkteDurchschnitt != null)
 			json.put("punkteDurchschnitt", punkteDurchschnitt);
 		if (gelbrotekarten != null)
@@ -123,6 +164,28 @@ public class Spielerstats {
 			json.put("rotekarten", rotekarten);
 		if (manOfTheMatchAmount != null)
 			json.put("manOfTheMatchAmount", manOfTheMatchAmount);
+
+		// Comstats-Felder
+		if (einsatzzeit != null)
+			json.put("einsatzzeit", einsatzzeit);
+		if (status != null)
+			json.put("status", status);
+		if (xgoals != null)
+			json.put("xgoals", xgoals);
+		if (rating != null)
+			json.put("rating", rating);
+		if (pensSaved != null)
+			json.put("pensSaved", pensSaved);
+		if (pensMissed != null)
+			json.put("pensMissed", pensMissed);
+		if (points != null)
+			json.put("points", points);
+		if (subOut != null)
+			json.put("subOut", subOut);
+		if (cleanSheet != null)
+			json.put("cleanSheet", cleanSheet);
+		if (active != null)
+			json.put("active", active);
 
 		// ESPN-Felder
 		if (foulsCommitted != null)
@@ -179,12 +242,12 @@ public class Spielerstats {
 		this.lastUpdate = new ComunioDate();
 	}
 
-	public int getTotalGoals() {
-		return totalGoals;
+	public int getTore() {
+		return tore;
 	}
 
-	public void setTotalGoals(int totalGoals) {
-		this.totalGoals = totalGoals;
+	public void setTore(int tore) {
+		this.tore = tore;
 		this.lastUpdate = new ComunioDate();
 	}
 
@@ -240,6 +303,98 @@ public class Spielerstats {
 
 	public void setGelbrotekarten(int gelbrotekarten) {
 		this.gelbrotekarten = gelbrotekarten;
+		this.lastUpdate = new ComunioDate();
+	}
+
+	// ===== Getter/Setter Comstats-Felder =====
+
+	public int getEinsatzzeit() {
+		return einsatzzeit;
+	}
+
+	public void setEinsatzzeit(int einsatzzeit) {
+		this.einsatzzeit = einsatzzeit;
+		this.lastUpdate = new ComunioDate();
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+		this.lastUpdate = new ComunioDate();
+	}
+
+	public double getXgoals() {
+		return xgoals;
+	}
+
+	public void setXgoals(double xgoals) {
+		this.xgoals = xgoals;
+		this.lastUpdate = new ComunioDate();
+	}
+
+	public double getRating() {
+		return rating;
+	}
+
+	public void setRating(double rating) {
+		this.rating = rating;
+		this.lastUpdate = new ComunioDate();
+	}
+
+	public int getPensSaved() {
+		return pensSaved;
+	}
+
+	public void setPensSaved(int pensSaved) {
+		this.pensSaved = pensSaved;
+		this.lastUpdate = new ComunioDate();
+	}
+
+	public int getPensMissed() {
+		return pensMissed;
+	}
+
+	public void setPensMissed(int pensMissed) {
+		this.pensMissed = pensMissed;
+		this.lastUpdate = new ComunioDate();
+	}
+
+	public int getPoints() {
+		return points;
+	}
+
+	public void setPoints(int points) {
+		this.points = points;
+		this.lastUpdate = new ComunioDate();
+	}
+
+	public int getSubOut() {
+		return subOut;
+	}
+
+	public void setSubOut(int subOut) {
+		this.subOut = subOut;
+		this.lastUpdate = new ComunioDate();
+	}
+
+	public int getCleanSheet() {
+		return cleanSheet;
+	}
+
+	public void setCleanSheet(int cleanSheet) {
+		this.cleanSheet = cleanSheet;
+		this.lastUpdate = new ComunioDate();
+	}
+
+	public int getActive() {
+		return active;
+	}
+
+	public void setActive(int active) {
+		this.active = active;
 		this.lastUpdate = new ComunioDate();
 	}
 

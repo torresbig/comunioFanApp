@@ -1,6 +1,5 @@
 package comunio.nas.dataScraper.cheats;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import comunio.nas.objects.News;
@@ -113,7 +112,6 @@ public final class KontostandBerechner {
             for (Map.Entry<Integer, Integer> entry : punkteHistorie.entrySet()) {
                 int key = entry.getKey();
                 int punkte = entry.getValue();
-                System.out.printf("Spieltag %s: %d Punkte%n", key, punkte);
                 sumPunkte += punkte;
                 if (punkte > 0) {
                     sum += punkte * PUNKTE_MULTIPLIKATOR;

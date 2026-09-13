@@ -6,6 +6,7 @@ import java.util.logging.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import comunio.nas.objects.espn.EspnClubMapObject;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.util.player.PlayerHelper;
 
@@ -38,7 +39,7 @@ public class EspnPlayerDataIntegrator {
 	 * @param espnToComunio  Mapping ESPN-Team-ID → Comunio-Vereins-ID
 	 * @return Anzahl der aktualisierten Spieler
 	 */
-	public static int integratePlayerData(JSONObject playerDBObject, JSONObject espnPlayers, Map<String, String> espnToComunio) {
+	public static int integratePlayerData(JSONObject playerDBObject, JSONObject espnPlayers, Map<String, EspnClubMapObject> espnToComunioClubMap) {
 		if (playerDBObject == null || espnPlayers == null) {
 			LOGGER.warning("IntegratePlayerData: playerDBObject oder espnPlayers ist null!");
 			return 0;
@@ -57,7 +58,7 @@ public class EspnPlayerDataIntegrator {
 		for (int i = 0; i < espnPlayerArray.length(); i++) {
 			JSONObject espnPlayer = espnPlayerArray.getJSONObject(i);
 			String espnClubId = espnPlayer.optJSONObject("club").optString("espnId", "");
-			String comunioClubId = espnToComunio != null ? espnToComunio.get(espnClubId) : null;
+			String comunioClubId = (espnToComunioClubMap != null && espnToComunioClubMap.containsKey(espnClubId)) ? espnToComunioClubMap.get(espnClubId).getComunioId() : null;
 			if (comunioClubId == null || comunioClubId.isEmpty()) {
 				continue; // Verein nicht gemappt → überspringen
 			}
@@ -93,7 +94,6 @@ public class EspnPlayerDataIntegrator {
 			}
 		}
 
-		LOGGER.info("ESPN-Integration: " + updated + " Spieler aktualisiert.");
 		return updated;
 	}
 

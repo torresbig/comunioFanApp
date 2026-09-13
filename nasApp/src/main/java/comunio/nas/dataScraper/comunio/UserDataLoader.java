@@ -4,7 +4,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.logging.Logger;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
 

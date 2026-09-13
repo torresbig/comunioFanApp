@@ -3,7 +3,6 @@ package comunio.nas.dataScraper.comunio;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
 import comunio.nas.dataVariable.Urls;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.user.User;

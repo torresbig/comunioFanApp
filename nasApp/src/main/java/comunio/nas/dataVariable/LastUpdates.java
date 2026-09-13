@@ -26,6 +26,7 @@ public class LastUpdates {
 	private Instant playerStatus;
 	private Instant seasonStart;
 	private Instant clubDb;
+	private int lastEspnMatchday;
 
 	public LastUpdates() {
 
@@ -49,6 +50,7 @@ public class LastUpdates {
 		this.playerStatus = json.has("playerStatus") ? Instant.ofEpochMilli(json.getLong("playerStatus")) : null;
 		this.seasonStart = json.has("seasonStart") ? Instant.ofEpochMilli(json.getLong("seasonStart")) : null;
 		this.clubDb = json.has("clubDb") ? Instant.ofEpochMilli(json.getLong("clubDb")) : null;
+		this.lastEspnMatchday = json.optInt("lastEspnMatchday", 0);
 
 		if (this.seasonStart != null && this.seasonStart.toEpochMilli() > 0) {
 			Dates.setSeasonStart(this.seasonStart);
@@ -101,6 +103,7 @@ public class LastUpdates {
 		if (this.clubDb != null) {
 			json.put("clubDb", this.clubDb.toEpochMilli());
 		}
+		json.put("lastEspnMatchday", this.lastEspnMatchday);
 		return json;
 
 	}
@@ -215,6 +218,14 @@ public class LastUpdates {
 
 	public void setPlayerStatus(Instant playerStatus) {
 		this.playerStatus = playerStatus;
+	}
+
+	public int getLastEspnMatchday() {
+		return lastEspnMatchday;
+	}
+
+	public void setLastEspnMatchday(int lastEspnMatchday) {
+		this.lastEspnMatchday = lastEspnMatchday;
 	}
 
 	/**

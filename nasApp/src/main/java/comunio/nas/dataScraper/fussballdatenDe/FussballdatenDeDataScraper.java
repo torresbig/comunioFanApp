@@ -6,17 +6,12 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import comunio.nas.dataVariable.LastUpdates;
 import comunio.nas.objects.helper.LogManager;
-import comunio.nas.util.DateUtils;
 import comunio.nas.util.HttpHeaderUtil;
-import comunio.nas.util.player.PlayerMatcher;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.time.Instant;
 import java.util.Map;
 import java.util.logging.Logger;
 

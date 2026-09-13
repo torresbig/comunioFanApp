@@ -59,6 +59,8 @@ public class Urls {
 	public static final String POINTS_DB_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("PointsDB.json");
 	public static final String MARKET_VALUE_ARCHIVE_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("MarketValueArchive.json");
 	public static final String USER_LINEUPS = ComunioDataUpdater.uld.getCompleteGitProjectPath("UserLineups.json");
+	public static final String ESPN_CLUB_MAPPING_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("EspnClubMapping.json");
+	public static final String ESPN_PLAYER_MAPPING_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("EspnPlayerMapping.json");
 
 	/** spielersuche auf Transfermarkt.de */
 //	public static final String TMDE_PLAYERSEARCH = "https://www.transfermarkt.de/schnellsuche/ergebnis/schnellsuche?query=";

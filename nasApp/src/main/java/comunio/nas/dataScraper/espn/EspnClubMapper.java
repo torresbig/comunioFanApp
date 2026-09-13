@@ -2,10 +2,15 @@ package comunio.nas.dataScraper.espn;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Logger;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import comunio.nas.ComunioDataUpdater;
+import comunio.nas.error.ErrorType;
+import comunio.nas.objects.espn.EspnClubMapObject;
+import comunio.nas.objects.helper.LogManager;
 import comunio.nas.util.ClubMapper;
 
 /**
@@ -16,6 +21,7 @@ import comunio.nas.util.ClubMapper;
  * einmalig aus den Vereinsnamen abgeleitet und kann als JSON exportiert werden.
  * <p>
  * Referenz-Team-IDs (Stand Saison 2026/27):
+ * 
  * <pre>
  * 598  = 1. FC Union Berlin
  * 131  = Bayer Leverkusen
@@ -39,7 +45,12 @@ import comunio.nas.util.ClubMapper;
  */
 public class EspnClubMapper {
 
-	/** Manuelle Korrekturen: ESPN-Name → Comunio-Name (falls Normalisierung nicht reicht). */
+	private static final Logger LOGGER = LogManager.getLogger(EspnClubMapper.class);
+
+	/**
+	 * Manuelle Korrekturen: ESPN-Name → Comunio-Name (falls Normalisierung nicht
+	 * reicht).
+	 */
 	private static final Map<String, String> MANUAL_ESPN_TO_COMUNIO = new HashMap<>();
 
 	static {
@@ -58,7 +69,7 @@ public class EspnClubMapper {
 		MANUAL_ESPN_TO_COMUNIO.put("Schalke 04", "FC Schalke 04");
 		MANUAL_ESPN_TO_COMUNIO.put("TSG Hoffenheim", "TSG Hoffenheim");
 		MANUAL_ESPN_TO_COMUNIO.put("VfB Stuttgart", "VfB Stuttgart");
-		MANUAL_ESPN_TO_COMUNIO.put("Werder Bremen", "Werder Bremen");
+		MANUAL_ESPN_TO_COMUNIO.put("Werder Bremen", "SV Werder Bremen");
 		MANUAL_ESPN_TO_COMUNIO.put("1. FC Union Berlin", "1. FC Union Berlin");
 		MANUAL_ESPN_TO_COMUNIO.put("Bayer Leverkusen", "Bayer 04 Leverkusen");
 	}
@@ -70,8 +81,8 @@ public class EspnClubMapper {
 	 * @param clubDB    JSONArray der Comunio-Vereinsdatenbank
 	 * @return Map: ESPN-Team-ID → Comunio-Vereins-ID (nur gemappte Einträge)
 	 */
-	public static Map<String, String> buildEspnToComunioMap(JSONObject espnTeams, JSONArray clubDB) {
-		Map<String, String> result = new HashMap<>();
+	public static Map<String, EspnClubMapObject> buildEspnToComunioClubMap(JSONObject espnTeams, JSONArray clubDB) {
+		Map<String, EspnClubMapObject> result = new HashMap<>();
 
 		// ESPN-Teams durchgehen
 		JSONArray sports = espnTeams.optJSONArray("sports");
@@ -100,7 +111,8 @@ public class EspnClubMapper {
 			// 2. Comunio-Vereins-ID anhand des Namens suchen
 			String comunioId = ClubMapper.getComunioIdFromName(comunioName, clubDB);
 			if (comunioId != null && !comunioId.isEmpty()) {
-				result.put(espnId, comunioId);
+				EspnClubMapObject espnClubMapObject = new EspnClubMapObject(espnName, espnId, comunioName, comunioId);
+				result.put(espnId, espnClubMapObject);
 			}
 		}
 
@@ -112,7 +124,8 @@ public class EspnClubMapper {
 	 *
 	 * @param espnTeams JSONObject aus {@link EspnApiClient#getTeams()}
 	 * @param clubDB    JSONArray der Comunio-Vereinsdatenbank
-	 * @return JSONObject: {"mapping": [{"espnId": "...", "comunioId": "...", "espnName": "...", "comunioName": "..."}]}
+	 * @return JSONObject: {"mapping": [{"espnId": "...", "comunioId": "...",
+	 *         "espnName": "...", "comunioName": "..."}]}
 	 */
 	public static JSONObject buildMappingJson(JSONObject espnTeams, JSONArray clubDB) {
 		JSONObject result = new JSONObject();
@@ -133,6 +146,10 @@ public class EspnClubMapper {
 					String comunioName = MANUAL_ESPN_TO_COMUNIO.getOrDefault(espnName, espnName);
 					String comunioId = ClubMapper.getComunioIdFromName(comunioName, clubDB);
 
+					if (comunioId == null || comunioId.isEmpty()) {
+						LOGGER.warning("ESPN-Update: Kein Mapping für Team ESPN-ID: " + espnId + ", ESPN-Verein: " + espnName);
+						ComunioDataUpdater.errorDb.addError(new comunio.nas.error.Error(ErrorType.ESPN_PLAYER_MAPPER, "buildMappingJson: ESPN-Update: Kein Mapping für Team ESPN-ID: " + espnId + ", ESPN-Verein: " + espnName));
+					}
 					JSONObject entry = new JSONObject();
 					entry.put("espnId", espnId);
 					entry.put("espnName", espnName);
@@ -148,6 +165,9 @@ public class EspnClubMapper {
 		}
 
 		result.put("mapping", mapping);
+		result.put("mappingcount", mapping.length());
 		return result;
 	}
+
+
 }

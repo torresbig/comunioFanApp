@@ -126,7 +126,11 @@ public class PlayerUpdater {
 			// TODO: DATUM RAUS
 			lastUpdates.setPlayerDbShort(Instant.now());
 			try {
-				Thread.sleep(1500); // Rate-Limit beachten
+				if(ComunioDataUpdater.uld.isDebug()) {
+					Thread.sleep(200); 
+				} else {
+				Thread.sleep(2000); // Rate-Limit beachten
+				}
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -223,7 +227,11 @@ public class PlayerUpdater {
 				// nach dem ersten durchgang erst den Sleep machen!
 				if (i > 0) {
 					try {
+						if(ComunioDataUpdater.uld.isDebug()) {
+							Thread.sleep(200); 
+						} else {
 						Thread.sleep(1500); // Rate-Limit beachten
+						}
 					} catch (InterruptedException e) {
 						LOGGER.log(Level.WARNING, "Fehler beim ThreadSleep!", e);
 						e.printStackTrace();
@@ -298,7 +306,8 @@ public class PlayerUpdater {
 				data.put("verein", verein);
 
 				int points = apiPlayer.getInt("points");
-				addPointsToPlayerData(points, null, data, lastUpdates, currentMatchdayInfo);
+				int lastPoints = apiPlayer.optInt("lastPoints");
+				addPointsToPlayerData(points, lastPoints, data, lastUpdates, currentMatchdayInfo);
 
 				setWertAndLastwert(data, apiPlayer);
 
@@ -387,15 +396,11 @@ public class PlayerUpdater {
 		} else {
 			if (points != null) {
 				data.put("punkte", points);
-			} else {
-				LOGGER.warning("addPointsToPlayerData - points sind null");
-			}
+			} 
 
 			if (lastPoints != null) {
 				data.put("lastPoints", lastPoints);
-			} else {
-				LOGGER.info("addPointsToPlayerData - lastPoints sind null");
-			}
+			} 
 
 		}
 	}
@@ -690,26 +695,31 @@ public class PlayerUpdater {
 			try {
 				String newOwnerID = String.valueOf(apiPlayer.getJSONObject("owner").getInt("id"));
 				if (!newOwnerID.equals(oldOwner)) {
-
-					JSONObject newsText = new JSONObject();
-					newsText.put("playerName", playerName);
-					newsText.put("playerId", playerId);
-					newsText.put("playerValue", wert);
-					newsText.put("seller", oldOwner);
-					newsText.put("buyer", newOwnerID);
-
-					if (oldOwner == null || oldOwner.isBlank() || oldOwner.equals("")) {
-						newsText.put("info", "neuer Spieler. war noch nicht in der Liste drin!");
+					if(ComunioDataUpdater.ownerList.contains(newOwnerID)) {
+						JSONObject newsText = new JSONObject();
+						newsText.put("playerName", playerName);
+						newsText.put("playerId", playerId);
+						newsText.put("playerValue", wert);
 						newsText.put("seller", oldOwner);
+						newsText.put("buyer", newOwnerID);
+
+						if (oldOwner == null || oldOwner.isBlank() || oldOwner.equals("")) {
+							newsText.put("info", "neuer Spieler. war noch nicht in der Liste drin!");
+							newsText.put("seller", oldOwner);
+						}
+
+						String text = newsText.toString();
+						News news = new News(NewsArt.OWNERCHANGE, text, playerId);
+						playerToUserMap.put(playerId, newOwnerID);
+						GitHubUploader.mappingChanged = true;
+						if (!newsManager.contains(news)) {
+							newsManager.addNews(news, true);
+						}
+					} else {
+						LOGGER.log(Level.WARNING, "beim update wurde ein spieler einem User zugeordnet, der nicht meht spielt. vermutlich wurde er entfernt. ");
 					}
 
-					String text = newsText.toString();
-					News news = new News(NewsArt.OWNERCHANGE, text, playerId);
-					playerToUserMap.put(playerId, newOwnerID);
-					GitHubUploader.mappingChanged = true;
-					if (!newsManager.contains(news)) {
-						newsManager.addNews(news, true);
-					}
+					
 				}
 			} catch (Exception e) {
 				LOGGER.warning("FEHLER BEIM ERMITTELN DES OWNERS von Comunio!!!! " + apiPlayer.toString() + " | Exception: " + e.getMessage());

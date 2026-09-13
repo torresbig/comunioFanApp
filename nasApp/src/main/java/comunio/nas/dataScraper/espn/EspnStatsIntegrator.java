@@ -126,7 +126,7 @@ public class EspnStatsIntegrator {
 
 		// Bekannte ESPN-Namen, die auf bestehende Spielerstats-Felder passen
 		case "totalGoals":
-			stats.setTotalGoals(value);
+			stats.setTore(value);
 			return true;
 		case "yellowCards":
 			stats.setGelbekarten(value);

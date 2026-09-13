@@ -4,14 +4,13 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import comunio.nas.objects.espn.EspnClubMapObject;
 import comunio.nas.objects.helper.LogManager;
 
 /**
@@ -24,6 +23,16 @@ import comunio.nas.objects.helper.LogManager;
  * <b>Wichtig:</b> Es werden NUR die Profil-Daten (Spielerdaten) aufbereitet –
  * die Saison-Statistiken (Spielerstats) bleiben bewusst als Rohdaten erhalten,
  * damit sie separat ausgewertet werden können.
+ */
+
+/**
+ * einbau ins projekt
+ * 
+ * Spielerstats stats =
+ * Spielerstats.fromJSON(player.getJSONObject("data").optJSONObject("stats"));
+ * EspnStatsIntegrator.integrateStats(espnAthlete, stats);
+ * player.getJSONObject("data").put("stats", stats.toJSON());
+ * 
  */
 public class EspnRosterCollector {
 
@@ -43,9 +52,10 @@ public class EspnRosterCollector {
 	 * Hauptmethode: lädt alle Rosters, bereitet sie auf und speichert die JSONs.
 	 *
 	 * @param clubDB Comunio-Vereinsdatenbank (für das Mapping, kann null sein)
-	 * @return JSONObject mit den aufbereiteten Spielern (für Tests/Weiterverarbeitung)
+	 * @return JSONObject mit den aufbereiteten Spielern (für
+	 *         Tests/Weiterverarbeitung)
 	 */
-	public static JSONObject collectAllRosters(JSONArray clubDB) throws IOException, InterruptedException {
+	public static JSONObject collectAllRosters(Map<String, EspnClubMapObject> espnToComunioClubMap, JSONArray clubDB) throws IOException, InterruptedException {
 		JSONObject result = new JSONObject();
 		JSONArray players = new JSONArray();
 		JSONArray teams = new JSONArray();
@@ -58,12 +68,6 @@ public class EspnRosterCollector {
 			return result;
 		}
 		JSONArray leagueTeams = sports.getJSONObject(0).optJSONArray("leagues").getJSONObject(0).optJSONArray("teams");
-
-		// 2. Mapping bauen (falls clubDB vorhanden)
-		Map<String, String> espnToComunio = null;
-		if (clubDB != null) {
-			espnToComunio = EspnClubMapper.buildEspnToComunioMap(espnTeams, clubDB);
-		}
 
 		// 3. Pro Team Roster laden und Spieler aufbereiten
 		for (int i = 0; i < leagueTeams.length(); i++) {
@@ -87,8 +91,8 @@ public class EspnRosterCollector {
 			teamInfo.put("espnId", teamId);
 			teamInfo.put("name", teamName);
 			teamInfo.put("abbreviation", team.optString("abbreviation", ""));
-			if (espnToComunio != null) {
-				String comunioId = espnToComunio.get(teamId);
+			if (espnToComunioClubMap != null && espnToComunioClubMap.containsKey(teamId)) {
+				String comunioId = espnToComunioClubMap.get(teamId).getComunioId();
 				teamInfo.put("comunioId", comunioId != null ? comunioId : JSONObject.NULL);
 			}
 			teamInfo.put("playerCount", athletes.length());
@@ -187,8 +191,8 @@ public class EspnRosterCollector {
 	}
 
 	/**
-	 * Formatiert ein ISO-Datum (z. B. "1992-08-04T07:00Z") zu "dd.MM.yyyy".
-	 * Gibt den Original-String zurück, wenn das Format nicht erkannt wird.
+	 * Formatiert ein ISO-Datum (z. B. "1992-08-04T07:00Z") zu "dd.MM.yyyy". Gibt
+	 * den Original-String zurück, wenn das Format nicht erkannt wird.
 	 */
 	private static String formatDate(String isoDate) {
 		if (isoDate == null || isoDate.isBlank()) {
@@ -202,22 +206,4 @@ public class EspnRosterCollector {
 		}
 	}
 
-	/**
-	 * main-Methode für den manuellen Aufruf (ohne Comunio-Login).
-	 * Erwartet optional den Pfad zur Vereinsdatenbank als Argument.
-	 */
-	public static void main(String[] args) {
-		try {
-			JSONArray clubDB = null;
-			if (args.length > 0) {
-				String content = new String(Files.readAllBytes(Paths.get(args[0])), StandardCharsets.UTF_8);
-				clubDB = new JSONArray(content);
-			}
-			JSONObject result = collectAllRosters(clubDB);
-			System.out.println("Fertig! " + result.optInt("playerCount", 0) + " Spieler aus " + result.optInt("teamCount", 0) + " Vereinen gespeichert.");
-		} catch (Exception e) {
-			System.err.println("FEHLER: " + e.getMessage());
-			e.printStackTrace();
-		}
-	}
 }

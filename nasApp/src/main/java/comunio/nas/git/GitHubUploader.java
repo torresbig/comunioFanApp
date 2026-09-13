@@ -41,6 +41,14 @@ public class GitHubUploader {
 		uploadToGitHub(Urls.getFilePathForGit(Urls.USER_LINEUPS), userLineups.toString(2), "Update userLineups database");
 	}
 
+	public static void uploadEspnClubMapping(JSONObject espnClubMapping) {
+		uploadToGitHub(Urls.getFilePathForGit(Urls.ESPN_CLUB_MAPPING_URL), espnClubMapping.toString(2), "Update ESPN club mapping");
+	}
+
+	public static void uploadEspnPlayerMapping(JSONObject espnPlayerMapping) {
+		uploadToGitHub(Urls.getFilePathForGit(Urls.ESPN_PLAYER_MAPPING_URL), espnPlayerMapping.toString(2), "Update ESPN player mapping");
+	}
+
 	public static void uploadNews(JSONObject news) {
 		uploadToGitHub(Urls.getFilePathForGit(Urls.NEWS_DB_URL), news.toString(2), "Update news feed");
 	}

@@ -8,7 +8,6 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import org.apache.commons.text.similarity.LevenshteinDistance;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -28,12 +27,14 @@ public class PlayerHelper {
 	 * @param notInLigaDB die nicht in Liga Spieler DB (kann null sein!)
 	 * @return JSONObject des Spielers oder null, falls nicht gefunden
 	 */
-	public static JSONObject findPlayerByComunioId(JSONArray playerDB, String playerId, JSONObject notInLigaDBObj) {
-
+	public static JSONObject findPlayerByComunioId(JSONArray playerDB, Object playerId, JSONObject notInLigaDBObj) {
+		String id = convertIdToString(playerId);
+		
 		for (int i = 0; i < playerDB.length(); i++) {
 			JSONObject playerObj = playerDB.getJSONObject(i);
 			String dbId = convertIdToString(playerObj.get("id"));
-			if (dbId.equals(playerId)) {
+			
+			if (dbId.equals(id)) {
 				return playerObj;
 			}
 		}
@@ -46,13 +47,13 @@ public class PlayerHelper {
 		if (db == null) {
 			return null;
 		}
-		JSONObject player = db.optJSONObject(playerId);
+		JSONObject player = db.optJSONObject(id);
 		if (player == null) {
 			return null;
 		}
 		LOGGER.info("Player aus der NOT_IN_LIGA_DB geholt!");
 		// Spieler gefunden, jetzt aus der DB entfernen, damit er nicht nochmal verwendet wird
-		db.remove(playerId); // Einmalige Nutzung, danach entfernen
+		db.remove(id); // Einmalige Nutzung, danach entfernen
 		
 		return player;
 	}
@@ -68,7 +69,9 @@ public class PlayerHelper {
 			return String.valueOf(idObj);
 		} else if (idObj instanceof String) {
 			return (String) idObj;
-		} else {
+		}else if (idObj instanceof Double) {
+			return String.valueOf(idObj);
+		}else {
 			return idObj.toString();
 		}
 	}
@@ -181,7 +184,7 @@ public class PlayerHelper {
 		data.put("realWert", 0);
 		data.put("withinSquad", false);
 		data.put("onMarket", false);
-		data.put("stats", new JSONObject().put("notenDurchschnitt", "0").put("gelbekarten", 0).put("totalPenalties", 0).put("ratedGames", 0).put("lastUpdate", new ComunioDate().toString()).put("playedGames", 0).put("totalGoals", 0).put("punkteDurchschnitt", "0").put("gelbrotekarten", 0).put("rotekarten", 0).put("manOfTheMatchAmount", 0));
+		data.put("stats", new JSONObject().put("notenDurchschnitt", "0").put("gelbekarten", 0).put("totalPenalties", 0).put("ratedGames", 0).put("lastUpdate", new ComunioDate().toString()).put("playedGames", 0).put("tore", 0).put("punkteDurchschnitt", "0").put("gelbrotekarten", 0).put("rotekarten", 0).put("manOfTheMatchAmount", 0));
 		data.put("attribute", new JSONArray());
 		data.put("possibleNames", new JSONArray());
 		data.put("comunioStatus", new JSONObject().put("grund", "unbekannt").put("lastUpdate", new ComunioDate().toString()).put("seit", "unbekannt").put("bis", "unbekannt").put("details", "").put("historie", new JSONArray()).put("status", "AKTIV"));

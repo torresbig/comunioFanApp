@@ -16,7 +16,6 @@ import comunio.nas.ComunioDataUpdater;
 import comunio.nas.dataVariable.Urls;
 import comunio.nas.error.Error;
 import comunio.nas.error.ErrorType;
-import comunio.nas.error.ErrorsContainer;
 import comunio.nas.git.GitHubUploader;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.orga.ComunioDate;
