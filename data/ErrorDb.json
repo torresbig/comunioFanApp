@@ -1,14 +1,6 @@
 {
   "2026-09-13": [
     {
-      "methode": "",
-      "acception": "",
-      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
-      "url": "",
-      "timestamp": "2026-09-13T03:15:16.155677732Z"
-    },
-    {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Fehler bei Seite: 1 mit Name: İnanoğlu\nFehler bei Seite: 2 mit Name: İnanoğlu\nFehler bei Seite: 3 mit Name: İnanoğlu\nFehler bei Seite: 4 mit Name: İnanoğlu\nFehler bei Seite: 5 mit Name: İnanoğlu\nFehler bei Seite: 1 mit Name: inanoglu\nFehler bei Seite: 2 mit Name: inanoglu\nFehler bei Seite: 3 mit Name: inanoglu\nFehler bei Seite: 4 mit Name: inanoglu\nFehler bei Seite: 5 mit Name: inanoglu\nFehler bei Seite: 1 mit Name: Inanoglu\nFehler bei Seite: 2 mit Name: Inanoglu\nFehler bei Seite: 3 mit Name: Inanoglu\nFehler bei Seite: 4 mit Name: Inanoglu\nFehler bei Seite: 5 mit Name: Inanoglu\nKein passender Spieler gefunden für: İnanoğlu / Eintracht Frankfurt.\n",
       "timestamp": "2026-09-13T08:02:19.689268410Z"
@@ -17,6 +9,32 @@
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Fehler bei Seite: 1 mit Name: Duranville\nFehler bei Seite: 2 mit Name: Duranville\nFehler bei Seite: 3 mit Name: Duranville\nFehler bei Seite: 4 mit Name: Duranville\nFehler bei Seite: 5 mit Name: Duranville\nFehler bei Seite: 1 mit Name: duranville\nFehler bei Seite: 2 mit Name: duranville\nFehler bei Seite: 3 mit Name: duranville\nFehler bei Seite: 4 mit Name: duranville\nFehler bei Seite: 5 mit Name: duranville\nKein passender Spieler gefunden für: Duranville / Borussia Dortmund.\n",
       "timestamp": "2026-09-13T08:01:50.374437359Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: Leonard\nFehler bei Seite: 2 mit Name: Leonard\nFehler bei Seite: 3 mit Name: Leonard\nFehler bei Seite: 4 mit Name: Leonard\nFehler bei Seite: 5 mit Name: Leonard\nFehler bei Seite: 1 mit Name: leonard\nFehler bei Seite: 2 mit Name: leonard\nFehler bei Seite: 3 mit Name: leonard\nFehler bei Seite: 4 mit Name: leonard\nFehler bei Seite: 5 mit Name: leonard\nKein passender Spieler gefunden für: Leonard / FC Schalke 04.\n",
+      "timestamp": "2026-09-13T08:01:01.344361973Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
+      "url": "",
+      "timestamp": "2026-09-13T03:15:19.090475698Z"
+    },
+    {
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: At. Szalai\nFehler bei Seite: 1 mit Name: Szalai\nFehler bei Seite: 2 mit Name: At. Szalai\nFehler bei Seite: 3 mit Name: At. Szalai\nFehler bei Seite: 4 mit Name: At. Szalai\nFehler bei Seite: 5 mit Name: At. Szalai\nFehler bei Seite: 1 mit Name: Szalai\nFehler bei Seite: 2 mit Name: Szalai\nFehler bei Seite: 3 mit Name: Szalai\nFehler bei Seite: 4 mit Name: Szalai\nFehler bei Seite: 5 mit Name: Szalai\nFehler bei Seite: 1 mit Name: a szalai\nFehler bei Seite: 2 mit Name: a szalai\nFehler bei Seite: 3 mit Name: a szalai\nFehler bei Seite: 4 mit Name: a szalai\nFehler bei Seite: 5 mit Name: a szalai\nKein passender Spieler gefunden für: At. Szalai / TSG Hoffenheim.\n",
+      "timestamp": "2026-09-13T08:02:31.162397253Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
+      "url": "",
+      "timestamp": "2026-09-13T03:15:16.155677732Z"
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
@@ -45,21 +63,8 @@
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Leonard\nFehler bei Seite: 2 mit Name: Leonard\nFehler bei Seite: 3 mit Name: Leonard\nFehler bei Seite: 4 mit Name: Leonard\nFehler bei Seite: 5 mit Name: Leonard\nFehler bei Seite: 1 mit Name: leonard\nFehler bei Seite: 2 mit Name: leonard\nFehler bei Seite: 3 mit Name: leonard\nFehler bei Seite: 4 mit Name: leonard\nFehler bei Seite: 5 mit Name: leonard\nKein passender Spieler gefunden für: Leonard / FC Schalke 04.\n",
-      "timestamp": "2026-09-13T08:01:01.344361973Z"
-    },
-    {
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Fehler bei Seite: 1 mit Name: Lisztes\nFehler bei Seite: 2 mit Name: Lisztes\nFehler bei Seite: 3 mit Name: Lisztes\nFehler bei Seite: 4 mit Name: Lisztes\nFehler bei Seite: 5 mit Name: Lisztes\nFehler bei Seite: 1 mit Name: lisztes\nFehler bei Seite: 2 mit Name: lisztes\nFehler bei Seite: 3 mit Name: lisztes\nFehler bei Seite: 4 mit Name: lisztes\nFehler bei Seite: 5 mit Name: lisztes\nKein passender Spieler gefunden für: Lisztes / Eintracht Frankfurt.\n",
       "timestamp": "2026-09-13T08:02:09.786753274Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
-      "url": "",
-      "timestamp": "2026-09-13T03:15:19.090475698Z"
     },
     {
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
