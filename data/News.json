@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "14.09.2026 14:10:12",
+  "lastUpdate": "14.09.2026 19:00:15",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -9945,14 +9945,24 @@
     },
     {
       "date": "14.09.2026",
-      "news": [{
-        "date": "14.09.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Stefan 8\",\"sellerId\":\"6013585\",\"playerName\":\"Ebnoutalib\",\"price\":10010400,\"buyerId\":\"1\",\"playerValue\":9130000,\"playerId\":\"34316\",\"buyer\":\"Computer\"}",
-        "id": "966242563",
-        "playerId": "34316"
-      }]
+      "news": [
+        {
+          "date": "14.09.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Stefan 8\",\"sellerId\":\"6013585\",\"playerName\":\"Ebnoutalib\",\"price\":10010400,\"buyerId\":\"1\",\"playerValue\":9130000,\"playerId\":\"34316\",\"buyer\":\"Computer\"}",
+          "id": "966242563",
+          "playerId": "34316"
+        },
+        {
+          "date": "14.09.2026",
+          "art": "ELFDESTAGES",
+          "gelesen": false,
+          "text": "[{\"punkte\":9,\"owner\":\"1\",\"playerName\":\"Hein\",\"position\":\"keeper\",\"playerId\":\"34274\"},{\"punkte\":16,\"owner\":\"1\",\"playerName\":\"Mittelstädt\",\"position\":\"defender\",\"playerId\":\"32509\"},{\"punkte\":13,\"owner\":\"1\",\"playerName\":\"Orbán\",\"position\":\"defender\",\"playerId\":\"31846\"},{\"punkte\":13,\"owner\":\"1\",\"playerName\":\"Gosens\",\"position\":\"defender\",\"playerId\":\"33843\"},{\"punkte\":20,\"owner\":\"1\",\"playerName\":\"Y. Engelhardt\",\"position\":\"midfielder\",\"playerId\":\"33603\"},{\"punkte\":19,\"owner\":\"1\",\"playerName\":\"Uzun\",\"position\":\"midfielder\",\"playerId\":\"34008\"},{\"punkte\":18,\"owner\":\"1\",\"playerName\":\"F. Nmecha\",\"position\":\"midfielder\",\"playerId\":\"33498\"},{\"punkte\":13,\"owner\":\"5981249\",\"playerName\":\"Maina\",\"position\":\"midfielder\",\"playerId\":\"32881\"},{\"punkte\":16,\"owner\":\"13806423\",\"playerName\":\"Matanović\",\"position\":\"striker\",\"playerId\":\"33783\"},{\"punkte\":15,\"owner\":\"13654613\",\"playerName\":\"Nusa\",\"position\":\"striker\",\"playerId\":\"34039\"},{\"punkte\":15,\"owner\":\"6013585\",\"playerName\":\"Gregoritsch\",\"position\":\"striker\",\"playerId\":\"31958\"}]",
+          "id": "966257759",
+          "playerId": "0"
+        }
+      ]
     },
     {
       "date": "14.08.2026",
