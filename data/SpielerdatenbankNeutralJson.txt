@@ -1357,7 +1357,7 @@
             "rang": 55
           },
           "SonstigeInfos": [
-            "teuerster Spieler (21,490,000 \u20ac)",
+            "teuerster Spieler (21.490.000 \u20ac)",
             "meisten Punkte letzte Saison (338)"
           ]
         },
@@ -5512,7 +5512,7 @@
             "durchschnittspunkte": 69.67,
             "rang": 9
           },
-          "SonstigeInfos": ["teuerster Spieler (Realwert) (170,000,000 \u20ac)"]
+          "SonstigeInfos": ["teuerster Spieler (Realwert) (170.000.000 \u20ac)"]
         },
         "position": "STURM",
         "possibleNames": [
@@ -20261,18 +20261,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "2",
-            "zielwert": "11.060.000",
-            "platz": 10,
-            "lastUpdate": "15.09.2026",
-            "typ": "flop",
-            "marktwert": "11.430.000",
-            "aenderung": "-370.000"
-          },
-          "link": "https://www.com-analytics.de/player/33744"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33744"},
         "elfDesSpieltages": 1,
         "lastWert": 10980000,
         "spielerDaten": {
@@ -48771,7 +48760,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33122"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "3",
+            "zielwert": "13.420.000",
+            "platz": 10,
+            "lastUpdate": "15.09.2026",
+            "typ": "flop",
+            "marktwert": "13.780.000",
+            "aenderung": "-360.000"
+          },
+          "link": "https://www.com-analytics.de/player/33122"
+        },
         "lastWert": 14290000,
         "spielerDaten": {
           "groesse": "5' 7\"",
