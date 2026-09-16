@@ -8786,7 +8786,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34115"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "2",
+            "zielwert": "4.200.000",
+            "platz": 8,
+            "lastUpdate": "16.09.2026",
+            "typ": "flop",
+            "marktwert": "4.470.000",
+            "aenderung": "-270.000"
+          },
+          "link": "https://www.com-analytics.de/player/34115"
+        },
         "lastWert": 4250000,
         "spielerDaten": {
           "groesse": "1,88",
@@ -13483,18 +13494,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "3",
-            "zielwert": "6.830.000",
-            "platz": 10,
-            "lastUpdate": "16.09.2026",
-            "typ": "flop",
-            "marktwert": "7.100.000",
-            "aenderung": "-270.000"
-          },
-          "link": "https://www.com-analytics.de/player/33270"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33270"},
         "lastWert": 6740000,
         "spielerDaten": {
           "groesse": "1,87",
@@ -20155,7 +20155,7 @@
           "topFlop": {
             "punkte": "4",
             "zielwert": "8.270.000",
-            "platz": 7,
+            "platz": 6,
             "lastUpdate": "16.09.2026",
             "typ": "flop",
             "marktwert": "8.580.000",
@@ -41464,12 +41464,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "-1",
-            "zielwert": "3.880.000",
-            "platz": 6,
+            "zielwert": "3.920.000",
+            "platz": 9,
             "lastUpdate": "16.09.2026",
             "typ": "flop",
             "marktwert": "4.190.000",
-            "aenderung": "-310.000"
+            "aenderung": "-270.000"
           },
           "link": "https://www.com-analytics.de/player/34454"
         },
@@ -46444,7 +46444,7 @@
           "topFlop": {
             "punkte": "4",
             "zielwert": "9.910.000",
-            "platz": 9,
+            "platz": 10,
             "lastUpdate": "16.09.2026",
             "typ": "flop",
             "marktwert": "10.180.000",
@@ -48640,7 +48640,7 @@
           "topFlop": {
             "punkte": "0",
             "zielwert": "5.230.000",
-            "platz": 8,
+            "platz": 7,
             "lastUpdate": "16.09.2026",
             "typ": "flop",
             "marktwert": "5.520.000",
