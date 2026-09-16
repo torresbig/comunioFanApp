@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "16.09.2026 01:25:19",
+  "lastUpdate": "16.09.2026 10:00:54",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -9686,6 +9686,43 @@
           "text": "{\"seller\":\"Florian\",\"sellerId\":\"13806423\",\"playerName\":\"Marino\",\"price\":745500,\"buyerId\":\"1\",\"playerValue\":710000,\"playerId\":\"34419\",\"buyer\":\"Computer\"}",
           "id": "963365996",
           "playerId": "34419"
+        }
+      ]
+    },
+    {
+      "date": "16.09.2026",
+      "news": [
+        {
+          "date": "16.09.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: M. Vušković (ID: 34526)",
+          "id": "0",
+          "playerId": "34526"
+        },
+        {
+          "date": "16.09.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Gagzow (ID: 34527)",
+          "id": "0",
+          "playerId": "34527"
+        },
+        {
+          "date": "16.09.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Slišković (ID: 34528)",
+          "id": "0",
+          "playerId": "34528"
+        },
+        {
+          "date": "16.09.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Ruoppi\",\"price\":780009,\"buyerId\":\"10966300\",\"playerValue\":740000,\"playerId\":\"34467\",\"buyer\":\"Alexander\"}",
+          "id": "966329089",
+          "playerId": "34467"
         }
       ]
     },
