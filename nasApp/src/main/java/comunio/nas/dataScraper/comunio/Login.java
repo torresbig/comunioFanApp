@@ -26,7 +26,7 @@ public class Login {
 	
 
 	private static String token = null;
-	private static String refreshToken = null;
+//	private static String refreshToken = null;
 	private static Calendar tokenExpired = null;
 
 	public static void login(String username, String password, Community community, User user) {
@@ -99,7 +99,7 @@ public class Login {
 	                .execute();
 
 	            JSONObject jsonResponse = new JSONObject(response.body());
-	            refreshToken = jsonResponse.getString("refresh_token");
+//	            refreshToken = jsonResponse.getString("refresh_token");
 	            LOGGER.info("Login erfolgreich. Access-Token und Refresh-Token erhalten.");
 	            return jsonResponse.getString("access_token");
 

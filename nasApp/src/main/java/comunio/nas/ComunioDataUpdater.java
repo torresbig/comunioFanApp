@@ -13,15 +13,12 @@ import comunio.nas.dataScraper.comunio.NewsAnalyzerComunio;
 import comunio.nas.dataScraper.comunio.PlayerUpdater;
 import comunio.nas.dataScraper.comunio.Transfermarkt;
 import comunio.nas.dataScraper.comunio.UserUpdater;
-import comunio.nas.dataScraper.espn.EspnClubMapper;
 import comunio.nas.dataScraper.espn.EspnClubUpdater;
-import comunio.nas.dataScraper.espn.EspnPlayerMapper;
 import comunio.nas.dataScraper.espn.EspnPlayerUpdater;
 import comunio.nas.dataScraper.ligainsider.LigainsiderRankingUpdater;
 import comunio.nas.dataScraper.tools.ExportNotInLiga;
 import comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject;
 import comunio.nas.dataScraper.tools.SeasonChange;
-import comunio.nas.dataScraper.transfermarktDe.TmDePlayerDataUpdater;
 import comunio.nas.dataVariable.LastUpdates;
 import comunio.nas.dataVariable.Urls;
 import comunio.nas.dataVariable.UserLoginData;
@@ -77,8 +74,7 @@ public class ComunioDataUpdater {
 
 			// 1. Daten von GitHub / externen Quellen laden
 			UpdaterContextData context = loadAllData(lastUpdates, user);
-			
-			ownerList = getAllOwners(context.userMap);
+			ownerList = context.userMap.keySet();
 
 			// 2. Saisonwechsel prüfen & verarbeiten
 			boolean seasonChanged = handleSeasonTransit(context, lastUpdates, user);
@@ -142,6 +138,7 @@ public class ComunioDataUpdater {
 
 		LOGGER.info("Lade Playerpoints von GitHub");
 		ctx.pointsDB = LoadJSONfromFile.loadJsonObjectFromUrl(Urls.POINTS_DB_URL);
+//		ctx.pointsDB = JsonCleanerUtil.reduceToKeyAndValue(ctx.pointsDB);
 		PlayerpointsToPlayerObject.putPointsToPlayerObject(ctx.pointsDB, ctx.playerDBObject);
 
 		LOGGER.info("Lade Marktwertdatenbank von GitHub");
@@ -200,7 +197,7 @@ public class ComunioDataUpdater {
 
 		UserUpdater.updateAllUsers(lastUpdates, ctx.playerDBObject, ctx.marketValueDB, ctx.notInligaDBObj, ctx.playerToUserMap, ctx.userMap, community, currentMatchdayInfo, ctx.newsManager, user);
 		UserUpdater.updateUserPoints(ctx.userMap, community, currentMatchdayInfo);
-		ownerList = getAllOwners(ctx.userMap);
+		ownerList = ctx.userMap.keySet();
 		
 		KontostandBerechner kontostandBerechner = new KontostandBerechner();
 		kontostandBerechner.calculateKontostaende(ctx.userMap, ctx.newsManager);
@@ -220,12 +217,12 @@ public class ComunioDataUpdater {
 		Transfermarkt.getTransfermarktListe(ctx.playerDBObject, ctx.transfermarktListe, ctx.notInligaDBObj, lastUpdates, user);
 		ComAnalysticsTopFlop.getComAnalysticsTopFlopData(ctx.playerDBObject, lastUpdates);
 
-		ComstatsDataScraper.getPlaytimeForNewMatchdays(currentMatchdayInfo.getPointsMatchday(), ctx.playerDBObject, ctx.notInligaDBObj);
-
+//		ComstatsDataScraper.getPlaytimeForInputToInput(1, 3, ctx.playerDBObject, ctx.notInligaDBObj, lastUpdates);
+		ComstatsDataScraper.getPlaytimeForNewMatchdays(currentMatchdayInfo.getPointsMatchday(), ctx.playerDBObject, ctx.notInligaDBObj, lastUpdates);
 		EspnPlayerUpdater.updatePlayers(ctx.playerDBObject, ctx.clubDB, ctx.espnClubMappingContainer.getClubMap(), ctx.espnPlayerMappingContainer, lastUpdates, currentMatchdayInfo);
 
 		NewsAnalyzerComunio.analyzeNews(ctx.newsManager, ctx.playerDBObject, ctx.playerToUserMap, ctx.notInligaDBObj, currentMatchdayInfo, lastUpdates, user);
-		TmDePlayerDataUpdater.updateVerletzteVonTransfermarkt(ctx.playerDBObject, ctx.clubDB, ctx.newsManager, LOGGER, lastUpdates, statusManager);
+//		TmDePlayerDataUpdater.updateVerletzteVonTransfermarkt(ctx.playerDBObject, ctx.clubDB, ctx.newsManager, LOGGER, lastUpdates, statusManager);
 		LigainsiderRankingUpdater.updateLigainsiderRanking(ctx.playerDBObject, ctx.clubDB, currentMatchdayInfo, lastUpdates);
 
 		kontostandBerechner.calculateKontostaende(ctx.userMap, ctx.newsManager);
@@ -326,9 +323,5 @@ public class ComunioDataUpdater {
 		System.out.println(msg);
 	}
 	
-	private static Set<String> getAllOwners(Map<String, User> userMap) {
-		
-		return userMap.keySet();
-	}
 
 }

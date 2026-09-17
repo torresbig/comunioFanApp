@@ -3,7 +3,6 @@ package comunio.nas.util;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-import comunio.nas.enu.SpielerStatus;
 import comunio.nas.objects.orga.ComunioDate;
 import comunio.nas.objects.player.Status;
 
@@ -49,22 +48,7 @@ public class StatusMerger {
         return existing;
     }
 
-    /**
-     * Prueft, ob der Status als inaktiv oder nicht relevant gilt.
-     *
-     * <p>In diesem Kontext sind {@code AKTIV} und {@code UNBESTIMMT}
-     * nicht merge-relevant, weil sie keinen konkreten Verletzungsstatus darstellen.</p>
-     *
-     * @param status zu pruefender Status
-     * @return true, wenn der Status null, aktiv oder unbestimmt ist
-     */
-    private static boolean isInactiveOrNotRelevant(Status status) {
-        if (status == null) {
-            return true;
-        }
-        SpielerStatus s = status.getStatus();
-        return s == null || s.isAKTIV() || s.isUNBESTIMMT();
-    }
+
 
     /**
      * Merged die Datumsfelder {@code seit} und {@code bis}.
@@ -160,30 +144,6 @@ public class StatusMerger {
     }
 
 
-
-    /**
-     * Ermittelt den Schweregrad eines Status.
-     *
-     * <p>Hoehere Werte bedeuten hoehere Prioritaet.</p>
-     *
-     * @param status zu bewertender Status
-     * @return Severity-Wert, wobei 0 den niedrigsten Wert darstellt
-     */
-    private static int getSeverity(SpielerStatus status) {
-        if (status == null) {
-            return 0;
-        }
-        if (status.isVERLETZT()) return 5;
-        if (status.isAUFBAUTRAINING()) return 4;
-        if (status.isGESPERRT()) return 3;
-        if (status.isROTE_KARTE()) return 3;
-        if (status.isGELBROTE_KARTE()) return 3;
-        if (status.isFUENFTE_GELBE_KARTE()) return 3;
-        if (status.isNICHT_IM_KADER()) return 2;
-        if (status.isNICHT_IN_LIGA()) return 1;
-        if (status.isSONSTIGES()) return 1;
-        return 0;
-    }
 
     /**
      * Prueft, ob ein String leer oder semantisch unbekannt ist.

@@ -316,39 +316,7 @@ public class PlayerHelper {
 	}
 
 
-	/**
-	 * Hilfsmethode, um Namen in das Format "Initial Nachname" zu bringen. Entfernt
-	 * Sonderzeichen und gibt Kleinbuchstaben zurück.
-	 * Behandelt auch Initial-Präfixe: "A. Sambi Lokonga" wird wie "Sambi Lokonga" normalisiert.
-	 *
-	 * @param name Name, z. B. "Thomas Sborn" oder "A. Sambi Lokonga"
-	 * @return Normalisierte Zeichenkette z. B. "t sborn" oder "s lokonga"
-	 */
-	private static String normalizeSimple(String name) {
-		if (name == null || name.isBlank())
-			return "";
-		String[] parts = name.trim().split("\\s+");
-		if (parts.length < 2) {
-			return name.toLowerCase().replaceAll("[^a-z]", "");
-		}
-		// Wenn der erste Teil nur ein Buchstabe ist (z.B. "A." bei "A. Sambi Lokonga"),
-		// ignoriere dieses Initial und nehm den zweiten Teil als Vornamen
-		boolean isJustInitial = parts[0].replaceAll("[^a-z]", "").length() <= 1;
-		
-		String firstInitial;
-		if (isJustInitial && parts.length >= 3) {
-			// "A. Sambi Lokonga" -> "s lokonga" (zweites Teil als First-Name-Initial)
-			firstInitial = parts[1].substring(0, 1).toLowerCase();
-		} else if (isJustInitial && parts.length == 2) {
-			// "A. Lokonga" -> nur ein Name nach Initial, nutze ihn als Ganzes
-			firstInitial = parts[1].substring(0, 1).toLowerCase();
-		} else {
-			// Normal: "Thomas Sborn" -> "t sborn"
-			firstInitial = parts[0].substring(0, 1).toLowerCase();
-		}
-		String lastName = parts[parts.length - 1].toLowerCase().replaceAll("[^a-z]", "");
-		return firstInitial + " " + lastName;
-	}
+
 	
 	
 

@@ -12,6 +12,8 @@ package comunio.nas.dataVariable;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.Month;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.util.Date;
 
 import comunio.nas.objects.orga.ComunioDate;
@@ -28,9 +30,10 @@ public class Dates {
 	 * @return der korrekte Saisonstart als {@link ComunioDate}
 	 */
 	private static ComunioDate createSeasonStart() {
+		
 	    LocalDate today = LocalDate.now();
 	    int currentYear = today.getYear();
-	    LocalDate startCurrentYear = LocalDate.of(currentYear, Month.MAY, 25);
+	    LocalDate startCurrentYear = LocalDate.of(currentYear, Month.MAY, 26);
 	    int seasonYear = today.isBefore(startCurrentYear) ? currentYear - 1 : currentYear;
 	    return new ComunioDate("28.05." + seasonYear);
 	}
@@ -50,4 +53,20 @@ public class Dates {
 	public static String getSeasonStart() {
 		return seasonStart.toString();
 	}
+	
+	
+	/**
+	 * Gibt das 2. Jahr der saison wieder
+	 * wird aktuell für comstats benötigt. 
+	 * der seasonstart wird aus der LastUpdate geholt. dort ist es als instans drin.
+	 * @param seasonStartDate
+	 * @return
+	 */
+	public static int calculateTargetYear(Instant seasonStartDate) {
+        // Instant in ein ZonedDateTime umwandeln (z. B. Mitteleuropäische Zeit)
+        ZonedDateTime startDateTime = seasonStartDate.atZone(ZoneId.of("Europe/Berlin"));
+        
+        // Das Startjahr extrahieren und +1 addieren
+        return startDateTime.getYear() + 1;
+    }
 }

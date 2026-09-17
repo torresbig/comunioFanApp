@@ -1,4 +1,4 @@
-package comunio.nas.objects;
+package comunio.nas.objects.ligainsider;
 
 import org.json.JSONObject;
 

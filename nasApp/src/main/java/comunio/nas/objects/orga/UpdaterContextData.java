@@ -8,7 +8,6 @@ import org.json.JSONObject;
 import comunio.nas.dataScraper.comunio.LineupParser;
 import comunio.nas.objects.NewsManager;
 import comunio.nas.objects.espn.EspnClubContainer;
-import comunio.nas.objects.espn.EspnClubMapObject;
 import comunio.nas.objects.espn.EspnPlayerContainer;
 import comunio.nas.objects.user.User;
 import comunio.nas.util.StatusManager;

@@ -70,6 +70,7 @@ public class Urls {
 
 	/** Ligainsider */
 	public static final String LIGAINSIDER_URL = "https://www.ligainsider.de/bundesliga/noten/";
+	public static final String LIGAINSIDER_INJURY = "https://www.ligainsider.de/bundesliga/verletzte-und-gesperrte-spieler/";
 
 	public static String getFilename(String url) {
 		String[] splits = url.split("/");
@@ -80,5 +81,16 @@ public class Urls {
 		String[] splits = url.split("/");
 		return splits[splits.length - 2] + "/" + splits[splits.length - 1];
 	}
+
+	// ############# COMSTATS ###############
+
+	public static String MATCHDAY_URL(int year, int matchday) {
+		return "https://stats.comunio.de/matchday/" + year + "/" + matchday;
+	}
+
+	public static String MATCH_DETAILS_URL(int matchId) {
+		return "https://stats.comunio.de/xhr/matchDetails.php?mid=" + matchId;
+	}
+	
 
 }

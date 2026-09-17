@@ -7,7 +7,6 @@ import java.util.logging.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import comunio.nas.objects.espn.EspnClubContainer;
 import comunio.nas.objects.espn.EspnClubMapObject;
 import comunio.nas.objects.helper.LogManager;
 

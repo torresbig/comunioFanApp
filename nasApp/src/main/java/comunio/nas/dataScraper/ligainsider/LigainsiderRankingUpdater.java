@@ -5,8 +5,8 @@ import org.json.JSONObject;
 
 import comunio.nas.dataScraper.comunio.MatchdayInfo;
 import comunio.nas.dataVariable.LastUpdates;
-import comunio.nas.objects.LigainsiderRankingEntry;
 import comunio.nas.objects.helper.LogManager;
+import comunio.nas.objects.ligainsider.LigainsiderRankingEntry;
 import comunio.nas.objects.orga.ComunioDate;
 import comunio.nas.util.player.PlayerHelper;
 import comunio.nas.util.player.PlayerMatcher;

@@ -129,7 +129,7 @@ public class TmDePlayerDataUpdater {
 
 			// Speichere den ursprünglichen Spielernamen aus der Datenbank für die
 			// Namensschutz-Regel
-			String originalPlayerName = player.optString("name", "");
+//			String originalPlayerName = player.optString("name", "");
 			JSONArray originalPossibleNames = data.optJSONArray("possibleNames");
 
 			// Erfolgreiche Datenaktualisierung

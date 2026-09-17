@@ -1,12 +1,8 @@
 package comunio.nas.dataScraper.espn;
 
 import java.util.Iterator;
-import java.util.logging.Logger;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
-
-import comunio.nas.objects.helper.LogManager;
 
 /**
  * Datenmodell für die ESPN-Spieltag-Statistiken eines Spielers.
@@ -33,7 +29,6 @@ import comunio.nas.objects.helper.LogManager;
  */
 public class EspnMatchdayStats {
 
-	private static final Logger LOGGER = LogManager.getLogger(EspnMatchdayStats.class);
 
 	/** Comunio-Spieler-ID (Key in der PointsDB). */
 	private String playerId;

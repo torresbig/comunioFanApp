@@ -27,6 +27,7 @@ public class Spielerstats {
 	private Integer subOut;
 	private Integer cleanSheet;
 	private Integer active;
+	private Integer subIn;
 
 	// ===== ESPN-Saison-Statistiken (Kategorie "General") =====
 	private Integer foulsCommitted;
@@ -47,41 +48,7 @@ public class Spielerstats {
 	private Integer goalsConceded;
 
 	public Spielerstats() {
-		totalPenalties = 0;
-		ratedGames = 0;
-		playedGames = 0;
-		tore = 0;
-		manOfTheMatchAmount = 0;
-		punkteDurchschnitt = "";
-		notenDurchschnitt = "";
-		gelbekarten = 0;
-		rotekarten = 0;
-		gelbrotekarten = 0;
-		lastUpdate = null;
 
-		einsatzzeit = 0;
-		status = "";
-		xgoals = 0.0;
-		rating = 0.0;
-		pensSaved = 0;
-		pensMissed = 0;
-		points = 0;
-		subOut = 0;
-		cleanSheet = 0;
-		active = 0;
-
-		foulsCommitted = 0;
-		foulsSuffered = 0;
-		ownGoals = 0;
-		appearances = 0;
-		subIns = 0;
-		goalAssists = 0;
-		offsides = 0;
-		shotsOnTarget = 0;
-		totalShots = 0;
-		saves = 0;
-		shotsFaced = 0;
-		goalsConceded = 0;
 	}
 	
 	public static Spielerstats fromJSON(JSONObject json) {
@@ -121,6 +88,7 @@ public class Spielerstats {
 		stats.pensMissed = json.has("pensMissed") ? json.optInt("pensMissed") : null;
 		stats.points = json.has("points") ? json.optInt("points") : null;
 		stats.subOut = json.has("subOut") ? json.optInt("subOut") : null;
+		stats.subIn = json.has("subIn") ? json.optInt("subIn") : null;
 		stats.cleanSheet = json.has("cleanSheet") ? json.optInt("cleanSheet") : null;
 		stats.active = json.has("active") ? json.optInt("active") : null;
 
@@ -186,6 +154,8 @@ public class Spielerstats {
 			json.put("cleanSheet", cleanSheet);
 		if (active != null)
 			json.put("active", active);
+		if (subIn != null)
+			json.put("subIn", subIn);
 
 		// ESPN-Felder
 		if (foulsCommitted != null)
@@ -215,311 +185,388 @@ public class Spielerstats {
 		return json;
 	}
 
-	public int getTotalPenalties() {
-		return totalPenalties;
+	public Integer getTotalPenalties() {
+	    return totalPenalties;
 	}
 
-	public void setTotalPenalties(int totalPenalties) {
-		this.totalPenalties = totalPenalties;
-		this.lastUpdate = new ComunioDate();
+	public void setTotalPenalties(Integer totalPenalties) {
+	    if (totalPenalties != null) {
+	        this.totalPenalties = totalPenalties;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getRatedGames() {
-		return ratedGames;
+	public Integer getRatedGames() {
+	    return ratedGames;
 	}
 
-	public void setRatedGames(int ratedGames) {
-		this.ratedGames = ratedGames;
-		this.lastUpdate = new ComunioDate();
+	public void setRatedGames(Integer ratedGames) {
+	    if (ratedGames != null) {
+	        this.ratedGames = ratedGames;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getPlayedGames() {
-		return playedGames;
+	public Integer getPlayedGames() {
+	    return playedGames;
 	}
 
-	public void setPlayedGames(int playedGames) {
-		this.playedGames = playedGames;
-		this.lastUpdate = new ComunioDate();
+	public void setPlayedGames(Integer playedGames) {
+	    if (playedGames != null) {
+	        this.playedGames = playedGames;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getTore() {
-		return tore;
+	public Integer getTore() {
+	    return tore;
 	}
 
-	public void setTore(int tore) {
-		this.tore = tore;
-		this.lastUpdate = new ComunioDate();
+	public void setTore(Integer tore) {
+	    if (tore != null) {
+	        this.tore = tore;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getManOfTheMatchAmount() {
-		return manOfTheMatchAmount;
+	public Integer getManOfTheMatchAmount() {
+	    return manOfTheMatchAmount;
 	}
 
-	public void setManOfTheMatchAmount(int manOfTheMatchAmount) {
-		this.manOfTheMatchAmount = manOfTheMatchAmount;
-		this.lastUpdate = new ComunioDate();
+	public void setManOfTheMatchAmount(Integer manOfTheMatchAmount) {
+	    if (manOfTheMatchAmount != null) {
+	        this.manOfTheMatchAmount = manOfTheMatchAmount;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
-	
 
 	public String getPunkteDurchschnitt() {
-		return punkteDurchschnitt;
+	    return punkteDurchschnitt;
 	}
 
 	public void setPunkteDurchschnitt(String punkteDurchschnitt) {
-		this.punkteDurchschnitt = punkteDurchschnitt;
-		this.lastUpdate = new ComunioDate();
+	    if (punkteDurchschnitt != null) {
+	        this.punkteDurchschnitt = punkteDurchschnitt;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
 	public String getNotenDurchschnitt() {
-		return notenDurchschnitt;
+	    return notenDurchschnitt;
 	}
 
 	public void setNotenDurchschnitt(String notenDurchschnitt) {
-		this.notenDurchschnitt = notenDurchschnitt;
-		this.lastUpdate = new ComunioDate();
+	    if (notenDurchschnitt != null) {
+	        this.notenDurchschnitt = notenDurchschnitt;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getGelbekarten() {
-		return gelbekarten;
+	public Integer getGelbekarten() {
+	    return gelbekarten;
 	}
 
-	public void setGelbekarten(int gelbekarten) {
-		this.gelbekarten = gelbekarten;
-		this.lastUpdate = new ComunioDate();
+	public void setGelbekarten(Integer gelbekarten) {
+	    if (gelbekarten != null) {
+	        this.gelbekarten = gelbekarten;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getRotekarten() {
-		return rotekarten;
+	public Integer getRotekarten() {
+	    return rotekarten;
 	}
 
-	public void setRotekarten(int rotekarten) {
-		this.rotekarten = rotekarten;
-		this.lastUpdate = new ComunioDate();
+	public void setRotekarten(Integer rotekarten) {
+	    if (rotekarten != null) {
+	        this.rotekarten = rotekarten;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getGelbrotekarten() {
-		return gelbrotekarten;
+	public Integer getGelbrotekarten() {
+	    return gelbrotekarten;
 	}
 
-	public void setGelbrotekarten(int gelbrotekarten) {
-		this.gelbrotekarten = gelbrotekarten;
-		this.lastUpdate = new ComunioDate();
+	public void setGelbrotekarten(Integer gelbrotekarten) {
+	    if (gelbrotekarten != null) {
+	        this.gelbrotekarten = gelbrotekarten;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
 	// ===== Getter/Setter Comstats-Felder =====
 
-	public int getEinsatzzeit() {
-		return einsatzzeit;
+	public Integer getEinsatzzeit() {
+	    return einsatzzeit;
 	}
 
-	public void setEinsatzzeit(int einsatzzeit) {
-		this.einsatzzeit = einsatzzeit;
-		this.lastUpdate = new ComunioDate();
+	public void setEinsatzzeit(Integer einsatzzeit) {
+	    if (einsatzzeit != null) {
+	        this.einsatzzeit = einsatzzeit;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
 	public String getStatus() {
-		return status;
+	    return status;
 	}
 
 	public void setStatus(String status) {
-		this.status = status;
-		this.lastUpdate = new ComunioDate();
+	    if (status != null) {
+	        this.status = status;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public double getXgoals() {
-		return xgoals;
+	public Double getXgoals() {
+	    return xgoals;
 	}
 
-	public void setXgoals(double xgoals) {
-		this.xgoals = xgoals;
-		this.lastUpdate = new ComunioDate();
+	public void setXgoals(Double xgoals) {
+	    if (xgoals != null) {
+	        this.xgoals = xgoals;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public double getRating() {
-		return rating;
+	public Double getRating() {
+	    return rating;
 	}
 
-	public void setRating(double rating) {
-		this.rating = rating;
-		this.lastUpdate = new ComunioDate();
+	public void setRating(Double rating) {
+	    if (rating != null) {
+	        this.rating = rating;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getPensSaved() {
-		return pensSaved;
+	public Integer getPensSaved() {
+	    return pensSaved;
 	}
 
-	public void setPensSaved(int pensSaved) {
-		this.pensSaved = pensSaved;
-		this.lastUpdate = new ComunioDate();
+	public void setPensSaved(Integer pensSaved) {
+	    if (pensSaved != null) {
+	        this.pensSaved = pensSaved;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getPensMissed() {
-		return pensMissed;
+	public Integer getPensMissed() {
+	    return pensMissed;
 	}
 
-	public void setPensMissed(int pensMissed) {
-		this.pensMissed = pensMissed;
-		this.lastUpdate = new ComunioDate();
+	public void setPensMissed(Integer pensMissed) {
+	    if (pensMissed != null) {
+	        this.pensMissed = pensMissed;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getPoints() {
-		return points;
+	public Integer getPoints() {
+	    return points;
 	}
 
-	public void setPoints(int points) {
-		this.points = points;
-		this.lastUpdate = new ComunioDate();
+	public void setPoints(Integer points) {
+	    if (points != null) {
+	        this.points = points;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getSubOut() {
-		return subOut;
+	public Integer getSubOut() {
+	    return subOut;
 	}
 
-	public void setSubOut(int subOut) {
-		this.subOut = subOut;
-		this.lastUpdate = new ComunioDate();
+	public void setSubOut(Integer subOut) {
+	    if (subOut != null) {
+	        this.subOut = subOut;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getCleanSheet() {
-		return cleanSheet;
+	public Integer getCleanSheet() {
+	    return cleanSheet;
 	}
 
-	public void setCleanSheet(int cleanSheet) {
-		this.cleanSheet = cleanSheet;
-		this.lastUpdate = new ComunioDate();
+	public void setCleanSheet(Integer cleanSheet) {
+	    if (cleanSheet != null) {
+	        this.cleanSheet = cleanSheet;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getActive() {
-		return active;
+	public Integer getActive() {
+	    return active;
 	}
 
-	public void setActive(int active) {
-		this.active = active;
-		this.lastUpdate = new ComunioDate();
+	public void setActive(Integer active) {
+	    if (active != null) {
+	        this.active = active;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
 	// ===== Getter/Setter ESPN-Felder =====
 
-	public int getFoulsCommitted() {
-		return foulsCommitted;
+	public Integer getFoulsCommitted() {
+	    return foulsCommitted;
 	}
 
-	public void setFoulsCommitted(int foulsCommitted) {
-		this.foulsCommitted = foulsCommitted;
-		this.lastUpdate = new ComunioDate();
+	public void setFoulsCommitted(Integer foulsCommitted) {
+	    if (foulsCommitted != null) {
+	        this.foulsCommitted = foulsCommitted;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getFoulsSuffered() {
-		return foulsSuffered;
+	public Integer getFoulsSuffered() {
+	    return foulsSuffered;
 	}
 
-	public void setFoulsSuffered(int foulsSuffered) {
-		this.foulsSuffered = foulsSuffered;
-		this.lastUpdate = new ComunioDate();
+	public void setFoulsSuffered(Integer foulsSuffered) {
+	    if (foulsSuffered != null) {
+	        this.foulsSuffered = foulsSuffered;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getOwnGoals() {
-		return ownGoals;
+	public Integer getOwnGoals() {
+	    return ownGoals;
 	}
 
-	public void setOwnGoals(int ownGoals) {
-		this.ownGoals = ownGoals;
-		this.lastUpdate = new ComunioDate();
+	public void setOwnGoals(Integer ownGoals) {
+	    if (ownGoals != null) {
+	        this.ownGoals = ownGoals;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getAppearances() {
-		return appearances;
+	public Integer getAppearances() {
+	    return appearances;
 	}
 
-	public void setAppearances(int appearances) {
-		this.appearances = appearances;
-		this.lastUpdate = new ComunioDate();
+	public void setAppearances(Integer appearances) {
+	    if (appearances != null) {
+	        this.appearances = appearances;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getSubIns() {
-		return subIns;
+	public Integer getSubIns() {
+	    return subIns;
 	}
 
-	public void setSubIns(int subIns) {
-		this.subIns = subIns;
-		this.lastUpdate = new ComunioDate();
+	public void setSubIns(Integer subIns) {
+	    if (subIns != null) {
+	        this.subIns = subIns;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getGoalAssists() {
-		return goalAssists;
+	public Integer getGoalAssists() {
+	    return goalAssists;
 	}
 
-	public void setGoalAssists(int goalAssists) {
-		this.goalAssists = goalAssists;
-		this.lastUpdate = new ComunioDate();
+	public void setGoalAssists(Integer goalAssists) {
+	    if (goalAssists != null) {
+	        this.goalAssists = goalAssists;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getOffsides() {
-		return offsides;
+	public Integer getOffsides() {
+	    return offsides;
 	}
 
-	public void setOffsides(int offsides) {
-		this.offsides = offsides;
-		this.lastUpdate = new ComunioDate();
+	public void setOffsides(Integer offsides) {
+	    if (offsides != null) {
+	        this.offsides = offsides;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getShotsOnTarget() {
-		return shotsOnTarget;
+	public Integer getShotsOnTarget() {
+	    return shotsOnTarget;
 	}
 
-	public void setShotsOnTarget(int shotsOnTarget) {
-		this.shotsOnTarget = shotsOnTarget;
-		this.lastUpdate = new ComunioDate();
+	public void setShotsOnTarget(Integer shotsOnTarget) {
+	    if (shotsOnTarget != null) {
+	        this.shotsOnTarget = shotsOnTarget;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getTotalShots() {
-		return totalShots;
+	public Integer getTotalShots() {
+	    return totalShots;
 	}
 
-	public void setTotalShots(int totalShots) {
-		this.totalShots = totalShots;
-		this.lastUpdate = new ComunioDate();
+	public void setTotalShots(Integer totalShots) {
+	    if (totalShots != null) {
+	        this.totalShots = totalShots;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getSaves() {
-		return saves;
+	public Integer getSaves() {
+	    return saves;
 	}
 
-	public void setSaves(int saves) {
-		this.saves = saves;
-		this.lastUpdate = new ComunioDate();
+	public void setSaves(Integer saves) {
+	    if (saves != null) {
+	        this.saves = saves;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getShotsFaced() {
-		return shotsFaced;
+	public Integer getShotsFaced() {
+	    return shotsFaced;
 	}
 
-	public void setShotsFaced(int shotsFaced) {
-		this.shotsFaced = shotsFaced;
-		this.lastUpdate = new ComunioDate();
+	public void setShotsFaced(Integer shotsFaced) {
+	    if (shotsFaced != null) {
+	        this.shotsFaced = shotsFaced;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
 
-	public int getGoalsConceded() {
-		return goalsConceded;
+	public Integer getGoalsConceded() {
+	    return goalsConceded;
 	}
 
-	public void setGoalsConceded(int goalsConceded) {
-		this.goalsConceded = goalsConceded;
-		this.lastUpdate = new ComunioDate();
+	public void setGoalsConceded(Integer goalsConceded) {
+	    if (goalsConceded != null) {
+	        this.goalsConceded = goalsConceded;
+	    }
+	    this.lastUpdate = new ComunioDate();
 	}
+
+	public ComunioDate getLastUpdate() {
+	    return lastUpdate;
+	}
+
+	public void setLastUpdate(ComunioDate lastUpdate) {
+	    this.lastUpdate = lastUpdate;
+	}
+
+	public Integer getSubIn() {
+	    return subIn;
+	}
+
+	public void setSubIn(Integer subIn) {
+	    if (subIn != null) {
+	        this.subIn = subIn;
+	    }
+	    this.lastUpdate = new ComunioDate();
+	}
+
 
 	@Override
 	public String toString() {
 		return "Stats: Played games: " + this.playedGames + ", Gelbekarte/Gelb-Rotekarte/Rotekarte: " + this.gelbekarten + "/" + this.gelbrotekarten + "/" + this.rotekarten + ", Einsätze (gewertet): " + this.ratedGames;
 	}
 
-	public ComunioDate getLastUpdate() {
-		return lastUpdate;
-	}
 
-	public void setLastUpdate(ComunioDate lastUpdate) {
-		this.lastUpdate = lastUpdate;
-	}
 
 	
 }

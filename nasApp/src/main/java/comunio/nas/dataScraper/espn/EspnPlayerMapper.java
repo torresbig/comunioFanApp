@@ -1,23 +1,12 @@
 package comunio.nas.dataScraper.espn;
 
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.logging.Logger;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
-import comunio.nas.ComunioDataUpdater;
-import comunio.nas.error.ErrorType;
 import comunio.nas.objects.espn.EspnClubMapObject;
 import comunio.nas.objects.espn.EspnPlayerContainer;
 import comunio.nas.objects.espn.EspnPlayerMapObject;

@@ -39,9 +39,7 @@ public class PlayerpointsToPlayerObject {
 			if (pointsEntrys != null && pointsEntrys.length() > 0) {
 				//TODO: ggf. den fix wieder raus, wenn er keine fehler mehr macht!
 				JSONArray fixedPointsEntrys = fixDoubleEntries(pointsEntrys);
-				playerData.put("spieltagspunkte", fixedPointsEntrys);
-				LOGGER.fine("Punkte für Spieler " + playerID + " erfolgreich übertragen. Anzahl Punkteentrys: " + fixedPointsEntrys.length() + " (vor Fix: " + pointsEntrys.length() + ")");
-				
+				playerData.put("spieltagspunkte", fixedPointsEntrys);				
 			}
 		}
 		LOGGER.info("Punkte erfolgreich in Spielerobjekte übertragen. Anzahl Fixes (interpoliert-Fehler): " + fixes);

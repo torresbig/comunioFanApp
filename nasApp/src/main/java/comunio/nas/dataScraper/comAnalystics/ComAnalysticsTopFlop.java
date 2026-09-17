@@ -180,7 +180,7 @@ public class ComAnalysticsTopFlop {
 	 * Beispiel-Methode zum Testen und Ausgabe des Ergebnisses.
 	 */
 	public static void main(String[] args) {
-		String url = "https://www.com-analytics.de/top_flop_predictions";
+//		String url = "https://www.com-analytics.de/top_flop_predictions";
 		JSONArray daten = fetchPlayerTrends();
 		// Ausgabe zum Debuggen
 		System.out.println(daten.toString(2));

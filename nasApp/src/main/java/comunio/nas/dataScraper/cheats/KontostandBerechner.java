@@ -107,15 +107,10 @@ public final class KontostandBerechner {
         for (User user : userMap.values()) {
             Map<Integer, Integer> punkteHistorie = user.getPunkteHistorie();
             int sum = 0;
-            int sumPunkte = 0;
-            int countedSpieltage = 0;
             for (Map.Entry<Integer, Integer> entry : punkteHistorie.entrySet()) {
-                int key = entry.getKey();
                 int punkte = entry.getValue();
-                sumPunkte += punkte;
                 if (punkte > 0) {
                     sum += punkte * PUNKTE_MULTIPLIKATOR;
-                    countedSpieltage++;
                 }
             }
 

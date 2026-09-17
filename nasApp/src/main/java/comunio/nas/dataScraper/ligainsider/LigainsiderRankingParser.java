@@ -11,8 +11,8 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import comunio.nas.dataVariable.Urls;
-import comunio.nas.objects.LigainsiderRankingEntry;
 import comunio.nas.objects.helper.LogManager;
+import comunio.nas.objects.ligainsider.LigainsiderRankingEntry;
 
 /**
  * Parst das Ligainsider-Ranking von der Webseite.

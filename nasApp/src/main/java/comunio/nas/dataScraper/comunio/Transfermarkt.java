@@ -258,7 +258,7 @@ public class Transfermarkt {
 					JSONObject tradable = json.getJSONObject("tradable");
 					String id = String.valueOf(tradable.getInt("id"));
 					String name = tradable.getString("name");
-					String status = String.valueOf(tradable.get("status"));
+//					String status = String.valueOf(tradable.get("status"));
 
 					int marktwert = tradable.optInt("quotedPrice", 0);
 					int mindestGebot = tradable.optInt("recommendedPrice", 0);

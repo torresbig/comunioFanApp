@@ -1036,7 +1036,7 @@ public class PlayerUpdater {
 		if (status != null && !status.isEmpty() && !status.equalsIgnoreCase("na")) {
 			String statusInfo = apiPlayer.optString("statusInfo", "");
 			String playerId = player.optString("id", "0");
-			String playerName = player.optString("name", "N/A");
+//			String playerName = player.optString("name", "N/A");
 			if (playerId == null || playerId.isEmpty()) {
 				LOGGER.warning("StatusUpdate übersprungen: playerId fehlt");
 				return;

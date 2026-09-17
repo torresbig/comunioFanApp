@@ -46,22 +46,7 @@ public class PlayerDbFixer {
 		}
 	}
 
-	/**
-	 * Prüft, ob ein String bereits in einem JSONArray enthalten ist
-	 * (case-insensitiv).
-	 *
-	 * @param array das JSON-Array mit Strings
-	 * @param value der zu prüfende String
-	 * @return true, wenn enthalten
-	 */
-	private static boolean containsValue(JSONArray array, String value) {
-		for (int i = 0; i < array.length(); i++) {
-			if (array.optString(i).equalsIgnoreCase(value)) {
-				return true;
-			}
-		}
-		return false;
-	}
+
 
 	public static void getAllPlayersNotUpdatet(JSONArray playerDB, NewsManager newsManager) {
 		for (int i = 0; i < playerDB.length(); i++) {
