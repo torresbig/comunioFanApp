@@ -1232,6 +1232,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33837"},
+         "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/castello-lukeba_27079/",
+          "playerName": "Castello Lukeba",
+          "playerId": "27079"
+        },
         "lastWert": 4830000,
         "spielerDaten": {
           "groesse": "1,84",
@@ -1294,6 +1299,7 @@
         "position": "ABWEHR",
         "possibleNames": [
           "Castello Lukeba",
+          "Castello Jr.",
           "C. Lukeba",
           "Lukeba"
         ]
@@ -11725,6 +11731,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34200"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/jobe-bellingham_38153/",
+          "playerName": "Jobe Bellingham",
+          "playerId": "38153"
+        },
         "lastWert": 9320000,
         "spielerDaten": {
           "groesse": "1,91",
@@ -11748,7 +11759,7 @@
           "name": "Jobe Bellingham",
           "link": "https://www.transfermarkt.de/jobe-bellingham/profil/spieler/796297",
           "id": "796297",
-          "position": "Jobe Bellingham ZM",
+          "position": "ZM",
           "marktwert": 22000000,
           "nationalitaet": "England",
           "leistungsDaten": {},
@@ -11789,7 +11800,8 @@
         "possibleNames": [
           "Jobe Bellingham",
           "J. Bellingham",
-          "Bellingham"
+          "Bellingham",
+          "Jobe"
         ]
       },
       "name": "Bellingham",
