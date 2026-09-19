@@ -240,6 +240,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33817"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/franck-honorat_23248/",
+          "playerName": "Honorat",
+          "playerId": "23248"
+        },
         "lastWert": 7170000,
         "spielerDaten": {
           "groesse": "1,80",
@@ -635,6 +640,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/30755"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/manuel-neuer_114/",
+          "playerName": "Neuer",
+          "playerId": "114"
+        },
         "lastWert": 2250000,
         "spielerDaten": {
           "groesse": "1,93",
@@ -794,6 +804,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/jordy-makengo_26088/",
+          "playerName": "Makengo",
+          "playerId": "26088"
+        },
         "lastWert": 4020000,
         "spielerDaten": {
           "groesse": "1,91",
@@ -925,6 +940,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32807"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/philipp-lienhart_13911/",
+          "playerName": "Lienhart",
+          "playerId": "13911"
+        },
         "lastWert": 5090000,
         "spielerDaten": {
           "groesse": "1,89",
@@ -994,6 +1014,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33832"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/deniz-undav_19154/",
+          "playerName": "Undav",
+          "playerId": "19154"
+        },
         "lastWert": 9690000,
         "spielerDaten": {
           "groesse": "1,79",
@@ -1120,16 +1145,7 @@
           {"2024": 91}
         ],
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 12,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 5,
-          "verein": "SV Werder Bremen",
-          "lastUpdate": "07.09.2026",
-          "durchschnittsminuten": 45,
-          "durchschnittspunkte": 12,
-          "rang": 223
-        }},
+        "attribute": {},
         "possibleNames": [
           "Senne Lynen",
           "S. Lynen",
@@ -1192,16 +1208,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 793,
-          "einsaetzeBewertet": 20,
-          "durchschnittsnote": 3.88,
-          "verein": "Eintracht Frankfurt",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 80,
-          "durchschnittspunkte": 36.65,
-          "rang": 199
-        }},
+        "attribute": {},
         "possibleNames": [
           "Nnamdi Collins",
           "N. Collins",
@@ -1297,6 +1304,11 @@
           },
           "link": "https://www.com-analytics.de/player/33838"
         },
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/harry-kane_4828/",
+          "playerName": "Kane",
+          "playerId": "4828"
+        },
         "lastWert": 23030000,
         "spielerDaten": {
           "groesse": "1,88",
@@ -1357,7 +1369,7 @@
             "rang": 55
           },
           "SonstigeInfos": [
-            "teuerster Spieler (26,480,000 \u20ac)",
+            "teuerster Spieler (26.480.000 \u20ac)",
             "meisten Punkte letzte Saison (338)"
           ]
         },
@@ -1573,6 +1585,11 @@
           "link": "https://www.com-analytics.de/player/33854"
         },
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/aleksandar-pavlovic_35918/",
+          "playerName": "Pavlović",
+          "playerId": "35918"
+        },
         "lastWert": 12040000,
         "spielerDaten": {
           "groesse": "1,88",
@@ -1703,16 +1720,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1073,
-          "einsaetzeBewertet": 23,
-          "durchschnittsnote": 3.57,
-          "verein": "VfB Stuttgart",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 57,
-          "durchschnittspunkte": 43.04,
-          "rang": 100
-        }},
+        "attribute": {},
         "possibleNames": [
           "Nikolas Nartey",
           "N. Nartey",
@@ -1771,16 +1779,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 488,
-          "einsaetzeBewertet": 13,
-          "durchschnittsnote": 3.88,
-          "verein": "Eintracht Frankfurt",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 90,
-          "durchschnittspunkte": 37.54,
-          "rang": 183
-        }},
+        "attribute": {},
         "possibleNames": [
           "Kaua Santos",
           "Kauã Santos",
@@ -1872,6 +1871,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33858"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/olivier-deman_36310/",
+          "playerName": "Deman",
+          "playerId": "36310"
+        },
         "lastWert": 3600000,
         "spielerDaten": {
           "groesse": "1,81",
@@ -1944,6 +1948,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32836"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/robin-koch_12490/",
+          "playerName": "Koch",
+          "playerId": "12490"
+        },
         "lastWert": 7320000,
         "spielerDaten": {
           "groesse": "1,92",
@@ -2083,6 +2092,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33869"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/elias-baum_35727/",
+          "playerName": "Baum",
+          "playerId": "35727"
+        },
         "lastWert": 3820000,
         "spielerDaten": {
           "groesse": "1,80",
@@ -2209,16 +2223,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 574,
-          "einsaetzeBewertet": 11,
-          "durchschnittsnote": 3.09,
-          "verein": "Bayer 04 Leverkusen",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 92,
-          "durchschnittspunkte": 52.18,
-          "rang": 24
-        }},
+        "attribute": {},
         "possibleNames": [
           "jonathan blaswich",
           "j. blaswich",
@@ -2233,6 +2238,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32858"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/chris-fuehrich_18542/",
+          "playerName": "Führich",
+          "playerId": "18542"
+        },
         "lastWert": 7700000,
         "spielerDaten": {
           "groesse": "1,81",
@@ -2511,16 +2521,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 20,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 4.5,
-          "verein": "TSG Hoffenheim",
-          "lastUpdate": "07.09.2026",
-          "durchschnittsminuten": 43,
-          "durchschnittspunkte": 20,
-          "rang": 205
-        }},
+        "attribute": {},
         "possibleNames": [
           "Max Moerstedt",
           "M. Moerstedt",
@@ -2590,16 +2591,7 @@
         ],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 987,
-          "einsaetzeBewertet": 23,
-          "durchschnittsnote": 3.74,
-          "verein": "Eintracht Frankfurt",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 60,
-          "durchschnittspunkte": 39.87,
-          "rang": 150
-        }},
+        "attribute": {},
         "position": "STURM",
         "possibleNames": [
           "Jean Mattéo Bahoya",
@@ -2627,6 +2619,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/31846"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/willi-orban_1667/",
+          "playerName": "Orbán",
+          "playerId": "1667"
+        },
         "lastWert": 7010000,
         "spielerDaten": {
           "groesse": "1,86",
@@ -2780,6 +2777,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32877"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/finn-dahmen_18728/",
+          "playerName": "Dahmen",
+          "playerId": "18728"
+        },
         "lastWert": 3730000,
         "spielerDaten": {
           "groesse": "1,86",
@@ -2856,6 +2858,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32880"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/josha-vagnoman_18427/",
+          "playerName": "Vagnoman",
+          "playerId": "18427"
+        },
         "lastWert": 6720000,
         "spielerDaten": {
           "groesse": "1,90",
@@ -2934,6 +2941,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32881"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/linton-maina_18217/",
+          "playerName": "Maina",
+          "playerId": "18217"
+        },
         "lastWert": 4760000,
         "spielerDaten": {
           "groesse": "1,80",
@@ -3013,6 +3025,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32889"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/ridle-baku_15835/",
+          "playerName": "Baku",
+          "playerId": "15835"
+        },
         "lastWert": 7750000,
         "spielerDaten": {
           "groesse": "1,76",
@@ -3215,6 +3232,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/fabian-bredlow_6395/",
+          "playerName": "Bredlow",
+          "playerId": "6395"
+        },
         "lastWert": 2590000,
         "spielerDaten": {
           "groesse": "1,90",
@@ -3293,6 +3315,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33919"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/maarten-vandevoordt_21774/",
+          "playerName": "Vandevoordt",
+          "playerId": "21774"
+        },
         "lastWert": 2910000,
         "spielerDaten": {
           "groesse": "1,92",
@@ -3365,6 +3392,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33923"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/marco-gruell_26702/",
+          "playerName": "Grüll",
+          "playerId": "26702"
+        },
         "lastWert": 6160000,
         "spielerDaten": {
           "groesse": "1,81",
@@ -3451,6 +3483,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33935"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/nicolai-remberg_26449/",
+          "playerName": "Remberg",
+          "playerId": "26449"
+        },
         "lastWert": 3330000,
         "spielerDaten": {
           "groesse": "1,88",
@@ -3525,6 +3562,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32921"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/frederik-roennow_7943/",
+          "playerName": "Rønnow",
+          "playerId": "7943"
+        },
         "lastWert": 1860000,
         "spielerDaten": {
           "groesse": "1,88",
@@ -3619,6 +3661,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33947"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/philipp-treu_20344/",
+          "playerName": "Treu",
+          "playerId": "20344"
+        },
         "lastWert": 4430000,
         "spielerDaten": {
           "groesse": "1,73",
@@ -3684,6 +3731,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/mark-flekken_4530/",
+          "playerName": "Flekken",
+          "playerId": "4530"
+        },
         "lastWert": 2120000,
         "spielerDaten": {
           "groesse": "1,95",
@@ -3764,6 +3816,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32931"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/florian-neuhaus_10416/",
+          "playerName": "Neuhaus",
+          "playerId": "10416"
+        },
         "lastWert": 960000,
         "spielerDaten": {
           "groesse": "1,85",
@@ -3848,6 +3905,11 @@
           },
           "link": "https://www.com-analytics.de/player/31910"
         },
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/matthias-ginter_1835/",
+          "playerName": "Ginter",
+          "playerId": "1835"
+        },
         "lastWert": 7940000,
         "spielerDaten": {
           "groesse": "1,89",
@@ -3928,6 +3990,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32948"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/jonathan-burkardt_19272/",
+          "playerName": "Burkardt",
+          "playerId": "19272"
+        },
         "lastWert": 12050000,
         "spielerDaten": {
           "groesse": "1,81",
@@ -4128,16 +4195,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 916,
-          "einsaetzeBewertet": 21,
-          "durchschnittsnote": 3.64,
-          "verein": "Eintracht Frankfurt",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 87,
-          "durchschnittspunkte": 41.29,
-          "rang": 125
-        }},
+        "attribute": {},
         "possibleNames": [
           "Aurèle Amenda",
           "Aurele Amenda",
@@ -4208,16 +4266,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 979,
-          "einsaetzeBewertet": 24,
-          "durchschnittsnote": 3.73,
-          "verein": "FC Augsburg",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 92,
-          "durchschnittspunkte": 40.79,
-          "rang": 134
-        }},
+        "attribute": {},
         "possibleNames": [
           "Keven Schlotterbeck",
           "K. Schlotterbeck",
@@ -4231,6 +4280,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33978"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/philipp-sander_18612/",
+          "playerName": "Sander",
+          "playerId": "18612"
+        },
         "lastWert": 3310000,
         "spielerDaten": {
           "groesse": "1,86",
@@ -4374,6 +4428,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32961"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/niklas-beste_14520/",
+          "playerName": "Beste",
+          "playerId": "14520"
+        },
         "lastWert": 6370000,
         "spielerDaten": {
           "groesse": "1,75",
@@ -4676,16 +4735,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 763,
-          "einsaetzeBewertet": 15,
-          "durchschnittsnote": 3.43,
-          "verein": "RB Leipzig",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 64,
-          "durchschnittspunkte": 45.4,
-          "rang": 76
-        }},
+        "attribute": {},
         "possibleNames": [
           "Assan Ouedraogo",
           "Assan Ouédraogo",
@@ -4714,6 +4764,11 @@
             "aenderung": "+150.000"
           },
           "link": "https://www.com-analytics.de/player/33992"
+        },
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/aleix-garcia_7138/",
+          "playerName": "Aleix García",
+          "playerId": "7138"
         },
         "lastWert": 12030000,
         "spielerDaten": {
@@ -4791,6 +4846,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33995"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/leopold-querfeld_27234/",
+          "playerName": "Querfeld",
+          "playerId": "27234"
+        },
         "lastWert": 3290000,
         "spielerDaten": {
           "groesse": "1,90",
@@ -4983,16 +5043,7 @@
         ],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1620,
-          "einsaetzeBewertet": 33,
-          "durchschnittsnote": 3.27,
-          "verein": "RB Leipzig",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 89,
-          "durchschnittspunkte": 49.09,
-          "rang": 46
-        }},
+        "attribute": {},
         "position": "MITTELFELD",
         "possibleNames": [
           "Christoph Baumgartner",
@@ -5199,16 +5250,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 42,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 3.5,
-          "verein": "1. FSV Mainz 05",
-          "lastUpdate": "13.09.2026",
-          "durchschnittsminuten": 80,
-          "durchschnittspunkte": 42,
-          "rang": 134
-        }},
+        "attribute": {},
         "possibleNames": [
           "Dominik Kohr",
           "dominik kohr",
@@ -5236,6 +5278,11 @@
           "link": "https://www.com-analytics.de/player/34008"
         },
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/can-uzun_35949/",
+          "playerName": "Uzun",
+          "playerId": "35949"
+        },
         "lastWert": 10170000,
         "spielerDaten": {
           "groesse": "1,86",
@@ -5453,6 +5500,11 @@
           },
           "link": "https://www.com-analytics.de/player/34014"
         },
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/michael-olise_37170/",
+          "playerName": "Olise",
+          "playerId": "37170"
+        },
         "lastWert": 21000000,
         "spielerDaten": {
           "groesse": "1,80",
@@ -5513,7 +5565,7 @@
             "durchschnittspunkte": 69.67,
             "rang": 9
           },
-          "SonstigeInfos": ["teuerster Spieler (Realwert) (170,000,000 \u20ac)"]
+          "SonstigeInfos": ["teuerster Spieler (Realwert) (170.000.000 \u20ac)"]
         },
         "position": "STURM",
         "possibleNames": [
@@ -5601,6 +5653,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34017"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/noahkai-banks_37195/",
+          "playerName": "Banks",
+          "playerId": "37195"
+        },
         "lastWert": 4580000,
         "spielerDaten": {
           "groesse": "1,93",
@@ -5720,16 +5777,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 648,
-          "einsaetzeBewertet": 18,
-          "durchschnittsnote": 4.17,
-          "verein": "Eintracht Frankfurt",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 61,
-          "durchschnittspunkte": 31.78,
-          "rang": 251
-        }},
+        "attribute": {},
         "possibleNames": [
           "Oscar Højlund",
           "O. Højlund",
@@ -5976,16 +6024,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 833,
-          "einsaetzeBewertet": 19,
-          "durchschnittsnote": 3.68,
-          "verein": "Eintracht Frankfurt",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 84,
-          "durchschnittspunkte": 40.84,
-          "rang": 131
-        }},
+        "attribute": {},
         "possibleNames": [
           "Rasmus Kristensen",
           "R. Kristensen",
@@ -6044,16 +6083,7 @@
         "historicalPoints": [{"2024": 118}],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1102,
-          "einsaetzeBewertet": 26,
-          "durchschnittsnote": 3.65,
-          "verein": "FC Augsburg",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 75,
-          "durchschnittspunkte": 41.54,
-          "rang": 119
-        }},
+        "attribute": {},
         "position": "ABWEHR",
         "possibleNames": [
           "Dimitrios Giannoulis",
@@ -6259,16 +6289,7 @@
         "historicalPoints": [{"2024": 39}],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 750,
-          "einsaetzeBewertet": 15,
-          "durchschnittsnote": 3.43,
-          "verein": "Borussia Dortmund",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 69,
-          "durchschnittspunkte": 45.33,
-          "rang": 77
-        }},
+        "attribute": {},
         "position": "ABWEHR",
         "possibleNames": [
           "Yan Couto",
@@ -6333,16 +6354,7 @@
         "withinSquad": true,
         "onMarket": true,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 970,
-          "einsaetzeBewertet": 27,
-          "durchschnittsnote": 4.11,
-          "verein": "TSG Hoffenheim",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 52,
-          "durchschnittspunkte": 32.41,
-          "rang": 244
-        }},
+        "attribute": {},
         "possibleNames": [
           "Alexander Prass",
           "A. Prass",
@@ -6419,6 +6431,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34039"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/antonio-nusa_37124/",
+          "playerName": "Nusa",
+          "playerId": "37124"
+        },
         "lastWert": 12540000,
         "spielerDaten": {
           "groesse": "1,83",
@@ -6604,16 +6621,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 996,
-          "einsaetzeBewertet": 24,
-          "durchschnittsnote": 3.65,
-          "verein": "Eintracht Frankfurt",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 96,
-          "durchschnittspunkte": 41.5,
-          "rang": 121
-        }},
+        "attribute": {},
         "possibleNames": [
           "Arthur Theate",
           "A. Theate",
@@ -6637,6 +6645,11 @@
             "aenderung": "+500.000"
           },
           "link": "https://www.com-analytics.de/player/33021"
+        },
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/alphonso-davies_20098/",
+          "playerName": "Davies",
+          "playerId": "20098"
         },
         "lastWert": 8160000,
         "spielerDaten": {
@@ -6836,16 +6849,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 52,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 4,
-          "verein": "TSG Hoffenheim",
-          "lastUpdate": "13.09.2026",
-          "durchschnittsminuten": 43,
-          "durchschnittspunkte": 32,
-          "rang": 179
-        }},
+        "attribute": {},
         "possibleNames": [
           "Robin Hranac",
           "R. Hranac",
@@ -6860,6 +6864,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33026"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/ozan-kabak_20416/",
+          "playerName": "Ozan Kabak",
+          "playerId": "20416"
+        },
         "lastWert": 5350000,
         "spielerDaten": {
           "groesse": "1,87",
@@ -7186,6 +7195,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34057"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/chrislain-matsima_26695/",
+          "playerName": "Matsima",
+          "playerId": "26695"
+        },
         "lastWert": 5950000,
         "spielerDaten": {
           "groesse": "1,93",
@@ -7259,6 +7273,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33035"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/wooyeong-jeong_14145/",
+          "playerName": "Jeong",
+          "playerId": "14145"
+        },
         "lastWert": 2990000,
         "spielerDaten": {
           "groesse": "1,79",
@@ -7393,16 +7412,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1188,
-          "einsaetzeBewertet": 32,
-          "durchschnittsnote": 3.88,
-          "verein": "1. FC Union Berlin",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 77,
-          "durchschnittspunkte": 37.12,
-          "rang": 191
-        }},
+        "attribute": {},
         "possibleNames": [
           "Andrej Ilic",
           "A. Ilic",
@@ -7416,6 +7426,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33038"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/nico-schlotterbeck_20052/",
+          "playerName": "N. Schlotterbeck",
+          "playerId": "20052"
+        },
         "lastWert": 10360000,
         "spielerDaten": {
           "groesse": "1,91",
@@ -7470,16 +7485,7 @@
         ],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1566,
-          "einsaetzeBewertet": 28,
-          "durchschnittsnote": 2.91,
-          "verein": "Borussia Dortmund",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 97,
-          "durchschnittspunkte": 55.93,
-          "rang": 10
-        }},
+        "attribute": {},
         "position": "ABWEHR",
         "possibleNames": [
           "Nico Schlotterbeck",
@@ -7604,16 +7610,7 @@
         "historicalPoints": [{"2024": 154}],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1236,
-          "einsaetzeBewertet": 27,
-          "durchschnittsnote": 3.48,
-          "verein": "FC Augsburg",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 81,
-          "durchschnittspunkte": 44.22,
-          "rang": 86
-        }},
+        "attribute": {},
         "position": "MITTELFELD",
         "possibleNames": [
           "Alexis Claude Maurice",
@@ -8276,6 +8273,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33070"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/phillip-tietz_7480/",
+          "playerName": "Tietz",
+          "playerId": "7480"
+        },
         "lastWert": 8990000,
         "spielerDaten": {
           "groesse": "1,90",
@@ -8468,6 +8470,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/hennes-behrens_37221/",
+          "playerName": "Behrens",
+          "playerId": "37221"
+        },
         "lastWert": 4460000,
         "spielerDaten": {
           "groesse": "1,75",
@@ -8595,16 +8602,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1044,
-          "einsaetzeBewertet": 23,
-          "durchschnittsnote": 3.65,
-          "verein": "VfB Stuttgart",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 85,
-          "durchschnittspunkte": 41.39,
-          "rang": 122
-        }},
+        "attribute": {},
         "possibleNames": [
           "Atakan Karazor",
           "A. Karazor",
@@ -8667,16 +8665,7 @@
         "historicalPoints": [{"2024": 40}],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1416,
-          "einsaetzeBewertet": 30,
-          "durchschnittsnote": 3.37,
-          "verein": "TSG Hoffenheim",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 80,
-          "durchschnittspunkte": 47.2,
-          "rang": 59
-        }},
+        "attribute": {},
         "position": "MITTELFELD",
         "possibleNames": [
           "Bazoumana Toure",
@@ -8758,6 +8747,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34114"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/daniel-svensson_38304/",
+          "playerName": "Svensson",
+          "playerId": "38304"
+        },
         "lastWert": 6710000,
         "spielerDaten": {
           "groesse": "1,83",
@@ -8831,6 +8825,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34115"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/finn-jeltsch_36816/",
+          "playerName": "Jeltsch",
+          "playerId": "36816"
+        },
         "lastWert": 4270000,
         "spielerDaten": {
           "groesse": "1,88",
@@ -8900,6 +8899,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34116"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/tidiam-gomis_36962/",
+          "playerName": "Gomis",
+          "playerId": "36962"
+        },
         "lastWert": 4840000,
         "spielerDaten": {
           "groesse": "1,83",
@@ -9112,6 +9116,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33096"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/christopher-trimmel_5713/",
+          "playerName": "Trimmel",
+          "playerId": "5713"
+        },
         "lastWert": 1040000,
         "spielerDaten": {
           "groesse": "1,89",
@@ -9167,16 +9176,7 @@
           {"2024": 89}
         ],
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1093,
-          "einsaetzeBewertet": 27,
-          "durchschnittsnote": 3.72,
-          "verein": "1. FC Union Berlin",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 72,
-          "durchschnittspunkte": 39.3,
-          "rang": 157
-        }},
+        "attribute": {},
         "possibleNames": [
           "Christopher Trimmel",
           "christopher trimmel",
@@ -9202,6 +9202,11 @@
             "aenderung": "-260.000"
           },
           "link": "https://www.com-analytics.de/player/32073"
+        },
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/rani-khedira_2122/",
+          "playerName": "Khedira",
+          "playerId": "2122"
         },
         "lastWert": 2430000,
         "spielerDaten": {
@@ -9417,16 +9422,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 37,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 4,
-          "verein": "Bayer 04 Leverkusen",
-          "lastUpdate": "07.09.2026",
-          "durchschnittsminuten": 32,
-          "durchschnittspunkte": 37,
-          "rang": 130
-        }},
+        "attribute": {},
         "possibleNames": [
           "Jonas Hofmann",
           "jonas hofmann",
@@ -9497,16 +9493,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1654,
-          "einsaetzeBewertet": 34,
-          "durchschnittsnote": 3.32,
-          "verein": "SV Werder Bremen",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 93,
-          "durchschnittspunkte": 48.65,
-          "rang": 52
-        }},
+        "attribute": {},
         "possibleNames": [
           "Romano Schmid",
           "R. Schmid",
@@ -9568,16 +9555,7 @@
         "lastUpdate": "19.09.2026",
         "historicalPoints": [{"2025": 23}],
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 472,
-          "einsaetzeBewertet": 16,
-          "durchschnittsnote": 4.25,
-          "verein": "1. FC Köln",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 73,
-          "durchschnittspunkte": 29.5,
-          "rang": 267
-        }},
+        "attribute": {},
         "possibleNames": [
           "Joel Schmied",
           "Joël Schmied",
@@ -9652,6 +9630,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34139"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/said-el-mala_38546/",
+          "playerName": "S. El Mala",
+          "playerId": "38546"
+        },
         "lastWert": 11190000,
         "spielerDaten": {
           "groesse": "1,87",
@@ -9977,16 +9960,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 602,
-          "einsaetzeBewertet": 19,
-          "durchschnittsnote": 4.18,
-          "verein": "Hamburger SV",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 71,
-          "durchschnittspunkte": 30.32,
-          "rang": 263
-        }},
+        "attribute": {},
         "possibleNames": [
           "Daniel Elfadli",
           "D. Elfadli",
@@ -10052,16 +10026,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1149,
-          "einsaetzeBewertet": 29,
-          "durchschnittsnote": 3.76,
-          "verein": "Hamburger SV",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 91,
-          "durchschnittspunkte": 39.62,
-          "rang": 154
-        }},
+        "attribute": {},
         "possibleNames": [
           "Miro Muheim",
           "M. Muheim",
@@ -10075,6 +10040,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33130"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/tom-krauss_20244/",
+          "playerName": "Krauß",
+          "playerId": "20244"
+        },
         "lastWert": 2640000,
         "spielerDaten": {
           "groesse": "1,82",
@@ -10203,16 +10173,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 794,
-          "einsaetzeBewertet": 19,
-          "durchschnittsnote": 3.61,
-          "verein": "Hamburger SV",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 65,
-          "durchschnittspunkte": 40.95,
-          "rang": 128
-        }},
+        "attribute": {},
         "possibleNames": [
           "Jean Luc Dompe",
           "Jean Luc Dompé",
@@ -10463,6 +10424,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33141"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/julian-ryerson_18478/",
+          "playerName": "Ryerson",
+          "playerId": "18478"
+        },
         "lastWert": 4930000,
         "spielerDaten": {
           "groesse": "1,83",
@@ -10616,6 +10582,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34171"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/robin-fellhauer_24864/",
+          "playerName": "Fellhauer",
+          "playerId": "24864"
+        },
         "lastWert": 4250000,
         "spielerDaten": {
           "groesse": "1,82",
@@ -10748,16 +10719,7 @@
         ],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1124,
-          "einsaetzeBewertet": 31,
-          "durchschnittsnote": 3.92,
-          "verein": "Bayer 04 Leverkusen",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 87,
-          "durchschnittspunkte": 35.77,
-          "rang": 208
-        }},
+        "attribute": {},
         "position": "MITTELFELD",
         "possibleNames": [
           "Robert Andrich",
@@ -10833,6 +10795,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/ellyes-skhiri_20776/",
+          "playerName": "Skhiri",
+          "playerId": "20776"
+        },
         "lastWert": 4780000,
         "spielerDaten": {
           "groesse": "1,85",
@@ -11113,6 +11080,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34185"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/ezechiel-banzuzi_38383/",
+          "playerName": "Banzuzi",
+          "playerId": "38383"
+        },
         "lastWert": 4010000,
         "spielerDaten": {
           "groesse": "1,91",
@@ -11236,16 +11208,7 @@
         "lastUpdate": "19.09.2026",
         "historicalPoints": [{"2025": 70}],
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 880,
-          "einsaetzeBewertet": 23,
-          "durchschnittsnote": 3.89,
-          "verein": "Mönchengladbach",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 71,
-          "durchschnittspunkte": 36.61,
-          "rang": 200
-        }},
+        "attribute": {},
         "possibleNames": [
           "Jens Castrop",
           "J. Castrop",
@@ -11258,6 +11221,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34187"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/kevin-diks_11591/",
+          "playerName": "Diks",
+          "playerId": "11591"
+        },
         "lastWert": 3230000,
         "spielerDaten": {
           "groesse": "1,86",
@@ -11380,16 +11348,7 @@
         ],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 987,
-          "einsaetzeBewertet": 19,
-          "durchschnittsnote": 3.21,
-          "verein": "Borussia Dortmund",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 86,
-          "durchschnittspunkte": 50.37,
-          "rang": 35
-        }},
+        "attribute": {},
         "position": "ABWEHR",
         "possibleNames": [
           "Ramy Bensebaini",
@@ -11677,16 +11636,7 @@
         "lastUpdate": "19.09.2026",
         "historicalPoints": [{"2025": 39}],
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 711,
-          "einsaetzeBewertet": 17,
-          "durchschnittsnote": 3.91,
-          "verein": "VfB Stuttgart",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 66,
-          "durchschnittspunkte": 36.18,
-          "rang": 204
-        }},
+        "attribute": {},
         "possibleNames": [
           "Lorenz Assignon",
           "L. Assignon",
@@ -11750,16 +11700,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 934,
-          "einsaetzeBewertet": 30,
-          "durchschnittsnote": 4.23,
-          "verein": "1. FC Union Berlin",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 65,
-          "durchschnittspunkte": 29.6,
-          "rang": 265
-        }},
+        "attribute": {},
         "possibleNames": [
           "Ilyas Ansah",
           "I. Ansah",
@@ -11909,6 +11850,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34202"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/leon-avdullahu_38223/",
+          "playerName": "Avdullahu",
+          "playerId": "38223"
+        },
         "lastWert": 6170000,
         "spielerDaten": {
           "groesse": "1,85",
@@ -11982,6 +11928,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33179"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/patrik-schick_7794/",
+          "playerName": "Schick",
+          "playerId": "7794"
+        },
         "lastWert": 15130000,
         "spielerDaten": {
           "groesse": "1,91",
@@ -12061,6 +12012,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32157"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/jonathan-tah_2385/",
+          "playerName": "Tah",
+          "playerId": "2385"
+        },
         "lastWert": 6680000,
         "spielerDaten": {
           "groesse": "1,95",
@@ -12357,16 +12313,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 809,
-          "einsaetzeBewertet": 16,
-          "durchschnittsnote": 3.25,
-          "verein": "Bayer 04 Leverkusen",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 73,
-          "durchschnittspunkte": 48.81,
-          "rang": 49
-        }},
+        "attribute": {},
         "possibleNames": [
           "Exequiel Palacios",
           "exequiel palacios",
@@ -12503,6 +12450,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34215"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/noah-darvich_36018/",
+          "playerName": "Darvich",
+          "playerId": "36018"
+        },
         "lastWert": 1990000,
         "spielerDaten": {
           "groesse": "1,84",
@@ -12626,16 +12578,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 732,
-          "einsaetzeBewertet": 25,
-          "durchschnittsnote": 4.32,
-          "verein": "Hamburger SV",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 55,
-          "durchschnittspunkte": 27.52,
-          "rang": 273
-        }},
+        "attribute": {},
         "possibleNames": [
           "Rayan Philippe",
           "R. Philippe",
@@ -12648,6 +12591,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34217"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/jarell-quansah_36489/",
+          "playerName": "Quansah",
+          "playerId": "36489"
+        },
         "lastWert": 4840000,
         "spielerDaten": {
           "groesse": "1,90",
@@ -12791,6 +12739,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32178"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/phillipp-mwene_2723/",
+          "playerName": "Mwene",
+          "playerId": "2723"
+        },
         "lastWert": 4000000,
         "spielerDaten": {
           "groesse": "1,70",
@@ -12868,6 +12821,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33207"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/edmond-tapsoba_19022/",
+          "playerName": "Tapsoba",
+          "playerId": "19022"
+        },
         "lastWert": 5980000,
         "spielerDaten": {
           "groesse": "1,94",
@@ -13089,6 +13047,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33224"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/amos-pieper_7061/",
+          "playerName": "Pieper",
+          "playerId": "7061"
+        },
         "lastWert": 3630000,
         "spielerDaten": {
           "groesse": "1,92",
@@ -13250,6 +13213,11 @@
           },
           "link": "https://www.com-analytics.de/player/33236"
         },
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/jamal-musiala_24149/",
+          "playerName": "Musiala",
+          "playerId": "24149"
+        },
         "lastWert": 14110000,
         "spielerDaten": {
           "groesse": "1,84",
@@ -13379,6 +13347,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33258"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/joe-scally_23700/",
+          "playerName": "Scally",
+          "playerId": "23700"
+        },
         "lastWert": 2570000,
         "spielerDaten": {
           "groesse": "1,84",
@@ -13539,6 +13512,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33270"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/tim-lemperle_23854/",
+          "playerName": "Lemperle",
+          "playerId": "23854"
+        },
         "lastWert": 7970000,
         "spielerDaten": {
           "groesse": "1,87",
@@ -13796,16 +13774,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1205,
-          "einsaetzeBewertet": 26,
-          "durchschnittsnote": 3.54,
-          "verein": "1. FSV Mainz 05",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 83,
-          "durchschnittspunkte": 43.77,
-          "rang": 92
-        }},
+        "attribute": {},
         "possibleNames": [
           "Paul Nebel",
           "P. Nebel",
@@ -13818,6 +13787,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33311"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/ermedin-demirovic_24166/",
+          "playerName": "Demirović",
+          "playerId": "24166"
+        },
         "lastWert": 9830000,
         "spielerDaten": {
           "groesse": "1,85",
@@ -13975,6 +13949,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/janik-haberer_3616/",
+          "playerName": "Haberer",
+          "playerId": "3616"
+        },
         "lastWert": 1230000,
         "spielerDaten": {
           "groesse": "1,87",
@@ -14035,16 +14014,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 793,
-          "einsaetzeBewertet": 24,
-          "durchschnittsnote": 4.21,
-          "verein": "1. FC Union Berlin",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 71,
-          "durchschnittspunkte": 30.33,
-          "rang": 262
-        }},
+        "attribute": {},
         "possibleNames": [
           "Janik Haberer",
           "janik haberer",
@@ -14060,6 +14030,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33335"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/ritsu-doan_22974/",
+          "playerName": "Dōan",
+          "playerId": "22974"
+        },
         "lastWert": 7510000,
         "spielerDaten": {
           "groesse": "1,72",
@@ -14249,16 +14224,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 69,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 2.5,
-          "verein": "RB Leipzig",
-          "lastUpdate": "13.09.2026",
-          "durchschnittsminuten": 83,
-          "durchschnittspunkte": 69,
-          "rang": 15
-        }},
+        "attribute": {},
         "possibleNames": [
           "Rocco Reitz",
           "R. Reitz",
@@ -14271,6 +14237,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33364"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/eren-dinkci_22008/",
+          "playerName": "Dinkçi",
+          "playerId": "22008"
+        },
         "lastWert": 4400000,
         "spielerDaten": {
           "groesse": "1,88",
@@ -14413,6 +14384,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32356"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/marvin-schwaebe_2626/",
+          "playerName": "Schwäbe",
+          "playerId": "2626"
+        },
         "lastWert": 2710000,
         "spielerDaten": {
           "groesse": "1,90",
@@ -14548,16 +14524,7 @@
         ],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 878,
-          "einsaetzeBewertet": 26,
-          "durchschnittsnote": 4.17,
-          "verein": "Eintracht Frankfurt",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 54,
-          "durchschnittspunkte": 32,
-          "rang": 247
-        }},
+        "attribute": {},
         "position": "MITTELFELD",
         "possibleNames": [
           "Ansgar Knauff",
@@ -14571,6 +14538,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33386"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/josip-stanisic_20102/",
+          "playerName": "Stanišić",
+          "playerId": "20102"
+        },
         "lastWert": 4140000,
         "spielerDaten": {
           "groesse": "1,87",
@@ -14732,6 +14704,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33411"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/jamie-leweling_21336/",
+          "playerName": "Leweling",
+          "playerId": "21336"
+        },
         "lastWert": 6090000,
         "spielerDaten": {
           "groesse": "1,85",
@@ -14786,16 +14763,7 @@
         ],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 31,
-          "einsaetzeBewertet": 2,
-          "durchschnittsnote": 4.75,
-          "verein": "VfB Stuttgart",
-          "lastUpdate": "13.09.2026",
-          "durchschnittsminuten": 30,
-          "durchschnittspunkte": 15.5,
-          "rang": 239
-        }},
+        "attribute": {},
         "position": "MITTELFELD",
         "possibleNames": [
           "Jamie Leweling",
@@ -14809,6 +14777,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32395"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/nadiem-amiri_5815/",
+          "playerName": "Amiri",
+          "playerId": "5815"
+        },
         "lastWert": 10590000,
         "spielerDaten": {
           "groesse": "1,80",
@@ -14896,6 +14869,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32398"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/maximilian-eggestein_6131/",
+          "playerName": "Eggestein",
+          "playerId": "6131"
+        },
         "lastWert": 7810000,
         "spielerDaten": {
           "groesse": "1,81",
@@ -15022,16 +15000,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1020,
-          "einsaetzeBewertet": 22,
-          "durchschnittsnote": 3.41,
-          "verein": "Eintracht Frankfurt",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 97,
-          "durchschnittspunkte": 46.36,
-          "rang": 69
-        }},
+        "attribute": {},
         "possibleNames": [
           "Michael Zetterer",
           "michael zetterer",
@@ -15050,6 +15019,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33436"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/david-raum_12557/",
+          "playerName": "Raum",
+          "playerId": "12557"
+        },
         "lastWert": 8630000,
         "spielerDaten": {
           "groesse": "1,81",
@@ -15124,6 +15098,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33437"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/angelo-stiller_20766/",
+          "playerName": "Stiller",
+          "playerId": "20766"
+        },
         "lastWert": 7420000,
         "spielerDaten": {
           "groesse": "1,83",
@@ -15196,6 +15175,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33439"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/noah-atubolu_22000/",
+          "playerName": "Atubolu",
+          "playerId": "22000"
+        },
         "lastWert": 3740000,
         "spielerDaten": {
           "groesse": "1,90",
@@ -15388,6 +15372,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32445"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/joshua-kimmich_5768/",
+          "playerName": "Kimmich",
+          "playerId": "5768"
+        },
         "lastWert": 14470000,
         "spielerDaten": {
           "groesse": "1,77",
@@ -15477,6 +15466,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32452"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/waldemar-anton_5837/",
+          "playerName": "Anton",
+          "playerId": "5837"
+        },
         "lastWert": 7180000,
         "spielerDaten": {
           "groesse": "1,89",
@@ -15561,6 +15555,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33477"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/jaesung-lee_21202/",
+          "playerName": "Lee",
+          "playerId": "21202"
+        },
         "lastWert": 5210000,
         "spielerDaten": {
           "groesse": "1,88",
@@ -15702,16 +15701,7 @@
           {"2024": 37}
         ],
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 920,
-          "einsaetzeBewertet": 26,
-          "durchschnittsnote": 4,
-          "verein": "1. FSV Mainz 05",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 73,
-          "durchschnittspunkte": 34.46,
-          "rang": 224
-        }},
+        "attribute": {},
         "possibleNames": [
           "Silvan Widmer",
           "S. Widmer",
@@ -16068,16 +16058,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1532,
-          "einsaetzeBewertet": 33,
-          "durchschnittsnote": 3.41,
-          "verein": "Mönchengladbach",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 96,
-          "durchschnittspunkte": 46.42,
-          "rang": 66
-        }},
+        "attribute": {},
         "possibleNames": [
           "Nico Elvedi",
           "nico elvedi",
@@ -16095,6 +16076,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33498"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/felix-nmecha_25090/",
+          "playerName": "F. Nmecha",
+          "playerId": "25090"
+        },
         "lastWert": 9440000,
         "spielerDaten": {
           "groesse": "1,90",
@@ -16371,16 +16357,7 @@
         "withinSquad": true,
         "onMarket": true,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 911,
-          "einsaetzeBewertet": 26,
-          "durchschnittsnote": 3.96,
-          "verein": "FC Augsburg",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 69,
-          "durchschnittspunkte": 35.04,
-          "rang": 215
-        }},
+        "attribute": {},
         "possibleNames": [
           "Kristijan Jakic",
           "Kristijan Jakić",
@@ -16461,6 +16438,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32509"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/maximilian-mittelstaedt_6206/",
+          "playerName": "Mittelstädt",
+          "playerId": "6206"
+        },
         "lastWert": 9530000,
         "spielerDaten": {
           "groesse": "1,80",
@@ -16603,16 +16585,7 @@
         "historicalPoints": [{"2022": 1}],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1530,
-          "einsaetzeBewertet": 33,
-          "durchschnittsnote": 3.41,
-          "verein": "TSG Hoffenheim",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 73,
-          "durchschnittspunkte": 46.36,
-          "rang": 70
-        }},
+        "attribute": {},
         "position": "STURM",
         "possibleNames": [
           "Fisnik Asllani",
@@ -16626,6 +16599,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/31489"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/oliver-baumann_567/",
+          "playerName": "Baumann",
+          "playerId": "567"
+        },
         "lastWert": 2940000,
         "spielerDaten": {
           "groesse": "1,87",
@@ -16715,6 +16693,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33550"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/andras-schaefer_27369/",
+          "playerName": "Schäfer",
+          "playerId": "27369"
+        },
         "lastWert": 1860000,
         "spielerDaten": {
           "groesse": "1,78",
@@ -16798,6 +16781,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33552"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/julian-chabot_12583/",
+          "playerName": "Chabot",
+          "playerId": "12583"
+        },
         "lastWert": 5050000,
         "spielerDaten": {
           "groesse": "1,95",
@@ -16925,16 +16913,7 @@
           {"2024": 107}
         ],
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 44,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 3.5,
-          "verein": "VfB Stuttgart",
-          "lastUpdate": "13.09.2026",
-          "durchschnittsminuten": 62,
-          "durchschnittspunkte": 44,
-          "rang": 120
-        }},
+        "attribute": {},
         "possibleNames": [
           "Tiago Tomás",
           "Tiago Tomas",
@@ -16950,6 +16929,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33567"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/tom-rothe_26243/",
+          "playerName": "Rothe",
+          "playerId": "26243"
+        },
         "lastWert": 1860000,
         "spielerDaten": {
           "groesse": "1,93",
@@ -17023,6 +17007,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32546"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/marius-wolf_5670/",
+          "playerName": "Wolf",
+          "playerId": "5670"
+        },
         "lastWert": 3910000,
         "spielerDaten": {
           "groesse": "1,88",
@@ -17231,16 +17220,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1016,
-          "einsaetzeBewertet": 23,
-          "durchschnittsnote": 3.66,
-          "verein": "Borussia Dortmund",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 54,
-          "durchschnittspunkte": 40.83,
-          "rang": 133
-        }},
+        "attribute": {},
         "possibleNames": [
           "Karim Adeyemi",
           "karim adeyemi",
@@ -17257,6 +17237,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33577"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/anthony-caci_26102/",
+          "playerName": "Caci",
+          "playerId": "26102"
+        },
         "lastWert": 4630000,
         "spielerDaten": {
           "groesse": "1,84",
@@ -17394,16 +17379,7 @@
         ],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1569,
-          "einsaetzeBewertet": 34,
-          "durchschnittsnote": 3.38,
-          "verein": "TSG Hoffenheim",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 68,
-          "durchschnittspunkte": 46.15,
-          "rang": 72
-        }},
+        "attribute": {},
         "position": "MITTELFELD",
         "possibleNames": [
           "Andrej Kramaric",
@@ -17547,16 +17523,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1236,
-          "einsaetzeBewertet": 23,
-          "durchschnittsnote": 3.04,
-          "verein": "RB Leipzig",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 93,
-          "durchschnittspunkte": 53.74,
-          "rang": 17
-        }},
+        "attribute": {},
         "possibleNames": [
           "Peter Gulacsi",
           "Péter Gulácsi",
@@ -17840,16 +17807,7 @@
         ],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 22,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 4.5,
-          "verein": "Borussia Dortmund",
-          "lastUpdate": "07.09.2026",
-          "durchschnittsminuten": 41,
-          "durchschnittspunkte": 22,
-          "rang": 199
-        }},
+        "attribute": {},
         "position": "MITTELFELD",
         "possibleNames": [
           "Marcel Sabitzer",
@@ -18015,6 +17973,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33619"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/adam-hlozek_24095/",
+          "playerName": "Hložek",
+          "playerId": "24095"
+        },
         "lastWert": 6670000,
         "spielerDaten": {
           "groesse": "1,88",
@@ -18417,6 +18380,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33629"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/derry-scherhant_27532/",
+          "playerName": "Scherhant",
+          "playerId": "27532"
+        },
         "lastWert": 4660000,
         "spielerDaten": {
           "groesse": "1,85",
@@ -18533,16 +18501,7 @@
         ],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1350,
-          "einsaetzeBewertet": 29,
-          "durchschnittsnote": 3.4,
-          "verein": "SV Werder Bremen",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 90,
-          "durchschnittspunkte": 46.55,
-          "rang": 64
-        }},
+        "attribute": {},
         "position": "MITTELFELD",
         "possibleNames": [
           "Jens Stage",
@@ -18556,6 +18515,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33647"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/mio-backhaus_27467/",
+          "playerName": "Backhaus",
+          "playerId": "27467"
+        },
         "lastWert": 2900000,
         "spielerDaten": {
           "groesse": "1,94",
@@ -18685,6 +18649,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32638"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/gregor-kobel_9357/",
+          "playerName": "Kobel",
+          "playerId": "9357"
+        },
         "lastWert": 3210000,
         "spielerDaten": {
           "groesse": "1,96",
@@ -18888,6 +18857,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32654"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/moritz-nicolas_6295/",
+          "playerName": "Nicolas",
+          "playerId": "6295"
+        },
         "lastWert": 3420000,
         "spielerDaten": {
           "groesse": "1,93",
@@ -19156,16 +19130,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 10,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 5,
-          "verein": "SV Werder Bremen",
-          "lastUpdate": "13.09.2026",
-          "durchschnittsminuten": 61,
-          "durchschnittspunkte": 10,
-          "rang": 245
-        }},
+        "attribute": {},
         "possibleNames": [
           "Justin Njinmah",
           "J. Njinmah",
@@ -19178,6 +19143,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32667"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/serhou-guirassy_10454/",
+          "playerName": "Guirassy",
+          "playerId": "10454"
+        },
         "lastWert": 15280000,
         "spielerDaten": {
           "groesse": "1,87",
@@ -19463,16 +19433,7 @@
         ],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 611,
-          "einsaetzeBewertet": 16,
-          "durchschnittsnote": 3.91,
-          "verein": "1. FSV Mainz 05",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 69,
-          "durchschnittspunkte": 36.56,
-          "rang": 201
-        }},
+        "attribute": {},
         "position": "ABWEHR",
         "possibleNames": [
           "Stefan Bell",
@@ -19604,16 +19565,7 @@
           {"2024": 84}
         ],
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 39,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 4,
-          "verein": "TSG Hoffenheim",
-          "lastUpdate": "07.09.2026",
-          "durchschnittsminuten": 53,
-          "durchschnittspunkte": 39,
-          "rang": 122
-        }},
+        "attribute": {},
         "possibleNames": [
           "bernardo",
           "Bernardo"
@@ -19743,16 +19695,7 @@
         ],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 887,
-          "einsaetzeBewertet": 26,
-          "durchschnittsnote": 4.16,
-          "verein": "1. FC Union Berlin",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 67,
-          "durchschnittspunkte": 32.15,
-          "rang": 246
-        }},
+        "attribute": {},
         "position": "STURM",
         "possibleNames": [
           "oliver burke",
@@ -19905,16 +19848,7 @@
         ],
         "withinSquad": true,
         "onMarket": true,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1080,
-          "einsaetzeBewertet": 21,
-          "durchschnittsnote": 3.14,
-          "verein": "FC Bayern München",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 61,
-          "durchschnittspunkte": 51.43,
-          "rang": 29
-        }},
+        "attribute": {},
         "position": "STURM",
         "possibleNames": [
           "Serge Gnabry",
@@ -19931,6 +19865,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32710"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/jordan-torunarigha_6513/",
+          "playerName": "Torunarigha",
+          "playerId": "6513"
+        },
         "lastWert": 1570000,
         "spielerDaten": {
           "groesse": "1,91",
@@ -20011,6 +19950,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33736"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/mert-koemuer_27169/",
+          "playerName": "Kömür",
+          "playerId": "27169"
+        },
         "lastWert": 2490000,
         "spielerDaten": {
           "groesse": "1,84",
@@ -20063,16 +20007,7 @@
         ],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 891,
-          "einsaetzeBewertet": 24,
-          "durchschnittsnote": 4,
-          "verein": "FC Augsburg",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 65,
-          "durchschnittspunkte": 34.5,
-          "rang": 223
-        }},
+        "attribute": {},
         "position": "MITTELFELD",
         "possibleNames": [
           "Mert Koemuer",
@@ -20164,6 +20099,11 @@
           "link": "https://www.com-analytics.de/player/32720"
         },
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/dayot-upamecano_11541/",
+          "playerName": "Upamecano",
+          "playerId": "11541"
+        },
         "lastWert": 8690000,
         "spielerDaten": {
           "groesse": "1,86",
@@ -20255,6 +20195,11 @@
           "link": "https://www.com-analytics.de/player/33744"
         },
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/ibrahim-maza_35905/",
+          "playerName": "Maza",
+          "playerId": "35905"
+        },
         "lastWert": 11130000,
         "spielerDaten": {
           "groesse": "1,80",
@@ -20534,16 +20479,7 @@
         ],
         "withinSquad": true,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1713,
-          "einsaetzeBewertet": 29,
-          "durchschnittsnote": 2.81,
-          "verein": "Bayer 04 Leverkusen",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 93,
-          "durchschnittspunkte": 59.07,
-          "rang": 5
-        }},
+        "attribute": {},
         "position": "ABWEHR",
         "possibleNames": [
           "Alejandro Grimaldo",
@@ -20561,6 +20497,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33772"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/arthur_35904/",
+          "playerName": "Arthur",
+          "playerId": "35904"
+        },
         "lastWert": 3640000,
         "spielerDaten": {
           "groesse": "1,74",
@@ -20681,16 +20622,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 809,
-          "einsaetzeBewertet": 22,
-          "durchschnittsnote": 4.14,
-          "verein": "FC Augsburg",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 86,
-          "durchschnittspunkte": 32.45,
-          "rang": 243
-        }},
+        "attribute": {},
         "possibleNames": [
           "Cédric Zesiger",
           "Cedric Zesiger",
@@ -20705,6 +20637,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/lukas-ullrich_27518/",
+          "playerName": "Ullrich",
+          "playerId": "27518"
+        },
         "lastWert": 1250000,
         "spielerDaten": {
           "groesse": "1,80",
@@ -20778,6 +20715,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32754"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/marco-friedl_7047/",
+          "playerName": "Friedl",
+          "playerId": "7047"
+        },
         "lastWert": 2940000,
         "spielerDaten": {
           "groesse": "1,87",
@@ -20908,16 +20850,7 @@
         "withinSquad": true,
         "onMarket": true,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 927,
-          "einsaetzeBewertet": 24,
-          "durchschnittsnote": 3.83,
-          "verein": "Eintracht Frankfurt",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 79,
-          "durchschnittspunkte": 38.04,
-          "rang": 174
-        }},
+        "attribute": {},
         "possibleNames": [
           "Hugo Larsson",
           "H. Larsson",
@@ -20943,6 +20876,11 @@
           "link": "https://www.com-analytics.de/player/33783"
         },
         "elfDesSpieltages": 2,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/igor-matanovic_25780/",
+          "playerName": "Matanović",
+          "playerId": "25780"
+        },
         "lastWert": 13430000,
         "spielerDaten": {
           "groesse": "1,94",
@@ -21265,6 +21203,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34233"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/nicolas-capaldo_26628/",
+          "playerName": "Capaldo",
+          "playerId": "26628"
+        },
         "lastWert": 2030000,
         "spielerDaten": {
           "groesse": "1,77",
@@ -21587,6 +21530,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34236"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/han-noah-massengo_35978/",
+          "playerName": "Massengo",
+          "playerId": "35978"
+        },
         "lastWert": 5310000,
         "spielerDaten": {
           "groesse": "1,78",
@@ -21710,16 +21658,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 798,
-          "einsaetzeBewertet": 26,
-          "durchschnittsnote": 4.23,
-          "verein": "SV Werder Bremen",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 87,
-          "durchschnittspunkte": 29.81,
-          "rang": 264
-        }},
+        "attribute": {},
         "possibleNames": [
           "Karim Coulibaly",
           "Coulibaly",
@@ -21842,16 +21781,7 @@
         "lastUpdate": "06.08.2026",
         "historicalPoints": [{"2025": 218}],
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1851,
-          "einsaetzeBewertet": 33,
-          "durchschnittsnote": 2.92,
-          "verein": "RB Leipzig",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 79,
-          "durchschnittspunkte": 56.09,
-          "rang": 9
-        }},
+        "attribute": {},
         "possibleNames": [
           "Yan Diomande",
           "Diomande",
@@ -21989,16 +21919,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 964,
-          "einsaetzeBewertet": 31,
-          "durchschnittsnote": 4.18,
-          "verein": "1. FC Köln",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 86,
-          "durchschnittspunkte": 31.1,
-          "rang": 254
-        }},
+        "attribute": {},
         "possibleNames": [
           "Sebastian Sebulonsen",
           "Sebulonsen",
@@ -22011,6 +21932,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34242"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/wouter-burger_22632/",
+          "playerName": "Burger",
+          "playerId": "22632"
+        },
         "lastWert": 5050000,
         "spielerDaten": {
           "groesse": "1,91",
@@ -22133,16 +22059,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 831,
-          "einsaetzeBewertet": 22,
-          "durchschnittsnote": 4,
-          "verein": "SV Werder Bremen",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 56,
-          "durchschnittspunkte": 34.41,
-          "rang": 225
-        }},
+        "attribute": {},
         "possibleNames": [
           "Samuel Mbangula",
           "Mbangula",
@@ -22201,16 +22118,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 753,
-          "einsaetzeBewertet": 21,
-          "durchschnittsnote": 4.38,
-          "verein": "Mönchengladbach",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 52,
-          "durchschnittspunkte": 27.05,
-          "rang": 276
-        }},
+        "attribute": {},
         "possibleNames": []
       },
       "name": "Machino",
@@ -22507,16 +22415,7 @@
         "lastUpdate": "19.09.2026",
         "historicalPoints": [{"2025": 22}],
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 17,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 5,
-          "verein": "SV Werder Bremen",
-          "lastUpdate": "07.09.2026",
-          "durchschnittsminuten": 33,
-          "durchschnittspunkte": 17,
-          "rang": 211
-        }},
+        "attribute": {},
         "possibleNames": [
           "Salim Musah",
           "Musah",
@@ -22577,16 +22476,7 @@
         "lastUpdate": "01.09.2026",
         "historicalPoints": [{"2025": 97}],
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1000,
-          "einsaetzeBewertet": 17,
-          "durchschnittsnote": 3.21,
-          "verein": "VfB Stuttgart",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 79,
-          "durchschnittspunkte": 49.76,
-          "rang": 38
-        }},
+        "attribute": {},
         "possibleNames": [
           "Chema Andrés",
           "Andrés",
@@ -22691,6 +22581,11 @@
           "manOfTheMatchAmount": 0
         },
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34254"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/luis-diaz_22566/",
+          "playerName": "Luis Díaz",
+          "playerId": "22566"
+        },
         "lastWert": 15170000,
         "spielerDaten": {
           "groesse": "1,79",
@@ -22757,6 +22652,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34257"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/vladimir-coufal_11929/",
+          "playerName": "Coufal",
+          "playerId": "11929"
+        },
         "lastWert": 5050000,
         "spielerDaten": {
           "groesse": "1,75",
@@ -22857,16 +22757,7 @@
           "manOfTheMatchAmount": 0
         },
         "nebenpositionen": [],
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 608,
-          "einsaetzeBewertet": 20,
-          "durchschnittsnote": 4.2,
-          "verein": "Hamburger SV",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 87,
-          "durchschnittspunkte": 30.4,
-          "rang": 259
-        }},
+        "attribute": {},
         "nationalitaet": "",
         "possibleNames": [
           "Warmed Omari",
@@ -22875,6 +22766,11 @@
         ],
         "fuss": "",
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34258"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/warmed-omari_25626/",
+          "playerName": "Omari",
+          "playerId": "25626"
+        },
         "geburtstag": "",
         "spielerDaten": {
           "groesse": "1,88",
@@ -23168,16 +23064,7 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1098,
-          "einsaetzeBewertet": 27,
-          "durchschnittsnote": 3.78,
-          "verein": "Bayer 04 Leverkusen",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 57,
-          "durchschnittspunkte": 39.33,
-          "rang": 156
-        }},
+        "attribute": {},
         "possibleNames": [
           "Ernest Poku",
           "Poku",
@@ -23297,16 +23184,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 496,
-          "einsaetzeBewertet": 13,
-          "durchschnittsnote": 3.88,
-          "verein": "1. FC Köln",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 92,
-          "durchschnittspunkte": 37,
-          "rang": 193
-        }},
+        "attribute": {},
         "possibleNames": [
           "Rav van den Berg",
           "Berg",
@@ -23555,16 +23433,7 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 965,
-          "einsaetzeBewertet": 27,
-          "durchschnittsnote": 4.02,
-          "verein": "1. FC Union Berlin",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 74,
-          "durchschnittspunkte": 34.52,
-          "rang": 222
-        }},
+        "attribute": {},
         "possibleNames": [
           "Derrick Köhn",
           "Köhn",
@@ -23623,16 +23492,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 60,
-          "einsaetzeBewertet": 2,
-          "durchschnittsnote": 4.25,
-          "verein": "Bayer 04 Leverkusen",
-          "lastUpdate": "13.09.2026",
-          "durchschnittsminuten": 39,
-          "durchschnittspunkte": 30,
-          "rang": 191
-        }},
+        "attribute": {},
         "possibleNames": []
       },
       "name": "Badé",
@@ -23725,6 +23585,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34275"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/albian-hajdari_37227/",
+          "playerName": "Hajdari",
+          "playerId": "37227"
+        },
         "lastWert": 2940000,
         "spielerDaten": {
           "groesse": "1,89",
@@ -23849,16 +23714,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 744,
-          "einsaetzeBewertet": 19,
-          "durchschnittsnote": 4.17,
-          "verein": "Borussia Dortmund",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 49,
-          "durchschnittspunkte": 30.47,
-          "rang": 258
-        }},
+        "attribute": {},
         "possibleNames": [
           "Carney Chukwuemeka",
           "Chukwuemeka",
@@ -23922,16 +23778,7 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 32,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 5,
-          "verein": "Bayer 04 Leverkusen",
-          "lastUpdate": "13.09.2026",
-          "durchschnittsminuten": 55,
-          "durchschnittspunkte": 16,
-          "rang": 236
-        }},
+        "attribute": {},
         "possibleNames": [
           "Lucas Vázquez",
           "Vázquez",
@@ -23944,6 +23791,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34283"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/fabio-silva_22570/",
+          "playerName": "Silva",
+          "playerId": "22570"
+        },
         "lastWert": 9070000,
         "spielerDaten": {
           "groesse": "1,85",
@@ -24279,6 +24131,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33997"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/fabian-rieder_25579/",
+          "playerName": "Rieder",
+          "playerId": "25579"
+        },
         "lastWert": 7840000,
         "spielerDaten": {
           "groesse": "1,81",
@@ -24353,6 +24210,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34287"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/alessio-castro-montes_22736/",
+          "playerName": "Castro-Montes",
+          "playerId": "22736"
+        },
         "lastWert": 1870000,
         "spielerDaten": {
           "groesse": "1,75",
@@ -24478,16 +24340,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 788,
-          "einsaetzeBewertet": 20,
-          "durchschnittsnote": 4.21,
-          "verein": "RB Leipzig",
-          "lastUpdate": "25.08.2026",
-          "durchschnittsminuten": 48,
-          "durchschnittspunkte": 30.8,
-          "rang": 257
-        }},
+        "attribute": {},
         "possibleNames": [
           "Conrad Harder",
           "Harder",
@@ -24502,6 +24355,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34289"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/equi-fernandez_38674/",
+          "playerName": "Fernández",
+          "playerId": "38674"
+        },
         "lastWert": 6810000,
         "spielerDaten": {
           "groesse": "1,78",
@@ -24766,6 +24624,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34307"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/kacper-potulski_38608/",
+          "playerName": "Potulski",
+          "playerId": "38608"
+        },
         "lastWert": 2680000,
         "spielerDaten": {
           "groesse": "1,95",
@@ -25091,6 +24954,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34313"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/keita-kosugi_38762/",
+          "playerName": "Kosugi",
+          "playerId": "38762"
+        },
         "lastWert": 2930000,
         "spielerDaten": {
           "groesse": "1,72",
@@ -25290,6 +25158,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34316"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/younes-ebnoutalib_38489/",
+          "playerName": "Ebnoutalib",
+          "playerId": "38489"
+        },
         "lastWert": 7410000,
         "spielerDaten": {
           "groesse": "1,91",
@@ -26170,6 +26043,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33135"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/sheraldo-becker_20640/",
+          "playerName": "Becker",
+          "playerId": "20640"
+        },
         "lastWert": 6260000,
         "spielerDaten": {
           "groesse": "1,80",
@@ -26251,6 +26129,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34342"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/hugo-bolin_37888/",
+          "playerName": "Bolin",
+          "playerId": "37888"
+        },
         "lastWert": 5980000,
         "spielerDaten": {
           "groesse": "1,79",
@@ -27500,7 +27383,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": [
           "André Bosson",
           "Bosson",
@@ -27562,7 +27444,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": [
           "August Lehmann",
           "Lehmann",
@@ -27574,6 +27455,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/nicolas-kristof_26473/",
+          "playerName": "Kristof",
+          "playerId": "26473"
+        },
         "lastWert": 2040000,
         "spielerDaten": {
           "groesse": "1,87",
@@ -27646,6 +27532,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/jan-gyamerah_5825/",
+          "playerName": "Gyamerah",
+          "playerId": "5825"
+        },
         "lastWert": 1950000,
         "spielerDaten": {
           "groesse": "1,84",
@@ -27718,6 +27609,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/felix-keidel_27483/",
+          "playerName": "Keidel",
+          "playerId": "27483"
+        },
         "lastWert": 2830000,
         "spielerDaten": {
           "groesse": "1,78",
@@ -27836,7 +27732,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "L. Seifert",
@@ -27958,7 +27853,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Nicholas Mickelson",
           "Mickelson",
@@ -27970,6 +27864,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/lukas-pinckert_38539/",
+          "playerName": "Pinckert",
+          "playerId": "38539"
+        },
         "lastWert": 2520000,
         "spielerDaten": {
           "groesse": "1,85",
@@ -28042,6 +27941,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/maximilian-rohr_24711/",
+          "playerName": "Rohr",
+          "playerId": "24711"
+        },
         "lastWert": 2620000,
         "spielerDaten": {
           "groesse": "1,93",
@@ -28161,7 +28065,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Amara Condé",
           "A. Condé",
@@ -28225,7 +28128,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Frederik Schmahl",
           "Schmahl",
@@ -28351,7 +28253,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Jason Ceka",
           "Ceka",
@@ -28415,7 +28316,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Filimon Gerezgiher",
           "Gerezgiher",
@@ -28484,7 +28384,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Luca Pfeiffer",
           "Pfeiffer",
@@ -28538,7 +28437,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -28548,6 +28446,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33398"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/lukas-petkov_20088/",
+          "playerName": "Petkov",
+          "playerId": "20088"
+        },
         "lastWert": 5540000,
         "spielerDaten": {
           "groesse": "1,83",
@@ -28668,7 +28571,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Raif Adam",
           "R. Adam"
@@ -28730,7 +28632,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Luca Schnellbacher",
           "Schnellbacher",
@@ -28793,7 +28694,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Tom Zimmerschied",
           "Zimmerschied",
@@ -28806,6 +28706,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34438"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/calvin-brackelmann_12771/",
+          "playerName": "Brackelmann",
+          "playerId": "12771"
+        },
         "lastWert": 3510000,
         "spielerDaten": {
           "groesse": "1,96",
@@ -28933,7 +28838,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Nathanaël Mbuku",
           "Mbuku",
@@ -29061,7 +28965,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Marvin Friedrich",
           "Friedrich",
@@ -29137,6 +29040,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34422"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/joane-gadou_37021/",
+          "playerName": "Gadou",
+          "playerId": "37021"
+        },
         "lastWert": 5010000,
         "spielerDaten": {
           "groesse": "1,95",
@@ -29260,7 +29168,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Kauã Prates",
           "Prates",
@@ -29323,7 +29230,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Justin Lerma",
           "Lerma",
@@ -29385,7 +29291,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": [
           "Simon Simoni",
           "Simoni",
@@ -29450,7 +29355,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Noel Futkeu",
           "Futkeu",
@@ -29513,7 +29417,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Berkay Yılmaz",
           "Yılmaz",
@@ -29577,7 +29480,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Rihito Yamamoto",
           "Yamamoto",
@@ -29640,7 +29542,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Cajetan Lenz",
           "Lenz",
@@ -29704,7 +29605,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Alessandro Vogt",
           "Vogt",
@@ -29832,7 +29732,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Abdoul Koné",
           "Koné",
@@ -29894,7 +29793,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Jonah Berghoff",
           "Berghoff",
@@ -30094,7 +29992,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Ndjicoura Bomba",
           "Bomba",
@@ -30158,7 +30055,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Aleksa Damjanovic",
           "Damjanovic",
@@ -30221,7 +30117,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Alynho Haidara",
           "Haidara",
@@ -30358,7 +30253,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Yukhym Konoplya",
           "Konoplya",
@@ -30422,7 +30316,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Enzo Leopold",
           "Leopold",
@@ -30435,6 +30328,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33912"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/noel-aseko_36931/",
+          "playerName": "Aséko",
+          "playerId": "36931"
+        },
         "lastWert": 3620000,
         "spielerDaten": {
           "groesse": "1,78",
@@ -30486,7 +30384,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Noel Aseko",
           "Aseko",
@@ -30499,6 +30396,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/31874"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/loris-karius_1641/",
+          "playerName": "Karius",
+          "playerId": "1641"
+        },
         "lastWert": 3350000,
         "spielerDaten": {
           "groesse": "1,91",
@@ -30628,7 +30530,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": [
           "Luca Podlech",
           "Podlech",
@@ -30755,7 +30656,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Anton Donkor",
           "Donkor",
@@ -30818,7 +30718,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Felipe Sánchez",
           "Sánchez",
@@ -30882,7 +30781,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Adrian Gantenbein",
           "Gantenbein",
@@ -30940,7 +30838,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -31001,7 +30898,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Nikola Katic",
           "Katic",
@@ -31013,6 +30909,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/hasan-kurucay_35927/",
+          "playerName": "Kuruçay",
+          "playerId": "35927"
+        },
         "lastWert": 3060000,
         "spielerDaten": {
           "groesse": "1,88",
@@ -31128,7 +31029,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -31188,7 +31088,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Mertcan Ayhan",
           "Ayhan",
@@ -31251,7 +31150,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Steve Noode",
           "Noode",
@@ -31265,6 +31163,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33184"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/timo-becker_11068/",
+          "playerName": "T. Becker",
+          "playerId": "11068"
+        },
         "lastWert": 2850000,
         "spielerDaten": {
           "groesse": "1,79",
@@ -31393,7 +31296,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Vitalie Becker",
           "Becker",
@@ -31456,7 +31358,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Martin Wasinski",
           "Wasinski",
@@ -31470,6 +31371,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34382"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/adil-aouchiche_22176/",
+          "playerName": "Aouchiche",
+          "playerId": "22176"
+        },
         "lastWert": 5940000,
         "spielerDaten": {
           "groesse": "1,81",
@@ -31593,7 +31499,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Janik Bachmann",
           "Bachmann",
@@ -31684,6 +31589,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34391"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/soufiane-el-faouzi_26067/",
+          "playerName": "El-Faouzi",
+          "playerId": "26067"
+        },
         "lastWert": 3410000,
         "spielerDaten": {
           "groesse": "1,78",
@@ -31820,6 +31730,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/kenan-karaman_2676/",
+          "playerName": "Karaman",
+          "playerId": "2676"
+        },
         "lastWert": 5870000,
         "spielerDaten": {
           "groesse": "1,89",
@@ -31943,7 +31858,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -32004,7 +31918,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Finn Porath",
           "Porath",
@@ -32067,16 +31980,7 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 14,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 5,
-          "verein": "FC Schalke 04",
-          "lastUpdate": "13.09.2026",
-          "durchschnittsminuten": 62,
-          "durchschnittspunkte": 14,
-          "rang": 243
-        }},
+        "attribute": {},
         "possibleNames": [
           "Ron Schallenberg",
           "Schallenberg",
@@ -32138,7 +32042,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Luca Vozar",
           "Vozar",
@@ -32201,7 +32104,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Christian Gomis",
           "Gomis",
@@ -32265,7 +32167,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Emil Højlund",
           "Højlund",
@@ -32319,7 +32220,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -32380,7 +32280,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Bryan Lasme",
           "Lasme",
@@ -32441,7 +32340,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Udo Remmert",
           "Remmert",
@@ -32454,6 +32352,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/moussa-sylla_16217/",
+          "playerName": "Sylla",
+          "playerId": "16217"
+        },
         "lastWert": 2920000,
         "spielerDaten": {
           "groesse": "1,80",
@@ -32577,7 +32480,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Zaid Tchibara",
           "Tchibara",
@@ -32640,7 +32542,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Mika Wallentowitz",
           "Wallentowitz",
@@ -32856,6 +32757,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34153"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/lukasz-poreba_36788/",
+          "playerName": "Poręba",
+          "playerId": "36788"
+        },
         "lastWert": 2210000,
         "spielerDaten": {
           "groesse": "1,79",
@@ -32907,7 +32813,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Lukasz Poreba",
           "Poreba",
@@ -32972,16 +32877,7 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 54,
-          "einsaetzeBewertet": 2,
-          "durchschnittsnote": 4.5,
-          "verein": "Hamburger SV",
-          "lastUpdate": "13.09.2026",
-          "durchschnittsminuten": 29,
-          "durchschnittspunkte": 27,
-          "rang": 206
-        }},
+        "attribute": {},
         "possibleNames": [
           "Otto Stange",
           "Stange",
@@ -33098,7 +32994,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Rodrigo Ribeiro",
           "Ribeiro",
@@ -33111,6 +33006,11 @@
     {
       "data": {
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/karl-hein_25603/",
+          "playerName": "Hein",
+          "playerId": "25603"
+        },
         "lastWert": 2650000,
         "spielerDaten": {
           "groesse": "1,93",
@@ -33374,16 +33274,7 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1554,
-          "einsaetzeBewertet": 34,
-          "durchschnittsnote": 3.46,
-          "verein": "1. FC Köln",
-          "lastUpdate": "30.06.2026",
-          "durchschnittsminuten": 95,
-          "durchschnittspunkte": 45.71,
-          "rang": 73
-        }},
+        "attribute": {},
         "possibleNames": [
           "Jakub Kaminski",
           "Kaminski",
@@ -33447,7 +33338,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Robert Ramsak",
           "Ramsak",
@@ -33517,7 +33407,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Eric Martel",
           "Martel",
@@ -33585,7 +33474,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": [
           "Daniel Batz",
           "Batz",
@@ -33648,7 +33536,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Noah Pesch",
           "Pesch",
@@ -33727,6 +33614,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32492"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/grischa-proemel_5816/",
+          "playerName": "Prömel",
+          "playerId": "5816"
+        },
         "lastWert": 5890000,
         "spielerDaten": {
           "groesse": "1,84",
@@ -33810,6 +33702,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32629"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/daniel-heuer-fernandes_6379/",
+          "playerName": "Fernandes",
+          "playerId": "6379"
+        },
         "lastWert": 2230000,
         "spielerDaten": {
           "groesse": "1,88",
@@ -33939,7 +33836,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Joel Agyekum",
           "Agyekum",
@@ -34004,7 +33900,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Aboubaka Soumahoro",
           "Soumahoro",
@@ -34069,7 +33964,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Kofi Amoako",
           "Amoako",
@@ -34148,6 +34042,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33451"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/lasse-guenther_26087/",
+          "playerName": "Günther",
+          "playerId": "26087"
+        },
         "lastWert": 1150000,
         "spielerDaten": {
           "groesse": "1,81",
@@ -34223,6 +34122,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34090"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/david-mokwa_35765/",
+          "playerName": "Mokwa",
+          "playerId": "35765"
+        },
         "lastWert": 6290000,
         "spielerDaten": {
           "groesse": "1,80",
@@ -34346,7 +34250,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": [
           "N. N. Kubik",
           "Kubik",
@@ -34411,7 +34314,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "David Colina",
           "Colina",
@@ -34480,7 +34382,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Tim Breithaupt",
           "Breithaupt",
@@ -34544,7 +34445,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Faik Sakar",
           "Sakar",
@@ -34600,7 +34500,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -34660,7 +34559,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Kyliane Dong",
           "Dong",
@@ -34725,7 +34623,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Yusuf Kabadayi",
           "Kabadayi",
@@ -34791,7 +34688,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Thomas Kastanaras",
           "Kastanaras",
@@ -34857,7 +34753,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Steve Mounié",
           "Mounié",
@@ -34924,7 +34819,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Elias Saad",
           "Saad",
@@ -34989,7 +34883,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Oluwaseun Ogbemudia",
           "Ogbemudia",
@@ -35062,7 +34955,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "N. N. Benes",
           "Benes",
@@ -35204,7 +35096,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Kownacki",
@@ -35328,7 +35219,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -35393,7 +35283,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Niels Nkounkou",
           "Nkounkou",
@@ -35453,7 +35342,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -35462,6 +35350,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/junior-dina-ebimbe_26881/",
+          "playerName": "Dina Ebimbe",
+          "playerId": "26881"
+        },
         "lastWert": 2670000,
         "spielerDaten": {
           "groesse": "1,84",
@@ -35635,7 +35528,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -35699,7 +35591,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Ngankam",
@@ -35763,7 +35654,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Elye Wahi",
           "Wahi",
@@ -35828,7 +35718,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Muslija",
@@ -35889,7 +35778,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Franz Wagner",
           "Wagner",
@@ -35960,7 +35848,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Norbert Weißhaupt",
           "Weißhaupt",
@@ -36052,6 +35939,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/nahuel-noll_24594/",
+          "playerName": "Noll",
+          "playerId": "24594"
+        },
         "lastWert": 3250000,
         "spielerDaten": {
           "groesse": "1,91",
@@ -36169,7 +36061,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -36228,7 +36119,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Alfred Vetterlein",
           "Vetterlein",
@@ -36241,6 +36131,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/bambase-conte_27420/",
+          "playerName": "Conté",
+          "playerId": "27420"
+        },
         "lastWert": 3850000,
         "spielerDaten": {
           "groesse": "1,82",
@@ -36376,7 +36271,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Giuseppe Geigerle",
           "Geigerle",
@@ -36442,7 +36336,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Florian Micheler",
           "Micheler",
@@ -36568,7 +36461,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -36627,7 +36519,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Eduardo Flores",
           "Flores",
@@ -36692,7 +36583,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Árpád Orbán",
           "Orbán",
@@ -36749,7 +36639,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -36802,7 +36691,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -36855,7 +36743,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -36908,7 +36795,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -36961,7 +36847,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -37077,7 +36962,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -37138,7 +37022,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Imad Rondic",
           "Rondic",
@@ -37195,7 +37078,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -37316,7 +37198,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -37370,7 +37251,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -37429,7 +37309,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Antonio Fayenz",
           "Fayenz",
@@ -37492,7 +37371,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Kalilou Traoré",
           "Traoré",
@@ -37558,7 +37436,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Sefik Alajbegovic",
           "Alajbegovic",
@@ -37615,7 +37492,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -37673,7 +37549,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Alfred Schopper",
           "Schopper",
@@ -37789,7 +37664,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -37842,7 +37716,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -37967,7 +37840,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -38021,7 +37893,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Olschowsky",
@@ -38077,7 +37948,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -38133,7 +38003,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -38190,7 +38059,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -38242,7 +38110,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -38299,7 +38166,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Boey",
@@ -38354,7 +38220,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Buchmann",
@@ -38406,7 +38271,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Kiala",
@@ -38416,6 +38280,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33996"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/maurice-krattenmacher_36255/",
+          "playerName": "Krattenmacher",
+          "playerId": "36255"
+        },
         "lastWert": 5620000,
         "spielerDaten": {
           "groesse": "5' 11\"",
@@ -38522,7 +38391,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Santos Daiber",
@@ -38626,7 +38494,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -38740,7 +38607,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Seimen",
@@ -38748,6 +38614,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/laurin-ulrich_27568/",
+          "playerName": "Ulrich",
+          "playerId": "27568"
+        },
         "lastWert": 2750000,
         "spielerDaten": {
           "groesse": "5' 11\"",
@@ -38859,7 +38730,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -38911,7 +38781,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Pruhs",
@@ -38963,7 +38832,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Schubert",
@@ -39069,7 +38937,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "F. Götze",
@@ -39077,6 +38944,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/mattes-hansen_35894/",
+          "playerName": "Hansen",
+          "playerId": "35894"
+        },
         "lastWert": 2560000,
         "spielerDaten": {
           "groesse": "6' 0\"",
@@ -39231,7 +39103,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Lippmann",
@@ -39239,6 +39110,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/tjark-scheller_36890/",
+          "playerName": "Scheller",
+          "playerId": "36890"
+        },
         "lastWert": 3040000,
         "spielerDaten": {
           "groesse": "6' 4\"",
@@ -39342,7 +39218,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Zobel",
@@ -39393,7 +39268,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Baack ",
@@ -39443,7 +39317,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -39495,7 +39368,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -39504,6 +39376,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/santiago-castaneda_37450/",
+          "playerName": "Castañeda",
+          "playerId": "37450"
+        },
         "lastWert": 3700000,
         "spielerDaten": {
           "groesse": "6' 2\"",
@@ -39565,6 +39442,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34410"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/laurin-curda_36261/",
+          "playerName": "Curda",
+          "playerId": "36261"
+        },
         "lastWert": 2590000,
         "spielerDaten": {
           "groesse": "6' 1\"",
@@ -39671,7 +39553,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Gayret",
@@ -39725,7 +39606,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Klaas",
@@ -39776,7 +39656,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "N. Mohr",
@@ -39878,7 +39757,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Sticker",
@@ -39932,7 +39810,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -39987,7 +39864,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Eickel",
@@ -40038,7 +39914,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -40047,6 +39922,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/stefano-marino_27339/",
+          "playerName": "Marino",
+          "playerId": "27339"
+        },
         "lastWert": 1950000,
         "spielerDaten": {
           "groesse": "6' 1\"",
@@ -40210,7 +40090,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Millgramm",
@@ -40261,7 +40140,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -40312,7 +40190,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -40366,7 +40243,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Đurić",
@@ -40417,7 +40293,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -40493,6 +40368,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34442"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/chuki_38831/",
+          "playerName": "Chuki",
+          "playerId": "38831"
+        },
         "lastWert": 4460000,
         "spielerDaten": {
           "groesse": "5' 8\"",
@@ -40600,7 +40480,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Awortwie-Grant",
@@ -40678,6 +40557,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34337"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/albert-groenbaek_35437/",
+          "playerName": "Grønbæk",
+          "playerId": "35437"
+        },
         "lastWert": 4510000,
         "spielerDaten": {
           "groesse": "",
@@ -40784,7 +40668,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -40836,7 +40719,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Etringer",
@@ -40845,6 +40727,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34446"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/mats-rots_37794/",
+          "playerName": "Rots",
+          "playerId": "37794"
+        },
         "lastWert": 3800000,
         "spielerDaten": {
           "groesse": "6' 1\"",
@@ -40906,6 +40793,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34447"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/isac-lidberg_37438/",
+          "playerName": "Lidberg",
+          "playerId": "37438"
+        },
         "lastWert": 3670000,
         "spielerDaten": {
           "groesse": "6' 1\"",
@@ -40949,16 +40841,7 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 18,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 5,
-          "verein": "Mönchengladbach",
-          "lastUpdate": "07.09.2026",
-          "durchschnittsminuten": 33,
-          "durchschnittspunkte": 18,
-          "rang": 210
-        }},
+        "attribute": {},
         "possibleNames": []
       },
       "name": "Lidberg",
@@ -41013,7 +40896,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Eichhorn",
@@ -41065,7 +40947,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -41075,6 +40956,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34450"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/satoshi-tanaka_38876/",
+          "playerName": "Tanaka",
+          "playerId": "38876"
+        },
         "lastWert": 3630000,
         "spielerDaten": {
           "groesse": "5' 9\"",
@@ -41245,7 +41131,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -41297,7 +41182,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Gray",
@@ -41349,7 +41233,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Goto",
@@ -41359,6 +41242,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/31958"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/michael-gregoritsch_1512/",
+          "playerName": "Gregoritsch",
+          "playerId": "1512"
+        },
         "lastWert": 9300000,
         "spielerDaten": {
           "groesse": "6' 4\"",
@@ -41433,6 +41321,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/jahmai-simpson-pusey_38128/",
+          "playerName": "Simpson-Pusey",
+          "playerId": "38128"
+        },
         "lastWert": 2620000,
         "spielerDaten": {
           "groesse": "6' 2\"",
@@ -41496,6 +41389,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34454"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/fabio-gruber_26579/",
+          "playerName": "Gruber",
+          "playerId": "26579"
+        },
         "lastWert": 3750000,
         "spielerDaten": {
           "groesse": "6' 2\"",
@@ -41600,7 +41498,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Van Den Bosch",
@@ -41609,6 +41506,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34456"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/raphael-obermair_12780/",
+          "playerName": "Obermair",
+          "playerId": "12780"
+        },
         "lastWert": 3160000,
         "spielerDaten": {
           "groesse": "1,82",
@@ -41725,7 +41627,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Dulic",
@@ -41734,6 +41635,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34461"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/afonso-moreira_36841/",
+          "playerName": "Moreira",
+          "playerId": "36841"
+        },
         "lastWert": 6420000,
         "spielerDaten": {
           "groesse": "5' 9\"",
@@ -41841,7 +41747,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Uno",
@@ -41893,7 +41798,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -41903,6 +41807,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34460"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/jano-ter-horst_36702/",
+          "playerName": "ter Horst",
+          "playerId": "36702"
+        },
         "lastWert": 1950000,
         "spielerDaten": {
           "groesse": "5' 11\"",
@@ -41946,7 +41855,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "ter Horst",
@@ -41998,7 +41906,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "L. Philipp",
@@ -42057,7 +41964,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Finn Barkowsky",
           "Barkowsky",
@@ -42135,7 +42041,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Mitchell Weiser",
           "Weiser",
@@ -42200,16 +42105,7 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 23,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 4.5,
-          "verein": "SV Werder Bremen",
-          "lastUpdate": "07.09.2026",
-          "durchschnittsminuten": 33,
-          "durchschnittspunkte": 23,
-          "rang": 194
-        }},
+        "attribute": {},
         "possibleNames": [
           "Leonardo Bittencourt",
           "Bittencourt",
@@ -42286,7 +42182,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Chandler",
@@ -42338,7 +42233,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Batista Meier",
@@ -42455,16 +42349,7 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 19,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 5,
-          "verein": "Eintracht Frankfurt",
-          "lastUpdate": "07.09.2026",
-          "durchschnittsminuten": 29,
-          "durchschnittspunkte": 19,
-          "rang": 208
-        }},
+        "attribute": {},
         "possibleNames": []
       },
       "name": "Pimpong",
@@ -42523,7 +42408,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": [
           "Maximilian Kinzig",
           "Kinzig",
@@ -42587,7 +42471,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Otto Ruoppi",
           "Ruoppi",
@@ -42735,7 +42618,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Luca Höcker",
           "Höcker",
@@ -42749,6 +42631,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34469"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/luka-lochoshvili_23949/",
+          "playerName": "Lochoshvili",
+          "playerId": "23949"
+        },
         "lastWert": 2310000,
         "spielerDaten": {
           "groesse": "1,92",
@@ -42822,6 +42709,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34470"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/jan-leszczynski_38925/",
+          "playerName": "Leszczyński",
+          "playerId": "38925"
+        },
         "lastWert": 1220000,
         "spielerDaten": {
           "groesse": "1,91",
@@ -42873,7 +42765,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Jan Leszczyński",
           "Leszczyński",
@@ -42948,7 +42839,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Dan-Axel Zagadou",
           "Zagadou",
@@ -43012,7 +42902,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Paul Erevbenagie",
           "Erevbenagie",
@@ -43076,7 +42965,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Oskar Wójcik",
           "Wójcik",
@@ -43135,7 +43023,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "K. Müller",
@@ -43187,7 +43074,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Suso",
@@ -43239,7 +43125,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Schlager",
@@ -43299,7 +43184,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Nathan De Cat",
           "Cat",
@@ -43312,6 +43196,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34475"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/gideon-mensah_16759/",
+          "playerName": "Mensah",
+          "playerId": "16759"
+        },
         "lastWert": 1730000,
         "spielerDaten": {
           "groesse": "1,78",
@@ -43508,7 +43397,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Karl Steinmann",
           "Steinmann",
@@ -43522,6 +43410,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33695"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/brajan-gruda_35733/",
+          "playerName": "Gruda",
+          "playerId": "35733"
+        },
         "lastWert": 8940000,
         "spielerDaten": {
           "groesse": "1,78",
@@ -43650,7 +43543,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "David Fürst",
           "Fürst",
@@ -43713,7 +43605,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": [
           "Tom Wisbereit",
           "Wisbereit",
@@ -43776,7 +43667,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Reigan Heskey",
           "Heskey",
@@ -43861,6 +43751,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/alexander-schwolow_1781/",
+          "playerName": "Schwolow",
+          "playerId": "1781"
+        },
         "lastWert": 1240000,
         "spielerDaten": {
           "groesse": "6' 3\"",
@@ -43935,6 +43830,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33843"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/robin-gosens_16537/",
+          "playerName": "Gosens",
+          "playerId": "16537"
+        },
         "lastWert": 5990000,
         "spielerDaten": {
           "groesse": "1,83",
@@ -44013,6 +43913,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33603"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/yannik-engelhardt_20278/",
+          "playerName": "Engelhardt",
+          "playerId": "20278"
+        },
         "lastWert": 5110000,
         "spielerDaten": {
           "groesse": "1,84",
@@ -44066,7 +43971,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Yannik Engelhardt",
           "Engelhardt",
@@ -44122,7 +44026,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [],
         "status": {}
       },
@@ -44183,7 +44086,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Luca Sirch",
           "Sirch",
@@ -44390,16 +44292,7 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 1,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 5.5,
-          "verein": "FC Schalke 04",
-          "lastUpdate": "07.09.2026",
-          "durchschnittsminuten": 33,
-          "durchschnittspunkte": 1,
-          "rang": 226
-        }},
+        "attribute": {},
         "possibleNames": []
       },
       "name": "Wöber",
@@ -44459,16 +44352,7 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 23,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 5,
-          "verein": "Hamburger SV",
-          "lastUpdate": "13.09.2026",
-          "durchschnittsminuten": 45,
-          "durchschnittspunkte": 15,
-          "rang": 240
-        }},
+        "attribute": {},
         "possibleNames": [
           "Bilal Nadir",
           "Nadir",
@@ -44523,7 +44407,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Abraha",
@@ -44574,7 +44457,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "James",
@@ -44625,7 +44507,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Yigit",
@@ -44684,7 +44565,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Jarzinho Malanga",
           "Malanga",
@@ -44748,7 +44628,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": ["Otávio"]
       },
       "name": "Otávio",
@@ -44808,7 +44687,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Leo Sauer",
           "Sauer",
@@ -44872,16 +44750,7 @@
         "withinSquad": true,
         "onMarket": true,
         "position": "ABWEHR",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 26,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 4.5,
-          "verein": "Mönchengladbach",
-          "lastUpdate": "13.09.2026",
-          "durchschnittsminuten": 76,
-          "durchschnittspunkte": 26,
-          "rang": 210
-        }},
+        "attribute": {},
         "possibleNames": [
           "Daiki Hashioka",
           "Hashioka",
@@ -44904,6 +44773,11 @@
             "aenderung": "-220.000"
           },
           "link": "https://www.com-analytics.de/player/34494"
+        },
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/emmanuel-latte-lath_24183/",
+          "playerName": "Latte Lath",
+          "playerId": "24183"
         },
         "lastWert": 3480000,
         "spielerDaten": {
@@ -44978,6 +44852,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34493"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/raphael-onyedika_26786/",
+          "playerName": "Onyedika",
+          "playerId": "26786"
+        },
         "lastWert": 4720000,
         "spielerDaten": {
           "groesse": "1,84",
@@ -45051,6 +44930,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34294"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/adam-daghim_37622/",
+          "playerName": "Daghim",
+          "playerId": "37622"
+        },
         "lastWert": 6890000,
         "spielerDaten": {
           "groesse": "1,89",
@@ -45267,7 +45151,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Edin Dzeko",
           "Dzeko",
@@ -45330,7 +45213,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Nyland",
@@ -45339,6 +45221,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34496"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/miguel-gutierrez_24219/",
+          "playerName": "M. Gutiérrez",
+          "playerId": "24219"
+        },
         "lastWert": 8660000,
         "spielerDaten": {
           "groesse": "5' 11\"",
@@ -45443,7 +45330,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": []
       },
       "name": "Neves",
@@ -45509,7 +45395,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Dzenan Pejcinovic",
           "Pejcinovic",
@@ -45540,6 +45425,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34498"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/facundo-medina_36418/",
+          "playerName": "Medina",
+          "playerId": "36418"
+        },
         "lastWert": 6520000,
         "spielerDaten": {
           "groesse": "6' 0\"",
@@ -45661,7 +45551,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [],
         "comunioStatus": {
           "grund": "unbekannt",
@@ -45825,7 +45714,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Iaia Manco Danfa",
           "Danfa",
@@ -45908,7 +45796,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Bara Sapoko Ndiaye",
           "Ndiaye",
@@ -45937,6 +45824,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/stefan-posch_12798/",
+          "playerName": "Posch",
+          "playerId": "12798"
+        },
         "lastWert": 3330000,
         "spielerDaten": {
           "groesse": "1,88",
@@ -46037,6 +45929,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34152"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/ludovit-reis_24555/",
+          "playerName": "Reis",
+          "playerId": "24555"
+        },
         "lastWert": 4550000,
         "spielerDaten": {
           "groesse": "5' 10\"",
@@ -46157,7 +46054,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": [],
         "comunioStatus": {
           "grund": "unbekannt",
@@ -46234,16 +46130,7 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 53,
-          "einsaetzeBewertet": 1,
-          "durchschnittsnote": 3,
-          "verein": "Borussia Dortmund",
-          "lastUpdate": "07.09.2026",
-          "durchschnittsminuten": 54,
-          "durchschnittspunkte": 53,
-          "rang": 70
-        }},
+        "attribute": {},
         "possibleNames": [
           "Giannis Konstantelias",
           "Konstantelias",
@@ -46274,6 +46161,11 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34504"},
         "elfDesSpieltages": 1,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/thijs-dallinga_36506/",
+          "playerName": "Dallinga",
+          "playerId": "36506"
+        },
         "lastWert": 5720000,
         "spielerDaten": {
           "groesse": "1,90",
@@ -46364,6 +46256,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/31916"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/niclas-fuellkrug_1867/",
+          "playerName": "Füllkrug",
+          "playerId": "1867"
+        },
         "lastWert": 10440000,
         "spielerDaten": {
           "groesse": "1,89",
@@ -46554,6 +46451,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34506"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/michel-aebischer_12508/",
+          "playerName": "Aebischer",
+          "playerId": "12508"
+        },
         "lastWert": 1880000,
         "spielerDaten": {
           "groesse": "1,83",
@@ -46686,7 +46588,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [],
         "comunioStatus": {
           "grund": "unbekannt",
@@ -46712,6 +46613,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33570"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/gabriel-vidovic_26231/",
+          "playerName": "Vidović",
+          "playerId": "26231"
+        },
         "lastWert": 3360000,
         "spielerDaten": {
           "groesse": "1,80",
@@ -46768,7 +46674,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Gabriel Vidovic",
           "Vidovic",
@@ -46896,6 +46801,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33592"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/ko-itakura_27204/",
+          "playerName": "Itakura",
+          "playerId": "27204"
+        },
         "lastWert": 3040000,
         "spielerDaten": {
           "groesse": "1,88",
@@ -46991,6 +46901,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34508"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/terem-moffi_39019/",
+          "playerName": "Moffi",
+          "playerId": "39019"
+        },
         "lastWert": 3120000,
         "spielerDaten": {
           "groesse": "1,88",
@@ -47130,7 +47045,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Rael Nakuzola",
           "Nakuzola",
@@ -47160,6 +47074,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33151"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/christopher-nkunku_12446/",
+          "playerName": "Nkunku",
+          "playerId": "12446"
+        },
         "lastWert": 18400000,
         "spielerDaten": {
           "groesse": "1,77",
@@ -47255,8 +47174,55 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33600"},
         "lastWert": 2550000,
+        "transfermarktDoDe": {
+          "date": "27.08.2026",
+          "haveToCheck": false,
+          "name": "Marvin Pieringer",
+          "link": "https://www.transfermarkt.de/marvin-pieringer/profil/spieler/471055",
+          "id": "471055",
+          "position": "",
+          "marktwert": 3000000,
+          "nationalitaet": "Deutschland",
+          "leistungsDaten": {},
+          "alter": -1
+        },
+        "lastBigUpdate": "13.09.2026",
+        "stats": {
+          "notenDurchschnitt": "6,2",
+          "gelbekarten": 0,
+          "totalPenalties": 0,
+          "ratedGames": 3,
+          "lastUpdate": "13.09.2026",
+          "playedGames": 3,
+          "tore": 0,
+          "punkteDurchschnitt": "0",
+          "gelbrotekarten": 0,
+          "rotekarten": 0,
+          "manOfTheMatchAmount": 0
+        },
+        "withinSquad": false,
+        "attribute": {"ligainsiderRanking": {
+          "punkte": 92,
+          "einsaetzeBewertet": 3,
+          "durchschnittsnote": 4.17,
+          "verein": "SC Paderborn 07",
+          "lastUpdate": "19.09.2026",
+          "durchschnittsminuten": 89,
+          "durchschnittspunkte": 30.67,
+          "rang": 197
+        }},
+        "possibleNames": [
+          "Marvin Pieringer",
+          "Pieringer",
+          "M. Pieringer"
+        ],
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33600"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/marvin-pieringer_20424/",
+          "playerName": "Pieringer",
+          "playerId": "20424"
+        },
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "04.10.1999",
@@ -47275,59 +47241,17 @@
         "verein": "81",
         "wert": 2600000,
         "lastPoints": -1,
-        "transfermarktDoDe": {
-          "date": "27.08.2026",
-          "haveToCheck": false,
-          "name": "Marvin Pieringer",
-          "link": "https://www.transfermarkt.de/marvin-pieringer/profil/spieler/471055",
-          "id": "471055",
-          "position": "",
-          "marktwert": 3000000,
-          "nationalitaet": "Deutschland",
-          "leistungsDaten": {},
-          "alter": -1
-        },
         "lastSeasonPoints": 99,
         "punkte": 0,
         "realWert": 3000000,
-        "lastBigUpdate": "13.09.2026",
-        "stats": {
-          "notenDurchschnitt": "6,2",
-          "gelbekarten": 0,
-          "totalPenalties": 0,
-          "ratedGames": 3,
-          "lastUpdate": "13.09.2026",
-          "playedGames": 3,
-          "tore": 0,
-          "punkteDurchschnitt": "0",
-          "gelbrotekarten": 0,
-          "rotekarten": 0,
-          "manOfTheMatchAmount": 0
-        },
         "lastUpdate": "19.09.2026",
         "historicalPoints": [
           {"2023": 83},
           {"2024": 140},
           {"2025": 99}
         ],
-        "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 92,
-          "einsaetzeBewertet": 3,
-          "durchschnittsnote": 4.17,
-          "verein": "SC Paderborn 07",
-          "lastUpdate": "19.09.2026",
-          "durchschnittsminuten": 89,
-          "durchschnittspunkte": 30.67,
-          "rang": 197
-        }},
-        "possibleNames": [
-          "Marvin Pieringer",
-          "Pieringer",
-          "M. Pieringer"
-        ],
         "comunioStatus": {
           "grund": "unbekannt",
           "lastUpdate": "27.08.2026",
@@ -47403,7 +47327,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Young-woo Seol",
           "Seol",
@@ -47443,6 +47366,11 @@
             "aenderung": "+230.000"
           },
           "link": "https://www.com-analytics.de/player/32801"
+        },
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/felix-uduokhai_7041/",
+          "playerName": "Uduokhai",
+          "playerId": "7041"
         },
         "lastWert": 2370000,
         "spielerDaten": {
@@ -47632,6 +47560,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34513"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/youri-regeer_25841/",
+          "playerName": "Regeer",
+          "playerId": "25841"
+        },
         "lastWert": 5460000,
         "spielerDaten": {
           "groesse": "1,77",
@@ -47722,6 +47655,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34511"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/lilian-brassier_24489/",
+          "playerName": "Brassier",
+          "playerId": "24489"
+        },
         "lastWert": 4320000,
         "spielerDaten": {
           "groesse": "1,86",
@@ -47812,6 +47750,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34512"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/mikey-moore_38448/",
+          "playerName": "Moore",
+          "playerId": "38448"
+        },
         "lastWert": 6330000,
         "spielerDaten": {
           "groesse": "1,80",
@@ -47902,6 +47845,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34514"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/zakaria-el-ouahdi_38592/",
+          "playerName": "El Ouahdi",
+          "playerId": "38592"
+        },
         "lastWert": 3450000,
         "spielerDaten": {
           "groesse": "1,71",
@@ -47992,6 +47940,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34521"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/david-moller-wolfe_37717/",
+          "playerName": "Møller Wolfe",
+          "playerId": "37717"
+        },
         "lastWert": 2260000,
         "spielerDaten": {
           "groesse": "1,85",
@@ -48082,6 +48035,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34296"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/fabio-vieira_24438/",
+          "playerName": "Fábio Vieira",
+          "playerId": "24438"
+        },
         "lastWert": 9480000,
         "spielerDaten": {
           "groesse": "1,70",
@@ -48134,7 +48092,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Fábio Vieira",
           "Vieira",
@@ -48215,7 +48172,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Juma Bah",
           "Bah",
@@ -48296,7 +48252,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Kastriot Imeri",
           "Imeri",
@@ -48368,7 +48323,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [],
         "comunioStatus": {
           "grund": "unbekannt",
@@ -48394,6 +48348,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34519"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/ethan-nwaneri_36869/",
+          "playerName": "Nwaneri",
+          "playerId": "36869"
+        },
         "lastWert": 10010000,
         "spielerDaten": {
           "groesse": "1,76",
@@ -48541,7 +48500,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Borna Sosa",
           "Sosa",
@@ -48571,6 +48529,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34518"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/neil-el-aynaoui_36433/",
+          "playerName": "El Aynaoui",
+          "playerId": "36433"
+        },
         "lastWert": 6190000,
         "spielerDaten": {
           "groesse": "1,85",
@@ -48704,7 +48667,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "comunioStatus": {
           "grund": "unbekannt",
@@ -48776,7 +48738,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [],
         "comunioStatus": {
           "grund": "unbekannt",
@@ -48802,6 +48763,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33122"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/moussa-diaby_20616/",
+          "playerName": "Diaby",
+          "playerId": "20616"
+        },
         "lastWert": 11790000,
         "spielerDaten": {
           "groesse": "5' 7\"",
@@ -48936,7 +48902,6 @@
         "withinSquad": true,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Nicolas Kühn",
           "Kühn",
@@ -49021,7 +48986,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [
           "Hee-chan Hwang",
           "Hwang",
@@ -49102,7 +49066,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Yanik Spalt",
           "Spalt",
@@ -49175,7 +49138,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "STURM",
-        "attribute": [],
         "possibleNames": [],
         "comunioStatus": {
           "grund": "unbekannt",
@@ -49243,7 +49205,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [],
         "comunioStatus": {
           "grund": "unbekannt",
@@ -49318,7 +49279,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "ABWEHR",
-        "attribute": [],
         "possibleNames": [
           "Mario Vuskovic",
           "Vuskovic",
@@ -49396,7 +49356,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "TORHÜTER",
-        "attribute": [],
         "possibleNames": [
           "Fritz Gagzow",
           "Gagzow",
@@ -49474,7 +49433,6 @@
         "withinSquad": false,
         "onMarket": false,
         "position": "MITTELFELD",
-        "attribute": [],
         "possibleNames": [
           "Dragomir Slišković",
           "Slišković",
