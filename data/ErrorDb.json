@@ -3,27 +3,6 @@
     {
       "methode": "",
       "acception": "",
-      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
-      "url": "",
-      "timestamp": "2026-09-19T03:15:14.543816026Z"
-    },
-    {
-      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
-      "message": "Spieler wurde nicht gefunden! SpielerKaishu | Club: 1. FSV Mainz 05",
-      "timestamp": "2026-09-19T14:37:16.189612700Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
-      "message": "Spieler wurde nicht gefunden! SpielerKaishu | Club: 1. FSV Mainz 05",
-      "url": "",
-      "timestamp": "2026-09-19T13:42:57.640070400Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
       "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
       "message": "Spieler wurde nicht gefunden! SpielerJobe | Club: Borussia Dortmund",
       "url": "",
@@ -64,6 +43,37 @@
       "timestamp": "2026-09-19T03:15:12.270607799Z"
     },
     {
+      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
+      "message": "Spieler wurde nicht gefunden! SpielerJobe | Club: Borussia Dortmund",
+      "timestamp": "2026-09-19T14:37:20.017143200Z"
+    },
+    {
+      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
+      "message": "Spieler wurde nicht gefunden! SpielerYuito | Club: Sport-Club Freiburg",
+      "timestamp": "2026-09-19T14:37:25.062180500Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
+      "url": "",
+      "timestamp": "2026-09-19T03:15:14.543816026Z"
+    },
+    {
+      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
+      "message": "Spieler wurde nicht gefunden! SpielerKaishu | Club: 1. FSV Mainz 05",
+      "timestamp": "2026-09-19T14:37:16.189612700Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
+      "message": "Spieler wurde nicht gefunden! SpielerKaishu | Club: 1. FSV Mainz 05",
+      "url": "",
+      "timestamp": "2026-09-19T13:42:57.640070400Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
@@ -78,11 +88,6 @@
       "message": "Spieler wurde nicht gefunden! SpielerYuito | Club: Sport-Club Freiburg",
       "url": "",
       "timestamp": "2026-09-19T13:43:15.569778200Z"
-    },
-    {
-      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
-      "message": "Spieler wurde nicht gefunden! SpielerJobe | Club: Borussia Dortmund",
-      "timestamp": "2026-09-19T14:37:20.017143200Z"
     }
   ],
   "2026-09-18": [
