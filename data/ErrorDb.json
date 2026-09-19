@@ -1,14 +1,12 @@
 {
   "2026-09-19": [
     {
+      "methode": "",
+      "acception": "",
       "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
       "message": "Spieler wurde nicht gefunden! SpielerKaishu | Club: 1. FSV Mainz 05",
+      "url": "",
       "timestamp": "2026-09-19T13:42:57.640070400Z"
-    },
-    {
-      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
-      "message": "Spieler wurde nicht gefunden! SpielerJobe | Club: Borussia Dortmund",
-      "timestamp": "2026-09-19T13:43:10.575484500Z"
     },
     {
       "methode": "",
@@ -19,32 +17,57 @@
       "timestamp": "2026-09-19T03:15:14.543816026Z"
     },
     {
+      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
+      "message": "Spieler wurde nicht gefunden! SpielerKaishu | Club: 1. FSV Mainz 05",
+      "timestamp": "2026-09-19T14:34:37.388020500Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
+      "message": "Spieler wurde nicht gefunden! SpielerCastello Jr. | Club: RB Leipzig",
+      "url": "",
+      "timestamp": "2026-09-19T13:43:13.263001500Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
+      "message": "Spieler wurde nicht gefunden! SpielerJobe | Club: Borussia Dortmund",
+      "url": "",
+      "timestamp": "2026-09-19T13:43:10.575484500Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
+      "message": "Spieler wurde nicht gefunden! SpielerSambi | Club: Hamburger SV",
+      "url": "",
+      "timestamp": "2026-09-19T13:43:08.907561200Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
+      "message": "Spieler wurde nicht gefunden! SpielerKatić | Club: FC Schalke 04",
+      "url": "",
+      "timestamp": "2026-09-19T13:43:17.692981800Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
+      "message": "Spieler wurde nicht gefunden! SpielerYuito | Club: Sport-Club Freiburg",
+      "url": "",
+      "timestamp": "2026-09-19T13:43:15.569778200Z"
+    },
+    {
       "methode": "",
       "acception": "",
       "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
       "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
       "url": "",
       "timestamp": "2026-09-19T03:15:12.270607799Z"
-    },
-    {
-      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
-      "message": "Spieler wurde nicht gefunden! SpielerSambi | Club: Hamburger SV",
-      "timestamp": "2026-09-19T13:43:08.907561200Z"
-    },
-    {
-      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
-      "message": "Spieler wurde nicht gefunden! SpielerCastello Jr. | Club: RB Leipzig",
-      "timestamp": "2026-09-19T13:43:13.263001500Z"
-    },
-    {
-      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
-      "message": "Spieler wurde nicht gefunden! SpielerKatić | Club: FC Schalke 04",
-      "timestamp": "2026-09-19T13:43:17.692981800Z"
-    },
-    {
-      "errorType": "LIGAINSIDER_POSSIBLE_FORMATION",
-      "message": "Spieler wurde nicht gefunden! SpielerYuito | Club: Sport-Club Freiburg",
-      "timestamp": "2026-09-19T13:43:15.569778200Z"
     }
   ],
   "2026-09-18": [
@@ -70,9 +93,17 @@
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Gazibegović\nFehler bei Seite: 2 mit Name: Gazibegović\nFehler bei Seite: 3 mit Name: Gazibegović\nFehler bei Seite: 4 mit Name: Gazibegović\nFehler bei Seite: 5 mit Name: Gazibegović\nFehler bei Seite: 1 mit Name: gazibegovic\nFehler bei Seite: 2 mit Name: gazibegovic\nFehler bei Seite: 3 mit Name: gazibegovic\nFehler bei Seite: 4 mit Name: gazibegovic\nFehler bei Seite: 5 mit Name: gazibegovic\nKein passender Spieler gefunden für: Gazibegović / 1. FC Köln.\n",
+      "message": "Fehler bei Seite: 1 mit Name: Duranville\nFehler bei Seite: 2 mit Name: Duranville\nFehler bei Seite: 3 mit Name: Duranville\nFehler bei Seite: 4 mit Name: Duranville\nFehler bei Seite: 5 mit Name: Duranville\nFehler bei Seite: 1 mit Name: duranville\nFehler bei Seite: 2 mit Name: duranville\nFehler bei Seite: 3 mit Name: duranville\nFehler bei Seite: 4 mit Name: duranville\nFehler bei Seite: 5 mit Name: duranville\nKein passender Spieler gefunden für: Duranville / Borussia Dortmund.\n",
       "url": "",
-      "timestamp": "2026-09-13T20:02:47.402422959Z"
+      "timestamp": "2026-09-13T20:01:25.046789616Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: Pauli\nFehler bei Seite: 2 mit Name: Pauli\nFehler bei Seite: 3 mit Name: Pauli\nFehler bei Seite: 4 mit Name: Pauli\nFehler bei Seite: 5 mit Name: Pauli\nFehler bei Seite: 1 mit Name: pauli\nFehler bei Seite: 2 mit Name: pauli\nFehler bei Seite: 3 mit Name: pauli\nFehler bei Seite: 4 mit Name: pauli\nFehler bei Seite: 5 mit Name: pauli\nKein passender Spieler gefunden für: Pauli / 1. FC Köln.\n",
+      "url": "",
+      "timestamp": "2026-09-13T20:02:57.133844075Z"
     },
     {
       "methode": "",
@@ -86,73 +117,17 @@
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Dardari\nFehler bei Seite: 2 mit Name: Dardari\nFehler bei Seite: 3 mit Name: Dardari\nFehler bei Seite: 4 mit Name: Dardari\nFehler bei Seite: 5 mit Name: Dardari\nFehler bei Seite: 1 mit Name: dardari\nFehler bei Seite: 2 mit Name: dardari\nFehler bei Seite: 3 mit Name: dardari\nFehler bei Seite: 4 mit Name: dardari\nFehler bei Seite: 5 mit Name: dardari\nKein passender Spieler gefunden für: Dardari / FC Augsburg.\n",
+      "message": "Fehler bei Seite: 1 mit Name: Lisztes\nFehler bei Seite: 2 mit Name: Lisztes\nFehler bei Seite: 3 mit Name: Lisztes\nFehler bei Seite: 4 mit Name: Lisztes\nFehler bei Seite: 5 mit Name: Lisztes\nFehler bei Seite: 1 mit Name: lisztes\nFehler bei Seite: 2 mit Name: lisztes\nFehler bei Seite: 3 mit Name: lisztes\nFehler bei Seite: 4 mit Name: lisztes\nFehler bei Seite: 5 mit Name: lisztes\nKein passender Spieler gefunden für: Lisztes / Eintracht Frankfurt.\n",
       "url": "",
-      "timestamp": "2026-09-13T20:01:15.414011484Z"
+      "timestamp": "2026-09-13T20:01:42.881239613Z"
     },
     {
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: At. Szalai\nFehler bei Seite: 1 mit Name: Szalai\nFehler bei Seite: 2 mit Name: At. Szalai\nFehler bei Seite: 3 mit Name: At. Szalai\nFehler bei Seite: 4 mit Name: At. Szalai\nFehler bei Seite: 5 mit Name: At. Szalai\nFehler bei Seite: 1 mit Name: Szalai\nFehler bei Seite: 2 mit Name: Szalai\nFehler bei Seite: 3 mit Name: Szalai\nFehler bei Seite: 4 mit Name: Szalai\nFehler bei Seite: 5 mit Name: Szalai\nFehler bei Seite: 1 mit Name: a szalai\nFehler bei Seite: 2 mit Name: a szalai\nFehler bei Seite: 3 mit Name: a szalai\nFehler bei Seite: 4 mit Name: a szalai\nFehler bei Seite: 5 mit Name: a szalai\nKein passender Spieler gefunden für: At. Szalai / TSG Hoffenheim.\n",
+      "message": "Fehler bei Seite: 1 mit Name: Potočnik\nFehler bei Seite: 2 mit Name: Potočnik\nFehler bei Seite: 3 mit Name: Potočnik\nFehler bei Seite: 4 mit Name: Potočnik\nFehler bei Seite: 5 mit Name: Potočnik\nFehler bei Seite: 1 mit Name: potocnik\nFehler bei Seite: 2 mit Name: potocnik\nFehler bei Seite: 3 mit Name: potocnik\nFehler bei Seite: 4 mit Name: potocnik\nFehler bei Seite: 5 mit Name: potocnik\nKein passender Spieler gefunden für: Potočnik / 1. FC Köln.\n",
       "url": "",
-      "timestamp": "2026-09-13T20:02:02.746483949Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Bakatukanda\nFehler bei Seite: 2 mit Name: Bakatukanda\nFehler bei Seite: 3 mit Name: Bakatukanda\nFehler bei Seite: 4 mit Name: Bakatukanda\nFehler bei Seite: 5 mit Name: Bakatukanda\nFehler bei Seite: 1 mit Name: bakatukanda\nFehler bei Seite: 2 mit Name: bakatukanda\nFehler bei Seite: 3 mit Name: bakatukanda\nFehler bei Seite: 4 mit Name: bakatukanda\nFehler bei Seite: 5 mit Name: bakatukanda\nKein passender Spieler gefunden für: Bakatukanda / 1. FC Köln.\n",
-      "url": "",
-      "timestamp": "2026-09-13T20:02:29.991161711Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Nordin\nFehler bei Seite: 2 mit Name: Nordin\nFehler bei Seite: 3 mit Name: Nordin\nFehler bei Seite: 4 mit Name: Nordin\nFehler bei Seite: 5 mit Name: Nordin\nFehler bei Seite: 1 mit Name: nordin\nFehler bei Seite: 2 mit Name: nordin\nFehler bei Seite: 3 mit Name: nordin\nFehler bei Seite: 4 mit Name: nordin\nFehler bei Seite: 5 mit Name: nordin\nKein passender Spieler gefunden für: Nordin / 1. FSV Mainz 05.\n",
-      "url": "",
-      "timestamp": "2026-09-13T20:03:58.804536906Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Pauli\nFehler bei Seite: 2 mit Name: Pauli\nFehler bei Seite: 3 mit Name: Pauli\nFehler bei Seite: 4 mit Name: Pauli\nFehler bei Seite: 5 mit Name: Pauli\nFehler bei Seite: 1 mit Name: pauli\nFehler bei Seite: 2 mit Name: pauli\nFehler bei Seite: 3 mit Name: pauli\nFehler bei Seite: 4 mit Name: pauli\nFehler bei Seite: 5 mit Name: pauli\nKein passender Spieler gefunden für: Pauli / 1. FC Köln.\n",
-      "url": "",
-      "timestamp": "2026-09-13T20:02:57.133844075Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Duranville\nFehler bei Seite: 2 mit Name: Duranville\nFehler bei Seite: 3 mit Name: Duranville\nFehler bei Seite: 4 mit Name: Duranville\nFehler bei Seite: 5 mit Name: Duranville\nFehler bei Seite: 1 mit Name: duranville\nFehler bei Seite: 2 mit Name: duranville\nFehler bei Seite: 3 mit Name: duranville\nFehler bei Seite: 4 mit Name: duranville\nFehler bei Seite: 5 mit Name: duranville\nKein passender Spieler gefunden für: Duranville / Borussia Dortmund.\n",
-      "url": "",
-      "timestamp": "2026-09-13T20:01:25.046789616Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Benjamin\nFehler bei Seite: 2 mit Name: Benjamin\nFehler bei Seite: 3 mit Name: Benjamin\nFehler bei Seite: 4 mit Name: Benjamin\nFehler bei Seite: 5 mit Name: Benjamin\nFehler bei Seite: 1 mit Name: benjamin\nFehler bei Seite: 2 mit Name: benjamin\nFehler bei Seite: 3 mit Name: benjamin\nFehler bei Seite: 4 mit Name: benjamin\nFehler bei Seite: 5 mit Name: benjamin\nKein passender Spieler gefunden für: Benjamin / TSG Hoffenheim.\n",
-      "url": "",
-      "timestamp": "2026-09-13T20:02:11.398525437Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Hamache\nFehler bei Seite: 2 mit Name: Hamache\nFehler bei Seite: 3 mit Name: Hamache\nFehler bei Seite: 4 mit Name: Hamache\nFehler bei Seite: 5 mit Name: Hamache\nFehler bei Seite: 1 mit Name: hamache\nFehler bei Seite: 2 mit Name: hamache\nFehler bei Seite: 3 mit Name: hamache\nFehler bei Seite: 4 mit Name: hamache\nFehler bei Seite: 5 mit Name: hamache\nKein passender Spieler gefunden für: Hamache / FC Schalke 04.\n",
-      "url": "",
-      "timestamp": "2026-09-13T20:00:57.860480539Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Leonard\nFehler bei Seite: 2 mit Name: Leonard\nFehler bei Seite: 3 mit Name: Leonard\nFehler bei Seite: 4 mit Name: Leonard\nFehler bei Seite: 5 mit Name: Leonard\nFehler bei Seite: 1 mit Name: leonard\nFehler bei Seite: 2 mit Name: leonard\nFehler bei Seite: 3 mit Name: leonard\nFehler bei Seite: 4 mit Name: leonard\nFehler bei Seite: 5 mit Name: leonard\nKein passender Spieler gefunden für: Leonard / FC Schalke 04.\n",
-      "url": "",
-      "timestamp": "2026-09-13T20:00:37.870263272Z"
+      "timestamp": "2026-09-13T20:03:05.621500229Z"
     },
     {
       "methode": "",
@@ -166,17 +141,25 @@
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Yardımcı\nFehler bei Seite: 2 mit Name: Yardımcı\nFehler bei Seite: 3 mit Name: Yardımcı\nFehler bei Seite: 4 mit Name: Yardımcı\nFehler bei Seite: 5 mit Name: Yardımcı\nFehler bei Seite: 1 mit Name: yardmc\nFehler bei Seite: 2 mit Name: yardmc\nFehler bei Seite: 3 mit Name: yardmc\nFehler bei Seite: 4 mit Name: yardmc\nFehler bei Seite: 5 mit Name: yardmc\nFehler bei Seite: 1 mit Name: Yardimci\nFehler bei Seite: 2 mit Name: Yardimci\nFehler bei Seite: 3 mit Name: Yardimci\nFehler bei Seite: 4 mit Name: Yardimci\nFehler bei Seite: 5 mit Name: Yardimci\nKein passender Spieler gefunden für: Yardımcı / TSG Hoffenheim.\n",
+      "message": "Fehler bei Seite: 1 mit Name: Dardari\nFehler bei Seite: 2 mit Name: Dardari\nFehler bei Seite: 3 mit Name: Dardari\nFehler bei Seite: 4 mit Name: Dardari\nFehler bei Seite: 5 mit Name: Dardari\nFehler bei Seite: 1 mit Name: dardari\nFehler bei Seite: 2 mit Name: dardari\nFehler bei Seite: 3 mit Name: dardari\nFehler bei Seite: 4 mit Name: dardari\nFehler bei Seite: 5 mit Name: dardari\nKein passender Spieler gefunden für: Dardari / FC Augsburg.\n",
       "url": "",
-      "timestamp": "2026-09-13T20:02:19.860509369Z"
+      "timestamp": "2026-09-13T20:01:15.414011484Z"
     },
     {
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: İnanoğlu\nFehler bei Seite: 2 mit Name: İnanoğlu\nFehler bei Seite: 3 mit Name: İnanoğlu\nFehler bei Seite: 4 mit Name: İnanoğlu\nFehler bei Seite: 5 mit Name: İnanoğlu\nFehler bei Seite: 1 mit Name: inanoglu\nFehler bei Seite: 2 mit Name: inanoglu\nFehler bei Seite: 3 mit Name: inanoglu\nFehler bei Seite: 4 mit Name: inanoglu\nFehler bei Seite: 5 mit Name: inanoglu\nFehler bei Seite: 1 mit Name: Inanoglu\nFehler bei Seite: 2 mit Name: Inanoglu\nFehler bei Seite: 3 mit Name: Inanoglu\nFehler bei Seite: 4 mit Name: Inanoglu\nFehler bei Seite: 5 mit Name: Inanoglu\nKein passender Spieler gefunden für: İnanoğlu / Eintracht Frankfurt.\n",
+      "message": "Fehler bei Seite: 1 mit Name: M. Zalazar\nFehler bei Seite: 1 mit Name: Zalazar\nFehler bei Seite: 2 mit Name: M. Zalazar\nFehler bei Seite: 3 mit Name: M. Zalazar\nFehler bei Seite: 4 mit Name: M. Zalazar\nFehler bei Seite: 5 mit Name: M. Zalazar\nFehler bei Seite: 1 mit Name: Zalazar\nFehler bei Seite: 2 mit Name: Zalazar\nFehler bei Seite: 3 mit Name: Zalazar\nFehler bei Seite: 4 mit Name: Zalazar\nFehler bei Seite: 5 mit Name: Zalazar\nFehler bei Seite: 1 mit Name: m zalazar\nFehler bei Seite: 2 mit Name: m zalazar\nFehler bei Seite: 3 mit Name: m zalazar\nFehler bei Seite: 4 mit Name: m zalazar\nFehler bei Seite: 5 mit Name: m zalazar\nKein passender Spieler gefunden für: M. Zalazar / FC Schalke 04.\n",
       "url": "",
-      "timestamp": "2026-09-13T20:01:51.844672371Z"
+      "timestamp": "2026-09-13T20:00:48.861899889Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: Benjamin\nFehler bei Seite: 2 mit Name: Benjamin\nFehler bei Seite: 3 mit Name: Benjamin\nFehler bei Seite: 4 mit Name: Benjamin\nFehler bei Seite: 5 mit Name: Benjamin\nFehler bei Seite: 1 mit Name: benjamin\nFehler bei Seite: 2 mit Name: benjamin\nFehler bei Seite: 3 mit Name: benjamin\nFehler bei Seite: 4 mit Name: benjamin\nFehler bei Seite: 5 mit Name: benjamin\nKein passender Spieler gefunden für: Benjamin / TSG Hoffenheim.\n",
+      "url": "",
+      "timestamp": "2026-09-13T20:02:11.398525437Z"
     },
     {
       "methode": "",
@@ -190,41 +173,9 @@
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Lisztes\nFehler bei Seite: 2 mit Name: Lisztes\nFehler bei Seite: 3 mit Name: Lisztes\nFehler bei Seite: 4 mit Name: Lisztes\nFehler bei Seite: 5 mit Name: Lisztes\nFehler bei Seite: 1 mit Name: lisztes\nFehler bei Seite: 2 mit Name: lisztes\nFehler bei Seite: 3 mit Name: lisztes\nFehler bei Seite: 4 mit Name: lisztes\nFehler bei Seite: 5 mit Name: lisztes\nKein passender Spieler gefunden für: Lisztes / Eintracht Frankfurt.\n",
-      "url": "",
-      "timestamp": "2026-09-13T20:01:42.881239613Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Geertruida\nFehler bei Seite: 2 mit Name: Geertruida\nFehler bei Seite: 3 mit Name: Geertruida\nFehler bei Seite: 4 mit Name: Geertruida\nFehler bei Seite: 5 mit Name: Geertruida\nFehler bei Seite: 1 mit Name: geertruida\nFehler bei Seite: 2 mit Name: geertruida\nFehler bei Seite: 3 mit Name: geertruida\nFehler bei Seite: 4 mit Name: geertruida\nFehler bei Seite: 5 mit Name: geertruida\nKein passender Spieler gefunden für: Geertruida / RB Leipzig.\n",
-      "url": "",
-      "timestamp": "2026-09-13T20:03:14.822610120Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Fehler bei Seite: 1 mit Name: Smolčić\nFehler bei Seite: 2 mit Name: Smolčić\nFehler bei Seite: 3 mit Name: Smolčić\nFehler bei Seite: 4 mit Name: Smolčić\nFehler bei Seite: 5 mit Name: Smolčić\nFehler bei Seite: 1 mit Name: smolcic\nFehler bei Seite: 2 mit Name: smolcic\nFehler bei Seite: 3 mit Name: smolcic\nFehler bei Seite: 4 mit Name: smolcic\nFehler bei Seite: 5 mit Name: smolcic\nKein passender Spieler gefunden für: Smolčić / Eintracht Frankfurt.\n",
       "url": "",
       "timestamp": "2026-09-13T20:01:33.858829268Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Bobzien\nFehler bei Seite: 2 mit Name: Bobzien\nFehler bei Seite: 3 mit Name: Bobzien\nFehler bei Seite: 4 mit Name: Bobzien\nFehler bei Seite: 5 mit Name: Bobzien\nFehler bei Seite: 1 mit Name: bobzien\nFehler bei Seite: 2 mit Name: bobzien\nFehler bei Seite: 3 mit Name: bobzien\nFehler bei Seite: 4 mit Name: bobzien\nFehler bei Seite: 5 mit Name: bobzien\nKein passender Spieler gefunden für: Bobzien / 1. FSV Mainz 05.\n",
-      "url": "",
-      "timestamp": "2026-09-13T20:04:08.460877598Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: M. Zalazar\nFehler bei Seite: 1 mit Name: Zalazar\nFehler bei Seite: 2 mit Name: M. Zalazar\nFehler bei Seite: 3 mit Name: M. Zalazar\nFehler bei Seite: 4 mit Name: M. Zalazar\nFehler bei Seite: 5 mit Name: M. Zalazar\nFehler bei Seite: 1 mit Name: Zalazar\nFehler bei Seite: 2 mit Name: Zalazar\nFehler bei Seite: 3 mit Name: Zalazar\nFehler bei Seite: 4 mit Name: Zalazar\nFehler bei Seite: 5 mit Name: Zalazar\nFehler bei Seite: 1 mit Name: m zalazar\nFehler bei Seite: 2 mit Name: m zalazar\nFehler bei Seite: 3 mit Name: m zalazar\nFehler bei Seite: 4 mit Name: m zalazar\nFehler bei Seite: 5 mit Name: m zalazar\nKein passender Spieler gefunden für: M. Zalazar / FC Schalke 04.\n",
-      "url": "",
-      "timestamp": "2026-09-13T20:00:48.861899889Z"
     },
     {
       "methode": "",
@@ -246,9 +197,73 @@
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: Mahmoud\nFehler bei Seite: 2 mit Name: Mahmoud\nFehler bei Seite: 3 mit Name: Mahmoud\nFehler bei Seite: 4 mit Name: Mahmoud\nFehler bei Seite: 5 mit Name: Mahmoud\nFehler bei Seite: 1 mit Name: mahmoud\nFehler bei Seite: 2 mit Name: mahmoud\nFehler bei Seite: 3 mit Name: mahmoud\nFehler bei Seite: 4 mit Name: mahmoud\nFehler bei Seite: 5 mit Name: mahmoud\nKein passender Spieler gefunden für: Mahmoud / SV Elversberg.\n",
+      "url": "",
+      "timestamp": "2026-09-13T20:00:28.459390362Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Fehler bei Seite: 1 mit Name: Masanka Bungi\nFehler bei Seite: 2 mit Name: Masanka Bungi\nFehler bei Seite: 3 mit Name: Masanka Bungi\nFehler bei Seite: 4 mit Name: Masanka Bungi\nFehler bei Seite: 5 mit Name: Masanka Bungi\nFehler bei Seite: 1 mit Name: Bungi\nFehler bei Seite: 2 mit Name: Bungi\nFehler bei Seite: 3 mit Name: Bungi\nFehler bei Seite: 4 mit Name: Bungi\nFehler bei Seite: 5 mit Name: Bungi\nFehler bei Seite: 1 mit Name: m bungi\nFehler bei Seite: 2 mit Name: m bungi\nFehler bei Seite: 3 mit Name: m bungi\nFehler bei Seite: 4 mit Name: m bungi\nFehler bei Seite: 5 mit Name: m bungi\nKein passender Spieler gefunden für: Masanka Bungi / RB Leipzig.\n",
       "url": "",
       "timestamp": "2026-09-13T20:03:23.442619967Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: Bakatukanda\nFehler bei Seite: 2 mit Name: Bakatukanda\nFehler bei Seite: 3 mit Name: Bakatukanda\nFehler bei Seite: 4 mit Name: Bakatukanda\nFehler bei Seite: 5 mit Name: Bakatukanda\nFehler bei Seite: 1 mit Name: bakatukanda\nFehler bei Seite: 2 mit Name: bakatukanda\nFehler bei Seite: 3 mit Name: bakatukanda\nFehler bei Seite: 4 mit Name: bakatukanda\nFehler bei Seite: 5 mit Name: bakatukanda\nKein passender Spieler gefunden für: Bakatukanda / 1. FC Köln.\n",
+      "url": "",
+      "timestamp": "2026-09-13T20:02:29.991161711Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: Hamache\nFehler bei Seite: 2 mit Name: Hamache\nFehler bei Seite: 3 mit Name: Hamache\nFehler bei Seite: 4 mit Name: Hamache\nFehler bei Seite: 5 mit Name: Hamache\nFehler bei Seite: 1 mit Name: hamache\nFehler bei Seite: 2 mit Name: hamache\nFehler bei Seite: 3 mit Name: hamache\nFehler bei Seite: 4 mit Name: hamache\nFehler bei Seite: 5 mit Name: hamache\nKein passender Spieler gefunden für: Hamache / FC Schalke 04.\n",
+      "url": "",
+      "timestamp": "2026-09-13T20:00:57.860480539Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: Yardımcı\nFehler bei Seite: 2 mit Name: Yardımcı\nFehler bei Seite: 3 mit Name: Yardımcı\nFehler bei Seite: 4 mit Name: Yardımcı\nFehler bei Seite: 5 mit Name: Yardımcı\nFehler bei Seite: 1 mit Name: yardmc\nFehler bei Seite: 2 mit Name: yardmc\nFehler bei Seite: 3 mit Name: yardmc\nFehler bei Seite: 4 mit Name: yardmc\nFehler bei Seite: 5 mit Name: yardmc\nFehler bei Seite: 1 mit Name: Yardimci\nFehler bei Seite: 2 mit Name: Yardimci\nFehler bei Seite: 3 mit Name: Yardimci\nFehler bei Seite: 4 mit Name: Yardimci\nFehler bei Seite: 5 mit Name: Yardimci\nKein passender Spieler gefunden für: Yardımcı / TSG Hoffenheim.\n",
+      "url": "",
+      "timestamp": "2026-09-13T20:02:19.860509369Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: İnanoğlu\nFehler bei Seite: 2 mit Name: İnanoğlu\nFehler bei Seite: 3 mit Name: İnanoğlu\nFehler bei Seite: 4 mit Name: İnanoğlu\nFehler bei Seite: 5 mit Name: İnanoğlu\nFehler bei Seite: 1 mit Name: inanoglu\nFehler bei Seite: 2 mit Name: inanoglu\nFehler bei Seite: 3 mit Name: inanoglu\nFehler bei Seite: 4 mit Name: inanoglu\nFehler bei Seite: 5 mit Name: inanoglu\nFehler bei Seite: 1 mit Name: Inanoglu\nFehler bei Seite: 2 mit Name: Inanoglu\nFehler bei Seite: 3 mit Name: Inanoglu\nFehler bei Seite: 4 mit Name: Inanoglu\nFehler bei Seite: 5 mit Name: Inanoglu\nKein passender Spieler gefunden für: İnanoğlu / Eintracht Frankfurt.\n",
+      "url": "",
+      "timestamp": "2026-09-13T20:01:51.844672371Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: Nordin\nFehler bei Seite: 2 mit Name: Nordin\nFehler bei Seite: 3 mit Name: Nordin\nFehler bei Seite: 4 mit Name: Nordin\nFehler bei Seite: 5 mit Name: Nordin\nFehler bei Seite: 1 mit Name: nordin\nFehler bei Seite: 2 mit Name: nordin\nFehler bei Seite: 3 mit Name: nordin\nFehler bei Seite: 4 mit Name: nordin\nFehler bei Seite: 5 mit Name: nordin\nKein passender Spieler gefunden für: Nordin / 1. FSV Mainz 05.\n",
+      "url": "",
+      "timestamp": "2026-09-13T20:03:58.804536906Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: At. Szalai\nFehler bei Seite: 1 mit Name: Szalai\nFehler bei Seite: 2 mit Name: At. Szalai\nFehler bei Seite: 3 mit Name: At. Szalai\nFehler bei Seite: 4 mit Name: At. Szalai\nFehler bei Seite: 5 mit Name: At. Szalai\nFehler bei Seite: 1 mit Name: Szalai\nFehler bei Seite: 2 mit Name: Szalai\nFehler bei Seite: 3 mit Name: Szalai\nFehler bei Seite: 4 mit Name: Szalai\nFehler bei Seite: 5 mit Name: Szalai\nFehler bei Seite: 1 mit Name: a szalai\nFehler bei Seite: 2 mit Name: a szalai\nFehler bei Seite: 3 mit Name: a szalai\nFehler bei Seite: 4 mit Name: a szalai\nFehler bei Seite: 5 mit Name: a szalai\nKein passender Spieler gefunden für: At. Szalai / TSG Hoffenheim.\n",
+      "url": "",
+      "timestamp": "2026-09-13T20:02:02.746483949Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: Bobzien\nFehler bei Seite: 2 mit Name: Bobzien\nFehler bei Seite: 3 mit Name: Bobzien\nFehler bei Seite: 4 mit Name: Bobzien\nFehler bei Seite: 5 mit Name: Bobzien\nFehler bei Seite: 1 mit Name: bobzien\nFehler bei Seite: 2 mit Name: bobzien\nFehler bei Seite: 3 mit Name: bobzien\nFehler bei Seite: 4 mit Name: bobzien\nFehler bei Seite: 5 mit Name: bobzien\nKein passender Spieler gefunden für: Bobzien / 1. FSV Mainz 05.\n",
+      "url": "",
+      "timestamp": "2026-09-13T20:04:08.460877598Z"
     },
     {
       "methode": "",
@@ -262,6 +277,22 @@
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: Geertruida\nFehler bei Seite: 2 mit Name: Geertruida\nFehler bei Seite: 3 mit Name: Geertruida\nFehler bei Seite: 4 mit Name: Geertruida\nFehler bei Seite: 5 mit Name: Geertruida\nFehler bei Seite: 1 mit Name: geertruida\nFehler bei Seite: 2 mit Name: geertruida\nFehler bei Seite: 3 mit Name: geertruida\nFehler bei Seite: 4 mit Name: geertruida\nFehler bei Seite: 5 mit Name: geertruida\nKein passender Spieler gefunden für: Geertruida / RB Leipzig.\n",
+      "url": "",
+      "timestamp": "2026-09-13T20:03:14.822610120Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
+      "message": "Fehler bei Seite: 1 mit Name: Leonard\nFehler bei Seite: 2 mit Name: Leonard\nFehler bei Seite: 3 mit Name: Leonard\nFehler bei Seite: 4 mit Name: Leonard\nFehler bei Seite: 5 mit Name: Leonard\nFehler bei Seite: 1 mit Name: leonard\nFehler bei Seite: 2 mit Name: leonard\nFehler bei Seite: 3 mit Name: leonard\nFehler bei Seite: 4 mit Name: leonard\nFehler bei Seite: 5 mit Name: leonard\nKein passender Spieler gefunden für: Leonard / FC Schalke 04.\n",
+      "url": "",
+      "timestamp": "2026-09-13T20:00:37.870263272Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
       "message": "Fehler bei Seite: 1 mit Name: Carstensen\nFehler bei Seite: 2 mit Name: Carstensen\nFehler bei Seite: 3 mit Name: Carstensen\nFehler bei Seite: 4 mit Name: Carstensen\nFehler bei Seite: 5 mit Name: Carstensen\nFehler bei Seite: 1 mit Name: carstensen\nFehler bei Seite: 2 mit Name: carstensen\nFehler bei Seite: 3 mit Name: carstensen\nFehler bei Seite: 4 mit Name: carstensen\nFehler bei Seite: 5 mit Name: carstensen\nKein passender Spieler gefunden für: Carstensen / 1. FC Köln.\n",
       "url": "",
       "timestamp": "2026-09-13T20:02:38.768140139Z"
@@ -270,17 +301,9 @@
       "methode": "",
       "acception": "",
       "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Mahmoud\nFehler bei Seite: 2 mit Name: Mahmoud\nFehler bei Seite: 3 mit Name: Mahmoud\nFehler bei Seite: 4 mit Name: Mahmoud\nFehler bei Seite: 5 mit Name: Mahmoud\nFehler bei Seite: 1 mit Name: mahmoud\nFehler bei Seite: 2 mit Name: mahmoud\nFehler bei Seite: 3 mit Name: mahmoud\nFehler bei Seite: 4 mit Name: mahmoud\nFehler bei Seite: 5 mit Name: mahmoud\nKein passender Spieler gefunden für: Mahmoud / SV Elversberg.\n",
+      "message": "Fehler bei Seite: 1 mit Name: Gazibegović\nFehler bei Seite: 2 mit Name: Gazibegović\nFehler bei Seite: 3 mit Name: Gazibegović\nFehler bei Seite: 4 mit Name: Gazibegović\nFehler bei Seite: 5 mit Name: Gazibegović\nFehler bei Seite: 1 mit Name: gazibegovic\nFehler bei Seite: 2 mit Name: gazibegovic\nFehler bei Seite: 3 mit Name: gazibegovic\nFehler bei Seite: 4 mit Name: gazibegovic\nFehler bei Seite: 5 mit Name: gazibegovic\nKein passender Spieler gefunden für: Gazibegović / 1. FC Köln.\n",
       "url": "",
-      "timestamp": "2026-09-13T20:00:28.459390362Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "TRANSFERMARKT_DE_FIND_PLAYER",
-      "message": "Fehler bei Seite: 1 mit Name: Potočnik\nFehler bei Seite: 2 mit Name: Potočnik\nFehler bei Seite: 3 mit Name: Potočnik\nFehler bei Seite: 4 mit Name: Potočnik\nFehler bei Seite: 5 mit Name: Potočnik\nFehler bei Seite: 1 mit Name: potocnik\nFehler bei Seite: 2 mit Name: potocnik\nFehler bei Seite: 3 mit Name: potocnik\nFehler bei Seite: 4 mit Name: potocnik\nFehler bei Seite: 5 mit Name: potocnik\nKein passender Spieler gefunden für: Potočnik / 1. FC Köln.\n",
-      "url": "",
-      "timestamp": "2026-09-13T20:03:05.621500229Z"
+      "timestamp": "2026-09-13T20:02:47.402422959Z"
     }
   ],
   "2026-09-15": [
@@ -288,17 +311,17 @@
       "methode": "",
       "acception": "",
       "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
       "url": "",
-      "timestamp": "2026-09-15T03:15:13.864965415Z"
+      "timestamp": "2026-09-15T03:15:11.298336673Z"
     },
     {
       "methode": "",
       "acception": "",
       "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
       "url": "",
-      "timestamp": "2026-09-15T03:15:11.298336673Z"
+      "timestamp": "2026-09-15T03:15:13.864965415Z"
     }
   ],
   "2026-09-14": [{
@@ -314,17 +337,17 @@
       "methode": "",
       "acception": "",
       "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
       "url": "",
-      "timestamp": "2026-09-17T03:15:11.407076770Z"
+      "timestamp": "2026-09-17T03:15:14.069587848Z"
     },
     {
       "methode": "",
       "acception": "",
       "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
       "url": "",
-      "timestamp": "2026-09-17T03:15:14.069587848Z"
+      "timestamp": "2026-09-17T03:15:11.407076770Z"
     }
   ],
   "2026-09-16": [
@@ -332,17 +355,17 @@
       "methode": "",
       "acception": "",
       "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
       "url": "",
-      "timestamp": "2026-09-16T03:15:11.396451855Z"
+      "timestamp": "2026-09-16T03:15:13.758458878Z"
     },
     {
       "methode": "",
       "acception": "",
       "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
       "url": "",
-      "timestamp": "2026-09-16T03:15:13.758458878Z"
+      "timestamp": "2026-09-16T03:15:11.396451855Z"
     }
   ]
 }
