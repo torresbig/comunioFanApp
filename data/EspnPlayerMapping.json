@@ -1,5 +1,5 @@
 {
-  "mappedInitials": 0,
+  "mappedInitials": 1,
   "mapping": [
     {
       "lastName": "Kaltefleiter",
@@ -942,6 +942,29 @@
       "comunioId": "33832",
       "mappedOnlyLastName": true,
       "height": "5' 10\"",
+      "status": "Active"
+    },
+    {
+      "lastName": "Gagzow",
+      "espnId": "3131188",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "Fritz",
+      "nationality": "",
+      "jersey": "48",
+      "name": "Fritz Gagzow",
+      "club": {
+        "espnName": "1. FC Union Berlin",
+        "espnId": "598",
+        "comunioName": "1. FC Union Berlin",
+        "comunioId": "109"
+      },
+      "comunioName": "Gagzow",
+      "position": "Goalkeeper",
+      "shortName": "F. Gagzow",
+      "comunioId": "34527",
+      "mappedOnlyLastName": true,
+      "height": "",
       "status": "Active"
     },
     {
@@ -2345,6 +2368,29 @@
       "comunioId": "34257",
       "mappedOnlyLastName": true,
       "height": "5' 9\"",
+      "status": "Active"
+    },
+    {
+      "lastName": "Vuskovic",
+      "espnId": "307725",
+      "weight": "174 lbs",
+      "dateOfBirth": "16.11.2001",
+      "firstName": "Mario",
+      "nationality": "CRO",
+      "jersey": "44",
+      "name": "Mario Vuskovic",
+      "club": {
+        "espnName": "Hamburg SV",
+        "espnId": "127",
+        "comunioName": "Hamburger SV",
+        "comunioId": "4"
+      },
+      "comunioName": "M. Vušković",
+      "position": "Defender",
+      "shortName": "M. Vuskovic",
+      "comunioId": "34526",
+      "mappedOnlyLastName": false,
+      "height": "6' 2\"",
       "status": "Active"
     },
     {
@@ -10375,6 +10421,29 @@
       "status": "Active"
     },
     {
+      "lastName": "Sliskovic",
+      "espnId": "413775",
+      "weight": "150 lbs",
+      "dateOfBirth": "05.08.2008",
+      "firstName": "Duje",
+      "nationality": "CRO",
+      "jersey": "43",
+      "name": "Duje Sliskovic",
+      "club": {
+        "espnName": "1. FC Union Berlin",
+        "espnId": "598",
+        "comunioName": "1. FC Union Berlin",
+        "comunioId": "109"
+      },
+      "comunioName": "Slišković",
+      "position": "Midfielder",
+      "shortName": "D. Sliskovic",
+      "comunioId": "34528",
+      "mappedOnlyLastName": true,
+      "height": "6' 1\"",
+      "status": "Active"
+    },
+    {
       "lastName": "Stöger",
       "espnId": "175006",
       "weight": "161 lbs",
@@ -11410,115 +11479,23 @@
       "status": "Active"
     }
   ],
-  "mappingFailed": 58,
+  "mappingFailed": 84,
   "mapped": 496,
   "failedPlayers": [
     {
       "lastName": "",
-      "espnId": "3114681",
+      "espnId": "302793",
       "weight": "",
       "dateOfBirth": "",
       "firstName": "",
       "nationality": "",
       "jersey": "",
-      "name": "Mateo Zelic",
+      "name": "Seol Young-Woo",
       "club": {
-        "espnName": "SC Freiburg",
-        "espnId": "126",
-        "comunioName": "SC Freiburg",
-        "comunioId": "21"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "399219",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Luka Djuric",
-      "club": {
-        "espnName": "SC Paderborn 07",
-        "espnId": "3307",
-        "comunioName": "SC Paderborn 07",
-        "comunioId": "81"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "3115345",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Jason-Dean Bissi Mouelle",
-      "club": {
-        "espnName": "Hamburg SV",
-        "espnId": "127",
-        "comunioName": "Hamburger SV",
-        "comunioId": "4"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "349838",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "N'Diaye Moussa",
-      "club": {
-        "espnName": "Werder Bremen",
-        "espnId": "137",
-        "comunioName": "Werder Bremen",
-        "comunioId": "6"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "3131188",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Fritz Gagzow",
-      "club": {
-        "espnName": "1. FC Union Berlin",
-        "espnId": "598",
-        "comunioName": "1. FC Union Berlin",
-        "comunioId": "109"
+        "espnName": "FC Augsburg",
+        "espnId": "3841",
+        "comunioName": "FC Augsburg",
+        "comunioId": "68"
       },
       "comunioName": "",
       "position": "",
@@ -11553,18 +11530,18 @@
     },
     {
       "lastName": "",
-      "espnId": "237224",
+      "espnId": "276082",
       "weight": "",
       "dateOfBirth": "",
       "firstName": "",
       "nationality": "",
       "jersey": "",
-      "name": "Hwang Hee-Chan",
+      "name": "Yukhym Konoplia",
       "club": {
-        "espnName": "Schalke 04",
-        "espnId": "133",
-        "comunioName": "FC Schalke 04",
-        "comunioId": "10"
+        "espnName": "Borussia Mönchengladbach",
+        "espnId": "268",
+        "comunioName": "Borussia Mönchengladbach",
+        "comunioId": "3"
       },
       "comunioName": "",
       "position": "",
@@ -11576,18 +11553,18 @@
     },
     {
       "lastName": "",
-      "espnId": "3114409",
+      "espnId": "3102556",
       "weight": "",
       "dateOfBirth": "",
       "firstName": "",
       "nationality": "",
       "jersey": "",
-      "name": "Jonathan Friemel",
+      "name": "Jan-Luca Riedl",
       "club": {
-        "espnName": "FC Cologne",
-        "espnId": "122",
-        "comunioName": "1. FC Köln",
-        "comunioId": "13"
+        "espnName": "Borussia Dortmund",
+        "espnId": "124",
+        "comunioName": "Borussia Dortmund",
+        "comunioId": "5"
       },
       "comunioName": "",
       "position": "",
@@ -11596,6 +11573,28 @@
       "mappedOnlyLastName": false,
       "height": "",
       "status": ""
+    },
+    {
+      "espnId": "3115345",
+      "name": "Jason-Dean Bissi Mouelle",
+      "club": {
+        "espnName": "Hamburg SV",
+        "espnId": "127",
+        "comunioName": "Hamburger SV",
+        "comunioId": "4"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
+      "espnId": "323847",
+      "name": "Ameen Al Dakhil",
+      "club": {
+        "espnName": "VfB Stuttgart",
+        "espnId": "134",
+        "comunioName": "VfB Stuttgart",
+        "comunioId": "14"
+      },
+      "mappedOnlyLastName": false
     },
     {
       "lastName": "",
@@ -11668,18 +11667,74 @@
     },
     {
       "lastName": "",
-      "espnId": "323847",
+      "espnId": "157688",
       "weight": "",
       "dateOfBirth": "",
       "firstName": "",
       "nationality": "",
       "jersey": "",
-      "name": "Ameen Al Dakhil",
+      "name": "Kim Min-Jae",
       "club": {
-        "espnName": "VfB Stuttgart",
-        "espnId": "134",
-        "comunioName": "VfB Stuttgart",
-        "comunioId": "14"
+        "espnName": "Bayern Munich",
+        "espnId": "132",
+        "comunioName": "FC Bayern München",
+        "comunioId": "1"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "espnId": "271701",
+      "name": "Hong Hyun-Seok",
+      "club": {
+        "espnName": "Mainz",
+        "espnId": "2950",
+        "comunioName": "1. FSV Mainz 05",
+        "comunioId": "18"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
+      "espnId": "237224",
+      "name": "Hwang Hee-Chan",
+      "club": {
+        "espnName": "Schalke 04",
+        "espnId": "133",
+        "comunioName": "FC Schalke 04",
+        "comunioId": "10"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
+      "espnId": "3111131",
+      "name": "Tristan Spranger",
+      "club": {
+        "espnName": "TSG Hoffenheim",
+        "espnId": "7911",
+        "comunioName": "TSG Hoffenheim",
+        "comunioId": "62"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
+      "lastName": "",
+      "espnId": "416636",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Ayoube Amaimouni",
+      "club": {
+        "espnName": "Eintracht Frankfurt",
+        "espnId": "125",
+        "comunioName": "Eintracht Frankfurt",
+        "comunioId": "9"
       },
       "comunioName": "",
       "position": "",
@@ -11691,18 +11746,18 @@
     },
     {
       "lastName": "",
-      "espnId": "279282",
+      "espnId": "157688",
       "weight": "",
       "dateOfBirth": "",
       "firstName": "",
       "nationality": "",
       "jersey": "",
-      "name": "Silas Katompa-Mvumpa",
+      "name": "Kim Min-Jae",
       "club": {
-        "espnName": "Mainz",
-        "espnId": "2950",
-        "comunioName": "1. FSV Mainz 05",
-        "comunioId": "18"
+        "espnName": "Bayern Munich",
+        "espnId": "132",
+        "comunioName": "FC Bayern München",
+        "comunioId": "1"
       },
       "comunioName": "",
       "position": "",
@@ -11737,6 +11792,86 @@
     },
     {
       "lastName": "",
+      "espnId": "399219",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Luka Djuric",
+      "club": {
+        "espnName": "SC Paderborn 07",
+        "espnId": "3307",
+        "comunioName": "SC Paderborn 07",
+        "comunioId": "81"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "lastName": "",
+      "espnId": "387472",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Berkay Yilmaz",
+      "club": {
+        "espnName": "SC Freiburg",
+        "espnId": "126",
+        "comunioName": "SC Freiburg",
+        "comunioId": "21"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "espnId": "134103",
+      "name": "Lee Jae-Sung",
+      "club": {
+        "espnName": "Mainz",
+        "espnId": "2950",
+        "comunioName": "1. FSV Mainz 05",
+        "comunioId": "18"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
+      "lastName": "",
+      "espnId": "399219",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Luka Djuric",
+      "club": {
+        "espnName": "SC Paderborn 07",
+        "espnId": "3307",
+        "comunioName": "SC Paderborn 07",
+        "comunioId": "81"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "lastName": "",
       "espnId": "3115342",
       "weight": "",
       "dateOfBirth": "",
@@ -11759,14 +11894,25 @@
       "status": ""
     },
     {
+      "espnId": "414315",
+      "name": "Miguel Adje",
+      "club": {
+        "espnName": "Borussia Dortmund",
+        "espnId": "124",
+        "comunioName": "Borussia Dortmund",
+        "comunioId": "5"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
       "lastName": "",
-      "espnId": "297750",
+      "espnId": "3115345",
       "weight": "",
       "dateOfBirth": "",
       "firstName": "",
       "nationality": "",
       "jersey": "",
-      "name": "Albert Grønbaek",
+      "name": "Jason-Dean Bissi Mouelle",
       "club": {
         "espnName": "Hamburg SV",
         "espnId": "127",
@@ -11783,13 +11929,36 @@
     },
     {
       "lastName": "",
-      "espnId": "3114681",
+      "espnId": "307725",
       "weight": "",
       "dateOfBirth": "",
       "firstName": "",
       "nationality": "",
       "jersey": "",
-      "name": "Mateo Zelic",
+      "name": "Mario Vuskovic",
+      "club": {
+        "espnName": "Hamburg SV",
+        "espnId": "127",
+        "comunioName": "Hamburger SV",
+        "comunioId": "4"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "lastName": "",
+      "espnId": "387472",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Berkay Yilmaz",
       "club": {
         "espnName": "SC Freiburg",
         "espnId": "126",
@@ -11829,18 +11998,18 @@
     },
     {
       "lastName": "",
-      "espnId": "414315",
+      "espnId": "3114409",
       "weight": "",
       "dateOfBirth": "",
       "firstName": "",
       "nationality": "",
       "jersey": "",
-      "name": "Miguel Adje",
+      "name": "Jonathan Friemel",
       "club": {
-        "espnName": "Borussia Dortmund",
-        "espnId": "124",
-        "comunioName": "Borussia Dortmund",
-        "comunioId": "5"
+        "espnName": "FC Cologne",
+        "espnId": "122",
+        "comunioName": "1. FC Köln",
+        "comunioId": "13"
       },
       "comunioName": "",
       "position": "",
@@ -11852,18 +12021,18 @@
     },
     {
       "lastName": "",
-      "espnId": "237224",
+      "espnId": "271701",
       "weight": "",
       "dateOfBirth": "",
       "firstName": "",
       "nationality": "",
       "jersey": "",
-      "name": "Hwang Hee-Chan",
+      "name": "Hong Hyun-Seok",
       "club": {
-        "espnName": "Schalke 04",
-        "espnId": "133",
-        "comunioName": "FC Schalke 04",
-        "comunioId": "10"
+        "espnName": "Mainz",
+        "espnId": "2950",
+        "comunioName": "1. FSV Mainz 05",
+        "comunioId": "18"
       },
       "comunioName": "",
       "position": "",
@@ -11874,27 +12043,15 @@
       "status": ""
     },
     {
-      "lastName": "",
-      "espnId": "307725",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Mario Vuskovic",
+      "espnId": "302793",
+      "name": "Seol Young-Woo",
       "club": {
-        "espnName": "Hamburg SV",
-        "espnId": "127",
-        "comunioName": "Hamburger SV",
-        "comunioId": "4"
+        "espnName": "FC Augsburg",
+        "espnId": "3841",
+        "comunioName": "FC Augsburg",
+        "comunioId": "68"
       },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
+      "mappedOnlyLastName": false
     },
     {
       "lastName": "",
@@ -11910,6 +12067,63 @@
         "espnId": "133",
         "comunioName": "FC Schalke 04",
         "comunioId": "10"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "lastName": "",
+      "espnId": "3111131",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Tristan Spranger",
+      "club": {
+        "espnName": "TSG Hoffenheim",
+        "espnId": "7911",
+        "comunioName": "TSG Hoffenheim",
+        "comunioId": "62"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "espnId": "3100710",
+      "name": "Darwin Kaan Soylu",
+      "club": {
+        "espnName": "Werder Bremen",
+        "espnId": "137",
+        "comunioName": "Werder Bremen",
+        "comunioId": "6"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
+      "lastName": "",
+      "espnId": "349838",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "N'Diaye Moussa",
+      "club": {
+        "espnName": "Werder Bremen",
+        "espnId": "137",
+        "comunioName": "Werder Bremen",
+        "comunioId": "6"
       },
       "comunioName": "",
       "position": "",
@@ -11944,6 +12158,143 @@
     },
     {
       "lastName": "",
+      "espnId": "416636",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Ayoube Amaimouni",
+      "club": {
+        "espnName": "Eintracht Frankfurt",
+        "espnId": "125",
+        "comunioName": "Eintracht Frankfurt",
+        "comunioId": "9"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "lastName": "",
+      "espnId": "283683",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Tom Krauss",
+      "club": {
+        "espnName": "FC Cologne",
+        "espnId": "122",
+        "comunioName": "1. FC Köln",
+        "comunioId": "13"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "espnId": "376559",
+      "name": "Maximilian Herwerth",
+      "club": {
+        "espnName": "VfB Stuttgart",
+        "espnId": "134",
+        "comunioName": "VfB Stuttgart",
+        "comunioId": "14"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
+      "lastName": "",
+      "espnId": "3100710",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Darwin Kaan Soylu",
+      "club": {
+        "espnName": "Werder Bremen",
+        "espnId": "137",
+        "comunioName": "Werder Bremen",
+        "comunioId": "6"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "lastName": "",
+      "espnId": "332429",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Emil Höjlund",
+      "club": {
+        "espnName": "Schalke 04",
+        "espnId": "133",
+        "comunioName": "FC Schalke 04",
+        "comunioId": "10"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "espnId": "283683",
+      "name": "Tom Krauss",
+      "club": {
+        "espnName": "FC Cologne",
+        "espnId": "122",
+        "comunioName": "1. FC Köln",
+        "comunioId": "13"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
+      "lastName": "",
+      "espnId": "413775",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Duje Sliskovic",
+      "club": {
+        "espnName": "1. FC Union Berlin",
+        "espnId": "598",
+        "comunioName": "1. FC Union Berlin",
+        "comunioId": "109"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "lastName": "",
       "espnId": "376559",
       "weight": "",
       "dateOfBirth": "",
@@ -11951,6 +12302,245 @@
       "nationality": "",
       "jersey": "",
       "name": "Maximilian Herwerth",
+      "club": {
+        "espnName": "VfB Stuttgart",
+        "espnId": "134",
+        "comunioName": "VfB Stuttgart",
+        "comunioId": "14"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "espnId": "332429",
+      "name": "Emil Höjlund",
+      "club": {
+        "espnName": "Schalke 04",
+        "espnId": "133",
+        "comunioName": "FC Schalke 04",
+        "comunioId": "10"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
+      "lastName": "",
+      "espnId": "279282",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Silas Katompa-Mvumpa",
+      "club": {
+        "espnName": "Mainz",
+        "espnId": "2950",
+        "comunioName": "1. FSV Mainz 05",
+        "comunioId": "18"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "lastName": "",
+      "espnId": "381471",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Louey Farhat",
+      "club": {
+        "espnName": "SC Freiburg",
+        "espnId": "126",
+        "comunioName": "SC Freiburg",
+        "comunioId": "21"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "lastName": "",
+      "espnId": "3131188",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Fritz Gagzow",
+      "club": {
+        "espnName": "1. FC Union Berlin",
+        "espnId": "598",
+        "comunioName": "1. FC Union Berlin",
+        "comunioId": "109"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "espnId": "3114681",
+      "name": "Mateo Zelic",
+      "club": {
+        "espnName": "SC Freiburg",
+        "espnId": "126",
+        "comunioName": "SC Freiburg",
+        "comunioId": "21"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
+      "lastName": "",
+      "espnId": "381471",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Louey Farhat",
+      "club": {
+        "espnName": "SC Freiburg",
+        "espnId": "126",
+        "comunioName": "SC Freiburg",
+        "comunioId": "21"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "espnId": "276323",
+      "name": "Jeong Woo-Yeong",
+      "club": {
+        "espnName": "1. FC Union Berlin",
+        "espnId": "598",
+        "comunioName": "1. FC Union Berlin",
+        "comunioId": "109"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
+      "lastName": "",
+      "espnId": "3115342",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Kelvin Ojo",
+      "club": {
+        "espnName": "Hamburg SV",
+        "espnId": "127",
+        "comunioName": "Hamburger SV",
+        "comunioId": "4"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "lastName": "",
+      "espnId": "3114681",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Mateo Zelic",
+      "club": {
+        "espnName": "SC Freiburg",
+        "espnId": "126",
+        "comunioName": "SC Freiburg",
+        "comunioId": "21"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "espnId": "416636",
+      "name": "Ayoube Amaimouni",
+      "club": {
+        "espnName": "Eintracht Frankfurt",
+        "espnId": "125",
+        "comunioName": "Eintracht Frankfurt",
+        "comunioId": "9"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
+      "espnId": "3115342",
+      "name": "Kelvin Ojo",
+      "club": {
+        "espnName": "Hamburg SV",
+        "espnId": "127",
+        "comunioName": "Hamburger SV",
+        "comunioId": "4"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
+      "lastName": "",
+      "espnId": "3114681",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Mateo Zelic",
+      "club": {
+        "espnName": "SC Freiburg",
+        "espnId": "126",
+        "comunioName": "SC Freiburg",
+        "comunioId": "21"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "lastName": "",
+      "espnId": "323847",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Ameen Al Dakhil",
       "club": {
         "espnName": "VfB Stuttgart",
         "espnId": "134",
@@ -11989,129 +12579,25 @@
       "status": ""
     },
     {
-      "lastName": "",
-      "espnId": "157688",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Kim Min-Jae",
+      "espnId": "349838",
+      "name": "N'Diaye Moussa",
       "club": {
-        "espnName": "Bayern Munich",
-        "espnId": "132",
-        "comunioName": "FC Bayern München",
-        "comunioId": "1"
+        "espnName": "Werder Bremen",
+        "espnId": "137",
+        "comunioName": "Werder Bremen",
+        "comunioId": "6"
       },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
+      "mappedOnlyLastName": false
     },
     {
       "lastName": "",
-      "espnId": "381471",
+      "espnId": "3114409",
       "weight": "",
       "dateOfBirth": "",
       "firstName": "",
       "nationality": "",
       "jersey": "",
-      "name": "Louey Farhat",
-      "club": {
-        "espnName": "SC Freiburg",
-        "espnId": "126",
-        "comunioName": "SC Freiburg",
-        "comunioId": "21"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "416636",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Ayoube Amaimouni",
-      "club": {
-        "espnName": "Eintracht Frankfurt",
-        "espnId": "125",
-        "comunioName": "Eintracht Frankfurt",
-        "comunioId": "9"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "414315",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Miguel Adje",
-      "club": {
-        "espnName": "Borussia Dortmund",
-        "espnId": "124",
-        "comunioName": "Borussia Dortmund",
-        "comunioId": "5"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "276082",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Yukhym Konoplia",
-      "club": {
-        "espnName": "Borussia Mönchengladbach",
-        "espnId": "268",
-        "comunioName": "Borussia Mönchengladbach",
-        "comunioId": "3"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "283683",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Tom Krauss",
+      "name": "Jonathan Friemel",
       "club": {
         "espnName": "FC Cologne",
         "espnId": "122",
@@ -12125,6 +12611,108 @@
       "mappedOnlyLastName": false,
       "height": "",
       "status": ""
+    },
+    {
+      "lastName": "",
+      "espnId": "413775",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Duje Sliskovic",
+      "club": {
+        "espnName": "1. FC Union Berlin",
+        "espnId": "598",
+        "comunioName": "1. FC Union Berlin",
+        "comunioId": "109"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "espnId": "279282",
+      "name": "Silas Katompa-Mvumpa",
+      "club": {
+        "espnName": "Mainz",
+        "espnId": "2950",
+        "comunioName": "1. FSV Mainz 05",
+        "comunioId": "18"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
+      "lastName": "",
+      "espnId": "376559",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Maximilian Herwerth",
+      "club": {
+        "espnName": "VfB Stuttgart",
+        "espnId": "134",
+        "comunioName": "VfB Stuttgart",
+        "comunioId": "14"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "espnId": "157688",
+      "name": "Kim Min-Jae",
+      "club": {
+        "espnName": "Bayern Munich",
+        "espnId": "132",
+        "comunioName": "FC Bayern München",
+        "comunioId": "1"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
+      "lastName": "",
+      "espnId": "297750",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Albert Grønbaek",
+      "club": {
+        "espnName": "Hamburg SV",
+        "espnId": "127",
+        "comunioName": "Hamburger SV",
+        "comunioId": "4"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "espnId": "276082",
+      "name": "Yukhym Konoplia",
+      "club": {
+        "espnName": "Borussia Mönchengladbach",
+        "espnId": "268",
+        "comunioName": "Borussia Mönchengladbach",
+        "comunioId": "3"
+      },
+      "mappedOnlyLastName": false
     },
     {
       "lastName": "",
@@ -12148,6 +12736,28 @@
       "mappedOnlyLastName": false,
       "height": "",
       "status": ""
+    },
+    {
+      "espnId": "387472",
+      "name": "Berkay Yilmaz",
+      "club": {
+        "espnName": "SC Freiburg",
+        "espnId": "126",
+        "comunioName": "SC Freiburg",
+        "comunioId": "21"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
+      "espnId": "3102556",
+      "name": "Jan-Luca Riedl",
+      "club": {
+        "espnName": "Borussia Dortmund",
+        "espnId": "124",
+        "comunioName": "Borussia Dortmund",
+        "comunioId": "5"
+      },
+      "mappedOnlyLastName": false
     },
     {
       "lastName": "",
@@ -12174,87 +12784,18 @@
     },
     {
       "lastName": "",
-      "espnId": "302793",
+      "espnId": "276323",
       "weight": "",
       "dateOfBirth": "",
       "firstName": "",
       "nationality": "",
       "jersey": "",
-      "name": "Seol Young-Woo",
+      "name": "Jeong Woo-Yeong",
       "club": {
-        "espnName": "FC Augsburg",
-        "espnId": "3841",
-        "comunioName": "FC Augsburg",
-        "comunioId": "68"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "283683",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Tom Krauss",
-      "club": {
-        "espnName": "FC Cologne",
-        "espnId": "122",
-        "comunioName": "1. FC Köln",
-        "comunioId": "13"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "3115342",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Kelvin Ojo",
-      "club": {
-        "espnName": "Hamburg SV",
-        "espnId": "127",
-        "comunioName": "Hamburger SV",
-        "comunioId": "4"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "3114409",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Jonathan Friemel",
-      "club": {
-        "espnName": "FC Cologne",
-        "espnId": "122",
-        "comunioName": "1. FC Köln",
-        "comunioId": "13"
+        "espnName": "1. FC Union Berlin",
+        "espnId": "598",
+        "comunioName": "1. FC Union Berlin",
+        "comunioId": "109"
       },
       "comunioName": "",
       "position": "",
@@ -12289,29 +12830,6 @@
     },
     {
       "lastName": "",
-      "espnId": "3111131",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Tristan Spranger",
-      "club": {
-        "espnName": "TSG Hoffenheim",
-        "espnId": "7911",
-        "comunioName": "TSG Hoffenheim",
-        "comunioId": "62"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
       "espnId": "3131188",
       "weight": "",
       "dateOfBirth": "",
@@ -12334,19 +12852,30 @@
       "status": ""
     },
     {
+      "espnId": "297750",
+      "name": "Albert Grønbaek",
+      "club": {
+        "espnName": "Hamburg SV",
+        "espnId": "127",
+        "comunioName": "Hamburger SV",
+        "comunioId": "4"
+      },
+      "mappedOnlyLastName": false
+    },
+    {
       "lastName": "",
-      "espnId": "3100710",
+      "espnId": "237224",
       "weight": "",
       "dateOfBirth": "",
       "firstName": "",
       "nationality": "",
       "jersey": "",
-      "name": "Darwin Kaan Soylu",
+      "name": "Hwang Hee-Chan",
       "club": {
-        "espnName": "Werder Bremen",
-        "espnId": "137",
-        "comunioName": "Werder Bremen",
-        "comunioId": "6"
+        "espnName": "Schalke 04",
+        "espnId": "133",
+        "comunioName": "FC Schalke 04",
+        "comunioId": "10"
       },
       "comunioName": "",
       "position": "",
@@ -12357,42 +12886,30 @@
       "status": ""
     },
     {
-      "lastName": "",
-      "espnId": "413775",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Duje Sliskovic",
+      "espnId": "3114409",
+      "name": "Jonathan Friemel",
       "club": {
-        "espnName": "1. FC Union Berlin",
-        "espnId": "598",
-        "comunioName": "1. FC Union Berlin",
-        "comunioId": "109"
+        "espnName": "FC Cologne",
+        "espnId": "122",
+        "comunioName": "1. FC Köln",
+        "comunioId": "13"
       },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
+      "mappedOnlyLastName": false
     },
     {
       "lastName": "",
-      "espnId": "271701",
+      "espnId": "414315",
       "weight": "",
       "dateOfBirth": "",
       "firstName": "",
       "nationality": "",
       "jersey": "",
-      "name": "Hong Hyun-Seok",
+      "name": "Miguel Adje",
       "club": {
-        "espnName": "Mainz",
-        "espnId": "2950",
-        "comunioName": "1. FSV Mainz 05",
-        "comunioId": "18"
+        "espnName": "Borussia Dortmund",
+        "espnId": "124",
+        "comunioName": "Borussia Dortmund",
+        "comunioId": "5"
       },
       "comunioName": "",
       "position": "",
@@ -12427,18 +12944,18 @@
     },
     {
       "lastName": "",
-      "espnId": "157688",
+      "espnId": "276323",
       "weight": "",
       "dateOfBirth": "",
       "firstName": "",
       "nationality": "",
       "jersey": "",
-      "name": "Kim Min-Jae",
+      "name": "Jeong Woo-Yeong",
       "club": {
-        "espnName": "Bayern Munich",
-        "espnId": "132",
-        "comunioName": "FC Bayern München",
-        "comunioId": "1"
+        "espnName": "1. FC Union Berlin",
+        "espnId": "598",
+        "comunioName": "1. FC Union Berlin",
+        "comunioId": "109"
       },
       "comunioName": "",
       "position": "",
@@ -12449,13 +12966,7 @@
       "status": ""
     },
     {
-      "lastName": "",
       "espnId": "381471",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
       "name": "Louey Farhat",
       "club": {
         "espnName": "SC Freiburg",
@@ -12463,207 +12974,28 @@
         "comunioName": "SC Freiburg",
         "comunioId": "21"
       },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
+      "mappedOnlyLastName": false
     },
     {
-      "lastName": "",
-      "espnId": "387472",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Berkay Yilmaz",
+      "espnId": "399219",
+      "name": "Luka Djuric",
       "club": {
-        "espnName": "SC Freiburg",
-        "espnId": "126",
-        "comunioName": "SC Freiburg",
-        "comunioId": "21"
+        "espnName": "SC Paderborn 07",
+        "espnId": "3307",
+        "comunioName": "SC Paderborn 07",
+        "comunioId": "81"
       },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
+      "mappedOnlyLastName": false
     },
     {
       "lastName": "",
-      "espnId": "413775",
+      "espnId": "414315",
       "weight": "",
       "dateOfBirth": "",
       "firstName": "",
       "nationality": "",
       "jersey": "",
-      "name": "Duje Sliskovic",
-      "club": {
-        "espnName": "1. FC Union Berlin",
-        "espnId": "598",
-        "comunioName": "1. FC Union Berlin",
-        "comunioId": "109"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "416636",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Ayoube Amaimouni",
-      "club": {
-        "espnName": "Eintracht Frankfurt",
-        "espnId": "125",
-        "comunioName": "Eintracht Frankfurt",
-        "comunioId": "9"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "276323",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Jeong Woo-Yeong",
-      "club": {
-        "espnName": "1. FC Union Berlin",
-        "espnId": "598",
-        "comunioName": "1. FC Union Berlin",
-        "comunioId": "109"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "276323",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Jeong Woo-Yeong",
-      "club": {
-        "espnName": "1. FC Union Berlin",
-        "espnId": "598",
-        "comunioName": "1. FC Union Berlin",
-        "comunioId": "109"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "3115345",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Jason-Dean Bissi Mouelle",
-      "club": {
-        "espnName": "Hamburg SV",
-        "espnId": "127",
-        "comunioName": "Hamburger SV",
-        "comunioId": "4"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "387472",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Berkay Yilmaz",
-      "club": {
-        "espnName": "SC Freiburg",
-        "espnId": "126",
-        "comunioName": "SC Freiburg",
-        "comunioId": "21"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "376559",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Maximilian Herwerth",
-      "club": {
-        "espnName": "VfB Stuttgart",
-        "espnId": "134",
-        "comunioName": "VfB Stuttgart",
-        "comunioId": "14"
-      },
-      "comunioName": "",
-      "position": "",
-      "shortName": "",
-      "comunioId": "",
-      "mappedOnlyLastName": false,
-      "height": "",
-      "status": ""
-    },
-    {
-      "lastName": "",
-      "espnId": "3102556",
-      "weight": "",
-      "dateOfBirth": "",
-      "firstName": "",
-      "nationality": "",
-      "jersey": "",
-      "name": "Jan-Luca Riedl",
+      "name": "Miguel Adje",
       "club": {
         "espnName": "Borussia Dortmund",
         "espnId": "124",
@@ -12703,18 +13035,18 @@
     },
     {
       "lastName": "",
-      "espnId": "332429",
+      "espnId": "3115345",
       "weight": "",
       "dateOfBirth": "",
       "firstName": "",
       "nationality": "",
       "jersey": "",
-      "name": "Emil Höjlund",
+      "name": "Jason-Dean Bissi Mouelle",
       "club": {
-        "espnName": "Schalke 04",
-        "espnId": "133",
-        "comunioName": "FC Schalke 04",
-        "comunioId": "10"
+        "espnName": "Hamburg SV",
+        "espnId": "127",
+        "comunioName": "Hamburger SV",
+        "comunioId": "4"
       },
       "comunioName": "",
       "position": "",
@@ -12726,18 +13058,41 @@
     },
     {
       "lastName": "",
-      "espnId": "399219",
+      "espnId": "283683",
       "weight": "",
       "dateOfBirth": "",
       "firstName": "",
       "nationality": "",
       "jersey": "",
-      "name": "Luka Djuric",
+      "name": "Tom Krauss",
       "club": {
-        "espnName": "SC Paderborn 07",
-        "espnId": "3307",
-        "comunioName": "SC Paderborn 07",
-        "comunioId": "81"
+        "espnName": "FC Cologne",
+        "espnId": "122",
+        "comunioName": "1. FC Köln",
+        "comunioId": "13"
+      },
+      "comunioName": "",
+      "position": "",
+      "shortName": "",
+      "comunioId": "",
+      "mappedOnlyLastName": false,
+      "height": "",
+      "status": ""
+    },
+    {
+      "lastName": "",
+      "espnId": "237224",
+      "weight": "",
+      "dateOfBirth": "",
+      "firstName": "",
+      "nationality": "",
+      "jersey": "",
+      "name": "Hwang Hee-Chan",
+      "club": {
+        "espnName": "Schalke 04",
+        "espnId": "133",
+        "comunioName": "FC Schalke 04",
+        "comunioId": "10"
       },
       "comunioName": "",
       "position": "",
@@ -12748,5 +13103,5 @@
       "status": ""
     }
   ],
-  "mappedOnlyLastName": 0
+  "mappedOnlyLastName": 2
 }
