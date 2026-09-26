@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "26.09.2026 10:00:08",
+  "lastUpdate": "26.09.2026 13:18:02",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -6861,14 +6861,488 @@
     },
     {
       "date": "26.09.2026",
-      "news": [{
-        "date": "26.09.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Konaté\",\"price\":660000,\"buyerId\":\"13654613\",\"playerValue\":770000,\"playerId\":\"34309\",\"buyer\":\"Christoph\"}",
-        "id": "966728759",
-        "playerId": "34309"
-      }]
+      "news": [
+        {
+          "date": "26.09.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Konaté\",\"price\":660000,\"buyerId\":\"13654613\",\"playerValue\":770000,\"playerId\":\"34309\",\"buyer\":\"Christoph\"}",
+          "id": "966728759",
+          "playerId": "34309"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Gerry\",\"sellerId\":\"13830745\",\"playerName\":\"Nguefack\",\"price\":1621600,\"buyerId\":\"1\",\"playerValue\":1620000,\"playerId\":\"34501\",\"buyer\":\"Computer\"}",
+          "id": "966728759",
+          "playerId": "34501"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Andrik Markgraf (34214) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34214"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jamal Musiala (33236) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33236"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jarzinho Malanga (34074) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34074"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Dan-Axel Zagadou (32773) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "32773"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Nicolas Kühn (32771) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "32771"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Enzo Leopold (34435) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34435"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Dominik Kohr (31959) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "31959"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Silas (33247) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33247"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Dejan Ljubičić (33453) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33453"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Emil Højlund (34389) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34389"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Anton Donkor (32663) ist jetzt NICHT_IM_KADER",
+          "id": "0",
+          "playerId": "32663"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Max Grüger (34380) ist jetzt NICHT_IM_KADER",
+          "id": "0",
+          "playerId": "34380"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Luis Seifert (34393) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34393"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Guéla Doué (34520) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34520"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Tim Breithaupt (33808) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "33808"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Emre Can (31935) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "31935"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Giannis Konstantelias (34503) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34503"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jens Stage (33640) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33640"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Justin Njinmah (33687) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33687"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Keke Topp (33741) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33741"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Albert Grønbæk (34337) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34337"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Assan Ouédraogo (33991) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33991"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Marc Guiu (34515) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34515"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Timur Gayret (34409) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34409"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Marcel Hoffmeier (34403) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34403"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Florent Muslija (33008) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33008"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Timo Hübers (32744) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "32744"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Alessio Castro-Montes (34287) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34287"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (33296) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33296"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (34141) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34141"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (32364) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32364"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (34069) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34069"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (34221) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34221"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (32800) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32800"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (33164) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33164"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (32311) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32311"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (33720) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33720"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (34059) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34059"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (33564) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33564"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (33969) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33969"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (34416) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34416"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (34042) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34042"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (33557) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33557"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (33796) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33796"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (34203) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34203"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (33478) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33478"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (33353) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33353"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (34351) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34351"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (34350) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34350"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (32694) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32694"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (34311) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34311"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (34399) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34399"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (34112) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34112"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (32693) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32693"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (32977) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32977"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (34517) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34517"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (34439) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34439"
+        },
+        {
+          "date": "26.09.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (33669) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33669"
+        }
+      ]
     },
     {
       "date": "26.08.2026",
