@@ -60,22 +60,6 @@
       "club": "FC Schalke 04",
       "status": "NICHT_IM_KADER"
     },
-    "34503": {
-      "reason": "",
-      "lastNewsText": "BVB bangt um Konstantelias",
-      "ligainsiderPlayerId": "25767",
-      "playerName": "Giannis Konstantelias",
-      "statusChangeString": "26.09.2026",
-      "sinceTimestamp": "2026-08-28T22:00:00Z",
-      "sinceString": "4 Wochen",
-      "statusChangeTimestamp": "2026-09-25T22:00:00Z",
-      "comunioPlayerId": "34503",
-      "playerLink": "https://www.ligainsider.de/giannis-konstantelias_25767/",
-      "lastNewsLink": "https://www.ligainsider.de/giannis-konstantelias_25767/bvb-bangt-um-konstantelias-417200/",
-      "quelle": "ligainsider",
-      "club": "Borussia Dortmund",
-      "status": "VERLETZT"
-    },
     "34448": {
       "comunioPlayerId": "34448",
       "reason": "",
@@ -226,22 +210,6 @@
       "sinceString": "",
       "status": "AUFBAUTRAINING"
     },
-    "34520": {
-      "reason": "Muskelverletzung Wade",
-      "lastNewsText": "",
-      "ligainsiderPlayerId": "35433",
-      "playerName": "Guéla Doué",
-      "statusChangeString": "26.09.2026",
-      "sinceTimestamp": "2026-09-15T22:00:00Z",
-      "sinceString": "1 Woche und 3 Tagen",
-      "statusChangeTimestamp": "2026-09-25T22:00:00Z",
-      "comunioPlayerId": "34520",
-      "playerLink": "https://www.ligainsider.de/guela-doue_35433/",
-      "lastNewsLink": "",
-      "quelle": "ligainsider",
-      "club": "Bayer 04 Leverkusen",
-      "status": "VERLETZT"
-    },
     "33991": {
       "reason": "",
       "lastNewsText": "Ouédraogo wohl erst im neuen Jahr zurück",
@@ -351,20 +319,6 @@
       "quelle": "ligainsider",
       "club": "1. FC Köln",
       "status": "VERLETZT"
-    },
-    "34526": {
-      "comunioPlayerId": "34526",
-      "reason": "",
-      "lastNewsText": "",
-      "playerLink": "",
-      "ligainsiderPlayerId": "",
-      "playerName": "",
-      "statusChangeString": "",
-      "lastNewsLink": "",
-      "quelle": "comunio",
-      "club": "",
-      "sinceString": "",
-      "status": "NICHT_IM_KADER"
     },
     "34393": {
       "reason": "",
@@ -540,22 +494,6 @@
       "club": "SV Werder Bremen",
       "status": "VERLETZT"
     },
-    "32771": {
-      "reason": "Muskelbündelriss",
-      "lastNewsText": "",
-      "ligainsiderPlayerId": "13968",
-      "playerName": "Nicolas Kühn",
-      "statusChangeString": "26.09.2026",
-      "sinceTimestamp": "2026-09-05T22:00:00Z",
-      "sinceString": "2 Wochen und 6 Tagen",
-      "statusChangeTimestamp": "2026-09-25T22:00:00Z",
-      "comunioPlayerId": "32771",
-      "playerLink": "https://www.ligainsider.de/nicolas-kuehn_13968/",
-      "lastNewsLink": "",
-      "quelle": "ligainsider",
-      "club": "Borussia Mönchengladbach",
-      "status": "VERLETZT"
-    },
     "34012": {
       "comunioPlayerId": "34012",
       "reason": "",
@@ -585,25 +523,9 @@
       "quelle": "ligainsider",
       "club": "SC Freiburg",
       "status": "VERLETZT"
-    },
-    "34515": {
-      "reason": "",
-      "lastNewsText": "",
-      "ligainsiderPlayerId": "36753",
-      "playerName": "Marc Guiu",
-      "statusChangeString": "26.09.2026",
-      "sinceTimestamp": "2026-09-14T22:00:00Z",
-      "sinceString": "1 Woche und 4 Tagen",
-      "statusChangeTimestamp": "2026-09-25T22:00:00Z",
-      "comunioPlayerId": "34515",
-      "playerLink": "https://www.ligainsider.de/marc-guiu_36753/",
-      "lastNewsLink": "",
-      "quelle": "ligainsider",
-      "club": "RB Leipzig",
-      "status": "VERLETZT"
     }
   },
-  "lastUpdate": "2026-09-26T13:14:28.123456789Z",
+  "lastUpdate": "2026-09-27T08:00:59.253815299Z",
   "history": {
     "33808": [{
       "reason": "",
@@ -651,22 +573,40 @@
       "club": "",
       "status": "NICHT_IM_KADER"
     }],
-    "34503": [{
-      "reason": "",
-      "lastNewsText": "BVB bangt um Konstantelias",
-      "ligainsiderPlayerId": "25767",
-      "playerName": "Giannis Konstantelias",
-      "statusChangeString": "26.09.2026",
-      "sinceTimestamp": "2026-08-28T22:00:00Z",
-      "sinceString": "4 Wochen",
-      "statusChangeTimestamp": "2026-09-25T22:00:00Z",
-      "comunioPlayerId": "34503",
-      "playerLink": "https://www.ligainsider.de/giannis-konstantelias_25767/",
-      "lastNewsLink": "https://www.ligainsider.de/giannis-konstantelias_25767/bvb-bangt-um-konstantelias-417200/",
-      "quelle": "ligainsider",
-      "club": "Borussia Dortmund",
-      "status": "VERLETZT"
-    }],
+    "34503": [
+      {
+        "reason": "",
+        "lastNewsText": "BVB bangt um Konstantelias",
+        "ligainsiderPlayerId": "25767",
+        "playerName": "Giannis Konstantelias",
+        "statusChangeString": "26.09.2026",
+        "sinceTimestamp": "2026-08-28T22:00:00Z",
+        "sinceString": "4 Wochen",
+        "statusChangeTimestamp": "2026-09-25T22:00:00Z",
+        "comunioPlayerId": "34503",
+        "playerLink": "https://www.ligainsider.de/giannis-konstantelias_25767/",
+        "lastNewsLink": "https://www.ligainsider.de/giannis-konstantelias_25767/bvb-bangt-um-konstantelias-417200/",
+        "quelle": "ligainsider",
+        "club": "Borussia Dortmund",
+        "status": "VERLETZT"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "BVB bangt um Konstantelias",
+        "ligainsiderPlayerId": "25767",
+        "playerName": "Giannis Konstantelias",
+        "statusChangeString": "27.09.2026",
+        "sinceTimestamp": "2026-08-28T22:00:00Z",
+        "sinceString": "4 Wochen",
+        "statusChangeTimestamp": "2026-09-26T22:00:00Z",
+        "comunioPlayerId": "34503",
+        "playerLink": "https://www.ligainsider.de/giannis-konstantelias_25767/",
+        "lastNewsLink": "https://www.ligainsider.de/giannis-konstantelias_25767/bvb-bangt-um-konstantelias-417200/",
+        "quelle": "ligainsider",
+        "club": "Borussia Dortmund",
+        "status": "VERLETZT"
+      }
+    ],
     "32364": [{
       "reason": "",
       "lastNewsText": "",
@@ -1035,22 +975,40 @@
       "club": "",
       "status": "VERLETZT"
     }],
-    "34520": [{
-      "reason": "Muskelverletzung Wade",
-      "lastNewsText": "",
-      "ligainsiderPlayerId": "35433",
-      "playerName": "Guéla Doué",
-      "statusChangeString": "26.09.2026",
-      "sinceTimestamp": "2026-09-15T22:00:00Z",
-      "sinceString": "1 Woche und 3 Tagen",
-      "statusChangeTimestamp": "2026-09-25T22:00:00Z",
-      "comunioPlayerId": "34520",
-      "playerLink": "https://www.ligainsider.de/guela-doue_35433/",
-      "lastNewsLink": "",
-      "quelle": "ligainsider",
-      "club": "Bayer 04 Leverkusen",
-      "status": "VERLETZT"
-    }],
+    "34520": [
+      {
+        "reason": "Muskelverletzung Wade",
+        "lastNewsText": "",
+        "ligainsiderPlayerId": "35433",
+        "playerName": "Guéla Doué",
+        "statusChangeString": "26.09.2026",
+        "sinceTimestamp": "2026-09-15T22:00:00Z",
+        "sinceString": "1 Woche und 3 Tagen",
+        "statusChangeTimestamp": "2026-09-25T22:00:00Z",
+        "comunioPlayerId": "34520",
+        "playerLink": "https://www.ligainsider.de/guela-doue_35433/",
+        "lastNewsLink": "",
+        "quelle": "ligainsider",
+        "club": "Bayer 04 Leverkusen",
+        "status": "VERLETZT"
+      },
+      {
+        "reason": "Muskelverletzung Wade",
+        "lastNewsText": "",
+        "ligainsiderPlayerId": "35433",
+        "playerName": "Guéla Doué",
+        "statusChangeString": "27.09.2026",
+        "sinceTimestamp": "2026-09-15T22:00:00Z",
+        "sinceString": "1 Woche und 3 Tagen",
+        "statusChangeTimestamp": "2026-09-26T22:00:00Z",
+        "comunioPlayerId": "34520",
+        "playerLink": "https://www.ligainsider.de/guela-doue_35433/",
+        "lastNewsLink": "",
+        "quelle": "ligainsider",
+        "club": "Bayer 04 Leverkusen",
+        "status": "VERLETZT"
+      }
+    ],
     "33353": [{
       "reason": "",
       "lastNewsText": "",
@@ -1129,6 +1087,21 @@
       "quelle": "ligainsider",
       "club": "1. FC Köln",
       "status": "VERLETZT"
+    }],
+    "34526": [{
+      "reason": "",
+      "lastNewsText": "",
+      "ligainsiderPlayerId": "",
+      "playerName": "",
+      "statusChangeString": "27.09.2026",
+      "sinceString": "",
+      "statusChangeTimestamp": "2026-09-26T22:00:00Z",
+      "comunioPlayerId": "34526",
+      "playerLink": "",
+      "lastNewsLink": "",
+      "quelle": "comunio",
+      "club": "",
+      "status": "NICHT_IM_KADER"
     }],
     "34351": [{
       "reason": "",
@@ -1255,22 +1228,40 @@
       "club": "",
       "status": "VERLETZT"
     }],
-    "32771": [{
-      "reason": "Muskelbündelriss",
-      "lastNewsText": "",
-      "ligainsiderPlayerId": "13968",
-      "playerName": "Nicolas Kühn",
-      "statusChangeString": "26.09.2026",
-      "sinceTimestamp": "2026-09-05T22:00:00Z",
-      "sinceString": "2 Wochen und 6 Tagen",
-      "statusChangeTimestamp": "2026-09-25T22:00:00Z",
-      "comunioPlayerId": "32771",
-      "playerLink": "https://www.ligainsider.de/nicolas-kuehn_13968/",
-      "lastNewsLink": "",
-      "quelle": "ligainsider",
-      "club": "Borussia Mönchengladbach",
-      "status": "VERLETZT"
-    }],
+    "32771": [
+      {
+        "reason": "Muskelbündelriss",
+        "lastNewsText": "",
+        "ligainsiderPlayerId": "13968",
+        "playerName": "Nicolas Kühn",
+        "statusChangeString": "26.09.2026",
+        "sinceTimestamp": "2026-09-05T22:00:00Z",
+        "sinceString": "2 Wochen und 6 Tagen",
+        "statusChangeTimestamp": "2026-09-25T22:00:00Z",
+        "comunioPlayerId": "32771",
+        "playerLink": "https://www.ligainsider.de/nicolas-kuehn_13968/",
+        "lastNewsLink": "",
+        "quelle": "ligainsider",
+        "club": "Borussia Mönchengladbach",
+        "status": "VERLETZT"
+      },
+      {
+        "reason": "Muskelbündelriss",
+        "lastNewsText": "",
+        "ligainsiderPlayerId": "13968",
+        "playerName": "Nicolas Kühn",
+        "statusChangeString": "27.09.2026",
+        "sinceTimestamp": "2026-09-05T22:00:00Z",
+        "sinceString": "2 Wochen und 6 Tagen",
+        "statusChangeTimestamp": "2026-09-26T22:00:00Z",
+        "comunioPlayerId": "32771",
+        "playerLink": "https://www.ligainsider.de/nicolas-kuehn_13968/",
+        "lastNewsLink": "",
+        "quelle": "ligainsider",
+        "club": "Borussia Mönchengladbach",
+        "status": "VERLETZT"
+      }
+    ],
     "34399": [{
       "reason": "",
       "lastNewsText": "",
@@ -1391,21 +1382,39 @@
       "club": "",
       "status": "VERLETZT"
     }],
-    "34515": [{
-      "reason": "",
-      "lastNewsText": "",
-      "ligainsiderPlayerId": "36753",
-      "playerName": "Marc Guiu",
-      "statusChangeString": "26.09.2026",
-      "sinceTimestamp": "2026-09-14T22:00:00Z",
-      "sinceString": "1 Woche und 4 Tagen",
-      "statusChangeTimestamp": "2026-09-25T22:00:00Z",
-      "comunioPlayerId": "34515",
-      "playerLink": "https://www.ligainsider.de/marc-guiu_36753/",
-      "lastNewsLink": "",
-      "quelle": "ligainsider",
-      "club": "RB Leipzig",
-      "status": "VERLETZT"
-    }]
+    "34515": [
+      {
+        "reason": "",
+        "lastNewsText": "",
+        "ligainsiderPlayerId": "36753",
+        "playerName": "Marc Guiu",
+        "statusChangeString": "26.09.2026",
+        "sinceTimestamp": "2026-09-14T22:00:00Z",
+        "sinceString": "1 Woche und 4 Tagen",
+        "statusChangeTimestamp": "2026-09-25T22:00:00Z",
+        "comunioPlayerId": "34515",
+        "playerLink": "https://www.ligainsider.de/marc-guiu_36753/",
+        "lastNewsLink": "",
+        "quelle": "ligainsider",
+        "club": "RB Leipzig",
+        "status": "VERLETZT"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "",
+        "ligainsiderPlayerId": "36753",
+        "playerName": "Marc Guiu",
+        "statusChangeString": "27.09.2026",
+        "sinceTimestamp": "2026-09-14T22:00:00Z",
+        "sinceString": "1 Woche und 4 Tagen",
+        "statusChangeTimestamp": "2026-09-26T22:00:00Z",
+        "comunioPlayerId": "34515",
+        "playerLink": "https://www.ligainsider.de/marc-guiu_36753/",
+        "lastNewsLink": "",
+        "quelle": "ligainsider",
+        "club": "RB Leipzig",
+        "status": "VERLETZT"
+      }
+    ]
   }
 }
