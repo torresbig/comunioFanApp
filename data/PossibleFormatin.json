@@ -19,21 +19,6 @@
         "playerId": "37195"
       },
       {
-        "comunioPlayerId": "34236",
-        "playerLink": "https://www.ligainsider.de/han-noah-massengo_35978/",
-        "playerName": "Massengo",
-        "clubId": "21",
-        "playerNote": "3,5",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "35978"
-      },
-      {
         "comunioPlayerId": "31958",
         "playerLink": "https://www.ligainsider.de/michael-gregoritsch_1512/",
         "playerName": "Gregoritsch",
@@ -52,76 +37,6 @@
           {"10": "SUBIN"}
         ],
         "playerId": "1512"
-      },
-      {
-        "comunioPlayerId": "32546",
-        "playerLink": "https://www.ligainsider.de/marius-wolf_5670/",
-        "playerName": "Wolf",
-        "clubId": "21",
-        "playerNote": "3,4",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "5670"
-      },
-      {
-        "comunioPlayerId": "34063",
-        "playerLink": "https://www.ligainsider.de/alexis-claude-maurice_20630/",
-        "playerName": "Claude-Maurice",
-        "clubId": "21",
-        "playerNote": "3,7",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "NOTINTEAM"},
-          {"3": "SUBIN"},
-          {"4": "SUBIN"},
-          {"5": "SUBIN"},
-          {"6": "NONE"},
-          {"7": "START"},
-          {"8": "NOTINTEAM"},
-          {"9": "NOTINTEAM"},
-          {"10": "NOTINTEAM"},
-          {"11": "NONE"},
-          {"12": "BANK"},
-          {"13": "START"},
-          {"14": "START"},
-          {"15": "BANK"}
-        ],
-        "playerId": "20630"
-      },
-      {
-        "comunioPlayerId": "33997",
-        "playerLink": "https://www.ligainsider.de/fabian-rieder_25579/",
-        "playerName": "Rieder",
-        "clubId": "21",
-        "playerNote": "2,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "25579"
-      },
-      {
-        "comunioPlayerId": "34057",
-        "playerLink": "https://www.ligainsider.de/chrislain-matsima_26695/",
-        "playerName": "Matsima",
-        "clubId": "21",
-        "playerNote": "2,6",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "26695"
       },
       {
         "comunioPlayerId": "34106",
@@ -174,6 +89,51 @@
         "playerId": "24864"
       },
       {
+        "comunioPlayerId": "34236",
+        "playerLink": "https://www.ligainsider.de/han-noah-massengo_35978/",
+        "playerName": "Massengo",
+        "clubId": "21",
+        "playerNote": "3,5",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "35978"
+      },
+      {
+        "comunioPlayerId": "32546",
+        "playerLink": "https://www.ligainsider.de/marius-wolf_5670/",
+        "playerName": "Wolf",
+        "clubId": "21",
+        "playerNote": "3,4",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "5670"
+      },
+      {
+        "comunioPlayerId": "33997",
+        "playerLink": "https://www.ligainsider.de/fabian-rieder_25579/",
+        "playerName": "Rieder",
+        "clubId": "21",
+        "playerNote": "2,8",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "25579"
+      },
+      {
         "comunioPlayerId": "32877",
         "playerLink": "https://www.ligainsider.de/finn-dahmen_18728/",
         "playerName": "Dahmen",
@@ -187,9 +147,79 @@
           {"5": "START"}
         ],
         "playerId": "18728"
+      },
+      {
+        "comunioPlayerId": "34063",
+        "playerLink": "https://www.ligainsider.de/alexis-claude-maurice_20630/",
+        "playerName": "Claude-Maurice",
+        "clubId": "21",
+        "playerNote": "3,7",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "NOTINTEAM"},
+          {"3": "SUBIN"},
+          {"4": "SUBIN"},
+          {"5": "SUBIN"},
+          {"6": "NONE"},
+          {"7": "START"},
+          {"8": "NOTINTEAM"},
+          {"9": "NOTINTEAM"},
+          {"10": "NOTINTEAM"},
+          {"11": "NONE"},
+          {"12": "BANK"},
+          {"13": "START"},
+          {"14": "START"},
+          {"15": "BANK"}
+        ],
+        "playerId": "20630"
+      },
+      {
+        "comunioPlayerId": "34057",
+        "playerLink": "https://www.ligainsider.de/chrislain-matsima_26695/",
+        "playerName": "Matsima",
+        "clubId": "21",
+        "playerNote": "2,6",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "26695"
       }
     ],
     "13": [
+      {
+        "comunioPlayerId": "34139",
+        "playerLink": "https://www.ligainsider.de/said-el-mala_38546/",
+        "playerName": "S. El Mala",
+        "clubId": "15",
+        "playerNote": "4,0",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "NOTINTEAM"},
+          {"4": "SUBIN"},
+          {"5": "START"}
+        ],
+        "playerId": "38546"
+      },
+      {
+        "comunioPlayerId": "34469",
+        "playerLink": "https://www.ligainsider.de/luka-lochoshvili_23949/",
+        "playerName": "Lochoshvili",
+        "clubId": "15",
+        "playerNote": "4,1",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "23949"
+      },
       {
         "comunioPlayerId": "34323",
         "playerLink": "https://www.ligainsider.de/jahmai-simpson-pusey_38128/",
@@ -206,19 +236,54 @@
         "playerId": "38128"
       },
       {
-        "comunioPlayerId": "34139",
-        "playerLink": "https://www.ligainsider.de/said-el-mala_38546/",
-        "playerName": "S. El Mala",
+        "comunioPlayerId": "32356",
+        "playerLink": "https://www.ligainsider.de/marvin-schwaebe_2626/",
+        "playerName": "Schwäbe",
         "clubId": "15",
-        "playerNote": "4,0",
+        "playerNote": "3,1",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
-          {"3": "NOTINTEAM"},
-          {"4": "SUBIN"},
+          {"3": "START"},
+          {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "38546"
+        "playerId": "2626"
+      },
+      {
+        "comunioPlayerId": "33263",
+        "playerLink": "https://www.ligainsider.de/ragnar-ache_23720/",
+        "playerName": "Ache",
+        "clubId": "15",
+        "playerNote": "3,8",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "SUBIN"},
+          {"5": "SUBIN"},
+          {"6": "NONE"},
+          {"7": "SUBIN"},
+          {"8": "NOTINTEAM"},
+          {"9": "START"},
+          {"10": "START"}
+        ],
+        "playerId": "23720"
+      },
+      {
+        "comunioPlayerId": "33157",
+        "playerLink": "https://www.ligainsider.de/ellyes-skhiri_20776/",
+        "playerName": "Skhiri",
+        "clubId": "15",
+        "playerNote": "3,5",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "SUBIN"},
+          {"3": "SUBIN"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "20776"
       },
       {
         "comunioPlayerId": "33130",
@@ -239,21 +304,6 @@
           {"10": "SUBIN"}
         ],
         "playerId": "20244"
-      },
-      {
-        "comunioPlayerId": "32356",
-        "playerLink": "https://www.ligainsider.de/marvin-schwaebe_2626/",
-        "playerName": "Schwäbe",
-        "clubId": "15",
-        "playerNote": "3,1",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "2626"
       },
       {
         "comunioPlayerId": "34241",
@@ -291,41 +341,6 @@
         "playerId": "18217"
       },
       {
-        "comunioPlayerId": "33157",
-        "playerLink": "https://www.ligainsider.de/ellyes-skhiri_20776/",
-        "playerName": "Skhiri",
-        "clubId": "15",
-        "playerNote": "3,5",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "SUBIN"},
-          {"3": "SUBIN"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "20776"
-      },
-      {
-        "comunioPlayerId": "33263",
-        "playerLink": "https://www.ligainsider.de/ragnar-ache_23720/",
-        "playerName": "Ache",
-        "clubId": "15",
-        "playerNote": "3,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "SUBIN"},
-          {"5": "SUBIN"},
-          {"6": "NONE"},
-          {"7": "SUBIN"},
-          {"8": "NOTINTEAM"},
-          {"9": "START"},
-          {"10": "START"}
-        ],
-        "playerId": "23720"
-      },
-      {
         "comunioPlayerId": "34512",
         "playerLink": "https://www.ligainsider.de/mikey-moore_38448/",
         "playerName": "Moore",
@@ -354,24 +369,24 @@
           {"5": "START"}
         ],
         "playerId": "16759"
-      },
+      }
+    ],
+    "14": [
       {
-        "comunioPlayerId": "34469",
-        "playerLink": "https://www.ligainsider.de/luka-lochoshvili_23949/",
-        "playerName": "Lochoshvili",
-        "clubId": "15",
-        "playerNote": "4,1",
+        "comunioPlayerId": "32858",
+        "playerLink": "https://www.ligainsider.de/chris-fuehrich_18542/",
+        "playerName": "Führich",
+        "clubId": "12",
+        "playerNote": "3,8",
         "last5MatchStatus": [
           {"1": "NONE"},
-          {"2": "START"},
+          {"2": "NOTINTEAM"},
           {"3": "START"},
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "23949"
-      }
-    ],
-    "14": [
+        "playerId": "18542"
+      },
       {
         "comunioPlayerId": "33747",
         "playerLink": "https://www.ligainsider.de/dennis-seimen_35226/",
@@ -388,51 +403,6 @@
         "playerId": "35226"
       },
       {
-        "comunioPlayerId": "33437",
-        "playerLink": "https://www.ligainsider.de/angelo-stiller_20766/",
-        "playerName": "Stiller",
-        "clubId": "12",
-        "playerNote": "3,9",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "20766"
-      },
-      {
-        "comunioPlayerId": "32492",
-        "playerLink": "https://www.ligainsider.de/grischa-proemel_5816/",
-        "playerName": "Prömel",
-        "clubId": "12",
-        "playerNote": "3,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "5816"
-      },
-      {
-        "comunioPlayerId": "32509",
-        "playerLink": "https://www.ligainsider.de/maximilian-mittelstaedt_6206/",
-        "playerName": "Mittelstädt",
-        "clubId": "12",
-        "playerNote": "2,5",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "6206"
-      },
-      {
         "comunioPlayerId": "34115",
         "playerLink": "https://www.ligainsider.de/finn-jeltsch_36816/",
         "playerName": "Jeltsch",
@@ -446,36 +416,6 @@
           {"5": "START"}
         ],
         "playerId": "36816"
-      },
-      {
-        "comunioPlayerId": "33552",
-        "playerLink": "https://www.ligainsider.de/julian-chabot_12583/",
-        "playerName": "Chabot",
-        "clubId": "12",
-        "playerNote": "3,0",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "12583"
-      },
-      {
-        "comunioPlayerId": "32858",
-        "playerLink": "https://www.ligainsider.de/chris-fuehrich_18542/",
-        "playerName": "Führich",
-        "clubId": "12",
-        "playerNote": "3,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "NOTINTEAM"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "18542"
       },
       {
         "comunioPlayerId": "32880",
@@ -498,21 +438,6 @@
         "playerId": "18427"
       },
       {
-        "comunioPlayerId": "33832",
-        "playerLink": "https://www.ligainsider.de/deniz-undav_19154/",
-        "playerName": "Undav",
-        "clubId": "12",
-        "playerNote": "4,6",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "SUBIN"},
-          {"5": "START"}
-        ],
-        "playerId": "19154"
-      },
-      {
         "comunioPlayerId": "33657",
         "playerLink": "https://www.ligainsider.de/dzenan-pejcinovic_26158/",
         "playerName": "Pejčinović",
@@ -531,6 +456,81 @@
           {"10": "START"}
         ],
         "playerId": "26158"
+      },
+      {
+        "comunioPlayerId": "32509",
+        "playerLink": "https://www.ligainsider.de/maximilian-mittelstaedt_6206/",
+        "playerName": "Mittelstädt",
+        "clubId": "12",
+        "playerNote": "2,5",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "6206"
+      },
+      {
+        "comunioPlayerId": "32492",
+        "playerLink": "https://www.ligainsider.de/grischa-proemel_5816/",
+        "playerName": "Prömel",
+        "clubId": "12",
+        "playerNote": "3,8",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "5816"
+      },
+      {
+        "comunioPlayerId": "33832",
+        "playerLink": "https://www.ligainsider.de/deniz-undav_19154/",
+        "playerName": "Undav",
+        "clubId": "12",
+        "playerNote": "4,6",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "SUBIN"},
+          {"5": "START"}
+        ],
+        "playerId": "19154"
+      },
+      {
+        "comunioPlayerId": "33437",
+        "playerLink": "https://www.ligainsider.de/angelo-stiller_20766/",
+        "playerName": "Stiller",
+        "clubId": "12",
+        "playerNote": "3,9",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "20766"
+      },
+      {
+        "comunioPlayerId": "33552",
+        "playerLink": "https://www.ligainsider.de/julian-chabot_12583/",
+        "playerName": "Chabot",
+        "clubId": "12",
+        "playerNote": "3,0",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "12583"
       },
       {
         "comunioPlayerId": "34288",
@@ -555,31 +555,11 @@
     ],
     "18": [
       {
-        "comunioPlayerId": "31774",
-        "playerLink": "https://www.ligainsider.de/alexander-schwolow_1781/",
-        "playerName": "Schwolow",
+        "comunioPlayerId": "32395",
+        "playerLink": "https://www.ligainsider.de/nadiem-amiri_5815/",
+        "playerName": "Amiri",
         "clubId": "17",
-        "playerNote": "3,0",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "BANK"},
-          {"3": "START"},
-          {"4": "BANK"},
-          {"5": "START"},
-          {"6": "NONE"},
-          {"7": "START"},
-          {"8": "NOTINTEAM"},
-          {"9": "START"},
-          {"10": "NOTINTEAM"}
-        ],
-        "playerId": "1781"
-      },
-      {
-        "comunioPlayerId": "33577",
-        "playerLink": "https://www.ligainsider.de/anthony-caci_26102/",
-        "playerName": "Caci",
-        "clubId": "17",
-        "playerNote": "3,5",
+        "playerNote": "3,3",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
@@ -587,22 +567,7 @@
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "26102"
-      },
-      {
-        "comunioPlayerId": "34009",
-        "playerLink": "https://www.ligainsider.de/kaishu-sano_36958/",
-        "playerName": "Kaishu",
-        "clubId": "17",
-        "playerNote": "2,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "36958"
+        "playerId": "5815"
       },
       {
         "comunioPlayerId": "32178",
@@ -620,11 +585,11 @@
         "playerId": "2723"
       },
       {
-        "comunioPlayerId": "33070",
-        "playerLink": "https://www.ligainsider.de/phillip-tietz_7480/",
-        "playerName": "Tietz",
+        "comunioPlayerId": "34009",
+        "playerLink": "https://www.ligainsider.de/kaishu-sano_36958/",
+        "playerName": "Kaishu",
         "clubId": "17",
-        "playerNote": "2,6",
+        "playerNote": "2,8",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
@@ -632,37 +597,7 @@
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "7480"
-      },
-      {
-        "comunioPlayerId": "32395",
-        "playerLink": "https://www.ligainsider.de/nadiem-amiri_5815/",
-        "playerName": "Amiri",
-        "clubId": "17",
-        "playerNote": "3,3",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "5815"
-      },
-      {
-        "comunioPlayerId": "33135",
-        "playerLink": "https://www.ligainsider.de/sheraldo-becker_20640/",
-        "playerName": "Becker",
-        "clubId": "17",
-        "playerNote": "3,0",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "20640"
+        "playerId": "36958"
       },
       {
         "comunioPlayerId": "33356",
@@ -700,11 +635,11 @@
         "playerId": "38608"
       },
       {
-        "comunioPlayerId": "34454",
-        "playerLink": "https://www.ligainsider.de/fabio-gruber_26579/",
-        "playerName": "Gruber",
+        "comunioPlayerId": "33070",
+        "playerLink": "https://www.ligainsider.de/phillip-tietz_7480/",
+        "playerName": "Tietz",
         "clubId": "17",
-        "playerNote": "3,4",
+        "playerNote": "2,6",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
@@ -712,7 +647,7 @@
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "26579"
+        "playerId": "7480"
       },
       {
         "comunioPlayerId": "32786",
@@ -728,9 +663,109 @@
           {"5": "START"}
         ],
         "playerId": "12798"
+      },
+      {
+        "comunioPlayerId": "34454",
+        "playerLink": "https://www.ligainsider.de/fabio-gruber_26579/",
+        "playerName": "Gruber",
+        "clubId": "17",
+        "playerNote": "3,4",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "26579"
+      },
+      {
+        "comunioPlayerId": "33577",
+        "playerLink": "https://www.ligainsider.de/anthony-caci_26102/",
+        "playerName": "Caci",
+        "clubId": "17",
+        "playerNote": "3,5",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "26102"
+      },
+      {
+        "comunioPlayerId": "33135",
+        "playerLink": "https://www.ligainsider.de/sheraldo-becker_20640/",
+        "playerName": "Becker",
+        "clubId": "17",
+        "playerNote": "3,0",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "20640"
+      },
+      {
+        "comunioPlayerId": "31774",
+        "playerLink": "https://www.ligainsider.de/alexander-schwolow_1781/",
+        "playerName": "Schwolow",
+        "clubId": "17",
+        "playerNote": "3,0",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "BANK"},
+          {"3": "START"},
+          {"4": "BANK"},
+          {"5": "START"},
+          {"6": "NONE"},
+          {"7": "START"},
+          {"8": "NOTINTEAM"},
+          {"9": "START"},
+          {"10": "NOTINTEAM"}
+        ],
+        "playerId": "1781"
       }
     ],
     "1": [
+      {
+        "comunioPlayerId": "34014",
+        "playerLink": "https://www.ligainsider.de/michael-olise_37170/",
+        "playerName": "Olise",
+        "clubId": "1",
+        "playerNote": "2,0",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "SUBIN"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "37170"
+      },
+      {
+        "comunioPlayerId": "32157",
+        "playerLink": "https://www.ligainsider.de/jonathan-tah_2385/",
+        "playerName": "Tah",
+        "clubId": "1",
+        "playerNote": "2,8",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "SUBIN"},
+          {"3": "START"},
+          {"4": "BANK"},
+          {"5": "START"},
+          {"6": "NONE"},
+          {"7": "START"},
+          {"8": "BANK"},
+          {"9": "START"},
+          {"10": "SUBIN"}
+        ],
+        "playerId": "2385"
+      },
       {
         "comunioPlayerId": "34466",
         "playerLink": "https://www.ligainsider.de/ismael-saibari_25609/",
@@ -755,86 +790,6 @@
           {"15": "BANK"}
         ],
         "playerId": "25609"
-      },
-      {
-        "comunioPlayerId": "32157",
-        "playerLink": "https://www.ligainsider.de/jonathan-tah_2385/",
-        "playerName": "Tah",
-        "clubId": "1",
-        "playerNote": "2,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "SUBIN"},
-          {"3": "START"},
-          {"4": "BANK"},
-          {"5": "START"},
-          {"6": "NONE"},
-          {"7": "START"},
-          {"8": "BANK"},
-          {"9": "START"},
-          {"10": "SUBIN"}
-        ],
-        "playerId": "2385"
-      },
-      {
-        "comunioPlayerId": "33838",
-        "playerLink": "https://www.ligainsider.de/harry-kane_4828/",
-        "playerName": "Kane",
-        "clubId": "1",
-        "playerNote": "2,9",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "SUBIN"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "4828"
-      },
-      {
-        "comunioPlayerId": "34254",
-        "playerLink": "https://www.ligainsider.de/luis-diaz_22566/",
-        "playerName": "Luis Díaz",
-        "clubId": "1",
-        "playerNote": "3,4",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "SUBIN"},
-          {"5": "START"}
-        ],
-        "playerId": "22566"
-      },
-      {
-        "comunioPlayerId": "32445",
-        "playerLink": "https://www.ligainsider.de/joshua-kimmich_5768/",
-        "playerName": "Kimmich",
-        "clubId": "1",
-        "playerNote": "2,3",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "SUBIN"},
-          {"5": "START"}
-        ],
-        "playerId": "5768"
-      },
-      {
-        "comunioPlayerId": "33854",
-        "playerLink": "https://www.ligainsider.de/aleksandar-pavlovic_35918/",
-        "playerName": "Pavlović",
-        "clubId": "1",
-        "playerNote": "2,4",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "35918"
       },
       {
         "comunioPlayerId": "33021",
@@ -872,6 +827,51 @@
         "playerId": "11541"
       },
       {
+        "comunioPlayerId": "34254",
+        "playerLink": "https://www.ligainsider.de/luis-diaz_22566/",
+        "playerName": "Luis Díaz",
+        "clubId": "1",
+        "playerNote": "3,4",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "SUBIN"},
+          {"5": "START"}
+        ],
+        "playerId": "22566"
+      },
+      {
+        "comunioPlayerId": "33854",
+        "playerLink": "https://www.ligainsider.de/aleksandar-pavlovic_35918/",
+        "playerName": "Pavlović",
+        "clubId": "1",
+        "playerNote": "2,4",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "35918"
+      },
+      {
+        "comunioPlayerId": "33838",
+        "playerLink": "https://www.ligainsider.de/harry-kane_4828/",
+        "playerName": "Kane",
+        "clubId": "1",
+        "playerNote": "2,9",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "SUBIN"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "4828"
+      },
+      {
         "comunioPlayerId": "33386",
         "playerLink": "https://www.ligainsider.de/josip-stanisic_20102/",
         "playerName": "Stanišić",
@@ -892,19 +892,19 @@
         "playerId": "20102"
       },
       {
-        "comunioPlayerId": "34014",
-        "playerLink": "https://www.ligainsider.de/michael-olise_37170/",
-        "playerName": "Olise",
+        "comunioPlayerId": "32445",
+        "playerLink": "https://www.ligainsider.de/joshua-kimmich_5768/",
+        "playerName": "Kimmich",
         "clubId": "1",
-        "playerNote": "2,0",
+        "playerNote": "2,3",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
-          {"3": "SUBIN"},
-          {"4": "START"},
+          {"3": "START"},
+          {"4": "SUBIN"},
           {"5": "START"}
         ],
-        "playerId": "37170"
+        "playerId": "5768"
       },
       {
         "comunioPlayerId": "30755",
@@ -944,36 +944,6 @@
         "playerId": "27518"
       },
       {
-        "comunioPlayerId": "32654",
-        "playerLink": "https://www.ligainsider.de/moritz-nicolas_6295/",
-        "playerName": "Nicolas",
-        "clubId": "5",
-        "playerNote": "3,4",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "6295"
-      },
-      {
-        "comunioPlayerId": "34342",
-        "playerLink": "https://www.ligainsider.de/hugo-bolin_37888/",
-        "playerName": "Bolin",
-        "clubId": "5",
-        "playerNote": "4,0",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "37888"
-      },
-      {
         "comunioPlayerId": "34470",
         "playerLink": "https://www.ligainsider.de/jan-leszczynski_38925/",
         "playerName": "Leszczyński",
@@ -994,6 +964,71 @@
         "playerId": "38925"
       },
       {
+        "comunioPlayerId": "34492",
+        "playerLink": "https://www.ligainsider.de/daiki-hashioka_36955/",
+        "playerName": "Hashioka",
+        "clubId": "5",
+        "playerNote": "4,8",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "NOTINTEAM"},
+          {"4": "NOTINTEAM"},
+          {"5": "SUBIN"},
+          {"6": "NONE"},
+          {"7": "SUBIN"},
+          {"8": "START"},
+          {"9": "START"},
+          {"10": "START"}
+        ],
+        "playerId": "36955"
+      },
+      {
+        "comunioPlayerId": "34187",
+        "playerLink": "https://www.ligainsider.de/kevin-diks_11591/",
+        "playerName": "Diks",
+        "clubId": "5",
+        "playerNote": "4,8",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "11591"
+      },
+      {
+        "comunioPlayerId": "33592",
+        "playerLink": "https://www.ligainsider.de/ko-itakura_27204/",
+        "playerName": "Itakura",
+        "clubId": "5",
+        "playerNote": "4,8",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "27204"
+      },
+      {
+        "comunioPlayerId": "32654",
+        "playerLink": "https://www.ligainsider.de/moritz-nicolas_6295/",
+        "playerName": "Nicolas",
+        "clubId": "5",
+        "playerNote": "3,4",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "6295"
+      },
+      {
         "comunioPlayerId": "33817",
         "playerLink": "https://www.ligainsider.de/franck-honorat_23248/",
         "playerName": "Honorat",
@@ -1012,6 +1047,36 @@
           {"10": "SUBIN"}
         ],
         "playerId": "23248"
+      },
+      {
+        "comunioPlayerId": "33978",
+        "playerLink": "https://www.ligainsider.de/philipp-sander_18612/",
+        "playerName": "Sander",
+        "clubId": "5",
+        "playerNote": "4,6",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "18612"
+      },
+      {
+        "comunioPlayerId": "34342",
+        "playerLink": "https://www.ligainsider.de/hugo-bolin_37888/",
+        "playerName": "Bolin",
+        "clubId": "5",
+        "playerNote": "4,0",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "37888"
       },
       {
         "comunioPlayerId": "32599",
@@ -1052,93 +1117,53 @@
           {"15": "START"}
         ],
         "playerId": "692"
-      },
-      {
-        "comunioPlayerId": "34492",
-        "playerLink": "https://www.ligainsider.de/daiki-hashioka_36955/",
-        "playerName": "Hashioka",
-        "clubId": "5",
-        "playerNote": "4,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "NOTINTEAM"},
-          {"4": "NOTINTEAM"},
-          {"5": "SUBIN"},
-          {"6": "NONE"},
-          {"7": "SUBIN"},
-          {"8": "START"},
-          {"9": "START"},
-          {"10": "START"}
-        ],
-        "playerId": "36955"
-      },
-      {
-        "comunioPlayerId": "33592",
-        "playerLink": "https://www.ligainsider.de/ko-itakura_27204/",
-        "playerName": "Itakura",
-        "clubId": "5",
-        "playerNote": "4,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "27204"
-      },
-      {
-        "comunioPlayerId": "34187",
-        "playerLink": "https://www.ligainsider.de/kevin-diks_11591/",
-        "playerName": "Diks",
-        "clubId": "5",
-        "playerNote": "4,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "11591"
-      },
-      {
-        "comunioPlayerId": "33978",
-        "playerLink": "https://www.ligainsider.de/philipp-sander_18612/",
-        "playerName": "Sander",
-        "clubId": "5",
-        "playerNote": "4,6",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "18612"
       }
     ],
     "4": [
       {
-        "comunioPlayerId": "32591",
-        "playerLink": "https://www.ligainsider.de/yussuf-poulsen_5765/",
-        "playerName": "Poulsen",
+        "comunioPlayerId": "32710",
+        "playerLink": "https://www.ligainsider.de/jordan-torunarigha_6513/",
+        "playerName": "Torunarigha",
         "clubId": "9",
-        "playerNote": "3,8",
+        "playerNote": "4,4",
         "last5MatchStatus": [
           {"1": "NONE"},
-          {"2": "SUBIN"},
-          {"3": "BANK"},
+          {"2": "START"},
+          {"3": "START"},
           {"4": "START"},
-          {"5": "SUBIN"},
-          {"6": "NONE"},
-          {"7": "SUBIN"},
-          {"8": "START"},
-          {"9": "SUBIN"},
-          {"10": "START"}
+          {"5": "START"}
         ],
-        "playerId": "5765"
+        "playerId": "6513"
+      },
+      {
+        "comunioPlayerId": "34233",
+        "playerLink": "https://www.ligainsider.de/nicolas-capaldo_26628/",
+        "playerName": "Capaldo",
+        "clubId": "9",
+        "playerNote": "4,0",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "26628"
+      },
+      {
+        "comunioPlayerId": "33164",
+        "playerLink": "https://www.ligainsider.de/sebastiaan-bornauw_18822/",
+        "playerName": "Bornauw",
+        "clubId": "9",
+        "playerNote": "5,0",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "NOTINTEAM"},
+          {"5": "NOTINTEAM"}
+        ],
+        "playerId": "18822"
       },
       {
         "comunioPlayerId": "34521",
@@ -1171,34 +1196,39 @@
         "playerId": "18447"
       },
       {
-        "comunioPlayerId": "34514",
-        "playerLink": "https://www.ligainsider.de/zakaria-el-ouahdi_38592/",
-        "playerName": "El Ouahdi",
+        "comunioPlayerId": "33935",
+        "playerLink": "https://www.ligainsider.de/nicolai-remberg_26449/",
+        "playerName": "Remberg",
         "clubId": "9",
-        "playerNote": "4,2",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "NONE"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "38592"
-      },
-      {
-        "comunioPlayerId": "33164",
-        "playerLink": "https://www.ligainsider.de/sebastiaan-bornauw_18822/",
-        "playerName": "Bornauw",
-        "clubId": "9",
-        "playerNote": "5,0",
+        "playerNote": "4,3",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
           {"3": "START"},
-          {"4": "NOTINTEAM"},
-          {"5": "NOTINTEAM"}
+          {"4": "START"},
+          {"5": "START"}
         ],
-        "playerId": "18822"
+        "playerId": "26449"
+      },
+      {
+        "comunioPlayerId": "32591",
+        "playerLink": "https://www.ligainsider.de/yussuf-poulsen_5765/",
+        "playerName": "Poulsen",
+        "clubId": "9",
+        "playerNote": "3,8",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "SUBIN"},
+          {"3": "BANK"},
+          {"4": "START"},
+          {"5": "SUBIN"},
+          {"6": "NONE"},
+          {"7": "SUBIN"},
+          {"8": "START"},
+          {"9": "SUBIN"},
+          {"10": "START"}
+        ],
+        "playerId": "5765"
       },
       {
         "comunioPlayerId": "32629",
@@ -1216,6 +1246,21 @@
         "playerId": "6379"
       },
       {
+        "comunioPlayerId": "34514",
+        "playerLink": "https://www.ligainsider.de/zakaria-el-ouahdi_38592/",
+        "playerName": "El Ouahdi",
+        "clubId": "9",
+        "playerNote": "4,2",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "NONE"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "38592"
+      },
+      {
         "comunioPlayerId": "34483",
         "playerLink": "https://www.ligainsider.de/patson-daka_16774/",
         "playerName": "Daka",
@@ -1231,21 +1276,6 @@
         "playerId": "16774"
       },
       {
-        "comunioPlayerId": "34233",
-        "playerLink": "https://www.ligainsider.de/nicolas-capaldo_26628/",
-        "playerName": "Capaldo",
-        "clubId": "9",
-        "playerNote": "4,0",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "26628"
-      },
-      {
         "comunioPlayerId": "34296",
         "playerLink": "https://www.ligainsider.de/fabio-vieira_24438/",
         "playerName": "Fábio Vieira",
@@ -1259,118 +1289,38 @@
           {"5": "START"}
         ],
         "playerId": "24438"
-      },
-      {
-        "comunioPlayerId": "32710",
-        "playerLink": "https://www.ligainsider.de/jordan-torunarigha_6513/",
-        "playerName": "Torunarigha",
-        "clubId": "9",
-        "playerNote": "4,4",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "6513"
-      },
-      {
-        "comunioPlayerId": "33935",
-        "playerLink": "https://www.ligainsider.de/nicolai-remberg_26449/",
-        "playerName": "Remberg",
-        "clubId": "9",
-        "playerNote": "4,3",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "26449"
       }
     ],
     "5": [
       {
-        "comunioPlayerId": "34422",
-        "playerLink": "https://www.ligainsider.de/joane-gadou_37021/",
-        "playerName": "Gadou",
+        "comunioPlayerId": "33498",
+        "playerLink": "https://www.ligainsider.de/felix-nmecha_25090/",
+        "playerName": "F. Nmecha",
         "clubId": "14",
-        "playerNote": "4,1",
+        "playerNote": "3,0",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
           {"3": "START"},
-          {"4": "START"},
+          {"4": "SUBIN"},
           {"5": "START"}
         ],
-        "playerId": "37021"
+        "playerId": "25090"
       },
       {
-        "comunioPlayerId": "33208",
-        "playerLink": "https://www.ligainsider.de/maximilian-beier_20804/",
-        "playerName": "Beier",
+        "comunioPlayerId": "34495",
+        "playerLink": "https://www.ligainsider.de/konstantinos-karetsas_38406/",
+        "playerName": "Karetsas",
         "clubId": "14",
         "playerNote": "3,7",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
           {"3": "START"},
-          {"4": "SUBIN"},
-          {"5": "START"},
-          {"6": "NONE"},
-          {"7": "BANK"},
-          {"8": "SUBIN"},
-          {"9": "START"},
-          {"10": "SUBIN"}
+          {"4": "NOTINTEAM"},
+          {"5": "SUBIN"}
         ],
-        "playerId": "20804"
-      },
-      {
-        "comunioPlayerId": "34114",
-        "playerLink": "https://www.ligainsider.de/daniel-svensson_38304/",
-        "playerName": "Svensson",
-        "clubId": "14",
-        "playerNote": "3,3",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "38304"
-      },
-      {
-        "comunioPlayerId": "33038",
-        "playerLink": "https://www.ligainsider.de/nico-schlotterbeck_20052/",
-        "playerName": "N. Schlotterbeck",
-        "clubId": "14",
-        "playerNote": "2,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "NOTINTEAM"},
-          {"3": "NOTINTEAM"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "20052"
-      },
-      {
-        "comunioPlayerId": "33141",
-        "playerLink": "https://www.ligainsider.de/julian-ryerson_18478/",
-        "playerName": "Ryerson",
-        "clubId": "14",
-        "playerNote": "3,5",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "18478"
+        "playerId": "38406"
       },
       {
         "comunioPlayerId": "32667",
@@ -1388,6 +1338,21 @@
         "playerId": "10454"
       },
       {
+        "comunioPlayerId": "34422",
+        "playerLink": "https://www.ligainsider.de/joane-gadou_37021/",
+        "playerName": "Gadou",
+        "clubId": "14",
+        "playerNote": "4,1",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "37021"
+      },
+      {
         "comunioPlayerId": "32638",
         "playerLink": "https://www.ligainsider.de/gregor-kobel_9357/",
         "playerName": "Kobel",
@@ -1401,21 +1366,6 @@
           {"5": "START"}
         ],
         "playerId": "9357"
-      },
-      {
-        "comunioPlayerId": "34495",
-        "playerLink": "https://www.ligainsider.de/konstantinos-karetsas_38406/",
-        "playerName": "Karetsas",
-        "clubId": "14",
-        "playerNote": "3,7",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "NOTINTEAM"},
-          {"5": "SUBIN"}
-        ],
-        "playerId": "38406"
       },
       {
         "comunioPlayerId": "34505",
@@ -1438,6 +1388,36 @@
         "playerId": "37180"
       },
       {
+        "comunioPlayerId": "34114",
+        "playerLink": "https://www.ligainsider.de/daniel-svensson_38304/",
+        "playerName": "Svensson",
+        "clubId": "14",
+        "playerNote": "3,3",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "38304"
+      },
+      {
+        "comunioPlayerId": "33141",
+        "playerLink": "https://www.ligainsider.de/julian-ryerson_18478/",
+        "playerName": "Ryerson",
+        "clubId": "14",
+        "playerNote": "3,5",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "18478"
+      },
+      {
         "comunioPlayerId": "32452",
         "playerLink": "https://www.ligainsider.de/waldemar-anton_5837/",
         "playerName": "Anton",
@@ -1453,22 +1433,57 @@
         "playerId": "5837"
       },
       {
-        "comunioPlayerId": "33498",
-        "playerLink": "https://www.ligainsider.de/felix-nmecha_25090/",
-        "playerName": "F. Nmecha",
+        "comunioPlayerId": "33208",
+        "playerLink": "https://www.ligainsider.de/maximilian-beier_20804/",
+        "playerName": "Beier",
         "clubId": "14",
-        "playerNote": "3,0",
+        "playerNote": "3,7",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
           {"3": "START"},
           {"4": "SUBIN"},
+          {"5": "START"},
+          {"6": "NONE"},
+          {"7": "BANK"},
+          {"8": "SUBIN"},
+          {"9": "START"},
+          {"10": "SUBIN"}
+        ],
+        "playerId": "20804"
+      },
+      {
+        "comunioPlayerId": "33038",
+        "playerLink": "https://www.ligainsider.de/nico-schlotterbeck_20052/",
+        "playerName": "N. Schlotterbeck",
+        "clubId": "14",
+        "playerNote": "2,8",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "NOTINTEAM"},
+          {"3": "NOTINTEAM"},
+          {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "25090"
+        "playerId": "20052"
       }
     ],
     "6": [
+      {
+        "comunioPlayerId": "32754",
+        "playerLink": "https://www.ligainsider.de/marco-friedl_7047/",
+        "playerName": "Friedl",
+        "clubId": "2",
+        "playerNote": "3,1",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "7047"
+      },
       {
         "comunioPlayerId": "33224",
         "playerLink": "https://www.ligainsider.de/amos-pieper_7061/",
@@ -1485,6 +1500,21 @@
         "playerId": "7061"
       },
       {
+        "comunioPlayerId": "34274",
+        "playerLink": "https://www.ligainsider.de/karl-hein_25603/",
+        "playerName": "Hein",
+        "clubId": "2",
+        "playerNote": "3,3",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "25603"
+      },
+      {
         "comunioPlayerId": "33858",
         "playerLink": "https://www.ligainsider.de/olivier-deman_36310/",
         "playerName": "Deman",
@@ -1498,6 +1528,21 @@
           {"5": "START"}
         ],
         "playerId": "36310"
+      },
+      {
+        "comunioPlayerId": "31916",
+        "playerLink": "https://www.ligainsider.de/niclas-fuellkrug_1867/",
+        "playerName": "Füllkrug",
+        "clubId": "2",
+        "playerNote": "3,1",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "1867"
       },
       {
         "comunioPlayerId": "33835",
@@ -1520,94 +1565,19 @@
         "playerId": "35359"
       },
       {
-        "comunioPlayerId": "34513",
-        "playerLink": "https://www.ligainsider.de/youri-regeer_25841/",
-        "playerName": "Regeer",
+        "comunioPlayerId": "33772",
+        "playerLink": "https://www.ligainsider.de/arthur_35904/",
+        "playerName": "Arthur",
         "clubId": "2",
-        "playerNote": "2,8",
+        "playerNote": "3,7",
         "last5MatchStatus": [
           {"1": "NONE"},
-          {"2": "NONE"},
+          {"2": "BANK"},
           {"3": "START"},
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "25841"
-      },
-      {
-        "comunioPlayerId": "34274",
-        "playerLink": "https://www.ligainsider.de/karl-hein_25603/",
-        "playerName": "Hein",
-        "clubId": "2",
-        "playerNote": "3,3",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "25603"
-      },
-      {
-        "comunioPlayerId": "32754",
-        "playerLink": "https://www.ligainsider.de/marco-friedl_7047/",
-        "playerName": "Friedl",
-        "clubId": "2",
-        "playerNote": "3,1",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "7047"
-      },
-      {
-        "comunioPlayerId": "34442",
-        "playerLink": "https://www.ligainsider.de/chuki_38831/",
-        "playerName": "Chuki",
-        "clubId": "2",
-        "playerNote": "3,3",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "38831"
-      },
-      {
-        "comunioPlayerId": "33364",
-        "playerLink": "https://www.ligainsider.de/eren-dinkci_22008/",
-        "playerName": "Dinkçi",
-        "clubId": "2",
-        "playerNote": "3,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "SUBIN"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "22008"
-      },
-      {
-        "comunioPlayerId": "31916",
-        "playerLink": "https://www.ligainsider.de/niclas-fuellkrug_1867/",
-        "playerName": "Füllkrug",
-        "clubId": "2",
-        "playerNote": "3,1",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "1867"
+        "playerId": "35904"
       },
       {
         "comunioPlayerId": "33923",
@@ -1625,28 +1595,11 @@
         "playerId": "26702"
       },
       {
-        "comunioPlayerId": "33772",
-        "playerLink": "https://www.ligainsider.de/arthur_35904/",
-        "playerName": "Arthur",
+        "comunioPlayerId": "33364",
+        "playerLink": "https://www.ligainsider.de/eren-dinkci_22008/",
+        "playerName": "Dinkçi",
         "clubId": "2",
-        "playerNote": "3,7",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "BANK"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "35904"
-      }
-    ],
-    "8": [
-      {
-        "comunioPlayerId": "34498",
-        "playerLink": "https://www.ligainsider.de/facundo-medina_36418/",
-        "playerName": "Medina",
-        "clubId": "4",
-        "playerNote": "3,5",
+        "playerNote": "3,8",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "SUBIN"},
@@ -1654,44 +1607,29 @@
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "36418"
+        "playerId": "22008"
       },
       {
-        "comunioPlayerId": "32925",
-        "playerLink": "https://www.ligainsider.de/mark-flekken_4530/",
-        "playerName": "Flekken",
-        "clubId": "4",
-        "playerNote": "3,6",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "4530"
-      },
-      {
-        "comunioPlayerId": "33122",
-        "playerLink": "https://www.ligainsider.de/moussa-diaby_20616/",
-        "playerName": "Diaby",
-        "clubId": "4",
-        "playerNote": "3,8",
+        "comunioPlayerId": "34513",
+        "playerLink": "https://www.ligainsider.de/youri-regeer_25841/",
+        "playerName": "Regeer",
+        "clubId": "2",
+        "playerNote": "2,8",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "NONE"},
-          {"3": "SUBIN"},
+          {"3": "START"},
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "20616"
+        "playerId": "25841"
       },
       {
-        "comunioPlayerId": "34289",
-        "playerLink": "https://www.ligainsider.de/equi-fernandez_38674/",
-        "playerName": "Fernández",
-        "clubId": "4",
-        "playerNote": "3,4",
+        "comunioPlayerId": "34442",
+        "playerLink": "https://www.ligainsider.de/chuki_38831/",
+        "playerName": "Chuki",
+        "clubId": "2",
+        "playerNote": "3,3",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
@@ -1699,8 +1637,10 @@
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "38674"
-      },
+        "playerId": "38831"
+      }
+    ],
+    "8": [
       {
         "comunioPlayerId": "33207",
         "playerLink": "https://www.ligainsider.de/edmond-tapsoba_19022/",
@@ -1715,36 +1655,6 @@
           {"5": "START"}
         ],
         "playerId": "19022"
-      },
-      {
-        "comunioPlayerId": "33744",
-        "playerLink": "https://www.ligainsider.de/ibrahim-maza_35905/",
-        "playerName": "Maza",
-        "clubId": "4",
-        "playerNote": "2,9",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "35905"
-      },
-      {
-        "comunioPlayerId": "34217",
-        "playerLink": "https://www.ligainsider.de/jarell-quansah_36489/",
-        "playerName": "Quansah",
-        "clubId": "4",
-        "playerNote": "3,5",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "SUBIN"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "36489"
       },
       {
         "comunioPlayerId": "33179",
@@ -1762,21 +1672,6 @@
         "playerId": "7794"
       },
       {
-        "comunioPlayerId": "34496",
-        "playerLink": "https://www.ligainsider.de/miguel-gutierrez_24219/",
-        "playerName": "M. Gutiérrez",
-        "clubId": "4",
-        "playerNote": "2,6",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "24219"
-      },
-      {
         "comunioPlayerId": "33992",
         "playerLink": "https://www.ligainsider.de/aleix-garcia_7138/",
         "playerName": "Aleix García",
@@ -1792,6 +1687,81 @@
         "playerId": "7138"
       },
       {
+        "comunioPlayerId": "34498",
+        "playerLink": "https://www.ligainsider.de/facundo-medina_36418/",
+        "playerName": "Medina",
+        "clubId": "4",
+        "playerNote": "3,5",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "SUBIN"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "36418"
+      },
+      {
+        "comunioPlayerId": "33744",
+        "playerLink": "https://www.ligainsider.de/ibrahim-maza_35905/",
+        "playerName": "Maza",
+        "clubId": "4",
+        "playerNote": "2,9",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "35905"
+      },
+      {
+        "comunioPlayerId": "32925",
+        "playerLink": "https://www.ligainsider.de/mark-flekken_4530/",
+        "playerName": "Flekken",
+        "clubId": "4",
+        "playerNote": "3,6",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "4530"
+      },
+      {
+        "comunioPlayerId": "34289",
+        "playerLink": "https://www.ligainsider.de/equi-fernandez_38674/",
+        "playerName": "Fernández",
+        "clubId": "4",
+        "playerNote": "3,4",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "38674"
+      },
+      {
+        "comunioPlayerId": "34496",
+        "playerLink": "https://www.ligainsider.de/miguel-gutierrez_24219/",
+        "playerName": "M. Gutiérrez",
+        "clubId": "4",
+        "playerNote": "2,6",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "24219"
+      },
+      {
         "comunioPlayerId": "34461",
         "playerLink": "https://www.ligainsider.de/afonso-moreira_36841/",
         "playerName": "Moreira",
@@ -1805,15 +1775,45 @@
           {"5": "START"}
         ],
         "playerId": "36841"
+      },
+      {
+        "comunioPlayerId": "34217",
+        "playerLink": "https://www.ligainsider.de/jarell-quansah_36489/",
+        "playerName": "Quansah",
+        "clubId": "4",
+        "playerNote": "3,5",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "SUBIN"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "36489"
+      },
+      {
+        "comunioPlayerId": "33122",
+        "playerLink": "https://www.ligainsider.de/moussa-diaby_20616/",
+        "playerName": "Diaby",
+        "clubId": "4",
+        "playerNote": "3,8",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "NONE"},
+          {"3": "SUBIN"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "20616"
       }
     ],
     "118": [
       {
-        "comunioPlayerId": "34170",
-        "playerLink": "https://www.ligainsider.de/maximilian-rohr_24711/",
-        "playerName": "Rohr",
+        "comunioPlayerId": "34090",
+        "playerLink": "https://www.ligainsider.de/david-mokwa_35765/",
+        "playerName": "Mokwa",
         "clubId": "1331",
-        "playerNote": "3,3",
+        "playerNote": "3,4",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
@@ -1821,37 +1821,7 @@
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "24711"
-      },
-      {
-        "comunioPlayerId": "34396",
-        "playerLink": "https://www.ligainsider.de/felix-keidel_27483/",
-        "playerName": "Keidel",
-        "clubId": "1331",
-        "playerNote": "3,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "27483"
-      },
-      {
-        "comunioPlayerId": "33451",
-        "playerLink": "https://www.ligainsider.de/lasse-guenther_26087/",
-        "playerName": "Günther",
-        "clubId": "1331",
-        "playerNote": "4,3",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "26087"
+        "playerId": "35765"
       },
       {
         "comunioPlayerId": "33398",
@@ -1869,11 +1839,11 @@
         "playerId": "20088"
       },
       {
-        "comunioPlayerId": "34090",
-        "playerLink": "https://www.ligainsider.de/david-mokwa_35765/",
-        "playerName": "Mokwa",
+        "comunioPlayerId": "33451",
+        "playerLink": "https://www.ligainsider.de/lasse-guenther_26087/",
+        "playerName": "Günther",
         "clubId": "1331",
-        "playerNote": "3,4",
+        "playerNote": "4,3",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
@@ -1881,7 +1851,52 @@
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "35765"
+        "playerId": "26087"
+      },
+      {
+        "comunioPlayerId": "34427",
+        "playerLink": "https://www.ligainsider.de/francis-onyeka_36948/",
+        "playerName": "Onyeka",
+        "clubId": "1331",
+        "playerNote": "3,0",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "SUBIN"}
+        ],
+        "playerId": "36948"
+      },
+      {
+        "comunioPlayerId": "34396",
+        "playerLink": "https://www.ligainsider.de/felix-keidel_27483/",
+        "playerName": "Keidel",
+        "clubId": "1331",
+        "playerNote": "3,8",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "27483"
+      },
+      {
+        "comunioPlayerId": "34153",
+        "playerLink": "https://www.ligainsider.de/lukasz-poreba_36788/",
+        "playerName": "Poręba",
+        "clubId": "1331",
+        "playerNote": "3,5",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "36788"
       },
       {
         "comunioPlayerId": "34168",
@@ -1919,11 +1934,11 @@
         "playerId": "5825"
       },
       {
-        "comunioPlayerId": "34153",
-        "playerLink": "https://www.ligainsider.de/lukasz-poreba_36788/",
-        "playerName": "Poręba",
+        "comunioPlayerId": "34016",
+        "playerLink": "https://www.ligainsider.de/cole-campbell_36946/",
+        "playerName": "Campbell",
         "clubId": "1331",
-        "playerNote": "3,5",
+        "playerNote": "3,9",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
@@ -1931,22 +1946,7 @@
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "36788"
-      },
-      {
-        "comunioPlayerId": "34427",
-        "playerLink": "https://www.ligainsider.de/francis-onyeka_36948/",
-        "playerName": "Onyeka",
-        "clubId": "1331",
-        "playerNote": "3,0",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "SUBIN"}
-        ],
-        "playerId": "36948"
+        "playerId": "36946"
       },
       {
         "comunioPlayerId": "34165",
@@ -1964,11 +1964,11 @@
         "playerId": "26473"
       },
       {
-        "comunioPlayerId": "34016",
-        "playerLink": "https://www.ligainsider.de/cole-campbell_36946/",
-        "playerName": "Campbell",
+        "comunioPlayerId": "34170",
+        "playerLink": "https://www.ligainsider.de/maximilian-rohr_24711/",
+        "playerName": "Rohr",
         "clubId": "1331",
-        "playerNote": "3,9",
+        "playerNote": "3,3",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
@@ -1976,40 +1976,10 @@
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "36946"
+        "playerId": "24711"
       }
     ],
     "9": [
-      {
-        "comunioPlayerId": "34493",
-        "playerLink": "https://www.ligainsider.de/raphael-onyedika_26786/",
-        "playerName": "Onyedika",
-        "clubId": "3",
-        "playerNote": "3,9",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "26786"
-      },
-      {
-        "comunioPlayerId": "34511",
-        "playerLink": "https://www.ligainsider.de/lilian-brassier_24489/",
-        "playerName": "Brassier",
-        "clubId": "3",
-        "playerNote": "3,0",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "NONE"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "24489"
-      },
       {
         "comunioPlayerId": "34313",
         "playerLink": "https://www.ligainsider.de/keita-kosugi_38762/",
@@ -2024,41 +1994,6 @@
           {"5": "START"}
         ],
         "playerId": "38762"
-      },
-      {
-        "comunioPlayerId": "32948",
-        "playerLink": "https://www.ligainsider.de/jonathan-burkardt_19272/",
-        "playerName": "Burkardt",
-        "clubId": "3",
-        "playerNote": "2,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "19272"
-      },
-      {
-        "comunioPlayerId": "33912",
-        "playerLink": "https://www.ligainsider.de/noel-aseko_36931/",
-        "playerName": "Aséko",
-        "clubId": "3",
-        "playerNote": "4,5",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "BANK"},
-          {"3": "BANK"},
-          {"4": "START"},
-          {"5": "START"},
-          {"6": "NONE"},
-          {"7": "BANK"},
-          {"8": "START"},
-          {"9": "SUBIN"},
-          {"10": "SUBIN"}
-        ],
-        "playerId": "36931"
       },
       {
         "comunioPlayerId": "33836",
@@ -2081,26 +2016,11 @@
         "playerId": "24116"
       },
       {
-        "comunioPlayerId": "33335",
-        "playerLink": "https://www.ligainsider.de/ritsu-doan_22974/",
-        "playerName": "Dōan",
+        "comunioPlayerId": "34493",
+        "playerLink": "https://www.ligainsider.de/raphael-onyedika_26786/",
+        "playerName": "Onyedika",
         "clubId": "3",
-        "playerNote": "3,0",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "NOTINTEAM"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "22974"
-      },
-      {
-        "comunioPlayerId": "33439",
-        "playerLink": "https://www.ligainsider.de/noah-atubolu_22000/",
-        "playerName": "Atubolu",
-        "clubId": "3",
-        "playerNote": "3,6",
+        "playerNote": "3,9",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
@@ -2108,7 +2028,22 @@
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "22000"
+        "playerId": "26786"
+      },
+      {
+        "comunioPlayerId": "32836",
+        "playerLink": "https://www.ligainsider.de/robin-koch_12490/",
+        "playerName": "Koch",
+        "clubId": "3",
+        "playerNote": "3,0",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "12490"
       },
       {
         "comunioPlayerId": "34008",
@@ -2124,6 +2059,21 @@
           {"5": "START"}
         ],
         "playerId": "35949"
+      },
+      {
+        "comunioPlayerId": "34511",
+        "playerLink": "https://www.ligainsider.de/lilian-brassier_24489/",
+        "playerName": "Brassier",
+        "clubId": "3",
+        "playerNote": "3,0",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "NONE"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "24489"
       },
       {
         "comunioPlayerId": "34316",
@@ -2146,43 +2096,78 @@
         "playerId": "38489"
       },
       {
-        "comunioPlayerId": "32836",
-        "playerLink": "https://www.ligainsider.de/robin-koch_12490/",
-        "playerName": "Koch",
+        "comunioPlayerId": "32948",
+        "playerLink": "https://www.ligainsider.de/jonathan-burkardt_19272/",
+        "playerName": "Burkardt",
+        "clubId": "3",
+        "playerNote": "2,8",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "19272"
+      },
+      {
+        "comunioPlayerId": "33439",
+        "playerLink": "https://www.ligainsider.de/noah-atubolu_22000/",
+        "playerName": "Atubolu",
+        "clubId": "3",
+        "playerNote": "3,6",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "22000"
+      },
+      {
+        "comunioPlayerId": "33335",
+        "playerLink": "https://www.ligainsider.de/ritsu-doan_22974/",
+        "playerName": "Dōan",
         "clubId": "3",
         "playerNote": "3,0",
         "last5MatchStatus": [
           {"1": "NONE"},
-          {"2": "START"},
+          {"2": "NOTINTEAM"},
           {"3": "START"},
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "12490"
+        "playerId": "22974"
+      },
+      {
+        "comunioPlayerId": "33912",
+        "playerLink": "https://www.ligainsider.de/noel-aseko_36931/",
+        "playerName": "Aséko",
+        "clubId": "3",
+        "playerNote": "4,5",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "BANK"},
+          {"3": "BANK"},
+          {"4": "START"},
+          {"5": "START"},
+          {"6": "NONE"},
+          {"7": "BANK"},
+          {"8": "START"},
+          {"9": "SUBIN"},
+          {"10": "SUBIN"}
+        ],
+        "playerId": "36931"
       }
     ],
     "92": [
       {
-        "comunioPlayerId": "34518",
-        "playerLink": "https://www.ligainsider.de/neil-el-aynaoui_36433/",
-        "playerName": "El Aynaoui",
+        "comunioPlayerId": "33919",
+        "playerLink": "https://www.ligainsider.de/maarten-vandevoordt_21774/",
+        "playerName": "Vandevoordt",
         "clubId": "1311",
-        "playerNote": "3,7",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "NONE"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "36433"
-      },
-      {
-        "comunioPlayerId": "31846",
-        "playerLink": "https://www.ligainsider.de/willi-orban_1667/",
-        "playerName": "Orbán",
-        "clubId": "1311",
-        "playerNote": "3,4",
+        "playerNote": "3,1",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
@@ -2190,22 +2175,22 @@
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "1667"
+        "playerId": "21774"
       },
       {
-        "comunioPlayerId": "33151",
-        "playerLink": "https://www.ligainsider.de/christopher-nkunku_12446/",
-        "playerName": "Nkunku",
+        "comunioPlayerId": "33436",
+        "playerLink": "https://www.ligainsider.de/david-raum_12557/",
+        "playerName": "Raum",
         "clubId": "1311",
-        "playerNote": "3,3",
+        "playerNote": "3,1",
         "last5MatchStatus": [
           {"1": "NONE"},
-          {"2": "SUBIN"},
+          {"2": "START"},
           {"3": "START"},
-          {"4": "SUBIN"},
+          {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "12446"
+        "playerId": "12557"
       },
       {
         "comunioPlayerId": "32889",
@@ -2226,36 +2211,6 @@
           {"10": "SUBIN"}
         ],
         "playerId": "15835"
-      },
-      {
-        "comunioPlayerId": "33837",
-        "playerLink": "https://www.ligainsider.de/castello-lukeba_27079/",
-        "playerName": "Castello Jr.",
-        "clubId": "1311",
-        "playerNote": "3,0",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "NOTINTEAM"},
-          {"4": "START"},
-          {"5": "NOTINTEAM"}
-        ],
-        "playerId": "27079"
-      },
-      {
-        "comunioPlayerId": "33919",
-        "playerLink": "https://www.ligainsider.de/maarten-vandevoordt_21774/",
-        "playerName": "Vandevoordt",
-        "clubId": "1311",
-        "playerNote": "3,1",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "21774"
       },
       {
         "comunioPlayerId": "34271",
@@ -2298,6 +2253,51 @@
         "playerId": "38383"
       },
       {
+        "comunioPlayerId": "33837",
+        "playerLink": "https://www.ligainsider.de/castello-lukeba_27079/",
+        "playerName": "Castello Jr.",
+        "clubId": "1311",
+        "playerNote": "3,0",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "NOTINTEAM"},
+          {"4": "START"},
+          {"5": "NOTINTEAM"}
+        ],
+        "playerId": "27079"
+      },
+      {
+        "comunioPlayerId": "33151",
+        "playerLink": "https://www.ligainsider.de/christopher-nkunku_12446/",
+        "playerName": "Nkunku",
+        "clubId": "1311",
+        "playerNote": "3,3",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "SUBIN"},
+          {"3": "START"},
+          {"4": "SUBIN"},
+          {"5": "START"}
+        ],
+        "playerId": "12446"
+      },
+      {
+        "comunioPlayerId": "34518",
+        "playerLink": "https://www.ligainsider.de/neil-el-aynaoui_36433/",
+        "playerName": "El Aynaoui",
+        "clubId": "1311",
+        "playerNote": "3,7",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "NONE"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "36433"
+      },
+      {
         "comunioPlayerId": "34039",
         "playerLink": "https://www.ligainsider.de/antonio-nusa_37124/",
         "playerName": "Nusa",
@@ -2311,21 +2311,6 @@
           {"5": "START"}
         ],
         "playerId": "37124"
-      },
-      {
-        "comunioPlayerId": "33436",
-        "playerLink": "https://www.ligainsider.de/david-raum_12557/",
-        "playerName": "Raum",
-        "clubId": "1311",
-        "playerNote": "3,1",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "12557"
       },
       {
         "comunioPlayerId": "33695",
@@ -2346,15 +2331,13 @@
           {"10": "SUBIN"}
         ],
         "playerId": "35733"
-      }
-    ],
-    "81": [
+      },
       {
-        "comunioPlayerId": "34410",
-        "playerLink": "https://www.ligainsider.de/laurin-curda_36261/",
-        "playerName": "Curda",
-        "clubId": "1249",
-        "playerNote": "3,1",
+        "comunioPlayerId": "31846",
+        "playerLink": "https://www.ligainsider.de/willi-orban_1667/",
+        "playerName": "Orbán",
+        "clubId": "1311",
+        "playerNote": "3,4",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
@@ -2362,7 +2345,24 @@
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "36261"
+        "playerId": "1667"
+      }
+    ],
+    "81": [
+      {
+        "comunioPlayerId": "33666",
+        "playerLink": "https://www.ligainsider.de/laurin-ulrich_27568/",
+        "playerName": "Ulrich",
+        "clubId": "1249",
+        "playerNote": "3,5",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "27568"
       },
       {
         "comunioPlayerId": "34401",
@@ -2380,11 +2380,11 @@
         "playerId": "35894"
       },
       {
-        "comunioPlayerId": "33666",
-        "playerLink": "https://www.ligainsider.de/laurin-ulrich_27568/",
-        "playerName": "Ulrich",
+        "comunioPlayerId": "33570",
+        "playerLink": "https://www.ligainsider.de/gabriel-vidovic_26231/",
+        "playerName": "Vidović",
         "clubId": "1249",
-        "playerNote": "3,5",
+        "playerNote": "4,4",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
@@ -2392,7 +2392,52 @@
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "27568"
+        "playerId": "26231"
+      },
+      {
+        "comunioPlayerId": "33397",
+        "playerLink": "https://www.ligainsider.de/nahuel-noll_24594/",
+        "playerName": "Noll",
+        "clubId": "1249",
+        "playerNote": "2,3",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "24594"
+      },
+      {
+        "comunioPlayerId": "34410",
+        "playerLink": "https://www.ligainsider.de/laurin-curda_36261/",
+        "playerName": "Curda",
+        "clubId": "1249",
+        "playerNote": "3,1",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "36261"
+      },
+      {
+        "comunioPlayerId": "34406",
+        "playerLink": "https://www.ligainsider.de/santiago-castaneda_37450/",
+        "playerName": "Castañeda",
+        "clubId": "1249",
+        "playerNote": "2,9",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "37450"
       },
       {
         "comunioPlayerId": "34419",
@@ -2410,21 +2455,6 @@
         "playerId": "27339"
       },
       {
-        "comunioPlayerId": "33570",
-        "playerLink": "https://www.ligainsider.de/gabriel-vidovic_26231/",
-        "playerName": "Vidović",
-        "clubId": "1249",
-        "playerNote": "4,4",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "26231"
-      },
-      {
         "comunioPlayerId": "34460",
         "playerLink": "https://www.ligainsider.de/jano-ter-horst_36702/",
         "playerName": "ter Horst",
@@ -2438,6 +2468,21 @@
           {"5": "START"}
         ],
         "playerId": "36702"
+      },
+      {
+        "comunioPlayerId": "34402",
+        "playerLink": "https://www.ligainsider.de/tjark-scheller_36890/",
+        "playerName": "Scheller",
+        "clubId": "1249",
+        "playerNote": "3,3",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "36890"
       },
       {
         "comunioPlayerId": "33600",
@@ -2468,69 +2513,9 @@
           {"5": "START"}
         ],
         "playerId": "12780"
-      },
-      {
-        "comunioPlayerId": "34406",
-        "playerLink": "https://www.ligainsider.de/santiago-castaneda_37450/",
-        "playerName": "Castañeda",
-        "clubId": "1249",
-        "playerNote": "2,9",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "37450"
-      },
-      {
-        "comunioPlayerId": "34402",
-        "playerLink": "https://www.ligainsider.de/tjark-scheller_36890/",
-        "playerName": "Scheller",
-        "clubId": "1249",
-        "playerNote": "3,3",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "36890"
-      },
-      {
-        "comunioPlayerId": "33397",
-        "playerLink": "https://www.ligainsider.de/nahuel-noll_24594/",
-        "playerName": "Noll",
-        "clubId": "1249",
-        "playerNote": "2,3",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "24594"
       }
     ],
     "109": [
-      {
-        "comunioPlayerId": "32801",
-        "playerLink": "https://www.ligainsider.de/felix-uduokhai_7041/",
-        "playerName": "Uduokhai",
-        "clubId": "1246",
-        "playerNote": "4,3",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "BANK"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "7041"
-      },
       {
         "comunioPlayerId": "32073",
         "playerLink": "https://www.ligainsider.de/rani-khedira_2122/",
@@ -2547,24 +2532,39 @@
         "playerId": "2122"
       },
       {
-        "comunioPlayerId": "34191",
-        "playerLink": "https://www.ligainsider.de/livan-burcu_36114/",
-        "playerName": "Burcu",
+        "comunioPlayerId": "33821",
+        "playerLink": "https://www.ligainsider.de/aljoscha-kemlein_27560/",
+        "playerName": "Kemlein",
         "clubId": "1246",
-        "playerNote": "4,9",
+        "playerNote": "4,8",
         "last5MatchStatus": [
           {"1": "NONE"},
-          {"2": "SUBIN"},
+          {"2": "START"},
           {"3": "START"},
           {"4": "START"},
           {"5": "SUBIN"},
           {"6": "NONE"},
-          {"7": "NONE"},
-          {"8": "NOTINTEAM"},
-          {"9": "NOTINTEAM"},
-          {"10": "BANK"}
+          {"7": "SUBIN"},
+          {"8": "SUBIN"},
+          {"9": "SUBIN"},
+          {"10": "START"}
         ],
-        "playerId": "36114"
+        "playerId": "27560"
+      },
+      {
+        "comunioPlayerId": "33720",
+        "playerLink": "https://www.ligainsider.de/josip-juranovic_26979/",
+        "playerName": "Juranović",
+        "clubId": "1246",
+        "playerNote": "3,8",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "NOTINTEAM"}
+        ],
+        "playerId": "26979"
       },
       {
         "comunioPlayerId": "33035",
@@ -2597,61 +2597,6 @@
         "playerId": "14145"
       },
       {
-        "comunioPlayerId": "33821",
-        "playerLink": "https://www.ligainsider.de/aljoscha-kemlein_27560/",
-        "playerName": "Kemlein",
-        "clubId": "1246",
-        "playerNote": "4,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "SUBIN"},
-          {"6": "NONE"},
-          {"7": "SUBIN"},
-          {"8": "SUBIN"},
-          {"9": "SUBIN"},
-          {"10": "START"}
-        ],
-        "playerId": "27560"
-      },
-      {
-        "comunioPlayerId": "34506",
-        "playerLink": "https://www.ligainsider.de/michel-aebischer_12508/",
-        "playerName": "Aebischer",
-        "clubId": "1246",
-        "playerNote": "4,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"},
-          {"6": "NONE"},
-          {"7": "START"},
-          {"8": "SUBIN"},
-          {"9": "SUBIN"},
-          {"10": "START"}
-        ],
-        "playerId": "12508"
-      },
-      {
-        "comunioPlayerId": "33720",
-        "playerLink": "https://www.ligainsider.de/josip-juranovic_26979/",
-        "playerName": "Juranović",
-        "clubId": "1246",
-        "playerNote": "3,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "NOTINTEAM"}
-        ],
-        "playerId": "26979"
-      },
-      {
         "comunioPlayerId": "33567",
         "playerLink": "https://www.ligainsider.de/tom-rothe_26243/",
         "playerName": "Rothe",
@@ -2682,19 +2627,59 @@
         "playerId": "27234"
       },
       {
-        "comunioPlayerId": "32921",
-        "playerLink": "https://www.ligainsider.de/frederik-roennow_7943/",
-        "playerName": "Rønnow",
+        "comunioPlayerId": "32801",
+        "playerLink": "https://www.ligainsider.de/felix-uduokhai_7041/",
+        "playerName": "Uduokhai",
         "clubId": "1246",
-        "playerNote": "3,5",
+        "playerNote": "4,3",
         "last5MatchStatus": [
           {"1": "NONE"},
-          {"2": "NOTINTEAM"},
+          {"2": "BANK"},
           {"3": "START"},
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "7943"
+        "playerId": "7041"
+      },
+      {
+        "comunioPlayerId": "34191",
+        "playerLink": "https://www.ligainsider.de/livan-burcu_36114/",
+        "playerName": "Burcu",
+        "clubId": "1246",
+        "playerNote": "4,9",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "SUBIN"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "SUBIN"},
+          {"6": "NONE"},
+          {"7": "NONE"},
+          {"8": "NOTINTEAM"},
+          {"9": "NOTINTEAM"},
+          {"10": "BANK"}
+        ],
+        "playerId": "36114"
+      },
+      {
+        "comunioPlayerId": "34506",
+        "playerLink": "https://www.ligainsider.de/michel-aebischer_12508/",
+        "playerName": "Aebischer",
+        "clubId": "1246",
+        "playerNote": "4,8",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"},
+          {"6": "NONE"},
+          {"7": "START"},
+          {"8": "SUBIN"},
+          {"9": "SUBIN"},
+          {"10": "START"}
+        ],
+        "playerId": "12508"
       },
       {
         "comunioPlayerId": "34494",
@@ -2715,9 +2700,59 @@
           {"10": "SUBIN"}
         ],
         "playerId": "24183"
+      },
+      {
+        "comunioPlayerId": "32921",
+        "playerLink": "https://www.ligainsider.de/frederik-roennow_7943/",
+        "playerName": "Rønnow",
+        "clubId": "1246",
+        "playerNote": "3,5",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "NOTINTEAM"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "7943"
       }
     ],
     "62": [
+      {
+        "comunioPlayerId": "33619",
+        "playerLink": "https://www.ligainsider.de/adam-hlozek_24095/",
+        "playerName": "Hložek",
+        "clubId": "10",
+        "playerNote": "3,3",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"},
+          {"6": "NONE"},
+          {"7": "NOTINTEAM"},
+          {"8": "NOTINTEAM"},
+          {"9": "SUBIN"},
+          {"10": "SUBIN"}
+        ],
+        "playerId": "24095"
+      },
+      {
+        "comunioPlayerId": "34242",
+        "playerLink": "https://www.ligainsider.de/wouter-burger_22632/",
+        "playerName": "Burger",
+        "clubId": "10",
+        "playerNote": "3,1",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "22632"
+      },
       {
         "comunioPlayerId": "33270",
         "playerLink": "https://www.ligainsider.de/tim-lemperle_23854/",
@@ -2739,6 +2774,26 @@
         "playerId": "23854"
       },
       {
+        "comunioPlayerId": "34446",
+        "playerLink": "https://www.ligainsider.de/mats-rots_37794/",
+        "playerName": "Rots",
+        "clubId": "10",
+        "playerNote": "3,5",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "SUBIN"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"},
+          {"6": "NONE"},
+          {"7": "START"},
+          {"8": "START"},
+          {"9": "START"},
+          {"10": "SUBIN"}
+        ],
+        "playerId": "37794"
+      },
+      {
         "comunioPlayerId": "33026",
         "playerLink": "https://www.ligainsider.de/ozan-kabak_20416/",
         "playerName": "Ozan Kabak",
@@ -2754,24 +2809,34 @@
         "playerId": "20416"
       },
       {
-        "comunioPlayerId": "33619",
-        "playerLink": "https://www.ligainsider.de/adam-hlozek_24095/",
-        "playerName": "Hložek",
+        "comunioPlayerId": "34294",
+        "playerLink": "https://www.ligainsider.de/adam-daghim_37622/",
+        "playerName": "Daghim",
         "clubId": "10",
-        "playerNote": "3,3",
+        "playerNote": "2,8",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
           {"3": "START"},
           {"4": "START"},
-          {"5": "START"},
-          {"6": "NONE"},
-          {"7": "NOTINTEAM"},
-          {"8": "NOTINTEAM"},
-          {"9": "SUBIN"},
-          {"10": "SUBIN"}
+          {"5": "START"}
         ],
-        "playerId": "24095"
+        "playerId": "37622"
+      },
+      {
+        "comunioPlayerId": "34202",
+        "playerLink": "https://www.ligainsider.de/leon-avdullahu_38223/",
+        "playerName": "Avdullahu",
+        "clubId": "10",
+        "playerNote": "3,8",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "38223"
       },
       {
         "comunioPlayerId": "31489",
@@ -2837,80 +2902,15 @@
           {"5": "START"}
         ],
         "playerId": "35863"
-      },
-      {
-        "comunioPlayerId": "34446",
-        "playerLink": "https://www.ligainsider.de/mats-rots_37794/",
-        "playerName": "Rots",
-        "clubId": "10",
-        "playerNote": "3,5",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "SUBIN"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"},
-          {"6": "NONE"},
-          {"7": "START"},
-          {"8": "START"},
-          {"9": "START"},
-          {"10": "SUBIN"}
-        ],
-        "playerId": "37794"
-      },
-      {
-        "comunioPlayerId": "34294",
-        "playerLink": "https://www.ligainsider.de/adam-daghim_37622/",
-        "playerName": "Daghim",
-        "clubId": "10",
-        "playerNote": "2,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "37622"
-      },
-      {
-        "comunioPlayerId": "34242",
-        "playerLink": "https://www.ligainsider.de/wouter-burger_22632/",
-        "playerName": "Burger",
-        "clubId": "10",
-        "playerNote": "3,1",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "22632"
-      },
-      {
-        "comunioPlayerId": "34202",
-        "playerLink": "https://www.ligainsider.de/leon-avdullahu_38223/",
-        "playerName": "Avdullahu",
-        "clubId": "10",
-        "playerNote": "3,8",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "38223"
       }
     ],
     "21": [
       {
-        "comunioPlayerId": "32961",
-        "playerLink": "https://www.ligainsider.de/niklas-beste_14520/",
-        "playerName": "Beste",
+        "comunioPlayerId": "33783",
+        "playerLink": "https://www.ligainsider.de/igor-matanovic_25780/",
+        "playerName": "Matanović",
         "clubId": "18",
-        "playerNote": "3,5",
+        "playerNote": "2,3",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
@@ -2918,37 +2918,7 @@
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "14520"
-      },
-      {
-        "comunioPlayerId": "32807",
-        "playerLink": "https://www.ligainsider.de/philipp-lienhart_13911/",
-        "playerName": "Lienhart",
-        "clubId": "18",
-        "playerNote": "3,4",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "13911"
-      },
-      {
-        "comunioPlayerId": "34184",
-        "playerLink": "https://www.ligainsider.de/yuito-suzuki_37105/",
-        "playerName": "Yuito",
-        "clubId": "18",
-        "playerNote": "3,0",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "37105"
+        "playerId": "25780"
       },
       {
         "comunioPlayerId": "33629",
@@ -2981,6 +2951,21 @@
         "playerId": "6131"
       },
       {
+        "comunioPlayerId": "31910",
+        "playerLink": "https://www.ligainsider.de/matthias-ginter_1835/",
+        "playerName": "Ginter",
+        "clubId": "18",
+        "playerNote": "2,4",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "1835"
+      },
+      {
         "comunioPlayerId": "33829",
         "playerLink": "https://www.ligainsider.de/jordy-makengo_26088/",
         "playerName": "Makengo",
@@ -2996,11 +2981,11 @@
         "playerId": "26088"
       },
       {
-        "comunioPlayerId": "33647",
-        "playerLink": "https://www.ligainsider.de/mio-backhaus_27467/",
-        "playerName": "Backhaus",
+        "comunioPlayerId": "32807",
+        "playerLink": "https://www.ligainsider.de/philipp-lienhart_13911/",
+        "playerName": "Lienhart",
         "clubId": "18",
-        "playerNote": "3,5",
+        "playerNote": "3,4",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
@@ -3008,7 +2993,7 @@
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "27467"
+        "playerId": "13911"
       },
       {
         "comunioPlayerId": "33947",
@@ -3026,11 +3011,11 @@
         "playerId": "20344"
       },
       {
-        "comunioPlayerId": "31910",
-        "playerLink": "https://www.ligainsider.de/matthias-ginter_1835/",
-        "playerName": "Ginter",
+        "comunioPlayerId": "32961",
+        "playerLink": "https://www.ligainsider.de/niklas-beste_14520/",
+        "playerName": "Beste",
         "clubId": "18",
-        "playerNote": "2,4",
+        "playerNote": "3,5",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
@@ -3038,7 +3023,37 @@
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "1835"
+        "playerId": "14520"
+      },
+      {
+        "comunioPlayerId": "34184",
+        "playerLink": "https://www.ligainsider.de/yuito-suzuki_37105/",
+        "playerName": "Yuito",
+        "clubId": "18",
+        "playerNote": "3,0",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "37105"
+      },
+      {
+        "comunioPlayerId": "33647",
+        "playerLink": "https://www.ligainsider.de/mio-backhaus_27467/",
+        "playerName": "Backhaus",
+        "clubId": "18",
+        "playerNote": "3,5",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "27467"
       },
       {
         "comunioPlayerId": "33603",
@@ -3054,39 +3069,9 @@
           {"5": "START"}
         ],
         "playerId": "20278"
-      },
-      {
-        "comunioPlayerId": "33783",
-        "playerLink": "https://www.ligainsider.de/igor-matanovic_25780/",
-        "playerName": "Matanović",
-        "clubId": "18",
-        "playerNote": "2,3",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "25780"
       }
     ],
     "10": [
-      {
-        "comunioPlayerId": "33843",
-        "playerLink": "https://www.ligainsider.de/robin-gosens_16537/",
-        "playerName": "Gosens",
-        "clubId": "13",
-        "playerNote": "3,9",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "SUBIN"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "16537"
-      },
       {
         "comunioPlayerId": "34391",
         "playerLink": "https://www.ligainsider.de/soufiane-el-faouzi_26067/",
@@ -3103,19 +3088,34 @@
         "playerId": "26067"
       },
       {
-        "comunioPlayerId": "33678",
-        "playerLink": "https://www.ligainsider.de/junior-dina-ebimbe_26881/",
-        "playerName": "Dina Ebimbe",
+        "comunioPlayerId": "33184",
+        "playerLink": "https://www.ligainsider.de/timo-becker_11068/",
+        "playerName": "T. Becker",
         "clubId": "13",
-        "playerNote": "4,0",
+        "playerNote": "3,5",
         "last5MatchStatus": [
           {"1": "NONE"},
-          {"2": "SUBIN"},
+          {"2": "START"},
           {"3": "START"},
-          {"4": "SUBIN"},
+          {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "26881"
+        "playerId": "11068"
+      },
+      {
+        "comunioPlayerId": "34372",
+        "playerLink": "https://www.ligainsider.de/nikola-katic_23002/",
+        "playerName": "Katić",
+        "clubId": "13",
+        "playerNote": "3,0",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "23002"
       },
       {
         "comunioPlayerId": "34450",
@@ -3138,11 +3138,11 @@
         "playerId": "38876"
       },
       {
-        "comunioPlayerId": "33184",
-        "playerLink": "https://www.ligainsider.de/timo-becker_11068/",
-        "playerName": "T. Becker",
+        "comunioPlayerId": "31874",
+        "playerLink": "https://www.ligainsider.de/loris-karius_1641/",
+        "playerName": "Karius",
         "clubId": "13",
-        "playerNote": "3,5",
+        "playerNote": "2,9",
         "last5MatchStatus": [
           {"1": "NONE"},
           {"2": "START"},
@@ -3150,7 +3150,22 @@
           {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "11068"
+        "playerId": "1641"
+      },
+      {
+        "comunioPlayerId": "33843",
+        "playerLink": "https://www.ligainsider.de/robin-gosens_16537/",
+        "playerName": "Gosens",
+        "clubId": "13",
+        "playerNote": "3,9",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "SUBIN"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "16537"
       },
       {
         "comunioPlayerId": "34387",
@@ -3173,34 +3188,19 @@
         "playerId": "16217"
       },
       {
-        "comunioPlayerId": "31874",
-        "playerLink": "https://www.ligainsider.de/loris-karius_1641/",
-        "playerName": "Karius",
+        "comunioPlayerId": "33678",
+        "playerLink": "https://www.ligainsider.de/junior-dina-ebimbe_26881/",
+        "playerName": "Dina Ebimbe",
         "clubId": "13",
-        "playerNote": "2,9",
+        "playerNote": "4,0",
         "last5MatchStatus": [
           {"1": "NONE"},
-          {"2": "START"},
+          {"2": "SUBIN"},
           {"3": "START"},
-          {"4": "START"},
+          {"4": "SUBIN"},
           {"5": "START"}
         ],
-        "playerId": "1641"
-      },
-      {
-        "comunioPlayerId": "32190",
-        "playerLink": "https://www.ligainsider.de/kenan-karaman_2676/",
-        "playerName": "Karaman",
-        "clubId": "13",
-        "playerNote": "3,5",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "NOTINTEAM"},
-          {"3": "SUBIN"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "2676"
+        "playerId": "26881"
       },
       {
         "comunioPlayerId": "34382",
@@ -3218,21 +3218,6 @@
         "playerId": "22176"
       },
       {
-        "comunioPlayerId": "34372",
-        "playerLink": "https://www.ligainsider.de/nikola-katic_23002/",
-        "playerName": "Katić",
-        "clubId": "13",
-        "playerNote": "3,0",
-        "last5MatchStatus": [
-          {"1": "NONE"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "23002"
-      },
-      {
         "comunioPlayerId": "34371",
         "playerLink": "https://www.ligainsider.de/hasan-kurucay_35927/",
         "playerName": "Kuruçay",
@@ -3246,6 +3231,21 @@
           {"5": "START"}
         ],
         "playerId": "35927"
+      },
+      {
+        "comunioPlayerId": "32190",
+        "playerLink": "https://www.ligainsider.de/kenan-karaman_2676/",
+        "playerName": "Karaman",
+        "clubId": "13",
+        "playerNote": "3,5",
+        "last5MatchStatus": [
+          {"1": "NONE"},
+          {"2": "NOTINTEAM"},
+          {"3": "SUBIN"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "2676"
       }
     ]
   }
