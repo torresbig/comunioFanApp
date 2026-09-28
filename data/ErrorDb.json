@@ -6,7 +6,7 @@
       "errorType": "LIGAINSIDERSTATUS",
       "message": "Spieler wurde nicht gefunden! SpielerJustin Heekeren | Club: FC Schalke 04",
       "url": "",
-      "timestamp": "2026-09-26T11:17:55.367484300Z"
+      "timestamp": "2026-09-26T11:09:14.256526900Z"
     },
     {
       "methode": "",
@@ -14,10 +14,34 @@
       "errorType": "LIGAINSIDERSTATUS",
       "message": "Spieler wurde nicht gefunden! SpielerJustin Heekeren | Club: FC Schalke 04",
       "url": "",
-      "timestamp": "2026-09-26T11:09:14.256526900Z"
+      "timestamp": "2026-09-26T11:17:55.367484300Z"
     }
   ],
   "2026-09-28": [
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "LIGAINSIDERSTATUS",
+      "message": "Spieler wurde nicht gefunden! SpielerNicolas Kühn | Club: Borussia Mönchengladbach",
+      "url": "",
+      "timestamp": "2026-09-28T20:15:07.475354200Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "LIGAINSIDERSTATUS",
+      "message": "Spieler wurde nicht gefunden! SpielerMarc Guiu | Club: RB Leipzig",
+      "url": "",
+      "timestamp": "2026-09-28T20:15:14.033437700Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "LIGAINSIDERSTATUS",
+      "message": "Spieler wurde nicht gefunden! SpielerGiannis Konstantelias | Club: Borussia Dortmund",
+      "url": "",
+      "timestamp": "2026-09-28T20:15:11.738256400Z"
+    },
     {
       "methode": "",
       "acception": "",
@@ -41,40 +65,16 @@
       "message": "Spieler wurde nicht gefunden! SpielerGuéla Doué | Club: Bayer 04 Leverkusen",
       "url": "",
       "timestamp": "2026-09-28T20:15:10.334625100Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "LIGAINSIDERSTATUS",
-      "message": "Spieler wurde nicht gefunden! SpielerGiannis Konstantelias | Club: Borussia Dortmund",
-      "url": "",
-      "timestamp": "2026-09-28T20:15:11.738256400Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "LIGAINSIDERSTATUS",
-      "message": "Spieler wurde nicht gefunden! SpielerNicolas Kühn | Club: Borussia Mönchengladbach",
-      "url": "",
-      "timestamp": "2026-09-28T20:15:07.475354200Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "LIGAINSIDERSTATUS",
-      "message": "Spieler wurde nicht gefunden! SpielerMarc Guiu | Club: RB Leipzig",
-      "url": "",
-      "timestamp": "2026-09-28T20:15:14.033437700Z"
     }
   ],
   "2026-09-27": [
     {
       "methode": "",
       "acception": "",
-      "errorType": "LIGAINSIDERSTATUS",
-      "message": "Spieler wurde nicht gefunden! SpielerMario Vušković | Club: Hamburger SV",
+      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
       "url": "",
-      "timestamp": "2026-09-27T08:00:56.773380084Z"
+      "timestamp": "2026-09-27T03:16:20.420394591Z"
     },
     {
       "methode": "",
@@ -82,7 +82,23 @@
       "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
       "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
       "url": "",
-      "timestamp": "2026-09-27T03:16:37.720428924Z"
+      "timestamp": "2026-09-27T03:15:48.134138103Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
+      "url": "",
+      "timestamp": "2026-09-27T03:16:39.861036391Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
+      "url": "",
+      "timestamp": "2026-09-27T03:15:39.254072251Z"
     },
     {
       "methode": "",
@@ -96,41 +112,9 @@
       "methode": "",
       "acception": "",
       "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
-      "url": "",
-      "timestamp": "2026-09-27T03:15:46.379061069Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
       "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
       "url": "",
-      "timestamp": "2026-09-27T03:16:39.861036391Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "LIGAINSIDERSTATUS",
-      "message": "Spieler wurde nicht gefunden! SpielerGiannis Konstantelias | Club: Borussia Dortmund",
-      "url": "",
-      "timestamp": "2026-09-27T08:00:55.527958462Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "LIGAINSIDERSTATUS",
-      "message": "Spieler wurde nicht gefunden! SpielerJustin Heekeren | Club: FC Schalke 04",
-      "url": "",
-      "timestamp": "2026-09-27T08:00:52.687167786Z"
-    },
-    {
-      "methode": "",
-      "acception": "",
-      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
-      "url": "",
-      "timestamp": "2026-09-27T03:15:39.254072251Z"
+      "timestamp": "2026-09-27T03:16:37.720428924Z"
     },
     {
       "methode": "",
@@ -146,15 +130,31 @@
       "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
       "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
       "url": "",
-      "timestamp": "2026-09-27T03:16:20.420394591Z"
+      "timestamp": "2026-09-27T03:15:49.063170149Z"
     },
     {
       "methode": "",
       "acception": "",
-      "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
+      "errorType": "LIGAINSIDERSTATUS",
+      "message": "Spieler wurde nicht gefunden! SpielerMario Vušković | Club: Hamburger SV",
       "url": "",
-      "timestamp": "2026-09-27T03:15:49.063170149Z"
+      "timestamp": "2026-09-27T08:00:56.773380084Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "LIGAINSIDERSTATUS",
+      "message": "Spieler wurde nicht gefunden! SpielerNicolas Kühn | Club: Borussia Mönchengladbach",
+      "url": "",
+      "timestamp": "2026-09-27T08:00:50.733792767Z"
+    },
+    {
+      "methode": "",
+      "acception": "",
+      "errorType": "LIGAINSIDERSTATUS",
+      "message": "Spieler wurde nicht gefunden! SpielerJustin Heekeren | Club: FC Schalke 04",
+      "url": "",
+      "timestamp": "2026-09-27T08:00:52.687167786Z"
     },
     {
       "methode": "",
@@ -168,17 +168,17 @@
       "methode": "",
       "acception": "",
       "errorType": "GITHUB_LOADER_DATEN_FEHLEN",
-      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/UserdatenbankJson_null.txt",
+      "message": "Warnung: URL enthält 'null' in der Community-ID. Möglicherweise ist die Community-ID nicht korrekt gesetzt: https://raw.githubusercontent.com/torresbig/comunioFanApp/main/data/PlayerToUserMap_null.txt",
       "url": "",
-      "timestamp": "2026-09-27T03:15:48.134138103Z"
+      "timestamp": "2026-09-27T03:15:46.379061069Z"
     },
     {
       "methode": "",
       "acception": "",
       "errorType": "LIGAINSIDERSTATUS",
-      "message": "Spieler wurde nicht gefunden! SpielerNicolas Kühn | Club: Borussia Mönchengladbach",
+      "message": "Spieler wurde nicht gefunden! SpielerGiannis Konstantelias | Club: Borussia Dortmund",
       "url": "",
-      "timestamp": "2026-09-27T08:00:50.733792767Z"
+      "timestamp": "2026-09-27T08:00:55.527958462Z"
     }
   ]
 }
