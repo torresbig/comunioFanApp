@@ -35381,56 +35381,13 @@
     },
     {
       "data": {
-        "lastWert": 2600000,
-        "transfermarktDoDe": {
-          "date": "27.08.2026",
-          "haveToCheck": false,
-          "name": "Marvin Pieringer",
-          "link": "https://www.transfermarkt.de/marvin-pieringer/profil/spieler/471055",
-          "id": "471055",
-          "position": "",
-          "marktwert": 3000000,
-          "nationalitaet": "Deutschland",
-          "leistungsDaten": {},
-          "alter": -1
-        },
-        "lastBigUpdate": "21.09.2026",
-        "stats": {
-          "notenDurchschnitt": "6,4",
-          "gelbekarten": 0,
-          "totalPenalties": 0,
-          "ratedGames": 4,
-          "lastUpdate": "28.09.2026",
-          "playedGames": 4,
-          "tore": 0,
-          "punkteDurchschnitt": "1,25",
-          "gelbrotekarten": 0,
-          "rotekarten": 0,
-          "manOfTheMatchAmount": 0
-        },
-        "withinSquad": false,
-        "retired": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 129,
-          "einsaetzeBewertet": 4,
-          "durchschnittsnote": 4.12,
-          "verein": "SC Paderborn 07",
-          "lastUpdate": "26.09.2026",
-          "durchschnittsminuten": 78,
-          "durchschnittspunkte": 32.25,
-          "rang": 195
-        }},
-        "possibleNames": [
-          "Marvin Pieringer",
-          "Pieringer",
-          "M. Pieringer"
-        ],
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33600"},
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/marvin-pieringer_20424/",
           "playerName": "Pieringer",
           "playerId": "20424"
         },
+        "lastWert": 2600000,
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "04.10.1999",
@@ -35449,17 +35406,60 @@
         "verein": "81",
         "wert": 2580000,
         "lastPoints": 5,
+        "transfermarktDoDe": {
+          "date": "27.08.2026",
+          "haveToCheck": false,
+          "name": "Marvin Pieringer",
+          "link": "https://www.transfermarkt.de/marvin-pieringer/profil/spieler/471055",
+          "id": "471055",
+          "position": "",
+          "marktwert": 3000000,
+          "nationalitaet": "Deutschland",
+          "leistungsDaten": {},
+          "alter": -1
+        },
         "lastSeasonPoints": 99,
         "punkte": 5,
         "realWert": 3000000,
+        "lastBigUpdate": "21.09.2026",
+        "stats": {
+          "notenDurchschnitt": "6,4",
+          "gelbekarten": 0,
+          "totalPenalties": 0,
+          "ratedGames": 4,
+          "lastUpdate": "28.09.2026",
+          "playedGames": 4,
+          "tore": 0,
+          "punkteDurchschnitt": "1,25",
+          "gelbrotekarten": 0,
+          "rotekarten": 0,
+          "manOfTheMatchAmount": 0
+        },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [
           {"2023": 83},
           {"2024": 140},
           {"2025": 99}
         ],
+        "withinSquad": false,
+        "retired": false,
         "onMarket": false,
-        "position": "STURM"
+        "attribute": {"ligainsiderRanking": {
+          "punkte": 129,
+          "einsaetzeBewertet": 4,
+          "durchschnittsnote": 4.12,
+          "verein": "SC Paderborn 07",
+          "lastUpdate": "26.09.2026",
+          "durchschnittsminuten": 78,
+          "durchschnittspunkte": 32.25,
+          "rang": 195
+        }},
+        "position": "STURM",
+        "possibleNames": [
+          "Marvin Pieringer",
+          "Pieringer",
+          "M. Pieringer"
+        ]
       },
       "name": "Pieringer",
       "id": "33600"
