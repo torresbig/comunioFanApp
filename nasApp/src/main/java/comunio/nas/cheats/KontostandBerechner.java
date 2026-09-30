@@ -1,4 +1,4 @@
-package comunio.nas.dataScraper.cheats;
+package comunio.nas.cheats;
 
 import org.json.JSONObject;
 

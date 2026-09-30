@@ -22,6 +22,8 @@ public class LastUpdates {
 	private Instant transfermarktDe;
 	private Instant ligainsider;
 	private Instant comAnalystics;
+	private Instant comAnalysticsTopFlop;
+
 	private Instant notInLigaDb;
 	private Instant playerStatus;
 	private Instant seasonStart;
@@ -46,6 +48,8 @@ public class LastUpdates {
 				: null;
 		this.ligainsider = json.has("ligainsider") ? Instant.ofEpochMilli(json.getLong("ligainsider")) : null;
 		this.comAnalystics = json.has("comAnalystics") ? Instant.ofEpochMilli(json.getLong("comAnalystics")) : null;
+		this.comAnalysticsTopFlop = json.has("comAnalysticsTopFlop") ? Instant.ofEpochMilli(json.getLong("comAnalysticsTopFlop")) : null;
+
 		this.notInLigaDb = json.has("notInLigaDb") ? Instant.ofEpochMilli(json.getLong("notInLigaDb")) : null;
 		this.playerStatus = json.has("playerStatus") ? Instant.ofEpochMilli(json.getLong("playerStatus")) : null;
 		this.seasonStart = json.has("seasonStart") ? Instant.ofEpochMilli(json.getLong("seasonStart")) : null;
@@ -90,6 +94,9 @@ public class LastUpdates {
 		}
 		if (this.comAnalystics != null) {
 			json.put("comAnalystics", this.comAnalystics.toEpochMilli());
+		}
+		if (this.comAnalysticsTopFlop != null) {
+			json.put("comAnalysticsTopFlop", this.comAnalysticsTopFlop.toEpochMilli());
 		}
 		if (this.notInLigaDb != null) {
 			json.put("notInLigaDb", this.notInLigaDb.toEpochMilli());
@@ -260,6 +267,14 @@ public class LastUpdates {
 			}
 		}
 		return false; // Saisonübergang liegt nicht vor dem Ende der letzten Spieltag
+	}
+
+	public Instant getComAnalysticsTopFlop() {
+		return comAnalysticsTopFlop;
+	}
+
+	public void setComAnalysticsTopFlop(Instant comAnalysticsTopFlop) {
+		this.comAnalysticsTopFlop = comAnalysticsTopFlop;
 	}
 
 	/**

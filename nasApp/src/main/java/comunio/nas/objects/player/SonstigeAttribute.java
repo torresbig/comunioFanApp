@@ -7,6 +7,7 @@ import comunio.nas.dataScraper.comunio.MatchdayInfo;
 import comunio.nas.objects.News;
 import comunio.nas.objects.NewsManager;
 import comunio.nas.objects.orga.ComunioDate;
+import comunio.nas.util.player.PlayerJSONHelper;
 
 import java.text.NumberFormat;
 import java.util.*;

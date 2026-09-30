@@ -3,65 +3,75 @@ package comunio.nas.objects.fotmob;
 import org.json.JSONObject;
 
 public class PositionDetail {
-	private PositionKey strPos;
-	private PositionKey strPosShort;
+	private String strPos;
+	private String strPosShort;
 	private Integer occurences;
-	private String position;
 	private Boolean isMainPosition;
-	private PitchPositionData pitchPositionData;
 
 	public static PositionDetail fromJSON(JSONObject json) {
-		if (json == null)
+		if (json == null) {
 			return null;
+		}
 		PositionDetail obj = new PositionDetail();
 
-		if (json.has("strPos") && !json.isNull("strPos"))
-			obj.setStrPos(PositionKey.fromJSON(json.getJSONObject("strPos")));
-		if (json.has("strPosShort") && !json.isNull("strPosShort"))
-			obj.setStrPosShort(PositionKey.fromJSON(json.getJSONObject("strPosShort")));
-
-		obj.setOccurences(FotmobPlayerDataObject.optInteger(json, "occurences"));
-		obj.setPosition(FotmobPlayerDataObject.optString(json, "position"));
-		obj.setIsMainPosition(FotmobPlayerDataObject.optBoolean(json, "isMainPosition"));
-
-		if (json.has("pitchPositionData") && !json.isNull("pitchPositionData")) {
-			obj.setPitchPositionData(PitchPositionData.fromJSON(json.getJSONObject("pitchPositionData")));
+		if (json.has("strPos") && !json.isNull("strPos")) {
+			obj.setStrPos(json.get("strPos"));
 		}
-
+		if (json.has("strPosShort") && !json.isNull("strPosShort")) {
+			obj.setStrPosShort(json.get("strPosShort"));
+		}
+		obj.setOccurences(FotmobPlayerDataObject.optInteger(json, "occurences"));
+		obj.setIsMainPosition(FotmobPlayerDataObject.optBoolean(json, "isMainPosition"));
 		return obj;
 	}
 
 	public JSONObject toJSON() {
 		JSONObject json = new JSONObject();
 		if (strPos != null)
-			json.put("strPos", strPos.toJSON());
+			json.put("strPos", strPos);
 		if (strPosShort != null)
-			json.put("strPosShort", strPosShort.toJSON());
+			json.put("strPosShort", strPosShort);
 		if (occurences != null)
 			json.put("occurences", occurences);
-		if (position != null)
-			json.put("position", position);
 		if (isMainPosition != null)
 			json.put("isMainPosition", isMainPosition);
-		if (pitchPositionData != null)
-			json.put("pitchPositionData", pitchPositionData.toJSON());
 		return json;
 	}
 
-	public PositionKey getStrPos() {
+	public String getStrPos() {
 		return strPos;
 	}
 
-	public void setStrPos(PositionKey strPos) {
-		this.strPos = strPos;
+	public void setStrPos(Object strPos) {
+		if (strPos != null) {
+			if (strPos instanceof JSONObject) {
+				JSONObject strP = (JSONObject) strPos;
+				this.strPos = strP.has("label") && !strP.isNull("label") ? strP.getString("label") : "unbekannt";
+			} else if (strPos instanceof String) {
+				this.strPos = (String) strPos;
+			} else {
+				System.err.println("Short Position (strPosShort) ist kein String oder JSONObject: " + strPos.toString());
+				this.strPos = "unbekannt";
+			}
+		}
 	}
 
-	public PositionKey getStrPosShort() {
+	public String getStrPosShort() {
 		return strPosShort;
 	}
 
-	public void setStrPosShort(PositionKey strPosShort) {
-		this.strPosShort = strPosShort;
+	public void setStrPosShort(Object strPosShort) {
+		if (strPosShort != null) {
+			if (strPosShort instanceof JSONObject) {
+				JSONObject strPS = (JSONObject) strPosShort;
+				this.strPosShort = strPS.has("label") && !strPS.isNull("label") ? strPS.getString("label") : "";
+			} else if (strPosShort instanceof String) {
+				this.strPosShort = (String) strPosShort;
+			} else {
+				System.err.println("Short Position (strPosShort) ist kein String oder JSONObject: " + strPosShort.toString());
+				this.strPosShort = "unbekannt";
+			}
+		}
 	}
 
 	public Integer getOccurences() {
@@ -72,14 +82,6 @@ public class PositionDetail {
 		this.occurences = occurences;
 	}
 
-	public String getPosition() {
-		return position;
-	}
-
-	public void setPosition(String position) {
-		this.position = position;
-	}
-
 	public Boolean getIsMainPosition() {
 		return isMainPosition;
 	}
@@ -88,11 +90,4 @@ public class PositionDetail {
 		isMainPosition = mainPosition;
 	}
 
-	public PitchPositionData getPitchPositionData() {
-		return pitchPositionData;
-	}
-
-	public void setPitchPositionData(PitchPositionData pitchPositionData) {
-		this.pitchPositionData = pitchPositionData;
-	}
 }

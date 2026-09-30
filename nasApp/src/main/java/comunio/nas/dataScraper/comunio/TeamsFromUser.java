@@ -253,7 +253,7 @@ public class TeamsFromUser {
 							if (clubId != null && !clubId.isBlank()) {
 								if (!clubId.equals(oldClubId)) {
 									if (!oldClubId.equals("0")) {
-										data.put("clubID", clubId);
+										data.put("verein", clubId);
 
 										News news = News.getVereinswechsel(oldClubId, clubId, id, name);
 										newsManager.addNews(news, true);

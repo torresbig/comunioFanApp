@@ -1,4 +1,4 @@
-package comunio.nas.dataScraper.cheats;
+package comunio.nas.cheats;
 
 //Java 17+, jsoup 1.17+
 //Zweck: Freitags 19:30 CEST alle erwarteten Aufstellungen aggregieren und P(Start), P(Sub), P(DNP) schätzen.

@@ -48,7 +48,11 @@ public class GitHubUploader {
 	public static void uploadEspnPlayerMapping(JSONObject espnPlayerMapping) {
 		uploadToGitHub(Urls.getFilePathForGit(Urls.ESPN_PLAYER_MAPPING_URL), espnPlayerMapping.toString(2), "Update ESPN player mapping");
 	}
-
+	
+	public static void uploadPossibleFormationMapping(JSONObject possibleFormations) {
+		uploadToGitHub(Urls.getFilePathForGit(Urls.POSSIBLE_FORMATIOKN), possibleFormations.toString(2), "Update PossibleFormation mapping");
+	}
+	
 	public static void uploadNews(JSONObject news) {
 		uploadToGitHub(Urls.getFilePathForGit(Urls.NEWS_DB_URL), news.toString(2), "Update news feed");
 	}
@@ -61,19 +65,18 @@ public class GitHubUploader {
 		}
 	}
 
-	public static void uploadTransfermarktListe(JSONArray transfermarktArray) {
-		uploadToGitHub(Urls.getFilePathForGit(Urls.TRANSFERMARKT_LIST_URL), transfermarktArray.toString(2), "Update Transfermarkt-Liste feed");
-
+	public static void uploadTransfermarktListe(JSONObject comTmObject) {
+		uploadToGitHub(Urls.getFilePathForGit(Urls.TRANSFERMARKT_LIST_URL), comTmObject.toString(2), "Update Transfermarkt feed");
 	}
+	
+
 
 	public static void uploadMatchdayInfoListe(JSONObject matchdayInfoList) {
 		uploadToGitHub(Urls.getFilePathForGit(Urls.MATCHDAYDATA_LIST_URL), matchdayInfoList.toString(2), "Update matchdayInfoList-Liste feed");
-
 	}
 
 	public static void uploadLastUpdateListe(JSONObject lastUpdates) {
 		uploadToGitHub(Urls.getFilePathForGit(Urls.LASTUPDATES_LIST_URL), lastUpdates.toString(2), "Update lastUpdates-Liste feed");
-
 	}
 
 	public static boolean mappingChanged = false;

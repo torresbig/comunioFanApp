@@ -67,7 +67,7 @@ public class ErrorsContainer {
 		String key = NEW_DATE_FORMAT.format(new Date());
 		this.errors.computeIfAbsent(key, k -> new HashSet<>()).add(error);
 		
-		LOGGER.info("Lade aktualisierte ErrorDb.json auf GitHub hoch");
+		LOGGER.info("ERROR! Fehler der db hinzugefügt: " + error.toString());
 		GitHubUploader.uploadToGitHub(Urls.ERROR_DB_URL, this.toJson());
 	}
 

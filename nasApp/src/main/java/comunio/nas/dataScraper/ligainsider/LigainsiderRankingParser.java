@@ -18,7 +18,7 @@ import comunio.nas.objects.ligainsider.LigainsiderRankingEntry;
  * Parst das Ligainsider-Ranking von der Webseite.
  */
 class LigainsiderRankingParser {
-	
+
 	private static final Logger LOGGER = LogManager.getLogger(LigainsiderRankingParser.class);
 
 	/**
@@ -73,13 +73,45 @@ class LigainsiderRankingParser {
 			// Durchschnittsminuten (Index 9)
 			int durchschnittsminuten = parseIntSafe(tds.get(9).text());
 
-			// Eintrag erzeugen und der Ergebnisliste hinzufügen
-			LigainsiderRankingEntry entry = new LigainsiderRankingEntry(name, rang, verein, durchschnittsnote, durchschnittspunkte, punkte, einsaetzeBewertet, durchschnittsminuten);
+			// Spieler-Zelle holen (Index 2)
+			Element playerTd = tds.get(2);
+
+			// <a>-Tag innerhalb der Zelle suchen
+			Element playerLink = playerTd.selectFirst("a");
+			String link = "";
+			String playerId = "";
+
+			if (playerLink != null) {
+				// Vollständigen oder relativen Link auslesen
+				link = playerLink.attr("abs:href"); // 'abs:href' liefert die absolute URL
+
+				// Relative URL für die ID-Extraktion holen (z. B. "/mario-goetze/12345/")
+				String href = playerLink.attr("href");
+
+				// ID extrahieren (sucht nach der letzten Zahlenfolge im Pfad)
+				playerId = extractPlayerId(href);
+			}
+
+			// Eintrag erzeugen (Beispiel: erweiterter Konstruktor)
+			LigainsiderRankingEntry entry = new LigainsiderRankingEntry(name, playerId, link, rang, verein, durchschnittsnote, durchschnittspunkte, punkte, einsaetzeBewertet, durchschnittsminuten);
 			result.add(entry);
 		}
 
 		LOGGER.info("Ligainsider-Ranking: " + result.size() + " Einträge gefunden.");
 		return result;
+	}
+
+	private static String extractPlayerId(String url) {
+		if (url == null || url.isEmpty()) {
+			return "";
+		}
+		// Sucht nach der Zahlenfolge in URLs wie "/spieler-name/12345/" oder "/12345"
+		java.util.regex.Pattern pattern = java.util.regex.Pattern.compile("/(\\d+)(?:/|$)");
+		java.util.regex.Matcher matcher = pattern.matcher(url);
+		if (matcher.find()) {
+			return matcher.group(1);
+		}
+		return "";
 	}
 
 	private static Integer parseIntSafe(String s) {

@@ -256,4 +256,38 @@ public class LoadJSONfromFile {
 		if (body == null) return "null";
 		return body.length() > 200 ? body.substring(0, 200) + "..." : body;
 	}
+	
+	
+	/**
+	 * Lädt JSON von einer URL und gibt {@link JSONObject} oder {@link JSONArray} zurück,
+	 * je nachdem, was der Server liefert. Automatische Erkennung anhand des ersten Zeichens.
+	 * <p>
+	 * Nutze {@link #fromJSON(Object)} in den Zielklassen zur weiteren Verarbeitung.
+	 *
+	 * @param urlString Die URL zur JSON-Ressource.
+	 * @return {@link JSONObject} oder {@link JSONArray} – je nach Serverantwort.
+	 * @throws Exception Bei HTTP-Fehlern, ungültigem Format oder Parsing-Problemen.
+	 */
+	public static Object loadJsonFromUrl(String urlString) throws Exception {
+	    HttpResponse<String> response = sendWithRetry(urlString);
+	    int statusCode = response.statusCode();
+
+	    if (statusCode == 404) {
+	        GitHubUploader.uploadToGitHub(Urls.getFilePathForGit(urlString), new JSONObject().toString(), Urls.getFilename(urlString) + " - datei nicht vorhanden! Wird erstellt!");
+	        LOGGER.info(Urls.getFilename(urlString) + " - nicht auf GITHUB vorhanden. wurde erstellt!");
+	        return new JSONObject();
+	    } else if (statusCode != 200) {
+	        throw new IOException("HTTP error code: " + statusCode + " - Body: " + truncateBody(response.body()));
+	    }
+
+	    String body = response.body() != null ? response.body().trim() : "";
+
+	    if (!body.startsWith("{") && !body.startsWith("[")) {
+	        LOGGER.severe("Empfangene Daten sind weder Object noch Array: " + truncateBody(body));
+	        throw new IllegalArgumentException("Empfangene Daten von URL " + urlString + " sind kein gültiges JSON.");
+	    }
+
+	    return new JSONTokener(body).nextValue(); // gibt JSONObject oder JSONArray zurück
+	}
+
 }

@@ -70,10 +70,12 @@ public class ComstatsDataScraper {
 
 				JSONObject player = PlayerHelper.findPlayerByComunioId(playerDB, playerId, notInLigaDBObj);
 				if (player != null) {
+
 					JSONObject data = player.optJSONObject("data");
 					if (data == null) {
 						data = new JSONObject();
 					}
+
 					JSONArray spieltagspunkte = data.optJSONArray("spieltagspunkte");
 					if (spieltagspunkte == null) {
 						spieltagspunkte = new JSONArray();

@@ -3,6 +3,7 @@ package comunio.nas.util.player;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import comunio.nas.objects.club.ClubObject;
 import comunio.nas.util.ClubMapper;
 
 import java.util.*;
@@ -31,7 +32,7 @@ public class PlayerMatcher {
 	 * @param possibleNames Namensvarianten des Zielspielers (Set oder Liste)
 	 * @return JSONObject des gefundenen Spielers oder null, falls kein Match
 	 */
-	public static JSONObject findPlayerByNameAndClub(JSONArray playerDB, JSONArray clubDB, String playerName, String clubName, Collection<String> possibleNames) {
+	public static JSONObject findPlayerByNameAndClub(JSONArray playerDB, Map<String, ClubObject> clubDb, String clubName, Collection<String> possibleNames) {
 		JSONObject match = null;
 		boolean matchFound = false;
 		JSONObject fuzzyMatch = null;
@@ -59,7 +60,8 @@ public class PlayerMatcher {
 
 			// Vereins-ID in Klartextnamen umwandeln
 			String dbClubId = data != null ? data.optString("verein", "") : "";
-			String dbClubName = ClubMapper.getClubnameFromComunioId(dbClubId, clubDB);
+			// TODO: clubDB noch weiter als map durchgeben
+			String dbClubName = ClubMapper.getClubnameFromComunioId(dbClubId, new JSONArray(clubDb.values()));
 			String normalizedDbClub = normalizeClubName(dbClubName);
 
 			// Debug-Ausgaben für gezielte Analyse
@@ -103,10 +105,10 @@ public class PlayerMatcher {
 		}
 		return match;
 	}
-	
-	public static JSONObject findPlayerByNameAndClub(JSONArray playerDB, JSONArray clubDB, String playerName, String clubName) {
+
+	public static JSONObject findPlayerByNameAndClub(JSONArray playerDB, Map<String, ClubObject> clubDb, String playerName, String clubName) {
 		Set<String> possibleNames = generatePossibleNames(playerName);
-		return findPlayerByNameAndClub(playerDB, clubDB, playerName, clubName, possibleNames);
+		return findPlayerByNameAndClub(playerDB, clubDb, clubName, possibleNames);
 	}
 
 	/**
@@ -135,6 +137,7 @@ public class PlayerMatcher {
 			return names;
 		}
 		fullName = fullName.trim();
+		names.add(PlayerHelper.normalizeName(fullName));
 		names.add(fullName.toLowerCase());
 		String[] parts = fullName.split("\\s+");
 		if (parts.length >= 2) {

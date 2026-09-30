@@ -30,6 +30,15 @@ public class ComAnalysticsTopFlop {
 	 */
 
 	public static void getComAnalysticsTopFlopData(JSONObject playerDBObject, LastUpdates lastUpdates) {
+		
+		if(lastUpdates != null && lastUpdates.getComAnalysticsTopFlop() != null ) {
+			ComunioDate lastU = new ComunioDate(lastUpdates.getComAnalysticsTopFlop());
+			ComunioDate now = new ComunioDate(); 
+			if(!now.after(lastU.addDays(1))){
+				LOGGER.info("Daten wurden heute schon abgefragt! LastUpdate: " + lastUpdates.getComAnalysticsTopFlop().toString());
+				return; 
+			}
+		}
 		LOGGER.log(Level.INFO, "Starte ComAnalysticsTopFlop Datenextraktion...");
 		int anzahl = 0;
 		if (playerDBObject == null) {
@@ -94,7 +103,7 @@ public class ComAnalysticsTopFlop {
 		} catch (Exception e) {
 			LOGGER.log(Level.SEVERE, "Fehler bei der ComAnalysticsTopFlop Datenextraktion: " + e.getMessage(), e);
 		}
-		lastUpdates.setComAnalystics(Instant.now());
+		lastUpdates.setComAnalysticsTopFlop(Instant.now());
 		LOGGER.log(Level.INFO,
 				"Ende ComAnalysticsTopFlop Datenextraktion - Extrahierte Gesamtanzahl Spieler: " + anzahl);
 	}

@@ -25,10 +25,11 @@ import comunio.nas.dataVariable.LastUpdates;
 import comunio.nas.dataVariable.Urls;
 import comunio.nas.git.GitHubUploader;
 import comunio.nas.objects.NewsManager;
+import comunio.nas.objects.comunioTransfermarkt.PlayerOnMarket;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.orga.ComunioDate;
-import comunio.nas.objects.player.PlayerTools;
 import comunio.nas.objects.user.User;
+import comunio.nas.util.player.PlayerTools;
 
 public class SeasonChange {
 
@@ -172,7 +173,7 @@ public class SeasonChange {
 	 *         sowie auf GitHub verarbeitet wurde; {@code false}, wenn kein
 	 *         Saisonübergang vorlag oder der Prozess abgebrochen wurde.
 	 */
-	public static boolean analyzeNewsForSeasonTransit(NewsManager newsManager, JSONObject playerDBObject, JSONArray marketValueDB, JSONObject pointsDB, JSONObject matchdayInfoList, Map<String, User> userMap, JSONArray transfermarktListe, Map<String, String> playerToUserMap, MatchdayInfo matchdayInfo, LastUpdates lastUpdates, User user, JSONArray clubDB) {
+	public static boolean analyzeNewsForSeasonTransit(NewsManager newsManager, JSONObject playerDBObject, JSONArray marketValueDB, JSONObject pointsDB, JSONObject matchdayInfoList, Map<String, User> userMap,Map<String, PlayerOnMarket> transfermarktMap, Map<String, String> playerToUserMap, MatchdayInfo matchdayInfo, LastUpdates lastUpdates, User user, JSONArray clubDB) {
 
 		lastUpdates = lastUpdates != null ? lastUpdates : new LastUpdates();
 
@@ -281,8 +282,8 @@ public class SeasonChange {
 
 									while (userMap.size() > 0)
 										userMap.clear();
-									while (transfermarktListe.length() > 0)
-										transfermarktListe.remove(0);
+									while (transfermarktMap.size() > 0)
+										transfermarktMap.clear();
 									while (clubDB.length() > 0)
 										clubDB.remove(0);
 									newsManager.clear(); // NewsManager intern leeren (alle News entfernen)

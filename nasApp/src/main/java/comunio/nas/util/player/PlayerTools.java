@@ -1,4 +1,4 @@
-package comunio.nas.objects.player;
+package comunio.nas.util.player;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -36,6 +36,5 @@ public class PlayerTools {
 			}
 		}
 	}
-
 
 }

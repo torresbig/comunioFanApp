@@ -8,10 +8,14 @@ import java.util.logging.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import comunio.nas.ComunioDataUpdater;
 import comunio.nas.dataVariable.LastUpdates;
+import comunio.nas.error.Error;
+import comunio.nas.error.ErrorType;
 import comunio.nas.objects.helper.LogManager;
+import comunio.nas.objects.ligainsider.InjuryAndBlockedData;
 import comunio.nas.objects.orga.ComunioDate;
-import comunio.nas.objects.player.PlayerTools;
+import comunio.nas.util.player.PlayerTools;
 
 /**
  * Dienstklasse für das Auffinden, Exportieren und Entfernen von Spielern, die
@@ -49,27 +53,56 @@ public class ExportNotInLiga {
 					continue;
 				}
 
-				JSONObject injuryInfo = injuryDB.optJSONObject(id);
+				JSONObject injuryInfo = injuryDB.optJSONObject(id, new JSONObject());
 
 				String verein = data.optString("verein");
-				if (injuryInfo == null) {
-					continue;
-				}
-				String statusStr = injuryInfo.optString("status");
 
-				if ("NICHT_IN_LIGA".equals(statusStr) && "0".equals(verein)) {
+				String statusStr = injuryInfo.optString("status");
+				
+				boolean hasNotInLigaClubId = "0".equals(verein) || "61".equals(verein);
+
+				if ("NICHT_IN_LIGA".equals(statusStr) && hasNotInLigaClubId) {
+					setFlagsForNotinLiga(playerObj, injuryInfo, injuryDB);
 					playerResultList.put(id, playerObj);
 					found++;
-				} else if ("NICHT_IN_LIGA".equals(statusStr) && !"0".equals(verein)) {
+				} else if ("NICHT_IN_LIGA".equals(statusStr) && !hasNotInLigaClubId) {
 					LOGGER.info("-NICHT IN LIGA-, aber Verein ist nicht 0: " + playerObj.optString("name") + " (ID: " + id + ")");
-				} else if (!"NICHT_IN_LIGA".equals(statusStr) && "0".equals(verein)) {
-					LOGGER.info("NICHT -NICHT IN LIGA-, aber Verein ist 0: " + playerObj.optString("name") + " (ID: " + id + ")");
+				} else if (!"NICHT_IN_LIGA".equals(statusStr) && hasNotInLigaClubId) {
+					setFlagsForNotinLiga(playerObj, injuryInfo, injuryDB);
+					playerResultList.put(id, playerObj);
+					found++;
+//					ComunioDataUpdater.errorDb.addError(new Error(ErrorType.NICHTINLIGA,"NICHT -NICHT IN LIGA-, aber Verein ist 0 oder 61: " + playerObj.optString("name") + " (ID: " + id + ")"));
+					LOGGER.info("NICHT -NICHT IN LIGA-, aber Verein ist 0 oder 61: " + playerObj.optString("name") + " (ID: " + id + ")");
 				}
 			}
 			LOGGER.info("Es wurden " + found + " Spieler mit NICHT_IN_LIGA gefunden!");
 		}
 		
 		return playerResultList;
+	}
+	
+	private static void setFlagsForNotinLiga(JSONObject playerObj, JSONObject injuryInfo, JSONObject injuryDb ) {
+		if(playerObj == null) {
+			return;
+		}
+		JSONObject data = playerObj.optJSONObject("data");
+		if(data == null || data.isEmpty()) {
+			return;
+		}
+		data.put("verein", "0");
+		data.put("retired", true);
+		String playerId = playerObj.getString("id"); 
+		String playerName = playerObj.getString("name"); 
+		
+		if(injuryInfo == null || injuryInfo.isEmpty()) {
+			LOGGER.info("Keine Verletzungsinfo für Spieler " + playerName + " (ID: " + playerId + ")");
+			return;
+		}
+		
+		InjuryAndBlockedData ibd = InjuryAndBlockedData.fromJSON(injuryInfo);
+		ibd = InjuryAndBlockedData.setAsNotInLiga(playerId, "ExportNotInLiga", ibd);
+		injuryDb.put(playerId, ibd);
+		LOGGER.info("Spieler-Flags für NotInLiga gesetzt " + playerName + " (ID: " + playerId + ")");
 	}
 
 	/**
@@ -103,6 +136,7 @@ public class ExportNotInLiga {
 			LOGGER.warning("Keine PlayerDB vorhanden! Abbruch.");
 			return;
 		}
+		System.out.println();
 		Map<String, JSONObject> notInLigaPlayerMap = findPlayerNichtInLiga(playerDB, injuryDB);
 		if (notInLigaPlayerMap.isEmpty()) {
 			LOGGER.info("Keine NICHT_IN_LIGA-Spieler gefunden.");

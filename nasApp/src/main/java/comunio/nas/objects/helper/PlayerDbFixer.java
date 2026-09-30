@@ -7,13 +7,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
+import javax.swing.JOptionPane;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import comunio.nas.enu.NewsArt;
+import comunio.nas.dataScraper.ligainsider.LigainsiderInjurieAndBannedPlayers;
 import comunio.nas.objects.News;
 import comunio.nas.objects.NewsManager;
-import comunio.nas.objects.orga.ComunioDate;
 
 public class PlayerDbFixer {
 
@@ -44,79 +45,6 @@ public class PlayerDbFixer {
 				LOGGER.info("lastBigUpdate von Root-Ebene in data verschoben für Spieler: " + player.optString("name"));
 			}
 		}
-	}
-
-
-
-	public static void getAllPlayersNotUpdatet(JSONArray playerDB, NewsManager newsManager) {
-		for (int i = 0; i < playerDB.length(); i++) {
-			JSONObject player = playerDB.getJSONObject(i);
-			JSONObject data = player.optJSONObject("data");
-
-			if (data.has("lastUpdate")) {
-				ComunioDate lastUpdate = new ComunioDate(data.getString("lastUpdate"));
-				ComunioDate now = new ComunioDate();
-
-				if (lastUpdate.before(now)) {
-					try {
-						JSONObject status = data.optJSONObject("status");
-						if (status == null) {
-							status = new JSONObject();
-							data.put("status", status);
-						}
-						// nächstes Object, wenn schon sder status nicht in liga ist.
-						if (status.getString("status").equals("NICHT_IN_LIGA")) {
-							continue;
-						}
-						JSONObject comunioStatus = data.optJSONObject("comunioStatus");
-						if (comunioStatus == null) {
-							comunioStatus = new JSONObject();
-							data.put("comunioStatus", comunioStatus);
-						}
-						// nächstes Object, wenn schon sder status nicht in liga ist.
-						if (comunioStatus.getString("status").equals("NICHT_IN_LIGA")) {
-							JSONObject stat = new JSONObject();
-							stat.put("status", "NICHT_IN_LIGA");
-							stat.put("grund", "");
-							stat.put("seit", "");
-							stat.put("bis", JSONObject.NULL);
-							stat.put("details", "");
-							stat.put("lastUpdate", lastUpdate);
-							status = stat;
-							continue;
-						}
-
-						String name = player.getString("name");
-						String playerId = player.getString("id");
-						String newsText = "Statuswechsel: " + name + " (" + playerId + ") ist jetzt NICHT_IN_LIGA";
-						News news = new News(NewsArt.SPIELERSTATUS, newsText, player.getString("id"));
-
-						if (!newsManager.contains(news)) {
-							newsManager.addNews(news, true);
-						}
-						LOGGER.info(newsText);
-
-						JSONObject stat = new JSONObject();
-						stat.put("status", "NICHT_IN_LIGA");
-						stat.put("grund", "");
-						stat.put("seit", "");
-						stat.put("bis", JSONObject.NULL);
-						stat.put("details", "");
-						stat.put("lastUpdate", lastUpdate);
-						status = stat;
-						comunioStatus = stat;
-
-						data.put("verein", "0");
-
-					} catch (Exception e) {
-
-					}
-
-				}
-			}
-
-		}
-
 	}
 
 	public static void fixTmDeMarktwerteAndRealWert(JSONArray playerDB) {
@@ -328,113 +256,247 @@ public class PlayerDbFixer {
 		}
 	}
 
-	  /**
-     * Füllt für jeden Spieler fehlende Spieltage bis currentSpieltag auf.
-     * @param pointsDB JSON-Datenbank (Key = Spieler-ID, Value = JSONArray mit Spieltagen)
-     * @param currentSpieltag letzter (maximaler) bekannter Spieltag
-     */
-    public static void fixFehlendeSpieltagspunkte(JSONObject pointsDB, int currentSpieltag) {
+	/**
+	 * Füllt für jeden Spieler fehlende Spieltage bis currentSpieltag auf.
+	 * 
+	 * @param pointsDB        JSON-Datenbank (Key = Spieler-ID, Value = JSONArray
+	 *                        mit Spieltagen)
+	 * @param currentSpieltag letzter (maximaler) bekannter Spieltag
+	 */
+	public static void fixFehlendeSpieltagspunkte(JSONObject pointsDB, int currentSpieltag) {
 
-        pointsDB.keySet().forEach(playerId -> {
-            JSONArray array = pointsDB.getJSONArray(playerId);
+		pointsDB.keySet().forEach(playerId -> {
+			JSONArray array = pointsDB.getJSONArray(playerId);
 
-            // Map zur leichteren Verarbeitung
-            Map<Integer, JSONObject> map = new HashMap<>();
-            for (Object o : array) {
-                JSONObject e = (JSONObject) o;
-                if (e.has("key")) {
-                    map.put(e.getInt("key"), e);
-                }
-            }
+			// Map zur leichteren Verarbeitung
+			Map<Integer, JSONObject> map = new HashMap<>();
+			for (Object o : array) {
+				JSONObject e = (JSONObject) o;
+				if (e.has("key")) {
+					map.put(e.getInt("key"), e);
+				}
+			}
 
-            List<Integer> keys = new ArrayList<>(map.keySet());
-            Collections.sort(keys);
+			List<Integer> keys = new ArrayList<>(map.keySet());
+			Collections.sort(keys);
 
-            // --- Spezialfall: erster Spieltag fehlt ---
-            if (!map.containsKey(1) && !keys.isEmpty()) {
-                int firstKey = keys.get(0);
-                JSONObject first = map.get(firstKey);
-                int nextTotal = first.optInt("totalPoints", 0);
-                int nextValue = first.optInt("value", 0);
-                int inferredValue = Math.max((nextTotal - nextValue) / 1, 0);
-                JSONObject sp1 = new JSONObject();
-                sp1.put("key", 1);
-                sp1.put("value", inferredValue);
-                sp1.put("totalPoints", inferredValue);
-                sp1.put("info", "Interpoliert (Startspieltag aus 0 berechnet)");
-                map.put(1, sp1);
-                keys.add(1);
-                Collections.sort(keys);
-            }
+			// --- Spezialfall: erster Spieltag fehlt ---
+			if (!map.containsKey(1) && !keys.isEmpty()) {
+				int firstKey = keys.get(0);
+				JSONObject first = map.get(firstKey);
+				int nextTotal = first.optInt("totalPoints", 0);
+				int nextValue = first.optInt("value", 0);
+				int inferredValue = Math.max((nextTotal - nextValue) / 1, 0);
+				JSONObject sp1 = new JSONObject();
+				sp1.put("key", 1);
+				sp1.put("value", inferredValue);
+				sp1.put("totalPoints", inferredValue);
+				sp1.put("info", "Interpoliert (Startspieltag aus 0 berechnet)");
+				map.put(1, sp1);
+				keys.add(1);
+				Collections.sort(keys);
+			}
 
-            // --- Hauptinterpolation ---
-            for (int i = 0; i < keys.size() - 1; i++) {
-                int currentKey = keys.get(i);
-                int nextKey = keys.get(i + 1);
+			// --- Hauptinterpolation ---
+			for (int i = 0; i < keys.size() - 1; i++) {
+				int currentKey = keys.get(i);
+				int nextKey = keys.get(i + 1);
 
-                JSONObject current = map.get(currentKey);
-                JSONObject next = map.get(nextKey);
-                int gap = nextKey - currentKey - 1;
+				JSONObject current = map.get(currentKey);
+				JSONObject next = map.get(nextKey);
+				int gap = nextKey - currentKey - 1;
 
-                if (gap > 0) {
-                    // nicht interpolieren, wenn der Nachfolger gar keinen totalPoints hat
-                    if (next.isNull("totalPoints")) continue;
+				if (gap > 0) {
+					// nicht interpolieren, wenn der Nachfolger gar keinen totalPoints hat
+					if (next.isNull("totalPoints"))
+						continue;
 
-                    int prevTotal = current.optInt("totalPoints", 0);
-                    int nextTotal = next.optInt("totalPoints", prevTotal);
-                    int nextValue = next.optInt("value", 0);
+					int prevTotal = current.optInt("totalPoints", 0);
+					int nextTotal = next.optInt("totalPoints", prevTotal);
+					int nextValue = next.optInt("value", 0);
 
-                    int diffTotal = (nextTotal - prevTotal) - nextValue;
-					
-                    if (gap == 1) {
-                        // einfacher Fall: ein Spieltag fehlt
-                        int interpolValue = diffTotal;
-                        int interpolTotal = prevTotal + interpolValue;
-                        JSONObject e = new JSONObject();
-                        e.put("key", currentKey + 1);
-                        e.put("value", interpolValue);
-                        e.put("totalPoints", interpolTotal);
-                        e.put("info", "Interpoliert (einzelner fehlender Spieltag)");
-                        map.put(currentKey + 1, e);
-                    } else {
-                        // mehrere fehlen → gleichmäßig verteilen
-                        int avgValue = (gap > 0) ? Math.max(diffTotal / gap, 0) : 0;
-                        int runningTotal = prevTotal;
-                        for (int j = 1; j <= gap; j++) {
-                            runningTotal += avgValue;
-                            JSONObject e = new JSONObject();
-                            e.put("key", currentKey + j);
-                            e.put("value", avgValue);
-                            e.put("totalPoints", runningTotal);
-                            e.put("info", "Interpoliert (mehrere fehlende Spieltage)");
-                            map.put(currentKey + j, e);
-                        }
-                    }
-                }
-            }
+					int diffTotal = (nextTotal - prevTotal) - nextValue;
 
-            // --- kein künstlicher Schluss-Spieltag! ---
-            JSONArray out = new JSONArray();
-            List<Integer> allKeys = new ArrayList<>(map.keySet());
-            Collections.sort(allKeys);
-            for (int k : allKeys) {
-                if (k <= currentSpieltag) out.put(map.get(k));
-            }
+					if (gap == 1) {
+						// einfacher Fall: ein Spieltag fehlt
+						int interpolValue = diffTotal;
+						int interpolTotal = prevTotal + interpolValue;
+						JSONObject e = new JSONObject();
+						e.put("key", currentKey + 1);
+						e.put("value", interpolValue);
+						e.put("totalPoints", interpolTotal);
+						e.put("info", "Interpoliert (einzelner fehlender Spieltag)");
+						map.put(currentKey + 1, e);
+					} else {
+						// mehrere fehlen → gleichmäßig verteilen
+						int avgValue = (gap > 0) ? Math.max(diffTotal / gap, 0) : 0;
+						int runningTotal = prevTotal;
+						for (int j = 1; j <= gap; j++) {
+							runningTotal += avgValue;
+							JSONObject e = new JSONObject();
+							e.put("key", currentKey + j);
+							e.put("value", avgValue);
+							e.put("totalPoints", runningTotal);
+							e.put("info", "Interpoliert (mehrere fehlende Spieltage)");
+							map.put(currentKey + j, e);
+						}
+					}
+				}
+			}
 
-            pointsDB.put(playerId, out);
-        });
-    }
+			// --- kein künstlicher Schluss-Spieltag! ---
+			JSONArray out = new JSONArray();
+			List<Integer> allKeys = new ArrayList<>(map.keySet());
+			Collections.sort(allKeys);
+			for (int k : allKeys) {
+				if (k <= currentSpieltag)
+					out.put(map.get(k));
+			}
 
-	public static void removeAllStatusFromPlayerObject(JSONObject playerDbObject){
+			pointsDB.put(playerId, out);
+		});
+	}
+
+	public static void removeAllStatusFromPlayerObject(JSONObject playerDbObject) {
 		JSONArray spielerDB = playerDbObject.optJSONArray("playerDB", new JSONArray());
-		
-		for(int i=0;i<spielerDB.length();i++){
+
+		for (int i = 0; i < spielerDB.length(); i++) {
 			JSONObject spielerObj = spielerDB.getJSONObject(i);
 			JSONObject data = spielerObj.optJSONObject("data");
 			data.remove("status"); // remove status from player object
 			data.remove("comunioStatus"); // remove status from player object
 			spielerObj.put("data", data);
 		}
+	}
+	
+	public static void removeFromPlayerToUserMapIfNotInLiga(JSONObject notInLigaDb,  Map<String, String> playerToUserMap) {
+		JSONObject db = notInLigaDb.optJSONObject("db", new JSONObject());
+		for (String key : db.keySet()) {
+			playerToUserMap.remove(key);
+		}
+	}
+
+	public static void fixTagRetiredOnAllDb(JSONObject playerDbObject, JSONObject notInLigaDb) {
+		JSONArray spielerDB = playerDbObject.optJSONArray("playerDB", new JSONArray());
+
+		for (int i = 0; i < spielerDB.length(); i++) {
+			JSONObject spielerObj = spielerDB.getJSONObject(i);
+			JSONObject data = spielerObj.optJSONObject("data");
+			data.remove("status");
+			data.remove("comunioStatus");
+			data.remove("spieltagspunkte");
+			if (data.has("transfermarktDoDe")) {
+				JSONObject tmde = data.getJSONObject("transfermarktDoDe");
+				if (tmde.has("name") && (tmde.getString("name").contains("Mio.") || tmde.getString("name").contains("Tsd."))) {
+					tmde.put("name", cleanName(tmde.getString("name")));
+				}
+			}
+			if (data.has("retired")) {
+				continue;
+			}
+			data.put("retired", false);
+			spielerObj.put("data", data);
+		}
+
+		JSONObject db = notInLigaDb.optJSONObject("db", new JSONObject());
+		for (String key : db.keySet()) {
+			JSONObject nilObj = db.getJSONObject(key);
+			JSONObject nilData = nilObj.optJSONObject("data");
+			nilData.remove("status");
+			nilData.remove("comunioStatus");
+			nilData.remove("spieltagspunkte");
+			if (nilData.has("transfermarktDoDe")) {
+				JSONObject tmde = nilData.getJSONObject("transfermarktDoDe");
+				if (tmde.has("name") && (tmde.getString("name").contains("Mio.") || tmde.getString("name").contains("Tsd."))) {
+					tmde.put("name", cleanName(tmde.getString("name")));
+				}
+			}
+
+			if (nilData.has("retired")) {
+				continue;
+			}
+
+			nilData.put("retired", true);
+
+			nilObj.put("data", nilData);
+			db.put(key, nilObj);
+		}
+	}
+
+	public static String cleanName(String raw) {
+		return raw.replaceAll("\\s*\\d+[,.]\\d+\\s*Mio\\.\\s*€", "").trim();
+	}
+
+	// Methode zum Entfernen eines Schlüssels aus verschachtelten JSON-Arrays mit
+	// 3-Optionen-Bestätigung
+	public static void removeKeyFromArray(JSONObject root, String keyPath) {
+		String[] pathParts = keyPath.split("\\."); // z.B. "data.clubID"
+
+		// Navigation zum Zielobjekt (root -> playerDB -> [i] -> pathParts[0] -> ...)
+		JSONArray playerDB = root.getJSONArray("playerDB");
+		List<JSONObject> parentContainers = new ArrayList<>();
+
+		// Sammle alle Container-Objekte, die den Zielschlüssel enthalten
+		for (int i = 0; i < playerDB.length(); i++) {
+			JSONObject item = playerDB.getJSONObject(i);
+			JSONObject container = navigateToContainer(item, pathParts);
+			if (container != null && container.has(pathParts[pathParts.length - 1])) {
+				parentContainers.add(container);
+			}
+		}
+
+		if (parentContainers.isEmpty()) {
+			System.out.println("Keine Objekte mit Pfad '" + keyPath + "' gefunden");
+			return;
+		}
+
+		// Bestätigungsdialog mit 3 Optionen: Einzeln löschen, Alle löschen, Abbrechen
+		String message = "Schlüssel '" + keyPath + "' in " + parentContainers.size() + " Objekten gefunden.\nWie möchten Sie fortfahren?";
+		int result = JOptionPane.showOptionDialog(null, message, "Löschen bestätigen", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, new String[] { "Einzeln löschen", "Alle löschen", "Abbrechen" }, "Alle löschen");
+
+		switch (result) {
+		case 0: // Einzeln löschen
+			// Zeige Dialog für jedes Objekt einzeln an
+			for (JSONObject container : parentContainers) {
+				int singleResult = JOptionPane.showConfirmDialog(null, "Schlüssel '" + keyPath + "' in diesem Objekt entfernen?", "Bestätigung", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+				if (singleResult == JOptionPane.YES_OPTION) {
+					container.remove(pathParts[pathParts.length - 1]);
+					System.out.println("Schlüssel entfernt aus einem Objekt");
+				}
+			}
+			break;
+
+		case 1: // Alle löschen
+			for (JSONObject container : parentContainers) {
+				container.remove(pathParts[pathParts.length - 1]);
+			}
+			System.out.println("Schlüssel in allen " + parentContainers.size() + " Objekten entfernt");
+			break;
+
+		case 2: // Abbrechen
+			System.out.println("Löschen abgebrochen");
+			break;
+		}
+	}
+
+	// Hilfsmethode zur Navigation zu dem Objekt, das den Zielschlüssel enthält
+	private static JSONObject navigateToContainer(JSONObject root, String[] pathParts) {
+		JSONObject current = root;
+		// Navigiere durch alle Teile des Pfads bis auf das letzte (das ist der
+		// Zielcontainer)
+		for (int i = 0; i < pathParts.length - 1; i++) {
+			if (current.has(pathParts[i])) {
+				Object next = current.get(pathParts[i]);
+				if (next instanceof JSONObject) {
+					current = (JSONObject) next;
+				} else {
+					return null;
+				}
+			} else {
+				return null;
+			}
+		}
+		return current;
 	}
 
 }

@@ -1,4 +1,4 @@
-package comunio.nas.objects.player;
+package comunio.nas.util.player;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

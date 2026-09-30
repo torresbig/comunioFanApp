@@ -61,6 +61,7 @@ public class Urls {
 	public static final String USER_LINEUPS = ComunioDataUpdater.uld.getCompleteGitProjectPath("UserLineups.json");
 	public static final String ESPN_CLUB_MAPPING_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("EspnClubMapping.json");
 	public static final String ESPN_PLAYER_MAPPING_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("EspnPlayerMapping.json");
+	public static final String POSSIBLE_FORMATIOKN = ComunioDataUpdater.uld.getCompleteGitProjectPath("PossibleFormatin.json");
 
 	/** spielersuche auf Transfermarkt.de */
 //	public static final String TMDE_PLAYERSEARCH = "https://www.transfermarkt.de/schnellsuche/ergebnis/schnellsuche?query=";
@@ -71,6 +72,7 @@ public class Urls {
 	/** Ligainsider */
 	public static final String LIGAINSIDER_URL = "https://www.ligainsider.de/bundesliga/noten/";
 	public static final String LIGAINSIDER_INJURY = "https://www.ligainsider.de/bundesliga/verletzte-und-gesperrte-spieler/";
+	public static final String LIGAINSIDER_CLUBS = "https://www.ligainsider.de/bundesliga/tabelle/";
 
 	public static String getFilename(String url) {
 		String[] splits = url.split("/");

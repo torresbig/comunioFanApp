@@ -221,7 +221,7 @@ public class MatchdayInfo {
 	 * @return true, wenn aktueller Spieltag größer ist (neuer Spieltag da)
 	 */
 	public boolean isNewMatchday(int lastProcessedMatchday) {
-		return this.currentMatchday > lastProcessedMatchday;
+		return this.pointsMatchday > lastProcessedMatchday;
 	}
 
 	/**
@@ -411,6 +411,28 @@ public class MatchdayInfo {
 
 	public boolean isShifted() {
 		return isShifted;
+	}
+	
+	/**
+	 * Prüft, ob aktuell abgefragt werden darf. 
+	 * Das Abfragefenster liegt zwischen genau 24 Stunden vor dem frühesten Kickoff 
+	 * und dem frühesten Kickoff selbst.
+	 * 
+	 * @return true, wenn die aktuelle Zeit im erlaubten Fenster liegt, sonst false.
+	 */
+	public boolean canFetchForPossibleFormation() {
+		if (earliestKickoff == null) {
+			return false; // Kein Kickoff-Datum vorhanden -> Abfrage nicht möglich
+		}
+
+		if(this.isFinished()) {
+			return false; 
+		}
+		ZonedDateTime now = ZonedDateTime.now(earliestKickoff.getZone());
+		ZonedDateTime twentyFourHoursBefore = earliestKickoff.minusHours(40);
+
+		// Prüft: now >= 24h vor Anstoß AND now <= Anstoß
+		return now.isAfter(twentyFourHoursBefore) && now.isBefore(latestKickoff);
 	}
 
 }

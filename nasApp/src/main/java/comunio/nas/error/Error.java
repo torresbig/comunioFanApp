@@ -163,5 +163,9 @@ public class Error {
 				this.url.equals(other.url) &&
 				this.acception.equals(other.acception);
 	}
+	
+	public String toString() {
+		return toJSON().toString() ;
+	}
 
 }

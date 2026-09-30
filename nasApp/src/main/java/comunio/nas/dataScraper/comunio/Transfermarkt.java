@@ -5,6 +5,7 @@ import java.time.Duration;
 import java.time.Instant;
 import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.HashMap;
 import java.util.logging.Logger;
 
 import org.json.JSONArray;
@@ -17,6 +18,7 @@ import comunio.nas.ComunioDataUpdater;
 import comunio.nas.dataScraper.comunio.putAndPost.DataPostToComunio;
 import comunio.nas.dataVariable.LastUpdates;
 import comunio.nas.dataVariable.Urls;
+import comunio.nas.objects.ComunioTransfermarketContainer;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.user.User;
 import comunio.nas.util.DateUtils;
@@ -38,12 +40,12 @@ public class Transfermarkt {
 	 *         (playerID, playerName, Preis, verbleibende Zeit etc.) oder null,
 	 *         falls Spieler-Datenbank nicht vorhanden.
 	 */
-	public static JSONArray getTransfermarktListe(JSONObject playerDbOject, JSONArray transfermarktListe, JSONObject notInligaDBObj, LastUpdates lastUpdates, User user) {
+	public static ComunioTransfermarketContainer getTransfermarktListe(JSONObject playerDbOject, ComunioTransfermarketContainer transfermarktContainer, JSONObject notInligaDBObj, LastUpdates lastUpdates, User user) {
 		// https://www.comunio.de/api/communities/884691/users/5981249/exchangemarket?include=trend,direct
 
 		JSONArray playerDB = playerDbOject.optJSONArray("playerDB");
 		if (playerDB == null) {
-			return transfermarktListe;
+			return transfermarktContainer;
 		}
 		try {
 
@@ -63,7 +65,7 @@ public class Transfermarkt {
 			JSONObject dataObj = new JSONObject(jsonResponse);
 
 			if (dataObj != null) {
-				transfermarktListe.clear();
+				transfermarktContainer.setTransfermarktMap(new HashMap<>());
 
 				dataObj.optString("nextTransfersDateTime", null);
 
@@ -87,33 +89,8 @@ public class Transfermarkt {
 						if (data == null) {
 							continue;
 						}
-						// Marktwerte nicht abfragen, da sonst ggf. nicht die änderungen vom marktwert
-						// erkannt wird. oder hier muss die richtige methode für addMarktwert ist
-//						data.put("wert", marktwert);
 
-						JSONObject playerOnMarket = new JSONObject();
-						playerOnMarket.put("playerID", id);
-						playerOnMarket.put("playerName", name);
-						playerOnMarket.put("date", DateUtils.getNowToString());
-						playerOnMarket.put("preis", preis);
-
-						String remainingDate = getDeadlineDateTime(setOnMarket);
-						long remainingSeconds = calculateRemainingSeconds(setOnMarket);
-
-						playerOnMarket.put("remainingDate", remainingDate);
-						playerOnMarket.put("remainingSeconds", remainingSeconds);
-//						playerOnMarket.put("nextTransfersDateTime", nextTransfersDateTime);
-
-						playerOnMarket.put("setOnMarket", setOnMarket);
-						// zusätzliche Infos für die Tabelle
-						playerOnMarket.put("verein", data.optString("verein", "0"));
-						playerOnMarket.put("punkte", data.optInt("punkte", 0));
-						playerOnMarket.put("position", data.optString("position", "UNBESTIMMT"));
-						playerOnMarket.put("wert", marktwert);
-						JSONObject status = data.optJSONObject("status", new JSONObject());
-						playerOnMarket.put("status", status.optString("status", "UNBEKANNT"));
-
-						transfermarktListe.put(playerOnMarket);
+						transfermarktContainer.addOnMarketPlayer(id, name, setOnMarket, preis, getDeadlineDateTime(setOnMarket), calculateRemainingSeconds(setOnMarket), setOnMarket, data.optString("verein", "0"), data.optInt("punkte", 0), data.optString("position", "UNBESTIMMT"), marktwert, data.optJSONObject("status", new JSONObject()).optString("status", "UNBEKANNT"));
 					}
 				}
 			}
@@ -122,7 +99,7 @@ public class Transfermarkt {
 			LOGGER.throwing(Transfermarkt.class.getName(), "getTransfermarktListe", e);
 		}
 		lastUpdates.setTransfermarktList(Instant.now());
-		return transfermarktListe;
+		return transfermarktContainer;
 	}
 
 	private static final DateTimeFormatter OUTPUT_FORMAT = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssZ");
@@ -153,8 +130,8 @@ public class Transfermarkt {
 
 		// Deadline = dritter 3-Uhr-Termin → +2 Tage
 		OffsetDateTime deadline = next3am.plusDays(2);
-		
-		if(deadline.isBefore( OffsetDateTime.now())) {
+
+		if (deadline.isBefore(OffsetDateTime.now())) {
 			deadline = deadline.plusDays(1);
 		}
 
@@ -321,12 +298,12 @@ public class Transfermarkt {
 		}
 
 		JSONArray gebotsListe = getTransfermarktGeboteListe(playerDBObject, notInligaDBObj, user);
-		
-		if(gebotsListe.isEmpty()) {
+
+		if (gebotsListe.isEmpty()) {
 			LOGGER.info("Keine Transfer-Angebote vorhanden");
 			return;
 		}
-		
+
 		JSONArray playerDB = playerDBObject.optJSONArray("playerDB");
 		if (playerDB == null) {
 			return;
@@ -341,10 +318,10 @@ public class Transfermarkt {
 				continue;
 			}
 			int wert = data.optInt("wert", 0);
-			if(transWert > 0) {
+			if (transWert > 0) {
 				wert = transWert;
 			}
-			
+
 			// TODO: ggf. noch für alle transfers machen. dass immer wenn das gebot Unter
 			// wert ist, außer man ist im Minus
 			if (offer.has("gebot") && (offer.getInt("gebot") < 168000)) {
@@ -366,13 +343,12 @@ public class Transfermarkt {
 					if (player != null) {
 //					DataPostToComunio.removePlayerFromMarket(player);
 						DataPostToComunio.addPlayerToMarket(player, user);
-						
+
 					}
 				}
 			}
 		}
 	}
-
 
 	/**
 	 * Übermittelt eine Liste von Transfer-Operationen (Akzeptieren, Ablehnen,
