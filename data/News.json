@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "30.09.2026 19:00:09",
+  "lastUpdate": "30.09.2026 20:41:21",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -11858,14 +11858,24 @@
     },
     {
       "date": "17.09.2026",
-      "news": [{
-        "date": "17.09.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Uzun\",\"price\":10010009,\"buyerId\":\"10966300\",\"playerValue\":9810000,\"playerId\":\"34008\",\"buyer\":\"Alexander\"}",
-        "id": "966375130",
-        "playerId": "34008"
-      }]
+      "news": [
+        {
+          "date": "17.09.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Uzun\",\"price\":10010009,\"buyerId\":\"10966300\",\"playerValue\":9810000,\"playerId\":\"34008\",\"buyer\":\"Alexander\"}",
+          "id": "966375130",
+          "playerId": "34008"
+        },
+        {
+          "date": "17.09.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Kramarić\",\"price\":6639200,\"buyerId\":\"1\",\"playerValue\":5640000,\"playerId\":\"32553\",\"buyer\":\"Computer\"}",
+          "id": "966375130",
+          "playerId": "32553"
+        }
+      ]
     },
     {
       "date": "17.08.2026",
@@ -19331,6 +19341,14 @@
           "text": "Statuswechsel: Njinmah (33687) ist jetzt VERLETZT",
           "id": "0",
           "playerId": "33687"
+        },
+        {
+          "date": "01.09.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Gerry\",\"sellerId\":\"13830745\",\"playerName\":\"Larsson\",\"price\":2278500,\"buyerId\":\"1\",\"playerValue\":2040000,\"playerId\":\"33782\",\"buyer\":\"Computer\"}",
+          "id": "965529233",
+          "playerId": "33782"
         }
       ]
     },
