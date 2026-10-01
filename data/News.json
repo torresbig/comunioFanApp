@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "01.10.2026 05:15:13",
+  "lastUpdate": "01.10.2026 10:00:51",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -19269,14 +19269,32 @@
     },
     {
       "date": "01.10.2026",
-      "news": [{
-        "date": "01.10.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Knauff\",\"price\":3600000,\"buyerId\":\"13654613\",\"playerValue\":3540000,\"playerId\":\"33383\",\"buyer\":\"Christoph\"}",
-        "id": "966855018",
-        "playerId": "33383"
-      }]
+      "news": [
+        {
+          "date": "01.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Knauff\",\"price\":3600000,\"buyerId\":\"13654613\",\"playerValue\":3540000,\"playerId\":\"33383\",\"buyer\":\"Christoph\"}",
+          "id": "966855018",
+          "playerId": "33383"
+        },
+        {
+          "date": "01.10.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Kownacki\",\"newClub\":\"0\",\"oldClub\":\"6\",\"playerID\":\"33030\"}",
+          "id": "0",
+          "playerId": "33030"
+        },
+        {
+          "date": "01.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Rocco Reitz (33353) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "33353"
+        }
+      ]
     },
     {
       "date": "01.09.2026",
