@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "30.09.2026 14:34:05",
+  "lastUpdate": "01.10.2026 16:11:23",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -263,6 +263,17 @@
           "playerId": "34380"
         }
       ]
+    },
+    {
+      "date": "30.09.2026",
+      "news": [{
+        "date": "30.09.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Ben Seghir\",\"price\":2360800,\"buyerId\":\"1\",\"playerValue\":2180000,\"playerId\":\"34285\",\"buyer\":\"Computer\"}",
+        "id": "966841844",
+        "playerId": "34285"
+      }]
     },
     {
       "date": "30.08.2026",
@@ -11847,14 +11858,24 @@
     },
     {
       "date": "17.09.2026",
-      "news": [{
-        "date": "17.09.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Uzun\",\"price\":10010009,\"buyerId\":\"10966300\",\"playerValue\":9810000,\"playerId\":\"34008\",\"buyer\":\"Alexander\"}",
-        "id": "966375130",
-        "playerId": "34008"
-      }]
+      "news": [
+        {
+          "date": "17.09.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Uzun\",\"price\":10010009,\"buyerId\":\"10966300\",\"playerValue\":9810000,\"playerId\":\"34008\",\"buyer\":\"Alexander\"}",
+          "id": "966375130",
+          "playerId": "34008"
+        },
+        {
+          "date": "17.09.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Kramarić\",\"price\":6639200,\"buyerId\":\"1\",\"playerValue\":5640000,\"playerId\":\"32553\",\"buyer\":\"Computer\"}",
+          "id": "966375130",
+          "playerId": "32553"
+        }
+      ]
     },
     {
       "date": "17.08.2026",
@@ -19247,6 +19268,43 @@
       ]
     },
     {
+      "date": "01.10.2026",
+      "news": [
+        {
+          "date": "01.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Knauff\",\"price\":3600000,\"buyerId\":\"13654613\",\"playerValue\":3540000,\"playerId\":\"33383\",\"buyer\":\"Christoph\"}",
+          "id": "966855018",
+          "playerId": "33383"
+        },
+        {
+          "date": "01.10.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Kownacki\",\"newClub\":\"0\",\"oldClub\":\"6\",\"playerID\":\"33030\"}",
+          "id": "0",
+          "playerId": "33030"
+        },
+        {
+          "date": "01.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Rocco Reitz (33353) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "33353"
+        },
+        {
+          "date": "01.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christian\",\"sellerId\":\"13641446\",\"playerName\":\"Bahoya\",\"price\":3044700,\"buyerId\":\"1\",\"playerValue\":0,\"playerId\":\"33890\",\"buyer\":\"Computer\"}",
+          "id": "966855018",
+          "playerId": "33890"
+        }
+      ]
+    },
+    {
       "date": "01.09.2026",
       "news": [
         {
@@ -19320,6 +19378,14 @@
           "text": "Statuswechsel: Njinmah (33687) ist jetzt VERLETZT",
           "id": "0",
           "playerId": "33687"
+        },
+        {
+          "date": "01.09.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Gerry\",\"sellerId\":\"13830745\",\"playerName\":\"Larsson\",\"price\":2278500,\"buyerId\":\"1\",\"playerValue\":2040000,\"playerId\":\"33782\",\"buyer\":\"Computer\"}",
+          "id": "965529233",
+          "playerId": "33782"
         }
       ]
     },
