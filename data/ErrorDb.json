@@ -1215,11 +1215,18 @@
       "timestamp": "2026-09-28T20:15:08.860786200Z"
     }
   ],
-  "2026-10-01": [{
-    "errorType": "NICHTINLIGA",
-    "message": "Spieler wurde nicht geupdatet! Kownacki ID: 33030\nSpieler Kownacki nach Clubupdate und spielerupdate nicht mehr in der Liga!",
-    "timestamp": "2026-10-01T08:00:42.236744006Z"
-  }],
+  "2026-10-01": [
+    {
+      "errorType": "NICHTINLIGA",
+      "message": "Spieler wurde nicht geupdatet! Kownacki ID: 33030\nSpieler Kownacki nach Clubupdate und spielerupdate nicht mehr in der Liga!",
+      "timestamp": "2026-10-01T08:00:42.236744006Z"
+    },
+    {
+      "errorType": "LIGAINSIDERSTATUS",
+      "message": "Spieler wurde nicht gefunden! SpielerJustin Heekeren | Club: FC Schalke 04",
+      "timestamp": "2026-10-01T08:00:46.637001385Z"
+    }
+  ],
   "2026-09-27": [
     {
       "methode": "",
