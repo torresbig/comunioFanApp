@@ -76,21 +76,21 @@ public class Transfermarkt {
 					String setOnMarket = json.getString("date");
 					json = json.getJSONObject("_embedded");
 					JSONObject owner = json.getJSONObject("owner");
-					String.valueOf(owner.optInt("id", 1));
+					String ownerId = String.valueOf(owner.optInt("id", 1));
 					json = json.getJSONObject("player");
 					String id = String.valueOf(json.getInt("id"));
 					String name = json.getString("name");
 					int marktwert = json.getInt("quotedPrice");
 					int preis = json.getInt("recommendedPrice");
 					JSONObject player = PlayerHelper.findPlayerByComunioId(playerDB, id, notInligaDBObj);
-
+					
 					if (player != null) {
 						JSONObject data = player.optJSONObject("data");
 						if (data == null) {
 							continue;
 						}
-
-						transfermarktContainer.addOnMarketPlayer(id, name, setOnMarket, preis, getDeadlineDateTime(setOnMarket), calculateRemainingSeconds(setOnMarket), setOnMarket, data.optString("verein", "0"), data.optInt("punkte", 0), data.optString("position", "UNBESTIMMT"), marktwert, data.optJSONObject("status", new JSONObject()).optString("status", "UNBEKANNT"));
+						
+						transfermarktContainer.addOnMarketPlayer(id, name, setOnMarket, preis, getDeadlineDateTime(setOnMarket), calculateRemainingSeconds(setOnMarket), setOnMarket, data.optString("verein", "0"), data.optInt("punkte", 0), data.optString("position", "UNBESTIMMT"), marktwert, data.optJSONObject("status", new JSONObject()).optString("status", "UNBEKANNT"), ownerId);
 					}
 				}
 			}

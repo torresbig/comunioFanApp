@@ -162,7 +162,7 @@ public class ComunioTransfermarketContainer {
 		}
 		result.setPlayerOnMarketCounter(playerOnMarketCounter);
 		result.setTransfermarktMap(transfermarktMap);
-		
+
 		return result;
 	}
 
@@ -190,14 +190,14 @@ public class ComunioTransfermarketContainer {
 	 * @param status           Aktueller Status (z.B. verletzt, gesperrt)
 	 */
 
-	public void addOnMarketPlayer(String playerID, String playerName, String date, int preis, String remainingDate, long remainingSeconds, String setOnMarket, String verein, int punkte, String position, int wert, String status) {
+	public void addOnMarketPlayer(String playerID, String playerName, String date, int preis, String remainingDate, long remainingSeconds, String setOnMarket, String verein, int punkte, String position, int wert, String status, String ownerId) {
 		if (this.transfermarktMap == null) {
 			this.transfermarktMap = new HashMap<>();
 		}
 		if (this.playerOnMarketCounter == null) {
 			this.playerOnMarketCounter = new HashMap<>();
 		}
-		PlayerOnMarket player = new PlayerOnMarket(playerID, playerName, date, preis, remainingDate, remainingSeconds, setOnMarket, verein, punkte, position, wert, status);
+		PlayerOnMarket player = new PlayerOnMarket(playerID, playerName, date, preis, remainingDate, remainingSeconds, setOnMarket, verein, punkte, position, wert, status, ownerId);
 		this.transfermarktMap.put(playerID, player);
 
 		Set<PlayerWasOnMarket> playerSet = getSetForPlayer(playerID);
@@ -206,7 +206,7 @@ public class ComunioTransfermarketContainer {
 				// Nur hinzufügen, wenn kein Eintrag mit gleichem date bereits existiert
 
 				boolean exists = playerSet.stream().anyMatch(p -> p.getDate().equals(date));
-				if (!exists) {
+				if (!exists && (player.getOwnerId().equals("0") || player.getOwnerId().equals("1"))) {
 					playerSet.add(new PlayerWasOnMarket(playerID, playerName, date, preis, wert));
 				}
 			}

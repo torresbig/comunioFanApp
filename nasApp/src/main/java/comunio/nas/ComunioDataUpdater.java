@@ -19,6 +19,7 @@ import comunio.nas.dataScraper.tools.SeasonChange;
 import comunio.nas.dataVariable.LastUpdates;
 import comunio.nas.dataVariable.UserLoginData;
 import comunio.nas.error.ErrorsContainer;
+import comunio.nas.objects.News;
 import comunio.nas.objects.community.Community;
 import comunio.nas.objects.helper.JsonHelper;
 import comunio.nas.objects.helper.LogManager;
@@ -26,6 +27,9 @@ import comunio.nas.objects.helper.PlayerDbFixer;
 import comunio.nas.objects.orga.UpdaterContextData;
 import comunio.nas.objects.player.SonstigeAttribute;
 import comunio.nas.objects.user.User;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -64,7 +68,8 @@ public class ComunioDataUpdater {
 			logExecutionTime("Github-Download", System.nanoTime(), start);
 
 			// 2. Fixing data if nessassary
-			startFixing(context, lastUpdates, false, true);
+			boolean startFix = false; 
+			startFixing(context, lastUpdates, startFix, true);
 
 			// 3. Saisonwechsel prüfen & verarbeiten
 			boolean seasonChanged = handleSeasonTransit(context, lastUpdates, user);
@@ -187,7 +192,10 @@ public class ComunioDataUpdater {
 	 */
 	public static void startFixing(UpdaterContextData context, LastUpdates lastUpdates, boolean ausfuhren, boolean onlyFix) {
 		if (ausfuhren) {
-			PlayerDbFixer.removeFromPlayerToUserMapIfNotInLiga(context.getNotInligaDBObj(), context.getPlayerToUserMap());
+			List<News> result = new ArrayList<>(); 
+			result = PlayerDbFixer.findAndInsertMissingTransfers("2026-09-01", "2026-09-25", context.getNewsManager(), user, currentMatchdayInfo, lastUpdates, context.getPlayerDBObject(), context.getPlayerToUserMap(), context.getNotInligaDBObj(), context.getUserMap());
+			KontostandBerechner kontostandBerechner = new KontostandBerechner();
+			kontostandBerechner.calculateKontostaende(context.getUserMap(), context.getNewsManager());
 			context.uploadAllData(context, lastUpdates);
 			if (onlyFix) {
 				System.exit(0);

@@ -8,10 +8,7 @@ import java.util.logging.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import comunio.nas.ComunioDataUpdater;
 import comunio.nas.dataVariable.LastUpdates;
-import comunio.nas.error.Error;
-import comunio.nas.error.ErrorType;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.ligainsider.InjuryAndBlockedData;
 import comunio.nas.objects.orga.ComunioDate;

@@ -12,9 +12,16 @@ import javax.swing.JOptionPane;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import comunio.nas.dataScraper.ligainsider.LigainsiderInjurieAndBannedPlayers;
+import comunio.nas.cheats.KontostandBerechner;
+import comunio.nas.dataScraper.comunio.MatchdayInfo;
+import comunio.nas.dataScraper.comunio.NewsAnalyzerComunio;
+import comunio.nas.dataVariable.LastUpdates;
 import comunio.nas.objects.News;
 import comunio.nas.objects.NewsManager;
+import comunio.nas.objects.TransferNewsEntry;
+import comunio.nas.objects.orga.ComunioDate;
+import comunio.nas.objects.user.User;
+import comunio.nas.util.player.PlayerHelper;
 
 public class PlayerDbFixer {
 
@@ -368,8 +375,8 @@ public class PlayerDbFixer {
 			spielerObj.put("data", data);
 		}
 	}
-	
-	public static void removeFromPlayerToUserMapIfNotInLiga(JSONObject notInLigaDb,  Map<String, String> playerToUserMap) {
+
+	public static void removeFromPlayerToUserMapIfNotInLiga(JSONObject notInLigaDb, Map<String, String> playerToUserMap) {
 		JSONObject db = notInLigaDb.optJSONObject("db", new JSONObject());
 		for (String key : db.keySet()) {
 			playerToUserMap.remove(key);
@@ -497,6 +504,184 @@ public class PlayerDbFixer {
 			}
 		}
 		return current;
+	}
+
+	/**
+	 * Vergleicht alle Transfers einer API-Abfrage im angegebenen Zeitraum mit den
+	 * Transfers, die bereits im NewsManager bekannt sind. Fehlende Transfers werden
+	 * mit dem API-Datum eingetragen, der Kontostand-Berechner wird erneut
+	 * ausgeführt (damit der Käufer das Geld erhält), und alle fehlenden Transfers
+	 * werden in einer Liste zurückgegeben.
+	 *
+	 * @param newsManager     NewsManager mit allen bekannten Transfers
+	 * @param startDateStr    Start-Datum (Format: "2026-08-22" oder "22.08.2026")
+	 * @param endDateStr      End-Datum (Format: "2026-08-22" oder "22.08.2026")
+	 * @param user            aktueller Comunio-Benutzer (für API-Zugriff)
+	 * @param matchdayInfo    Matchday-Info-Objekt
+	 * @param lastUpdates     LastUpdates-Objekt
+	 * @param playerDBObject  JSONObject mit Player-Datenbank
+	 * @param playerToUserMap Mapping Spieler → User
+	 * @param notInLigaDbObj  JSONObject für nicht-gefundene Spieler
+	 * @param userMap         Map der User (für Kontostandsberechnung)
+	 * @return Liste der fehlenden Transfers (als News-Objekte)
+	 */
+	public static List<News> findAndInsertMissingTransfers(String startDateStr, String endDateStr, NewsManager newsManager, User user, MatchdayInfo matchdayInfo, LastUpdates lastUpdates, JSONObject playerDBObject, Map<String, String> playerToUserMap, JSONObject notInLigaDbObj, Map<String, User> userMap) {
+		if (playerDBObject == null || !playerDBObject.has("playerDB")) {
+			return new ArrayList<>();
+		}
+
+		JSONArray playerDb = playerDBObject.getJSONArray("playerDB");
+
+		// Datums-Parsing mit Fallback für beide Formate
+		ComunioDate startDate = null;
+		ComunioDate endDate = null;
+		try {
+			startDate = new ComunioDate(startDateStr);
+			endDate = new ComunioDate(endDateStr);
+		} catch (Exception e) {
+			LOGGER.warning("Fehler beim Parsen der Datumsangaben: " + e.getMessage());
+			return Collections.emptyList();
+		}
+
+		// Alle Transfers vom API im Zeitraum holen
+		List<TransferNewsEntry> apiTransfers = new ArrayList<>();
+		// Temporäre Liste für fehlende Transfers
+		List<News> missingTransfers = new ArrayList<>();
+
+		try {
+			// Paginierte API-Abfrage wie in analyzeNews, aber mit festem Start- und
+			// Enddatum
+			int page = 0;
+			int limit = 20;
+			boolean hasMore = true;
+			boolean stopBecauseOfOldDate = false;
+
+			while (hasMore) {
+				JSONObject newsRoot = NewsAnalyzerComunio.fetchNewsFromApi(user, page, limit);
+				if (newsRoot == null || !newsRoot.has("newsList")) {
+					break;
+				}
+
+				JSONObject newsList = newsRoot.getJSONObject("newsList");
+				JSONObject groups = newsList.optJSONObject("groups");
+				if (groups == null) {
+					break;
+				}
+
+				for (String dateKey : groups.keySet()) {
+				    ComunioDate groupDate = new ComunioDate(dateKey);
+
+				    if (groupDate.before(startDate)) {
+				        stopBecauseOfOldDate = true;
+				        continue;
+				    }
+
+				    if (groupDate.after(endDate)) {
+				        continue;
+				    }
+
+					JSONArray entries = groups.getJSONObject(dateKey).getJSONArray("entries");
+					for (int i = 0; i < entries.length(); i++) {
+						JSONObject entry = entries.getJSONObject(i);
+						if ("TRANSACTION_TRANSFER".equals(entry.optString("type"))) {
+							processTransferForCheck(entry, groupDate, playerDb, notInLigaDbObj, apiTransfers, playerToUserMap, newsManager, missingTransfers);
+						}
+					}
+				}
+				
+				if (stopBecauseOfOldDate) {
+				    break;
+				}
+
+
+				hasMore = newsList.optBoolean("hasMore", false);
+				page += limit;
+			}
+
+			// Fehlende Transfers im NewsManager eintragen
+			for (News missingNews : missingTransfers) {
+				if (!newsManager.contains(missingNews)) {
+					newsManager.addNews(missingNews, true);
+				}
+			}
+
+			// Kontostände neu berechnen, damit Käufer das Geld erhält
+			if (!missingTransfers.isEmpty()) {
+				KontostandBerechner calc = new KontostandBerechner();
+				calc.calculateKontostaende(userMap, newsManager);
+			}
+
+		} catch (Exception e) {
+			LOGGER.severe("Fehler beim Abgleich der Transfers: " + e.getMessage());
+		}
+
+		return missingTransfers;
+	}
+
+	/**
+	 * Verarbeitet einen einzelnen API-Transfer-Eintrag und prüft, ob er bereits im
+	 * NewsManager bekannt ist. Falls nicht, wird er zur Liste der fehlenden
+	 * Transfers hinzugefügt.
+	 *
+	 * @param entry            JSONObject des API-News-Eintrags vom Typ
+	 *                         "TRANSACTION_TRANSFER"
+	 * @param newsDate         ComunioDate des zugehörigen Datumsblocks
+	 * @param playerDB         JSONArray mit der Spieler-Datenbank
+	 * @param notInLigaDbObj   JSONObject für nicht-gefundene Spieler
+	 * @param apiTransfers     Liste, in die gefundene TransferNewsEntry-Objekte
+	 *                         eingefügt werden (wird ggf. später verwendt)
+	 * @param playerToUserMap  Mapping Spieler-ID -> User-ID
+	 * @param newsManager      NewsManager zur Prüfung, ob News bereits bekannt ist
+	 * @param missingTransfers Ergebnis-Liste: hier werden fehlende Transfers (als
+	 *                         News-Objekte) eingetragen
+	 */
+	private static boolean processTransferForCheck(JSONObject entry, ComunioDate newsDate, JSONArray playerDB, JSONObject notInLigaDbObj, List<TransferNewsEntry> apiTransfers, Map<String, String> playerToUserMap, NewsManager newsManager, List<News> missingTransfers) {
+		String transactionId = String.valueOf(entry.optLong("id"));
+		JSONObject message = entry.getJSONObject("message");
+		String[] transferTypes = { "FROM_COMPUTER", "TO_COMPUTER", "BETWEEN_USERS" };
+
+		boolean foundOldDate = false;
+
+		for (String transferType : transferTypes) {
+			if (!message.has(transferType)) {
+				continue;
+			}
+
+			JSONArray transfers = message.getJSONArray(transferType);
+			for (int j = 0; j < transfers.length(); j++) {
+				try {
+					JSONObject transfer = transfers.getJSONObject(j);
+					String playerId = String.valueOf(transfer.getJSONObject("tradable").getInt("id"));
+					JSONObject player = PlayerHelper.findPlayerByComunioId(playerDB, playerId, notInLigaDbObj);
+
+					String sellerId = String.valueOf(transfer.getJSONObject("from").getInt("id"));
+					String seller = transfer.getJSONObject("from").getString("name");
+					String buyerId = String.valueOf(transfer.getJSONObject("to").getInt("id"));
+					String buyer = transfer.getJSONObject("to").getString("name");
+
+					int price = transfer.getInt("price");
+					int value = player != null ? player.getJSONObject("data").optInt("wert", 0) : 0;
+					String playerName = transfer.getJSONObject("tradable").getString("name");
+
+					News news = News.getTransfer(sellerId, seller, buyerId, buyer, price, value, playerId, playerName, newsDate, transactionId);
+
+					if (!newsManager.contains(news)) {
+						missingTransfers.add(news);
+					}
+
+					boolean alreadyInList = apiTransfers.stream().anyMatch(t -> t.getNews().equals(news));
+
+					if (!alreadyInList) {
+						apiTransfers.add(new TransferNewsEntry(newsDate, playerId, buyerId, news));
+					}
+
+				} catch (Exception e) {
+					LOGGER.info("Fehler bei Transfer-Prüfung: " + e.getMessage());
+				}
+			}
+		}
+
+		return foundOldDate;
 	}
 
 }
