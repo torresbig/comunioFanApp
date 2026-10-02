@@ -1165,11 +1165,18 @@
       "timestamp": "2026-09-26T11:09:14.256526900Z"
     }
   ],
-  "2026-10-02": [{
-    "errorType": "LIGAINSIDERSTATUS",
-    "message": "Spieler wurde nicht gefunden! SpielerJustin Heekeren | Club: FC Schalke 04",
-    "timestamp": "2026-10-02T08:00:47.624386532Z"
-  }],
+  "2026-10-02": [
+    {
+      "errorType": "LIGAINSIDERSTATUS",
+      "message": "Spieler wurde nicht gefunden! SpielerJustin Heekeren | Club: FC Schalke 04",
+      "timestamp": "2026-10-02T08:00:47.624386532Z"
+    },
+    {
+      "errorType": "LIGAINSIDERSTATUS",
+      "message": "Spieler wurde nicht gefunden! SpielerAnton Donkor | Club: FC Schalke 04",
+      "timestamp": "2026-10-02T08:00:49.860331928Z"
+    }
+  ],
   "2026-09-28": [
     {
       "methode": "",
