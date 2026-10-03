@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "03.10.2026 05:15:13",
+  "lastUpdate": "03.10.2026 10:00:49",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -18346,14 +18346,24 @@
     },
     {
       "date": "03.10.2026",
-      "news": [{
-        "date": "03.10.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Sosa\",\"price\":2280000,\"buyerId\":\"5981249\",\"playerValue\":2360000,\"playerId\":\"32919\",\"buyer\":\"Thomas\"}",
-        "id": "966903855",
-        "playerId": "32919"
-      }]
+      "news": [
+        {
+          "date": "03.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Sosa\",\"price\":2280000,\"buyerId\":\"5981249\",\"playerValue\":2360000,\"playerId\":\"32919\",\"buyer\":\"Thomas\"}",
+          "id": "966903855",
+          "playerId": "32919"
+        },
+        {
+          "date": "03.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Patson Daka (34483) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34483"
+        }
+      ]
     },
     {
       "date": "03.09.2026",
