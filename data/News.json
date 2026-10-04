@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "04.10.2026 10:00:45",
+  "lastUpdate": "04.10.2026 15:00:14",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -17470,14 +17470,24 @@
     },
     {
       "date": "04.10.2026",
-      "news": [{
-        "date": "04.10.2026",
-        "art": "SPIELERSTATUS",
-        "gelesen": false,
-        "text": "Statuswechsel: Franck Honorat (33817) ist jetzt VERLETZT",
-        "id": "0",
-        "playerId": "33817"
-      }]
+      "news": [
+        {
+          "date": "04.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Franck Honorat (33817) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33817"
+        },
+        {
+          "date": "04.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Gerry\",\"sellerId\":\"13830745\",\"playerName\":\"Dallinga\",\"price\":5846400,\"buyerId\":\"1\",\"playerValue\":5600000,\"playerId\":\"34504\",\"buyer\":\"Computer\"}",
+          "id": "966939241",
+          "playerId": "34504"
+        }
+      ]
     },
     {
       "date": "04.09.2026",
