@@ -260,22 +260,6 @@
       "club": "RB Leipzig",
       "status": "VERLETZT"
     },
-    "34287": {
-      "reason": "",
-      "lastNewsText": "Castro-Montes gegen HSV angeschlagen raus",
-      "ligainsiderPlayerId": "22736",
-      "playerName": "Alessio Castro-Montes",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-09-18T22:00:00Z",
-      "abfrageTimestamp": "2026-09-26T11:17:54.599212200Z",
-      "sinceString": "1 Woche",
-      "comunioPlayerId": "34287",
-      "playerLink": "https://www.ligainsider.de/alessio-castro-montes_22736/",
-      "lastNewsLink": "https://www.ligainsider.de/alessio-castro-montes_22736/castro-montes-gegen-hsv-angeschlagen-raus-418314/",
-      "quelle": "ligainsider",
-      "club": "1. FC Köln",
-      "status": "VERLETZT"
-    },
     "33353": {
       "reason": "",
       "lastNewsText": "Reitz hofft auf baldigen Teileinstieg ins Training",
@@ -434,20 +418,6 @@
       "club": "VfB Stuttgart",
       "status": "VERLETZT"
     },
-    "34094": {
-      "comunioPlayerId": "34094",
-      "reason": "",
-      "lastNewsText": "",
-      "playerLink": "",
-      "ligainsiderPlayerId": "",
-      "playerName": "",
-      "statusChangeString": "",
-      "lastNewsLink": "",
-      "quelle": "comunio",
-      "club": "",
-      "sinceString": "",
-      "status": "AUFBAUTRAINING"
-    },
     "34337": {
       "reason": "",
       "lastNewsText": "Grønbæk schuftet für zeitnahe Rückkehr",
@@ -511,6 +481,19 @@
       "lastNewsLink": "https://www.ligainsider.de/enzo-leopold_20348/leopold-droht-monatelanger-ausfall-417517/",
       "quelle": "ligainsider",
       "club": "Borussia Mönchengladbach",
+      "status": "VERLETZT"
+    },
+    "34017": {
+      "comunioPlayerId": "34017",
+      "reason": "Außenbandverletzung Knie",
+      "playerLink": "https://www.ligainsider.de/noahkai-banks_37195/",
+      "ligainsiderPlayerId": "37195",
+      "playerName": "Noahkai Banks",
+      "sinceTimestamp": "2026-09-29T22:00:00Z",
+      "abfrageTimestamp": "2026-10-05T08:00:43.218288341Z",
+      "quelle": "ligainsider",
+      "club": "FC Augsburg",
+      "sinceString": "5 Tagen",
       "status": "VERLETZT"
     },
     "33247": {
@@ -640,7 +623,7 @@
       "status": "VERLETZT"
     }
   },
-  "lastUpdate": "2026-10-04T08:00:51.203444794Z",
+  "lastUpdate": "2026-10-05T08:00:50.436358588Z",
   "history": {
     "33808": [{
       "reason": "",
@@ -877,6 +860,21 @@
       "quelle": "comunio",
       "club": "",
       "status": "VERLETZT"
+    }],
+    "34094": [{
+      "reason": "",
+      "lastNewsText": "",
+      "ligainsiderPlayerId": "",
+      "playerName": "",
+      "statusChangeString": "05.10.2026",
+      "sinceString": "",
+      "statusChangeTimestamp": "2026-10-04T22:00:00Z",
+      "comunioPlayerId": "34094",
+      "playerLink": "",
+      "lastNewsLink": "",
+      "quelle": "comunio",
+      "club": "",
+      "status": "AUFBAUTRAINING"
     }],
     "34337": [{
       "reason": "",
@@ -1209,6 +1207,23 @@
         "status": "VERLETZT"
       }
     ],
+    "34287": [{
+      "reason": "",
+      "lastNewsText": "Castro-Montes gegen HSV angeschlagen raus",
+      "ligainsiderPlayerId": "22736",
+      "playerName": "Alessio Castro-Montes",
+      "statusChangeString": "05.10.2026",
+      "sinceTimestamp": "2026-09-18T22:00:00Z",
+      "abfrageTimestamp": "2026-09-26T11:17:54.599212200Z",
+      "sinceString": "1 Woche",
+      "statusChangeTimestamp": "2026-10-04T22:00:00Z",
+      "comunioPlayerId": "34287",
+      "playerLink": "https://www.ligainsider.de/alessio-castro-montes_22736/",
+      "lastNewsLink": "https://www.ligainsider.de/alessio-castro-montes_22736/castro-montes-gegen-hsv-angeschlagen-raus-418314/",
+      "quelle": "ligainsider",
+      "club": "1. FC Köln",
+      "status": "VERLETZT"
+    }],
     "33353": [{
       "reason": "",
       "lastNewsText": "",
