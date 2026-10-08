@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "08.10.2026 05:15:15",
+  "lastUpdate": "08.10.2026 10:00:53",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -14400,14 +14400,56 @@
     },
     {
       "date": "08.10.2026",
-      "news": [{
-        "date": "08.10.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Sauer\",\"price\":1800000,\"buyerId\":\"13654613\",\"playerValue\":1930000,\"playerId\":\"34491\",\"buyer\":\"Christoph\"}",
-        "id": "967041796",
-        "playerId": "34491"
-      }]
+      "news": [
+        {
+          "date": "08.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Sauer\",\"price\":1800000,\"buyerId\":\"13654613\",\"playerValue\":1930000,\"playerId\":\"34491\",\"buyer\":\"Christoph\"}",
+          "id": "967041796",
+          "playerId": "34491"
+        },
+        {
+          "date": "08.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Konaté\",\"price\":672000,\"buyerId\":\"1\",\"playerValue\":640000,\"playerId\":\"34309\",\"buyer\":\"Computer\"}",
+          "id": "967041796",
+          "playerId": "34309"
+        },
+        {
+          "date": "08.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Dejan Ljubičić (33453) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "33453"
+        },
+        {
+          "date": "08.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Skelly Alvero (33896) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33896"
+        },
+        {
+          "date": "08.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Moussa Ndiaye (34517) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "34517"
+        },
+        {
+          "date": "08.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Sebastian Klaas (34408) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "34408"
+        }
+      ]
     },
     {
       "date": "08.09.2026",
