@@ -8,7 +8,7 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/31762"},
         "elfDesSpieltages": 1,
-        "lastWert": 2810000,
+        "lastWert": 2750000,
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "13.07.1993",
@@ -23,7 +23,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2750000,
+        "wert": 2720000,
         "verein": "18",
         "lastPoints": 13,
         "transfermarktDoDe": {
@@ -104,7 +104,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32787"},
-        "lastWert": 3060000,
+        "lastWert": 3000000,
         "spielerDaten": {
           "groesse": "1,78",
           "geburtstag": "27.08.1998",
@@ -122,7 +122,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 3000000,
+        "wert": 2970000,
         "verein": "3",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -196,7 +196,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1130000,
+        "wert": 1120000,
         "verein": "21",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -226,7 +226,7 @@
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 54}],
         "withinSquad": true,
-        "onMarket": false,
+        "onMarket": true,
         "retired": false,
         "position": "ABWEHR",
         "possibleNames": [
@@ -267,7 +267,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 4270000,
+        "wert": 4020000,
         "verein": "3",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -348,7 +348,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1210000,
+        "wert": 1190000,
         "verein": "109",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -406,7 +406,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33823"},
-        "lastWert": 3280000,
+        "lastWert": 3240000,
         "spielerDaten": {
           "groesse": "1,90",
           "geburtstag": "15.11.1996",
@@ -421,7 +421,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 3240000,
+        "wert": 3370000,
         "verein": "1",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -506,7 +506,7 @@
           "playerName": "Laimer",
           "playerId": "6324"
         },
-        "lastWert": 4980000,
+        "lastWert": 4630000,
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "27.05.1997",
@@ -524,7 +524,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 4630000,
+        "wert": 4520000,
         "verein": "1",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -607,7 +607,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1720000,
+        "wert": 1870000,
         "verein": "1",
         "lastPoints": 6,
         "transfermarktDoDe": {
@@ -758,7 +758,7 @@
           "playerName": "Makengo",
           "playerId": "26088"
         },
-        "lastWert": 4710000,
+        "lastWert": 4960000,
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "03.08.2001",
@@ -776,7 +776,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 4960000,
+        "wert": 4950000,
         "verein": "21",
         "lastPoints": 6,
         "transfermarktDoDe": {
@@ -896,7 +896,7 @@
           "playerName": "Lienhart",
           "playerId": "13911"
         },
-        "lastWert": 4810000,
+        "lastWert": 4560000,
         "spielerDaten": {
           "groesse": "1,89",
           "geburtstag": "11.07.1996",
@@ -911,7 +911,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 4560000,
+        "wert": 4620000,
         "verein": "21",
         "lastPoints": 5,
         "transfermarktDoDe": {
@@ -989,7 +989,7 @@
           "fuss": "beidfüßig"
         },
         "isNotName": [],
-        "wert": 11730000,
+        "wert": 13470000,
         "verein": "14",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -1052,7 +1052,7 @@
           "playerName": "Senne Lynen",
           "playerId": "35359"
         },
-        "lastWert": 1480000,
+        "lastWert": 1400000,
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "19.02.1999",
@@ -1070,7 +1070,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1400000,
+        "wert": 1390000,
         "verein": "6",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -1116,13 +1116,24 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33836"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "2",
+            "zielwert": "4.530.000",
+            "platz": 9,
+            "lastUpdate": "08.10.2026",
+            "typ": "top",
+            "marktwert": "4.430.000",
+            "aenderung": "+100.000"
+          },
+          "link": "https://www.com-analytics.de/player/33836"
+        },
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/nnamdi-collins_24116/",
           "playerName": "Collins",
           "playerId": "24116"
         },
-        "lastWert": 3940000,
+        "lastWert": 4370000,
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "10.01.2004",
@@ -1137,7 +1148,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 4370000,
+        "wert": 4430000,
         "verein": "9",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -1191,7 +1202,7 @@
           "playerName": "Castello Jr.",
           "playerId": "27079"
         },
-        "lastWert": 4320000,
+        "lastWert": 4400000,
         "spielerDaten": {
           "groesse": "1,84",
           "geburtstag": "17.12.2002",
@@ -1206,7 +1217,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 4400000,
+        "wert": 4450000,
         "verein": "92",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -1270,7 +1281,7 @@
           "playerName": "Kane",
           "playerId": "4828"
         },
-        "lastWert": 21830000,
+        "lastWert": 22260000,
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "28.07.1993",
@@ -1285,7 +1296,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 22260000,
+        "wert": 22980000,
         "verein": "1",
         "lastPoints": 12,
         "transfermarktDoDe": {
@@ -1331,7 +1342,7 @@
             "rang": 29
           },
           "SonstigeInfos": [
-            "teuerster Spieler (22,260,000 \u20ac)",
+            "teuerster Spieler (22,980,000 \u20ac)",
             "meisten Punkte letzte Saison (338)"
           ]
         },
@@ -1396,6 +1407,8 @@
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2023": 63}],
         "retired": false,
+        "withinSquad": true,
+        "onMarket": true,
         "position": "ABWEHR",
         "possibleNames": [
           "Max Finkgrafe",
@@ -1411,7 +1424,7 @@
     },
     {
       "data": {
-        "lastWert": 310000,
+        "lastWert": 300000,
         "spielerDaten": {
           "groesse": "1,81",
           "geburtstag": "03.03.2002",
@@ -1426,7 +1439,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 300000,
+        "wert": 320000,
         "verein": "14",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -1472,7 +1485,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33853"},
-        "lastWert": 3900000,
+        "lastWert": 3940000,
         "spielerDaten": {
           "groesse": "1,73",
           "geburtstag": "05.07.1999",
@@ -1490,7 +1503,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 3940000,
+        "wert": 3910000,
         "verein": "8",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -1540,12 +1553,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "7",
-            "zielwert": "14.090.000",
-            "platz": 7,
-            "lastUpdate": "06.10.2026",
+            "zielwert": "14.260.000",
+            "platz": 5,
+            "lastUpdate": "08.10.2026",
             "typ": "flop",
-            "marktwert": "14.260.000",
-            "aenderung": "-170.000"
+            "marktwert": "14.500.000",
+            "aenderung": "-240.000"
           },
           "link": "https://www.com-analytics.de/player/33854"
         },
@@ -1570,7 +1583,7 @@
           "fuss": "beidfüßig"
         },
         "isNotName": [],
-        "wert": 14210000,
+        "wert": 14500000,
         "verein": "1",
         "lastPoints": 7,
         "transfermarktDoDe": {
@@ -1631,7 +1644,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32830"},
-        "lastWert": 3730000,
+        "lastWert": 3510000,
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "22.02.2000",
@@ -1646,7 +1659,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 3510000,
+        "wert": 3330000,
         "verein": "14",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -1699,7 +1712,7 @@
     },
     {
       "data": {
-        "lastWert": 280000,
+        "lastWert": 290000,
         "spielerDaten": {
           "groesse": "1,96",
           "geburtstag": "11.04.2003",
@@ -1714,7 +1727,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 290000,
+        "wert": 270000,
         "verein": "9",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -1778,7 +1791,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2040000,
+        "wert": 1950000,
         "verein": "9",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -1811,6 +1824,8 @@
           {"2024": 72}
         ],
         "retired": false,
+        "withinSquad": true,
+        "onMarket": false,
         "position": "MITTELFELD",
         "attribute": {"ligainsiderRanking": {
           "punkte": 70,
@@ -1845,7 +1860,7 @@
           "playerName": "Deman",
           "playerId": "36310"
         },
-        "lastWert": 2830000,
+        "lastWert": 2800000,
         "spielerDaten": {
           "groesse": "1,81",
           "geburtstag": "06.04.2000",
@@ -1860,7 +1875,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 2800000,
+        "wert": 2890000,
         "verein": "6",
         "lastPoints": 4,
         "transfermarktDoDe": {
@@ -1917,7 +1932,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/32836"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "6",
+            "zielwert": "7.410.000",
+            "platz": 1,
+            "lastUpdate": "08.10.2026",
+            "typ": "top",
+            "marktwert": "7.260.000",
+            "aenderung": "+150.000"
+          },
+          "link": "https://www.com-analytics.de/player/32836"
+        },
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/robin-koch_12490/",
           "playerName": "Koch",
@@ -1998,7 +2024,7 @@
     },
     {
       "data": {
-        "lastWert": 240000,
+        "lastWert": 230000,
         "spielerDaten": {
           "groesse": "1,95",
           "geburtstag": "13.04.1991",
@@ -2013,7 +2039,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 230000,
+        "wert": 220000,
         "verein": "5",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -2084,7 +2110,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2240000,
+        "wert": 2200000,
         "verein": "9",
         "lastPoints": -1,
         "transfermarktDoDe": {
@@ -2142,7 +2168,7 @@
     },
     {
       "data": {
-        "lastWert": 270000,
+        "lastWert": 260000,
         "spielerDaten": {
           "groesse": "1,93",
           "geburtstag": "02.05.1991",
@@ -2157,7 +2183,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 260000,
+        "wert": 270000,
         "verein": "8",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -2235,7 +2261,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 6830000,
+        "wert": 6980000,
         "verein": "14",
         "lastPoints": 4,
         "transfermarktDoDe": {
@@ -2320,7 +2346,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1630000,
+        "wert": 1650000,
         "verein": "21",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -2395,7 +2421,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1550000,
+        "wert": 1570000,
         "verein": "62",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -2459,25 +2485,14 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "8",
-            "zielwert": "8.070.000",
-            "platz": 9,
-            "lastUpdate": "06.10.2026",
-            "typ": "flop",
-            "marktwert": "8.230.000",
-            "aenderung": "-160.000"
-          },
-          "link": "https://www.com-analytics.de/player/31846"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/31846"},
         "elfDesSpieltages": 1,
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/willi-orban_1667/",
           "playerName": "Orbán",
           "playerId": "1667"
         },
-        "lastWert": 8230000,
+        "lastWert": 8220000,
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "03.11.1992",
@@ -2492,7 +2507,7 @@
           "fuss": "rechts"
         },
         "isNotName": ["G. Orban"],
-        "wert": 8220000,
+        "wert": 8210000,
         "verein": "92",
         "lastPoints": 8,
         "transfermarktDoDe": {
@@ -2584,7 +2599,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 3680000,
+        "wert": 3690000,
         "verein": "68",
         "lastPoints": 7,
         "transfermarktDoDe": {
@@ -2651,7 +2666,7 @@
           "playerName": "Vagnoman",
           "playerId": "18427"
         },
-        "lastWert": 6140000,
+        "lastWert": 6010000,
         "spielerDaten": {
           "groesse": "1,90",
           "geburtstag": "11.12.2000",
@@ -2669,7 +2684,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 6010000,
+        "wert": 6100000,
         "verein": "14",
         "lastPoints": 5,
         "transfermarktDoDe": {
@@ -2750,7 +2765,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 5270000,
+        "wert": 5250000,
         "verein": "13",
         "lastPoints": 6,
         "transfermarktDoDe": {
@@ -2820,7 +2835,7 @@
           "playerName": "Baku",
           "playerId": "15835"
         },
-        "lastWert": 6250000,
+        "lastWert": 6080000,
         "spielerDaten": {
           "groesse": "1,76",
           "geburtstag": "08.04.1998",
@@ -2838,7 +2853,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 6080000,
+        "wert": 6170000,
         "verein": "92",
         "lastPoints": 4,
         "transfermarktDoDe": {
@@ -2901,7 +2916,7 @@
     },
     {
       "data": {
-        "lastWert": 170000,
+        "lastWert": 160000,
         "spielerDaten": {
           "groesse": "1,95",
           "geburtstag": "09.02.2004",
@@ -2916,7 +2931,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 160000,
+        "wert": 170000,
         "verein": "62",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -2966,7 +2981,7 @@
           "playerName": "Bredlow",
           "playerId": "6395"
         },
-        "lastWert": 2050000,
+        "lastWert": 2090000,
         "spielerDaten": {
           "groesse": "1,90",
           "geburtstag": "02.03.1995",
@@ -2981,7 +2996,7 @@
           "fuss": "beidfüßig"
         },
         "isNotName": [],
-        "wert": 2090000,
+        "wert": 1960000,
         "verein": "14",
         "lastPoints": 4,
         "transfermarktDoDe": {
@@ -3065,7 +3080,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2590000,
+        "wert": 2670000,
         "verein": "92",
         "lastPoints": 6,
         "transfermarktDoDe": {
@@ -3146,7 +3161,7 @@
           "fuss": "beidfüßig"
         },
         "isNotName": [],
-        "wert": 6800000,
+        "wert": 6840000,
         "verein": "6",
         "lastPoints": 13,
         "transfermarktDoDe": {
@@ -3235,7 +3250,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2830000,
+        "wert": 2760000,
         "verein": "4",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -3300,7 +3315,7 @@
           "playerName": "Rønnow",
           "playerId": "7943"
         },
-        "lastWert": 1700000,
+        "lastWert": 1610000,
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "04.08.1992",
@@ -3315,7 +3330,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1610000,
+        "wert": 1520000,
         "verein": "109",
         "lastPoints": 1,
         "transfermarktDoDe": {
@@ -3415,7 +3430,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 5640000,
+        "wert": 5660000,
         "verein": "21",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -3486,7 +3501,7 @@
           "fuss": "beidfüßig"
         },
         "isNotName": [],
-        "wert": 1810000,
+        "wert": 1770000,
         "verein": "8",
         "lastPoints": 6,
         "transfermarktDoDe": {
@@ -3557,7 +3572,7 @@
           "playerName": "Neuhaus",
           "playerId": "10416"
         },
-        "lastWert": 3000000,
+        "lastWert": 3010000,
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "16.03.1997",
@@ -3575,7 +3590,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 3010000,
+        "wert": 3060000,
         "verein": "3",
         "lastPoints": 12,
         "transfermarktDoDe": {
@@ -3654,7 +3669,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 7620000,
+        "wert": 7710000,
         "verein": "21",
         "lastPoints": 6,
         "transfermarktDoDe": {
@@ -3722,7 +3737,7 @@
           "playerName": "Burkardt",
           "playerId": "19272"
         },
-        "lastWert": 13490000,
+        "lastWert": 12520000,
         "spielerDaten": {
           "groesse": "1,81",
           "geburtstag": "11.07.2000",
@@ -3740,7 +3755,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 12520000,
+        "wert": 12510000,
         "verein": "9",
         "lastPoints": 8,
         "transfermarktDoDe": {
@@ -3801,7 +3816,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33975"},
-        "lastWert": 4520000,
+        "lastWert": 4760000,
         "spielerDaten": {
           "groesse": "1,76",
           "geburtstag": "16.06.2003",
@@ -3816,7 +3831,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 4760000,
+        "wert": 4860000,
         "verein": "1",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -3880,7 +3895,7 @@
           "playerName": "Sander",
           "playerId": "18612"
         },
-        "lastWert": 2110000,
+        "lastWert": 2160000,
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "21.02.1998",
@@ -3895,7 +3910,7 @@
           "fuss": "beidfüßig"
         },
         "isNotName": [],
-        "wert": 2160000,
+        "wert": 2240000,
         "verein": "3",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -4053,7 +4068,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 6160000,
+        "wert": 6210000,
         "verein": "21",
         "lastPoints": 6,
         "transfermarktDoDe": {
@@ -4234,7 +4249,7 @@
           "playerName": "Assan Ouédraogo",
           "playerId": "36735"
         },
-        "lastWert": 3130000,
+        "lastWert": 2920000,
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "09.05.2006",
@@ -4252,7 +4267,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2920000,
+        "wert": 2760000,
         "verein": "92",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -4309,7 +4324,7 @@
           "playerName": "Aleix García",
           "playerId": "7138"
         },
-        "lastWert": 13140000,
+        "lastWert": 13040000,
         "spielerDaten": {
           "groesse": "1,73",
           "geburtstag": "28.06.1997",
@@ -4327,7 +4342,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 13040000,
+        "wert": 13180000,
         "verein": "8",
         "lastPoints": 6,
         "transfermarktDoDe": {
@@ -4406,7 +4421,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2780000,
+        "wert": 2890000,
         "verein": "109",
         "lastPoints": 1,
         "transfermarktDoDe": {
@@ -4466,12 +4481,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "0",
-            "zielwert": "7.480.000",
-            "platz": 1,
-            "lastUpdate": "06.10.2026",
+            "zielwert": "7.170.000",
+            "platz": 3,
+            "lastUpdate": "08.10.2026",
             "typ": "flop",
-            "marktwert": "7.740.000",
-            "aenderung": "-260.000"
+            "marktwert": "7.440.000",
+            "aenderung": "-270.000"
           },
           "link": "https://www.com-analytics.de/player/32977"
         },
@@ -4480,7 +4495,7 @@
           "playerName": "Christoph Baumgartner",
           "playerId": "18640"
         },
-        "lastWert": 7740000,
+        "lastWert": 7540000,
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "01.08.1999",
@@ -4498,7 +4513,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 7540000,
+        "wert": 7440000,
         "verein": "92",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -4552,7 +4567,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34001"},
-        "lastWert": 1740000,
+        "lastWert": 1680000,
         "spielerDaten": {
           "groesse": "1,89",
           "geburtstag": "18.07.2001",
@@ -4567,7 +4582,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 1680000,
+        "wert": 1590000,
         "verein": "14",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -4627,7 +4642,7 @@
           "playerName": "Dominik Kohr",
           "playerId": "1821"
         },
-        "lastWert": 680000,
+        "lastWert": 650000,
         "spielerDaten": {
           "groesse": "1,83",
           "geburtstag": "31.01.1994",
@@ -4642,7 +4657,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 650000,
+        "wert": 660000,
         "verein": "18",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -4726,7 +4741,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 9930000,
+        "wert": 10180000,
         "verein": "9",
         "lastPoints": 6,
         "transfermarktDoDe": {
@@ -4784,24 +4799,13 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "5",
-            "zielwert": "9.760.000",
-            "platz": 2,
-            "lastUpdate": "06.10.2026",
-            "typ": "top",
-            "marktwert": "9.550.000",
-            "aenderung": "+210.000"
-          },
-          "link": "https://www.com-analytics.de/player/34009"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34009"},
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/kaishu-sano_36958/",
           "playerName": "Kaishu",
           "playerId": "36958"
         },
-        "lastWert": 9550000,
+        "lastWert": 9380000,
         "spielerDaten": {
           "groesse": "1,76",
           "geburtstag": "30.12.2000",
@@ -4816,7 +4820,7 @@
           "fuss": "beidfüßig"
         },
         "isNotName": [],
-        "wert": 9380000,
+        "wert": 10630000,
         "verein": "18",
         "lastPoints": 5,
         "transfermarktDoDe": {
@@ -4877,12 +4881,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "21",
-            "zielwert": "21.150.000",
-            "platz": 3,
-            "lastUpdate": "06.10.2026",
+            "zielwert": "21.260.000",
+            "platz": 8,
+            "lastUpdate": "08.10.2026",
             "typ": "top",
-            "marktwert": "20.940.000",
-            "aenderung": "+210.000"
+            "marktwert": "21.150.000",
+            "aenderung": "+110.000"
           },
           "link": "https://www.com-analytics.de/player/34014"
         },
@@ -4892,7 +4896,7 @@
           "playerName": "Olise",
           "playerId": "37170"
         },
-        "lastWert": 20940000,
+        "lastWert": 20780000,
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "12.12.2001",
@@ -4910,7 +4914,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 20780000,
+        "wert": 21150000,
         "verein": "1",
         "lastPoints": 21,
         "transfermarktDoDe": {
@@ -5070,7 +5074,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2750000,
+        "wert": 2610000,
         "verein": "68",
         "lastPoints": 1,
         "transfermarktDoDe": {
@@ -5139,7 +5143,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 900000,
+        "wert": 890000,
         "verein": "9",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -5189,7 +5193,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34021"},
-        "lastWert": 340000,
+        "lastWert": 330000,
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "17.12.2005",
@@ -5204,7 +5208,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 330000,
+        "wert": 340000,
         "verein": "21",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -5267,7 +5271,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1560000,
+        "wert": 1600000,
         "verein": "8",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -5375,7 +5379,7 @@
           "playerName": "Stöger",
           "playerId": "692"
         },
-        "lastWert": 2040000,
+        "lastWert": 2180000,
         "spielerDaten": {
           "groesse": "1,75",
           "geburtstag": "27.08.1993",
@@ -5393,7 +5397,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 2180000,
+        "wert": 2230000,
         "verein": "3",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -5461,7 +5465,7 @@
     },
     {
       "data": {
-        "lastWert": 1380000,
+        "lastWert": 1290000,
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "26.05.2001",
@@ -5476,7 +5480,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 1290000,
+        "wert": 1220000,
         "verein": "62",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -5611,7 +5615,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 11980000,
+        "wert": 12060000,
         "verein": "92",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -5755,7 +5759,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 8420000,
+        "wert": 8400000,
         "verein": "1",
         "lastPoints": 11,
         "transfermarktDoDe": {
@@ -5836,7 +5840,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 600000,
+        "wert": 630000,
         "verein": "62",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -5908,7 +5912,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 5440000,
+        "wert": 5530000,
         "verein": "62",
         "lastPoints": 4,
         "transfermarktDoDe": {
@@ -5968,7 +5972,7 @@
     },
     {
       "data": {
-        "lastWert": 250000,
+        "lastWert": 260000,
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "06.03.2002",
@@ -5983,7 +5987,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 260000,
+        "wert": 250000,
         "verein": "14",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -6040,7 +6044,7 @@
     },
     {
       "data": {
-        "lastWert": 690000,
+        "lastWert": 670000,
         "spielerDaten": {
           "groesse": "1,79",
           "geburtstag": "21.06.2000",
@@ -6055,7 +6059,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 670000,
+        "wert": 680000,
         "verein": "62",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -6170,7 +6174,7 @@
           "playerName": "Matsima",
           "playerId": "26695"
         },
-        "lastWert": 4840000,
+        "lastWert": 4790000,
         "spielerDaten": {
           "groesse": "1,93",
           "geburtstag": "15.05.2002",
@@ -6185,7 +6189,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 4790000,
+        "wert": 4610000,
         "verein": "68",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -6267,7 +6271,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2350000,
+        "wert": 2320000,
         "verein": "109",
         "lastPoints": 1,
         "transfermarktDoDe": {
@@ -6331,18 +6335,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "4.970.000",
-            "platz": 1,
-            "lastUpdate": "06.10.2026",
-            "typ": "top",
-            "marktwert": "4.740.000",
-            "aenderung": "+230.000"
-          },
-          "link": "https://www.com-analytics.de/player/34059"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34059"},
         "lastWert": 4740000,
         "spielerDaten": {
           "groesse": "1,89",
@@ -6358,7 +6351,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 4590000,
+        "wert": 4510000,
         "verein": "109",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -6430,7 +6423,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 8760000,
+        "wert": 9250000,
         "verein": "5",
         "lastPoints": 6,
         "transfermarktDoDe": {
@@ -6513,7 +6506,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 6030000,
+        "wert": 6120000,
         "verein": "68",
         "lastPoints": 4,
         "transfermarktDoDe": {
@@ -6580,7 +6573,7 @@
     },
     {
       "data": {
-        "lastWert": 450000,
+        "lastWert": 440000,
         "spielerDaten": {
           "groesse": "1,84",
           "geburtstag": "28.02.1993",
@@ -6595,7 +6588,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 440000,
+        "wert": 420000,
         "verein": "21",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -6741,7 +6734,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1020000,
+        "wert": 990000,
         "verein": "5",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -6775,7 +6768,7 @@
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": -2}],
         "withinSquad": true,
-        "onMarket": true,
+        "onMarket": false,
         "retired": false,
         "position": "ABWEHR",
         "attribute": {},
@@ -6820,7 +6813,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 8850000,
+        "wert": 9040000,
         "verein": "18",
         "lastPoints": 7,
         "transfermarktDoDe": {
@@ -6967,7 +6960,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 3190000,
+        "wert": 3150000,
         "verein": "68",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -7027,7 +7020,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33085"},
-        "lastWert": 1840000,
+        "lastWert": 1730000,
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "13.10.1996",
@@ -7042,7 +7035,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1730000,
+        "wert": 1720000,
         "verein": "14",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -7094,7 +7087,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34112"},
-        "lastWert": 560000,
+        "lastWert": 530000,
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "02.06.2003",
@@ -7109,7 +7102,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 530000,
+        "wert": 500000,
         "verein": "14",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -7179,7 +7172,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 6030000,
+        "wert": 5830000,
         "verein": "5",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -7258,7 +7251,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 3870000,
+        "wert": 3920000,
         "verein": "14",
         "lastPoints": 4,
         "transfermarktDoDe": {
@@ -7363,6 +7356,8 @@
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 17}],
         "retired": false,
+        "withinSquad": true,
+        "onMarket": false,
         "position": "STURM",
         "attribute": {"ligainsiderRanking": {
           "punkte": 188,
@@ -7473,7 +7468,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 4090000,
+        "wert": 4030000,
         "verein": "21",
         "lastPoints": 4,
         "transfermarktDoDe": {
@@ -7538,7 +7533,7 @@
           "playerName": "Trimmel",
           "playerId": "5713"
         },
-        "lastWert": 590000,
+        "lastWert": 600000,
         "spielerDaten": {
           "groesse": "1,89",
           "geburtstag": "24.02.1987",
@@ -7556,7 +7551,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 600000,
+        "wert": 580000,
         "verein": "109",
         "lastPoints": -5,
         "transfermarktDoDe": {
@@ -7615,7 +7610,7 @@
           "playerName": "Khedira",
           "playerId": "2122"
         },
-        "lastWert": 1730000,
+        "lastWert": 1750000,
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "27.01.1994",
@@ -7633,7 +7628,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1750000,
+        "wert": 1780000,
         "verein": "109",
         "lastPoints": -4,
         "transfermarktDoDe": {
@@ -7717,7 +7712,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 860000,
+        "wert": 890000,
         "verein": "8",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -7864,7 +7859,7 @@
           "fuss": "beidfüßig"
         },
         "isNotName": [],
-        "wert": 8770000,
+        "wert": 9100000,
         "verein": "13",
         "lastPoints": 1,
         "transfermarktDoDe": {
@@ -7995,7 +7990,7 @@
     },
     {
       "data": {
-        "lastWert": 300000,
+        "lastWert": 280000,
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "18.12.1998",
@@ -8010,7 +8005,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 280000,
+        "wert": 270000,
         "verein": "109",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -8084,7 +8079,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 1490000,
+        "wert": 1470000,
         "verein": "4",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -8158,7 +8153,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1750000,
+        "wert": 1790000,
         "verein": "13",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -8217,7 +8212,7 @@
     },
     {
       "data": {
-        "lastWert": 360000,
+        "lastWert": 350000,
         "spielerDaten": {
           "groesse": "1,84",
           "geburtstag": "20.01.2007",
@@ -8232,7 +8227,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 350000,
+        "wert": 340000,
         "verein": "4",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -8294,7 +8289,7 @@
           "playerName": "Bülter",
           "playerId": "19202"
         },
-        "lastWert": 2680000,
+        "lastWert": 2880000,
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "29.03.1993",
@@ -8312,7 +8307,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2880000,
+        "wert": 3220000,
         "verein": "13",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -8408,7 +8403,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 4360000,
+        "wert": 4040000,
         "verein": "5",
         "lastPoints": 1,
         "transfermarktDoDe": {
@@ -8469,7 +8464,7 @@
     },
     {
       "data": {
-        "lastWert": 370000,
+        "lastWert": 400000,
         "spielerDaten": {
           "groesse": "1,90",
           "geburtstag": "14.04.1995",
@@ -8484,7 +8479,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 400000,
+        "wert": 410000,
         "verein": "6",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -8565,7 +8560,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 4710000,
+        "wert": 4700000,
         "verein": "68",
         "lastPoints": 10,
         "transfermarktDoDe": {
@@ -8645,7 +8640,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1480000,
+        "wert": 1500000,
         "verein": "8",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -8697,7 +8692,7 @@
     },
     {
       "data": {
-        "lastWert": 530000,
+        "lastWert": 560000,
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "01.02.2000",
@@ -8712,7 +8707,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 560000,
+        "wert": 550000,
         "verein": "21",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -8766,7 +8761,7 @@
           "playerName": "Skhiri",
           "playerId": "20776"
         },
-        "lastWert": 4070000,
+        "lastWert": 4190000,
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "10.05.1995",
@@ -8781,7 +8776,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 4190000,
+        "wert": 3950000,
         "verein": "13",
         "lastPoints": 4,
         "transfermarktDoDe": {
@@ -8911,7 +8906,7 @@
     },
     {
       "data": {
-        "lastWert": 1000000,
+        "lastWert": 1110000,
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "20.06.2005",
@@ -8926,7 +8921,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 1110000,
+        "wert": 1060000,
         "verein": "21",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -8981,7 +8976,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34184"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "13",
+            "zielwert": "11.380.000",
+            "platz": 6,
+            "lastUpdate": "08.10.2026",
+            "typ": "top",
+            "marktwert": "11.270.000",
+            "aenderung": "+110.000"
+          },
+          "link": "https://www.com-analytics.de/player/34184"
+        },
         "elfDesSpieltages": 2,
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/yuito-suzuki_37105/",
@@ -9003,7 +9009,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 11180000,
+        "wert": 11270000,
         "verein": "21",
         "lastPoints": 13,
         "transfermarktDoDe": {
@@ -9075,7 +9081,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 3360000,
+        "wert": 3410000,
         "verein": "92",
         "lastPoints": 4,
         "transfermarktDoDe": {
@@ -9140,7 +9146,7 @@
           "playerName": "Jens Castrop",
           "playerId": "24405"
         },
-        "lastWert": 1610000,
+        "lastWert": 1540000,
         "spielerDaten": {
           "groesse": "1,78",
           "geburtstag": "29.07.2003",
@@ -9155,7 +9161,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1540000,
+        "wert": 1480000,
         "verein": "3",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -9253,7 +9259,7 @@
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 137}],
         "withinSquad": true,
-        "onMarket": false,
+        "onMarket": true,
         "retired": false,
         "position": "ABWEHR",
         "attribute": {"ligainsiderRanking": {
@@ -9278,7 +9284,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33167"},
-        "lastWert": 2970000,
+        "lastWert": 3060000,
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "16.04.1995",
@@ -9293,7 +9299,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 3060000,
+        "wert": 3050000,
         "verein": "5",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -9351,7 +9357,7 @@
           "playerName": "Burcu",
           "playerId": "36114"
         },
-        "lastWert": 1340000,
+        "lastWert": 1450000,
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "28.09.2004",
@@ -9366,7 +9372,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1450000,
+        "wert": 1470000,
         "verein": "109",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -9440,7 +9446,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 1940000,
+        "wert": 1960000,
         "verein": "13",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -9501,7 +9507,7 @@
     },
     {
       "data": {
-        "lastWert": 700000,
+        "lastWert": 710000,
         "spielerDaten": {
           "groesse": "1,81",
           "geburtstag": "22.06.2000",
@@ -9516,7 +9522,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 710000,
+        "wert": 730000,
         "verein": "14",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -9569,7 +9575,7 @@
           "playerName": "Jobe",
           "playerId": "38153"
         },
-        "lastWert": 8620000,
+        "lastWert": 8800000,
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "23.09.2005",
@@ -9584,7 +9590,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 8800000,
+        "wert": 8860000,
         "verein": "5",
         "lastPoints": 6,
         "transfermarktDoDe": {
@@ -9664,7 +9670,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 5640000,
+        "wert": 5570000,
         "verein": "62",
         "lastPoints": 5,
         "transfermarktDoDe": {
@@ -9728,7 +9734,7 @@
           "playerName": "Schick",
           "playerId": "7794"
         },
-        "lastWert": 13660000,
+        "lastWert": 13720000,
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "24.01.1996",
@@ -9746,7 +9752,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 13720000,
+        "wert": 13830000,
         "verein": "8",
         "lastPoints": 8,
         "transfermarktDoDe": {
@@ -9813,7 +9819,7 @@
           "playerName": "Tah",
           "playerId": "2385"
         },
-        "lastWert": 6600000,
+        "lastWert": 7210000,
         "spielerDaten": {
           "groesse": "1,95",
           "geburtstag": "11.02.1996",
@@ -9828,7 +9834,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 7210000,
+        "wert": 7140000,
         "verein": "1",
         "lastPoints": 8,
         "transfermarktDoDe": {
@@ -9899,18 +9905,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "7.900.000",
-            "platz": 10,
-            "lastUpdate": "06.10.2026",
-            "typ": "top",
-            "marktwert": "7.800.000",
-            "aenderung": "+100.000"
-          },
-          "link": "https://www.com-analytics.de/player/34206"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34206"},
         "lastWert": 7800000,
         "spielerDaten": {
           "groesse": "1,68",
@@ -9926,7 +9921,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 7680000,
+        "wert": 7140000,
         "verein": "1",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -9986,7 +9981,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33185"},
-        "lastWert": 1450000,
+        "lastWert": 1470000,
         "spielerDaten": {
           "groesse": "1,78",
           "geburtstag": "26.05.2002",
@@ -10001,7 +9996,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1470000,
+        "wert": 1520000,
         "verein": "13",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -10070,7 +10065,7 @@
           "playerName": "Machida",
           "playerId": "35863"
         },
-        "lastWert": 3520000,
+        "lastWert": 3670000,
         "spielerDaten": {
           "groesse": "1,90",
           "geburtstag": "25.08.1997",
@@ -10085,7 +10080,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 3670000,
+        "wert": 3500000,
         "verein": "62",
         "lastPoints": 4,
         "transfermarktDoDe": {
@@ -10148,7 +10143,7 @@
           "playerName": "Andrik Markgraf",
           "playerId": "38588"
         },
-        "lastWert": 190000,
+        "lastWert": 180000,
         "spielerDaten": {
           "groesse": "1,72",
           "geburtstag": "07.03.2006",
@@ -10163,7 +10158,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 180000,
+        "wert": 190000,
         "verein": "109",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -10300,7 +10295,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 1160000,
+        "wert": 1150000,
         "verein": "81",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -10371,7 +10366,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 4710000,
+        "wert": 4570000,
         "verein": "8",
         "lastPoints": 4,
         "transfermarktDoDe": {
@@ -10436,7 +10431,7 @@
           "playerName": "Mwene",
           "playerId": "2723"
         },
-        "lastWert": 2750000,
+        "lastWert": 2860000,
         "spielerDaten": {
           "groesse": "1,70",
           "geburtstag": "29.01.1994",
@@ -10454,7 +10449,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2860000,
+        "wert": 2960000,
         "verein": "18",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -10534,7 +10529,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 4920000,
+        "wert": 4980000,
         "verein": "8",
         "lastPoints": 5,
         "transfermarktDoDe": {
@@ -10619,7 +10614,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 8030000,
+        "wert": 8020000,
         "verein": "5",
         "lastPoints": 9,
         "transfermarktDoDe": {
@@ -10678,7 +10673,7 @@
     },
     {
       "data": {
-        "lastWert": 560000,
+        "lastWert": 570000,
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "15.02.2000",
@@ -10696,7 +10691,7 @@
           "fuss": "beidfüßig"
         },
         "isNotName": [],
-        "wert": 570000,
+        "wert": 580000,
         "verein": "68",
         "lastPoints": -1,
         "transfermarktDoDe": {
@@ -10753,7 +10748,7 @@
           "playerName": "Pieper",
           "playerId": "7061"
         },
-        "lastWert": 3820000,
+        "lastWert": 3520000,
         "spielerDaten": {
           "groesse": "1,92",
           "geburtstag": "17.01.1998",
@@ -10768,7 +10763,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 3520000,
+        "wert": 3480000,
         "verein": "6",
         "lastPoints": 5,
         "transfermarktDoDe": {
@@ -10830,7 +10825,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32206"},
-        "lastWert": 780000,
+        "lastWert": 850000,
         "spielerDaten": {
           "groesse": "1,81",
           "geburtstag": "19.05.1996",
@@ -10845,7 +10840,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 850000,
+        "wert": 920000,
         "verein": "13",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -10904,18 +10899,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "13",
-            "zielwert": "10.380.000",
-            "platz": 10,
-            "lastUpdate": "06.10.2026",
-            "typ": "flop",
-            "marktwert": "10.540.000",
-            "aenderung": "-160.000"
-          },
-          "link": "https://www.com-analytics.de/player/33236"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33236"},
         "elfDesSpieltages": 1,
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/jamal-musiala_24149/",
@@ -10940,7 +10924,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 10430000,
+        "wert": 9880000,
         "verein": "1",
         "lastPoints": 13,
         "transfermarktDoDe": {
@@ -11006,7 +10990,7 @@
           "playerName": "Silas",
           "playerId": "21594"
         },
-        "lastWert": 450000,
+        "lastWert": 440000,
         "spielerDaten": {
           "groesse": "1,89",
           "geburtstag": "06.10.1998",
@@ -11021,7 +11005,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 440000,
+        "wert": 420000,
         "verein": "18",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -11073,7 +11057,7 @@
           "playerName": "Scally",
           "playerId": "23700"
         },
-        "lastWert": 1900000,
+        "lastWert": 1980000,
         "spielerDaten": {
           "groesse": "1,84",
           "geburtstag": "31.12.2002",
@@ -11091,7 +11075,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1980000,
+        "wert": 1860000,
         "verein": "3",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -11162,7 +11146,7 @@
           "playerName": "Ragnar Ache",
           "playerId": "23720"
         },
-        "lastWert": 4260000,
+        "lastWert": 3970000,
         "spielerDaten": {
           "groesse": "1,83",
           "geburtstag": "28.07.1998",
@@ -11177,7 +11161,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 3970000,
+        "wert": 3750000,
         "verein": "13",
         "lastPoints": 8,
         "transfermarktDoDe": {
@@ -11245,7 +11229,7 @@
           "playerName": "Lemperle",
           "playerId": "23854"
         },
-        "lastWert": 6070000,
+        "lastWert": 5640000,
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "05.02.2002",
@@ -11260,7 +11244,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 5640000,
+        "wert": 5810000,
         "verein": "62",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -11324,7 +11308,7 @@
           "playerName": "Felix Agu",
           "playerId": "21590"
         },
-        "lastWert": 1170000,
+        "lastWert": 1110000,
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "27.09.1999",
@@ -11342,7 +11326,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1110000,
+        "wert": 1060000,
         "verein": "6",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -11454,7 +11438,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33296"},
-        "lastWert": 5930000,
+        "lastWert": 6130000,
         "spielerDaten": {
           "groesse": "1,69",
           "geburtstag": "10.10.2002",
@@ -11469,7 +11453,7 @@
           "fuss": "beidfüßig"
         },
         "isNotName": [],
-        "wert": 6130000,
+        "wert": 6110000,
         "verein": "18",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -11529,7 +11513,7 @@
           "playerName": "Demirović",
           "playerId": "24166"
         },
-        "lastWert": 7530000,
+        "lastWert": 6960000,
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "25.03.1998",
@@ -11547,7 +11531,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 6960000,
+        "wert": 6900000,
         "verein": "14",
         "lastPoints": 1,
         "transfermarktDoDe": {
@@ -11615,7 +11599,7 @@
           "playerName": "Haberer",
           "playerId": "3616"
         },
-        "lastWert": 1060000,
+        "lastWert": 1090000,
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "02.04.1994",
@@ -11633,7 +11617,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1090000,
+        "wert": 1050000,
         "verein": "109",
         "lastPoints": 1,
         "transfermarktDoDe": {
@@ -11706,7 +11690,7 @@
           "playerName": "Dōan",
           "playerId": "22974"
         },
-        "lastWert": 6260000,
+        "lastWert": 6110000,
         "spielerDaten": {
           "groesse": "1,72",
           "geburtstag": "16.06.1998",
@@ -11724,7 +11708,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 6110000,
+        "wert": 6160000,
         "verein": "9",
         "lastPoints": 4,
         "transfermarktDoDe": {
@@ -11842,13 +11826,24 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33353"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "0",
+            "zielwert": "6.050.000",
+            "platz": 10,
+            "lastUpdate": "08.10.2026",
+            "typ": "flop",
+            "marktwert": "6.220.000",
+            "aenderung": "-170.000"
+          },
+          "link": "https://www.com-analytics.de/player/33353"
+        },
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/rocco-reitz_24546/",
           "playerName": "Rocco Reitz",
           "playerId": "24546"
         },
-        "lastWert": 6150000,
+        "lastWert": 6000000,
         "spielerDaten": {
           "groesse": "1,76",
           "geburtstag": "29.05.2002",
@@ -11866,7 +11861,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 6000000,
+        "wert": 6220000,
         "verein": "92",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -11936,7 +11931,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 3050000,
+        "wert": 3100000,
         "verein": "6",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -12019,7 +12014,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2160000,
+        "wert": 2150000,
         "verein": "13",
         "lastPoints": 4,
         "transfermarktDoDe": {
@@ -12108,7 +12103,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2890000,
+        "wert": 2880000,
         "verein": "9",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -12183,7 +12178,7 @@
           "fuss": "beidfüßig"
         },
         "isNotName": [],
-        "wert": 3320000,
+        "wert": 3300000,
         "verein": "1",
         "lastPoints": 1,
         "transfermarktDoDe": {
@@ -12246,7 +12241,7 @@
     },
     {
       "data": {
-        "lastWert": 1400000,
+        "lastWert": 1410000,
         "spielerDaten": {
           "groesse": "1,94",
           "geburtstag": "28.10.1994",
@@ -12261,7 +12256,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1410000,
+        "wert": 1400000,
         "verein": "18",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -12351,7 +12346,7 @@
           "fuss": "beidfüßig"
         },
         "isNotName": [],
-        "wert": 5950000,
+        "wert": 5640000,
         "verein": "14",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -12401,18 +12396,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "3",
-            "zielwert": "10.980.000",
-            "platz": 6,
-            "lastUpdate": "06.10.2026",
-            "typ": "top",
-            "marktwert": "10.850.000",
-            "aenderung": "+130.000"
-          },
-          "link": "https://www.com-analytics.de/player/32395"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/32395"},
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/nadiem-amiri_5815/",
           "playerName": "Amiri",
@@ -12436,7 +12420,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 11170000,
+        "wert": 10750000,
         "verein": "18",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -12529,7 +12513,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 6600000,
+        "wert": 6780000,
         "verein": "21",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -12589,12 +12573,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "6",
-            "zielwert": "10.070.000",
-            "platz": 4,
-            "lastUpdate": "06.10.2026",
-            "typ": "top",
-            "marktwert": "9.890.000",
-            "aenderung": "+180.000"
+            "zielwert": "9.190.000",
+            "platz": 9,
+            "lastUpdate": "08.10.2026",
+            "typ": "flop",
+            "marktwert": "9.380.000",
+            "aenderung": "-190.000"
           },
           "link": "https://www.com-analytics.de/player/33436"
         },
@@ -12618,7 +12602,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 9080000,
+        "wert": 9380000,
         "verein": "92",
         "lastPoints": 6,
         "transfermarktDoDe": {
@@ -12677,13 +12661,24 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33437"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "6",
+            "zielwert": "8.540.000",
+            "platz": 7,
+            "lastUpdate": "08.10.2026",
+            "typ": "top",
+            "marktwert": "8.430.000",
+            "aenderung": "+110.000"
+          },
+          "link": "https://www.com-analytics.de/player/33437"
+        },
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/angelo-stiller_20766/",
           "playerName": "Stiller",
           "playerId": "20766"
         },
-        "lastWert": 7790000,
+        "lastWert": 8050000,
         "spielerDaten": {
           "groesse": "1,83",
           "geburtstag": "04.04.2001",
@@ -12698,7 +12693,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 8050000,
+        "wert": 8430000,
         "verein": "14",
         "lastPoints": 6,
         "transfermarktDoDe": {
@@ -12761,7 +12756,7 @@
           "playerName": "Atubolu",
           "playerId": "22000"
         },
-        "lastWert": 3350000,
+        "lastWert": 3330000,
         "spielerDaten": {
           "groesse": "1,90",
           "geburtstag": "25.05.2002",
@@ -12776,7 +12771,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 3330000,
+        "wert": 3350000,
         "verein": "9",
         "lastPoints": 4,
         "transfermarktDoDe": {
@@ -12836,12 +12831,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "7",
-            "zielwert": "16.100.000",
-            "platz": 7,
-            "lastUpdate": "06.10.2026",
+            "zielwert": "16.670.000",
+            "platz": 2,
+            "lastUpdate": "08.10.2026",
             "typ": "top",
-            "marktwert": "15.970.000",
-            "aenderung": "+130.000"
+            "marktwert": "16.520.000",
+            "aenderung": "+150.000"
           },
           "link": "https://www.com-analytics.de/player/32445"
         },
@@ -12850,7 +12845,7 @@
           "playerName": "Kimmich",
           "playerId": "5768"
         },
-        "lastWert": 15970000,
+        "lastWert": 17420000,
         "spielerDaten": {
           "groesse": "1,77",
           "geburtstag": "08.02.1995",
@@ -12868,7 +12863,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 17420000,
+        "wert": 16520000,
         "verein": "1",
         "lastPoints": 7,
         "transfermarktDoDe": {
@@ -12963,7 +12958,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 6340000,
+        "wert": 6490000,
         "verein": "5",
         "lastPoints": 4,
         "transfermarktDoDe": {
@@ -13050,7 +13045,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 3180000,
+        "wert": 3240000,
         "verein": "18",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -13120,7 +13115,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33478"},
-        "lastWert": 810000,
+        "lastWert": 770000,
         "spielerDaten": {
           "groesse": "1,83",
           "geburtstag": "05.03.1993",
@@ -13138,7 +13133,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 770000,
+        "wert": 800000,
         "verein": "18",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -13209,7 +13204,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2240000,
+        "wert": 2190000,
         "verein": "92",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -13292,7 +13287,7 @@
           "fuss": "beidfüßig"
         },
         "isNotName": [],
-        "wert": 920000,
+        "wert": 960000,
         "verein": "1",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -13413,7 +13408,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33496"},
-        "lastWert": 750000,
+        "lastWert": 740000,
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "12.05.1999",
@@ -13431,7 +13426,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 740000,
+        "wert": 760000,
         "verein": "1",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -13580,7 +13575,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 6430000,
+        "wert": 6670000,
         "verein": "1",
         "lastPoints": 8,
         "transfermarktDoDe": {
@@ -13614,6 +13609,8 @@
           {"2024": 179}
         ],
         "retired": false,
+        "withinSquad": true,
+        "onMarket": false,
         "position": "MITTELFELD",
         "attribute": {"ligainsiderRanking": {
           "punkte": 156,
@@ -13771,7 +13768,7 @@
           "playerName": "Mittelstädt",
           "playerId": "6206"
         },
-        "lastWert": 10480000,
+        "lastWert": 9770000,
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "18.03.1997",
@@ -13786,7 +13783,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 9770000,
+        "wert": 9450000,
         "verein": "14",
         "lastPoints": 10,
         "transfermarktDoDe": {
@@ -13864,7 +13861,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33536"},
-        "lastWert": 9200000,
+        "lastWert": 9160000,
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "08.08.2002",
@@ -13879,7 +13876,7 @@
           "fuss": "beidfüßig"
         },
         "isNotName": [],
-        "wert": 9160000,
+        "wert": 9120000,
         "verein": "62",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -13934,7 +13931,7 @@
           "playerName": "Baumann",
           "playerId": "567"
         },
-        "lastWert": 2030000,
+        "lastWert": 1970000,
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "02.06.1990",
@@ -13949,7 +13946,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1970000,
+        "wert": 1990000,
         "verein": "62",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -14047,7 +14044,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1090000,
+        "wert": 1070000,
         "verein": "109",
         "lastPoints": -3,
         "transfermarktDoDe": {
@@ -14118,7 +14115,7 @@
           "playerName": "Chabot",
           "playerId": "12583"
         },
-        "lastWert": 4790000,
+        "lastWert": 4850000,
         "spielerDaten": {
           "groesse": "1,95",
           "geburtstag": "12.02.1998",
@@ -14133,7 +14130,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 4850000,
+        "wert": 4860000,
         "verein": "14",
         "lastPoints": 5,
         "transfermarktDoDe": {
@@ -14283,7 +14280,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 1440000,
+        "wert": 1520000,
         "verein": "109",
         "lastPoints": 1,
         "transfermarktDoDe": {
@@ -14450,7 +14447,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1390000,
+        "wert": 1420000,
         "verein": "68",
         "lastPoints": 1,
         "transfermarktDoDe": {
@@ -14491,7 +14488,7 @@
           {"2024": 145}
         ],
         "withinSquad": true,
-        "onMarket": true,
+        "onMarket": false,
         "retired": false,
         "position": "ABWEHR",
         "possibleNames": [
@@ -14514,7 +14511,7 @@
           "playerName": "Caci",
           "playerId": "26102"
         },
-        "lastWert": 5300000,
+        "lastWert": 5290000,
         "spielerDaten": {
           "groesse": "1,84",
           "geburtstag": "01.07.1997",
@@ -14532,7 +14529,7 @@
           "fuss": "beidfüßig"
         },
         "isNotName": [],
-        "wert": 5290000,
+        "wert": 4970000,
         "verein": "18",
         "lastPoints": 5,
         "transfermarktDoDe": {
@@ -14592,7 +14589,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32553"},
-        "lastWert": 5310000,
+        "lastWert": 5340000,
         "spielerDaten": {
           "groesse": "1,77",
           "geburtstag": "19.06.1991",
@@ -14610,7 +14607,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 5340000,
+        "wert": 5650000,
         "verein": "62",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -14672,7 +14669,7 @@
     },
     {
       "data": {
-        "lastWert": 410000,
+        "lastWert": 400000,
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "05.06.2005",
@@ -14687,7 +14684,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 400000,
+        "wert": 380000,
         "verein": "3",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -14809,7 +14806,7 @@
     },
     {
       "data": {
-        "lastWert": 280000,
+        "lastWert": 270000,
         "spielerDaten": {
           "groesse": "1,89",
           "geburtstag": "03.06.1996",
@@ -14827,7 +14824,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 270000,
+        "wert": 280000,
         "verein": "92",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -14884,7 +14881,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32590"},
-        "lastWert": 2110000,
+        "lastWert": 2250000,
         "spielerDaten": {
           "groesse": "1,78",
           "geburtstag": "17.03.1994",
@@ -14899,7 +14896,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2250000,
+        "wert": 2310000,
         "verein": "5",
         "lastPoints": 1,
         "transfermarktDoDe": {
@@ -14963,7 +14960,7 @@
           "playerName": "Poulsen",
           "playerId": "5765"
         },
-        "lastWert": 2710000,
+        "lastWert": 2720000,
         "spielerDaten": {
           "groesse": "1,92",
           "geburtstag": "15.06.1994",
@@ -14978,7 +14975,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2720000,
+        "wert": 2820000,
         "verein": "4",
         "lastPoints": 9,
         "transfermarktDoDe": {
@@ -15055,7 +15052,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 3390000,
+        "wert": 3320000,
         "verein": "109",
         "lastPoints": 1,
         "transfermarktDoDe": {
@@ -15119,7 +15116,7 @@
           "playerName": "Hložek",
           "playerId": "24095"
         },
-        "lastWert": 5870000,
+        "lastWert": 5960000,
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "25.07.2002",
@@ -15137,7 +15134,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 5960000,
+        "wert": 6140000,
         "verein": "62",
         "lastPoints": 5,
         "transfermarktDoDe": {
@@ -15196,7 +15193,7 @@
     },
     {
       "data": {
-        "lastWert": 1350000,
+        "lastWert": 1340000,
         "spielerDaten": {
           "groesse": "1,76",
           "geburtstag": "03.06.1992",
@@ -15214,7 +15211,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1340000,
+        "wert": 1420000,
         "verein": "9",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -15313,7 +15310,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1820000,
+        "wert": 1790000,
         "verein": "21",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -15400,7 +15397,7 @@
           "fuss": "beidfüßig"
         },
         "isNotName": [],
-        "wert": 7950000,
+        "wert": 7970000,
         "verein": "3",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -15465,12 +15462,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "13",
-            "zielwert": "8.090.000",
-            "platz": 8,
-            "lastUpdate": "06.10.2026",
+            "zielwert": "8.250.000",
+            "platz": 10,
+            "lastUpdate": "08.10.2026",
             "typ": "top",
-            "marktwert": "7.980.000",
-            "aenderung": "+110.000"
+            "marktwert": "8.150.000",
+            "aenderung": "+100.000"
           },
           "link": "https://www.com-analytics.de/player/33629"
         },
@@ -15495,7 +15492,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 8040000,
+        "wert": 8150000,
         "verein": "21",
         "lastPoints": 13,
         "transfermarktDoDe": {
@@ -15549,7 +15546,7 @@
           "playerName": "Jens Stage",
           "playerId": "22538"
         },
-        "lastWert": 3300000,
+        "lastWert": 3520000,
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "08.11.1996",
@@ -15567,7 +15564,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 3520000,
+        "wert": 3470000,
         "verein": "6",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -15637,7 +15634,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1980000,
+        "wert": 1900000,
         "verein": "21",
         "lastPoints": 1,
         "transfermarktDoDe": {
@@ -15681,7 +15678,7 @@
     },
     {
       "data": {
-        "lastWert": 860000,
+        "lastWert": 820000,
         "spielerDaten": {
           "groesse": "1,84",
           "geburtstag": "06.06.1998",
@@ -15696,7 +15693,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 820000,
+        "wert": 810000,
         "verein": "4",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -15774,7 +15771,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2700000,
+        "wert": 2770000,
         "verein": "5",
         "lastPoints": 9,
         "transfermarktDoDe": {
@@ -15838,7 +15835,7 @@
     },
     {
       "data": {
-        "lastWert": 360000,
+        "lastWert": 370000,
         "spielerDaten": {
           "groesse": "1,84",
           "geburtstag": "09.04.1999",
@@ -15853,7 +15850,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 370000,
+        "wert": 380000,
         "verein": "109",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -15920,7 +15917,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2360000,
+        "wert": 2270000,
         "verein": "3",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -16062,7 +16059,7 @@
           "playerName": "Justin Njinmah",
           "playerId": "27480"
         },
-        "lastWert": 1310000,
+        "lastWert": 1360000,
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "15.11.2000",
@@ -16080,7 +16077,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1360000,
+        "wert": 1380000,
         "verein": "6",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -16128,13 +16125,24 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/32667"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "3",
+            "zielwert": "15.860.000",
+            "platz": 8,
+            "lastUpdate": "08.10.2026",
+            "typ": "flop",
+            "marktwert": "16.050.000",
+            "aenderung": "-190.000"
+          },
+          "link": "https://www.com-analytics.de/player/32667"
+        },
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/serhou-guirassy_10454/",
           "playerName": "Guirassy",
           "playerId": "10454"
         },
-        "lastWert": 16730000,
+        "lastWert": 16210000,
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "12.03.1996",
@@ -16149,7 +16157,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 16210000,
+        "wert": 16050000,
         "verein": "5",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -16213,7 +16221,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33713"},
-        "lastWert": 2470000,
+        "lastWert": 2640000,
         "spielerDaten": {
           "groesse": "1,78",
           "geburtstag": "11.12.2005",
@@ -16228,7 +16236,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2640000,
+        "wert": 2630000,
         "verein": "68",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -16286,7 +16294,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/31666"},
-        "lastWert": 290000,
+        "lastWert": 300000,
         "spielerDaten": {
           "groesse": "1,92",
           "geburtstag": "24.08.1991",
@@ -16301,7 +16309,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 300000,
+        "wert": 290000,
         "verein": "18",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -16363,7 +16371,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32693"},
-        "lastWert": 1700000,
+        "lastWert": 1590000,
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "14.05.1995",
@@ -16378,7 +16386,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 1590000,
+        "wert": 1600000,
         "verein": "62",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -16500,7 +16508,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32694"},
-        "lastWert": 890000,
+        "lastWert": 910000,
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "07.04.1997",
@@ -16515,7 +16523,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 910000,
+        "wert": 930000,
         "verein": "109",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -16575,7 +16583,7 @@
           "playerName": "Juranović",
           "playerId": "26979"
         },
-        "lastWert": 1770000,
+        "lastWert": 1800000,
         "spielerDaten": {
           "groesse": "1,73",
           "geburtstag": "16.08.1995",
@@ -16593,7 +16601,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 1800000,
+        "wert": 1710000,
         "verein": "109",
         "lastPoints": 0,
         "transfermarktDoDe": {
@@ -16673,7 +16681,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 7020000,
+        "wert": 6620000,
         "verein": "1",
         "lastPoints": 2,
         "transfermarktDoDe": {
@@ -16713,7 +16721,7 @@
           {"2024": 124}
         ],
         "withinSquad": true,
-        "onMarket": true,
+        "onMarket": false,
         "retired": false,
         "attribute": {},
         "position": "STURM",
@@ -16752,7 +16760,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 1390000,
+        "wert": 1370000,
         "verein": "4",
         "lastPoints": 4,
         "transfermarktDoDe": {
@@ -16793,7 +16801,7 @@
           {"2021": 17}
         ],
         "withinSquad": true,
-        "onMarket": true,
+        "onMarket": false,
         "retired": false,
         "position": "ABWEHR",
         "attribute": {"ligainsiderRanking": {
@@ -16823,7 +16831,7 @@
           "playerName": "Kömür",
           "playerId": "27169"
         },
-        "lastWert": 2360000,
+        "lastWert": 2380000,
         "spielerDaten": {
           "groesse": "1,84",
           "geburtstag": "17.07.2005",
@@ -16841,7 +16849,7 @@
           "fuss": "beidfüßig"
         },
         "isNotName": [],
-        "wert": 2380000,
+        "wert": 2260000,
         "verein": "68",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -16977,7 +16985,7 @@
           "playerName": "Upamecano",
           "playerId": "11541"
         },
-        "lastWert": 7590000,
+        "lastWert": 7120000,
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "27.10.1998",
@@ -16992,7 +17000,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 7120000,
+        "wert": 6830000,
         "verein": "1",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -17078,7 +17086,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 11480000,
+        "wert": 11820000,
         "verein": "8",
         "lastPoints": 7,
         "transfermarktDoDe": {
@@ -17233,7 +17241,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 2600000,
+        "wert": 2720000,
         "verein": "92",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -17296,7 +17304,7 @@
           "playerName": "Arthur",
           "playerId": "35904"
         },
-        "lastWert": 3720000,
+        "lastWert": 3690000,
         "spielerDaten": {
           "groesse": "1,74",
           "geburtstag": "17.03.2003",
@@ -17314,7 +17322,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 3690000,
+        "wert": 3660000,
         "verein": "6",
         "lastPoints": 6,
         "transfermarktDoDe": {
@@ -17423,6 +17431,8 @@
           {"2024": 40}
         ],
         "retired": false,
+        "withinSquad": true,
+        "onMarket": false,
         "position": "ABWEHR",
         "attribute": {"ligainsiderRanking": {
           "punkte": 103,
@@ -17466,7 +17476,7 @@
           "fuss": "links"
         },
         "isNotName": [],
-        "wert": 3420000,
+        "wert": 3240000,
         "verein": "6",
         "lastPoints": 6,
         "transfermarktDoDe": {
@@ -17553,7 +17563,7 @@
           "fuss": "rechts"
         },
         "isNotName": [],
-        "wert": 12600000,
+        "wert": 12680000,
         "verein": "21",
         "lastPoints": 3,
         "transfermarktDoDe": {
@@ -17738,7 +17748,7 @@
     },
     {
       "data": {
-        "lastWert": 180000,
+        "lastWert": 190000,
         "spielerDaten": {
           "groesse": "1,72",
           "geburtstag": "30.07.2001",
@@ -17754,7 +17764,7 @@
         },
         "isNotName": [],
         "verein": "18",
-        "wert": 190000,
+        "wert": 200000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "27.08.2026",
@@ -17825,7 +17835,7 @@
         },
         "isNotName": [],
         "verein": "4",
-        "wert": 2690000,
+        "wert": 2640000,
         "lastPoints": 13,
         "transfermarktDoDe": {
           "date": "27.08.2026",
@@ -17853,6 +17863,8 @@
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 96}],
         "retired": false,
+        "withinSquad": true,
+        "onMarket": true,
         "position": "ABWEHR",
         "attribute": {"ligainsiderRanking": {
           "punkte": 142,
@@ -17930,7 +17942,7 @@
     },
     {
       "data": {
-        "lastWert": 360000,
+        "lastWert": 370000,
         "spielerDaten": {
           "groesse": "1,81",
           "geburtstag": "13.12.2006",
@@ -17946,7 +17958,7 @@
         },
         "isNotName": [],
         "verein": "81",
-        "wert": 370000,
+        "wert": 360000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "27.08.2026",
@@ -17990,7 +18002,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34234"},
-        "lastWert": 5170000,
+        "lastWert": 5100000,
         "spielerDaten": {
           "groesse": "1,89",
           "geburtstag": "26.07.2006",
@@ -18006,7 +18018,7 @@
         },
         "isNotName": [],
         "verein": "8",
-        "wert": 5100000,
+        "wert": 5240000,
         "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "28.08.2026",
@@ -18062,7 +18074,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33530"},
-        "lastWert": 3900000,
+        "lastWert": 3980000,
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "28.05.2002",
@@ -18078,7 +18090,7 @@
         },
         "isNotName": [],
         "verein": "8",
-        "wert": 3980000,
+        "wert": 3970000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "28.08.2026",
@@ -18157,7 +18169,7 @@
         },
         "isNotName": [],
         "verein": "68",
-        "wert": 3120000,
+        "wert": 3010000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "28.08.2026",
@@ -18230,7 +18242,7 @@
         },
         "isNotName": [],
         "verein": "92",
-        "wert": 2140000,
+        "wert": 2050000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "28.08.2026",
@@ -18263,6 +18275,8 @@
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 13}],
         "retired": false,
+        "withinSquad": true,
+        "onMarket": false,
         "position": "MITTELFELD",
         "attribute": {},
         "possibleNames": [
@@ -18293,7 +18307,7 @@
         },
         "isNotName": [],
         "verein": "92",
-        "wert": 1090000,
+        "wert": 1110000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "28.08.2026",
@@ -18372,7 +18386,7 @@
         },
         "isNotName": [],
         "verein": "13",
-        "wert": 1580000,
+        "wert": 1560000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -18441,7 +18455,7 @@
         },
         "isNotName": [],
         "verein": "62",
-        "wert": 4790000,
+        "wert": 4830000,
         "lastPoints": 6,
         "transfermarktDoDe": {
           "date": "03.09.2026",
@@ -18504,7 +18518,7 @@
           "playerName": "Machino",
           "playerId": "36130"
         },
-        "lastWert": 2850000,
+        "lastWert": 2920000,
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "30.09.1999",
@@ -18519,7 +18533,7 @@
         },
         "isNotName": [],
         "verein": "3",
-        "wert": 2920000,
+        "wert": 2850000,
         "lastPoints": 8,
         "transfermarktDoDe": {
           "date": "04.09.2026",
@@ -18615,7 +18629,7 @@
     },
     {
       "data": {
-        "lastWert": 560000,
+        "lastWert": 570000,
         "spielerDaten": {
           "groesse": "1,90",
           "geburtstag": "09.09.2007",
@@ -18630,7 +18644,7 @@
         },
         "isNotName": [],
         "verein": "6",
-        "wert": 570000,
+        "wert": 560000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "04.09.2026",
@@ -18691,7 +18705,7 @@
           "playerName": "Salim Musah",
           "playerId": "37144"
         },
-        "lastWert": 730000,
+        "lastWert": 700000,
         "spielerDaten": {
           "groesse": "1,98",
           "geburtstag": "22.02.2006",
@@ -18706,7 +18720,7 @@
         },
         "isNotName": [],
         "verein": "6",
-        "wert": 700000,
+        "wert": 670000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "24.08.2026",
@@ -18844,24 +18858,13 @@
           "rotekarten": 0,
           "manOfTheMatchAmount": 0
         },
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "3",
-            "zielwert": "13.810.000",
-            "platz": 4,
-            "lastUpdate": "06.10.2026",
-            "typ": "flop",
-            "marktwert": "14.020.000",
-            "aenderung": "-210.000"
-          },
-          "link": "https://www.com-analytics.de/player/34254"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34254"},
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/luis-diaz_22566/",
           "playerName": "Luis Díaz",
           "playerId": "22566"
         },
-        "lastWert": 14020000,
+        "lastWert": 13610000,
         "spielerDaten": {
           "groesse": "1,79",
           "geburtstag": "13.01.1997",
@@ -18876,7 +18879,7 @@
         },
         "isNotName": [],
         "verein": "1",
-        "wert": 13610000,
+        "wert": 12990000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "24.08.2026",
@@ -18927,18 +18930,7 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "5",
-            "zielwert": "7.640.000",
-            "platz": 5,
-            "lastUpdate": "06.10.2026",
-            "typ": "top",
-            "marktwert": "7.460.000",
-            "aenderung": "+180.000"
-          },
-          "link": "https://www.com-analytics.de/player/34257"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34257"},
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/vladimir-coufal_11929/",
           "playerName": "Coufal",
@@ -18959,7 +18951,7 @@
         },
         "isNotName": [],
         "verein": "62",
-        "wert": 7850000,
+        "wert": 7720000,
         "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "05.09.2026",
@@ -19016,7 +19008,7 @@
     },
     {
       "data": {
-        "lastWert": 1210000,
+        "lastWert": 1150000,
         "transfermarktDoDe": {
           "date": "05.09.2026",
           "name": "Warmed Omari",
@@ -19084,7 +19076,7 @@
         },
         "isNotName": [],
         "verein": "4",
-        "wert": 1150000,
+        "wert": 1190000,
         "lastPoints": 3,
         "lastSeasonPoints": 53,
         "punkte": 3,
@@ -19173,7 +19165,7 @@
           "playerName": "Rômulo",
           "playerId": "38565"
         },
-        "lastWert": 6910000,
+        "lastWert": 6740000,
         "spielerDaten": {
           "groesse": "1,93",
           "geburtstag": "08.02.2002",
@@ -19189,7 +19181,7 @@
         },
         "isNotName": [],
         "verein": "92",
-        "wert": 6740000,
+        "wert": 6860000,
         "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "07.09.2026",
@@ -19249,7 +19241,7 @@
         },
         "isNotName": [],
         "verein": "3",
-        "wert": 1730000,
+        "wert": 1610000,
         "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "05.09.2026",
@@ -19276,7 +19268,7 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 46}],
-        "withinSquad": false,
+        "withinSquad": true,
         "onMarket": false,
         "retired": false,
         "position": "MITTELFELD",
@@ -19380,7 +19372,7 @@
         },
         "isNotName": [],
         "verein": "8",
-        "wert": 1560000,
+        "wert": 1470000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "07.09.2026",
@@ -19419,7 +19411,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33564"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "0",
+            "zielwert": "6.290.000",
+            "platz": 4,
+            "lastUpdate": "08.10.2026",
+            "typ": "flop",
+            "marktwert": "6.540.000",
+            "aenderung": "-250.000"
+          },
+          "link": "https://www.com-analytics.de/player/33564"
+        },
         "lastWert": 6500000,
         "spielerDaten": {
           "groesse": "1,85",
@@ -19436,7 +19439,7 @@
         },
         "isNotName": [],
         "verein": "68",
-        "wert": 6550000,
+        "wert": 6540000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "24.08.2026",
@@ -19499,7 +19502,7 @@
           "playerName": "Hajdari",
           "playerId": "37227"
         },
-        "lastWert": 1840000,
+        "lastWert": 1710000,
         "spielerDaten": {
           "groesse": "1,89",
           "geburtstag": "18.05.2003",
@@ -19515,7 +19518,7 @@
         },
         "isNotName": [],
         "verein": "62",
-        "wert": 1710000,
+        "wert": 1700000,
         "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "24.08.2026",
@@ -19573,7 +19576,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34117"},
-        "lastWert": 1070000,
+        "lastWert": 1050000,
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "20.10.2003",
@@ -19589,7 +19592,7 @@
         },
         "isNotName": [],
         "verein": "5",
-        "wert": 1050000,
+        "wert": 1090000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "24.08.2026",
@@ -19638,7 +19641,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34277"},
-        "lastWert": 1020000,
+        "lastWert": 1040000,
         "spielerDaten": {
           "groesse": "1,73",
           "geburtstag": "01.07.1991",
@@ -19654,7 +19657,7 @@
         },
         "isNotName": [],
         "verein": "8",
-        "wert": 1040000,
+        "wert": 990000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "24.08.2026",
@@ -19781,7 +19784,7 @@
     },
     {
       "data": {
-        "lastWert": 1550000,
+        "lastWert": 1450000,
         "spielerDaten": {
           "groesse": "1,78",
           "geburtstag": "16.02.2005",
@@ -19797,7 +19800,7 @@
         },
         "isNotName": [],
         "verein": "8",
-        "wert": 1450000,
+        "wert": 1360000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "24.08.2026",
@@ -19867,7 +19870,7 @@
         },
         "isNotName": [],
         "verein": "4",
-        "wert": 3070000,
+        "wert": 3050000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "25.08.2026",
@@ -19925,13 +19928,24 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/33997"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "6",
+            "zielwert": "7.050.000",
+            "platz": 3,
+            "lastUpdate": "08.10.2026",
+            "typ": "top",
+            "marktwert": "6.900.000",
+            "aenderung": "+150.000"
+          },
+          "link": "https://www.com-analytics.de/player/33997"
+        },
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/fabian-rieder_25579/",
           "playerName": "Rieder",
           "playerId": "25579"
         },
-        "lastWert": 6970000,
+        "lastWert": 6920000,
         "spielerDaten": {
           "groesse": "1,81",
           "geburtstag": "16.02.2002",
@@ -19947,7 +19961,7 @@
         },
         "isNotName": [],
         "verein": "68",
-        "wert": 6920000,
+        "wert": 6900000,
         "lastPoints": 6,
         "transfermarktDoDe": {
           "date": "07.09.2026",
@@ -20011,7 +20025,7 @@
           "playerName": "Alessio Castro-Montes",
           "playerId": "22736"
         },
-        "lastWert": 1000000,
+        "lastWert": 990000,
         "spielerDaten": {
           "groesse": "1,75",
           "geburtstag": "17.05.1997",
@@ -20027,7 +20041,7 @@
         },
         "isNotName": [],
         "verein": "13",
-        "wert": 990000,
+        "wert": 1000000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "25.08.2026",
@@ -20084,7 +20098,18 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34289"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "7",
+            "zielwert": "7.860.000",
+            "platz": 4,
+            "lastUpdate": "08.10.2026",
+            "typ": "top",
+            "marktwert": "7.730.000",
+            "aenderung": "+130.000"
+          },
+          "link": "https://www.com-analytics.de/player/34289"
+        },
         "elfDesSpieltages": 1,
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/equi-fernandez_38674/",
@@ -20178,7 +20203,7 @@
         },
         "isNotName": [],
         "verein": "14",
-        "wert": 8150000,
+        "wert": 8270000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "25.08.2026",
@@ -20241,7 +20266,7 @@
           "playerName": "Potulski",
           "playerId": "38608"
         },
-        "lastWert": 1820000,
+        "lastWert": 1800000,
         "spielerDaten": {
           "groesse": "1,95",
           "geburtstag": "19.10.2007",
@@ -20257,7 +20282,7 @@
         },
         "isNotName": [],
         "verein": "18",
-        "wert": 1800000,
+        "wert": 1850000,
         "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -20399,7 +20424,7 @@
         },
         "isNotName": [],
         "verein": "8",
-        "wert": 1520000,
+        "wert": 1440000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "28.08.2026",
@@ -20454,7 +20479,7 @@
           "playerName": "Kosugi",
           "playerId": "38762"
         },
-        "lastWert": 2390000,
+        "lastWert": 2260000,
         "spielerDaten": {
           "groesse": "1,72",
           "geburtstag": "18.03.2006",
@@ -20470,7 +20495,7 @@
         },
         "isNotName": [],
         "verein": "9",
-        "wert": 2260000,
+        "wert": 2370000,
         "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "28.08.2026",
@@ -20598,7 +20623,7 @@
           "playerName": "Ebnoutalib",
           "playerId": "38489"
         },
-        "lastWert": 11490000,
+        "lastWert": 10490000,
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "13.09.2003",
@@ -20614,7 +20639,7 @@
         },
         "isNotName": [],
         "verein": "9",
-        "wert": 10490000,
+        "wert": 10880000,
         "lastPoints": 10,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -20664,7 +20689,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34318"},
-        "lastWert": 1390000,
+        "lastWert": 1380000,
         "spielerDaten": {
           "groesse": "1,79",
           "geburtstag": "30.11.2004",
@@ -20680,7 +20705,7 @@
         },
         "isNotName": [],
         "verein": "9",
-        "wert": 1380000,
+        "wert": 1390000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "07.09.2026",
@@ -20729,7 +20754,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34334"},
-        "lastWert": 200000,
+        "lastWert": 190000,
         "spielerDaten": {
           "groesse": "1,93",
           "geburtstag": "29.11.2002",
@@ -20745,7 +20770,7 @@
         },
         "isNotName": [],
         "verein": "4",
-        "wert": 190000,
+        "wert": 200000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "29.08.2026",
@@ -20795,7 +20820,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34344"},
-        "lastWert": 400000,
+        "lastWert": 380000,
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "12.05.2006",
@@ -20811,7 +20836,7 @@
         },
         "isNotName": [],
         "verein": "68",
-        "wert": 380000,
+        "wert": 390000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "24.08.2026",
@@ -21011,7 +21036,7 @@
         },
         "isNotName": [],
         "verein": "18",
-        "wert": 7590000,
+        "wert": 7500000,
         "lastPoints": 12,
         "transfermarktDoDe": {
           "date": "25.08.2026",
@@ -21098,7 +21123,7 @@
         },
         "isNotName": [],
         "verein": "3",
-        "wert": 5540000,
+        "wert": 5520000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "25.08.2026",
@@ -21157,7 +21182,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34346"},
-        "lastWert": 700000,
+        "lastWert": 690000,
         "spielerDaten": {
           "groesse": "1,94",
           "geburtstag": "09.01.2008",
@@ -21173,7 +21198,7 @@
         },
         "isNotName": [],
         "verein": "5",
-        "wert": 690000,
+        "wert": 670000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -21288,7 +21313,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34348"},
-        "lastWert": 170000,
+        "lastWert": 180000,
         "spielerDaten": {
           "groesse": "1,89",
           "geburtstag": "14.02.2008",
@@ -21304,7 +21329,7 @@
         },
         "isNotName": [],
         "verein": "92",
-        "wert": 180000,
+        "wert": 190000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -21350,7 +21375,7 @@
     },
     {
       "data": {
-        "lastWert": 330000,
+        "lastWert": 320000,
         "spielerDaten": {
           "groesse": "1,65",
           "geburtstag": "10.10.2008",
@@ -21366,7 +21391,7 @@
         },
         "isNotName": [],
         "verein": "1",
-        "wert": 320000,
+        "wert": 310000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -21414,7 +21439,7 @@
     },
     {
       "data": {
-        "lastWert": 180000,
+        "lastWert": 190000,
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "07.02.2008",
@@ -21430,7 +21455,7 @@
         },
         "isNotName": [],
         "verein": "68",
-        "wert": 190000,
+        "wert": 220000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -21478,7 +21503,7 @@
     },
     {
       "data": {
-        "lastWert": 1770000,
+        "lastWert": 1900000,
         "spielerDaten": {
           "groesse": "1,82",
           "geburtstag": "08.10.2009",
@@ -21494,7 +21519,7 @@
         },
         "isNotName": [],
         "verein": "4",
-        "wert": 1900000,
+        "wert": 1800000,
         "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -21550,7 +21575,7 @@
     },
     {
       "data": {
-        "lastWert": 250000,
+        "lastWert": 260000,
         "spielerDaten": {
           "groesse": "",
           "geburtstag": "19.05.2009",
@@ -21566,7 +21591,7 @@
         },
         "isNotName": [],
         "verein": "1",
-        "wert": 260000,
+        "wert": 250000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -21675,7 +21700,7 @@
     },
     {
       "data": {
-        "lastWert": 950000,
+        "lastWert": 900000,
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "17.07.1944",
@@ -21691,7 +21716,7 @@
         },
         "isNotName": [],
         "verein": "5",
-        "wert": 900000,
+        "wert": 870000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "07.09.2026",
@@ -21736,7 +21761,7 @@
     },
     {
       "data": {
-        "lastWert": 180000,
+        "lastWert": 170000,
         "spielerDaten": {
           "groesse": "1,84",
           "geburtstag": "24.07.2007",
@@ -21752,7 +21777,7 @@
         },
         "isNotName": [],
         "verein": "21",
-        "wert": 170000,
+        "wert": 180000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -21880,7 +21905,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 160000,
+        "wert": 190000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "07.09.2026",
@@ -22010,7 +22035,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 1900000,
+        "wert": 1970000,
         "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -22088,7 +22113,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 1580000,
+        "wert": 1570000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -22166,7 +22191,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 4560000,
+        "wert": 4490000,
         "lastPoints": 6,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -22197,7 +22222,7 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "withinSquad": false,
+        "withinSquad": true,
         "onMarket": false,
         "retired": false,
         "position": "ABWEHR",
@@ -22281,7 +22306,7 @@
     },
     {
       "data": {
-        "lastWert": 330000,
+        "lastWert": 320000,
         "spielerDaten": {
           "groesse": "1,93",
           "geburtstag": "03.02.1995",
@@ -22298,7 +22323,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 320000,
+        "wert": 330000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -22345,7 +22370,7 @@
     },
     {
       "data": {
-        "lastWert": 470000,
+        "lastWert": 510000,
         "spielerDaten": {
           "groesse": "1,79",
           "geburtstag": "24.07.1999",
@@ -22362,7 +22387,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 510000,
+        "wert": 500000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -22430,7 +22455,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 2640000,
+        "wert": 2700000,
         "lastPoints": 8,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -22491,7 +22516,7 @@
           "playerName": "Rohr",
           "playerId": "24711"
         },
-        "lastWert": 3300000,
+        "lastWert": 3310000,
         "spielerDaten": {
           "groesse": "1,93",
           "geburtstag": "27.06.1995",
@@ -22508,7 +22533,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 3310000,
+        "wert": 3360000,
         "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "30.08.2026",
@@ -22564,7 +22589,7 @@
     },
     {
       "data": {
-        "lastWert": 400000,
+        "lastWert": 390000,
         "spielerDaten": {
           "groesse": "1,73",
           "geburtstag": "06.01.1997",
@@ -22581,7 +22606,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 390000,
+        "wert": 400000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "07.09.2026",
@@ -22761,7 +22786,7 @@
           "playerName": "Petkov",
           "playerId": "20088"
         },
-        "lastWert": 4050000,
+        "lastWert": 4090000,
         "spielerDaten": {
           "groesse": "1,83",
           "geburtstag": "01.11.2000",
@@ -22778,7 +22803,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 4090000,
+        "wert": 4150000,
         "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -22893,7 +22918,7 @@
     },
     {
       "data": {
-        "lastWert": 620000,
+        "lastWert": 590000,
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "06.05.1994",
@@ -22910,7 +22935,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 590000,
+        "wert": 570000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -22973,7 +22998,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 790000,
+        "wert": 830000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -23005,7 +23030,7 @@
         },
         "lastUpdate": "26.09.2026",
         "withinSquad": true,
-        "onMarket": false,
+        "onMarket": true,
         "retired": false,
         "position": "STURM",
         "possibleNames": [
@@ -23025,7 +23050,7 @@
           "playerName": "Brackelmann",
           "playerId": "12771"
         },
-        "lastWert": 4710000,
+        "lastWert": 4600000,
         "spielerDaten": {
           "groesse": "1,96",
           "geburtstag": "22.08.1999",
@@ -23042,7 +23067,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "68",
-        "wert": 4600000,
+        "wert": 4940000,
         "lastPoints": 11,
         "transfermarktDoDe": {
           "date": "29.08.2026",
@@ -23098,7 +23123,7 @@
     },
     {
       "data": {
-        "lastWert": 180000,
+        "lastWert": 170000,
         "spielerDaten": {
           "groesse": "1,93",
           "geburtstag": "13.12.1995",
@@ -23115,7 +23140,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "109",
-        "wert": 170000,
+        "wert": 180000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "29.08.2026",
@@ -23231,7 +23256,7 @@
           "playerName": "Gadou",
           "playerId": "37021"
         },
-        "lastWert": 4150000,
+        "lastWert": 4140000,
         "spielerDaten": {
           "groesse": "1,95",
           "geburtstag": "17.01.2007",
@@ -23248,7 +23273,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "5",
-        "wert": 4140000,
+        "wert": 4110000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "29.08.2026",
@@ -23321,7 +23346,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "5",
-        "wert": 570000,
+        "wert": 550000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "23.08.2026",
@@ -23353,7 +23378,7 @@
         },
         "lastUpdate": "26.09.2026",
         "withinSquad": true,
-        "onMarket": false,
+        "onMarket": true,
         "retired": false,
         "position": "ABWEHR",
         "possibleNames": [
@@ -23372,7 +23397,7 @@
           "playerName": "Justin Lerma",
           "playerId": "37104"
         },
-        "lastWert": 440000,
+        "lastWert": 430000,
         "spielerDaten": {
           "groesse": "1,76",
           "geburtstag": "05.05.2008",
@@ -23389,7 +23414,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "5",
-        "wert": 430000,
+        "wert": 440000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "29.08.2026",
@@ -23436,7 +23461,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33820"},
-        "lastWert": 2770000,
+        "lastWert": 2890000,
         "spielerDaten": {
           "groesse": "1,83",
           "geburtstag": "06.12.2002",
@@ -23453,7 +23478,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 2890000,
+        "wert": 2970000,
         "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "29.08.2026",
@@ -23499,7 +23524,7 @@
     },
     {
       "data": {
-        "lastWert": 510000,
+        "lastWert": 530000,
         "spielerDaten": {
           "groesse": "1,78",
           "geburtstag": "25.02.2005",
@@ -23516,7 +23541,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "21",
-        "wert": 530000,
+        "wert": 520000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "29.08.2026",
@@ -23580,7 +23605,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "21",
-        "wert": 640000,
+        "wert": 610000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "29.08.2026",
@@ -23626,7 +23651,7 @@
     },
     {
       "data": {
-        "lastWert": 270000,
+        "lastWert": 260000,
         "spielerDaten": {
           "groesse": "1,90",
           "geburtstag": "16.06.2006",
@@ -23643,7 +23668,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "62",
-        "wert": 260000,
+        "wert": 300000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "29.08.2026",
@@ -23706,7 +23731,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "92",
-        "wert": 320000,
+        "wert": 340000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "29.08.2026",
@@ -23758,7 +23783,7 @@
           "playerName": "Onyeka",
           "playerId": "36948"
         },
-        "lastWert": 4200000,
+        "lastWert": 3900000,
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "29.04.2007",
@@ -23775,7 +23800,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 3900000,
+        "wert": 3830000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "29.08.2026",
@@ -23894,7 +23919,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34366"},
-        "lastWert": 840000,
+        "lastWert": 830000,
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "20.02.2003",
@@ -23911,7 +23936,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "3",
-        "wert": 830000,
+        "wert": 840000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "29.08.2026",
@@ -23968,7 +23993,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34439"},
-        "lastWert": 1840000,
+        "lastWert": 1880000,
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "26.08.1999",
@@ -23985,7 +24010,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "3",
-        "wert": 1880000,
+        "wert": 1890000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "29.08.2026",
@@ -24037,7 +24062,7 @@
           "playerName": "Enzo Leopold",
           "playerId": "20348"
         },
-        "lastWert": 780000,
+        "lastWert": 750000,
         "spielerDaten": {
           "groesse": "1,74",
           "geburtstag": "23.07.2000",
@@ -24054,7 +24079,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "3",
-        "wert": 750000,
+        "wert": 720000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "29.08.2026",
@@ -24123,7 +24148,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "9",
-        "wert": 2630000,
+        "wert": 2620000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "29.08.2026",
@@ -24154,7 +24179,7 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "withinSquad": false,
+        "withinSquad": true,
         "onMarket": false,
         "retired": false,
         "position": "MITTELFELD",
@@ -24192,7 +24217,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 2860000,
+        "wert": 2750000,
         "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "29.08.2026",
@@ -24393,7 +24418,7 @@
           "playerName": "Katić",
           "playerId": "23002"
         },
-        "lastWert": 5150000,
+        "lastWert": 5370000,
         "spielerDaten": {
           "groesse": "1,94",
           "geburtstag": "10.10.1996",
@@ -24410,7 +24435,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 5370000,
+        "wert": 5430000,
         "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "29.08.2026",
@@ -24478,7 +24503,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 4460000,
+        "wert": 4540000,
         "lastPoints": 9,
         "transfermarktDoDe": {
           "date": "30.08.2026",
@@ -24534,7 +24559,7 @@
     },
     {
       "data": {
-        "lastWert": 480000,
+        "lastWert": 470000,
         "spielerDaten": {
           "groesse": "1,90",
           "geburtstag": "08.09.2006",
@@ -24551,7 +24576,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 470000,
+        "wert": 500000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "30.08.2026",
@@ -24620,7 +24645,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 1950000,
+        "wert": 1920000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -24681,7 +24706,7 @@
     },
     {
       "data": {
-        "lastWert": 740000,
+        "lastWert": 730000,
         "spielerDaten": {
           "groesse": "1,79",
           "geburtstag": "03.03.2005",
@@ -24698,7 +24723,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 730000,
+        "wert": 740000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "30.08.2026",
@@ -24767,7 +24792,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 6310000,
+        "wert": 5940000,
         "lastPoints": 6,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -24909,7 +24934,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 1170000,
+        "wert": 1180000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -24945,8 +24970,8 @@
           {"2022": 65},
           {"2023": 64}
         ],
-        "withinSquad": false,
-        "onMarket": false,
+        "withinSquad": true,
+        "onMarket": true,
         "retired": false,
         "position": "MITTELFELD",
         "attribute": {"ligainsiderRanking": {
@@ -24976,7 +25001,7 @@
           "playerName": "El-Faouzi",
           "playerId": "26067"
         },
-        "lastWert": 2260000,
+        "lastWert": 2270000,
         "spielerDaten": {
           "groesse": "1,78",
           "geburtstag": "13.07.2002",
@@ -24993,7 +25018,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 2270000,
+        "wert": 2150000,
         "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -25071,7 +25096,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 7090000,
+        "wert": 6630000,
         "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -25200,7 +25225,7 @@
     },
     {
       "data": {
-        "lastWert": 890000,
+        "lastWert": 880000,
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "06.10.1998",
@@ -25217,7 +25242,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 880000,
+        "wert": 870000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -25264,7 +25289,7 @@
     },
     {
       "data": {
-        "lastWert": 630000,
+        "lastWert": 600000,
         "spielerDaten": {
           "groesse": "1,73",
           "geburtstag": "06.05.2007",
@@ -25281,7 +25306,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 600000,
+        "wert": 620000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -25331,7 +25356,7 @@
           "playerName": "Emil Højlund",
           "playerId": "37190"
         },
-        "lastWert": 180000,
+        "lastWert": 170000,
         "spielerDaten": {
           "groesse": "1,92",
           "geburtstag": "04.01.2005",
@@ -25348,7 +25373,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 170000,
+        "wert": 180000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -25480,7 +25505,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 2190000,
+        "wert": 2120000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -25536,7 +25561,7 @@
     },
     {
       "data": {
-        "lastWert": 170000,
+        "lastWert": 160000,
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "01.01.1996",
@@ -25553,7 +25578,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "14",
-        "wert": 160000,
+        "wert": 170000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -25601,7 +25626,7 @@
     },
     {
       "data": {
-        "lastWert": 430000,
+        "lastWert": 440000,
         "spielerDaten": {
           "groesse": "1,95",
           "geburtstag": "15.01.2007",
@@ -25618,7 +25643,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "4",
-        "wert": 440000,
+        "wert": 430000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -25675,7 +25700,7 @@
     },
     {
       "data": {
-        "lastWert": 190000,
+        "lastWert": 180000,
         "spielerDaten": {
           "groesse": "1,75",
           "geburtstag": "25.04.2001",
@@ -25692,7 +25717,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "4",
-        "wert": 180000,
+        "wert": 190000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -25764,7 +25789,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 2300000,
+        "wert": 2320000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -25810,7 +25835,7 @@
     },
     {
       "data": {
-        "lastWert": 820000,
+        "lastWert": 830000,
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "09.02.2007",
@@ -25827,7 +25852,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "4",
-        "wert": 830000,
+        "wert": 920000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -25876,7 +25901,7 @@
     },
     {
       "data": {
-        "lastWert": 2260000,
+        "lastWert": 2140000,
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "28.04.2005",
@@ -25893,7 +25918,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "68",
-        "wert": 2140000,
+        "wert": 2250000,
         "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -25947,7 +25972,7 @@
           "playerName": "Hein",
           "playerId": "25603"
         },
-        "lastWert": 1930000,
+        "lastWert": 1960000,
         "spielerDaten": {
           "groesse": "1,93",
           "geburtstag": "13.04.2002",
@@ -25964,7 +25989,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "6",
-        "wert": 1960000,
+        "wert": 1950000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -26022,6 +26047,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/skelly-alvero_35903/",
+          "playerName": "Skelly Alvero",
+          "playerId": "35903"
+        },
         "lastWert": 180000,
         "spielerDaten": {
           "groesse": "2,02",
@@ -26097,7 +26127,7 @@
           "playerName": "Martel",
           "playerId": "20728"
         },
-        "lastWert": 4240000,
+        "lastWert": 3980000,
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "29.04.2002",
@@ -26114,7 +26144,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "18",
-        "wert": 3980000,
+        "wert": 4430000,
         "lastPoints": 9,
         "transfermarktDoDe": {
           "date": "03.09.2026",
@@ -26166,7 +26196,7 @@
     },
     {
       "data": {
-        "lastWert": 220000,
+        "lastWert": 210000,
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "12.01.1991",
@@ -26183,7 +26213,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "3",
-        "wert": 210000,
+        "wert": 200000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "03.09.2026",
@@ -26257,7 +26287,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "14",
-        "wert": 4450000,
+        "wert": 4530000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "03.09.2026",
@@ -26329,7 +26359,7 @@
           "playerName": "Fernandes",
           "playerId": "6379"
         },
-        "lastWert": 1910000,
+        "lastWert": 1900000,
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "13.11.1992",
@@ -26346,7 +26376,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "4",
-        "wert": 1900000,
+        "wert": 1850000,
         "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "03.09.2026",
@@ -26424,7 +26454,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "4",
-        "wert": 230000,
+        "wert": 240000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "03.09.2026",
@@ -26477,7 +26507,7 @@
           "playerName": "Günther",
           "playerId": "26087"
         },
-        "lastWert": 890000,
+        "lastWert": 880000,
         "spielerDaten": {
           "groesse": "1,81",
           "geburtstag": "21.03.2003",
@@ -26494,7 +26524,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 880000,
+        "wert": 920000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "05.09.2026",
@@ -26558,7 +26588,7 @@
           "playerName": "Mokwa",
           "playerId": "35765"
         },
-        "lastWert": 5160000,
+        "lastWert": 4790000,
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "03.05.2004",
@@ -26575,7 +26605,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 4790000,
+        "wert": 4530000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "05.09.2026",
@@ -26775,7 +26805,7 @@
           "playerName": "Steve Mounié",
           "playerId": "14079"
         },
-        "lastWert": 220000,
+        "lastWert": 210000,
         "spielerDaten": {
           "groesse": "1,89",
           "geburtstag": "29.09.1994",
@@ -26792,7 +26822,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "68",
-        "wert": 210000,
+        "wert": 220000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "05.09.2026",
@@ -26857,7 +26887,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "109",
-        "wert": 970000,
+        "wert": 940000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "06.09.2026",
@@ -26941,7 +26971,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 3470000,
+        "wert": 3600000,
         "lastPoints": 8,
         "transfermarktDoDe": {
           "date": "05.09.2026",
@@ -27137,7 +27167,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33802"},
-        "lastWert": 1420000,
+        "lastWert": 1350000,
         "spielerDaten": {
           "groesse": "1,83",
           "geburtstag": "06.06.2001",
@@ -27154,7 +27184,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 1350000,
+        "wert": 1290000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "30.08.2026",
@@ -27219,12 +27249,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "5",
-            "zielwert": "3.970.000",
-            "platz": 2,
-            "lastUpdate": "06.10.2026",
-            "typ": "flop",
-            "marktwert": "4.220.000",
-            "aenderung": "-250.000"
+            "zielwert": "4.200.000",
+            "platz": 5,
+            "lastUpdate": "08.10.2026",
+            "typ": "top",
+            "marktwert": "4.090.000",
+            "aenderung": "+110.000"
           },
           "link": "https://www.com-analytics.de/player/33397"
         },
@@ -27250,7 +27280,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 4370000,
+        "wert": 4090000,
         "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "30.08.2026",
@@ -27329,7 +27359,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "62",
-        "wert": 5550000,
+        "wert": 5560000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -27363,7 +27393,7 @@
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2023": 7}],
         "withinSquad": true,
-        "onMarket": true,
+        "onMarket": false,
         "retired": false,
         "position": "MITTELFELD",
         "attribute": {"ligainsiderRanking": {
@@ -27387,7 +27417,7 @@
     },
     {
       "data": {
-        "lastWert": 260000,
+        "lastWert": 270000,
         "spielerDaten": {
           "groesse": "1,90",
           "geburtstag": "16.02.1999",
@@ -27404,7 +27434,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "13",
-        "wert": 270000,
+        "wert": 280000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "09.09.2026",
@@ -27452,7 +27482,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34158"},
-        "lastWert": 2100000,
+        "lastWert": 2120000,
         "spielerDaten": {
           "groesse": "6' 0\"",
           "geburtstag": "13.09.2001",
@@ -27469,7 +27499,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "18",
-        "wert": 2120000,
+        "wert": 2150000,
         "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -27515,7 +27545,7 @@
     },
     {
       "data": {
-        "lastWert": 170000,
+        "lastWert": 160000,
         "spielerDaten": {
           "groesse": "6' 0\"",
           "geburtstag": "18.11.2001",
@@ -27532,7 +27562,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "3",
-        "wert": 160000,
+        "wert": 170000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -27568,7 +27598,7 @@
     },
     {
       "data": {
-        "lastWert": 320000,
+        "lastWert": 310000,
         "spielerDaten": {
           "groesse": "5' 10\"",
           "geburtstag": "13.09.2000",
@@ -27585,7 +27615,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "1",
-        "wert": 310000,
+        "wert": 300000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -27624,7 +27654,7 @@
     },
     {
       "data": {
-        "lastWert": 220000,
+        "lastWert": 210000,
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "28.02.2005",
@@ -27641,7 +27671,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "1",
-        "wert": 210000,
+        "wert": 220000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "05.09.2026",
@@ -27679,7 +27709,7 @@
     },
     {
       "data": {
-        "lastWert": 190000,
+        "lastWert": 200000,
         "spielerDaten": {
           "groesse": "",
           "geburtstag": "",
@@ -27696,7 +27726,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "1",
-        "wert": 200000,
+        "wert": 210000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -27731,25 +27761,14 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "0",
-            "zielwert": "6.300.000",
-            "platz": 5,
-            "lastUpdate": "06.10.2026",
-            "typ": "flop",
-            "marktwert": "6.500.000",
-            "aenderung": "-200.000"
-          },
-          "link": "https://www.com-analytics.de/player/33996"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/33996"},
         "elfDesSpieltages": 1,
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/maurice-krattenmacher_36255/",
           "playerName": "Krattenmacher",
           "playerId": "36255"
         },
-        "lastWert": 6630000,
+        "lastWert": 6500000,
         "spielerDaten": {
           "groesse": "5' 11\"",
           "geburtstag": "11.08.2005",
@@ -27766,7 +27785,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 6500000,
+        "wert": 6460000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -27930,7 +27949,7 @@
           "playerName": "Ulrich",
           "playerId": "27568"
         },
-        "lastWert": 2950000,
+        "lastWert": 3030000,
         "spielerDaten": {
           "groesse": "5' 11\"",
           "geburtstag": "31.01.2005",
@@ -27947,7 +27966,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 3030000,
+        "wert": 3120000,
         "lastPoints": 6,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -27993,7 +28012,7 @@
     },
     {
       "data": {
-        "lastWert": 170000,
+        "lastWert": 160000,
         "spielerDaten": {
           "groesse": "6' 3\"",
           "geburtstag": "06.02.2006",
@@ -28010,7 +28029,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 160000,
+        "wert": 170000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -28156,7 +28175,7 @@
           "playerName": "Hansen",
           "playerId": "35894"
         },
-        "lastWert": 2820000,
+        "lastWert": 2850000,
         "spielerDaten": {
           "groesse": "6' 0\"",
           "geburtstag": "15.05.2004",
@@ -28173,7 +28192,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 2850000,
+        "wert": 2820000,
         "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -28347,7 +28366,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 2890000,
+        "wert": 2990000,
         "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -28370,7 +28389,7 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "withinSquad": false,
+        "withinSquad": true,
         "onMarket": false,
         "retired": false,
         "position": "ABWEHR",
@@ -28391,7 +28410,7 @@
     },
     {
       "data": {
-        "lastWert": 190000,
+        "lastWert": 180000,
         "spielerDaten": {
           "groesse": "6' 4\"",
           "geburtstag": "04.10.2003",
@@ -28408,7 +28427,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 180000,
+        "wert": 190000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -28442,7 +28461,7 @@
     },
     {
       "data": {
-        "lastWert": 600000,
+        "lastWert": 610000,
         "spielerDaten": {
           "groesse": "6' 1\"",
           "geburtstag": "13.03.1999",
@@ -28459,7 +28478,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 610000,
+        "wert": 600000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -28500,7 +28519,7 @@
           "playerName": "Castañeda",
           "playerId": "37450"
         },
-        "lastWert": 3840000,
+        "lastWert": 3600000,
         "spielerDaten": {
           "groesse": "6' 2\"",
           "geburtstag": "13.11.2004",
@@ -28517,7 +28536,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 3600000,
+        "wert": 3660000,
         "lastPoints": 14,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -28584,7 +28603,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 3700000,
+        "wert": 3720000,
         "lastPoints": 8,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -28687,6 +28706,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/sebastian-klaas_15795/",
+          "playerName": "Sebastian Klaas",
+          "playerId": "15795"
+        },
         "lastWert": 200000,
         "spielerDaten": {
           "groesse": "1,80",
@@ -28741,7 +28765,7 @@
     },
     {
       "data": {
-        "lastWert": 170000,
+        "lastWert": 180000,
         "spielerDaten": {
           "groesse": "5' 10\"",
           "geburtstag": "23.07.2004",
@@ -28758,7 +28782,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 180000,
+        "wert": 190000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -28792,7 +28816,7 @@
     },
     {
       "data": {
-        "lastWert": 170000,
+        "lastWert": 180000,
         "spielerDaten": {
           "groesse": "5' 10\"",
           "geburtstag": "24.08.2005",
@@ -28809,7 +28833,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 180000,
+        "wert": 190000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -28862,7 +28886,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 1750000,
+        "wert": 1800000,
         "lastPoints": 8,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -28955,7 +28979,7 @@
           "playerName": "Marino",
           "playerId": "27339"
         },
-        "lastWert": 2520000,
+        "lastWert": 2560000,
         "spielerDaten": {
           "groesse": "6' 1\"",
           "geburtstag": "12.03.2004",
@@ -28972,7 +28996,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 2560000,
+        "wert": 2630000,
         "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -29016,7 +29040,7 @@
     },
     {
       "data": {
-        "lastWert": 500000,
+        "lastWert": 490000,
         "spielerDaten": {
           "groesse": "1,77",
           "geburtstag": "15.07.1990",
@@ -29033,7 +29057,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 490000,
+        "wert": 510000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -29199,7 +29223,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 2010000,
+        "wert": 2020000,
         "lastPoints": 9,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -29228,7 +29252,7 @@
           {"2022": 79},
           {"2023": 60}
         ],
-        "withinSquad": false,
+        "withinSquad": true,
         "onMarket": false,
         "retired": false,
         "position": "STURM",
@@ -29255,7 +29279,7 @@
           "playerName": "Chuki",
           "playerId": "38831"
         },
-        "lastWert": 6710000,
+        "lastWert": 6740000,
         "spielerDaten": {
           "groesse": "5' 8\"",
           "geburtstag": "29.04.2004",
@@ -29272,7 +29296,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "6",
-        "wert": 6740000,
+        "wert": 6670000,
         "lastPoints": 9,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -29377,7 +29401,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33507"},
-        "lastWert": 3840000,
+        "lastWert": 4000000,
         "spielerDaten": {
           "groesse": "6' 0\"",
           "geburtstag": "30.05.2001",
@@ -29394,7 +29418,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "62",
-        "wert": 4000000,
+        "wert": 4040000,
         "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -29452,7 +29476,7 @@
           "playerName": "Albert Grønbæk",
           "playerId": "35437"
         },
-        "lastWert": 3810000,
+        "lastWert": 4180000,
         "spielerDaten": {
           "groesse": "",
           "geburtstag": "",
@@ -29469,7 +29493,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "4",
-        "wert": 4180000,
+        "wert": 3990000,
         "lastPoints": 8,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -29589,7 +29613,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "62",
-        "wert": 2710000,
+        "wert": 2680000,
         "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -29639,7 +29663,7 @@
           "playerName": "Lidberg",
           "playerId": "37438"
         },
-        "lastWert": 4270000,
+        "lastWert": 4020000,
         "spielerDaten": {
           "groesse": "6' 1\"",
           "geburtstag": "08.09.1998",
@@ -29656,7 +29680,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "3",
-        "wert": 4020000,
+        "wert": 4130000,
         "lastPoints": 8,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -29706,7 +29730,7 @@
           "playerName": "Kennet Eichhorn",
           "playerId": "38775"
         },
-        "lastWert": 1880000,
+        "lastWert": 1770000,
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "27.07.2009",
@@ -29723,7 +29747,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "8",
-        "wert": 1770000,
+        "wert": 1690000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "28.08.2026",
@@ -29766,7 +29790,7 @@
           "playerName": "Tanaka",
           "playerId": "38876"
         },
-        "lastWert": 2440000,
+        "lastWert": 2480000,
         "spielerDaten": {
           "groesse": "5' 9\"",
           "geburtstag": "13.08.2002",
@@ -29783,7 +29807,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 2480000,
+        "wert": 2370000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -29828,7 +29852,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32311"},
-        "lastWert": 390000,
+        "lastWert": 370000,
         "spielerDaten": {
           "groesse": "1,93",
           "geburtstag": "13.12.1995",
@@ -29845,7 +29869,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "109",
-        "wert": 370000,
+        "wert": 390000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "25.08.2026",
@@ -29946,7 +29970,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34451"},
-        "lastWert": 1820000,
+        "lastWert": 1830000,
         "spielerDaten": {
           "groesse": "6' 3\"",
           "geburtstag": "03.06.2005",
@@ -29963,7 +29987,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "21",
-        "wert": 1830000,
+        "wert": 1800000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -30052,7 +30076,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "68",
-        "wert": 9690000,
+        "wert": 9190000,
         "lastPoints": 2,
         "lastSeasonPoints": 80,
         "punkte": 30,
@@ -30084,7 +30108,7 @@
           "playerName": "Simpson-Pusey",
           "playerId": "38128"
         },
-        "lastWert": 2350000,
+        "lastWert": 2340000,
         "spielerDaten": {
           "groesse": "6' 2\"",
           "geburtstag": "04.11.2005",
@@ -30101,7 +30125,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "13",
-        "wert": 2340000,
+        "wert": 2400000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -30153,7 +30177,7 @@
           "playerName": "Gruber",
           "playerId": "26579"
         },
-        "lastWert": 2290000,
+        "lastWert": 2300000,
         "spielerDaten": {
           "groesse": "6' 2\"",
           "geburtstag": "03.09.2002",
@@ -30170,7 +30194,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "18",
-        "wert": 2300000,
+        "wert": 2460000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -30215,7 +30239,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34455"},
-        "lastWert": 810000,
+        "lastWert": 770000,
         "spielerDaten": {
           "groesse": "6' 3\"",
           "geburtstag": "06.07.2003",
@@ -30232,7 +30256,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "109",
-        "wert": 770000,
+        "wert": 750000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -30289,7 +30313,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 2260000,
+        "wert": 2230000,
         "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "23.08.2026",
@@ -30320,7 +30344,7 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "withinSquad": false,
+        "withinSquad": true,
         "onMarket": false,
         "retired": false,
         "position": "MITTELFELD",
@@ -30346,7 +30370,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34457"},
-        "lastWert": 170000,
+        "lastWert": 180000,
         "spielerDaten": {
           "groesse": "",
           "geburtstag": "",
@@ -30363,7 +30387,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "62",
-        "wert": 180000,
+        "wert": 190000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -30420,7 +30444,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "8",
-        "wert": 5020000,
+        "wert": 5170000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -30465,7 +30489,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34459"},
-        "lastWert": 690000,
+        "lastWert": 680000,
         "spielerDaten": {
           "groesse": "1,76",
           "geburtstag": "20.11.2003",
@@ -30482,7 +30506,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "3",
-        "wert": 680000,
+        "wert": 700000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "23.08.2026",
@@ -30525,7 +30549,7 @@
           "playerName": "ter Horst",
           "playerId": "36702"
         },
-        "lastWert": 2360000,
+        "lastWert": 2550000,
         "spielerDaten": {
           "groesse": "5' 11\"",
           "geburtstag": "19.06.2002",
@@ -30542,7 +30566,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 2550000,
+        "wert": 2570000,
         "lastPoints": 8,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -30576,7 +30600,7 @@
     },
     {
       "data": {
-        "lastWert": 200000,
+        "lastWert": 190000,
         "spielerDaten": {
           "groesse": "6' 4\"",
           "geburtstag": "28.11.2000",
@@ -30593,7 +30617,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "62",
-        "wert": 190000,
+        "wert": 180000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -30629,7 +30653,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/31929"},
-        "lastWert": 5470000,
+        "lastWert": 5480000,
         "spielerDaten": {
           "groesse": "1,77",
           "geburtstag": "21.04.1994",
@@ -30646,7 +30670,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "6",
-        "wert": 5480000,
+        "wert": 5360000,
         "lastPoints": 12,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -30706,7 +30730,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33520"},
-        "lastWert": 1120000,
+        "lastWert": 1110000,
         "spielerDaten": {
           "groesse": "1,71",
           "geburtstag": "19.12.1993",
@@ -30723,7 +30747,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "6",
-        "wert": 1110000,
+        "wert": 1130000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.09.2026",
@@ -30898,7 +30922,7 @@
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34463"},
         "elfDesSpieltages": 1,
-        "lastWert": 2210000,
+        "lastWert": 2090000,
         "spielerDaten": {
           "groesse": "1,82",
           "geburtstag": "08.12.2005",
@@ -30915,7 +30939,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "6",
-        "wert": 2090000,
+        "wert": 2120000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.09.2026",
@@ -31096,7 +31120,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "18",
-        "wert": 460000,
+        "wert": 440000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "05.09.2026",
@@ -31127,7 +31151,7 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "withinSquad": false,
+        "withinSquad": true,
         "onMarket": false,
         "retired": false,
         "position": "MITTELFELD",
@@ -31142,25 +31166,14 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "12",
-            "zielwert": "11.440.000",
-            "platz": 8,
-            "lastUpdate": "06.10.2026",
-            "typ": "flop",
-            "marktwert": "11.610.000",
-            "aenderung": "-170.000"
-          },
-          "link": "https://www.com-analytics.de/player/34466"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34466"},
         "elfDesSpieltages": 1,
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/ismael-saibari_25609/",
           "playerName": "Saibari",
           "playerId": "25609"
         },
-        "lastWert": 11610000,
+        "lastWert": 11440000,
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "28.01.2001",
@@ -31177,7 +31190,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "1",
-        "wert": 11440000,
+        "wert": 11480000,
         "lastPoints": 12,
         "transfermarktDoDe": {
           "date": "05.09.2026",
@@ -31239,7 +31252,7 @@
           "playerName": "Lochoshvili",
           "playerId": "23949"
         },
-        "lastWert": 2020000,
+        "lastWert": 2170000,
         "spielerDaten": {
           "groesse": "1,92",
           "geburtstag": "29.05.1998",
@@ -31256,7 +31269,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "13",
-        "wert": 2170000,
+        "wert": 2200000,
         "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "06.09.2026",
@@ -31318,7 +31331,7 @@
           "playerName": "Leszczyński",
           "playerId": "38925"
         },
-        "lastWert": 1970000,
+        "lastWert": 1960000,
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "12.04.2007",
@@ -31335,7 +31348,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "3",
-        "wert": 1960000,
+        "wert": 2040000,
         "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "23.08.2026",
@@ -31396,7 +31409,7 @@
           "playerName": "Dan-Axel Zagadou",
           "playerId": "12683"
         },
-        "lastWert": 710000,
+        "lastWert": 670000,
         "spielerDaten": {
           "groesse": "1,96",
           "geburtstag": "03.06.1999",
@@ -31413,7 +31426,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "14",
-        "wert": 670000,
+        "wert": 650000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "23.08.2026",
@@ -31472,7 +31485,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34471"},
-        "lastWert": 820000,
+        "lastWert": 830000,
         "spielerDaten": {
           "groesse": "1,81",
           "geburtstag": "19.08.2007",
@@ -31489,7 +31502,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "6",
-        "wert": 830000,
+        "wert": 790000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "25.08.2026",
@@ -31536,7 +31549,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34472"},
-        "lastWert": 730000,
+        "lastWert": 740000,
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "21.07.2003",
@@ -31553,7 +31566,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "6",
-        "wert": 740000,
+        "wert": 750000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -31707,7 +31720,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34473"},
-        "lastWert": 550000,
+        "lastWert": 580000,
         "spielerDaten": {
           "groesse": "6' 0\"",
           "geburtstag": "01.02.1996",
@@ -31724,7 +31737,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "6",
-        "wert": 580000,
+        "wert": 600000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -31759,7 +31772,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34474"},
-        "lastWert": 2340000,
+        "lastWert": 2220000,
         "spielerDaten": {
           "groesse": "1,92",
           "geburtstag": "19.07.2008",
@@ -31776,7 +31789,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "62",
-        "wert": 2220000,
+        "wert": 2110000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.09.2026",
@@ -31828,7 +31841,7 @@
           "playerName": "Mensah",
           "playerId": "16759"
         },
-        "lastWert": 1830000,
+        "lastWert": 1810000,
         "spielerDaten": {
           "groesse": "1,78",
           "geburtstag": "18.07.1998",
@@ -31845,7 +31858,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "13",
-        "wert": 1810000,
+        "wert": 1830000,
         "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -31907,7 +31920,7 @@
           "playerName": "Adeline",
           "playerId": "38937"
         },
-        "lastWert": 1420000,
+        "lastWert": 1430000,
         "spielerDaten": {
           "groesse": "1,81",
           "geburtstag": "02.12.2003",
@@ -31924,7 +31937,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "4",
-        "wert": 1430000,
+        "wert": 1410000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "06.09.2026",
@@ -31986,7 +31999,7 @@
           "playerName": "Gruda",
           "playerId": "35733"
         },
-        "lastWert": 6810000,
+        "lastWert": 6780000,
         "spielerDaten": {
           "groesse": "1,78",
           "geburtstag": "31.05.2004",
@@ -32003,7 +32016,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "92",
-        "wert": 6780000,
+        "wert": 6480000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "06.09.2026",
@@ -32191,7 +32204,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34479"},
-        "lastWert": 4210000,
+        "lastWert": 4100000,
         "spielerDaten": {
           "groesse": "1,93",
           "geburtstag": "26.05.2002",
@@ -32208,7 +32221,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "92",
-        "wert": 4100000,
+        "wert": 4090000,
         "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "25.08.2026",
@@ -32269,7 +32282,7 @@
           "playerName": "Schwolow",
           "playerId": "1781"
         },
-        "lastWert": 1400000,
+        "lastWert": 1380000,
         "spielerDaten": {
           "groesse": "6' 3\"",
           "geburtstag": "02.06.1992",
@@ -32286,7 +32299,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "18",
-        "wert": 1380000,
+        "wert": 1350000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -32349,7 +32362,7 @@
           "playerName": "Gosens",
           "playerId": "16537"
         },
-        "lastWert": 5430000,
+        "lastWert": 5580000,
         "spielerDaten": {
           "groesse": "1,83",
           "geburtstag": "05.07.1994",
@@ -32366,7 +32379,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 5580000,
+        "wert": 5560000,
         "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "25.08.2026",
@@ -32450,7 +32463,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "21",
-        "wert": 5170000,
+        "wert": 5290000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "25.08.2026",
@@ -32483,7 +32496,7 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 108}],
-        "withinSquad": false,
+        "withinSquad": true,
         "onMarket": false,
         "retired": false,
         "position": "MITTELFELD",
@@ -32499,7 +32512,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34482"},
-        "lastWert": 690000,
+        "lastWert": 700000,
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "14.06.1999",
@@ -32516,7 +32529,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "118",
-        "wert": 700000,
+        "wert": 710000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -32568,7 +32581,7 @@
           "playerName": "Patson Daka",
           "playerId": "16774"
         },
-        "lastWert": 2370000,
+        "lastWert": 2240000,
         "spielerDaten": {
           "groesse": "1,83",
           "geburtstag": "09.10.1998",
@@ -32585,7 +32598,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "4",
-        "wert": 2240000,
+        "wert": 2190000,
         "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "01.09.2026",
@@ -32642,7 +32655,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34484"},
-        "lastWert": 880000,
+        "lastWert": 900000,
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "24.01.2005",
@@ -32659,7 +32672,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "13",
-        "wert": 900000,
+        "wert": 890000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -32716,7 +32729,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33831"},
-        "lastWert": 1880000,
+        "lastWert": 1790000,
         "spielerDaten": {
           "groesse": "6' 2\"",
           "geburtstag": "04.02.1998",
@@ -32733,7 +32746,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 1790000,
+        "wert": 1920000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -33060,7 +33073,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34490"},
-        "lastWert": 840000,
+        "lastWert": 800000,
         "spielerDaten": {
           "groesse": "1,93",
           "geburtstag": "25.11.2005",
@@ -33077,7 +33090,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "9",
-        "wert": 800000,
+        "wert": 830000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "25.08.2026",
@@ -33137,7 +33150,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "14",
-        "wert": 1930000,
+        "wert": 1910000,
         "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "25.08.2026",
@@ -33168,7 +33181,7 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "withinSquad": false,
+        "withinSquad": true,
         "onMarket": false,
         "retired": false,
         "position": "STURM",
@@ -33189,7 +33202,7 @@
           "playerName": "Hashioka",
           "playerId": "36955"
         },
-        "lastWert": 920000,
+        "lastWert": 890000,
         "spielerDaten": {
           "groesse": "1,84",
           "geburtstag": "17.05.1999",
@@ -33206,7 +33219,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "3",
-        "wert": 890000,
+        "wert": 870000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -33259,7 +33272,7 @@
           "playerName": "Latte Lath",
           "playerId": "24183"
         },
-        "lastWert": 2510000,
+        "lastWert": 2500000,
         "spielerDaten": {
           "groesse": "1,76",
           "geburtstag": "01.01.1999",
@@ -33276,7 +33289,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "109",
-        "wert": 2500000,
+        "wert": 2390000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -33355,7 +33368,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "9",
-        "wert": 3140000,
+        "wert": 3070000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -33417,7 +33430,7 @@
           "playerName": "Daghim",
           "playerId": "37622"
         },
-        "lastWert": 7190000,
+        "lastWert": 7060000,
         "spielerDaten": {
           "groesse": "1,89",
           "geburtstag": "28.09.2005",
@@ -33434,7 +33447,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "62",
-        "wert": 7060000,
+        "wert": 7040000,
         "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -33495,12 +33508,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "4",
-            "zielwert": "15.730.000",
-            "platz": 6,
-            "lastUpdate": "06.10.2026",
+            "zielwert": "17.360.000",
+            "platz": 2,
+            "lastUpdate": "08.10.2026",
             "typ": "flop",
-            "marktwert": "15.910.000",
-            "aenderung": "-180.000"
+            "marktwert": "17.640.000",
+            "aenderung": "-280.000"
           },
           "link": "https://www.com-analytics.de/player/34495"
         },
@@ -33509,7 +33522,7 @@
           "playerName": "Karetsas",
           "playerId": "38406"
         },
-        "lastWert": 15910000,
+        "lastWert": 15720000,
         "spielerDaten": {
           "groesse": "1,73",
           "geburtstag": "19.11.2007",
@@ -33526,7 +33539,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "5",
-        "wert": 15720000,
+        "wert": 17640000,
         "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "01.09.2026",
@@ -33583,7 +33596,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/31145"},
-        "lastWert": 3290000,
+        "lastWert": 3310000,
         "spielerDaten": {
           "groesse": "1,92",
           "geburtstag": "17.03.1986",
@@ -33600,7 +33613,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 3310000,
+        "wert": 3190000,
         "lastPoints": 6,
         "transfermarktDoDe": {
           "date": "01.09.2026",
@@ -33711,14 +33724,25 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34496"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "15",
+            "zielwert": "11.630.000",
+            "platz": 7,
+            "lastUpdate": "08.10.2026",
+            "typ": "flop",
+            "marktwert": "11.830.000",
+            "aenderung": "-200.000"
+          },
+          "link": "https://www.com-analytics.de/player/34496"
+        },
         "elfDesSpieltages": 1,
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/miguel-gutierrez_24219/",
           "playerName": "M. Gutiérrez",
           "playerId": "24219"
         },
-        "lastWert": 11220000,
+        "lastWert": 11840000,
         "spielerDaten": {
           "groesse": "5' 11\"",
           "geburtstag": "27.07.2001",
@@ -33735,7 +33759,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "8",
-        "wert": 11840000,
+        "wert": 11830000,
         "lastPoints": 15,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -33780,7 +33804,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34497"},
-        "lastWert": 270000,
+        "lastWert": 280000,
         "spielerDaten": {
           "groesse": "",
           "geburtstag": "09.02.2008",
@@ -33797,7 +33821,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "13",
-        "wert": 280000,
+        "wert": 270000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -33837,7 +33861,7 @@
           "playerName": "Pejčinović",
           "playerId": "26158"
         },
-        "lastWert": 7070000,
+        "lastWert": 6990000,
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "15.02.2005",
@@ -33854,7 +33878,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "14",
-        "wert": 6990000,
+        "wert": 7290000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "24.08.2026",
@@ -33913,7 +33937,7 @@
           "playerName": "Medina",
           "playerId": "36418"
         },
-        "lastWert": 6670000,
+        "lastWert": 6520000,
         "spielerDaten": {
           "groesse": "6' 0\"",
           "geburtstag": "28.05.1999",
@@ -33930,7 +33954,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "8",
-        "wert": 6520000,
+        "wert": 6510000,
         "lastPoints": 6,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -33975,7 +33999,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34500"},
-        "lastWert": 210000,
+        "lastWert": 220000,
         "spielerDaten": {
           "groesse": "5' 8\"",
           "geburtstag": "30.05.2007",
@@ -33992,7 +34016,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "3",
-        "wert": 220000,
+        "wert": 210000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -34026,7 +34050,7 @@
     },
     {
       "data": {
-        "lastWert": 1190000,
+        "lastWert": 1160000,
         "spielerDaten": {
           "groesse": "1,75",
           "geburtstag": "14.05.2008",
@@ -34043,7 +34067,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "3",
-        "wert": 1160000,
+        "wert": 1110000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "25.08.2026",
@@ -34290,7 +34314,7 @@
           {"2022": -10},
           {"2025": 55}
         ],
-        "withinSquad": false,
+        "withinSquad": true,
         "onMarket": false,
         "retired": false,
         "position": "ABWEHR",
@@ -34321,7 +34345,7 @@
           "playerName": "Reis",
           "playerId": "24555"
         },
-        "lastWert": 3000000,
+        "lastWert": 3110000,
         "spielerDaten": {
           "groesse": "5' 10\"",
           "geburtstag": "01.06.2000",
@@ -34338,7 +34362,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "6",
-        "wert": 3110000,
+        "wert": 3120000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -34433,13 +34457,24 @@
     },
     {
       "data": {
-        "comAnalystics": {"link": "https://www.com-analytics.de/player/34503"},
+        "comAnalystics": {
+          "topFlop": {
+            "punkte": "0",
+            "zielwert": "8.810.000",
+            "platz": 1,
+            "lastUpdate": "08.10.2026",
+            "typ": "flop",
+            "marktwert": "9.150.000",
+            "aenderung": "-340.000"
+          },
+          "link": "https://www.com-analytics.de/player/34503"
+        },
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/giannis-konstantelias_25767/",
           "playerName": "Giannis Konstantelias",
           "playerId": "25767"
         },
-        "lastWert": 8560000,
+        "lastWert": 8130000,
         "spielerDaten": {
           "groesse": "1,78",
           "geburtstag": "05.03.2003",
@@ -34456,7 +34491,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "5",
-        "wert": 8130000,
+        "wert": 9150000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -34503,25 +34538,14 @@
     },
     {
       "data": {
-        "comAnalystics": {
-          "topFlop": {
-            "punkte": "3",
-            "zielwert": "5.070.000",
-            "platz": 9,
-            "lastUpdate": "06.10.2026",
-            "typ": "top",
-            "marktwert": "4.960.000",
-            "aenderung": "+110.000"
-          },
-          "link": "https://www.com-analytics.de/player/34504"
-        },
+        "comAnalystics": {"link": "https://www.com-analytics.de/player/34504"},
         "elfDesSpieltages": 1,
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/thijs-dallinga_36506/",
           "playerName": "Thijs Dallinga",
           "playerId": "36506"
         },
-        "lastWert": 4960000,
+        "lastWert": 4730000,
         "spielerDaten": {
           "groesse": "1,90",
           "geburtstag": "03.08.2000",
@@ -34538,7 +34562,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "13",
-        "wert": 4730000,
+        "wert": 4550000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -34617,7 +34641,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "6",
-        "wert": 10570000,
+        "wert": 10810000,
         "lastPoints": 11,
         "transfermarktDoDe": {
           "date": "03.09.2026",
@@ -34689,7 +34713,7 @@
           "playerName": "Veerman",
           "playerId": "37180"
         },
-        "lastWert": 10120000,
+        "lastWert": 9580000,
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "19.11.1998",
@@ -34706,7 +34730,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "5",
-        "wert": 9580000,
+        "wert": 9220000,
         "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "04.09.2026",
@@ -34768,7 +34792,7 @@
           "playerName": "Aebischer",
           "playerId": "12508"
         },
-        "lastWert": 1250000,
+        "lastWert": 1240000,
         "spielerDaten": {
           "groesse": "1,83",
           "geburtstag": "06.01.1997",
@@ -34785,7 +34809,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "109",
-        "wert": 1240000,
+        "wert": 1230000,
         "lastPoints": -2,
         "transfermarktDoDe": {
           "date": "05.09.2026",
@@ -34841,7 +34865,7 @@
     },
     {
       "data": {
-        "lastWert": 370000,
+        "lastWert": 360000,
         "spielerDaten": {
           "groesse": "",
           "geburtstag": "28.01.2009",
@@ -34858,7 +34882,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "5",
-        "wert": 360000,
+        "wert": 370000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -34898,7 +34922,7 @@
           "playerName": "Vidović",
           "playerId": "26231"
         },
-        "lastWert": 3390000,
+        "lastWert": 3210000,
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "01.12.2003",
@@ -34915,7 +34939,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 3210000,
+        "wert": 3080000,
         "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "05.09.2026",
@@ -34972,7 +34996,7 @@
           "playerName": "Bornauw",
           "playerId": "18822"
         },
-        "lastWert": 1770000,
+        "lastWert": 1700000,
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "22.03.1999",
@@ -34989,7 +35013,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "4",
-        "wert": 1700000,
+        "wert": 1720000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "06.09.2026",
@@ -35059,7 +35083,7 @@
           "playerName": "Itakura",
           "playerId": "27204"
         },
-        "lastWert": 2600000,
+        "lastWert": 2580000,
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "27.01.1997",
@@ -35076,7 +35100,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "3",
-        "wert": 2580000,
+        "wert": 2560000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "07.09.2026",
@@ -35143,7 +35167,7 @@
           "playerName": "Moffi",
           "playerId": "39019"
         },
-        "lastWert": 1710000,
+        "lastWert": 1630000,
         "spielerDaten": {
           "groesse": "1,88",
           "geburtstag": "25.05.1999",
@@ -35160,7 +35184,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "4",
-        "wert": 1630000,
+        "wert": 1570000,
         "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "25.08.2026",
@@ -35216,7 +35240,7 @@
     },
     {
       "data": {
-        "lastWert": 820000,
+        "lastWert": 780000,
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "28.04.2007",
@@ -35233,7 +35257,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "18",
-        "wert": 780000,
+        "wert": 750000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "25.08.2026",
@@ -35281,12 +35305,12 @@
         "comAnalystics": {
           "topFlop": {
             "punkte": "2",
-            "zielwert": "17.240.000",
-            "platz": 3,
-            "lastUpdate": "06.10.2026",
+            "zielwert": "17.600.000",
+            "platz": 6,
+            "lastUpdate": "08.10.2026",
             "typ": "flop",
-            "marktwert": "17.450.000",
-            "aenderung": "-210.000"
+            "marktwert": "17.840.000",
+            "aenderung": "-240.000"
           },
           "link": "https://www.com-analytics.de/player/33151"
         },
@@ -35312,7 +35336,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "92",
-        "wert": 17200000,
+        "wert": 17840000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "26.08.2026",
@@ -35349,7 +35373,7 @@
           {"2021": 265},
           {"2022": 149}
         ],
-        "withinSquad": false,
+        "withinSquad": true,
         "onMarket": false,
         "retired": false,
         "position": "STURM",
@@ -35380,7 +35404,7 @@
           "playerName": "Pieringer",
           "playerId": "20424"
         },
-        "lastWert": 2150000,
+        "lastWert": 2240000,
         "spielerDaten": {
           "groesse": "1,91",
           "geburtstag": "04.10.1999",
@@ -35397,7 +35421,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "81",
-        "wert": 2240000,
+        "wert": 2200000,
         "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "27.08.2026",
@@ -35460,7 +35484,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34510"},
-        "lastWert": 640000,
+        "lastWert": 660000,
         "spielerDaten": {
           "groesse": "1,83",
           "geburtstag": "05.12.1998",
@@ -35477,7 +35501,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "68",
-        "wert": 660000,
+        "wert": 640000,
         "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "28.08.2026",
@@ -35529,7 +35553,7 @@
           "playerName": "Uduokhai",
           "playerId": "7041"
         },
-        "lastWert": 2140000,
+        "lastWert": 2150000,
         "spielerDaten": {
           "groesse": "1,93",
           "geburtstag": "09.09.1997",
@@ -35546,7 +35570,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "109",
-        "wert": 2150000,
+        "wert": 2050000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "28.08.2026",
@@ -35611,7 +35635,7 @@
     },
     {
       "data": {
-        "lastWert": 3120000,
+        "lastWert": 2940000,
         "spielerDaten": {
           "groesse": "1,93",
           "geburtstag": "11.11.2004",
@@ -35628,7 +35652,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "9",
-        "wert": 2940000,
+        "wert": 2970000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "31.08.2026",
@@ -35707,7 +35731,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "6",
-        "wert": 5980000,
+        "wert": 5870000,
         "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "01.09.2026",
@@ -35738,7 +35762,7 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "withinSquad": false,
+        "withinSquad": true,
         "onMarket": false,
         "retired": false,
         "position": "MITTELFELD",
@@ -35769,7 +35793,7 @@
           "playerName": "Brassier",
           "playerId": "24489"
         },
-        "lastWert": 4350000,
+        "lastWert": 4080000,
         "spielerDaten": {
           "groesse": "1,86",
           "geburtstag": "02.11.1999",
@@ -35786,7 +35810,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "9",
-        "wert": 4080000,
+        "wert": 4250000,
         "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "01.09.2026",
@@ -35848,7 +35872,7 @@
           "playerName": "Moore",
           "playerId": "38448"
         },
-        "lastWert": 5310000,
+        "lastWert": 5220000,
         "spielerDaten": {
           "groesse": "1,80",
           "geburtstag": "11.08.2007",
@@ -35865,7 +35889,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "13",
-        "wert": 5220000,
+        "wert": 5290000,
         "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "01.09.2026",
@@ -35927,7 +35951,7 @@
           "playerName": "El Ouahdi",
           "playerId": "38592"
         },
-        "lastWert": 3090000,
+        "lastWert": 3050000,
         "spielerDaten": {
           "groesse": "1,71",
           "geburtstag": "31.12.2001",
@@ -35944,7 +35968,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "4",
-        "wert": 3050000,
+        "wert": 2930000,
         "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -36006,7 +36030,7 @@
           "playerName": "Møller Wolfe",
           "playerId": "37717"
         },
-        "lastWert": 2040000,
+        "lastWert": 1940000,
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "23.04.2002",
@@ -36023,7 +36047,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "4",
-        "wert": 1940000,
+        "wert": 1980000,
         "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -36085,7 +36109,7 @@
           "playerName": "Fábio Vieira",
           "playerId": "24438"
         },
-        "lastWert": 9040000,
+        "lastWert": 8840000,
         "spielerDaten": {
           "groesse": "1,70",
           "geburtstag": "30.05.2000",
@@ -36102,7 +36126,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "4",
-        "wert": 8840000,
+        "wert": 8810000,
         "lastPoints": 6,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -36160,7 +36184,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34522"},
-        "lastWert": 940000,
+        "lastWert": 930000,
         "spielerDaten": {
           "groesse": "1,95",
           "geburtstag": "11.04.2006",
@@ -36177,7 +36201,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "68",
-        "wert": 930000,
+        "wert": 980000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -36224,7 +36248,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34516"},
-        "lastWert": 2160000,
+        "lastWert": 2230000,
         "spielerDaten": {
           "groesse": "1,78",
           "geburtstag": "27.06.2000",
@@ -36241,7 +36265,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "109",
-        "wert": 2230000,
+        "wert": 2290000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -36287,7 +36311,12 @@
     },
     {
       "data": {
-        "lastWert": 840000,
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/moussa-ndiaye_37743/",
+          "playerName": "Moussa Ndiaye",
+          "playerId": "37743"
+        },
+        "lastWert": 800000,
         "spielerDaten": {
           "groesse": "5' 11\"",
           "geburtstag": "18.06.2002",
@@ -36304,7 +36333,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "6",
-        "wert": 800000,
+        "wert": 810000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -36344,7 +36373,7 @@
           "playerName": "Nwaneri",
           "playerId": "36869"
         },
-        "lastWert": 8730000,
+        "lastWert": 8910000,
         "spielerDaten": {
           "groesse": "1,76",
           "geburtstag": "21.03.2007",
@@ -36361,7 +36390,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "5",
-        "wert": 8910000,
+        "wert": 8560000,
         "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -36434,7 +36463,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "13",
-        "wert": 2680000,
+        "wert": 2870000,
         "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -36472,7 +36501,7 @@
           {"2022": 119},
           {"2023": 1}
         ],
-        "withinSquad": false,
+        "withinSquad": true,
         "onMarket": false,
         "retired": false,
         "position": "ABWEHR",
@@ -36493,7 +36522,7 @@
           "playerName": "El Aynaoui",
           "playerId": "36433"
         },
-        "lastWert": 6950000,
+        "lastWert": 7020000,
         "spielerDaten": {
           "groesse": "1,85",
           "geburtstag": "02.07.2001",
@@ -36510,7 +36539,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "92",
-        "wert": 7020000,
+        "wert": 6920000,
         "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -36572,7 +36601,7 @@
           "playerName": "Marc Guiu",
           "playerId": "36753"
         },
-        "lastWert": 3190000,
+        "lastWert": 3040000,
         "spielerDaten": {
           "groesse": "6' 2\"",
           "geburtstag": "04.01.2006",
@@ -36589,7 +36618,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "92",
-        "wert": 3040000,
+        "wert": 3420000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -36629,7 +36658,7 @@
           "playerName": "Guéla Doué",
           "playerId": "35433"
         },
-        "lastWert": 4680000,
+        "lastWert": 4480000,
         "spielerDaten": {
           "groesse": "1,87",
           "geburtstag": "17.10.2002",
@@ -36646,7 +36675,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "8",
-        "wert": 4480000,
+        "wert": 4750000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "05.09.2026",
@@ -36689,7 +36718,7 @@
           "playerName": "Diaby",
           "playerId": "20616"
         },
-        "lastWert": 11050000,
+        "lastWert": 10510000,
         "spielerDaten": {
           "groesse": "5' 7\"",
           "geburtstag": "07.07.1999",
@@ -36706,7 +36735,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "8",
-        "wert": 10510000,
+        "wert": 10060000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -36778,7 +36807,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "3",
-        "wert": 2060000,
+        "wert": 2150000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -36825,7 +36854,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33300"},
-        "lastWert": 3060000,
+        "lastWert": 3020000,
         "spielerDaten": {
           "groesse": "1,77",
           "geburtstag": "26.01.1996",
@@ -36842,7 +36871,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "10",
-        "wert": 3020000,
+        "wert": 2980000,
         "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "02.09.2026",
@@ -36893,7 +36922,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34523"},
-        "lastWert": 1330000,
+        "lastWert": 1510000,
         "spielerDaten": {
           "groesse": "1,84",
           "geburtstag": "03.09.2007",
@@ -36910,7 +36939,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "14",
-        "wert": 1510000,
+        "wert": 1490000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "05.09.2026",
@@ -36957,7 +36986,7 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34524"},
-        "lastWert": 1020000,
+        "lastWert": 980000,
         "spielerDaten": {
           "groesse": "",
           "geburtstag": "",
@@ -36974,7 +37003,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "1",
-        "wert": 980000,
+        "wert": 1000000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -37008,7 +37037,7 @@
     },
     {
       "data": {
-        "lastWert": 200000,
+        "lastWert": 190000,
         "spielerDaten": {
           "groesse": "",
           "geburtstag": "23.03.2006",
@@ -37025,7 +37054,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "9",
-        "wert": 190000,
+        "wert": 200000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.01.1900",
@@ -37065,7 +37094,7 @@
           "playerName": "Mario Vušković",
           "playerId": "27206"
         },
-        "lastWert": 2360000,
+        "lastWert": 2270000,
         "spielerDaten": {
           "groesse": "1,89",
           "geburtstag": "16.11.2001",
@@ -37082,7 +37111,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "4",
-        "wert": 2270000,
+        "wert": 2390000,
         "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "16.09.2026",
@@ -37251,7 +37280,7 @@
     },
     {
       "data": {
-        "lastWert": 0,
+        "lastWert": 160000,
         "spielerDaten": {
           "groesse": "",
           "geburtstag": "",
@@ -37267,7 +37296,7 @@
         "isNotName": [],
         "punktekorrektur": [],
         "verein": "6",
-        "wert": 160000,
+        "wert": 170000,
         "lastPoints": 0,
         "punkte": 0,
         "realWert": 0,
