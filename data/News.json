@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "13.10.2026 05:15:14",
+  "lastUpdate": "13.10.2026 10:00:55",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -12640,14 +12640,72 @@
     },
     {
       "date": "13.10.2026",
-      "news": [{
-        "date": "13.10.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Reis\",\"price\":3500000,\"buyerId\":\"13654613\",\"playerValue\":3650000,\"playerId\":\"34152\",\"buyer\":\"Christoph\"}",
-        "id": "967236815",
-        "playerId": "34152"
-      }]
+      "news": [
+        {
+          "date": "13.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Reis\",\"price\":3500000,\"buyerId\":\"13654613\",\"playerValue\":3650000,\"playerId\":\"34152\",\"buyer\":\"Christoph\"}",
+          "id": "967236815",
+          "playerId": "34152"
+        },
+        {
+          "date": "13.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Sascha\",\"sellerId\":\"5949921\",\"playerName\":\"Baum\",\"price\":2018000,\"buyerId\":\"1\",\"playerValue\":1940000,\"playerId\":\"33869\",\"buyer\":\"Computer\"}",
+          "id": "967236815",
+          "playerId": "33869"
+        },
+        {
+          "date": "13.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Rosenfelder\",\"price\":1114300,\"buyerId\":\"1\",\"playerValue\":1050000,\"playerId\":\"33815\",\"buyer\":\"Computer\"}",
+          "id": "967236815",
+          "playerId": "33815"
+        },
+        {
+          "date": "13.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Dejan Ljubičić (33453) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33453"
+        },
+        {
+          "date": "13.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Robin Zentner (32364) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32364"
+        },
+        {
+          "date": "13.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Franck Honorat (33817) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33817"
+        },
+        {
+          "date": "13.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Tiago Tomás (33557) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33557"
+        },
+        {
+          "date": "13.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Montrell Culbreath (34311) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34311"
+        }
+      ]
     },
     {
       "date": "13.09.2026",
