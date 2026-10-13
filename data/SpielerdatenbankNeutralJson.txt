@@ -1347,7 +1347,7 @@
             "rang": 29
           },
           "SonstigeInfos": [
-            "teuerster Spieler (23,060,000 \u20ac)",
+            "teuerster Spieler (23.060.000 \u20ac)",
             "meisten Punkte letzte Saison (338)"
           ]
         },
@@ -4929,7 +4929,7 @@
             "rang": 1
           },
           "SonstigeInfos": [
-            "teuerster Spieler (Realwert) (170,000,000 \u20ac)",
+            "teuerster Spieler (Realwert) (170.000.000 \u20ac)",
             "meisten Punkte (53)"
           ]
         },
@@ -26092,13 +26092,56 @@
     {
       "data": {
         "elfDesSpieltages": 1,
+        "lastWert": 2150000,
+        "transfermarktDoDe": {
+          "date": "02.09.2026",
+          "haveToCheck": false,
+          "name": "Karl Hein",
+          "link": "https://www.transfermarkt.de/karl-hein/profil/spieler/493513",
+          "id": "493513",
+          "position": "",
+          "marktwert": 3000000,
+          "nationalitaet": "Estland",
+          "leistungsDaten": {},
+          "alter": -1
+        },
+        "lastBigUpdate": "21.09.2026",
+        "stats": {
+          "notenDurchschnitt": "7,1",
+          "gelbekarten": 0,
+          "totalPenalties": 0,
+          "ratedGames": 4,
+          "lastUpdate": "28.09.2026",
+          "playedGames": 4,
+          "tore": 0,
+          "punkteDurchschnitt": "4,5",
+          "gelbrotekarten": 0,
+          "rotekarten": 0,
+          "manOfTheMatchAmount": 0
+        },
+        "withinSquad": true,
+        "retired": false,
+        "attribute": {"ligainsiderRanking": {
+          "punkte": 188,
+          "einsaetzeBewertet": 4,
+          "durchschnittsnote": 3.25,
+          "verein": "SV Werder Bremen",
+          "lastUpdate": "26.09.2026",
+          "durchschnittsminuten": 96,
+          "durchschnittspunkte": 47,
+          "rang": 89
+        }},
+        "possibleNames": [
+          "Karl Hein",
+          "Hein",
+          "K. Hein"
+        ],
         "comAnalystics": {"link": "https://www.com-analytics.de/player/34274"},
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/karl-hein_25603/",
           "playerName": "Hein",
           "playerId": "25603"
         },
-        "lastWert": 2150000,
         "spielerDaten": {
           "groesse": "1,93",
           "geburtstag": "13.04.2002",
@@ -26117,56 +26160,13 @@
         "verein": "6",
         "wert": 2460000,
         "lastPoints": 2,
-        "transfermarktDoDe": {
-          "date": "02.09.2026",
-          "haveToCheck": false,
-          "name": "Karl Hein",
-          "link": "https://www.transfermarkt.de/karl-hein/profil/spieler/493513",
-          "id": "493513",
-          "position": "",
-          "marktwert": 3000000,
-          "nationalitaet": "Estland",
-          "leistungsDaten": {},
-          "alter": -1
-        },
         "lastSeasonPoints": 14,
         "punkte": 27,
         "realWert": 3000000,
-        "lastBigUpdate": "21.09.2026",
-        "stats": {
-          "notenDurchschnitt": "7,1",
-          "gelbekarten": 0,
-          "totalPenalties": 0,
-          "ratedGames": 4,
-          "lastUpdate": "28.09.2026",
-          "playedGames": 4,
-          "tore": 0,
-          "punkteDurchschnitt": "4,5",
-          "gelbrotekarten": 0,
-          "rotekarten": 0,
-          "manOfTheMatchAmount": 0
-        },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 14}],
-        "withinSquad": true,
-        "retired": false,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 188,
-          "einsaetzeBewertet": 4,
-          "durchschnittsnote": 3.25,
-          "verein": "SV Werder Bremen",
-          "lastUpdate": "26.09.2026",
-          "durchschnittsminuten": 96,
-          "durchschnittspunkte": 47,
-          "rang": 89
-        }},
-        "position": "TORHÜTER",
-        "possibleNames": [
-          "Karl Hein",
-          "Hein",
-          "K. Hein"
-        ]
+        "position": "TORHÜTER"
       },
       "name": "Hein",
       "id": "34274"
@@ -30153,13 +30153,44 @@
     {
       "data": {
         "elfDesSpieltages": 1,
+        "lastWert": 7270000,
+        "transfermarktDoDe": {
+          "date": "01.01.1900",
+          "haveToCheck": true
+        },
+        "lastBigUpdate": "21.09.2026",
+        "stats": {
+          "notenDurchschnitt": "7,3",
+          "gelbekarten": 0,
+          "totalPenalties": 0,
+          "ratedGames": 4,
+          "lastUpdate": "28.09.2026",
+          "playedGames": 4,
+          "tore": 3,
+          "punkteDurchschnitt": "7,5",
+          "gelbrotekarten": 0,
+          "rotekarten": 0,
+          "manOfTheMatchAmount": 0
+        },
+        "withinSquad": true,
+        "retired": false,
+        "attribute": {"ligainsiderRanking": {
+          "punkte": 202,
+          "einsaetzeBewertet": 4,
+          "durchschnittsnote": 3.12,
+          "verein": "FC Augsburg",
+          "lastUpdate": "26.09.2026",
+          "durchschnittsminuten": 73,
+          "durchschnittspunkte": 50.5,
+          "rang": 67
+        }},
+        "possibleNames": [],
         "comAnalystics": {"link": "https://www.com-analytics.de/player/31958"},
         "ligainsider": {
           "playerLink": "https://www.ligainsider.de/michael-gregoritsch_1512/",
           "playerName": "Gregoritsch",
           "playerId": "1512"
         },
-        "lastWert": 7270000,
         "spielerDaten": {
           "groesse": "6' 4\"",
           "geburtstag": "18.04.1994",
@@ -30178,27 +30209,9 @@
         "verein": "68",
         "wert": 6700000,
         "lastPoints": 2,
-        "transfermarktDoDe": {
-          "date": "01.01.1900",
-          "haveToCheck": true
-        },
         "lastSeasonPoints": 80,
         "punkte": 31,
         "realWert": 0,
-        "lastBigUpdate": "21.09.2026",
-        "stats": {
-          "notenDurchschnitt": "7,3",
-          "gelbekarten": 0,
-          "totalPenalties": 0,
-          "ratedGames": 4,
-          "lastUpdate": "28.09.2026",
-          "playedGames": 4,
-          "tore": 3,
-          "punkteDurchschnitt": "7,5",
-          "gelbrotekarten": 0,
-          "rotekarten": 0,
-          "manOfTheMatchAmount": 0
-        },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [
           {"2015": 59},
@@ -30213,21 +30226,8 @@
           {"2024": 43},
           {"2025": 80}
         ],
-        "withinSquad": true,
-        "retired": false,
         "onMarket": false,
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 202,
-          "einsaetzeBewertet": 4,
-          "durchschnittsnote": 3.12,
-          "verein": "FC Augsburg",
-          "lastUpdate": "26.09.2026",
-          "durchschnittsminuten": 73,
-          "durchschnittspunkte": 50.5,
-          "rang": 67
-        }},
-        "position": "STURM",
-        "possibleNames": []
+        "position": "STURM"
       },
       "name": "Gregoritsch",
       "id": "31958"
