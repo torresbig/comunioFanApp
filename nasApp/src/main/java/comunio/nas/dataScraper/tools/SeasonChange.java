@@ -28,6 +28,7 @@ import comunio.nas.objects.NewsManager;
 import comunio.nas.objects.comunioTransfermarkt.PlayerOnMarket;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.orga.ComunioDate;
+import comunio.nas.objects.player.PointsDbContainer;
 import comunio.nas.objects.user.User;
 import comunio.nas.util.player.PlayerTools;
 
@@ -173,7 +174,7 @@ public class SeasonChange {
 	 *         sowie auf GitHub verarbeitet wurde; {@code false}, wenn kein
 	 *         Saisonübergang vorlag oder der Prozess abgebrochen wurde.
 	 */
-	public static boolean analyzeNewsForSeasonTransit(NewsManager newsManager, JSONObject playerDBObject, JSONArray marketValueDB, JSONObject pointsDB, JSONObject matchdayInfoList, Map<String, User> userMap,Map<String, PlayerOnMarket> transfermarktMap, Map<String, String> playerToUserMap, MatchdayInfo matchdayInfo, LastUpdates lastUpdates, User user, JSONArray clubDB) {
+	public static boolean analyzeNewsForSeasonTransit(NewsManager newsManager, JSONObject playerDBObject, JSONArray marketValueDB, PointsDbContainer pointsDB, JSONObject matchdayInfoList, Map<String, User> userMap,Map<String, PlayerOnMarket> transfermarktMap, Map<String, String> playerToUserMap, MatchdayInfo matchdayInfo, LastUpdates lastUpdates, User user, JSONArray clubDB) {
 
 		lastUpdates = lastUpdates != null ? lastUpdates : new LastUpdates();
 
@@ -289,8 +290,7 @@ public class SeasonChange {
 									newsManager.clear(); // NewsManager intern leeren (alle News entfernen)
 
 									// JSONObjects im RAM durch Entfernen aller Keys leeren
-									for (String key : List.of(pointsDB.keySet().toArray(new String[0])))
-										pointsDB.remove(key);
+									pointsDB.setNewSeason();
 									for (String key : List.of(matchdayInfoList.keySet().toArray(new String[0])))
 										matchdayInfoList.remove(key);
 

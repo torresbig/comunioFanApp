@@ -12,7 +12,6 @@ import comunio.nas.ComunioDataUpdater;
 import comunio.nas.dataScraper.comunio.LineupParser;
 import comunio.nas.dataScraper.ligainsider.LigainsiderInjurieAndBannedPlayers;
 import comunio.nas.dataScraper.ligainsider.LigainsiderPossibleFormation;
-import comunio.nas.dataScraper.tools.PlayerpointsToPlayerObject;
 import comunio.nas.dataVariable.LastUpdates;
 import comunio.nas.dataVariable.Urls;
 import comunio.nas.error.ErrorsContainer;
@@ -24,6 +23,7 @@ import comunio.nas.objects.club.ClubObject;
 import comunio.nas.objects.espn.EspnClubContainer;
 import comunio.nas.objects.espn.EspnPlayerContainer;
 import comunio.nas.objects.helper.LogManager;
+import comunio.nas.objects.player.PointsDbContainer;
 import comunio.nas.objects.user.User;
 import comunio.nas.util.LoadJSONfromFile;
 
@@ -35,7 +35,7 @@ public class UpdaterContextData {
 	private ClubDbContainer clubDbContainer;
 	private LigainsiderInjurieAndBannedPlayers injuryDB;
 	private JSONObject playerDBObject;
-	private JSONObject pointsDB;
+	private PointsDbContainer pointsDB;
 	private JSONArray marketValueDB;
 	private NewsManager newsManager;
 	private Map<String, User> userMap;
@@ -86,9 +86,7 @@ public class UpdaterContextData {
 		this.playerDBObject = LoadJSONfromFile.loadJsonObjectWithPlayerArrayFromUrl(Urls.PLAYER_DB_URL);
 
 		LOGGER.info("Lade Playerpoints von GitHub");
-		this.pointsDB = LoadJSONfromFile.loadJsonObjectFromUrl(Urls.POINTS_DB_URL);
-//		this.pointsDB = JsonCleanerUtil.reduceToKeyAndValue(this.pointsDB);
-		PlayerpointsToPlayerObject.putPointsToPlayerObject(this.pointsDB, this.playerDBObject);
+		this.pointsDB = PointsDbContainer.fromJson(LoadJSONfromFile.loadJsonObjectFromUrl(Urls.POINTS_DB_URL));
 
 		LOGGER.info("Lade Marktwertdatenbank von GitHub");
 		this.marketValueDB = LoadJSONfromFile.loadJsonArrayFromUrl(Urls.MARKET_VALUE_DB_URL);
@@ -143,8 +141,7 @@ public class UpdaterContextData {
 		GitHubUploader.uploadToGitHub(Urls.INJURIES_DB_URL,inj);
 
 		LOGGER.info("Lade aktualisierte Punkte-Datenbank (pointsDB) auf GitHub hoch");
-		PlayerpointsToPlayerObject.getPointsArrayFromAllPlayer(this.pointsDB, this.playerDBObject);
-		GitHubUploader.uploadPlayerPoints(this.pointsDB);
+		GitHubUploader.uploadPlayerPoints(this.pointsDB.toJson());
 
 		LOGGER.info("Lade aktualisierte Spielerdatenbank auf GitHub hoch");
 		GitHubUploader.uploadPlayerDatabase(this.playerDBObject);
@@ -265,11 +262,11 @@ public class UpdaterContextData {
 		this.playerDBObject = playerDBObject;
 	}
 
-	public JSONObject getPointsDB() {
+	public PointsDbContainer getPointsDB() {
 		return pointsDB;
 	}
 
-	public void setPointsDB(JSONObject pointsDB) {
+	public void setPointsDB(PointsDbContainer pointsDB) {
 		this.pointsDB = pointsDB;
 	}
 

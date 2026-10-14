@@ -23,6 +23,7 @@ public class LastUpdates {
 	private Instant ligainsider;
 	private Instant comAnalystics;
 	private Instant comAnalysticsTopFlop;
+	private int comstatsSpieltagsdaten;
 
 	private Instant notInLigaDb;
 	private Instant playerStatus;
@@ -55,6 +56,7 @@ public class LastUpdates {
 		this.seasonStart = json.has("seasonStart") ? Instant.ofEpochMilli(json.getLong("seasonStart")) : null;
 		this.clubDb = json.has("clubDb") ? Instant.ofEpochMilli(json.getLong("clubDb")) : null;
 		this.lastEspnMatchday = json.optInt("lastEspnMatchday", 0);
+		this.comstatsSpieltagsdaten = json.optInt("comstatsSpieltagsdaten", 0);
 
 		if (this.seasonStart != null && this.seasonStart.toEpochMilli() > 0) {
 			Dates.setSeasonStart(this.seasonStart);
@@ -111,6 +113,7 @@ public class LastUpdates {
 			json.put("clubDb", this.clubDb.toEpochMilli());
 		}
 		json.put("lastEspnMatchday", this.lastEspnMatchday);
+		json.put("comstatsSpieltagsdaten", this.comstatsSpieltagsdaten);
 		return json;
 
 	}
@@ -234,6 +237,16 @@ public class LastUpdates {
 	public void setLastEspnMatchday(int lastEspnMatchday) {
 		this.lastEspnMatchday = lastEspnMatchday;
 	}
+	
+	
+
+	public int getComstatsSpieltagsdaten() {
+		return comstatsSpieltagsdaten;
+	}
+
+	public void setComstatsSpieltagsdaten(int comstatsSpieltagsdaten) {
+		this.comstatsSpieltagsdaten = comstatsSpieltagsdaten;
+	}
 
 	/**
 	 * Prüft, ob der Saisonübergangszeitpunkt (seasonStart in LastUpdates) vor dem
@@ -277,24 +290,5 @@ public class LastUpdates {
 		this.comAnalysticsTopFlop = comAnalysticsTopFlop;
 	}
 
-	/**
-	 * Prüft, ob die Anwendung sich in einem Zustand "zwischen den Saisons"
-	 * befindet,
-	 * also der Saisonübergangszeitpunkt (seasonStart) bereits verstrichen ist, aber
-	 * die neue Saison noch nicht begonnen hat (d.h. seasonStart liegt nach dem Ende
-	 * des letzten Spieltags der alten Saison).
-	 *
-	 * @param lastUpdates  die aktuellen Saison-Updates (enthält seasonStart)
-	 * @param matchdayInfo Informationen zum aktuellen Spieltag (kann null sein)
-	 * @return true, wenn:
-	 *         - die Saison vorbei ist UND
-	 *         - seasonStart nicht null ist UND
-	 *         - seasonStart nach dem letzten Anstoß des letzten Spieltags liegt;
-	 *         false sonst (z.B. bei null-Werten oder wenn der Übergang noch
-	 *         aussteht)
-	 */
 
-	
-
-	
 }

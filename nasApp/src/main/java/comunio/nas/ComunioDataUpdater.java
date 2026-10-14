@@ -121,7 +121,7 @@ public class ComunioDataUpdater {
 		ComAnalysticsTopFlop.getComAnalysticsTopFlopData(ctx.getPlayerDBObject(), lastUpdates);
 
 //		ComstatsDataScraper.getPlaytimeForInputToInput(1, 3, ctx.getPlayerDBObject(), ctx.getNotInligaDBObj(), lastUpdates);
-		ComstatsDataScraper.getPlaytimeForNewMatchdays(currentMatchdayInfo.getPointsMatchday(), ctx.getPlayerDBObject(), ctx.getNotInligaDBObj(), lastUpdates);
+		ComstatsDataScraper.getPlaytimeForNewMatchdays(currentMatchdayInfo.getPointsMatchday(), lastUpdates, ctx.getPointsDB());
 		EspnPlayerUpdater.updatePlayers(ctx.getPlayerDBObject(), ctx.getClubDbContainer().toJSON(), ctx.getEspnClubMappingContainer().getClubMap(), ctx.getEspnPlayerMappingContainer(), lastUpdates, currentMatchdayInfo);
 
 		NewsAnalyzerComunio.analyzeNews(ctx.getNewsManager(), ctx.getPlayerDBObject(), ctx.getPlayerToUserMap(), ctx.getNotInligaDBObj(), currentMatchdayInfo, lastUpdates, user);

@@ -4,6 +4,7 @@ import org.json.JSONObject;
 import comunio.nas.objects.orga.ComunioDate;
 
 public class Spielerstats {
+	private Integer matchday;
 	private Integer totalPenalties;
 	private Integer ratedGames;
 	private Integer playedGames;
@@ -78,7 +79,8 @@ public class Spielerstats {
 		stats.gelbrotekarten = json.has("gelbrotekarten") ? json.optInt("gelbrotekarten") : null;
 		stats.rotekarten = json.has("rotekarten") ? json.optInt("rotekarten") : null;
 		stats.manOfTheMatchAmount = json.has("manOfTheMatchAmount") ? json.optInt("manOfTheMatchAmount") : null;
-
+		stats.matchday = json.has("key") ? json.optInt("key") : null;
+		
 		// Comstats-Felder
 		stats.einsatzzeit = json.has("einsatzzeit") ? json.optInt("einsatzzeit") : null;
 		stats.status = json.optString("status", null);
@@ -132,6 +134,8 @@ public class Spielerstats {
 			json.put("rotekarten", rotekarten);
 		if (manOfTheMatchAmount != null)
 			json.put("manOfTheMatchAmount", manOfTheMatchAmount);
+		if (matchday != null)
+			json.put("key", matchday);
 
 		// Comstats-Felder
 		if (einsatzzeit != null)
@@ -343,6 +347,16 @@ public class Spielerstats {
 
 	public Integer getPensSaved() {
 	    return pensSaved;
+	}
+	
+	
+
+	public Integer getMatchday() {
+		return matchday;
+	}
+
+	public void setMatchday(Integer matchday) {
+		this.matchday = matchday;
 	}
 
 	public void setPensSaved(Integer pensSaved) {
@@ -566,6 +580,51 @@ public class Spielerstats {
 		return "Stats: Played games: " + this.playedGames + ", Gelbekarte/Gelb-Rotekarte/Rotekarte: " + this.gelbekarten + "/" + this.gelbrotekarten + "/" + this.rotekarten + ", Einsätze (gewertet): " + this.ratedGames;
 	}
 
+	public void mergeSpielerstats(Spielerstats other) {
+	    if (other == null) {
+	        return;
+	    }
+
+	    if (other.getTotalPenalties() != null) this.setTotalPenalties(other.getTotalPenalties());
+	    if (other.getRatedGames() != null) this.setRatedGames(other.getRatedGames());
+	    if (other.getPlayedGames() != null) this.setPlayedGames(other.getPlayedGames());
+	    if (other.getTore() != null) this.setTore(other.getTore());
+	    if (other.getManOfTheMatchAmount() != null) this.setManOfTheMatchAmount(other.getManOfTheMatchAmount());
+	    if (other.getPunkteDurchschnitt() != null) this.setPunkteDurchschnitt(other.getPunkteDurchschnitt());
+	    if (other.getNotenDurchschnitt() != null) this.setNotenDurchschnitt(other.getNotenDurchschnitt());
+	    if (other.getGelbekarten() != null) this.setGelbekarten(other.getGelbekarten());
+	    if (other.getRotekarten() != null) this.setRotekarten(other.getRotekarten());
+	    if (other.getGelbrotekarten() != null) this.setGelbrotekarten(other.getGelbrotekarten());
+
+	    // Merge Comstats fields
+	    if (other.getEinsatzzeit() != null) this.setEinsatzzeit(other.getEinsatzzeit());
+	    if (other.getStatus() != null) this.setStatus(other.getStatus());
+	    if (other.getXgoals() != null) this.setXgoals(other.getXgoals());
+	    if (other.getRating() != null) this.setRating(other.getRating());
+	    if (other.getPensSaved() != null) this.setPensSaved(other.getPensSaved());
+	    if (other.getPensMissed() != null) this.setPensMissed(other.getPensMissed());
+	    if (other.getPoints() != null) this.setPoints(other.getPoints());
+	    if (other.getSubOut() != null) this.setSubOut(other.getSubOut());
+	    if (other.getCleanSheet() != null) this.setCleanSheet(other.getCleanSheet());
+	    if (other.getActive() != null) this.setActive(other.getActive());
+	    if (other.getSubIn() != null) this.setSubIn(other.getSubIn());
+
+	    // Merge ESPN fields
+	    if (other.getFoulsCommitted() != null) this.setFoulsCommitted(other.getFoulsCommitted());
+	    if (other.getFoulsSuffered() != null) this.setFoulsSuffered(other.getFoulsSuffered());
+	    if (other.getOwnGoals() != null) this.setOwnGoals(other.getOwnGoals());
+	    if (other.getAppearances() != null) this.setAppearances(other.getAppearances());
+	    if (other.getSubIns() != null) this.setSubIns(other.getSubIns());
+	    if (other.getGoalAssists() != null) this.setGoalAssists(other.getGoalAssists());
+	    if (other.getOffsides() != null) this.setOffsides(other.getOffsides());
+	    if (other.getShotsOnTarget() != null) this.setShotsOnTarget(other.getShotsOnTarget());
+	    if (other.getTotalShots() != null) this.setTotalShots(other.getTotalShots());
+	    if (other.getSaves() != null) this.setSaves(other.getSaves());
+	    if (other.getShotsFaced() != null) this.setShotsFaced(other.getShotsFaced());
+	    if (other.getGoalsConceded() != null) this.setGoalsConceded(other.getGoalsConceded());
+
+	    		
+	}
 
 
 	

@@ -5,6 +5,7 @@ import comunio.nas.dataVariable.LastUpdates;
 import comunio.nas.dataVariable.Urls;
 import comunio.nas.enu.Playtime; // ← Deine Enum
 import comunio.nas.objects.helper.LogManager;
+import comunio.nas.objects.player.PointsDbContainer;
 import comunio.nas.objects.player.Spielerstats;
 import comunio.nas.util.player.PlayerHelper;
 import org.json.JSONArray;
@@ -18,9 +19,11 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.logging.Logger;
 
@@ -33,79 +36,65 @@ public class ComstatsDataScraper {
 
 	private final HttpClient httpClient = HttpClient.newHttpClient();
 
-	public static void getPlaytimeForNewMatchdays(int maxSpieltag, JSONObject playerDBObject, JSONObject notInLigaDBObj, LastUpdates lastUpdates) {
-		int lastMatchday = playerDBObject.optInt("lastProcessedComstatsSpieltagsdaten", 1);
+	public static void getPlaytimeForNewMatchdays(int maxSpieltag, LastUpdates lastUpdates, PointsDbContainer pointsDb) {
+		int lastMatchday = lastUpdates.getComstatsSpieltagsdaten() == 0 ? 1 : lastUpdates.getComstatsSpieltagsdaten();
 		for (int matchday = lastMatchday; matchday <= maxSpieltag; matchday++) {
-			if (matchday == 0) {
-				continue;
+			if (maxSpieltag == 0) {
+				return;
 			}
-			getPlaytimeForMatchdays(matchday, playerDBObject, notInLigaDBObj, true, lastUpdates);
+			getPlaytimeForMatchdays(matchday,  true, lastUpdates, pointsDb);
 		}
-		playerDBObject.put("lastProcessedComstatsSpieltagsdaten", maxSpieltag);
+		pointsDb.setLastProcessedMatchday(maxSpieltag);
+		lastUpdates.setComstatsSpieltagsdaten(maxSpieltag);
 
 	}
 
-	public static void getPlaytimeForInputToInput(int start, int maxSpieltag, JSONObject playerDBObject, JSONObject notInLigaDBObj, LastUpdates lastUpdates) {
+	public static void getPlaytimeForInputToInput(int start, int maxSpieltag, LastUpdates lastUpdates, PointsDbContainer pointsDb) {
 		for (int matchday = start; matchday <= maxSpieltag; matchday++) {
-			getPlaytimeForMatchdays(matchday, playerDBObject, notInLigaDBObj, false, lastUpdates);
+			getPlaytimeForMatchdays(matchday, false, lastUpdates, pointsDb);
 		}
 
 	}
 
-	public static void getPlaytimeForMatchdays(int matchday, JSONObject playerDBObject, JSONObject notInLigaDBObj, boolean override, LastUpdates lastUpdates) {
+	/**
+	 * Aktualisiert die Spielzeitdaten für alle Spieler eines bestimmten Spieltages.
+	 * Durchsucht die Comstats-Daten nach Spielergebnissen und aktualisiert die
+	 * entsprechenden Spielerstatistiken im Spielerdatenbank-Objekt.
+	 * 
+	 * @param matchday       Der Spieltag, dessen Daten aktualisiert werden sollen
+	 * @param playerDBObject Das Hauptobjekt der Spielerdatenbank mit der
+	 *                       playerDB-Array
+	 * @param notInLigaDBObj Objekt für Spieler, die nicht in der Liga sind
+	 * @param override       Gibt an, ob bestehende Einsatzzeiten überschrieben
+	 *                       werden sollen
+	 * @param lastUpdates    Letzte Aktualisierungszeitpunkte für verschiedene
+	 *                       Datenquellen
+	 */
+	public static void getPlaytimeForMatchdays(int matchday, boolean override, LastUpdates lastUpdates, PointsDbContainer pointsDb) {
+  
 		ComstatsDataScraper scraper = new ComstatsDataScraper();
 		List<JSONObject> results = scraper.processMatchday(lastUpdates, matchday);
-
-		JSONArray playerDB = playerDBObject.optJSONArray("playerDB");
-		if (playerDB == null) {
-			LOGGER.warning("Keine playerDB im playerDBObject gefunden!");
-			return;
-		}
 
 		if (results != null && results.size() > 0) {
 
 			for (int i = 0; i < results.size(); i++) {
-				JSONObject spieler = results.get(i);
-				String playerId = PlayerHelper.convertIdToString(spieler.get("playerId"));
-
-				JSONObject player = PlayerHelper.findPlayerByComunioId(playerDB, playerId, notInLigaDBObj);
-				if (player != null) {
-
-					JSONObject data = player.optJSONObject("data");
-					if (data == null) {
-						data = new JSONObject();
-					}
-
-					JSONArray spieltagspunkte = data.optJSONArray("spieltagspunkte");
-					if (spieltagspunkte == null) {
-						spieltagspunkte = new JSONArray();
-					}
-
-					for (int j = 0; j < spieltagspunkte.length(); j++) {
-						JSONObject spP = spieltagspunkte.getJSONObject(j);
-						if (spP.optInt("key", 0) == matchday) {
-
-							// Spielerstats als Transportobjekt bauen (Mapping der Comstats-Felder)
-							Spielerstats stats = buildSpielerstats(spieler);
-							stats.setLastUpdate(null); // lastUpdate ist ein Saison-Feld, gehört nicht in den Spieltag-Eintrag
-
-							// Alle Felder flach in den Spieltag-Eintrag schreiben (kein stats-Unterobjekt)
-							JSONObject statsJson = stats.toJSON();
-							Iterator<String> keys = statsJson.keys();
-							while (keys.hasNext()) {
-								String key = keys.next();
-								// einsatzzeit nur überschreiben, wenn override oder noch nicht gesetzt
-								if ("einsatzzeit".equals(key) && !(override || spP.optInt("einsatzzeit", -1) == -1)) {
-									continue;
-								}
-								spP.put(key, statsJson.get(key));
-							}
-						}
-					}
-					player.put("data", data);
-				} else {
-					LOGGER.fine("Kein Match für Spieler mit ComunioId " + spieler.getInt("playerId") + " Name: " + spieler.getString("name"));
-				}
+				JSONObject apiSpieler = results.get(i);
+				// Spielerstats als Transportobjekt bauen (Mapping der Comstats-Felder)
+				Spielerstats stats = buildSpielerstats(apiSpieler);
+				stats.setMatchday(matchday);
+				String playerId = PlayerHelper.convertIdToString(apiSpieler.get("playerId"));
+				
+				pointsDb.addPlayerStats(playerId, matchday, stats);				
+//				Map<Integer, Spielerstats> playerStatsMap = pointsDb.getPointsMap().get(playerId);
+//				if(playerStatsMap == null) {
+//					playerStatsMap = new HashMap<>();
+//				}
+//				if(!playerStatsMap.containsKey(matchday) || override) {
+//					playerStatsMap.put(matchday,stats);
+//				} else {
+//					Spielerstats statsDb = playerStatsMap.get(matchday);
+//					statsDb.mergeSpielerstats(stats);
+//				}
 			}
 		}
 	}
