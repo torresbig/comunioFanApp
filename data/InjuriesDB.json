@@ -221,20 +221,20 @@
       "status": "VERLETZT"
     },
     "33247": {
-      "reason": "Schien- und Wadenbeinbruch",
-      "lastNewsText": "",
+      "reason": "",
+      "lastNewsText": "Silas-Comeback erst 2027 zu erwarten",
       "ligainsiderPlayerId": "21594",
       "playerName": "Silas",
-      "statusChangeString": "26.09.2026",
+      "statusChangeString": "14.10.2026",
       "sinceTimestamp": "2026-03-11T23:00:00Z",
-      "sinceString": "6 Monaten und 2 Wochen",
-      "statusChangeTimestamp": "2026-09-25T22:00:00Z",
+      "sinceString": "7 Monaten und 2 Tagen",
+      "statusChangeTimestamp": "2026-10-13T22:00:00Z",
       "comunioPlayerId": "33247",
       "playerLink": "https://www.ligainsider.de/silas_21594/",
-      "lastNewsLink": "",
+      "lastNewsLink": "https://www.ligainsider.de/1-fsv-mainz-05/17/silas-comeback-erst-2027-zu-erwarten-418528/",
       "quelle": "ligainsider",
       "club": "1. FSV Mainz 05",
-      "status": "VERLETZT"
+      "status": "AUFBAUTRAINING"
     },
     "34214": {
       "reason": "Kreuzbandriss",
@@ -872,7 +872,7 @@
       "status": "AUFBAUTRAINING"
     }
   },
-  "lastUpdate": "2026-10-13T08:00:55.317934617Z",
+  "lastUpdate": "2026-10-14T08:00:55.196148274Z",
   "history": {
     "33808": [{
       "reason": "",
@@ -1525,22 +1525,40 @@
         "status": "AUFBAUTRAINING"
       }
     ],
-    "33247": [{
-      "reason": "Schien- und Wadenbeinbruch",
-      "lastNewsText": "",
-      "ligainsiderPlayerId": "21594",
-      "playerName": "Silas",
-      "statusChangeString": "26.09.2026",
-      "sinceTimestamp": "2026-03-11T23:00:00Z",
-      "sinceString": "6 Monaten und 2 Wochen",
-      "statusChangeTimestamp": "2026-09-25T22:00:00Z",
-      "comunioPlayerId": "33247",
-      "playerLink": "https://www.ligainsider.de/silas_21594/",
-      "lastNewsLink": "",
-      "quelle": "ligainsider",
-      "club": "1. FSV Mainz 05",
-      "status": "VERLETZT"
-    }],
+    "33247": [
+      {
+        "reason": "Schien- und Wadenbeinbruch",
+        "lastNewsText": "",
+        "ligainsiderPlayerId": "21594",
+        "playerName": "Silas",
+        "statusChangeString": "26.09.2026",
+        "sinceTimestamp": "2026-03-11T23:00:00Z",
+        "sinceString": "6 Monaten und 2 Wochen",
+        "statusChangeTimestamp": "2026-09-25T22:00:00Z",
+        "comunioPlayerId": "33247",
+        "playerLink": "https://www.ligainsider.de/silas_21594/",
+        "lastNewsLink": "",
+        "quelle": "ligainsider",
+        "club": "1. FSV Mainz 05",
+        "status": "VERLETZT"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "Silas-Comeback erst 2027 zu erwarten",
+        "ligainsiderPlayerId": "21594",
+        "playerName": "Silas",
+        "statusChangeString": "14.10.2026",
+        "sinceTimestamp": "2026-03-11T23:00:00Z",
+        "sinceString": "7 Monaten und 2 Tagen",
+        "statusChangeTimestamp": "2026-10-13T22:00:00Z",
+        "comunioPlayerId": "33247",
+        "playerLink": "https://www.ligainsider.de/silas_21594/",
+        "lastNewsLink": "https://www.ligainsider.de/1-fsv-mainz-05/17/silas-comeback-erst-2027-zu-erwarten-418528/",
+        "quelle": "ligainsider",
+        "club": "1. FSV Mainz 05",
+        "status": "AUFBAUTRAINING"
+      }
+    ],
     "34214": [{
       "reason": "Kreuzbandriss",
       "lastNewsText": "",
