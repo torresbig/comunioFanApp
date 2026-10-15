@@ -647,6 +647,21 @@
       "club": "Hamburger SV",
       "status": "NICHT_IM_KADER"
     },
+    "34275": {
+      "reason": "",
+      "lastNewsText": "Neue Verletzung: Hajdari fällt mehrere Wochen aus",
+      "ligainsiderPlayerId": "37227",
+      "playerName": "Albian Hajdari",
+      "sinceTimestamp": "2026-10-12T22:00:00Z",
+      "abfrageTimestamp": "2026-10-15T08:00:46.018683657Z",
+      "sinceString": "2 Tagen",
+      "comunioPlayerId": "34275",
+      "playerLink": "https://www.ligainsider.de/albian-hajdari_37227/",
+      "lastNewsLink": "https://www.ligainsider.de/albian-hajdari_37227/neue-verletzung-hajdari-faellt-mehrere-wochen-aus-419137/",
+      "quelle": "ligainsider",
+      "club": "TSG Hoffenheim",
+      "status": "VERLETZT"
+    },
     "33263": {
       "reason": "",
       "lastNewsText": "Muskelverletzung: Ache fällt vorerst aus",
@@ -741,22 +756,6 @@
       "lastNewsLink": "https://www.ligainsider.de/keke-topp_35787/topp-erst-2027-wieder-eine-option-414449/",
       "quelle": "ligainsider",
       "club": "SV Werder Bremen",
-      "status": "VERLETZT"
-    },
-    "32771": {
-      "reason": "Muskelbündelriss",
-      "lastNewsText": "",
-      "ligainsiderPlayerId": "13968",
-      "playerName": "Nicolas Kühn",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-09-05T22:00:00Z",
-      "abfrageTimestamp": "2026-09-29T23:05:38.550340600Z",
-      "sinceString": "3 Wochen und 3 Tagen",
-      "comunioPlayerId": "32771",
-      "playerLink": "https://www.ligainsider.de/nicolas-kuehn_13968/",
-      "lastNewsLink": "",
-      "quelle": "ligainsider",
-      "club": "Borussia Mönchengladbach",
       "status": "VERLETZT"
     },
     "34234": {
@@ -872,7 +871,7 @@
       "status": "AUFBAUTRAINING"
     }
   },
-  "lastUpdate": "2026-10-14T08:00:55.196148274Z",
+  "lastUpdate": "2026-10-15T08:00:54.749895267Z",
   "history": {
     "33808": [{
       "reason": "",
@@ -2435,6 +2434,23 @@
         "sinceTimestamp": "2026-09-05T22:00:00Z",
         "sinceString": "2 Wochen und 6 Tagen",
         "statusChangeTimestamp": "2026-09-26T22:00:00Z",
+        "comunioPlayerId": "32771",
+        "playerLink": "https://www.ligainsider.de/nicolas-kuehn_13968/",
+        "lastNewsLink": "",
+        "quelle": "ligainsider",
+        "club": "Borussia Mönchengladbach",
+        "status": "VERLETZT"
+      },
+      {
+        "reason": "Muskelbündelriss",
+        "lastNewsText": "",
+        "ligainsiderPlayerId": "13968",
+        "playerName": "Nicolas Kühn",
+        "statusChangeString": "15.10.2026",
+        "sinceTimestamp": "2026-09-05T22:00:00Z",
+        "abfrageTimestamp": "2026-09-29T23:05:38.550340600Z",
+        "sinceString": "3 Wochen und 3 Tagen",
+        "statusChangeTimestamp": "2026-10-14T22:00:00Z",
         "comunioPlayerId": "32771",
         "playerLink": "https://www.ligainsider.de/nicolas-kuehn_13968/",
         "lastNewsLink": "",
