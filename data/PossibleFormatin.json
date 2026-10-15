@@ -1,6 +1,6 @@
 {
   "matchday": 5,
-  "lastUpdate": "2026-10-15T17:00:24.668458525Z",
+  "lastUpdate": "2026-10-15T20:00:26.625364518Z",
   "possibleFormationMap": {
     "68": [
       {
@@ -2961,26 +2961,6 @@
         "playerId": "13911"
       },
       {
-        "comunioPlayerId": "33629",
-        "playerLink": "https://www.ligainsider.de/derry-scherhant_27532/",
-        "playerName": "Scherhant",
-        "clubId": "18",
-        "playerNote": "3,3",
-        "last5MatchStatus": [
-          {"1": "START"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"},
-          {"6": "BANK"},
-          {"7": "SUBIN"},
-          {"8": "SUBIN"},
-          {"9": "SUBIN"},
-          {"10": "SUBIN"}
-        ],
-        "playerId": "27532"
-      },
-      {
         "comunioPlayerId": "33829",
         "playerLink": "https://www.ligainsider.de/jordy-makengo_26088/",
         "playerName": "Makengo",
@@ -3109,6 +3089,13 @@
           {"5": "START"}
         ],
         "playerId": "25780"
+      },
+      {
+        "comunioPlayerId": "",
+        "playerLink": "N/A",
+        "playerName": "N/A",
+        "clubId": "18",
+        "playerNote": "N/A"
       }
     ],
     "10": [
@@ -3128,6 +3115,21 @@
         "playerId": "2676"
       },
       {
+        "comunioPlayerId": "31145",
+        "playerLink": "https://www.ligainsider.de/edin-dzeko_4755/",
+        "playerName": "Džeko",
+        "clubId": "13",
+        "playerNote": "4,3",
+        "last5MatchStatus": [
+          {"1": "SUBIN"},
+          {"2": "BANK"},
+          {"3": "SUBIN"},
+          {"4": "START"},
+          {"5": "SUBIN"}
+        ],
+        "playerId": "4755"
+      },
+      {
         "comunioPlayerId": "31874",
         "playerLink": "https://www.ligainsider.de/loris-karius_1641/",
         "playerName": "Karius",
@@ -3143,19 +3145,24 @@
         "playerId": "1641"
       },
       {
-        "comunioPlayerId": "34372",
-        "playerLink": "https://www.ligainsider.de/nikola-katic_23002/",
-        "playerName": "Katić",
+        "comunioPlayerId": "34382",
+        "playerLink": "https://www.ligainsider.de/adil-aouchiche_22176/",
+        "playerName": "Aouchiche",
         "clubId": "13",
-        "playerNote": "2,9",
+        "playerNote": "3,5",
         "last5MatchStatus": [
           {"1": "START"},
           {"2": "START"},
           {"3": "START"},
           {"4": "START"},
-          {"5": "START"}
+          {"5": "SUBIN"},
+          {"6": "START"},
+          {"7": "BANK"},
+          {"8": "START"},
+          {"9": "BANK"},
+          {"10": "START"}
         ],
-        "playerId": "23002"
+        "playerId": "22176"
       },
       {
         "comunioPlayerId": "33831",
@@ -3176,6 +3183,51 @@
           {"10": "SUBIN"}
         ],
         "playerId": "11916"
+      },
+      {
+        "comunioPlayerId": "34391",
+        "playerLink": "https://www.ligainsider.de/soufiane-el-faouzi_26067/",
+        "playerName": "El-Faouzi",
+        "clubId": "13",
+        "playerNote": "3,7",
+        "last5MatchStatus": [
+          {"1": "START"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "26067"
+      },
+      {
+        "comunioPlayerId": "34371",
+        "playerLink": "https://www.ligainsider.de/hasan-kurucay_35927/",
+        "playerName": "Kuruçay",
+        "clubId": "13",
+        "playerNote": "3,4",
+        "last5MatchStatus": [
+          {"1": "START"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "35927"
+      },
+      {
+        "comunioPlayerId": "34372",
+        "playerLink": "https://www.ligainsider.de/nikola-katic_23002/",
+        "playerName": "Katić",
+        "clubId": "13",
+        "playerNote": "2,9",
+        "last5MatchStatus": [
+          {"1": "START"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "START"},
+          {"5": "START"}
+        ],
+        "playerId": "23002"
       },
       {
         "comunioPlayerId": "34377",
@@ -3213,56 +3265,6 @@
         "playerId": "16537"
       },
       {
-        "comunioPlayerId": "31145",
-        "playerLink": "https://www.ligainsider.de/edin-dzeko_4755/",
-        "playerName": "Džeko",
-        "clubId": "13",
-        "playerNote": "4,3",
-        "last5MatchStatus": [
-          {"1": "SUBIN"},
-          {"2": "BANK"},
-          {"3": "SUBIN"},
-          {"4": "START"},
-          {"5": "SUBIN"}
-        ],
-        "playerId": "4755"
-      },
-      {
-        "comunioPlayerId": "34382",
-        "playerLink": "https://www.ligainsider.de/adil-aouchiche_22176/",
-        "playerName": "Aouchiche",
-        "clubId": "13",
-        "playerNote": "3,5",
-        "last5MatchStatus": [
-          {"1": "START"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "SUBIN"},
-          {"6": "START"},
-          {"7": "BANK"},
-          {"8": "START"},
-          {"9": "BANK"},
-          {"10": "START"}
-        ],
-        "playerId": "22176"
-      },
-      {
-        "comunioPlayerId": "34371",
-        "playerLink": "https://www.ligainsider.de/hasan-kurucay_35927/",
-        "playerName": "Kuruçay",
-        "clubId": "13",
-        "playerNote": "3,4",
-        "last5MatchStatus": [
-          {"1": "START"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "35927"
-      },
-      {
         "comunioPlayerId": "34450",
         "playerLink": "https://www.ligainsider.de/satoshi-tanaka_38876/",
         "playerName": "Tanaka",
@@ -3281,21 +3283,6 @@
           {"10": "SUBIN"}
         ],
         "playerId": "38876"
-      },
-      {
-        "comunioPlayerId": "34391",
-        "playerLink": "https://www.ligainsider.de/soufiane-el-faouzi_26067/",
-        "playerName": "El-Faouzi",
-        "clubId": "13",
-        "playerNote": "3,7",
-        "last5MatchStatus": [
-          {"1": "START"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
-          {"5": "START"}
-        ],
-        "playerId": "26067"
       }
     ]
   }
