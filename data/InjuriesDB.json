@@ -172,6 +172,19 @@
       "club": "1. FSV Mainz 05",
       "status": "AUFBAUTRAINING"
     },
+    "34346": {
+      "comunioPlayerId": "34346",
+      "reason": "Nicht berücksichtigt",
+      "playerLink": "https://www.ligainsider.de/luca-reggiani_38816/",
+      "ligainsiderPlayerId": "38816",
+      "playerName": "Luca Reggiani",
+      "sinceTimestamp": "2026-10-16T22:00:00Z",
+      "abfrageTimestamp": "2026-10-17T08:00:44.157813708Z",
+      "quelle": "ligainsider",
+      "club": "Borussia Dortmund",
+      "sinceString": "",
+      "status": "NICHT_IM_KADER"
+    },
     "34389": {
       "reason": "Achillessehnenverletzung",
       "lastNewsText": "",
@@ -362,6 +375,19 @@
       "lastNewsLink": "https://www.ligainsider.de/tim-kleindienst_6321/kleindienst-bricht-training-erneut-ab-419123/",
       "quelle": "ligainsider",
       "club": "Borussia Mönchengladbach",
+      "status": "VERLETZT"
+    },
+    "34019": {
+      "comunioPlayerId": "34019",
+      "reason": "Muskelprellung Oberschenkel",
+      "playerLink": "https://www.ligainsider.de/oscar-hoejlund_37210/",
+      "ligainsiderPlayerId": "37210",
+      "playerName": "Oscar Højlund",
+      "sinceTimestamp": "2026-10-14T22:00:00Z",
+      "abfrageTimestamp": "2026-10-17T08:00:44.187311089Z",
+      "quelle": "ligainsider",
+      "club": "Eintracht Frankfurt",
+      "sinceString": "2 Tagen",
       "status": "VERLETZT"
     },
     "34017": {
@@ -601,6 +627,19 @@
       "quelle": "ligainsider",
       "club": "Bayer 04 Leverkusen",
       "status": "VERLETZT"
+    },
+    "34084": {
+      "comunioPlayerId": "34084",
+      "reason": "Nicht berücksichtigt",
+      "playerLink": "https://www.ligainsider.de/filippo-mane_37067/",
+      "ligainsiderPlayerId": "37067",
+      "playerName": "Filippo Mane",
+      "sinceTimestamp": "2026-10-16T22:00:00Z",
+      "abfrageTimestamp": "2026-10-17T08:00:44.155419831Z",
+      "quelle": "ligainsider",
+      "club": "Borussia Dortmund",
+      "sinceString": "",
+      "status": "NICHT_IM_KADER"
     },
     "34448": {
       "comunioPlayerId": "34448",
@@ -1096,7 +1135,7 @@
       "status": "AUFBAUTRAINING"
     }
   },
-  "lastUpdate": "2026-10-16T14:39:27.114080900Z",
+  "lastUpdate": "2026-10-17T08:00:52.807352689Z",
   "history": {
     "33808": [{
       "reason": "",
