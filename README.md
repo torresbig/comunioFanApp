@@ -4,10 +4,10 @@
 
 > **Projektstatus:** Das Repository enthält eine umfangreiche Java-Anwendung mit mehreren Datenimportern und Aktualisierungsprozessen. Die konkreten Laufzeitvoraussetzungen und Zugangsdaten müssen vor dem ersten Start lokal eingerichtet werden.
 
-> **ComunioWebsite**
+**ComunioWebsite**
 In meinem anderen repository /comunioWebsite werden die Daten, die hier unter data liegen dargestellt und aufbereitet.
 
-> **wichtig**
+**wichtig**
 - privates Projekt, um weiter und besser programmieren zu lernen
 - es klappt alles nur perfekt, für comunities die neue Spieler und 20 Mio startgeld am Anfang der Saison bekommen. Sonst passen die Berechnungen nicht.
 - die nasApp läuft bei mir 3 mal am Tag um z. B. Transfers neu zu holen. 
