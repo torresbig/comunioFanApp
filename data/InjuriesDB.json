@@ -110,22 +110,6 @@
       "club": "SV Werder Bremen",
       "status": "VERLETZT"
     },
-    "32364": {
-      "reason": "",
-      "lastNewsText": "Zentner weiter eingeschränkt \u2013 Schalke wohl zu früh",
-      "ligainsiderPlayerId": "3298",
-      "playerName": "Robin Zentner",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-09-11T22:00:00Z",
-      "abfrageTimestamp": "2026-10-16T14:39:20.659878700Z",
-      "sinceString": "1 Monat und 4 Tagen",
-      "comunioPlayerId": "32364",
-      "playerLink": "https://www.ligainsider.de/robin-zentner_3298/",
-      "lastNewsLink": "https://www.ligainsider.de/robin-zentner_3298/zentner-weiter-eingeschraenkt-ndash-schalke-wohl-zu-frueh-419093/",
-      "quelle": "ligainsider",
-      "club": "1. FSV Mainz 05",
-      "status": "AUFBAUTRAINING"
-    },
     "34389": {
       "reason": "Achillessehnenverletzung",
       "lastNewsText": "",
@@ -366,6 +350,21 @@
       "club": "SV Werder Bremen",
       "status": "VERLETZT"
     },
+    "34135": {
+      "reason": "",
+      "lastNewsText": "Schmied fällt für mehrere Spiele aus",
+      "ligainsiderPlayerId": "38328",
+      "playerName": "Joël Schmied",
+      "sinceTimestamp": "2026-10-15T22:00:00Z",
+      "abfrageTimestamp": "2026-10-20T08:00:46.075749993Z",
+      "sinceString": "4 Tagen",
+      "comunioPlayerId": "34135",
+      "playerLink": "https://www.ligainsider.de/joel-schmied_38328/",
+      "lastNewsLink": "https://www.ligainsider.de/joel-schmied_38328/schmied-faellt-fuer-mehrere-spiele-aus-419395/",
+      "quelle": "ligainsider",
+      "club": "1. FC Köln",
+      "status": "VERLETZT"
+    },
     "34012": {
       "comunioPlayerId": "34012",
       "reason": "",
@@ -505,6 +504,21 @@
       "quelle": "ligainsider",
       "club": "FC Schalke 04",
       "status": "VERLETZT"
+    },
+    "33236": {
+      "reason": "",
+      "lastNewsText": "Bayern rechnet noch im Oktober wieder mit Musiala",
+      "ligainsiderPlayerId": "24149",
+      "playerName": "Jamal Musiala",
+      "sinceTimestamp": "2026-09-23T22:00:00Z",
+      "abfrageTimestamp": "2026-10-20T08:00:46.016512246Z",
+      "sinceString": "3 Wochen und 5 Tagen",
+      "comunioPlayerId": "33236",
+      "playerLink": "https://www.ligainsider.de/jamal-musiala_24149/",
+      "lastNewsLink": "https://www.ligainsider.de/jamal-musiala_24149/bayern-rechnet-noch-im-oktober-wieder-mit-musiala-419345/",
+      "quelle": "ligainsider",
+      "club": "FC Bayern München",
+      "status": "AUFBAUTRAINING"
     },
     "34520": {
       "reason": "Muskelverletzung Wade",
@@ -696,22 +710,6 @@
       "club": "TSG Hoffenheim",
       "status": "VERLETZT"
     },
-    "33263": {
-      "reason": "",
-      "lastNewsText": "Muskelverletzung: Ache fällt vorerst aus",
-      "ligainsiderPlayerId": "23720",
-      "playerName": "Ragnar Ache",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-10-02T22:00:00Z",
-      "abfrageTimestamp": "2026-10-07T08:00:44.274747006Z",
-      "sinceString": "4 Tagen",
-      "comunioPlayerId": "33263",
-      "playerLink": "https://www.ligainsider.de/ragnar-ache_23720/",
-      "lastNewsLink": "https://www.ligainsider.de/ragnar-ache_23720/muskelverletzung-ache-faellt-vorerst-aus-418683/",
-      "quelle": "ligainsider",
-      "club": "1. FC Köln",
-      "status": "VERLETZT"
-    },
     "34074": {
       "reason": "Bauchmuskelverletzung",
       "lastNewsText": "",
@@ -749,16 +747,17 @@
       "lastNewsText": "Elversberg muss lange auf Seifert verzichten",
       "ligainsiderPlayerId": "36900",
       "playerName": "Luis Seifert",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-07-11T22:00:00Z",
+      "statusChangeString": "20.10.2026",
+      "sinceTimestamp": "2026-07-12T22:00:00Z",
       "abfrageTimestamp": "2026-10-19T08:00:42.943257223Z",
       "sinceString": "3 Monaten und 1 Woche",
+      "statusChangeTimestamp": "2026-10-19T22:00:00Z",
       "comunioPlayerId": "34393",
       "playerLink": "https://www.ligainsider.de/luis-seifert_36900/",
       "lastNewsLink": "https://www.ligainsider.de/luis-seifert_36900/elversberg-muss-lange-auf-seifert-verzichten-414973/",
       "quelle": "ligainsider",
       "club": "SV 07 Elversberg",
-      "status": "VERLETZT"
+      "status": "AUFBAUTRAINING"
     },
     "34435": {
       "reason": "",
@@ -889,7 +888,7 @@
       "status": "AUFBAUTRAINING"
     }
   },
-  "lastUpdate": "2026-10-19T08:00:51.927470297Z",
+  "lastUpdate": "2026-10-20T08:00:54.750026815Z",
   "history": {
     "33808": [{
       "reason": "",
@@ -1186,6 +1185,23 @@
         "comunioPlayerId": "32364",
         "playerLink": "https://www.ligainsider.de/robin-zentner_3298/",
         "lastNewsLink": "https://www.ligainsider.de/robin-zentner_3298/zentner-auf-dem-platz-ndash-aber-noch-nicht-voll-dabei-418746/",
+        "quelle": "ligainsider",
+        "club": "1. FSV Mainz 05",
+        "status": "AUFBAUTRAINING"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "Zentner weiter eingeschränkt \u2013 Schalke wohl zu früh",
+        "ligainsiderPlayerId": "3298",
+        "playerName": "Robin Zentner",
+        "statusChangeString": "20.10.2026",
+        "sinceTimestamp": "2026-09-11T22:00:00Z",
+        "abfrageTimestamp": "2026-10-16T14:39:20.659878700Z",
+        "sinceString": "1 Monat und 4 Tagen",
+        "statusChangeTimestamp": "2026-10-19T22:00:00Z",
+        "comunioPlayerId": "32364",
+        "playerLink": "https://www.ligainsider.de/robin-zentner_3298/",
+        "lastNewsLink": "https://www.ligainsider.de/robin-zentner_3298/zentner-weiter-eingeschraenkt-ndash-schalke-wohl-zu-frueh-419093/",
         "quelle": "ligainsider",
         "club": "1. FSV Mainz 05",
         "status": "AUFBAUTRAINING"
@@ -2789,6 +2805,23 @@
       "club": "TSG Hoffenheim",
       "status": "VERLETZT"
     }],
+    "33263": [{
+      "reason": "",
+      "lastNewsText": "Muskelverletzung: Ache fällt vorerst aus",
+      "ligainsiderPlayerId": "23720",
+      "playerName": "Ragnar Ache",
+      "statusChangeString": "20.10.2026",
+      "sinceTimestamp": "2026-10-02T22:00:00Z",
+      "abfrageTimestamp": "2026-10-07T08:00:44.274747006Z",
+      "sinceString": "4 Tagen",
+      "statusChangeTimestamp": "2026-10-19T22:00:00Z",
+      "comunioPlayerId": "33263",
+      "playerLink": "https://www.ligainsider.de/ragnar-ache_23720/",
+      "lastNewsLink": "https://www.ligainsider.de/ragnar-ache_23720/muskelverletzung-ache-faellt-vorerst-aus-418683/",
+      "quelle": "ligainsider",
+      "club": "1. FC Köln",
+      "status": "VERLETZT"
+    }],
     "34351": [{
       "reason": "",
       "lastNewsText": "",
@@ -2868,6 +2901,23 @@
         "quelle": "ligainsider",
         "club": "SV 07 Elversberg",
         "status": "VERLETZT"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "Elversberg muss lange auf Seifert verzichten",
+        "ligainsiderPlayerId": "36900",
+        "playerName": "Luis Seifert",
+        "statusChangeString": "20.10.2026",
+        "sinceTimestamp": "2026-07-12T22:00:00Z",
+        "abfrageTimestamp": "2026-10-19T08:00:42.943257223Z",
+        "sinceString": "3 Monaten und 1 Woche",
+        "statusChangeTimestamp": "2026-10-19T22:00:00Z",
+        "comunioPlayerId": "34393",
+        "playerLink": "https://www.ligainsider.de/luis-seifert_36900/",
+        "lastNewsLink": "https://www.ligainsider.de/luis-seifert_36900/elversberg-muss-lange-auf-seifert-verzichten-414973/",
+        "quelle": "ligainsider",
+        "club": "SV 07 Elversberg",
+        "status": "AUFBAUTRAINING"
       }
     ],
     "34074": [{
