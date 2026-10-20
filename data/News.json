@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "20.10.2026 05:15:14",
+  "lastUpdate": "20.10.2026 10:00:54",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -10232,14 +10232,56 @@
     },
     {
       "date": "20.10.2026",
-      "news": [{
-        "date": "20.10.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Lukeba\",\"price\":5005000,\"buyerId\":\"9317431\",\"playerValue\":4540000,\"playerId\":\"33837\",\"buyer\":\"Andi\"}",
-        "id": "967512898",
-        "playerId": "33837"
-      }]
+      "news": [
+        {
+          "date": "20.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Lukeba\",\"price\":5005000,\"buyerId\":\"9317431\",\"playerValue\":4540000,\"playerId\":\"33837\",\"buyer\":\"Andi\"}",
+          "id": "967512898",
+          "playerId": "33837"
+        },
+        {
+          "date": "20.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jamal Musiala (33236) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "33236"
+        },
+        {
+          "date": "20.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Luis Seifert (34393) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "34393"
+        },
+        {
+          "date": "20.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Joël Schmied (34135) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34135"
+        },
+        {
+          "date": "20.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Robin Zentner (32364) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32364"
+        },
+        {
+          "date": "20.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ragnar Ache (33263) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33263"
+        }
+      ]
     },
     {
       "date": "20.09.2026",
