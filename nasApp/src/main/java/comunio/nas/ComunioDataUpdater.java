@@ -60,7 +60,6 @@ public class ComunioDataUpdater {
 
 		try {
 			currentMatchdayInfo = MatchdayInfo.fetchCurrentMatchday();
-			logMatchdayInfo();
 
 			// 1. Daten von GitHub / externen Quellen laden
 			long start = System.nanoTime();
@@ -99,7 +98,7 @@ public class ComunioDataUpdater {
 		long start = System.nanoTime();
 
 		UserUpdater.updateAllUsers(lastUpdates, ctx.getPlayerDBObject(), ctx.getMarketValueDB(), ctx.getNotInligaDBObj(), ctx.getPlayerToUserMap(), ctx.getUserMap(), community, currentMatchdayInfo, ctx.getNewsManager(), user);
-		UserUpdater.updateUserPoints(ctx.getUserMap(), community, currentMatchdayInfo);
+//		UserUpdater.updateUserPoints(ctx.getUserMap(), community, currentMatchdayInfo);
 		ctx.setOwnerList(ctx.getUserMap().keySet());
 
 		KontostandBerechner kontostandBerechner = new KontostandBerechner();
@@ -115,6 +114,8 @@ public class ComunioDataUpdater {
 		PlayerUpdater.updatePlayers(seasonChanged, ctx.getClubDbContainer().toJSON(), ctx.getPlayerDBObject(), ctx.getMarketValueDB(), ctx.getPlayerToUserMap(), ctx.getNewsManager(), currentMatchdayInfo, ctx.getNotInligaDBObj(), lastUpdates, user);
 
 		ctx.getLineupParser().fetchLineupForAllUsers(ctx.getUserMap(), currentMatchdayInfo);
+		
+//		spieltagspunkte für die einzelnen user fehlen!!!
 
 		SonstigeAttribute.setSpielerAttributePerformance(ctx.getPlayerDBObject(), currentMatchdayInfo, ctx.getNewsManager());
 		Transfermarkt.getTransfermarktListe(ctx.getPlayerDBObject(), ctx.getComunioTransfermarktContainer(), ctx.getNotInligaDBObj(), lastUpdates, user);
@@ -139,13 +140,7 @@ public class ComunioDataUpdater {
 		logExecutionTime("Datenverarbeitung (alles)", System.nanoTime(), start);
 	}
 
-	private static void logMatchdayInfo() {
-		if (currentMatchdayInfo != null) {
-			LOGGER.info("Current matchday: " + currentMatchdayInfo.getCurrentMatchday() + ", Finished: " + currentMatchdayInfo.isFinished());
-		} else {
-			LOGGER.warning("Failed to fetch current matchday info");
-		}
-	}
+
 
 	private static boolean handleSeasonTransit(UpdaterContextData ctx, LastUpdates lastUpdates, User user) {
 		boolean seasonChanged = SeasonChange.analyzeNewsForSeasonTransit(ctx.getNewsManager(), ctx.getPlayerDBObject(), ctx.getMarketValueDB(), ctx.getPointsDB(), ctx.getMatchdayInfoList(), ctx.getUserMap(), ctx.getComunioTransfermarktContainer().getTransfermarktMap(), ctx.getPlayerToUserMap(), currentMatchdayInfo, lastUpdates, user, ctx.getClubDbContainer().toJSON());

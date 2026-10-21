@@ -108,9 +108,10 @@ public class LigainsiderPossibleFormation {
 		}
 		this.possibleFormationMap.clear();
 		
-		this.matchday = currentMatchdayInfo.getPointsMatchday();
+		this.matchday = currentMatchdayInfo.getCurrentMatchday();
 		try {
 			if (clubDb != null && !clubDb.isEmpty()) {
+				boolean wait = false; 
 				for (Map.Entry<String, ClubObject> entry : clubDb.entrySet()) {
 					ClubObject club = entry.getValue();
 					if (club.isInLiga() && club.getLigainsiderClub() != null && club.getLigainsiderClub().getLink() != null && !club.getLigainsiderClub().getLink().isBlank()) {
@@ -119,6 +120,12 @@ public class LigainsiderPossibleFormation {
 						String clubName = club.getName();
 						
 						Set<PossibleFormationPlayerObject> possibleFormationClubSet = this.possibleFormationMap.containsKey(clubId) ? this.possibleFormationMap.get(clubId) : new HashSet<>() ;
+						
+						if(wait && !ComunioDataUpdater.uld.isDebug()) {
+							Thread.sleep(12000); //n warten
+						} else {
+							wait = true; // Nach dem ersten Club warten
+						}
 						
 						parseLigainsiderFormations(club, possibleFormationClubSet);
 						

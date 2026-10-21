@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import comunio.nas.enu.PlayerMatchStatus;
@@ -19,13 +20,13 @@ public class PossibleFormationPlayerObject implements LigainsiderInterface {
 	Map<Integer, PlayerMatchStatus> last5MatchStatus;
 
 	public PossibleFormationPlayerObject(String playerName, String playerId, String clubId, String playerLink, String playerNote, Map<Integer, PlayerMatchStatus> last5MatchStatus) {
-		this.setPlayerName(playerName);
-		this.setPlayerId(playerId);
-		this.setClubId(clubId);
-		this.setPlayerLink(playerLink);
-		this.setPlayerNote(playerNote);
-		this.comunioPlayerId = ""; 
-		this.last5MatchStatus = last5MatchStatus;
+	    this.setPlayerName(playerName);
+	    this.setPlayerId(playerId);
+	    this.setClubId(clubId);
+	    this.setPlayerLink(playerLink);
+	    this.setPlayerNote(playerNote);
+	    this.comunioPlayerId = "";
+	    this.last5MatchStatus = last5MatchStatus != null ? last5MatchStatus : new HashMap<>();
 	}
 
 	@Override
@@ -58,30 +59,45 @@ public class PossibleFormationPlayerObject implements LigainsiderInterface {
 	}
 
 
-	public static PossibleFormationPlayerObject fromJSON(JSONObject json) {
-		String playerName = json.getString("playerName");
-		String playerId = json.getString("playerId");
-		String clubId = json.getString("clubId");
-		String playerLink = json.getString("playerLink");
-		String playerNote = json.getString("playerNote");
-		String comunioPlayerId = json.optString("comunioPlayerId","");
-		
-		Map<Integer, PlayerMatchStatus> last5MatchStatus = new HashMap<>();
-		if (json.has("last5MatchStatus")) {
-			JSONArray last5Array = json.getJSONArray("last5MatchStatus");
-			for (int i = 0; i < last5Array.length(); i++) {
-				JSONObject matchObj = last5Array.getJSONObject(i);
-				for (String key : matchObj.keySet()) {
-					PlayerMatchStatus pms = PlayerMatchStatus.valueOf(matchObj.getString(key));
-					last5MatchStatus.put(Integer.parseInt(key), pms);
-				}
-			}
-		}
-		PossibleFormationPlayerObject result = new PossibleFormationPlayerObject(playerName, playerId, clubId, playerLink, playerNote, last5MatchStatus);
-		if(!comunioPlayerId.isBlank()) {
-			result.setComunioPlayerId(comunioPlayerId);
-		}
-		return result;
+	public static PossibleFormationPlayerObject fromJSON(JSONObject json) throws NumberFormatException {
+	    String playerName = json.optString("playerName", "");
+	    String playerId = json.optString("playerId", "");
+	    String clubId = json.optString("clubId", "");
+	    String playerLink = json.optString("playerLink", "");
+	    String playerNote = json.optString("playerNote", "");
+	    String comunioPlayerId = json.optString("comunioPlayerId", "");
+
+	    Map<Integer, PlayerMatchStatus> last5MatchStatus = new HashMap<>();
+	    if (json.has("last5MatchStatus")) {
+	        try {
+	            JSONArray last5Array = json.getJSONArray("last5MatchStatus");
+	            for (int i = 0; i < last5Array.length(); i++) {
+	                Object element = last5Array.get(i);
+	                if (!(element instanceof JSONObject)) continue;
+	                
+	                JSONObject matchObj = (JSONObject) element;
+	                for (String key : matchObj.keySet()) {
+	                    try {
+	                        String statusStr = matchObj.optString(key);
+	                        if (statusStr.isEmpty()) continue;
+	                        PlayerMatchStatus pms = PlayerMatchStatus.valueOf(statusStr);
+	                        last5MatchStatus.put(Integer.parseInt(key), pms);
+	                    } catch (IllegalArgumentException e) {
+	                        // Ignoriere ungültige Einträge
+	                    }
+	                }
+	            }
+	        } catch (JSONException e) {
+	            // Kein gültiges JSONArray, behandlung nicht relevant
+	        }
+	    }
+	    PossibleFormationPlayerObject result = new PossibleFormationPlayerObject(
+	        playerName, playerId, clubId, playerLink, playerNote, last5MatchStatus
+	    );
+	    if (!comunioPlayerId.isBlank()) {
+	        result.setComunioPlayerId(comunioPlayerId);
+	    }
+	    return result;
 	}
 
 	@Override

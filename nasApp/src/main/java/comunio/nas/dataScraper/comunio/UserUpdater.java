@@ -29,47 +29,39 @@ import comunio.nas.util.HttpHeaderUtil;
 public class UserUpdater {
 
 	private static final Logger LOGGER = LogManager.getLogger(UserUpdater.class);
-	
+
 	/**
-	 * Aktualisiert alle Benutzer in der userMap basierend auf den aktuellen Standings
-	 * der Comunio-API.
+	 * Aktualisiert alle Benutzer in der userMap basierend auf den aktuellen
+	 * Standings der Comunio-API.
 	 *
-	 * @param lastUpdates       Objekt, das die Zeitpunkte der letzten Updates
-	 *                          enthält
-	 * @param playerDbObject    JSON-Objekt mit Spielerinformationen
-	 * @param marketValueDB     JSON-Array mit Marktwertinformationen
-	 * @param notInligaDBObj    JSON-Objekt mit Spielern, die nicht in der Liga sind
-	 * @param playerToUserMap   Map von playerId -> userId; alle Einträge, deren
-	 *                          Value der gelöschten userId entspricht, werden auf
-	 *                          "1" gesetzt (COMPUTER).
-	 * @param userMap           Map von userId -> User-Objekt, das aktualisiert
-	 *                          werden soll
-	 * @param community         Die Community, für die die Standings abgerufen
-	 *                          werden
-	 * @param matchdayInfo      Informationen zum aktuellen Spieltag (inkl. Punkte)
-	 * @param newsManager       Manager für News-Einträge
-	 * @param user              Der aktuelle Benutzer (optional, kann null sein)
+	 * @param lastUpdates     Objekt, das die Zeitpunkte der letzten Updates enthält
+	 * @param playerDbObject  JSON-Objekt mit Spielerinformationen
+	 * @param marketValueDB   JSON-Array mit Marktwertinformationen
+	 * @param notInligaDBObj  JSON-Objekt mit Spielern, die nicht in der Liga sind
+	 * @param playerToUserMap Map von playerId -> userId; alle Einträge, deren Value
+	 *                        der gelöschten userId entspricht, werden auf "1"
+	 *                        gesetzt (COMPUTER).
+	 * @param userMap         Map von userId -> User-Objekt, das aktualisiert werden
+	 *                        soll
+	 * @param community       Die Community, für die die Standings abgerufen werden
+	 * @param matchdayInfo    Informationen zum aktuellen Spieltag (inkl. Punkte)
+	 * @param newsManager     Manager für News-Einträge
+	 * @param user            Der aktuelle Benutzer (optional, kann null sein)
 	 */
 
 	public static void updateAllUsers(LastUpdates lastUpdates, JSONObject playerDbObject, JSONArray marketValueDB, JSONObject notInligaDBObj, Map<String, String> playerToUserMap, Map<String, User> userMap, Community community, MatchdayInfo matchdayInfo, NewsManager newsManager, User user) {
 
-		Instant now = Instant.now();
-		Instant lastUserUpdateInstant = lastUpdates.getUsers();
-		if (lastUserUpdateInstant == null) {
-			lastUserUpdateInstant = Instant.EPOCH; // Sehr alt, damit Update erzwungen wird
-		}
-		
+		boolean shouldProcess = matchdayInfo.isNewMatchday(lastUpdates.getLastUsersUpdateMatchday());
 		/**
 		 * Wenn die Anzahl der Mitglieder in der Community-Einstellung nicht mit der
 		 * Anzahl der Benutzer in userMap übereinstimmt, erzwinge ein Update, indem du
-		 * lastUserUpdateInstant auf Instant.EPOCH setzt.
+		 * dann auf jeden fall starten!
 		 */
-		if(ComunioDataUpdater.community != null && ComunioDataUpdater.community.getSettings() != null && ComunioDataUpdater.community.getSettings().getMembers() != (userMap.size() - 1)) {
-			lastUserUpdateInstant = Instant.EPOCH; // Sehr alt, damit Update erzwungen wird
+		if (ComunioDataUpdater.community != null && ComunioDataUpdater.community.getSettings() != null && ComunioDataUpdater.community.getSettings().getMembers() != (userMap.size() - 1)) {
+			shouldProcess = true;
 		}
-		ComunioDate lastUserUpdate = new ComunioDate(Date.from(lastUserUpdateInstant));
-
-		if (lastUserUpdate.before(new ComunioDate(Date.from(now)).addDays(-30))) {
+		shouldProcess = true;
+		if (shouldProcess) {
 			try {
 				JSONArray apiUsers = fetchStandingsAsArray(community);
 				if (apiUsers == null || apiUsers.length() == 0) {
@@ -98,7 +90,8 @@ public class UserUpdater {
 					LOGGER.info("COMPUTER-User automatisch hinzugefügt zur userDB.");
 				}
 
-				lastUpdates.setUsers(now);
+				lastUpdates.setUsers(Instant.now());
+				lastUpdates.setLastUsersUpdateMatchday(matchdayInfo.getCurrentMatchday());
 			} catch (Exception e) {
 				LOGGER.warning("Fehler in updateAllUsers: " + e.getMessage());
 			}
@@ -108,7 +101,6 @@ public class UserUpdater {
 		}
 
 	}
-
 
 	/**
 	 * 
@@ -577,7 +569,6 @@ public class UserUpdater {
 		}
 		return false;
 	}
-
 
 	/**
 	 * Aktualisiert die Punkte-Historie eines Users.

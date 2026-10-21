@@ -96,7 +96,7 @@ public class UpdaterContextData {
 		this.newsManager = NewsManager.fromJsonObject(newsDbObjcet);
 
 		LOGGER.info("Lade Userdatenbank von GitHub");
-		this.userMap = getUserMap();
+		this.userMap = getUserMapFromGit();
 
 		LOGGER.info("Lade UserLineup von GitHub");
 		JSONObject userLineupJson = LoadJSONfromFile.loadJsonObjectFromUrl(Urls.USER_LINEUPS);
@@ -191,12 +191,12 @@ public class UpdaterContextData {
 		
 	}
 
-	public Map<String, User> getUserMap() {
+	private Map<String, User> getUserMapFromGit() {
 		if (this.userMap == null) {
 			this.userMap = new HashMap<>();
 		}
 		try {
-			JSONArray userDB = LoadJSONfromFile.loadJsonArrayFromUrl(Urls.USER_DB_URL);
+			JSONArray userDB = LoadJSONfromFile.loadJsonArrayFromUrl(Urls.USER_DB_URL); // usermap wird übe4scdxhrieben!
 			for (int i = 0; i < userDB.length(); i++) {
 				JSONObject userJson = userDB.getJSONObject(i);
 				User u = User.fromJson(userJson);
@@ -205,7 +205,14 @@ public class UpdaterContextData {
 		} catch (Exception e) {
 			LOGGER.log(Level.SEVERE, "Fehler beim Laden der Userdatenbank: " + e.getMessage(), e);
 		}
-		return userMap;
+		return this.userMap;
+	}
+	
+	public Map<String, User> getUserMap() {
+		if(this.userMap == null || this.userMap.isEmpty()) {
+			getUserMapFromGit();
+		}
+		return this.userMap; 
 	}
 	
 	private JSONArray userMapToJSONArray(Map<String, User> userMap) {

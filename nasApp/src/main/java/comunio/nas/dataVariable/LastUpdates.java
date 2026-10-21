@@ -17,6 +17,7 @@ public class LastUpdates {
 	private Instant matchdayInfo;
 	private Instant news;
 	private Instant users;
+	private int lastUsersUpdateMatchday;
 	private Instant transfermarktList;
 	private Instant fussballdatenDe;
 	private Instant transfermarktDe;
@@ -57,6 +58,7 @@ public class LastUpdates {
 		this.clubDb = json.has("clubDb") ? Instant.ofEpochMilli(json.getLong("clubDb")) : null;
 		this.lastEspnMatchday = json.optInt("lastEspnMatchday", 0);
 		this.comstatsSpieltagsdaten = json.optInt("comstatsSpieltagsdaten", 0);
+		this.lastUsersUpdateMatchday = json.optInt("lastUsersUpdateMatchday", 0);
 
 		if (this.seasonStart != null && this.seasonStart.toEpochMilli() > 0) {
 			Dates.setSeasonStart(this.seasonStart);
@@ -114,6 +116,7 @@ public class LastUpdates {
 		}
 		json.put("lastEspnMatchday", this.lastEspnMatchday);
 		json.put("comstatsSpieltagsdaten", this.comstatsSpieltagsdaten);
+		json.put("lastUsersUpdateMatchday", this.lastUsersUpdateMatchday);
 		return json;
 
 	}
@@ -246,6 +249,16 @@ public class LastUpdates {
 
 	public void setComstatsSpieltagsdaten(int comstatsSpieltagsdaten) {
 		this.comstatsSpieltagsdaten = comstatsSpieltagsdaten;
+	}
+	
+	
+
+	public int getLastUsersUpdateMatchday() {
+		return lastUsersUpdateMatchday;
+	}
+
+	public void setLastUsersUpdateMatchday(int lastUsersUpdateMatchday) {
+		this.lastUsersUpdateMatchday = lastUsersUpdateMatchday;
 	}
 
 	/**
