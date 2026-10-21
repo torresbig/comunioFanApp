@@ -3301,16 +3301,19 @@
         "onMarket": false,
         "retired": false,
         "position": "MITTELFELD",
-        "attribute": {"ligainsiderRanking": {
-          "punkte": 114,
-          "einsaetzeBewertet": 4,
-          "durchschnittsnote": 4.25,
-          "verein": "Hamburger SV",
-          "lastUpdate": "26.09.2026",
-          "durchschnittsminuten": 94,
-          "durchschnittspunkte": 28.5,
-          "rang": 212
-        }},
+        "attribute": {
+          "ligainsiderRanking": {
+            "punkte": 114,
+            "einsaetzeBewertet": 4,
+            "durchschnittsnote": 4.25,
+            "verein": "Hamburger SV",
+            "lastUpdate": "26.09.2026",
+            "durchschnittsminuten": 94,
+            "durchschnittspunkte": 28.5,
+            "rang": 212
+          },
+          "SonstigeInfos": ["häufigsten Transfers (4)"]
+        },
         "possibleNames": [
           "nicolai remberg",
           "n. remberg",
