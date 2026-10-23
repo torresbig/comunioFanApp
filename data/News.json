@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "22.10.2026 22:00:12",
+  "lastUpdate": "23.10.2026 05:15:16",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -9181,6 +9181,17 @@
       ]
     },
     {
+      "date": "23.10.2026",
+      "news": [{
+        "date": "23.10.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Al-Dakhil\",\"price\":225000,\"buyerId\":\"13654613\",\"playerValue\":290000,\"playerId\":\"34050\",\"buyer\":\"Christoph\"}",
+        "id": "967638151",
+        "playerId": "34050"
+      }]
+    },
+    {
       "date": "23.09.2026",
       "news": [{
         "date": "23.09.2026",
@@ -9496,6 +9507,38 @@
           "text": "{\"playerName\":\"G. Orban\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34078\",\"newPos\":\"STURM\"}",
           "id": "0",
           "playerId": "34078"
+        },
+        {
+          "date": "22.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Schlieck\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"33664\",\"newPos\":\"TORHÜTER\"}",
+          "id": "0",
+          "playerId": "33664"
+        },
+        {
+          "date": "22.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"C. Gomis\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34388\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34388"
+        },
+        {
+          "date": "22.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"G. Orban\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34078\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34078"
+        },
+        {
+          "date": "22.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Christoph\",\"sellerId\":\"13654613\",\"playerName\":\"Wójcik\",\"price\":1569800,\"buyerId\":\"1\",\"playerValue\":1610000,\"playerId\":\"34472\",\"buyer\":\"Computer\"}",
+          "id": "967629641",
+          "playerId": "34472"
         }
       ]
     },
