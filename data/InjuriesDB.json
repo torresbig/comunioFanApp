@@ -17,20 +17,19 @@
       "status": "AUFBAUTRAINING"
     },
     "34186": {
-      "reason": "",
-      "lastNewsText": "Castrop soll nächste Woche voll einsteigen",
+      "reason": "Trainingsrückstand",
       "ligainsiderPlayerId": "24405",
       "playerName": "Jens Castrop",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-08-06T22:00:00Z",
+      "statusChangeString": "23.10.2026",
+      "sinceTimestamp": "2026-10-22T22:00:00Z",
       "abfrageTimestamp": "2026-10-21T08:00:44.985844498Z",
-      "sinceString": "2 Monaten und 2 Wochen",
+      "sinceString": "",
+      "statusChangeTimestamp": "2026-10-22T22:00:00Z",
       "comunioPlayerId": "34186",
       "playerLink": "https://www.ligainsider.de/jens-castrop_24405/",
-      "lastNewsLink": "https://www.ligainsider.de/jens-castrop_24405/castrop-soll-naechste-woche-voll-einsteigen-419257/",
       "quelle": "ligainsider",
       "club": "Borussia Mönchengladbach",
-      "status": "AUFBAUTRAINING"
+      "status": "NICHT_IM_KADER"
     },
     "34140": {
       "reason": "Muskelverletzung Oberschenkel",
@@ -46,6 +45,21 @@
       "lastNewsLink": "",
       "quelle": "ligainsider",
       "club": "1. FC Köln",
+      "status": "VERLETZT"
+    },
+    "34063": {
+      "reason": "",
+      "lastNewsText": "Claude-Maurice macht Fortschritte \u2013 Union wohl zu früh",
+      "ligainsiderPlayerId": "20630",
+      "playerName": "Alexis Claude-Maurice",
+      "sinceTimestamp": "2026-10-09T22:00:00Z",
+      "abfrageTimestamp": "2026-10-23T08:00:44.910093470Z",
+      "sinceString": "1 Woche und 6 Tagen",
+      "comunioPlayerId": "34063",
+      "playerLink": "https://www.ligainsider.de/alexis-claude-maurice_20630/",
+      "lastNewsLink": "https://www.ligainsider.de/alexis-claude-maurice_20630/claude-maurice-macht-fortschritte-ndash-union-wohl-zu-frueh-419445/",
+      "quelle": "ligainsider",
+      "club": "FC Augsburg",
       "status": "VERLETZT"
     },
     "34503": {
@@ -110,6 +124,21 @@
       "club": "SV Werder Bremen",
       "status": "VERLETZT"
     },
+    "34500": {
+      "reason": "",
+      "lastNewsText": "Schwere Zerrung: Fleck fällt aus",
+      "ligainsiderPlayerId": "38537",
+      "playerName": "Fritz Fleck",
+      "sinceTimestamp": "2026-10-14T22:00:00Z",
+      "abfrageTimestamp": "2026-10-23T08:00:44.927905135Z",
+      "sinceString": "1 Woche und 1 Tag",
+      "comunioPlayerId": "34500",
+      "playerLink": "https://www.ligainsider.de/fritz-fleck_38537/",
+      "lastNewsLink": "https://www.ligainsider.de/fritz-fleck_38537/schwere-zerrung-fleck-faellt-aus-419254/",
+      "quelle": "ligainsider",
+      "club": "Borussia Mönchengladbach",
+      "status": "VERLETZT"
+    },
     "34389": {
       "reason": "Achillessehnenverletzung",
       "lastNewsText": "",
@@ -143,20 +172,19 @@
       "status": "NICHT_IM_KADER"
     },
     "33453": {
-      "reason": "",
-      "lastNewsText": "Ljubičić sieht schlechte Chancen für Köln-Spiel",
+      "reason": "Trainingsrückstand",
       "ligainsiderPlayerId": "24396",
       "playerName": "Dejan Ljubičić",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-09-13T22:00:00Z",
+      "statusChangeString": "23.10.2026",
+      "sinceTimestamp": "2026-10-22T22:00:00Z",
       "abfrageTimestamp": "2026-10-21T08:00:45.004454225Z",
-      "sinceString": "1 Monat und 1 Woche",
+      "sinceString": "",
+      "statusChangeTimestamp": "2026-10-22T22:00:00Z",
       "comunioPlayerId": "33453",
       "playerLink": "https://www.ligainsider.de/dejan-ljubicic_24396/",
-      "lastNewsLink": "https://www.ligainsider.de/dejan-ljubicic_24396/ljubi-i-sieht-schlechte-chancen-fuer-koeln-spiel-419311/",
       "quelle": "ligainsider",
       "club": "FC Schalke 04",
-      "status": "AUFBAUTRAINING"
+      "status": "NICHT_IM_KADER"
     },
     "34267": {
       "reason": "Muskelverletzung",
@@ -189,6 +217,66 @@
       "quelle": "ligainsider",
       "club": "Bayer 04 Leverkusen",
       "status": "VERLETZT"
+    },
+    "34387": {
+      "reason": "",
+      "lastNewsText": "Sylla fehlt weiter im Training",
+      "ligainsiderPlayerId": "16217",
+      "playerName": "Moussa Sylla",
+      "sinceTimestamp": "2026-10-10T22:00:00Z",
+      "abfrageTimestamp": "2026-10-23T08:00:44.954681946Z",
+      "sinceString": "1 Woche und 5 Tagen",
+      "comunioPlayerId": "34387",
+      "playerLink": "https://www.ligainsider.de/moussa-sylla_16217/",
+      "lastNewsLink": "https://www.ligainsider.de/moussa-sylla_16217/sylla-fehlt-weiter-im-training-419491/",
+      "quelle": "ligainsider",
+      "club": "FC Schalke 04",
+      "status": "VERLETZT"
+    },
+    "32120": {
+      "reason": "",
+      "lastNewsText": "Stark bricht Werder-Training angeschlagen ab",
+      "ligainsiderPlayerId": "2441",
+      "playerName": "Niklas Stark",
+      "sinceTimestamp": "2026-10-19T22:00:00Z",
+      "abfrageTimestamp": "2026-10-23T08:00:44.947203838Z",
+      "sinceString": "3 Tagen",
+      "comunioPlayerId": "32120",
+      "playerLink": "https://www.ligainsider.de/niklas-stark_2441/",
+      "lastNewsLink": "https://www.ligainsider.de/niklas-stark_2441/stark-bricht-werder-training-angeschlagen-ab-419443/",
+      "quelle": "ligainsider",
+      "club": "SV Werder Bremen",
+      "status": "VERLETZT"
+    },
+    "32880": {
+      "reason": "",
+      "lastNewsText": "Stuttgart muss auf Vagnoman verzichten",
+      "ligainsiderPlayerId": "18427",
+      "playerName": "Josha Vagnoman",
+      "sinceTimestamp": "2026-10-19T22:00:00Z",
+      "abfrageTimestamp": "2026-10-23T08:00:44.878777342Z",
+      "sinceString": "3 Tagen",
+      "comunioPlayerId": "32880",
+      "playerLink": "https://www.ligainsider.de/josha-vagnoman_18427/",
+      "lastNewsLink": "https://www.ligainsider.de/josha-vagnoman_18427/stuttgart-muss-auf-vagnoman-verzichten-419485/",
+      "quelle": "ligainsider",
+      "club": "VfB Stuttgart",
+      "status": "VERLETZT"
+    },
+    "33817": {
+      "reason": "",
+      "lastNewsText": "Trotz Fortschritten: Honorat verpasst auch Hoffenheim",
+      "ligainsiderPlayerId": "23248",
+      "playerName": "Franck Honorat",
+      "sinceTimestamp": "2026-10-01T22:00:00Z",
+      "abfrageTimestamp": "2026-10-23T08:00:44.924270393Z",
+      "sinceString": "3 Wochen",
+      "comunioPlayerId": "33817",
+      "playerLink": "https://www.ligainsider.de/franck-honorat_23248/",
+      "lastNewsLink": "https://www.ligainsider.de/franck-honorat_23248/trotz-fortschritten-honorat-verpasst-auch-hoffenheim-419256/",
+      "quelle": "ligainsider",
+      "club": "Borussia Mönchengladbach",
+      "status": "AUFBAUTRAINING"
     },
     "31959": {
       "reason": "",
@@ -254,6 +342,19 @@
       "club": "Borussia Dortmund",
       "status": "VERLETZT"
     },
+    "32190": {
+      "comunioPlayerId": "32190",
+      "reason": "Muskuläre Probleme",
+      "playerLink": "https://www.ligainsider.de/kenan-karaman_2676/",
+      "ligainsiderPlayerId": "2676",
+      "playerName": "Kenan Karaman",
+      "sinceTimestamp": "2026-10-22T22:00:00Z",
+      "abfrageTimestamp": "2026-10-23T08:00:44.953095654Z",
+      "quelle": "ligainsider",
+      "club": "FC Schalke 04",
+      "sinceString": "Gestern",
+      "status": "VERLETZT"
+    },
     "32599": {
       "reason": "",
       "lastNewsText": "Kleindienst bricht Training erneut ab",
@@ -268,6 +369,21 @@
       "lastNewsLink": "https://www.ligainsider.de/tim-kleindienst_6321/kleindienst-bricht-training-erneut-ab-419123/",
       "quelle": "ligainsider",
       "club": "Borussia Mönchengladbach",
+      "status": "VERLETZT"
+    },
+    "32830": {
+      "reason": "",
+      "lastNewsText": "Nartey vor Kader-Comeback gegen Atlético",
+      "ligainsiderPlayerId": "13737",
+      "playerName": "Nikolas Nartey",
+      "sinceTimestamp": "2026-10-02T22:00:00Z",
+      "abfrageTimestamp": "2026-10-23T08:00:44.884421865Z",
+      "sinceString": "2 Wochen und 6 Tagen",
+      "comunioPlayerId": "32830",
+      "playerLink": "https://www.ligainsider.de/nikolas-nartey_13737/",
+      "lastNewsLink": "https://www.ligainsider.de/nikolas-nartey_13737/nartey-vor-kader-comeback-gegen-atletico-419383/",
+      "quelle": "ligainsider",
+      "club": "VfB Stuttgart",
       "status": "VERLETZT"
     },
     "34017": {
@@ -332,6 +448,21 @@
       "lastNewsLink": "",
       "quelle": "ligainsider",
       "club": "FC Schalke 04",
+      "status": "VERLETZT"
+    },
+    "33687": {
+      "reason": "",
+      "lastNewsText": "Njinmah meldet sich im Werder-Training zurück",
+      "ligainsiderPlayerId": "27480",
+      "playerName": "Justin Njinmah",
+      "sinceTimestamp": "2026-09-01T22:00:00Z",
+      "abfrageTimestamp": "2026-10-23T08:00:44.948147303Z",
+      "sinceString": "1 Monat und 3 Wochen",
+      "comunioPlayerId": "33687",
+      "playerLink": "https://www.ligainsider.de/justin-njinmah_27480/",
+      "lastNewsLink": "https://www.ligainsider.de/justin-njinmah_27480/njinmah-meldet-sich-im-werder-training-zurueck-419413/",
+      "quelle": "ligainsider",
+      "club": "SV Werder Bremen",
       "status": "VERLETZT"
     },
     "34059": {
@@ -430,34 +561,19 @@
     },
     "33592": {
       "reason": "",
-      "lastNewsText": "Itakura-Einsatz entscheidet sich kurzfristig",
+      "lastNewsText": "Itakura ist \u201enächste oder übernächste Woche\u201c zurück",
       "ligainsiderPlayerId": "27204",
       "playerName": "Kō Itakura",
-      "statusChangeString": "",
+      "statusChangeString": "23.10.2026",
       "sinceTimestamp": "2026-10-04T22:00:00Z",
       "abfrageTimestamp": "2026-10-12T08:00:44.636579402Z",
-      "sinceString": "1 Woche",
+      "sinceString": "2 Wochen und 4 Tagen",
+      "statusChangeTimestamp": "2026-10-22T22:00:00Z",
       "comunioPlayerId": "33592",
       "playerLink": "https://www.ligainsider.de/ko-itakura_27204/",
-      "lastNewsLink": "https://www.ligainsider.de/ko-itakura_27204/itakura-einsatz-entscheidet-sich-kurzfristig-418873/",
+      "lastNewsLink": "https://www.ligainsider.de/ko-itakura_27204/itakura-ist-bdquo-naechste-oder-uebernaechste-woche-ldquo-zurueck-419258/",
       "quelle": "ligainsider",
       "club": "Borussia Mönchengladbach",
-      "status": "VERLETZT"
-    },
-    "34483": {
-      "reason": "",
-      "lastNewsText": "Faserriss: Daka fehlt dem HSV mehrere Wochen",
-      "ligainsiderPlayerId": "16774",
-      "playerName": "Patson Daka",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-09-24T22:00:00Z",
-      "abfrageTimestamp": "2026-10-07T08:00:44.268454255Z",
-      "sinceString": "1 Woche und 5 Tagen",
-      "comunioPlayerId": "34483",
-      "playerLink": "https://www.ligainsider.de/patson-daka_16774/",
-      "lastNewsLink": "https://www.ligainsider.de/patson-daka_16774/faserriss-daka-fehlt-dem-hsv-mehrere-wochen-418637/",
-      "quelle": "ligainsider",
-      "club": "Hamburger SV",
       "status": "AUFBAUTRAINING"
     },
     "34448": {
@@ -472,6 +588,21 @@
       "quelle": "comunio",
       "club": "",
       "sinceString": "",
+      "status": "VERLETZT"
+    },
+    "33831": {
+      "reason": "",
+      "lastNewsText": "Wöber fällt bis auf Weiteres aus",
+      "ligainsiderPlayerId": "11916",
+      "playerName": "Maximilian Wöber",
+      "sinceTimestamp": "2026-10-19T22:00:00Z",
+      "abfrageTimestamp": "2026-10-23T08:00:44.949528485Z",
+      "sinceString": "3 Tagen",
+      "comunioPlayerId": "33831",
+      "playerLink": "https://www.ligainsider.de/maximilian-woeber_11916/",
+      "lastNewsLink": "https://www.ligainsider.de/maximilian-woeber_11916/woeber-faellt-bis-auf-weiteres-aus-419488/",
+      "quelle": "ligainsider",
+      "club": "FC Schalke 04",
       "status": "VERLETZT"
     },
     "34403": {
@@ -505,6 +636,21 @@
       "lastNewsLink": "https://www.ligainsider.de/tiago-tomas_24512/vor-atletico-duell-tomas-arbeitet-individuell-419377/",
       "quelle": "ligainsider",
       "club": "VfB Stuttgart",
+      "status": "VERLETZT"
+    },
+    "34447": {
+      "reason": "",
+      "lastNewsText": "Lidberg-Blessur: Blessin erklärt Auswechslung",
+      "ligainsiderPlayerId": "37438",
+      "playerName": "Isac Lidberg",
+      "sinceTimestamp": "2026-10-17T22:00:00Z",
+      "abfrageTimestamp": "2026-10-23T08:00:44.926669221Z",
+      "sinceString": "5 Tagen",
+      "comunioPlayerId": "34447",
+      "playerLink": "https://www.ligainsider.de/isac-lidberg_37438/",
+      "lastNewsLink": "https://www.ligainsider.de/isac-lidberg_37438/lidberg-blessur-blessin-erklaert-auswechslung-419369/",
+      "quelle": "ligainsider",
+      "club": "Borussia Mönchengladbach",
       "status": "VERLETZT"
     },
     "34369": {
@@ -666,6 +812,19 @@
       "club": "SC Paderborn 07",
       "status": "AUFBAUTRAINING"
     },
+    "34408": {
+      "comunioPlayerId": "34408",
+      "reason": "Trainingsrückstand",
+      "playerLink": "https://www.ligainsider.de/sebastian-klaas_15795/",
+      "ligainsiderPlayerId": "15795",
+      "playerName": "Sebastian Klaas",
+      "sinceTimestamp": "2026-10-22T22:00:00Z",
+      "abfrageTimestamp": "2026-10-23T08:00:44.963461776Z",
+      "quelle": "ligainsider",
+      "club": "SC Paderborn 07",
+      "sinceString": "",
+      "status": "NICHT_IM_KADER"
+    },
     "32744": {
       "reason": "Knieverletzung",
       "lastNewsText": "",
@@ -713,6 +872,21 @@
       "quelle": "ligainsider",
       "club": "TSG Hoffenheim",
       "status": "VERLETZT"
+    },
+    "33263": {
+      "reason": "",
+      "lastNewsText": "Teiltraining: Ache zurück auf dem Platz",
+      "ligainsiderPlayerId": "23720",
+      "playerName": "Ragnar Ache",
+      "sinceTimestamp": "2026-10-02T22:00:00Z",
+      "abfrageTimestamp": "2026-10-23T08:00:44.939257914Z",
+      "sinceString": "2 Wochen und 6 Tagen",
+      "comunioPlayerId": "33263",
+      "playerLink": "https://www.ligainsider.de/ragnar-ache_23720/",
+      "lastNewsLink": "https://www.ligainsider.de/ragnar-ache_23720/teiltraining-ache-zurueck-auf-dem-platz-419371/",
+      "quelle": "ligainsider",
+      "club": "1. FC Köln",
+      "status": "AUFBAUTRAINING"
     },
     "34074": {
       "reason": "Bauchmuskelverletzung",
@@ -795,6 +969,19 @@
       "quelle": "ligainsider",
       "club": "SV Werder Bremen",
       "status": "AUFBAUTRAINING"
+    },
+    "32771": {
+      "comunioPlayerId": "32771",
+      "reason": "Trainingsrückstand",
+      "playerLink": "https://www.ligainsider.de/nicolas-kuehn_13968/",
+      "ligainsiderPlayerId": "13968",
+      "playerName": "Nicolas Kühn",
+      "sinceTimestamp": "2026-10-22T22:00:00Z",
+      "abfrageTimestamp": "2026-10-23T08:00:44.929000974Z",
+      "quelle": "ligainsider",
+      "club": "Borussia Mönchengladbach",
+      "sinceString": "",
+      "status": "NICHT_IM_KADER"
     },
     "34234": {
       "reason": "",
@@ -894,7 +1081,7 @@
       "status": "AUFBAUTRAINING"
     }
   },
-  "lastUpdate": "2026-10-22T08:00:59.718559182Z",
+  "lastUpdate": "2026-10-23T08:00:57.039104010Z",
   "history": {
     "33808": [{
       "reason": "",
@@ -912,21 +1099,38 @@
       "club": "FC Augsburg",
       "status": "AUFBAUTRAINING"
     }],
-    "34186": [{
-      "reason": "",
-      "lastNewsText": "",
-      "ligainsiderPlayerId": "",
-      "playerName": "",
-      "statusChangeString": "19.10.2026",
-      "sinceString": "",
-      "statusChangeTimestamp": "2026-10-18T22:00:00Z",
-      "comunioPlayerId": "34186",
-      "playerLink": "",
-      "lastNewsLink": "",
-      "quelle": "comunio",
-      "club": "",
-      "status": "AUFBAUTRAINING"
-    }],
+    "34186": [
+      {
+        "reason": "",
+        "lastNewsText": "",
+        "ligainsiderPlayerId": "",
+        "playerName": "",
+        "statusChangeString": "19.10.2026",
+        "sinceString": "",
+        "statusChangeTimestamp": "2026-10-18T22:00:00Z",
+        "comunioPlayerId": "34186",
+        "playerLink": "",
+        "lastNewsLink": "",
+        "quelle": "comunio",
+        "club": "",
+        "status": "AUFBAUTRAINING"
+      },
+      {
+        "reason": "Trainingsrückstand",
+        "ligainsiderPlayerId": "24405",
+        "playerName": "Jens Castrop",
+        "statusChangeString": "23.10.2026",
+        "sinceTimestamp": "2026-10-22T22:00:00Z",
+        "abfrageTimestamp": "2026-10-21T08:00:44.985844498Z",
+        "sinceString": "",
+        "statusChangeTimestamp": "2026-10-22T22:00:00Z",
+        "comunioPlayerId": "34186",
+        "playerLink": "https://www.ligainsider.de/jens-castrop_24405/",
+        "quelle": "ligainsider",
+        "club": "Borussia Mönchengladbach",
+        "status": "NICHT_IM_KADER"
+      }
+    ],
     "34184": [{
       "reason": "",
       "lastNewsText": "",
@@ -1470,6 +1674,23 @@
       "quelle": "ligainsider",
       "club": "SC Freiburg",
       "status": "VERLETZT"
+    }],
+    "33592": [{
+      "reason": "",
+      "lastNewsText": "Itakura ist \u201enächste oder übernächste Woche\u201c zurück",
+      "ligainsiderPlayerId": "27204",
+      "playerName": "Kō Itakura",
+      "statusChangeString": "23.10.2026",
+      "sinceTimestamp": "2026-10-04T22:00:00Z",
+      "abfrageTimestamp": "2026-10-12T08:00:44.636579402Z",
+      "sinceString": "2 Wochen und 4 Tagen",
+      "statusChangeTimestamp": "2026-10-22T22:00:00Z",
+      "comunioPlayerId": "33592",
+      "playerLink": "https://www.ligainsider.de/ko-itakura_27204/",
+      "lastNewsLink": "https://www.ligainsider.de/ko-itakura_27204/itakura-ist-bdquo-naechste-oder-uebernaechste-woche-ldquo-zurueck-419258/",
+      "quelle": "ligainsider",
+      "club": "Borussia Mönchengladbach",
+      "status": "AUFBAUTRAINING"
     }],
     "34285": [{
       "reason": "Muskelverletzung",
@@ -2340,6 +2561,21 @@
         "quelle": "ligainsider",
         "club": "FC Schalke 04",
         "status": "AUFBAUTRAINING"
+      },
+      {
+        "reason": "Trainingsrückstand",
+        "ligainsiderPlayerId": "24396",
+        "playerName": "Dejan Ljubičić",
+        "statusChangeString": "23.10.2026",
+        "sinceTimestamp": "2026-10-22T22:00:00Z",
+        "abfrageTimestamp": "2026-10-21T08:00:45.004454225Z",
+        "sinceString": "",
+        "statusChangeTimestamp": "2026-10-22T22:00:00Z",
+        "comunioPlayerId": "33453",
+        "playerLink": "https://www.ligainsider.de/dejan-ljubicic_24396/",
+        "quelle": "ligainsider",
+        "club": "FC Schalke 04",
+        "status": "NICHT_IM_KADER"
       }
     ],
     "34267": [{
@@ -2757,23 +2993,42 @@
       "club": "",
       "status": "VERLETZT"
     }],
-    "34483": [{
-      "reason": "",
-      "lastNewsText": "Erste Entwarnung bei Daka",
-      "ligainsiderPlayerId": "16774",
-      "playerName": "Patson Daka",
-      "statusChangeString": "06.10.2026",
-      "sinceTimestamp": "2026-09-24T22:00:00Z",
-      "abfrageTimestamp": "2026-10-03T08:00:42.515925528Z",
-      "sinceString": "1 Woche und 1 Tag",
-      "statusChangeTimestamp": "2026-10-05T22:00:00Z",
-      "comunioPlayerId": "34483",
-      "playerLink": "https://www.ligainsider.de/patson-daka_16774/",
-      "lastNewsLink": "https://www.ligainsider.de/patson-daka_16774/erste-entwarnung-bei-daka-418612/",
-      "quelle": "ligainsider",
-      "club": "Hamburger SV",
-      "status": "VERLETZT"
-    }],
+    "34483": [
+      {
+        "reason": "",
+        "lastNewsText": "Erste Entwarnung bei Daka",
+        "ligainsiderPlayerId": "16774",
+        "playerName": "Patson Daka",
+        "statusChangeString": "06.10.2026",
+        "sinceTimestamp": "2026-09-24T22:00:00Z",
+        "abfrageTimestamp": "2026-10-03T08:00:42.515925528Z",
+        "sinceString": "1 Woche und 1 Tag",
+        "statusChangeTimestamp": "2026-10-05T22:00:00Z",
+        "comunioPlayerId": "34483",
+        "playerLink": "https://www.ligainsider.de/patson-daka_16774/",
+        "lastNewsLink": "https://www.ligainsider.de/patson-daka_16774/erste-entwarnung-bei-daka-418612/",
+        "quelle": "ligainsider",
+        "club": "Hamburger SV",
+        "status": "VERLETZT"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "Faserriss: Daka fehlt dem HSV mehrere Wochen",
+        "ligainsiderPlayerId": "16774",
+        "playerName": "Patson Daka",
+        "statusChangeString": "23.10.2026",
+        "sinceTimestamp": "2026-09-24T22:00:00Z",
+        "abfrageTimestamp": "2026-10-07T08:00:44.268454255Z",
+        "sinceString": "1 Woche und 5 Tagen",
+        "statusChangeTimestamp": "2026-10-22T22:00:00Z",
+        "comunioPlayerId": "34483",
+        "playerLink": "https://www.ligainsider.de/patson-daka_16774/",
+        "lastNewsLink": "https://www.ligainsider.de/patson-daka_16774/faserriss-daka-fehlt-dem-hsv-mehrere-wochen-418637/",
+        "quelle": "ligainsider",
+        "club": "Hamburger SV",
+        "status": "AUFBAUTRAINING"
+      }
+    ],
     "34084": [
       {
         "reason": "",
