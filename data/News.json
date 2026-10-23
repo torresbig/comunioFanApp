@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "23.10.2026 16:47:58",
+  "lastUpdate": "23.10.2026 17:28:34",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -9398,6 +9398,38 @@
           "text": "Neuer Spieler: Ben Seghir (ID: 34285)",
           "id": "0",
           "playerId": "34285"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Schlieck\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"33664\",\"newPos\":\"TORHÜTER\"}",
+          "id": "0",
+          "playerId": "33664"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"C. Gomis\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34388\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34388"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"G. Orban\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34078\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34078"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "TRANSFER_STORNO",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"stornoFrom\":\"Sascha\",\"playerName\":\"Okon-Engstler\",\"price\":7466000,\"buyerId\":\"9317431\",\"playerId\":\"34484\",\"buyer\":\"Andi\"}",
+          "id": "967664105",
+          "playerId": "34484"
         }
       ]
     },
