@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "23.10.2026 05:15:16",
+  "lastUpdate": "23.10.2026 10:00:57",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -9182,14 +9182,192 @@
     },
     {
       "date": "23.10.2026",
-      "news": [{
-        "date": "23.10.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Al-Dakhil\",\"price\":225000,\"buyerId\":\"13654613\",\"playerValue\":290000,\"playerId\":\"34050\",\"buyer\":\"Christoph\"}",
-        "id": "967638151",
-        "playerId": "34050"
-      }]
+      "news": [
+        {
+          "date": "23.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Al-Dakhil\",\"price\":225000,\"buyerId\":\"13654613\",\"playerValue\":290000,\"playerId\":\"34050\",\"buyer\":\"Christoph\"}",
+          "id": "967638151",
+          "playerId": "34050"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Schlieck\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"33664\",\"newPos\":\"TORHÜTER\"}",
+          "id": "0",
+          "playerId": "33664"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"C. Gomis\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34388\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34388"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"G. Orban\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34078\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34078"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Ben Seghir\",\"newClub\":\"8\",\"oldClub\":\"0\",\"playerID\":\"34285\"}",
+          "id": "0",
+          "playerId": "34285"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Josha Vagnoman (32880) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "32880"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Nikolas Nartey (32830) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "32830"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Franck Honorat (33817) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "33817"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kō Itakura (33592) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "33592"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Isac Lidberg (34447) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34447"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Fritz Fleck (34500) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34500"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Nicolas Kühn (32771) ist jetzt NICHT_IM_KADER",
+          "id": "0",
+          "playerId": "32771"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jens Castrop (34186) ist jetzt NICHT_IM_KADER",
+          "id": "0",
+          "playerId": "34186"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Maximilian Wöber (33831) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33831"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kenan Karaman (32190) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "32190"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Moussa Sylla (34387) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34387"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Dejan Ljubičić (33453) ist jetzt NICHT_IM_KADER",
+          "id": "0",
+          "playerId": "33453"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Alexis Claude-Maurice (34063) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34063"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Niklas Stark (32120) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "32120"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Justin Njinmah (33687) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33687"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Sebastian Klaas (34408) ist jetzt NICHT_IM_KADER",
+          "id": "0",
+          "playerId": "34408"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ragnar Ache (33263) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "33263"
+        },
+        {
+          "date": "23.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Patson Daka (34483) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34483"
+        }
+      ]
     },
     {
       "date": "23.09.2026",
