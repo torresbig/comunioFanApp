@@ -10,6 +10,7 @@ import java.util.logging.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import comunio.nas.objects.club.ClubObject;
 import comunio.nas.objects.espn.EspnClubMapObject;
 import comunio.nas.objects.helper.LogManager;
 
@@ -55,7 +56,7 @@ public class EspnRosterCollector {
 	 * @return JSONObject mit den aufbereiteten Spielern (für
 	 *         Tests/Weiterverarbeitung)
 	 */
-	public static JSONObject collectAllRosters(Map<String, EspnClubMapObject> espnToComunioClubMap, JSONArray clubDB) throws IOException, InterruptedException {
+	public static JSONObject collectAllRosters(Map<String, EspnClubMapObject> espnToComunioClubMap, Map<String, ClubObject> clubDb) throws IOException, InterruptedException {
 		JSONObject result = new JSONObject();
 		JSONArray players = new JSONArray();
 		JSONArray teams = new JSONArray();
@@ -117,8 +118,8 @@ public class EspnRosterCollector {
 		Files.write(Paths.get(PLAYER_EXPORT_FILE), result.toString(2).getBytes(StandardCharsets.UTF_8));
 		LOGGER.info("ESPN-Spieler gespeichert: " + PLAYER_EXPORT_FILE + " (" + players.length() + " Spieler)");
 
-		if (clubDB != null) {
-			JSONObject mapping = EspnClubMapper.buildMappingJson(espnTeams, clubDB);
+		if (clubDb != null) {
+			JSONObject mapping = EspnClubMapper.buildMappingJson(espnTeams, clubDb);
 			Files.write(Paths.get(MAPPING_EXPORT_FILE), mapping.toString(2).getBytes(StandardCharsets.UTF_8));
 			LOGGER.info("ESPN-Mapping gespeichert: " + MAPPING_EXPORT_FILE);
 		}

@@ -22,6 +22,7 @@ import comunio.nas.objects.club.ClubDbContainer;
 import comunio.nas.objects.club.ClubObject;
 import comunio.nas.objects.espn.EspnClubContainer;
 import comunio.nas.objects.espn.EspnPlayerContainer;
+import comunio.nas.objects.fotmob.FotmobContainer;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.player.PointsDbContainer;
 import comunio.nas.objects.user.User;
@@ -43,8 +44,10 @@ public class UpdaterContextData {
 	private JSONObject notInligaDBObj;
 	private ComunioTransfermarketContainer comunioTransfermarktContainer;
 	private Map<String, String> playerToUserMap;
-//	private StatusManager statusManager;
 	public static Set<String> ownerList = new HashSet<>();
+	
+	// fotmob
+	private FotmobContainer fotmobContainer; 
 
 
 	// Ligainsider
@@ -120,6 +123,10 @@ public class UpdaterContextData {
 		LOGGER.info("Lade ESPN Player-Mapping von GitHub");
 		JSONObject espnPlayerMapping = LoadJSONfromFile.loadJsonObjectFromUrl(Urls.ESPN_PLAYER_MAPPING_URL);
 		this.espnPlayerMappingContainer = EspnPlayerContainer.fromJson(espnPlayerMapping);
+		
+		LOGGER.info("Lade Fotmob daten von GitHub");
+		JSONObject fobmobMapping = LoadJSONfromFile.loadJsonObjectFromUrl(Urls.FOBMOB_DATA_URL);
+		this.fotmobContainer = FotmobContainer.fromJson(fobmobMapping);
 
 		LOGGER.info("Mögliche Aufstellung von GitHub");
 		JSONObject possibleFormation = LoadJSONfromFile.loadJsonObjectFromUrl(Urls.POSSIBLE_FORMATIOKN);
@@ -369,6 +376,14 @@ public class UpdaterContextData {
 
 	public void setOwnerList(Set<String> ownerList) {
 		UpdaterContextData.ownerList = ownerList;
+	}
+
+	public FotmobContainer getFotmobContainer() {
+		return fotmobContainer;
+	}
+
+	public void setFotmobContainer(FotmobContainer fotmobContainer) {
+		this.fotmobContainer = fotmobContainer;
 	}
 
 }

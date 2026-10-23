@@ -21,6 +21,7 @@ import comunio.nas.objects.user.User;
 import comunio.nas.objects.user.UserInfo;
 import comunio.nas.util.HttpHeaderUtil;
 import comunio.nas.util.player.PlayerHelper;
+import comunio.nas.util.player.PlayerMatcher;
 
 public class TeamsFromUser {
 
@@ -145,7 +146,7 @@ public class TeamsFromUser {
 					}
 
 					playerToUserDB.put(id, userID);
-					JSONObject player = PlayerHelper.findPlayerByComunioId(playerDB, id, notInligaDBObj);
+					JSONObject player = PlayerMatcher.findPlayerByComunioId(playerDB, id, notInligaDBObj);
 					if(player == null) {
 						LOGGER.warning("Spieler mit ID " + id + " und Name " + name + " konnte in der DB nicht gefunden werden.");
 						player = PlayerHelper.createNewEmptyPlayerJSON(id, name);

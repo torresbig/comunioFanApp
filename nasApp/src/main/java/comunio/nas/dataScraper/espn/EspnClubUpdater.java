@@ -4,9 +4,9 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 
+import comunio.nas.objects.club.ClubObject;
 import comunio.nas.objects.espn.EspnClubMapObject;
 import comunio.nas.objects.helper.LogManager;
 
@@ -14,7 +14,7 @@ public class EspnClubUpdater {
 
 	private static final Logger LOGGER = LogManager.getLogger(EspnClubUpdater.class);
 
-	public static Map<String, EspnClubMapObject> updateEspnToComunioClubMap(JSONArray clubDB) {
+	public static Map<String, EspnClubMapObject> updateEspnToComunioClubMap(Map<String, ClubObject> clubDb) {
 		JSONObject espnTeams = null;
 		try {
 			espnTeams = EspnApiClient.getTeams();
@@ -23,7 +23,7 @@ public class EspnClubUpdater {
 			LOGGER.severe("Fehler beim Abrufen der ESPN-Teams: " + e.getMessage());
 			e.printStackTrace();
 		}
-		Map<String, EspnClubMapObject> espnToComunio = EspnClubMapper.buildEspnToComunioClubMap(espnTeams, clubDB);
+		Map<String, EspnClubMapObject> espnToComunio = EspnClubMapper.buildEspnToComunioClubMap(espnTeams, clubDb);
 				
 		return espnToComunio;
 	}

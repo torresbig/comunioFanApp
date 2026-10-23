@@ -2,11 +2,22 @@ package comunio.nas.util;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
+import java.util.HashSet;
+import java.util.Arrays;
+import java.util.logging.Logger;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import comunio.nas.objects.club.ClubObject;
+import comunio.nas.objects.helper.LogManager;
+
 public class ClubMapper {
+	
+	private static final Logger LOGGER = LogManager.getLogger(ClubMapper.class);
+
+	
 	public static Map<String, String> getClubMapDbIdToTmName(JSONArray clubsMapping) {
 		// Vereine-Mapping aufbauen
 		Map<String, String> dbIdToTmName = new HashMap<>();
@@ -37,33 +48,56 @@ public class ClubMapper {
 		return dbIdToTmName;
 	}
 
-	public static String getClubnameFromComunioId(String id, JSONArray clubsMapping) {
-		for (int i = 0; i < clubsMapping.length(); i++) {
-			JSONObject club = clubsMapping.getJSONObject(i);
-			String dbId = club.optString("id", "");
+	public static String getClubnameFromComunioId(String id,  Map<String, ClubObject> clubDb) {
+		for (Map.Entry<String, ClubObject> entry : clubDb.entrySet()) {
+			ClubObject clubo = entry.getValue();
+			String dbId = clubo.getId();
 			if (id.equals(dbId)) {
-				return club.getString("name");
+				return clubo.getName();
 			}
 		}
 		return "";
 	}
 
-	public static String getComunioIdFromName(String clubName, JSONArray clubsMapping) {
-		JSONObject club = getComunioClubJSONFromName(clubName, clubsMapping);
-		if (club != null && !club.isEmpty()) {
-			return club.getString("id");
+//	public static String getComunioIdFromName(String clubName, JSONArray clubsMapping) {
+//		JSONObject club = getComunioClubJSONFromName(clubName, clubsMapping);
+//		if (club != null && !club.isEmpty()) {
+//			return club.getString("id");
+//		}
+//		return null;
+//	}
+
+	public static String getComunioIdFromName(String clubName, Map<String, ClubObject> clubDb) {
+		if(clubName == null || clubName.isBlank() || clubDb == null || clubDb.isEmpty()) {
+			LOGGER.warning("fehler bei den Inputdaten für das Clubmapping");
+			return null;
+		}
+		
+		String v1 = normalizeClubName(clubName);
+
+		for (Map.Entry<String, ClubObject> entry : clubDb.entrySet()) {
+			ClubObject clubo = entry.getValue();
+			String v2 = normalizeClubName(clubo.getName());
+			if (v1.equals(v2)) {
+				return clubo.getId();
+			}
 		}
 		return null;
 	}
-
-	public static JSONObject getComunioClubJSONFromName(String clubName, JSONArray clubsMapping) {
+	
+	public static ClubObject getComunioClubObjectFromName(String clubName, Map<String, ClubObject> clubDb) {
+		if(clubName == null || clubName.isBlank() || clubDb == null || clubDb.isEmpty()) {
+			LOGGER.warning("fehler bei den Inputdaten für das Clubmapping");
+			return null;
+		}
+		
 		String v1 = normalizeClubName(clubName);
 
-		for (int i = 0; i < clubsMapping.length(); i++) {
-			JSONObject club = clubsMapping.getJSONObject(i);
-			String v2 = normalizeClubName(club.optString("name", ""));
+		for (Map.Entry<String, ClubObject> entry : clubDb.entrySet()) {
+			ClubObject clubo = entry.getValue();
+			String v2 = normalizeClubName(clubo.getName());
 			if (v1.equals(v2)) {
-				return club;
+				return clubo;
 			}
 		}
 		return null;
@@ -148,14 +182,38 @@ public class ClubMapper {
 	public static String normalizeClubName(String name) {
 		if (name == null)
 			return "";
-		// Alles zu Kleinbuchstaben
-		String cleaned = name.toLowerCase();
-		// Entferne Zahlen, Bindestriche, Punkte, Leerzeichen
-		cleaned = cleaned.replaceAll("[0-9\\-\\. ]+", "");
-		// Entferne typische Präfixe am Anfang, egal ob mit Punkt, Leerzeichen, etc.
-		cleaned = cleaned.replaceAll("^(1\\.?\\s*fc|fc|sv|tsg|borussia|sportclub|sport-club|sc|spvgg|vfl|bvb|1fsv|bayer|eintracht|hertha|fortuna|hannover|greuther|dynamo|erzgebirge|arminia|holstein|hansa|kfc|msv|viktoria|werder|schalke|1860)\\s*", "");
-
-		return cleaned;
+		// Alles zu Kleinbuchstaben und Whitespace normalisieren
+		String cleaned = name.toLowerCase().trim().replaceAll("\\s+", " ");
+		// In Wörter aufteilen
+		String[] words = cleaned.split(" ");
+		// Bekannte Präfixe (normalisiert durch Entfernen von Nicht-Buchstaben)
+		Set<String> prefixes = new HashSet<>(Arrays.asList(
+				"1", "fc", "sv", "tsg", "borussia", "sportclub", "sport-club", "sc", "spvgg", "vfl", "vfb", "bvb",
+				"1fsv", "fsv", "bayer", "eintracht", "hertha", "fortuna", "hannover", "greuther",
+				"dynamo", "erzgebirge", "arminia", "holstein", "hansa", "kfc", "msv", "viktoria",
+				"werder", "1860", "rb", "tsv",
+				// Compound prefixes (e.g. "1.FC" as single word)
+				"1fc", "1fcv", "1fsv", "1sc", "1sv", "1vfl", "1bvb", "1tsg"));
+		// Entferne Präfixe vom Anfang
+		int startIndex = 0;
+		for (int i = 0; i < words.length; i++) {
+			String word = words[i];
+			// Normalisiere Wort für Präfixabgleich (Behalte Buchstaben UND Ziffern)
+			String normalizedWord = word.replaceAll("[^\\p{L}\\p{N}]", "");
+			if (prefixes.contains(normalizedWord)) {
+				startIndex = i + 1;
+			} else {
+				break;
+			}
+		}
+		// Baue verbleibende Zeichenkette durch Zusammensetzen der Wörter
+		StringBuilder sb = new StringBuilder();
+		for (int i = startIndex; i < words.length; i++) {
+			sb.append(words[i]);
+		}
+		// Entferne jegliche nicht-buchstaben Zeichen (Ziffern, Satzzeichen, etc.)
+		String result = sb.toString().replaceAll("[^\\p{L}]+", "");
+		return result;
 	}
 
 }

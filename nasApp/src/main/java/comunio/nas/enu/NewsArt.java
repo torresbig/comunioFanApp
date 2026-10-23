@@ -3,6 +3,7 @@ package comunio.nas.enu;
 public enum NewsArt {
 	
 	TRANSFER, //pk
+	TRANSFER_STORNO,
 	OWNERCHANGE,
 	VEREINSWECHSEL, // ok
 	PUNKTEKORREKTUR, // ok
@@ -24,6 +25,10 @@ public enum NewsArt {
 	
 	public boolean isTRANSFER() {
 		return this == TRANSFER;
+	}
+	
+	public boolean isTRANSFER_STORNO() {
+		return this == TRANSFER_STORNO;
 	}
 	
 	public boolean isOWNERCHANGE(){

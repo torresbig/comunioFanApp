@@ -132,9 +132,9 @@ public class LigainsiderPossibleFormation {
 						if (!possibleFormationClubSet.isEmpty()) {
 							
 							possibleFormationClubSet.forEach(p -> {
-								JSONObject player = PlayerMatcher.findPlayerByNameAndClub(playerDbObject.getJSONArray("playerDB"), clubDb, p.getPlayerName(), clubName);
+								JSONObject player = PlayerMatcher.findPlayerByNameAndClub(playerDbObject.getJSONArray("playerDB"), clubDb, clubName, p.getPlayerName());
 								if(player == null) {
-									player = PlayerMatcher.findPlayerByNameAndClub(playerDbObject.getJSONArray("playerDB"), clubDb, p.extractPlayerNameFromUrl(), clubName);
+									player = PlayerMatcher.findPlayerByNameAndClub(playerDbObject.getJSONArray("playerDB"), clubDb, clubName, p.extractPlayerNameFromUrl());
 								}
 								if (player != null && !player.isEmpty()) {
 									p.setComunioPlayerId(player.getString("id"));

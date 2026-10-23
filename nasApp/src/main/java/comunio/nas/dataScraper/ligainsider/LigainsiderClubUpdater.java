@@ -2,9 +2,7 @@ package comunio.nas.dataScraper.ligainsider;
 
 import java.util.Map;
 import java.util.logging.Logger;
-import org.json.JSONArray;
-import org.json.JSONObject;
-
+import comunio.nas.objects.club.ClubObject;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.ligainsider.LigainsiderClubObject;
 import comunio.nas.util.ClubMapper;
@@ -12,29 +10,29 @@ import comunio.nas.util.ClubMapper;
 public class LigainsiderClubUpdater {
 	private static final Logger LOGGER = LogManager.getLogger(LigainsiderClubParser.class);
 
-	public static JSONArray updateLigainsiderClubDate(JSONArray clubDB) {
+	public static Map<String, ClubObject> updateLigainsiderClubDate( Map<String, ClubObject> clubDb) {
 
-		if (!allClubDataAvailable(clubDB)) {
+		if (!allClubDataAvailable(clubDb)) {
 
 			Map<String, LigainsiderClubObject> extractedClubs = LigainsiderClubParser.parseAndMapLigaInsider();
 
 			for (Map.Entry<String, LigainsiderClubObject> entry : extractedClubs.entrySet()) {
 				LigainsiderClubObject clubObj = entry.getValue();
-				JSONObject matchingComunioClub = ClubMapper.getComunioClubJSONFromName(clubObj.getName(), clubDB);
-				matchingComunioClub.put("ligainsider", clubObj.toJSON());
+				ClubObject matchingComunioClub = ClubMapper.getComunioClubObjectFromName(clubObj.getName(), clubDb);
+				matchingComunioClub.setLigainsiderClub(clubObj);
 			}
 		}
-		return clubDB;
+		return clubDb;
 	}
 
-	private static boolean allClubDataAvailable(JSONArray clubDB) {
-		for (int i = 0; i < clubDB.length(); i++) {
-			JSONObject club = clubDB.getJSONObject(i);
-			if (!club.has("ligainsider") || !club.isNull("ligainsider") || club.isEmpty()) {
+	private static boolean allClubDataAvailable( Map<String, ClubObject> clubDb) {
+		for (Map.Entry<String, ClubObject> entry : clubDb.entrySet()) {
+			ClubObject clubo = entry.getValue();
+			if (clubo.getLigainsiderClub() == null ) {
 				return false;
 			}
-			LigainsiderClubObject lco = LigainsiderClubObject.fromJSON(club.getJSONObject("ligainsider"));
-			if (lco.getLink() == null || lco.getId() == null || lco.getName() == null || lco.getLink().isBlank() || lco.getId().isBlank() || lco.getName().isBlank()) {
+			
+			if (clubo.getLigainsiderClub().getLink() == null || clubo.getLigainsiderClub().getId() == null || clubo.getLigainsiderClub().getName() == null || clubo.getLigainsiderClub().getLink().isBlank() || clubo.getLigainsiderClub().getId().isBlank() || clubo.getLigainsiderClub().getName().isBlank()) {
 				return false;
 			}
 		}

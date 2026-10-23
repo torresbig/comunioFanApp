@@ -33,6 +33,7 @@ import comunio.nas.objects.player.Spielerstats;
 import comunio.nas.objects.user.User;
 import comunio.nas.util.HttpHeaderUtil;
 import comunio.nas.util.player.PlayerHelper;
+import comunio.nas.util.player.PlayerMatcher;
 
 public class PlayerUpdater {
 
@@ -294,10 +295,11 @@ public class PlayerUpdater {
 					for (int j = 0; j < squad.length(); j++) {
 						JSONObject apiPlayer = squad.getJSONObject(j);
 						boolean updateOk = true; 
+
 						updateOk = updatePlayerData(playerDBObject, apiPlayer, playerToUserMap, newsManager, currentMatchdayInfo, clubDB, notInLigaDBObj, lastUpdates);
 						updateMarketValueData(apiPlayer, marketValueDB);
 						if(updateOk) {
-							String apiPlayerId = PlayerHelper.convertIdToString(apiPlayer.get("id"));
+							String apiPlayerId = PlayerMatcher.convertIdToString(apiPlayer.get("id"));
 							updatedPlayerIds.add(apiPlayerId);
 						}
 					}
@@ -322,13 +324,14 @@ public class PlayerUpdater {
 	 * bei abgeschlossenem Spieltag verarbeitet.
 	 */
 	private static boolean updatePlayerData(JSONObject playerDBObject, JSONObject apiPlayer, Map<String, String> playerToUserMap, NewsManager newsManager, MatchdayInfo currentMatchdayInfo, JSONArray clubDB, JSONObject notInLigaDBObj, LastUpdates lastUpdates) {
-		JSONArray playerDB = playerDBObject.optJSONArray("playerDB");
+		JSONArray playerDB = playerDBObject.optJSONArray("playerDB", new JSONArray());
+
 		try {
 			StringBuilder log = new StringBuilder();
 			log.append("Update Playerdata wird gestartet...").append(System.lineSeparator());
-			String apiPlayerId = PlayerHelper.convertIdToString(apiPlayer.get("id"));
+			String apiPlayerId = PlayerMatcher.convertIdToString(apiPlayer.get("id"));
 
-			JSONObject player = PlayerHelper.findPlayerByComunioId(playerDB, apiPlayerId, notInLigaDBObj);
+			JSONObject player = PlayerMatcher.findPlayerByComunioId(playerDB, apiPlayerId, notInLigaDBObj);
 			JSONObject data = new JSONObject();
 			String playerName = null;
 
@@ -336,7 +339,7 @@ public class PlayerUpdater {
 				log.append("Creating new player record: " + apiPlayerId).append(System.lineSeparator());
 
 				playerName = apiPlayer.getString("name");
-				String verein = PlayerHelper.convertIdToString(apiPlayer.getJSONObject("club").get("id"));
+				String verein = PlayerMatcher.convertIdToString(apiPlayer.getJSONObject("club").get("id"));
 				if (verein.equals("61") || verein.equals("0")) {
 					return false;
 				}
@@ -368,10 +371,10 @@ public class PlayerUpdater {
 				String oldPosition = data.getString("position");
 				Position newPosition = Position.fromString(apiPlayer.getString("position"));
 				String oldClubId = data.getString("verein");
-				String newClubId = PlayerHelper.convertIdToString(apiPlayer.getJSONObject("club").get("id"));
+				String newClubId = PlayerMatcher.convertIdToString(apiPlayer.getJSONObject("club").get("id"));
 
 				// Positionswechsel prüfen
-				if (!oldPosition.equals(newPosition.toString())) {
+				if (!oldPosition.equals(newPosition.toString()) && !oldPosition.isBlank() && !oldPosition.equalsIgnoreCase("unbekannt")) {
 					newsManager.addNews(News.getPositionswechsel(oldPosition, newPosition.toString(), apiPlayerId, playerName), true);
 				}
 
@@ -467,7 +470,7 @@ public class PlayerUpdater {
 				apiPlayer.getInt("playerId");
 			}
 			// Spieler-ID als String aus API-Daten
-			String playerId = PlayerHelper.convertIdToString(id);
+			String playerId = PlayerMatcher.convertIdToString(id);
 			// Aktueller Marktwert
 
 			int currentValue = 0;
@@ -480,7 +483,7 @@ public class PlayerUpdater {
 			String currentDate = new ComunioDate().toString();
 
 			// Suche bestehendes Marktwertobjekt des Spielers
-			JSONObject playerMarketValue = PlayerHelper.findPlayerByComunioId(marketValueDB, playerId, null);
+			JSONObject playerMarketValue = PlayerMatcher.findPlayerByComunioId(marketValueDB, playerId, null);
 			if (playerMarketValue == null) {
 				// Wenn nicht gefunden, neues Objekt anlegen und in DB speichern
 				playerMarketValue = new JSONObject();

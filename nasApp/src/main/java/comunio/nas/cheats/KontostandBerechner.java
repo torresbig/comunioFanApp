@@ -46,7 +46,7 @@ public final class KontostandBerechner {
 
         newsManager.getNewsByDate().values().stream()
             .flatMap(List::stream)
-            .filter(news -> news != null && news.getArt().isTRANSFER())
+            .filter(news -> news != null && (news.getArt().isTRANSFER() || news.getArt().isTRANSFER_STORNO()))
             .forEach(news -> processTransfer(news, userMap));
     }
 
@@ -65,25 +65,27 @@ public final class KontostandBerechner {
             String sellerId = resolveUserId(transfer.getString("seller"), transfer.optString("sellerId"), userMap);
             String buyerId = resolveUserId(transfer.getString("buyer"), transfer.optString("buyerId"), userMap);
             int price = transfer.getInt("price");
+            boolean isUndo = transferNews.getArt().isTRANSFER_STORNO();
+            int multiplier = isUndo ? -1 : 1;
 
             // Verkäufer bekommt Geld
             if (sellerId != null && userMap.containsKey(sellerId)) {
                 User seller = userMap.get(sellerId);
                 long alt = seller.getGuthaben();
-                seller.setGuthaben(alt + price);
+                seller.setGuthaben(alt + (price * multiplier));
                 int sell = seller.getSellValue();
-                seller.setSellValue(sell + price);
-                seller.setNegativesBudget((alt + price) < 0);
+                seller.setSellValue(sell + (price * multiplier));
+                seller.setNegativesBudget((alt + (price * multiplier)) < 0);
             }
 
             // Käufer zahlt
             if (buyerId != null && userMap.containsKey(buyerId)) {
                 User buyer = userMap.get(buyerId);
                 long alt = buyer.getGuthaben();
-                buyer.setGuthaben(alt - price);
+                buyer.setGuthaben(alt - (price * multiplier));
                 int buy = buyer.getBuyValue();
-                buyer.setBuyValue(buy + price);
-                buyer.setNegativesBudget((alt - price) < 0);
+                buyer.setBuyValue(buy + (price * multiplier));
+                buyer.setNegativesBudget((alt - (price * multiplier)) < 0);
             }
         } catch (Exception e) {
             LOGGER.log(Level.WARNING, "Fehler bei Transfer-Verarbeitung: " + e.getMessage(), e);

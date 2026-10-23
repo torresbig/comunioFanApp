@@ -7,7 +7,7 @@ import comunio.nas.enu.Playtime; // ← Deine Enum
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.player.PointsDbContainer;
 import comunio.nas.objects.player.Spielerstats;
-import comunio.nas.util.player.PlayerHelper;
+import comunio.nas.util.player.PlayerMatcher;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
@@ -19,11 +19,8 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 import java.util.logging.Logger;
 
@@ -82,7 +79,7 @@ public class ComstatsDataScraper {
 				// Spielerstats als Transportobjekt bauen (Mapping der Comstats-Felder)
 				Spielerstats stats = buildSpielerstats(apiSpieler);
 				stats.setMatchday(matchday);
-				String playerId = PlayerHelper.convertIdToString(apiSpieler.get("playerId"));
+				String playerId = PlayerMatcher.convertIdToString(apiSpieler.get("playerId"));
 				
 				pointsDb.addPlayerStats(playerId, matchday, stats);				
 //				Map<Integer, Spielerstats> playerStatsMap = pointsDb.getPointsMap().get(playerId);

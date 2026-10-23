@@ -13,6 +13,7 @@ import comunio.nas.dataScraper.comunio.MatchdayInfo;
 import comunio.nas.dataVariable.LastUpdates;
 import comunio.nas.error.Error;
 import comunio.nas.error.ErrorType;
+import comunio.nas.objects.club.ClubObject;
 import comunio.nas.objects.espn.EspnClubMapObject;
 import comunio.nas.objects.espn.EspnPlayerContainer;
 import comunio.nas.objects.espn.EspnPlayerMapObject;
@@ -49,7 +50,7 @@ public class EspnPlayerUpdater {
 	 * @param lastUpdates         Für den Spieltag-Trigger
 	 * @param currentMatchdayInfo Der aktuelle Spieltag
 	 */
-	public static void updatePlayers(JSONObject playerDBObject, JSONArray clubDB, Map<String, EspnClubMapObject> espnToComunioClubMap, EspnPlayerContainer playerContainer, LastUpdates lastUpdates, MatchdayInfo currentMatchdayInfo) {
+	public static void updatePlayers(JSONObject playerDBObject,  Map<String, ClubObject> clubDb, Map<String, EspnClubMapObject> espnToComunioClubMap, EspnPlayerContainer playerContainer, LastUpdates lastUpdates, MatchdayInfo currentMatchdayInfo) {
 		if (playerDBObject == null || lastUpdates == null || currentMatchdayInfo == null) {
 			LOGGER.warning("ESPN-Update übersprungen: Parameter null!");
 			return;
@@ -68,7 +69,7 @@ public class EspnPlayerUpdater {
 
 		if (espnToComunioClubMap == null || espnToComunioClubMap.isEmpty()) {
 			LOGGER.warning("ESPN: Kein Vereins-Mapping vorhanden, Update wird ausgeführt");
-			espnToComunioClubMap = EspnClubUpdater.updateEspnToComunioClubMap(clubDB);
+			espnToComunioClubMap = EspnClubUpdater.updateEspnToComunioClubMap(clubDb);
 			if (espnToComunioClubMap == null || espnToComunioClubMap.isEmpty()) {
 				LOGGER.warning("ESPN: Vereins-Mapping konnte nicht erstellt werden, Update abgebrochen.");
 				return;
@@ -78,7 +79,7 @@ public class EspnPlayerUpdater {
 
 		try {
 			// 1. Alle 18 Rosters laden (inkl. Rohdaten für Stats)
-			JSONObject espnData = EspnRosterCollector.collectAllRosters(espnToComunioClubMap, clubDB);
+			JSONObject espnData = EspnRosterCollector.collectAllRosters(espnToComunioClubMap, clubDb);
 			JSONArray espnPlayers = espnData.optJSONArray("players");
 			if (espnPlayers == null || espnPlayers.length() == 0) {
 				LOGGER.warning("ESPN: Keine Spieler geladen, Update abgebrochen.");

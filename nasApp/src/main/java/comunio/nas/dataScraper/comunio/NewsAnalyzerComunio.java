@@ -14,6 +14,7 @@ import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.orga.ComunioDate;
 import comunio.nas.objects.user.User;
 import comunio.nas.util.player.PlayerHelper;
+import comunio.nas.util.player.PlayerMatcher;
 import comunio.nas.dataVariable.Dates;
 import comunio.nas.dataVariable.LastUpdates;
 import comunio.nas.dataVariable.Urls;
@@ -23,6 +24,8 @@ import java.time.Instant;
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Analysiert News aus der Comunio-API und extrahiert Transfers, Bonuszahlungen,
@@ -195,8 +198,157 @@ public class NewsAnalyzerComunio {
 				return;
 			}
 			processTransfer(entry, newsDate, playerDB, notInLigaDbObj, transferNewsList, transferLogs);
+		} else if ("TRANSACTION_UNDO_TRANSFER".equals(type)) {
+			processTransferUndo(entry, newsDate, playerDB, notInLigaDbObj, newsManager, playerToUserMap);
 		} else if ("BEST_LINEUP".equals(type)) {
 			processBestLineup(entry, newsDate, processedElfDesTages, playerDB, notInLigaDbObj, matchdayInfo, newsManager, playerToUserMap);
+		}
+	}
+
+	private static void processTransferUndo(JSONObject entry, ComunioDate newsDate, JSONArray playerDB, JSONObject notInLigaDbObj, NewsManager newsManager, Map<String, String> playerToUserMap) {
+		JSONObject message = entry.optJSONObject("message");
+		if (message == null) {
+			return;
+		}
+
+		String text = message.optString("text", "");
+		if (text == null || text.isBlank()) {
+			return;
+		}
+
+		Pattern undoPattern = Pattern.compile("Der Transfer des Spielers\\s+(.+?)\\s+f[uü]r\\s+(.+?)\\s+von\\s+(.+?)\\s+zu\\s+(.+?)\\s+wurde annulliert von\\s+(.+?)\\.?$", Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);
+		Matcher matcher = undoPattern.matcher(text);
+		if (!matcher.find()) {
+			LOGGER.warning("TRANSACTION_UNDO_TRANSFER konnte nicht geparst werden: " + text);
+			return;
+		}
+
+		String playerName = matcher.group(1).trim();
+		String priceText = matcher.group(2).trim();
+		String sellerName = matcher.group(3).trim();
+		String buyerName = matcher.group(4).trim();
+		String stornoFrom = matcher.group(5).trim();
+		int price = extractPriceValue(priceText);
+
+		News originalTransfer = findMatchingTransfer(newsManager, playerName, price, sellerName, buyerName);
+		String playerId = originalTransfer != null ? originalTransfer.getPlayerId() : resolvePlayerIdByName(playerName, playerDB, notInLigaDbObj);
+		String sellerId = originalTransfer != null ? extractTransferNewsValue(originalTransfer, "sellerId") : null;
+		String buyerId = originalTransfer != null ? extractTransferNewsValue(originalTransfer, "buyerId") : null;
+
+		if (playerId == null || playerId.isBlank()) {
+			playerId = "0";
+		}
+		if (sellerId == null || sellerId.isBlank()) {
+			sellerId = "0";
+		}
+		if (buyerId == null || buyerId.isBlank()) {
+			buyerId = "0";
+		}
+
+		News undoNews = News.getTransferStorno(sellerId, sellerName, buyerId, buyerName, price, 0, playerId, playerName, newsDate, String.valueOf(entry.optLong("id")), stornoFrom, originalTransfer != null ? originalTransfer.getId() : "0");
+		if (!newsManager.contains(undoNews)) {
+			newsManager.addNews(undoNews, true);
+		}
+
+		if (playerId != null && !"0".equals(playerId) && Objects.equals(playerToUserMap.get(playerId), buyerId) && !"0".equals(buyerId)) {
+			playerToUserMap.put(playerId, sellerId);
+			GitHubUploader.mappingChanged = true;
+			LOGGER.info("Transfer-Storno rückgängig: Spieler " + playerId + " -> User " + sellerId + " am " + newsDate);
+		}
+	}
+
+	private static News findMatchingTransfer(NewsManager newsManager, String playerName, int price, String sellerName, String buyerName) {
+		if (newsManager == null) {
+			return null;
+		}
+		for (List<News> newsList : newsManager.getNewsByDate().values()) {
+			for (News news : newsList) {
+				if (!news.getArt().isTRANSFER()) {
+					continue;
+				}
+				try {
+					JSONObject transfer = new JSONObject(news.getText());
+					String newsPlayerName = transfer.optString("playerName", "");
+					String newsSellerName = transfer.optString("seller", "");
+					String newsBuyerName = transfer.optString("buyer", "");
+					int newsPrice = transfer.optInt("price", 0);
+					boolean playerMatches = newsPlayerName.equalsIgnoreCase(playerName);
+					boolean priceMatches = newsPrice == price;
+					boolean namesMatch = (sellerName == null || sellerName.isBlank() || newsSellerName.equalsIgnoreCase(sellerName))
+							&& (buyerName == null || buyerName.isBlank() || newsBuyerName.equalsIgnoreCase(buyerName));
+					if (playerMatches && priceMatches && namesMatch) {
+						return news;
+					}
+					if (playerMatches && price > 0 && newsPrice == price) {
+						return news;
+					}
+				} catch (Exception ignored) {
+					// ignore malformed transfer news entries
+				}
+			}
+		}
+		return null;
+	}
+
+	private static String resolvePlayerIdByName(String playerName, JSONArray playerDB, JSONObject notInLigaDbObj) {
+		if (playerName == null || playerName.isBlank()) {
+			return null;
+		}
+		for (int i = 0; i < playerDB.length(); i++) {
+			JSONObject player = playerDB.getJSONObject(i);
+			String name = player.optString("name", "");
+			if (name.equalsIgnoreCase(playerName)) {
+				return String.valueOf(player.optInt("id", 0));
+			}
+		}
+		if (notInLigaDbObj != null) {
+			JSONArray entries = notInLigaDbObj.optJSONArray("playerDB");
+			if (entries != null) {
+				for (int i = 0; i < entries.length(); i++) {
+					JSONObject player = entries.getJSONObject(i);
+					String name = player.optString("name", "");
+					if (name.equalsIgnoreCase(playerName)) {
+						return String.valueOf(player.optInt("id", 0));
+					}
+				}
+			}
+		}
+		return null;
+	}
+
+	private static String extractTransferNewsValue(News news, String key) {
+		if (news == null || news.getText() == null || news.getText().isBlank()) {
+			return null;
+		}
+		try {
+			JSONObject transfer = new JSONObject(news.getText());
+			return transfer.optString(key, null);
+		} catch (Exception ignored) {
+			return null;
+		}
+	}
+
+	private static int extractPriceValue(String text) {
+		if (text == null || text.isBlank()) {
+			return 0;
+		}
+		String normalized = text.replace(".", "").replace(" ", "").replace("EUR", "").replace("€", "").replace("-", "");
+		String digits = normalized.replaceAll("[^0-9]", "");
+		if (digits.isBlank()) {
+			return 0;
+		}
+		return Integer.parseInt(digits);
+	}
+
+	private static String extractTransferIdFromNews(News news, String key) { 
+		if (news == null || news.getText() == null || news.getText().isBlank()) {
+			return null;
+		}
+		try {
+			JSONObject transfer = new JSONObject(news.getText());
+			return transfer.has(key) ? String.valueOf(transfer.get(key)) : null;
+		} catch (Exception ignored) {
+			return null;
 		}
 	}
 
@@ -220,7 +372,7 @@ public class NewsAnalyzerComunio {
 				try {
 					JSONObject transfer = transfers.getJSONObject(j);
 					String playerId = String.valueOf(transfer.getJSONObject("tradable").getInt("id"));
-					JSONObject player = PlayerHelper.findPlayerByComunioId(playerDB, playerId, notInLigaDbObj);
+					JSONObject player = PlayerMatcher.findPlayerByComunioId(playerDB, playerId, notInLigaDbObj);
 
 					String sellerId = String.valueOf(transfer.getJSONObject("from").getInt("id"));
 					String seller = transfer.getJSONObject("from").getString("name");
@@ -275,7 +427,7 @@ public class NewsAnalyzerComunio {
 				JSONObject playerFromLineup = playersInPosition.getJSONObject(idxPlayer);
 				String playerId = String.valueOf(playerFromLineup.getInt("id"));
 
-				JSONObject playerInDB = PlayerHelper.findPlayerByComunioId(playerDB, playerId, notInLigaDbObj);
+				JSONObject playerInDB = PlayerMatcher.findPlayerByComunioId(playerDB, playerId, notInLigaDbObj);
 				if (playerInDB != null) {
 					JSONObject playerData = playerInDB.optJSONObject("data");
 					if (playerData == null) {

@@ -165,8 +165,8 @@ public class EspnPlayerMapper {
 		if (espnName == null || dbName == null) {
 			return FALSE;
 		}
-		String normEspn = comunio.nas.util.player.PlayerHelper.normalizeName(espnName);
-		String normDb = comunio.nas.util.player.PlayerHelper.normalizeName(dbName);
+		String normEspn = comunio.nas.util.player.PlayerMatcher.normalizeName(espnName);
+		String normDb = comunio.nas.util.player.PlayerMatcher.normalizeName(dbName);
 		if (normEspn.isEmpty() || normDb.isEmpty()) {
 			return FALSE;
 		}

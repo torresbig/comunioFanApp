@@ -23,7 +23,7 @@ import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.user.User;
 import comunio.nas.util.DateUtils;
 import comunio.nas.util.HttpHeaderUtil;
-import comunio.nas.util.player.PlayerHelper;
+import comunio.nas.util.player.PlayerMatcher;
 
 public class Transfermarkt {
 
@@ -82,7 +82,7 @@ public class Transfermarkt {
 					String name = json.getString("name");
 					int marktwert = json.getInt("quotedPrice");
 					int preis = json.getInt("recommendedPrice");
-					JSONObject player = PlayerHelper.findPlayerByComunioId(playerDB, id, notInligaDBObj);
+					JSONObject player = PlayerMatcher.findPlayerByComunioId(playerDB, id, notInligaDBObj);
 					
 					if (player != null) {
 						JSONObject data = player.optJSONObject("data");
@@ -240,7 +240,7 @@ public class Transfermarkt {
 					int marktwert = tradable.optInt("quotedPrice", 0);
 					int mindestGebot = tradable.optInt("recommendedPrice", 0);
 
-					JSONObject player = PlayerHelper.findPlayerByComunioId(playerDB, id, notInligaDBObj);
+					JSONObject player = PlayerMatcher.findPlayerByComunioId(playerDB, id, notInligaDBObj);
 					if (player != null) {
 						JSONObject data = player.optJSONObject("data");
 						if (data == null) {
@@ -312,7 +312,7 @@ public class Transfermarkt {
 		for (Object obj : gebotsListe) {
 			JSONObject offer = (JSONObject) obj;
 			int transWert = offer.optInt("marktwert", 0);
-			JSONObject player = PlayerHelper.findPlayerByComunioId(playerDB, offer.getString("playerID"), notInligaDBObj);
+			JSONObject player = PlayerMatcher.findPlayerByComunioId(playerDB, offer.getString("playerID"), notInligaDBObj);
 			JSONObject data = player.optJSONObject("data");
 			if (data == null) {
 				continue;
@@ -339,7 +339,7 @@ public class Transfermarkt {
 			for (Object obj : listOf160er) {
 				JSONObject jsonObj = (JSONObject) obj;
 				if (jsonObj.has("type") && jsonObj.getString("type").equals("DECLINE")) {
-					JSONObject player = PlayerHelper.findPlayerByComunioId(playerDB, jsonObj.getString("playerID"), notInligaDBObj);
+					JSONObject player = PlayerMatcher.findPlayerByComunioId(playerDB, jsonObj.getString("playerID"), notInligaDBObj);
 					if (player != null) {
 //					DataPostToComunio.removePlayerFromMarket(player);
 						DataPostToComunio.addPlayerToMarket(player, user);

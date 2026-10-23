@@ -13,6 +13,8 @@ import comunio.nas.dataVariable.LastUpdates;
 import comunio.nas.error.Error;
 import comunio.nas.error.ErrorType;
 import comunio.nas.objects.NewsManager;
+import comunio.nas.objects.club.ClubDbContainer;
+import comunio.nas.objects.club.ClubObject;
 
 public class PlayerDbHelper {
 
@@ -70,5 +72,24 @@ public class PlayerDbHelper {
 		log.append("\n");
 		log.append("überprüfung abgeschlossen! nach Update erfolgreich: " + countOk + " - gescheitert: " + countNotOk + " - flag retired: " + countRetired);
 		LOGGER.info(log.toString());
+	}
+	
+	/** alles pplayer namen und vereinsnamen in eine txt datei auf dem Cpmputer speichern */
+	public static void getAllNamesAndClubFromPlayer(JSONArray playerDb,ClubDbContainer clubDbContainer) {
+		for (int i = 0; i < playerDb.length(); i++) {
+			JSONObject player = playerDb.getJSONObject(i);
+			String playerName = player.optString("name");
+			JSONObject data = player.getJSONObject("data");
+			String verein = data.optString("verein");
+			ClubObject club = clubDbContainer.getClubDb().get(verein);
+			
+			if (club != null) {
+				String clubName = club.getName();
+				System.out.println(playerName + " - " + clubName);
+			} else {
+				System.out.println(playerName + " - kein Club gefunden!");
+			}
+
+		}
 	}
 }

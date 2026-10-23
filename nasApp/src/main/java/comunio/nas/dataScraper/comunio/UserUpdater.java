@@ -1,7 +1,6 @@
 package comunio.nas.dataScraper.comunio;
 
 import java.time.Instant;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -21,7 +20,6 @@ import comunio.nas.objects.News;
 import comunio.nas.objects.NewsManager;
 import comunio.nas.objects.community.Community;
 import comunio.nas.objects.helper.LogManager;
-import comunio.nas.objects.orga.ComunioDate;
 import comunio.nas.objects.user.User;
 import comunio.nas.objects.user.UserInfo;
 import comunio.nas.util.HttpHeaderUtil;

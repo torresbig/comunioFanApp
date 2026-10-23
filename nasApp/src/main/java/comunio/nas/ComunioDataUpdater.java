@@ -109,11 +109,14 @@ public class ComunioDataUpdater {
 			user = ctx.getUserMap().get(user.getId());
 		}
 		ctx.getMatchdayInfoList().put(String.valueOf(currentMatchdayInfo.getCurrentMatchday()), currentMatchdayInfo.toJson());
+		
 
 		Transfermarkt.acceptOrDecline160erOffer(ctx.getPlayerDBObject(), user, false, ctx.getNotInligaDBObj());
 		PlayerUpdater.updatePlayers(seasonChanged, ctx.getClubDbContainer().toJSON(), ctx.getPlayerDBObject(), ctx.getMarketValueDB(), ctx.getPlayerToUserMap(), ctx.getNewsManager(), currentMatchdayInfo, ctx.getNotInligaDBObj(), lastUpdates, user);
 
 		ctx.getLineupParser().fetchLineupForAllUsers(ctx.getUserMap(), currentMatchdayInfo);
+		ctx.getFotmobContainer().fetchAndFillPlayerMap(ctx.getClubDbMap(), ctx.getPlayerDBArray());
+
 		
 //		spieltagspunkte für die einzelnen user fehlen!!!
 
@@ -123,7 +126,7 @@ public class ComunioDataUpdater {
 
 //		ComstatsDataScraper.getPlaytimeForInputToInput(1, 3, ctx.getPlayerDBObject(), ctx.getNotInligaDBObj(), lastUpdates);
 		ComstatsDataScraper.getPlaytimeForNewMatchdays(currentMatchdayInfo.getPointsMatchday(), lastUpdates, ctx.getPointsDB());
-		EspnPlayerUpdater.updatePlayers(ctx.getPlayerDBObject(), ctx.getClubDbContainer().toJSON(), ctx.getEspnClubMappingContainer().getClubMap(), ctx.getEspnPlayerMappingContainer(), lastUpdates, currentMatchdayInfo);
+		EspnPlayerUpdater.updatePlayers(ctx.getPlayerDBObject(), ctx.getClubDbContainer().getClubDb(), ctx.getEspnClubMappingContainer().getClubMap(), ctx.getEspnPlayerMappingContainer(), lastUpdates, currentMatchdayInfo);
 
 		NewsAnalyzerComunio.analyzeNews(ctx.getNewsManager(), ctx.getPlayerDBObject(), ctx.getPlayerToUserMap(), ctx.getNotInligaDBObj(), currentMatchdayInfo, lastUpdates, user);
 //		TmDePlayerDataUpdater.updateVerletzteVonTransfermarkt(ctx.getPlayerDBObject(), ctx.clubDB, ctx.getNewsManager(), LOGGER, lastUpdates, statusManager);
@@ -147,8 +150,8 @@ public class ComunioDataUpdater {
 
 		if (seasonChanged) {
 			ClubUpdater.fetchClubsAsArray(ctx.getClubDbContainer().toJSON());
-			ctx.getEspnClubMappingContainer().setClubMap(EspnClubUpdater.updateEspnToComunioClubMap(ctx.getClubDbContainer().toJSON()));
-			LigainsiderClubUpdater.updateLigainsiderClubDate(ctx.getClubDbContainer().toJSON());
+			ctx.getEspnClubMappingContainer().setClubMap(EspnClubUpdater.updateEspnToComunioClubMap(ctx.getClubDbContainer().getClubDb()));
+			LigainsiderClubUpdater.updateLigainsiderClubDate(ctx.getClubDbContainer().getClubDb());
 			LOGGER.info("Saisonwechsel wurde verarbeitet. Fahre direkt mit der Datenverarbeitung der neuen Saison fort...");
 		}
 		return seasonChanged;

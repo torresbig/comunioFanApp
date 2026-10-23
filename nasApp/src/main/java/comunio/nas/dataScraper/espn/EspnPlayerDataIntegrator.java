@@ -8,7 +8,7 @@ import org.json.JSONObject;
 
 import comunio.nas.objects.espn.EspnClubMapObject;
 import comunio.nas.objects.helper.LogManager;
-import comunio.nas.util.player.PlayerHelper;
+import comunio.nas.util.player.PlayerMatcher;
 
 /**
  * Integriert die ESPN-Profil-Daten (Spielerdaten) in die bestehende
@@ -20,7 +20,7 @@ import comunio.nas.util.player.PlayerHelper;
  * integriert.
  * <p>
  * Die Zuordnung Spieler → Verein erfolgt über das ESPN↔Comunio-Vereins-Mapping
- * und den Spielernamen (normalisiert über {@link PlayerHelper#normalizeName}).
+ * und den Spielernamen (normalisiert über {@link PlayerMatcher#normalizeName}).
  */
 public class EspnPlayerDataIntegrator {
 
@@ -64,7 +64,7 @@ public class EspnPlayerDataIntegrator {
 			}
 
 			String espnName = espnPlayer.optString("name", "");
-			String normalizedEspnName = PlayerHelper.normalizeName(espnName);
+			String normalizedEspnName = PlayerMatcher.normalizeName(espnName);
 
 			// Spieler in der DB suchen (gleicher Verein + Namensübereinstimmung)
 			for (int j = 0; j < playerDB.length(); j++) {
@@ -82,7 +82,7 @@ public class EspnPlayerDataIntegrator {
 				}
 
 				String dbName = dbPlayer.optString("name", "");
-				if (!PlayerHelper.namesMatchWithInitial(normalizedEspnName, PlayerHelper.normalizeName(dbName))) {
+				if (!PlayerMatcher.namesMatchWithInitial(normalizedEspnName, PlayerMatcher.normalizeName(dbName))) {
 					continue; // Name passt nicht
 				}
 

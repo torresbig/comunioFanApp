@@ -24,7 +24,6 @@ import comunio.nas.error.ErrorType;
 import comunio.nas.objects.News;
 import comunio.nas.objects.NewsManager;
 import comunio.nas.objects.club.ClubObject;
-import comunio.nas.objects.helper.JsonHelper;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.ligainsider.InjuryAndBlockedData;
 import comunio.nas.objects.orga.ComunioDate;
@@ -64,7 +63,7 @@ public class LigainsiderInjurieAndBannedPlayers {
 		try {
 
 			for (Map.Entry<String, List<InjuryAndBlockedData>> entry : currentInjuries.entrySet()) {
-				String clubId = ClubMapper.getComunioIdFromName(entry.getKey(), JsonHelper.mapValuesToJSONArray(clubDb));
+				String clubId = ClubMapper.getComunioIdFromName(entry.getKey(),clubDb);
 				String clubName = clubDb.containsKey(clubId) ? clubDb.get(clubId).getName() : null;
 				if (clubName == null) {
 					LOGGER.warning("Kein passenden Club zur ID gefunden: " + clubId);
@@ -72,9 +71,9 @@ public class LigainsiderInjurieAndBannedPlayers {
 				}
 
 				entry.getValue().forEach(currentPlayer -> {
-					JSONObject player = PlayerMatcher.findPlayerByNameAndClub(playerDB, clubDb, currentPlayer.getPlayerName(), clubName);
+					JSONObject player = PlayerMatcher.findPlayerByNameAndClub(playerDB, clubDb, clubName, currentPlayer.getPlayerName());
 					if (player == null) {
-						player = PlayerMatcher.findPlayerByNameAndClub(playerDB, clubDb, currentPlayer.extractPlayerNameFromUrl(), clubName);
+						player = PlayerMatcher.findPlayerByNameAndClub(playerDB, clubDb, clubName, currentPlayer.extractPlayerNameFromUrl());
 					}
 
 					if (player != null && !player.isEmpty()) {

@@ -9,6 +9,7 @@ import org.json.JSONObject;
 
 import comunio.nas.ComunioDataUpdater;
 import comunio.nas.error.ErrorType;
+import comunio.nas.objects.club.ClubObject;
 import comunio.nas.objects.espn.EspnClubMapObject;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.util.ClubMapper;
@@ -81,7 +82,7 @@ public class EspnClubMapper {
 	 * @param clubDB    JSONArray der Comunio-Vereinsdatenbank
 	 * @return Map: ESPN-Team-ID → Comunio-Vereins-ID (nur gemappte Einträge)
 	 */
-	public static Map<String, EspnClubMapObject> buildEspnToComunioClubMap(JSONObject espnTeams, JSONArray clubDB) {
+	public static Map<String, EspnClubMapObject> buildEspnToComunioClubMap(JSONObject espnTeams, Map<String, ClubObject> clubDb) {
 		Map<String, EspnClubMapObject> result = new HashMap<>();
 
 		// ESPN-Teams durchgehen
@@ -109,7 +110,7 @@ public class EspnClubMapper {
 			}
 
 			// 2. Comunio-Vereins-ID anhand des Namens suchen
-			String comunioId = ClubMapper.getComunioIdFromName(comunioName, clubDB);
+			String comunioId = ClubMapper.getComunioIdFromName(comunioName, clubDb);
 			if (comunioId != null && !comunioId.isEmpty()) {
 				EspnClubMapObject espnClubMapObject = new EspnClubMapObject(espnName, espnId, comunioName, comunioId);
 				result.put(espnId, espnClubMapObject);
@@ -127,7 +128,7 @@ public class EspnClubMapper {
 	 * @return JSONObject: {"mapping": [{"espnId": "...", "comunioId": "...",
 	 *         "espnName": "...", "comunioName": "..."}]}
 	 */
-	public static JSONObject buildMappingJson(JSONObject espnTeams, JSONArray clubDB) {
+	public static JSONObject buildMappingJson(JSONObject espnTeams, Map<String, ClubObject> clubDb) {
 		JSONObject result = new JSONObject();
 		JSONArray mapping = new JSONArray();
 
@@ -144,7 +145,7 @@ public class EspnClubMapper {
 					String espnName = team.optString("displayName", "");
 
 					String comunioName = MANUAL_ESPN_TO_COMUNIO.getOrDefault(espnName, espnName);
-					String comunioId = ClubMapper.getComunioIdFromName(comunioName, clubDB);
+					String comunioId = ClubMapper.getComunioIdFromName(comunioName, clubDb);
 
 					if (comunioId == null || comunioId.isEmpty()) {
 						LOGGER.warning("ESPN-Update: Kein Mapping für Team ESPN-ID: " + espnId + ", ESPN-Verein: " + espnName);

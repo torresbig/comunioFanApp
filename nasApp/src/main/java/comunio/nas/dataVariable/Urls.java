@@ -1,5 +1,6 @@
 package comunio.nas.dataVariable;
 
+
 import comunio.nas.ComunioDataUpdater;
 import comunio.nas.objects.user.User;
 
@@ -62,14 +63,15 @@ public class Urls {
 	public static final String ESPN_CLUB_MAPPING_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("EspnClubMapping.json");
 	public static final String ESPN_PLAYER_MAPPING_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("EspnPlayerMapping.json");
 	public static final String POSSIBLE_FORMATIOKN = ComunioDataUpdater.uld.getCompleteGitProjectPath("PossibleFormatin.json");
+	public static final String FOBMOB_DATA_URL = ComunioDataUpdater.uld.getCompleteGitProjectPath("FobmobData.json");
 
-	/** spielersuche auf Transfermarkt.de */
+	// ############# TRANSERMARKT.DE ###############/** spielersuche auf Transfermarkt.de */
 //	public static final String TMDE_PLAYERSEARCH = "https://www.transfermarkt.de/schnellsuche/ergebnis/schnellsuche?query=";
 	public static String TMDE_PLAYERSEARCH_WITH_SITES(int site, String playerName) {
 		return "https://www.transfermarkt.de/schnellsuche/ergebnis/schnellsuche?Spieler_page=" + site + "&query=" + playerName;
 	}
 
-	/** Ligainsider */
+	// ############# LIGAINSIDER ###############/** Ligainsider */
 	public static final String LIGAINSIDER_URL = "https://www.ligainsider.de/bundesliga/noten/";
 	public static final String LIGAINSIDER_INJURY = "https://www.ligainsider.de/bundesliga/verletzte-und-gesperrte-spieler/";
 	public static final String LIGAINSIDER_CLUBS = "https://www.ligainsider.de/bundesliga/tabelle/";
@@ -94,5 +96,9 @@ public class Urls {
 		return "https://stats.comunio.de/xhr/matchDetails.php?mid=" + matchId;
 	}
 	
-
+	// ############# FOTMOB ###############
+	
+	public static final String LEAGUE_TABLE_URL = "https://www.fotmob.com/api/data/tltable?leagueId=54";
+	public static final String CLUB_SQUAD_URL = "https://www.fotmob.com/api/data/teams?id=%s";
+	public static final String PLAYER_DATA_URL = "https://www.fotmob.com/api/data/playerData?id=%s";
 }

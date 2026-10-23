@@ -11,7 +11,6 @@ import comunio.nas.objects.ligainsider.LigainsiderRankingEntry;
 import comunio.nas.objects.orga.ComunioDate;
 import comunio.nas.util.player.PlayerHelper;
 import comunio.nas.util.player.PlayerMatcher;
-
 import java.time.Instant;
 import java.util.*;
 import java.util.logging.Level;
@@ -67,8 +66,9 @@ public class LigainsiderRankingUpdater {
 			// 2. Für jeden Ranking-Eintrag: Spieler in der Datenbank suchen und Attribute
 			// ergänzen
 			for (LigainsiderRankingEntry entry : rankingEntries) {
-				// --- ROBUSTES MATCHING: Namensvarianten und Verein ---
-				JSONObject player = PlayerMatcher.findPlayerByNameAndClub(playerDB, clubDB, entry.name, entry.verein);
+				// Club-Name und Spieler-Name sind hier bewusst in der richtigen Reihenfolge:
+				// findPlayerByNameAndClub(playerDB, clubDB, clubName, playerName)
+				JSONObject player = PlayerMatcher.findPlayerByNameAndClub(playerDB, clubDB, entry.verein, entry.name);
 
 				if (player != null) {
 					// Spieler gefunden: Rankingdaten als Attribut anhängen

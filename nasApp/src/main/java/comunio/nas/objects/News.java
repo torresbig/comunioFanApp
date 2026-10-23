@@ -202,6 +202,29 @@ public class News {
 
 		return news;
 	}
+	
+	public static News getTransferStorno(String sellerId, String sellerName, String buyerId, String buyerName, int price, int wert, String playerId, String playerName, ComunioDate cDate, String id, String stornoFrom, String origTransferId) {
+
+		JSONObject newsText = new JSONObject();
+		newsText.put("playerName", playerName);
+		newsText.put("playerId", playerId);
+		newsText.put("seller", sellerName);
+		newsText.put("buyer", buyerName);
+		newsText.put("sellerId", sellerId);
+		newsText.put("buyerId", buyerId);
+		newsText.put("price", price);
+		newsText.put("stornoFrom", stornoFrom);
+		newsText.put("origTransferId", origTransferId != null ? origTransferId : "0");
+
+		String text = newsText.toString();
+		News news = new News(NewsArt.TRANSFER_STORNO, text, playerId, cDate, id);
+
+		return news;
+	}
+
+	public static News getTransferStorno(String sellerId, String sellerName, String buyerId, String buyerName, int price, int wert, String playerId, String playerName, ComunioDate cDate, String id, String stornoFrom) {
+		return getTransferStorno(sellerId, sellerName, buyerId, buyerName, price, wert, playerId, playerName, cDate, id, stornoFrom, "0");
+	}
 
 	public static News getOwnerwechsel(String oldOwner, String newOwner, int wert, String playerID, String playerName) {
 		JSONObject newsText = new JSONObject();

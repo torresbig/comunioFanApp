@@ -1,10 +1,8 @@
 package comunio.nas.util.player;
 
-import java.text.Normalizer;
 import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Locale;
 import java.util.Map;
 import java.util.logging.Logger;
 import java.util.stream.StreamSupport;
@@ -21,70 +19,9 @@ import comunio.nas.objects.orga.ComunioDate;
 
 public class PlayerHelper {
 
-	private static final Logger LOGGER = LogManager.getLogger(PlayerHelper.class);
+	private static final Logger LOGGER = LogManager.getLogger(PlayerMatcher.class);
 
-	/**
-	 * Sucht einen Spieler anhand der ID in einem JSONArray.
-	 * 
-	 * @param playerDB    JSONArray mit Spielern
-	 * @param playerId    Die zu suchende Spieler-ID
-	 * @param notInLigaDB die nicht in Liga Spieler DB (kann null sein!)
-	 * @return JSONObject des Spielers oder null, falls nicht gefunden
-	 */
-	public static JSONObject findPlayerByComunioId(JSONArray playerDB, Object playerId, JSONObject notInLigaDBObj) {
-		String id = convertIdToString(playerId);
-
-		for (int i = 0; i < playerDB.length(); i++) {
-			JSONObject playerObj = playerDB.getJSONObject(i);
-			String dbId = convertIdToString(playerObj.get("id"));
-
-			if (dbId.equals(id)) {
-				return playerObj;
-			}
-		}
-
-		if (notInLigaDBObj == null) {
-			return null;
-		}
-
-		JSONObject db = notInLigaDBObj.optJSONObject("db");
-		if (db == null) {
-			return null;
-		}
-		JSONObject player = db.optJSONObject(id);
-		if (player == null) {
-			return null;
-		} 
-		
-		JSONObject data = player.getJSONObject("data");
-		data.put("retired", false);
-		
-		LOGGER.info("Player aus der NOT_IN_LIGA_DB geholt!");
-		// Spieler gefunden, jetzt aus der DB entfernen, damit er nicht nochmal
-		// verwendet wird
-		db.remove(id); 
-
-		return player;
-	}
-
-	/**
-	 * Konvertiert ID-Objekte zu String, unabhängig vom Originaltyp.
-	 * 
-	 * @param idObj ID-Objekt (Integer, String, etc.)
-	 * @return String-Repräsentation der ID
-	 */
-	public static String convertIdToString(Object idObj) {
-		if (idObj instanceof Integer) {
-			return String.valueOf(idObj);
-		} else if (idObj instanceof String) {
-			return (String) idObj;
-		} else if (idObj instanceof Double) {
-			return String.valueOf(idObj);
-		} else {
-			return idObj.toString();
-		}
-	}
-
+	
 	/**
 	 * Durchsucht das JSONArray nach dem angegebenen Pfad (z.B.
 	 * "data.attribute.ligainsiderRanking.lastUpdate") und gibt den ersten
@@ -199,129 +136,7 @@ public class PlayerHelper {
 		return player;
 	}
 
-	/**
-	 * Normalisiert Namen für Vergleiche: - Entfernt diakritische Zeichen -
-	 * Konvertiert zu Kleinbuchstaben - Entfernt Sonderzeichen außer Leerzeichen
-	 */
-	public static String normalizeName(String name) {
-		if (name == null)
-			return "";
-		try {
-			String normalized = Normalizer.normalize(name, Normalizer.Form.NFD).replaceAll("\\p{M}", "") // diakritische Zeichen entfernen
-					.toLowerCase(Locale.ROOT).replaceAll("[^a-z0-9\\s]", "");
-			return normalized.trim();
-		} catch (Exception e) {
-			return name.toLowerCase(Locale.ROOT).replaceAll("[^a-z0-9\\s]", "").trim();
-		}
-	}
-
-	/**
-	 * Prüft ob ein Suchname als Teil des vollständigen Namens vorkommt
-	 * Berücksichtigt auch diakritische Zeichen
-	 */
-	public static boolean containsSubstringMatch(String searchName, String fullName) {
-		if (searchName == null || fullName == null)
-			return false;
-
-		// Direkter Teil-String-Vergleich
-		if (fullName.contains(searchName)) {
-			return true;
-		}
-
-		// Umgekehrt prüfen (selten nötig, aber sicherheitshalber)
-		if (searchName.contains(fullName)) {
-			return true;
-		}
-
-		return false;
-	}
-
-	/**
-	 * Erweiterte Name-Übereinstimmung mit mehreren Strategien Verbessert für: -
-	 * Namen mit Initialen (z.B. "R. Adam" → "Raif Adam") -
-	 * Transliterationsunterschiede (z.B. "İnanoğlu" → "Inanoglu") - Flexiblere
-	 * Nachnamensübereinstimmung für Zweitligavereine
-	 */
-	public static boolean namesMatchWithInitial(String name1, String name2) {
-		if (name1 == null || name2 == null)
-			return false;
-
-		String normName1 = normalizeName(name1);
-		String normName2 = normalizeName(name2);
-
-		// Direkte Übereinstimmung
-		if (normName1.equals(normName2)) {
-			return true;
-		}
-
-		// Teil-String-Übereinstimmung
-		if (containsSubstringMatch(normName1, normName2)) {
-			return true;
-		}
-
-		// Initial-basierter Vergleich
-		String[] parts1 = normName1.split("\\s+");
-		String[] parts2 = normName2.split("\\s+");
-
-		if (parts1.length >= 2 && parts2.length >= 2) {
-			// Beide Namen haben mindestens Vornamen + Nachnamen
-			String lastName1 = parts1[parts1.length - 1];
-			String lastName2 = parts2[parts2.length - 1];
-
-			String firstInitial1 = parts1[0].substring(0, 1);
-			String firstInitial2 = parts2[0].substring(0, 1);
-
-			// Gleicher Nachname + gleiche erste Initial
-			if (lastName1.equals(lastName2) && firstInitial1.equals(firstInitial2)) {
-				return true;
-			}
-
-			// Nur gleicher Nachname (letzter Ausweg)
-			if (lastName1.equals(lastName2)) {
-				return true; // Wird später durch Vereins-Check weiter eingeschränkt
-			}
-		}
-
-		// Levenshtein-Distanz für ähnliche Namen
-		int maxLen = Math.max(normName1.length(), normName2.length());
-		if (maxLen == 0)
-			return false;
-
-		int lev = new LevenshteinDistance().apply(normName1, normName2);
-		double similarity = 1.0 - ((double) lev / maxLen);
-
-		// Etwas lockerere Schwelle für bessere Trefferquote
-		return similarity > 0.85;
-	}
-
-	/**
-	 * Einfache Levenshtein-Distanz-Implementierung
-	 */
-	private static class LevenshteinDistance {
-		public int apply(String s, String t) {
-			if (s.length() == 0)
-				return t.length();
-			if (t.length() == 0)
-				return s.length();
-
-			int[][] dp = new int[s.length() + 1][t.length() + 1];
-
-			for (int i = 0; i <= s.length(); i++)
-				dp[i][0] = i;
-			for (int j = 0; j <= t.length(); j++)
-				dp[0][j] = j;
-
-			for (int i = 1; i <= s.length(); i++) {
-				for (int j = 1; j <= t.length(); j++) {
-					int cost = (s.charAt(i - 1) == t.charAt(j - 1)) ? 0 : 1;
-					dp[i][j] = Math.min(Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1), dp[i - 1][j - 1] + cost);
-				}
-			}
-
-			return dp[s.length()][t.length()];
-		}
-	}
-
+	
 	/**
 	 * Ermittelt den Besitzstand eines Spielers zu einem bestimmten Zeitpunkt
 	 * (normalerweise: Spieltag-Start).
@@ -441,7 +256,7 @@ public class PlayerHelper {
 	public static void deleteAttributFromAllPlayers(String attribut, JSONArray playerDB) {
 	    long success = StreamSupport.stream(playerDB.spliterator(), false)
 	            .map(JSONObject.class::cast)
-	            .filter(pObj -> PlayerHelper.deleteAttributeFromPlayer(pObj, attribut))
+	            .filter(pObj -> deleteAttributeFromPlayer(pObj, attribut))
 	            .count();
 
 	    LOGGER.info(attribut + " << Attribut von " + success + " Spielern gelöscht!");

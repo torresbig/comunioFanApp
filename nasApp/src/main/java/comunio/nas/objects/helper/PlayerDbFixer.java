@@ -21,7 +21,7 @@ import comunio.nas.objects.NewsManager;
 import comunio.nas.objects.TransferNewsEntry;
 import comunio.nas.objects.orga.ComunioDate;
 import comunio.nas.objects.user.User;
-import comunio.nas.util.player.PlayerHelper;
+import comunio.nas.util.player.PlayerMatcher;
 
 public class PlayerDbFixer {
 
@@ -652,7 +652,7 @@ public class PlayerDbFixer {
 				try {
 					JSONObject transfer = transfers.getJSONObject(j);
 					String playerId = String.valueOf(transfer.getJSONObject("tradable").getInt("id"));
-					JSONObject player = PlayerHelper.findPlayerByComunioId(playerDB, playerId, notInLigaDbObj);
+					JSONObject player = PlayerMatcher.findPlayerByComunioId(playerDB, playerId, notInLigaDbObj);
 
 					String sellerId = String.valueOf(transfer.getJSONObject("from").getInt("id"));
 					String seller = transfer.getJSONObject("from").getString("name");
