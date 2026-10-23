@@ -1392,7 +1392,7 @@
             "rang": 29
           },
           "SonstigeInfos": [
-            "teuerster Spieler (26,790,000 \u20ac)",
+            "teuerster Spieler (26.790.000 \u20ac)",
             "meisten Punkte letzte Saison (338)"
           ]
         },
@@ -5101,7 +5101,7 @@
             "rang": 1
           },
           "SonstigeInfos": [
-            "teuerster Spieler (Realwert) (170,000,000 \u20ac)",
+            "teuerster Spieler (Realwert) (170.000.000 \u20ac)",
             "meisten Punkte (67)"
           ]
         },
@@ -15081,6 +15081,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/32553"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/andrej-kramaric_2439/",
+          "playerName": "Kramarić",
+          "playerId": "2439"
+        },
         "lastWert": 4230000,
         "spielerDaten": {
           "groesse": "1,77",
@@ -23281,6 +23286,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/frederik-schmahl_36005/",
+          "playerName": "Schmahl",
+          "playerId": "36005"
+        },
         "lastWert": 750000,
         "spielerDaten": {
           "groesse": "1,83",
@@ -37798,6 +37808,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33300"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/heechan-hwang_12138/",
+          "playerName": "Hee Chan",
+          "playerId": "12138"
+        },
         "lastWert": 2450000,
         "spielerDaten": {
           "groesse": "1,77",
@@ -38267,6 +38282,51 @@
       },
       "name": "Soylu",
       "id": "34529"
+    },
+    {
+      "data": {
+        "lastWert": 0,
+        "spielerDaten": {
+          "groesse": "",
+          "geburtstag": "",
+          "laenderspiele": 0,
+          "nebenpositionen": [],
+          "nationalspieler": "",
+          "trikotNummer": 0,
+          "nationalitaet": "",
+          "laenderspielTore": 0,
+          "hauptposition": "",
+          "fuss": ""
+        },
+        "isNotName": [],
+        "punktekorrektur": [],
+        "verein": "8",
+        "wert": 740000,
+        "lastPoints": 0,
+        "punkte": 0,
+        "realWert": 0,
+        "stats": {
+          "notenDurchschnitt": "0",
+          "gelbekarten": 0,
+          "totalPenalties": 0,
+          "ratedGames": 0,
+          "lastUpdate": "23.10.2026",
+          "playedGames": 0,
+          "tore": 0,
+          "punkteDurchschnitt": "0",
+          "gelbrotekarten": 0,
+          "rotekarten": 0,
+          "manOfTheMatchAmount": 0
+        },
+        "retired": false,
+        "withinSquad": false,
+        "onMarket": false,
+        "position": "STURM",
+        "attribute": {},
+        "possibleNames": []
+      },
+      "name": "Ben Seghir",
+      "id": "34285"
     }
   ]
 }
