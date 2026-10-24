@@ -872,7 +872,7 @@
         "isNotName": [],
         "wert": 2140000,
         "verein": "18",
-        "lastPoints": 0,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "25.08.2026",
           "name": "Benedict Hollerbach",
@@ -902,7 +902,11 @@
           {"2023": 55},
           {"2024": 129}
         ],
-        "spieltagspunkte": [],
+        "spieltagspunkte": [{
+          "totalPoints": 11,
+          "value": 2,
+          "key": 6
+        }],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -1419,7 +1423,7 @@
         "isNotName": [],
         "wert": 730000,
         "verein": "92",
-        "lastPoints": 0,
+        "lastPoints": 6,
         "transfermarktDoDe": {
           "date": "26.08.2026",
           "name": "Max Finkgräfe",
@@ -1450,7 +1454,11 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2023": 63}],
-        "spieltagspunkte": [],
+        "spieltagspunkte": [{
+          "totalPoints": 5,
+          "value": 6,
+          "key": 6
+        }],
         "retired": false,
         "withinSquad": true,
         "onMarket": false,
@@ -1858,7 +1866,7 @@
         "isNotName": [],
         "wert": 2790000,
         "verein": "9",
-        "lastPoints": 0,
+        "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "06.09.2026",
           "name": "Farès Chaïbi",
@@ -2863,7 +2871,7 @@
         "isNotName": [],
         "wert": 5360000,
         "verein": "13",
-        "lastPoints": 0,
+        "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "03.09.2026",
           "name": "Linton Maina",
@@ -3270,7 +3278,7 @@
         "isNotName": [],
         "wert": 8750000,
         "verein": "6",
-        "lastPoints": 0,
+        "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "25.08.2026",
           "name": "Marco Grüll",
@@ -4580,7 +4588,7 @@
         "isNotName": [],
         "wert": 1590000,
         "verein": "109",
-        "lastPoints": 0,
+        "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "28.08.2026",
           "name": "Leopold Querfeld",
@@ -4607,7 +4615,11 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 90}],
-        "spieltagspunkte": [],
+        "spieltagspunkte": [{
+          "totalPoints": 13,
+          "value": 4,
+          "key": 6
+        }],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -5800,7 +5812,7 @@
         "isNotName": [],
         "wert": 13700000,
         "verein": "92",
-        "lastPoints": 0,
+        "lastPoints": 8,
         "transfermarktDoDe": {
           "date": "30.08.2026",
           "name": "Antonio Nusa",
@@ -6478,7 +6490,7 @@
         "isNotName": [],
         "wert": 2730000,
         "verein": "109",
-        "lastPoints": 0,
+        "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "01.09.2026",
           "name": "Woo-yeong Jeong",
@@ -6641,7 +6653,7 @@
         "isNotName": [],
         "wert": 12930000,
         "verein": "5",
-        "lastPoints": 0,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "01.09.2026",
           "name": "Nico Schlotterbeck",
@@ -7190,7 +7202,7 @@
         "isNotName": [],
         "wert": 4860000,
         "verein": "68",
-        "lastPoints": 0,
+        "lastPoints": 6,
         "transfermarktDoDe": {
           "date": "01.09.2026",
           "haveToCheck": false,
@@ -7417,7 +7429,7 @@
         "isNotName": [],
         "wert": 7380000,
         "verein": "5",
-        "lastPoints": 0,
+        "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "02.09.2026",
           "name": "Daniel Svensson",
@@ -7581,7 +7593,7 @@
         "isNotName": [],
         "wert": 5760000,
         "verein": "92",
-        "lastPoints": 0,
+        "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "02.09.2026",
           "name": "Tidiam Gomis",
@@ -8364,7 +8376,7 @@
         "isNotName": [],
         "wert": 4960000,
         "verein": "4",
-        "lastPoints": 0,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "03.09.2026",
           "name": "Miro Muheim",
@@ -8597,7 +8609,7 @@
         "isNotName": [],
         "wert": 3280000,
         "verein": "13",
-        "lastPoints": 0,
+        "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "03.09.2026",
           "name": "Marius Bülter",
@@ -9392,7 +9404,7 @@
         "isNotName": [],
         "wert": 5420000,
         "verein": "92",
-        "lastPoints": 0,
+        "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "04.09.2026",
           "name": "Ezechiel Banzuzi",
@@ -9598,6 +9610,11 @@
     {
       "data": {
         "comAnalystics": {"link": "https://www.com-analytics.de/player/33167"},
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/ramy-bensebaini_7791/",
+          "playerName": "Bensebaini",
+          "playerId": "7791"
+        },
         "lastWert": 1950000,
         "spielerDaten": {
           "groesse": "1,87",
@@ -9767,7 +9784,7 @@
         "isNotName": [],
         "wert": 3000000,
         "verein": "13",
-        "lastPoints": 0,
+        "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "06.09.2026",
           "name": "Ísak Jóhannesson",
@@ -12403,7 +12420,7 @@
         "isNotName": [],
         "wert": 2800000,
         "verein": "13",
-        "lastPoints": 0,
+        "lastPoints": 6,
         "transfermarktDoDe": {
           "date": "07.09.2026",
           "name": "Marvin Schwäbe",
@@ -13393,7 +13410,7 @@
         "isNotName": [],
         "wert": 7770000,
         "verein": "5",
-        "lastPoints": 0,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "08.09.2026",
           "name": "Waldemar Anton",
@@ -13485,7 +13502,7 @@
         "isNotName": [],
         "wert": 4180000,
         "verein": "18",
-        "lastPoints": 0,
+        "lastPoints": 11,
         "transfermarktDoDe": {
           "date": "08.09.2026",
           "name": "Jeffrey Gouweleeuw",
@@ -13654,7 +13671,7 @@
         "isNotName": [],
         "wert": 2520000,
         "verein": "92",
-        "lastPoints": 0,
+        "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "09.09.2026",
           "name": "Benjamin Henrichs",
@@ -14803,7 +14820,7 @@
         "isNotName": [],
         "wert": 1830000,
         "verein": "109",
-        "lastPoints": 0,
+        "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "27.08.2026",
           "name": "Tom Rothe",
@@ -14887,7 +14904,7 @@
         "isNotName": [],
         "wert": 2330000,
         "verein": "68",
-        "lastPoints": 0,
+        "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "27.08.2026",
           "name": "Marius Wolf",
@@ -15616,7 +15633,7 @@
         "isNotName": [],
         "wert": 3380000,
         "verein": "109",
-        "lastPoints": 0,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "24.08.2026",
           "name": "Tim Skarke",
@@ -18116,7 +18133,7 @@
         "isNotName": [],
         "wert": 2910000,
         "verein": "6",
-        "lastPoints": 0,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "02.09.2026",
           "name": "Marco Friedl",
@@ -18823,7 +18840,7 @@
         "isNotName": [],
         "verein": "68",
         "wert": 3770000,
-        "lastPoints": 0,
+        "lastPoints": 13,
         "transfermarktDoDe": {
           "date": "28.08.2026",
           "name": "Han-Noah Massengo",
@@ -18907,7 +18924,7 @@
         "isNotName": [],
         "verein": "92",
         "wert": 3520000,
-        "lastPoints": 0,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "28.08.2026",
           "name": "Andrija Maksimovic",
@@ -19891,7 +19908,7 @@
         "isNotName": [],
         "verein": "92",
         "wert": 6370000,
-        "lastPoints": 0,
+        "lastPoints": 16,
         "transfermarktDoDe": {
           "date": "07.09.2026",
           "name": "Rômulo",
@@ -21693,7 +21710,7 @@
         "isNotName": [],
         "verein": "18",
         "wert": 7860000,
-        "lastPoints": 0,
+        "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "25.08.2026",
           "haveToCheck": true,
@@ -22708,7 +22725,7 @@
         "punktekorrektur": [],
         "verein": "118",
         "wert": 1990000,
-        "lastPoints": 0,
+        "lastPoints": -2,
         "transfermarktDoDe": {
           "date": "26.08.2026",
           "haveToCheck": false,
@@ -23143,7 +23160,7 @@
         "punktekorrektur": [],
         "verein": "118",
         "wert": 3670000,
-        "lastPoints": 0,
+        "lastPoints": -2,
         "transfermarktDoDe": {
           "date": "26.08.2026",
           "haveToCheck": false,
@@ -24477,7 +24494,10 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [],
+        "spieltagspunkte": [{
+          "value": 0,
+          "key": 6
+        }],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -24939,7 +24959,7 @@
         "punktekorrektur": [],
         "verein": "10",
         "wert": 2980000,
-        "lastPoints": 0,
+        "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "29.08.2026",
           "haveToCheck": false,
@@ -25167,7 +25187,7 @@
         "punktekorrektur": [],
         "verein": "10",
         "wert": 4300000,
-        "lastPoints": 0,
+        "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "29.08.2026",
           "haveToCheck": false,
@@ -25240,7 +25260,7 @@
         "punktekorrektur": [],
         "verein": "10",
         "wert": 4400000,
-        "lastPoints": 0,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "30.08.2026",
           "haveToCheck": false,
@@ -25387,7 +25407,7 @@
         "punktekorrektur": [],
         "verein": "10",
         "wert": 1700000,
-        "lastPoints": 0,
+        "lastPoints": 9,
         "transfermarktDoDe": {
           "date": "02.09.2026",
           "haveToCheck": false,
@@ -25539,7 +25559,7 @@
         "punktekorrektur": [],
         "verein": "10",
         "wert": 4480000,
-        "lastPoints": 0,
+        "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "31.08.2026",
           "haveToCheck": false,
@@ -26558,7 +26578,7 @@
         "punktekorrektur": [],
         "verein": "118",
         "wert": 2830000,
-        "lastPoints": 0,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "02.09.2026",
           "haveToCheck": false,
@@ -26626,7 +26646,7 @@
         "punktekorrektur": [],
         "verein": "4",
         "wert": 1410000,
-        "lastPoints": 0,
+        "lastPoints": 6,
         "transfermarktDoDe": {
           "date": "02.09.2026",
           "haveToCheck": false,
@@ -27166,7 +27186,7 @@
         "punktekorrektur": [],
         "verein": "4",
         "wert": 1680000,
-        "lastPoints": 0,
+        "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "03.09.2026",
           "haveToCheck": false,
@@ -29191,7 +29211,7 @@
         "punktekorrektur": [],
         "verein": "81",
         "wert": 3870000,
-        "lastPoints": 0,
+        "lastPoints": 9,
         "transfermarktDoDe": {
           "date": "01.01.1900",
           "haveToCheck": true
@@ -29433,7 +29453,7 @@
         "punktekorrektur": [],
         "verein": "81",
         "wert": 3550000,
-        "lastPoints": 0,
+        "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "01.01.1900",
           "haveToCheck": true
@@ -30064,7 +30084,7 @@
         "punktekorrektur": [],
         "verein": "81",
         "wert": 4580000,
-        "lastPoints": 0,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "01.01.1900",
           "haveToCheck": true
@@ -30937,7 +30957,7 @@
         "punktekorrektur": [],
         "verein": "68",
         "wert": 8190000,
-        "lastPoints": 0,
+        "lastPoints": 7,
         "lastSeasonPoints": 80,
         "punkte": 38,
         "realWert": 0,
@@ -31184,7 +31204,7 @@
         "punktekorrektur": [],
         "verein": "81",
         "wert": 2720000,
-        "lastPoints": 0,
+        "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "23.08.2026",
           "haveToCheck": false,
@@ -34333,7 +34353,7 @@
         "punktekorrektur": [],
         "verein": "9",
         "wert": 3240000,
-        "lastPoints": 0,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "31.08.2026",
           "haveToCheck": false,
@@ -35236,7 +35256,7 @@
         "punktekorrektur": [],
         "verein": "18",
         "wert": 3460000,
-        "lastPoints": 0,
+        "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "26.08.2026",
           "haveToCheck": false,
@@ -35330,7 +35350,7 @@
         "punktekorrektur": [],
         "verein": "6",
         "wert": 3650000,
-        "lastPoints": 0,
+        "lastPoints": 12,
         "transfermarktDoDe": {
           "date": "01.01.1900",
           "haveToCheck": true
@@ -35603,7 +35623,7 @@
         "punktekorrektur": [],
         "verein": "6",
         "wert": 14600000,
-        "lastPoints": 0,
+        "lastPoints": 14,
         "transfermarktDoDe": {
           "date": "03.09.2026",
           "haveToCheck": false,
@@ -36702,7 +36722,7 @@
         "punktekorrektur": [],
         "verein": "6",
         "wert": 5830000,
-        "lastPoints": 0,
+        "lastPoints": 6,
         "transfermarktDoDe": {
           "date": "01.09.2026",
           "haveToCheck": false,
@@ -36786,7 +36806,7 @@
         "punktekorrektur": [],
         "verein": "9",
         "wert": 4340000,
-        "lastPoints": 0,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "01.09.2026",
           "haveToCheck": false,
@@ -37459,7 +37479,7 @@
         "punktekorrektur": [],
         "verein": "13",
         "wert": 5100000,
-        "lastPoints": 0,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "02.09.2026",
           "haveToCheck": false,
