@@ -1866,7 +1866,7 @@
         "isNotName": [],
         "wert": 2790000,
         "verein": "9",
-        "lastPoints": 4,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "06.09.2026",
           "name": "Farès Chaïbi",
@@ -4918,7 +4918,7 @@
         "isNotName": [],
         "wert": 9370000,
         "verein": "9",
-        "lastPoints": 0,
+        "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "30.08.2026",
           "name": "Can Uzun",
@@ -4949,7 +4949,11 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 77}],
-        "spieltagspunkte": [],
+        "spieltagspunkte": [{
+          "totalPoints": 36,
+          "value": 1,
+          "key": 6
+        }],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -8710,7 +8714,7 @@
         "isNotName": [],
         "wert": 4650000,
         "verein": "5",
-        "lastPoints": 0,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "03.09.2026",
           "name": "Julian Ryerson",
@@ -9938,7 +9942,7 @@
         "isNotName": [],
         "wert": 6630000,
         "verein": "5",
-        "lastPoints": 0,
+        "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "06.09.2026",
           "name": "Jobe Bellingham",
@@ -21241,7 +21245,7 @@
         "isNotName": [],
         "verein": "9",
         "wert": 640000,
-        "lastPoints": 0,
+        "lastPoints": 1,
         "transfermarktDoDe": {
           "date": "28.08.2026",
           "haveToCheck": true,
@@ -21273,7 +21277,11 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 1}],
-        "spieltagspunkte": [],
+        "spieltagspunkte": [{
+          "totalPoints": 4,
+          "value": 1,
+          "key": 6
+        }],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -34353,7 +34361,7 @@
         "punktekorrektur": [],
         "verein": "9",
         "wert": 3240000,
-        "lastPoints": 2,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "31.08.2026",
           "haveToCheck": false,
