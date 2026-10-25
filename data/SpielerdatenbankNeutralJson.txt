@@ -1,5 +1,5 @@
 {
-  "lastProcessedMatchday": 6,
+  "lastProcessedMatchday": 7,
   "lastBigUpdate": "21.09.2026",
   "lastProcessedComstatsSpieltagsdaten": 5,
   "lastUpdate": "21.09.2026",
@@ -396,11 +396,18 @@
           {"2023": 1},
           {"2024": 36}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 5,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 5,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 5,
+            "value": 0,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -881,7 +888,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 33,
-        "punkte": 11,
+        "punkte": 13,
         "realWert": 8000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -902,11 +909,18 @@
           {"2023": 55},
           {"2024": 129}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 11,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 11,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 13,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -1043,7 +1057,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 218,
-        "punkte": 14,
+        "punkte": 17,
         "realWert": 22000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -1064,11 +1078,18 @@
           {"2023": 230},
           {"2024": 130}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 14,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 14,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 17,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -1286,11 +1307,18 @@
           {"2023": 92},
           {"2024": 82}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 16,
-          "value": 0,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 16,
+            "value": 0,
+            "key": 6
+          },
+          {
+            "totalPoints": 16,
+            "value": 0,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -1436,7 +1464,7 @@
           "alter": 21
         },
         "lastSeasonPoints": 39,
-        "punkte": 5,
+        "punkte": 11,
         "realWert": 5000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -1454,11 +1482,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2023": 63}],
-        "spieltagspunkte": [{
-          "totalPoints": 5,
-          "value": 6,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 5,
+            "value": 6,
+            "key": 6
+          },
+          {
+            "totalPoints": 11,
+            "value": 6,
+            "key": 7
+          }
+        ],
         "retired": false,
         "withinSquad": true,
         "onMarket": false,
@@ -1673,11 +1708,18 @@
           {"2023": 79},
           {"2024": 91}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 59,
-          "value": 13,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 59,
+            "value": 13,
+            "key": 6
+          },
+          {
+            "totalPoints": 59,
+            "value": 0,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -1875,7 +1917,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 114,
-        "punkte": 14,
+        "punkte": 17,
         "realWert": 15000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -1896,11 +1938,18 @@
           {"2023": 116},
           {"2024": 72}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 14,
-          "value": 6,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 14,
+            "value": 6,
+            "key": 6
+          },
+          {
+            "totalPoints": 17,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "retired": false,
         "withinSquad": true,
         "onMarket": false,
@@ -2033,7 +2082,7 @@
         "isNotName": [],
         "wert": 6280000,
         "verein": "9",
-        "lastPoints": 9,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "07.09.2026",
           "name": "Robin Koch",
@@ -2042,7 +2091,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 136,
-        "punkte": 33,
+        "punkte": 35,
         "realWert": 10000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -2066,11 +2115,18 @@
           {"2023": 96},
           {"2024": 140}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 33,
-          "value": 9,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 33,
+            "value": 9,
+            "key": 6
+          },
+          {
+            "totalPoints": 35,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -2355,7 +2411,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 181,
-        "punkte": 31,
+        "punkte": 39,
         "realWert": 12000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -2379,11 +2435,18 @@
           {"2023": 178},
           {"2024": 112}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 31,
-          "value": 7,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 31,
+            "value": 7,
+            "key": 6
+          },
+          {
+            "totalPoints": 39,
+            "value": 8,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -2450,7 +2513,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 102,
-        "punkte": 11,
+        "punkte": 13,
         "realWert": 3000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -2477,11 +2540,18 @@
           {"2023": 127},
           {"2024": 104}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 11,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 11,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 13,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -2534,7 +2604,7 @@
           "alter": 19
         },
         "lastSeasonPoints": 51,
-        "punkte": 2,
+        "punkte": 10,
         "realWert": 7000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -2555,11 +2625,18 @@
           {"2023": 1},
           {"2024": 24}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 2,
-          "value": 8,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 2,
+            "value": 8,
+            "key": 6
+          },
+          {
+            "totalPoints": 10,
+            "value": 8,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -2704,7 +2781,7 @@
         "isNotName": [],
         "wert": 3030000,
         "verein": "68",
-        "lastPoints": 5,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "24.08.2026",
           "name": "Finn Dahmen",
@@ -2713,7 +2790,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 103,
-        "punkte": 39,
+        "punkte": 41,
         "realWert": 12000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -2737,11 +2814,18 @@
           {"2023": 115},
           {"2024": 72}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 39,
-          "value": 5,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 39,
+            "value": 5,
+            "key": 6
+          },
+          {
+            "totalPoints": 41,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -2888,7 +2972,7 @@
           "alter": 26
         },
         "lastSeasonPoints": 69,
-        "punkte": 36,
+        "punkte": 37,
         "realWert": 3000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -2911,11 +2995,18 @@
           {"2022": 66},
           {"2023": 58}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 36,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 36,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 37,
+            "value": 1,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -3223,11 +3314,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 9}],
-        "spieltagspunkte": [{
-          "totalPoints": 42,
-          "value": 7,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 42,
+            "value": 7,
+            "key": 6
+          },
+          {
+            "totalPoints": 42,
+            "value": 0,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -3291,7 +3389,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 115,
-        "punkte": 48,
+        "punkte": 52,
         "realWert": 4000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -3309,11 +3407,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 85}],
-        "spieltagspunkte": [{
-          "totalPoints": 48,
-          "value": 5,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 48,
+            "value": 5,
+            "key": 6
+          },
+          {
+            "totalPoints": 52,
+            "value": 4,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -3572,7 +3677,7 @@
           "alter": 24
         },
         "lastSeasonPoints": 75,
-        "punkte": 28,
+        "punkte": 30,
         "realWert": 15000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -3590,11 +3695,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 99}],
-        "spieltagspunkte": [{
-          "totalPoints": 28,
-          "value": 8,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 28,
+            "value": 8,
+            "key": 6
+          },
+          {
+            "totalPoints": 30,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -3648,7 +3760,7 @@
           "alter": 32
         },
         "lastSeasonPoints": 76,
-        "punkte": 19,
+        "punkte": 22,
         "realWert": 6000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -3672,11 +3784,18 @@
           {"2021": 92},
           {"2022": 113}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 19,
-          "value": 3,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 19,
+            "value": 3,
+            "key": 6
+          },
+          {
+            "totalPoints": 22,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -3819,7 +3938,7 @@
         "isNotName": [],
         "wert": 8090000,
         "verein": "21",
-        "lastPoints": 1,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "27.08.2026",
           "name": "Matthias Ginter",
@@ -3828,7 +3947,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 143,
-        "punkte": 44,
+        "punkte": 47,
         "realWert": 5000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -3861,11 +3980,18 @@
           {"2023": 64},
           {"2024": 128}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 44,
-          "value": 3,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 44,
+            "value": 3,
+            "key": 6
+          },
+          {
+            "totalPoints": 47,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -4004,7 +4130,7 @@
           "alter": 22
         },
         "lastSeasonPoints": 141,
-        "punkte": 28,
+        "punkte": 35,
         "realWert": 50000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -4022,11 +4148,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 140}],
-        "spieltagspunkte": [{
-          "totalPoints": 28,
-          "value": 7,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 28,
+            "value": 7,
+            "key": 6
+          },
+          {
+            "totalPoints": 35,
+            "value": 7,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -4242,7 +4375,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 98,
-        "punkte": 28,
+        "punkte": 30,
         "realWert": 10000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -4263,11 +4396,18 @@
           {"2023": 177},
           {"2024": 22}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 28,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 28,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 30,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -4601,7 +4741,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 126,
-        "punkte": 13,
+        "punkte": 17,
         "realWert": 20000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -4619,11 +4759,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 90}],
-        "spieltagspunkte": [{
-          "totalPoints": 13,
-          "value": 4,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 13,
+            "value": 4,
+            "key": 6
+          },
+          {
+            "totalPoints": 17,
+            "value": 4,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -4935,7 +5082,7 @@
           "alter": 19
         },
         "lastSeasonPoints": 111,
-        "punkte": 36,
+        "punkte": 37,
         "realWert": 45000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -4953,11 +5100,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 77}],
-        "spieltagspunkte": [{
-          "totalPoints": 36,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 36,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 37,
+            "value": 1,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -5833,7 +5987,7 @@
           "alter": 20
         },
         "lastSeasonPoints": 151,
-        "punkte": 47,
+        "punkte": 55,
         "realWert": 32000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -5851,11 +6005,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 85}],
-        "spieltagspunkte": [{
-          "totalPoints": 47,
-          "value": 0,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 47,
+            "value": 0,
+            "key": 6
+          },
+          {
+            "totalPoints": 55,
+            "value": 8,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -5969,7 +6130,7 @@
         "isNotName": [],
         "wert": 8930000,
         "verein": "1",
-        "lastPoints": 0,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "30.08.2026",
           "name": "Alphonso Davies",
@@ -5978,7 +6139,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 45,
-        "punkte": 40,
+        "punkte": 42,
         "realWert": 40000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -6004,7 +6165,11 @@
           {"2023": 119},
           {"2024": 98}
         ],
-        "spieltagspunkte": [],
+        "spieltagspunkte": [{
+          "totalPoints": 42,
+          "value": 2,
+          "key": 7
+        }],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -6064,7 +6229,7 @@
           "alter": 25
         },
         "lastSeasonPoints": 88,
-        "punkte": 6,
+        "punkte": 9,
         "realWert": 10000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -6082,11 +6247,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 2}],
-        "spieltagspunkte": [{
-          "totalPoints": 6,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 6,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 9,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -6137,7 +6309,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 113,
-        "punkte": 29,
+        "punkte": 33,
         "realWert": 15000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -6161,11 +6333,18 @@
           {"2022": 85},
           {"2023": 104}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 29,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 29,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 33,
+            "value": 4,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -6507,7 +6686,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 80,
-        "punkte": 22,
+        "punkte": 27,
         "realWert": 3500000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -6531,11 +6710,18 @@
           {"2023": 60},
           {"2024": 76}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 22,
-          "value": 3,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 22,
+            "value": 3,
+            "key": 6
+          },
+          {
+            "totalPoints": 27,
+            "value": 5,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -6670,7 +6856,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 188,
-        "punkte": 31,
+        "punkte": 33,
         "realWert": 55000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -6696,11 +6882,18 @@
           {"2023": 171},
           {"2024": 95}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 31,
-          "value": 5,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 31,
+            "value": 5,
+            "key": 6
+          },
+          {
+            "totalPoints": 33,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": true,
         "retired": false,
@@ -7058,7 +7251,7 @@
         "isNotName": [],
         "wert": 10430000,
         "verein": "18",
-        "lastPoints": 10,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "01.09.2026",
           "name": "Phillip Tietz",
@@ -7067,7 +7260,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 98,
-        "punkte": 48,
+        "punkte": 51,
         "realWert": 4000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -7088,11 +7281,18 @@
           {"2023": 123},
           {"2024": 123}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 48,
-          "value": 10,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 48,
+            "value": 10,
+            "key": 6
+          },
+          {
+            "totalPoints": 51,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -7224,7 +7424,7 @@
           "alter": 20
         },
         "lastSeasonPoints": 66,
-        "punkte": 31,
+        "punkte": 37,
         "realWert": 5000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -7242,11 +7442,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 2}],
-        "spieltagspunkte": [{
-          "totalPoints": 31,
-          "value": 10,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 31,
+            "value": 10,
+            "key": 6
+          },
+          {
+            "totalPoints": 37,
+            "value": 6,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -7328,11 +7535,18 @@
           {"2023": 124},
           {"2024": 133}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 13,
-          "value": 6,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 13,
+            "value": 6,
+            "key": 6
+          },
+          {
+            "totalPoints": 13,
+            "value": 0,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -7450,7 +7664,7 @@
           "alter": 23
         },
         "lastSeasonPoints": 125,
-        "punkte": 38,
+        "punkte": 42,
         "realWert": 22000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -7468,11 +7682,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 49}],
-        "spieltagspunkte": [{
-          "totalPoints": 38,
-          "value": 4,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 38,
+            "value": 4,
+            "key": 6
+          },
+          {
+            "totalPoints": 42,
+            "value": 4,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -7530,7 +7751,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 59,
-        "punkte": 28,
+        "punkte": 27,
         "realWert": 35000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -7548,11 +7769,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 38}],
-        "spieltagspunkte": [{
-          "totalPoints": 28,
-          "value": 8,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 28,
+            "value": 8,
+            "key": 6
+          },
+          {
+            "totalPoints": 27,
+            "value": -1,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -7610,7 +7838,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 35,
-        "punkte": 27,
+        "punkte": 34,
         "realWert": 5000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -7628,11 +7856,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 17}],
-        "spieltagspunkte": [{
-          "totalPoints": 27,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 27,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 34,
+            "value": 7,
+            "key": 7
+          }
+        ],
         "retired": false,
         "withinSquad": true,
         "onMarket": false,
@@ -7748,7 +7983,7 @@
         "isNotName": [],
         "wert": 3980000,
         "verein": "21",
-        "lastPoints": 0,
+        "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "02.09.2026",
           "name": "Vincenzo Grifo",
@@ -7757,7 +7992,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 149,
-        "punkte": 17,
+        "punkte": 21,
         "realWert": 4000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -7786,7 +8021,11 @@
           {"2023": 166},
           {"2024": 201}
         ],
-        "spieltagspunkte": [],
+        "spieltagspunkte": [{
+          "totalPoints": 21,
+          "value": 4,
+          "key": 7
+        }],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -7866,11 +8105,18 @@
           {"2023": 56},
           {"2024": 89}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 4,
-          "value": 5,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 4,
+            "value": 5,
+            "key": 6
+          },
+          {
+            "totalPoints": 4,
+            "value": 0,
+            "key": 7
+          }
+        ],
         "retired": false,
         "withinSquad": true,
         "onMarket": false,
@@ -8009,7 +8255,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 91,
-        "punkte": 6,
+        "punkte": 7,
         "realWert": 1500000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -8041,11 +8287,18 @@
           {"2023": 187},
           {"2024": 42}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 6,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 6,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 7,
+            "value": 1,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -8171,7 +8424,7 @@
           "alter": 19
         },
         "lastSeasonPoints": 151,
-        "punkte": 17,
+        "punkte": 15,
         "realWert": 45000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -8189,11 +8442,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 151}],
-        "spieltagspunkte": [{
-          "totalPoints": 17,
-          "value": -2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 17,
+            "value": -2,
+            "key": 6
+          },
+          {
+            "totalPoints": 15,
+            "value": -2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -8401,7 +8661,7 @@
           "alter": 27
         },
         "lastSeasonPoints": 114,
-        "punkte": 27,
+        "punkte": 30,
         "realWert": 5000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -8419,11 +8679,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 114}],
-        "spieltagspunkte": [{
-          "totalPoints": 27,
-          "value": 13,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 27,
+            "value": 13,
+            "key": 6
+          },
+          {
+            "totalPoints": 30,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -8630,7 +8897,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 128,
-        "punkte": 12,
+        "punkte": 19,
         "realWert": 1800000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -8654,11 +8921,18 @@
           {"2023": 60},
           {"2024": 125}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 12,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 12,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 19,
+            "value": 7,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -8731,7 +9005,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 128,
-        "punkte": 21,
+        "punkte": 23,
         "realWert": 25000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -8756,11 +9030,18 @@
           {"2023": 83},
           {"2024": 107}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 21,
-          "value": 8,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 21,
+            "value": 8,
+            "key": 6
+          },
+          {
+            "totalPoints": 23,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -8889,7 +9170,7 @@
         "isNotName": [],
         "wert": 4680000,
         "verein": "68",
-        "lastPoints": 0,
+        "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "04.09.2026",
           "name": "Robin Fellhauer",
@@ -8902,7 +9183,7 @@
           "alter": 27
         },
         "lastSeasonPoints": 125,
-        "punkte": 29,
+        "punkte": 33,
         "realWert": 3500000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -8920,11 +9201,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 125}],
-        "spieltagspunkte": [{
-          "totalPoints": 29,
-          "value": 0,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 29,
+            "value": 0,
+            "key": 6
+          },
+          {
+            "totalPoints": 33,
+            "value": 4,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -8988,7 +9276,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 104,
-        "punkte": 19,
+        "punkte": 21,
         "realWert": 6000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -9013,11 +9301,18 @@
           {"2023": 118},
           {"2024": 84}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 19,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 19,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 21,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -9347,7 +9642,7 @@
         "isNotName": [],
         "wert": 9560000,
         "verein": "21",
-        "lastPoints": 3,
+        "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "04.09.2026",
           "haveToCheck": false,
@@ -9361,7 +9656,7 @@
           "alter": 23
         },
         "lastSeasonPoints": 89,
-        "punkte": 42,
+        "punkte": 46,
         "realWert": 24000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -9379,11 +9674,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 89}],
-        "spieltagspunkte": [{
-          "totalPoints": 42,
-          "value": 3,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 42,
+            "value": 3,
+            "key": 6
+          },
+          {
+            "totalPoints": 46,
+            "value": 4,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -9437,7 +9739,7 @@
           "alter": 20
         },
         "lastSeasonPoints": 56,
-        "punkte": 24,
+        "punkte": 28,
         "realWert": 16000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -9455,11 +9757,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 56}],
-        "spieltagspunkte": [{
-          "totalPoints": 24,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 24,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 28,
+            "value": 4,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -9817,7 +10126,7 @@
           "alter": 22
         },
         "lastSeasonPoints": 100,
-        "punkte": 19,
+        "punkte": 26,
         "realWert": 8000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -9835,11 +10144,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 100}],
-        "spieltagspunkte": [{
-          "totalPoints": 19,
-          "value": -2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 19,
+            "value": -2,
+            "key": 6
+          },
+          {
+            "totalPoints": 26,
+            "value": 7,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -9971,7 +10287,7 @@
           "alter": 19
         },
         "lastSeasonPoints": 95,
-        "punkte": 32,
+        "punkte": 37,
         "realWert": 40000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -9989,11 +10305,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 95}],
-        "spieltagspunkte": [{
-          "totalPoints": 32,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 32,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 37,
+            "value": 5,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -10056,7 +10379,7 @@
           "alter": 21
         },
         "lastSeasonPoints": 121,
-        "punkte": 32,
+        "punkte": 37,
         "realWert": 30000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -10074,11 +10397,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 121}],
-        "spieltagspunkte": [{
-          "totalPoints": 32,
-          "value": 5,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 32,
+            "value": 5,
+            "key": 6
+          },
+          {
+            "totalPoints": 37,
+            "value": 5,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -10304,7 +10634,7 @@
         "isNotName": [],
         "wert": 7400000,
         "verein": "1",
-        "lastPoints": 2,
+        "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "06.09.2026",
           "haveToCheck": false,
@@ -10318,7 +10648,7 @@
           "alter": 17
         },
         "lastSeasonPoints": 115,
-        "punkte": 20,
+        "punkte": 24,
         "realWert": 60000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -10336,11 +10666,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 115}],
-        "spieltagspunkte": [{
-          "totalPoints": 20,
-          "value": 5,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 20,
+            "value": 5,
+            "key": 6
+          },
+          {
+            "totalPoints": 24,
+            "value": 4,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -10684,7 +11021,7 @@
         "isNotName": [],
         "wert": 1430000,
         "verein": "81",
-        "lastPoints": 2,
+        "lastPoints": 10,
         "transfermarktDoDe": {
           "date": "06.09.2026",
           "haveToCheck": true,
@@ -10698,7 +11035,7 @@
           "alter": 24
         },
         "lastSeasonPoints": 84,
-        "punkte": 11,
+        "punkte": 21,
         "realWert": 4000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -10716,11 +11053,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 84}],
-        "spieltagspunkte": [{
-          "totalPoints": 11,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 11,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 21,
+            "value": 10,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -10773,7 +11117,7 @@
           "alter": 22
         },
         "lastSeasonPoints": 126,
-        "punkte": 28,
+        "punkte": 32,
         "realWert": 45000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -10791,11 +11135,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 126}],
-        "spieltagspunkte": [{
-          "totalPoints": 28,
-          "value": 4,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 28,
+            "value": 4,
+            "key": 6
+          },
+          {
+            "totalPoints": 32,
+            "value": 4,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -10928,7 +11279,7 @@
         "isNotName": [],
         "wert": 5690000,
         "verein": "8",
-        "lastPoints": 4,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "06.09.2026",
           "name": "Edmond Tapsoba",
@@ -10937,7 +11288,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 166,
-        "punkte": 22,
+        "punkte": 24,
         "realWert": 35000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -10962,11 +11313,18 @@
           {"2023": 102},
           {"2024": 92}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 22,
-          "value": 4,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 22,
+            "value": 4,
+            "key": 6
+          },
+          {
+            "totalPoints": 24,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -11018,7 +11376,7 @@
         "isNotName": [],
         "wert": 6310000,
         "verein": "5",
-        "lastPoints": 2,
+        "lastPoints": 10,
         "transfermarktDoDe": {
           "date": "06.09.2026",
           "name": "Maximilian Beier",
@@ -11027,7 +11385,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 149,
-        "punkte": 28,
+        "punkte": 38,
         "realWert": 40000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -11050,11 +11408,18 @@
           {"2023": 174},
           {"2024": 115}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 28,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 28,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 38,
+            "value": 10,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -12352,7 +12717,7 @@
         "isNotName": [],
         "wert": 3620000,
         "verein": "6",
-        "lastPoints": 7,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "07.09.2026",
           "name": "Eren Dinkci",
@@ -12361,7 +12726,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 65,
-        "punkte": 16,
+        "punkte": 19,
         "realWert": 6000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -12384,11 +12749,18 @@
           {"2023": 121},
           {"2024": 51}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 16,
-          "value": 7,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 16,
+            "value": 7,
+            "key": 6
+          },
+          {
+            "totalPoints": 19,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -12453,7 +12825,7 @@
           "alter": 30
         },
         "lastSeasonPoints": 106,
-        "punkte": 32,
+        "punkte": 38,
         "realWert": 3000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -12475,11 +12847,18 @@
           {"2022": 48},
           {"2023": 103}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 32,
-          "value": 9,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 32,
+            "value": 9,
+            "key": 6
+          },
+          {
+            "totalPoints": 38,
+            "value": 6,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -12618,7 +12997,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 123,
-        "punkte": 15,
+        "punkte": 17,
         "realWert": 40000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -12642,11 +13021,18 @@
           {"2023": 97},
           {"2024": 54}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 15,
-          "value": 4,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 15,
+            "value": 4,
+            "key": 6
+          },
+          {
+            "totalPoints": 17,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -12807,7 +13193,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 164,
-        "punkte": 9,
+        "punkte": 14,
         "realWert": 40000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -12830,11 +13216,18 @@
           {"2023": 85},
           {"2024": 98}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 9,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 9,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 14,
+            "value": 5,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -12877,7 +13270,7 @@
         "isNotName": [],
         "wert": 10300000,
         "verein": "18",
-        "lastPoints": 2,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "07.09.2026",
           "name": "Nadiem Amiri",
@@ -12886,7 +13279,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 196,
-        "punkte": 24,
+        "punkte": 27,
         "realWert": 17000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -12916,11 +13309,18 @@
           {"2023": 99},
           {"2024": 178}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 24,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 24,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 27,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -12984,7 +13384,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 140,
-        "punkte": 44,
+        "punkte": 46,
         "realWert": 10000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -13012,11 +13412,18 @@
           {"2023": 92},
           {"2024": 112}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 44,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 44,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 46,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -13101,11 +13508,18 @@
           {"2023": 163},
           {"2024": 105}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 27,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 27,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 27,
+            "value": 0,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -13439,7 +13853,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 162,
-        "punkte": 42,
+        "punkte": 44,
         "realWert": 18000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -13466,11 +13880,18 @@
           {"2023": 130},
           {"2024": 127}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 42,
-          "value": 10,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 42,
+            "value": 10,
+            "key": 6
+          },
+          {
+            "totalPoints": 44,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -13531,7 +13952,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 109,
-        "punkte": 23,
+        "punkte": 34,
         "realWert": 1000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -13554,11 +13975,18 @@
           {"2023": 119},
           {"2024": 184}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 23,
-          "value": 8,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 23,
+            "value": 8,
+            "key": 6
+          },
+          {
+            "totalPoints": 34,
+            "value": 11,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -13700,7 +14128,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 23,
-        "punkte": 16,
+        "punkte": 23,
         "realWert": 7000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -13728,11 +14156,18 @@
           {"2023": 132},
           {"2024": 49}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 16,
-          "value": 3,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 16,
+            "value": 3,
+            "key": 6
+          },
+          {
+            "totalPoints": 23,
+            "value": 7,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -13784,7 +14219,7 @@
         "isNotName": [],
         "wert": 1530000,
         "verein": "1",
-        "lastPoints": 4,
+        "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "09.09.2026",
           "name": "Jonas Urbig",
@@ -13797,7 +14232,7 @@
           "alter": 21
         },
         "lastSeasonPoints": 52,
-        "punkte": 8,
+        "punkte": 15,
         "realWert": 18000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -13815,11 +14250,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 6}],
-        "spieltagspunkte": [{
-          "totalPoints": 8,
-          "value": 5,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 8,
+            "value": 5,
+            "key": 6
+          },
+          {
+            "totalPoints": 15,
+            "value": 7,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -14093,7 +14535,7 @@
         "isNotName": [],
         "wert": 5310000,
         "verein": "1",
-        "lastPoints": 3,
+        "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "09.09.2026",
           "name": "Tom Bischof",
@@ -14102,7 +14544,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 123,
-        "punkte": 22,
+        "punkte": 26,
         "realWert": 40000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -14124,11 +14566,18 @@
           {"2023": 20},
           {"2024": 179}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 22,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 22,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 26,
+            "value": 4,
+            "key": 7
+          }
+        ],
         "retired": false,
         "withinSquad": true,
         "onMarket": false,
@@ -14583,7 +15032,7 @@
         "isNotName": [],
         "wert": 3260000,
         "verein": "109",
-        "lastPoints": 8,
+        "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "27.08.2026",
           "name": "András Schäfer",
@@ -14592,7 +15041,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 78,
-        "punkte": 19,
+        "punkte": 26,
         "realWert": 4500000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -14615,11 +15064,18 @@
           {"2023": 45},
           {"2024": 81}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 19,
-          "value": 8,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 19,
+            "value": 8,
+            "key": 6
+          },
+          {
+            "totalPoints": 26,
+            "value": 7,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -14849,7 +15305,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 52,
-        "punkte": 10,
+        "punkte": 11,
         "realWert": 10000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -14871,11 +15327,18 @@
           {"2022": 6},
           {"2024": 72}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 10,
-          "value": 7,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 10,
+            "value": 7,
+            "key": 6
+          },
+          {
+            "totalPoints": 11,
+            "value": 1,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -14933,7 +15396,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 67,
-        "punkte": 21,
+        "punkte": 26,
         "realWert": 2500000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -14961,11 +15424,18 @@
           {"2023": 31},
           {"2024": 95}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 21,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 21,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 26,
+            "value": 5,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -15017,7 +15487,7 @@
         "isNotName": [],
         "wert": 2320000,
         "verein": "68",
-        "lastPoints": 2,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "27.08.2026",
           "name": "Jeffrey Gouweleeuw",
@@ -15026,7 +15496,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 25,
-        "punkte": 6,
+        "punkte": 9,
         "realWert": 1000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -15055,11 +15525,18 @@
           {"2023": 98},
           {"2024": 145}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 6,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 6,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 9,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -15187,7 +15664,7 @@
         "isNotName": [],
         "wert": 5110000,
         "verein": "62",
-        "lastPoints": 11,
+        "lastPoints": 12,
         "transfermarktDoDe": {
           "date": "27.08.2026",
           "name": "Andrej Kramaric",
@@ -15196,7 +15673,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 220,
-        "punkte": 8,
+        "punkte": 20,
         "realWert": 2500000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -15225,11 +15702,18 @@
           {"2023": 214},
           {"2024": 167}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 8,
-          "value": 11,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 8,
+            "value": 11,
+            "key": 6
+          },
+          {
+            "totalPoints": 20,
+            "value": 12,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -15666,7 +16150,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 54,
-        "punkte": 25,
+        "punkte": 27,
         "realWert": 1500000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -15688,11 +16172,18 @@
           {"2023": 119},
           {"2024": 59}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 25,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 25,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 27,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -15925,7 +16416,7 @@
         "isNotName": [],
         "wert": 1550000,
         "verein": "21",
-        "lastPoints": 2,
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "03.09.2026",
           "name": "Lukas Kübler",
@@ -15961,11 +16452,18 @@
           {"2023": 71},
           {"2024": 118}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 16,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 16,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 16,
+            "value": 0,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -16112,7 +16610,7 @@
         "isNotName": [],
         "wert": 9390000,
         "verein": "21",
-        "lastPoints": 11,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "27.08.2026",
           "name": "Derry Scherhant",
@@ -16125,7 +16623,7 @@
           "alter": 22
         },
         "lastSeasonPoints": 95,
-        "punkte": 33,
+        "punkte": 35,
         "realWert": 7500000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -16143,11 +16641,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2022": 6}],
-        "spieltagspunkte": [{
-          "totalPoints": 33,
-          "value": 11,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 33,
+            "value": 11,
+            "key": 6
+          },
+          {
+            "totalPoints": 35,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -16268,7 +16773,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 124,
-        "punkte": 20,
+        "punkte": 23,
         "realWert": 15000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -16286,11 +16791,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 124}],
-        "spieltagspunkte": [{
-          "totalPoints": 20,
-          "value": 5,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 20,
+            "value": 5,
+            "key": 6
+          },
+          {
+            "totalPoints": 23,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -16406,7 +16918,7 @@
         "isNotName": [],
         "wert": 2840000,
         "verein": "5",
-        "lastPoints": 3,
+        "lastPoints": 6,
         "transfermarktDoDe": {
           "date": "03.09.2026",
           "name": "Gregor Kobel",
@@ -16415,7 +16927,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 124,
-        "punkte": 28,
+        "punkte": 34,
         "realWert": 40000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -16440,11 +16952,18 @@
           {"2023": 113},
           {"2024": 81}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 28,
-          "value": 3,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 28,
+            "value": 3,
+            "key": 6
+          },
+          {
+            "totalPoints": 34,
+            "value": 6,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -16571,7 +17090,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 163,
-        "punkte": 21,
+        "punkte": 20,
         "realWert": 8000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -16593,11 +17112,18 @@
           {"2023": 114},
           {"2024": 97}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 21,
-          "value": 6,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 21,
+            "value": 6,
+            "key": 6
+          },
+          {
+            "totalPoints": 20,
+            "value": -1,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -17349,7 +17875,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 124,
-        "punkte": 7,
+        "punkte": 18,
         "realWert": 18000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -17377,11 +17903,18 @@
           {"2023": 45},
           {"2024": 124}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 7,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 7,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 18,
+            "value": 11,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": true,
         "retired": false,
@@ -17764,7 +18297,7 @@
           "alter": 19
         },
         "lastSeasonPoints": 133,
-        "punkte": 43,
+        "punkte": 46,
         "realWert": 45000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -17782,11 +18315,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2022": 7}],
-        "spieltagspunkte": [{
-          "totalPoints": 43,
-          "value": 13,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 43,
+            "value": 13,
+            "key": 6
+          },
+          {
+            "totalPoints": 46,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -17912,7 +18452,7 @@
         "isNotName": [],
         "wert": 2540000,
         "verein": "92",
-        "lastPoints": 0,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "01.09.2026",
           "name": "Nicolas Seiwald",
@@ -17921,7 +18461,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 139,
-        "punkte": 13,
+        "punkte": 15,
         "realWert": 25000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -17942,11 +18482,18 @@
           {"2023": 35},
           {"2024": 88}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 13,
-          "value": 0,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 13,
+            "value": 0,
+            "key": 6
+          },
+          {
+            "totalPoints": 15,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -18083,7 +18630,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 40,
-        "punkte": 7,
+        "punkte": 9,
         "realWert": 6000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -18104,11 +18651,18 @@
           {"2023": -6},
           {"2024": 40}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 7,
-          "value": -1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 7,
+            "value": -1,
+            "key": 6
+          },
+          {
+            "totalPoints": 9,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "retired": false,
         "withinSquad": true,
         "onMarket": false,
@@ -18166,7 +18720,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 102,
-        "punkte": 21,
+        "punkte": 23,
         "realWert": 10000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -18192,11 +18746,18 @@
           {"2023": 93},
           {"2024": 95}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 21,
-          "value": 4,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 21,
+            "value": 4,
+            "key": 6
+          },
+          {
+            "totalPoints": 23,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -18249,7 +18810,7 @@
         "isNotName": [],
         "wert": 11780000,
         "verein": "21",
-        "lastPoints": 4,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "02.09.2026",
           "name": "Igor Matanovic",
@@ -18258,7 +18819,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 152,
-        "punkte": 48,
+        "punkte": 51,
         "realWert": 22000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -18276,11 +18837,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2024": 30}],
-        "spieltagspunkte": [{
-          "totalPoints": 48,
-          "value": 4,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 48,
+            "value": 4,
+            "key": 6
+          },
+          {
+            "totalPoints": 51,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -18877,7 +19445,7 @@
           "alter": 24
         },
         "lastSeasonPoints": 111,
-        "punkte": 21,
+        "punkte": 34,
         "realWert": 8000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -18895,11 +19463,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 111}],
-        "spieltagspunkte": [{
-          "totalPoints": 21,
-          "value": 3,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 21,
+            "value": 3,
+            "key": 6
+          },
+          {
+            "totalPoints": 34,
+            "value": 13,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -18961,7 +19536,7 @@
           "alter": 18
         },
         "lastSeasonPoints": 13,
-        "punkte": 24,
+        "punkte": 27,
         "realWert": 9000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -18979,11 +19554,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 13}],
-        "spieltagspunkte": [{
-          "totalPoints": 24,
-          "value": 12,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 24,
+            "value": 12,
+            "key": 6
+          },
+          {
+            "totalPoints": 27,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "retired": false,
         "withinSquad": true,
         "onMarket": false,
@@ -19098,7 +19680,7 @@
         "isNotName": [],
         "verein": "13",
         "wert": 1580000,
-        "lastPoints": 0,
+        "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "02.09.2026",
           "name": "Sebastian Sebulonsen",
@@ -19111,7 +19693,7 @@
           "alter": 25
         },
         "lastSeasonPoints": 60,
-        "punkte": 3,
+        "punkte": 8,
         "realWert": 5500000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -19129,11 +19711,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 60}],
-        "spieltagspunkte": [{
-          "totalPoints": 3,
-          "value": 0,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 3,
+            "value": 0,
+            "key": 6
+          },
+          {
+            "totalPoints": 8,
+            "value": 5,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -19185,7 +19774,7 @@
           "alter": 24
         },
         "lastSeasonPoints": 149,
-        "punkte": 13,
+        "punkte": 19,
         "realWert": 20000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -19203,11 +19792,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 149}],
-        "spieltagspunkte": [{
-          "totalPoints": 13,
-          "value": 6,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 13,
+            "value": 6,
+            "key": 6
+          },
+          {
+            "totalPoints": 19,
+            "value": 6,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -19709,7 +20305,7 @@
           "alter": 32
         },
         "lastSeasonPoints": 159,
-        "punkte": 22,
+        "punkte": 28,
         "realWert": 2500000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -19727,11 +20323,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 159}],
-        "spieltagspunkte": [{
-          "totalPoints": 22,
-          "value": -1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 22,
+            "value": -1,
+            "key": 6
+          },
+          {
+            "totalPoints": 28,
+            "value": 6,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -19949,7 +20552,7 @@
           "alter": 23
         },
         "lastSeasonPoints": 129,
-        "punkte": 18,
+        "punkte": 34,
         "realWert": 30000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -19967,11 +20570,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 129}],
-        "spieltagspunkte": [{
-          "totalPoints": 18,
-          "value": 3,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 18,
+            "value": 3,
+            "key": 6
+          },
+          {
+            "totalPoints": 34,
+            "value": 16,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -20025,7 +20635,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 46,
-        "punkte": 13,
+        "punkte": 28,
         "realWert": 17000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -20043,11 +20653,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 46}],
-        "spieltagspunkte": [{
-          "totalPoints": 13,
-          "value": 8,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 13,
+            "value": 8,
+            "key": 6
+          },
+          {
+            "totalPoints": 28,
+            "value": 15,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -20161,7 +20778,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 91,
-        "punkte": 8,
+        "punkte": 6,
         "realWert": 20000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -20179,11 +20796,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 91}],
-        "spieltagspunkte": [{
-          "totalPoints": 8,
-          "value": -2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 8,
+            "value": -2,
+            "key": 6
+          },
+          {
+            "totalPoints": 6,
+            "value": -2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -20834,7 +21458,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 64,
-        "punkte": 36,
+        "punkte": 40,
         "realWert": 20000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -20852,11 +21476,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 64}],
-        "spieltagspunkte": [{
-          "totalPoints": 36,
-          "value": 7,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 36,
+            "value": 7,
+            "key": 6
+          },
+          {
+            "totalPoints": 40,
+            "value": 4,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": true,
         "retired": false,
@@ -20915,7 +21546,7 @@
           "alter": 21
         },
         "lastSeasonPoints": 139,
-        "punkte": 38,
+        "punkte": 41,
         "realWert": 35000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -20933,11 +21564,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 139}],
-        "spieltagspunkte": [{
-          "totalPoints": 38,
-          "value": 11,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 38,
+            "value": 11,
+            "key": 6
+          },
+          {
+            "totalPoints": 41,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -21287,7 +21925,7 @@
           "alter": 17
         },
         "lastSeasonPoints": 1,
-        "punkte": 4,
+        "punkte": 5,
         "realWert": 5000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -21305,11 +21943,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 1}],
-        "spieltagspunkte": [{
-          "totalPoints": 4,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 4,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 5,
+            "value": 1,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -21760,7 +22405,7 @@
           "alter": 30
         },
         "lastSeasonPoints": 64,
-        "punkte": 38,
+        "punkte": 42,
         "realWert": 1500000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -21784,11 +22429,18 @@
           {"2022": 154},
           {"2023": 29}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 38,
-          "value": 3,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 38,
+            "value": 3,
+            "key": 6
+          },
+          {
+            "totalPoints": 42,
+            "value": 4,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -22779,7 +23431,7 @@
           "leistungsDaten": {},
           "alter": -1
         },
-        "punkte": 29,
+        "punkte": 27,
         "realWert": 2500000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -22796,11 +23448,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 29,
-          "value": 7,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 29,
+            "value": 7,
+            "key": 6
+          },
+          {
+            "totalPoints": 27,
+            "value": -2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -22879,11 +23538,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 12,
-          "value": 3,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 12,
+            "value": 3,
+            "key": 6
+          },
+          {
+            "totalPoints": 12,
+            "value": 0,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -22932,7 +23598,7 @@
         "punktekorrektur": [],
         "verein": "118",
         "wert": 3880000,
-        "lastPoints": 7,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "26.08.2026",
           "haveToCheck": false,
@@ -22945,7 +23611,7 @@
           "leistungsDaten": {},
           "alter": -1
         },
-        "punkte": 30,
+        "punkte": 33,
         "realWert": 1200000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -22962,11 +23628,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 30,
-          "value": 7,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 30,
+            "value": 7,
+            "key": 6
+          },
+          {
+            "totalPoints": 33,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -23214,7 +23887,7 @@
           "leistungsDaten": {},
           "alter": -1
         },
-        "punkte": 26,
+        "punkte": 24,
         "realWert": 2500000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -23231,11 +23904,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 26,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 26,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 24,
+            "value": -2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -24378,7 +25058,7 @@
         "punktekorrektur": [],
         "verein": "21",
         "wert": 400000,
-        "lastPoints": 2,
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "29.08.2026",
           "haveToCheck": false,
@@ -24408,10 +25088,17 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 0,
+            "value": 0,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -24538,10 +25225,17 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "value": 0,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "value": 0,
+            "key": 6
+          },
+          {
+            "totalPoints": 0,
+            "value": 0,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -24929,7 +25623,7 @@
         "punktekorrektur": [],
         "verein": "9",
         "wert": 3100000,
-        "lastPoints": 6,
+        "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "29.08.2026",
           "haveToCheck": false,
@@ -24942,7 +25636,7 @@
           "leistungsDaten": {},
           "alter": -1
         },
-        "punkte": 11,
+        "punkte": 18,
         "realWert": 12000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -24959,11 +25653,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 11,
-          "value": 6,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 11,
+            "value": 6,
+            "key": 6
+          },
+          {
+            "totalPoints": 18,
+            "value": 7,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -25016,7 +25717,7 @@
           "leistungsDaten": {},
           "alter": -1
         },
-        "punkte": 34,
+        "punkte": 41,
         "realWert": 800000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -25040,11 +25741,18 @@
           {"2015": 136},
           {"2020": 12}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 34,
-          "value": 8,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 34,
+            "value": 8,
+            "key": 6
+          },
+          {
+            "totalPoints": 41,
+            "value": 7,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -25244,7 +25952,7 @@
           "leistungsDaten": {},
           "alter": -1
         },
-        "punkte": 29,
+        "punkte": 33,
         "realWert": 1800000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -25261,11 +25969,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 29,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 29,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 33,
+            "value": 4,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": true,
         "retired": false,
@@ -25317,7 +26032,7 @@
           "leistungsDaten": {},
           "alter": -1
         },
-        "punkte": 32,
+        "punkte": 34,
         "realWert": 2000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -25334,11 +26049,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 32,
-          "value": 7,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 32,
+            "value": 7,
+            "key": 6
+          },
+          {
+            "totalPoints": 34,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -25464,7 +26186,7 @@
           "leistungsDaten": {},
           "alter": -1
         },
-        "punkte": 18,
+        "punkte": 27,
         "realWert": 3000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -25486,11 +26208,18 @@
           {"2020": 16},
           {"2024": 57}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 18,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 18,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 27,
+            "value": 9,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -25616,7 +26345,7 @@
           "leistungsDaten": {},
           "alter": -1
         },
-        "punkte": 30,
+        "punkte": 35,
         "realWert": 3500000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -25633,11 +26362,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 30,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 30,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 35,
+            "value": 5,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -25952,11 +26688,18 @@
           {"2019": 80},
           {"2022": 19}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 19,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 19,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 19,
+            "value": 0,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -26635,7 +27378,7 @@
           "leistungsDaten": {},
           "alter": -1
         },
-        "punkte": 21,
+        "punkte": 23,
         "realWert": 2500000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -26652,11 +27395,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 21,
-          "value": 7,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 21,
+            "value": 7,
+            "key": 6
+          },
+          {
+            "totalPoints": 23,
+            "value": 2,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": true,
         "retired": false,
@@ -26704,7 +27454,7 @@
           "alter": -1
         },
         "lastSeasonPoints": 22,
-        "punkte": 7,
+        "punkte": 13,
         "realWert": 4000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -26722,11 +27472,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 22}],
-        "spieltagspunkte": [{
-          "totalPoints": 7,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 7,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 13,
+            "value": 6,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -27150,7 +27907,7 @@
           "alter": -1
         },
         "lastSeasonPoints": 144,
-        "punkte": 15,
+        "punkte": 18,
         "realWert": 3500000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -27176,11 +27933,18 @@
           {"2024": 3},
           {"2025": 144}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 15,
-          "value": 5,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 15,
+            "value": 5,
+            "key": 6
+          },
+          {
+            "totalPoints": 18,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -27244,7 +28008,7 @@
           "alter": -1
         },
         "lastSeasonPoints": 122,
-        "punkte": 18,
+        "punkte": 25,
         "realWert": 1200000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -27265,11 +28029,18 @@
           {"2016": 30},
           {"2025": 122}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 18,
-          "value": 7,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 18,
+            "value": 7,
+            "key": 6
+          },
+          {
+            "totalPoints": 25,
+            "value": 7,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -28272,15 +29043,22 @@
         "wert": 8080000,
         "lastPoints": 4,
         "lastSeasonPoints": 0,
-        "punkte": 43,
+        "punkte": 47,
         "realWert": 4000000,
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2023": 7}],
-        "spieltagspunkte": [{
-          "totalPoints": 43,
-          "value": 15,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 43,
+            "value": 15,
+            "key": 6
+          },
+          {
+            "totalPoints": 47,
+            "value": 4,
+            "key": 7
+          }
+        ],
         "onMarket": false,
         "position": "MITTELFELD"
       },
@@ -28588,16 +29366,16 @@
       "data": {
         "lastWert": 170000,
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "",
+          "groesse": "6' 1\"",
+          "geburtstag": "11.01.2009",
           "laenderspiele": 0,
-          "lastUpdate": null,
+          "lastUpdate": "25.10.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
-          "nationalitaet": "",
+          "trikotNummer": 30,
+          "nationalitaet": "GER",
           "laenderspielTore": 0,
-          "hauptposition": "",
+          "hauptposition": "Defender",
           "fuss": ""
         },
         "isNotName": [],
@@ -28794,7 +29572,7 @@
           "leistungsDaten": {}
         },
         "lastSeasonPoints": 0,
-        "punkte": 11,
+        "punkte": 12,
         "realWert": 10000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -28811,11 +29589,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 11,
-          "value": 5,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 11,
+            "value": 5,
+            "key": 6
+          },
+          {
+            "totalPoints": 12,
+            "value": 1,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -29076,12 +29861,12 @@
         "punktekorrektur": [],
         "verein": "81",
         "wert": 3180000,
-        "lastPoints": 3,
+        "lastPoints": 5,
         "transfermarktDoDe": {
           "date": "01.01.1900",
           "haveToCheck": true
         },
-        "punkte": 26,
+        "punkte": 31,
         "realWert": 0,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -29098,11 +29883,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 26,
-          "value": 3,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 26,
+            "value": 3,
+            "key": 6
+          },
+          {
+            "totalPoints": 31,
+            "value": 5,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -29260,7 +30052,7 @@
           "date": "01.01.1900",
           "haveToCheck": true
         },
-        "punkte": 31,
+        "punkte": 40,
         "realWert": 0,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -29277,11 +30069,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 31,
-          "value": 7,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 31,
+            "value": 7,
+            "key": 6
+          },
+          {
+            "totalPoints": 40,
+            "value": 9,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -29502,7 +30301,7 @@
           "date": "01.01.1900",
           "haveToCheck": true
         },
-        "punkte": 25,
+        "punkte": 32,
         "realWert": 0,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -29519,11 +30318,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 25,
-          "value": -1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 25,
+            "value": -1,
+            "key": 6
+          },
+          {
+            "totalPoints": 32,
+            "value": 7,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -30133,7 +30939,7 @@
           "date": "01.01.1900",
           "haveToCheck": true
         },
-        "punkte": 28,
+        "punkte": 31,
         "realWert": 0,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -30156,11 +30962,18 @@
           {"2022": 79},
           {"2023": 60}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 28,
-          "value": 9,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 28,
+            "value": 9,
+            "key": 6
+          },
+          {
+            "totalPoints": 31,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": true,
         "retired": false,
@@ -30929,11 +31742,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 18,
-          "value": 1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 18,
+            "value": 1,
+            "key": 6
+          },
+          {
+            "totalPoints": 18,
+            "value": 0,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -31003,7 +31823,7 @@
         "wert": 7860000,
         "lastPoints": 7,
         "lastSeasonPoints": 80,
-        "punkte": 38,
+        "punkte": 45,
         "realWert": 0,
         "lastUpdate": "26.09.2026",
         "historicalPoints": [
@@ -31019,11 +31839,18 @@
           {"2024": 43},
           {"2025": 80}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 38,
-          "value": 7,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 38,
+            "value": 7,
+            "key": 6
+          },
+          {
+            "totalPoints": 45,
+            "value": 7,
+            "key": 7
+          }
+        ],
         "onMarket": false,
         "position": "STURM"
       },
@@ -31261,7 +32088,7 @@
           "leistungsDaten": {},
           "alter": -1
         },
-        "punkte": 21,
+        "punkte": 28,
         "realWert": 1200000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -31278,11 +32105,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 21,
-          "value": 4,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 21,
+            "value": 4,
+            "key": 6
+          },
+          {
+            "totalPoints": 28,
+            "value": 7,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -31406,11 +32240,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 11,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 11,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 11,
+            "value": 0,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": true,
         "retired": false,
@@ -33494,11 +34335,18 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2025": 108}],
-        "spieltagspunkte": [{
-          "totalPoints": 28,
-          "value": 2,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 28,
+            "value": 2,
+            "key": 6
+          },
+          {
+            "totalPoints": 28,
+            "value": 0,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -34410,7 +35258,7 @@
           "leistungsDaten": {},
           "alter": -1
         },
-        "punkte": 10,
+        "punkte": 13,
         "realWert": 23000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -34427,11 +35275,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 10,
-          "value": 6,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 10,
+            "value": 6,
+            "key": 6
+          },
+          {
+            "totalPoints": 13,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -35314,7 +36169,7 @@
           "alter": -1
         },
         "lastSeasonPoints": 55,
-        "punkte": 10,
+        "punkte": 11,
         "realWert": 6000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -35340,11 +36195,18 @@
           {"2022": -10},
           {"2025": 55}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 10,
-          "value": 5,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 10,
+            "value": 5,
+            "key": 6
+          },
+          {
+            "totalPoints": 11,
+            "value": 1,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -35399,7 +36261,7 @@
           "date": "01.01.1900",
           "haveToCheck": true
         },
-        "punkte": 22,
+        "punkte": 34,
         "realWert": 0,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -35416,11 +36278,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 22,
-          "value": -1,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 22,
+            "value": -1,
+            "key": 6
+          },
+          {
+            "totalPoints": 34,
+            "value": 12,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -35680,7 +36549,7 @@
           "leistungsDaten": {},
           "alter": -1
         },
-        "punkte": 50,
+        "punkte": 64,
         "realWert": 3500000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -35707,11 +36576,18 @@
           {"2022": 174},
           {"2023": 143}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 50,
-          "value": 13,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 50,
+            "value": 13,
+            "key": 6
+          },
+          {
+            "totalPoints": 64,
+            "value": 14,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -36392,11 +37268,18 @@
           {"2021": 265},
           {"2022": 149}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 45,
-          "value": 0,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 45,
+            "value": 0,
+            "key": 6
+          },
+          {
+            "totalPoints": 45,
+            "value": 0,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -36779,7 +37662,7 @@
           "leistungsDaten": {},
           "alter": -1
         },
-        "punkte": 30,
+        "punkte": 36,
         "realWert": 5000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -36796,11 +37679,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 30,
-          "value": 8,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 30,
+            "value": 8,
+            "key": 6
+          },
+          {
+            "totalPoints": 36,
+            "value": 6,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -36863,7 +37753,7 @@
           "leistungsDaten": {},
           "alter": -1
         },
-        "punkte": 22,
+        "punkte": 25,
         "realWert": 12000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -36880,11 +37770,18 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [{
-          "totalPoints": 22,
-          "value": 8,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 22,
+            "value": 8,
+            "key": 6
+          },
+          {
+            "totalPoints": 25,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -37536,7 +38433,7 @@
           "leistungsDaten": {},
           "alter": -1
         },
-        "punkte": 16,
+        "punkte": 19,
         "realWert": 3000000,
         "lastBigUpdate": "21.09.2026",
         "stats": {
@@ -37560,11 +38457,18 @@
           {"2022": 119},
           {"2023": 1}
         ],
-        "spieltagspunkte": [{
-          "totalPoints": 16,
-          "value": 7,
-          "key": 6
-        }],
+        "spieltagspunkte": [
+          {
+            "totalPoints": 16,
+            "value": 7,
+            "key": 6
+          },
+          {
+            "totalPoints": 19,
+            "value": 3,
+            "key": 7
+          }
+        ],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -38061,13 +38965,13 @@
           "groesse": "",
           "geburtstag": "",
           "laenderspiele": 0,
-          "lastUpdate": null,
+          "lastUpdate": "25.10.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
+          "trikotNummer": 46,
           "nationalitaet": "",
           "laenderspielTore": 0,
-          "hauptposition": "",
+          "hauptposition": "Midfielder",
           "fuss": ""
         },
         "isNotName": [],
@@ -38403,15 +39307,16 @@
         },
         "lastWert": 750000,
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "",
+          "groesse": "5' 10\"",
+          "geburtstag": "16.02.2005",
           "laenderspiele": 0,
+          "lastUpdate": "25.10.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
-          "nationalitaet": "",
+          "trikotNummer": 29,
+          "nationalitaet": "MOR",
           "laenderspielTore": 0,
-          "hauptposition": "",
+          "hauptposition": "Forward",
           "fuss": ""
         },
         "isNotName": [],
@@ -38448,15 +39353,16 @@
       "data": {
         "lastWert": 160000,
         "spielerDaten": {
-          "groesse": "",
-          "geburtstag": "",
+          "groesse": "6' 2\"",
+          "geburtstag": "01.04.1996",
           "laenderspiele": 0,
+          "lastUpdate": "25.10.2026",
           "nebenpositionen": [],
           "nationalspieler": "",
-          "trikotNummer": 0,
-          "nationalitaet": "",
+          "trikotNummer": 48,
+          "nationalitaet": "GER",
           "laenderspielTore": 0,
-          "hauptposition": "",
+          "hauptposition": "Defender",
           "fuss": ""
         },
         "isNotName": [],
