@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "26.10.2026 05:16:05",
+  "lastUpdate": "26.10.2026 10:01:42",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -8087,14 +8087,272 @@
     },
     {
       "date": "26.10.2026",
-      "news": [{
-        "date": "26.10.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kofane\",\"price\":3100000,\"buyerId\":\"5949921\",\"playerValue\":3130000,\"playerId\":\"34234\",\"buyer\":\"Sascha\"}",
-        "id": "967768280",
-        "playerId": "34234"
-      }]
+      "news": [
+        {
+          "date": "26.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Kofane\",\"price\":3100000,\"buyerId\":\"5949921\",\"playerValue\":3130000,\"playerId\":\"34234\",\"buyer\":\"Sascha\"}",
+          "id": "967768280",
+          "playerId": "34234"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Schlieck\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"33664\",\"newPos\":\"TORHÜTER\"}",
+          "id": "0",
+          "playerId": "33664"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"C. Gomis\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34388\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34388"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"G. Orban\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34078\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34078"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Bärtl\",\"newClub\":\"1\",\"oldClub\":\"0\",\"playerID\":\"34284\"}",
+          "id": "0",
+          "playerId": "34284"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Bara Sapoko Ndiaye (34321) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34321"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Silas (33247) ist jetzt NICHT_IM_KADER",
+          "id": "0",
+          "playerId": "33247"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jan Gyamerah (34395) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34395"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kevin Diks (34187) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34187"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Alexis Claude-Maurice (34063) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34063"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Joshua Kimmich (32445) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32445"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Aleksandar Pavlović (33854) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33854"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Fritz Fleck (34500) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34500"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Otto Ruoppi (34467) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34467"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kauã Prates (34423) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34423"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Robin Zentner (32364) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32364"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Moussa Sylla (34387) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34387"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Niklas Stark (32120) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32120"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Franck Honorat (33817) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33817"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kenan Karaman (32190) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32190"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Nikolas Nartey (32830) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32830"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ron Schallenberg (34379) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34379"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Justin Njinmah (33687) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33687"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Mathis Albert (34362) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34362"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Marcel Hoffmeier (34403) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34403"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Tiago Tomás (33557) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33557"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Isac Lidberg (34447) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34447"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jamal Musiala (33236) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33236"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Nyamekye Awortwie-Grant (34443) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34443"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Sebastian Klaas (34408) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34408"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ragnar Ache (33263) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33263"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Manuel Neuer (30755) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "30755"
+        },
+        {
+          "date": "26.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Minjae Kim (33823) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33823"
+        }
+      ]
     },
     {
       "date": "26.09.2026",
