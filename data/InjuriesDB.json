@@ -16,6 +16,32 @@
       "club": "FC Augsburg",
       "status": "AUFBAUTRAINING"
     },
+    "34021": {
+      "comunioPlayerId": "34021",
+      "reason": "Trainingsrückstand",
+      "playerLink": "https://www.ligainsider.de/bruno-ogbus_37207/",
+      "ligainsiderPlayerId": "37207",
+      "playerName": "Bruno Ogbus",
+      "sinceTimestamp": "2026-10-27T23:00:00Z",
+      "abfrageTimestamp": "2026-10-28T09:01:32.992975089Z",
+      "quelle": "ligainsider",
+      "club": "SC Freiburg",
+      "sinceString": "",
+      "status": "NICHT_IM_KADER"
+    },
+    "34020": {
+      "comunioPlayerId": "34020",
+      "reason": "Trainingsrückstand",
+      "playerLink": "https://www.ligainsider.de/berkay-yilmaz_37208/",
+      "ligainsiderPlayerId": "37208",
+      "playerName": "Berkay Yilmaz",
+      "sinceTimestamp": "2026-10-27T23:00:00Z",
+      "abfrageTimestamp": "2026-10-28T09:01:32.993855953Z",
+      "quelle": "ligainsider",
+      "club": "SC Freiburg",
+      "sinceString": "",
+      "status": "NICHT_IM_KADER"
+    },
     "34140": {
       "reason": "Muskelverletzung Oberschenkel",
       "lastNewsText": "",
@@ -77,55 +103,6 @@
       "quelle": "ligainsider",
       "club": "Eintracht Frankfurt",
       "status": "AUFBAUTRAINING"
-    },
-    "33896": {
-      "reason": "",
-      "lastNewsText": "Wadenverletzung: Alvero fällt vorerst aus",
-      "ligainsiderPlayerId": "35903",
-      "playerName": "Skelly Alvero",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-10-04T22:00:00Z",
-      "abfrageTimestamp": "2026-10-19T08:00:42.934146773Z",
-      "sinceString": "2 Wochen",
-      "comunioPlayerId": "33896",
-      "playerLink": "https://www.ligainsider.de/skelly-alvero_35903/",
-      "lastNewsLink": "https://www.ligainsider.de/skelly-alvero_35903/wadenverletzung-alvero-faellt-vorerst-aus-418742/",
-      "quelle": "ligainsider",
-      "club": "SV Werder Bremen",
-      "status": "VERLETZT"
-    },
-    "34389": {
-      "reason": "Achillessehnenverletzung",
-      "lastNewsText": "",
-      "ligainsiderPlayerId": "37190",
-      "playerName": "Emil Højlund",
-      "statusChangeString": "",
-      "sinceTimestamp": "2025-09-18T22:00:00Z",
-      "abfrageTimestamp": "2026-10-19T08:00:42.939531291Z",
-      "sinceString": "1 Jahr und 1 Monat",
-      "comunioPlayerId": "34389",
-      "playerLink": "https://www.ligainsider.de/emil-hoejlund_37190/",
-      "lastNewsLink": "",
-      "quelle": "ligainsider",
-      "club": "FC Schalke 04",
-      "status": "VERLETZT"
-    },
-    "33453": {
-      "reason": "Trainingsrückstand",
-      "lastNewsText": "",
-      "ligainsiderPlayerId": "24396",
-      "playerName": "Dejan Ljubičić",
-      "statusChangeString": "23.10.2026",
-      "sinceTimestamp": "2026-10-22T22:00:00Z",
-      "abfrageTimestamp": "2026-10-21T08:00:45.004454225Z",
-      "sinceString": "",
-      "statusChangeTimestamp": "2026-10-22T22:00:00Z",
-      "comunioPlayerId": "33453",
-      "playerLink": "https://www.ligainsider.de/dejan-ljubicic_24396/",
-      "lastNewsLink": "",
-      "quelle": "ligainsider",
-      "club": "FC Schalke 04",
-      "status": "NICHT_IM_KADER"
     },
     "34267": {
       "reason": "Muskelverletzung",
@@ -189,22 +166,6 @@
       "lastNewsLink": "https://www.ligainsider.de/dominik-kohr_1821/kohr-nach-verletzung-operiert-417868/",
       "quelle": "ligainsider",
       "club": "1. FSV Mainz 05",
-      "status": "VERLETZT"
-    },
-    "33219": {
-      "reason": "",
-      "lastNewsText": "Paderborn muss auf Batista Meier verzichten",
-      "ligainsiderPlayerId": "19164",
-      "playerName": "Oliver Batista Meier",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-10-14T22:00:00Z",
-      "abfrageTimestamp": "2026-10-24T08:01:37.556499880Z",
-      "sinceString": "1 Woche und 2 Tagen",
-      "comunioPlayerId": "33219",
-      "playerLink": "https://www.ligainsider.de/oliver-batista-meier_19164/",
-      "lastNewsLink": "https://www.ligainsider.de/oliver-batista-meier_19164/paderborn-muss-auf-batista-meier-verzichten-419460/",
-      "quelle": "ligainsider",
-      "club": "SC Paderborn 07",
       "status": "VERLETZT"
     },
     "32801": {
@@ -416,20 +377,17 @@
       "club": "SV Werder Bremen",
       "status": "VERLETZT"
     },
-    "34377": {
+    "33520": {
+      "comunioPlayerId": "33520",
       "reason": "",
-      "lastNewsText": "Gantenbein fällt gegen Köln aus",
-      "ligainsiderPlayerId": "37275",
-      "playerName": "Adrian Gantenbein",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-10-22T22:00:00Z",
-      "abfrageTimestamp": "2026-10-25T09:01:29.966217455Z",
-      "sinceString": "2 Tagen",
-      "comunioPlayerId": "34377",
-      "playerLink": "https://www.ligainsider.de/adrian-gantenbein_37275/",
-      "lastNewsLink": "https://www.ligainsider.de/adrian-gantenbein_37275/gantenbein-faellt-gegen-koeln-aus-419648/",
+      "playerLink": "",
+      "ligainsiderPlayerId": "",
+      "playerName": "",
+      "sinceTimestamp": "2026-10-27T23:00:00Z",
+      "abfrageTimestamp": "2026-10-28T09:01:33.019397452Z",
       "quelle": "ligainsider",
-      "club": "FC Schalke 04",
+      "club": "SV Werder Bremen",
+      "sinceString": "",
       "status": "VERLETZT"
     },
     "34012": {
@@ -445,22 +403,6 @@
       "club": "",
       "sinceString": "",
       "status": "AUFBAUTRAINING"
-    },
-    "34177": {
-      "reason": "Bänderverletzung Sprunggelenk",
-      "lastNewsText": "",
-      "ligainsiderPlayerId": "38111",
-      "playerName": "Tom Zimmerschied",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-10-16T22:00:00Z",
-      "abfrageTimestamp": "2026-10-19T08:00:42.944296239Z",
-      "sinceString": "2 Tagen",
-      "comunioPlayerId": "34177",
-      "playerLink": "https://www.ligainsider.de/tom-zimmerschied_38111/",
-      "lastNewsLink": "",
-      "quelle": "ligainsider",
-      "club": "SV 07 Elversberg",
-      "status": "VERLETZT"
     },
     "34254": {
       "reason": "",
@@ -524,38 +466,6 @@
       "sinceString": "",
       "status": "VERLETZT"
     },
-    "33831": {
-      "reason": "",
-      "lastNewsText": "Wöber fällt bis auf Weiteres aus",
-      "ligainsiderPlayerId": "11916",
-      "playerName": "Maximilian Wöber",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-10-19T22:00:00Z",
-      "abfrageTimestamp": "2026-10-23T08:00:44.949528485Z",
-      "sinceString": "3 Tagen",
-      "comunioPlayerId": "33831",
-      "playerLink": "https://www.ligainsider.de/maximilian-woeber_11916/",
-      "lastNewsLink": "https://www.ligainsider.de/maximilian-woeber_11916/woeber-faellt-bis-auf-weiteres-aus-419488/",
-      "quelle": "ligainsider",
-      "club": "FC Schalke 04",
-      "status": "VERLETZT"
-    },
-    "34369": {
-      "reason": "Bauchmuskelverletzung",
-      "lastNewsText": "",
-      "ligainsiderPlayerId": "38861",
-      "playerName": "Johannes Siebeking",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-09-11T22:00:00Z",
-      "abfrageTimestamp": "2026-10-19T08:00:42.940448167Z",
-      "sinceString": "1 Monat und 1 Woche",
-      "comunioPlayerId": "34369",
-      "playerLink": "https://www.ligainsider.de/johannes-siebeking_38861/",
-      "lastNewsLink": "",
-      "quelle": "ligainsider",
-      "club": "FC Schalke 04",
-      "status": "VERLETZT"
-    },
     "34522": {
       "reason": "",
       "lastNewsText": "",
@@ -602,22 +512,6 @@
       "lastNewsLink": "https://www.ligainsider.de/ellyes-skhiri_20776/skhiri-muss-gegen-gladbach-mit-trage-vom-platz-419017/",
       "quelle": "ligainsider",
       "club": "1. FC Köln",
-      "status": "VERLETZT"
-    },
-    "34244": {
-      "reason": "",
-      "lastNewsText": "Werder Bremen muss monatelang auf Musah verzichten",
-      "ligainsiderPlayerId": "37144",
-      "playerName": "Salim Musah",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-09-28T22:00:00Z",
-      "abfrageTimestamp": "2026-10-19T08:00:42.935201411Z",
-      "sinceString": "2 Wochen und 6 Tagen",
-      "comunioPlayerId": "34244",
-      "playerLink": "https://www.ligainsider.de/salim-musah_37144/",
-      "lastNewsLink": "https://www.ligainsider.de/salim-musah_37144/werder-bremen-muss-monatelang-auf-musah-verzichten-418561/",
-      "quelle": "ligainsider",
-      "club": "SV Werder Bremen",
       "status": "VERLETZT"
     },
     "34321": {
@@ -698,22 +592,6 @@
       "club": "Borussia Dortmund",
       "status": "VERLETZT"
     },
-    "34409": {
-      "reason": "",
-      "lastNewsText": "Gayret setzt Comeback-Arbeit auf dem Platz fort",
-      "ligainsiderPlayerId": "26215",
-      "playerName": "Timur Gayret",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-04-17T22:00:00Z",
-      "abfrageTimestamp": "2026-10-19T08:00:42.946972968Z",
-      "sinceString": "6 Monaten und 1 Tag",
-      "comunioPlayerId": "34409",
-      "playerLink": "https://www.ligainsider.de/timur-gayret_26215/",
-      "lastNewsLink": "https://www.ligainsider.de/timur-gayret_26215/gayret-setzt-comeback-arbeit-auf-dem-platz-fort-418563/",
-      "quelle": "ligainsider",
-      "club": "SC Paderborn 07",
-      "status": "AUFBAUTRAINING"
-    },
     "32744": {
       "reason": "Knieverletzung",
       "lastNewsText": "",
@@ -762,22 +640,6 @@
       "club": "TSG Hoffenheim",
       "status": "VERLETZT"
     },
-    "34395": {
-      "reason": "Muskuläre Probleme Oberschenkel",
-      "lastNewsText": "",
-      "ligainsiderPlayerId": "5825",
-      "playerName": "Jan Gyamerah",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-10-23T22:00:00Z",
-      "abfrageTimestamp": "2026-10-26T09:01:33.609224351Z",
-      "sinceString": "2 Tagen",
-      "comunioPlayerId": "34395",
-      "playerLink": "https://www.ligainsider.de/jan-gyamerah_5825/",
-      "lastNewsLink": "",
-      "quelle": "ligainsider",
-      "club": "SV 07 Elversberg",
-      "status": "VERLETZT"
-    },
     "34470": {
       "reason": "",
       "lastNewsText": "Leszczyński verletzt sich im Training",
@@ -794,23 +656,6 @@
       "club": "Borussia Mönchengladbach",
       "status": "VERLETZT"
     },
-    "34393": {
-      "reason": "",
-      "lastNewsText": "Elversberg muss lange auf Seifert verzichten",
-      "ligainsiderPlayerId": "36900",
-      "playerName": "Luis Seifert",
-      "statusChangeString": "20.10.2026",
-      "sinceTimestamp": "2026-07-12T22:00:00Z",
-      "abfrageTimestamp": "2026-10-19T08:00:42.943257223Z",
-      "sinceString": "3 Monaten und 1 Woche",
-      "statusChangeTimestamp": "2026-10-19T22:00:00Z",
-      "comunioPlayerId": "34393",
-      "playerLink": "https://www.ligainsider.de/luis-seifert_36900/",
-      "lastNewsLink": "https://www.ligainsider.de/luis-seifert_36900/elversberg-muss-lange-auf-seifert-verzichten-414973/",
-      "quelle": "ligainsider",
-      "club": "SV 07 Elversberg",
-      "status": "AUFBAUTRAINING"
-    },
     "34435": {
       "reason": "",
       "lastNewsText": "Leopold droht monatelanger Ausfall",
@@ -826,23 +671,6 @@
       "quelle": "ligainsider",
       "club": "Borussia Mönchengladbach",
       "status": "VERLETZT"
-    },
-    "33741": {
-      "reason": "",
-      "lastNewsText": "Meniskus betroffen: Topp erklärt lange Ausfallzeit",
-      "ligainsiderPlayerId": "35787",
-      "playerName": "Keke Topp",
-      "statusChangeString": "22.10.2026",
-      "sinceTimestamp": "2026-03-31T22:00:00Z",
-      "abfrageTimestamp": "2026-10-19T08:00:42.932997160Z",
-      "sinceString": "6 Monaten und 3 Wochen",
-      "statusChangeTimestamp": "2026-10-21T22:00:00Z",
-      "comunioPlayerId": "33741",
-      "playerLink": "https://www.ligainsider.de/keke-topp_35787/",
-      "lastNewsLink": "https://www.ligainsider.de/keke-topp_35787/meniskus-betroffen-topp-erklaert-lange-ausfallzeit-418435/",
-      "quelle": "ligainsider",
-      "club": "SV Werder Bremen",
-      "status": "AUFBAUTRAINING"
     },
     "34234": {
       "reason": "",
@@ -893,22 +721,6 @@
       "club": "TSG Hoffenheim",
       "status": "VERLETZT"
     },
-    "34517": {
-      "reason": "",
-      "lastNewsText": "BVB-Spiel kommt für Ndiaye zu früh",
-      "ligainsiderPlayerId": "37743",
-      "playerName": "Moussa Ndiaye",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-09-11T22:00:00Z",
-      "abfrageTimestamp": "2026-10-19T08:00:42.937257914Z",
-      "sinceString": "1 Monat und 1 Woche",
-      "comunioPlayerId": "34517",
-      "playerLink": "https://www.ligainsider.de/moussa-ndiaye_37743/",
-      "lastNewsLink": "https://www.ligainsider.de/moussa-ndiaye_37743/bvb-spiel-kommt-fuer-ndiaye-zu-frueh-418716/",
-      "quelle": "ligainsider",
-      "club": "SV Werder Bremen",
-      "status": "AUFBAUTRAINING"
-    },
     "34515": {
       "reason": "",
       "lastNewsText": "",
@@ -958,7 +770,7 @@
       "status": "VERLETZT"
     }
   },
-  "lastUpdate": "2026-10-27T09:01:36.211820506Z",
+  "lastUpdate": "2026-10-28T09:01:33.211996345Z",
   "history": {
     "33808": [{
       "reason": "",
@@ -1218,23 +1030,42 @@
         "status": "VERLETZT"
       }
     ],
-    "33896": [{
-      "reason": "",
-      "lastNewsText": "Wadenverletzung: Alvero fällt vorerst aus",
-      "ligainsiderPlayerId": "35903",
-      "playerName": "Skelly Alvero",
-      "statusChangeString": "18.10.2026",
-      "sinceTimestamp": "2026-10-04T22:00:00Z",
-      "abfrageTimestamp": "2026-10-08T08:00:46.839033061Z",
-      "sinceString": "3 Tagen",
-      "statusChangeTimestamp": "2026-10-17T22:00:00Z",
-      "comunioPlayerId": "33896",
-      "playerLink": "https://www.ligainsider.de/skelly-alvero_35903/",
-      "lastNewsLink": "https://www.ligainsider.de/skelly-alvero_35903/wadenverletzung-alvero-faellt-vorerst-aus-418742/",
-      "quelle": "ligainsider",
-      "club": "SV Werder Bremen",
-      "status": "VERLETZT"
-    }],
+    "33896": [
+      {
+        "reason": "",
+        "lastNewsText": "Wadenverletzung: Alvero fällt vorerst aus",
+        "ligainsiderPlayerId": "35903",
+        "playerName": "Skelly Alvero",
+        "statusChangeString": "18.10.2026",
+        "sinceTimestamp": "2026-10-04T22:00:00Z",
+        "abfrageTimestamp": "2026-10-08T08:00:46.839033061Z",
+        "sinceString": "3 Tagen",
+        "statusChangeTimestamp": "2026-10-17T22:00:00Z",
+        "comunioPlayerId": "33896",
+        "playerLink": "https://www.ligainsider.de/skelly-alvero_35903/",
+        "lastNewsLink": "https://www.ligainsider.de/skelly-alvero_35903/wadenverletzung-alvero-faellt-vorerst-aus-418742/",
+        "quelle": "ligainsider",
+        "club": "SV Werder Bremen",
+        "status": "VERLETZT"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "Wadenverletzung: Alvero fällt vorerst aus",
+        "ligainsiderPlayerId": "35903",
+        "playerName": "Skelly Alvero",
+        "statusChangeString": "28.10.2026",
+        "sinceTimestamp": "2026-10-04T22:00:00Z",
+        "abfrageTimestamp": "2026-10-19T08:00:42.934146773Z",
+        "sinceString": "2 Wochen",
+        "statusChangeTimestamp": "2026-10-27T23:00:00Z",
+        "comunioPlayerId": "33896",
+        "playerLink": "https://www.ligainsider.de/skelly-alvero_35903/",
+        "lastNewsLink": "https://www.ligainsider.de/skelly-alvero_35903/wadenverletzung-alvero-faellt-vorerst-aus-418742/",
+        "quelle": "ligainsider",
+        "club": "SV Werder Bremen",
+        "status": "VERLETZT"
+      }
+    ],
     "34467": [
       {
         "reason": "",
@@ -1694,6 +1525,23 @@
         "status": "VERLETZT"
       }
     ],
+    "34177": [{
+      "reason": "Bänderverletzung Sprunggelenk",
+      "lastNewsText": "",
+      "ligainsiderPlayerId": "38111",
+      "playerName": "Tom Zimmerschied",
+      "statusChangeString": "28.10.2026",
+      "sinceTimestamp": "2026-10-16T22:00:00Z",
+      "abfrageTimestamp": "2026-10-19T08:00:42.944296239Z",
+      "sinceString": "2 Tagen",
+      "statusChangeTimestamp": "2026-10-27T23:00:00Z",
+      "comunioPlayerId": "34177",
+      "playerLink": "https://www.ligainsider.de/tom-zimmerschied_38111/",
+      "lastNewsLink": "",
+      "quelle": "ligainsider",
+      "club": "SV 07 Elversberg",
+      "status": "VERLETZT"
+    }],
     "33008": [{
       "reason": "Kreuzbandriss",
       "lastNewsText": "",
@@ -2100,6 +1948,23 @@
       "club": "TSG Hoffenheim",
       "status": "VERLETZT"
     }],
+    "34395": [{
+      "reason": "Muskuläre Probleme Oberschenkel",
+      "lastNewsText": "",
+      "ligainsiderPlayerId": "5825",
+      "playerName": "Jan Gyamerah",
+      "statusChangeString": "28.10.2026",
+      "sinceTimestamp": "2026-10-23T22:00:00Z",
+      "abfrageTimestamp": "2026-10-26T09:01:33.609224351Z",
+      "sinceString": "2 Tagen",
+      "statusChangeTimestamp": "2026-10-27T23:00:00Z",
+      "comunioPlayerId": "34395",
+      "playerLink": "https://www.ligainsider.de/jan-gyamerah_5825/",
+      "lastNewsLink": "",
+      "quelle": "ligainsider",
+      "club": "SV 07 Elversberg",
+      "status": "VERLETZT"
+    }],
     "34393": [
       {
         "reason": "",
@@ -2160,6 +2025,23 @@
         "abfrageTimestamp": "2026-10-19T08:00:42.943257223Z",
         "sinceString": "3 Monaten und 1 Woche",
         "statusChangeTimestamp": "2026-10-19T22:00:00Z",
+        "comunioPlayerId": "34393",
+        "playerLink": "https://www.ligainsider.de/luis-seifert_36900/",
+        "lastNewsLink": "https://www.ligainsider.de/luis-seifert_36900/elversberg-muss-lange-auf-seifert-verzichten-414973/",
+        "quelle": "ligainsider",
+        "club": "SV 07 Elversberg",
+        "status": "AUFBAUTRAINING"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "Elversberg muss lange auf Seifert verzichten",
+        "ligainsiderPlayerId": "36900",
+        "playerName": "Luis Seifert",
+        "statusChangeString": "28.10.2026",
+        "sinceTimestamp": "2026-07-12T22:00:00Z",
+        "abfrageTimestamp": "2026-10-19T08:00:42.943257223Z",
+        "sinceString": "3 Monaten und 1 Woche",
+        "statusChangeTimestamp": "2026-10-27T23:00:00Z",
         "comunioPlayerId": "34393",
         "playerLink": "https://www.ligainsider.de/luis-seifert_36900/",
         "lastNewsLink": "https://www.ligainsider.de/luis-seifert_36900/elversberg-muss-lange-auf-seifert-verzichten-414973/",
@@ -2228,6 +2110,23 @@
         "abfrageTimestamp": "2026-10-19T08:00:42.932997160Z",
         "sinceString": "6 Monaten und 3 Wochen",
         "statusChangeTimestamp": "2026-10-21T22:00:00Z",
+        "comunioPlayerId": "33741",
+        "playerLink": "https://www.ligainsider.de/keke-topp_35787/",
+        "lastNewsLink": "https://www.ligainsider.de/keke-topp_35787/meniskus-betroffen-topp-erklaert-lange-ausfallzeit-418435/",
+        "quelle": "ligainsider",
+        "club": "SV Werder Bremen",
+        "status": "AUFBAUTRAINING"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "Meniskus betroffen: Topp erklärt lange Ausfallzeit",
+        "ligainsiderPlayerId": "35787",
+        "playerName": "Keke Topp",
+        "statusChangeString": "28.10.2026",
+        "sinceTimestamp": "2026-03-31T22:00:00Z",
+        "abfrageTimestamp": "2026-10-19T08:00:42.932997160Z",
+        "sinceString": "6 Monaten und 3 Wochen",
+        "statusChangeTimestamp": "2026-10-27T23:00:00Z",
         "comunioPlayerId": "33741",
         "playerLink": "https://www.ligainsider.de/keke-topp_35787/",
         "lastNewsLink": "https://www.ligainsider.de/keke-topp_35787/meniskus-betroffen-topp-erklaert-lange-ausfallzeit-418435/",
@@ -2666,6 +2565,23 @@
         "quelle": "ligainsider",
         "club": "FC Schalke 04",
         "status": "VERLETZT"
+      },
+      {
+        "reason": "Achillessehnenverletzung",
+        "lastNewsText": "",
+        "ligainsiderPlayerId": "37190",
+        "playerName": "Emil Højlund",
+        "statusChangeString": "28.10.2026",
+        "sinceTimestamp": "2025-09-18T22:00:00Z",
+        "abfrageTimestamp": "2026-10-19T08:00:42.939531291Z",
+        "sinceString": "1 Jahr und 1 Monat",
+        "statusChangeTimestamp": "2026-10-27T23:00:00Z",
+        "comunioPlayerId": "34389",
+        "playerLink": "https://www.ligainsider.de/emil-hoejlund_37190/",
+        "lastNewsLink": "",
+        "quelle": "ligainsider",
+        "club": "FC Schalke 04",
+        "status": "VERLETZT"
       }
     ],
     "33453": [
@@ -2768,6 +2684,23 @@
         "quelle": "ligainsider",
         "club": "FC Schalke 04",
         "status": "NICHT_IM_KADER"
+      },
+      {
+        "reason": "Trainingsrückstand",
+        "lastNewsText": "",
+        "ligainsiderPlayerId": "24396",
+        "playerName": "Dejan Ljubičić",
+        "statusChangeString": "28.10.2026",
+        "sinceTimestamp": "2026-10-22T22:00:00Z",
+        "abfrageTimestamp": "2026-10-21T08:00:45.004454225Z",
+        "sinceString": "",
+        "statusChangeTimestamp": "2026-10-27T23:00:00Z",
+        "comunioPlayerId": "33453",
+        "playerLink": "https://www.ligainsider.de/dejan-ljubicic_24396/",
+        "lastNewsLink": "",
+        "quelle": "ligainsider",
+        "club": "FC Schalke 04",
+        "status": "NICHT_IM_KADER"
       }
     ],
     "34267": [{
@@ -2854,6 +2787,23 @@
       "lastNewsLink": "https://www.ligainsider.de/dominik-kohr_1821/kohr-nach-verletzung-operiert-417868/",
       "quelle": "ligainsider",
       "club": "1. FSV Mainz 05",
+      "status": "VERLETZT"
+    }],
+    "33219": [{
+      "reason": "",
+      "lastNewsText": "Paderborn muss auf Batista Meier verzichten",
+      "ligainsiderPlayerId": "19164",
+      "playerName": "Oliver Batista Meier",
+      "statusChangeString": "28.10.2026",
+      "sinceTimestamp": "2026-10-14T22:00:00Z",
+      "abfrageTimestamp": "2026-10-24T08:01:37.556499880Z",
+      "sinceString": "1 Woche und 2 Tagen",
+      "statusChangeTimestamp": "2026-10-27T23:00:00Z",
+      "comunioPlayerId": "33219",
+      "playerLink": "https://www.ligainsider.de/oliver-batista-meier_19164/",
+      "lastNewsLink": "https://www.ligainsider.de/oliver-batista-meier_19164/paderborn-muss-auf-batista-meier-verzichten-419460/",
+      "quelle": "ligainsider",
+      "club": "SC Paderborn 07",
       "status": "VERLETZT"
     }],
     "34427": [{
@@ -3208,6 +3158,23 @@
       "club": "SV Werder Bremen",
       "status": "VERLETZT"
     }],
+    "34377": [{
+      "reason": "",
+      "lastNewsText": "Gantenbein fällt gegen Köln aus",
+      "ligainsiderPlayerId": "37275",
+      "playerName": "Adrian Gantenbein",
+      "statusChangeString": "28.10.2026",
+      "sinceTimestamp": "2026-10-22T22:00:00Z",
+      "abfrageTimestamp": "2026-10-25T09:01:29.966217455Z",
+      "sinceString": "2 Tagen",
+      "statusChangeTimestamp": "2026-10-27T23:00:00Z",
+      "comunioPlayerId": "34377",
+      "playerLink": "https://www.ligainsider.de/adrian-gantenbein_37275/",
+      "lastNewsLink": "https://www.ligainsider.de/adrian-gantenbein_37275/gantenbein-faellt-gegen-koeln-aus-419648/",
+      "quelle": "ligainsider",
+      "club": "FC Schalke 04",
+      "status": "VERLETZT"
+    }],
     "34135": [{
       "reason": "",
       "lastNewsText": "Schmied fällt für mehrere Spiele aus",
@@ -3376,6 +3343,23 @@
         "status": "NICHT_IM_KADER"
       }
     ],
+    "33831": [{
+      "reason": "",
+      "lastNewsText": "Wöber fällt bis auf Weiteres aus",
+      "ligainsiderPlayerId": "11916",
+      "playerName": "Maximilian Wöber",
+      "statusChangeString": "28.10.2026",
+      "sinceTimestamp": "2026-10-19T22:00:00Z",
+      "abfrageTimestamp": "2026-10-23T08:00:44.949528485Z",
+      "sinceString": "3 Tagen",
+      "statusChangeTimestamp": "2026-10-27T23:00:00Z",
+      "comunioPlayerId": "33831",
+      "playerLink": "https://www.ligainsider.de/maximilian-woeber_11916/",
+      "lastNewsLink": "https://www.ligainsider.de/maximilian-woeber_11916/woeber-faellt-bis-auf-weiteres-aus-419488/",
+      "quelle": "ligainsider",
+      "club": "FC Schalke 04",
+      "status": "VERLETZT"
+    }],
     "34403": [
       {
         "reason": "",
@@ -3529,6 +3513,23 @@
         "quelle": "ligainsider",
         "club": "FC Schalke 04",
         "status": "VERLETZT"
+      },
+      {
+        "reason": "Bauchmuskelverletzung",
+        "lastNewsText": "",
+        "ligainsiderPlayerId": "38861",
+        "playerName": "Johannes Siebeking",
+        "statusChangeString": "28.10.2026",
+        "sinceTimestamp": "2026-09-11T22:00:00Z",
+        "abfrageTimestamp": "2026-10-19T08:00:42.940448167Z",
+        "sinceString": "1 Monat und 1 Woche",
+        "statusChangeTimestamp": "2026-10-27T23:00:00Z",
+        "comunioPlayerId": "34369",
+        "playerLink": "https://www.ligainsider.de/johannes-siebeking_38861/",
+        "lastNewsLink": "",
+        "quelle": "ligainsider",
+        "club": "FC Schalke 04",
+        "status": "VERLETZT"
       }
     ],
     "33796": [{
@@ -3631,6 +3632,23 @@
         "quelle": "ligainsider",
         "club": "SV Werder Bremen",
         "status": "VERLETZT"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "Werder Bremen muss monatelang auf Musah verzichten",
+        "ligainsiderPlayerId": "37144",
+        "playerName": "Salim Musah",
+        "statusChangeString": "28.10.2026",
+        "sinceTimestamp": "2026-09-28T22:00:00Z",
+        "abfrageTimestamp": "2026-10-19T08:00:42.935201411Z",
+        "sinceString": "2 Wochen und 6 Tagen",
+        "statusChangeTimestamp": "2026-10-27T23:00:00Z",
+        "comunioPlayerId": "34244",
+        "playerLink": "https://www.ligainsider.de/salim-musah_37144/",
+        "lastNewsLink": "https://www.ligainsider.de/salim-musah_37144/werder-bremen-muss-monatelang-auf-musah-verzichten-418561/",
+        "quelle": "ligainsider",
+        "club": "SV Werder Bremen",
+        "status": "VERLETZT"
       }
     ],
     "31935": [{
@@ -3708,6 +3726,23 @@
         "abfrageTimestamp": "2026-10-07T08:00:44.295763126Z",
         "sinceString": "5 Monaten und 2 Wochen",
         "statusChangeTimestamp": "2026-10-17T22:00:00Z",
+        "comunioPlayerId": "34409",
+        "playerLink": "https://www.ligainsider.de/timur-gayret_26215/",
+        "lastNewsLink": "https://www.ligainsider.de/timur-gayret_26215/gayret-setzt-comeback-arbeit-auf-dem-platz-fort-418563/",
+        "quelle": "ligainsider",
+        "club": "SC Paderborn 07",
+        "status": "AUFBAUTRAINING"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "Gayret setzt Comeback-Arbeit auf dem Platz fort",
+        "ligainsiderPlayerId": "26215",
+        "playerName": "Timur Gayret",
+        "statusChangeString": "28.10.2026",
+        "sinceTimestamp": "2026-04-17T22:00:00Z",
+        "abfrageTimestamp": "2026-10-19T08:00:42.946972968Z",
+        "sinceString": "6 Monaten und 1 Tag",
+        "statusChangeTimestamp": "2026-10-27T23:00:00Z",
         "comunioPlayerId": "34409",
         "playerLink": "https://www.ligainsider.de/timur-gayret_26215/",
         "lastNewsLink": "https://www.ligainsider.de/timur-gayret_26215/gayret-setzt-comeback-arbeit-auf-dem-platz-fort-418563/",
@@ -4148,6 +4183,23 @@
         "abfrageTimestamp": "2026-10-08T08:00:46.844132633Z",
         "sinceString": "3 Wochen und 6 Tagen",
         "statusChangeTimestamp": "2026-10-17T22:00:00Z",
+        "comunioPlayerId": "34517",
+        "playerLink": "https://www.ligainsider.de/moussa-ndiaye_37743/",
+        "lastNewsLink": "https://www.ligainsider.de/moussa-ndiaye_37743/bvb-spiel-kommt-fuer-ndiaye-zu-frueh-418716/",
+        "quelle": "ligainsider",
+        "club": "SV Werder Bremen",
+        "status": "AUFBAUTRAINING"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "BVB-Spiel kommt für Ndiaye zu früh",
+        "ligainsiderPlayerId": "37743",
+        "playerName": "Moussa Ndiaye",
+        "statusChangeString": "28.10.2026",
+        "sinceTimestamp": "2026-09-11T22:00:00Z",
+        "abfrageTimestamp": "2026-10-19T08:00:42.937257914Z",
+        "sinceString": "1 Monat und 1 Woche",
+        "statusChangeTimestamp": "2026-10-27T23:00:00Z",
         "comunioPlayerId": "34517",
         "playerLink": "https://www.ligainsider.de/moussa-ndiaye_37743/",
         "lastNewsLink": "https://www.ligainsider.de/moussa-ndiaye_37743/bvb-spiel-kommt-fuer-ndiaye-zu-frueh-418716/",
