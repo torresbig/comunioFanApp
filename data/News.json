@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "28.10.2026 05:16:01",
+  "lastUpdate": "28.10.2026 10:01:33",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -6410,14 +6410,200 @@
     },
     {
       "date": "28.10.2026",
-      "news": [{
-        "date": "28.10.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Capaldo\",\"price\":2280009,\"buyerId\":\"10966300\",\"playerValue\":2080000,\"playerId\":\"34233\",\"buyer\":\"Alexander\"}",
-        "id": "967848888",
-        "playerId": "34233"
-      }]
+      "news": [
+        {
+          "date": "28.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Capaldo\",\"price\":2280009,\"buyerId\":\"10966300\",\"playerValue\":2080000,\"playerId\":\"34233\",\"buyer\":\"Alexander\"}",
+          "id": "967848888",
+          "playerId": "34233"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Schlieck\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"33664\",\"newPos\":\"TORHÜTER\"}",
+          "id": "0",
+          "playerId": "33664"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"C. Gomis\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34388\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34388"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"G. Orban\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34078\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34078"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "ELFDESTAGES",
+          "gelesen": false,
+          "text": "[{\"punkte\":8,\"owner\":\"1\",\"playerName\":\"Atubolu\",\"position\":\"keeper\",\"playerId\":\"33439\"},{\"punkte\":14,\"owner\":\"1\",\"playerName\":\"Caci\",\"position\":\"defender\",\"playerId\":\"33577\"},{\"punkte\":13,\"owner\":\"1\",\"playerName\":\"Upamecano\",\"position\":\"defender\",\"playerId\":\"32720\"},{\"punkte\":13,\"owner\":\"1\",\"playerName\":\"Scally\",\"position\":\"defender\",\"playerId\":\"33258\"},{\"punkte\":15,\"owner\":\"13654613\",\"playerName\":\"Mohya\",\"position\":\"midfielder\",\"playerId\":\"34270\"},{\"punkte\":13,\"owner\":\"13830745\",\"playerName\":\"Massengo\",\"position\":\"midfielder\",\"playerId\":\"34236\"},{\"punkte\":12,\"owner\":\"13548242\",\"playerName\":\"Kramarić\",\"position\":\"midfielder\",\"playerId\":\"32553\"},{\"punkte\":12,\"owner\":\"13654613\",\"playerName\":\"Reis\",\"position\":\"midfielder\",\"playerId\":\"34152\"},{\"punkte\":16,\"owner\":\"5981249\",\"playerName\":\"Rômulo\",\"position\":\"striker\",\"playerId\":\"34271\"},{\"punkte\":15,\"owner\":\"1\",\"playerName\":\"Olise\",\"position\":\"striker\",\"playerId\":\"34014\"},{\"punkte\":14,\"owner\":\"13830745\",\"playerName\":\"Füllkrug\",\"position\":\"striker\",\"playerId\":\"31916\"}]",
+          "id": "967864313",
+          "playerId": "0"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Tigges\",\"price\":5219800,\"buyerId\":\"1\",\"playerValue\":5460000,\"playerId\":\"33365\",\"buyer\":\"Computer\"}",
+          "id": "967848888",
+          "playerId": "33365"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Torunarigha\",\"price\":793800,\"buyerId\":\"1\",\"playerValue\":820000,\"playerId\":\"32710\",\"buyer\":\"Computer\"}",
+          "id": "967848888",
+          "playerId": "32710"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (33520) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33520"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Bruno Ogbus (34021) ist jetzt NICHT_IM_KADER",
+          "id": "0",
+          "playerId": "34021"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Berkay Yilmaz (34020) ist jetzt NICHT_IM_KADER",
+          "id": "0",
+          "playerId": "34020"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Skelly Alvero (33896) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33896"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Emil Højlund (34389) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34389"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Dejan Ljubičić (33453) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33453"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Oliver Batista Meier (33219) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33219"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Adrian Gantenbein (34377) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34377"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Tom Zimmerschied (34177) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34177"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Maximilian Wöber (33831) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33831"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Johannes Siebeking (34369) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34369"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Salim Musah (34244) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34244"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Timur Gayret (34409) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34409"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jan Gyamerah (34395) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34395"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Luis Seifert (34393) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34393"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Keke Topp (33741) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33741"
+        },
+        {
+          "date": "28.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Moussa Ndiaye (34517) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34517"
+        }
+      ]
     },
     {
       "date": "28.09.2026",
