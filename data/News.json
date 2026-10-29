@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "29.10.2026 05:16:03",
+  "lastUpdate": "29.10.2026 10:01:41",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -3457,14 +3457,168 @@
     },
     {
       "date": "29.10.2026",
-      "news": [{
-        "date": "29.10.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Gray\",\"price\":880009,\"buyerId\":\"10966300\",\"playerValue\":1040000,\"playerId\":\"34452\",\"buyer\":\"Alexander\"}",
-        "id": "967887639",
-        "playerId": "34452"
-      }]
+      "news": [
+        {
+          "date": "29.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Gray\",\"price\":880009,\"buyerId\":\"10966300\",\"playerValue\":1040000,\"playerId\":\"34452\",\"buyer\":\"Alexander\"}",
+          "id": "967887639",
+          "playerId": "34452"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Schlieck\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"33664\",\"newPos\":\"TORHÜTER\"}",
+          "id": "0",
+          "playerId": "33664"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"C. Gomis\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34388\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34388"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"G. Orban\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34078\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34078"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Bissi-Mouelle (ID: 34531)",
+          "id": "0",
+          "playerId": "34531"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Maximilian Wöber (33831) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33831"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Emil Højlund (34389) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34389"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Adrian Gantenbein (34377) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34377"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Johannes Siebeking (34369) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34369"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jan Gyamerah (34395) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34395"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Tom Zimmerschied (34177) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34177"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Luis Seifert (34393) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "34393"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Skelly Alvero (33896) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33896"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Salim Musah (34244) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34244"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Keke Topp (33741) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "33741"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Moussa Ndiaye (34517) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "34517"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Nicolás Capaldo (34233) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34233"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Oliver Batista Meier (33219) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33219"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Timur Gayret (34409) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "34409"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel:  (33520) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33520"
+        }
+      ]
     },
     {
       "date": "29.09.2026",
