@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "29.10.2026 22:00:14",
+  "lastUpdate": "30.10.2026 05:16:03",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -263,6 +263,17 @@
           "playerId": "34380"
         }
       ]
+    },
+    {
+      "date": "30.10.2026",
+      "news": [{
+        "date": "30.10.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Gosens\",\"price\":3600000,\"buyerId\":\"13654613\",\"playerValue\":3410000,\"playerId\":\"33843\",\"buyer\":\"Christoph\"}",
+        "id": "967936296",
+        "playerId": "33843"
+      }]
     },
     {
       "date": "30.09.2026",
@@ -3689,6 +3700,38 @@
           "text": "{\"playerName\":\"G. Orban\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34078\",\"newPos\":\"STURM\"}",
           "id": "0",
           "playerId": "34078"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Schlieck\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"33664\",\"newPos\":\"TORHÜTER\"}",
+          "id": "0",
+          "playerId": "33664"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"C. Gomis\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34388\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34388"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"G. Orban\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34078\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34078"
+        },
+        {
+          "date": "29.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Alexander\",\"sellerId\":\"10966300\",\"playerName\":\"Ruoppi\",\"price\":301800,\"buyerId\":\"1\",\"playerValue\":300000,\"playerId\":\"34467\",\"buyer\":\"Computer\"}",
+          "id": "967887639",
+          "playerId": "34467"
         }
       ]
     },
