@@ -16,6 +16,19 @@
       "club": "FC Augsburg",
       "status": "AUFBAUTRAINING"
     },
+    "34187": {
+      "comunioPlayerId": "34187",
+      "reason": "Trainingsrückstand",
+      "playerLink": "https://www.ligainsider.de/kevin-diks_11591/",
+      "ligainsiderPlayerId": "11591",
+      "playerName": "Kevin Diks",
+      "sinceTimestamp": "2026-10-29T23:00:00Z",
+      "abfrageTimestamp": "2026-10-30T09:01:34.727141827Z",
+      "quelle": "ligainsider",
+      "club": "Borussia Mönchengladbach",
+      "sinceString": "",
+      "status": "NICHT_IM_KADER"
+    },
     "34021": {
       "reason": "Trainingsrückstand",
       "lastNewsText": "",
@@ -126,6 +139,19 @@
       "club": "SV Werder Bremen",
       "status": "VERLETZT"
     },
+    "34500": {
+      "comunioPlayerId": "34500",
+      "reason": "Trainingsrückstand",
+      "playerLink": "https://www.ligainsider.de/fritz-fleck_38537/",
+      "ligainsiderPlayerId": "38537",
+      "playerName": "Fritz Fleck",
+      "sinceTimestamp": "2026-10-29T23:00:00Z",
+      "abfrageTimestamp": "2026-10-30T09:01:34.728915594Z",
+      "quelle": "ligainsider",
+      "club": "Borussia Mönchengladbach",
+      "sinceString": "",
+      "status": "NICHT_IM_KADER"
+    },
     "34389": {
       "reason": "Achillessehnenverletzung",
       "lastNewsText": "",
@@ -189,6 +215,32 @@
       "quelle": "ligainsider",
       "club": "VfB Stuttgart",
       "status": "VERLETZT"
+    },
+    "34342": {
+      "comunioPlayerId": "34342",
+      "reason": "Muskuläre Probleme",
+      "playerLink": "https://www.ligainsider.de/hugo-bolin_37888/",
+      "ligainsiderPlayerId": "37888",
+      "playerName": "Hugo Bolin",
+      "sinceTimestamp": "2026-10-26T23:00:00Z",
+      "abfrageTimestamp": "2026-10-30T09:01:34.725982311Z",
+      "quelle": "ligainsider",
+      "club": "Borussia Mönchengladbach",
+      "sinceString": "3 Tagen",
+      "status": "VERLETZT"
+    },
+    "33817": {
+      "comunioPlayerId": "33817",
+      "reason": "Trainingsrückstand",
+      "playerLink": "https://www.ligainsider.de/franck-honorat_23248/",
+      "ligainsiderPlayerId": "23248",
+      "playerName": "Franck Honorat",
+      "sinceTimestamp": "2026-10-29T23:00:00Z",
+      "abfrageTimestamp": "2026-10-30T09:01:34.728028597Z",
+      "quelle": "ligainsider",
+      "club": "Borussia Mönchengladbach",
+      "sinceString": "",
+      "status": "NICHT_IM_KADER"
     },
     "31959": {
       "reason": "",
@@ -270,23 +322,6 @@
       "club": "1. FC Köln",
       "status": "VERLETZT"
     },
-    "34495": {
-      "reason": "",
-      "lastNewsText": "Karetsas fehlt gegen Frankfurt \u2013 Bremen offen",
-      "ligainsiderPlayerId": "38406",
-      "playerName": "Konstantinos Karetsas",
-      "statusChangeString": "27.10.2026",
-      "sinceTimestamp": "2026-10-16T22:00:00Z",
-      "abfrageTimestamp": "2026-10-19T08:00:42.877379021Z",
-      "sinceString": "1 Woche und 3 Tagen",
-      "statusChangeTimestamp": "2026-10-26T23:00:00Z",
-      "comunioPlayerId": "34495",
-      "playerLink": "https://www.ligainsider.de/konstantinos-karetsas_38406/",
-      "lastNewsLink": "https://www.ligainsider.de/konstantinos-karetsas_38406/karetsas-fehlt-gegen-frankfurt-ndash-bremen-offen-419592/",
-      "quelle": "ligainsider",
-      "club": "Borussia Dortmund",
-      "status": "AUFBAUTRAINING"
-    },
     "32591": {
       "reason": "Hüftprobleme",
       "lastNewsText": "",
@@ -317,6 +352,36 @@
       "lastNewsLink": "https://www.ligainsider.de/fabio-vieira_24438/vieira-faellt-mehrere-wochen-aus-419765/",
       "quelle": "ligainsider",
       "club": "Hamburger SV",
+      "status": "VERLETZT"
+    },
+    "34491": {
+      "reason": "",
+      "lastNewsText": "Sauer fehlt dem VfB bis auf Weiteres",
+      "ligainsiderPlayerId": "36387",
+      "playerName": "Leo Sauer",
+      "sinceTimestamp": "2026-10-27T23:00:00Z",
+      "abfrageTimestamp": "2026-10-30T09:01:34.688100675Z",
+      "sinceString": "2 Tagen",
+      "comunioPlayerId": "34491",
+      "playerLink": "https://www.ligainsider.de/leo-sauer_36387/",
+      "lastNewsLink": "https://www.ligainsider.de/leo-sauer_36387/sauer-fehlt-dem-vfb-bis-auf-weiteres-419993/",
+      "quelle": "ligainsider",
+      "club": "VfB Stuttgart",
+      "status": "VERLETZT"
+    },
+    "34051": {
+      "reason": "",
+      "lastNewsText": "Wadenbeinbruch: Gendrey fällt langfristig aus",
+      "ligainsiderPlayerId": "35971",
+      "playerName": "Valentin Gendrey",
+      "sinceTimestamp": "2026-10-27T23:00:00Z",
+      "abfrageTimestamp": "2026-10-30T09:01:34.691793160Z",
+      "sinceString": "2 Tagen",
+      "comunioPlayerId": "34051",
+      "playerLink": "https://www.ligainsider.de/valentin-gendrey_35971/",
+      "lastNewsLink": "https://www.ligainsider.de/valentin-gendrey_35971/wadenbeinbruch-gendrey-faellt-langfristig-aus-419981/",
+      "quelle": "ligainsider",
+      "club": "TSG Hoffenheim",
       "status": "VERLETZT"
     },
     "32599": {
@@ -555,6 +620,21 @@
       "club": "FC Schalke 04",
       "status": "VERLETZT"
     },
+    "34403": {
+      "reason": "",
+      "lastNewsText": "Hoffmeier fehlt noch \u2013 Teamtraining angepeilt",
+      "ligainsiderPlayerId": "26447",
+      "playerName": "Marcel Hoffmeier",
+      "sinceTimestamp": "2026-09-22T22:00:00Z",
+      "abfrageTimestamp": "2026-10-30T09:01:34.769888739Z",
+      "sinceString": "1 Monat und 1 Woche",
+      "comunioPlayerId": "34403",
+      "playerLink": "https://www.ligainsider.de/marcel-hoffmeier_26447/",
+      "lastNewsLink": "https://www.ligainsider.de/marcel-hoffmeier_26447/hoffmeier-fehlt-noch-ndash-teamtraining-angepeilt-420006/",
+      "quelle": "ligainsider",
+      "club": "SC Paderborn 07",
+      "status": "AUFBAUTRAINING"
+    },
     "34369": {
       "reason": "Bauchmuskelverletzung",
       "lastNewsText": "",
@@ -618,6 +698,19 @@
       "quelle": "ligainsider",
       "club": "1. FC Köln",
       "status": "VERLETZT"
+    },
+    "34443": {
+      "comunioPlayerId": "34443",
+      "reason": "Trainingsrückstand",
+      "playerLink": "https://www.ligainsider.de/nyamekye-awortwie-grant_36091/",
+      "ligainsiderPlayerId": "36091",
+      "playerName": "Nyamekye Awortwie-Grant",
+      "sinceTimestamp": "2026-10-29T23:00:00Z",
+      "abfrageTimestamp": "2026-10-30T09:01:34.771024003Z",
+      "quelle": "ligainsider",
+      "club": "SC Paderborn 07",
+      "sinceString": "",
+      "status": "NICHT_IM_KADER"
     },
     "34321": {
       "reason": "Blinddarmentzündung/operation",
@@ -745,6 +838,21 @@
       "club": "1. FC Köln",
       "status": "VERLETZT"
     },
+    "33437": {
+      "reason": "",
+      "lastNewsText": "Stuttgart muss vorerst auf Stiller verzichten",
+      "ligainsiderPlayerId": "20766",
+      "playerName": "Angelo Stiller",
+      "sinceTimestamp": "2026-10-27T23:00:00Z",
+      "abfrageTimestamp": "2026-10-30T09:01:34.684636973Z",
+      "sinceString": "2 Tagen",
+      "comunioPlayerId": "33437",
+      "playerLink": "https://www.ligainsider.de/angelo-stiller_20766/",
+      "lastNewsLink": "https://www.ligainsider.de/angelo-stiller_20766/stuttgart-muss-vorerst-auf-stiller-verzichten-419992/",
+      "quelle": "ligainsider",
+      "club": "VfB Stuttgart",
+      "status": "VERLETZT"
+    },
     "34526": {
       "reason": "Nicht berücksichtigt",
       "lastNewsText": "",
@@ -791,6 +899,34 @@
       "lastNewsLink": "",
       "quelle": "ligainsider",
       "club": "SV 07 Elversberg",
+      "status": "VERLETZT"
+    },
+    "33263": {
+      "reason": "",
+      "lastNewsText": "Kurzfristige Entscheidung bei Ache",
+      "ligainsiderPlayerId": "23720",
+      "playerName": "Ragnar Ache",
+      "sinceTimestamp": "2026-10-02T22:00:00Z",
+      "abfrageTimestamp": "2026-10-30T09:01:34.744806587Z",
+      "sinceString": "3 Wochen und 6 Tagen",
+      "comunioPlayerId": "33263",
+      "playerLink": "https://www.ligainsider.de/ragnar-ache_23720/",
+      "lastNewsLink": "https://www.ligainsider.de/ragnar-ache_23720/kurzfristige-entscheidung-bei-ache-419763/",
+      "quelle": "ligainsider",
+      "club": "1. FC Köln",
+      "status": "VERLETZT"
+    },
+    "34471": {
+      "comunioPlayerId": "34471",
+      "reason": "Sprunggelenksverletzung",
+      "playerLink": "https://www.ligainsider.de/paul-erevbenagie_38929/",
+      "ligainsiderPlayerId": "38929",
+      "playerName": "Paul Erevbenagie",
+      "sinceTimestamp": "2026-10-27T23:00:00Z",
+      "abfrageTimestamp": "2026-10-30T09:01:34.753782539Z",
+      "quelle": "ligainsider",
+      "club": "SV Werder Bremen",
+      "sinceString": "2 Tagen",
       "status": "VERLETZT"
     },
     "34470": {
@@ -987,7 +1123,7 @@
       "status": "VERLETZT"
     }
   },
-  "lastUpdate": "2026-10-29T09:01:41.758130325Z",
+  "lastUpdate": "2026-10-30T09:01:39.161404642Z",
   "history": {
     "33808": [{
       "reason": "",
@@ -3091,23 +3227,42 @@
         "status": "NICHT_IM_KADER"
       }
     ],
-    "34495": [{
-      "reason": "",
-      "lastNewsText": "Karetsas fehlt gegen Frankfurt \u2013 Bremen offen",
-      "ligainsiderPlayerId": "38406",
-      "playerName": "Konstantinos Karetsas",
-      "statusChangeString": "27.10.2026",
-      "sinceTimestamp": "2026-10-16T22:00:00Z",
-      "abfrageTimestamp": "2026-10-19T08:00:42.877379021Z",
-      "sinceString": "1 Woche und 3 Tagen",
-      "statusChangeTimestamp": "2026-10-26T23:00:00Z",
-      "comunioPlayerId": "34495",
-      "playerLink": "https://www.ligainsider.de/konstantinos-karetsas_38406/",
-      "lastNewsLink": "https://www.ligainsider.de/konstantinos-karetsas_38406/karetsas-fehlt-gegen-frankfurt-ndash-bremen-offen-419592/",
-      "quelle": "ligainsider",
-      "club": "Borussia Dortmund",
-      "status": "AUFBAUTRAINING"
-    }],
+    "34495": [
+      {
+        "reason": "",
+        "lastNewsText": "Karetsas fehlt gegen Frankfurt \u2013 Bremen offen",
+        "ligainsiderPlayerId": "38406",
+        "playerName": "Konstantinos Karetsas",
+        "statusChangeString": "27.10.2026",
+        "sinceTimestamp": "2026-10-16T22:00:00Z",
+        "abfrageTimestamp": "2026-10-19T08:00:42.877379021Z",
+        "sinceString": "1 Woche und 3 Tagen",
+        "statusChangeTimestamp": "2026-10-26T23:00:00Z",
+        "comunioPlayerId": "34495",
+        "playerLink": "https://www.ligainsider.de/konstantinos-karetsas_38406/",
+        "lastNewsLink": "https://www.ligainsider.de/konstantinos-karetsas_38406/karetsas-fehlt-gegen-frankfurt-ndash-bremen-offen-419592/",
+        "quelle": "ligainsider",
+        "club": "Borussia Dortmund",
+        "status": "AUFBAUTRAINING"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "Karetsas fehlt gegen Frankfurt \u2013 Bremen offen",
+        "ligainsiderPlayerId": "38406",
+        "playerName": "Konstantinos Karetsas",
+        "statusChangeString": "30.10.2026",
+        "sinceTimestamp": "2026-10-16T22:00:00Z",
+        "abfrageTimestamp": "2026-10-19T08:00:42.877379021Z",
+        "sinceString": "1 Woche und 3 Tagen",
+        "statusChangeTimestamp": "2026-10-29T23:00:00Z",
+        "comunioPlayerId": "34495",
+        "playerLink": "https://www.ligainsider.de/konstantinos-karetsas_38406/",
+        "lastNewsLink": "https://www.ligainsider.de/konstantinos-karetsas_38406/karetsas-fehlt-gegen-frankfurt-ndash-bremen-offen-419592/",
+        "quelle": "ligainsider",
+        "club": "Borussia Dortmund",
+        "status": "AUFBAUTRAINING"
+      }
+    ],
     "33164": [{
       "reason": "",
       "lastNewsText": "",
