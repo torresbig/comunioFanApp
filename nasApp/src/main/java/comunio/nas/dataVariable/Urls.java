@@ -2,6 +2,7 @@ package comunio.nas.dataVariable;
 
 
 import comunio.nas.ComunioDataUpdater;
+import comunio.nas.dataScraper.comunio.MatchdayInfo;
 import comunio.nas.objects.user.User;
 
 public class Urls {
@@ -28,8 +29,15 @@ public class Urls {
 //	}
 
 	// "https://www.comunio.de/api/users/%d/squad?communityId=%d&eid=live&state=standings.mode"
-	public static final String COM_LINEUP(User user) {
+	public static final String COM_LINEUP_LIVE(User user) {
 		return API_URL + "users/" + user.getId() + "/squad?communityId=" + ComunioDataUpdater.community.getId() + "&eid=live&state=standings.mode";
+	}
+	public static final String COM_LINEUP_MATCHDAY(User user, MatchdayInfo matchdayInfo) {
+		if(matchdayInfo == null) {
+			return COM_LINEUP_LIVE(user); 
+		}
+		long matchId = matchdayInfo.getEventInfo().getPrevious();
+		return API_URL + "users/" + user.getId() + "/squad?communityId=" + ComunioDataUpdater.community.getId() + "&eid="+ matchId +"&state=standings.mode";
 	}
 
 	public static final String COM_CLUB = API_URL + "clubs/";

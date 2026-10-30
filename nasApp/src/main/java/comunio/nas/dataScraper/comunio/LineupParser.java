@@ -7,7 +7,9 @@ import comunio.nas.dataVariable.Urls;
 import comunio.nas.objects.helper.LogManager;
 import comunio.nas.objects.user.User;
 import comunio.nas.util.HttpHeaderUtil;
-
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -17,50 +19,67 @@ import java.util.logging.Logger;
 public class LineupParser {
 
 	private static final Logger LOGGER = LogManager.getLogger(LineupParser.class);
+	private static final String CURRENT_KEY = "current";
 
 	// Struktur: Spieltag -> (UserID -> UserDaten)
-	private Map<String, Map<String, Object>> rootDataMap = new HashMap<>();
+	private Map<String, Map<String, UserLineupData>> rootDataMap = new HashMap<>();
+	private Instant lastCurrentLineupRefresh;
 
-	// Prüft, ob der User für diesen Spieltag bereits in der Map ist
-	private boolean isUserCached(MatchdayInfo matchdayInfo, User user) {
-		// Existenz des Spieltags prüfen
-		String spieltag = String.valueOf(matchdayInfo.getCurrentMatchday());
-		if (!isMatchdayCached(matchdayInfo)) {
+	/**
+	 * Prüft, ob der aktuelle Tagesstand der Lineups neu geladen werden muss.
+	 * Der aktuelle Cache wird einmal pro lokaler Tagesgrenze neu aktualisiert.
+	 *
+	 * @return true, wenn der Current-Stand noch nicht für den aktuellen Tag
+	 *         geladen wurde.
+	 */
+	private boolean shouldRefreshCurrentLineup() {
+		if (lastCurrentLineupRefresh == null) {
+			return true;
+		}
+		LocalDate today = LocalDate.now(ZoneId.of("Europe/Berlin"));
+		LocalDate lastRefreshDay = lastCurrentLineupRefresh.atZone(ZoneId.of("Europe/Berlin")).toLocalDate();
+		return !today.equals(lastRefreshDay);
+	}
+
+	/**
+	 * Prüft, ob für den Nutzer unter dem angegebenen Cache-Key bereits ein
+	 * gültiger Lineup-Satz vorhanden ist.
+	 * <p>
+	 * Da einzelne Nutzer in Einzelfällen nur neun statt elf Spieler melden,
+	 * gilt ein Eintrag bereits als gecached, sobald mindestens neun Spieler im
+	 * Cache sind.
+	 *
+	 * @param cacheKey Schlüssel des Caches, z. B. "current" oder die Spieltag-ID.
+	 * @param user Nutzer, dessen Eintrag geprüft werden soll.
+	 * @return true, wenn ein valider Eintrag vorhanden ist.
+	 */
+	private boolean isUserCachedForKey(String cacheKey, User user) {
+		if (cacheKey == null || user == null || user.getId() == null) {
 			return false;
 		}
-		Map<String, Object> usersMap = rootDataMap.get(spieltag);
+		Map<String, UserLineupData> usersMap = rootDataMap.get(cacheKey);
 		if (usersMap == null) {
 			return false;
 		}
-		Object userEntry = usersMap.get(String.valueOf(user.getId()));
-		if (!(userEntry instanceof Map)) {
-			// Kein gültiger User-Eintrag vorhanden
+		UserLineupData userLineup = usersMap.get(String.valueOf(user.getId()));
+		if (userLineup == null || userLineup.players == null) {
 			return false;
 		}
-		@SuppressWarnings("unchecked")
-		Map<String, Object> userData = (Map<String, Object>) userEntry;
-		Object playersObj = userData.get("players");
-		if (playersObj instanceof List) {
-			List<?> players = (List<?>) playersObj;
-			int size = players.size();
-			// Wir erwarten genau 11 Spieler in der Aufstellung. Alles andere gilt als
-			// unvollständig und muss neu abgefragt werden.
-			if (size == 11) {
-				LOGGER.fine("isUserCached: Matchday=" + spieltag + " UserId=" + user.getId() + " -> cached (players=" + size + ")");
-				return true;
-			} else {
-				LOGGER.fine("isUserCached: Matchday=" + spieltag + " UserId=" + user.getId() + " -> NOT cached (players=" + size + ", expected=11)");
-				return false;
-			}
+		int size = userLineup.players.size();
+		if (size >= 9) {
+			LOGGER.fine("isUserCachedForKey: cacheKey=" + cacheKey + " UserId=" + user.getId() + " -> cached (players=" + size + ")");
+			return true;
 		}
-		// Falls kein List-Objekt unter 'players' liegt, nicht als gecached werten
-		LOGGER.fine("isUserCached: Matchday=" + spieltag + " UserId=" + user.getId() + " -> NOT cached (no players list)");
+		LOGGER.fine("isUserCachedForKey: cacheKey=" + cacheKey + " UserId=" + user.getId() + " -> NOT cached (players=" + size + ", expected>=9)");
 		return false;
 	}
 
 	/**
-	 * Robustes Parsen des pos-Felds aus dem JSON-Objekt. Gibt null zurück, wenn
-	 * kein valider Integer vorhanden ist.
+	 * Extrahiert die Position eines Spielers aus dem API-Objekt.
+	 *
+	 * @param p JSON-Objekt des Spielers.
+	 * @return Ganzzahlige Position im Lineup, oder null, falls keine gültige
+	 *         Position vorhanden ist.
 	 */
 	private Integer parsePos(JSONObject p) {
 		Object posObj = p.opt("pos");
@@ -81,132 +100,229 @@ public class LineupParser {
 		}
 	}
 
+	/**
+	 * Prüft, ob für den aktuellen Spieltag bereits ein Matchday-Snapshot im Cache
+	 * vorhanden ist.
+	 *
+	 * @param matchdayInfo Informationen zum aktuellen Spieltag.
+	 * @return true, wenn für diesen Spieltag bereits Daten gespeichert wurden.
+	 */
 	private boolean isMatchdayCached(MatchdayInfo matchdayInfo) {
 		String spieltag = String.valueOf(matchdayInfo.getCurrentMatchday());
 		return rootDataMap.containsKey(spieltag);
 	}
 
-	public void fetchLineupForAllUsers(Map<String, User> users, MatchdayInfo matchdayInfo) {
-		if (matchdayInfo.isStarted() && !matchdayInfo.isFinished()) {
-			// Wenn der Spieltag gestartet ist, aber noch nicht beendet, werden die
-			// aufstellungen abgefragt. sonst nicht.
+	/**
+	 * Kopiert den bereits für einen Spieltag gespeicherten Snapshot in den
+	 * aktuellen Stand unter "current", ohne einen zweiten API-Call auszulösen.
+	 *
+	 * @param matchdayKey Schlüssel des Spieltags, dessen Daten in den Current-
+	 *                    Cache übernommen werden sollen.
+	 */
+	private void copyMatchdaySnapshotToCurrent(String matchdayKey) {
+		Map<String, UserLineupData> matchdayUsers = rootDataMap.get(matchdayKey);
+		if (matchdayUsers == null || matchdayUsers.isEmpty()) {
+			return;
+		}
+		Map<String, UserLineupData> currentUsers = rootDataMap.computeIfAbsent(CURRENT_KEY, k -> new HashMap<>());
+		for (Map.Entry<String, UserLineupData> entry : matchdayUsers.entrySet()) {
+			currentUsers.put(entry.getKey(), entry.getValue());
+		}
+		lastCurrentLineupRefresh = Instant.now();
+	}
 
-			if (isMatchdayCached(matchdayInfo)) {
-				// Wenn der Spieltag schon in der Map ist, nur die User abfragen, die noch nicht
-				// drin sind
+	/**
+	 * Lädt für alle Nutzer die Lineups für den aktiven Spieltag.
+	 * <p>
+	 * Der erste erfolgreiche Fetch nach Anpfiff wird nur im Matchday-Cache
+	 * gespeichert. Die gleichen Daten werden zusätzlich in "current" abgelegt,
+	 * ohne einen zweiten API-Call zu starten. Wenn der aktuelle Stand später
+	 * erneut aktualisiert werden muss, wird der vorhandene Matchday-Snapshot in
+	 * "current" kopiert statt noch einmal zu laden.
+	 *
+	 * @param users Map aller Nutzer.
+	 * @param matchdayInfo Informationen zum aktiven Spieltag.
+	 */
+	public void fetchLineupForAllUsers(Map<String, User> users, MatchdayInfo matchdayInfo) {
+		if (users == null || matchdayInfo == null) {
+			return;
+		}
+
+		String spieltag = String.valueOf(matchdayInfo.getCurrentMatchday());
+		boolean activeMatchday = matchdayInfo.isStarted() && !matchdayInfo.isFinished();
+
+		if (activeMatchday) {
+			if (!isMatchdayCached(matchdayInfo)) {
 				for (User user : users.values()) {
-					if (!isUserCached(matchdayInfo, user)) {
-						fetchAndStoreLineup(user, matchdayInfo);
+					fetchAndStoreLineup(user, matchdayInfo, true);
+				}
+			} else {
+				for (User user : users.values()) {
+					if (!isUserCachedForKey(spieltag, user)) {
+						fetchAndStoreLineup(user, matchdayInfo, true);
 					}
 				}
-				return;
 			}
-			for (User user : users.values()) {
-				fetchAndStoreLineup(user, matchdayInfo);
+		}
+
+		if (shouldRefreshCurrentLineup()) {
+			if (activeMatchday && isMatchdayCached(matchdayInfo)) {
+				copyMatchdaySnapshotToCurrent(spieltag);
+			} else {
+				for (User user : users.values()) {
+					fetchAndStoreLineup(user, matchdayInfo, false);
+				}
 			}
 		}
 	}
 
-	// Wandelt ein vorhandenes JSON (als String) wieder in die interne Map-Struktur
-	// um
-	@SuppressWarnings("unchecked")
+	/**
+	 * Lädt die Lineup-Daten aus einer bereits gespeicherten JSON-Struktur in den
+	 * internen Cache.
+	 *
+	 * @param rootJson JSON-Root-Objekt mit Spieltag- und Userdaten.
+	 */
 	public void loadMapFromJsonString(JSONObject rootJson) {
-		Map<String, Object> genericMap = rootJson.toMap();
-
 		rootDataMap.clear();
-		for (Map.Entry<String, Object> entry : genericMap.entrySet()) {
-			if (entry.getValue() instanceof Map) {
-				rootDataMap.put(entry.getKey(), (Map<String, Object>) entry.getValue());
+		for (String key : rootJson.keySet()) {
+			Object value = rootJson.get(key);
+			if (!(value instanceof JSONObject)) {
+				continue;
 			}
+			JSONObject matchdayObj = (JSONObject) value;
+			Map<String, UserLineupData> userMap = new HashMap<>();
+			for (String userId : matchdayObj.keySet()) {
+				Object userObj = matchdayObj.get(userId);
+				if (!(userObj instanceof JSONObject)) {
+					continue;
+				}
+				JSONObject userJson = (JSONObject) userObj;
+				UserLineupData lineup = new UserLineupData();
+				lineup.tactic = userJson.optString("tactic", "unknown");
+				JSONArray playersArray = userJson.optJSONArray("players");
+				if (playersArray != null) {
+					for (int i = 0; i < playersArray.length(); i++) {
+						JSONObject playerJson = playersArray.getJSONObject(i);
+						LineupPlayerData player = new LineupPlayerData();
+						player.id = playerJson.optLong("id", 0L);
+						player.name = playerJson.optString("name", "");
+						player.kaderPos = playerJson.optInt("kaderPos", 0);
+						player.wasLiveSubstituted = playerJson.optBoolean("wasLiveSubstituted", false);
+						player.quotedprice = playerJson.optLong("quotedprice", 0L);
+						player.substitute = playerJson.optBoolean("substitute", false);
+						player.position = playerJson.optString("position", "unbekannt");
+						lineup.players.add(player);
+					}
+				}
+				userMap.put(userId, lineup);
+			}
+			rootDataMap.put(key, userMap);
 		}
 	}
 
-	// 6. Am Ende die gesamte Map mit einem Befehl in ein JSONObject umwandeln
+	/**
+	 * Serialisiert den kompletten Lineup-Cache als JSON-Objekt.
+	 *
+	 * @return JSON-Wurzelstruktur mit allen Matchday- und Current-Daten.
+	 */
 	public JSONObject getFinalJSONObject() {
-		return new JSONObject(rootDataMap);
+		JSONObject json = new JSONObject();
+		for (Map.Entry<String, Map<String, UserLineupData>> entry : rootDataMap.entrySet()) {
+			JSONObject matchdayJson = new JSONObject();
+			for (Map.Entry<String, UserLineupData> userEntry : entry.getValue().entrySet()) {
+				matchdayJson.put(userEntry.getKey(), userEntry.getValue().toJson());
+			}
+			json.put(entry.getKey(), matchdayJson);
+		}
+		return json;
 	}
 
-	private void fetchAndStoreLineup(User user, MatchdayInfo matchdayInfo) {
-
-		// Prüfen, ob User-Objekt oder ID vorhanden ist (id ist String in deinem
-		// User-Objekt)
+	/**
+	 * Ruft die Lineups eines einzelnen Nutzers aus der API ab und speichert sie.
+	 * <p>
+	 * Wenn <code>fixedMatchdaySnapshot</code> true ist, wird der Eintrag nur beim
+	 * ersten erfolgreichen Fetch des Spieltags im Matchday-Cache abgelegt. Der
+	 * aktuelle Stand unter "current" wird bei jedem erfolgreichen Fetch neu
+	 * aktualisiert.
+	 *
+	 * @param user Nutzer, dessen Lineup geladen werden soll.
+	 * @param matchdayInfo Aktueller Spieltag.
+	 * @param fixedMatchdaySnapshot true für den einmaligen Matchday-Snapshot,
+	 *                             false für den flüchtigen Current-Stand.
+	 */
+	private void fetchAndStoreLineup(User user, MatchdayInfo matchdayInfo, boolean fixedMatchdaySnapshot) {
 		if (user == null || user.getId() == null || user.getId().equals("1")) {
 			String userName = (user != null) ? user.getName() : "Unbekannt";
 			LOGGER.info("fetchAndStoreLineup: User " + userName + " hat die ID 1 oder ist ungültig, wird übersprungen.");
 			return;
 		}
 
-		String spieltag = String.valueOf(matchdayInfo.getCurrentMatchday());
-
-		// Wenn die Daten für den User an diesem Spieltag schon existieren, nicht
-		// nochmal abfragen
-		if (isUserCached(matchdayInfo, user)) {
+		String storageKey = fixedMatchdaySnapshot ? String.valueOf(matchdayInfo.getCurrentMatchday()) : CURRENT_KEY;
+		if (fixedMatchdaySnapshot && isUserCachedForKey(storageKey, user)) {
 			return;
 		}
 
 		try {
-			// 1. API-Daten via Jsoup abrufen (mit ignoreContentType für JSON)
-
-			String doc = Jsoup.connect(Urls.COM_LINEUP(user)).userAgent(HttpHeaderUtil.getRandomUserAgent()).header("Accept", "application/json, text/plain, */*").header("Authorization", "Bearer " + Login.getToken()).header("Accept-Encoding", "gzip, deflate, br, zstd").header("Accept-Language", "de-DE,en-EN;q=0.9").header("x-timezone", "Europe/Berlin").ignoreContentType(true).execute().body();
+		String url = Urls.COM_LINEUP_LIVE(user);
+			if(storageKey.equals("current")) {
+				url = Urls.COM_LINEUP_MATCHDAY(user, matchdayInfo);
+			}
+			String doc = Jsoup.connect(url).userAgent(HttpHeaderUtil.getRandomUserAgent())
+					.header("Accept", "application/json, text/plain, */*")
+					.header("Authorization", "Bearer " + Login.getToken())
+					.header("Accept-Encoding", "gzip, deflate, br, zstd")
+					.header("Accept-Language", "de-DE,en-EN;q=0.9")
+					.header("x-timezone", "Europe/Berlin")
+					.ignoreContentType(true)
+					.execute()
+					.body();
 
 			JSONObject responseJson = new JSONObject(doc);
-
-			// 2. Taktik auslesen (falls im Squad-Endpoint vorhanden, sonst Default)
 			String taktik = responseJson.optString("tactic", "unknown");
-
-			// 3. Spieler-Liste (aus dem "items"-Array der Squad-API) auslesen und in Maps
-			// verpacken
 			JSONArray sourcePlayers = responseJson.optJSONArray("items");
-			List<Map<String, Object>> playerList = new ArrayList<>();
+			List<LineupPlayerData> playerList = new ArrayList<>();
 
 			if (sourcePlayers != null) {
-			    List<Map<String, Object>> tempPlayerList = new ArrayList<>();
-			    for (int i = 0; i < sourcePlayers.length(); i++) {
-			        JSONObject p = sourcePlayers.getJSONObject(i);
-			        Integer pos = parsePos(p);
-			        // Nur Spieler mit Position 1-11 sind Startspieler
-			        if (pos == null || pos < 1 || pos > 11) {
-			            LOGGER.fine("Skipping player (not in lineup 1-11): " + p.optString("name") + " id=" + p.optString("id"));
-			            continue;
-			        }
-			        Map<String, Object> playerMap = new HashMap<>();
-			        playerMap.put("id", p.optLong("id"));
-			        playerMap.put("name", p.optString("name"));
-			        playerMap.put("kaderPos", pos); // Integer, nie null aufgrund der Prüfung oben
-			        playerMap.put("wasLiveSubstituted", p.optBooleanObject("wasLiveSubstituted", false));
-			        playerMap.put("quotedprice", p.optLong("quotedprice"));
-			        playerMap.put("substitute", p.optBooleanObject("substitute", false));
-			        playerMap.put("position", p.optString("position", "unbekannt"));
-			        tempPlayerList.add(playerMap);
-			    }
-			    // Sortiere nach Position, um die Reihenfolge 1-11 zu gewährleisten
-			    tempPlayerList.sort((a, b) -> {
-			        Integer posA = (Integer) a.get("kaderPos");
-			        Integer posB = (Integer) b.get("kaderPos");
-			        if (posA == null && posB == null) return 0;
-			        if (posA == null) return 1;
-			        if (posB == null) return -1;
-			        return posA.compareTo(posB);
-			    });
-			    // Nur die ersten 11 Spieler (Position 1-11) übernehmen
-			    int count = Math.min(tempPlayerList.size(), 11);
-			    for (int i = 0; i < count; i++) {
-			        playerList.add(tempPlayerList.get(i));
-			    }
+				List<LineupPlayerData> tempPlayerList = new ArrayList<>();
+				for (int i = 0; i < sourcePlayers.length(); i++) {
+					JSONObject p = sourcePlayers.getJSONObject(i);
+					Integer pos = parsePos(p);
+					if (pos == null || pos < 1 || pos > 11) {
+						LOGGER.fine("Skipping player (not in lineup 1-11): " + p.optString("name") + " id=" + p.optString("id"));
+						continue;
+					}
+					LineupPlayerData player = new LineupPlayerData();
+					player.id = p.optLong("id");
+					player.name = p.optString("name");
+					player.kaderPos = pos;
+					player.wasLiveSubstituted = p.optBoolean("wasLiveSubstituted", false);
+					player.quotedprice = p.optLong("quotedprice");
+					player.substitute = p.optBoolean("substitute", false);
+					player.position = p.optString("position", "unbekannt");
+					tempPlayerList.add(player);
+				}
+				tempPlayerList.sort((a, b) -> Integer.compare(a.kaderPos, b.kaderPos));
+				int count = Math.min(tempPlayerList.size(), 11);
+				for (int i = 0; i < count; i++) {
+					playerList.add(tempPlayerList.get(i));
+				}
 			}
-			// Debug: Anzahl eingelesener Startspieler
+
 			LOGGER.fine("fetchAndStoreLineup: User=" + user.getId() + " parsedStartPlayers=" + playerList.size());
 			if (playerList.size() < 11) {
 				LOGGER.fine("fetchAndStoreLineup: User=" + user.getId() + " hat weniger als 11 Startspieler (" + playerList.size() + "). Wird trotzdem gespeichert, aber gilt als unvollständig.");
 			}
 
-			// 4. User-Daten-Map befüllen (enthält Taktik und die Spieler-Liste)
-			Map<String, Object> userDataMap = new HashMap<>();
-			userDataMap.put("tactic", taktik);
-			userDataMap.put("players", playerList);
+			UserLineupData userLineup = new UserLineupData();
+			userLineup.tactic = taktik;
+			userLineup.players = playerList;
 
-			// 5. In die Spieltags-Struktur einhängen
-			rootDataMap.computeIfAbsent(spieltag, k -> new HashMap<>()).put(user.getId(), userDataMap);
+			rootDataMap.computeIfAbsent(CURRENT_KEY, k -> new HashMap<>()).put(user.getId(), userLineup);
+			lastCurrentLineupRefresh = Instant.now();
+
+			if (fixedMatchdaySnapshot && !isUserCachedForKey(storageKey, user)) {
+				rootDataMap.computeIfAbsent(storageKey, k -> new HashMap<>()).put(user.getId(), userLineup);
+			}
 
 		} catch (Exception e) {
 			LOGGER.severe("Fehler beim Abrufen der Squad-Daten für User " + user.getName() + ": " + e.getMessage());

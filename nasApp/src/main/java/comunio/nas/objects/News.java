@@ -137,29 +137,40 @@ public class News {
 			return false;
 		News news = (News) obj;
 
-		// Gleiche Art prüfen
+		if (id != null && !id.isBlank() && !"0".equals(id) && id.equals(news.id)) {
+			return true;
+		}
+
 		if (art != news.art)
 			return false;
 
-		// Nur bei TRANSFER-News spezielle Logik (sonst auf andere Felder prüfen)
-		if (art == NewsArt.TRANSFER) {
+		if (art == NewsArt.TRANSFER || art == NewsArt.TRANSFER_STORNO) {
 			JSONObject thisJson = new JSONObject(this.text);
 			JSONObject otherJson = new JSONObject(news.text);
-
-			// Vergleiche nur relevante Felder
-			return Objects.equals(thisJson.optString("seller"), otherJson.optString("seller")) && Objects.equals(thisJson.optString("buyer"), otherJson.optString("buyer")) && Objects.equals(thisJson.optString("playerName"), otherJson.optString("playerName")) && (thisJson.optInt("price") == otherJson.optInt("price")) && Objects.equals(playerId, news.playerId) && Objects.equals(date, news.date);
-			// Preis und playerValue werden ignoriert
+			return Objects.equals(thisJson.optString("seller"), otherJson.optString("seller"))
+					&& Objects.equals(thisJson.optString("buyer"), otherJson.optString("buyer"))
+					&& Objects.equals(thisJson.optString("playerName"), otherJson.optString("playerName"))
+					&& Objects.equals(thisJson.optString("playerId"), otherJson.optString("playerId"))
+					&& (thisJson.optInt("price") == otherJson.optInt("price"))
+					&& Objects.equals(thisJson.optString("origTransferId", "0"), otherJson.optString("origTransferId", "0"));
 		}
 
-		// Für nicht-TRANSFER-News (z.B. Verletzungen)
 		return Objects.equals(text, news.text) && Objects.equals(playerId, news.playerId) && Objects.equals(date, news.date);
 	}
 
 	@Override
 	public int hashCode() {
-		if (art == NewsArt.TRANSFER) {
+		if (art == NewsArt.TRANSFER || art == NewsArt.TRANSFER_STORNO) {
 			JSONObject thisJson = new JSONObject(this.text);
-			return Objects.hash(art, thisJson.optString("seller"), thisJson.optString("buyer"), thisJson.optString("playerName"), thisJson.optString("playerId"), thisJson.optInt("price"), playerId, date);
+			return Objects.hash(art,
+					thisJson.optString("seller"),
+					thisJson.optString("buyer"),
+					thisJson.optString("playerName"),
+					thisJson.optString("playerId"),
+					thisJson.optInt("price"),
+					thisJson.optString("origTransferId", "0"),
+					playerId,
+					date);
 		}
 		return Objects.hash(art, text, playerId, date);
 	}
