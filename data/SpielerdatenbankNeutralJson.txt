@@ -691,7 +691,7 @@
         ],
         "spieltagspunkte": [],
         "withinSquad": true,
-        "onMarket": false,
+        "onMarket": true,
         "retired": false,
         "position": "TORHÜTER",
         "attribute": {"ligainsiderRanking": {
@@ -1418,7 +1418,7 @@
             "rang": 29
           },
           "SonstigeInfos": [
-            "teuerster Spieler (27,030,000 \u20ac)",
+            "teuerster Spieler (27.030.000 \u20ac)",
             "meisten Punkte letzte Saison (338)"
           ]
         },
@@ -5279,7 +5279,7 @@
             "rang": 1
           },
           "SonstigeInfos": [
-            "teuerster Spieler (Realwert) (170,000,000 \u20ac)",
+            "teuerster Spieler (Realwert) (170.000.000 \u20ac)",
             "meisten Punkte (82)"
           ]
         },
@@ -26093,6 +26093,11 @@
     },
     {
       "data": {
+        "ligainsider": {
+          "playerLink": "https://www.ligainsider.de/mertcan-ayhan_38514/",
+          "playerName": "Ayhan",
+          "playerId": "38514"
+        },
         "lastWert": 400000,
         "spielerDaten": {
           "groesse": "1,90",
