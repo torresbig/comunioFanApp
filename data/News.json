@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "30.10.2026 05:16:03",
+  "lastUpdate": "30.10.2026 10:01:39",
   "newsDB": [
     {
       "date": "31.08.2026",
@@ -266,14 +266,136 @@
     },
     {
       "date": "30.10.2026",
-      "news": [{
-        "date": "30.10.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Gosens\",\"price\":3600000,\"buyerId\":\"13654613\",\"playerValue\":3410000,\"playerId\":\"33843\",\"buyer\":\"Christoph\"}",
-        "id": "967936296",
-        "playerId": "33843"
-      }]
+      "news": [
+        {
+          "date": "30.10.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Gosens\",\"price\":3600000,\"buyerId\":\"13654613\",\"playerValue\":3410000,\"playerId\":\"33843\",\"buyer\":\"Christoph\"}",
+          "id": "967936296",
+          "playerId": "33843"
+        },
+        {
+          "date": "30.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Schlieck\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"33664\",\"newPos\":\"TORHÜTER\"}",
+          "id": "0",
+          "playerId": "33664"
+        },
+        {
+          "date": "30.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"C. Gomis\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34388\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34388"
+        },
+        {
+          "date": "30.10.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"G. Orban\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34078\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34078"
+        },
+        {
+          "date": "30.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Angelo Stiller (33437) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33437"
+        },
+        {
+          "date": "30.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Leo Sauer (34491) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34491"
+        },
+        {
+          "date": "30.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Hugo Bolin (34342) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34342"
+        },
+        {
+          "date": "30.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Kevin Diks (34187) ist jetzt NICHT_IM_KADER",
+          "id": "0",
+          "playerId": "34187"
+        },
+        {
+          "date": "30.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Franck Honorat (33817) ist jetzt NICHT_IM_KADER",
+          "id": "0",
+          "playerId": "33817"
+        },
+        {
+          "date": "30.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Fritz Fleck (34500) ist jetzt NICHT_IM_KADER",
+          "id": "0",
+          "playerId": "34500"
+        },
+        {
+          "date": "30.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Valentin Gendrey (34051) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34051"
+        },
+        {
+          "date": "30.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Paul Erevbenagie (34471) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34471"
+        },
+        {
+          "date": "30.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Marcel Hoffmeier (34403) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "34403"
+        },
+        {
+          "date": "30.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Nyamekye Awortwie-Grant (34443) ist jetzt NICHT_IM_KADER",
+          "id": "0",
+          "playerId": "34443"
+        },
+        {
+          "date": "30.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Ragnar Ache (33263) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33263"
+        },
+        {
+          "date": "30.10.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Konstantinos Karetsas (34495) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34495"
+        }
+      ]
     },
     {
       "date": "30.09.2026",
