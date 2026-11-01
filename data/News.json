@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "01.11.2026 05:16:01",
+  "lastUpdate": "01.11.2026 10:01:38",
   "newsDB": [
     {
       "date": "31.10.2026",
@@ -24331,14 +24331,120 @@
     },
     {
       "date": "01.11.2026",
-      "news": [{
-        "date": "01.11.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Krauß\",\"price\":4040009,\"buyerId\":\"10966300\",\"playerValue\":3800000,\"playerId\":\"33130\",\"buyer\":\"Alexander\"}",
-        "id": "968028639",
-        "playerId": "33130"
-      }]
+      "news": [
+        {
+          "date": "01.11.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Krauß\",\"price\":4040009,\"buyerId\":\"10966300\",\"playerValue\":3800000,\"playerId\":\"33130\",\"buyer\":\"Alexander\"}",
+          "id": "968028639",
+          "playerId": "33130"
+        },
+        {
+          "date": "01.11.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Schlieck\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"33664\",\"newPos\":\"TORHÜTER\"}",
+          "id": "0",
+          "playerId": "33664"
+        },
+        {
+          "date": "01.11.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"C. Gomis\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34388\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34388"
+        },
+        {
+          "date": "01.11.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"G. Orban\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34078\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34078"
+        },
+        {
+          "date": "01.11.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Lässig (ID: 34532)",
+          "id": "0",
+          "playerId": "34532"
+        },
+        {
+          "date": "01.11.2026",
+          "art": "VEREINSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Fields\",\"newClub\":\"62\",\"oldClub\":\"0\",\"playerID\":\"34336\"}",
+          "id": "0",
+          "playerId": "34336"
+        },
+        {
+          "date": "01.11.2026",
+          "art": "NEW_PLAYER",
+          "gelesen": false,
+          "text": "Neuer Spieler: Zor (ID: 34533)",
+          "id": "0",
+          "playerId": "34533"
+        },
+        {
+          "date": "01.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Nathan Tella (33853) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33853"
+        },
+        {
+          "date": "01.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Samba Konaté (34309) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34309"
+        },
+        {
+          "date": "01.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Benno Kaltefleiter (34348) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34348"
+        },
+        {
+          "date": "01.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Philipp Treu (33947) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33947"
+        },
+        {
+          "date": "01.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Noah Darvich (34215) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34215"
+        },
+        {
+          "date": "01.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Juma Bah (34522) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34522"
+        },
+        {
+          "date": "01.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Alexander Prass (34034) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34034"
+        }
+      ]
     },
     {
       "date": "01.10.2026",
