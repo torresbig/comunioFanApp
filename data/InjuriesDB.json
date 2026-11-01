@@ -112,6 +112,32 @@
       "club": "Borussia Dortmund",
       "status": "VERLETZT"
     },
+    "33853": {
+      "comunioPlayerId": "33853",
+      "reason": "Muskuläre Probleme",
+      "playerLink": "https://www.ligainsider.de/nathan-tella_36300/",
+      "ligainsiderPlayerId": "36300",
+      "playerName": "Nathan Tella",
+      "sinceTimestamp": "2026-10-31T23:00:00Z",
+      "abfrageTimestamp": "2026-11-01T09:01:32.565867168Z",
+      "quelle": "ligainsider",
+      "club": "Bayer 04 Leverkusen",
+      "sinceString": "Gestern",
+      "status": "VERLETZT"
+    },
+    "34348": {
+      "comunioPlayerId": "34348",
+      "reason": "angeschlagen",
+      "playerLink": "https://www.ligainsider.de/benno-kaltefleiter_38764/",
+      "ligainsiderPlayerId": "38764",
+      "playerName": "Benno Kaltefleiter",
+      "sinceTimestamp": "2026-10-20T22:00:00Z",
+      "abfrageTimestamp": "2026-11-01T09:01:32.545375409Z",
+      "quelle": "ligainsider",
+      "club": "RB Leipzig",
+      "sinceString": "1 Woche und 4 Tagen",
+      "status": "VERLETZT"
+    },
     "34424": {
       "comunioPlayerId": "34424",
       "reason": "",
@@ -366,6 +392,19 @@
       "club": "TSG Hoffenheim",
       "status": "VERLETZT"
     },
+    "34309": {
+      "comunioPlayerId": "34309",
+      "reason": "Adduktorenprobleme",
+      "playerLink": "https://www.ligainsider.de/samba-konate_38757/",
+      "ligainsiderPlayerId": "38757",
+      "playerName": "Samba Konaté",
+      "sinceTimestamp": "2026-10-20T22:00:00Z",
+      "abfrageTimestamp": "2026-11-01T09:01:32.543977742Z",
+      "quelle": "ligainsider",
+      "club": "RB Leipzig",
+      "sinceString": "1 Woche und 4 Tagen",
+      "status": "VERLETZT"
+    },
     "33935": {
       "reason": "",
       "lastNewsText": "Sorge um Remberg: Verdacht auf schwere Knieverletzung",
@@ -492,22 +531,6 @@
       "lastNewsLink": "",
       "quelle": "ligainsider",
       "club": "FC Augsburg",
-      "status": "VERLETZT"
-    },
-    "34215": {
-      "reason": "",
-      "lastNewsText": "Darvich gibt Update zu seinem aktuellen Stand",
-      "ligainsiderPlayerId": "36018",
-      "playerName": "Noah Darvich",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-10-16T22:00:00Z",
-      "abfrageTimestamp": "2026-10-31T09:01:32.803060637Z",
-      "sinceString": "2 Wochen",
-      "comunioPlayerId": "34215",
-      "playerLink": "https://www.ligainsider.de/noah-darvich_36018/",
-      "lastNewsLink": "https://www.ligainsider.de/noah-darvich_36018/darvich-gibt-update-zu-seinem-aktuellen-stand-420078/",
-      "quelle": "ligainsider",
-      "club": "SV 07 Elversberg",
       "status": "VERLETZT"
     },
     "33247": {
@@ -810,22 +833,6 @@
       "quelle": "ligainsider",
       "club": "1. FC Union Berlin",
       "status": "VERLETZT"
-    },
-    "34522": {
-      "reason": "",
-      "lastNewsText": "",
-      "ligainsiderPlayerId": "39047",
-      "playerName": "Juma Bah",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-10-24T22:00:00Z",
-      "abfrageTimestamp": "2026-10-25T09:01:29.919621681Z",
-      "sinceString": "",
-      "comunioPlayerId": "34522",
-      "playerLink": "https://www.ligainsider.de/juma-bah_39047/",
-      "lastNewsLink": "",
-      "quelle": "ligainsider",
-      "club": "FC Augsburg",
-      "status": "ROTE_KARTE"
     },
     "34520": {
       "reason": "Muskelverletzung Wade",
@@ -1274,22 +1281,6 @@
       "club": "TSG Hoffenheim",
       "status": "VERLETZT"
     },
-    "34034": {
-      "reason": "",
-      "lastNewsText": "Torschütze Prass sieht Gelb-Rot für Trikot ausziehen",
-      "ligainsiderPlayerId": "27057",
-      "playerName": "Alexander Prass",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-10-30T23:00:00Z",
-      "abfrageTimestamp": "2026-10-31T09:01:31.413655376Z",
-      "sinceString": "",
-      "comunioPlayerId": "34034",
-      "playerLink": "https://www.ligainsider.de/alexander-prass_27057/",
-      "lastNewsLink": "https://www.ligainsider.de/alexander-prass_27057/torschuetze-prass-sieht-gelb-rot-fuer-trikot-ausziehen-419728/",
-      "quelle": "ligainsider",
-      "club": "TSG Hoffenheim",
-      "status": "GELBROTE_KARTE"
-    },
     "33507": {
       "reason": "",
       "lastNewsText": "Wimmer fällt gegen den HSV verletzt aus",
@@ -1304,6 +1295,21 @@
       "lastNewsLink": "https://www.ligainsider.de/patrick-wimmer_26236/wimmer-faellt-gegen-den-hsv-verletzt-aus-418951/",
       "quelle": "ligainsider",
       "club": "TSG Hoffenheim",
+      "status": "VERLETZT"
+    },
+    "33947": {
+      "reason": "",
+      "lastNewsText": "Treu fällt gegen Augsburg aus",
+      "ligainsiderPlayerId": "20344",
+      "playerName": "Philipp Treu",
+      "sinceTimestamp": "2026-10-27T23:00:00Z",
+      "abfrageTimestamp": "2026-11-01T09:01:32.567672178Z",
+      "sinceString": "4 Tagen",
+      "comunioPlayerId": "33947",
+      "playerLink": "https://www.ligainsider.de/philipp-treu_20344/",
+      "lastNewsLink": "https://www.ligainsider.de/philipp-treu_20344/treu-faellt-gegen-augsburg-aus-420074/",
+      "quelle": "ligainsider",
+      "club": "SC Freiburg",
       "status": "VERLETZT"
     },
     "34517": {
@@ -1371,7 +1377,7 @@
       "status": "VERLETZT"
     }
   },
-  "lastUpdate": "2026-10-31T09:01:36.878601930Z",
+  "lastUpdate": "2026-11-01T09:01:38.267917616Z",
   "history": {
     "33808": [{
       "reason": "",
@@ -1979,6 +1985,23 @@
         "status": "AUFBAUTRAINING"
       }
     ],
+    "34215": [{
+      "reason": "",
+      "lastNewsText": "Darvich gibt Update zu seinem aktuellen Stand",
+      "ligainsiderPlayerId": "36018",
+      "playerName": "Noah Darvich",
+      "statusChangeString": "01.11.2026",
+      "sinceTimestamp": "2026-10-16T22:00:00Z",
+      "abfrageTimestamp": "2026-10-31T09:01:32.803060637Z",
+      "sinceString": "2 Wochen",
+      "statusChangeTimestamp": "2026-10-31T23:00:00Z",
+      "comunioPlayerId": "34215",
+      "playerLink": "https://www.ligainsider.de/noah-darvich_36018/",
+      "lastNewsLink": "https://www.ligainsider.de/noah-darvich_36018/darvich-gibt-update-zu-seinem-aktuellen-stand-420078/",
+      "quelle": "ligainsider",
+      "club": "SV 07 Elversberg",
+      "status": "VERLETZT"
+    }],
     "32311": [{
       "reason": "",
       "lastNewsText": "",
@@ -2939,6 +2962,23 @@
         "status": "AUFBAUTRAINING"
       }
     ],
+    "34034": [{
+      "reason": "",
+      "lastNewsText": "Torschütze Prass sieht Gelb-Rot für Trikot ausziehen",
+      "ligainsiderPlayerId": "27057",
+      "playerName": "Alexander Prass",
+      "statusChangeString": "01.11.2026",
+      "sinceTimestamp": "2026-10-30T23:00:00Z",
+      "abfrageTimestamp": "2026-10-31T09:01:31.413655376Z",
+      "sinceString": "",
+      "statusChangeTimestamp": "2026-10-31T23:00:00Z",
+      "comunioPlayerId": "34034",
+      "playerLink": "https://www.ligainsider.de/alexander-prass_27057/",
+      "lastNewsLink": "https://www.ligainsider.de/alexander-prass_27057/torschuetze-prass-sieht-gelb-rot-fuer-trikot-ausziehen-419728/",
+      "quelle": "ligainsider",
+      "club": "TSG Hoffenheim",
+      "status": "GELBROTE_KARTE"
+    }],
     "34439": [{
       "reason": "",
       "lastNewsText": "",
@@ -4202,6 +4242,23 @@
       "quelle": "comunio",
       "club": "",
       "status": "AUFBAUTRAINING"
+    }],
+    "34522": [{
+      "reason": "",
+      "lastNewsText": "",
+      "ligainsiderPlayerId": "39047",
+      "playerName": "Juma Bah",
+      "statusChangeString": "01.11.2026",
+      "sinceTimestamp": "2026-10-24T22:00:00Z",
+      "abfrageTimestamp": "2026-10-25T09:01:29.919621681Z",
+      "sinceString": "",
+      "statusChangeTimestamp": "2026-10-31T23:00:00Z",
+      "comunioPlayerId": "34522",
+      "playerLink": "https://www.ligainsider.de/juma-bah_39047/",
+      "lastNewsLink": "",
+      "quelle": "ligainsider",
+      "club": "FC Augsburg",
+      "status": "ROTE_KARTE"
     }],
     "34520": [
       {
