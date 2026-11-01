@@ -1902,7 +1902,7 @@
         "isNotName": [],
         "wert": 3650000,
         "verein": "9",
-        "lastPoints": 0,
+        "lastPoints": 6,
         "transfermarktDoDe": {
           "date": "06.09.2026",
           "name": "Farès Chaïbi",
@@ -2234,7 +2234,7 @@
         "isNotName": [],
         "wert": 2560000,
         "verein": "9",
-        "lastPoints": 0,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "07.09.2026",
           "name": "Elias Baum",
@@ -2265,7 +2265,11 @@
         },
         "lastUpdate": "26.09.2026",
         "historicalPoints": [{"2023": 4}],
-        "spieltagspunkte": [],
+        "spieltagspunkte": [{
+          "totalPoints": 21,
+          "value": 3,
+          "key": 7
+        }],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -2943,7 +2947,7 @@
         "isNotName": [],
         "wert": 5620000,
         "verein": "13",
-        "lastPoints": 0,
+        "lastPoints": -1,
         "transfermarktDoDe": {
           "date": "03.09.2026",
           "name": "Linton Maina",
@@ -5053,7 +5057,7 @@
         "isNotName": [],
         "wert": 8720000,
         "verein": "9",
-        "lastPoints": 0,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "30.08.2026",
           "name": "Can Uzun",
@@ -6671,7 +6675,7 @@
         "isNotName": [],
         "wert": 3270000,
         "verein": "109",
-        "lastPoints": 0,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "01.09.2026",
           "name": "Woo-yeong Jeong",
@@ -8662,7 +8666,7 @@
         "isNotName": [],
         "wert": 5170000,
         "verein": "4",
-        "lastPoints": 0,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "03.09.2026",
           "name": "Miro Muheim",
@@ -8748,7 +8752,7 @@
         "isNotName": [],
         "wert": 3800000,
         "verein": "13",
-        "lastPoints": 0,
+        "lastPoints": 10,
         "transfermarktDoDe": {
           "date": "03.09.2026",
           "name": "Tom Krauß",
@@ -8780,7 +8784,11 @@
           {"2023": 50},
           {"2024": 52}
         ],
-        "spieltagspunkte": [],
+        "spieltagspunkte": [{
+          "totalPoints": 27,
+          "value": 10,
+          "key": 7
+        }],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -8903,7 +8911,7 @@
         "isNotName": [],
         "wert": 3630000,
         "verein": "13",
-        "lastPoints": 0,
+        "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "03.09.2026",
           "name": "Marius Bülter",
@@ -12877,7 +12885,7 @@
         "isNotName": [],
         "wert": 2910000,
         "verein": "13",
-        "lastPoints": 0,
+        "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "07.09.2026",
           "name": "Marvin Schwäbe",
@@ -15538,7 +15546,7 @@
           }
         ],
         "withinSquad": true,
-        "onMarket": false,
+        "onMarket": true,
         "retired": false,
         "position": "ABWEHR",
         "possibleNames": [
@@ -16143,7 +16151,7 @@
         "isNotName": [],
         "wert": 3040000,
         "verein": "109",
-        "lastPoints": 0,
+        "lastPoints": 4,
         "transfermarktDoDe": {
           "date": "24.08.2026",
           "name": "Tim Skarke",
@@ -28084,7 +28092,7 @@
         "punktekorrektur": [],
         "verein": "4",
         "wert": 1940000,
-        "lastPoints": 0,
+        "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "03.09.2026",
           "haveToCheck": false,
@@ -35386,7 +35394,7 @@
         "punktekorrektur": [],
         "verein": "9",
         "wert": 3610000,
-        "lastPoints": 0,
+        "lastPoints": 12,
         "transfermarktDoDe": {
           "date": "31.08.2026",
           "haveToCheck": false,
@@ -38601,7 +38609,7 @@
         "punktekorrektur": [],
         "verein": "13",
         "wert": 5470000,
-        "lastPoints": 0,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "02.09.2026",
           "haveToCheck": false,
