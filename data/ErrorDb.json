@@ -269,11 +269,18 @@
       "timestamp": "2026-10-25T09:01:30.152539522Z"
     }
   ],
-  "2026-11-03": [{
-    "errorType": "LIGAINSIDERSTATUS",
-    "message": "Kein match für den Status: 5. Gelbe Karte gefunden! Spieler: Phillipp Mwene",
-    "timestamp": "2026-11-03T10:58:34.943587384Z"
-  }],
+  "2026-11-03": [
+    {
+      "errorType": "LIGAINSIDERSTATUS",
+      "message": "Kein match für den Status: 5. Gelbe Karte gefunden! Spieler: Phillipp Mwene",
+      "timestamp": "2026-11-03T10:58:34.943587384Z"
+    },
+    {
+      "errorType": "LIGAINSIDERSTATUS",
+      "message": "Spieler wurde nicht gefunden! SpielerJustin Heekeren | Club: FC Schalke 04",
+      "timestamp": "2026-11-03T10:58:36.993930028Z"
+    }
+  ],
   "2026-10-24": [
     {
       "methode": "",
