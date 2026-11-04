@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "04.11.2026 05:16:04",
+  "lastUpdate": "04.11.2026 10:01:40",
   "newsDB": [
     {
       "date": "31.10.2026",
@@ -22453,14 +22453,104 @@
     },
     {
       "date": "04.11.2026",
-      "news": [{
-        "date": "04.11.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Schick\",\"price\":17538000,\"buyerId\":\"13548242\",\"playerValue\":18990000,\"playerId\":\"33179\",\"buyer\":\"Christopher\"}",
-        "id": "968152995",
-        "playerId": "33179"
-      }]
+      "news": [
+        {
+          "date": "04.11.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Schick\",\"price\":17538000,\"buyerId\":\"13548242\",\"playerValue\":18990000,\"playerId\":\"33179\",\"buyer\":\"Christopher\"}",
+          "id": "968152995",
+          "playerId": "33179"
+        },
+        {
+          "date": "04.11.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Schlieck\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"33664\",\"newPos\":\"TORHÜTER\"}",
+          "id": "0",
+          "playerId": "33664"
+        },
+        {
+          "date": "04.11.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"C. Gomis\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34388\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34388"
+        },
+        {
+          "date": "04.11.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"G. Orban\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34078\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34078"
+        },
+        {
+          "date": "04.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Moritz Nicolas (32654) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "32654"
+        },
+        {
+          "date": "04.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Nicolas Kühn (32771) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "32771"
+        },
+        {
+          "date": "04.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Hugo Bolin (34342) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34342"
+        },
+        {
+          "date": "04.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Adrian Gantenbein (34377) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "34377"
+        },
+        {
+          "date": "04.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Guéla Doué (34520) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "34520"
+        },
+        {
+          "date": "04.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Calvin Brackelmann (34438) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "34438"
+        },
+        {
+          "date": "04.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Marc Guiu (34515) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "34515"
+        },
+        {
+          "date": "04.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Felix Uduokhai (32801) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32801"
+        }
+      ]
     },
     {
       "date": "04.10.2026",
