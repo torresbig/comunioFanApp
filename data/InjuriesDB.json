@@ -190,6 +190,21 @@
       "club": "VfB Stuttgart",
       "status": "VERLETZT"
     },
+    "34342": {
+      "reason": "",
+      "lastNewsText": "Bolin fällt gegen Paderborn aus",
+      "ligainsiderPlayerId": "37888",
+      "playerName": "Hugo Bolin",
+      "sinceTimestamp": "2026-10-26T23:00:00Z",
+      "abfrageTimestamp": "2026-11-04T09:01:35.946414771Z",
+      "sinceString": "1 Woche und 1 Tag",
+      "comunioPlayerId": "34342",
+      "playerLink": "https://www.ligainsider.de/hugo-bolin_37888/",
+      "lastNewsLink": "https://www.ligainsider.de/hugo-bolin_37888/bolin-faellt-gegen-paderborn-aus-419984/",
+      "quelle": "ligainsider",
+      "club": "Borussia Mönchengladbach",
+      "status": "VERLETZT"
+    },
     "31959": {
       "reason": "",
       "lastNewsText": "Kohr nach Verletzung operiert",
@@ -221,22 +236,6 @@
       "quelle": "ligainsider",
       "club": "SC Paderborn 07",
       "status": "VERLETZT"
-    },
-    "32801": {
-      "reason": "",
-      "lastNewsText": "Urteil da: Uduokhai für zwei Spiele gesperrt",
-      "ligainsiderPlayerId": "7041",
-      "playerName": "Felix Uduokhai",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-11-02T23:00:00Z",
-      "abfrageTimestamp": "2026-11-03T10:58:36.800450101Z",
-      "sinceString": "",
-      "comunioPlayerId": "32801",
-      "playerLink": "https://www.ligainsider.de/felix-uduokhai_7041/",
-      "lastNewsLink": "https://www.ligainsider.de/felix-uduokhai_7041/urteil-da-uduokhai-fuer-zwei-spiele-gesperrt-419797/",
-      "quelle": "ligainsider",
-      "club": "1. FC Union Berlin",
-      "status": "ROTE_KARTE"
     },
     "33935": {
       "reason": "",
@@ -403,16 +402,17 @@
       "lastNewsText": "Muskuläre Probleme bremsen Gantenbein erneut aus",
       "ligainsiderPlayerId": "37275",
       "playerName": "Adrian Gantenbein",
-      "statusChangeString": "",
+      "statusChangeString": "04.11.2026",
       "sinceTimestamp": "2026-10-22T22:00:00Z",
       "abfrageTimestamp": "2026-10-29T09:01:37.284574051Z",
-      "sinceString": "6 Tagen",
+      "sinceString": "1 Woche und 5 Tagen",
+      "statusChangeTimestamp": "2026-11-03T23:00:00Z",
       "comunioPlayerId": "34377",
       "playerLink": "https://www.ligainsider.de/adrian-gantenbein_37275/",
       "lastNewsLink": "https://www.ligainsider.de/adrian-gantenbein_37275/muskulaere-probleme-bremsen-gantenbein-erneut-aus-419712/",
       "quelle": "ligainsider",
       "club": "FC Schalke 04",
-      "status": "VERLETZT"
+      "status": "AUFBAUTRAINING"
     },
     "34012": {
       "comunioPlayerId": "34012",
@@ -622,20 +622,21 @@
       "status": "ROTE_KARTE"
     },
     "34520": {
-      "reason": "Muskelverletzung Wade",
-      "lastNewsText": "",
+      "reason": "",
+      "lastNewsText": "Doué-Rückkehr erfordert noch Geduld",
       "ligainsiderPlayerId": "35433",
       "playerName": "Guéla Doué",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-09-15T22:00:00Z",
+      "statusChangeString": "04.11.2026",
+      "sinceTimestamp": "2026-09-19T22:00:00Z",
       "abfrageTimestamp": "2026-09-29T23:05:38.547341200Z",
-      "sinceString": "2 Wochen",
+      "sinceString": "1 Monat und 2 Wochen",
+      "statusChangeTimestamp": "2026-11-03T23:00:00Z",
       "comunioPlayerId": "34520",
       "playerLink": "https://www.ligainsider.de/guela-doue_35433/",
-      "lastNewsLink": "",
+      "lastNewsLink": "https://www.ligainsider.de/guela-doue_35433/doue-rueckkehr-erfordert-noch-geduld-418869/",
       "quelle": "ligainsider",
       "club": "Bayer 04 Leverkusen",
-      "status": "VERLETZT"
+      "status": "AUFBAUTRAINING"
     },
     "33157": {
       "reason": "",
@@ -875,6 +876,21 @@
       "club": "SV 07 Elversberg",
       "status": "AUFBAUTRAINING"
     },
+    "32654": {
+      "reason": "",
+      "lastNewsText": "Nicolas droht auch gegen den HSV auszufallen",
+      "ligainsiderPlayerId": "6295",
+      "playerName": "Moritz Nicolas",
+      "sinceTimestamp": "2026-10-25T23:00:00Z",
+      "abfrageTimestamp": "2026-11-04T09:01:35.944280866Z",
+      "sinceString": "1 Woche und 2 Tagen",
+      "comunioPlayerId": "32654",
+      "playerLink": "https://www.ligainsider.de/moritz-nicolas_6295/",
+      "lastNewsLink": "https://www.ligainsider.de/moritz-nicolas_6295/nicolas-droht-auch-gegen-den-hsv-auszufallen-420236/",
+      "quelle": "ligainsider",
+      "club": "Borussia Mönchengladbach",
+      "status": "VERLETZT"
+    },
     "34435": {
       "reason": "",
       "lastNewsText": "Leopold droht monatelanger Ausfall",
@@ -921,6 +937,19 @@
       "lastNewsLink": "https://www.ligainsider.de/serge-gnabry_4815/gnabry-erleidet-muskelverletzung-im-oberschenkel-420148/",
       "quelle": "ligainsider",
       "club": "FC Bayern München",
+      "status": "VERLETZT"
+    },
+    "32771": {
+      "comunioPlayerId": "32771",
+      "reason": "Muskelzerrung",
+      "playerLink": "https://www.ligainsider.de/nicolas-kuehn_13968/",
+      "ligainsiderPlayerId": "13968",
+      "playerName": "Nicolas Kühn",
+      "sinceTimestamp": "2026-11-01T23:00:00Z",
+      "abfrageTimestamp": "2026-11-04T09:01:35.945371047Z",
+      "quelle": "ligainsider",
+      "club": "Borussia Mönchengladbach",
+      "sinceString": "2 Tagen",
       "status": "VERLETZT"
     },
     "34234": {
@@ -1006,19 +1035,20 @@
     },
     "34515": {
       "reason": "",
-      "lastNewsText": "",
+      "lastNewsText": "Guiu soll in der Länderspielpause ins Training einsteigen",
       "ligainsiderPlayerId": "36753",
       "playerName": "Marc Guiu",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-09-14T22:00:00Z",
+      "statusChangeString": "04.11.2026",
+      "sinceTimestamp": "2026-09-19T22:00:00Z",
       "abfrageTimestamp": "2026-09-29T23:05:38.545341300Z",
-      "sinceString": "2 Wochen und 1 Tag",
+      "sinceString": "1 Monat und 2 Wochen",
+      "statusChangeTimestamp": "2026-11-03T23:00:00Z",
       "comunioPlayerId": "34515",
       "playerLink": "https://www.ligainsider.de/marc-guiu_36753/",
-      "lastNewsLink": "",
+      "lastNewsLink": "https://www.ligainsider.de/marc-guiu_36753/guiu-soll-in-der-laenderspielpause-ins-training-einsteigen-419807/",
       "quelle": "ligainsider",
       "club": "RB Leipzig",
-      "status": "VERLETZT"
+      "status": "AUFBAUTRAINING"
     },
     "33669": {
       "reason": "",
@@ -1035,9 +1065,24 @@
       "quelle": "ligainsider",
       "club": "1. FC Union Berlin",
       "status": "AUFBAUTRAINING"
+    },
+    "34438": {
+      "reason": "",
+      "lastNewsText": "Brackelmann-Comeback nach Länderspielpause?",
+      "ligainsiderPlayerId": "12771",
+      "playerName": "Calvin Brackelmann",
+      "sinceTimestamp": "2026-10-23T22:00:00Z",
+      "abfrageTimestamp": "2026-11-04T09:01:34.101901318Z",
+      "sinceString": "1 Woche und 4 Tagen",
+      "comunioPlayerId": "34438",
+      "playerLink": "https://www.ligainsider.de/calvin-brackelmann_12771/",
+      "lastNewsLink": "https://www.ligainsider.de/calvin-brackelmann_12771/brackelmann-comeback-nach-laenderspielpause-420080/",
+      "quelle": "ligainsider",
+      "club": "FC Augsburg",
+      "status": "VERLETZT"
     }
   },
-  "lastUpdate": "2026-11-03T10:58:41.696665323Z",
+  "lastUpdate": "2026-11-04T09:01:40.293131820Z",
   "history": {
     "33808": [{
       "reason": "",
@@ -3453,23 +3498,42 @@
       "club": "TSG Hoffenheim",
       "status": "VERLETZT"
     }],
-    "32801": [{
-      "reason": "",
-      "lastNewsText": "",
-      "ligainsiderPlayerId": "7041",
-      "playerName": "Felix Uduokhai",
-      "statusChangeString": "02.11.2026",
-      "sinceTimestamp": "2026-10-24T22:00:00Z",
-      "abfrageTimestamp": "2026-10-25T09:01:29.931037091Z",
-      "sinceString": "",
-      "statusChangeTimestamp": "2026-11-01T23:00:00Z",
-      "comunioPlayerId": "32801",
-      "playerLink": "https://www.ligainsider.de/felix-uduokhai_7041/",
-      "lastNewsLink": "",
-      "quelle": "ligainsider",
-      "club": "1. FC Union Berlin",
-      "status": "ROTE_KARTE"
-    }],
+    "32801": [
+      {
+        "reason": "",
+        "lastNewsText": "",
+        "ligainsiderPlayerId": "7041",
+        "playerName": "Felix Uduokhai",
+        "statusChangeString": "02.11.2026",
+        "sinceTimestamp": "2026-10-24T22:00:00Z",
+        "abfrageTimestamp": "2026-10-25T09:01:29.931037091Z",
+        "sinceString": "",
+        "statusChangeTimestamp": "2026-11-01T23:00:00Z",
+        "comunioPlayerId": "32801",
+        "playerLink": "https://www.ligainsider.de/felix-uduokhai_7041/",
+        "lastNewsLink": "",
+        "quelle": "ligainsider",
+        "club": "1. FC Union Berlin",
+        "status": "ROTE_KARTE"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "Urteil da: Uduokhai für zwei Spiele gesperrt",
+        "ligainsiderPlayerId": "7041",
+        "playerName": "Felix Uduokhai",
+        "statusChangeString": "04.11.2026",
+        "sinceTimestamp": "2026-11-02T23:00:00Z",
+        "abfrageTimestamp": "2026-11-03T10:58:36.800450101Z",
+        "sinceString": "",
+        "statusChangeTimestamp": "2026-11-03T23:00:00Z",
+        "comunioPlayerId": "32801",
+        "playerLink": "https://www.ligainsider.de/felix-uduokhai_7041/",
+        "lastNewsLink": "https://www.ligainsider.de/felix-uduokhai_7041/urteil-da-uduokhai-fuer-zwei-spiele-gesperrt-419797/",
+        "quelle": "ligainsider",
+        "club": "1. FC Union Berlin",
+        "status": "ROTE_KARTE"
+      }
+    ],
     "33219": [{
       "reason": "",
       "lastNewsText": "Paderborn muss auf Batista Meier verzichten",
@@ -3875,23 +3939,42 @@
       "club": "SV Werder Bremen",
       "status": "VERLETZT"
     }],
-    "34377": [{
-      "reason": "",
-      "lastNewsText": "Gantenbein fällt gegen Köln aus",
-      "ligainsiderPlayerId": "37275",
-      "playerName": "Adrian Gantenbein",
-      "statusChangeString": "28.10.2026",
-      "sinceTimestamp": "2026-10-22T22:00:00Z",
-      "abfrageTimestamp": "2026-10-25T09:01:29.966217455Z",
-      "sinceString": "2 Tagen",
-      "statusChangeTimestamp": "2026-10-27T23:00:00Z",
-      "comunioPlayerId": "34377",
-      "playerLink": "https://www.ligainsider.de/adrian-gantenbein_37275/",
-      "lastNewsLink": "https://www.ligainsider.de/adrian-gantenbein_37275/gantenbein-faellt-gegen-koeln-aus-419648/",
-      "quelle": "ligainsider",
-      "club": "FC Schalke 04",
-      "status": "VERLETZT"
-    }],
+    "34377": [
+      {
+        "reason": "",
+        "lastNewsText": "Gantenbein fällt gegen Köln aus",
+        "ligainsiderPlayerId": "37275",
+        "playerName": "Adrian Gantenbein",
+        "statusChangeString": "28.10.2026",
+        "sinceTimestamp": "2026-10-22T22:00:00Z",
+        "abfrageTimestamp": "2026-10-25T09:01:29.966217455Z",
+        "sinceString": "2 Tagen",
+        "statusChangeTimestamp": "2026-10-27T23:00:00Z",
+        "comunioPlayerId": "34377",
+        "playerLink": "https://www.ligainsider.de/adrian-gantenbein_37275/",
+        "lastNewsLink": "https://www.ligainsider.de/adrian-gantenbein_37275/gantenbein-faellt-gegen-koeln-aus-419648/",
+        "quelle": "ligainsider",
+        "club": "FC Schalke 04",
+        "status": "VERLETZT"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "Muskuläre Probleme bremsen Gantenbein erneut aus",
+        "ligainsiderPlayerId": "37275",
+        "playerName": "Adrian Gantenbein",
+        "statusChangeString": "04.11.2026",
+        "sinceTimestamp": "2026-10-22T22:00:00Z",
+        "abfrageTimestamp": "2026-10-29T09:01:37.284574051Z",
+        "sinceString": "1 Woche und 5 Tagen",
+        "statusChangeTimestamp": "2026-11-03T23:00:00Z",
+        "comunioPlayerId": "34377",
+        "playerLink": "https://www.ligainsider.de/adrian-gantenbein_37275/",
+        "lastNewsLink": "https://www.ligainsider.de/adrian-gantenbein_37275/muskulaere-probleme-bremsen-gantenbein-erneut-aus-419712/",
+        "quelle": "ligainsider",
+        "club": "FC Schalke 04",
+        "status": "AUFBAUTRAINING"
+      }
+    ],
     "34135": [{
       "reason": "",
       "lastNewsText": "Schmied fällt für mehrere Spiele aus",
@@ -4383,6 +4466,23 @@
         "quelle": "ligainsider",
         "club": "Bayer 04 Leverkusen",
         "status": "VERLETZT"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "Doué-Rückkehr erfordert noch Geduld",
+        "ligainsiderPlayerId": "35433",
+        "playerName": "Guéla Doué",
+        "statusChangeString": "04.11.2026",
+        "sinceTimestamp": "2026-09-19T22:00:00Z",
+        "abfrageTimestamp": "2026-09-29T23:05:38.547341200Z",
+        "sinceString": "1 Monat und 2 Wochen",
+        "statusChangeTimestamp": "2026-11-03T23:00:00Z",
+        "comunioPlayerId": "34520",
+        "playerLink": "https://www.ligainsider.de/guela-doue_35433/",
+        "lastNewsLink": "https://www.ligainsider.de/guela-doue_35433/doue-rueckkehr-erfordert-noch-geduld-418869/",
+        "quelle": "ligainsider",
+        "club": "Bayer 04 Leverkusen",
+        "status": "AUFBAUTRAINING"
       }
     ],
     "34486": [{
@@ -5161,6 +5261,23 @@
         "quelle": "ligainsider",
         "club": "RB Leipzig",
         "status": "VERLETZT"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "Guiu soll in der Länderspielpause ins Training einsteigen",
+        "ligainsiderPlayerId": "36753",
+        "playerName": "Marc Guiu",
+        "statusChangeString": "04.11.2026",
+        "sinceTimestamp": "2026-09-19T22:00:00Z",
+        "abfrageTimestamp": "2026-09-29T23:05:38.545341300Z",
+        "sinceString": "1 Monat und 2 Wochen",
+        "statusChangeTimestamp": "2026-11-03T23:00:00Z",
+        "comunioPlayerId": "34515",
+        "playerLink": "https://www.ligainsider.de/marc-guiu_36753/",
+        "lastNewsLink": "https://www.ligainsider.de/marc-guiu_36753/guiu-soll-in-der-laenderspielpause-ins-training-einsteigen-419807/",
+        "quelle": "ligainsider",
+        "club": "RB Leipzig",
+        "status": "AUFBAUTRAINING"
       }
     ]
   }
