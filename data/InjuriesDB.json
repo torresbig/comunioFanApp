@@ -238,6 +238,19 @@
       "club": "SC Paderborn 07",
       "status": "VERLETZT"
     },
+    "32801": {
+      "comunioPlayerId": "32801",
+      "reason": "",
+      "playerLink": "https://www.ligainsider.de/felix-uduokhai_7041/",
+      "ligainsiderPlayerId": "7041",
+      "playerName": "Felix Uduokhai",
+      "sinceTimestamp": "2026-11-04T23:00:00Z",
+      "abfrageTimestamp": "2026-11-05T09:01:35.127535241Z",
+      "quelle": "ligainsider",
+      "club": "1. FC Union Berlin",
+      "sinceString": "",
+      "status": "ROTE_KARTE"
+    },
     "33935": {
       "reason": "",
       "lastNewsText": "Sorge um Remberg: Verdacht auf schwere Knieverletzung",
@@ -511,20 +524,19 @@
       "status": "VERLETZT"
     },
     "34285": {
-      "reason": "",
-      "lastNewsText": "Ben Seghir: Rolfes gibt Prognose zur Ausfallzeit",
+      "reason": "Trainingsrückstand",
       "ligainsiderPlayerId": "35709",
       "playerName": "Eliesse Ben Seghir",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-10-08T22:00:00Z",
+      "statusChangeString": "05.11.2026",
+      "sinceTimestamp": "2026-11-04T23:00:00Z",
       "abfrageTimestamp": "2026-10-24T08:01:37.509520862Z",
-      "sinceString": "2 Wochen und 1 Tag",
+      "sinceString": "",
+      "statusChangeTimestamp": "2026-11-04T23:00:00Z",
       "comunioPlayerId": "34285",
       "playerLink": "https://www.ligainsider.de/eliesse-ben-seghir_35709/",
-      "lastNewsLink": "https://www.ligainsider.de/eliesse-ben-seghir_35709/ben-seghir-rolfes-gibt-prognose-zur-ausfallzeit-419044/",
       "quelle": "ligainsider",
       "club": "Bayer 04 Leverkusen",
-      "status": "AUFBAUTRAINING"
+      "status": "NICHT_IM_KADER"
     },
     "34448": {
       "reason": "",
@@ -573,6 +585,19 @@
       "quelle": "ligainsider",
       "club": "1. FSV Mainz 05",
       "status": "GELBROTE_KARTE"
+    },
+    "34403": {
+      "comunioPlayerId": "34403",
+      "reason": "Trainingsrückstand",
+      "playerLink": "https://www.ligainsider.de/marcel-hoffmeier_26447/",
+      "ligainsiderPlayerId": "26447",
+      "playerName": "Marcel Hoffmeier",
+      "sinceTimestamp": "2026-11-04T23:00:00Z",
+      "abfrageTimestamp": "2026-11-05T09:01:35.167591566Z",
+      "quelle": "ligainsider",
+      "club": "SC Paderborn 07",
+      "sinceString": "",
+      "status": "NICHT_IM_KADER"
     },
     "34369": {
       "reason": "Bauchmuskelverletzung",
@@ -654,6 +679,19 @@
       "quelle": "ligainsider",
       "club": "1. FC Köln",
       "status": "VERLETZT"
+    },
+    "34443": {
+      "comunioPlayerId": "34443",
+      "reason": "Trainingsrückstand",
+      "playerLink": "https://www.ligainsider.de/nyamekye-awortwie-grant_36091/",
+      "ligainsiderPlayerId": "36091",
+      "playerName": "Nyamekye Awortwie-Grant",
+      "sinceTimestamp": "2026-11-04T23:00:00Z",
+      "abfrageTimestamp": "2026-11-05T09:01:35.168274601Z",
+      "quelle": "ligainsider",
+      "club": "SC Paderborn 07",
+      "sinceString": "",
+      "status": "NICHT_IM_KADER"
     },
     "34321": {
       "reason": "Blinddarmentzündung/operation",
@@ -764,6 +802,19 @@
       "quelle": "ligainsider",
       "club": "SC Paderborn 07",
       "status": "AUFBAUTRAINING"
+    },
+    "34408": {
+      "comunioPlayerId": "34408",
+      "reason": "Nicht berücksichtigt",
+      "playerLink": "https://www.ligainsider.de/sebastian-klaas_15795/",
+      "ligainsiderPlayerId": "15795",
+      "playerName": "Sebastian Klaas",
+      "sinceTimestamp": "2026-11-04T23:00:00Z",
+      "abfrageTimestamp": "2026-11-05T09:01:35.166864936Z",
+      "quelle": "ligainsider",
+      "club": "SC Paderborn 07",
+      "sinceString": "",
+      "status": "NICHT_IM_KADER"
     },
     "32744": {
       "reason": "Knieverletzung",
@@ -957,23 +1008,6 @@
       "club": "Borussia Mönchengladbach",
       "status": "VERLETZT"
     },
-    "34234": {
-      "reason": "",
-      "lastNewsText": "Kofane fällt mit Muskelverletzung wochenlang aus",
-      "ligainsiderPlayerId": "38550",
-      "playerName": "Christian Kofane",
-      "statusChangeString": "21.10.2026",
-      "sinceTimestamp": "2026-09-23T22:00:00Z",
-      "abfrageTimestamp": "2026-10-09T09:03:04.024817301Z",
-      "sinceString": "3 Wochen und 6 Tagen",
-      "statusChangeTimestamp": "2026-10-20T22:00:00Z",
-      "comunioPlayerId": "34234",
-      "playerLink": "https://www.ligainsider.de/christian-kofane_38550/",
-      "lastNewsLink": "https://www.ligainsider.de/christian-kofane_38550/kofane-faellt-mit-muskelverletzung-wochenlang-aus-418840/",
-      "quelle": "ligainsider",
-      "club": "Bayer 04 Leverkusen",
-      "status": "AUFBAUTRAINING"
-    },
     "32178": {
       "reason": "",
       "lastNewsText": "",
@@ -1088,7 +1122,7 @@
       "status": "VERLETZT"
     }
   },
-  "lastUpdate": "2026-11-04T09:01:40.293131820Z",
+  "lastUpdate": "2026-11-05T09:01:40.712102492Z",
   "history": {
     "33808": [{
       "reason": "",
@@ -2104,23 +2138,40 @@
         "status": "AUFBAUTRAINING"
       }
     ],
-    "34285": [{
-      "reason": "Muskelverletzung",
-      "lastNewsText": "",
-      "ligainsiderPlayerId": "35709",
-      "playerName": "Eliesse Ben Seghir",
-      "statusChangeString": "21.10.2026",
-      "sinceTimestamp": "2026-10-08T22:00:00Z",
-      "abfrageTimestamp": "2026-10-11T08:00:42.725172796Z",
-      "sinceString": "2 Tagen",
-      "statusChangeTimestamp": "2026-10-20T22:00:00Z",
-      "comunioPlayerId": "34285",
-      "playerLink": "https://www.ligainsider.de/eliesse-ben-seghir_35709/",
-      "lastNewsLink": "",
-      "quelle": "ligainsider",
-      "club": "Bayer 04 Leverkusen",
-      "status": "VERLETZT"
-    }],
+    "34285": [
+      {
+        "reason": "Muskelverletzung",
+        "lastNewsText": "",
+        "ligainsiderPlayerId": "35709",
+        "playerName": "Eliesse Ben Seghir",
+        "statusChangeString": "21.10.2026",
+        "sinceTimestamp": "2026-10-08T22:00:00Z",
+        "abfrageTimestamp": "2026-10-11T08:00:42.725172796Z",
+        "sinceString": "2 Tagen",
+        "statusChangeTimestamp": "2026-10-20T22:00:00Z",
+        "comunioPlayerId": "34285",
+        "playerLink": "https://www.ligainsider.de/eliesse-ben-seghir_35709/",
+        "lastNewsLink": "",
+        "quelle": "ligainsider",
+        "club": "Bayer 04 Leverkusen",
+        "status": "VERLETZT"
+      },
+      {
+        "reason": "Trainingsrückstand",
+        "ligainsiderPlayerId": "35709",
+        "playerName": "Eliesse Ben Seghir",
+        "statusChangeString": "05.11.2026",
+        "sinceTimestamp": "2026-11-04T23:00:00Z",
+        "abfrageTimestamp": "2026-10-24T08:01:37.509520862Z",
+        "sinceString": "",
+        "statusChangeTimestamp": "2026-11-04T23:00:00Z",
+        "comunioPlayerId": "34285",
+        "playerLink": "https://www.ligainsider.de/eliesse-ben-seghir_35709/",
+        "quelle": "ligainsider",
+        "club": "Bayer 04 Leverkusen",
+        "status": "NICHT_IM_KADER"
+      }
+    ],
     "34042": [{
       "reason": "",
       "lastNewsText": "",
@@ -5018,23 +5069,42 @@
         "status": "VERLETZT"
       }
     ],
-    "34234": [{
-      "reason": "",
-      "lastNewsText": "Kofane fällt mit Muskelverletzung wochenlang aus",
-      "ligainsiderPlayerId": "38550",
-      "playerName": "Christian Kofane",
-      "statusChangeString": "21.10.2026",
-      "sinceTimestamp": "2026-09-23T22:00:00Z",
-      "abfrageTimestamp": "2026-10-09T09:03:04.024817301Z",
-      "sinceString": "3 Wochen und 6 Tagen",
-      "statusChangeTimestamp": "2026-10-20T22:00:00Z",
-      "comunioPlayerId": "34234",
-      "playerLink": "https://www.ligainsider.de/christian-kofane_38550/",
-      "lastNewsLink": "https://www.ligainsider.de/christian-kofane_38550/kofane-faellt-mit-muskelverletzung-wochenlang-aus-418840/",
-      "quelle": "ligainsider",
-      "club": "Bayer 04 Leverkusen",
-      "status": "AUFBAUTRAINING"
-    }],
+    "34234": [
+      {
+        "reason": "",
+        "lastNewsText": "Kofane fällt mit Muskelverletzung wochenlang aus",
+        "ligainsiderPlayerId": "38550",
+        "playerName": "Christian Kofane",
+        "statusChangeString": "21.10.2026",
+        "sinceTimestamp": "2026-09-23T22:00:00Z",
+        "abfrageTimestamp": "2026-10-09T09:03:04.024817301Z",
+        "sinceString": "3 Wochen und 6 Tagen",
+        "statusChangeTimestamp": "2026-10-20T22:00:00Z",
+        "comunioPlayerId": "34234",
+        "playerLink": "https://www.ligainsider.de/christian-kofane_38550/",
+        "lastNewsLink": "https://www.ligainsider.de/christian-kofane_38550/kofane-faellt-mit-muskelverletzung-wochenlang-aus-418840/",
+        "quelle": "ligainsider",
+        "club": "Bayer 04 Leverkusen",
+        "status": "AUFBAUTRAINING"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "Kofane fällt mit Muskelverletzung wochenlang aus",
+        "ligainsiderPlayerId": "38550",
+        "playerName": "Christian Kofane",
+        "statusChangeString": "05.11.2026",
+        "sinceTimestamp": "2026-09-23T22:00:00Z",
+        "abfrageTimestamp": "2026-10-09T09:03:04.024817301Z",
+        "sinceString": "3 Wochen und 6 Tagen",
+        "statusChangeTimestamp": "2026-11-04T23:00:00Z",
+        "comunioPlayerId": "34234",
+        "playerLink": "https://www.ligainsider.de/christian-kofane_38550/",
+        "lastNewsLink": "https://www.ligainsider.de/christian-kofane_38550/kofane-faellt-mit-muskelverletzung-wochenlang-aus-418840/",
+        "quelle": "ligainsider",
+        "club": "Bayer 04 Leverkusen",
+        "status": "AUFBAUTRAINING"
+      }
+    ],
     "34233": [{
       "reason": "",
       "lastNewsText": "Capaldo fällt wohl auch in Frankfurt aus",
