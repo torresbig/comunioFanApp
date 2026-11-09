@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "09.11.2026 05:16:25",
+  "lastUpdate": "09.11.2026 10:01:45",
   "newsDB": [
     {
       "date": "31.10.2026",
@@ -18644,14 +18644,224 @@
     },
     {
       "date": "09.11.2026",
-      "news": [{
-        "date": "09.11.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Lienhart\",\"price\":4570000,\"buyerId\":\"5949921\",\"playerValue\":4710000,\"playerId\":\"32807\",\"buyer\":\"Sascha\"}",
-        "id": "968362467",
-        "playerId": "32807"
-      }]
+      "news": [
+        {
+          "date": "09.11.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Lienhart\",\"price\":4570000,\"buyerId\":\"5949921\",\"playerValue\":4710000,\"playerId\":\"32807\",\"buyer\":\"Sascha\"}",
+          "id": "968362467",
+          "playerId": "32807"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Schlieck\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"33664\",\"newPos\":\"TORHÜTER\"}",
+          "id": "0",
+          "playerId": "33664"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"C. Gomis\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34388\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34388"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"G. Orban\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34078\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34078"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "ELFDESTAGES",
+          "gelesen": false,
+          "text": "[{\"punkte\":11,\"owner\":\"1\",\"playerName\":\"Rönnow\",\"position\":\"keeper\",\"playerId\":\"32921\"},{\"punkte\":16,\"owner\":\"1\",\"playerName\":\"Mittelstädt\",\"position\":\"defender\",\"playerId\":\"32509\"},{\"punkte\":14,\"owner\":\"11683432\",\"playerName\":\"Raum\",\"position\":\"defender\",\"playerId\":\"33436\"},{\"punkte\":11,\"owner\":\"6013585\",\"playerName\":\"Muheim\",\"position\":\"defender\",\"playerId\":\"34148\"},{\"punkte\":19,\"owner\":\"1\",\"playerName\":\"F. Nmecha\",\"position\":\"midfielder\",\"playerId\":\"33498\"},{\"punkte\":15,\"owner\":\"1\",\"playerName\":\"Kimmich\",\"position\":\"midfielder\",\"playerId\":\"32445\"},{\"punkte\":15,\"owner\":\"1\",\"playerName\":\"García\",\"position\":\"midfielder\",\"playerId\":\"33992\"},{\"punkte\":14,\"owner\":\"1\",\"playerName\":\"Grønbæk\",\"position\":\"midfielder\",\"playerId\":\"34337\"},{\"punkte\":13,\"owner\":\"13830745\",\"playerName\":\"Obermair\",\"position\":\"midfielder\",\"playerId\":\"34456\"},{\"punkte\":15,\"owner\":\"1\",\"playerName\":\"Burkardt\",\"position\":\"striker\",\"playerId\":\"32948\"},{\"punkte\":13,\"owner\":\"9317431\",\"playerName\":\"Nkunku\",\"position\":\"striker\",\"playerId\":\"33151\"}]",
+          "id": "968386532",
+          "playerId": "0"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Manuel Neuer (30755) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "30755"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Timo Becker (33184) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33184"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Noahkai Banks (34017) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "34017"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Nathan Tella (33853) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33853"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Moussa Sylla (34387) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34387"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Felix Uduokhai (32801) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32801"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Adrian Gantenbein (34377) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34377"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Luis Díaz (34254) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34254"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Tom Zimmerschied (34177) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34177"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Eliesse Ben Seghir (34285) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34285"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Marcel Hoffmeier (34403) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34403"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Robert Skov (33158) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33158"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jamal Musiala (33236) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33236"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Nyamekye Awortwie-Grant (34443) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34443"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Mario Götze (31572) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "31572"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Sebastian Klaas (34408) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34408"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Serhou Guirassy (32667) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "32667"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Paul Erevbenagie (34471) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34471"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Markus Kolke (33986) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33986"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Aljoscha Kemlein (33821) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33821"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Marc Guiu (34515) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34515"
+        },
+        {
+          "date": "09.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Calvin Brackelmann (34438) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34438"
+        }
+      ]
     },
     {
       "date": "09.10.2026",
