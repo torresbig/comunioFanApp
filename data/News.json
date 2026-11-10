@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "10.11.2026 05:16:04",
+  "lastUpdate": "10.11.2026 10:01:39",
   "newsDB": [
     {
       "date": "31.10.2026",
@@ -18339,14 +18339,96 @@
     },
     {
       "date": "10.11.2026",
-      "news": [{
-        "date": "10.11.2026",
-        "art": "TRANSFER",
-        "gelesen": false,
-        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Karetsas\",\"price\":14400000,\"buyerId\":\"13654613\",\"playerValue\":14350000,\"playerId\":\"34495\",\"buyer\":\"Christoph\"}",
-        "id": "968414220",
-        "playerId": "34495"
-      }]
+      "news": [
+        {
+          "date": "10.11.2026",
+          "art": "TRANSFER",
+          "gelesen": false,
+          "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Karetsas\",\"price\":14400000,\"buyerId\":\"13654613\",\"playerValue\":14350000,\"playerId\":\"34495\",\"buyer\":\"Christoph\"}",
+          "id": "968414220",
+          "playerId": "34495"
+        },
+        {
+          "date": "10.11.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Schlieck\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"33664\",\"newPos\":\"TORHÜTER\"}",
+          "id": "0",
+          "playerId": "33664"
+        },
+        {
+          "date": "10.11.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"C. Gomis\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34388\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34388"
+        },
+        {
+          "date": "10.11.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"G. Orban\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34078\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34078"
+        },
+        {
+          "date": "10.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jessic Ngankam (33214) ist jetzt NICHT_IM_KADER",
+          "id": "0",
+          "playerId": "33214"
+        },
+        {
+          "date": "10.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Robin Gosens (33843) ist jetzt VERLETZT",
+          "id": "0",
+          "playerId": "33843"
+        },
+        {
+          "date": "10.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Janik Bachmann (34383) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "34383"
+        },
+        {
+          "date": "10.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Noahkai Banks (34017) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34017"
+        },
+        {
+          "date": "10.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Moussa Diaby (33122) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33122"
+        },
+        {
+          "date": "10.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Angelo Stiller (33437) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "33437"
+        },
+        {
+          "date": "10.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Jan Gyamerah (34395) ist wieder AKTIV",
+          "id": "0",
+          "playerId": "34395"
+        }
+      ]
     },
     {
       "date": "10.10.2026",
