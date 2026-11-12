@@ -1,21 +1,5 @@
 {
   "injuriedAndBannedPlayer": {
-    "31929": {
-      "reason": "",
-      "lastNewsText": "Weiser fällt bis auf Weiteres aus",
-      "ligainsiderPlayerId": "1720",
-      "playerName": "Mitchell Weiser",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-10-30T23:00:00Z",
-      "abfrageTimestamp": "2026-11-03T10:58:36.815952540Z",
-      "sinceString": "3 Tagen",
-      "comunioPlayerId": "31929",
-      "playerLink": "https://www.ligainsider.de/mitchell-weiser_1720/",
-      "lastNewsLink": "https://www.ligainsider.de/mitchell-weiser_1720/weiser-faellt-bis-auf-weiteres-aus-420226/",
-      "quelle": "ligainsider",
-      "club": "SV Werder Bremen",
-      "status": "VERLETZT"
-    },
     "33592": {
       "reason": "",
       "lastNewsText": "",
@@ -97,6 +81,21 @@
       "club": "FC Schalke 04",
       "status": "VERLETZT"
     },
+    "34448": {
+      "reason": "",
+      "lastNewsText": "Eichhorn kehrt teilintegriert ins Teamtraining zurück",
+      "ligainsiderPlayerId": "38775",
+      "playerName": "Kennet Eichhorn",
+      "sinceTimestamp": "2026-07-14T22:00:00Z",
+      "abfrageTimestamp": "2026-11-12T14:01:34.273495136Z",
+      "sinceString": "3 Monaten und 4 Wochen",
+      "comunioPlayerId": "34448",
+      "playerLink": "https://www.ligainsider.de/kennet-eichhorn_38775/",
+      "lastNewsLink": "https://www.ligainsider.de/kennet-eichhorn_38775/eichhorn-kehrt-teilintegriert-ins-teamtraining-zurueck-420613/",
+      "quelle": "ligainsider",
+      "club": "Bayer 04 Leverkusen",
+      "status": "AUFBAUTRAINING"
+    },
     "34424": {
       "comunioPlayerId": "34424",
       "reason": "",
@@ -128,20 +127,18 @@
       "status": "VERLETZT"
     },
     "33214": {
-      "reason": "Nicht berücksichtigt",
-      "lastNewsText": "",
+      "comunioPlayerId": "33214",
+      "reason": "Adduktorenzerrung",
+      "playerLink": "https://www.ligainsider.de/jessic-ngankam_20484/",
       "ligainsiderPlayerId": "20484",
       "playerName": "Jessic Ngankam",
-      "statusChangeString": "10.11.2026",
-      "sinceTimestamp": "2026-11-09T23:00:00Z",
-      "sinceString": "",
-      "statusChangeTimestamp": "2026-11-09T23:00:00Z",
-      "comunioPlayerId": "33214",
-      "playerLink": "https://www.ligainsider.de/jessic-ngankam_20484/",
-      "lastNewsLink": "",
+      "statusChangeString": "12.11.2026",
+      "sinceTimestamp": "2026-10-30T23:00:00Z",
       "quelle": "ligainsider",
       "club": "Eintracht Frankfurt",
-      "status": "NICHT_IM_KADER"
+      "sinceString": "1 Woche und 5 Tagen",
+      "statusChangeTimestamp": "2026-11-11T23:00:00Z",
+      "status": "AUFBAUTRAINING"
     },
     "33896": {
       "reason": "",
@@ -223,23 +220,6 @@
       "club": "1. FC Köln",
       "status": "VERLETZT"
     },
-    "34520": {
-      "reason": "",
-      "lastNewsText": "Doué-Rückkehr erfordert noch Geduld",
-      "ligainsiderPlayerId": "35433",
-      "playerName": "Guéla Doué",
-      "statusChangeString": "04.11.2026",
-      "sinceTimestamp": "2026-09-19T22:00:00Z",
-      "abfrageTimestamp": "2026-09-29T23:05:38.547341200Z",
-      "sinceString": "1 Monat und 2 Wochen",
-      "statusChangeTimestamp": "2026-11-03T23:00:00Z",
-      "comunioPlayerId": "34520",
-      "playerLink": "https://www.ligainsider.de/guela-doue_35433/",
-      "lastNewsLink": "https://www.ligainsider.de/guela-doue_35433/doue-rueckkehr-erfordert-noch-geduld-418869/",
-      "quelle": "ligainsider",
-      "club": "Bayer 04 Leverkusen",
-      "status": "AUFBAUTRAINING"
-    },
     "33157": {
       "reason": "",
       "lastNewsText": "Skhiri muss gegen Gladbach mit Trage vom Platz",
@@ -302,22 +282,6 @@
       "lastNewsLink": "https://www.ligainsider.de/salim-musah_37144/werder-bremen-muss-monatelang-auf-musah-verzichten-418561/",
       "quelle": "ligainsider",
       "club": "SV Werder Bremen",
-      "status": "VERLETZT"
-    },
-    "32880": {
-      "reason": "",
-      "lastNewsText": "Stuttgart muss auf Vagnoman verzichten",
-      "ligainsiderPlayerId": "18427",
-      "playerName": "Josha Vagnoman",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-10-19T22:00:00Z",
-      "abfrageTimestamp": "2026-10-23T08:00:44.878777342Z",
-      "sinceString": "3 Tagen",
-      "comunioPlayerId": "32880",
-      "playerLink": "https://www.ligainsider.de/josha-vagnoman_18427/",
-      "lastNewsLink": "https://www.ligainsider.de/josha-vagnoman_18427/stuttgart-muss-auf-vagnoman-verzichten-419485/",
-      "quelle": "ligainsider",
-      "club": "VfB Stuttgart",
       "status": "VERLETZT"
     },
     "33991": {
@@ -494,22 +458,6 @@
       "club": "SV 07 Elversberg",
       "status": "AUFBAUTRAINING"
     },
-    "34491": {
-      "reason": "",
-      "lastNewsText": "Sauer fehlt dem VfB bis auf Weiteres",
-      "ligainsiderPlayerId": "36387",
-      "playerName": "Leo Sauer",
-      "statusChangeString": "",
-      "sinceTimestamp": "2026-10-27T23:00:00Z",
-      "abfrageTimestamp": "2026-10-30T09:01:34.688100675Z",
-      "sinceString": "2 Tagen",
-      "comunioPlayerId": "34491",
-      "playerLink": "https://www.ligainsider.de/leo-sauer_36387/",
-      "lastNewsLink": "https://www.ligainsider.de/leo-sauer_36387/sauer-fehlt-dem-vfb-bis-auf-weiteres-419993/",
-      "quelle": "ligainsider",
-      "club": "VfB Stuttgart",
-      "status": "VERLETZT"
-    },
     "34051": {
       "reason": "",
       "lastNewsText": "Wadenbeinbruch: Gendrey fällt langfristig aus",
@@ -636,6 +584,21 @@
       "lastNewsLink": "https://www.ligainsider.de/jens-stage_22538/stage-muss-nach-verletzung-operiert-werden-417333/",
       "quelle": "ligainsider",
       "club": "SV Werder Bremen",
+      "status": "VERLETZT"
+    },
+    "34057": {
+      "reason": "",
+      "lastNewsText": "Matsima verletzt sich im FCA-Training",
+      "ligainsiderPlayerId": "26695",
+      "playerName": "Chrislain Matsima",
+      "sinceTimestamp": "2026-11-09T23:00:00Z",
+      "abfrageTimestamp": "2026-11-12T14:01:34.279161194Z",
+      "sinceString": "2 Tagen",
+      "comunioPlayerId": "34057",
+      "playerLink": "https://www.ligainsider.de/chrislain-matsima_26695/",
+      "lastNewsLink": "https://www.ligainsider.de/chrislain-matsima_26695/matsima-verletzt-sich-im-fca-training-420611/",
+      "quelle": "ligainsider",
+      "club": "FC Augsburg",
       "status": "VERLETZT"
     },
     "34012": {
@@ -765,7 +728,7 @@
       "status": "VERLETZT"
     }
   },
-  "lastUpdate": "2026-11-11T09:01:41.424047170Z",
+  "lastUpdate": "2026-11-12T14:01:39.181872770Z",
   "history": {
     "33808": [
       {
@@ -3246,6 +3209,20 @@
         "quelle": "ligainsider",
         "club": "Eintracht Frankfurt",
         "status": "NICHT_IM_KADER"
+      },
+      {
+        "comunioPlayerId": "33214",
+        "reason": "Adduktorenzerrung",
+        "playerLink": "https://www.ligainsider.de/jessic-ngankam_20484/",
+        "ligainsiderPlayerId": "20484",
+        "playerName": "Jessic Ngankam",
+        "statusChangeString": "12.11.2026",
+        "sinceTimestamp": "2026-10-30T23:00:00Z",
+        "quelle": "ligainsider",
+        "club": "Eintracht Frankfurt",
+        "sinceString": "1 Woche und 5 Tagen",
+        "statusChangeTimestamp": "2026-11-11T23:00:00Z",
+        "status": "AUFBAUTRAINING"
       }
     ],
     "32364": [
@@ -3590,6 +3567,23 @@
         "status": "AUFBAUTRAINING"
       }
     ],
+    "32880": [{
+      "reason": "",
+      "lastNewsText": "Stuttgart muss auf Vagnoman verzichten",
+      "ligainsiderPlayerId": "18427",
+      "playerName": "Josha Vagnoman",
+      "statusChangeString": "12.11.2026",
+      "sinceTimestamp": "2026-10-19T22:00:00Z",
+      "abfrageTimestamp": "2026-10-23T08:00:44.878777342Z",
+      "sinceString": "3 Tagen",
+      "statusChangeTimestamp": "2026-11-11T23:00:00Z",
+      "comunioPlayerId": "32880",
+      "playerLink": "https://www.ligainsider.de/josha-vagnoman_18427/",
+      "lastNewsLink": "https://www.ligainsider.de/josha-vagnoman_18427/stuttgart-muss-auf-vagnoman-verzichten-419485/",
+      "quelle": "ligainsider",
+      "club": "VfB Stuttgart",
+      "status": "VERLETZT"
+    }],
     "31959": [{
       "reason": "",
       "lastNewsText": "Kohr nach Verletzung operiert",
@@ -3846,6 +3840,23 @@
       "lastNewsLink": "",
       "quelle": "comunio",
       "club": "",
+      "status": "VERLETZT"
+    }],
+    "34491": [{
+      "reason": "",
+      "lastNewsText": "Sauer fehlt dem VfB bis auf Weiteres",
+      "ligainsiderPlayerId": "36387",
+      "playerName": "Leo Sauer",
+      "statusChangeString": "12.11.2026",
+      "sinceTimestamp": "2026-10-27T23:00:00Z",
+      "abfrageTimestamp": "2026-10-30T09:01:34.688100675Z",
+      "sinceString": "2 Tagen",
+      "statusChangeTimestamp": "2026-11-11T23:00:00Z",
+      "comunioPlayerId": "34491",
+      "playerLink": "https://www.ligainsider.de/leo-sauer_36387/",
+      "lastNewsLink": "https://www.ligainsider.de/leo-sauer_36387/sauer-fehlt-dem-vfb-bis-auf-weiteres-419993/",
+      "quelle": "ligainsider",
+      "club": "VfB Stuttgart",
       "status": "VERLETZT"
     }],
     "34094": [{
@@ -4359,6 +4370,23 @@
       "club": "",
       "status": "VERLETZT"
     }],
+    "31929": [{
+      "reason": "",
+      "lastNewsText": "Weiser fällt bis auf Weiteres aus",
+      "ligainsiderPlayerId": "1720",
+      "playerName": "Mitchell Weiser",
+      "statusChangeString": "12.11.2026",
+      "sinceTimestamp": "2026-10-30T23:00:00Z",
+      "abfrageTimestamp": "2026-11-03T10:58:36.815952540Z",
+      "sinceString": "3 Tagen",
+      "statusChangeTimestamp": "2026-11-11T23:00:00Z",
+      "comunioPlayerId": "31929",
+      "playerLink": "https://www.ligainsider.de/mitchell-weiser_1720/",
+      "lastNewsLink": "https://www.ligainsider.de/mitchell-weiser_1720/weiser-faellt-bis-auf-weiteres-aus-420226/",
+      "quelle": "ligainsider",
+      "club": "SV Werder Bremen",
+      "status": "VERLETZT"
+    }],
     "34362": [
       {
         "reason": "Muskuläre Probleme",
@@ -4818,6 +4846,23 @@
         "abfrageTimestamp": "2026-09-29T23:05:38.547341200Z",
         "sinceString": "1 Monat und 2 Wochen",
         "statusChangeTimestamp": "2026-11-03T23:00:00Z",
+        "comunioPlayerId": "34520",
+        "playerLink": "https://www.ligainsider.de/guela-doue_35433/",
+        "lastNewsLink": "https://www.ligainsider.de/guela-doue_35433/doue-rueckkehr-erfordert-noch-geduld-418869/",
+        "quelle": "ligainsider",
+        "club": "Bayer 04 Leverkusen",
+        "status": "AUFBAUTRAINING"
+      },
+      {
+        "reason": "",
+        "lastNewsText": "Doué-Rückkehr erfordert noch Geduld",
+        "ligainsiderPlayerId": "35433",
+        "playerName": "Guéla Doué",
+        "statusChangeString": "12.11.2026",
+        "sinceTimestamp": "2026-09-19T22:00:00Z",
+        "abfrageTimestamp": "2026-09-29T23:05:38.547341200Z",
+        "sinceString": "1 Monat und 2 Wochen",
+        "statusChangeTimestamp": "2026-11-11T23:00:00Z",
         "comunioPlayerId": "34520",
         "playerLink": "https://www.ligainsider.de/guela-doue_35433/",
         "lastNewsLink": "https://www.ligainsider.de/guela-doue_35433/doue-rueckkehr-erfordert-noch-geduld-418869/",
