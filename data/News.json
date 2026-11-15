@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "13.11.2026 22:00:15",
+  "lastUpdate": "15.11.2026 13:19:27",
   "newsDB": [
     {
       "date": "31.10.2026",
@@ -16169,6 +16169,59 @@
       ]
     },
     {
+      "date": "15.11.2026",
+      "news": [
+        {
+          "date": "15.11.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"Schlieck\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"33664\",\"newPos\":\"TORHÜTER\"}",
+          "id": "0",
+          "playerId": "33664"
+        },
+        {
+          "date": "15.11.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"C. Gomis\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34388\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34388"
+        },
+        {
+          "date": "15.11.2026",
+          "art": "POSITIONSWECHSEL",
+          "gelesen": false,
+          "text": "{\"playerName\":\"G. Orban\",\"oldPos\":\"UNBEKANNT\",\"playerID\":\"34078\",\"newPos\":\"STURM\"}",
+          "id": "0",
+          "playerId": "34078"
+        },
+        {
+          "date": "15.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Assan Ouédraogo (33991) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "33991"
+        },
+        {
+          "date": "15.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Marc Guiu (34515) ist jetzt AUFBAUTRAINING",
+          "id": "0",
+          "playerId": "34515"
+        },
+        {
+          "date": "15.11.2026",
+          "art": "SPIELERSTATUS",
+          "gelesen": false,
+          "text": "Statuswechsel: Berkay Yilmaz (34020) ist jetzt ROTE_KARTE",
+          "id": "0",
+          "playerId": "34020"
+        }
+      ]
+    },
+    {
       "date": "15.10.2026",
       "news": [
         {
@@ -16392,6 +16445,17 @@
           "playerId": "33882"
         }
       ]
+    },
+    {
+      "date": "14.11.2026",
+      "news": [{
+        "date": "14.11.2026",
+        "art": "TRANSFER",
+        "gelesen": false,
+        "text": "{\"seller\":\"Computer\",\"sellerId\":\"1\",\"playerName\":\"Potulski\",\"price\":2110009,\"buyerId\":\"10966300\",\"playerValue\":2060000,\"playerId\":\"34307\",\"buyer\":\"Alexander\"}",
+        "id": "968540426",
+        "playerId": "34307"
+      }]
     },
     {
       "date": "14.10.2026",
