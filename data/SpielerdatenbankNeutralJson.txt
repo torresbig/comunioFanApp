@@ -1081,7 +1081,7 @@
         "isNotName": [],
         "wert": 12560000,
         "verein": "14",
-        "lastPoints": 2,
+        "lastPoints": 0,
         "transfermarktDoDe": {
           "date": "01.09.2026",
           "name": "Deniz Undav",
@@ -2519,7 +2519,7 @@
         "isNotName": [],
         "wert": 8330000,
         "verein": "14",
-        "lastPoints": 3,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "07.09.2026",
           "name": "Chris Führich",
@@ -5154,7 +5154,7 @@
         "isNotName": [],
         "wert": 4690000,
         "verein": "14",
-        "lastPoints": 5,
+        "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "28.08.2026",
           "name": "Ramon Hendriks",
@@ -8165,7 +8165,7 @@
         "isNotName": [],
         "wert": 3580000,
         "verein": "14",
-        "lastPoints": 4,
+        "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "02.09.2026",
           "name": "Finn Jeltsch",
@@ -22614,7 +22614,7 @@
         "isNotName": [],
         "verein": "14",
         "wert": 13490000,
-        "lastPoints": 0,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "25.08.2026",
           "name": "Bilal El Khannouss",
@@ -27305,7 +27305,7 @@
         "punktekorrektur": [],
         "verein": "10",
         "wert": 4150000,
-        "lastPoints": 4,
+        "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "30.08.2026",
           "haveToCheck": false,
@@ -27643,7 +27643,7 @@
         "punktekorrektur": [],
         "verein": "10",
         "wert": 5390000,
-        "lastPoints": 4,
+        "lastPoints": 7,
         "transfermarktDoDe": {
           "date": "31.08.2026",
           "haveToCheck": false,
@@ -28416,7 +28416,7 @@
         "punktekorrektur": [],
         "verein": "10",
         "wert": 1330000,
-        "lastPoints": 0,
+        "lastPoints": 2,
         "transfermarktDoDe": {
           "date": "31.08.2026",
           "haveToCheck": false,
@@ -28446,7 +28446,11 @@
           "manOfTheMatchAmount": 0
         },
         "lastUpdate": "26.09.2026",
-        "spieltagspunkte": [],
+        "spieltagspunkte": [{
+          "totalPoints": 6,
+          "value": 2,
+          "key": 9
+        }],
         "withinSquad": true,
         "onMarket": false,
         "retired": false,
@@ -29255,7 +29259,7 @@
         "punktekorrektur": [],
         "verein": "14",
         "wert": 5490000,
-        "lastPoints": 0,
+        "lastPoints": 3,
         "transfermarktDoDe": {
           "date": "03.09.2026",
           "haveToCheck": false,
@@ -30987,7 +30991,7 @@
         "punktekorrektur": [],
         "verein": "14",
         "wert": 2430000,
-        "lastPoints": 6,
+        "lastPoints": 9,
         "transfermarktDoDe": {
           "date": "31.08.2026",
           "haveToCheck": true,
