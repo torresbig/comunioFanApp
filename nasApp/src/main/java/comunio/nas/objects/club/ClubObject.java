@@ -3,6 +3,7 @@ package comunio.nas.objects.club;
 import org.json.JSONObject;
 
 import comunio.nas.objects.ligainsider.LigainsiderClubObject;
+import comunio.nas.objects.wettbasis.WettbasisClubObject;
 
 public class ClubObject {
 
@@ -19,6 +20,8 @@ public class ClubObject {
 	private String id;
 	private boolean inLiga;
 	private LigainsiderClubObject ligainsiderClub;
+	/** Optionales Mapping zu Wettbasis (Name/ID/Link). */
+	private WettbasisClubObject wettbasisClub;
 	private JSONObject transfermarktClub;
 
 	public ClubObject() {
@@ -26,10 +29,15 @@ public class ClubObject {
 	}
 
 	public ClubObject(String name, String id, boolean inLiga, LigainsiderClubObject ligainsiderClub, JSONObject transfermarktClub) {
+		this(name, id, inLiga, ligainsiderClub, null, transfermarktClub);
+	}
+
+	public ClubObject(String name, String id, boolean inLiga, LigainsiderClubObject ligainsiderClub, WettbasisClubObject wettbasisClub, JSONObject transfermarktClub) {
 		this.setName(name);
 		this.setId(id);
 		this.setInLiga(inLiga);
 		this.setLigainsiderClub(ligainsiderClub);
+		this.setWettbasisClub(wettbasisClub);
 		this.setTransfermarktClub(transfermarktClub);
 	}
 
@@ -65,6 +73,14 @@ public class ClubObject {
 		this.ligainsiderClub = ligainsiderClub;
 	}
 
+	public WettbasisClubObject getWettbasisClub() {
+		return wettbasisClub;
+	}
+
+	public void setWettbasisClub(WettbasisClubObject wettbasisClub) {
+		this.wettbasisClub = wettbasisClub;
+	}
+
 	public JSONObject getTransfermarktClub() {
 		return transfermarktClub;
 	}
@@ -88,6 +104,9 @@ public class ClubObject {
 			if (json.has("ligainsider")) {
 				result.setLigainsiderClub(LigainsiderClubObject.fromJSON(json.getJSONObject("ligainsider")));
 			}
+			if (json.has("wettbasis")) {
+				result.setWettbasisClub(WettbasisClubObject.fromJSON(json.getJSONObject("wettbasis")));
+			}
 			if (json.has("transfermarktClub")) {
 				result.setTransfermarktClub(json.getJSONObject("transfermarktClub"));
 			}
@@ -95,6 +114,9 @@ public class ClubObject {
 		return result;
 	}
 
+	/**
+	 * Serialisiert Clubdaten inklusive Ligainsider- und Wettbasis-Mapping.
+	 */
 	public JSONObject toJSON() {
 		JSONObject json = new JSONObject();
 		json.put("id", id);
@@ -102,6 +124,9 @@ public class ClubObject {
 		json.put("inLiga", inLiga);
 		if (ligainsiderClub != null) {
 			json.put("ligainsider", ligainsiderClub.toJSON());
+		}
+		if (wettbasisClub != null) {
+			json.put("wettbasis", wettbasisClub.toJSON());
 		}
 		if (transfermarktClub != null) {
 			json.put("transfermarktClub", transfermarktClub);

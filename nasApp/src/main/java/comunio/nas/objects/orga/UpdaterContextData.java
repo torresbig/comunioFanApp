@@ -9,8 +9,8 @@ import java.util.logging.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import comunio.nas.ComunioDataUpdater;
+import comunio.nas.dataScraper.InjuredAndBanned;
 import comunio.nas.dataScraper.comunio.LineupParser;
-import comunio.nas.dataScraper.ligainsider.LigainsiderInjurieAndBannedPlayers;
 import comunio.nas.dataScraper.ligainsider.LigainsiderPossibleFormation;
 import comunio.nas.dataVariable.LastUpdates;
 import comunio.nas.dataVariable.Urls;
@@ -34,7 +34,7 @@ public class UpdaterContextData {
 
 	private JSONObject matchdayInfoList;
 	private ClubDbContainer clubDbContainer;
-	private LigainsiderInjurieAndBannedPlayers injuryDB;
+	private InjuredAndBanned injuryDB;
 	private JSONObject playerDBObject;
 	private PointsDbContainer pointsDB;
 	private JSONArray marketValueDB;
@@ -83,7 +83,7 @@ public class UpdaterContextData {
 		this.clubDbContainer = ClubDbContainer.fromJSON(LoadJSONfromFile.loadJsonArrayFromUrl(Urls.CLUB_DB_URL));
 
 		LOGGER.info("Lade Verletzungen von GitHub");
-		this.injuryDB = LigainsiderInjurieAndBannedPlayers.fromJSON(LoadJSONfromFile.loadJsonFromUrl(Urls.INJURIES_DB_URL));
+		this.injuryDB = InjuredAndBanned.fromJSON(LoadJSONfromFile.loadJsonFromUrl(Urls.INJURIES_DB_URL));
 
 		LOGGER.info("Lade Spielerdatenbank von GitHub");
 		this.playerDBObject = LoadJSONfromFile.loadJsonObjectWithPlayerArrayFromUrl(Urls.PLAYER_DB_URL);
@@ -253,11 +253,11 @@ public class UpdaterContextData {
 		this.clubDbContainer = clubDbContainer;
 	}
 
-	public LigainsiderInjurieAndBannedPlayers getInjuryDB() {
+	public InjuredAndBanned getInjuryDB() {
 		return injuryDB;
 	}
 
-	public void setInjuryDB(LigainsiderInjurieAndBannedPlayers injuryDB) {
+	public void setInjuryDB(InjuredAndBanned injuryDB) {
 		this.injuryDB = injuryDB;
 	}
 

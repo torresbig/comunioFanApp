@@ -117,6 +117,10 @@ public class LigainsiderPossibleFormation {
 					if (club.isInLiga() && club.getLigainsiderClub() != null && club.getLigainsiderClub().getLink() != null && !club.getLigainsiderClub().getLink().isBlank()) {
 						
 						String clubId = club.getId();
+						if (clubId == null || clubId.isBlank()|| clubId.equals("0")) {
+							LOGGER.warning("Club hat keine ID! Club: " + club.toString());
+							continue;
+						}
 						String clubName = club.getName();
 						
 						Set<PossibleFormationPlayerObject> possibleFormationClubSet = this.possibleFormationMap.containsKey(clubId) ? this.possibleFormationMap.get(clubId) : new HashSet<>() ;
@@ -162,10 +166,14 @@ public class LigainsiderPossibleFormation {
 
 	private void parseLigainsiderFormations(ClubObject club, Set<PossibleFormationPlayerObject> possibleFormationClubSet) {
 
-		if (club == null || club.getLigainsiderClub() == null) {
+		if (club == null || club.getLigainsiderClub() == null || club.getLigainsiderClub().getLink() == null || club.getLigainsiderClub().getLink().isBlank()) {
 			return;
 		}
 		LigainsiderClubObject lco = club.getLigainsiderClub();
+		if ( lco.getId() == null || lco.getId().isBlank()||lco.getId().equals("0") ) {
+			LOGGER.warning("LigainsiderClubObject hat keine ID! Club: " + club.toString());
+			return;
+		}
 		try {
 			// Verbindung aufbauen und Response abfangen
 			Connection.Response response = Jsoup.connect(lco.getLink()).userAgent("Mozilla/5.0").execute();

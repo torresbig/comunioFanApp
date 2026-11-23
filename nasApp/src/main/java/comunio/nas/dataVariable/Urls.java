@@ -84,6 +84,9 @@ public class Urls {
 	public static final String LIGAINSIDER_INJURY = "https://www.ligainsider.de/bundesliga/verletzte-und-gesperrte-spieler/";
 	public static final String LIGAINSIDER_CLUBS = "https://www.ligainsider.de/bundesliga/tabelle/";
 
+	// ############# WETTBASIS ###############/** Wettbasis */
+	public static final String WETTBASIS_INJURY = "https://www.wettbasis.com/deutschland-bundesliga-verletzte-und-gesperrte-spieler";
+
 	public static String getFilename(String url) {
 		String[] splits = url.split("/");
 		return splits[splits.length - 1];

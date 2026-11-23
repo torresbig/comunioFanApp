@@ -372,9 +372,14 @@ public class PlayerUpdater {
 				Position newPosition = Position.fromString(apiPlayer.getString("position"));
 				String oldClubId = data.getString("verein");
 				String newClubId = PlayerMatcher.convertIdToString(apiPlayer.getJSONObject("club").get("id"));
+				boolean oldPosValid = oldPosition != null && !oldPosition.equalsIgnoreCase("unbekannt") && !oldPosition.equalsIgnoreCase("unknown") &&!oldPosition.isBlank();
+				
+				if(playerName.equals("Schlieck") || playerName.equals("C. Gomis") || playerName.equals("G. Orban")) {
+					LOGGER.warning("Fehlerhafte spieler wegen Poswechsel für degub: Debug: Spieler " + playerName + " (ID: " + apiPlayerId + ") - Old Position: " + oldPosition + ", New Position: " + newPosition.toString() + ", Old Club: " + oldClubId + ", New Club: " + newClubId);
+				}
 
 				// Positionswechsel prüfen
-				if (!oldPosition.equals(newPosition.toString()) && !oldPosition.isBlank() && !oldPosition.equalsIgnoreCase("unbekannt")) {
+				if (oldPosValid && !oldPosition.equals(newPosition.toString()) ) {
 					newsManager.addNews(News.getPositionswechsel(oldPosition, newPosition.toString(), apiPlayerId, playerName), true);
 				}
 

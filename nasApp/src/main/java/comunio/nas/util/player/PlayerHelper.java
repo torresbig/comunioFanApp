@@ -133,6 +133,7 @@ public class PlayerHelper {
 		data.put("attribute", new JSONObject());
 		data.put("possibleNames", new JSONArray());
 		player.put("data", data);
+		LOGGER.info("Neuer Spieler erstellt: " + playerName + " (ID: " + playerID + ")");
 		return player;
 	}
 
