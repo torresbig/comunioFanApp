@@ -591,11 +591,18 @@
       "timestamp": "2026-11-05T21:01:06.598141643Z"
     }
   ],
-  "2026-11-26": [{
-    "errorType": "LIGAINSIDERSTATUS",
-    "message": "Kein match für den Status: 5. Gelbe Karte gefunden! Spieler: Zeno Van Den Bosch",
-    "timestamp": "2026-11-26T14:01:33.258892119Z"
-  }],
+  "2026-11-26": [
+    {
+      "errorType": "LIGAINSIDERSTATUS",
+      "message": "Kein match für den Status: 5. Gelbe Karte gefunden! Spieler: Zeno Van Den Bosch",
+      "timestamp": "2026-11-26T14:01:33.258892119Z"
+    },
+    {
+      "errorType": "LIGAINSIDERSTATUS",
+      "message": "Spieler wurde nicht gefunden! Spieler Justin Heekeren | Club: FC Schalke 04 | Quelle: ligainsider",
+      "timestamp": "2026-11-26T14:01:35.848327309Z"
+    }
+  ],
   "2026-11-04": [
     {
       "methode": "",
