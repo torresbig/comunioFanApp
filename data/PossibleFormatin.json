@@ -1,6 +1,6 @@
 {
   "matchday": 11,
-  "lastUpdate": "2026-11-26T18:34:32.869306062Z",
+  "lastUpdate": "2026-11-26T21:49:31.640513164Z",
   "possibleFormationMap": {
     "68": [
       {
@@ -2814,6 +2814,26 @@
         "playerId": "23854"
       },
       {
+        "comunioPlayerId": "34294",
+        "playerLink": "https://www.ligainsider.de/adam-daghim_37622/",
+        "playerName": "Daghim",
+        "clubId": "10",
+        "playerNote": "3,7",
+        "last5MatchStatus": [
+          {"1": "SUBIN"},
+          {"2": "START"},
+          {"3": "START"},
+          {"4": "SUBIN"},
+          {"5": "SUBIN"},
+          {"6": "BANK"},
+          {"7": "START"},
+          {"8": "START"},
+          {"9": "START"},
+          {"10": "START"}
+        ],
+        "playerId": "37622"
+      },
+      {
         "comunioPlayerId": "34034",
         "playerLink": "https://www.ligainsider.de/alexander-prass_27057/",
         "playerName": "Prass",
@@ -2824,29 +2844,9 @@
           {"2": "START"},
           {"3": "NOTINTEAM"},
           {"4": "START"},
-          {"5": "START"},
-          {"6": "SUBIN"},
-          {"7": "START"},
-          {"8": "START"},
-          {"9": "SUBIN"},
-          {"10": "SUBIN"}
-        ],
-        "playerId": "27057"
-      },
-      {
-        "comunioPlayerId": "34242",
-        "playerLink": "https://www.ligainsider.de/wouter-burger_22632/",
-        "playerName": "Burger",
-        "clubId": "10",
-        "playerNote": "3,2",
-        "last5MatchStatus": [
-          {"1": "BANK"},
-          {"2": "START"},
-          {"3": "START"},
-          {"4": "START"},
           {"5": "START"}
         ],
-        "playerId": "22632"
+        "playerId": "27057"
       },
       {
         "comunioPlayerId": "34446",
