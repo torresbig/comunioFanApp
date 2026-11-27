@@ -256,6 +256,19 @@
       "club": "Paderborn",
       "status": "VERLETZT"
     },
+    "32801": {
+      "comunioPlayerId": "32801",
+      "reason": "",
+      "playerLink": "https://www.ligainsider.de/felix-uduokhai_7041/",
+      "ligainsiderPlayerId": "7041",
+      "playerName": "Felix Uduokhai",
+      "sinceTimestamp": "2026-11-26T23:00:00Z",
+      "abfrageTimestamp": "2026-11-27T06:16:33.840366115Z",
+      "quelle": "ligainsider",
+      "club": "1. FC Union Berlin",
+      "sinceString": "",
+      "status": "ROTE_KARTE"
+    },
     "33935": {
       "reason": "Kreuzbandriss",
       "lastNewsText": "Sorge um Remberg: Verdacht auf schwere Knieverletzung",
@@ -335,6 +348,21 @@
       "quelle": "ligainsider",
       "club": "Borussia Mönchengladbach",
       "status": "AUFBAUTRAINING"
+    },
+    "32073": {
+      "reason": "Unbekannt",
+      "lastNewsText": "Union bangt für Mainz-Spiel um Khedira",
+      "ligainsiderPlayerId": "2122",
+      "playerName": "Rani Khedira",
+      "sinceTimestamp": "2026-11-20T23:00:00Z",
+      "abfrageTimestamp": "2026-11-27T06:16:33.846161119Z",
+      "sinceString": "6 Tagen",
+      "comunioPlayerId": "32073",
+      "playerLink": "https://www.ligainsider.de/rani-khedira_2122/",
+      "lastNewsLink": "https://www.ligainsider.de/rani-khedira_2122/union-bangt-fuer-mainz-spiel-um-khedira-421118/",
+      "quelle": "ligainsider",
+      "club": "1. FC Union Berlin",
+      "status": "VERLETZT"
     },
     "34051": {
       "reason": "Gebrochener Knöchel",
@@ -497,6 +525,19 @@
       "lastNewsLink": "https://www.wettbasis.com/deutschland-bundesliga-verletzte-und-gesperrte-spieler",
       "quelle": "wettbasis",
       "club": "Mainz 05",
+      "status": "VERLETZT"
+    },
+    "33687": {
+      "comunioPlayerId": "33687",
+      "reason": "Muskelverletzung",
+      "lastNewsText": "Rückkehr: Fraglich",
+      "playerName": "Justin Njinmah",
+      "sinceTimestamp": "2026-11-26T23:00:00Z",
+      "abfrageTimestamp": "2026-11-27T06:16:34.105516029Z",
+      "lastNewsLink": "https://www.wettbasis.com/deutschland-bundesliga-verletzte-und-gesperrte-spieler",
+      "quelle": "wettbasis",
+      "club": "Werder Bremen",
+      "sinceString": "Fraglich",
       "status": "VERLETZT"
     },
     "33288": {
@@ -1087,14 +1128,14 @@
     "33184": {
       "reason": "Fußverletzung",
       "lastNewsText": "Rückkehr: Ende November 2026",
-      "ligainsiderPlayerId": "",
+      "ligainsiderPlayerId": "11068",
       "playerName": "Timo Becker",
       "statusChangeString": "",
       "sinceTimestamp": "2026-11-22T23:00:00Z",
       "abfrageTimestamp": "2026-11-23T15:25:24.907823300Z",
       "sinceString": "Ende November 2026",
       "comunioPlayerId": "33184",
-      "playerLink": "",
+      "playerLink": "https://www.ligainsider.de/timo-becker_11068/",
       "lastNewsLink": "https://www.wettbasis.com/deutschland-bundesliga-verletzte-und-gesperrte-spieler",
       "quelle": "wettbasis",
       "club": "Schalke 04",
@@ -1119,14 +1160,14 @@
     "34191": {
       "reason": "Unbekannt",
       "lastNewsText": "Rückkehr: Fraglich",
-      "ligainsiderPlayerId": "",
+      "ligainsiderPlayerId": "36114",
       "playerName": "Livan Burcu",
       "statusChangeString": "",
       "sinceTimestamp": "2026-11-22T23:00:00Z",
       "abfrageTimestamp": "2026-11-23T15:25:24.907823300Z",
       "sinceString": "Fraglich",
       "comunioPlayerId": "34191",
-      "playerLink": "",
+      "playerLink": "https://www.ligainsider.de/livan-burcu_36114/",
       "lastNewsLink": "https://www.wettbasis.com/deutschland-bundesliga-verletzte-und-gesperrte-spieler",
       "quelle": "wettbasis",
       "club": "Union Berlin",
@@ -1362,7 +1403,7 @@
       "status": "VERLETZT"
     }
   },
-  "lastUpdate": "2026-11-26T14:01:41.316041510Z",
+  "lastUpdate": "2026-11-27T06:16:39.612748046Z",
   "history": {
     "33808": [
       {
